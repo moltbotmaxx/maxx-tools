@@ -1,19 +1,143 @@
 {
-  "updatedAt": "2026-02-21T22:16:25.268Z",
+  "updatedAt": "2026-02-21T22:18:16.086Z",
   "source": "BCCR WebService + BCCR APIM + BCCR comunicaciones",
   "usd": {
-    "buy": null,
-    "sell": null,
-    "buyChange": null,
-    "sellChange": null
+    "buy": 471.99,
+    "sell": 476.41,
+    "buyChange": -2.099999999999966,
+    "sellChange": -3.9399999999999977
   },
   "eur": {
-    "buy": null,
-    "sell": null,
-    "buyChange": null,
-    "sellChange": null,
+    "buy": 557.624658,
+    "sell": 564.98767,
+    "buyChange": -4.431257999999957,
+    "sellChange": -2.9119719999999916,
     "note": "derivado de USDCRC * USDAEUR (BCCR)"
   },
-  "history": [],
+  "history": [
+    {
+      "date": "2026-01-23",
+      "usdSell": 497.49
+    },
+    {
+      "date": "2026-01-24",
+      "usdSell": 500.22
+    },
+    {
+      "date": "2026-01-25",
+      "usdSell": 500.22
+    },
+    {
+      "date": "2026-01-26",
+      "usdSell": 500.22
+    },
+    {
+      "date": "2026-01-27",
+      "usdSell": 500.8
+    },
+    {
+      "date": "2026-01-28",
+      "usdSell": 496.41
+    },
+    {
+      "date": "2026-01-29",
+      "usdSell": 496.55
+    },
+    {
+      "date": "2026-01-30",
+      "usdSell": 497.46
+    },
+    {
+      "date": "2026-01-31",
+      "usdSell": 499.37
+    },
+    {
+      "date": "2026-02-01",
+      "usdSell": 499.37
+    },
+    {
+      "date": "2026-02-02",
+      "usdSell": 499.37
+    },
+    {
+      "date": "2026-02-03",
+      "usdSell": 498.16
+    },
+    {
+      "date": "2026-02-04",
+      "usdSell": 497.72
+    },
+    {
+      "date": "2026-02-05",
+      "usdSell": 498.93
+    },
+    {
+      "date": "2026-02-06",
+      "usdSell": 496.18
+    },
+    {
+      "date": "2026-02-07",
+      "usdSell": 496.44
+    },
+    {
+      "date": "2026-02-08",
+      "usdSell": 496.44
+    },
+    {
+      "date": "2026-02-09",
+      "usdSell": 496.44
+    },
+    {
+      "date": "2026-02-10",
+      "usdSell": 494.9
+    },
+    {
+      "date": "2026-02-11",
+      "usdSell": 492.84
+    },
+    {
+      "date": "2026-02-12",
+      "usdSell": 490.28
+    },
+    {
+      "date": "2026-02-13",
+      "usdSell": 487.69
+    },
+    {
+      "date": "2026-02-14",
+      "usdSell": 485.72
+    },
+    {
+      "date": "2026-02-15",
+      "usdSell": 485.72
+    },
+    {
+      "date": "2026-02-16",
+      "usdSell": 485.72
+    },
+    {
+      "date": "2026-02-17",
+      "usdSell": 484.84
+    },
+    {
+      "date": "2026-02-18",
+      "usdSell": 484.62,
+      "eurSell": 573.30546
+    },
+    {
+      "date": "2026-02-19",
+      "usdSell": 482.99,
+      "eurSell": 567.899642
+    },
+    {
+      "date": "2026-02-20",
+      "usdSell": 480.35,
+      "eurSell": 564.98767
+    },
+    {
+      "date": "2026-02-21",
+      "usdSell": 476.41
+    }
+  ],
   "news": []
 }
