@@ -1,0 +1,7 @@
+{
+  "updatedAt": null,
+  "usd": {"buy": null, "sell": null, "buyChange": null, "sellChange": null},
+  "eur": {"buy": null, "sell": null, "buyChange": null, "sellChange": null},
+  "history": [],
+  "news": []
+}

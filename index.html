@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BCCR FX Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,sans-serif;background:#0b1020;color:#e8ecff;margin:0;padding:24px}
+    .wrap{max-width:1000px;margin:0 auto}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:#121a30;border:1px solid #233056;border-radius:14px;padding:14px}
+    .muted{color:#9fb0de;font-size:12px}
+    h1{margin:0 0 14px;font-size:28px}
+    h3{margin:0 0 6px}
+    .v{font-size:26px;font-weight:700}
+    a{color:#8fb4ff}
+    ul{padding-left:18px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🇨🇷 BCCR FX Tracker</h1>
+  <p class="muted">Fuente primaria: BCCR (webservice oficial). Actualización automática con GitHub Actions.</p>
+  <div class="grid" id="cards"></div>
+  <div class="card" style="margin-top:12px">
+    <h3>Tendencia (últimos 30 puntos)</h3>
+    <canvas id="trend"></canvas>
+  </div>
+  <div class="card" style="margin-top:12px">
+    <h3>Noticias oficiales / intervenciones</h3>
+    <ul id="news"></ul>
+  </div>
+</div>
+<script>
+(async()=>{
+  const res = await fetch('./data/latest.json?_=' + Date.now());
+  const data = await res.json();
+  const cards = document.getElementById('cards');
+  const money = n => n==null?'N/D':new Intl.NumberFormat('es-CR',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
+  const items = [
+    ['USD Compra', data.usd?.buy, data.usd?.buyChange],
+    ['USD Venta', data.usd?.sell, data.usd?.sellChange],
+    ['EUR Compra', data.eur?.buy, data.eur?.buyChange],
+    ['EUR Venta', data.eur?.sell, data.eur?.sellChange],
+  ];
+  cards.innerHTML = items.map(([t,v,c])=>`<div class="card"><div class="muted">${t}</div><div class="v">₡ ${money(v)}</div><div class="muted">Δ ${c==null?'N/D':c.toFixed(2)}</div></div>`).join('');
+
+  const labels = (data.history||[]).map(x=>x.date);
+  const usd = (data.history||[]).map(x=>x.usdSell ?? null);
+  const eur = (data.history||[]).map(x=>x.eurSell ?? null);
+  new Chart(document.getElementById('trend'), {
+    type:'line',
+    data:{labels,datasets:[{label:'USD Venta',data:usd,borderColor:'#60a5fa'},{label:'EUR Venta',data:eur,borderColor:'#34d399'}]},
+    options:{responsive:true,plugins:{legend:{labels:{color:'#dbe4ff'}}},scales:{x:{ticks:{color:'#a9b8e6'}},y:{ticks:{color:'#a9b8e6'}}}}
+  });
+
+  const news = document.getElementById('news');
+  news.innerHTML = (data.news||[]).slice(0,10).map(n=>`<li><a href="${n.url}" target="_blank">${n.title}</a> <span class="muted">(${n.date||''})</span></li>`).join('') || '<li>No hay noticias aún.</li>';
+})();
+</script>
+</body>
+</html>
