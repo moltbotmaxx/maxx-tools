@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: 20
       - run: npm run update-data
+        working-directory: tools/bccr-fx-tracker
         env:
           BCCR_EMAIL: ${{ secrets.BCCR_EMAIL }}
           BCCR_TOKEN: ${{ secrets.BCCR_TOKEN }}
@@ -27,6 +28,6 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json
+          git add tools/bccr-fx-tracker/data/latest.json
           git diff --staged --quiet || git commit -m "chore: update BCCR FX data"
           git push
