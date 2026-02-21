@@ -26,10 +26,11 @@ async function bccrSeries(indicador) {
   u.searchParams.set('CorreoElectronico', EMAIL);
   u.searchParams.set('Token', TOKEN);
   const r = await fetch(u);
-  const x = await r.text();
+  const raw = await r.text();
+  const x = raw.replaceAll('&lt;','<').replaceAll('&gt;','>').replaceAll('&amp;','&');
   const out = [];
   for (const m of x.matchAll(/<INGC011_CAT_INDICADORECONOMIC>.*?<DES_FECHA>(.*?)<\/DES_FECHA>.*?<NUM_VALOR>(.*?)<\/NUM_VALOR>/gs)) {
-    out.push({ date: m[1], value: Number(String(m[2]).replace(',', '.')) });
+    out.push({ date: String(m[1]).slice(0,10), value: Number(String(m[2]).replace(',', '.')) });
   }
   return out;
 }
@@ -47,8 +48,15 @@ async function euroUsdSeriesFromApim(){
   try {
     const token = await (await fetch('https://apim.bccr.fi.cr/SDDE/api/Bccr.GE.SDDE.IndicadoresSitioExterno.ServiciosUsuario.API/Token/GenereCSRF')).text();
     const data = await (await fetch('https://apim.bccr.fi.cr/SDDE/api/Bccr.GE.SDDE.IndicadoresSitioExterno.GrupoVariables.API/CuadroGrupoVariables/ObtenerDatosCuadro?IdGrupoVariable=478&FechaInicio=1999-01-05T00:00:00&FechaFin=2099-12-31&CantidadSeriesAMostrar=3', { headers: { Token_CSRF: token } })).json();
-    const rows = data?.[0]?.valores || [];
-    return rows.slice(-40).map(r => ({ date: String(r.fecha).slice(0,10), value: Number(r.valor) })).filter(x => !Number.isNaN(x.value));
+    const cols = (data?.columnas || []).filter(c => /^serie\d+$/i.test(c.field));
+    const s = data?.indicadoresRaiz?.[0]?.series || {};
+    const mm = {ene:'01',feb:'02',mar:'03',abr:'04',may:'05',jun:'06',jul:'07',ago:'08',sep:'09',oct:'10',nov:'11',dic:'12'};
+    const parseDate = (t='') => {
+      const m = t.toLowerCase().match(/(\d{1,2})\s+([a-záéíóú]{3})\s+(\d{4})/);
+      if (!m) return t;
+      return `${m[3]}-${mm[m[2].slice(0,3)] || '01'}-${String(m[1]).padStart(2,'0')}`;
+    };
+    return cols.map(c => ({ date: parseDate(c.tituloEspanol), value: Number(String(s[c.field+'Ingles'] ?? s[c.field] ?? '').replace(',','.')) })).filter(x => !Number.isNaN(x.value));
   } catch {
     return [];
   }
