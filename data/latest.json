@@ -1,7 +1,19 @@
 {
-  "updatedAt": null,
-  "usd": {"buy": null, "sell": null, "buyChange": null, "sellChange": null},
-  "eur": {"buy": null, "sell": null, "buyChange": null, "sellChange": null},
+  "updatedAt": "2026-02-21T22:16:25.268Z",
+  "source": "BCCR WebService + BCCR APIM + BCCR comunicaciones",
+  "usd": {
+    "buy": null,
+    "sell": null,
+    "buyChange": null,
+    "sellChange": null
+  },
+  "eur": {
+    "buy": null,
+    "sell": null,
+    "buyChange": null,
+    "sellChange": null,
+    "note": "derivado de USDCRC * USDAEUR (BCCR)"
+  },
   "history": [],
   "news": []
 }
