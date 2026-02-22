@@ -1,8 +1,8 @@
 #!/bin/bash
 # Smart-Frame Automation Script
-# Path: /Users/maxx/.openclaw/workspace/smart-frame/scripts/automate.sh
+# Path: /Users/maxx/.openclaw/workspace/projects/maxx-tools/smart-frame/scripts/automate.sh
 
-PROJECT_DIR="/Users/maxx/.openclaw/workspace/smart-frame"
+PROJECT_DIR="/Users/maxx/.openclaw/workspace/projects/maxx-tools/smart-frame"
 DATA_FILE="$PROJECT_DIR/data.json"
 HTML_FILE="$PROJECT_DIR/index.html"
 SCREENSHOT_PATH="/tmp/dashboard_raw.png"

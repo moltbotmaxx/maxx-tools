@@ -15,7 +15,7 @@ const path = require('path');
     await new Promise(r => setTimeout(r, 2000));
 
     await page.screenshot({ 
-        path: '/Users/maxx/.openclaw/workspace/projects/smart-frame/Dashboard_Latest.png',
+        path: '/Users/maxx/.openclaw/workspace/projects/maxx-tools/smart-frame/Dashboard_Latest.png',
         clip: { x: 0, y: 0, width: 1024, height: 640 }
     });
     await browser.close();

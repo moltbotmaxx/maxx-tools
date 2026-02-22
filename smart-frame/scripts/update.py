@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Union
 
 # Configuration
 WORKSPACE = "/Users/maxx/.openclaw/workspace"
-PROJECT_DIR = os.path.join(WORKSPACE, "projects", "smart-frame")
+PROJECT_DIR = os.path.join(WORKSPACE, "projects", "maxx-tools", "smart-frame")
 DATA_FILE = os.path.join(PROJECT_DIR, "data.json")
 WEATHER_FILE = os.path.join(PROJECT_DIR, "weather.json")
 INSTAGRAM_FILE = os.path.join(PROJECT_DIR, "instagram.json")

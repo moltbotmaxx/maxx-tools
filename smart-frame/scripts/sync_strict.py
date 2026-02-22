@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Configuration
 WORKSPACE = "/Users/maxx/.openclaw/workspace"
-PROJECT_DIR = os.path.join(WORKSPACE, "projects", "smart-frame")
+PROJECT_DIR = os.path.join(WORKSPACE, "projects", "maxx-tools", "smart-frame")
 LATEST_PNG = os.path.join(PROJECT_DIR, "Dashboard_Latest.png")
 COUNTER_FILE = os.path.join(PROJECT_DIR, "upload_counter.txt")
 
