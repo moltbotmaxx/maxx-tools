@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxx Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body,
+        html {
+            width: 1024px;
+            height: 640px;
+            background: #080b10;
+            font-family: 'Inter', -apple-system, sans-serif;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            color: #fff;
+        }
+
+        /* ═══ BENTO GRID ═══ */
+        .bento {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr 1fr;
+            width: 1024px;
+            height: 640px;
+            gap: 4px;
+        }
+
+        /* ═══ WEATHER ═══ */
+        .card-weather {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .w-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .w-over {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%);
+        }
+
+        .card-weather[data-theme="night"] .w-over {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.9) 100%);
+        }
+
+        .w-inner {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px 20px 8px;
+        }
+
+        .w-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .w-loc {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .w-cond {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+            margin-top: 2px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        .w-icon-big {
+            font-size: 72px;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+            margin-top: -8px;
+        }
+
+        .w-hero {
+            display: flex;
+            align-items: baseline;
+            gap: 2px;
+            margin-top: -4px;
+        }
+
+        .w-temp {
+            font-size: 110px;
+            font-weight: 800;
+            line-height: 0.85;
+            color: #fff;
+            letter-spacing: -6px;
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .w-deg {
+            font-size: 56px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            margin-left: 4px;
+            transform: translateY(-60px);
+        }
+
+        .w-meta {
+            margin-bottom: 12px;
+            margin-left: 16px;
+        }
+
+        .w-feels {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .w-mm {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 2px;
+            font-weight: 600;
+        }
+
+        .w-updated {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+        
+        .n-sec-card {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(6, 182, 212, 0.2);
+        }
+
+        .n-sec-head {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 4px;
+        }
+
+        .n-sec-meta {
+            font-size: 11px;
+            color: #22d3ee;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+        }
+
+        /* ═══ FOOTER / FID ═══ */
+        .frame-id {
+            position: absolute;
+            bottom: 4px;
+            right: 10px;
+            font-size: 8px;
+            color: rgba(255, 255, 255, 0.2);
+            font-family: 'Courier New', monospace;
+            z-index: 100;
+        }
+
+        .w-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        .w-chips {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            padding: 8px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .w-chip {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 5px 8px;
+            min-width: 50px;
+        }
+
+        .w-chip-l {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 700;
+        }
+
+        .w-chip-v {
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .w-hourly {
+            display: flex;
+            gap: 4px;
+        }
+
+        .w-hr {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 8px 6px;
+            text-align: center;
+            min-width: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .w-hr-t {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 700;
+        }
+
+        .w-hr-i {
+            font-size: 24px;
+            font-size: 20px;
+            margin: 2px 0;
+        }
+
+        .w-hr-v {
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        /* ═══ MOLTBOT (RED TECH THEME) ═══ */
+        .card-moltbot {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(155deg, #1a0505 0%, #000000 60%, #1a0505 100%);
+            border-left: 4px solid #dc2626;
+            box-shadow: inset 0 0 20px rgba(220, 38, 38, 0.1);
+        }
+
+        .card-moltbot::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, rgba(220, 38, 38, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .card-moltbot::after {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(220, 38, 38, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .m-inner {
+            height: 100%;
+            padding: 24px 28px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        .m-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .m-title {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: rgba(220, 38, 38, 0.8);
+            font-weight: 800;
+        }
+
+        .m-date {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            color: #ef4444;
+            font-weight: 800;
+        }
+
+        /* Avatar showcase — large and centered */
+        .m-showcase {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex: 1;
+            padding: 10px 0;
+        }
+
+        .m-ring {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
+        }
+
+        .m-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #7f1d1d, #ef4444, #dc2626, #b91c1c, #991b1b, #7f1d1d);
+            animation: spin 6s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .m-ring::after {
+            content: '';
+            position: absolute;
+            inset: 3px;
+            border-radius: 50%;
+            background: #000;
+        }
+
+        .m-ring-img {
+            position: absolute;
+            inset: 6px;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+            background: #0d1420;
+        }
+
+        .m-ring-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            transform: scaleX(-1);
+        }
+
+        .m-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .m-name {
+            font-size: 28px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.0;
+            text-shadow: 0 0 15px rgba(220, 38, 38, 0.6);
+            letter-spacing: -1px;
+        }
+
+        .m-sub {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 700;
+            margin-top: 6px;
+        }
+
+        .m-mood {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            background: rgba(220, 38, 38, 0.15);
+            border: 1px solid rgba(220, 38, 38, 0.4);
+            font-size: 13px;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+        }
+
+        .m-mood-emoji {
+            font-size: 18px;
+        }
+
+        .m-update-time {
+            font-size: 10px;
+            color: rgba(220, 38, 38, 0.8);
+            margin-left: 6px;
+        }
+
+        /* Metrics */
+        .m-bar-row {
+            margin-bottom: 8px;
+        }
+
+        .m-bar-head {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 11px;
+            font-weight: 800;
+            color: rgba(220, 38, 38, 0.8);
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .m-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .m-bar-fill {
+            height: 100%;
+            border-radius: 2px;
+            background: #dc2626;
+            box-shadow: 0 0 10px #dc2626;
+            transition: width 0.5s ease;
+        }
+
+        .m-tokens {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 6px;
+        }
+
+        .m-comms {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .m-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(20, 0, 0, 0.8);
+            border: 1px solid rgba(220, 38, 38, 0.6);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(220, 38, 38, 0.5);
+        }
+
+        .m-dot {
+            width: 6px;
+            height: 6px;
+            background: #dc2626;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 0 6px #dc2626;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+            }
+
+            50% {
+                opacity: 0.5;
+                box-shadow: 0 0 0 4px rgba(220, 38, 38, 0);
+            }
+        }
+
+        /* ═══ INSTAGRAM ═══ */
+        .card-ig {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(160deg, #0d1218 0%, #12101f 100%);
+            border-top: 4px solid transparent;
+        }
+
+        .card-ig::before {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(225, 48, 108, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .ig-inner {
+            height: 100%;
+            padding: 20px 26px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ig-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ig-logo {
+            width: 28px;
+            height: 28px;
+            border-radius: 7px;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .ig-logo-i {
+            width: 14px;
+            height: 14px;
+            border: 1.5px solid #fff;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .ig-logo-i::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 5px;
+            height: 5px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+
+        .ig-logo-i::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .ig-handle {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .ig-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ig-label {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        .ig-row {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            margin-top: 2px;
+        }
+
+        .ig-count {
+            font-size: 64px;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -3px;
+            line-height: 1;
+        }
+
+        .ig-grow {
+            background: rgba(74, 222, 128, 0.1);
+            border: 1px solid rgba(74, 222, 128, 0.15);
+            color: #6ee75a;
+            padding: 3px 10px;
+            border-radius: 14px;
+            font-weight: 800;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .ig-pills {
+            display: flex;
+            gap: 6px;
+        }
+
+        .ig-pill {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 10px 12px;
+            text-align: center;
+        }
+
+        .ig-pill-v {
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .ig-pill-l {
+            font-size: 8px;
+            color: rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        /* ═══ NEWS (BLUE TECH THEME) ═══ */
+        .card-news {
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            border-left: 4px solid #06b6d4;
+            box-shadow: inset 0 0 30px rgba(6, 182, 212, 0.15);
+        }
+
+        .n-grad {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, #080b10 15%, rgba(8, 11, 16, 0.9) 60%, rgba(8, 11, 16, 0.4) 100%);
+        }
+
+        .n-inner {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px 30px 24px;
+            /* More padding */
+            z-index: 1;
+        }
+
+        .n-tag {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(6, 182, 212, 0.2);
+            border: 1px solid rgba(6, 182, 212, 0.5);
+            backdrop-filter: blur(6px);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 11px;
+            /* Increased */
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #22d3ee;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+        }
+
+        .n-dot {
+            width: 8px;
+            /* Bigger dot */
+            height: 8px;
+            background: #22d3ee;
+            border-radius: 50%;
+            animation: pulse-blue 2s infinite;
+            box-shadow: 0 0 8px #22d3ee;
+        }
+
+        @keyframes pulse-blue {
+            0% {
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.7);
+            }
+
+            70% {
+                opacity: 0;
+                box-shadow: 0 0 0 6px rgba(34, 211, 238, 0);
+            }
+
+            100% {
+                opacity: 0;
+                box-shadow: 0 0 0 0 rgba(34, 211, 238, 0);
+            }
+        }
+
+        .n-head {
+            font-size: 32px;
+            /* Massive increase from 24px */
+            font-weight: 900;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 12px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+            letter-spacing: -1px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            /* Limit lines to prevent overflow */
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .n-source {
+            font-size: 13px;
+            /* Increased from 11px */
+            color: #67e8f9;
+            /* Cyan-300 */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bento">
+        <div class="frame-id" id="frame-id">FID: 00000</div>
+        <!-- WEATHER (Span 3 = 50%) -->
+        <div class="card-weather" id="card-weather" style="grid-column: span 3;" data-theme="night">
+
+            <div class="w-bg" id="w-bg" style="background-image:url('images/weather_sunny.png')"></div>
+            <div class="w-over"></div>
+            <div class="w-inner">
+                <div class="w-top">
+                    <div>
+                        <div class="w-loc" id="w-loc">Alajuela</div>
+                        <div class="w-cond" id="w-cond">Cielo Despejado</div>
+                    </div>
+                    <div class="w-icon-big" id="w-icon">☀️</div>
+                </div>
+                <div class="w-hero">
+                    <div class="w-temp" id="w-temp">20</div>
+                    <div class="w-deg">°</div>
+                    <div class="w-meta">
+                        <div class="w-feels">Sensación <span id="w-feels">26</span>°</div>
+                        <div class="w-mm" id="w-mm">↑ 30° ↓ 20°</div>
+                        <div class="w-updated">Updated: <span id="w-updated">--:--</span></div>
+                    </div>
+                </div>
+                <div class="w-bottom">
+                    <div class="w-chips">
+                        <div class="w-chip">
+                            <div class="w-chip-l">Viento</div>
+                            <div class="w-chip-v" id="w-wind">6 km/h</div>
+                        </div>
+                        <div class="w-chip">
+                            <div class="w-chip-l">Humedad</div>
+                            <div class="w-chip-v" id="w-hum">80%</div>
+                        </div>
+                        <div class="w-chip">
+                            <div class="w-chip-l">UV</div>
+                            <div class="w-chip-v" id="w-uv">9</div>
+                        </div>
+                        <div class="w-chip">
+                            <div class="w-chip-l">Lluvia</div>
+                            <div class="w-chip-v" id="w-prob">80%</div>
+                        </div>
+                    </div>
+                    <div class="w-hourly" id="w-hourly">
+                        <div class="w-hr">
+                            <div class="w-hr-t">3PM</div>
+                            <div class="w-hr-i">☁️</div>
+                            <div class="w-hr-v">28°</div>
+                        </div>
+                        <div class="w-hr">
+                            <div class="w-hr-t">6PM</div>
+                            <div class="w-hr-i">🌧️</div>
+                            <div class="w-hr-v">25°</div>
+                        </div>
+                        <div class="w-hr">
+                            <div class="w-hr-t">9PM</div>
+                            <div class="w-hr-i">🌙</div>
+                            <div class="w-hr-v">22°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOLTBOT (Span 3 = 50%) -->
+        <div class="card-moltbot" style="grid-column: span 3;">
+            <div class="m-inner">
+                <div class="m-header">
+                    <div class="m-title">OpenClaw Agent</div>
+                    <div class="m-date" id="m-date">Monday, 16 Feb</div>
+                </div>
+                <div class="m-showcase">
+                    <div class="m-ring">
+                        <div class="m-ring-img"><img src="maxx_avatar_real.png" alt="Moltbot"></div>
+                    </div>
+                    <div class="m-info">
+                        <div class="m-name" id="m-label">Maxx Moltbot</div>
+                        <div class="m-sub" id="m-sub">AI Assistant · Active</div>
+                        <div class="m-mood">
+                            <span class="m-mood-emoji" id="m-mood">🚀</span>
+                            <span>Productivo</span>
+                            <span class="m-update-time" id="m-update">20:14</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-metrics">
+                    <div class="m-bar-row">
+                        <div class="m-bar-head"><span>🧠 Contexto</span><span id="m-ctx-p">37%</span></div>
+                        <div class="m-bar">
+                            <div class="m-bar-fill" id="m-ctx-bar" style="width:37%"></div>
+                        </div>
+                    </div>
+                    <div class="m-tokens" id="m-tokens">🧮 43k tokens</div>
+                </div>
+                <div class="m-comms" id="m-ops">
+                    <!-- Operations populated by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- INSTAGRAM (Span 2 = 33%) -->
+        <div class="card-ig" style="grid-column: span 2;">
+            <div class="ig-inner">
+                <div class="ig-top">
+                    <div class="ig-logo">
+                        <div class="ig-logo-i"></div>
+                    </div>
+                    <div class="ig-handle" id="ig-user">@chatgptricks</div>
+                </div>
+                <div class="ig-main">
+                    <div class="ig-label">Seguidores</div>
+                    <div class="ig-row">
+                        <div class="ig-count" id="ig-foll">2.45M</div>
+                        <div class="ig-grow" id="ig-grow">↑ +1,139</div>
+                    </div>
+                </div>
+                <div class="ig-pills">
+                    <div class="ig-pill">
+                        <div class="ig-pill-v" id="ig-posts">1,234</div>
+                        <div class="ig-pill-l">Posts</div>
+                    </div>
+                    <div class="ig-pill">
+                        <div class="ig-pill-v" id="ig-engage">4.2%</div>
+                        <div class="ig-pill-l">Engagement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWS (Span 4 = 67%) -->
+        <div class="card-news" id="n-card" style="grid-column: span 4;">
+            <div class="n-grad"></div>
+            <div class="n-inner">
+                <!-- FEATURED STORY (Left) -->
+                <div class="n-featured">
+                    <div class="n-tag">
+                        <div class="n-dot"></div>
+                        <span id="n-tag">AI News</span>
+                    </div>
+                    <div>
+                        <div class="n-head" id="n-head">Loading News...</div>
+                        <div class="n-source" id="n-source">System</div>
+                    </div>
+                </div>
+                <!-- SECONDARY COLUMN (Right) -->
+                <div class="n-sec-col" id="n-sec-col">
+                    <!-- Populated by JS: 2 Secondary Cards -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+
+        function pickI(c) {
+            c = c.toLowerCase();
+            if (c.includes('tormenta')) return '⛈️';
+            if (c.includes('lluvia') || c.includes('chubasco')) return '🌧️';
+            if (c.includes('llovizna')) return '🌦️';
+            if (c.includes('nublado') || c.includes('nube')) return '☁️';
+            if (c.includes('parcial')) return '⛅';
+            if (c.includes('niebla')) return '🌫️';
+            var h = new Date().getHours(); return (h >= 6 && h < 18) ? '☀️' : '🌙';
+        }
+        async function go() {
+            try {
+                // Fetch all data sources in parallel
+                const [rData, rWeather, rInsta, rNews, rMoltbot] = await Promise.all([
+                    fetch('data.json?' + Date.now()),
+                    fetch('weather.json?' + Date.now()),
+                    fetch('instagram.json?' + Date.now()),
+                    fetch('news.json?' + Date.now()),
+                    fetch('moltbot.json?' + Date.now())
+                ]);
+
+                if (!rData.ok || !rWeather.ok || !rInsta.ok || !rNews.ok || !rMoltbot.ok) {
+                    console.error("One or more fetches failed", rData, rWeather, rInsta, rNews, rMoltbot);
+                    return;
+                }
+
+                const d = await rData.json();
+                const wData = await rWeather.json();
+                const iData = await rInsta.json();
+                const nData = await rNews.json();
+                const mData = await rMoltbot.json();
+
+                console.log("Moltbot Data:", mData); // DEBUG
+
+                const w = wData.weather;
+                const ig = iData.instagram;
+                const n = nData.news;
+                const mb = mData.moltbot;
+                document.getElementById('w-loc').textContent = w.location;
+                document.getElementById('w-cond').textContent = w.condition;
+                document.getElementById('w-temp').textContent = w.temp_c;
+                document.getElementById('w-feels').textContent = w.feels_like_c || w.temp_c;
+                document.getElementById('w-mm').textContent = '↑ ' + w.max_temp_c + '° ↓ ' + w.min_temp_c + '°';
+                document.getElementById('w-wind').textContent = w.wind_kmh + ' km/h';
+                document.getElementById('w-hum').textContent = w.humidity + '%';
+                document.getElementById('w-uv').textContent = w.uv_index;
+                document.getElementById('w-prob').textContent = w.prob_rain + '%';
+                document.getElementById('w-icon').textContent = w.icon || pickI(w.condition);
+                document.getElementById('w-updated').textContent = w.last_updated || '--:--';
+                document.getElementById('frame-id').textContent = 'FID: ' + (d.maxx_status.frame_id || Date.now().toString().slice(-5));
+                // Background & Theme now come from server (Python)
+                if (w.bg_image) document.getElementById('w-bg').style.backgroundImage = "url('" + w.bg_image + "')";
+                if (w.theme) document.getElementById('card-weather').setAttribute('data-theme', w.theme);
+                if (w.hourly_forecast && w.hourly_forecast.length) {
+                    document.getElementById('w-hourly').innerHTML = w.hourly_forecast.map(function (x) {
+                        return '<div class="w-hr"><div class="w-hr-t">' + x.time + '</div><div class="w-hr-i">' + x.icon + '</div><div class="w-hr-v">' + x.temp + '°</div></div>';
+                    }).join('');
+                }
+                // Instagram
+                // const ig = d.instagram; // Now from iData
+                document.getElementById('ig-user').textContent = ig.username;
+                document.getElementById('ig-foll').textContent = ig.followers;
+                document.getElementById('ig-grow').textContent = ig.growth;
+                if (document.getElementById('ig-posts')) document.getElementById('ig-posts').textContent = ig.posts;
+                if (document.getElementById('ig-rate')) document.getElementById('ig-rate').textContent = ig.engagement_rate;
+                if (document.getElementById('ig-last')) document.getElementById('ig-last').textContent = ig.last_post_placeholder || 'Último Post';
+                var m = d.maxx_status;
+                // System
+                document.getElementById('m-label').textContent = m.label; // Keep name for now
+                document.getElementById('m-sub').textContent = mb.system.current_model + ' · ' + mb.state.logic_mode;
+
+                // Context
+                document.getElementById('m-ctx-p').textContent = mb.system.context_usage;
+                // Parse percent for width
+                document.getElementById('m-ctx-bar').style.width = mb.system.context_usage;
+
+                document.getElementById('m-tokens').textContent = '🧮 ' + mb.system.token_usage_daily + ' tokens';
+
+                // State
+                document.getElementById('m-date').textContent = m.date; // Keep date from python main
+                document.getElementById('m-mood').textContent = mb.state.system_mood;
+                document.getElementById('m-update').textContent = mb.operations.last_post_timestamp;
+
+                // Operations (New Fields) - reusing existing pills or adding text
+                // Let's repurpose the "Comms" section for Operations
+                const opsDiv = document.getElementById('m-ops');
+                if (opsDiv) {
+                    opsDiv.innerHTML = `
+                        <div class="m-pill"><div class="m-dot"></div>Goal: ${mb.operations.daily_goal_progress}</div>
+                        <div class="m-pill"><div class="m-dot"></div>ETA: ${mb.operations.next_post_eta}</div>
+                        <div class="m-pill" style="border-color:rgba(139, 92, 246, 0.3); color:rgba(139, 92, 246, 0.8)">${mb.state.last_action}</div>
+                    `;
+                }
+                // News
+                // var n = d.news; // Now from nData
+                // News
+                const nm = n.featured || {};
+                const s1 = n.secondary_1;
+                const s2 = n.secondary_2;
+
+                // Featured Story
+                document.getElementById('n-tag').textContent = nm.tag || 'AI News';
+                document.getElementById('n-head').textContent = nm.headline || 'No headlines available';
+                document.getElementById('n-source').textContent = nm.source || 'Unknown';
+                const nCard = document.getElementById('n-card');
+                if (nm.image_url) {
+                    nCard.style.backgroundImage = "url('" + nm.image_url + "')";
+                }
+
+                // Render Secondary Column
+                const secCol = document.getElementById('n-sec-col');
+                let secHtml = '';
+
+                if (s1) {
+                    secHtml += `
+                        <div class="n-sec-card">
+                            <div class="n-sec-head">${s1.headline}</div>
+                            <div class="n-sec-meta">${s1.source}</div>
+                        </div>
+                    `;
+                }
+                if (s2) {
+                    secHtml += `
+                        <div class="n-sec-card">
+                            <div class="n-sec-head">${s2.headline}</div>
+                            <div class="n-sec-meta">${s2.source}</div>
+                        </div>
+                    `;
+                }
+                if (secCol) secCol.innerHTML = secHtml;
+            } catch (e) { console.warn(e); }
+        }
+        go();
+    </script>
+</body>
+
+</html>

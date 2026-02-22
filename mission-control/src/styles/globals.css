@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-primary antialiased overflow-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: radial-gradient(circle at 50% 0%, #082f49 0%, #020617 80%);
+  }
+}
+
+@layer components {
+  .abyss-card {
+    @apply bg-surface/40 backdrop-blur-md border border-white/5 relative;
+    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-lg border border-white/[0.08];
+  }
+
+  .biolume-glow {
+    text-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+  }
+
+  .chitin-glow {
+    text-shadow: 0 0 15px rgba(251, 113, 133, 0.4);
+  }
+}
+
+/* --- ABYSS V3.5: CRUSTACEAN_PROTOCOL --- */
+
+.abyss-grain {
+  position: relative;
+}
+
+.abyss-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.notch-clip {
+  clip-path: polygon(0 8px, 8px 0,
+      calc(100% - 8px) 0, 100% 8px,
+      100% calc(100% - 8px), calc(100% - 8px) 100%,
+      8px 100%, 0 calc(100% - 8px));
+}
+
+.pincer-clip {
+  /* Retaining for backwards compat but softening significantly */
+  clip-path: polygon(0% 4px, 4px 0%,
+      96% 0%, 100% 4px,
+      100% 96%, 96% 100%,
+      4px 100%, 0% 96%);
+}
+
+.caustics-dynamic {
+  animation: caustic-pulse 12s ease-in-out infinite;
+  background-image: radial-gradient(circle at 50% 50%, rgba(34, 211, 238, 0.05) 0%, transparent 70%);
+  background-size: 200% 200%;
+}
+
+@keyframes caustic-pulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1) translate(0, 0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1) translate(2% 2%);
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-accent/20 rounded-full hover:bg-accent/40 transition-colors;
+}
+
+.claw-accent {
+  position: relative;
+}
+
+.claw-accent::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fb7185;
+  border-right: 2px solid #fb7185;
+  filter: drop-shadow(0 0 5px rgba(251, 113, 133, 0.3));
+  opacity: 0.6;
+}

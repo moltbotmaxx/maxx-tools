@@ -1,0 +1,23 @@
+{
+  "news": {
+    "featured": {
+      "tag": "Latest",
+      "headline": "Sam Altman would like remind you that humans use a lot of energy, too",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
+      "source": "TechCrunch",
+      "summary": "\"It also takes a lot of energy to train a human.\"..."
+    },
+    "secondary_1": {
+      "headline": "Microsoft\u2019s new gaming CEO vows not to flood the ecosystem with \u2018endless AI slop\u2019",
+      "source": "TechCrunch",
+      "time": "New",
+      "image_url": null
+    },
+    "secondary_2": {
+      "headline": "Google VP warns that two types of AI startups may not survive",
+      "source": "TechCrunch",
+      "time": "New",
+      "image_url": null
+    }
+  }
+}

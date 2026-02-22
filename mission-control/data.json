@@ -1,0 +1,179 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Architect Agentic Swarm (Sub-agent Orchestration)",
+      "status": "wait",
+      "owner": "Maxx",
+      "priority": "high",
+      "approved": true,
+      "category": "SWARM"
+    },
+    {
+      "id": "2",
+      "title": "Define high-level Mission Control upgrade specs",
+      "status": "prio",
+      "owner": "Esteban",
+      "priority": "high",
+      "approved": true,
+      "category": "META"
+    },
+    {
+      "id": "3",
+      "title": "Implement persistent storage for Mission Control",
+      "status": "done",
+      "owner": "Maxx",
+      "priority": "medium",
+      "approved": true,
+      "category": "INFRA"
+    },
+    {
+      "id": "4",
+      "title": "Audit current Instagram automation failures",
+      "status": "not_now",
+      "owner": "Maxx",
+      "priority": "low",
+      "approved": true,
+      "category": "LEGACY"
+    },
+    {
+      "id": "t-1771549485728",
+      "title": "Fix smart-frame so it need no more maintenance",
+      "status": "done",
+      "owner": "Maxx",
+      "priority": "high",
+      "approved": true,
+      "category": "INFRA"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "o1",
+      "title": "AGENCY_SWARM_SUPREMACY",
+      "description": "Build an advanced 24/7 agentic system to execute goals across all domains autonomously.",
+      "progress": 20,
+      "kind": "primary"
+    },
+    {
+      "id": "o2",
+      "title": "INSTACLAWS_MAINTENANCE",
+      "description": "Keep the @open.claws account running with minimal friction.",
+      "progress": 60,
+      "kind": "secondary"
+    }
+  ],
+  "logs": [
+    {
+      "id": "l-501",
+      "timestamp": "2026-02-19T17:25:00Z",
+      "message": "Swarm OS V5.0 Boot Sequence Initiated",
+      "level": "crit",
+      "origin": "SYSTEM"
+    },
+    {
+      "id": "l-502",
+      "timestamp": "2026-02-19T17:26:40Z",
+      "message": "Neural Link re-established via persistent JSON bridge",
+      "level": "info",
+      "origin": "INFRA"
+    },
+    {
+      "id": "l-503",
+      "timestamp": "2026-02-19T17:30:12Z",
+      "message": "Agent Orchestrator: Maxx (Core) assigned to UI Refactoring",
+      "level": "info",
+      "origin": "CORE"
+    },
+    {
+      "id": "l-504",
+      "timestamp": "2026-02-19T19:10:00Z",
+      "message": "Protocol Initiated: Smart-Frame zero-maintenance overhaul",
+      "level": "info",
+      "origin": "INFRA"
+    },
+    {
+      "id": "l-505",
+      "timestamp": "2026-02-19T19:15:00Z",
+      "message": "Swarm Success: Smart-Frame V2 (Sync Strict) deployed. Cron re-mapped.",
+      "level": "info",
+      "origin": "CORE"
+    }
+  ],
+  "stats": {
+    "krillEaten": 334924
+  },
+  "agents": [
+    {
+      "id": "8031d411-4f25-4674-8f58-d27705acd053",
+      "name": "main",
+      "type": "CORE-LINK",
+      "status": "working",
+      "load": 55,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "25b2e918-a9bf-4d38-9a24-37557750ab9c",
+      "name": "48110f19-8d51-4a43-9579-b6dc016de0dd",
+      "type": "CRON-SHELL",
+      "status": "idle",
+      "load": 5,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "25b2e918-a9bf-4d38-9a24-37557750ab9c",
+      "name": "25b2e918-a9bf-4d38-9a24-37557750ab9c",
+      "type": "CRON-SHELL",
+      "status": "idle",
+      "load": 5,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "7c084acc-a627-4fd3-b222-034fb74c507c",
+      "name": "5a146238-8065-4590-b10a-f6756ed382c4",
+      "type": "CRON-SHELL",
+      "status": "idle",
+      "load": 0,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "7c084acc-a627-4fd3-b222-034fb74c507c",
+      "name": "7c084acc-a627-4fd3-b222-034fb74c507c",
+      "type": "CRON-SHELL",
+      "status": "idle",
+      "load": 0,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "8e078e14-6647-4782-ba13-70fdd9e98de6",
+      "name": "8e078e14-6647-4782-ba13-70fdd9e98de6",
+      "type": "CRON-SHELL",
+      "status": "idle",
+      "load": 12,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "3aa8f6ba-747f-4051-8a80-4762f515bd5e",
+      "name": "main",
+      "type": "CORE-LINK",
+      "status": "idle",
+      "load": 3,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "50e6d647-7f08-4c23-a283-982b4f94e761",
+      "name": "07b69a5e-5346-427d-8bda-a5c52ff5461a",
+      "type": "SUB-AGENT",
+      "status": "idle",
+      "load": 38,
+      "task": "gpt-5.3-codex"
+    },
+    {
+      "id": "abyss-overseer-01",
+      "name": "Abyss Overseer",
+      "type": "MISSION-CONTROL",
+      "status": "monitoring",
+      "load": 5,
+      "task": "System Maintenance"
+    }
+  ]
+}

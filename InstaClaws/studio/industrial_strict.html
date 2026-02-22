@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>M_ENGINE_v11</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #fff;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        aside {
+            width: 300px;
+            background: #050505;
+            border-right: 1px solid #111;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .label {
+            font-size: 10px;
+            color: red;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        input,
+        textarea {
+            background: #000;
+            border: 1px solid #111;
+            color: #888;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 11px;
+            outline: none;
+        }
+
+        button {
+            background: red;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-weight: 800;
+            cursor: pointer;
+            margin-top: auto;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #020202;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div class="label">M_ENGINE // INDUSTRIAL</div>
+        <input type="text" id="logId" value="LOG // 104" oninput="redraw()">
+        <input type="text" id="titleText" value="BLUE BLOOD" oninput="redraw()">
+        <textarea id="subText" rows="5" oninput="redraw()">Hemocyanin transport efficiency: 90%. 
+Copper-based respiratory system detected. 
+Environment: Benthic Zone. 
+Status: OPTIMAL.</textarea>
+        <!-- Removed Source Field -->
+        <button onclick="saveImage()">Commit</button>
+    </aside>
+    <main>
+        <div id="canvas-container"></div>
+    </main>
+    <script>
+        let W = 1080; let H = 1440;
+        function setup() { createCanvas(W, H).parent('canvas-container'); pixelDensity(1); noLoop(); handleResize(); window.addEventListener('resize', handleResize); }
+        function handleResize() {
+            let scale = Math.min((document.querySelector('main').clientWidth - 40) / W, (document.querySelector('main').clientHeight - 40) / H);
+            let c = document.querySelector('canvas');
+            c.style.width = (W * scale) + 'px'; c.style.height = (H * scale) + 'px';
+        }
+        function draw() {
+            background(5); // Almost Black
+
+            // GRID SYSTEM
+            stroke(30); strokeWeight(1);
+            for (let i = 0; i <= W; i += 108) line(i, 0, i, H);
+            for (let i = 0; i <= H; i += 144) line(0, i, W, i);
+
+            // CROSSHAIRS
+            stroke(255, 0, 0); strokeWeight(2);
+            let m = 40; // Margin
+            line(m, m, m + 20, m); line(m, m, m, m + 20); // TL
+            line(W - m, m, W - m - 20, m); line(W - m, m, W - m, m + 20); // TR
+            line(m, H - m, m + 20, H - m); line(m, H - m, m, H - m - 20); // BL
+            line(W - m, H - m, W - m - 20, H - m); line(W - m, H - m, W - m, H - m - 20); // BR
+
+            // DYNAMIC TITLE
+            let title = document.getElementById('titleText').value.toUpperCase();
+            noStroke(); fill(240); textStyle(BOLD); textAlign(LEFT, TOP);
+
+            // Calculate best fit for Title (Width: W-160, MaxSize: 250, MinSize: 60)
+            let titleSize = calculateFontSize(title, 'sans-serif', BOLD, W - 160, 250, 60);
+            textSize(titleSize); textLeading(titleSize * 0.85);
+            text(title, 80, 180, W - 160);
+
+            // ACCENT BAR (Relative to Title height)
+            // Estimate height based on new size (approx)
+            let titleHeightEstimate = (title.length * titleSize * 0.5) / (W - 160) * titleSize;
+            // Better approximation: lines * lineHeight
+            // For now, simpler fixed position relative to a "zone" or just keep it fixed if user creates overlapping text?
+            // Let's keep accent bar fixed for now at 140, assuming title starts at 180.
+            fill(255, 0, 0); rect(80, 140, 100, 10);
+
+            // DYNAMIC BODY
+            let body = document.getElementById('subText').value;
+            textFont('monospace'); textStyle(NORMAL); fill(180);
+
+            // Calculate best fit for Body (Width: W-240, MaxSize: 60, MinSize: 20)
+            let bodySize = calculateFontSize(body, 'monospace', NORMAL, W - 240, 60, 24);
+            textSize(bodySize); textLeading(bodySize * 1.5);
+            text(body, 80, 800, W - 240); // Fixed Y position for body
+
+            // FOOTER / DATA BAR
+            fill(20); rect(0, H - 120, W, 120); // Footer BG
+            stroke(40); line(0, H - 120, W, H - 120); // Top Border
+
+            noStroke(); fill(80); textSize(16);
+            textAlign(LEFT, CENTER);
+            text(">> M_ENGINE // SYSTEM_ANALYSIS // v2.4", 40, H - 60);
+
+            textAlign(RIGHT, CENTER);
+            fill(255, 0, 0);
+            text("ID: " + document.getElementById('logId').value.toUpperCase(), W - 40, H - 60);
+        }
+
+        // Helper to find optimal font size to fit width
+        // Note: p5.js textWidth requires setting textSize first.
+        function calculateFontSize(str, font, style, maxWidth, startSize, minSize) {
+            textFont(font); textStyle(style);
+            let size = startSize;
+            while (size > minSize) {
+                textSize(size);
+                // Check if single word is too wide (basic check)
+                let words = str.split(' ');
+                let maxWordWidth = 0;
+                for (let w of words) {
+                    let ww = textWidth(w);
+                    if (ww > maxWidth) maxWordWidth = ww;
+                }
+
+                if (maxWordWidth < maxWidth) {
+                    // Also check total wrapping height if we wanted to constrain height
+                    // For now, just ensuring words fit within width is a good "adaptive" start for titles
+                    // For body, we might want to check total height vs available space (H-800-120)
+
+                    // Optimization: If it's a long multiline text, we reduce size based on length
+                    if (str.length * size > 3000) { // arbitrary heuristic for body text density
+                        size -= 2;
+                        continue;
+                    }
+                    return size;
+                }
+                size -= 5;
+            }
+            return minSize;
+        }
+        function saveImage() {
+            let out = get(0, 0, W, H);
+            out.save('POST_v11', 'png');
+        }
+    </script>
+</body>
+
+</html>

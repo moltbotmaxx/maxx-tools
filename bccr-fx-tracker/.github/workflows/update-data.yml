@@ -1,0 +1,33 @@
+name: Update BCCR data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm run update-data
+        working-directory: FXTracker
+        env:
+          BCCR_EMAIL: ${{ secrets.BCCR_EMAIL }}
+          BCCR_TOKEN: ${{ secrets.BCCR_TOKEN }}
+          BCCR_ID_USD_BUY: ${{ secrets.BCCR_ID_USD_BUY }}
+          BCCR_ID_USD_SELL: ${{ secrets.BCCR_ID_USD_SELL }}
+          BCCR_ID_EUR_BUY: ${{ secrets.BCCR_ID_EUR_BUY }}
+          BCCR_ID_EUR_SELL: ${{ secrets.BCCR_ID_EUR_SELL }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add FXTracker/data/latest.json
+          git diff --staged --quiet || git commit -m "chore: update BCCR FX data"
+          git push
