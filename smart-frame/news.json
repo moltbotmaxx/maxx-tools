@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports",
+      "headline": "With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic\u00a0",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "Anthropic accuses DeepSeek, Moonshot, and MiniMax of using 24,000 fake accounts to distill Claude\u2019s AI capabilities, as U.S. officials debate export controls aimed at slowing China\u2019s AI progress...."
+      "summary": "While some dual investors are understandable, others were more shocking, and signal the disregard of a longstanding ethical conflict-of-interest rule...."
     },
     "secondary_1": {
-      "headline": "Google\u2019s Cloud AI leads on the three frontiers of model capability",
+      "headline": "Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "OpenAI calls in the consultants for its enterprise push",
+      "headline": "Google\u2019s Cloud AI leads on the three frontiers of model capability",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
