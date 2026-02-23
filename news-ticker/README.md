@@ -29,16 +29,22 @@ Expected minimum output:
 - `reddit >= 10`
 
 ## X scraping policy
-- Use x.com search queries for AI/robotics relevance and minimum engagement.
+- **Do not use Nitter**.
+- Use **x.com via browser automation** with `profile="openclaw"` only.
+- Pull AI/robotics posts with strong engagement (likes/views/reposts), then rank by weighted engagement score.
 - Exclude weak/noisy posts when possible.
-- Rank by weighted engagement score.
 - Do not fallback to "big players only" lists.
 
-## Git flow after run
+## Git flow after run (refresh command behavior)
 From monorepo root:
 ```bash
-git add news-ticker/public/data.json news-ticker/scripts_generate_data.py news-ticker/README.md
-git commit -m "chore(news-ticker): refresh ranked data pipeline docs/data"
+# commit/push ONLY data.json
+git add news-ticker/public/data.json
+git commit -m "chore(news-ticker): refresh live data snapshot"
 git pull --rebase
 git push
+
+# then publish live
+git -C news-ticker pull --rebase || true
+npm --prefix news-ticker run deploy
 ```

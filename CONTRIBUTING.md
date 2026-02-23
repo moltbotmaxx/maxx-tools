@@ -48,14 +48,14 @@ Before pushing:
 
 ## 8) NewsTicker runbook (mandatory)
 For `news-ticker`, always enforce this pipeline:
-1. Run `python3 news-ticker/scripts_generate_data.py`
-2. Validate output in `news-ticker/public/data.json`:
-   - `articles` = 50
-   - top 10 articles with non-empty `image_url`
-   - `x_viral.items` populated with AI/robotics + engagement-ranked posts
-   - `reddit_viral.items` populated and ranked
-3. Browser automation must use `profile="openclaw"`.
-4. Commit data/script/docs together when behavior changes.
+1. Refresh data into `news-ticker/public/data.json` (current target: 40 articles, 10 X, 10 Reddit).
+2. For X posts: **never use Nitter**. Use browser automation on x.com with `profile="openclaw"` and rank by engagement.
+3. Validate output:
+   - all articles have non-empty `image_url`
+   - news window respects 48h maximum age
+   - `x_viral.items` and `reddit_viral.items` populated and ranked
+4. For routine refreshes, commit/push **ONLY** `news-ticker/public/data.json`.
+5. After push, run `npm --prefix news-ticker run deploy` so data is live on `maxxbot.cloud/news-ticker`.
 
 ---
 If in doubt: prefer consistency over cleverness.

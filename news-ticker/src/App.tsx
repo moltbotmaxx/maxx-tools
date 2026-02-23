@@ -266,7 +266,8 @@ export default function App() {
       }
     }
 
-    fetch(`${import.meta.env.BASE_URL}data.json`)
+    const dataUrl = `${import.meta.env.BASE_URL}data.json?t=${Date.now()}`;
+    fetch(dataUrl, { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
         // Assuming data.json now returns an object with an 'articles' array
