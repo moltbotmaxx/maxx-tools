@@ -46,5 +46,16 @@ Before pushing:
 3. run app build/deploy command (if applicable)
 4. commit + push to `main`
 
+## 8) NewsTicker runbook (mandatory)
+For `news-ticker`, always enforce this pipeline:
+1. Run `python3 news-ticker/scripts_generate_data.py`
+2. Validate output in `news-ticker/public/data.json`:
+   - `articles` = 50
+   - top 10 articles with non-empty `image_url`
+   - `x_viral.items` populated with AI/robotics + engagement-ranked posts
+   - `reddit_viral.items` populated and ranked
+3. Browser automation must use `profile="openclaw"`.
+4. Commit data/script/docs together when behavior changes.
+
 ---
 If in doubt: prefer consistency over cleverness.
