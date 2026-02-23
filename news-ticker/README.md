@@ -5,10 +5,10 @@ AI/robotics news dashboard data pipeline.
 ## Canonical behavior (must follow)
 
 This project must always generate `public/data.json` using:
-1. **News (50 items)** with ranking (`ranking`, `virality`, `fit`)
-2. **X posts** filtered to AI/robotics and ranked by real engagement (likes/reposts/replies/views)
-3. **Reddit posts** from target subreddits ranked by engagement
-4. **Top 10 news items** must include working `image_url` (feed image or fetched `og:image`)
+1. **News (>=40 items, last 48h)** with ranking (`ranking`, `virality`, `fit`)
+2. **10 X posts** filtered to AI/robotics and ranked by real engagement (likes/reposts/replies/views)
+3. **10 Reddit posts** from target subreddits ranked by engagement
+4. **All news items** must include a non-empty `image_url`
 
 ## Source of truth
 - Script: `scripts_generate_data.py`
@@ -45,6 +45,5 @@ git pull --rebase
 git push
 
 # then publish live
-git -C news-ticker pull --rebase || true
 npm --prefix news-ticker run deploy
 ```

@@ -4,6 +4,7 @@ node_modules/
 /.openclaw/
 /*.md
 !/README.md
+!/OPERATIONS.md
 
 # Testing images
 /*.png

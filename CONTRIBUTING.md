@@ -48,7 +48,7 @@ Before pushing:
 
 ## 8) NewsTicker runbook (mandatory)
 For `news-ticker`, always enforce this pipeline:
-1. Refresh data into `news-ticker/public/data.json` (current target: 40 articles, 10 X, 10 Reddit).
+1. Refresh data into `news-ticker/public/data.json` (target: >=40 articles in last 48h, 10 X, 10 Reddit).
 2. For X posts: **never use Nitter**. Use browser automation on x.com with `profile="openclaw"` and rank by engagement.
 3. Validate output:
    - all articles have non-empty `image_url`
@@ -56,6 +56,7 @@ For `news-ticker`, always enforce this pipeline:
    - `x_viral.items` and `reddit_viral.items` populated and ranked
 4. For routine refreshes, commit/push **ONLY** `news-ticker/public/data.json`.
 5. After push, run `npm --prefix news-ticker run deploy` so data is live on `maxxbot.cloud/news-ticker`.
+6. Daily automation target: 06:00 AM (America/Costa_Rica) + WhatsApp confirmation via Aster.
 
 ---
 If in doubt: prefer consistency over cleverness.
