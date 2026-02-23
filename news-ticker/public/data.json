@@ -5,7 +5,7 @@
       "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/asia_tech_news_roundup/",
       "source": "The Register",
       "date": "2026-02-23",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://regmedia.co.uk/2026/02/23/screenshot_china_swordbot.jpg",
       "ranking": 74,
       "virality": 99,
       "fit": 54,
@@ -16,7 +16,7 @@
       "link": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
       "source": "TechCrunch",
       "date": "2026-02-21",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
       "ranking": 74,
       "virality": 70,
       "fit": 63,
@@ -38,7 +38,7 @@
       "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
       "source": "Hugging Face",
       "date": "2026-02-23",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63b738acbd2d1535227daa4c/7B01Lxy_IS-2FaPGUKJiA.png",
       "ranking": 70,
       "virality": 61,
       "fit": 63,
@@ -49,7 +49,7 @@
       "link": "https://techcrunch.com/2026/02/20/openai-says-18-to-24-year-olds-account-for-nearly-50-of-chatgpt-usage-in-india/",
       "source": "TechCrunch",
       "date": "2026-02-20",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/10/india-chatgpt.jpg?resize=1200,800",
       "ranking": 70,
       "virality": 49,
       "fit": 72,
@@ -60,7 +60,7 @@
       "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/",
       "source": "The Register",
       "date": "2026-02-20",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://regmedia.co.uk/2025/05/22/shutterstock_anthropic_claude.jpg",
       "ranking": 68,
       "virality": 56,
       "fit": 63,
@@ -71,7 +71,7 @@
       "link": "https://techcrunch.com/2026/02/20/anthropic-funded-group-backs-candidate-attacked-by-rival-ai-super-pac/",
       "source": "TechCrunch",
       "date": "2026-02-20",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2259873774.jpg?w=1024",
       "ranking": 67,
       "virality": 55,
       "fit": 63,
@@ -82,7 +82,7 @@
       "link": "https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/",
       "source": "TechCrunch",
       "date": "2026-02-20",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/google-gemini-jagmeet-singh-techcrunch.jpg?resize=1200,800",
       "ranking": 66,
       "virality": 42,
       "fit": 72,
@@ -138,8 +138,8 @@
       "source": "TechCrunch",
       "date": "2026-02-22",
       "image_url": "",
-      "ranking": 65,
-      "virality": 89,
+      "ranking": 64,
+      "virality": 88,
       "fit": 45,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -150,7 +150,7 @@
       "date": "2026-02-21",
       "image_url": "",
       "ranking": 62,
-      "virality": 72,
+      "virality": 71,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -513,7 +513,7 @@
       "date": "2026-02-20",
       "image_url": "",
       "ranking": 55,
-      "virality": 57,
+      "virality": 56,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -552,103 +552,97 @@
     }
   ],
   "x_viral": {
-    "generated_at": "2026-02-23T04:33:48.251302+00:00",
-    "note": "Top AI-related posts from selected X accounts (RSS mirror).",
+    "generated_at": "2026-02-23T05:14:09.294862Z",
+    "note": "Scraped from x.com search (openclaw browser profile), ranked by engagement (likes,reposts,replies,views) and AI/robotics relevance.",
+    "query": [
+      "(AI OR robotics OR LLM OR OpenAI OR Anthropic OR DeepMind) min_faves:200 -filter:replies lang:en",
+      "(robotics OR humanoid OR autonomous robot) min_faves:200 -filter:replies lang:en"
+    ],
     "items": [
       {
-        "headline": "RT by @OpenAI: Very excited about the \"First Proof\" challenge. I believe novel frontier research is perhaps the most important way to evaluate capabilities of the next generation of AI models. We have run our internal mo",
-        "link": "https://nitter.net/merettm/status/2022517085193277874#m",
-        "author": "OpenAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 83
+        "author": "steipete",
+        "headline": "Pretty draconian from Google. Be careful out there if you use Antigravity. I guess I'll remove support. Even Anthropic pings me and is nice about issues. Google just... bans?",
+        "link": "https://x.com/steipete/status/2025743825126273066",
+        "likes": 2500,
+        "reposts": 227,
+        "replies": 302,
+        "views": 381289,
+        "score": 10942
       },
       {
-        "headline": "R to @AnthropicAI: A central lesson of this work is that autonomy is co-constructed by the model, user, and product. It can't be fully characterized by pre-deployment evaluations alone. For full details, and our recommen",
-        "link": "https://nitter.net/AnthropicAI/status/2024210056871629072#m",
-        "author": "AnthropicAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 83
+        "author": "unusual_whales",
+        "headline": "BREAKING: The Stargate joint venture between OpenAI, Oracle and SoftBank hasn’t staffed up and isn’t building OpenAI’s data centers, per the Information",
+        "link": "https://x.com/unusual_whales/status/2025722523342852340",
+        "likes": 2460,
+        "reposts": 302,
+        "replies": 198,
+        "views": 280181,
+        "score": 8905
       },
       {
-        "headline": "R to @AnthropicAI: Software engineering makes up ~50% of agentic tool calls on our API, but we see emerging use in other industries. As the frontier of risk and autonomy expands, post-deployment monitoring becomes essent",
-        "link": "https://nitter.net/AnthropicAI/status/2024210053369385192#m",
-        "author": "AnthropicAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 83
+        "author": "NigeriaStories",
+        "headline": "This Nigerian robotics genius, Silas Adekunle, built a gaming robot that became a worldwide sensation and made $7.5 million.",
+        "link": "https://x.com/NigeriaStories/status/2025657845476106684",
+        "likes": 4935,
+        "reposts": 659,
+        "replies": 106,
+        "views": 99459,
+        "score": 8369
       },
       {
-        "headline": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://openai.com/index/introducing-evmbench/",
-        "link": "https://nitter.net/OpenAI/status/2024193883748651102#m",
-        "author": "OpenAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
+        "author": "Pirat_Nation",
+        "headline": "Retail DDR5 prices in Europe are edging down slightly despite persistent global shortages driven by AI demand.",
+        "link": "https://x.com/Pirat_Nation/status/2025723278443053080",
+        "likes": 1739,
+        "reposts": 93,
+        "replies": 35,
+        "views": 156001,
+        "score": 5087
       },
       {
-        "headline": "RT by @OpenAI: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas about the future of very smart agents interacting with each other to do very ",
-        "link": "https://nitter.net/sama/status/2023150230905159801#m",
-        "author": "OpenAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
+        "author": "om_patel5",
+        "headline": "HOW TO VIBE CODE BEAUTIFUL UI...",
+        "link": "https://x.com/om_patel5/status/2025705776434520284",
+        "likes": 2302,
+        "reposts": 171,
+        "replies": 34,
+        "views": 76810,
+        "score": 4221
       },
       {
-        "headline": "RT by @AnthropicAI: Introducing Claude Code Security, now in limited research preview. It scans codebases for vulnerabilities and suggests targeted software patches for human review, allowing teams to find and fix issues",
-        "link": "https://nitter.net/claudeai/status/2024907535145468326#m",
-        "author": "AnthropicAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
+        "author": "WClemente",
+        "headline": "Asked Claude to rank top states if white-collar jobs get displaced by AI.",
+        "link": "https://x.com/WClemente/status/2025706729611088283",
+        "likes": 832,
+        "reposts": 30,
+        "replies": 68,
+        "views": 129694,
+        "score": 3567
       },
       {
-        "headline": "R to @AnthropicAI: Most agent actions on our API are low risk. 73% of tool calls appear to have a human in the loop, and only 0.8% are irreversible. But at the frontier, we see agents acting on security systems, financia",
-        "link": "https://nitter.net/AnthropicAI/status/2024210050718585017#m",
-        "author": "AnthropicAI",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
+        "author": "AfricaFirsts",
+        "headline": "At 26, Silas Adekunle became one of the highest paid robotics engineers.",
+        "link": "https://x.com/AfricaFirsts/status/2025604219760242926",
+        "likes": 1048,
+        "reposts": 110,
+        "replies": 21,
+        "views": 13683,
+        "score": 1567
       },
       {
-        "headline": "R to @GoogleDeepMind: Gemini 3.1 Pro is rolling out now in the @GeminiApp and in @GoogleAIStudio for developers. Find out more ⬇️ http://goo.gle/4s5yXE5",
-        "link": "https://nitter.net/GoogleDeepMind/status/2024570293520396796#m",
-        "author": "GoogleDeepMind",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
-      },
-      {
-        "headline": "We used Gemini 3.1 Pro to build a realistic city planner app. 🏙️ Watch how the model tackles complex terrain, maps out infrastructure, and simulates traffic to generate a high-quality visualization.",
-        "link": "https://nitter.net/GoogleDeepMind/status/2024570291767181557#m",
-        "author": "GoogleDeepMind",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
-      },
-      {
-        "headline": "R to @GoogleDeepMind: Gemini 3.1 Pro is rolling out now in the @GeminiApp, and exclusively to Google AI Pro and Ultra users in @NotebookLM. Developers can access it in preview via the API in @GoogleAIStudio. Find out mor",
-        "link": "https://nitter.net/GoogleDeepMind/status/2024516471720743295#m",
-        "author": "GoogleDeepMind",
-        "likes": 0,
-        "views": 0,
-        "reposts": 0,
-        "score": 76
+        "author": "VittoStack",
+        "headline": "NVIDIA dropped a full hands-on robotics course, free.",
+        "link": "https://x.com/VittoStack/status/2025576008703774983",
+        "likes": 632,
+        "reposts": 92,
+        "replies": 11,
+        "views": 19923,
+        "score": 1228
       }
     ]
   },
   "reddit_viral": {
-    "generated_at": "2026-02-23T04:33:52.116786+00:00",
+    "generated_at": "2026-02-23T04:52:24.464211+00:00",
     "subreddits": [
       "artificial",
       "MachineLearning",
@@ -662,39 +656,39 @@
         "headline": "The perfect disguise",
         "link": "https://reddit.com/r/ChatGPT/comments/1rbpuq9/the_perfect_disguise/",
         "subreddit": "ChatGPT",
-        "score": 2754,
-        "comments": 88,
+        "score": 2808,
+        "comments": 90,
         "viral_score": 100
       },
       {
         "headline": "Just with a single prompt and this result is insane for first attempt in Seedance 2.0",
         "link": "https://reddit.com/r/singularity/comments/1rblgp0/just_with_a_single_prompt_and_this_result_is/",
         "subreddit": "singularity",
-        "score": 2165,
-        "comments": 285,
+        "score": 2186,
+        "comments": 286,
         "viral_score": 100
       },
       {
         "headline": "I created this time travel short scene using Seedance 2.0 in just one day for under $200.",
         "link": "https://reddit.com/r/ChatGPT/comments/1rbsb9b/i_created_this_time_travel_short_scene_using/",
         "subreddit": "ChatGPT",
-        "score": 1267,
-        "comments": 270,
+        "score": 1297,
+        "comments": 274,
         "viral_score": 100
       },
       {
         "headline": "Which one are you waiting for more: 9B or 35B?",
         "link": "https://reddit.com/r/LocalLLaMA/comments/1rbkeea/which_one_are_you_waiting_for_more_9b_or_35b/",
         "subreddit": "LocalLLaMA",
-        "score": 744,
-        "comments": 181,
+        "score": 757,
+        "comments": 182,
         "viral_score": 100
       },
       {
         "headline": "Just requested GPT 5.2 for a single prompt and got this result with Seedance 2.0 in first attempt which is insane",
         "link": "https://reddit.com/r/ChatGPT/comments/1rblipm/just_requested_gpt_52_for_a_single_prompt_and_got/",
         "subreddit": "ChatGPT",
-        "score": 606,
+        "score": 615,
         "comments": 194,
         "viral_score": 100
       },
@@ -702,57 +696,57 @@
         "headline": "Seedance 2.0 makes extremely good anime fight scenes",
         "link": "https://reddit.com/r/ChatGPT/comments/1rbf4rl/seedance_20_makes_extremely_good_anime_fight/",
         "subreddit": "ChatGPT",
-        "score": 582,
+        "score": 587,
         "comments": 199,
-        "viral_score": 100
-      },
-      {
-        "headline": "‘Humans use lot of energy too’: Sam Altman on resources consumed by AI, data centres",
-        "link": "https://reddit.com/r/OpenAI/comments/1rbmf0g/humans_use_lot_of_energy_too_sam_altman_on/",
-        "subreddit": "OpenAI",
-        "score": 371,
-        "comments": 182,
         "viral_score": 100
       },
       {
         "headline": "Anyone Else about done with Chat Gpt?",
         "link": "https://reddit.com/r/ChatGPT/comments/1rbsa8m/anyone_else_about_done_with_chat_gpt/",
         "subreddit": "ChatGPT",
-        "score": 370,
-        "comments": 260,
+        "score": 384,
+        "comments": 266,
         "viral_score": 100
       },
       {
-        "headline": "Post-scarcity will be virtual, not physical",
-        "link": "https://reddit.com/r/singularity/comments/1rbroj8/postscarcity_will_be_virtual_not_physical/",
-        "subreddit": "singularity",
-        "score": 61,
-        "comments": 194,
+        "headline": "‘Humans use lot of energy too’: Sam Altman on resources consumed by AI, data centres",
+        "link": "https://reddit.com/r/OpenAI/comments/1rbmf0g/humans_use_lot_of_energy_too_sam_altman_on/",
+        "subreddit": "OpenAI",
+        "score": 368,
+        "comments": 183,
         "viral_score": 100
       },
       {
         "headline": "JUNE 2028. \n\nThe S&amp;P is down 38% from its highs. Unemployment just printed 10.2%. Private credit is unraveling. Prime mortgages are cracking. AI didn’t disappoint. It exceeded every expectation.\n\nWhat happened?​​​​​​​​​​​​​​​​",
         "link": "https://reddit.com/r/singularity/comments/1rbywwq/june_2028_the_sp_is_down_38_from_its_highs/",
         "subreddit": "singularity",
-        "score": 227,
-        "comments": 149,
-        "viral_score": 98
+        "score": 253,
+        "comments": 152,
+        "viral_score": 100
+      },
+      {
+        "headline": "Post-scarcity will be virtual, not physical",
+        "link": "https://reddit.com/r/singularity/comments/1rbroj8/postscarcity_will_be_virtual_not_physical/",
+        "subreddit": "singularity",
+        "score": 66,
+        "comments": 195,
+        "viral_score": 100
       },
       {
         "headline": "The cost of sequencing human genome has fallen from $100M to under $100 in approximately 25 years",
         "link": "https://reddit.com/r/singularity/comments/1rbhtzc/the_cost_of_sequencing_human_genome_has_fallen/",
         "subreddit": "singularity",
-        "score": 1060,
+        "score": 1069,
         "comments": 74,
-        "viral_score": 86
+        "viral_score": 87
       },
       {
         "headline": "Grok 4.2 would allow World War III to avoid misgendering Elon Musk",
         "link": "https://reddit.com/r/singularity/comments/1rbi9hm/grok_42_would_allow_world_war_iii_to_avoid/",
         "subreddit": "singularity",
-        "score": 355,
-        "comments": 110,
-        "viral_score": 80
+        "score": 358,
+        "comments": 112,
+        "viral_score": 81
       }
     ]
   }
