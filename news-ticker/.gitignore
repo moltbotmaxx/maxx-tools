@@ -1,5 +1,3 @@
-# Build output
-dist/
 node_modules/
 
 # Agent & Workspace files
@@ -10,5 +8,4 @@ node_modules/
 # Testing images
 /*.png
 
-
-/.DS_Store
+.DS_Store
