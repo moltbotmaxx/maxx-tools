@@ -25,6 +25,10 @@ X_ACCOUNTS = ['OpenAI','sama','AnthropicAI','GoogleDeepMind','NVIDIAAI','xai']
 REDDIT_SUBS = ['artificial','MachineLearning','singularity','ChatGPT','OpenAI','LocalLLaMA']
 KEYWORDS = ['ai','artificial intelligence','machine learning','llm','model','agent','robot','openai','anthropic','deepmind','nvidia','grok','chatgpt','gemini','claude']
 
+TARGET_ARTICLES = 40
+TARGET_X_ITEMS = 10
+TARGET_REDDIT_ITEMS = 10
+
 
 def fetch(url, timeout=18):
     req = Request(url, headers={'User-Agent':'Mozilla/5.0 rss-dashboard-bot'})
@@ -167,21 +171,16 @@ def news_items():
 
     arr.sort(key=lambda x:(x['ranking'],x['virality'],x['fit']), reverse=True)
 
-    # enforce real image urls for top 10; fetch og:image if feed omitted it
-    for it in arr[:10]:
+    # enforce image_url for all returned articles
+    for it in arr:
         if not it.get('image_url'):
-            it['image_url'] = fetch_og_image(it.get('link', ''))
-
-    # keep image optional outside top 10
-    for it in arr[10:]:
-        if not it.get('image_url'):
-            it['image_url'] = ''
+            it['image_url'] = fetch_og_image(it.get('link', '')) or 'https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png'
 
     # strip internal
     for it in arr:
         it.pop('_dt',None)
 
-    return arr[:50]
+    return arr[:TARGET_ARTICLES]
 
 
 def x_items():
@@ -228,7 +227,39 @@ def x_items():
         m[it['link']]=it
     arr=list(m.values())
     arr.sort(key=lambda x:(x['score'], x['likes'], x['views'], x['reposts']), reverse=True)
-    return arr[:10]
+
+    # If strict filtering returns too few, backfill with recent account posts.
+    if len(arr) < TARGET_X_ITEMS:
+        fallback=[]
+        for acct in X_ACCOUNTS:
+            try:
+                xml=fetch(f'https://nitter.net/{acct}/rss', timeout=12)
+            except Exception:
+                continue
+            blocks=re.findall(r'<item[\s\S]*?</item>', xml, flags=re.I)
+            for b in blocks[:8]:
+                title=extract(b,[r'<title>([\s\S]*?)</title>'])
+                link=extract(b,[r'<link>([\s\S]*?)</link>'])
+                if not title or not link:
+                    continue
+                fallback.append({
+                    'headline': title[:220],
+                    'link': link,
+                    'author': acct,
+                    'likes': 0,
+                    'views': 0,
+                    'reposts': 0,
+                    'replies': 0,
+                    'keyword_hits': 0,
+                    'score': 1,
+                })
+        for it in fallback:
+            if it['link'] not in m:
+                m[it['link']] = it
+        arr=list(m.values())
+        arr.sort(key=lambda x:(x['score'], x['likes'], x['views'], x['reposts']), reverse=True)
+
+    return arr[:TARGET_X_ITEMS]
 
 
 def reddit_items():
@@ -257,7 +288,7 @@ def reddit_items():
     for it in out: m[it['link']]=it
     arr=list(m.values())
     arr.sort(key=lambda x:(x['viral_score'],x['score']), reverse=True)
-    return arr[:12]
+    return arr[:TARGET_REDDIT_ITEMS]
 
 
 def main():
