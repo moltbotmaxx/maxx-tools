@@ -4,7 +4,8 @@ from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
-OUT = '/Users/maxx/.Gemini/antigravity/scratch/rss-dashboard/rss-dashboard/public/data.json'
+import os
+OUT = os.path.join(os.path.dirname(__file__), 'public', 'data.json')
 
 NEWS_FEEDS = [
     ('OpenAI','https://openai.com/news/rss.xml'),

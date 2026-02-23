@@ -1,35 +1,24 @@
 {
   "articles": [
     {
+      "headline": "Infosys chair says AI will clean up legacy systems – then make more of them",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/asia_tech_news_roundup/",
+      "source": "The Register",
+      "date": "2026-02-23",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "ranking": 74,
+      "virality": 99,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
       "headline": "OpenAI debated calling police about suspected Canadian shooter’s chats",
       "link": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
       "source": "TechCrunch",
       "date": "2026-02-21",
       "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 77,
-      "virality": 76,
-      "fit": 63,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "OpenAI says 18- to 24-year-olds account for nearly 50% of ChatGPT usage in India",
-      "link": "https://techcrunch.com/2026/02/20/openai-says-18-to-24-year-olds-account-for-nearly-50-of-chatgpt-usage-in-india/",
-      "source": "TechCrunch",
-      "date": "2026-02-20",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 73,
-      "virality": 56,
-      "fit": 72,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Anthropic: No, absolutely not, you may not use third-party harnesses with Claude subs",
-      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/",
-      "source": "The Register",
-      "date": "2026-02-20",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 71,
-      "virality": 62,
+      "ranking": 74,
+      "virality": 70,
       "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -45,36 +34,47 @@
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
+      "headline": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
+      "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "ranking": 70,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI says 18- to 24-year-olds account for nearly 50% of ChatGPT usage in India",
+      "link": "https://techcrunch.com/2026/02/20/openai-says-18-to-24-year-olds-account-for-nearly-50-of-chatgpt-usage-in-india/",
+      "source": "TechCrunch",
+      "date": "2026-02-20",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "ranking": 70,
+      "virality": 49,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Anthropic: No, absolutely not, you may not use third-party harnesses with Claude subs",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/",
+      "source": "The Register",
+      "date": "2026-02-20",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
+      "ranking": 68,
+      "virality": 56,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
       "headline": "Anthropic-funded group backs candidate attacked by rival AI super PAC",
       "link": "https://techcrunch.com/2026/02/20/anthropic-funded-group-backs-candidate-attacked-by-rival-ai-super-pac/",
       "source": "TechCrunch",
       "date": "2026-02-20",
       "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 70,
-      "virality": 61,
+      "ranking": 67,
+      "virality": 55,
       "fit": 63,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
-      "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
-      "source": "Hugging Face",
-      "date": "2026-02-22",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 70,
-      "virality": 61,
-      "fit": 63,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
-      "link": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
-      "source": "TechCrunch",
-      "date": "2026-02-22",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 68,
-      "virality": 95,
-      "fit": 45,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
@@ -83,8 +83,8 @@
       "source": "TechCrunch",
       "date": "2026-02-20",
       "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png",
-      "ranking": 68,
-      "virality": 45,
+      "ranking": 66,
+      "virality": 42,
       "fit": 72,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -133,24 +133,24 @@
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
+      "headline": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
+      "link": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
+      "source": "TechCrunch",
+      "date": "2026-02-22",
+      "image_url": "",
+      "ranking": 65,
+      "virality": 89,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
       "headline": "Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’",
       "link": "https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/",
       "source": "TechCrunch",
       "date": "2026-02-21",
       "image_url": "",
-      "ranking": 65,
-      "virality": 78,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Google VP warns that two types of AI startups may not survive",
-      "link": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
-      "source": "TechCrunch",
-      "date": "2026-02-21",
-      "image_url": "",
-      "ranking": 64,
-      "virality": 77,
+      "ranking": 62,
+      "virality": 72,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -158,7 +158,7 @@
       "headline": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
       "link": "https://huggingface.co/blog/unsloth-jobs",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 62,
       "virality": 61,
@@ -169,7 +169,7 @@
       "headline": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
       "link": "https://huggingface.co/blog/ibm-research/itbenchandmast",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 62,
       "virality": 61,
@@ -180,7 +180,7 @@
       "headline": "Training Design for Text-to-Image Models: Lessons from Ablations",
       "link": "https://huggingface.co/blog/Photoroom/prx-part2",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 62,
       "virality": 61,
@@ -191,7 +191,7 @@
       "headline": "We Got Claude to Build CUDA Kernels and teach open models!",
       "link": "https://huggingface.co/blog/upskill",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 62,
       "virality": 61,
@@ -202,7 +202,7 @@
       "headline": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
       "link": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 62,
       "virality": 61,
@@ -213,21 +213,10 @@
       "headline": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality",
       "link": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 62,
       "virality": 61,
-      "fit": 63,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Great news for xAI: Grok is now pretty good at answering questions about Baldur’s Gate",
-      "link": "https://techcrunch.com/2026/02/20/great-news-for-xai-grok-is-now-pretty-good-at-answering-questions-about-baldurs-gate/",
-      "source": "TechCrunch",
-      "date": "2026-02-20",
-      "image_url": "",
-      "ranking": 62,
-      "virality": 60,
       "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -254,47 +243,36 @@
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
+      "headline": "Google VP warns that two types of AI startups may not survive",
+      "link": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "",
+      "ranking": 61,
+      "virality": 70,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Great news for xAI: Grok is now pretty good at answering questions about Baldur’s Gate",
+      "link": "https://techcrunch.com/2026/02/20/great-news-for-xai-grok-is-now-pretty-good-at-answering-questions-about-baldurs-gate/",
+      "source": "TechCrunch",
+      "date": "2026-02-20",
+      "image_url": "",
+      "ranking": 59,
+      "virality": 53,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
       "headline": "Sam Altman would like to remind you that humans use a lot of energy, too",
       "link": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
       "source": "TechCrunch",
       "date": "2026-02-21",
       "image_url": "",
-      "ranking": 61,
-      "virality": 81,
-      "fit": 45,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
-      "source": "TechCrunch",
-      "date": "2026-02-21",
-      "image_url": "",
-      "ranking": 59,
-      "virality": 76,
-      "fit": 45,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "India’s Sarvam launches Indus AI chat app as competition heats up",
-      "link": "https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/",
-      "source": "TechCrunch",
-      "date": "2026-02-21",
-      "image_url": "",
-      "ranking": 59,
-      "virality": 65,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "The creator economy’s ad revenue problem and India’s AI ambitions",
-      "link": "https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/",
-      "source": "TechCrunch",
-      "date": "2026-02-20",
-      "image_url": "",
       "ranking": 58,
-      "virality": 63,
-      "fit": 54,
+      "virality": 75,
+      "fit": 45,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
@@ -312,7 +290,7 @@
       "headline": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
       "link": "https://huggingface.co/blog/ggml-joins-hf",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -323,7 +301,7 @@
       "headline": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速",
       "link": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -334,7 +312,7 @@
       "headline": "Custom Kernels for All from Codex and Claude",
       "link": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -345,7 +323,7 @@
       "headline": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
       "link": "https://huggingface.co/blog/openenv-turing",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -356,7 +334,7 @@
       "headline": "Transformers.js v4 Preview: Now Available on NPM!",
       "link": "https://huggingface.co/blog/transformersjs-v4",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -367,7 +345,7 @@
       "headline": "H Company's new Holo2 model takes the lead in UI Localization",
       "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -378,7 +356,7 @@
       "headline": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
       "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -389,7 +367,7 @@
       "headline": "Introducing Daggr: Chain apps programmatically, inspect visually",
       "link": "https://huggingface.co/blog/daggr",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -400,7 +378,7 @@
       "headline": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek",
       "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
@@ -411,32 +389,10 @@
       "headline": "Alyah ⭐️: Toward Robust Evaluation of Emirati Dialect Capabilities in Arabic LLMs",
       "link": "https://huggingface.co/blog/tiiuae/emirati-benchmarks",
       "source": "Hugging Face",
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "image_url": "",
       "ranking": 57,
       "virality": 61,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "InScope nabs $14.5M to solve the pain of financial reporting",
-      "link": "https://techcrunch.com/2026/02/20/inscope-nabs-14-5m-to-solve-the-pain-of-financial-reporting/",
-      "source": "TechCrunch",
-      "date": "2026-02-20",
-      "image_url": "",
-      "ranking": 57,
-      "virality": 60,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Cerebras plans humongous AI supercomputer in India backed by UAE",
-      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/20/india_ai_supercomputer_cerebras_uae/",
-      "source": "The Register",
-      "date": "2026-02-20",
-      "image_url": "",
-      "ranking": 57,
-      "virality": 60,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -529,10 +485,21 @@
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
-      "headline": "‘Toy Story 5’ takes aim at creepy AI toys: ‘I’m always listening’",
-      "link": "https://techcrunch.com/2026/02/20/toy-story-5-takes-aim-at-creepy-ai-toys-im-always-listening/",
+      "headline": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
       "source": "TechCrunch",
-      "date": "2026-02-20",
+      "date": "2026-02-21",
+      "image_url": "",
+      "ranking": 56,
+      "virality": 69,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "India’s Sarvam launches Indus AI chat app as competition heats up",
+      "link": "https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
       "image_url": "",
       "ranking": 56,
       "virality": 58,
@@ -540,8 +507,8 @@
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
-      "headline": "AI’s promise to indie filmmakers: Faster, cheaper, lonelier",
-      "link": "https://techcrunch.com/2026/02/20/ais-promise-to-indie-filmmakers-faster-cheaper-lonelier/",
+      "headline": "The creator economy’s ad revenue problem and India’s AI ambitions",
+      "link": "https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/",
       "source": "TechCrunch",
       "date": "2026-02-20",
       "image_url": "",
@@ -549,10 +516,43 @@
       "virality": 57,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "InScope nabs $14.5M to solve the pain of financial reporting",
+      "link": "https://techcrunch.com/2026/02/20/inscope-nabs-14-5m-to-solve-the-pain-of-financial-reporting/",
+      "source": "TechCrunch",
+      "date": "2026-02-20",
+      "image_url": "",
+      "ranking": 54,
+      "virality": 54,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Cerebras plans humongous AI supercomputer in India backed by UAE",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/20/india_ai_supercomputer_cerebras_uae/",
+      "source": "The Register",
+      "date": "2026-02-20",
+      "image_url": "",
+      "ranking": 54,
+      "virality": 54,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Retraction: After a routine code rejection, an AI agent published a hit piece on someone by name",
+      "link": "https://arstechnica.com/ai/2026/02/after-a-routine-code-rejection-an-ai-agent-published-a-hit-piece-on-someone-by-name/",
+      "source": "Ars Technica",
+      "date": "2026-02-13",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-in-open-source-terminal-1152x648.jpg",
+      "ranking": 54,
+      "virality": 42,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
     }
   ],
   "x_viral": {
-    "generated_at": "2026-02-22T20:25:31.528716+00:00",
+    "generated_at": "2026-02-23T04:33:48.251302+00:00",
     "note": "Top AI-related posts from selected X accounts (RSS mirror).",
     "items": [
       {
@@ -648,7 +648,7 @@
     ]
   },
   "reddit_viral": {
-    "generated_at": "2026-02-22T20:25:39.387799+00:00",
+    "generated_at": "2026-02-23T04:33:52.116786+00:00",
     "subreddits": [
       "artificial",
       "MachineLearning",
@@ -659,100 +659,100 @@
     ],
     "items": [
       {
-        "headline": "SAM ALTMAN: “People talk about how much energy it takes to train an AI model … But it also takes a lot of energy to train a human. It takes like 20 years of life and all of the food you eat during that time before you get smart.”",
-        "link": "https://reddit.com/r/singularity/comments/1rb2pzf/sam_altman_people_talk_about_how_much_energy_it/",
-        "subreddit": "singularity",
-        "score": 4182,
-        "comments": 1529,
-        "viral_score": 100
-      },
-      {
-        "headline": "This line from I, Robot is as relevant as ever",
-        "link": "https://reddit.com/r/ChatGPT/comments/1rb4dwd/this_line_from_i_robot_is_as_relevant_as_ever/",
+        "headline": "The perfect disguise",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbpuq9/the_perfect_disguise/",
         "subreddit": "ChatGPT",
-        "score": 2903,
-        "comments": 207,
-        "viral_score": 100
-      },
-      {
-        "headline": "Demis Hassabis: “The kind of test I would be looking for is training an AI system with a knowledge cutoff of, say, 1911, and then seeing if it could come up with general relativity, like Einstein did in 1915. That’s the kind of test I think",
-        "link": "https://reddit.com/r/singularity/comments/1rb3awd/demis_hassabis_the_kind_of_test_i_would_be/",
-        "subreddit": "singularity",
-        "score": 2530,
-        "comments": 285,
-        "viral_score": 100
-      },
-      {
-        "headline": "Sam Altman: why are people complaining about AI … when humans need food to survive",
-        "link": "https://reddit.com/r/OpenAI/comments/1rb81a3/sam_altman_why_are_people_complaining_about_ai/",
-        "subreddit": "OpenAI",
-        "score": 1512,
-        "comments": 427,
+        "score": 2754,
+        "comments": 88,
         "viral_score": 100
       },
       {
         "headline": "Just with a single prompt and this result is insane for first attempt in Seedance 2.0",
         "link": "https://reddit.com/r/singularity/comments/1rblgp0/just_with_a_single_prompt_and_this_result_is/",
         "subreddit": "singularity",
-        "score": 1454,
-        "comments": 235,
+        "score": 2165,
+        "comments": 285,
         "viral_score": 100
       },
       {
-        "headline": "Favourite niche usecases?",
-        "link": "https://reddit.com/r/LocalLLaMA/comments/1rb2j5c/favourite_niche_usecases/",
-        "subreddit": "LocalLLaMA",
-        "score": 532,
-        "comments": 257,
-        "viral_score": 100
-      },
-      {
-        "headline": "Just requested GPT 5.2 for a single prompt and got this result with Seedance 2.0 in first attempt which is insane",
-        "link": "https://reddit.com/r/ChatGPT/comments/1rblipm/just_requested_gpt_52_for_a_single_prompt_and_got/",
+        "headline": "I created this time travel short scene using Seedance 2.0 in just one day for under $200.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbsb9b/i_created_this_time_travel_short_scene_using/",
         "subreddit": "ChatGPT",
-        "score": 452,
-        "comments": 157,
-        "viral_score": 100
-      },
-      {
-        "headline": "Seedance 2.0 makes extremely good anime fight scenes",
-        "link": "https://reddit.com/r/ChatGPT/comments/1rbf4rl/seedance_20_makes_extremely_good_anime_fight/",
-        "subreddit": "ChatGPT",
-        "score": 424,
-        "comments": 156,
-        "viral_score": 100
-      },
-      {
-        "headline": "that's how it feels \"living with robots\"",
-        "link": "https://reddit.com/r/singularity/comments/1rb599c/thats_how_it_feels_living_with_robots/",
-        "subreddit": "singularity",
-        "score": 417,
-        "comments": 147,
-        "viral_score": 100
-      },
-      {
-        "headline": "I told chatgpt to put my cat in a costume that is fitting for the photo, and I can't say I hate it... But now I'm really curious what other people get and how variable it might be",
-        "link": "https://reddit.com/r/ChatGPT/comments/1rb90sb/i_told_chatgpt_to_put_my_cat_in_a_costume_that_is/",
-        "subreddit": "ChatGPT",
-        "score": 323,
-        "comments": 210,
+        "score": 1267,
+        "comments": 270,
         "viral_score": 100
       },
       {
         "headline": "Which one are you waiting for more: 9B or 35B?",
         "link": "https://reddit.com/r/LocalLLaMA/comments/1rbkeea/which_one_are_you_waiting_for_more_9b_or_35b/",
         "subreddit": "LocalLLaMA",
-        "score": 522,
-        "comments": 128,
-        "viral_score": 97
+        "score": 744,
+        "comments": 181,
+        "viral_score": 100
+      },
+      {
+        "headline": "Just requested GPT 5.2 for a single prompt and got this result with Seedance 2.0 in first attempt which is insane",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rblipm/just_requested_gpt_52_for_a_single_prompt_and_got/",
+        "subreddit": "ChatGPT",
+        "score": 606,
+        "comments": 194,
+        "viral_score": 100
+      },
+      {
+        "headline": "Seedance 2.0 makes extremely good anime fight scenes",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbf4rl/seedance_20_makes_extremely_good_anime_fight/",
+        "subreddit": "ChatGPT",
+        "score": 582,
+        "comments": 199,
+        "viral_score": 100
       },
       {
         "headline": "‘Humans use lot of energy too’: Sam Altman on resources consumed by AI, data centres",
         "link": "https://reddit.com/r/OpenAI/comments/1rbmf0g/humans_use_lot_of_energy_too_sam_altman_on/",
         "subreddit": "OpenAI",
-        "score": 239,
-        "comments": 116,
-        "viral_score": 79
+        "score": 371,
+        "comments": 182,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anyone Else about done with Chat Gpt?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbsa8m/anyone_else_about_done_with_chat_gpt/",
+        "subreddit": "ChatGPT",
+        "score": 370,
+        "comments": 260,
+        "viral_score": 100
+      },
+      {
+        "headline": "Post-scarcity will be virtual, not physical",
+        "link": "https://reddit.com/r/singularity/comments/1rbroj8/postscarcity_will_be_virtual_not_physical/",
+        "subreddit": "singularity",
+        "score": 61,
+        "comments": 194,
+        "viral_score": 100
+      },
+      {
+        "headline": "JUNE 2028. \n\nThe S&amp;P is down 38% from its highs. Unemployment just printed 10.2%. Private credit is unraveling. Prime mortgages are cracking. AI didn’t disappoint. It exceeded every expectation.\n\nWhat happened?​​​​​​​​​​​​​​​​",
+        "link": "https://reddit.com/r/singularity/comments/1rbywwq/june_2028_the_sp_is_down_38_from_its_highs/",
+        "subreddit": "singularity",
+        "score": 227,
+        "comments": 149,
+        "viral_score": 98
+      },
+      {
+        "headline": "The cost of sequencing human genome has fallen from $100M to under $100 in approximately 25 years",
+        "link": "https://reddit.com/r/singularity/comments/1rbhtzc/the_cost_of_sequencing_human_genome_has_fallen/",
+        "subreddit": "singularity",
+        "score": 1060,
+        "comments": 74,
+        "viral_score": 86
+      },
+      {
+        "headline": "Grok 4.2 would allow World War III to avoid misgendering Elon Musk",
+        "link": "https://reddit.com/r/singularity/comments/1rbi9hm/grok_42_would_allow_world_war_iii_to_avoid/",
+        "subreddit": "singularity",
+        "score": 355,
+        "comments": 110,
+        "viral_score": 80
       }
     ]
   }
