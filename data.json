@@ -1,0 +1,555 @@
+{
+  "articles": [
+    {
+      "headline": "Infosys chair says AI will clean up legacy systems – then make more of them",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/asia_tech_news_roundup/",
+      "source": "The Register",
+      "date": "2026-02-23",
+      "image_url": "https://regmedia.co.uk/2026/02/23/screenshot_china_swordbot.jpg",
+      "ranking": 72,
+      "virality": 95,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI debated calling police about suspected Canadian shooter’s chats",
+      "link": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
+      "ranking": 72,
+      "virality": 65,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
+      "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63b738acbd2d1535227daa4c/7B01Lxy_IS-2FaPGUKJiA.png",
+      "ranking": 70,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "All the important news from the ongoing India AI Impact Summit",
+      "link": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
+      "source": "TechCrunch",
+      "date": "2026-02-22",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/06/india-ai.jpg?w=1200",
+      "ranking": 68,
+      "virality": 86,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
+      "link": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
+      "source": "TechCrunch",
+      "date": "2026-02-22",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/10/Disrupt-2025-day-3.jpg?resize=1200,800",
+      "ranking": 63,
+      "virality": 84,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
+      "link": "https://huggingface.co/blog/unsloth-jobs",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/unsloth-jobs/thumbnail.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
+      "link": "https://huggingface.co/blog/ibm-research/itbenchandmast",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/pcP8QgkPqNpcygSbT6p60.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Training Design for Text-to-Image Models: Lessons from Ablations",
+      "link": "https://huggingface.co/blog/Photoroom/prx-part2",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/68d136d7307413e80188d819/4XhN9QMMb6wjrKfQIlqhn.jpeg",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "We Got Claude to Build CUDA Kernels and teach open models!",
+      "link": "https://huggingface.co/blog/upskill",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/upskill/thumbnail.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+      "link": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64efbd469e7770db74cb72f5/rNoYY6yaQSfXYMBn3M1xb.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality",
+      "link": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64c47f731d44fc06afc80953/fB0GHxhoG5McKZtklVj_I.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’",
+      "link": "https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/10/GettyImages-2174641784.jpg?resize=1200,800",
+      "ranking": 60,
+      "virality": 67,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Google VP warns that two types of AI startups may not survive",
+      "link": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Darren-Mowry-headshot.png?resize=1200,960",
+      "ranking": 59,
+      "virality": 66,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+      "link": "https://huggingface.co/blog/ggml-joins-hf",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/ggml-joins-hf/ggml-joins-hf.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-personas-japan-nttdata-ja.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Custom Kernels for All from Codex and Claude",
+      "link": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
+      "link": "https://huggingface.co/blog/openenv-turing",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/openenv-turing/thumbnail.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Transformers.js v4 Preview: Now Available on NPM!",
+      "link": "https://huggingface.co/blog/transformersjs-v4",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "H Company's new Holo2 model takes the lead in UI Localization",
+      "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/auDwTiJd-MAHohSeCMzZs.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63a369d98c0c89dcae3b8329/MOOv3ivvsii5OdJFcwIU5.webp",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Introducing Daggr: Chain apps programmatically, inspect visually",
+      "link": "https://huggingface.co/blog/daggr",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/daggr/thumbnail.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63a369d98c0c89dcae3b8329/XeSYoUIf7wyFTWr4Py09D.webp",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Alyah ⭐️: Toward Robust Evaluation of Emirati Dialect Capabilities in Arabic LLMs",
+      "link": "https://huggingface.co/blog/tiiuae/emirati-benchmarks",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/onlBsI7RckKVGphzfZJjp.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Sam Altman would like to remind you that humans use a lot of energy, too",
+      "link": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2198353376.jpg?resize=1200,800",
+      "ranking": 56,
+      "virality": 70,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/TCD26_7Days-16X9-Dark.png?resize=1200,675",
+      "ranking": 54,
+      "virality": 65,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "One-Shot Any Web App with Gradio's gr.HTML",
+      "link": "https://huggingface.co/blog/gradio-html-one-shot-apps",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/gradio-html-one-shot-apps/thumbnail.png",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Introducing SyGra Studio",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/603c6bf03249b99991dbcbd0/-W1T8msBfqXne33HFAgp7.png",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Community Evals: Because we're done trusting black-box leaderboards over the community",
+      "link": "https://huggingface.co/blog/community-evals",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/eval-results/thumbnail.png",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "One Year Since the “DeepSeek Moment”",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/62543749b777cd32720675c2/kXuitQ-DyXNAqtzAFGqi-.webp",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Differential Transformer V2",
+      "link": "https://huggingface.co/blog/microsoft/diff-attn-v2",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/5df85abada6d0311fd3d5408/ULgU7-Z51YYJN4fl1FnWH.jpeg",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Introducing Waypoint-1: Real-time interactive video diffusion from Overworld",
+      "link": "https://huggingface.co/blog/waypoint-1",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/overworld/overworld_image.png",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Open Responses: What you need to know",
+      "link": "https://huggingface.co/blog/open-responses",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/openresponses/thumbnail.png",
+      "ranking": 52,
+      "virality": 61,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    }
+  ],
+  "x_viral": {
+    "generated_at": "2026-02-23T09:58:04.705342+00:00",
+    "note": "Scraped from x.com search (openclaw profile), ranked by real engagement.",
+    "items": [
+      {
+        "author": "TheMG3D",
+        "headline": "“The era of \"AI slop\" is officially over.” Literally posts AI slop.",
+        "link": "https://x.com/TheMG3D/status/2025803252873502903",
+        "likes": 8116,
+        "reposts": 278,
+        "replies": 19,
+        "views": 32104,
+        "score": 9337
+      },
+      {
+        "author": "NyankoBfReal",
+        "headline": "that one fuckass angry bird image drawn from memory because it was ai",
+        "link": "https://x.com/NyankoBfReal/status/2025791574379241653",
+        "likes": 6176,
+        "reposts": 195,
+        "replies": 35,
+        "views": 87336,
+        "score": 8355
+      },
+      {
+        "author": "TheRabbitHole",
+        "headline": "Second Law of Robotics: A robot must obey the orders given it by human beings. Only Grok 4.20 passed this test.",
+        "link": "https://x.com/TheRabbitHole/status/2025809020314095892",
+        "likes": 2140,
+        "reposts": 390,
+        "replies": 297,
+        "views": 218949,
+        "score": 7655
+      },
+      {
+        "author": "IndianTechGuide",
+        "headline": "Many companies are using AI as an excuse to fire people, a method called AI washing. - OpenAI CEO, Sam Altman.",
+        "link": "https://x.com/IndianTechGuide/status/2025782670022914141",
+        "likes": 4134,
+        "reposts": 319,
+        "replies": 134,
+        "views": 80101,
+        "score": 6535
+      },
+      {
+        "author": "milesdeutscher",
+        "headline": "I got chills when reading this article. I've never been more bullish on AI...",
+        "link": "https://x.com/milesdeutscher/status/2025807969024356483",
+        "likes": 975,
+        "reposts": 93,
+        "replies": 103,
+        "views": 244089,
+        "score": 6166
+      },
+      {
+        "author": "ronmarz",
+        "headline": "If you're using a tool that steals from other artists, your ethically sourced AI still propagates a theft machine.",
+        "link": "https://x.com/ronmarz/status/2025803558256296378",
+        "likes": 3615,
+        "reposts": 372,
+        "replies": 20,
+        "views": 24586,
+        "score": 4875
+      },
+      {
+        "author": "KoreanUpdates",
+        "headline": "Major broadcasters in Korea filed lawsuit against OpenAI alleging copyright infringement.",
+        "link": "https://x.com/KoreanUpdates/status/2025841648908083484",
+        "likes": 1165,
+        "reposts": 295,
+        "replies": 5,
+        "views": 68180,
+        "score": 3125
+      },
+      {
+        "author": "buffys",
+        "headline": "i hate ai",
+        "link": "https://x.com/buffys/status/2025790808759128517",
+        "likes": 1798,
+        "reposts": 240,
+        "replies": 146,
+        "views": 24660,
+        "score": 2946
+      },
+      {
+        "author": "MeghUpdates",
+        "headline": "Delhi Police recovered protest materials at AI Summit protest.",
+        "link": "https://x.com/MeghUpdates/status/2025799510199500820",
+        "likes": 943,
+        "reposts": 284,
+        "replies": 10,
+        "views": 11186,
+        "score": 1747
+      },
+      {
+        "author": "JustineBateman",
+        "headline": "The problem with the film business didn't start with AI; it started with streaming incentives.",
+        "link": "https://x.com/JustineBateman/status/2025805245956370808",
+        "likes": 840,
+        "reposts": 102,
+        "replies": 69,
+        "views": 14905,
+        "score": 1425
+      }
+    ]
+  },
+  "reddit_viral": {
+    "generated_at": "2026-02-23T09:56:36.185565+00:00",
+    "subreddits": [
+      "artificial",
+      "MachineLearning",
+      "singularity",
+      "ChatGPT",
+      "OpenAI",
+      "LocalLLaMA"
+    ],
+    "items": [
+      {
+        "headline": "The perfect disguise",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbpuq9/the_perfect_disguise/",
+        "subreddit": "ChatGPT",
+        "score": 3498,
+        "comments": 105,
+        "viral_score": 100
+      },
+      {
+        "headline": "Just with a single prompt and this result is insane for first attempt in Seedance 2.0",
+        "link": "https://reddit.com/r/singularity/comments/1rblgp0/just_with_a_single_prompt_and_this_result_is/",
+        "subreddit": "singularity",
+        "score": 2446,
+        "comments": 303,
+        "viral_score": 100
+      },
+      {
+        "headline": "Real",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbyl1c/real/",
+        "subreddit": "ChatGPT",
+        "score": 1584,
+        "comments": 68,
+        "viral_score": 100
+      },
+      {
+        "headline": "I created this time travel short scene using Seedance 2.0 in just one day for under $200.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbsb9b/i_created_this_time_travel_short_scene_using/",
+        "subreddit": "ChatGPT",
+        "score": 1567,
+        "comments": 320,
+        "viral_score": 100
+      },
+      {
+        "headline": "Which one are you waiting for more: 9B or 35B?",
+        "link": "https://reddit.com/r/LocalLLaMA/comments/1rbkeea/which_one_are_you_waiting_for_more_9b_or_35b/",
+        "subreddit": "LocalLLaMA",
+        "score": 839,
+        "comments": 193,
+        "viral_score": 100
+      },
+      {
+        "headline": "Just requested GPT 5.2 for a single prompt and got this result with Seedance 2.0 in first attempt which is insane",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rblipm/just_requested_gpt_52_for_a_single_prompt_and_got/",
+        "subreddit": "ChatGPT",
+        "score": 667,
+        "comments": 197,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anyone Else about done with Chat Gpt?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbsa8m/anyone_else_about_done_with_chat_gpt/",
+        "subreddit": "ChatGPT",
+        "score": 438,
+        "comments": 284,
+        "viral_score": 100
+      },
+      {
+        "headline": "‘Humans use lot of energy too’: Sam Altman on resources consumed by AI, data centres",
+        "link": "https://reddit.com/r/OpenAI/comments/1rbmf0g/humans_use_lot_of_energy_too_sam_altman_on/",
+        "subreddit": "OpenAI",
+        "score": 409,
+        "comments": 207,
+        "viral_score": 100
+      },
+      {
+        "headline": "Post-scarcity will be virtual, not physical",
+        "link": "https://reddit.com/r/singularity/comments/1rbroj8/postscarcity_will_be_virtual_not_physical/",
+        "subreddit": "singularity",
+        "score": 75,
+        "comments": 205,
+        "viral_score": 100
+      },
+      {
+        "headline": "Grok 4.2 would allow World War III to avoid misgendering Elon Musk",
+        "link": "https://reddit.com/r/singularity/comments/1rbi9hm/grok_42_would_allow_world_war_iii_to_avoid/",
+        "subreddit": "singularity",
+        "score": 394,
+        "comments": 115,
+        "viral_score": 84
+      }
+    ]
+  }
+}

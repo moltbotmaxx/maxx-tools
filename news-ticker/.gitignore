@@ -1,0 +1,11 @@
+node_modules/
+
+# Agent & Workspace files
+/.openclaw/
+/*.md
+!/README.md
+
+# Testing images
+/*.png
+
+.DS_Store
