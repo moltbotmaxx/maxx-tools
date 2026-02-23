@@ -1,0 +1,653 @@
+{
+  "articles": [
+    {
+      "headline": "Infosys chair says AI will clean up legacy systems – then make more of them",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/asia_tech_news_roundup/",
+      "source": "The Register",
+      "date": "2026-02-23",
+      "image_url": "https://regmedia.co.uk/2026/02/23/screenshot_china_swordbot.jpg",
+      "ranking": 74,
+      "virality": 98,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI debated calling police about suspected Canadian shooter’s chats",
+      "link": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg?w=1024",
+      "ranking": 73,
+      "virality": 68,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI sidesteps Nvidia with unusually fast coding model on plate-sized chips",
+      "link": "https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/",
+      "source": "Ars Technica",
+      "date": "2026-02-12",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-2225076517_resize-1152x648.jpg",
+      "ranking": 71,
+      "virality": 42,
+      "fit": 81,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "All the important news from the ongoing India AI Impact Summit",
+      "link": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
+      "source": "TechCrunch",
+      "date": "2026-02-22",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/06/india-ai.jpg?w=1200",
+      "ranking": 70,
+      "virality": 89,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
+      "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63b738acbd2d1535227daa4c/7B01Lxy_IS-2FaPGUKJiA.png",
+      "ranking": 70,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI says 18- to 24-year-olds account for nearly 50% of ChatGPT usage in India",
+      "link": "https://techcrunch.com/2026/02/20/openai-says-18-to-24-year-olds-account-for-nearly-50-of-chatgpt-usage-in-india/",
+      "source": "TechCrunch",
+      "date": "2026-02-20",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/10/india-chatgpt.jpg?resize=1200,800",
+      "ranking": 69,
+      "virality": 48,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Anthropic-funded group backs candidate attacked by rival AI super PAC",
+      "link": "https://techcrunch.com/2026/02/20/anthropic-funded-group-backs-candidate-attacked-by-rival-ai-super-pac/",
+      "source": "TechCrunch",
+      "date": "2026-02-20",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2259873774.jpg?w=1024",
+      "ranking": 67,
+      "virality": 54,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Anthropic: No, absolutely not, you may not use third-party harnesses with Claude subs",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/",
+      "source": "The Register",
+      "date": "2026-02-20",
+      "image_url": "https://regmedia.co.uk/2025/05/22/shutterstock_anthropic_claude.jpg",
+      "ranking": 67,
+      "virality": 54,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI researcher quits over ChatGPT ads, warns of \"Facebook\" path",
+      "link": "https://arstechnica.com/information-technology/2026/02/openai-researcher-quits-over-fears-that-chatgpt-ads-could-manipulate-users/",
+      "source": "Ars Technica",
+      "date": "2026-02-11",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/open-ai-monkey-ad-1152x648.jpg",
+      "ranking": 66,
+      "virality": 42,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenAI is hoppin' mad about Anthropic's new Super Bowl TV ads",
+      "link": "https://arstechnica.com/information-technology/2026/02/openai-is-hoppin-mad-about-anthropics-new-super-bowl-tv-ads/",
+      "source": "Ars Technica",
+      "date": "2026-02-05",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/anthropic_ad_2-1152x648.jpg",
+      "ranking": 66,
+      "virality": 42,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Nvidia's $100 billion OpenAI deal has seemingly vanished",
+      "link": "https://arstechnica.com/information-technology/2026/02/five-months-later-nvidias-100-billion-openai-investment-plan-has-fizzled-out/",
+      "source": "Ars Technica",
+      "date": "2026-02-03",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/09/nvidia-1152x648.jpg",
+      "ranking": 66,
+      "virality": 42,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Google germinates Gemini 3.1 Pro in ongoing AI model race",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/19/google_germinates_gemini_31_pro/",
+      "source": "The Register",
+      "date": "2026-02-19",
+      "image_url": "https://regmedia.co.uk/2024/02/08/gemini_shutterstock.jpg",
+      "ranking": 66,
+      "virality": 42,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
+      "link": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
+      "source": "TechCrunch",
+      "date": "2026-02-22",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/10/Disrupt-2025-day-3.jpg?resize=1200,800",
+      "ranking": 64,
+      "virality": 87,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
+      "link": "https://huggingface.co/blog/unsloth-jobs",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/unsloth-jobs/thumbnail.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
+      "link": "https://huggingface.co/blog/ibm-research/itbenchandmast",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/pcP8QgkPqNpcygSbT6p60.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Training Design for Text-to-Image Models: Lessons from Ablations",
+      "link": "https://huggingface.co/blog/Photoroom/prx-part2",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/68d136d7307413e80188d819/4XhN9QMMb6wjrKfQIlqhn.jpeg",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "We Got Claude to Build CUDA Kernels and teach open models!",
+      "link": "https://huggingface.co/blog/upskill",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/upskill/thumbnail.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+      "link": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64efbd469e7770db74cb72f5/rNoYY6yaQSfXYMBn3M1xb.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality",
+      "link": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64c47f731d44fc06afc80953/fB0GHxhoG5McKZtklVj_I.png",
+      "ranking": 62,
+      "virality": 61,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions",
+      "link": "https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/",
+      "source": "MIT Technology Review",
+      "date": "2026-02-10",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/02/260205_chatgpt_boycott_hero.jpg?resize=1200,600",
+      "ranking": 62,
+      "virality": 42,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Should AI chatbots have ads? Anthropic says no.",
+      "link": "https://arstechnica.com/ai/2026/02/should-ai-chatbots-have-ads-anthropic-says-no/",
+      "source": "Ars Technica",
+      "date": "2026-02-04",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/claude-no-ads-1152x648.png",
+      "ranking": 62,
+      "virality": 42,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’",
+      "link": "https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/10/GettyImages-2174641784.jpg?resize=1200,800",
+      "ranking": 61,
+      "virality": 70,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Google VP warns that two types of AI startups may not survive",
+      "link": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Darren-Mowry-headshot.png?resize=1200,960",
+      "ranking": 61,
+      "virality": 69,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Sam Altman would like to remind you that humans use a lot of energy, too",
+      "link": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
+      "source": "TechCrunch",
+      "date": "2026-02-21",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2198353376.jpg?resize=1200,800",
+      "ranking": 58,
+      "virality": 73,
+      "fit": 45,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Great news for xAI: Grok is now pretty good at answering questions about Baldur’s Gate",
+      "link": "https://techcrunch.com/2026/02/20/great-news-for-xai-grok-is-now-pretty-good-at-answering-questions-about-baldurs-gate/",
+      "source": "TechCrunch",
+      "date": "2026-02-20",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2087343879.jpg?w=1024",
+      "ranking": 58,
+      "virality": 52,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Sixteen Claude AI agents working together created a new C compiler",
+      "link": "https://arstechnica.com/ai/2026/02/sixteen-claude-ai-agents-working-together-created-a-new-c-compiler/",
+      "source": "Ars Technica",
+      "date": "2026-02-06",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/01/coding_robots_agents-1152x648.jpg",
+      "ranking": 58,
+      "virality": 42,
+      "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+      "link": "https://huggingface.co/blog/ggml-joins-hf",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/ggml-joins-hf/ggml-joins-hf.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-personas-japan-nttdata-ja.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Custom Kernels for All from Codex and Claude",
+      "link": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/custom-cuda-kernels/meme.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
+      "link": "https://huggingface.co/blog/openenv-turing",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/openenv-turing/thumbnail.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Transformers.js v4 Preview: Now Available on NPM!",
+      "link": "https://huggingface.co/blog/transformersjs-v4",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/transformersjs-v4/thumbnail.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "H Company's new Holo2 model takes the lead in UI Localization",
+      "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/auDwTiJd-MAHohSeCMzZs.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63a369d98c0c89dcae3b8329/MOOv3ivvsii5OdJFcwIU5.webp",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Introducing Daggr: Chain apps programmatically, inspect visually",
+      "link": "https://huggingface.co/blog/daggr",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://huggingface.co/blog/assets/daggr/thumbnail.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63a369d98c0c89dcae3b8329/XeSYoUIf7wyFTWr4Py09D.webp",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Alyah ⭐️: Toward Robust Evaluation of Emirati Dialect Capabilities in Arabic LLMs",
+      "link": "https://huggingface.co/blog/tiiuae/emirati-benchmarks",
+      "source": "Hugging Face",
+      "date": "2026-02-23",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/onlBsI7RckKVGphzfZJjp.png",
+      "ranking": 57,
+      "virality": 61,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "A new way to express yourself: Gemini can now create music",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "source": "Google AI Blog",
+      "date": "2026-02-18",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/0217_KeywordHeaderFinalc.max-600x600.format-webp.webp",
+      "ranking": 57,
+      "virality": 42,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "Google AI Blog",
+      "date": "2026-02-12",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3_deep-think_keyword_hea.max-600x600.format-webp.webp",
+      "ranking": 57,
+      "virality": 42,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Watch our new Gemini ad ahead of football’s biggest weekend",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
+      "source": "Google AI Blog",
+      "date": "2026-02-05",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp",
+      "ranking": 57,
+      "virality": 42,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "In our latest podcast, hear how the “Smoke Jumpers” team brings Gemini to billions of people.",
+      "link": "https://blog.google/products-and-platforms/products/gemini/release-notes-podcast-smokejumpers/",
+      "source": "Google AI Blog",
+      "date": "2026-01-27",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/thumbnails_EP24_002_ccRelease_N.max-600x600.format-webp.webp",
+      "ranking": 57,
+      "virality": 42,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    }
+  ],
+  "x_viral": {
+    "generated_at": "2026-02-23T06:14:06.796254+00:00",
+    "note": "Top AI-related posts from selected X accounts (RSS mirror).",
+    "items": [
+      {
+        "headline": "RT by @AnthropicAI: This is Claude Sonnet 4.6: our most capable Sonnet model yet. It’s a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design. It also features a 1M",
+        "link": "https://nitter.net/claudeai/status/2023817132581208353#m",
+        "author": "AnthropicAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 5,
+        "score": 60
+      },
+      {
+        "headline": "RT by @OpenAI: Very excited about the \"First Proof\" challenge. I believe novel frontier research is perhaps the most important way to evaluate capabilities of the next generation of AI models. We have run our internal mo",
+        "link": "https://nitter.net/merettm/status/2022517085193277874#m",
+        "author": "OpenAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "New Anthropic research: Measuring AI agent autonomy in practice. We analyzed millions of interactions across Claude Code and our API to understand how much autonomy people grant to agents, where they’re deployed, and wha",
+        "link": "https://nitter.net/AnthropicAI/status/2024210035480678724#m",
+        "author": "AnthropicAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "R to @AnthropicAI: Software engineering makes up ~50% of agentic tool calls on our API, but we see emerging use in other industries. As the frontier of risk and autonomy expands, post-deployment monitoring becomes essent",
+        "link": "https://nitter.net/AnthropicAI/status/2024210053369385192#m",
+        "author": "AnthropicAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "R to @AnthropicAI: A central lesson of this work is that autonomy is co-constructed by the model, user, and product. It can't be fully characterized by pre-deployment evaluations alone. For full details, and our recommen",
+        "link": "https://nitter.net/AnthropicAI/status/2024210056871629072#m",
+        "author": "AnthropicAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "⚙️ @aidungeon by Latitude runs large-scale mixture-of-experts models at a fraction of the cost — $0.05 per million tokens, down from $0.20. @DeepInfra inference platform makes this possible, powered by NVIDIA Blackwell G",
+        "link": "https://nitter.net/NVIDIAAI/status/2024151924048613861#m",
+        "author": "NVIDIAAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "RT by @NVIDIAAI: At #IndiaAIImpactSummit2026, we revealed how agentic #AI is reshaping India's tech landscape. With NVIDIA AI Enterprise and Nemotron models, India's technology leaders including @Infosys, @Persistentsys,",
+        "link": "https://nitter.net/NVIDIAAP/status/2023926641961955484#m",
+        "author": "NVIDIAAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "🩺 @sullyai has returned over 30 million minutes to physicians — more time with patients, less on paperwork. @basetenco powers this with their optimized inference stack built using NVIDIA Blackwell, NVFP4, TensorRT LLM, a",
+        "link": "https://nitter.net/NVIDIAAI/status/2023789539299361102#m",
+        "author": "NVIDIAAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 4,
+        "score": 48
+      },
+      {
+        "headline": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://openai.com/index/introducing-evmbench/",
+        "link": "https://nitter.net/OpenAI/status/2024193883748651102#m",
+        "author": "OpenAI",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 3,
+        "score": 36
+      },
+      {
+        "headline": "Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas about the future of very smart agents interacting with each other to do very useful things f",
+        "link": "https://nitter.net/sama/status/2023150230905159801#m",
+        "author": "sama",
+        "likes": 0,
+        "views": 0,
+        "reposts": 0,
+        "replies": 0,
+        "keyword_hits": 3,
+        "score": 36
+      }
+    ]
+  },
+  "reddit_viral": {
+    "generated_at": "2026-02-23T06:14:38.115384+00:00",
+    "subreddits": [
+      "artificial",
+      "MachineLearning",
+      "singularity",
+      "ChatGPT",
+      "OpenAI",
+      "LocalLLaMA"
+    ],
+    "items": [
+      {
+        "headline": "The perfect disguise",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbpuq9/the_perfect_disguise/",
+        "subreddit": "ChatGPT",
+        "score": 3043,
+        "comments": 92,
+        "viral_score": 100
+      },
+      {
+        "headline": "Just with a single prompt and this result is insane for first attempt in Seedance 2.0",
+        "link": "https://reddit.com/r/singularity/comments/1rblgp0/just_with_a_single_prompt_and_this_result_is/",
+        "subreddit": "singularity",
+        "score": 2268,
+        "comments": 287,
+        "viral_score": 100
+      },
+      {
+        "headline": "I created this time travel short scene using Seedance 2.0 in just one day for under $200.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbsb9b/i_created_this_time_travel_short_scene_using/",
+        "subreddit": "ChatGPT",
+        "score": 1388,
+        "comments": 292,
+        "viral_score": 100
+      },
+      {
+        "headline": "Which one are you waiting for more: 9B or 35B?",
+        "link": "https://reddit.com/r/LocalLLaMA/comments/1rbkeea/which_one_are_you_waiting_for_more_9b_or_35b/",
+        "subreddit": "LocalLLaMA",
+        "score": 782,
+        "comments": 185,
+        "viral_score": 100
+      },
+      {
+        "headline": "Just requested GPT 5.2 for a single prompt and got this result with Seedance 2.0 in first attempt which is insane",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rblipm/just_requested_gpt_52_for_a_single_prompt_and_got/",
+        "subreddit": "ChatGPT",
+        "score": 620,
+        "comments": 195,
+        "viral_score": 100
+      },
+      {
+        "headline": "Seedance 2.0 makes extremely good anime fight scenes",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbf4rl/seedance_20_makes_extremely_good_anime_fight/",
+        "subreddit": "ChatGPT",
+        "score": 609,
+        "comments": 199,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anyone Else about done with Chat Gpt?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1rbsa8m/anyone_else_about_done_with_chat_gpt/",
+        "subreddit": "ChatGPT",
+        "score": 402,
+        "comments": 275,
+        "viral_score": 100
+      },
+      {
+        "headline": "‘Humans use lot of energy too’: Sam Altman on resources consumed by AI, data centres",
+        "link": "https://reddit.com/r/OpenAI/comments/1rbmf0g/humans_use_lot_of_energy_too_sam_altman_on/",
+        "subreddit": "OpenAI",
+        "score": 385,
+        "comments": 189,
+        "viral_score": 100
+      },
+      {
+        "headline": "JUNE 2028. \n\nThe S&amp;P is down 38% from its highs. Unemployment just printed 10.2%. Private credit is unraveling. Prime mortgages are cracking. AI didn’t disappoint. It exceeded every expectation.\n\nWhat happened?​​​​​​​​​​​​​​​​",
+        "link": "https://reddit.com/r/singularity/comments/1rbywwq/june_2028_the_sp_is_down_38_from_its_highs/",
+        "subreddit": "singularity",
+        "score": 293,
+        "comments": 176,
+        "viral_score": 100
+      },
+      {
+        "headline": "Post-scarcity will be virtual, not physical",
+        "link": "https://reddit.com/r/singularity/comments/1rbroj8/postscarcity_will_be_virtual_not_physical/",
+        "subreddit": "singularity",
+        "score": 62,
+        "comments": 198,
+        "viral_score": 100
+      }
+    ]
+  }
+}
