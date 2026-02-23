@@ -12,8 +12,9 @@ This project must always generate `public/data.json` using:
 
 ## Source of truth
 - Script: `scripts_generate_data.py`
-- Output: `public/data.json`
+- Output: `public/data.json` (single source of truth)
 - Browser profile for automation: **`openclaw` only**
+- Note: root `data.json` and build `assets/` are intentionally not used.
 
 ## Run
 ```bash
