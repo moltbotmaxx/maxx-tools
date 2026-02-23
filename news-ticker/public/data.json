@@ -1,6 +1,17 @@
 {
   "articles": [
     {
+      "headline": "ESTEBAN IS TESTING",
+      "link": "https://example.com/esteban-testing",
+      "source": "Dummy",
+      "date": "2026-02-23",
+      "image_url": "https://picsum.photos/1200/800",
+      "ranking": 100,
+      "virality": 100,
+      "fit": 100,
+      "reason": "Dummy record for end-to-end update verification."
+    },
+    {
       "headline": "Infosys chair says AI will clean up legacy systems – then make more of them",
       "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/asia_tech_news_roundup/",
       "source": "The Register",
