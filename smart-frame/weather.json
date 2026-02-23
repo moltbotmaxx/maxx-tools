@@ -1,5 +1,29 @@
 {
   "weather": {
-    "last_updated": "17:18"
+    "last_updated": "17:24",
+    "temp_c": "25",
+    "wind_kmh": "23",
+    "condition": "Cielo Despejado",
+    "bg_image": "images/weather_sunny.png",
+    "theme": "day",
+    "icon": "\u2600\ufe0f",
+    "max_temp_c": "29",
+    "min_temp_c": "20",
+    "uv_index": "9",
+    "prob_rain": "0",
+    "feels_like_c": "23",
+    "humidity": "52",
+    "hourly_forecast": [
+      {
+        "time": "8PM",
+        "icon": "\u2600\ufe0f",
+        "temp": "22"
+      },
+      {
+        "time": "11PM",
+        "icon": "\u2600\ufe0f",
+        "temp": "22"
+      }
+    ]
   }
 }
