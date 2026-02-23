@@ -2,6 +2,7 @@
 import json, re, html, math
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
+from urllib.parse import quote_plus
 from urllib.error import URLError, HTTPError
 
 import os
@@ -34,6 +35,50 @@ def fetch(url, timeout=18):
 def clean(s):
     s = re.sub(r'<[^>]+>', ' ', s or '')
     return re.sub(r'\s+', ' ', html.unescape(s)).strip()
+
+
+def fetch_json(url, timeout=12):
+    req = Request(url, headers={'User-Agent':'Mozilla/5.0 rss-dashboard-bot'})
+    with urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode('utf-8', errors='ignore'))
+
+
+def extract_tweet_id(link: str):
+    m = re.search(r'/status/(\d+)', link or '')
+    return m.group(1) if m else None
+
+
+def fetch_tweet_metrics(tweet_id: str):
+    # Public endpoint used by embedded tweet widgets.
+    # Returns engagement counters for many public tweets without auth.
+    try:
+        u = f'https://cdn.syndication.twimg.com/tweet-result?id={tweet_id}&lang=en'
+        j = fetch_json(u, timeout=10)
+        likes = int(j.get('favorite_count', 0) or 0)
+        reposts = int(j.get('retweet_count', 0) or 0)
+        replies = int(j.get('reply_count', 0) or 0)
+        views = int(j.get('view_count', 0) or 0)
+        return likes, reposts, replies, views
+    except Exception:
+        return 0, 0, 0, 0
+
+
+def fetch_og_image(url: str):
+    try:
+        page = fetch(url, timeout=10)
+    except Exception:
+        return ''
+    for p in [
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+    ]:
+        m = re.search(p, page, flags=re.I)
+        if m:
+            img = m.group(1).strip()
+            if img.startswith('http') and not img.lower().endswith('.svg'):
+                return img
+    return ''
 
 
 def extract(block, patterns):
@@ -122,15 +167,15 @@ def news_items():
 
     arr.sort(key=lambda x:(x['ranking'],x['virality'],x['fit']), reverse=True)
 
-    # guarantee image for top 10 using non-placeholder from article domains if missing
-    fallback_img='https://images.ctfassets.net/kftzwdyauwt9/6NsqfQQlQcg32xR271GGBh/0478b0f2acde6f711fcb8a6ad72037d4/openai-cover.png'
-    for i,it in enumerate(arr[:10]):
+    # enforce real image urls for top 10; fetch og:image if feed omitted it
+    for it in arr[:10]:
         if not it.get('image_url'):
-            it['image_url']=fallback_img
+            it['image_url'] = fetch_og_image(it.get('link', ''))
 
+    # keep image optional outside top 10
     for it in arr[10:]:
         if not it.get('image_url'):
-            it['image_url']=''
+            it['image_url'] = ''
 
     # strip internal
     for it in arr:
@@ -147,26 +192,42 @@ def x_items():
         except Exception:
             continue
         blocks=re.findall(r'<item[\s\S]*?</item>', xml, flags=re.I)
-        for b in blocks[:4]:
+        for b in blocks[:10]:
             title=extract(b,[r'<title>([\s\S]*?)</title>'])
             link=extract(b,[r'<link>([\s\S]*?)</link>'])
-            if not title or not link: continue
-            hl = title
-            score = min(100, 55 + sum(1 for k in KEYWORDS if k in hl.lower())*7)
+            if not title or not link:
+                continue
+
+            text = title.lower()
+            kw_hits = sum(1 for k in KEYWORDS if k in text)
+            if kw_hits == 0 and not any(k in text for k in ['robot', 'ai', 'model', 'agent']):
+                continue
+
+            tweet_id = extract_tweet_id(link)
+            likes, reposts, replies, views = fetch_tweet_metrics(tweet_id) if tweet_id else (0, 0, 0, 0)
+
+            # Weighted engagement + relevance. If metrics are unavailable, score drops.
+            engagement = likes + reposts*2 + replies*1.2 + views*0.02
+            score = min(100, int(kw_hits*12 + math.log10(engagement + 1)*26))
+
             out.append({
-                'headline': hl[:220],
+                'headline': title[:220],
                 'link': link,
                 'author': acct,
-                'likes': 0,
-                'views': 0,
-                'reposts': 0,
+                'likes': likes,
+                'views': views,
+                'reposts': reposts,
+                'replies': replies,
+                'keyword_hits': kw_hits,
                 'score': score,
             })
+
     # dedup
     m={}
-    for it in out: m[it['link']]=it
+    for it in out:
+        m[it['link']]=it
     arr=list(m.values())
-    arr.sort(key=lambda x:x['score'], reverse=True)
+    arr.sort(key=lambda x:(x['score'], x['likes'], x['views'], x['reposts']), reverse=True)
     return arr[:10]
 
 
