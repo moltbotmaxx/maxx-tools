@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "Anthropic launches new push for enterprise agents with plugins for finance, engineering, and design",
+      "headline": "Meta strikes up to $100B AMD chip deal as it chases \u2018personal superintelligence\u2019",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "It's a major opportunity to grow Anthropic\u2019s enterprise client base \u2014 and a significant threat to SaaS products currently performing those functions.\u00a0..."
+      "summary": "Meta is buying billions of dollars in AMD AI chips in a multiyear deal tied to a 160 million-share warrant, deepening its push to diversify beyond Nvidia and expand data center capacity...."
     },
     "secondary_1": {
-      "headline": "New Relic launches new\u00a0AI\u00a0agent platform\u00a0and\u00a0OpenTelemetry\u00a0tools",
+      "headline": "Oura launches a proprietary AI model focused on women\u2019s health",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "Nimble raises $47M to give AI agents access to real-time web data",
+      "headline": "Final 4 days to save up to $680 on your TechCrunch Disrupt 2026 pass",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
