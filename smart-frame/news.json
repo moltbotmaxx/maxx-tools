@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "New Relic launches new\u00a0AI\u00a0agent platform\u00a0and\u00a0OpenTelemetry\u00a0tools",
+      "headline": "Anthropic launches new push for enterprise agents with plugins for finance, engineering, and design",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "New Relic is giving enterprises more observability tools, letting them create and manage AI agents, and better integrate OTel data streams. ..."
+      "summary": "It's a major opportunity to grow Anthropic\u2019s enterprise client base \u2014 and a significant threat to SaaS products currently performing those functions.\u00a0..."
     },
     "secondary_1": {
-      "headline": "Nimble raises $47M to give AI agents access to real-time web data",
+      "headline": "New Relic launches new\u00a0AI\u00a0agent platform\u00a0and\u00a0OpenTelemetry\u00a0tools",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "Canva acquires startups working on animation and marketing",
+      "headline": "Nimble raises $47M to give AI agents access to real-time web data",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
