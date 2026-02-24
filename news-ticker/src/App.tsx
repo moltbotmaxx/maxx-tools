@@ -267,15 +267,13 @@ export default function App() {
     }
 
     const ts = Date.now();
-    const primaryUrl = `/news-ticker/public/data.json?t=${ts}`;
-    const fallbackUrl = `${import.meta.env.BASE_URL}data.json?t=${ts}`;
+    const dataUrl = `/news-ticker/public/data.json?t=${ts}`;
 
-    fetch(primaryUrl, { cache: 'no-store' })
+    fetch(dataUrl, { cache: 'no-store' })
       .then(res => {
-        if (!res.ok) throw new Error(`Primary fetch failed: ${res.status}`);
+        if (!res.ok) throw new Error(`Data fetch failed: ${res.status}`);
         return res.json();
       })
-      .catch(() => fetch(fallbackUrl, { cache: 'no-store' }).then(res => res.json()))
       .then(data => {
         setData(data);
         setLoading(false);
