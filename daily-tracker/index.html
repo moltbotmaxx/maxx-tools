@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Content Scheduler - Plan your social media content for the week">
+    <title>Content Scheduler | Weekly Planner</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js for Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header with Tabs -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                </div>
+                <h1 style="display: flex; align-items: center; gap: 8px;">
+                    Content Scheduler
+                    <span
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(v.1.4.3)</span>
+                    <div id="syncStatus" class="sync-status online" title="Cloud Sync Active">
+                        <span class="sync-dot"></span>
+                        <span class="sync-text">Synced</span>
+                    </div>
+                </h1>
+            </div>
+
+            <!-- Tab Navigation -->
+            <nav class="tab-nav">
+                <button class="tab-btn active" data-tab="inspiration">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                        <path d="M2 2l7.586 7.586" />
+                        <circle cx="11" cy="11" r="2" />
+                    </svg>
+                    Inspiration
+                </button>
+                <button class="tab-btn" data-tab="scheduler">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    Scheduler
+                </button>
+                <button class="tab-btn" data-tab="metrics">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                    </svg>
+                    Metrics
+                </button>
+                <button class="tab-btn" data-tab="history">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    History
+                </button>
+            </nav>
+
+            <div class="header-controls">
+                <button class="icon-btn" id="exportBtn" title="Export Data">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width: 18px; height: 18px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!-- VIEW 1: SCHEDULER -->
+            <div id="scheduler-view" class="view-container">
+                <div class="bento-grid">
+                    <!-- Pool Section -->
+                    <section class="bento-box pool-section">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34" />
+                                    <polygon points="18 2 22 6 12 16 8 16 8 12 18 2" />
+                                </svg>
+                                Pool
+                            </h2>
+                            <div class="header-actions" style="display: flex; align-items: center; gap: 8px;">
+                                <button id="clearPoolBtn" class="icon-btn" title="Clear Pool"
+                                    style="font-size: 0.7rem; padding: 4px 8px; color: var(--text-tertiary);">
+                                    Clear
+                                </button>
+                                <div class="pool-count" id="poolCount">0</div>
+                            </div>
+                        </div>
+                        <div class="pool-cards" id="poolCards">
+                            <!-- Cards will be injected here -->
+                        </div>
+                        <div class="pool-actions">
+                            <button class="action-btn post-btn" id="addPost" title="Add Post">
+                                <span class="btn-emoji">📷</span>
+                                <span>Post</span>
+                            </button>
+                            <button class="action-btn promo-btn" id="addPromo" title="Add Promo">
+                                <span class="btn-emoji">📢</span>
+                                <span>Promo</span>
+                            </button>
+                            <button class="action-btn reel-btn" id="addReel" title="Add Reel">
+                                <span class="btn-emoji">🎬</span>
+                                <span>Reel</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Schedule Section -->
+                    <section class="bento-box schedule-section">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                Schedule
+                            </h2>
+                        </div>
+                        <div class="week-grid" id="weekGrid">
+                            <!-- Columns will be injected here -->
+                        </div>
+                    </section>
+
+                    <!-- Bottom Row: Metrics (2/3) & Notes (1/3) -->
+                    <div class="bottom-row">
+                        <!-- Metrics Section (Mini) -->
+                        <section class="bento-box metrics-section">
+                            <div class="box-header">
+                                <h2>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        style="width: 18px; color: var(--accent-primary);">
+                                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                                        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                                    </svg>
+                                    This Week
+                                </h2>
+                            </div>
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-top">
+                                        <div class="metric-icon posts" style="color: var(--accent-post);">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2.5" style="width: 20px;">
+                                                <path
+                                                    d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                                <circle cx="12" cy="13" r="4" />
+                                            </svg>
+                                        </div>
+                                        <div class="metric-info">
+                                            <span class="metric-label">Content Goal</span>
+                                            <span class="metric-value" id="postsMetric">0/49</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill posts-fill" id="postsFill"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-top">
+                                        <div class="metric-icon reels" style="color: var(--accent-reel);">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2.5" style="width: 20px;">
+                                                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+                                                <line x1="7" y1="2" x2="7" y2="22" />
+                                                <line x1="17" y1="2" x2="17" y2="22" />
+                                                <line x1="2" y1="12" x2="22" y2="12" />
+                                                <line x1="2" y1="7" x2="7" y2="7" />
+                                                <line x1="2" y1="17" x2="7" y2="17" />
+                                                <line x1="17" y1="17" x2="22" y2="17" />
+                                                <line x1="17" y1="7" x2="22" y2="7" />
+                                            </svg>
+                                        </div>
+                                        <div class="metric-info">
+                                            <span class="metric-label">Reels Goal</span>
+                                            <span class="metric-value" id="reelsMetric">0/7</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill reels-fill" id="reelsFill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Notes Section -->
+                        <section class="bento-box notes-section">
+                            <div class="box-header">
+                                <h2>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        style="width: 18px; color: var(--accent-promo);">
+                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                        <path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                    </svg>
+                                    Notes
+                                </h2>
+                                <div class="notes-status" id="notesStatus">
+                                    <span class="status-dot"></span>
+                                    <span>Saved</span>
+                                </div>
+                            </div>
+                            <textarea id="permanentNotes"
+                                placeholder="Write your notes here... Ideas, reminders, content plans..."></textarea>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW 2: INSPIRATION (IDEAS) -->
+            <div id="inspiration-view" class="view-container active">
+                <div class="inspiration-layout">
+                    <section class="inspiration-input-box bento-box">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
+                                Add Inspiration
+                            </h2>
+                        </div>
+                        <div class="link-input-group">
+                            <input type="text" id="inspirationMainInput"
+                                placeholder="Paste a link or write something here and press Enter..." />
+                        </div>
+                    </section>
+
+                    <section class="inspiration-grid-container">
+                        <div class="pinterest-grid" id="inspirationGrid">
+                            <!-- Pinterest cards injected here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- VIEW 3: METRICS DASHBOARD -->
+            <div id="metrics-view" class="view-container">
+                <div class="dashboard-grid">
+                    <!-- Monthly Calendar (Left - Large) -->
+                    <div class="bento-box calendar-box">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                Monthly Overview
+                            </h2>
+                            <div class="calendar-nav month-label-container">
+                                <span id="currentMonthLabel" style="font-size: 0.9rem; font-weight: 600;">...</span>
+                            </div>
+                        </div>
+                        <div class="calendar-grid" id="monthCalendar">
+                            <!-- Calendar JS Injected -->
+                        </div>
+                        <div class="calendar-legend">
+                            <div class="legend-item"><span class="activity-dot post"></span> Post</div>
+                            <div class="legend-item"><span class="activity-dot promo"></span> Promo</div>
+                            <div class="legend-item"><span class="activity-dot reel"></span> Reel</div>
+                            <div class="legend-item separator"></div>
+                            <div class="legend-item"><span class="goal-highlight"></span> Goal Met</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Charts & KPI -->
+                    <div class="dashboard-sidebar">
+
+                        <!-- KPI Cards -->
+                        <div class="kpi-grid">
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">Total Posts</div>
+                                <div class="kpi-value" id="totalPostsValue">0</div>
+                                <div class="kpi-trend positive">↑ 12%</div>
+                            </div>
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">Completion Rate</div>
+                                <div class="kpi-value" id="completionRateValue">0%</div>
+                                <div class="kpi-trend">This Month</div>
+                            </div>
+                        </div>
+
+                        <!-- Content Mix Chart -->
+                        <div class="bento-box chart-box">
+                            <div class="box-header">
+                                <h2>Content Mix</h2>
+                                <div class="chart-header-legend">
+                                    <div class="header-legend-item"><span class="header-dot posts"></span> Posts</div>
+                                    <div class="header-legend-item"><span class="header-dot promos"></span> Promos</div>
+                                    <div class="header-legend-item"><span class="header-dot reels"></span> Reels</div>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="contentMixChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Activity Trend Chart -->
+                        <div class="bento-box chart-box">
+                            <div class="box-header">
+                                <h2>Activity Trend</h2>
+                                <div class="chart-header-legend">
+                                    <div class="header-legend-item"><span class="header-dot trend"></span> Volume</div>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="activityTrendChart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW 3: HISTORY -->
+            <div id="history-view" class="view-container">
+                <div class="bento-grid" style="grid-template-columns: 1fr; grid-template-rows: 1fr;">
+                    <section class="bento-box schedule-section" style="grid-row: 1 / -1;">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                Weekly History
+                            </h2>
+                            <div class="calendar-nav global-week-nav" style="margin-left: auto;">
+                                <button id="weekPrev" class="icon-btn" title="Previous Week">←</button>
+                                <button id="jumpToday" class="icon-btn" title="Jump to Today"
+                                    style="font-size: 0.7rem; padding: 0 8px; width: auto; border-radius: 12px;">Today</button>
+                                <div class="week-indicator" id="weekIndicator">
+                                    Jan 16 - Jan 22
+                                </div>
+                                <button id="weekNext" class="icon-btn" title="Next Week">→</button>
+                            </div>
+                        </div>
+                        <div class="week-grid" id="historyGrid">
+                            <!-- Helper function will inject grid columns here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Custom Context Menu for Cards -->
+    <div id="cardContextMenu" class="context-menu">
+        <button class="menu-item delete" id="menuDelete">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+            Delete Card
+        </button>
+        <button class="menu-item edit" id="menuEdit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            Edit Description
+        </button>
+        <button class="menu-item move-pool" id="menuMoveToPool">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12h14" transform="rotate(45 12 12)"></path>
+                <path d="M9 17l-5-5 5-5M15 17l5-5-5-5"></path>
+            </svg>
+            Move to Pool
+        </button>
+    </div>
+
+    <!-- Custom Delete Confirmation Modal -->
+    <div id="deleteModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box">
+            <div class="box-header" style="border-bottom: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 16px;">
+                <h2 style="color: #ef4444;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    Confirm Deletion
+                </h2>
+            </div>
+            <div class="modal-body" style="padding: 10px 0;">
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Are you sure you want to delete this card?
+                    This action cannot be undone.</p>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="deleteCancelBtn">Cancel</button>
+                <button class="action-btn" id="deleteConfirmBtn"
+                    style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: #ef4444;">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Edit Modal -->
+    <div id="editModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box">
+            <div class="box-header">
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    Edit Card Description
+                </h2>
+                <button class="icon-btn" id="modalCloseBtn" style="font-size: 1.5rem; line-height: 1;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <textarea id="modalEditDesc" class="card-description modal-textarea"
+                    placeholder="Enter content description..." rows="3"></textarea>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="modalCancelBtn">Cancel</button>
+                <button class="action-btn post-btn" id="modalSaveBtn"
+                    style="border-top: none; background: var(--accent-post); color: white;">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inspiration Capture Modal -->
+    <div id="inspirationModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box" style="max-width: 400px;">
+            <div class="box-header">
+                <h2 style="color: var(--accent-primary);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                    </svg>
+                    Capture Idea
+                </h2>
+                <button class="icon-btn" id="insModalCloseBtn"
+                    style="font-size: 1.5rem; line-height: 1;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-field">
+                    <label>Idea Name</label>
+                    <input type="text" id="insModalTitle" placeholder="Name to identify it..." />
+                </div>
+                <div class="modal-field">
+                    <label>Category</label>
+                    <div class="category-selector" id="insModalCategorySelector">
+                        <button class="cat-opt active" data-type="post">Post</button>
+                        <button class="cat-opt" data-type="reel">Reel</button>
+                        <button class="cat-opt" data-type="promo">Promo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="insModalCancelBtn">Cancel</button>
+                <button class="action-btn premium-btn" id="insModalSaveBtn">Save Idea</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inspiration Edit Modal (Expanded) -->
+    <div id="insEditModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box" style="max-width: 500px;">
+            <div class="box-header">
+                <h2 style="color: var(--accent-primary);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    Edit Inspiration
+                </h2>
+                <button class="icon-btn" id="insEditModalCloseBtn"
+                    style="font-size: 1.5rem; line-height: 1;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-field">
+                    <label>Idea Name</label>
+                    <input type="text" id="insEditTitle" />
+                </div>
+                <div class="modal-field">
+                    <label>Category</label>
+                    <div class="category-selector" id="insEditCategorySelector">
+                        <button class="cat-opt" data-type="post">Post</button>
+                        <button class="cat-opt" data-type="reel">Reel</button>
+                        <button class="cat-opt" data-type="promo">Promo</button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label>Main Link</label>
+                    <input type="text" id="insEditMainUrl" placeholder="https://..." />
+                </div>
+                <div class="modal-field">
+                    <label>Notes & Details</label>
+                    <textarea id="insEditNotes" class="modal-textarea" rows="4"
+                        placeholder="Deep dive into your idea here..."></textarea>
+                </div>
+                <div class="modal-field">
+                    <label>Additional Links (one per line)</label>
+                    <textarea id="insEditExtraLinks" class="modal-textarea" rows="3"
+                        placeholder="https://external-resource.com..."></textarea>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="insEditModalCancelBtn">Cancel</button>
+                <button class="action-btn premium-btn" id="insEditModalSaveBtn">Update Idea</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

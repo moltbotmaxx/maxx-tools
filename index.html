@@ -1,22 +1,77 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maxx Tools</title>
   <style>
-    body{font-family:Inter,system-ui,-apple-system,sans-serif;background:#0b1020;color:#e8ecff;margin:0;padding:20px}
-    .wrap{max-width:980px;margin:0 auto}
-    h1{margin:0 0 8px}
-    .muted{color:#9fb0de;font-size:13px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}
-    .card{display:block;background:#121a30;border:1px solid #233056;border-radius:14px;padding:14px;color:#e8ecff;text-decoration:none}
-    .card:hover{border-color:#3a4f87;transform:translateY(-1px)}
-    .card.nonclick{opacity:.75;cursor:default}
-    .card.nonclick:hover{border-color:#233056;transform:none}
-    .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:#1b2748;color:#b9c8f6;margin-bottom:8px}
+    body {
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: #0b1020;
+      color: #e8ecff;
+      margin: 0;
+      padding: 20px
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto
+    }
+
+    h1 {
+      margin: 0 0 8px
+    }
+
+    .muted {
+      color: #9fb0de;
+      font-size: 13px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-top: 16px
+    }
+
+    .card {
+      display: block;
+      background: #121a30;
+      border: 1px solid #233056;
+      border-radius: 14px;
+      padding: 14px;
+      color: #e8ecff;
+      text-decoration: none
+    }
+
+    .card:hover {
+      border-color: #3a4f87;
+      transform: translateY(-1px)
+    }
+
+    .card.nonclick {
+      opacity: .75;
+      cursor: default
+    }
+
+    .card.nonclick:hover {
+      border-color: #233056;
+      transform: none
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #1b2748;
+      color: #b9c8f6;
+      margin-bottom: 8px
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <h1>🦞 Maxx Tools</h1>
@@ -24,35 +79,42 @@
 
     <div class="grid">
       <a class="card" href="./fx-tracker/">
-        <span class="tag">Mini App</span><br/>
-        <strong>fx-tracker</strong><br/>
+        <span class="tag">Mini App</span><br />
+        <strong>fx-tracker</strong><br />
         <span class="muted">USD/CRC, EUR/CRC, tendencias y noticias oficiales BCCR.</span>
       </a>
 
       <a class="card" href="./news-ticker/">
-        <span class="tag">Mini App</span><br/>
-        <strong>news-ticker</strong><br/>
+        <span class="tag">Mini App</span><br />
+        <strong>news-ticker</strong><br />
         <span class="muted">Top AI news rankeadas + señales virales de X y Reddit.</span>
       </a>
 
       <a class="card" href="./mission-control/">
-        <span class="tag">Mini App</span><br/>
-        <strong>mission-control</strong><br/>
+        <span class="tag">Mini App</span><br />
+        <strong>mission-control</strong><br />
         <span class="muted">Dashboard de agentes, estado y métricas del sistema.</span>
       </a>
 
       <a class="card" href="./smart-frame/">
-        <span class="tag">Mini App</span><br/>
-        <strong>smart-frame</strong><br/>
+        <span class="tag">Mini App</span><br />
+        <strong>smart-frame</strong><br />
         <span class="muted">Dashboard/feed para frame con clima, IG y noticias.</span>
       </a>
 
+      <a class="card" href="./daily-tracker/">
+        <span class="tag">Mini App</span><br />
+        <strong>daily-tracker</strong><br />
+        <span class="muted">Seguimiento diario de hábitos y tareas personales.</span>
+      </a>
+
       <div class="card nonclick" aria-disabled="true">
-        <span class="tag">Backend / No Frontend</span><br/>
-        <strong>insta-claws</strong><br/>
+        <span class="tag">Backend / No Frontend</span><br />
+        <strong>insta-claws</strong><br />
         <span class="muted">Automatización de assets/posts. Sin interfaz web pública.</span>
       </div>
     </div>
   </div>
 </body>
+
 </html>
