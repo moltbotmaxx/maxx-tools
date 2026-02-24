@@ -1,8 +1,8 @@
 {
   "weather": {
-    "last_updated": "20:56",
+    "last_updated": "21:26",
     "temp_c": "22",
-    "wind_kmh": "18",
+    "wind_kmh": "19",
     "condition": "Cielo Despejado",
     "bg_image": "images/weather_night.png",
     "theme": "night",
@@ -12,13 +12,6 @@
     "uv_index": "9",
     "prob_rain": "0",
     "feels_like_c": "21",
-    "humidity": "57",
-    "hourly_forecast": [
-      {
-        "time": "11PM",
-        "icon": "\u2600\ufe0f",
-        "temp": "22"
-      }
-    ]
+    "humidity": "58"
   }
 }
