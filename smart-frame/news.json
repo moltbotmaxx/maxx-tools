@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "Canva acquires startups working on animation and marketing",
+      "headline": "Nimble raises $47M to give AI agents access to real-time web data",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "With the new acquisitions, the company wants to bolster its position as a marketing solution by potentially adding video creation and more granular measurement. ..."
+      "summary": "Nimble uses AI agents to search the web, verify and validate the results, and then clean and structure the information into neat tables that can then be queried like a database...."
     },
     "secondary_1": {
-      "headline": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox\u00a0",
+      "headline": "Canva acquires startups working on animation and marketing",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic\u00a0",
+      "headline": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox\u00a0",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
