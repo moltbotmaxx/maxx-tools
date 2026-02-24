@@ -2,14 +2,29 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/news-ticker/',
+  plugins: [
+    react(),
+    {
+      name: 'rename-html',
+      enforce: 'post',
+      generateBundle(_, bundle) {
+        const html = bundle['app.html']
+        if (html) {
+          html.fileName = 'index.html'
+        }
+      }
+    }
+  ],
+  base: './',
   build: {
-    outDir: 'dist',
-    emptyOutDir: true,
+    outDir: '.',
+    emptyOutDir: false,
+    rollupOptions: {
+      input: 'app.html',
+    },
   },
   server: {
     port: 3000,
-    open: '/'
+    open: '/app.html'
   }
 })

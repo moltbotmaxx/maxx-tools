@@ -267,7 +267,7 @@ export default function App() {
     }
 
     const ts = Date.now();
-    const dataUrl = `/news-ticker/public/data.json?t=${ts}`;
+    const dataUrl = `./data.json?t=${ts}`;
 
     fetch(dataUrl, { cache: 'no-store' })
       .then(res => {
