@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "Google adds a way to create automated workflows to Opal",
+      "headline": "Anthropic won\u2019t budge as Pentagon escalates AI dispute",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "Google is adding a new feature to Opal to create automated workflows..."
+      "summary": "The Pentagon has given Anthropic until Friday to loosen AI guardrails or face potential penalties, escalating a high-stakes dispute that raises questions about government leverage, vendor dependence, ..."
     },
     "secondary_1": {
-      "headline": "OpenAI COO says \u2018we have not yet really seen AI penetrate enterprise business processes\u2019",
+      "headline": "Google adds a way to create automated workflows to Opal",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "Music generator ProducerAI joins Google Labs",
+      "headline": "OpenAI COO says \u2018we have not yet really seen AI penetrate enterprise business processes\u2019",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
