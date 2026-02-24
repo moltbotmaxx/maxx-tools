@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "OpenAI COO says \u2018we have not yet really seen AI penetrate enterprise business processes\u2019",
+      "headline": "Google adds a way to create automated workflows to Opal",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "Earlier this month, OpenAI launched a new platform called OpenAI Frontier for enterprises to build and manage agents, but OpenAI COO Brad Lightcap said that businesses haven&#8217;t yet seen AI adopti..."
+      "summary": "Google is adding a new feature to Opal to create automated workflows..."
     },
     "secondary_1": {
-      "headline": "Music generator ProducerAI joins Google Labs",
+      "headline": "OpenAI COO says \u2018we have not yet really seen AI penetrate enterprise business processes\u2019",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "Meta strikes up to $100B AMD chip deal as it chases \u2018personal superintelligence\u2019",
+      "headline": "Music generator ProducerAI joins Google Labs",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
