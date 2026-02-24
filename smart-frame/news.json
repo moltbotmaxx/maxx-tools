@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "Nimble raises $47M to give AI agents access to real-time web data",
+      "headline": "New Relic launches new\u00a0AI\u00a0agent platform\u00a0and\u00a0OpenTelemetry\u00a0tools",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "Nimble uses AI agents to search the web, verify and validate the results, and then clean and structure the information into neat tables that can then be queried like a database...."
+      "summary": "New Relic is giving enterprises more observability tools, letting them create and manage AI agents, and better integrate OTel data streams. ..."
     },
     "secondary_1": {
-      "headline": "Canva acquires startups working on animation and marketing",
+      "headline": "Nimble raises $47M to give AI agents access to real-time web data",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox\u00a0",
+      "headline": "Canva acquires startups working on animation and marketing",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
