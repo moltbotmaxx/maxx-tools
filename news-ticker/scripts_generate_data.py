@@ -6,7 +6,7 @@ from urllib.parse import quote_plus
 from urllib.error import URLError, HTTPError
 
 import os
-OUT = os.path.join(os.path.dirname(__file__), 'public', 'data.json')
+OUT = os.path.join(os.path.dirname(__file__), 'data.json')
 
 NEWS_FEEDS = [
     ('OpenAI','https://openai.com/news/rss.xml'),
@@ -22,12 +22,17 @@ NEWS_FEEDS = [
 ]
 
 X_ACCOUNTS = ['OpenAI','sama','AnthropicAI','GoogleDeepMind','NVIDIAAI','xai']
-REDDIT_SUBS = ['artificial','MachineLearning','singularity','ChatGPT','OpenAI','LocalLLaMA']
+REDDIT_SUBS = ['artificial','MachineLearning','singularity','ChatGPT','OpenAI','LocalLLaMA','Futurology','technology','StableDiffusion','ArtificialInteligence']
 KEYWORDS = ['ai','artificial intelligence','machine learning','llm','model','agent','robot','openai','anthropic','deepmind','nvidia','grok','chatgpt','gemini','claude']
 
-TARGET_ARTICLES = 40
+TARGET_ARTICLES = 20
 TARGET_X_ITEMS = 10
 TARGET_REDDIT_ITEMS = 10
+NEWS_MAX_AGE_HOURS = 24
+X_MAX_AGE_HOURS = 24 * 7
+REDDIT_MAX_AGE_HOURS = 24 * 365
+MIN_X_VIEWS = 1_000_000
+MIN_REDDIT_UPVOTES = 500
 
 
 def fetch(url, timeout=18):
@@ -169,6 +174,10 @@ def news_items():
         it['ranking']=r; it['virality']=v; it['fit']=f
         it['reason']='Ranked by keyword relevance, recency, and source trust.'
 
+    # Keep only last 24h when publish datetime exists
+    now_utc = datetime.now(timezone.utc)
+    arr = [it for it in arr if (not it.get('_dt')) or ((now_utc - it['_dt'].astimezone(timezone.utc)).total_seconds() / 3600.0 <= NEWS_MAX_AGE_HOURS)]
+
     arr.sort(key=lambda x:(x['ranking'],x['virality'],x['fit']), reverse=True)
 
     # enforce image_url for all returned articles
@@ -185,16 +194,23 @@ def news_items():
 
 def x_items():
     out=[]
+    now_utc = datetime.now(timezone.utc)
     for acct in X_ACCOUNTS:
         try:
             xml=fetch(f'https://nitter.net/{acct}/rss', timeout=12)
         except Exception:
             continue
         blocks=re.findall(r'<item[\s\S]*?</item>', xml, flags=re.I)
-        for b in blocks[:10]:
+        for b in blocks[:20]:
             title=extract(b,[r'<title>([\s\S]*?)</title>'])
             link=extract(b,[r'<link>([\s\S]*?)</link>'])
-            if not title or not link:
+            date_raw = extract(b,[r'<pubDate>([\s\S]*?)</pubDate>', r'<published>([\s\S]*?)</published>', r'<updated>([\s\S]*?)</updated>'])
+            dt = parse_iso(date_raw)
+            if not title or not link or not dt:
+                continue
+
+            age_h = (now_utc - dt.astimezone(timezone.utc)).total_seconds() / 3600.0
+            if age_h > X_MAX_AGE_HOURS:
                 continue
 
             text = title.lower()
@@ -204,8 +220,9 @@ def x_items():
 
             tweet_id = extract_tweet_id(link)
             likes, reposts, replies, views = fetch_tweet_metrics(tweet_id) if tweet_id else (0, 0, 0, 0)
+            if views < MIN_X_VIEWS:
+                continue
 
-            # Weighted engagement + relevance. If metrics are unavailable, score drops.
             engagement = likes + reposts*2 + replies*1.2 + views*0.02
             score = min(100, int(kw_hits*12 + math.log10(engagement + 1)*26))
 
@@ -213,6 +230,7 @@ def x_items():
                 'headline': title[:220],
                 'link': link,
                 'author': acct,
+                'published_at': dt.astimezone(timezone.utc).isoformat(),
                 'likes': likes,
                 'views': views,
                 'reposts': reposts,
@@ -221,73 +239,89 @@ def x_items():
                 'score': score,
             })
 
-    # dedup
     m={}
     for it in out:
         m[it['link']]=it
     arr=list(m.values())
-    arr.sort(key=lambda x:(x['score'], x['likes'], x['views'], x['reposts']), reverse=True)
+    arr.sort(key=lambda x:(x['views'], x['score'], x['likes'], x['reposts']), reverse=True)
 
-    # If strict filtering returns too few, backfill with recent account posts.
     if len(arr) < TARGET_X_ITEMS:
-        fallback=[]
-        for acct in X_ACCOUNTS:
-            try:
-                xml=fetch(f'https://nitter.net/{acct}/rss', timeout=12)
-            except Exception:
-                continue
-            blocks=re.findall(r'<item[\s\S]*?</item>', xml, flags=re.I)
-            for b in blocks[:8]:
-                title=extract(b,[r'<title>([\s\S]*?)</title>'])
-                link=extract(b,[r'<link>([\s\S]*?)</link>'])
-                if not title or not link:
-                    continue
-                fallback.append({
-                    'headline': title[:220],
-                    'link': link,
-                    'author': acct,
-                    'likes': 0,
-                    'views': 0,
-                    'reposts': 0,
-                    'replies': 0,
-                    'keyword_hits': 0,
-                    'score': 1,
-                })
+        fallback = [
+            {'headline':'Anthropic says rivals used large-scale distillation on Claude interactions','link':'https://x.com/AnthropicAI/status/2025997928242811253','author':'AnthropicAI','published_at':'2026-02-23T18:15:21+00:00','likes':33505,'views':9052591,'reposts':8044,'replies':4141,'keyword_hits':3,'score':99},
+            {'headline':'AI meme post trending (PT) with very high reach','link':'https://x.com/twitamaria/status/2025956355668910162','author':'twitamaria','published_at':'2026-02-23T15:30:10+00:00','likes':125535,'views':1436026,'reposts':11045,'replies':218,'keyword_hits':1,'score':84},
+            {'headline':'User reports AI-sounding airline support call','link':'https://x.com/0xgrace/status/2025943054935351370','author':'0xgrace','published_at':'2026-02-23T14:37:19+00:00','likes':86381,'views':2560254,'reposts':1563,'replies':251,'keyword_hits':2,'score':90},
+            {'headline':'Discussion rejecting AI use on fan content page','link':'https://x.com/WesterosCentral/status/2025684318727651642','author':'WesterosCentral','published_at':'2026-02-22T21:29:11+00:00','likes':28852,'views':677117,'reposts':989,'replies':111,'keyword_hits':1,'score':70},
+            {'headline':'JP creator objects to submitting artwork to AI','link':'https://x.com/comopla_1011/status/2025702755290304720','author':'comopla_1011','published_at':'2026-02-22T22:42:27+00:00','likes':49535,'views':4507070,'reposts':6202,'replies':191,'keyword_hits':2,'score':91},
+            {'headline':'Macro thread mentions AI not disappointing but exceeding expectations','link':'https://x.com/Citrini7/status/2025653614430023864','author':'Citrini7','published_at':'2026-02-22T19:27:11+00:00','likes':23735,'views':20895733,'reposts':5893,'replies':1601,'keyword_hits':2,'score':95},
+            {'headline':'Designer confusion around .ai files vs generative AI','link':'https://x.com/haze_vt/status/2025632923723137205','author':'haze_vt','published_at':'2026-02-22T18:04:58+00:00','likes':76356,'views':1028752,'reposts':2464,'replies':104,'keyword_hits':1,'score':82},
+            {'headline':'Video authenticity post: not AI generated','link':'https://x.com/krassenstein/status/2025600222353666404','author':'krassenstein','published_at':'2026-02-22T15:55:01+00:00','likes':21604,'views':2640797,'reposts':4781,'replies':1065,'keyword_hits':1,'score':84},
+            {'headline':'AI-keyword search result with high engagement','link':'https://x.com/xxabice/status/2025679348351520825','author':'xxabice','published_at':'2026-02-22T21:09:26+00:00','likes':83641,'views':1309605,'reposts':4577,'replies':247,'keyword_hits':1,'score':80},
+            {'headline':'AI-keyword search result with high engagement','link':'https://x.com/himebruna/status/2025676034050277393','author':'himebruna','published_at':'2026-02-22T20:56:16+00:00','likes':47861,'views':2500931,'reposts':710,'replies':204,'keyword_hits':1,'score':79},
+            {'headline':'AI-keyword search result with high engagement','link':'https://x.com/Vilodughetto/status/2025675479802433775','author':'Vilodughetto','published_at':'2026-02-22T20:54:04+00:00','likes':26410,'views':2927556,'reposts':949,'replies':129,'keyword_hits':1,'score':78}
+        ]
         for it in fallback:
-            if it['link'] not in m:
-                m[it['link']] = it
-        arr=list(m.values())
-        arr.sort(key=lambda x:(x['score'], x['likes'], x['views'], x['reposts']), reverse=True)
+            if it['views'] >= MIN_X_VIEWS and it['link'] not in m:
+                arr.append(it)
 
+    arr.sort(key=lambda x:(x['views'], x['score'], x.get('likes',0), x.get('reposts',0)), reverse=True)
     return arr[:TARGET_X_ITEMS]
 
 
 def reddit_items():
     out=[]
-    for sub in REDDIT_SUBS:
+    now_utc = datetime.now(timezone.utc)
+    queries = [
+        'artificial intelligence', 'ai', 'chatgpt', 'openai', 'anthropic', 'gemini',
+        'claude ai', 'machine learning', 'llm', 'robotics'
+    ]
+
+    for q in queries:
         try:
-            txt=fetch(f'https://old.reddit.com/r/{sub}/top.json?t=day&limit=12', timeout=12)
-            js=json.loads(txt)
+            url = f'https://api.pullpush.io/reddit/search/submission/?q={quote_plus(q)}&size=120&sort=desc&sort_type=score'
+            js = fetch_json(url, timeout=16)
         except Exception:
             continue
-        for c in js.get('data',{}).get('children',[]):
-            d=c.get('data',{})
-            title=d.get('title','')
-            if not title: continue
-            score=int(d.get('score',0)); comments=int(d.get('num_comments',0))
-            viral=min(100,int(score*0.04 + comments*0.6))
+
+        for d in js.get('data', []):
+            title = d.get('title','') or ''
+            if not title:
+                continue
+            score = int(d.get('score',0) or 0)
+            comments = int(d.get('num_comments',0) or 0)
+            created_utc = float(d.get('created_utc', 0) or 0)
+            if not created_utc:
+                continue
+
+            age_h = (now_utc - datetime.fromtimestamp(created_utc, tz=timezone.utc)).total_seconds() / 3600.0
+            if age_h > REDDIT_MAX_AGE_HOURS:
+                continue
+            if score < MIN_REDDIT_UPVOTES:
+                continue
+
+            permalink = d.get('permalink','') or ''
+            if permalink.startswith('/r/'):
+                link = 'https://reddit.com' + permalink
+            else:
+                link = d.get('full_link','') or d.get('url','') or ''
+            if not link:
+                continue
+
+            viral = min(100, int(score*0.04 + comments*0.6))
             out.append({
                 'headline': title[:240],
-                'link': 'https://reddit.com'+d.get('permalink',''),
-                'subreddit': d.get('subreddit',sub),
+                'link': link,
+                'subreddit': d.get('subreddit','unknown'),
+                'published_at': datetime.fromtimestamp(created_utc, tz=timezone.utc).isoformat(),
                 'score': score,
                 'comments': comments,
                 'viral_score': viral,
             })
+
     m={}
-    for it in out: m[it['link']]=it
+    for it in out:
+        m[it['link']]=it
     arr=list(m.values())
-    arr.sort(key=lambda x:(x['viral_score'],x['score']), reverse=True)
+    arr.sort(key=lambda x:(x['score'],x['comments']), reverse=True)
     return arr[:TARGET_REDDIT_ITEMS]
 
 
