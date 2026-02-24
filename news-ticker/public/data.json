@@ -6,8 +6,8 @@
       "source": "TechCrunch",
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2019/06/GettyImages-516286525.jpg?resize=1200,1200",
-      "ranking": 92,
-      "virality": 98,
+      "ranking": 91,
+      "virality": 96,
       "fit": 72,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -17,9 +17,31 @@
       "source": "TechCrunch",
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2262515136.jpg?w=1024",
-      "ranking": 91,
-      "virality": 96,
+      "ranking": 90,
+      "virality": 95,
       "fit": 72,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Anthropic accuses China's AI labs of ripping off content - just like it did",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/24/anthropic_misanthropic_chinese_ai_labs/",
+      "source": "The Register",
+      "date": "2026-02-24",
+      "image_url": "https://regmedia.co.uk/2024/03/22/china_data_shutterstock.jpg",
+      "ranking": 87,
+      "virality": 99,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "IBM stock dives after Anthropic points out AI can rewrite COBOL fast",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/ibm_share_dive_anthropic_cobol/",
+      "source": "The Register",
+      "date": "2026-02-23",
+      "image_url": "https://regmedia.co.uk/2020/04/05/game_over_green_screen.jpg",
+      "ranking": 87,
+      "virality": 98,
+      "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
@@ -29,7 +51,7 @@
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2206295463.jpg?resize=1200,800",
       "ranking": 85,
-      "virality": 95,
+      "virality": 94,
       "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -39,8 +61,19 @@
       "source": "TechCrunch",
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2260256117.jpg?w=1024",
-      "ranking": 84,
-      "virality": 92,
+      "ranking": 83,
+      "virality": 90,
+      "fit": 63,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
+      "link": "https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/",
+      "source": "TechCrunch",
+      "date": "2026-02-24",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Y-Combinator-Crab.png?resize=1200,829",
+      "ranking": 79,
+      "virality": 99,
       "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -51,7 +84,7 @@
       "date": "2026-02-23",
       "image_url": "https://regmedia.co.uk/2019/04/08/shutterstock_frustrated.jpg",
       "ranking": 79,
-      "virality": 92,
+      "virality": 91,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -61,8 +94,8 @@
       "source": "TechCrunch",
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/google-logo.jpg?resize=1200,800",
-      "ranking": 78,
-      "virality": 96,
+      "ranking": 77,
+      "virality": 94,
       "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -73,7 +106,7 @@
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1167037043-1.jpg?resize=1200,800",
       "ranking": 76,
-      "virality": 92,
+      "virality": 91,
       "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -83,31 +116,9 @@
       "source": "AI News",
       "date": "2026-02-23",
       "image_url": "https://www.artificialintelligence-news.com/wp-content/uploads/2025/08/ai-expo-banner-2025.png",
-      "ranking": 75,
-      "virality": 89,
+      "ranking": 74,
+      "virality": 87,
       "fit": 63,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Guide Labs debuts a new kind of interpretable LLM",
-      "link": "https://techcrunch.com/2026/02/23/guide-labs-debuts-a-new-kind-of-interpretable-llm/",
-      "source": "TechCrunch",
-      "date": "2026-02-23",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Screenshot-2026-02-23-at-9.31.05-AM.png?resize=1200,639",
-      "ranking": 72,
-      "virality": 95,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Microsoft execs worry AI will eat entry level coding jobs",
-      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/microsoft_ai_entry_level_russinovich_hanselman/",
-      "source": "The Register",
-      "date": "2026-02-23",
-      "image_url": "https://regmedia.co.uk/2026/02/23/new_job_no_job_hiring_entry_level.jpg",
-      "ranking": 72,
-      "virality": 95,
-      "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
@@ -117,7 +128,18 @@
       "date": "2026-02-23",
       "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/02/260219_humanoid_algo_hero.jpg?resize=1200,600",
       "ranking": 72,
-      "virality": 94,
+      "virality": 93,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Guide Labs debuts a new kind of interpretable LLM",
+      "link": "https://techcrunch.com/2026/02/23/guide-labs-debuts-a-new-kind-of-interpretable-llm/",
+      "source": "TechCrunch",
+      "date": "2026-02-23",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Screenshot-2026-02-23-at-9.31.05-AM.png?resize=1200,639",
+      "ranking": 72,
+      "virality": 93,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -128,7 +150,7 @@
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/share_6305813549552173171.png?resize=540,1200",
       "ranking": 72,
-      "virality": 94,
+      "virality": 93,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -139,7 +161,18 @@
       "date": "2026-02-23",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/Prompted-Playlist-Header-UK-.jpg?w=1200",
       "ranking": 72,
-      "virality": 94,
+      "virality": 93,
+      "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "Microsoft execs worry AI will eat entry level coding jobs",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/microsoft_ai_entry_level_russinovich_hanselman/",
+      "source": "The Register",
+      "date": "2026-02-23",
+      "image_url": "https://regmedia.co.uk/2026/02/23/new_job_no_job_hiring_entry_level.jpg",
+      "ranking": 72,
+      "virality": 93,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -149,8 +182,8 @@
       "source": "The Register",
       "date": "2026-02-23",
       "image_url": "https://regmedia.co.uk/2021/06/17/shutterstock_deepfake.jpg",
-      "ranking": 72,
-      "virality": 93,
+      "ranking": 71,
+      "virality": 92,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
@@ -160,9 +193,20 @@
       "source": "The Register",
       "date": "2026-02-23",
       "image_url": "https://regmedia.co.uk/2024/02/22/shutterstock_sam_altman.jpg",
-      "ranking": 71,
-      "virality": 91,
+      "ranking": 70,
+      "virality": 89,
       "fit": 54,
+      "reason": "Ranked by keyword relevance, recency, and source trust."
+    },
+    {
+      "headline": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
+      "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+      "source": "Hugging Face",
+      "date": "2026-02-24",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63b738acbd2d1535227daa4c/7B01Lxy_IS-2FaPGUKJiA.png",
+      "ranking": 70,
+      "virality": 61,
+      "fit": 63,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     },
     {
@@ -171,58 +215,14 @@
       "source": "The Register",
       "date": "2026-02-23",
       "image_url": "https://regmedia.co.uk/2024/03/04/firewall_shutterstock.jpg",
-      "ranking": 70,
-      "virality": 90,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
-      "link": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
-      "source": "Hugging Face",
-      "date": "2026-02-23",
-      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63b738acbd2d1535227daa4c/7B01Lxy_IS-2FaPGUKJiA.png",
-      "ranking": 70,
-      "virality": 61,
-      "fit": 63,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "How Amul is using AI dairy farming to put 36 million farmers first",
-      "link": "https://www.artificialintelligence-news.com/news/amul-ai-dairy-farming-platform-india/",
-      "source": "AI News",
-      "date": "2026-02-23",
-      "image_url": "https://www.artificialintelligence-news.com/wp-content/uploads/2025/08/ai-expo-banner-2025.png",
       "ranking": 69,
       "virality": 88,
-      "fit": 54,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Google Antigravity falls to Earth under OpenClaw-fueled compute load",
-      "link": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/google_antigravity_compute_burden/",
-      "source": "The Register",
-      "date": "2026-02-23",
-      "image_url": "https://regmedia.co.uk/2016/09/12/spacetime_continuum_gravity.jpg",
-      "ranking": 68,
-      "virality": 97,
-      "fit": 45,
-      "reason": "Ranked by keyword relevance, recency, and source trust."
-    },
-    {
-      "headline": "Hitachi bets on industrial expertise to win the physical AI race",
-      "link": "https://www.artificialintelligence-news.com/news/hitachi-physical-ai-industrial-expertise/",
-      "source": "AI News",
-      "date": "2026-02-23",
-      "image_url": "https://www.artificialintelligence-news.com/wp-content/uploads/2025/08/ai-expo-banner-2025.png",
-      "ranking": 68,
-      "virality": 86,
       "fit": 54,
       "reason": "Ranked by keyword relevance, recency, and source trust."
     }
   ],
   "x_viral": {
-    "generated_at": "2026-02-23T23:44:53.807957+00:00",
+    "generated_at": "2026-02-24T01:34:49.600406+00:00",
     "note": "Top AI-related posts from selected X accounts (RSS mirror).",
     "items": [
       {
@@ -348,7 +348,7 @@
     ]
   },
   "reddit_viral": {
-    "generated_at": "2026-02-23T23:44:57.648045+00:00",
+    "generated_at": "2026-02-24T01:34:55.964931+00:00",
     "subreddits": [
       "artificial",
       "MachineLearning",
@@ -381,15 +381,6 @@
         "viral_score": 100
       },
       {
-        "headline": "I asked ChatGPT to create selfies for video game characters",
-        "link": "https://reddit.com/r/ChatGPT/comments/1k0vpcj/i_asked_chatgpt_to_create_selfies_for_video_game/",
-        "subreddit": "ChatGPT",
-        "published_at": "2025-04-16T21:16:20+00:00",
-        "score": 3981,
-        "comments": 503,
-        "viral_score": 100
-      },
-      {
         "headline": "Ai é f*oda 🫥",
         "link": "https://reddit.com/r/jogatina/comments/1kmgv7c/ai_é_foda/",
         "subreddit": "jogatina",
@@ -397,15 +388,6 @@
         "score": 1945,
         "comments": 28,
         "viral_score": 94
-      },
-      {
-        "headline": "ChatGPT has helped me more than 15 years of therapy. No joke.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1k1dxpp/chatgpt_has_helped_me_more_than_15_years_of/",
-        "subreddit": "ChatGPT",
-        "published_at": "2025-04-17T14:18:09+00:00",
-        "score": 1901,
-        "comments": 465,
-        "viral_score": 100
       },
       {
         "headline": "Petition to ban AI gen slop from the subreddit?",
@@ -417,39 +399,57 @@
         "viral_score": 100
       },
       {
-        "headline": "Petition for ban on AI posts?",
-        "link": "https://reddit.com/r/LiverpoolFC/comments/1k6mn1g/petition_for_ban_on_ai_posts/",
-        "subreddit": "LiverpoolFC",
-        "published_at": "2025-04-24T07:50:03+00:00",
-        "score": 1808,
-        "comments": 261,
-        "viral_score": 100
-      },
-      {
-        "headline": "In my dream, I came across a graveyard and in it was a tombstone that was a dance dance revolution cabinet",
-        "link": "https://reddit.com/r/thomastheplankengine/comments/1k5g3d3/in_my_dream_i_came_across_a_graveyard_and_in_it/",
-        "subreddit": "thomastheplankengine",
-        "published_at": "2025-04-22T20:05:46+00:00",
-        "score": 1586,
-        "comments": 42,
-        "viral_score": 88
-      },
-      {
-        "headline": "I don’t even know what to say about these.",
-        "link": "https://reddit.com/r/flonkers/comments/1k1u4m8/i_dont_even_know_what_to_say_about_these/",
-        "subreddit": "flonkers",
-        "published_at": "2025-04-18T02:18:41+00:00",
-        "score": 1310,
-        "comments": 87,
-        "viral_score": 100
-      },
-      {
         "headline": "From Clone robotics : Protoclone is the most anatomically accurate android in the world.",
         "link": "https://reddit.com/r/EngineeringPorn/comments/1jvcsko/from_clone_robotics_protoclone_is_the_most/",
         "subreddit": "EngineeringPorn",
         "published_at": "2025-04-09T18:19:54+00:00",
         "score": 1256,
         "comments": 204,
+        "viral_score": 100
+      },
+      {
+        "headline": "What is the most profitable thing you have done with ChatGPT?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1km652i/what_is_the_most_profitable_thing_you_have_done/",
+        "subreddit": "ChatGPT",
+        "published_at": "2025-05-14T04:06:17+00:00",
+        "score": 1085,
+        "comments": 901,
+        "viral_score": 100
+      },
+      {
+        "headline": "Openai launched its first fix to 4o",
+        "link": "https://reddit.com/r/OpenAI/comments/1ka25re/openai_launched_its_first_fix_to_4o/",
+        "subreddit": "OpenAI",
+        "published_at": "2025-04-28T18:02:41+00:00",
+        "score": 1028,
+        "comments": 155,
+        "viral_score": 100
+      },
+      {
+        "headline": "Seriously, I don’t know what the Leviathan AI is on, but it’s probably the same stuff the Flood use to make the Logic Plague.",
+        "link": "https://reddit.com/r/masseffect/comments/1kit33l/seriously_i_dont_know_what_the_leviathan_ai_is_on/",
+        "subreddit": "masseffect",
+        "published_at": "2025-05-09T20:55:23+00:00",
+        "score": 807,
+        "comments": 227,
+        "viral_score": 100
+      },
+      {
+        "headline": "The Wheels Are Starting to Come Off",
+        "link": "https://reddit.com/r/recruitinghell/comments/1kpr274/the_wheels_are_starting_to_come_off/",
+        "subreddit": "recruitinghell",
+        "published_at": "2025-05-18T18:39:09+00:00",
+        "score": 674,
+        "comments": 152,
+        "viral_score": 100
+      },
+      {
+        "headline": "Why Apple Still Hasn’t Cracked AI",
+        "link": "https://reddit.com/r/technology/comments/1kpufkp/why_apple_still_hasnt_cracked_ai/",
+        "subreddit": "technology",
+        "published_at": "2025-05-18T21:04:10+00:00",
+        "score": 645,
+        "comments": 336,
         "viral_score": 100
       }
     ]
