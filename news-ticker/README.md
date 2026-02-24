@@ -13,8 +13,9 @@ This project must always generate `public/data.json` using:
 ## Source of truth
 - Script: `scripts_generate_data.py`
 - Output: `public/data.json` (single source of truth)
+- App fetch path: **`/news-ticker/public/data.json` only**
 - Browser profile for automation: **`openclaw` only**
-- Note: root `data.json` and build `assets/` are intentionally not used.
+- Note: root `data.json` is deprecated/forbidden and must not be recreated.
 
 ## Run
 ```bash

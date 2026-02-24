@@ -16,9 +16,12 @@ At 06:00 AM (America/Costa_Rica), run a full NewsTicker refresh and leave it liv
 2. Never use Nitter for X extraction.
 3. Routine refresh commits/pushes **only**:
    - `news-ticker/public/data.json`
-4. After push, run deploy:
+4. Frontend must read data from **`/news-ticker/public/data.json` only**.
+   - No fallback to `/news-ticker/data.json`.
+   - Root `news-ticker/data.json` must not exist.
+5. After push, run deploy:
    - `npm --prefix news-ticker run deploy`
-5. Completion notification must be sent via **Aster** to WhatsApp:
+6. Completion notification must be sent via **Aster** to WhatsApp:
    - `+50660048606`
    - Text: `News ticker fue actualizado`
 
