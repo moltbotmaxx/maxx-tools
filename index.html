@@ -1,119 +1,322 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maxx Tools</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
   <style>
     body {
-      font-family: Inter, system-ui, -apple-system, sans-serif;
-      background: #0b1020;
-      color: #e8ecff;
-      margin: 0;
-      padding: 20px
+      font-family: 'Inter', var(--font-main);
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto
+    .hub-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
     }
 
-    h1 {
-      margin: 0 0 8px
+    /* ── Header ── */
+    .hub-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
     }
 
-    .muted {
-      color: #9fb0de;
-      font-size: 13px
+    .hub-logo {
+      width: 52px;
+      height: 52px;
+      background: var(--accent-primary);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 6px 16px rgba(0, 122, 255, 0.2);
+      flex-shrink: 0;
     }
 
-    .grid {
+    .hub-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.03em;
+    }
+
+    .hub-subtitle {
+      color: var(--text-tertiary);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    /* ── Tools Grid ── */
+    .tools-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 12px;
-      margin-top: 16px
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
     }
 
-    .card {
-      display: block;
-      background: #121a30;
-      border: 1px solid #233056;
-      border-radius: 14px;
-      padding: 14px;
-      color: #e8ecff;
-      text-decoration: none
+    /* ── Tool Card ── */
+    .tool-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 24px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
     }
 
-    .card:hover {
-      border-color: #3a4f87;
-      transform: translateY(-1px)
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--card-accent, var(--accent-primary));
+      opacity: 0;
+      transition: opacity var(--transition-fast);
     }
 
-    .card.nonclick {
-      opacity: .75;
-      cursor: default
+    .tool-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-light);
     }
 
-    .card.nonclick:hover {
-      border-color: #233056;
-      transform: none
+    .tool-card:hover::before {
+      opacity: 1;
     }
 
-    .tag {
-      display: inline-block;
-      font-size: 11px;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: #1b2748;
-      color: #b9c8f6;
-      margin-bottom: 8px
+    .tool-card--disabled {
+      opacity: 0.55;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .tool-card--disabled:hover {
+      transform: none;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Card Top Row */
+    .tool-card__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tool-card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .tool-card__badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: var(--bg-tertiary);
+      color: var(--text-tertiary);
+    }
+
+    .tool-card__badge--active {
+      background: rgba(52, 199, 89, 0.1);
+      color: var(--accent-success);
+    }
+
+    /* Card Content */
+    .tool-card__name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .tool-card__desc {
+      font-size: 0.82rem;
+      color: var(--text-tertiary);
+      line-height: 1.5;
+    }
+
+    /* Card Footer */
+    .tool-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .tool-card__link {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tool-card__arrow {
+      transition: transform var(--transition-fast);
+      font-size: 1rem;
+    }
+
+    .tool-card:hover .tool-card__arrow {
+      transform: translateX(4px);
+    }
+
+    /* ── Footer ── */
+    .hub-footer {
+      text-align: center;
+      padding: 48px 0 24px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .hub-footer__divider {
+      width: 40px;
+      height: 2px;
+      background: var(--border-light);
+      margin: 0 auto 12px;
+      border-radius: 1px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .hub-container {
+        padding: 28px 16px 48px;
+      }
+
+      .hub-title {
+        font-size: 1.5rem;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <h1>🦞 Maxx Tools</h1>
-    <p class="muted">Hub de mini apps y tools internos.</p>
-
-    <div class="grid">
-      <a class="card" href="./fx-tracker/">
-        <span class="tag">Mini App</span><br />
-        <strong>fx-tracker</strong><br />
-        <span class="muted">USD/CRC, EUR/CRC, tendencias y noticias oficiales BCCR.</span>
-      </a>
-
-      <a class="card" href="./news-ticker/">
-        <span class="tag">Mini App</span><br />
-        <strong>news-ticker</strong><br />
-        <span class="muted">Top AI news rankeadas + señales virales de X y Reddit.</span>
-      </a>
-
-      <a class="card" href="./mission-control/">
-        <span class="tag">Mini App</span><br />
-        <strong>mission-control</strong><br />
-        <span class="muted">Dashboard de agentes, estado y métricas del sistema.</span>
-      </a>
-
-      <a class="card" href="./smart-frame/">
-        <span class="tag">Mini App</span><br />
-        <strong>smart-frame</strong><br />
-        <span class="muted">Dashboard/feed para frame con clima, IG y noticias.</span>
-      </a>
-
-      <a class="card" href="./daily-tracker/">
-        <span class="tag">Mini App</span><br />
-        <strong>daily-tracker</strong><br />
-        <span class="muted">Seguimiento diario de hábitos y tareas personales.</span>
-      </a>
-
-      <div class="card nonclick" aria-disabled="true">
-        <span class="tag">Backend / No Frontend</span><br />
-        <strong>insta-claws</strong><br />
-        <span class="muted">Automatización de assets/posts. Sin interfaz web pública.</span>
+  <div class="hub-container">
+    <header>
+      <div class="hub-header">
+        <div class="hub-logo">🦞</div>
+        <h1 class="hub-title">Maxx Tools</h1>
       </div>
+      <p class="hub-subtitle">Hub de mini apps y tools internos</p>
+    </header>
+
+    <div class="tools-grid">
+
+      <a class="tool-card" href="./news-ticker/" style="--card-accent: #FF3B30;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(255, 59, 48, 0.1);">📰</div>
+          <span class="tool-card__badge tool-card__badge--active">Live</span>
+        </div>
+        <div class="tool-card__name">news-ticker</div>
+        <div class="tool-card__desc">Top AI news rankeadas + señales virales de X y Reddit.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link">Abrir <span class="tool-card__arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="tool-card" href="./daily-tracker/" style="--card-accent: #007AFF;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(0, 122, 255, 0.1);">🗓️</div>
+          <span class="tool-card__badge tool-card__badge--active">Live</span>
+        </div>
+        <div class="tool-card__name">daily-tracker</div>
+        <div class="tool-card__desc">Content Scheduler — planifica y organiza tu contenido semanal.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link">Abrir <span class="tool-card__arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="tool-card" href="./fx-tracker/" style="--card-accent: #34C759;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(52, 199, 89, 0.1);">💱</div>
+          <span class="tool-card__badge tool-card__badge--active">Live</span>
+        </div>
+        <div class="tool-card__name">fx-tracker</div>
+        <div class="tool-card__desc">USD/CRC, EUR/CRC, tendencias y noticias oficiales BCCR.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link">Abrir <span class="tool-card__arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="tool-card" href="./mission-control/" style="--card-accent: #5856D6;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(88, 86, 214, 0.1);">🚀</div>
+          <span class="tool-card__badge">App</span>
+        </div>
+        <div class="tool-card__name">mission-control</div>
+        <div class="tool-card__desc">Dashboard de agentes, estado y métricas del sistema.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link">Abrir <span class="tool-card__arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="tool-card" href="./smart-frame/" style="--card-accent: #FF9500;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(255, 149, 0, 0.1);">🖼️</div>
+          <span class="tool-card__badge">App</span>
+        </div>
+        <div class="tool-card__name">smart-frame</div>
+        <div class="tool-card__desc">Dashboard/feed para frame con clima, IG y noticias.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link">Abrir <span class="tool-card__arrow">→</span></span>
+        </div>
+      </a>
+
+      <div class="tool-card tool-card--disabled" style="--card-accent: #8E8E93;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(142, 142, 147, 0.1);">📸</div>
+          <span class="tool-card__badge">Backend</span>
+        </div>
+        <div class="tool-card__name">insta-claws</div>
+        <div class="tool-card__desc">Automatización de assets/posts. Sin interfaz web pública.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link" style="color: var(--text-muted);">No disponible</span>
+        </div>
+      </div>
+
     </div>
+
+    <footer class="hub-footer">
+      <div class="hub-footer__divider"></div>
+      <p>🦞 Maxx Tools · 2026</p>
+    </footer>
   </div>
 </body>
 
