@@ -1008,8 +1008,10 @@ async function renderNews() {
     elements.simpleGrid.innerHTML = '';
     next6.forEach((item, i) => elements.simpleGrid.appendChild(createSimpleCard(item, i + 6)));
 
-    elements.poolListNews.innerHTML = '';
-    remaining.forEach(item => elements.poolListNews.appendChild(createPoolItem(item)));
+    if (elements.poolListNews) {
+        elements.poolListNews.innerHTML = '';
+        remaining.forEach(item => elements.poolListNews.appendChild(createPoolItem(item)));
+    }
 
     // Sidebar
     elements.xViralList.innerHTML = '';
