@@ -3139,7 +3139,7 @@ canvas {
 /* Selection Layout */
 .selection-view-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
   width: 100%;
@@ -3147,8 +3147,7 @@ canvas {
   padding: 0 24px 24px 24px;
 }
 
-.selection-main,
-.selection-sidebar {
+.selection-main {
   min-width: 0;
 }
 

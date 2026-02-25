@@ -201,8 +201,7 @@
 
             <!-- VIEW 2: SELECTION (IDEAS) -->
             <div id="selection-view" class="view-container">
-                <div class="selection-view-layout"
-                    style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; padding: 24px; align-items: start;">
+                <div class="selection-view-layout">
                     <div class="selection-main">
                         <section class="inspiration-input-box bento-box" style="margin-bottom: 24px;">
                             <div class="box-header">
@@ -223,22 +222,13 @@
                             </div>
                         </section>
                     </div>
-
-                    <aside class="selection-sidebar bento-box">
-                        <div class="box-header">
-                            <h2>📦 Selection Pool <span class="count-badge" id="poolCountSelection">0</span></h2>
-                        </div>
-                        <div id="poolCardsSelection" class="pool-list">
-                            <!-- Cards will be injected here -->
-                        </div>
-                    </aside>
                 </div>
             </div>
 
             <!-- VIEW 3: SCHEDULER -->
             <div id="scheduler-view" class="view-container">
                 <div class="bento-grid">
-                    <!-- Pool Section -->
+                    <!-- Staging Section -->
                     <section class="bento-box pool-section">
                         <div class="box-header">
                             <h2>
@@ -246,10 +236,10 @@
                                     <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34" />
                                     <polygon points="18 2 22 6 12 16 8 16 8 12 18 2" />
                                 </svg>
-                                Pool
+                                Staging
                             </h2>
                             <div class="header-actions" style="display: flex; align-items: center; gap: 8px;">
-                                <button id="clearPoolBtn" class="icon-btn" title="Clear Pool"
+                                <button id="clearPoolBtn" class="icon-btn" title="Clear Staging"
                                     style="font-size: 0.7rem; padding: 4px 8px; color: var(--text-tertiary);">
                                     Clear
                                 </button>
@@ -513,7 +503,7 @@
                 <path d="M12 5v14M5 12h14" transform="rotate(45 12 12)"></path>
                 <path d="M9 17l-5-5 5-5M15 17l5-5-5-5"></path>
             </svg>
-            Move to Pool
+            Move to Staging
         </button>
     </div>
 
