@@ -1039,6 +1039,27 @@ function getScoreClass(ranking) {
     return 'score-muted';
 }
 
+function getScoreInternalHtml(item) {
+    const virality = toSafeNumber(item.virality, 0);
+    const fit = toSafeNumber(item.fit, 0);
+    return `
+        <span class="score-badge__internal">
+            <span title="Virality">V ${virality}</span>
+            <span title="Fit">F ${fit}</span>
+        </span>
+    `;
+}
+
+function getDoneButtonHtml(extraClass = '') {
+    const className = `done-button ${extraClass}`.trim();
+    return `
+        <button class="${className}" title="Mark as done">
+            <span class="done-button__icon">✓</span>
+            <span class="done-button__label">Done</span>
+        </button>
+    `;
+}
+
 function markAsDone(headline) {
     doneHeadlines.add(headline);
     localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
@@ -1070,6 +1091,7 @@ function createFeaturedCard(item, index) {
                 <div class="score-badge score-badge--featured ${getScoreClass(ranking)}">
                     ${ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
                     <span class="score-badge__value">${ranking}</span>
+                    ${getScoreInternalHtml(item)}
                 </div>
             </div>
             <div class="featured-card__body">
@@ -1081,7 +1103,7 @@ function createFeaturedCard(item, index) {
                 </div>
             </div>
         </a>
-        ${!isDone ? `<button class="done-button done-button--featured" title="Mark as Done">✓</button>` : ''}
+        ${!isDone ? getDoneButtonHtml('done-button--featured') : ''}
     `;
 
     const doneBtn = card.querySelector('.done-button');
@@ -1091,6 +1113,8 @@ function createFeaturedCard(item, index) {
 
 function createSimpleCard(item, index) {
     const isDone = doneHeadlines.has(item.headline);
+    const safeImageUrl = safeHttpUrl(item.image_url, '');
+    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
     const safeLink = safeHttpUrl(item.link);
     const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
     const safeReason = escapeHtml(item.reason || '');
@@ -1103,6 +1127,9 @@ function createSimpleCard(item, index) {
     card.innerHTML = `
         <a class="simple-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
             <div class="simple-card__number">${index + 1}</div>
+            <div class="simple-card__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
+                ${hasImage ? '' : '📰'}
+            </div>
             <div class="simple-card__content">
                 <div class="simple-card__title">${safeHeadline}</div>
                 <p class="simple-card__reason">${safeReason}</p>
@@ -1113,10 +1140,11 @@ function createSimpleCard(item, index) {
             <div class="score-pill ${getScoreClass(ranking)}">
                 ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
                 <span>${ranking}</span>
+                ${getScoreInternalHtml(item)}
             </div>
             <span class="simple-card__arrow">→</span>
         </a>
-        ${!isDone ? `<button class="done-button" title="Mark as Done">✓</button>` : ''}
+        ${!isDone ? getDoneButtonHtml() : ''}
     `;
 
     const doneBtn = card.querySelector('.done-button');
@@ -1126,6 +1154,8 @@ function createSimpleCard(item, index) {
 
 function createPoolItem(item) {
     const isDone = doneHeadlines.has(item.headline);
+    const safeImageUrl = safeHttpUrl(item.image_url, '');
+    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
     const safeLink = safeHttpUrl(item.link);
     const safeReason = escapeHtml(item.reason || '');
     const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
@@ -1137,8 +1167,12 @@ function createPoolItem(item) {
 
     card.innerHTML = `
         <a class="pool-item" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
+            <div class="pool-item__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
+                ${hasImage ? '' : '📰'}
+            </div>
             <div class="score-pill score-pill--small ${getScoreClass(ranking)}">
                 <span>${ranking}</span>
+                ${getScoreInternalHtml(item)}
             </div>
             <div class="pool-item__content">
                 <div class="pool-item__title">${safeHeadline}</div>
@@ -1147,7 +1181,7 @@ function createPoolItem(item) {
                 </div>
             </div>
         </a>
-        ${!isDone ? `<button class="done-button done-button--small" title="Mark as Done">✓</button>` : ''}
+        ${!isDone ? getDoneButtonHtml('done-button--small') : ''}
     `;
 
     const doneBtn = card.querySelector('.done-button');
