@@ -16,3 +16,11 @@ Monorepo for Maxx small tools/apps.
 
 ## Local path
 `/Users/maxx/.openclaw/workspace/projects/maxx-tools`
+
+## Daily-Tracker News Pipeline
+- Entry point: `./scripts/run-all.sh daily-tracker/data.json daily-tracker/data.json`
+- Stages:
+  - `scripts/scrape.mjs`
+  - `scripts/enrich.mjs`
+  - `scripts/validate.mjs`
+- Logs: `logs/scrape-YYYY-MM-DD-HHMM.log`

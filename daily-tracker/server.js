@@ -18,6 +18,48 @@ const mimeTypes = {
 const server = http.createServer((req, res) => {
     console.log(`${req.method} ${req.url}`);
 
+    // API: Data Health Status
+    if (req.url === '/api/status' && req.method === 'GET') {
+        fs.readFile(DATA_FILE, 'utf8', (err, raw) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: 'Failed to read data file', details: err.message }));
+                return;
+            }
+            fs.stat(DATA_FILE, (statErr, stats) => {
+                const payload = {};
+                try {
+                    const data = JSON.parse(raw || '{}');
+                    const articles = Array.isArray(data.articles) ? data.articles : [];
+                    const xItems = Array.isArray(data.x_viral?.items) ? data.x_viral.items : [];
+                    const redditItems = Array.isArray(data.reddit_viral?.items) ? data.reddit_viral.items : [];
+                    const validImageCount = articles.filter(a =>
+                        typeof a.image_url === 'string' && /^https?:\/\//i.test(a.image_url)
+                    ).length;
+                    const imageCoveragePct = articles.length ? Number(((validImageCount / articles.length) * 100).toFixed(2)) : 0;
+
+                    payload.timestamp = data.pipeline_meta?.generated_at || (statErr ? null : stats.mtime.toISOString());
+                    payload.last_run = payload.timestamp;
+                    payload.counts = {
+                        articles: articles.length,
+                        x_items: xItems.length,
+                        reddit_items: redditItems.length
+                    };
+                    payload.image_url_valid_pct = imageCoveragePct;
+                    payload.scoring_version = data.pipeline_meta?.scoring_version || 'unknown';
+                } catch (parseErr) {
+                    res.writeHead(500, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify({ error: 'Invalid JSON in data file', details: parseErr.message }));
+                    return;
+                }
+
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify(payload));
+            });
+        });
+        return;
+    }
+
     // API: GET Data
     if (req.url === '/api/data' && req.method === 'GET') {
         fs.readFile(DATA_FILE, 'utf8', (err, data) => {

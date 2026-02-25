@@ -48,14 +48,19 @@ Before pushing:
 
 ## 8) Daily-Tracker news runbook (mandatory)
 For `daily-tracker`, enforce this pipeline for Sourcing data:
-1. Refresh data into `daily-tracker/data.json` (target: >=40 articles in last 48h, 10 X, 10 Reddit).
-2. For X posts: **never use Nitter**. Use browser automation on x.com with `profile="openclaw"` and rank by engagement.
-3. Validate output:
-   - article list is populated
-   - news window respects 48h maximum age
-   - `x_viral.items` and `reddit_viral.items` populated and ranked
-4. For routine refreshes, only update `daily-tracker/data.json` and commit/push.
-5. `node scripts/sanitize-news-images.mjs` is optional hygiene, not required for runtime.
+1. Collect raw data into `daily-tracker/data.json` (articles + X + Reddit).
+2. Run the production pipeline (atomic write + validation):
+   - `./scripts/run-all.sh daily-tracker/data.json daily-tracker/data.json`
+3. Validation targets (strict):
+   - `articles.length === 30` within last 48h
+   - X = 10 per topic (`AI`, `CLAUDE`, `CHATGPT`, `GEMINI`) => 40 total
+   - Reddit = 10 total from `r/singularity`, `r/openai`, `r/chatgpt`
+   - no duplicate canonical URLs or title hashes
+   - image coverage gate (default `>= 60%`)
+4. Health endpoint for local check:
+   - `GET /api/status` (last run, counts, image coverage, scoring version)
+5. Routine refresh flow remains:
+   - update `daily-tracker/data.json` and commit/push
 6. Daily automation target: 06:00 AM (America/Costa_Rica) + WhatsApp confirmation via Aster.
 
 ---
