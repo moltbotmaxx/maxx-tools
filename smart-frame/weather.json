@@ -1,8 +1,8 @@
 {
   "weather": {
-    "last_updated": "08:26",
-    "temp_c": "24",
-    "wind_kmh": "25",
+    "last_updated": "08:56",
+    "temp_c": "25",
+    "wind_kmh": "29",
     "condition": "Parcialmente Nublado",
     "bg_image": "images/weather_cloudy.png",
     "theme": "cloudy",
