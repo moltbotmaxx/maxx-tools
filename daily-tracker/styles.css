@@ -3580,8 +3580,8 @@ canvas {
 }
 
 #sourcing-view .sidebar-list {
-  max-height: 360px;
-  overflow-y: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 #sourcing-view .x-post,
