@@ -6,7 +6,6 @@ Monorepo for Maxx small tools/apps.
 - `daily-tracker`
 - `fx-tracker`
 - `insta-claws` (no frontend)
-- `news-ticker`
 - `mission-control`
 - `smart-frame`
 

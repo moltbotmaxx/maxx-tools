@@ -3,7 +3,6 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const TARGET_FILES = [
-  path.join(ROOT, 'news-ticker/public/data.json'),
   path.join(ROOT, 'daily-tracker/data.json'),
 ];
 

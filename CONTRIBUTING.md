@@ -5,9 +5,9 @@ Lightweight rules to keep the monorepo clean and predictable.
 ## 1) Folder conventions
 - Use **kebab-case** for all app/tool folders.
 - Current apps:
+  - `daily-tracker`
   - `fx-tracker`
   - `insta-claws`
-  - `news-ticker`
   - `mission-control`
   - `smart-frame`
 
@@ -46,16 +46,16 @@ Before pushing:
 3. run app build/deploy command (if applicable)
 4. commit + push to `main`
 
-## 8) NewsTicker runbook (mandatory)
-For `news-ticker`, always enforce this pipeline:
-1. Refresh data into `news-ticker/public/data.json` (target: >=40 articles in last 48h, 10 X, 10 Reddit).
+## 8) Daily-Tracker news runbook (mandatory)
+For `daily-tracker`, enforce this pipeline for Sourcing data:
+1. Refresh data into `daily-tracker/data.json` (target: >=40 articles in last 48h, 10 X, 10 Reddit).
 2. For X posts: **never use Nitter**. Use browser automation on x.com with `profile="openclaw"` and rank by engagement.
 3. Validate output:
-   - all articles have non-empty `image_url`
+   - article list is populated
    - news window respects 48h maximum age
    - `x_viral.items` and `reddit_viral.items` populated and ranked
-4. For routine refreshes, commit/push **ONLY** `news-ticker/public/data.json`.
-5. After push, run `npm --prefix news-ticker run deploy` so data is live on `maxxbot.cloud/news-ticker`.
+4. Run `node scripts/sanitize-news-images.mjs` before push to remove broken image URLs.
+5. For routine refreshes, commit/push the updated `daily-tracker/data.json`.
 6. Daily automation target: 06:00 AM (America/Costa_Rica) + WhatsApp confirmation via Aster.
 
 ---
