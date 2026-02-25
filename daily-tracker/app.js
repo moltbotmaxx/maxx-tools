@@ -42,6 +42,8 @@ let currentDate = new Date();
 let newsData = null;
 let showDoneNews = false;
 let doneHeadlines = new Set();
+const NEWS_REFRESH_INTERVAL_MS = 120000;
+let newsAutoRefreshTimer = null;
 
 // Load done headlines from localStorage
 try {
@@ -956,23 +958,29 @@ function switchTab(viewId) {
     if (viewId === 'metrics') {
         // When switching to metrics, align the monthly view with the current global focal date
         dashboardMonth = new Date(getWeekDates(globalOffset)[3]); // Use Wednesday of the current focal week
+        stopNewsAutoRefresh();
         renderDashboard();
     } else if (viewId === 'history') {
+        stopNewsAutoRefresh();
         renderHistory();
     } else if (viewId === 'selection') {
         renderInspiration();
+        stopNewsAutoRefresh();
         renderPool(); // Ensure pool is synced on Selection tab
     } else if (viewId === 'sourcing') {
-        renderNews();
+        renderNews(true);
+        startNewsAutoRefresh();
         renderPool(); // Ensure pool is synced on Sourcing tab
+    } else {
+        stopNewsAutoRefresh();
     }
 }
 
 // ===========================
 // News Rendering Logic
 // ===========================
-async function renderNews() {
-    if (!newsData) {
+async function renderNews(forceRefresh = false) {
+    if (!newsData || forceRefresh) {
         try {
             const ts = Date.now();
             const res = await fetch(`data.json?t=${ts}`, { cache: 'no-store' });
@@ -1063,7 +1071,20 @@ function getDoneButtonHtml(extraClass = '') {
 function markAsDone(headline) {
     doneHeadlines.add(headline);
     localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
-    renderNews();
+    renderNews(false);
+}
+
+function startNewsAutoRefresh() {
+    stopNewsAutoRefresh();
+    newsAutoRefreshTimer = setInterval(() => {
+        if (currentView === 'sourcing') renderNews(true);
+    }, NEWS_REFRESH_INTERVAL_MS);
+}
+
+function stopNewsAutoRefresh() {
+    if (!newsAutoRefreshTimer) return;
+    clearInterval(newsAutoRefreshTimer);
+    newsAutoRefreshTimer = null;
 }
 
 function createFeaturedCard(item, index) {
@@ -1872,16 +1893,22 @@ function setupEventListeners() {
     if (elements.showDoneNews) {
         elements.showDoneNews.addEventListener('change', (e) => {
             showDoneNews = e.target.checked;
-            renderNews();
+            renderNews(false);
         });
     }
     if (elements.resetNewsBtn) {
         elements.resetNewsBtn.addEventListener('click', () => {
             doneHeadlines.clear();
             localStorage.removeItem('done_articles');
-            renderNews();
+            renderNews(false);
         });
     }
+
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden && currentView === 'sourcing') {
+            renderNews(true);
+        }
+    });
 
     // Global Week Navigation (ONLY for History now)
     if (elements.weekPrev) {
@@ -2026,6 +2053,7 @@ function exportData() {
 async function init() {
     await loadData();
     setupEventListeners();
+    if (currentView === 'sourcing') startNewsAutoRefresh();
 }
 
 document.addEventListener('DOMContentLoaded', init);

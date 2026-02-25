@@ -54,8 +54,8 @@ For `daily-tracker`, enforce this pipeline for Sourcing data:
    - article list is populated
    - news window respects 48h maximum age
    - `x_viral.items` and `reddit_viral.items` populated and ranked
-4. Run `node scripts/sanitize-news-images.mjs` before push to remove broken image URLs.
-5. For routine refreshes, commit/push the updated `daily-tracker/data.json`.
+4. For routine refreshes, only update `daily-tracker/data.json` and commit/push.
+5. `node scripts/sanitize-news-images.mjs` is optional hygiene, not required for runtime.
 6. Daily automation target: 06:00 AM (America/Costa_Rica) + WhatsApp confirmation via Aster.
 
 ---
