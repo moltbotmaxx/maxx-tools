@@ -1,8 +1,8 @@
 {
   "weather": {
-    "last_updated": "01:26",
+    "last_updated": "01:56",
     "temp_c": "23",
-    "wind_kmh": "22",
+    "wind_kmh": "21",
     "condition": "Parcialmente Nublado",
     "bg_image": "images/weather_night.png",
     "theme": "night",
