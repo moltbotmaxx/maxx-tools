@@ -2,18 +2,31 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    
-    // Safety rules for your Content Scheduler
+
+    // Single shared document used by the app.
+    // NOTE: This still has public reads/writes (no auth flow yet), but limits writes
+    // to valid structure and blocks access to any other document in the collection.
+    match /daily-tracker-data/global-tracker-data {
+      allow read: if true;
+      allow create, update: if isValidPayload();
+      allow delete: if false;
+
+      function isValidPayload() {
+        return request.resource.data.keys().hasOnly(['appData', 'permanentNotes', 'lastUpdated'])
+          && request.resource.data.appData is map
+          && request.resource.data.appData.keys().hasOnly(['pool', 'schedule', 'ideas'])
+          && request.resource.data.appData.pool is list
+          && request.resource.data.appData.schedule is map
+          && request.resource.data.appData.ideas is list
+          && request.resource.data.permanentNotes is string
+          && request.resource.data.permanentNotes.size() <= 20000
+          && request.resource.data.lastUpdated is string;
+      }
+    }
+
+    // Block any other doc IDs in daily-tracker-data collection.
     match /daily-tracker-data/{document} {
-      // For now, allowing read/write so the app functions.
-      // TO SECURE: You should enable Firebase Authentication and use:
-      // allow read, write: if request.auth != null && request.auth.uid == 'YOUR_USER_ID';
-      
-      allow read, write: if true;
-      
-      // Basic validation to prevent corrupting the document structure
-      allow update: if request.resource.data.appData is map 
-                   && request.resource.data.lastUpdated is string;
+      allow read, write: if false;
     }
 
     // Deny access to all other collections by default

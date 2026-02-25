@@ -2,6 +2,25 @@ const API_KEY = "AIzaSyD9Q9b_RkQ5KCUSoNdqs8W2C3jrB6Q_pCQ";
 const PROJECT_ID = "daily-tracker-ee82c";
 const DOC_PATH = "daily-tracker-data/global-tracker-data";
 
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function safeHttpUrl(url) {
+  if (!url || typeof url !== 'string') return '';
+  try {
+    const parsed = new URL(url);
+    return (parsed.protocol === 'http:' || parsed.protocol === 'https:') ? parsed.href : '';
+  } catch {
+    return '';
+  }
+}
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "open-clipper-modal") {
     createClipperModal(request.data);
@@ -156,6 +175,8 @@ function createClipperModal(data) {
   modal.className = 'modal';
 
   let selectedType = 'post';
+  const safeTitle = escapeHtml(data?.title || '');
+  const safeSelection = escapeHtml(data?.selection ? `Quote: ${data.selection}` : '');
 
   modal.innerHTML = `
     <div class="header">
@@ -164,7 +185,7 @@ function createClipperModal(data) {
     </div>
     <div class="field">
       <label>Name</label>
-      <input type="text" id="dt-title" value="${data.title}">
+      <input type="text" id="dt-title" value="${safeTitle}">
     </div>
     <div class="field">
       <label>Category</label>
@@ -176,7 +197,7 @@ function createClipperModal(data) {
     </div>
     <div class="field">
       <label>Notes</label>
-      <textarea id="dt-notes" rows="3">${data.selection ? 'Quote: ' + data.selection : ''}</textarea>
+      <textarea id="dt-notes" rows="3">${safeSelection}</textarea>
     </div>
     <button class="btn-save" id="dt-save">Save to Daily Tracker</button>
     <div class="status" id="dt-status"></div>
@@ -225,7 +246,7 @@ function createClipperModal(data) {
           fields: {
             id: { stringValue: Math.random().toString(36).substr(2, 9) },
             title: { stringValue: title },
-            url: { stringValue: data.url },
+            url: { stringValue: safeHttpUrl(data.url) },
             notes: { stringValue: notes },
             type: { stringValue: selectedType },
             createdAt: { stringValue: new Date().toISOString() },

@@ -2,6 +2,16 @@ const API_KEY = "AIzaSyD9Q9b_RkQ5KCUSoNdqs8W2C3jrB6Q_pCQ";
 const PROJECT_ID = "daily-tracker-ee82c";
 const DOC_PATH = "daily-tracker-data/global-tracker-data";
 
+function safeHttpUrl(url) {
+    if (!url || typeof url !== 'string') return '';
+    try {
+        const parsed = new URL(url);
+        return (parsed.protocol === 'http:' || parsed.protocol === 'https:') ? parsed.href : '';
+    } catch {
+        return '';
+    }
+}
+
 let currentTab = null;
 let selectedType = 'post';
 
@@ -52,7 +62,7 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
                 fields: {
                     id: { stringValue: Date.now().toString(36) + Math.random().toString(36).substr(2) },
                     title: { stringValue: title },
-                    url: { stringValue: currentTab.url },
+                    url: { stringValue: safeHttpUrl(currentTab?.url) },
                     notes: { stringValue: notes },
                     type: { stringValue: selectedType },
                     createdAt: { stringValue: new Date().toISOString() },

@@ -151,6 +151,30 @@ function generateId() {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
 
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function safeHttpUrl(url, fallback = '#') {
+    if (!url || typeof url !== 'string') return fallback;
+    try {
+        const parsed = new URL(url, window.location.origin);
+        return (parsed.protocol === 'http:' || parsed.protocol === 'https:') ? parsed.href : fallback;
+    } catch {
+        return fallback;
+    }
+}
+
+function toSafeNumber(value, fallback = 0) {
+    const num = Number(value);
+    return Number.isFinite(num) ? num : fallback;
+}
+
 function getDateKey(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -655,8 +679,12 @@ function renderPool() {
         elements.selectionPoolCards
     ].filter(el => el !== null);
 
+    poolContainers.forEach(container => { container.innerHTML = ''; });
+
+    elements.poolCount.textContent = appData.pool.length;
+    if (elements.poolCountNews) elements.poolCountNews.textContent = appData.pool.length;
+
     poolContainers.forEach(container => {
-        container.innerHTML = '';
         if (appData.pool.length === 0) {
             container.innerHTML = `
                 <div class="empty-pool-premium" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; opacity: 0.4; padding: 20px; border: 1px dashed var(--border-light); border-radius: var(--border-radius-md); margin: 10px;">
@@ -665,63 +693,10 @@ function renderPool() {
                     </p>
                 </div>
             `;
+            return;
         }
-    });
 
-    elements.poolCount.textContent = appData.pool.length;
-    if (elements.poolCountNews) elements.poolCountNews.textContent = appData.pool.length;
-
-    if (appData.pool.length === 0) return;
-
-    appData.pool.forEach(card => {
-        const el = document.createElement('div');
-        el.className = `content-card ${card.type}`;
-        el.dataset.id = card.id;
-        el.draggable = true;
-
-        el.innerHTML = `
-            <div class="card-controls">
-                ${card.url ? `
-                    <a href="${card.url}" target="_blank" class="card-link-btn" title="View Source">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                        </svg>
-                    </a>
-                ` : ''}
-                <button class="card-delete" data-action="delete">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"/>
-                        <line x1="6" y1="6" x2="18" y2="18"/>
-                    </svg>
-                </button>
-            </div>
-            <textarea class="card-description" placeholder="Add description..." rows="1">${card.description || ''}</textarea>
-        `;
-
-        // Event listeners...
-        el.addEventListener('dragstart', (e) => handleDragStart(e, card, true));
-        el.addEventListener('dragend', handleDragEnd);
-        el.querySelector('.card-delete').addEventListener('click', () => deleteCard(card.id, true));
-
-        const textarea = el.querySelector('.card-description');
-        textarea.addEventListener('input', (e) => updateCardDescription(card.id, e.target.value, true));
-
-        // Append to all currently active containers
-        poolContainers.forEach(container => {
-            container.appendChild(el.cloneNode(true));
-            // Re-bind events to cloned nodes if necessary, or use event delegation
-        });
-    });
-
-    // Note: Re-binding events for clones is needed if we use clones. 
-    // Simplified: Just render once per container.
-    poolContainers.forEach(container => {
-        container.innerHTML = '';
-        appData.pool.forEach(card => {
-            const cardEl = createPoolCardElement(card);
-            container.appendChild(cardEl);
-        });
+        appData.pool.forEach(card => container.appendChild(createPoolCardElement(card)));
     });
 }
 
@@ -731,10 +706,11 @@ function createPoolCardElement(card) {
     el.dataset.id = card.id;
     el.draggable = true;
 
+    const safeCardUrl = safeHttpUrl(card.url);
     el.innerHTML = `
         <div class="card-controls">
-            ${card.url ? `
-                <a href="${card.url}" target="_blank" class="card-link-btn" title="View Source">
+            ${safeCardUrl !== '#' ? `
+                <a href="${safeCardUrl}" target="_blank" rel="noopener noreferrer" class="card-link-btn" title="View Source">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
@@ -748,13 +724,14 @@ function createPoolCardElement(card) {
                 </svg>
             </button>
         </div>
-        <textarea class="card-description" placeholder="Add description..." rows="1">${card.description || ''}</textarea>
+        <textarea class="card-description" placeholder="Add description..." rows="1"></textarea>
     `;
 
     el.addEventListener('dragstart', (e) => handleDragStart(e, card, true));
     el.addEventListener('dragend', handleDragEnd);
     el.querySelector('.card-delete').addEventListener('click', () => deleteCard(card.id, true));
     const textarea = el.querySelector('.card-description');
+    textarea.value = card.description || '';
     textarea.addEventListener('input', (e) => updateCardDescription(card.id, e.target.value, true));
     textarea.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
@@ -829,15 +806,16 @@ function renderWeekGrid() {
                 const icon = card.type === 'post' ? '📷' : card.type === 'promo' ? '📢' : '🎬';
 
                 // Super simple card: Icon + description on one line, no header
+                const safeCardUrl = safeHttpUrl(card.url);
                 cardEl.innerHTML = `
                     <div class="card-main">
                         <span class="card-icon">${icon}</span>
                         <div class="card-info">
-                            <div class="card-desc">${card.description || 'New Entry'}</div>
+                            <div class="card-desc">${escapeHtml(card.description || 'New Entry')}</div>
                         </div>
                         <div class="card-actions">
-                            ${card.url ? `
-                                <a href="${card.url}" target="_blank" class="card-link-btn grid-link" title="Ver link original">
+                            ${safeCardUrl !== '#' ? `
+                                <a href="${safeCardUrl}" target="_blank" rel="noopener noreferrer" class="card-link-btn grid-link" title="Ver link original">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
@@ -1067,29 +1045,36 @@ function markAsDone(headline) {
 
 function createFeaturedCard(item, index) {
     const isDone = doneHeadlines.has(item.headline);
-    const hasImage = item.image_url && !item.image_url.includes('placeholder');
+    const safeImageUrl = safeHttpUrl(item.image_url, '');
+    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
+    const safeLink = safeHttpUrl(item.link);
+    const safeSource = escapeHtml(item.source || 'Unknown Source');
+    const safeReason = escapeHtml(item.reason || '');
+    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
+    const ranking = toSafeNumber(item.ranking, 0);
+    const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const card = document.createElement('div');
     card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
 
     const imageHtml = hasImage
-        ? `<div class="featured-card__image" style="background-image: url('${item.image_url}'); background-size: cover; background-position: center;">`
+        ? `<div class="featured-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
         : `<div class="featured-card__image">
              <span class="featured-card__image-icon">${['🔥', '⚡', '💔', '📢', '⚙️'][index] || '📰'}</span>`;
 
     card.innerHTML = `
-        <a class="featured-card" href="${item.link}" target="_blank" rel="noopener noreferrer">
+        <a class="featured-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
             ${imageHtml}
-                <span class="featured-card__source-badge">${item.source}</span>
-                <div class="score-badge score-badge--featured ${getScoreClass(item.ranking)}">
-                    ${item.ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
-                    <span class="score-badge__value">${item.ranking}</span>
+                <span class="featured-card__source-badge">${safeSource}</span>
+                <div class="score-badge score-badge--featured ${getScoreClass(ranking)}">
+                    ${ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
+                    <span class="score-badge__value">${ranking}</span>
                 </div>
             </div>
             <div class="featured-card__body">
-                <h3 class="featured-card__title">${decodeEntities(item.headline)}</h3>
-                <p class="featured-card__reason">${item.reason}</p>
+                <h3 class="featured-card__title">${safeHeadline}</h3>
+                <p class="featured-card__reason">${safeReason}</p>
                 <div class="featured-card__meta">
-                    <span>${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    <span>${safeDate}</span>
                     <span class="featured-card__arrow">→</span>
                 </div>
             </div>
@@ -1104,22 +1089,28 @@ function createFeaturedCard(item, index) {
 
 function createSimpleCard(item, index) {
     const isDone = doneHeadlines.has(item.headline);
+    const safeLink = safeHttpUrl(item.link);
+    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
+    const safeReason = escapeHtml(item.reason || '');
+    const safeSource = escapeHtml(item.source || 'Unknown Source');
+    const ranking = toSafeNumber(item.ranking, 0);
+    const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const card = document.createElement('div');
     card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
 
     card.innerHTML = `
-        <a class="simple-card" href="${item.link}" target="_blank" rel="noopener noreferrer">
+        <a class="simple-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
             <div class="simple-card__number">${index + 1}</div>
             <div class="simple-card__content">
-                <div class="simple-card__title">${decodeEntities(item.headline)}</div>
-                <p class="simple-card__reason">${item.reason}</p>
+                <div class="simple-card__title">${safeHeadline}</div>
+                <p class="simple-card__reason">${safeReason}</p>
                 <div class="simple-card__meta">
-                    <span>${item.source} • ${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    <span>${safeSource} • ${safeDate}</span>
                 </div>
             </div>
-            <div class="score-pill ${getScoreClass(item.ranking)}">
-                ${item.ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
-                <span>${item.ranking}</span>
+            <div class="score-pill ${getScoreClass(ranking)}">
+                ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
+                <span>${ranking}</span>
             </div>
             <span class="simple-card__arrow">→</span>
         </a>
@@ -1133,18 +1124,24 @@ function createSimpleCard(item, index) {
 
 function createPoolItem(item) {
     const isDone = doneHeadlines.has(item.headline);
+    const safeLink = safeHttpUrl(item.link);
+    const safeReason = escapeHtml(item.reason || '');
+    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
+    const safeSource = escapeHtml(item.source || 'Unknown Source');
+    const ranking = toSafeNumber(item.ranking, 0);
+    const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const card = document.createElement('div');
     card.className = `card-wrapper pool-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
 
     card.innerHTML = `
-        <a class="pool-item" href="${item.link !== '#' ? item.link : 'javascript:void(0)'}" target="_blank" rel="noopener noreferrer" title="${item.reason}">
-            <div class="score-pill score-pill--small ${getScoreClass(item.ranking)}">
-                <span>${item.ranking}</span>
+        <a class="pool-item" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
+            <div class="score-pill score-pill--small ${getScoreClass(ranking)}">
+                <span>${ranking}</span>
             </div>
             <div class="pool-item__content">
-                <div class="pool-item__title">${decodeEntities(item.headline)}</div>
+                <div class="pool-item__title">${safeHeadline}</div>
                 <div class="pool-item__meta">
-                    <span>${item.source} • ${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    <span>${safeSource} • ${safeDate}</span>
                 </div>
             </div>
         </a>
@@ -1165,18 +1162,23 @@ function formatCompact(n) {
 function createXPostItem(item) {
     const card = document.createElement('a');
     card.className = 'x-post';
-    card.href = item.link;
+    card.href = safeHttpUrl(item.link);
     card.target = '_blank';
     card.rel = 'noopener noreferrer';
+    const safeAuthor = escapeHtml(item.author || 'Unknown');
+    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
+    const likes = toSafeNumber(item.likes, 0);
+    const views = toSafeNumber(item.views, 0);
+    const reposts = toSafeNumber(item.reposts, 0);
     card.innerHTML = `
         <div class="x-post__header">
-            <span class="x-post__author">${item.author}</span>
+            <span class="x-post__author">${safeAuthor}</span>
         </div>
-        <div class="x-post__title">${decodeEntities(item.headline)}</div>
+        <div class="x-post__title">${safeHeadline}</div>
         <div class="x-post__metrics">
-            <span class="x-metric" title="Likes">❤️ ${formatCompact(item.likes)}</span>
-            <span class="x-metric" title="Views">👁 ${formatCompact(item.views)}</span>
-            <span class="x-metric" title="Reposts">🔁 ${formatCompact(item.reposts)}</span>
+            <span class="x-metric" title="Likes">❤️ ${formatCompact(likes)}</span>
+            <span class="x-metric" title="Views">👁 ${formatCompact(views)}</span>
+            <span class="x-metric" title="Reposts">🔁 ${formatCompact(reposts)}</span>
         </div>
     `;
     return card;
@@ -1185,17 +1187,21 @@ function createXPostItem(item) {
 function createRedditPostItem(item) {
     const card = document.createElement('a');
     card.className = 'reddit-post';
-    card.href = item.link;
+    card.href = safeHttpUrl(item.link);
     card.target = '_blank';
     card.rel = 'noopener noreferrer';
+    const safeSubreddit = escapeHtml(item.subreddit || 'unknown');
+    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
+    const score = toSafeNumber(item.score, 0);
+    const comments = toSafeNumber(item.comments, 0);
     card.innerHTML = `
         <div class="reddit-post__header">
-            <span class="reddit-post__subreddit">r/${item.subreddit}</span>
+            <span class="reddit-post__subreddit">r/${safeSubreddit}</span>
         </div>
-        <div class="reddit-post__title">${decodeEntities(item.headline)}</div>
+        <div class="reddit-post__title">${safeHeadline}</div>
         <div class="reddit-post__metrics">
-            <span class="reddit-metric" title="Score">⬆ ${formatCompact(item.score)}</span>
-            <span class="reddit-metric" title="Comments">💬 ${formatCompact(item.comments)}</span>
+            <span class="reddit-metric" title="Score">⬆ ${formatCompact(score)}</span>
+            <span class="reddit-metric" title="Comments">💬 ${formatCompact(comments)}</span>
         </div>
     `;
     return card;
@@ -1220,21 +1226,29 @@ function renderInspiration() {
             }
         }
 
-        const typeIcon = idea.type === 'reel' ? '🎬' : idea.type === 'promo' ? '📢' : '📷';
+        const safeId = escapeHtml(idea.id || '');
+        const safeType = ['post', 'reel', 'promo'].includes(idea.type) ? idea.type : 'post';
+        const typeIcon = safeType === 'reel' ? '🎬' : safeType === 'promo' ? '📢' : '📷';
         const hasExtra = (idea.notes && idea.notes.trim()) || (idea.extraLinks && idea.extraLinks.trim());
+        const safeTitle = escapeHtml(idea.title || 'Untitled Idea');
+        const safeMainUrl = safeHttpUrl(idea.url, '');
+        const safeMainUrlText = escapeHtml(idea.url || '');
+        const safePreviewImage = safeHttpUrl(idea.image, '');
+        const safeFavicon = safeHttpUrl(favicon, '');
+        const safeDomain = escapeHtml(domain);
 
         card.innerHTML = `
-            ${favicon || idea.image ? `
+            ${safeFavicon || safePreviewImage ? `
                 <div class="ins-preview">
-                    ${idea.image ? `<img src="${idea.image}" class="ins-thumb" alt="preview">` : ''}
-                    ${favicon ? `<img src="${favicon}" class="ins-favicon" alt="icon">` : ''}
-                    <span class="ins-domain">${domain}</span>
+                    ${safePreviewImage ? `<img src="${safePreviewImage}" class="ins-thumb" alt="preview">` : ''}
+                    ${safeFavicon ? `<img src="${safeFavicon}" class="ins-favicon" alt="icon">` : ''}
+                    <span class="ins-domain">${safeDomain}</span>
                 </div>
             ` : ''}
             <div class="ins-content">
-                <div class="ins-type-badge ${idea.type || 'post'}">${typeIcon} ${idea.type || 'post'}</div>
-                <div class="ins-title">${idea.title || 'Untitled Idea'}</div>
-                ${idea.url ? `<a href="${idea.url}" target="_blank" class="ins-url">${idea.url}</a>` : ''}
+                <div class="ins-type-badge ${safeType}">${typeIcon} ${safeType}</div>
+                <div class="ins-title">${safeTitle}</div>
+                ${safeMainUrl ? `<a href="${safeMainUrl}" target="_blank" rel="noopener noreferrer" class="ins-url">${safeMainUrlText}</a>` : ''}
                 ${hasExtra ? `
                     <div class="ins-extra-indicators">
                         ${idea.notes ? `<span title="Has Notes">📝</span>` : ''}
@@ -1243,20 +1257,26 @@ function renderInspiration() {
                 ` : ''}
             </div>
             <div class="ins-actions">
-                <button class="ins-edit-btn" onclick="openEditInspiration('${idea.id}')">
+                <button class="ins-edit-btn" data-idea-id="${safeId}" data-action="edit">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;">
                         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                         <path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                     </svg>
                 </button>
-                <button class="ins-send-btn" onclick="moveIdeaToPool('${idea.id}')">Send to Pool</button>
-                <button class="ins-del-btn" onclick="deleteIdea('${idea.id}')">
+                <button class="ins-send-btn" data-idea-id="${safeId}" data-action="send">Send to Pool</button>
+                <button class="ins-del-btn" data-idea-id="${safeId}" data-action="delete">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;">
                         <path d="M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                     </svg>
                 </button>
             </div>
         `;
+        const editBtn = card.querySelector('[data-action="edit"]');
+        const sendBtn = card.querySelector('[data-action="send"]');
+        const deleteBtn = card.querySelector('[data-action="delete"]');
+        if (editBtn) editBtn.addEventListener('click', () => openEditInspiration(idea.id));
+        if (sendBtn) sendBtn.addEventListener('click', () => moveIdeaToPool(idea.id));
+        if (deleteBtn) deleteBtn.addEventListener('click', () => deleteIdea(idea.id));
         elements.inspirationGrid.appendChild(card);
     });
 }
@@ -1503,7 +1523,7 @@ function renderHistory() {
                 cardEl.draggable = false;
 
                 cardEl.innerHTML = `
-                    <div class="card-description" style="pointer-events: none; margin-top: 0;">${card.description || ''}</div>
+                    <div class="card-description" style="pointer-events: none; margin-top: 0;">${escapeHtml(card.description || '')}</div>
                 `;
 
                 // Add margins since slots container might lack gaps compared to drag grid

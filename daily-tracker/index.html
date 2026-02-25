@@ -103,25 +103,31 @@
             <!-- VIEW 1: SOURCING (NEWS TICKER) -->
             <div id="sourcing-view" class="view-container active">
                 <div class="news-header">
-                    <div class="view-controls">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="showDoneNews">
-                            <span class="slider"></span>
-                            <span class="label">Show Done</span>
-                        </label>
-                        <button id="resetNewsBtn" class="action-btn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                style="width: 14px; height: 14px;">
-                                <path
-                                    d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
-                                </path>
-                            </svg>
-                            Reset All
-                        </button>
+                    <div class="news-toolbar">
+                        <div class="news-toolbar__meta">
+                            <h2 class="news-toolbar__title">Sourcing Desk</h2>
+                            <p class="news-toolbar__subtitle">Review high-signal stories and move the best ideas into your workflow.</p>
+                        </div>
+                        <div class="view-controls">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="showDoneNews">
+                                <span class="slider"></span>
+                                <span class="label">Show Done</span>
+                            </label>
+                            <button id="resetNewsBtn" class="action-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    style="width: 14px; height: 14px;">
+                                    <path
+                                        d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
+                                    </path>
+                                </svg>
+                                Reset All
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="news-layout" style="padding: 0 24px 24px 24px;">
+                <div class="news-layout">
                     <div class="news-main">
                         <!-- Featured Stories -->
                         <div class="news-group">

@@ -3,6 +3,7 @@
 Monorepo for Maxx small tools/apps.
 
 ## Apps
+- `daily-tracker`
 - `fx-tracker`
 - `insta-claws` (no frontend)
 - `news-ticker`
