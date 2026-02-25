@@ -2978,6 +2978,67 @@ canvas {
   letter-spacing: 0.02em;
 }
 
+.send-selection-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 28px;
+  border-radius: 999px;
+  padding: 0 10px;
+  gap: 5px;
+  background: rgba(0, 122, 255, 0.09);
+  border: 1px solid rgba(0, 122, 255, 0.22);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.9;
+  transform: translateY(0);
+  transition: all var(--transition-fast);
+  z-index: 10;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-wrapper:hover .send-selection-btn {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.send-selection-btn:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 122, 255, 0.28);
+}
+
+.send-selection-btn--featured {
+  top: 52px;
+  left: 12px;
+  bottom: auto;
+  height: 30px;
+  padding: 0 11px;
+  font-size: 11px;
+}
+
+.send-selection-btn--small {
+  bottom: 8px;
+  left: 8px;
+  height: 26px;
+  padding: 0 9px;
+}
+
+.send-selection-btn__icon {
+  line-height: 1;
+  font-size: 12px;
+}
+
+.send-selection-btn__label {
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+}
+
 /* ── Done State ── */
 .card-wrapper--done {
   opacity: 0.4;
@@ -3672,6 +3733,17 @@ canvas {
   bottom: 8px;
   right: 8px;
   transform: none;
+}
+
+#sourcing-view .send-selection-btn {
+  bottom: 8px;
+  left: 8px;
+}
+
+#sourcing-view .send-selection-btn--featured {
+  top: 52px;
+  left: 12px;
+  bottom: auto;
 }
 
 @media (max-width: 1200px) {

@@ -669,6 +669,46 @@
         </div>
     </div>
 
+    <!-- Sourcing -> Selection Modal -->
+    <div id="sourceSelectionModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box" style="max-width: 440px;">
+            <div class="box-header">
+                <h2 style="color: var(--accent-primary);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                    </svg>
+                    Send to Selection
+                </h2>
+                <button class="icon-btn" id="sourceSelectionModalCloseBtn"
+                    style="font-size: 1.5rem; line-height: 1;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-field">
+                    <label>Idea Name</label>
+                    <input type="text" id="sourceSelectionTitle" placeholder="Idea name..." />
+                </div>
+                <div class="modal-field">
+                    <label>Category</label>
+                    <div class="category-selector" id="sourceSelectionCategorySelector">
+                        <button class="cat-opt active" data-type="post">Post</button>
+                        <button class="cat-opt" data-type="reel">Reel</button>
+                        <button class="cat-opt" data-type="promo">Promo</button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label>Notes</label>
+                    <textarea id="sourceSelectionNotes" class="modal-textarea" rows="4"
+                        placeholder="Add notes and details..."></textarea>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="sourceSelectionCancelBtn">Cancel</button>
+                <button class="action-btn premium-btn" id="sourceSelectionSaveBtn">Save to Selection</button>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="app.js"></script>
 </body>
 

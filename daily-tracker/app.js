@@ -36,6 +36,7 @@ let draggedCard = null;
 let globalOffset = 0;
 let currentDate = new Date();
 let activeStagingCardId = null;
+let sourceSelectionDraft = null;
 
 // ===========================
 // News Ticker State
@@ -135,6 +136,13 @@ const elements = {
     insEditModalSaveBtn: document.getElementById('insEditModalSaveBtn'),
     insEditModalCancelBtn: document.getElementById('insEditModalCancelBtn'),
     insEditModalCloseBtn: document.getElementById('insEditModalCloseBtn'),
+    sourceSelectionModalOverlay: document.getElementById('sourceSelectionModalOverlay'),
+    sourceSelectionModalCloseBtn: document.getElementById('sourceSelectionModalCloseBtn'),
+    sourceSelectionCancelBtn: document.getElementById('sourceSelectionCancelBtn'),
+    sourceSelectionSaveBtn: document.getElementById('sourceSelectionSaveBtn'),
+    sourceSelectionTitle: document.getElementById('sourceSelectionTitle'),
+    sourceSelectionNotes: document.getElementById('sourceSelectionNotes'),
+    sourceSelectionCategorySelector: document.getElementById('sourceSelectionCategorySelector'),
     syncStatus: document.getElementById('syncStatus'),
     syncText: document.querySelector('#syncStatus .sync-text'),
     // News Tab Elements
@@ -165,6 +173,10 @@ function escapeHtml(value) {
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
+}
+
+function normalizeWhitespace(value) {
+    return String(value ?? '').replace(/\s+/g, ' ').trim();
 }
 
 function safeHttpUrl(url, fallback = '#') {
@@ -1114,6 +1126,88 @@ function getDoneButtonHtml(extraClass = '') {
     `;
 }
 
+function getSendToSelectionButtonHtml(extraClass = '') {
+    const className = `send-selection-btn ${extraClass}`.trim();
+    return `
+        <button class="${className}" title="Send to Selection">
+            <span class="send-selection-btn__icon">↗</span>
+            <span class="send-selection-btn__label">Selection</span>
+        </button>
+    `;
+}
+
+function buildSelectionDraftFromSource(item, sourceKind = 'article') {
+    const rawHeadline = decodeEntities(item?.headline || 'Untitled');
+    const title = normalizeWhitespace(rawHeadline) || 'Untitled';
+    const url = safeHttpUrl(item?.link || item?.url || '', '');
+    const source = item?.source || item?.author || item?.subreddit || sourceKind;
+    const date = item?.date || item?.published_at || '';
+    const score = item?.ranking ?? item?.rating ?? item?.score ?? '';
+    const reason = item?.reason || '';
+    const notes = [
+        `Source type: ${sourceKind}`,
+        source ? `Source: ${source}` : '',
+        date ? `Date: ${date}` : '',
+        score !== '' ? `Score: ${score}` : '',
+        reason ? `Reason: ${reason}` : '',
+    ].filter(Boolean).join('\n');
+
+    return { title, url, notes, type: 'post' };
+}
+
+function showSourceSelectionModal(draft) {
+    if (!elements.sourceSelectionModalOverlay) return;
+    sourceSelectionDraft = { ...draft };
+    elements.sourceSelectionTitle.value = draft.title || '';
+    elements.sourceSelectionNotes.value = draft.notes || '';
+
+    if (elements.sourceSelectionCategorySelector) {
+        const catButtons = elements.sourceSelectionCategorySelector.querySelectorAll('.cat-opt');
+        catButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.type === (draft.type || 'post'));
+        });
+    }
+
+    elements.sourceSelectionModalOverlay.classList.add('show');
+    elements.sourceSelectionTitle.focus();
+}
+
+function hideSourceSelectionModal() {
+    if (elements.sourceSelectionModalOverlay) {
+        elements.sourceSelectionModalOverlay.classList.remove('show');
+    }
+    sourceSelectionDraft = null;
+}
+
+async function saveSourceSelectionIdea() {
+    if (!sourceSelectionDraft) return;
+    if (!appData) appData = { pool: [], schedule: {}, ideas: [] };
+    if (!Array.isArray(appData.ideas)) appData.ideas = [];
+
+    const selectedType = elements.sourceSelectionCategorySelector?.querySelector('.cat-opt.active')?.dataset.type || 'post';
+    const title = elements.sourceSelectionTitle.value.trim() || sourceSelectionDraft.title || 'Untitled Idea';
+    const notes = elements.sourceSelectionNotes.value.trim();
+    const url = sourceSelectionDraft.url || '';
+
+    const newIdea = {
+        id: generateId(),
+        title,
+        url,
+        image: '',
+        content: notes,
+        notes,
+        type: selectedType,
+        createdAt: new Date().toISOString()
+    };
+
+    appData.ideas.unshift(newIdea);
+    renderInspiration();
+    await saveData();
+    hideSourceSelectionModal();
+
+    if (url) fetchMetadata(newIdea.id, url);
+}
+
 function markAsDone(headline) {
     doneHeadlines.add(headline);
     localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
@@ -1171,10 +1265,20 @@ function createFeaturedCard(item, index) {
             </div>
         </a>
         ${!isDone ? getDoneButtonHtml('done-button--featured') : ''}
+        <button class="send-selection-btn send-selection-btn--featured" title="Send to Selection">
+            <span class="send-selection-btn__icon">↗</span>
+            <span class="send-selection-btn__label">Selection</span>
+        </button>
     `;
 
     const doneBtn = card.querySelector('.done-button');
     if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    const sendBtn = card.querySelector('.send-selection-btn');
+    if (sendBtn) sendBtn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showSourceSelectionModal(buildSelectionDraftFromSource(item, 'article'));
+    };
     return card;
 }
 
@@ -1212,10 +1316,17 @@ function createSimpleCard(item, index) {
             <span class="simple-card__arrow">→</span>
         </a>
         ${!isDone ? getDoneButtonHtml() : ''}
+        ${getSendToSelectionButtonHtml()}
     `;
 
     const doneBtn = card.querySelector('.done-button');
     if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    const sendBtn = card.querySelector('.send-selection-btn');
+    if (sendBtn) sendBtn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showSourceSelectionModal(buildSelectionDraftFromSource(item, 'article'));
+    };
     return card;
 }
 
@@ -1249,10 +1360,17 @@ function createPoolItem(item) {
             </div>
         </a>
         ${!isDone ? getDoneButtonHtml('done-button--small') : ''}
+        ${getSendToSelectionButtonHtml('send-selection-btn--small')}
     `;
 
     const doneBtn = card.querySelector('.done-button');
     if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    const sendBtn = card.querySelector('.send-selection-btn');
+    if (sendBtn) sendBtn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showSourceSelectionModal(buildSelectionDraftFromSource(item, 'article'));
+    };
     return card;
 }
 
@@ -2037,6 +2155,16 @@ function setupEventListeners() {
         });
     }
 
+    if (elements.sourceSelectionCategorySelector) {
+        const catButtons = elements.sourceSelectionCategorySelector.querySelectorAll('.cat-opt');
+        catButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                catButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    }
+
     // Modal Actions
     elements.modalCloseBtn.addEventListener('click', hideModal);
     elements.modalCancelBtn.addEventListener('click', hideModal);
@@ -2087,6 +2215,23 @@ function setupEventListeners() {
 
     if (elements.clearPoolBtn) {
         elements.clearPoolBtn.addEventListener('click', clearPool);
+    }
+
+    if (elements.sourceSelectionSaveBtn) {
+        elements.sourceSelectionSaveBtn.addEventListener('click', saveSourceSelectionIdea);
+    }
+    if (elements.sourceSelectionCancelBtn) {
+        elements.sourceSelectionCancelBtn.addEventListener('click', hideSourceSelectionModal);
+    }
+    if (elements.sourceSelectionModalCloseBtn) {
+        elements.sourceSelectionModalCloseBtn.addEventListener('click', hideSourceSelectionModal);
+    }
+    if (elements.sourceSelectionModalOverlay) {
+        elements.sourceSelectionModalOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.sourceSelectionModalOverlay) {
+                hideSourceSelectionModal();
+            }
+        });
     }
 
     // Export Data
