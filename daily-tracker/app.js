@@ -997,7 +997,7 @@ async function renderNews() {
     if (!newsData) {
         try {
             const ts = Date.now();
-            const res = await fetch(`../news-ticker/data.json?t=${ts}`, { cache: 'no-store' });
+            const res = await fetch(`data.json?t=${ts}`, { cache: 'no-store' });
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
             newsData = await res.json();
         } catch (err) {
