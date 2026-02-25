@@ -2,19 +2,19 @@
   "news": {
     "featured": {
       "tag": "Latest",
-      "headline": "Spanish \u2018soonicorn\u2019 Multiverse Computing releases free compressed AI model",
+      "headline": "Nvidia challenger AI chip startup MatX raised $500M",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/RAM_9821.jpg",
       "source": "TechCrunch",
-      "summary": "Spanish startup Multiverse Computing has released a new version of its HyperNova 60B model on Hugging Face that, it says, bests Mistral's model...."
+      "summary": "The startup was founded by former Google TPU engineers in 2023...."
     },
     "secondary_1": {
-      "headline": "Uber engineers built an AI version of their boss",
+      "headline": "Spanish \u2018soonicorn\u2019 Multiverse Computing releases free compressed AI model",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
     },
     "secondary_2": {
-      "headline": "Anthropic won\u2019t budge as Pentagon escalates AI dispute",
+      "headline": "Uber engineers built an AI version of their boss",
       "source": "TechCrunch",
       "time": "New",
       "image_url": null
