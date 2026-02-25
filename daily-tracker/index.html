@@ -195,28 +195,37 @@
 
             <!-- VIEW 2: SELECTION (IDEAS) -->
             <div id="selection-view" class="view-container">
-                <div class="inspiration-layout">
-                    <section class="inspiration-input-box bento-box">
-                        <div class="box-header">
-                            <h2>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                                </svg>
-                                Add Selection
-                            </h2>
-                        </div>
-                        <div class="link-input-group">
-                            <input type="text" id="inspirationMainInput"
-                                placeholder="Paste a link or write something here and press Enter..." />
-                        </div>
-                    </section>
+                <div class="selection-view-layout"
+                    style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; padding: 24px; align-items: start;">
+                    <div class="selection-main">
+                        <section class="inspiration-input-box bento-box" style="margin-bottom: 24px;">
+                            <div class="box-header">
+                                <h2>📥 Add Selection</h2>
+                            </div>
+                            <div class="link-input-group">
+                                <input type="text" id="inspirationMainInput"
+                                    placeholder="Paste a link or write something here and press Enter..." />
+                            </div>
+                        </section>
 
-                    <section class="inspiration-grid-container">
-                        <div class="pinterest-grid" id="inspirationGrid">
-                            <!-- Pinterest cards injected here -->
+                        <section class="inspiration-grid-container">
+                            <div class="box-header">
+                                <h2>💡 Inspiration</h2>
+                            </div>
+                            <div class="pinterest-grid" id="inspirationGrid">
+                                <!-- Pinterest cards injected here -->
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="selection-sidebar bento-box">
+                        <div class="box-header">
+                            <h2>📦 Selection Pool <span class="count-badge" id="poolCountSelection">0</span></h2>
                         </div>
-                    </section>
+                        <div id="poolCardsSelection" class="pool-list">
+                            <!-- Cards will be injected here -->
+                        </div>
+                    </aside>
                 </div>
             </div>
 

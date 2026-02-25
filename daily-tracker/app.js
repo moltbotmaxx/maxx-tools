@@ -140,7 +140,8 @@ const elements = {
     redditViralList: document.getElementById('redditViralList'),
     top6Count: document.getElementById('top6Count'),
     next6Count: document.getElementById('next6Count'),
-    poolCountNews: document.getElementById('poolCountNews')
+    poolCountNews: document.getElementById('poolCountNews'),
+    selectionPoolCards: document.getElementById('poolCardsSelection')
 };
 
 // ===========================
@@ -648,26 +649,31 @@ function handleDropToPool(e) {
 // UI Rendering
 // ===========================
 function renderPool() {
-    elements.poolCards.innerHTML = '';
-    elements.poolCount.textContent = appData.pool.length;
+    const poolContainers = [
+        elements.poolCards,
+        elements.poolListNews,
+        elements.selectionPoolCards
+    ].filter(el => el !== null);
 
-    if (appData.pool.length === 0) {
-        elements.poolCards.innerHTML = `
-            <div class="empty-pool-premium" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; opacity: 0.4; padding: 20px; border: 1px dashed var(--border-light); border-radius: var(--border-radius-md); margin: 10px;">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom: 12px; color: var(--text-tertiary);">
-                    <path d="M12 5v14M5 12h14" transform="rotate(45 12 12)"></path>
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                </svg>
-                <p style="color: var(--text-tertiary); font-size: 0.8rem; text-align: center; font-weight: 500;">
-                    Your pool is empty.<br>Start by adding content below.
-                </p>
-            </div>
-        `;
-        return;
-    }
+    poolContainers.forEach(container => {
+        container.innerHTML = '';
+        if (appData.pool.length === 0) {
+            container.innerHTML = `
+                <div class="empty-pool-premium" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; opacity: 0.4; padding: 20px; border: 1px dashed var(--border-light); border-radius: var(--border-radius-md); margin: 10px;">
+                    <p style="color: var(--text-tertiary); font-size: 0.8rem; text-align: center; font-weight: 500;">
+                        Pool is empty
+                    </p>
+                </div>
+            `;
+        }
+    });
+
+    elements.poolCount.textContent = appData.pool.length;
+    if (elements.poolCountNews) elements.poolCountNews.textContent = appData.pool.length;
+
+    if (appData.pool.length === 0) return;
 
     appData.pool.forEach(card => {
-        const type = Object.values(CONTENT_TYPES).find(t => t.id === card.type);
         const el = document.createElement('div');
         el.className = `content-card ${card.type}`;
         el.dataset.id = card.id;
@@ -676,7 +682,7 @@ function renderPool() {
         el.innerHTML = `
             <div class="card-controls">
                 ${card.url ? `
-                    <a href="${card.url}" target="_blank" class="card-link-btn" title="Ver link original">
+                    <a href="${card.url}" target="_blank" class="card-link-btn" title="View Source">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                             <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
@@ -693,36 +699,71 @@ function renderPool() {
             <textarea class="card-description" placeholder="Add description..." rows="1">${card.description || ''}</textarea>
         `;
 
-        // Drag events
+        // Event listeners...
         el.addEventListener('dragstart', (e) => handleDragStart(e, card, true));
         el.addEventListener('dragend', handleDragEnd);
-
-        // Delete button
         el.querySelector('.card-delete').addEventListener('click', () => deleteCard(card.id, true));
 
-        // Description update
         const textarea = el.querySelector('.card-description');
-        textarea.addEventListener('input', (e) => {
-            updateCardDescription(card.id, e.target.value, true);
+        textarea.addEventListener('input', (e) => updateCardDescription(card.id, e.target.value, true));
+
+        // Append to all currently active containers
+        poolContainers.forEach(container => {
+            container.appendChild(el.cloneNode(true));
+            // Re-bind events to cloned nodes if necessary, or use event delegation
         });
-
-        // Save on Enter (prevent new line)
-        textarea.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                e.target.blur();
-            }
-        });
-
-        // Context menu (Right-click)
-        el.addEventListener('contextmenu', (e) => showContextMenu(e, card.id, true));
-
-        elements.poolCards.appendChild(el);
     });
 
-    // Container level drop
-    elements.poolCards.addEventListener('dragover', handleDragOver);
-    elements.poolCards.addEventListener('drop', handleDropToPool);
+    // Note: Re-binding events for clones is needed if we use clones. 
+    // Simplified: Just render once per container.
+    poolContainers.forEach(container => {
+        container.innerHTML = '';
+        appData.pool.forEach(card => {
+            const cardEl = createPoolCardElement(card);
+            container.appendChild(cardEl);
+        });
+    });
+}
+
+function createPoolCardElement(card) {
+    const el = document.createElement('div');
+    el.className = `content-card ${card.type}`;
+    el.dataset.id = card.id;
+    el.draggable = true;
+
+    el.innerHTML = `
+        <div class="card-controls">
+            ${card.url ? `
+                <a href="${card.url}" target="_blank" class="card-link-btn" title="View Source">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                    </svg>
+                </a>
+            ` : ''}
+            <button class="card-delete" data-action="delete">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <textarea class="card-description" placeholder="Add description..." rows="1">${card.description || ''}</textarea>
+    `;
+
+    el.addEventListener('dragstart', (e) => handleDragStart(e, card, true));
+    el.addEventListener('dragend', handleDragEnd);
+    el.querySelector('.card-delete').addEventListener('click', () => deleteCard(card.id, true));
+    const textarea = el.querySelector('.card-description');
+    textarea.addEventListener('input', (e) => updateCardDescription(card.id, e.target.value, true));
+    textarea.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            e.target.blur();
+        }
+    });
+
+    return el;
 }
 
 function renderWeekGrid() {
@@ -942,8 +983,10 @@ function switchTab(viewId) {
         renderHistory();
     } else if (viewId === 'selection') {
         renderInspiration();
+        renderPool(); // Ensure pool is synced on Selection tab
     } else if (viewId === 'sourcing') {
         renderNews();
+        renderPool(); // Ensure pool is synced on Sourcing tab
     }
 }
 
