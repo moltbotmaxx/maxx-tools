@@ -35,6 +35,7 @@ let permanentNotes = '';
 let draggedCard = null;
 let globalOffset = 0;
 let currentDate = new Date();
+let activeStagingCardId = null;
 
 // ===========================
 // News Ticker State
@@ -108,6 +109,10 @@ const elements = {
     deleteModalOverlay: document.getElementById('deleteModalOverlay'),
     deleteConfirmBtn: document.getElementById('deleteConfirmBtn'),
     deleteCancelBtn: document.getElementById('deleteCancelBtn'),
+    stagingCardModalOverlay: document.getElementById('stagingCardModalOverlay'),
+    stagingCardDeleteBtn: document.getElementById('stagingCardDeleteBtn'),
+    stagingCardReturnBtn: document.getElementById('stagingCardReturnBtn'),
+    stagingCardCancelBtn: document.getElementById('stagingCardCancelBtn'),
     // Context Menu Extra
     menuMoveToPool: document.getElementById('menuMoveToPool'),
     clearPoolBtn: document.getElementById('clearPoolBtn'),
@@ -497,6 +502,47 @@ function hideDeleteModal() {
     activeContextCard = null;
 }
 
+function showStagingCardModal(cardId) {
+    activeStagingCardId = cardId;
+    if (elements.stagingCardModalOverlay) {
+        elements.stagingCardModalOverlay.classList.add('show');
+    }
+}
+
+function hideStagingCardModal() {
+    if (elements.stagingCardModalOverlay) {
+        elements.stagingCardModalOverlay.classList.remove('show');
+    }
+    activeStagingCardId = null;
+}
+
+async function returnStagingCardToSelection(cardId) {
+    const card = appData.pool.find(c => c.id === cardId);
+    if (!card) return;
+
+    const rawDescription = String(card.description || '').trim();
+    const title = rawDescription.split('\n')[0]?.trim() || 'Recovered Card';
+    const notes = rawDescription || '';
+
+    const newIdea = {
+        id: generateId(),
+        title,
+        url: card.url || '',
+        image: '',
+        content: notes,
+        notes,
+        extraLinks: card.extraLinks || '',
+        type: card.type || 'post',
+        createdAt: new Date().toISOString()
+    };
+
+    appData.ideas.unshift(newIdea);
+    appData.pool = appData.pool.filter(c => c.id !== cardId);
+    renderInspiration();
+    renderPool();
+    await saveData();
+}
+
 function handleMenuMoveToPool() {
     if (!activeContextCard || activeContextCard.isPool) return;
 
@@ -731,7 +777,7 @@ function createPoolCardElement(card) {
 
     el.addEventListener('dragstart', (e) => handleDragStart(e, card, true));
     el.addEventListener('dragend', handleDragEnd);
-    el.querySelector('.card-delete').addEventListener('click', () => deleteCard(card.id, true));
+    el.querySelector('.card-delete').addEventListener('click', () => showStagingCardModal(card.id));
     const textarea = el.querySelector('.card-description');
     textarea.value = card.description || '';
     textarea.addEventListener('input', (e) => updateCardDescription(card.id, e.target.value, true));
@@ -2011,6 +2057,31 @@ function setupEventListeners() {
             hideDeleteModal();
         }
     });
+
+    if (elements.stagingCardDeleteBtn) {
+        elements.stagingCardDeleteBtn.addEventListener('click', async () => {
+            if (!activeStagingCardId) return;
+            await deleteCard(activeStagingCardId, true);
+            hideStagingCardModal();
+        });
+    }
+    if (elements.stagingCardReturnBtn) {
+        elements.stagingCardReturnBtn.addEventListener('click', async () => {
+            if (!activeStagingCardId) return;
+            await returnStagingCardToSelection(activeStagingCardId);
+            hideStagingCardModal();
+        });
+    }
+    if (elements.stagingCardCancelBtn) {
+        elements.stagingCardCancelBtn.addEventListener('click', hideStagingCardModal);
+    }
+    if (elements.stagingCardModalOverlay) {
+        elements.stagingCardModalOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.stagingCardModalOverlay) {
+                hideStagingCardModal();
+            }
+        });
+    }
 
     elements.menuMoveToPool.addEventListener('click', handleMenuMoveToPool);
 
