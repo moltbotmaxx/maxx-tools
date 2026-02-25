@@ -3128,8 +3128,8 @@ canvas {
 }
 
 /* News Tab Scoping */
-#news-view {
-  padding: var(--bento-padding);
+#sourcing-view {
+  padding: 0;
 }
 
 .news-layout {
@@ -3381,4 +3381,102 @@ canvas {
     position: static;
     padding-top: 0;
   }
+}
+/* Skeleton Loader */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-card {
+  height: 200px;
+  width: 100%;
+  border-radius: 16px;
+  background: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-simple {
+  height: 80px;
+  width: 100%;
+  border-radius: 12px;
+  background: #f8f8f8;
+  margin-bottom: 8px;
+}
+
+.skeleton-pool {
+  height: 60px;
+  width: 100%;
+  border-radius: 8px;
+  background: #f8f8f8;
+  margin-bottom: 4px;
+}
+
+.skeleton-sidebar {
+  height: 100px;
+  width: 100%;
+  border-radius: 12px;
+  background: #f8f8f8;
+  margin-bottom: 12px;
+}
+
+/* News Controls */
+.news-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin-bottom: 24px;
+}
+
+.view-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#resetNewsBtn {
+  background: var(--bg-tertiary);
+  color: var(--accent-primary);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#resetNewsBtn:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.toggle-switch .slider {
+  background: #E9E9EB;
+}
+
+.toggle-switch input:checked + .slider {
+  background: #34C759;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(16px);
 }

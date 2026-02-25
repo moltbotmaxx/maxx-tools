@@ -265,6 +265,13 @@ async function loadData() {
     ensureAppDataIntegrity();
     if (elements.permanentNotes) elements.permanentNotes.value = permanentNotes;
     render();
+
+    // Trigger initial tab logic (e.g. fetch news if news is default)
+    if (currentView === 'sourcing') {
+        renderNews();
+    } else if (currentView === 'selection') {
+        renderInspiration();
+    }
 }
 
 async function saveData() {
@@ -909,7 +916,7 @@ function render() {
 // ===========================
 // Tabs & Views
 // ===========================
-let currentView = 'inspiration';
+let currentView = 'sourcing';
 let dashboardMonth = new Date();
 
 function switchTab(viewId) {
@@ -933,9 +940,9 @@ function switchTab(viewId) {
         renderDashboard();
     } else if (viewId === 'history') {
         renderHistory();
-    } else if (viewId === 'inspiration') {
+    } else if (viewId === 'selection') {
         renderInspiration();
-    } else if (viewId === 'news') {
+    } else if (viewId === 'sourcing') {
         renderNews();
     }
 }

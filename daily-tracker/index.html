@@ -43,14 +43,23 @@
 
             <!-- Tab Navigation -->
             <nav class="tab-nav">
-                <button class="tab-btn active" data-tab="inspiration">
+                <button class="tab-btn active" data-tab="sourcing">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 11v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11" />
+                        <path d="M12 2L4 11h16L12 2z" />
+                        <line x1="9" y1="17" x2="15" y2="17" />
+                        <line x1="9" y1="21" x2="15" y2="21" />
+                    </svg>
+                    Sourcing
+                </button>
+                <button class="tab-btn" data-tab="selection">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 19l7-7 3 3-7 7-3-3z" />
                         <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
                         <path d="M2 2l7.586 7.586" />
                         <circle cx="11" cy="11" r="2" />
                     </svg>
-                    Inspiration
+                    Selection
                 </button>
                 <button class="tab-btn" data-tab="scheduler">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -74,15 +83,6 @@
                     </svg>
                     History
                 </button>
-                <button class="tab-btn" data-tab="news">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 11v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11" />
-                        <path d="M12 2L4 11h16L12 2z" />
-                        <line x1="9" y1="17" x2="15" y2="17" />
-                        <line x1="9" y1="21" x2="15" y2="21" />
-                    </svg>
-                    News
-                </button>
             </nav>
 
             <div class="header-controls">
@@ -100,7 +100,127 @@
         <!-- Main Content Area -->
         <main class="main-content">
 
-            <!-- VIEW 1: SCHEDULER -->
+            <!-- VIEW 1: SOURCING (NEWS TICKER) -->
+            <div id="sourcing-view" class="view-container active">
+                <div class="news-header">
+                    <div class="view-controls">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="showDoneNews">
+                            <span class="slider"></span>
+                            <span class="label">Show Done</span>
+                        </label>
+                        <button id="resetNewsBtn" class="action-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                style="width: 14px; height: 14px;">
+                                <path
+                                    d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
+                                </path>
+                            </svg>
+                            Reset All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="news-layout" style="padding: 0 24px 24px 24px;">
+                    <div class="news-main">
+                        <!-- Featured Stories -->
+                        <div class="news-group">
+                            <div class="box-header">
+                                <h2>🔥 Featured Stories <span class="count-badge" id="top6Count">0</span></h2>
+                            </div>
+                            <div class="featured-grid" id="featuredGrid">
+                                <div class="skeleton-card skeleton"></div>
+                                <div class="skeleton-card skeleton"></div>
+                                <div class="skeleton-card skeleton"></div>
+                                <div class="skeleton-card skeleton"></div>
+                                <div class="skeleton-card skeleton"></div>
+                                <div class="skeleton-card skeleton"></div>
+                            </div>
+                        </div>
+
+                        <!-- More Stories -->
+                        <div class="news-group">
+                            <div class="box-header">
+                                <h2>📋 More Top Stories <span class="count-badge" id="next6Count">..</span></h2>
+                            </div>
+                            <div class="simple-grid" id="simpleGrid">
+                                <div class="skeleton-simple skeleton"></div>
+                                <div class="skeleton-simple skeleton"></div>
+                                <div class="skeleton-simple skeleton"></div>
+                                <div class="skeleton-simple skeleton"></div>
+                                <div class="skeleton-simple skeleton"></div>
+                                <div class="skeleton-simple skeleton"></div>
+                            </div>
+                        </div>
+
+                        <!-- Article Pool -->
+                        <div class="news-group">
+                            <div class="box-header">
+                                <h2>📰 Article Pool <span class="count-badge" id="poolCountNews">..</span></h2>
+                            </div>
+                            <div class="pool-list" id="poolListNews">
+                                <div class="skeleton-pool skeleton"></div>
+                                <div class="skeleton-pool skeleton"></div>
+                                <div class="skeleton-pool skeleton"></div>
+                                <div class="skeleton-pool skeleton"></div>
+                                <div class="skeleton-pool skeleton"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="news-sidebar">
+                        <div class="sidebar-section bento-box">
+                            <div class="box-header">
+                                <h2>𝕏 Trending</h2>
+                            </div>
+                            <div class="sidebar-list" id="xViralList">
+                                <div class="skeleton-sidebar skeleton"></div>
+                                <div class="skeleton-sidebar skeleton"></div>
+                                <div class="skeleton-sidebar skeleton"></div>
+                            </div>
+                        </div>
+                        <div class="sidebar-section bento-box">
+                            <div class="box-header">
+                                <h2>🔴 Viral on Reddit</h2>
+                            </div>
+                            <div class="sidebar-list" id="redditViralList">
+                                <div class="skeleton-sidebar skeleton"></div>
+                                <div class="skeleton-sidebar skeleton"></div>
+                                <div class="skeleton-sidebar skeleton"></div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <!-- VIEW 2: SELECTION (IDEAS) -->
+            <div id="selection-view" class="view-container">
+                <div class="inspiration-layout">
+                    <section class="inspiration-input-box bento-box">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
+                                Add Selection
+                            </h2>
+                        </div>
+                        <div class="link-input-group">
+                            <input type="text" id="inspirationMainInput"
+                                placeholder="Paste a link or write something here and press Enter..." />
+                        </div>
+                    </section>
+
+                    <section class="inspiration-grid-container">
+                        <div class="pinterest-grid" id="inspirationGrid">
+                            <!-- Pinterest cards injected here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- VIEW 3: SCHEDULER -->
             <div id="scheduler-view" class="view-container">
                 <div class="bento-grid">
                     <!-- Pool Section -->
@@ -242,33 +362,6 @@
                 </div>
             </div>
 
-            <!-- VIEW 2: INSPIRATION (IDEAS) -->
-            <div id="inspiration-view" class="view-container active">
-                <div class="inspiration-layout">
-                    <section class="inspiration-input-box bento-box">
-                        <div class="box-header">
-                            <h2>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                                </svg>
-                                Add Inspiration
-                            </h2>
-                        </div>
-                        <div class="link-input-group">
-                            <input type="text" id="inspirationMainInput"
-                                placeholder="Paste a link or write something here and press Enter..." />
-                        </div>
-                    </section>
-
-                    <section class="inspiration-grid-container">
-                        <div class="pinterest-grid" id="inspirationGrid">
-                            <!-- Pinterest cards injected here -->
-                        </div>
-                    </section>
-                </div>
-            </div>
-
             <!-- VIEW 3: METRICS DASHBOARD -->
             <div id="metrics-view" class="view-container">
                 <div class="dashboard-grid">
@@ -377,73 +470,7 @@
                 </div>
             </div>
 
-            <!-- VIEW 5: NEWS TICKER -->
-            <div id="news-view" class="view-container">
-                <div class="news-layout">
-                    <div class="news-main">
-                        <div class="news-header">
-                            <div class="view-controls">
-                                <label class="toggle-switch">
-                                    <input type="checkbox" id="showDoneNews">
-                                    <span class="slider"></span>
-                                    <span class="label">Show Done</span>
-                                </label>
-                                <button id="resetNewsBtn" class="action-btn"
-                                    style="padding: 4px 12px; font-size: 0.8rem;">Reset All</button>
-                            </div>
-                        </div>
 
-                        <!-- Featured Stories -->
-                        <div class="news-group">
-                            <div class="box-header">
-                                <h2>🔥 Featured Stories <span class="count-badge" id="top6Count">0</span></h2>
-                            </div>
-                            <div class="featured-grid" id="featuredGrid">
-                                <!-- Featured cards injected here -->
-                            </div>
-                        </div>
-
-                        <!-- More Stories -->
-                        <div class="news-group">
-                            <div class="box-header">
-                                <h2>📋 More Top Stories <span class="count-badge" id="next6Count">0</span></h2>
-                            </div>
-                            <div class="simple-grid" id="simpleGrid">
-                                <!-- Simple cards injected here -->
-                            </div>
-                        </div>
-
-                        <!-- Article Pool -->
-                        <div class="news-group">
-                            <div class="box-header">
-                                <h2>📰 Article Pool <span class="count-badge" id="poolCountNews">0</span></h2>
-                            </div>
-                            <div class="pool-list" id="poolListNews">
-                                <!-- Pool items injected here -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <aside class="news-sidebar">
-                        <div class="sidebar-section bento-box">
-                            <div class="box-header">
-                                <h2>𝕏 Trending</h2>
-                            </div>
-                            <div class="sidebar-list" id="xViralList">
-                                <!-- X posts injected here -->
-                            </div>
-                        </div>
-                        <div class="sidebar-section bento-box">
-                            <div class="box-header">
-                                <h2>🔴 Viral on Reddit</h2>
-                            </div>
-                            <div class="sidebar-list" id="redditViralList">
-                                <!-- Reddit posts injected here -->
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </div>
 
         </main>
     </div>
