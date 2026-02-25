@@ -74,6 +74,15 @@
                     </svg>
                     History
                 </button>
+                <button class="tab-btn" data-tab="news">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 11v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11" />
+                        <path d="M12 2L4 11h16L12 2z" />
+                        <line x1="9" y1="17" x2="15" y2="17" />
+                        <line x1="9" y1="21" x2="15" y2="21" />
+                    </svg>
+                    News
+                </button>
             </nav>
 
             <div class="header-controls">
@@ -365,6 +374,74 @@
                             <!-- Helper function will inject grid columns here -->
                         </div>
                     </section>
+                </div>
+            </div>
+
+            <!-- VIEW 5: NEWS TICKER -->
+            <div id="news-view" class="view-container">
+                <div class="news-layout">
+                    <div class="news-main">
+                        <div class="news-header">
+                            <div class="view-controls">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="showDoneNews">
+                                    <span class="slider"></span>
+                                    <span class="label">Show Done</span>
+                                </label>
+                                <button id="resetNewsBtn" class="action-btn"
+                                    style="padding: 4px 12px; font-size: 0.8rem;">Reset All</button>
+                            </div>
+                        </div>
+
+                        <!-- Featured Stories -->
+                        <div class="news-group">
+                            <div class="box-header">
+                                <h2>🔥 Featured Stories <span class="count-badge" id="top6Count">0</span></h2>
+                            </div>
+                            <div class="featured-grid" id="featuredGrid">
+                                <!-- Featured cards injected here -->
+                            </div>
+                        </div>
+
+                        <!-- More Stories -->
+                        <div class="news-group">
+                            <div class="box-header">
+                                <h2>📋 More Top Stories <span class="count-badge" id="next6Count">0</span></h2>
+                            </div>
+                            <div class="simple-grid" id="simpleGrid">
+                                <!-- Simple cards injected here -->
+                            </div>
+                        </div>
+
+                        <!-- Article Pool -->
+                        <div class="news-group">
+                            <div class="box-header">
+                                <h2>📰 Article Pool <span class="count-badge" id="poolCountNews">0</span></h2>
+                            </div>
+                            <div class="pool-list" id="poolListNews">
+                                <!-- Pool items injected here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="news-sidebar">
+                        <div class="sidebar-section bento-box">
+                            <div class="box-header">
+                                <h2>𝕏 Trending</h2>
+                            </div>
+                            <div class="sidebar-list" id="xViralList">
+                                <!-- X posts injected here -->
+                            </div>
+                        </div>
+                        <div class="sidebar-section bento-box">
+                            <div class="box-header">
+                                <h2>🔴 Viral on Reddit</h2>
+                            </div>
+                            <div class="sidebar-list" id="redditViralList">
+                                <!-- Reddit posts injected here -->
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
 

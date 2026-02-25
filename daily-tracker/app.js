@@ -36,6 +36,21 @@ let draggedCard = null;
 let globalOffset = 0;
 let currentDate = new Date();
 
+// ===========================
+// News Ticker State
+// ===========================
+let newsData = null;
+let showDoneNews = false;
+let doneHeadlines = new Set();
+
+// Load done headlines from localStorage
+try {
+    const saved = localStorage.getItem('done_articles');
+    if (saved) doneHeadlines = new Set(JSON.parse(saved));
+} catch (e) {
+    console.error('Failed to load done_articles', e);
+}
+
 function ensureAppDataIntegrity() {
     if (!appData || typeof appData !== 'object') {
         appData = { pool: [], schedule: {}, ideas: [] };
@@ -114,7 +129,18 @@ const elements = {
     insEditModalCancelBtn: document.getElementById('insEditModalCancelBtn'),
     insEditModalCloseBtn: document.getElementById('insEditModalCloseBtn'),
     syncStatus: document.getElementById('syncStatus'),
-    syncText: document.querySelector('#syncStatus .sync-text')
+    syncText: document.querySelector('#syncStatus .sync-text'),
+    // News Tab Elements
+    showDoneNews: document.getElementById('showDoneNews'),
+    resetNewsBtn: document.getElementById('resetNewsBtn'),
+    featuredGrid: document.getElementById('featuredGrid'),
+    simpleGrid: document.getElementById('simpleGrid'),
+    poolListNews: document.getElementById('poolListNews'),
+    xViralList: document.getElementById('xViralList'),
+    redditViralList: document.getElementById('redditViralList'),
+    top6Count: document.getElementById('top6Count'),
+    next6Count: document.getElementById('next6Count'),
+    poolCountNews: document.getElementById('poolCountNews')
 };
 
 // ===========================
@@ -909,7 +935,220 @@ function switchTab(viewId) {
         renderHistory();
     } else if (viewId === 'inspiration') {
         renderInspiration();
+    } else if (viewId === 'news') {
+        renderNews();
     }
+}
+
+// ===========================
+// News Rendering Logic
+// ===========================
+async function renderNews() {
+    if (!newsData) {
+        try {
+            const ts = Date.now();
+            const res = await fetch(`../news-ticker/data.json?t=${ts}`, { cache: 'no-store' });
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            newsData = await res.json();
+        } catch (err) {
+            console.error('Failed to load news data:', err);
+            return;
+        }
+    }
+
+    if (!newsData || !newsData.articles) return;
+
+    // Filter and bucket
+    const sortedArticles = [...newsData.articles].sort((a, b) => b.ranking - a.ranking);
+    const activeArticles = showDoneNews
+        ? sortedArticles
+        : sortedArticles.filter(item => !doneHeadlines.has(item.headline));
+
+    const top6 = activeArticles.slice(0, 6);
+    const next6 = activeArticles.slice(6, 12);
+    const remaining = activeArticles.slice(12);
+
+    // Render counts
+    if (elements.top6Count) elements.top6Count.textContent = `${top6.length} articles`;
+    if (elements.next6Count) elements.next6Count.textContent = `${next6.length} articles`;
+    if (elements.poolCountNews) elements.poolCountNews.textContent = `${remaining.length} articles`;
+
+    // Clear and render grids
+    elements.featuredGrid.innerHTML = '';
+    top6.forEach((item, i) => elements.featuredGrid.appendChild(createFeaturedCard(item, i)));
+
+    elements.simpleGrid.innerHTML = '';
+    next6.forEach((item, i) => elements.simpleGrid.appendChild(createSimpleCard(item, i + 6)));
+
+    elements.poolListNews.innerHTML = '';
+    remaining.forEach(item => elements.poolListNews.appendChild(createPoolItem(item)));
+
+    // Sidebar
+    elements.xViralList.innerHTML = '';
+    if (newsData.x_viral && newsData.x_viral.items) {
+        newsData.x_viral.items.forEach(item => elements.xViralList.appendChild(createXPostItem(item)));
+    }
+
+    elements.redditViralList.innerHTML = '';
+    if (newsData.reddit_viral && newsData.reddit_viral.items) {
+        newsData.reddit_viral.items.forEach(item => elements.redditViralList.appendChild(createRedditPostItem(item)));
+    }
+}
+
+function decodeEntities(text) {
+    const textarea = document.createElement('textarea');
+    textarea.innerHTML = text;
+    return textarea.value;
+}
+
+function getScoreClass(ranking) {
+    if (ranking >= 85) return 'score-fire';
+    if (ranking >= 70) return 'score-orange';
+    if (ranking >= 55) return 'score-amber';
+    if (ranking >= 40) return 'score-blue';
+    return 'score-muted';
+}
+
+function markAsDone(headline) {
+    doneHeadlines.add(headline);
+    localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
+    renderNews();
+}
+
+function createFeaturedCard(item, index) {
+    const isDone = doneHeadlines.has(item.headline);
+    const hasImage = item.image_url && !item.image_url.includes('placeholder');
+    const card = document.createElement('div');
+    card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
+
+    const imageHtml = hasImage
+        ? `<div class="featured-card__image" style="background-image: url('${item.image_url}'); background-size: cover; background-position: center;">`
+        : `<div class="featured-card__image">
+             <span class="featured-card__image-icon">${['🔥', '⚡', '💔', '📢', '⚙️'][index] || '📰'}</span>`;
+
+    card.innerHTML = `
+        <a class="featured-card" href="${item.link}" target="_blank" rel="noopener noreferrer">
+            ${imageHtml}
+                <span class="featured-card__source-badge">${item.source}</span>
+                <div class="score-badge score-badge--featured ${getScoreClass(item.ranking)}">
+                    ${item.ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
+                    <span class="score-badge__value">${item.ranking}</span>
+                </div>
+            </div>
+            <div class="featured-card__body">
+                <h3 class="featured-card__title">${decodeEntities(item.headline)}</h3>
+                <p class="featured-card__reason">${item.reason}</p>
+                <div class="featured-card__meta">
+                    <span>${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    <span class="featured-card__arrow">→</span>
+                </div>
+            </div>
+        </a>
+        ${!isDone ? `<button class="done-button done-button--featured" title="Mark as Done">✓</button>` : ''}
+    `;
+
+    const doneBtn = card.querySelector('.done-button');
+    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    return card;
+}
+
+function createSimpleCard(item, index) {
+    const isDone = doneHeadlines.has(item.headline);
+    const card = document.createElement('div');
+    card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
+
+    card.innerHTML = `
+        <a class="simple-card" href="${item.link}" target="_blank" rel="noopener noreferrer">
+            <div class="simple-card__number">${index + 1}</div>
+            <div class="simple-card__content">
+                <div class="simple-card__title">${decodeEntities(item.headline)}</div>
+                <p class="simple-card__reason">${item.reason}</p>
+                <div class="simple-card__meta">
+                    <span>${item.source} • ${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                </div>
+            </div>
+            <div class="score-pill ${getScoreClass(item.ranking)}">
+                ${item.ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
+                <span>${item.ranking}</span>
+            </div>
+            <span class="simple-card__arrow">→</span>
+        </a>
+        ${!isDone ? `<button class="done-button" title="Mark as Done">✓</button>` : ''}
+    `;
+
+    const doneBtn = card.querySelector('.done-button');
+    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    return card;
+}
+
+function createPoolItem(item) {
+    const isDone = doneHeadlines.has(item.headline);
+    const card = document.createElement('div');
+    card.className = `card-wrapper pool-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
+
+    card.innerHTML = `
+        <a class="pool-item" href="${item.link !== '#' ? item.link : 'javascript:void(0)'}" target="_blank" rel="noopener noreferrer" title="${item.reason}">
+            <div class="score-pill score-pill--small ${getScoreClass(item.ranking)}">
+                <span>${item.ranking}</span>
+            </div>
+            <div class="pool-item__content">
+                <div class="pool-item__title">${decodeEntities(item.headline)}</div>
+                <div class="pool-item__meta">
+                    <span>${item.source} • ${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                </div>
+            </div>
+        </a>
+        ${!isDone ? `<button class="done-button done-button--small" title="Mark as Done">✓</button>` : ''}
+    `;
+
+    const doneBtn = card.querySelector('.done-button');
+    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    return card;
+}
+
+function formatCompact(n) {
+    if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+    if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+    return n.toString();
+}
+
+function createXPostItem(item) {
+    const card = document.createElement('a');
+    card.className = 'x-post';
+    card.href = item.link;
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+    card.innerHTML = `
+        <div class="x-post__header">
+            <span class="x-post__author">${item.author}</span>
+        </div>
+        <div class="x-post__title">${decodeEntities(item.headline)}</div>
+        <div class="x-post__metrics">
+            <span class="x-metric" title="Likes">❤️ ${formatCompact(item.likes)}</span>
+            <span class="x-metric" title="Views">👁 ${formatCompact(item.views)}</span>
+            <span class="x-metric" title="Reposts">🔁 ${formatCompact(item.reposts)}</span>
+        </div>
+    `;
+    return card;
+}
+
+function createRedditPostItem(item) {
+    const card = document.createElement('a');
+    card.className = 'reddit-post';
+    card.href = item.link;
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+    card.innerHTML = `
+        <div class="reddit-post__header">
+            <span class="reddit-post__subreddit">r/${item.subreddit}</span>
+        </div>
+        <div class="reddit-post__title">${decodeEntities(item.headline)}</div>
+        <div class="reddit-post__metrics">
+            <span class="reddit-metric" title="Score">⬆ ${formatCompact(item.score)}</span>
+            <span class="reddit-metric" title="Comments">💬 ${formatCompact(item.comments)}</span>
+        </div>
+    `;
+    return card;
 }
 
 function renderInspiration() {
@@ -1521,6 +1760,21 @@ function setupEventListeners() {
     elements.tabBtns.forEach(btn => {
         btn.addEventListener('click', () => switchTab(btn.dataset.tab));
     });
+
+    // News Listeners
+    if (elements.showDoneNews) {
+        elements.showDoneNews.addEventListener('change', (e) => {
+            showDoneNews = e.target.checked;
+            renderNews();
+        });
+    }
+    if (elements.resetNewsBtn) {
+        elements.resetNewsBtn.addEventListener('click', () => {
+            doneHeadlines.clear();
+            localStorage.removeItem('done_articles');
+            renderNews();
+        });
+    }
 
     // Global Week Navigation (ONLY for History now)
     if (elements.weekPrev) {
