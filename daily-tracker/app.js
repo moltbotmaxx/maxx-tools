@@ -1522,8 +1522,6 @@ function createSimpleCard(item, index) {
 
 function createPoolItem(item) {
     const isDone = doneHeadlines.has(item.headline);
-    const safeImageUrl = safeHttpUrl(item.image_url, '');
-    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
     const safeLink = safeHttpUrl(item.link);
     const safeReason = escapeHtml(item.reason || '');
     const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
@@ -1537,9 +1535,6 @@ function createPoolItem(item) {
     card.innerHTML = `
         <div class="pool-item">
             <a class="pool-item__main" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
-                <div class="pool-item__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
-                    ${hasImage ? '' : '📰'}
-                </div>
                 <div class="pool-item__content">
                     <div class="pool-item__title">${safeHeadline}</div>
                     <div class="pool-item__meta">

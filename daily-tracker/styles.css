@@ -2604,10 +2604,10 @@ canvas {
 }
 
 .featured-card__title {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 650;
-  line-height: 1.45;
-  margin-bottom: 8px;
+  line-height: 1.42;
+  margin-bottom: 10px;
   color: var(--text-primary);
   letter-spacing: -0.01em;
   display: -webkit-box;
@@ -2619,10 +2619,10 @@ canvas {
 }
 
 .featured-card__reason {
-  font-size: 0.75rem;
+  font-size: 0.84rem;
   color: var(--text-secondary);
-  line-height: 1.4;
-  margin-bottom: 10px;
+  line-height: 1.42;
+  margin-bottom: 12px;
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -2636,7 +2636,7 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: auto;
   margin-bottom: 10px;
@@ -2757,9 +2757,9 @@ canvas {
 }
 
 .simple-card__title {
-  font-size: 0.84rem;
+  font-size: 0.96rem;
   font-weight: 550;
-  line-height: 1.4;
+  line-height: 1.42;
   color: var(--text-primary);
   display: -webkit-box;
   line-clamp: 1;
@@ -2771,7 +2771,7 @@ canvas {
 }
 
 .simple-card__reason {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.3;
   margin-bottom: 8px;
@@ -2787,7 +2787,7 @@ canvas {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
 }
 
@@ -2850,9 +2850,7 @@ canvas {
 
 .pool-item__main {
   width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -2872,34 +2870,16 @@ canvas {
   min-width: 0;
 }
 
-.pool-item__thumb {
-  width: 46px;
-  height: 46px;
-  border-radius: 10px;
-  flex-shrink: 0;
-  border: 1px solid var(--border-subtle);
-  background: #f2f3f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-tertiary);
-  font-size: 0.95rem;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-.pool-item__thumb.has-image {
-  border-color: rgba(0, 0, 0, 0.08);
-}
-
 .pool-item__title {
-  font-size: 0.83rem;
+  font-size: 0.94rem;
   font-weight: 500;
   color: var(--text-secondary);
-  white-space: nowrap;
+  line-height: 1.4;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
   transition: color 0.25s ease;
 }
 
@@ -2911,8 +2891,8 @@ canvas {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 4px;
-  font-size: 0.68rem;
+  margin-top: 6px;
+  font-size: 0.76rem;
   color: var(--text-muted);
 }
 
