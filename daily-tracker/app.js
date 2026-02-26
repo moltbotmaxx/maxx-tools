@@ -51,6 +51,12 @@ const SOURCING_FEEDS = [
         url: 'https://rss.app/feeds/v1.1/_cj6ytZzuyXMfGkNr.json'
     },
     {
+        id: 'ai-general',
+        label: 'AI General',
+        kind: 'news',
+        url: 'https://rss.app/feeds/v1.1/ow6LmNtmgkH0e876.json'
+    },
+    {
         id: 'anthropic-claude',
         label: 'Anthropic - Claude',
         kind: 'news',
