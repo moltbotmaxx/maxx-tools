@@ -1,7 +1,7 @@
 {
   "weather": {
-    "last_updated": "23:26",
-    "temp_c": "21",
+    "last_updated": "23:56",
+    "temp_c": "20",
     "wind_kmh": "7",
     "condition": "Cielo Despejado",
     "bg_image": "images/weather_night.png",
