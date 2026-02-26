@@ -3585,32 +3585,46 @@ canvas {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
-#sourcing-view .feed-filter {
+#sourcing-view .feed-filter-nav {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background: #fff;
   border: 1px solid var(--border-subtle);
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
-#sourcing-view .feed-filter .label {
-  font-size: 0.76rem;
-  color: var(--text-secondary);
-  font-weight: 600;
+#sourcing-view .feed-filter-nav::-webkit-scrollbar {
+  display: none;
 }
 
-#sourcing-view .feed-filter select {
-  border: none;
+#sourcing-view .feed-tab-btn {
+  border: 1px solid transparent;
   background: transparent;
   color: var(--text-primary);
   font-size: 0.78rem;
   font-weight: 600;
-  outline: none;
+  padding: 6px 10px;
+  border-radius: 999px;
   cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#sourcing-view .feed-tab-btn:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+#sourcing-view .feed-tab-btn.active {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 #sourcing-view .toggle-switch {

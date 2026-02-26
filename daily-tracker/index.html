@@ -33,7 +33,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Content Scheduler
                     <span
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(v.1.7.8)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(v.1.7.9)</span>
                     <div id="syncStatus" class="sync-status online" title="Cloud Sync Active">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Synced</span>
@@ -106,13 +106,9 @@
                     <div class="news-toolbar">
                         <div class="news-toolbar__meta">
                             <h2 class="news-toolbar__title">Sourcing Desk</h2>
-                            <p class="news-toolbar__subtitle">Review high-signal stories and move the best ideas into your workflow.</p>
                         </div>
                         <div class="view-controls">
-                            <label class="feed-filter">
-                                <span class="label">Feed</span>
-                                <select id="sourcingFeedFilter"></select>
-                            </label>
+                            <nav class="feed-filter-nav" id="sourcingFeedFilter" aria-label="Sourcing RSS feeds"></nav>
                             <label class="toggle-switch">
                                 <input type="checkbox" id="showDoneNews">
                                 <span class="slider"></span>
