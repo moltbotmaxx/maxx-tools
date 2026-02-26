@@ -1,8 +1,8 @@
 {
   "weather": {
-    "last_updated": "07:26",
-    "temp_c": "22",
-    "wind_kmh": "8",
+    "last_updated": "07:56",
+    "temp_c": "24",
+    "wind_kmh": "6",
     "condition": "Cielo Despejado",
     "bg_image": "images/weather_sunny.png",
     "theme": "day",
