@@ -53,6 +53,9 @@ const SOURCING_FEEDS = [
 ];
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
+let sourcingArticlesCache = [];
+let sourcingArticlesDirty = true;
+let scheduledNewsRender = null;
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
 
@@ -1120,6 +1123,32 @@ function renderSidebarEmpty(container, text) {
     container.innerHTML = `<div class="sourcing-empty">${escapeHtml(text)}</div>`;
 }
 
+function scheduleNewsRender() {
+    if (scheduledNewsRender !== null) return;
+    scheduledNewsRender = requestAnimationFrame(() => {
+        scheduledNewsRender = null;
+        renderNews(false);
+    });
+}
+
+function applyDoneOptimistic(headline) {
+    if (!headline) return;
+    const selector = `.card-wrapper[data-headline="${CSS.escape(headline)}"]`;
+    const cards = document.querySelectorAll(selector);
+
+    cards.forEach((card) => {
+        card.classList.add('card-wrapper--done');
+        const doneBtn = card.querySelector('.done-button');
+        if (doneBtn) doneBtn.remove();
+
+        if (!showDoneNews) {
+            card.style.transition = 'opacity 120ms ease, transform 120ms ease';
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.98)';
+        }
+    });
+}
+
 async function fetchSourcingFeed(feedConfig, forceRefresh = false) {
     if (!feedConfig?.url) return [];
     if (!forceRefresh && sourcingFeedCache.has(feedConfig.id)) {
@@ -1136,30 +1165,37 @@ async function fetchSourcingFeed(feedConfig, forceRefresh = false) {
     return items;
 }
 
-async function renderNews(forceRefresh = false) {
+async function rebuildSourcingArticles(forceRefresh = false) {
     const selectedFeeds = getSelectedFeedConfigs();
     const allArticles = [];
 
+    for (const feed of selectedFeeds) {
+        if (feed.kind !== 'news') continue;
+        const items = await fetchSourcingFeed(feed, forceRefresh);
+        items.forEach((item, i) => allArticles.push(normalizeFeedItemToArticle(item, i)));
+    }
+
+    sourcingArticlesCache = dedupeArticlesByLink(allArticles).sort((a, b) => {
+        const da = new Date(a.published_at || a.date).getTime();
+        const db = new Date(b.published_at || b.date).getTime();
+        return db - da;
+    });
+    sourcingArticlesDirty = false;
+}
+
+async function renderNews(forceRefresh = false) {
     try {
-        for (const feed of selectedFeeds) {
-            if (feed.kind !== 'news') continue;
-            const items = await fetchSourcingFeed(feed, forceRefresh);
-            items.forEach((item, i) => allArticles.push(normalizeFeedItemToArticle(item, i)));
+        if (forceRefresh || sourcingArticlesDirty || sourcingArticlesCache.length === 0) {
+            await rebuildSourcingArticles(forceRefresh);
         }
     } catch (err) {
         console.error('Failed to load RSS feeds:', err);
         return;
     }
 
-    const sortedArticles = dedupeArticlesByLink(allArticles).sort((a, b) => {
-        const da = new Date(a.published_at || a.date).getTime();
-        const db = new Date(b.published_at || b.date).getTime();
-        return db - da;
-    });
-
     const activeArticles = showDoneNews
-        ? sortedArticles
-        : sortedArticles.filter(item => !doneHeadlines.has(item.headline));
+        ? sourcingArticlesCache
+        : sourcingArticlesCache.filter(item => !doneHeadlines.has(item.headline));
 
     const top6 = activeArticles.slice(0, 6);
     const next6 = activeArticles.slice(6, 12);
@@ -1172,14 +1208,20 @@ async function renderNews(forceRefresh = false) {
 
     // Clear and render grids
     elements.featuredGrid.innerHTML = '';
-    top6.forEach((item, i) => elements.featuredGrid.appendChild(createFeaturedCard(item, i)));
+    const featuredFrag = document.createDocumentFragment();
+    top6.forEach((item, i) => featuredFrag.appendChild(createFeaturedCard(item, i)));
+    elements.featuredGrid.appendChild(featuredFrag);
 
     elements.simpleGrid.innerHTML = '';
-    next6.forEach((item, i) => elements.simpleGrid.appendChild(createSimpleCard(item, i + 6)));
+    const simpleFrag = document.createDocumentFragment();
+    next6.forEach((item, i) => simpleFrag.appendChild(createSimpleCard(item, i + 6)));
+    elements.simpleGrid.appendChild(simpleFrag);
 
     if (elements.poolListNews) {
         elements.poolListNews.innerHTML = '';
-        remaining.forEach(item => elements.poolListNews.appendChild(createPoolItem(item)));
+        const poolFrag = document.createDocumentFragment();
+        remaining.forEach(item => poolFrag.appendChild(createPoolItem(item)));
+        elements.poolListNews.appendChild(poolFrag);
     }
 
     renderSidebarEmpty(elements.xViralList, 'No X feed configured yet');
@@ -1306,7 +1348,8 @@ async function saveSourceSelectionIdea() {
 function markAsDone(headline) {
     doneHeadlines.add(headline);
     localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
-    renderNews(false);
+    applyDoneOptimistic(headline);
+    scheduleNewsRender();
 }
 
 function startNewsAutoRefresh() {
@@ -1354,6 +1397,7 @@ function createFeaturedCard(item, index) {
     const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const card = document.createElement('div');
     card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
+    card.dataset.headline = item.headline || '';
 
     const imageHtml = hasImage
         ? `<div class="featured-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
@@ -1416,6 +1460,7 @@ function createSimpleCard(item, index) {
     const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const card = document.createElement('div');
     card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
+    card.dataset.headline = item.headline || '';
 
     card.innerHTML = `
         <div class="simple-card">
@@ -1469,6 +1514,7 @@ function createPoolItem(item) {
     const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const card = document.createElement('div');
     card.className = `card-wrapper pool-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
+    card.dataset.headline = item.headline || '';
 
     card.innerHTML = `
         <div class="pool-item">
@@ -2192,6 +2238,7 @@ function setupEventListeners() {
     if (elements.sourcingFeedFilter) {
         elements.sourcingFeedFilter.addEventListener('change', (e) => {
             selectedSourcingFeed = e.target.value || 'all';
+            sourcingArticlesDirty = true;
             renderNews(true);
         });
     }
@@ -2207,6 +2254,7 @@ function setupEventListeners() {
             doneHeadlines.clear();
             localStorage.removeItem('done_articles');
             sourcingFeedCache.clear();
+            sourcingArticlesDirty = true;
             renderNews(true);
         });
     }
