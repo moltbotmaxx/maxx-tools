@@ -3607,6 +3607,32 @@ canvas {
   gap: 10px;
 }
 
+#sourcing-view .feed-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+#sourcing-view .feed-filter .label {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+#sourcing-view .feed-filter select {
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
 #sourcing-view .toggle-switch {
   background: #fff;
   border: 1px solid var(--border-subtle);
@@ -3707,6 +3733,12 @@ canvas {
 #sourcing-view .sidebar-list {
   max-height: none;
   overflow: visible;
+}
+
+.sourcing-empty {
+  padding: 14px 12px;
+  color: var(--text-tertiary);
+  font-size: 0.78rem;
 }
 
 #sourcing-view .x-post,

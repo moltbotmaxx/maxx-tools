@@ -41,9 +41,18 @@ let sourceSelectionDraft = null;
 // ===========================
 // News Ticker State
 // ===========================
-let newsData = null;
 let showDoneNews = false;
 let doneHeadlines = new Set();
+const SOURCING_FEEDS = [
+    {
+        id: 'ai-general',
+        label: 'AI General',
+        kind: 'news',
+        url: 'https://rss.app/feeds/v1.1/ow6LmNtmgkH0e876.json'
+    }
+];
+let selectedSourcingFeed = 'all';
+const sourcingFeedCache = new Map();
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
 
@@ -148,6 +157,7 @@ const elements = {
     // News Tab Elements
     showDoneNews: document.getElementById('showDoneNews'),
     resetNewsBtn: document.getElementById('resetNewsBtn'),
+    sourcingFeedFilter: document.getElementById('sourcingFeedFilter'),
     featuredGrid: document.getElementById('featuredGrid'),
     simpleGrid: document.getElementById('simpleGrid'),
     poolListNews: document.getElementById('poolListNews'),
@@ -1037,23 +1047,116 @@ function switchTab(viewId) {
 // ===========================
 // News Rendering Logic
 // ===========================
-async function renderNews(forceRefresh = false) {
-    if (!newsData || forceRefresh) {
-        try {
-            const ts = Date.now();
-            const res = await fetch(`data.json?t=${ts}`, { cache: 'no-store' });
-            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-            newsData = await res.json();
-        } catch (err) {
-            console.error('Failed to load news data:', err);
-            return;
-        }
+function getSelectedFeedConfigs() {
+    if (selectedSourcingFeed === 'all') return SOURCING_FEEDS;
+    return SOURCING_FEEDS.filter(f => f.id === selectedSourcingFeed);
+}
+
+function getFeedSourceLabel(item, fallbackUrl = '') {
+    const authorName = item?.authors?.[0]?.name;
+    if (authorName) return authorName;
+    try {
+        const host = new URL(item?.url || fallbackUrl).hostname.replace('www.', '');
+        return host || 'RSS Source';
+    } catch {
+        return 'RSS Source';
+    }
+}
+
+function normalizeFeedItemToArticle(item, index = 0) {
+    const link = safeHttpUrl(item?.url || '');
+    const publishedAt = item?.date_published || item?.date_modified || new Date().toISOString();
+    const publishedDate = toIsoDateString(publishedAt);
+    const headline = decodeEntities(item?.title || 'Untitled');
+    const reason = normalizeWhitespace(item?.content_text || '').slice(0, 220);
+    const source = getFeedSourceLabel(item, link);
+    const imageUrl = safeHttpUrl(item?.image || item?.attachments?.[0]?.url || '', '');
+    const now = Date.now();
+    const hoursAgo = Math.max(0, (now - new Date(publishedAt).getTime()) / (1000 * 60 * 60));
+    const recencyScore = Math.max(0, Math.round(100 - hoursAgo * 2));
+    const ranking = clampScore(recencyScore - Math.round(index / 2));
+
+    return {
+        headline,
+        link,
+        source,
+        date: publishedDate,
+        published_at: publishedAt,
+        ranking,
+        rating: ranking,
+        virality: clampScore(Math.round(ranking * 0.78)),
+        fit: clampScore(Math.round(ranking * 0.72)),
+        reason: reason || 'Imported from RSS feed.',
+        image_url: imageUrl
+    };
+}
+
+function clampScore(value) {
+    const num = Number(value);
+    if (!Number.isFinite(num)) return 0;
+    return Math.max(0, Math.min(100, Math.round(num)));
+}
+
+function toIsoDateString(value) {
+    const d = new Date(value || '');
+    if (Number.isNaN(d.getTime())) return new Date().toISOString().slice(0, 10);
+    return d.toISOString().slice(0, 10);
+}
+
+function dedupeArticlesByLink(articles) {
+    const seen = new Set();
+    const output = [];
+    for (const article of articles) {
+        const key = safeHttpUrl(article?.link || '', '');
+        if (!key || seen.has(key)) continue;
+        seen.add(key);
+        output.push(article);
+    }
+    return output;
+}
+
+function renderSidebarEmpty(container, text) {
+    if (!container) return;
+    container.innerHTML = `<div class="sourcing-empty">${escapeHtml(text)}</div>`;
+}
+
+async function fetchSourcingFeed(feedConfig, forceRefresh = false) {
+    if (!feedConfig?.url) return [];
+    if (!forceRefresh && sourcingFeedCache.has(feedConfig.id)) {
+        return sourcingFeedCache.get(feedConfig.id);
     }
 
-    if (!newsData || !newsData.articles) return;
+    const ts = Date.now();
+    const url = `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}t=${ts}`;
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Feed ${feedConfig.id} failed with ${res.status}`);
+    const json = await res.json();
+    const items = Array.isArray(json?.items) ? json.items : [];
+    sourcingFeedCache.set(feedConfig.id, items);
+    return items;
+}
 
-    // Filter and bucket
-    const sortedArticles = [...newsData.articles].sort((a, b) => b.ranking - a.ranking);
+async function renderNews(forceRefresh = false) {
+    const selectedFeeds = getSelectedFeedConfigs();
+    const allArticles = [];
+
+    try {
+        for (const feed of selectedFeeds) {
+            if (feed.kind !== 'news') continue;
+            const items = await fetchSourcingFeed(feed, forceRefresh);
+            items.forEach((item, i) => allArticles.push(normalizeFeedItemToArticle(item, i)));
+        }
+    } catch (err) {
+        console.error('Failed to load RSS feeds:', err);
+        return;
+    }
+
+    const sortedArticles = dedupeArticlesByLink(allArticles).sort((a, b) => {
+        const da = new Date(a.published_at || a.date).getTime();
+        const db = new Date(b.published_at || b.date).getTime();
+        return db - da;
+    });
+
     const activeArticles = showDoneNews
         ? sortedArticles
         : sortedArticles.filter(item => !doneHeadlines.has(item.headline));
@@ -1079,16 +1182,8 @@ async function renderNews(forceRefresh = false) {
         remaining.forEach(item => elements.poolListNews.appendChild(createPoolItem(item)));
     }
 
-    // Sidebar
-    elements.xViralList.innerHTML = '';
-    if (newsData.x_viral && newsData.x_viral.items) {
-        newsData.x_viral.items.forEach(item => elements.xViralList.appendChild(createXPostItem(item)));
-    }
-
-    elements.redditViralList.innerHTML = '';
-    if (newsData.reddit_viral && newsData.reddit_viral.items) {
-        newsData.reddit_viral.items.forEach(item => elements.redditViralList.appendChild(createRedditPostItem(item)));
-    }
+    renderSidebarEmpty(elements.xViralList, 'No X feed configured yet');
+    renderSidebarEmpty(elements.redditViralList, 'No Reddit feed configured yet');
 }
 
 function decodeEntities(text) {
@@ -1225,6 +1320,26 @@ function stopNewsAutoRefresh() {
     if (!newsAutoRefreshTimer) return;
     clearInterval(newsAutoRefreshTimer);
     newsAutoRefreshTimer = null;
+}
+
+function initSourcingFeedFilter() {
+    if (!elements.sourcingFeedFilter) return;
+    const select = elements.sourcingFeedFilter;
+    select.innerHTML = '';
+
+    const allOpt = document.createElement('option');
+    allOpt.value = 'all';
+    allOpt.textContent = 'ALL';
+    select.appendChild(allOpt);
+
+    SOURCING_FEEDS.forEach(feed => {
+        const opt = document.createElement('option');
+        opt.value = feed.id;
+        opt.textContent = feed.label;
+        select.appendChild(opt);
+    });
+
+    select.value = selectedSourcingFeed;
 }
 
 function createFeaturedCard(item, index) {
@@ -2054,6 +2169,15 @@ function setupEventListeners() {
     });
 
     // News Listeners
+    initSourcingFeedFilter();
+
+    if (elements.sourcingFeedFilter) {
+        elements.sourcingFeedFilter.addEventListener('change', (e) => {
+            selectedSourcingFeed = e.target.value || 'all';
+            renderNews(true);
+        });
+    }
+
     if (elements.showDoneNews) {
         elements.showDoneNews.addEventListener('change', (e) => {
             showDoneNews = e.target.checked;
@@ -2064,7 +2188,8 @@ function setupEventListeners() {
         elements.resetNewsBtn.addEventListener('click', () => {
             doneHeadlines.clear();
             localStorage.removeItem('done_articles');
-            renderNews(false);
+            sourcingFeedCache.clear();
+            renderNews(true);
         });
     }
 
