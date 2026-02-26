@@ -9,109 +9,112 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f6f4ef;
-      --panel: #fffcf5;
-      --panel-alt: #f0ede4;
-      --ink: #181714;
-      --muted: #6d665b;
-      --line: #d7d0c3;
-      --accent: #206c4f;
-      --accent-soft: #d7f0e5;
-      --warm: #b85f2f;
-      --ok: #2f7a3f;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(36, 28, 14, 0.12);
+      --bg: #ece8df;
+      --panel: #fffdf7;
+      --panel-2: #f2ece0;
+      --ink: #191715;
+      --muted: #6e665a;
+      --line: #d3cabc;
+      --accent: #1f694d;
+      --accent-2: #b86433;
+      --ok: #2f7d47;
+      --radius: 16px;
+      --shadow: 0 10px 24px rgba(21, 17, 10, 0.12);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html,
     body {
-      margin: 0;
       width: 1024px;
       height: 640px;
+      margin: 0;
       overflow: hidden;
-      background: radial-gradient(circle at 15% 0%, #fff8df 0%, var(--bg) 38%, #ebe7dc 100%);
+      background: radial-gradient(circle at 12% -10%, #fff8db 0%, #f1ede3 35%, #e5ded1 100%);
       color: var(--ink);
     }
 
     body {
+      padding: 10px;
       font-family: "Space Grotesk", sans-serif;
-      padding: 14px;
     }
 
     .frame {
-      width: 100%;
       height: 100%;
       border: 1px solid var(--line);
-      border-radius: 24px;
-      background: linear-gradient(180deg, #fffdf7 0%, #f6f2e8 100%);
+      border-radius: 20px;
+      background: linear-gradient(180deg, #fffef9 0%, #f4efe4 100%);
       box-shadow: var(--shadow);
       display: grid;
       grid-template-rows: 54px 1fr 34px;
       overflow: hidden;
     }
 
-    .topbar {
+    .topbar,
+    .bottombar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 16px;
-      border-bottom: 1px solid var(--line);
+      padding: 0 14px;
+      border-color: var(--line);
       background: rgba(255, 255, 255, 0.6);
     }
+
+    .topbar { border-bottom: 1px solid var(--line); }
+    .bottombar { border-top: 1px solid var(--line); }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 9px;
       font-weight: 700;
       font-size: 13px;
-      letter-spacing: 0.04em;
       text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
 
-    .brand-dot {
+    .brand-mark {
       width: 24px;
       height: 24px;
-      border-radius: 50%;
-      background: conic-gradient(from 45deg, #1f6f52, #d5a44f, #b85f2f, #1f6f52);
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background: linear-gradient(145deg, #206b4e, #b86433);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 13px;
     }
 
     .meta {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 12px;
+      font-size: 11px;
       color: var(--muted);
     }
 
-    .badge {
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: var(--panel-alt);
+    .pill {
       border: 1px solid var(--line);
-      font-weight: 600;
+      border-radius: 999px;
+      background: var(--panel-2);
+      font-weight: 700;
+      padding: 4px 10px;
     }
 
     .clock {
       font-family: "Sora", sans-serif;
-      font-weight: 700;
-      font-size: 15px;
-      color: var(--ink);
-      min-width: 48px;
+      font-size: 14px;
+      font-weight: 800;
+      min-width: 46px;
       text-align: right;
+      color: var(--ink);
     }
 
-    .grid {
+    .dashboard {
       display: grid;
-      grid-template-columns: 320px 1fr 250px;
-      grid-template-rows: 1fr 1fr;
-      gap: 10px;
-      padding: 10px;
+      grid-template-columns: 320px 1fr 260px;
+      grid-template-rows: 224px 1fr;
+      gap: 8px;
+      padding: 8px;
       min-height: 0;
     }
 
@@ -119,19 +122,19 @@
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      display: flex;
-      flex-direction: column;
       min-width: 0;
       min-height: 0;
+      display: flex;
+      flex-direction: column;
       overflow: hidden;
     }
 
-    .card-head {
+    .head {
       display: flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 12px 6px;
-      font-size: 11px;
+      padding: 10px 10px 6px;
+      font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--muted);
@@ -141,32 +144,26 @@
     .icon {
       width: 22px;
       height: 22px;
+      border-radius: 8px;
       display: grid;
       place-items: center;
-      border-radius: 8px;
-      background: var(--panel-alt);
+      background: var(--panel-2);
       font-size: 13px;
     }
 
-    .card-body {
+    .head-right { margin-left: auto; }
+
+    .body {
       flex: 1;
       min-height: 0;
-      padding: 0 12px 12px;
+      padding: 0 10px 10px;
     }
 
     .weather {
-      grid-row: 1 / span 2;
+      grid-row: 1 / 3;
       position: relative;
       color: #fff;
       isolation: isolate;
-    }
-
-    .weather::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(8, 26, 45, 0.2) 10%, rgba(8, 26, 45, 0.75) 100%);
-      z-index: 1;
     }
 
     .weather-bg {
@@ -178,177 +175,164 @@
       z-index: 0;
     }
 
-    .weather .card-head,
-    .weather .card-body {
-      position: relative;
+    .weather::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(4, 19, 35, 0.2) 8%, rgba(4, 19, 35, 0.84) 100%);
+    }
+
+    .weather .head,
+    .weather .body {
       z-index: 2;
+      position: relative;
     }
 
-    .weather .card-head {
-      color: rgba(255, 255, 255, 0.86);
-      padding-top: 12px;
-    }
-
-    .weather .icon {
-      background: rgba(255, 255, 255, 0.2);
-    }
+    .weather .icon { background: rgba(255, 255, 255, 0.2); }
 
     .weather-main {
       display: grid;
-      gap: 4px;
-      text-align: center;
+      grid-template-rows: auto auto;
+      justify-items: center;
       margin-top: 8px;
+      gap: 4px;
     }
 
     .weather-temp {
       font-family: "Sora", sans-serif;
-      font-size: 86px;
+      font-size: 82px;
       line-height: 0.9;
       letter-spacing: -0.05em;
       font-weight: 800;
     }
 
     .weather-desc {
-      font-size: 15px;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .weather-stats {
-      margin-top: 14px;
+      margin-top: 12px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 6px;
     }
 
-    .mini {
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 12px;
+    .chip {
       background: rgba(255, 255, 255, 0.12);
-      padding: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
       text-align: center;
-      backdrop-filter: blur(8px);
+      padding: 7px 5px;
+      backdrop-filter: blur(6px);
     }
 
-    .mini-k {
-      font-size: 10px;
+    .chip-k {
+      font-size: 9px;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0.09em;
       font-weight: 700;
+      color: rgba(255, 255, 255, 0.74);
     }
 
-    .mini-v {
+    .chip-v {
       margin-top: 3px;
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 800;
     }
 
     .hourly {
       margin-top: 10px;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 5px;
     }
 
     .hour {
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      background: rgba(255, 255, 255, 0.12);
-      padding: 6px 4px;
       text-align: center;
+      padding: 5px 4px;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.11);
     }
 
     .hour-time {
       font-size: 9px;
-      text-transform: uppercase;
       color: rgba(255, 255, 255, 0.72);
       font-weight: 700;
-      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
-    .hour-icon {
-      font-size: 15px;
-      margin: 2px 0;
-    }
+    .hour-icon { font-size: 14px; margin: 1px 0; }
+    .hour-temp { font-size: 12px; font-weight: 700; }
 
-    .hour-temp {
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .agent .card-body {
+    .agent .body {
       display: grid;
-      grid-template-rows: auto auto 1fr;
-      gap: 10px;
+      grid-template-rows: auto auto auto 1fr;
+      gap: 8px;
+      align-content: start;
     }
 
     .agent-id {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .avatar {
       width: 42px;
       height: 42px;
-      border-radius: 12px;
-      object-fit: cover;
+      border-radius: 11px;
       border: 1px solid var(--line);
+      object-fit: cover;
+      flex-shrink: 0;
     }
 
-    .agent-name {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
+    .agent-name { font-size: 14px; font-weight: 700; line-height: 1.2; }
+    .agent-model { margin-top: 2px; font-size: 11px; color: var(--muted); }
 
-    .agent-model {
-      margin-top: 2px;
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    .logic {
+    .status {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       width: fit-content;
-      padding: 5px 9px;
-      border-radius: 10px;
-      border: 1px solid #b9dccc;
-      background: var(--accent-soft);
-      color: #0f5b3e;
+      border: 1px solid #b8d8ca;
+      background: #dbf2e8;
+      color: #11573b;
+      border-radius: 999px;
+      padding: 4px 9px;
       font-size: 11px;
       font-weight: 700;
     }
 
-    .dot {
+    .status-dot {
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: #24a866;
+      background: #23a161;
       animation: pulse 1.8s infinite;
     }
 
-    .agent-stats {
+    .stats-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 6px;
-      align-content: start;
     }
 
     .stat {
-      background: var(--panel-alt);
       border: 1px solid var(--line);
       border-radius: 10px;
-      padding: 7px 9px;
+      padding: 7px 8px;
+      background: var(--panel-2);
+      min-height: 55px;
     }
 
     .stat-k {
       font-size: 9px;
-      letter-spacing: 0.08em;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
       color: var(--muted);
       font-weight: 700;
     }
@@ -358,13 +342,14 @@
       font-size: 13px;
       font-weight: 700;
       color: var(--ink);
+      line-height: 1.25;
     }
 
     .bar {
+      margin-top: 4px;
       height: 4px;
-      border-radius: 999px;
-      background: #cbc4b7;
-      margin-top: 5px;
+      border-radius: 99px;
+      background: #cbc3b6;
       overflow: hidden;
     }
 
@@ -374,20 +359,55 @@
       width: 0;
       border-radius: inherit;
       background: var(--accent);
-      transition: width .3s ease;
+      transition: width 0.3s ease;
     }
 
-    .instagram .card-body {
+    .agent-foot {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #f6f2e9;
+      padding: 7px 8px;
       display: grid;
-      grid-template-rows: auto auto auto;
-      gap: 8px;
+      grid-template-columns: auto 1fr;
+      gap: 7px;
+      align-items: start;
       min-height: 0;
-      align-content: start;
+    }
+
+    .agent-foot-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 6px;
+      background: #eadfce;
+      color: #8a532c;
+      display: grid;
+      place-items: center;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .agent-foot-text {
+      font-size: 11px;
+      color: #4b463e;
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .instagram .body {
+      display: grid;
+      grid-template-rows: auto auto auto 1fr;
+      gap: 7px;
+      min-height: 0;
     }
 
     .handle {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
+      color: #2f2a23;
+      line-height: 1.2;
     }
 
     .followers {
@@ -404,7 +424,7 @@
     }
 
     .growth {
-      font-size: 12px;
+      font-size: 11px;
       color: var(--ok);
       font-weight: 700;
     }
@@ -415,120 +435,160 @@
       gap: 6px;
     }
 
+    .ig-extra {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 6px;
+      min-height: 0;
+    }
+
+    .ig-line {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-2);
+      padding: 7px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .ig-line-k {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .ig-line-v {
+      font-size: 11px;
+      font-weight: 700;
+      color: #3a352d;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 130px;
+    }
+
     .news {
       grid-column: 2 / 4;
     }
 
-    .news .card-body {
+    .news .body {
       display: grid;
-      grid-template-rows: 1fr auto;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
       gap: 8px;
       min-height: 0;
     }
 
     .featured {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel-2);
+      padding: 8px;
       display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 10px;
+      grid-template-columns: 168px 1fr;
+      gap: 8px;
       min-height: 0;
     }
 
     .featured img {
       width: 100%;
       height: 100%;
+      min-height: 148px;
       object-fit: cover;
       border-radius: 10px;
-      border: 1px solid var(--line);
-      background: var(--panel-alt);
-      min-height: 84px;
+      border: 1px solid #cfc5b7;
+      background: #e8e1d5;
     }
 
     .tag {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
       padding: 3px 8px;
       border-radius: 999px;
+      border: 1px solid #e2b696;
+      background: #f4dbc8;
+      color: #7f431e;
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      background: #f0d8c7;
-      color: #7c3f1f;
       margin-bottom: 5px;
     }
 
     .headline {
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 1.32;
       font-weight: 700;
-      line-height: 1.35;
+      color: #23201b;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
 
     .source {
-      margin-top: 6px;
-      font-size: 11px;
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 600;
       color: var(--muted);
     }
 
     .secondary {
       border: 1px solid var(--line);
-      border-radius: 10px;
-      overflow: hidden;
-      background: var(--panel-alt);
+      border-radius: 12px;
+      background: var(--panel-2);
+      padding: 6px;
+      display: grid;
+      grid-auto-rows: 1fr;
+      gap: 6px;
+      min-height: 0;
     }
 
     .secondary-item {
-      display: flex;
+      border: 1px solid #d4cabc;
+      border-radius: 10px;
+      background: #fbf7ef;
+      padding: 8px;
+      display: grid;
+      grid-template-columns: 8px 1fr auto;
       align-items: center;
-      gap: 8px;
-      padding: 7px 9px;
-      font-size: 11px;
+      gap: 7px;
       min-width: 0;
     }
 
-    .secondary-item + .secondary-item {
-      border-top: 1px solid var(--line);
-    }
-
-    .secondary-item .pin {
+    .pin {
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: var(--warm);
-      flex-shrink: 0;
+      background: var(--accent-2);
+      box-shadow: 0 0 0 3px rgba(184, 100, 51, 0.18);
     }
 
-    .secondary-item .text {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      color: #373228;
-      font-weight: 600;
-    }
-
-    .secondary-item .time {
-      margin-left: auto;
-      font-size: 10px;
-      padding: 2px 7px;
-      border-radius: 999px;
-      background: #d7f0e5;
-      border: 1px solid #b9dccc;
-      color: #0f5b3e;
+    .text {
+      font-size: 12px;
+      line-height: 1.3;
+      color: #383329;
       font-weight: 700;
-      flex-shrink: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
-    .bottombar {
-      border-top: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 14px;
-      font-size: 11px;
-      color: var(--muted);
-      background: rgba(255, 255, 255, 0.4);
+    .time {
+      font-size: 10px;
+      font-weight: 700;
+      color: #0f5b3e;
+      background: #dbf2e8;
+      border: 1px solid #badbcc;
+      border-radius: 999px;
+      padding: 2px 7px;
+      white-space: nowrap;
     }
 
     .channels {
@@ -537,14 +597,18 @@
     }
 
     .ch {
-      border: 1px solid var(--line);
-      background: var(--panel);
-      padding: 2px 7px;
-      border-radius: 999px;
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-weight: 600;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--muted);
+      padding: 2px 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
 
     .ch::before {
@@ -552,8 +616,15 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: #27a25e;
-      box-shadow: 0 0 0 2px rgba(39, 162, 94, 0.2);
+      background: #23a161;
+      box-shadow: 0 0 0 2px rgba(35, 161, 97, 0.2);
+    }
+
+    .fid {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.06em;
     }
 
     @keyframes pulse {
@@ -566,40 +637,40 @@
   <main class="frame">
     <header class="topbar">
       <div class="brand">
-        <span class="brand-dot"></span>
-        <span>Smart Frame</span>
+        <span class="brand-mark">SF</span>
+        <span>Smart Frame Board</span>
       </div>
       <div class="meta">
-        <span class="badge" id="topbar-date">-</span>
+        <span class="pill" id="topbar-date">-</span>
         <span class="clock" id="topbar-time">--:--</span>
       </div>
     </header>
 
-    <section class="grid">
+    <section class="dashboard">
       <article class="card weather">
         <img class="weather-bg" id="weather-bg-img" src="" alt="Fondo clima">
-        <div class="card-head">
+        <div class="head">
           <span class="icon" id="weather-header-icon">-</span>
           <span>Clima</span>
-          <span style="margin-left:auto" id="weather-time">-</span>
+          <span class="head-right" id="weather-time">-</span>
         </div>
-        <div class="card-body">
+        <div class="body">
           <div class="weather-main">
             <div class="weather-temp"><span id="weather-temp">-</span>&deg;</div>
             <div class="weather-desc" id="weather-desc">-</div>
           </div>
           <div class="weather-stats">
-            <div class="mini">
-              <div class="mini-k">Viento</div>
-              <div class="mini-v" id="weather-wind">-</div>
+            <div class="chip">
+              <div class="chip-k">Viento</div>
+              <div class="chip-v" id="weather-wind">-</div>
             </div>
-            <div class="mini">
-              <div class="mini-k">Humedad</div>
-              <div class="mini-v" id="weather-humidity">-</div>
+            <div class="chip">
+              <div class="chip-k">Humedad</div>
+              <div class="chip-v" id="weather-humidity">-</div>
             </div>
-            <div class="mini">
-              <div class="mini-k">UV</div>
-              <div class="mini-v" id="weather-uv">-</div>
+            <div class="chip">
+              <div class="chip-k">UV</div>
+              <div class="chip-v" id="weather-uv">-</div>
             </div>
           </div>
           <div class="hourly" id="weather-hourly"></div>
@@ -607,12 +678,12 @@
       </article>
 
       <article class="card agent">
-        <div class="card-head">
-          <span class="icon">🤖</span>
+        <div class="head">
+          <span class="icon">AI</span>
           <span>OpenClaw</span>
-          <span style="margin-left:auto" id="moltbot-logic">-</span>
+          <span class="head-right" id="moltbot-logic">-</span>
         </div>
-        <div class="card-body">
+        <div class="body">
           <div class="agent-id">
             <img class="avatar" src="maxx_avatar_real.png" alt="Maxx">
             <div>
@@ -620,8 +691,8 @@
               <div class="agent-model" id="moltbot-model">-</div>
             </div>
           </div>
-          <div class="logic"><span class="dot"></span><span id="moltbot-mood">-</span></div>
-          <div class="agent-stats">
+          <div class="status"><span class="status-dot"></span><span id="moltbot-mood">-</span></div>
+          <div class="stats-grid">
             <div class="stat">
               <div class="stat-k">Contexto</div>
               <div class="stat-v" id="moltbot-context">-</div>
@@ -640,15 +711,19 @@
               <div class="stat-v" id="moltbot-eta">-</div>
             </div>
           </div>
+          <div class="agent-foot">
+            <span class="agent-foot-icon">!</span>
+            <div class="agent-foot-text" id="moltbot-last-action">Sin actividad reciente.</div>
+          </div>
         </div>
       </article>
 
       <article class="card instagram">
-        <div class="card-head">
-          <span class="icon">📷</span>
+        <div class="head">
+          <span class="icon">IG</span>
           <span>Instagram</span>
         </div>
-        <div class="card-body">
+        <div class="body">
           <div class="handle" id="ig-handle">-</div>
           <div class="followers">
             <strong id="ig-followers">-</strong>
@@ -664,15 +739,25 @@
               <div class="stat-v" id="ig-engagement">-</div>
             </div>
           </div>
+          <div class="ig-extra">
+            <div class="ig-line">
+              <span class="ig-line-k">Ultimo Post</span>
+              <span class="ig-line-v" id="ig-last-post-time">-</span>
+            </div>
+            <div class="ig-line">
+              <span class="ig-line-k">Objetivo Diario</span>
+              <span class="ig-line-v" id="ig-daily-goal">-</span>
+            </div>
+          </div>
         </div>
       </article>
 
       <article class="card news">
-        <div class="card-head">
-          <span class="icon">📰</span>
-          <span>Noticias</span>
+        <div class="head">
+          <span class="icon">N</span>
+          <span>Newsroom</span>
         </div>
-        <div class="card-body">
+        <div class="body">
           <div class="featured">
             <img id="news-img" src="" alt="Imagen noticia">
             <div>
@@ -691,7 +776,7 @@
         <span class="ch">Telegram</span>
         <span class="ch">WhatsApp</span>
       </div>
-      <span id="frame-id">FID:-</span>
+      <span class="fid" id="frame-id">FID:-</span>
     </footer>
   </main>
 
@@ -731,7 +816,7 @@
     function clampText(text, max = 120) {
       const raw = String(text ?? "");
       if (raw.length <= max) return raw;
-      return raw.slice(0, max - 1) + "…";
+      return raw.slice(0, max - 1) + "...";
     }
 
     async function updateWeather() {
@@ -745,36 +830,28 @@
       setText("weather-humidity", w.humidity ? `${w.humidity}%` : "-");
       setText("weather-uv", w.uv_index);
       setText("weather-time", w.last_updated);
-      setText("weather-header-icon", w.icon || "☀️");
+      setText("weather-header-icon", w.icon || "*");
       setImage("weather-bg-img", w.bg_image);
 
       const hourlyRoot = document.getElementById("weather-hourly");
-      if (hourlyRoot) {
-        const items = Array.isArray(w.hourly_forecast) ? w.hourly_forecast.slice(0, 4) : [];
-        if (!items.length) {
-          hourlyRoot.innerHTML = [
-            { time: "Now", icon: w.icon || "☀️", temp: w.temp_c || "-" },
-            { time: "+1h", icon: "⛅", temp: w.temp_c || "-" },
-            { time: "+2h", icon: "🌤", temp: w.temp_c || "-" },
-            { time: "+3h", icon: "🌙", temp: w.temp_c || "-" }
-          ].map((item) => `
-            <div class="hour">
-              <div class="hour-time">${escapeHtml(item.time)}</div>
-              <div class="hour-icon">${escapeHtml(item.icon)}</div>
-              <div class="hour-temp">${escapeHtml(item.temp)}&deg;</div>
-            </div>
-          `).join("");
-          return;
-        }
+      if (!hourlyRoot) return;
 
-        hourlyRoot.innerHTML = items.map((item) => `
-          <div class="hour">
-            <div class="hour-time">${escapeHtml(item.time)}</div>
-            <div class="hour-icon">${escapeHtml(item.icon || "•")}</div>
-            <div class="hour-temp">${escapeHtml(item.temp)}&deg;</div>
-          </div>
-        `).join("");
-      }
+      const items = Array.isArray(w.hourly_forecast) ? w.hourly_forecast.slice(0, 4) : [];
+      const fallback = [
+        { time: "Now", icon: w.icon || "*", temp: w.temp_c || "-" },
+        { time: "+1h", icon: ".", temp: w.temp_c || "-" },
+        { time: "+2h", icon: ".", temp: w.temp_c || "-" },
+        { time: "+3h", icon: ".", temp: w.temp_c || "-" }
+      ];
+
+      const renderItems = items.length ? items : fallback;
+      hourlyRoot.innerHTML = renderItems.map((item) => `
+        <div class="hour">
+          <div class="hour-time">${escapeHtml(item.time)}</div>
+          <div class="hour-icon">${escapeHtml(item.icon || "*")}</div>
+          <div class="hour-temp">${escapeHtml(item.temp)}&deg;</div>
+        </div>
+      `).join("");
     }
 
     async function updateMoltbot() {
@@ -790,6 +867,7 @@
       setText("moltbot-goals", m.operations?.daily_goal_progress || "-");
       setText("moltbot-eta", m.operations?.next_post_eta || "-");
       setText("moltbot-logic", m.state?.logic_mode || "-");
+      setText("moltbot-last-action", m.state?.last_action || "Sin actividad reciente.");
 
       const bar = document.getElementById("moltbot-context-bar");
       if (bar) {
@@ -809,6 +887,8 @@
       setText("ig-growth", ig.growth);
       setText("ig-posts", ig.posts);
       setText("ig-engagement", ig.engagement_rate);
+      setText("ig-last-post-time", data?.openclaws?.last_post_timestamp || "-");
+      setText("ig-daily-goal", data?.openclaws?.daily_goal_progress || "-");
     }
 
     async function updateNews() {
@@ -828,7 +908,7 @@
       root.innerHTML = items.map((item) => `
         <div class="secondary-item">
           <span class="pin"></span>
-          <span class="text">${escapeHtml(clampText(item.headline, 98))}</span>
+          <span class="text">${escapeHtml(clampText(item.headline, 160))}</span>
           <span class="time">${escapeHtml(item.time || "Now")}</span>
         </div>
       `).join("");
