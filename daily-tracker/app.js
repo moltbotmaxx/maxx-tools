@@ -1357,18 +1357,16 @@ function createFeaturedCard(item, index) {
 
     const imageHtml = hasImage
         ? `<div class="featured-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
-        : `<div class="featured-card__image">
+        : `<div class="featured-card__image featured-card__image--fallback">
+             <div class="featured-card__emoji-pattern" aria-hidden="true">
+                <span>📰</span><span>🤖</span><span>⚡</span><span>🧠</span><span>📈</span><span>💬</span>
+             </div>
              <span class="featured-card__image-icon">${['🔥', '⚡', '💔', '📢', '⚙️'][index] || '📰'}</span>`;
 
     card.innerHTML = `
         <a class="featured-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
             ${imageHtml}
                 <span class="featured-card__source-badge">${safeSource}</span>
-                <div class="score-badge score-badge--featured ${getScoreClass(ranking)}">
-                    ${ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
-                    <span class="score-badge__value">${ranking}</span>
-                    ${getScoreInternalHtml(item)}
-                </div>
             </div>
             <div class="featured-card__body">
                 <h3 class="featured-card__title">${safeHeadline}</h3>
@@ -1377,13 +1375,22 @@ function createFeaturedCard(item, index) {
                     <span>${safeDate}</span>
                     <span class="featured-card__arrow">→</span>
                 </div>
+                <div class="featured-card__footer">
+                    <div class="score-badge score-badge--featured ${getScoreClass(ranking)}">
+                        ${ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
+                        <span class="score-badge__value">${ranking}</span>
+                        ${getScoreInternalHtml(item)}
+                    </div>
+                    <div class="card-pills-actions">
+                        ${!isDone ? getDoneButtonHtml('done-button--inline') : ''}
+                        <button class="send-selection-btn send-selection-btn--inline" title="Send to Selection">
+                            <span class="send-selection-btn__icon">↗</span>
+                            <span class="send-selection-btn__label">Selection</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </a>
-        ${!isDone ? getDoneButtonHtml('done-button--featured') : ''}
-        <button class="send-selection-btn send-selection-btn--featured" title="Send to Selection">
-            <span class="send-selection-btn__icon">↗</span>
-            <span class="send-selection-btn__label">Selection</span>
-        </button>
     `;
 
     const doneBtn = card.querySelector('.done-button');
@@ -1411,27 +1418,33 @@ function createSimpleCard(item, index) {
     card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
 
     card.innerHTML = `
-        <a class="simple-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
-            <div class="simple-card__number">${index + 1}</div>
-            <div class="simple-card__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
-                ${hasImage ? '' : '📰'}
-            </div>
-            <div class="simple-card__content">
-                <div class="simple-card__title">${safeHeadline}</div>
-                <p class="simple-card__reason">${safeReason}</p>
-                <div class="simple-card__meta">
-                    <span>${safeSource} • ${safeDate}</span>
+        <div class="simple-card">
+            <a class="simple-card__main" href="${safeLink}" target="_blank" rel="noopener noreferrer">
+                <div class="simple-card__number">${index + 1}</div>
+                <div class="simple-card__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
+                    ${hasImage ? '' : '📰'}
+                </div>
+                <div class="simple-card__content">
+                    <div class="simple-card__title">${safeHeadline}</div>
+                    <p class="simple-card__reason">${safeReason}</p>
+                    <div class="simple-card__meta">
+                        <span>${safeSource} • ${safeDate}</span>
+                    </div>
+                </div>
+                <span class="simple-card__arrow">→</span>
+            </a>
+            <div class="simple-card__footer">
+                <div class="score-pill ${getScoreClass(ranking)}">
+                    ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
+                    <span>${ranking}</span>
+                    ${getScoreInternalHtml(item)}
+                </div>
+                <div class="card-pills-actions">
+                    ${!isDone ? getDoneButtonHtml('done-button--inline') : ''}
+                    ${getSendToSelectionButtonHtml('send-selection-btn--inline')}
                 </div>
             </div>
-            <div class="score-pill ${getScoreClass(ranking)}">
-                ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
-                <span>${ranking}</span>
-                ${getScoreInternalHtml(item)}
-            </div>
-            <span class="simple-card__arrow">→</span>
-        </a>
-        ${!isDone ? getDoneButtonHtml() : ''}
-        ${getSendToSelectionButtonHtml()}
+        </div>
     `;
 
     const doneBtn = card.querySelector('.done-button');
@@ -1459,23 +1472,29 @@ function createPoolItem(item) {
     card.className = `card-wrapper pool-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
 
     card.innerHTML = `
-        <a class="pool-item" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
-            <div class="pool-item__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
-                ${hasImage ? '' : '📰'}
-            </div>
-            <div class="score-pill score-pill--small ${getScoreClass(ranking)}">
-                <span>${ranking}</span>
-                ${getScoreInternalHtml(item)}
-            </div>
-            <div class="pool-item__content">
-                <div class="pool-item__title">${safeHeadline}</div>
-                <div class="pool-item__meta">
-                    <span>${safeSource} • ${safeDate}</span>
+        <div class="pool-item">
+            <a class="pool-item__main" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
+                <div class="pool-item__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
+                    ${hasImage ? '' : '📰'}
+                </div>
+                <div class="pool-item__content">
+                    <div class="pool-item__title">${safeHeadline}</div>
+                    <div class="pool-item__meta">
+                        <span>${safeSource} • ${safeDate}</span>
+                    </div>
+                </div>
+            </a>
+            <div class="pool-item__footer">
+                <div class="score-pill score-pill--small ${getScoreClass(ranking)}">
+                    <span>${ranking}</span>
+                    ${getScoreInternalHtml(item)}
+                </div>
+                <div class="card-pills-actions">
+                    ${!isDone ? getDoneButtonHtml('done-button--inline done-button--compact') : ''}
+                    ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--compact')}
                 </div>
             </div>
-        </a>
-        ${!isDone ? getDoneButtonHtml('done-button--small') : ''}
-        ${getSendToSelectionButtonHtml('send-selection-btn--small')}
+        </div>
     `;
 
     const doneBtn = card.querySelector('.done-button');
