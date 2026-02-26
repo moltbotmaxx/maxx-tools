@@ -1420,7 +1420,6 @@ function createSimpleCard(item, index) {
     card.innerHTML = `
         <div class="simple-card">
             <a class="simple-card__main" href="${safeLink}" target="_blank" rel="noopener noreferrer">
-                <div class="simple-card__number">${index + 1}</div>
                 <div class="simple-card__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
                     ${hasImage ? '' : '📰'}
                 </div>
@@ -1440,8 +1439,8 @@ function createSimpleCard(item, index) {
                     ${getScoreInternalHtml(item)}
                 </div>
                 <div class="card-pills-actions">
-                    ${!isDone ? getDoneButtonHtml('done-button--inline') : ''}
-                    ${getSendToSelectionButtonHtml('send-selection-btn--inline')}
+                    ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
+                    ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
                 </div>
             </div>
         </div>
@@ -1490,8 +1489,8 @@ function createPoolItem(item) {
                     ${getScoreInternalHtml(item)}
                 </div>
                 <div class="card-pills-actions">
-                    ${!isDone ? getDoneButtonHtml('done-button--inline done-button--compact') : ''}
-                    ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--compact')}
+                    ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
+                    ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
                 </div>
             </div>
         </div>

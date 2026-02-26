@@ -2670,6 +2670,7 @@ canvas {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  margin-left: auto;
 }
 
 .featured-card__source {
@@ -2741,27 +2742,8 @@ canvas {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-}
-
-/* Rank circle */
-.simple-card__number {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--accent-dim);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.72rem;
-  font-weight: 800;
-  color: var(--accent);
-  transition: all var(--transition-smooth);
-}
-
-.simple-card:hover .simple-card__number {
-  background: rgba(0, 122, 255, 0.15);
-  box-shadow: 0 0 12px rgba(0, 122, 255, 0.1);
+  padding-top: 2px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .simple-card__content {
@@ -2898,6 +2880,8 @@ canvas {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  padding-top: 2px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .pool-item__content {
@@ -3019,9 +3003,19 @@ canvas {
   transform: none;
 }
 
-.done-button--compact {
+.done-button--icon {
+  width: 24px;
   height: 24px;
-  padding: 0 8px;
+  padding: 0;
+  border-radius: 999px;
+}
+
+.done-button--icon .done-button__label {
+  display: none;
+}
+
+.done-button--icon .done-button__icon {
+  font-size: 11px;
 }
 
 .card-wrapper:hover .done-button--small {
@@ -3098,9 +3092,19 @@ canvas {
   transform: none;
 }
 
-.send-selection-btn--compact {
+.send-selection-btn--icon {
+  width: 24px;
   height: 24px;
-  padding: 0 8px;
+  padding: 0;
+  border-radius: 999px;
+}
+
+.send-selection-btn--icon .send-selection-btn__label {
+  display: none;
+}
+
+.send-selection-btn--icon .send-selection-btn__icon {
+  font-size: 11px;
 }
 
 .send-selection-btn__icon {
