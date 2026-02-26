@@ -3253,68 +3253,7 @@ canvas {
 }
 
 
-/* ═══════════════════════════════════════════ */
-/* ANIMATIONS                                  */
-/* ═══════════════════════════════════════════ */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.featured-card,
-.simple-card,
-.pool-item {
-  animation: fadeInUp 0.5s ease both;
-}
-
-/* Staggered entrance for featured cards */
-.featured-card:nth-child(1) {
-  animation-delay: 0.05s;
-}
-
-.featured-card:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.featured-card:nth-child(3) {
-  animation-delay: 0.15s;
-}
-
-.featured-card:nth-child(4) {
-  animation-delay: 0.2s;
-}
-
-.featured-card:nth-child(5) {
-  animation-delay: 0.25s;
-}
-
-/* Staggered entrance for simple cards */
-.simple-card:nth-child(1) {
-  animation-delay: 0.05s;
-}
-
-.simple-card:nth-child(2) {
-  animation-delay: 0.08s;
-}
-
-.simple-card:nth-child(3) {
-  animation-delay: 0.11s;
-}
-
-.simple-card:nth-child(4) {
-  animation-delay: 0.14s;
-}
-
-.simple-card:nth-child(5) {
-  animation-delay: 0.17s;
-}
+/* Entry animations intentionally disabled for instant rendering */
 
 /* ═══════════════════════════════════════════ */
 /* DASHBOARD GRID LAYOUT                       */
