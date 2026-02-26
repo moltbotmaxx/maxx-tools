@@ -31,6 +31,20 @@ WEATHER_CODES = {
 def code_to_icon(code):
     return WEATHER_CODES.get(code, "🌤️")
 
+
+def cleanup_local_dashboard_images(project_dir: str) -> None:
+    keep = {"Dashboard_Latest.png", "Dashboard_Latest_Copy.png"}
+    for name in os.listdir(project_dir):
+        if not (name.startswith("Dashboard") and name.endswith(".png")):
+            continue
+        if name in keep:
+            continue
+        try:
+            os.unlink(os.path.join(project_dir, name))
+            print(f"Deleted old local image: {name}")
+        except Exception as e:
+            print(f"Could not delete {name}: {e}")
+
 def code_to_condition(code):
     if code == 0: return "Cielo Despejado"
     elif code <= 3: return "Parcialmente Nublado"
@@ -302,6 +316,9 @@ def generate_and_upload():
     CAPTURE_JS = os.path.join(PROJECT_DIR, "scripts", "capture.js")
 
     try:
+        # Keep only the 2 canonical dashboard images locally.
+        cleanup_local_dashboard_images(PROJECT_DIR)
+
         # 1. Update data files locally
         # 2. Push to GitHub to update the master source (GitHub Pages)
         print("Syncing data to GitHub Pages...")
@@ -319,6 +336,7 @@ def generate_and_upload():
 
         # Create copy for double-frame systems
         subprocess.check_call(['cp', LATEST_PNG, LATEST_COPY_PNG])
+        cleanup_local_dashboard_images(PROJECT_DIR)
 
         # NEW WORKFLOW: Rename existing to "old_" first
         print("Renaming existing frames to old_*...")
@@ -357,4 +375,3 @@ if __name__ == "__main__":
     data = update_data()
     generate_and_upload()
     print("Automation script complete.")
-
