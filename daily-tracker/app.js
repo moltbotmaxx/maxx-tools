@@ -55,7 +55,6 @@ let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
 let sourcingArticlesCache = [];
 let sourcingArticlesDirty = true;
-let scheduledNewsRender = null;
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
 
@@ -1123,12 +1122,15 @@ function renderSidebarEmpty(container, text) {
     container.innerHTML = `<div class="sourcing-empty">${escapeHtml(text)}</div>`;
 }
 
-function scheduleNewsRender() {
-    if (scheduledNewsRender !== null) return;
-    scheduledNewsRender = requestAnimationFrame(() => {
-        scheduledNewsRender = null;
-        renderNews(false);
-    });
+function updateSourcingCountsFromDom() {
+    if (showDoneNews) return;
+    const countCards = (container) => {
+        if (!container) return 0;
+        return container.querySelectorAll('.card-wrapper').length;
+    };
+    if (elements.top6Count) elements.top6Count.textContent = `${countCards(elements.featuredGrid)} articles`;
+    if (elements.next6Count) elements.next6Count.textContent = `${countCards(elements.simpleGrid)} articles`;
+    if (elements.poolCountNews) elements.poolCountNews.textContent = `${countCards(elements.poolListNews)} articles`;
 }
 
 function applyDoneOptimistic(headline) {
@@ -1145,6 +1147,10 @@ function applyDoneOptimistic(headline) {
             card.style.transition = 'opacity 120ms ease, transform 120ms ease';
             card.style.opacity = '0';
             card.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                card.remove();
+                updateSourcingCountsFromDom();
+            }, 130);
         }
     });
 }
@@ -1349,7 +1355,6 @@ function markAsDone(headline) {
     doneHeadlines.add(headline);
     localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
     applyDoneOptimistic(headline);
-    scheduleNewsRender();
 }
 
 function startNewsAutoRefresh() {
