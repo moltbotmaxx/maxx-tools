@@ -2525,9 +2525,9 @@ canvas {
 }
 
 .featured-card:hover {
-  transform: translateY(-1px);
-  border-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transform: none;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   background: #fff;
 }
 
@@ -2549,11 +2549,7 @@ canvas {
 
 /* Soft image treatment (no invasive white overlay) */
 .featured-card__image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.04);
-  pointer-events: none;
+  content: none;
 }
 
 .featured-card__image--fallback {
@@ -2716,10 +2712,10 @@ canvas {
 }
 
 .simple-card:hover {
-  transform: translateY(-1px);
-  border-color: rgba(0, 0, 0, 0.12);
+  transform: none;
+  border-color: var(--border-glass);
   background: #fff;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+  box-shadow: none;
 }
 
 .simple-card__main {
@@ -2856,7 +2852,7 @@ canvas {
 
 .pool-item:hover {
   background: #fff;
-  border-color: rgba(0, 0, 0, 0.12);
+  border-color: var(--border-glass);
 }
 
 .pool-item__main {
