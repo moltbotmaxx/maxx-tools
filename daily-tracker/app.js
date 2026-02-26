@@ -45,11 +45,29 @@ let showDoneNews = false;
 let doneHeadlines = new Set();
 const SOURCING_FEEDS = [
     {
-        id: 'ai-general',
-        label: 'AI General',
+        id: 'all',
+        label: 'ALL',
         kind: 'news',
-        url: 'https://rss.app/feeds/v1.1/ow6LmNtmgkH0e876.json'
-    }
+        url: 'https://rss.app/feeds/v1.1/_cj6ytZzuyXMfGkNr.json'
+    },
+    {
+        id: 'anthropic-claude',
+        label: 'Anthropic - Claude',
+        kind: 'news',
+        url: 'https://rss.app/feeds/v1.1/iGJMgVDHBRIPxraA.json'
+    },
+    {
+        id: 'openai-chatgpt',
+        label: 'OpenAI - ChatGPT',
+        kind: 'news',
+        url: 'https://rss.app/feeds/v1.1/Q48RJR9Y86VLB48k.json'
+    },
+    {
+        id: 'robotics',
+        label: 'Robotics',
+        kind: 'news',
+        url: 'https://rss.app/feeds/v1.1/cUiUbXPU5KD7L6u1.json'
+    },
 ];
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
@@ -1050,8 +1068,8 @@ function switchTab(viewId) {
 // News Rendering Logic
 // ===========================
 function getSelectedFeedConfigs() {
-    if (selectedSourcingFeed === 'all') return SOURCING_FEEDS;
-    return SOURCING_FEEDS.filter(f => f.id === selectedSourcingFeed);
+    const selected = SOURCING_FEEDS.find(f => f.id === selectedSourcingFeed);
+    return selected ? [selected] : [SOURCING_FEEDS[0]];
 }
 
 function getFeedSourceLabel(item, fallbackUrl = '') {
@@ -1374,11 +1392,6 @@ function initSourcingFeedFilter() {
     if (!elements.sourcingFeedFilter) return;
     const select = elements.sourcingFeedFilter;
     select.innerHTML = '';
-
-    const allOpt = document.createElement('option');
-    allOpt.value = 'all';
-    allOpt.textContent = 'ALL';
-    select.appendChild(allOpt);
 
     SOURCING_FEEDS.forEach(feed => {
         const opt = document.createElement('option');
