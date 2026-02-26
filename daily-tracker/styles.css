@@ -2304,9 +2304,10 @@ canvas {
   border-radius: 100px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  box-shadow: none;
   transition: all var(--transition-fast);
   cursor: help;
   overflow: hidden;
@@ -2315,9 +2316,8 @@ canvas {
 
 .score-badge:hover {
   max-width: 220px;
-  background: rgba(17, 24, 39, 0.86) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: #fff !important;
+  border-color: rgba(0, 0, 0, 0.14);
 }
 
 .score-badge__internal {
@@ -2329,14 +2329,14 @@ canvas {
   font-size: 0.65rem;
   font-weight: 600;
   white-space: nowrap;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-secondary);
 }
 
 .score-badge:hover .score-badge__internal {
   opacity: 1;
   transform: translateX(0);
   margin-left: 6px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
   padding-left: 8px;
 }
 
@@ -2358,38 +2358,30 @@ canvas {
   min-width: 60px;
   height: 32px;
   font-size: 0.85rem;
-  background: rgba(17, 24, 39, 0.82) !important;
-  border: 1px solid rgba(var(--accent-rgb), 0.35);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background: #fff !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: none;
   transition: transform var(--transition-fast), border-color var(--transition-fast);
+  color: var(--text-primary);
 }
 
 .score-badge--featured::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.5), transparent);
-  z-index: -1;
-  opacity: 0.3;
+  content: none;
 }
 
 .score-fire.score-badge--featured {
-  --accent-rgb: 0, 122, 255;
-  border-color: rgba(0, 122, 255, 0.55);
-  color: #e8f1ff;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: var(--text-primary);
 }
 
 .score-orange.score-badge--featured {
-  --accent-rgb: 52, 199, 89;
-  border-color: rgba(52, 199, 89, 0.55);
-  color: #e7faed;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: var(--text-primary);
 }
 
 .score-amber.score-badge--featured {
-  --accent-rgb: 90, 200, 250;
-  border-color: rgba(90, 200, 250, 0.55);
-  color: #e9faff;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: var(--text-primary);
 }
 
 .score-badge__icon {
@@ -2411,10 +2403,11 @@ canvas {
   border-radius: 100px;
   font-size: 0.72rem;
   font-weight: 700;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   transition: all var(--transition-fast);
   cursor: help;
   overflow: hidden;
@@ -2423,15 +2416,15 @@ canvas {
 
 .score-pill:hover {
   max-width: 180px;
-  background: rgba(17, 24, 39, 0.76) !important;
-  backdrop-filter: blur(10px);
+  background: #fff !important;
+  border-color: rgba(0, 0, 0, 0.14);
 }
 
 .score-pill:hover .score-badge__internal {
   opacity: 1;
   transform: translateX(0);
   margin-left: 8px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
   padding-left: 10px;
 }
 
@@ -2453,24 +2446,24 @@ canvas {
 /* ── Score color variants (light theme) ── */
 
 .score-fire {
-  background: rgba(0, 122, 255, 0.14);
-  color: #005ecb;
-  border-color: rgba(0, 122, 255, 0.26);
-  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.12);
+  background: #fff;
+  color: var(--text-primary);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
 }
 
 .score-orange {
-  background: rgba(52, 199, 89, 0.14);
-  color: #1f8f44;
-  border-color: rgba(52, 199, 89, 0.26);
-  box-shadow: 0 2px 6px rgba(52, 199, 89, 0.1);
+  background: #fff;
+  color: var(--text-primary);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
 }
 
 .score-amber {
-  background: rgba(90, 200, 250, 0.15);
-  color: #0f7ea6;
-  border-color: rgba(90, 200, 250, 0.28);
-  box-shadow: 0 2px 6px rgba(90, 200, 250, 0.1);
+  background: #fff;
+  color: var(--text-primary);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
 }
 
 .score-blue {
@@ -2532,8 +2525,8 @@ canvas {
 }
 
 .featured-card:hover .score-badge--featured {
-  transform: translateY(-1px);
-  border-color: rgba(var(--accent-rgb), 0.9);
+  transform: none;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 /* Image area */
@@ -3394,7 +3387,7 @@ canvas {
 }
 
 .x-post:hover {
-  background: rgba(0, 122, 255, 0.03);
+  background: #fff;
 }
 
 .x-post:last-child {
@@ -3451,7 +3444,7 @@ canvas {
 }
 
 .reddit-post:hover {
-  background: rgba(255, 69, 0, 0.03);
+  background: #fff;
 }
 
 .reddit-post:last-child {
