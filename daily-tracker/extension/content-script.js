@@ -21,6 +21,51 @@ function safeHttpUrl(url) {
   }
 }
 
+function prettifySlugPart(part) {
+  if (!part) return '';
+  try {
+    const decoded = decodeURIComponent(part);
+    const normalized = decoded
+      .replace(/[-_+]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    return normalized ? normalized.charAt(0).toUpperCase() + normalized.slice(1) : '';
+  } catch {
+    return '';
+  }
+}
+
+function titleFromUrl(url) {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url);
+    const segments = parsed.pathname.split('/').filter(Boolean);
+    const lastSegment = segments[segments.length - 1] || '';
+    const fromPath = prettifySlugPart(lastSegment);
+    if (fromPath) return fromPath;
+
+    const hostname = parsed.hostname.replace(/^www\./, '');
+    const hostLabel = hostname.split('.').slice(0, -1).join('.') || hostname;
+    const fromHost = prettifySlugPart(hostLabel);
+    return fromHost || hostname;
+  } catch {
+    return '';
+  }
+}
+
+function resolveSmartTitle(data) {
+  const directTitle = (data?.title || '').trim();
+  if (directTitle && !directTitle.includes('://')) return directTitle;
+
+  const linkText = (data?.linkText || '').trim();
+  if (linkText) return linkText;
+
+  const urlTitle = titleFromUrl(safeHttpUrl(data?.url));
+  if (urlTitle) return urlTitle;
+
+  return directTitle;
+}
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "open-clipper-modal") {
     createClipperModal(request.data);
@@ -175,7 +220,7 @@ function createClipperModal(data) {
   modal.className = 'modal';
 
   let selectedType = 'post';
-  const safeTitle = escapeHtml(data?.title || '');
+  const safeTitle = escapeHtml(resolveSmartTitle(data));
   const safeSelection = escapeHtml(data?.selection ? `Quote: ${data.selection}` : '');
 
   modal.innerHTML = `
@@ -283,6 +328,30 @@ function createClipperModal(data) {
       saveBtn.textContent = "Retry Save";
     }
   };
+
+  shadowRoot.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeModal();
+    }
+  });
+
+  shadowRoot.querySelector('#dt-title').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      shadowRoot.querySelector('#dt-save').click();
+    }
+  });
+
+  shadowRoot.querySelector('#dt-notes').addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      e.preventDefault();
+      shadowRoot.querySelector('#dt-save').click();
+    }
+  });
+
+  shadowRoot.querySelector('#dt-title').focus();
+  shadowRoot.querySelector('#dt-title').select();
 
   function closeModal() {
     container.remove();

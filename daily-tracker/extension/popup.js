@@ -12,13 +12,62 @@ function safeHttpUrl(url) {
     }
 }
 
+function prettifySlugPart(part) {
+    if (!part) return '';
+    try {
+        const decoded = decodeURIComponent(part);
+        const normalized = decoded
+            .replace(/[-_+]+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+        return normalized ? normalized.charAt(0).toUpperCase() + normalized.slice(1) : '';
+    } catch {
+        return '';
+    }
+}
+
+function titleFromUrl(url) {
+    if (!url) return '';
+    try {
+        const parsed = new URL(url);
+        const segments = parsed.pathname.split('/').filter(Boolean);
+        const lastSegment = segments[segments.length - 1] || '';
+        const fromPath = prettifySlugPart(lastSegment);
+        if (fromPath) return fromPath;
+
+        const hostname = parsed.hostname.replace(/^www\./, '');
+        const hostLabel = hostname.split('.').slice(0, -1).join('.') || hostname;
+        const fromHost = prettifySlugPart(hostLabel);
+        return fromHost || hostname;
+    } catch {
+        return '';
+    }
+}
+
+function resolvePopupTitle(tab) {
+    const tabTitle = (tab?.title || '').trim();
+    const cleanUrl = safeHttpUrl(tab?.url);
+    const urlTitle = titleFromUrl(cleanUrl);
+
+    if (!tabTitle || tabTitle === cleanUrl) return urlTitle;
+    if (tabTitle.includes('://') && urlTitle) return urlTitle;
+    if (tabTitle.length < 5 && urlTitle) return urlTitle;
+    return tabTitle || urlTitle;
+}
+
 let currentTab = null;
 let selectedType = 'post';
+const statusEl = document.getElementById('status');
+const titleInput = document.getElementById('title');
+const notesInput = document.getElementById('notes');
+const saveBtn = document.getElementById('saveBtn');
 
 // Tab Logic
 chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     currentTab = tabs[0];
-    document.getElementById('title').value = currentTab.title;
+    titleInput.value = resolvePopupTitle(currentTab);
+    titleInput.focus();
+    titleInput.select();
 });
 
 // Category Selector
@@ -32,20 +81,20 @@ document.getElementById('categorySelector').addEventListener('click', (e) => {
 
 // Save Logic
 document.getElementById('saveBtn').addEventListener('click', async () => {
-    const title = document.getElementById('title').value.trim();
-    const notes = document.getElementById('notes').value.trim();
-    const statusEl = document.getElementById('status');
-    const saveBtn = document.getElementById('saveBtn');
+    const title = titleInput.value.trim();
+    const notes = notesInput.value.trim();
 
     if (!title) {
         statusEl.textContent = "Title is required";
         statusEl.className = "status error";
+        titleInput.focus();
         return;
     }
 
     saveBtn.disabled = true;
     saveBtn.textContent = "Saving...";
-    statusEl.textContent = "Connecting to Firebase...";
+    statusEl.textContent = "Saving to Firebase...";
+    statusEl.className = "status";
 
     try {
         // 1. Fetch current data
@@ -53,8 +102,9 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
         if (!res.ok) throw new Error("Failed to fetch data");
         const doc = await res.json();
 
-        let appData = doc.fields.appData.mapValue.fields;
-        let ideas = appData.ideas.arrayValue.values || [];
+        const appData = doc.fields?.appData?.mapValue?.fields;
+        if (!appData) throw new Error("Invalid document shape");
+        const ideas = appData.ideas?.arrayValue?.values || [];
 
         // 2. Prepare new idea
         const newIdea = {
@@ -95,7 +145,8 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
             statusEl.className = "status success";
             setTimeout(() => window.close(), 1500);
         } else {
-            throw new Error("Failed to save");
+            const saveErrText = await saveRes.text();
+            throw new Error(`Failed to save: ${saveErrText}`);
         }
     } catch (err) {
         console.error(err);
@@ -103,5 +154,19 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
         statusEl.className = "status error";
         saveBtn.disabled = false;
         saveBtn.textContent = "Retry Save";
+    }
+});
+
+titleInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        saveBtn.click();
+    }
+});
+
+notesInput.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+        e.preventDefault();
+        saveBtn.click();
     }
 });

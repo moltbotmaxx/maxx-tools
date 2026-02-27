@@ -1929,6 +1929,18 @@ canvas {
   color: var(--text-muted);
 }
 
+.selection-clipper-link {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.selection-clipper-link:hover {
+  color: var(--accent-primary);
+}
+
 .premium-btn {
   background: var(--gradient-primary);
   color: white;

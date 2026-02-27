@@ -56,7 +56,25 @@
       color: var(--text-tertiary);
       font-size: 0.9rem;
       font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .hub-meta {
       margin-bottom: 40px;
+    }
+
+    .hub-download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .hub-download-link:hover {
+      color: var(--accent-primary);
     }
 
     /* ── Tools Grid ── */
@@ -234,7 +252,12 @@
         <div class="hub-logo">🦞</div>
         <h1 class="hub-title">Maxx Tools</h1>
       </div>
-      <p class="hub-subtitle">Hub de mini apps y tools internos</p>
+      <div class="hub-meta">
+        <p class="hub-subtitle">Hub de mini apps y tools internos</p>
+        <a class="hub-download-link" href="./daily-tracker/extension/daily-tracker-clipper-v1.1.zip" download>
+          Descargar Daily Tracker Clipper (.zip)
+        </a>
+      </div>
     </header>
 
     <div class="tools-grid">
