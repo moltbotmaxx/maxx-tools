@@ -82,6 +82,7 @@ let sourcingArticlesCache = [];
 let sourcingArticlesDirty = true;
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
+let isNewsRefreshing = false;
 
 // Load done headlines from localStorage
 try {
@@ -184,6 +185,7 @@ const elements = {
     // News Tab Elements
     showDoneNews: document.getElementById('showDoneNews'),
     refreshNewsBtn: document.getElementById('refreshNewsBtn'),
+    newsRefreshStatus: document.getElementById('newsRefreshStatus'),
     resetNewsBtn: document.getElementById('resetNewsBtn'),
     sourcingFeedFilter: document.getElementById('sourcingFeedFilter'),
     featuredGrid: document.getElementById('featuredGrid'),
@@ -1248,7 +1250,7 @@ async function renderNews(forceRefresh = false) {
         }
     } catch (err) {
         console.error('Failed to load RSS feeds:', err);
-        return;
+        return false;
     }
 
     const activeArticles = showDoneNews
@@ -1284,6 +1286,41 @@ async function renderNews(forceRefresh = false) {
 
     renderSidebarEmpty(elements.xViralList, 'No X feed configured yet');
     renderSidebarEmpty(elements.redditViralList, 'No Reddit feed configured yet');
+    return true;
+}
+
+function setNewsRefreshStatus(text, tone = 'neutral') {
+    if (!elements.newsRefreshStatus) return;
+    elements.newsRefreshStatus.textContent = text;
+    elements.newsRefreshStatus.dataset.tone = tone;
+}
+
+async function refreshNewsNow(manual = false) {
+    if (isNewsRefreshing) return;
+    isNewsRefreshing = true;
+    if (elements.refreshNewsBtn) {
+        elements.refreshNewsBtn.disabled = true;
+    }
+    if (manual) setNewsRefreshStatus('Refreshing RSS...', 'neutral');
+
+    // Force a true refresh from source, not from in-memory cache.
+    sourcingFeedCache.clear();
+    sourcingArticlesDirty = true;
+    const ok = await renderNews(true);
+
+    if (manual) {
+        if (ok) {
+            const hhmm = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            setNewsRefreshStatus(`Updated ${hhmm}`, 'success');
+        } else {
+            setNewsRefreshStatus('Refresh failed', 'error');
+        }
+    }
+
+    if (elements.refreshNewsBtn) {
+        elements.refreshNewsBtn.disabled = false;
+    }
+    isNewsRefreshing = false;
 }
 
 function decodeEntities(text) {
@@ -1412,7 +1449,7 @@ function markAsDone(headline) {
 function startNewsAutoRefresh() {
     stopNewsAutoRefresh();
     newsAutoRefreshTimer = setInterval(() => {
-        if (currentView === 'sourcing') renderNews(true);
+        if (currentView === 'sourcing') refreshNewsNow(false);
     }, NEWS_REFRESH_INTERVAL_MS);
 }
 
@@ -2298,7 +2335,7 @@ function setupEventListeners() {
     }
     if (elements.refreshNewsBtn) {
         elements.refreshNewsBtn.addEventListener('click', () => {
-            renderNews(true);
+            refreshNewsNow(true);
         });
     }
     if (elements.resetNewsBtn) {

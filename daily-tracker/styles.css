@@ -3663,6 +3663,35 @@ canvas {
   letter-spacing: 0;
 }
 
+#sourcing-view #refreshNewsBtn {
+  min-height: auto;
+  flex-direction: row;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+#sourcing-view #refreshNewsBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#sourcing-view .news-refresh-status {
+  font-size: 0.72rem;
+  color: var(--text-tertiary);
+  min-width: 98px;
+}
+
+#sourcing-view .news-refresh-status[data-tone="success"] {
+  color: var(--accent-success);
+}
+
+#sourcing-view .news-refresh-status[data-tone="error"] {
+  color: var(--accent-danger);
+}
+
 #sourcing-view .news-layout {
   display: grid;
   grid-template-columns: minmax(0, 2.45fr) minmax(280px, 0.95fr);
