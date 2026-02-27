@@ -9,6 +9,7 @@
 const SLOTS_PER_DAY = 8;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
+const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
 
 // Content types
 const CONTENT_TYPES = {
@@ -1031,11 +1032,29 @@ function render() {
 // ===========================
 // Tabs & Views
 // ===========================
-let currentView = 'sourcing';
+let currentView = getInitialViewFromStorage();
 let dashboardMonth = new Date();
 
+function getInitialViewFromStorage() {
+    try {
+        const stored = localStorage.getItem(ACTIVE_TAB_KEY);
+        const allowedViews = ['sourcing', 'selection', 'scheduler', 'metrics', 'history'];
+        return allowedViews.includes(stored) ? stored : 'sourcing';
+    } catch {
+        return 'sourcing';
+    }
+}
+
 function switchTab(viewId) {
+    const allowedViews = new Set(['sourcing', 'selection', 'scheduler', 'metrics', 'history']);
+    if (!allowedViews.has(viewId)) viewId = 'sourcing';
+
     currentView = viewId;
+    try {
+        localStorage.setItem(ACTIVE_TAB_KEY, viewId);
+    } catch (e) {
+        console.warn('Failed to persist active tab', e);
+    }
 
     // Update Tab Buttons
     elements.tabBtns.forEach(btn => {
@@ -1782,7 +1801,6 @@ async function addInspiration() {
     }
 
     await saveData();
-    switchTab('scheduler');
 }
 
 async function fetchMetadata(ideaId, url) {
@@ -2480,6 +2498,7 @@ function exportData() {
 async function init() {
     await loadData();
     setupEventListeners();
+    switchTab(currentView);
     if (currentView === 'sourcing') startNewsAutoRefresh();
 }
 
