@@ -1089,6 +1089,14 @@ function switchTab(viewId) {
     }
 }
 
+window.addEventListener('beforeunload', () => {
+    try {
+        localStorage.setItem(ACTIVE_TAB_KEY, currentView);
+    } catch (e) {
+        console.warn('Failed to persist active tab on unload', e);
+    }
+});
+
 // ===========================
 // News Rendering Logic
 // ===========================
@@ -2496,10 +2504,10 @@ function exportData() {
 // Initialize
 // ===========================
 async function init() {
+    // Apply persisted tab immediately so refresh doesn't flash/reset to first tab.
+    switchTab(currentView);
     await loadData();
     setupEventListeners();
-    switchTab(currentView);
-    if (currentView === 'sourcing') startNewsAutoRefresh();
 }
 
 document.addEventListener('DOMContentLoaded', init);
