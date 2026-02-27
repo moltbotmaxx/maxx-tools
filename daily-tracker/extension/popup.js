@@ -26,14 +26,31 @@ function prettifySlugPart(part) {
     }
 }
 
+function isNumericLike(value) {
+    return /^\d+$/.test((value || '').trim());
+}
+
+function isLowSignalTitle(value) {
+    const text = (value || '').trim();
+    if (!text) return true;
+    if (text.length <= 2) return true;
+    if (/^\d+[smhdw]$/i.test(text)) return true;
+    if (/^\d+\s?(sec|min|mins|hr|hrs|hour|hours|day|days|week|weeks|mo|mos)$/i.test(text)) return true;
+    if (/^\d{1,2}:\d{2}(\s?[AP]M)?$/i.test(text)) return true;
+    return false;
+}
+
 function titleFromUrl(url) {
     if (!url) return '';
     try {
         const parsed = new URL(url);
         const segments = parsed.pathname.split('/').filter(Boolean);
-        const lastSegment = segments[segments.length - 1] || '';
-        const fromPath = prettifySlugPart(lastSegment);
-        if (fromPath) return fromPath;
+        for (let i = segments.length - 1; i >= 0; i -= 1) {
+            const segment = segments[i];
+            if (!segment || isNumericLike(segment) || segment.toLowerCase() === 'status') continue;
+            const fromPath = prettifySlugPart(segment);
+            if (fromPath) return fromPath;
+        }
 
         const hostname = parsed.hostname.replace(/^www\./, '');
         const hostLabel = hostname.split('.').slice(0, -1).join('.') || hostname;
@@ -51,7 +68,7 @@ function resolvePopupTitle(tab) {
 
     if (!tabTitle || tabTitle === cleanUrl) return urlTitle;
     if (tabTitle.includes('://') && urlTitle) return urlTitle;
-    if (tabTitle.length < 5 && urlTitle) return urlTitle;
+    if (isLowSignalTitle(tabTitle) && urlTitle) return urlTitle;
     return tabTitle || urlTitle;
 }
 

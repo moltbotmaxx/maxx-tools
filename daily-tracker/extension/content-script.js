@@ -35,14 +35,31 @@ function prettifySlugPart(part) {
   }
 }
 
+function isNumericLike(value) {
+  return /^\d+$/.test((value || '').trim());
+}
+
+function isLowSignalTitle(value) {
+  const text = (value || '').trim();
+  if (!text) return true;
+  if (text.length <= 2) return true;
+  if (/^\d+[smhdw]$/i.test(text)) return true;
+  if (/^\d+\s?(sec|min|mins|hr|hrs|hour|hours|day|days|week|weeks|mo|mos)$/i.test(text)) return true;
+  if (/^\d{1,2}:\d{2}(\s?[AP]M)?$/i.test(text)) return true;
+  return false;
+}
+
 function titleFromUrl(url) {
   if (!url) return '';
   try {
     const parsed = new URL(url);
     const segments = parsed.pathname.split('/').filter(Boolean);
-    const lastSegment = segments[segments.length - 1] || '';
-    const fromPath = prettifySlugPart(lastSegment);
-    if (fromPath) return fromPath;
+    for (let i = segments.length - 1; i >= 0; i -= 1) {
+      const segment = segments[i];
+      if (!segment || isNumericLike(segment) || segment.toLowerCase() === 'status') continue;
+      const fromPath = prettifySlugPart(segment);
+      if (fromPath) return fromPath;
+    }
 
     const hostname = parsed.hostname.replace(/^www\./, '');
     const hostLabel = hostname.split('.').slice(0, -1).join('.') || hostname;
@@ -55,10 +72,10 @@ function titleFromUrl(url) {
 
 function resolveSmartTitle(data) {
   const directTitle = (data?.title || '').trim();
-  if (directTitle && !directTitle.includes('://')) return directTitle;
+  if (directTitle && !directTitle.includes('://') && !isLowSignalTitle(directTitle)) return directTitle;
 
   const linkText = (data?.linkText || '').trim();
-  if (linkText) return linkText;
+  if (linkText && !isLowSignalTitle(linkText)) return linkText;
 
   const urlTitle = titleFromUrl(safeHttpUrl(data?.url));
   if (urlTitle) return urlTitle;
@@ -158,6 +175,10 @@ function createClipperModal(data) {
     input:focus, textarea:focus {
       border-color: var(--accent-primary);
       box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+    }
+    input::selection, textarea::selection {
+      background: rgba(0, 122, 255, 0.32);
+      color: #0A2540;
     }
     .category-selector {
       display: flex;

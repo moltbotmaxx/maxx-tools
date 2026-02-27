@@ -12,14 +12,78 @@ function prettifySlugPart(part) {
     }
 }
 
+function isNumericLike(value) {
+    return /^\d+$/.test((value || '').trim());
+}
+
+function isLowSignalTitle(value) {
+    const text = (value || '').trim();
+    if (!text) return true;
+    if (text.length <= 2) return true;
+    if (/^\d+[smhdw]$/i.test(text)) return true;
+    if (/^\d+\s?(sec|min|mins|hr|hrs|hour|hours|day|days|week|weeks|mo|mos)$/i.test(text)) return true;
+    if (/^\d{1,2}:\d{2}(\s?[AP]M)?$/i.test(text)) return true;
+    if (text.toLowerCase() === "reply" || text.toLowerCase() === "share") return true;
+    return false;
+}
+
+function toLeadWords(text, maxWords = 4) {
+    return String(text || '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .split(' ')
+        .slice(0, maxWords)
+        .join(' ')
+        .trim();
+}
+
+function decodeHtmlEntities(text) {
+    return String(text || '')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'");
+}
+
+function isTweetStatusUrl(rawUrl) {
+    try {
+        const parsed = new URL(rawUrl || '');
+        const host = parsed.hostname.replace(/^www\./, '');
+        const isX = host === 'x.com' || host === 'twitter.com';
+        return isX && /\/status\/\d+/i.test(parsed.pathname);
+    } catch {
+        return false;
+    }
+}
+
+async function fetchTweetLeadTitle(rawUrl) {
+    if (!isTweetStatusUrl(rawUrl)) return '';
+    try {
+        const endpoint = `https://publish.twitter.com/oembed?omit_script=true&dnt=true&url=${encodeURIComponent(rawUrl)}`;
+        const res = await fetch(endpoint);
+        if (!res.ok) return '';
+        const payload = await res.json();
+        const html = String(payload?.html || '');
+        const stripped = html.replace(/<[^>]+>/g, ' ');
+        const clean = decodeHtmlEntities(stripped).replace(/\s+/g, ' ').trim();
+        return toLeadWords(clean, 4);
+    } catch {
+        return '';
+    }
+}
+
 function buildTitleFromUrl(rawUrl) {
     if (!rawUrl) return '';
     try {
         const url = new URL(rawUrl);
         const segments = url.pathname.split('/').filter(Boolean);
-        const lastSegment = segments[segments.length - 1] || '';
-        const fromPath = prettifySlugPart(lastSegment);
-        if (fromPath) return fromPath;
+        for (let i = segments.length - 1; i >= 0; i -= 1) {
+            const segment = segments[i];
+            if (!segment || isNumericLike(segment) || segment.toLowerCase() === 'status') continue;
+            const fromPath = prettifySlugPart(segment);
+            if (fromPath) return fromPath;
+        }
 
         const hostname = url.hostname.replace(/^www\./, '');
         const hostLabel = hostname.split('.').slice(0, -1).join('.') || hostname;
@@ -30,17 +94,24 @@ function buildTitleFromUrl(rawUrl) {
     }
 }
 
-function resolveCaptureTitle({ linkText, selectionText, pageTitle, linkUrl, pageUrl }) {
+async function resolveCaptureTitle({ linkText, selectionText, pageTitle, linkUrl, pageUrl }) {
     const cleanLinkText = (linkText || '').trim();
-    if (cleanLinkText) return cleanLinkText;
+    if (cleanLinkText && !isLowSignalTitle(cleanLinkText)) return cleanLinkText;
+
+    const tweetLeadTitle = await fetchTweetLeadTitle(linkUrl || pageUrl);
+    if (tweetLeadTitle) return tweetLeadTitle;
 
     const cleanSelection = (selectionText || '').trim();
-    if (cleanSelection && cleanSelection.length <= 90) return cleanSelection;
+    if (cleanSelection && cleanSelection.length <= 90 && !isLowSignalTitle(cleanSelection)) {
+        return cleanSelection;
+    }
 
     const urlBasedTitle = buildTitleFromUrl(linkUrl || pageUrl);
     if (urlBasedTitle) return urlBasedTitle;
 
-    return (pageTitle || '').trim();
+    const cleanPageTitle = (pageTitle || '').trim();
+    if (cleanPageTitle && !isLowSignalTitle(cleanPageTitle)) return cleanPageTitle;
+    return toLeadWords(cleanPageTitle, 4);
 }
 
 // Create Context Menu items on install
@@ -53,9 +124,9 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 // Handle Context Menu clicks
-chrome.contextMenus.onClicked.addListener((info, tab) => {
+chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     if (info.menuItemId === "add-to-daily-tasks") {
-        const resolvedTitle = resolveCaptureTitle({
+        const resolvedTitle = await resolveCaptureTitle({
             linkText: info.linkText,
             selectionText: info.selectionText,
             pageTitle: tab.title,
