@@ -183,6 +183,7 @@ const elements = {
     syncText: document.querySelector('#syncStatus .sync-text'),
     // News Tab Elements
     showDoneNews: document.getElementById('showDoneNews'),
+    refreshNewsBtn: document.getElementById('refreshNewsBtn'),
     resetNewsBtn: document.getElementById('resetNewsBtn'),
     sourcingFeedFilter: document.getElementById('sourcingFeedFilter'),
     featuredGrid: document.getElementById('featuredGrid'),
@@ -2293,6 +2294,11 @@ function setupEventListeners() {
         elements.showDoneNews.addEventListener('change', (e) => {
             showDoneNews = e.target.checked;
             renderNews(false);
+        });
+    }
+    if (elements.refreshNewsBtn) {
+        elements.refreshNewsBtn.addEventListener('click', () => {
+            renderNews(true);
         });
     }
     if (elements.resetNewsBtn) {
