@@ -115,6 +115,11 @@
       cursor: wait;
     }
 
+    .btn--secondary {
+      background: #2f3336;
+      color: var(--text);
+    }
+
     .status {
       font-size: 0.84rem;
       color: var(--muted);
@@ -213,6 +218,7 @@
 
       <div class="actions">
         <button id="loadBtn" class="btn" type="button">Load Tweet</button>
+        <button id="downloadBtn" class="btn btn--secondary" type="button">Download PNG</button>
         <div id="status" class="status">Paste a tweet URL and click Load Tweet.</div>
       </div>
 
@@ -246,6 +252,7 @@
   <script>
     const $ = (id) => document.getElementById(id);
     let loadedTweet = null;
+    let loadedCleanCardData = null;
 
     function parseTweetUrl(urlString) {
       try {
@@ -285,6 +292,7 @@
     async function loadEmbedTweet(tweetId) {
       const embedContainer = $("embedContainer");
       const width = setTweetWidth();
+      loadedCleanCardData = null;
 
       embedContainer.className = "";
       embedContainer.innerHTML = "";
@@ -327,6 +335,7 @@
     async function loadCleanTweet(tweetUrl) {
       const embedContainer = $("embedContainer");
       setTweetWidth();
+      loadedCleanCardData = null;
       embedContainer.className = "";
       embedContainer.innerHTML = "";
       $("loadBtn").disabled = true;
@@ -378,6 +387,7 @@
         card.appendChild(head);
         card.appendChild(body);
         embedContainer.appendChild(card);
+        loadedCleanCardData = { handleText, bodyText, avatarUrl };
         setStatus("Clean tweet loaded.");
       } catch (error) {
         embedContainer.className = "tweet-placeholder";
@@ -386,6 +396,119 @@
       } finally {
         $("loadBtn").disabled = false;
       }
+    }
+
+    function wrapTextLines(ctx, text, maxWidth) {
+      const words = text.split(/\s+/).filter(Boolean);
+      const lines = [];
+      let line = "";
+
+      for (const word of words) {
+        const candidate = line ? `${line} ${word}` : word;
+        if (ctx.measureText(candidate).width <= maxWidth || !line) {
+          line = candidate;
+        } else {
+          lines.push(line);
+          line = word;
+        }
+      }
+
+      if (line) {
+        lines.push(line);
+      }
+
+      return lines.length ? lines : [""];
+    }
+
+    async function loadAvatarImage(url) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.referrerPolicy = "no-referrer";
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = url;
+      });
+    }
+
+    async function downloadCleanPng() {
+      if ($("viewMode").value !== "clean") {
+        setStatus("PNG export is available in Clean mode only.");
+        return;
+      }
+
+      if (!loadedCleanCardData) {
+        setStatus("Load a clean tweet first, then download PNG.");
+        return;
+      }
+
+      const width = setTweetWidth();
+      const scale = 2;
+      const padding = 20;
+      const avatarSize = 44;
+      const topGap = 12;
+      const lineHeight = 30;
+
+      const measureCanvas = document.createElement("canvas");
+      const measureCtx = measureCanvas.getContext("2d");
+      if (!measureCtx) {
+        setStatus("Could not initialize PNG export.");
+        return;
+      }
+      measureCtx.font = "700 24px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
+      const bodyMaxWidth = width - padding * 2;
+      const bodyLines = wrapTextLines(measureCtx, loadedCleanCardData.bodyText, bodyMaxWidth);
+      const bodyHeight = Math.max(lineHeight, bodyLines.length * lineHeight);
+      const height = padding + avatarSize + topGap + bodyHeight + padding;
+
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.round(width * scale);
+      canvas.height = Math.round(height * scale);
+      const ctx = canvas.getContext("2d");
+      if (!ctx) {
+        setStatus("Could not initialize PNG export.");
+        return;
+      }
+      ctx.scale(scale, scale);
+
+      ctx.fillStyle = "#000000";
+      ctx.fillRect(0, 0, width, height);
+      ctx.strokeStyle = "#2f3336";
+      ctx.lineWidth = 1;
+      ctx.strokeRect(0.5, 0.5, width - 1, height - 1);
+
+      try {
+        const avatar = await loadAvatarImage(loadedCleanCardData.avatarUrl);
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(padding + avatarSize / 2, padding + avatarSize / 2, avatarSize / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(avatar, padding, padding, avatarSize, avatarSize);
+        ctx.restore();
+      } catch {
+        ctx.fillStyle = "#2f3336";
+        ctx.beginPath();
+        ctx.arc(padding + avatarSize / 2, padding + avatarSize / 2, avatarSize / 2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.fillStyle = "#e7e9ea";
+      ctx.font = "700 24px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
+      ctx.fillText(loadedCleanCardData.handleText, padding + avatarSize + 12, padding + 30);
+
+      ctx.font = "400 24px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
+      let y = padding + avatarSize + topGap + 24;
+      for (const line of bodyLines) {
+        ctx.fillText(line, padding, y);
+        y += lineHeight;
+      }
+
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = `tweet-clean-${Date.now()}.png`;
+      link.click();
+      setStatus("PNG downloaded.");
     }
 
     async function reloadCurrentTweet() {
@@ -424,6 +547,7 @@
     }
 
     $("loadBtn").addEventListener("click", onLoadTweet);
+    $("downloadBtn").addEventListener("click", downloadCleanPng);
     $("tweetUrl").addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
         onLoadTweet();
