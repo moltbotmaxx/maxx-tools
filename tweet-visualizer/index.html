@@ -494,15 +494,11 @@
       background: var(--card-media-bg);
       cursor: grab;
       user-select: none;
+      transition: transform 120ms ease;
     }
 
     .media-item:active {
       cursor: grabbing;
-    }
-
-    .media-item--active {
-      border-color: var(--accent-primary);
-      box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.22);
     }
 
     /* ── Skeleton Shimmer ── */
@@ -524,11 +520,6 @@
       100% {
         transform: translateX(100%);
       }
-    }
-
-    /* ── Media Controls Collapsed Style ── */
-    #mediaControls[hidden] {
-      display: none;
     }
   </style>
 </head>
@@ -599,33 +590,6 @@
           Strip @mentions
         </label>
 
-        <div class="controls__divider"></div>
-
-        <!-- Media Position (hidden by default) -->
-        <div id="mediaControls" class="controls__section" hidden>
-          <span class="controls__section-label">Media Position</span>
-          <div class="grid-2">
-            <div class="field">
-              <label class="field__label" for="mediaIndex">Image</label>
-              <select id="mediaIndex" class="field__select"></select>
-            </div>
-            <div class="field">
-              <label class="field__label" for="mediaPosX">Horizontal</label>
-              <div class="slider-row">
-                <input id="mediaPosX" type="range" min="0" max="100" step="1" value="50" />
-                <output id="mediaPosXValue" class="slider-row__value slider-row__value--sm">50%</output>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label class="field__label" for="mediaPosY">Vertical</label>
-            <div class="slider-row">
-              <input id="mediaPosY" type="range" min="0" max="100" step="1" value="50" />
-              <output id="mediaPosYValue" class="slider-row__value slider-row__value--sm">50%</output>
-            </div>
-          </div>
-        </div>
-
       </div>
 
       <!-- Status -->
@@ -633,7 +597,6 @@
         <span class="status-dot"></span>
         Ready
       </div>
-      <div id="sourceMeta" hidden></div>
 
       <!-- Download -->
       <div class="controls__footer">
@@ -670,14 +633,7 @@
       stripReplyMentions: document.getElementById("stripReplyMentions"),
       width: document.getElementById("width"),
       widthValue: document.getElementById("widthValue"),
-      mediaControls: document.getElementById("mediaControls"),
-      mediaIndex: document.getElementById("mediaIndex"),
-      mediaPosX: document.getElementById("mediaPosX"),
-      mediaPosY: document.getElementById("mediaPosY"),
-      mediaPosXValue: document.getElementById("mediaPosXValue"),
-      mediaPosYValue: document.getElementById("mediaPosYValue"),
       status: document.getElementById("status"),
-      sourceMeta: document.getElementById("sourceMeta"),
       downloadBtn: document.getElementById("downloadBtn"),
       cardShell: document.getElementById("cardShell"),
       placeholder: document.getElementById("placeholder")
@@ -697,6 +653,7 @@
       imageDataCache: new Map(),
       widthFrame: null,
       mediaPositions: [],
+      mediaScales: [],
       selectedMediaIndex: 0,
       dragState: null
     };
@@ -730,34 +687,13 @@
       state.selectedMediaIndex = clamp(state.selectedMediaIndex, 0, Math.max(0, mediaCount - 1));
     }
 
+    function ensureMediaScales(mediaCount) {
+      const prev = state.mediaScales || [];
+      state.mediaScales = Array.from({ length: mediaCount }, (_, i) => prev[i] ?? 1);
+    }
+
     function syncMediaControlValues() {
-      if (!state.cardData || !state.cardData.mediaUrls.length) {
-        el.mediaControls.hidden = true;
-        return;
-      }
-
-      const mediaCount = state.cardData.mediaUrls.length;
-      el.mediaControls.hidden = false;
-
-      if (el.mediaIndex.options.length !== mediaCount) {
-        el.mediaIndex.innerHTML = "";
-        for (let i = 0; i < mediaCount; i += 1) {
-          const option = document.createElement("option");
-          option.value = String(i);
-          option.textContent = `Image ${i + 1}`;
-          el.mediaIndex.appendChild(option);
-        }
-      }
-
-      const idx = clamp(state.selectedMediaIndex, 0, mediaCount - 1);
-      state.selectedMediaIndex = idx;
-      el.mediaIndex.value = String(idx);
-
-      const pos = state.mediaPositions[idx] || { x: 50, y: 50 };
-      el.mediaPosX.value = String(Math.round(pos.x));
-      el.mediaPosY.value = String(Math.round(pos.y));
-      el.mediaPosXValue.textContent = `${Math.round(pos.x)}%`;
-      el.mediaPosYValue.textContent = `${Math.round(pos.y)}%`;
+      // No UI controls to sync — drag + wheel handle everything
     }
 
     function setSelectedMediaIndex(index, rerender = true) {
@@ -765,7 +701,6 @@
         return;
       }
       state.selectedMediaIndex = clamp(index, 0, state.cardData.mediaUrls.length - 1);
-      syncMediaControlValues();
       if (rerender) {
         renderPreview();
       }
@@ -783,7 +718,6 @@
       if (state.cardData?.mediaPositions?.[idx]) {
         state.cardData.mediaPositions[idx] = { ...state.mediaPositions[idx] };
       }
-      syncMediaControlValues();
       if (rerender) {
         renderPreview();
       } else {
@@ -982,15 +916,8 @@
       el.downloadBtn.disabled = active || !state.cardData;
     }
 
-    function updateSourceMeta(rawTweet) {
-      if (!rawTweet) {
-        el.sourceMeta.hidden = true;
-        return;
-      }
-      const mediaCount = rawTweet.mediaUrls.length;
-      const modeLabel = rawTweet.source === "fxtwitter" ? "FX API" : "oEmbed fallback";
-      el.sourceMeta.textContent = `${modeLabel} • ${mediaCount} media • ${rawTweet.handleText}`;
-      el.sourceMeta.hidden = false;
+    function updateSourceMeta() {
+      // Removed — no source meta display
     }
 
     function showPlaceholder(message, skeleton = false) {
@@ -1008,6 +935,7 @@
 
       const mediaUrls = rawTweet.mediaUrls.slice(0, 4);
       ensureMediaPositions(mediaUrls.length);
+      ensureMediaScales(mediaUrls.length);
 
       const textAfterMentions = state.stripReplyMentions
         ? stripLeadingReplyMentions(rawTweet.bodyRaw)
@@ -1091,15 +1019,17 @@
         clipped.forEach((url, i) => {
           const img = document.createElement("img");
           img.className = "media-item";
-          if (i === state.selectedMediaIndex) {
-            img.classList.add("media-item--active");
-          }
           img.src = url;
           img.alt = "Tweet media";
           const pos = data.mediaPositions[i] || { x: 50, y: 50 };
+          const scale = state.mediaScales[i] ?? 1;
           img.style.objectPosition = `${pos.x}% ${pos.y}%`;
+          if (scale !== 1) {
+            img.style.transform = `scale(${scale})`;
+          }
           img.dataset.mediaIndex = String(i);
           img.addEventListener("pointerdown", onMediaPointerDown);
+          img.addEventListener("wheel", onMediaWheel, { passive: false });
           mediaGrid.appendChild(img);
         });
 
@@ -1397,7 +1327,7 @@
         state.cardData = deriveCardData(rawTweet);
         updateSourceMeta(rawTweet);
         renderPreview();
-        setStatus(rawTweet.source === "fxtwitter" ? "Loaded via FX API" : "Loaded via oEmbed", "success");
+        setStatus("Loaded", "success");
         setLoading(false);
 
         prefetchAssets(rawTweet);
@@ -1455,8 +1385,6 @@
       const target = event.currentTarget;
       event.preventDefault();
       setSelectedMediaIndex(idx, false);
-      document.querySelectorAll(".media-item").forEach((node) => node.classList.remove("media-item--active"));
-      target.classList.add("media-item--active");
 
       const rect = target.getBoundingClientRect();
       const startX = event.clientX;
@@ -1480,13 +1408,6 @@
 
         state.mediaPositions[idx] = { x: nextX, y: nextY };
         target.style.objectPosition = `${nextX}% ${nextY}%`;
-
-        if (idx === state.selectedMediaIndex) {
-          el.mediaPosX.value = String(Math.round(nextX));
-          el.mediaPosY.value = String(Math.round(nextY));
-          el.mediaPosXValue.textContent = `${Math.round(nextX)}%`;
-          el.mediaPosYValue.textContent = `${Math.round(nextY)}%`;
-        }
       };
 
       const onEnd = (endEvent) => {
@@ -1503,6 +1424,19 @@
       window.addEventListener("pointermove", onMove);
       window.addEventListener("pointerup", onEnd);
       window.addEventListener("pointercancel", onEnd);
+    }
+
+    function onMediaWheel(event) {
+      event.preventDefault();
+      const idx = Number(event.currentTarget.dataset.mediaIndex);
+      if (!Number.isFinite(idx)) return;
+
+      const delta = event.deltaY > 0 ? -0.05 : 0.05;
+      const current = state.mediaScales[idx] ?? 1;
+      const next = clamp(current + delta, 0.5, 3);
+      state.mediaScales[idx] = next;
+
+      event.currentTarget.style.transform = `scale(${next})`;
     }
 
     async function downloadPng() {
@@ -1535,9 +1469,9 @@
         link.href = pngUrl;
         link.download = `tweet-card-${Date.now()}.png`;
         link.click();
-        setStatus("PNG downloaded.", "success");
+        setStatus("Done", "success");
       } catch (error) {
-        setStatus(error?.message ? `Export failed: ${error.message}` : "Export failed.", "error");
+        setStatus("Export failed", "error");
       } finally {
         el.downloadBtn.disabled = state.loading || !state.cardData;
       }
@@ -1566,21 +1500,6 @@
         state.stripReplyMentions = el.stripReplyMentions.checked;
         refreshCardFromState();
       });
-
-      el.mediaIndex.addEventListener("change", () => {
-        setSelectedMediaIndex(Number(el.mediaIndex.value) || 0);
-      });
-
-      el.mediaPosX.addEventListener("input", () => {
-        applySelectedMediaPosition(Number(el.mediaPosX.value), Number(el.mediaPosY.value), false);
-      });
-
-      el.mediaPosY.addEventListener("input", () => {
-        applySelectedMediaPosition(Number(el.mediaPosX.value), Number(el.mediaPosY.value), false);
-      });
-
-      el.mediaPosX.addEventListener("change", refreshCardFromState);
-      el.mediaPosY.addEventListener("change", refreshCardFromState);
 
       el.width.addEventListener("input", onWidthInput);
 
