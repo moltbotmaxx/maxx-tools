@@ -111,8 +111,8 @@
     }
 
     .btn:disabled {
-      opacity: 0.7;
-      cursor: wait;
+      opacity: 0.45;
+      cursor: not-allowed;
     }
 
     .btn--secondary {
@@ -139,7 +139,22 @@
       display: flex;
       justify-content: center;
       overflow-x: auto;
-      padding: 6px;
+      padding: 6px 0 0;
+    }
+
+    .preview-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .preview-title {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 600;
     }
 
     .tweet {
@@ -218,7 +233,6 @@
 
       <div class="actions">
         <button id="loadBtn" class="btn" type="button">Load Tweet</button>
-        <button id="downloadBtn" class="btn btn--secondary" type="button">Download PNG</button>
         <div id="status" class="status">Paste a tweet URL and click Load Tweet.</div>
       </div>
 
@@ -239,12 +253,18 @@
       </div>
     </section>
 
-    <section class="panel preview-shell">
-      <article class="tweet" id="tweet">
-        <div id="embedContainer" class="tweet-placeholder">
-          Paste a tweet URL to render a clean tweet here.
-        </div>
-      </article>
+    <section class="panel">
+      <div class="preview-top">
+        <h2 class="preview-title">Preview</h2>
+        <button id="downloadBtn" class="btn btn--secondary" type="button" disabled>Download PNG</button>
+      </div>
+      <div class="preview-shell">
+        <article class="tweet" id="tweet">
+          <div id="embedContainer" class="tweet-placeholder">
+            Paste a tweet URL to render a clean tweet here.
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -271,6 +291,11 @@
       $("status").textContent = message;
     }
 
+    function updateDownloadButtonState() {
+      const canDownload = $("viewMode").value === "clean" && Boolean(loadedCleanCardData);
+      $("downloadBtn").disabled = !canDownload;
+    }
+
     async function waitForWidgets(maxWaitMs = 10000) {
       const started = Date.now();
       while (Date.now() - started < maxWaitMs) {
@@ -293,6 +318,7 @@
       const embedContainer = $("embedContainer");
       const width = setTweetWidth();
       loadedCleanCardData = null;
+      updateDownloadButtonState();
 
       embedContainer.className = "";
       embedContainer.innerHTML = "";
@@ -336,6 +362,7 @@
       const embedContainer = $("embedContainer");
       setTweetWidth();
       loadedCleanCardData = null;
+      updateDownloadButtonState();
       embedContainer.className = "";
       embedContainer.innerHTML = "";
       $("loadBtn").disabled = true;
@@ -394,6 +421,7 @@
           // Keep the original URL as fallback if conversion fails.
         }
         loadedCleanCardData = { handleText, bodyText, avatarUrl, avatarCanvasSrc };
+        updateDownloadButtonState();
         setStatus("Clean tweet loaded.");
       } catch (error) {
         embedContainer.className = "tweet-placeholder";
@@ -575,6 +603,17 @@
       reloadCurrentTweet();
     }
 
+    function onTweetUrlPaste() {
+      setTimeout(() => {
+        const parsed = parseTweetUrl($("tweetUrl").value);
+        if (parsed) {
+          onLoadTweet();
+        } else {
+          setStatus("Invalid tweet URL. Use a URL like https://x.com/user/status/...");
+        }
+      }, 0);
+    }
+
     $("loadBtn").addEventListener("click", onLoadTweet);
     $("downloadBtn").addEventListener("click", downloadCleanPng);
     $("tweetUrl").addEventListener("keydown", (event) => {
@@ -582,7 +621,9 @@
         onLoadTweet();
       }
     });
+    $("tweetUrl").addEventListener("paste", onTweetUrlPaste);
     $("viewMode").addEventListener("change", () => {
+      updateDownloadButtonState();
       if (loadedTweet) {
         loadedTweet.mode = $("viewMode").value;
         reloadCurrentTweet();
@@ -590,6 +631,7 @@
     });
     $("width").addEventListener("input", onWidthInput);
     setTweetWidth();
+    updateDownloadButtonState();
   </script>
 </body>
 
