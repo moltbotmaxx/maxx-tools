@@ -391,9 +391,9 @@
     .name-row {
       display: flex;
       align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-bottom: 1px;
+      gap: 4px;
+      margin-bottom: 0px;
+      min-width: 0;
     }
 
     .tweet-name {
@@ -401,21 +401,29 @@
       font-weight: 800;
       color: var(--card-text);
       letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-shrink: 1;
     }
 
     .tweet-handle {
       color: var(--card-muted);
       font-size: 0.95rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
     }
 
     .verify-badge {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border-radius: 999px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
+      font-size: 11px;
       line-height: 1;
       font-weight: 700;
       color: #fff;
