@@ -149,6 +149,11 @@
       font-size: 0.9rem;
     }
 
+    .slider-value--small {
+      min-width: 48px;
+      font-size: 0.82rem;
+    }
+
     .grid-two {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -168,6 +173,13 @@
       width: 16px;
       height: 16px;
       accent-color: var(--accent);
+    }
+
+    .subtle {
+      margin: 2px 0 0;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      line-height: 1.4;
     }
 
     .status {
@@ -288,7 +300,7 @@
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 18px;
-      padding: 14px;
+      padding: 20px;
       color: var(--card-text);
       display: grid;
       gap: 0;
@@ -413,9 +425,12 @@
     }
 
     .media-grid--2,
-    .media-grid--3,
     .media-grid--4 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .media-grid--3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .media-item {
@@ -426,16 +441,17 @@
       object-fit: cover;
       aspect-ratio: 1 / 1;
       background: var(--card-media-bg);
+      cursor: grab;
+      user-select: none;
     }
 
-    .media-grid--1 .media-item {
-      aspect-ratio: 16 / 9;
-      max-height: 420px;
+    .media-item:active {
+      cursor: grabbing;
     }
 
-    .media-grid--3 .media-item:first-child {
-      grid-column: 1 / -1;
-      aspect-ratio: 16 / 9;
+    .media-item--active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.22);
     }
 
     .skeleton {
@@ -533,6 +549,31 @@
         </label>
       </div>
 
+      <div id="mediaControls" class="field" hidden>
+        <label>Media Position</label>
+        <div class="grid-two">
+          <div class="field">
+            <label for="mediaIndex">Image</label>
+            <select id="mediaIndex" class="select"></select>
+          </div>
+          <div class="field">
+            <label for="mediaPosX">Horizontal</label>
+            <div class="slider-row">
+              <input id="mediaPosX" class="slider" type="range" min="0" max="100" step="1" value="50" />
+              <output id="mediaPosXValue" class="slider-value slider-value--small">50%</output>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="mediaPosY">Vertical</label>
+          <div class="slider-row">
+            <input id="mediaPosY" class="slider" type="range" min="0" max="100" step="1" value="50" />
+            <output id="mediaPosYValue" class="slider-value slider-value--small">50%</output>
+          </div>
+        </div>
+        <p class="subtle">Drag directly on an image to reposition faster.</p>
+      </div>
+
       <div id="status" class="status" aria-live="polite">Paste a tweet URL to start.</div>
       <div id="sourceMeta" class="meta-pill" hidden></div>
     </section>
@@ -560,6 +601,12 @@
       stripReplyMentions: document.getElementById("stripReplyMentions"),
       width: document.getElementById("width"),
       widthValue: document.getElementById("widthValue"),
+      mediaControls: document.getElementById("mediaControls"),
+      mediaIndex: document.getElementById("mediaIndex"),
+      mediaPosX: document.getElementById("mediaPosX"),
+      mediaPosY: document.getElementById("mediaPosY"),
+      mediaPosXValue: document.getElementById("mediaPosXValue"),
+      mediaPosYValue: document.getElementById("mediaPosYValue"),
       status: document.getElementById("status"),
       sourceMeta: document.getElementById("sourceMeta"),
       downloadBtn: document.getElementById("downloadBtn"),
@@ -579,7 +626,10 @@
       abortController: null,
       fetchCache: new Map(),
       imageDataCache: new Map(),
-      widthFrame: null
+      widthFrame: null,
+      mediaPositions: [],
+      selectedMediaIndex: 0,
+      dragState: null
     };
 
     function setStatus(message, tone = "info") {
@@ -590,6 +640,89 @@
     function updateWidthUI() {
       el.widthValue.textContent = `${state.width}px`;
       el.cardShell.style.width = `${state.width}px`;
+    }
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function ensureMediaPositions(mediaCount) {
+      const prev = state.mediaPositions || [];
+      state.mediaPositions = Array.from({ length: mediaCount }, (_, i) => {
+        const existing = prev[i];
+        if (!existing) {
+          return { x: 50, y: 50 };
+        }
+        return {
+          x: clamp(Number(existing.x) || 50, 0, 100),
+          y: clamp(Number(existing.y) || 50, 0, 100)
+        };
+      });
+      state.selectedMediaIndex = clamp(state.selectedMediaIndex, 0, Math.max(0, mediaCount - 1));
+    }
+
+    function syncMediaControlValues() {
+      if (!state.cardData || !state.cardData.mediaUrls.length) {
+        el.mediaControls.hidden = true;
+        return;
+      }
+
+      const mediaCount = state.cardData.mediaUrls.length;
+      el.mediaControls.hidden = false;
+
+      if (el.mediaIndex.options.length !== mediaCount) {
+        el.mediaIndex.innerHTML = "";
+        for (let i = 0; i < mediaCount; i += 1) {
+          const option = document.createElement("option");
+          option.value = String(i);
+          option.textContent = `Image ${i + 1}`;
+          el.mediaIndex.appendChild(option);
+        }
+      }
+
+      const idx = clamp(state.selectedMediaIndex, 0, mediaCount - 1);
+      state.selectedMediaIndex = idx;
+      el.mediaIndex.value = String(idx);
+
+      const pos = state.mediaPositions[idx] || { x: 50, y: 50 };
+      el.mediaPosX.value = String(Math.round(pos.x));
+      el.mediaPosY.value = String(Math.round(pos.y));
+      el.mediaPosXValue.textContent = `${Math.round(pos.x)}%`;
+      el.mediaPosYValue.textContent = `${Math.round(pos.y)}%`;
+    }
+
+    function setSelectedMediaIndex(index, rerender = true) {
+      if (!state.cardData || !state.cardData.mediaUrls.length) {
+        return;
+      }
+      state.selectedMediaIndex = clamp(index, 0, state.cardData.mediaUrls.length - 1);
+      syncMediaControlValues();
+      if (rerender) {
+        renderPreview();
+      }
+    }
+
+    function applySelectedMediaPosition(nextX, nextY, rerender = true) {
+      if (!state.cardData || !state.cardData.mediaUrls.length) {
+        return;
+      }
+      const idx = state.selectedMediaIndex;
+      state.mediaPositions[idx] = {
+        x: clamp(nextX, 0, 100),
+        y: clamp(nextY, 0, 100)
+      };
+      if (state.cardData?.mediaPositions?.[idx]) {
+        state.cardData.mediaPositions[idx] = { ...state.mediaPositions[idx] };
+      }
+      syncMediaControlValues();
+      if (rerender) {
+        renderPreview();
+      } else {
+        const activeImg = el.cardShell.querySelector(`.media-item[data-media-index=\"${idx}\"]`);
+        if (activeImg) {
+          activeImg.style.objectPosition = `${state.mediaPositions[idx].x}% ${state.mediaPositions[idx].y}%`;
+        }
+      }
     }
 
     function parseTweetUrl(input) {
@@ -804,6 +937,9 @@
         return null;
       }
 
+      const mediaUrls = rawTweet.mediaUrls.slice(0, 4);
+      ensureMediaPositions(mediaUrls.length);
+
       const textAfterMentions = state.stripReplyMentions
         ? stripLeadingReplyMentions(rawTweet.bodyRaw)
         : rawTweet.bodyRaw;
@@ -813,6 +949,8 @@
 
       return {
         ...rawTweet,
+        mediaUrls,
+        mediaPositions: state.mediaPositions.map((p) => ({ x: p.x, y: p.y })),
         bodyText,
         mode: state.viewMode,
         themeMode: state.themeMode
@@ -822,11 +960,13 @@
     function renderPreview() {
       if (state.loading && !state.cardData) {
         showPlaceholder("Loading tweet data...", true);
+        syncMediaControlValues();
         return;
       }
 
       if (!state.cardData) {
         showPlaceholder("<strong>Ready.</strong> Paste a tweet URL and the card will load automatically.");
+        syncMediaControlValues();
         return;
       }
 
@@ -874,23 +1014,23 @@
       card.appendChild(head);
       card.appendChild(body);
 
-      if (data.mode === "detailed") {
-        const timeNode = document.createElement("div");
-        timeNode.className = "tweet-time";
-        timeNode.textContent = data.timestampLabel || "Date unavailable";
-        card.appendChild(timeNode);
-      }
-
       if (data.mediaUrls.length > 0) {
         const mediaGrid = document.createElement("div");
         const clipped = data.mediaUrls.slice(0, 4);
         mediaGrid.className = `media-grid media-grid--${clipped.length}`;
 
-        clipped.forEach((url) => {
+        clipped.forEach((url, i) => {
           const img = document.createElement("img");
           img.className = "media-item";
+          if (i === state.selectedMediaIndex) {
+            img.classList.add("media-item--active");
+          }
           img.src = url;
           img.alt = "Tweet media";
+          const pos = data.mediaPositions[i] || { x: 50, y: 50 };
+          img.style.objectPosition = `${pos.x}% ${pos.y}%`;
+          img.dataset.mediaIndex = String(i);
+          img.addEventListener("pointerdown", onMediaPointerDown);
           mediaGrid.appendChild(img);
         });
 
@@ -909,8 +1049,16 @@
         card.appendChild(stats);
       }
 
+      if (data.mode === "detailed") {
+        const timeNode = document.createElement("div");
+        timeNode.className = "tweet-time";
+        timeNode.textContent = data.timestampLabel || "Date unavailable";
+        card.appendChild(timeNode);
+      }
+
       el.cardShell.innerHTML = "";
       el.cardShell.appendChild(card);
+      syncMediaControlValues();
     }
 
     function toDataUrl(blob) {
@@ -960,6 +1108,25 @@
         img.onerror = reject;
         img.src = src;
       });
+    }
+
+    function drawCoverImage(ctx, img, x, y, w, h, position = { x: 50, y: 50 }) {
+      if (!img || img.naturalWidth <= 0 || img.naturalHeight <= 0) {
+        return false;
+      }
+
+      const scale = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+      const drawW = img.naturalWidth * scale;
+      const drawH = img.naturalHeight * scale;
+      const freeX = w - drawW;
+      const freeY = h - drawH;
+      const px = clamp(position.x ?? 50, 0, 100) / 100;
+      const py = clamp(position.y ?? 50, 0, 100) / 100;
+      const drawX = x + freeX * px;
+      const drawY = y + freeY * py;
+
+      ctx.drawImage(img, drawX, drawY, drawW, drawH);
+      return true;
     }
 
     async function resolveFirstImage(urls) {
@@ -1127,6 +1294,10 @@
           return;
         }
 
+        if (!state.rawTweet || state.rawTweet.id !== rawTweet.id) {
+          state.selectedMediaIndex = 0;
+          state.mediaPositions = [];
+        }
         state.rawTweet = rawTweet;
         state.cardData = deriveCardData(rawTweet);
         updateSourceMeta(rawTweet);
@@ -1176,6 +1347,69 @@
       }, 0);
     }
 
+    function onMediaPointerDown(event) {
+      if (!state.cardData) {
+        return;
+      }
+
+      const idx = Number(event.currentTarget.dataset.mediaIndex);
+      if (!Number.isFinite(idx)) {
+        return;
+      }
+
+      const target = event.currentTarget;
+      event.preventDefault();
+      setSelectedMediaIndex(idx, false);
+      document.querySelectorAll(".media-item").forEach((node) => node.classList.remove("media-item--active"));
+      target.classList.add("media-item--active");
+
+      const rect = target.getBoundingClientRect();
+      const startX = event.clientX;
+      const startY = event.clientY;
+      const startPos = state.mediaPositions[idx] || { x: 50, y: 50 };
+      const pointerId = event.pointerId;
+
+      state.dragState = { pointerId, idx };
+      if (target.setPointerCapture) {
+        target.setPointerCapture(pointerId);
+      }
+
+      const onMove = (moveEvent) => {
+        if (!state.dragState || moveEvent.pointerId !== pointerId) {
+          return;
+        }
+        const dx = moveEvent.clientX - startX;
+        const dy = moveEvent.clientY - startY;
+        const nextX = clamp(startPos.x + (dx / Math.max(rect.width, 1)) * 100, 0, 100);
+        const nextY = clamp(startPos.y + (dy / Math.max(rect.height, 1)) * 100, 0, 100);
+
+        state.mediaPositions[idx] = { x: nextX, y: nextY };
+        target.style.objectPosition = `${nextX}% ${nextY}%`;
+
+        if (idx === state.selectedMediaIndex) {
+          el.mediaPosX.value = String(Math.round(nextX));
+          el.mediaPosY.value = String(Math.round(nextY));
+          el.mediaPosXValue.textContent = `${Math.round(nextX)}%`;
+          el.mediaPosYValue.textContent = `${Math.round(nextY)}%`;
+        }
+      };
+
+      const onEnd = (endEvent) => {
+        if (endEvent.pointerId !== pointerId) {
+          return;
+        }
+        window.removeEventListener("pointermove", onMove);
+        window.removeEventListener("pointerup", onEnd);
+        window.removeEventListener("pointercancel", onEnd);
+        state.dragState = null;
+        refreshCardFromState();
+      };
+
+      window.addEventListener("pointermove", onMove);
+      window.addEventListener("pointerup", onEnd);
+      window.addEventListener("pointercancel", onEnd);
+    }
+
     async function downloadPng() {
       if (!state.cardData) {
         setStatus("Load a tweet first, then download PNG.", "error");
@@ -1186,12 +1420,11 @@
       const palette = getThemePalette(data.themeMode);
       const width = state.width;
       const scale = 2;
-      const padding = 20;
+      const padding = 28;
       const avatarSize = 44;
       const topGap = 12;
       const lineHeight = 30;
-      const detailLineHeight = 24;
-      const detailGap = 10;
+      const detailLineHeight = 22;
 
       const measureCanvas = document.createElement("canvas");
       const measureCtx = measureCanvas.getContext("2d");
@@ -1230,32 +1463,28 @@
       let mediaFrames = [];
 
       if (mediaCount === 1) {
-        const first = mediaImages[0];
-        const ratio = first && first.naturalWidth > 0 ? first.naturalHeight / first.naturalWidth : 0.56;
-        const singleHeight = Math.max(180, Math.min(420, bodyMaxWidth * ratio));
-        mediaHeight = singleHeight;
-        mediaFrames = [{ x: 0, y: 0, w: bodyMaxWidth, h: singleHeight }];
+        const cell = bodyMaxWidth;
+        mediaHeight = cell;
+        mediaFrames = [{ x: 0, y: 0, w: cell, h: cell }];
       } else if (mediaCount === 2) {
         const cellW = (bodyMaxWidth - mediaGap) / 2;
-        const cellH = Math.max(150, Math.min(320, cellW));
+        const cellH = cellW;
         mediaHeight = cellH;
         mediaFrames = [
           { x: 0, y: 0, w: cellW, h: cellH },
           { x: cellW + mediaGap, y: 0, w: cellW, h: cellH }
         ];
       } else if (mediaCount === 3) {
-        const topH = Math.max(170, Math.min(300, bodyMaxWidth * 0.56));
-        const cellW = (bodyMaxWidth - mediaGap) / 2;
-        const bottomH = Math.max(140, Math.min(240, cellW));
-        mediaHeight = topH + mediaGap + bottomH;
+        const cell = (bodyMaxWidth - mediaGap * 2) / 3;
+        mediaHeight = cell;
         mediaFrames = [
-          { x: 0, y: 0, w: bodyMaxWidth, h: topH },
-          { x: 0, y: topH + mediaGap, w: cellW, h: bottomH },
-          { x: cellW + mediaGap, y: topH + mediaGap, w: cellW, h: bottomH }
+          { x: 0, y: 0, w: cell, h: cell },
+          { x: cell + mediaGap, y: 0, w: cell, h: cell },
+          { x: (cell + mediaGap) * 2, y: 0, w: cell, h: cell }
         ];
       } else if (mediaCount >= 4) {
         const cellW = (bodyMaxWidth - mediaGap) / 2;
-        const cellH = Math.max(140, Math.min(230, cellW));
+        const cellH = cellW;
         mediaHeight = cellH * 2 + mediaGap;
         mediaFrames = [
           { x: 0, y: 0, w: cellW, h: cellH },
@@ -1266,9 +1495,10 @@
       }
 
       const isDetailed = data.mode === "detailed";
-      const detailHeight = isDetailed ? detailLineHeight * 2 + detailGap : 0;
+      const statsHeight = isDetailed ? detailLineHeight + 6 : 0;
+      const timeHeight = isDetailed ? detailLineHeight + 8 : 0;
 
-      const height = padding + avatarSize + topGap + bodyHeight + detailHeight + (mediaHeight ? mediaHeight + 12 : 0) + padding;
+      const height = padding + avatarSize + topGap + bodyHeight + statsHeight + (mediaHeight ? mediaHeight + 12 : 0) + timeHeight + padding;
 
       const canvas = document.createElement("canvas");
       canvas.width = Math.round(width * scale);
@@ -1324,9 +1554,6 @@
       if (isDetailed) {
         ctx.fillStyle = palette.muted;
         ctx.font = "500 19px Manrope, Segoe UI, sans-serif";
-        ctx.fillText(data.timestampLabel || "Date unavailable", padding, y + 4);
-        y += detailLineHeight;
-
         ctx.fillText(
           `${formatMetric(data.metrics.replies)} Replies   ` +
           `${formatMetric(data.metrics.reposts)} Reposts   ` +
@@ -1335,8 +1562,7 @@
           padding,
           y + 2
         );
-
-        y += detailLineHeight + detailGap;
+        y += statsHeight;
       }
 
       if (mediaHeight > 0) {
@@ -1344,7 +1570,7 @@
         const mediaY = y + 4;
         const radius = 12;
 
-        const drawRoundedMedia = (img, x, yy, w, h) => {
+        const drawRoundedMedia = (img, mediaPos, x, yy, w, h) => {
           ctx.save();
           ctx.beginPath();
           ctx.moveTo(x + radius, yy);
@@ -1359,8 +1585,8 @@
           ctx.closePath();
           ctx.clip();
 
-          if (img) {
-            ctx.drawImage(img, x, yy, w, h);
+          if (img && drawCoverImage(ctx, img, x, yy, w, h, mediaPos)) {
+            // Drawn above.
           } else {
             ctx.fillStyle = palette.mediaBg;
             ctx.fillRect(x, yy, w, h);
@@ -1370,14 +1596,24 @@
         };
 
         mediaFrames.forEach((frame, i) => {
+          const mediaPos = data.mediaPositions?.[i] || { x: 50, y: 50 };
           drawRoundedMedia(
             mediaImages[i] || null,
+            mediaPos,
             mediaX + frame.x,
             mediaY + frame.y,
             frame.w,
             frame.h
           );
         });
+
+        y += mediaHeight + 12;
+      }
+
+      if (isDetailed) {
+        ctx.fillStyle = palette.muted;
+        ctx.font = "500 19px Manrope, Segoe UI, sans-serif";
+        ctx.fillText(data.timestampLabel || "Date unavailable", padding, y + 2);
       }
 
       let pngUrl = "";
@@ -1418,6 +1654,21 @@
         state.stripReplyMentions = el.stripReplyMentions.checked;
         refreshCardFromState();
       });
+
+      el.mediaIndex.addEventListener("change", () => {
+        setSelectedMediaIndex(Number(el.mediaIndex.value) || 0);
+      });
+
+      el.mediaPosX.addEventListener("input", () => {
+        applySelectedMediaPosition(Number(el.mediaPosX.value), Number(el.mediaPosY.value), false);
+      });
+
+      el.mediaPosY.addEventListener("input", () => {
+        applySelectedMediaPosition(Number(el.mediaPosX.value), Number(el.mediaPosY.value), false);
+      });
+
+      el.mediaPosX.addEventListener("change", refreshCardFromState);
+      el.mediaPosY.addEventListener("change", refreshCardFromState);
 
       el.width.addEventListener("input", onWidthInput);
 
