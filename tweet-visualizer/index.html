@@ -957,8 +957,11 @@
       const finalBodyText = removeLinksFromText(textAfterMentions);
       const bodyText = finalBodyText || rawTweet.bodyRaw || "";
 
+      const avatarUrl = rawTweet.avatarUrl || (rawTweet.avatarCandidates ? rawTweet.avatarCandidates[0] : "");
+
       return {
         ...rawTweet,
+        avatarUrl,
         media,
         mediaPositions: state.mediaPositions.map((p) => ({ x: p.x, y: p.y })),
         bodyText,
@@ -1257,6 +1260,8 @@
           likes: tweet.likes ?? null,
           views: tweet.views ?? null
         },
+        avatarUrl: author.avatar_url,
+        avatarCandidates: dedupe([author.avatar_url, ...getAvatarCandidates(handle)]),
         media: totalMedia.slice(0, 4)
       };
     }
