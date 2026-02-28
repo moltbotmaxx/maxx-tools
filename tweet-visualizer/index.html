@@ -232,8 +232,7 @@
       </div>
 
       <div class="actions">
-        <button id="loadBtn" class="btn" type="button">Load Tweet</button>
-        <div id="status" class="status">Paste a tweet URL and click Load Tweet.</div>
+        <div id="status" class="status">Paste a tweet URL to load it automatically.</div>
       </div>
 
       <div class="field">
@@ -322,7 +321,6 @@
 
       embedContainer.className = "";
       embedContainer.innerHTML = "";
-      $("loadBtn").disabled = true;
       setStatus("Loading tweet embed...");
 
       try {
@@ -343,8 +341,6 @@
         embedContainer.className = "tweet-placeholder";
         embedContainer.textContent = "Could not load this tweet. Check the URL and ensure the tweet is public.";
         setStatus(error.message);
-      } finally {
-        $("loadBtn").disabled = false;
       }
     }
 
@@ -365,7 +361,6 @@
       updateDownloadButtonState();
       embedContainer.className = "";
       embedContainer.innerHTML = "";
-      $("loadBtn").disabled = true;
       setStatus("Loading clean tweet...");
 
       try {
@@ -427,8 +422,6 @@
         embedContainer.className = "tweet-placeholder";
         embedContainer.textContent = "Could not load a clean version from this URL.";
         setStatus(error.message);
-      } finally {
-        $("loadBtn").disabled = false;
       }
     }
 
@@ -614,7 +607,6 @@
       }, 0);
     }
 
-    $("loadBtn").addEventListener("click", onLoadTweet);
     $("downloadBtn").addEventListener("click", downloadCleanPng);
     $("tweetUrl").addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
