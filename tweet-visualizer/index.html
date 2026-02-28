@@ -584,6 +584,24 @@
       return String(n);
     }
 
+    function formatTweetTimestamp(rawTimestamp) {
+      if (!rawTimestamp) {
+        return "";
+      }
+      const d = new Date(rawTimestamp);
+      if (Number.isNaN(d.getTime())) {
+        return rawTimestamp;
+      }
+      const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const month = months[d.getUTCMonth()];
+      const day = String(d.getUTCDate()).padStart(2, "0");
+      const year = d.getUTCFullYear();
+      const hours = String(d.getUTCHours()).padStart(2, "0");
+      const mins = String(d.getUTCMinutes()).padStart(2, "0");
+      const secs = String(d.getUTCSeconds()).padStart(2, "0");
+      return `${month} ${day}, ${year} - ${hours}:${mins}:${secs}`;
+    }
+
     async function fetchTweetFromFxApi(parsedUrl) {
       const response = await fetch(`https://api.fxtwitter.com/status/${parsedUrl.id}`);
       if (!response.ok) {
@@ -629,7 +647,7 @@
         avatarCandidates: [author.avatar_url, ...getAvatarCandidates(handle)].filter(Boolean),
         mediaCandidates,
         verification,
-        timestampLabel: data.tweet.created_at || "",
+        timestampLabel: formatTweetTimestamp(data.tweet.created_at || ""),
         metrics: {
           replies: data.tweet.replies,
           reposts: data.tweet.reposts ?? data.tweet.retweets,
