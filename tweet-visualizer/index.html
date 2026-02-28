@@ -593,6 +593,7 @@
     </section>
   </main>
 
+  <script src="https://unpkg.com/html-to-image@1.11.11/dist/html-to-image.js"></script>
   <script>
     const el = {
       tweetUrl: document.getElementById("tweetUrl"),
@@ -1147,6 +1148,32 @@
       await Promise.allSettled(targets.map((url) => getDataUrlCached(url)));
     }
 
+    async function ensurePreviewUsesDataUrls(cardNode, data) {
+      if (!cardNode || !data) {
+        return;
+      }
+
+      const avatarNode = cardNode.querySelector(".tweet-avatar");
+      if (avatarNode && data.avatarUrl) {
+        const avatarData = data.avatarDataUrl || await getDataUrlCached(data.avatarUrl);
+        if (avatarData) {
+          avatarNode.src = avatarData;
+        }
+      }
+
+      const mediaNodes = cardNode.querySelectorAll(".media-item");
+      for (let i = 0; i < mediaNodes.length; i += 1) {
+        const mediaUrl = data.mediaUrls[i];
+        if (!mediaUrl) {
+          continue;
+        }
+        const mediaData = await getDataUrlCached(mediaUrl);
+        if (mediaData) {
+          mediaNodes[i].src = mediaData;
+        }
+      }
+    }
+
     async function fetchTweetFromFxApi(parsed, signal) {
       const statusResponse = await fetch(`https://api.fxtwitter.com/status/${parsed.id}`, { signal });
       if (!statusResponse.ok) {
@@ -1415,220 +1442,37 @@
         setStatus("Load a tweet first, then download PNG.", "error");
         return;
       }
-
-      const data = state.cardData;
-      const palette = getThemePalette(data.themeMode);
-      const width = state.width;
-      const scale = 2;
-      const padding = 28;
-      const avatarSize = 44;
-      const topGap = 12;
-      const lineHeight = 30;
-      const detailLineHeight = 22;
-
-      const measureCanvas = document.createElement("canvas");
-      const measureCtx = measureCanvas.getContext("2d");
-      if (!measureCtx) {
-        setStatus("Could not initialize PNG export.", "error");
+      const cardNode = el.cardShell.querySelector(".tweet-card");
+      if (!cardNode) {
+        setStatus("Nothing to export yet.", "error");
         return;
       }
 
-      measureCtx.font = "700 24px Manrope, Segoe UI, sans-serif";
-      const bodyMaxWidth = width - padding * 2;
-      const bodyLines = wrapTextLines(measureCtx, data.bodyText, bodyMaxWidth);
-      const bodyHeight = Math.max(lineHeight, bodyLines.length * lineHeight);
-
-      const mediaDataUrls = [];
-      for (const mediaUrl of data.mediaUrls.slice(0, 4)) {
-        const mediaDataUrl = await getDataUrlCached(mediaUrl);
-        mediaDataUrls.push(mediaDataUrl || mediaUrl || null);
-      }
-
-      const mediaImages = [];
-      for (const src of mediaDataUrls) {
-        if (!src) {
-          mediaImages.push(null);
-          continue;
-        }
-        try {
-          mediaImages.push(await loadImage(src));
-        } catch {
-          mediaImages.push(null);
-        }
-      }
-
-      const mediaGap = 8;
-      const mediaCount = mediaImages.length;
-      let mediaHeight = 0;
-      let mediaFrames = [];
-
-      if (mediaCount === 1) {
-        const cell = bodyMaxWidth;
-        mediaHeight = cell;
-        mediaFrames = [{ x: 0, y: 0, w: cell, h: cell }];
-      } else if (mediaCount === 2) {
-        const cellW = (bodyMaxWidth - mediaGap) / 2;
-        const cellH = cellW;
-        mediaHeight = cellH;
-        mediaFrames = [
-          { x: 0, y: 0, w: cellW, h: cellH },
-          { x: cellW + mediaGap, y: 0, w: cellW, h: cellH }
-        ];
-      } else if (mediaCount === 3) {
-        const cell = (bodyMaxWidth - mediaGap * 2) / 3;
-        mediaHeight = cell;
-        mediaFrames = [
-          { x: 0, y: 0, w: cell, h: cell },
-          { x: cell + mediaGap, y: 0, w: cell, h: cell },
-          { x: (cell + mediaGap) * 2, y: 0, w: cell, h: cell }
-        ];
-      } else if (mediaCount >= 4) {
-        const cellW = (bodyMaxWidth - mediaGap) / 2;
-        const cellH = cellW;
-        mediaHeight = cellH * 2 + mediaGap;
-        mediaFrames = [
-          { x: 0, y: 0, w: cellW, h: cellH },
-          { x: cellW + mediaGap, y: 0, w: cellW, h: cellH },
-          { x: 0, y: cellH + mediaGap, w: cellW, h: cellH },
-          { x: cellW + mediaGap, y: cellH + mediaGap, w: cellW, h: cellH }
-        ];
-      }
-
-      const isDetailed = data.mode === "detailed";
-      const statsHeight = isDetailed ? detailLineHeight + 6 : 0;
-      const timeHeight = isDetailed ? detailLineHeight + 8 : 0;
-
-      const height = padding + avatarSize + topGap + bodyHeight + statsHeight + (mediaHeight ? mediaHeight + 12 : 0) + timeHeight + padding;
-
-      const canvas = document.createElement("canvas");
-      canvas.width = Math.round(width * scale);
-      canvas.height = Math.round(height * scale);
-      const ctx = canvas.getContext("2d");
-      if (!ctx) {
-        setStatus("Could not initialize PNG export.", "error");
+      if (!window.htmlToImage || !window.htmlToImage.toPng) {
+        setStatus("PNG exporter library failed to load.", "error");
         return;
       }
-      ctx.scale(scale, scale);
 
-      ctx.fillStyle = palette.bg;
-      ctx.fillRect(0, 0, width, height);
+      el.downloadBtn.disabled = true;
+      setStatus("Generating PNG from preview...", "loading");
 
-      const avatarSrc = data.avatarDataUrl || (await getDataUrlCached(data.avatarUrl)) || data.avatarUrl;
       try {
-        const avatarImage = await loadImage(avatarSrc);
-        ctx.save();
-        ctx.beginPath();
-        ctx.arc(padding + avatarSize / 2, padding + avatarSize / 2, avatarSize / 2, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.clip();
-        ctx.drawImage(avatarImage, padding, padding, avatarSize, avatarSize);
-        ctx.restore();
-      } catch {
-        ctx.fillStyle = palette.avatarBg;
-        ctx.beginPath();
-        ctx.arc(padding + avatarSize / 2, padding + avatarSize / 2, avatarSize / 2, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      ctx.fillStyle = palette.text;
-      ctx.font = "700 24px Manrope, Segoe UI, sans-serif";
-      const nameX = padding + avatarSize + 12;
-      const nameY = padding + 24;
-      const nameText = data.displayName || data.handleText;
-      ctx.fillText(nameText, nameX, nameY);
-      const nameWidth = ctx.measureText(nameText).width;
-      const afterBadgeX = drawVerifyBadge(ctx, nameX + nameWidth + 8, padding + 8, data.verification);
-
-      ctx.fillStyle = palette.muted;
-      ctx.font = "500 20px Manrope, Segoe UI, sans-serif";
-      ctx.fillText(data.handleText, afterBadgeX + 6, padding + 24);
-
-      ctx.fillStyle = palette.text;
-      ctx.font = "500 24px Manrope, Segoe UI, sans-serif";
-      let y = padding + avatarSize + topGap + 24;
-      for (const line of bodyLines) {
-        ctx.fillText(line, padding, y);
-        y += lineHeight;
-      }
-
-      if (isDetailed) {
-        ctx.fillStyle = palette.muted;
-        ctx.font = "500 19px Manrope, Segoe UI, sans-serif";
-        ctx.fillText(
-          `${formatMetric(data.metrics.replies)} Replies   ` +
-          `${formatMetric(data.metrics.reposts)} Reposts   ` +
-          `${formatMetric(data.metrics.likes)} Likes   ` +
-          `${formatMetric(data.metrics.views)} Views`,
-          padding,
-          y + 2
-        );
-        y += statsHeight;
-      }
-
-      if (mediaHeight > 0) {
-        const mediaX = padding;
-        const mediaY = y + 4;
-        const radius = 12;
-
-        const drawRoundedMedia = (img, mediaPos, x, yy, w, h) => {
-          ctx.save();
-          ctx.beginPath();
-          ctx.moveTo(x + radius, yy);
-          ctx.lineTo(x + w - radius, yy);
-          ctx.quadraticCurveTo(x + w, yy, x + w, yy + radius);
-          ctx.lineTo(x + w, yy + h - radius);
-          ctx.quadraticCurveTo(x + w, yy + h, x + w - radius, yy + h);
-          ctx.lineTo(x + radius, yy + h);
-          ctx.quadraticCurveTo(x, yy + h, x, yy + h - radius);
-          ctx.lineTo(x, yy + radius);
-          ctx.quadraticCurveTo(x, yy, x + radius, yy);
-          ctx.closePath();
-          ctx.clip();
-
-          if (img && drawCoverImage(ctx, img, x, yy, w, h, mediaPos)) {
-            // Drawn above.
-          } else {
-            ctx.fillStyle = palette.mediaBg;
-            ctx.fillRect(x, yy, w, h);
-          }
-
-          ctx.restore();
-        };
-
-        mediaFrames.forEach((frame, i) => {
-          const mediaPos = data.mediaPositions?.[i] || { x: 50, y: 50 };
-          drawRoundedMedia(
-            mediaImages[i] || null,
-            mediaPos,
-            mediaX + frame.x,
-            mediaY + frame.y,
-            frame.w,
-            frame.h
-          );
+        await ensurePreviewUsesDataUrls(cardNode, state.cardData);
+        const pngUrl = await window.htmlToImage.toPng(cardNode, {
+          cacheBust: true,
+          pixelRatio: 2
         });
 
-        y += mediaHeight + 12;
+        const link = document.createElement("a");
+        link.href = pngUrl;
+        link.download = `tweet-card-${Date.now()}.png`;
+        link.click();
+        setStatus("PNG downloaded (WYSIWYG).", "success");
+      } catch (error) {
+        setStatus(error?.message ? `PNG export failed: ${error.message}` : "PNG export failed.", "error");
+      } finally {
+        el.downloadBtn.disabled = state.loading || !state.cardData;
       }
-
-      if (isDetailed) {
-        ctx.fillStyle = palette.muted;
-        ctx.font = "500 19px Manrope, Segoe UI, sans-serif";
-        ctx.fillText(data.timestampLabel || "Date unavailable", padding, y + 2);
-      }
-
-      let pngUrl = "";
-      try {
-        pngUrl = canvas.toDataURL("image/png");
-      } catch {
-        setStatus("PNG export failed due browser image security restrictions.", "error");
-        return;
-      }
-
-      const link = document.createElement("a");
-      link.href = pngUrl;
-      link.download = `tweet-card-${Date.now()}.png`;
-      link.click();
-      setStatus("PNG downloaded.", "success");
     }
 
     function bindEvents() {
