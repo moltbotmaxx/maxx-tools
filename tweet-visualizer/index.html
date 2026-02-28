@@ -253,6 +253,17 @@
       word-break: break-word;
     }
 
+    .clean-media {
+      margin-top: 12px;
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      display: block;
+      object-fit: cover;
+      max-height: 420px;
+      background: #0f1419;
+    }
+
     @media (max-width: 980px) {
       .app {
         grid-template-columns: 1fr;
@@ -503,11 +514,20 @@
         }
       }
 
+      const photoCandidates = (data.tweet.media?.photos || [])
+        .map((photo) => photo.url)
+        .filter(Boolean);
+      const videoThumbCandidates = (data.tweet.media?.videos || [])
+        .map((video) => video.thumbnail_url || video.url)
+        .filter(Boolean);
+      const mediaCandidates = [...photoCandidates, ...videoThumbCandidates];
+
       return {
         bodyText: (data.tweet.text || data.tweet.raw_text?.text || "").trim(),
         displayName: author.name || handle || "Unknown",
         handleText: handle ? `@${handle}` : "@unknown",
         avatarCandidates: [author.avatar_url, ...getAvatarCandidates(handle)].filter(Boolean),
+        mediaCandidates,
         verification
       };
     }
@@ -529,6 +549,7 @@
         displayName: data.author_name || handle || "Unknown",
         handleText: handle ? `@${handle}` : "@unknown",
         avatarCandidates: getAvatarCandidates(handle),
+        mediaCandidates: [],
         verification: { verified: false, type: null }
       };
     }
@@ -555,7 +576,7 @@
         if (isStaleToken(loadToken)) {
           return;
         }
-        const { bodyText, displayName, handleText, avatarCandidates, verification } = tweetData;
+        const { bodyText, displayName, handleText, avatarCandidates, mediaCandidates, verification } = tweetData;
         const defaultAvatar = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
         let avatarUrl = avatarCandidates[0] || defaultAvatar;
 
@@ -606,6 +627,30 @@
 
         card.appendChild(head);
         card.appendChild(body);
+        let mediaUrl = "";
+        let mediaCanvasSrc = "";
+        for (const candidate of mediaCandidates || []) {
+          if (!candidate) {
+            continue;
+          }
+          if (!mediaUrl) {
+            mediaUrl = candidate;
+          }
+          try {
+            mediaCanvasSrc = await fetchImageAsDataUrl(candidate);
+            mediaUrl = candidate;
+            break;
+          } catch {
+            // Try the next candidate source.
+          }
+        }
+        if (mediaUrl) {
+          const mediaImage = document.createElement("img");
+          mediaImage.className = "clean-media";
+          mediaImage.src = mediaUrl;
+          mediaImage.alt = "Tweet media";
+          card.appendChild(mediaImage);
+        }
         embedContainer.appendChild(card);
         let avatarCanvasSrc = "";
         for (const candidate of avatarCandidates) {
@@ -630,7 +675,9 @@
           verification,
           bodyText,
           avatarUrl,
-          avatarCanvasSrc
+          avatarCanvasSrc,
+          mediaUrl,
+          mediaCanvasSrc
         };
         updateDownloadButtonState();
         setStatus("Clean tweet loaded.");
@@ -710,6 +757,14 @@
         }
       }
 
+      if (loadedCleanCardData.mediaUrl && !loadedCleanCardData.mediaCanvasSrc) {
+        try {
+          loadedCleanCardData.mediaCanvasSrc = await fetchImageAsDataUrl(loadedCleanCardData.mediaUrl);
+        } catch {
+          // Keep going; media draw will gracefully fallback.
+        }
+      }
+
       const width = setTweetWidth();
       const scale = 2;
       const padding = 20;
@@ -727,7 +782,22 @@
       const bodyMaxWidth = width - padding * 2;
       const bodyLines = wrapTextLines(measureCtx, loadedCleanCardData.bodyText, bodyMaxWidth);
       const bodyHeight = Math.max(lineHeight, bodyLines.length * lineHeight);
-      const height = padding + avatarSize + topGap + bodyHeight + padding;
+      let mediaImage = null;
+      let mediaHeight = 0;
+      if (loadedCleanCardData.mediaCanvasSrc || loadedCleanCardData.mediaUrl) {
+        try {
+          mediaImage = await loadAvatarImage(
+            loadedCleanCardData.mediaCanvasSrc || loadedCleanCardData.mediaUrl
+          );
+          const ratio = mediaImage.naturalWidth > 0
+            ? mediaImage.naturalHeight / mediaImage.naturalWidth
+            : 0.56;
+          mediaHeight = Math.max(180, Math.min(420, bodyMaxWidth * ratio));
+        } catch {
+          mediaHeight = 260;
+        }
+      }
+      const height = padding + avatarSize + topGap + bodyHeight + (mediaHeight ? mediaHeight + 12 : 0) + padding;
 
       const canvas = document.createElement("canvas");
       canvas.width = Math.round(width * scale);
@@ -782,6 +852,34 @@
       for (const line of bodyLines) {
         ctx.fillText(line, padding, y);
         y += lineHeight;
+      }
+
+      if (mediaHeight > 0) {
+        const mediaX = padding;
+        const mediaY = y + 4;
+        const mediaW = bodyMaxWidth;
+        const radius = 12;
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(mediaX + radius, mediaY);
+        ctx.lineTo(mediaX + mediaW - radius, mediaY);
+        ctx.quadraticCurveTo(mediaX + mediaW, mediaY, mediaX + mediaW, mediaY + radius);
+        ctx.lineTo(mediaX + mediaW, mediaY + mediaHeight - radius);
+        ctx.quadraticCurveTo(mediaX + mediaW, mediaY + mediaHeight, mediaX + mediaW - radius, mediaY + mediaHeight);
+        ctx.lineTo(mediaX + radius, mediaY + mediaHeight);
+        ctx.quadraticCurveTo(mediaX, mediaY + mediaHeight, mediaX, mediaY + mediaHeight - radius);
+        ctx.lineTo(mediaX, mediaY + radius);
+        ctx.quadraticCurveTo(mediaX, mediaY, mediaX + radius, mediaY);
+        ctx.closePath();
+        ctx.clip();
+        if (mediaImage) {
+          ctx.drawImage(mediaImage, mediaX, mediaY, mediaW, mediaHeight);
+        } else {
+          ctx.fillStyle = "#1f2937";
+          ctx.fillRect(mediaX, mediaY, mediaW, mediaHeight);
+        }
+        ctx.restore();
       }
 
       const link = document.createElement("a");
