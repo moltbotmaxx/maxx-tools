@@ -498,7 +498,6 @@
       border-radius: 14px;
       border: 1px solid var(--card-border);
       background: var(--card-media-bg);
-      aspect-ratio: 1 / 1;
       cursor: grab;
     }
 
@@ -711,17 +710,17 @@
     }
 
     function setSelectedMediaIndex(index, rerender = true) {
-      if (!state.cardData || !state.cardData.mediaUrls.length) {
+      if (!state.cardData || !state.cardData.media.length) {
         return;
       }
-      state.selectedMediaIndex = clamp(index, 0, state.cardData.mediaUrls.length - 1);
+      state.selectedMediaIndex = clamp(index, 0, state.cardData.media.length - 1);
       if (rerender) {
         renderPreview();
       }
     }
 
     function applySelectedMediaPosition(nextX, nextY, rerender = true) {
-      if (!state.cardData || !state.cardData.mediaUrls.length) {
+      if (!state.cardData || !state.cardData.media.length) {
         return;
       }
       const idx = state.selectedMediaIndex;
@@ -947,9 +946,9 @@
         return null;
       }
 
-      const mediaUrls = rawTweet.mediaUrls.slice(0, 4);
-      ensureMediaPositions(mediaUrls.length);
-      ensureMediaScales(mediaUrls.length);
+      const media = rawTweet.media.slice(0, 4);
+      ensureMediaPositions(media.length);
+      ensureMediaScales(media.length);
 
       const textAfterMentions = state.stripReplyMentions
         ? stripLeadingReplyMentions(rawTweet.bodyRaw)
@@ -960,7 +959,7 @@
 
       return {
         ...rawTweet,
-        mediaUrls,
+        media,
         mediaPositions: state.mediaPositions.map((p) => ({ x: p.x, y: p.y })),
         bodyText,
         mode: state.viewMode,
@@ -1025,19 +1024,28 @@
       card.appendChild(head);
       card.appendChild(body);
 
-      if (data.mediaUrls.length > 0) {
+      if (data.media.length > 0) {
         const mediaGrid = document.createElement("div");
-        const clipped = data.mediaUrls.slice(0, 4);
+        const clipped = data.media.slice(0, 4);
         mediaGrid.className = `media-grid media-grid--${clipped.length}`;
 
-        clipped.forEach((url, i) => {
+        clipped.forEach((mediaItem, i) => {
           const container = document.createElement("div");
           container.className = "media-container";
           container.dataset.mediaIndex = String(i);
 
+          // Apply aspect ratio
+          if (clipped.length === 1 && mediaItem.width && mediaItem.height) {
+            container.style.aspectRatio = `${mediaItem.width} / ${mediaItem.height}`;
+          } else if (clipped.length === 2) {
+            container.style.aspectRatio = "8 / 10"; // Twitter style for 2 images
+          } else {
+            container.style.aspectRatio = "1 / 1"; // Square for 3-4 images
+          }
+
           const img = document.createElement("img");
           img.className = "media-item";
-          img.src = url;
+          img.src = mediaItem.url;
           img.alt = "Tweet media";
           const pos = data.mediaPositions[i] || { x: 50, y: 50 };
           const scale = state.mediaScales[i] ?? 1;
@@ -1161,7 +1169,7 @@
       if (!rawTweet) {
         return;
       }
-      const targets = [...rawTweet.avatarCandidates, ...rawTweet.mediaUrls.slice(0, 4)];
+      const targets = [...rawTweet.avatarCandidates, ...rawTweet.media.map(m => m.url)];
       await Promise.allSettled(targets.map((url) => getDataUrlCached(url)));
     }
 
@@ -1180,11 +1188,11 @@
 
       const mediaNodes = cardNode.querySelectorAll(".media-item");
       for (let i = 0; i < mediaNodes.length; i += 1) {
-        const mediaUrl = data.mediaUrls[i];
-        if (!mediaUrl) {
+        const mediaItemData = data.media[i];
+        if (!mediaItemData) {
           continue;
         }
-        const mediaData = await getDataUrlCached(mediaUrl);
+        const mediaData = await getDataUrlCached(mediaItemData.url);
         if (mediaData) {
           mediaNodes[i].src = mediaData;
         }
@@ -1219,8 +1227,19 @@
         }
       }
 
-      const photos = (tweet.media?.photos || []).map((p) => p.url).filter(Boolean);
-      const videoThumbs = (tweet.media?.videos || []).map((v) => v.thumbnail_url || v.url).filter(Boolean);
+      const photos = (tweet.media?.photos || []).map((p) => ({
+        url: p.url,
+        width: p.width,
+        height: p.height
+      })).filter(p => p.url);
+
+      const videoThumbs = (tweet.media?.videos || []).map((v) => ({
+        url: v.thumbnail_url || v.url,
+        width: v.width,
+        height: v.height
+      })).filter(v => v.url);
+
+      const totalMedia = [...photos, ...videoThumbs];
 
       return {
         id: parsed.id,
@@ -1238,8 +1257,7 @@
           likes: tweet.likes ?? null,
           views: tweet.views ?? null
         },
-        avatarCandidates: dedupe([author.avatar_url, ...getAvatarCandidates(handle)]),
-        mediaUrls: dedupe([...photos, ...videoThumbs]).slice(0, 4)
+        media: totalMedia.slice(0, 4)
       };
     }
 
@@ -1286,7 +1304,7 @@
           views: null
         },
         avatarCandidates: getAvatarCandidates(handle),
-        mediaUrls: []
+        media: []
       };
     }
 
