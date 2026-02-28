@@ -267,6 +267,13 @@
       word-break: break-word;
     }
 
+    .clean-media-grid {
+      margin-top: 12px;
+      display: grid;
+      gap: 8px;
+      width: 100%;
+    }
+
     .clean-media {
       margin-top: 12px;
       width: 100%;
@@ -274,7 +281,8 @@
       border: 1px solid var(--border);
       display: block;
       object-fit: cover;
-      max-height: 420px;
+      min-height: 160px;
+      max-height: 320px;
       background: #0f1419;
     }
 
@@ -375,6 +383,19 @@
       }
       const stripped = text.replace(/^(?:\s*@[\w_]{1,15}[,\s]*)+/i, "").trimStart();
       return stripped || text;
+    }
+
+    function removeLinksFromText(text) {
+      if (!text) {
+        return "";
+      }
+      return text
+        .replace(/https?:\/\/\S+/gi, "")
+        .replace(/\bwww\.\S+/gi, "")
+        .split(/\r?\n/)
+        .map((line) => line.replace(/\s{2,}/g, " ").trimEnd())
+        .join("\n")
+        .trim();
     }
 
     function nextLoadToken() {
@@ -614,9 +635,10 @@
           return;
         }
         const { bodyText, displayName, handleText, avatarCandidates, mediaCandidates, verification } = tweetData;
-        const finalBodyText = $("stripReplyMentions").checked
+        const bodyAfterReplyStrip = $("stripReplyMentions").checked
           ? stripLeadingReplyMentions(bodyText)
           : bodyText;
+        const finalBodyText = removeLinksFromText(bodyAfterReplyStrip);
         const defaultAvatar = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
         let avatarUrl = avatarCandidates[0] || defaultAvatar;
 
@@ -667,29 +689,30 @@
 
         card.appendChild(head);
         card.appendChild(body);
-        let mediaUrl = "";
-        let mediaCanvasSrc = "";
-        for (const candidate of mediaCandidates || []) {
-          if (!candidate) {
-            continue;
+        const mediaUrls = Array.from(new Set((mediaCandidates || []).filter(Boolean)));
+        const mediaCanvasSrcs = [];
+        if (mediaUrls.length > 0) {
+          const mediaGrid = document.createElement("div");
+          mediaGrid.className = "clean-media-grid";
+          mediaGrid.style.gridTemplateColumns = mediaUrls.length === 1 ? "1fr" : "1fr 1fr";
+
+          for (const candidate of mediaUrls) {
+            const mediaImage = document.createElement("img");
+            mediaImage.className = "clean-media";
+            mediaImage.src = candidate;
+            mediaImage.alt = "Tweet media";
+            mediaImage.style.marginTop = "0";
+            mediaGrid.appendChild(mediaImage);
+
+            try {
+              const canvasSrc = await fetchImageAsDataUrl(candidate);
+              mediaCanvasSrcs.push(canvasSrc);
+            } catch {
+              mediaCanvasSrcs.push("");
+            }
           }
-          if (!mediaUrl) {
-            mediaUrl = candidate;
-          }
-          try {
-            mediaCanvasSrc = await fetchImageAsDataUrl(candidate);
-            mediaUrl = candidate;
-            break;
-          } catch {
-            // Try the next candidate source.
-          }
-        }
-        if (mediaUrl) {
-          const mediaImage = document.createElement("img");
-          mediaImage.className = "clean-media";
-          mediaImage.src = mediaUrl;
-          mediaImage.alt = "Tweet media";
-          card.appendChild(mediaImage);
+
+          card.appendChild(mediaGrid);
         }
         embedContainer.appendChild(card);
         let avatarCanvasSrc = "";
@@ -716,8 +739,8 @@
           bodyText: finalBodyText,
           avatarUrl,
           avatarCanvasSrc,
-          mediaUrl,
-          mediaCanvasSrc
+          mediaUrls,
+          mediaCanvasSrcs
         };
         updateDownloadButtonState();
         setStatus("Clean tweet loaded.");
@@ -806,12 +829,19 @@
         }
       }
 
-      if (loadedCleanCardData.mediaUrl && !loadedCleanCardData.mediaCanvasSrc) {
-        try {
-          loadedCleanCardData.mediaCanvasSrc = await fetchImageAsDataUrl(loadedCleanCardData.mediaUrl);
-        } catch {
-          // Keep going; media draw will gracefully fallback.
+      if (loadedCleanCardData.mediaUrls?.length) {
+        const canvasSrcs = loadedCleanCardData.mediaCanvasSrcs || [];
+        for (let i = 0; i < loadedCleanCardData.mediaUrls.length; i += 1) {
+          if (canvasSrcs[i]) {
+            continue;
+          }
+          try {
+            canvasSrcs[i] = await fetchImageAsDataUrl(loadedCleanCardData.mediaUrls[i]);
+          } catch {
+            canvasSrcs[i] = "";
+          }
         }
+        loadedCleanCardData.mediaCanvasSrcs = canvasSrcs;
       }
 
       const width = setTweetWidth();
@@ -831,21 +861,38 @@
       const bodyMaxWidth = width - padding * 2;
       const bodyLines = wrapTextLines(measureCtx, loadedCleanCardData.bodyText, bodyMaxWidth);
       const bodyHeight = Math.max(lineHeight, bodyLines.length * lineHeight);
-      let mediaImage = null;
-      let mediaHeight = 0;
-      if (loadedCleanCardData.mediaCanvasSrc || loadedCleanCardData.mediaUrl) {
+      const rawMediaSources = (loadedCleanCardData.mediaUrls || [])
+        .map((url, i) => loadedCleanCardData.mediaCanvasSrcs?.[i] || url)
+        .filter(Boolean);
+      const mediaSources = rawMediaSources.slice(0, 4);
+      const mediaImages = [];
+      for (const source of mediaSources) {
         try {
-          mediaImage = await loadAvatarImage(
-            loadedCleanCardData.mediaCanvasSrc || loadedCleanCardData.mediaUrl
-          );
-          const ratio = mediaImage.naturalWidth > 0
-            ? mediaImage.naturalHeight / mediaImage.naturalWidth
-            : 0.56;
-          mediaHeight = Math.max(180, Math.min(420, bodyMaxWidth * ratio));
+          mediaImages.push(await loadAvatarImage(source));
         } catch {
-          mediaHeight = 260;
+          mediaImages.push(null);
         }
       }
+
+      let mediaHeight = 0;
+      const mediaCount = mediaSources.length;
+      let mediaCols = 1;
+      const mediaGap = 8;
+      let mediaCellHeight = 0;
+      if (mediaCount === 1) {
+        const first = mediaImages[0];
+        const ratio = first && first.naturalWidth > 0
+          ? first.naturalHeight / first.naturalWidth
+          : 0.56;
+        mediaCellHeight = Math.max(180, Math.min(420, bodyMaxWidth * ratio));
+        mediaHeight = mediaCellHeight;
+      } else if (mediaCount > 1) {
+        mediaCols = 2;
+        const rows = Math.ceil(mediaCount / mediaCols);
+        mediaCellHeight = 170;
+        mediaHeight = rows * mediaCellHeight + (rows - 1) * mediaGap;
+      }
+
       const height = padding + avatarSize + topGap + bodyHeight + (mediaHeight ? mediaHeight + 12 : 0) + padding;
 
       const canvas = document.createElement("canvas");
@@ -860,9 +907,6 @@
 
       ctx.fillStyle = "#000000";
       ctx.fillRect(0, 0, width, height);
-      ctx.strokeStyle = "#2f3336";
-      ctx.lineWidth = 1;
-      ctx.strokeRect(0.5, 0.5, width - 1, height - 1);
 
       try {
         const avatar = await loadAvatarImage(
@@ -908,27 +952,41 @@
         const mediaY = y + 4;
         const mediaW = bodyMaxWidth;
         const radius = 12;
+        const drawRoundedMedia = (img, x, yy, w, h) => {
+          ctx.save();
+          ctx.beginPath();
+          ctx.moveTo(x + radius, yy);
+          ctx.lineTo(x + w - radius, yy);
+          ctx.quadraticCurveTo(x + w, yy, x + w, yy + radius);
+          ctx.lineTo(x + w, yy + h - radius);
+          ctx.quadraticCurveTo(x + w, yy + h, x + w - radius, yy + h);
+          ctx.lineTo(x + radius, yy + h);
+          ctx.quadraticCurveTo(x, yy + h, x, yy + h - radius);
+          ctx.lineTo(x, yy + radius);
+          ctx.quadraticCurveTo(x, yy, x + radius, yy);
+          ctx.closePath();
+          ctx.clip();
+          if (img) {
+            ctx.drawImage(img, x, yy, w, h);
+          } else {
+            ctx.fillStyle = "#1f2937";
+            ctx.fillRect(x, yy, w, h);
+          }
+          ctx.restore();
+        };
 
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(mediaX + radius, mediaY);
-        ctx.lineTo(mediaX + mediaW - radius, mediaY);
-        ctx.quadraticCurveTo(mediaX + mediaW, mediaY, mediaX + mediaW, mediaY + radius);
-        ctx.lineTo(mediaX + mediaW, mediaY + mediaHeight - radius);
-        ctx.quadraticCurveTo(mediaX + mediaW, mediaY + mediaHeight, mediaX + mediaW - radius, mediaY + mediaHeight);
-        ctx.lineTo(mediaX + radius, mediaY + mediaHeight);
-        ctx.quadraticCurveTo(mediaX, mediaY + mediaHeight, mediaX, mediaY + mediaHeight - radius);
-        ctx.lineTo(mediaX, mediaY + radius);
-        ctx.quadraticCurveTo(mediaX, mediaY, mediaX + radius, mediaY);
-        ctx.closePath();
-        ctx.clip();
-        if (mediaImage) {
-          ctx.drawImage(mediaImage, mediaX, mediaY, mediaW, mediaHeight);
+        if (mediaCount === 1) {
+          drawRoundedMedia(mediaImages[0], mediaX, mediaY, mediaW, mediaCellHeight);
         } else {
-          ctx.fillStyle = "#1f2937";
-          ctx.fillRect(mediaX, mediaY, mediaW, mediaHeight);
+          const cellW = (mediaW - mediaGap) / mediaCols;
+          for (let i = 0; i < mediaCount; i += 1) {
+            const row = Math.floor(i / mediaCols);
+            const col = i % mediaCols;
+            const cellX = mediaX + col * (cellW + mediaGap);
+            const cellY = mediaY + row * (mediaCellHeight + mediaGap);
+            drawRoundedMedia(mediaImages[i], cellX, cellY, cellW, mediaCellHeight);
+          }
         }
-        ctx.restore();
       }
 
       const link = document.createElement("a");
