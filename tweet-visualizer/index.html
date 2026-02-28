@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tweet Visualizer</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --panel: #16181c;
+      --border: #2f3336;
+      --text: #e7e9ea;
+      --muted: #71767b;
+      --blue: #1d9bf0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1f2937 0%, #000 46%);
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 24px 16px 48px;
+    }
+
+    .app {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 320px minmax(680px, 1fr);
+      align-items: start;
+    }
+
+    .panel {
+      background: rgba(22, 24, 28, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    .panel h1 {
+      margin: 0 0 14px;
+      font-size: 1.2rem;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .field label {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      background: #202327;
+      color: var(--text);
+      border: 1px solid #3a3d40;
+      border-radius: 8px;
+      padding: 9px 10px;
+      font: inherit;
+    }
+
+    .field textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .range-wrap {
+      margin-top: 8px;
+    }
+
+    .range-wrap output {
+      color: var(--blue);
+      font-size: 0.9rem;
+      margin-left: 6px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin: 6px 0 10px;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 16px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:disabled {
+      opacity: 0.7;
+      cursor: wait;
+    }
+
+    .status {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .mode-select {
+      width: 100%;
+      background: #202327;
+      color: var(--text);
+      border: 1px solid #3a3d40;
+      border-radius: 8px;
+      padding: 9px 10px;
+      font: inherit;
+    }
+
+    .preview-shell {
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+      padding: 6px;
+    }
+
+    .tweet {
+      width: 760px;
+      max-width: 100%;
+      background: transparent;
+      border: 1px dashed var(--border);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .tweet-placeholder {
+      color: var(--muted);
+      text-align: center;
+      padding: 52px 20px;
+    }
+
+    .clean-card {
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      color: var(--text);
+    }
+
+    .clean-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .clean-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      object-fit: cover;
+      background: #2f3336;
+      border: 1px solid #3a3d40;
+    }
+
+    .clean-handle {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .clean-body {
+      margin: 0;
+      font-size: 1.18rem;
+      line-height: 1.45;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    @media (max-width: 980px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .tweet {
+        width: min(760px, 100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>Tweet Visualizer</h1>
+
+      <div class="field">
+        <label for="tweetUrl">Tweet URL</label>
+        <input id="tweetUrl" value="" placeholder="https://x.com/user/status/1234567890123456789" />
+      </div>
+
+      <div class="actions">
+        <button id="loadBtn" class="btn" type="button">Load Tweet</button>
+        <div id="status" class="status">Paste a tweet URL and click Load Tweet.</div>
+      </div>
+
+      <div class="field">
+        <label for="viewMode">View Mode</label>
+        <select id="viewMode" class="mode-select">
+          <option value="clean" selected>Clean (avatar + handle + body)</option>
+          <option value="embed">Real embed</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="width">Tweet Width</label>
+        <div class="range-wrap">
+          <input id="width" type="range" min="520" max="1120" value="760" />
+          <output id="widthLabel">760px</output>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel preview-shell">
+      <article class="tweet" id="tweet">
+        <div id="embedContainer" class="tweet-placeholder">
+          Paste a tweet URL to render a clean tweet here.
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    let loadedTweet = null;
+
+    function parseTweetUrl(urlString) {
+      try {
+        const url = new URL(urlString.trim());
+        const match = url.pathname.match(/\/status(?:es)?\/(\d+)/i);
+        if (!match) {
+          return null;
+        }
+        return { id: match[1], url: url.toString() };
+      } catch {
+        return null;
+      }
+    }
+
+    function setStatus(message) {
+      $("status").textContent = message;
+    }
+
+    async function waitForWidgets(maxWaitMs = 10000) {
+      const started = Date.now();
+      while (Date.now() - started < maxWaitMs) {
+        if (window.twttr && window.twttr.widgets && window.twttr.widgets.createTweet) {
+          return window.twttr.widgets;
+        }
+        await new Promise((resolve) => setTimeout(resolve, 100));
+      }
+      throw new Error("Twitter widgets script did not load.");
+    }
+
+    function setTweetWidth() {
+      const width = Number($("width").value);
+      $("tweet").style.width = `${width}px`;
+      $("widthLabel").textContent = `${width}px`;
+      return width;
+    }
+
+    async function loadEmbedTweet(tweetId) {
+      const embedContainer = $("embedContainer");
+      const width = setTweetWidth();
+
+      embedContainer.className = "";
+      embedContainer.innerHTML = "";
+      $("loadBtn").disabled = true;
+      setStatus("Loading tweet embed...");
+
+      try {
+        const widgets = await waitForWidgets();
+        const tweetNode = await widgets.createTweet(tweetId, embedContainer, {
+          theme: "dark",
+          width,
+          align: "center",
+          dnt: true
+        });
+
+        if (!tweetNode) {
+          throw new Error("Tweet not found or not embeddable.");
+        }
+
+        setStatus("Tweet loaded.");
+      } catch (error) {
+        embedContainer.className = "tweet-placeholder";
+        embedContainer.textContent = "Could not load this tweet. Check the URL and ensure the tweet is public.";
+        setStatus(error.message);
+      } finally {
+        $("loadBtn").disabled = false;
+      }
+    }
+
+    function extractHandle(authorUrl) {
+      try {
+        const url = new URL(authorUrl);
+        const handle = url.pathname.split("/").filter(Boolean)[0];
+        return handle || null;
+      } catch {
+        return null;
+      }
+    }
+
+    async function loadCleanTweet(tweetUrl) {
+      const embedContainer = $("embedContainer");
+      setTweetWidth();
+      embedContainer.className = "";
+      embedContainer.innerHTML = "";
+      $("loadBtn").disabled = true;
+      setStatus("Loading clean tweet...");
+
+      try {
+        const endpoint = `https://publish.twitter.com/oembed?omit_script=1&dnt=true&url=${encodeURIComponent(tweetUrl)}`;
+        const response = await fetch(endpoint);
+        if (!response.ok) {
+          throw new Error("Could not fetch tweet data.");
+        }
+
+        const data = await response.json();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data.html || "", "text/html");
+        const bodyText = (doc.querySelector("p")?.textContent || "").trim();
+        const handle = extractHandle(data.author_url || "");
+        const handleText = handle ? `@${handle}` : "@unknown";
+        const avatarUrl = handle
+          ? `https://unavatar.io/twitter/${encodeURIComponent(handle)}`
+          : "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
+
+        if (!bodyText) {
+          throw new Error("Tweet text is not available for this URL.");
+        }
+
+        const card = document.createElement("article");
+        card.className = "clean-card";
+
+        const head = document.createElement("div");
+        head.className = "clean-head";
+
+        const avatar = document.createElement("img");
+        avatar.className = "clean-avatar";
+        avatar.src = avatarUrl;
+        avatar.alt = `${handleText} avatar`;
+
+        const handleNode = document.createElement("div");
+        handleNode.className = "clean-handle";
+        handleNode.textContent = handleText;
+
+        head.appendChild(avatar);
+        head.appendChild(handleNode);
+
+        const body = document.createElement("p");
+        body.className = "clean-body";
+        body.textContent = bodyText;
+
+        card.appendChild(head);
+        card.appendChild(body);
+        embedContainer.appendChild(card);
+        setStatus("Clean tweet loaded.");
+      } catch (error) {
+        embedContainer.className = "tweet-placeholder";
+        embedContainer.textContent = "Could not load a clean version from this URL.";
+        setStatus(error.message);
+      } finally {
+        $("loadBtn").disabled = false;
+      }
+    }
+
+    async function reloadCurrentTweet() {
+      if (!loadedTweet) {
+        return;
+      }
+
+      if (loadedTweet.mode === "clean") {
+        await loadCleanTweet(loadedTweet.url);
+      } else {
+        await loadEmbedTweet(loadedTweet.id);
+      }
+    }
+
+    async function onLoadTweet() {
+      const parsed = parseTweetUrl($("tweetUrl").value);
+      if (!parsed) {
+        setStatus("Invalid tweet URL. Use a URL like https://x.com/user/status/...");
+        return;
+      }
+
+      const mode = $("viewMode").value;
+      loadedTweet = { ...parsed, mode };
+
+      if (mode === "clean") {
+        await loadCleanTweet(parsed.url);
+        return;
+      }
+
+      await loadEmbedTweet(parsed.id);
+    }
+
+    function onWidthInput() {
+      setTweetWidth();
+      reloadCurrentTweet();
+    }
+
+    $("loadBtn").addEventListener("click", onLoadTweet);
+    $("tweetUrl").addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        onLoadTweet();
+      }
+    });
+    $("viewMode").addEventListener("change", () => {
+      if (loadedTweet) {
+        loadedTweet.mode = $("viewMode").value;
+        reloadCurrentTweet();
+      }
+    });
+    $("width").addEventListener("input", onWidthInput);
+    setTweetWidth();
+  </script>
+</body>
+
+</html>
