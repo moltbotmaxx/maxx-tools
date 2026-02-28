@@ -1258,12 +1258,12 @@ async function renderNews(forceRefresh = false) {
         : sourcingArticlesCache.filter(item => !doneHeadlines.has(item.headline));
 
     const top6 = activeArticles.slice(0, 6);
-    const next6 = activeArticles.slice(6, 12);
-    const remaining = activeArticles.slice(12);
+    const next14 = activeArticles.slice(6, 20);
+    const remaining = activeArticles.slice(20);
 
     // Render counts
     if (elements.top6Count) elements.top6Count.textContent = `${top6.length} articles`;
-    if (elements.next6Count) elements.next6Count.textContent = `${next6.length} articles`;
+    if (elements.next6Count) elements.next6Count.textContent = `${next14.length} articles`;
     if (elements.poolCountNews) elements.poolCountNews.textContent = `${remaining.length} articles`;
 
     // Clear and render grids
@@ -1274,13 +1274,13 @@ async function renderNews(forceRefresh = false) {
 
     elements.simpleGrid.innerHTML = '';
     const simpleFrag = document.createDocumentFragment();
-    next6.forEach((item, i) => simpleFrag.appendChild(createSimpleCard(item, i + 6)));
+    next14.forEach((item, i) => simpleFrag.appendChild(createMagazineCard(item, i + 6)));
     elements.simpleGrid.appendChild(simpleFrag);
 
     if (elements.poolListNews) {
         elements.poolListNews.innerHTML = '';
         const poolFrag = document.createDocumentFragment();
-        remaining.forEach(item => poolFrag.appendChild(createPoolItem(item)));
+        remaining.forEach(item => poolFrag.appendChild(createCompactTile(item)));
         elements.poolListNews.appendChild(poolFrag);
     }
 
@@ -1546,7 +1546,7 @@ function createFeaturedCard(item, index) {
     return card;
 }
 
-function createSimpleCard(item, index) {
+function createMagazineCard(item, index) {
     const isDone = doneHeadlines.has(item.headline);
     const safeImageUrl = safeHttpUrl(item.image_url, '');
     const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
@@ -1560,33 +1560,40 @@ function createSimpleCard(item, index) {
     card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
     card.dataset.headline = item.headline || '';
 
+    const fallbackEmojis = ['📰', '⚡', '💡', '🌐', '🔬', '📊', '🎯', '🌍', '💬', '🔍', '📡', '🤖', '🧠', '📈'];
+    const emoji = fallbackEmojis[index % fallbackEmojis.length];
+
+    const imageHtml = hasImage
+        ? `<div class="magazine-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
+        : `<div class="magazine-card__image magazine-card__image--fallback">
+             <div class="magazine-card__emoji-bg" aria-hidden="true">${emoji}</div>`;
+
     card.innerHTML = `
-        <div class="simple-card">
-            <a class="simple-card__main" href="${safeLink}" target="_blank" rel="noopener noreferrer">
-                <div class="simple-card__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
-                    ${hasImage ? '' : '📰'}
-                </div>
-                <div class="simple-card__content">
-                    <div class="simple-card__title">${safeHeadline}</div>
-                    <p class="simple-card__reason">${safeReason}</p>
-                    <div class="simple-card__meta">
-                        <span>${safeSource} • ${safeDate}</span>
+        <a class="magazine-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
+            ${imageHtml}
+                <span class="magazine-card__source-badge">${safeSource}</span>
+            </div>
+            <div class="magazine-card__body">
+                <h3 class="magazine-card__title">${safeHeadline}</h3>
+                ${safeReason ? `<p class="magazine-card__reason">${safeReason}</p>` : ''}
+                <div class="magazine-card__footer">
+                    <div class="magazine-card__meta">
+                        <span class="magazine-card__date">${safeDate}</span>
+                    </div>
+                    <div class="magazine-card__actions">
+                        <div class="score-pill ${getScoreClass(ranking)}">
+                            ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
+                            <span>${ranking}</span>
+                            ${getScoreInternalHtml(item)}
+                        </div>
+                        <div class="card-pills-actions">
+                            ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
+                            ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
+                        </div>
                     </div>
                 </div>
-                <span class="simple-card__arrow">→</span>
-            </a>
-            <div class="simple-card__footer">
-                <div class="score-pill ${getScoreClass(ranking)}">
-                    ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
-                    <span>${ranking}</span>
-                    ${getScoreInternalHtml(item)}
-                </div>
-                <div class="card-pills-actions">
-                    ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
-                    ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
-                </div>
             </div>
-        </div>
+        </a>
     `;
 
     const doneBtn = card.querySelector('.done-button');
@@ -1600,8 +1607,10 @@ function createSimpleCard(item, index) {
     return card;
 }
 
-function createPoolItem(item) {
+function createCompactTile(item) {
     const isDone = doneHeadlines.has(item.headline);
+    const safeImageUrl = safeHttpUrl(item.image_url, '');
+    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
     const safeLink = safeHttpUrl(item.link);
     const safeReason = escapeHtml(item.reason || '');
     const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
@@ -1613,16 +1622,21 @@ function createPoolItem(item) {
     card.dataset.headline = item.headline || '';
 
     card.innerHTML = `
-        <div class="pool-item">
-            <a class="pool-item__main" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
-                <div class="pool-item__content">
-                    <div class="pool-item__title">${safeHeadline}</div>
-                    <div class="pool-item__meta">
-                        <span>${safeSource} • ${safeDate}</span>
+        <div class="compact-tile">
+            <a class="compact-tile__link" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
+                <div class="compact-tile__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
+                    ${hasImage ? '' : '📰'}
+                </div>
+                <div class="compact-tile__content">
+                    <div class="compact-tile__title">${safeHeadline}</div>
+                    <div class="compact-tile__meta">
+                        <span class="compact-tile__source">${safeSource}</span>
+                        <span class="compact-tile__sep">·</span>
+                        <span class="compact-tile__date">${safeDate}</span>
                     </div>
                 </div>
             </a>
-            <div class="pool-item__footer">
+            <div class="compact-tile__footer">
                 <div class="score-pill score-pill--small ${getScoreClass(ranking)}">
                     <span>${ranking}</span>
                     ${getScoreInternalHtml(item)}
