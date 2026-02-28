@@ -316,6 +316,8 @@
     const $ = (id) => document.getElementById(id);
     let loadedTweet = null;
     let loadedCleanCardData = null;
+    let latestLoadToken = 0;
+    let widthReloadTimeout = null;
 
     function parseTweetUrl(urlString) {
       try {
@@ -332,6 +334,15 @@
 
     function setStatus(message) {
       $("status").textContent = message;
+    }
+
+    function nextLoadToken() {
+      latestLoadToken += 1;
+      return latestLoadToken;
+    }
+
+    function isStaleToken(token) {
+      return token !== latestLoadToken;
     }
 
     function updateDownloadButtonState() {
@@ -357,8 +368,11 @@
       return width;
     }
 
-    async function loadEmbedTweet(tweetId) {
+    async function loadEmbedTweet(tweetId, loadToken = latestLoadToken) {
       const embedContainer = $("embedContainer");
+      if (isStaleToken(loadToken)) {
+        return;
+      }
       const width = setTweetWidth();
       loadedCleanCardData = null;
       updateDownloadButtonState();
@@ -369,6 +383,9 @@
 
       try {
         const widgets = await waitForWidgets();
+        if (isStaleToken(loadToken)) {
+          return;
+        }
         const tweetNode = await widgets.createTweet(tweetId, embedContainer, {
           theme: "dark",
           width,
@@ -376,12 +393,18 @@
           dnt: true
         });
 
+        if (isStaleToken(loadToken)) {
+          return;
+        }
         if (!tweetNode) {
           throw new Error("Tweet not found or not embeddable.");
         }
 
         setStatus("Tweet loaded.");
       } catch (error) {
+        if (isStaleToken(loadToken)) {
+          return;
+        }
         embedContainer.className = "tweet-placeholder";
         embedContainer.textContent = "Could not load this tweet. Check the URL and ensure the tweet is public.";
         setStatus(error.message);
@@ -510,8 +533,11 @@
       };
     }
 
-    async function loadCleanTweet(parsedUrl) {
+    async function loadCleanTweet(parsedUrl, loadToken = latestLoadToken) {
       const embedContainer = $("embedContainer");
+      if (isStaleToken(loadToken)) {
+        return;
+      }
       setTweetWidth();
       loadedCleanCardData = null;
       updateDownloadButtonState();
@@ -525,6 +551,9 @@
           tweetData = await fetchTweetFromFxApi(parsedUrl);
         } catch {
           tweetData = await fetchTweetFromOembed(parsedUrl);
+        }
+        if (isStaleToken(loadToken)) {
+          return;
         }
         const { bodyText, displayName, handleText, avatarCandidates, verification } = tweetData;
         const defaultAvatar = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
@@ -587,6 +616,12 @@
           } catch {
             // Try the next candidate source.
           }
+          if (isStaleToken(loadToken)) {
+            return;
+          }
+        }
+        if (isStaleToken(loadToken)) {
+          return;
         }
         avatar.src = avatarUrl;
         loadedCleanCardData = {
@@ -600,6 +635,9 @@
         updateDownloadButtonState();
         setStatus("Clean tweet loaded.");
       } catch (error) {
+        if (isStaleToken(loadToken)) {
+          return;
+        }
         embedContainer.className = "tweet-placeholder";
         embedContainer.textContent = "Could not load a clean version from this URL.";
         setStatus(error.message);
@@ -764,11 +802,12 @@
       if (!loadedTweet) {
         return;
       }
+      const loadToken = nextLoadToken();
 
       if (loadedTweet.mode === "clean") {
-        await loadCleanTweet(loadedTweet);
+        await loadCleanTweet(loadedTweet, loadToken);
       } else {
-        await loadEmbedTweet(loadedTweet.id);
+        await loadEmbedTweet(loadedTweet.id, loadToken);
       }
     }
 
@@ -781,18 +820,27 @@
 
       const mode = $("viewMode").value;
       loadedTweet = { ...parsed, mode };
+      const loadToken = nextLoadToken();
 
       if (mode === "clean") {
-        await loadCleanTweet(parsed);
+        await loadCleanTweet(parsed, loadToken);
         return;
       }
 
-      await loadEmbedTweet(parsed.id);
+      await loadEmbedTweet(parsed.id, loadToken);
     }
 
     function onWidthInput() {
       setTweetWidth();
-      reloadCurrentTweet();
+      if (!loadedTweet) {
+        return;
+      }
+      if (widthReloadTimeout) {
+        clearTimeout(widthReloadTimeout);
+      }
+      widthReloadTimeout = setTimeout(() => {
+        reloadCurrentTweet();
+      }, 180);
     }
 
     function onTweetUrlPaste() {
