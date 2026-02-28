@@ -272,18 +272,34 @@
       display: grid;
       gap: 8px;
       width: 100%;
+      grid-template-columns: 1fr;
+    }
+
+    .clean-media-grid--2,
+    .clean-media-grid--3,
+    .clean-media-grid--4 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .clean-media {
-      margin-top: 12px;
+      margin-top: 0;
       width: 100%;
       border-radius: 14px;
       border: 1px solid var(--border);
       display: block;
       object-fit: cover;
-      min-height: 160px;
-      max-height: 320px;
+      aspect-ratio: 1 / 1;
       background: #0f1419;
+    }
+
+    .clean-media-grid--1 .clean-media {
+      aspect-ratio: 16 / 9;
+      max-height: 420px;
+    }
+
+    .clean-media-grid--3 .clean-media:first-child {
+      grid-column: 1 / -1;
+      aspect-ratio: 16 / 9;
     }
 
     @media (max-width: 980px) {
@@ -689,19 +705,17 @@
 
         card.appendChild(head);
         card.appendChild(body);
-        const mediaUrls = Array.from(new Set((mediaCandidates || []).filter(Boolean)));
+        const mediaUrls = Array.from(new Set((mediaCandidates || []).filter(Boolean))).slice(0, 4);
         const mediaCanvasSrcs = [];
         if (mediaUrls.length > 0) {
           const mediaGrid = document.createElement("div");
-          mediaGrid.className = "clean-media-grid";
-          mediaGrid.style.gridTemplateColumns = mediaUrls.length === 1 ? "1fr" : "1fr 1fr";
+          mediaGrid.className = `clean-media-grid clean-media-grid--${mediaUrls.length}`;
 
           for (const candidate of mediaUrls) {
             const mediaImage = document.createElement("img");
             mediaImage.className = "clean-media";
             mediaImage.src = candidate;
             mediaImage.alt = "Tweet media";
-            mediaImage.style.marginTop = "0";
             mediaGrid.appendChild(mediaImage);
 
             try {
@@ -874,23 +888,46 @@
         }
       }
 
-      let mediaHeight = 0;
       const mediaCount = mediaSources.length;
-      let mediaCols = 1;
       const mediaGap = 8;
-      let mediaCellHeight = 0;
+      let mediaHeight = 0;
+      let mediaFrames = [];
       if (mediaCount === 1) {
         const first = mediaImages[0];
         const ratio = first && first.naturalWidth > 0
           ? first.naturalHeight / first.naturalWidth
           : 0.56;
-        mediaCellHeight = Math.max(180, Math.min(420, bodyMaxWidth * ratio));
-        mediaHeight = mediaCellHeight;
-      } else if (mediaCount > 1) {
-        mediaCols = 2;
-        const rows = Math.ceil(mediaCount / mediaCols);
-        mediaCellHeight = 170;
-        mediaHeight = rows * mediaCellHeight + (rows - 1) * mediaGap;
+        const singleHeight = Math.max(180, Math.min(420, bodyMaxWidth * ratio));
+        mediaHeight = singleHeight;
+        mediaFrames = [{ x: 0, y: 0, w: bodyMaxWidth, h: singleHeight }];
+      } else if (mediaCount === 2) {
+        const cellW = (bodyMaxWidth - mediaGap) / 2;
+        const cellH = Math.max(150, Math.min(320, cellW));
+        mediaHeight = cellH;
+        mediaFrames = [
+          { x: 0, y: 0, w: cellW, h: cellH },
+          { x: cellW + mediaGap, y: 0, w: cellW, h: cellH }
+        ];
+      } else if (mediaCount === 3) {
+        const topH = Math.max(170, Math.min(300, bodyMaxWidth * 0.56));
+        const cellW = (bodyMaxWidth - mediaGap) / 2;
+        const bottomH = Math.max(140, Math.min(240, cellW));
+        mediaHeight = topH + mediaGap + bottomH;
+        mediaFrames = [
+          { x: 0, y: 0, w: bodyMaxWidth, h: topH },
+          { x: 0, y: topH + mediaGap, w: cellW, h: bottomH },
+          { x: cellW + mediaGap, y: topH + mediaGap, w: cellW, h: bottomH }
+        ];
+      } else if (mediaCount >= 4) {
+        const cellW = (bodyMaxWidth - mediaGap) / 2;
+        const cellH = Math.max(140, Math.min(230, cellW));
+        mediaHeight = cellH * 2 + mediaGap;
+        mediaFrames = [
+          { x: 0, y: 0, w: cellW, h: cellH },
+          { x: cellW + mediaGap, y: 0, w: cellW, h: cellH },
+          { x: 0, y: cellH + mediaGap, w: cellW, h: cellH },
+          { x: cellW + mediaGap, y: cellH + mediaGap, w: cellW, h: cellH }
+        ];
       }
 
       const height = padding + avatarSize + topGap + bodyHeight + (mediaHeight ? mediaHeight + 12 : 0) + padding;
@@ -975,17 +1012,16 @@
           ctx.restore();
         };
 
-        if (mediaCount === 1) {
-          drawRoundedMedia(mediaImages[0], mediaX, mediaY, mediaW, mediaCellHeight);
-        } else {
-          const cellW = (mediaW - mediaGap) / mediaCols;
-          for (let i = 0; i < mediaCount; i += 1) {
-            const row = Math.floor(i / mediaCols);
-            const col = i % mediaCols;
-            const cellX = mediaX + col * (cellW + mediaGap);
-            const cellY = mediaY + row * (mediaCellHeight + mediaGap);
-            drawRoundedMedia(mediaImages[i], cellX, cellY, cellW, mediaCellHeight);
-          }
+        for (let i = 0; i < mediaFrames.length; i += 1) {
+          const frame = mediaFrames[i];
+          const img = mediaImages[i] || null;
+          drawRoundedMedia(
+            img,
+            mediaX + frame.x,
+            mediaY + frame.y,
+            frame.w,
+            frame.h
+          );
         }
       }
 
