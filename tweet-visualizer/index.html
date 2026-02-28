@@ -551,9 +551,12 @@
         .map((video) => video.thumbnail_url || video.url)
         .filter(Boolean);
       const mediaCandidates = [...photoCandidates, ...videoThumbCandidates];
+      const tweetRawText = (data.tweet.raw_text?.text || "").trim();
+      const tweetText = (data.tweet.text || "").trim();
+      const bodyText = tweetRawText || tweetText;
 
       return {
-        bodyText: (data.tweet.text || data.tweet.raw_text?.text || "").trim(),
+        bodyText,
         displayName: author.name || handle || "Unknown",
         handleText: handle ? `@${handle}` : "@unknown",
         avatarCandidates: [author.avatar_url, ...getAvatarCandidates(handle)].filter(Boolean),
@@ -572,7 +575,11 @@
       const data = await response.json();
       const parser = new DOMParser();
       const doc = parser.parseFromString(data.html || "", "text/html");
-      const bodyText = (doc.querySelector("p")?.textContent || "").trim();
+      const p = doc.querySelector("p");
+      if (p) {
+        p.querySelectorAll("br").forEach((br) => br.replaceWith("\n"));
+      }
+      const bodyText = (p?.textContent || "").trim();
       const handle = extractHandle(data.author_url || "") || parsedUrl.handle || "";
       return {
         bodyText,
@@ -725,22 +732,31 @@
     }
 
     function wrapTextLines(ctx, text, maxWidth) {
-      const words = text.split(/\s+/).filter(Boolean);
+      const paragraphs = (text || "").split(/\r?\n/);
       const lines = [];
-      let line = "";
 
-      for (const word of words) {
-        const candidate = line ? `${line} ${word}` : word;
-        if (ctx.measureText(candidate).width <= maxWidth || !line) {
-          line = candidate;
-        } else {
-          lines.push(line);
-          line = word;
+      for (const paragraph of paragraphs) {
+        if (paragraph.length === 0) {
+          lines.push("");
+          continue;
         }
-      }
 
-      if (line) {
-        lines.push(line);
+        const words = paragraph.split(/\s+/).filter(Boolean);
+        let line = "";
+
+        for (const word of words) {
+          const candidate = line ? `${line} ${word}` : word;
+          if (ctx.measureText(candidate).width <= maxWidth || !line) {
+            line = candidate;
+          } else {
+            lines.push(line);
+            line = word;
+          }
+        }
+
+        if (line) {
+          lines.push(line);
+        }
       }
 
       return lines.length ? lines : [""];
