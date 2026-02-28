@@ -8,6 +8,7 @@ Monorepo for Maxx small tools/apps.
 - `insta-claws` (no frontend)
 - `mission-control`
 - `smart-frame`
+- `tweet-visualizer`
 
 ## Conventions
 - Folder names: kebab-case
