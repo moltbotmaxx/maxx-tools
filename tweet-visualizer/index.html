@@ -135,6 +135,20 @@
       font: inherit;
     }
 
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .toggle-row input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--blue);
+    }
+
     .preview-shell {
       display: flex;
       justify-content: center;
@@ -299,6 +313,14 @@
       </div>
 
       <div class="field">
+        <label>Reply text</label>
+        <label class="toggle-row" for="stripReplyMentions">
+          <input id="stripReplyMentions" type="checkbox" />
+          Hide leading @mentions in thread replies
+        </label>
+      </div>
+
+      <div class="field">
         <label for="width">Tweet Width</label>
         <div class="range-wrap">
           <input id="width" type="range" min="520" max="1120" value="760" />
@@ -345,6 +367,14 @@
 
     function setStatus(message) {
       $("status").textContent = message;
+    }
+
+    function stripLeadingReplyMentions(text) {
+      if (!text) {
+        return "";
+      }
+      const stripped = text.replace(/^(?:\s*@[\w_]{1,15}[,\s]*)+/i, "").trimStart();
+      return stripped || text;
     }
 
     function nextLoadToken() {
@@ -577,10 +607,13 @@
           return;
         }
         const { bodyText, displayName, handleText, avatarCandidates, mediaCandidates, verification } = tweetData;
+        const finalBodyText = $("stripReplyMentions").checked
+          ? stripLeadingReplyMentions(bodyText)
+          : bodyText;
         const defaultAvatar = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
         let avatarUrl = avatarCandidates[0] || defaultAvatar;
 
-        if (!bodyText) {
+        if (!finalBodyText) {
           throw new Error("Tweet text is not available for this URL.");
         }
 
@@ -623,7 +656,7 @@
 
         const body = document.createElement("p");
         body.className = "clean-body";
-        body.textContent = bodyText;
+        body.textContent = finalBodyText;
 
         card.appendChild(head);
         card.appendChild(body);
@@ -673,7 +706,7 @@
           displayName,
           handleText,
           verification,
-          bodyText,
+          bodyText: finalBodyText,
           avatarUrl,
           avatarCanvasSrc,
           mediaUrl,
@@ -959,6 +992,11 @@
       }
     });
     $("tweetUrl").addEventListener("paste", onTweetUrlPaste);
+    $("stripReplyMentions").addEventListener("change", () => {
+      if (loadedTweet && $("viewMode").value === "clean") {
+        reloadCurrentTweet();
+      }
+    });
     $("viewMode").addEventListener("change", () => {
       updateDownloadButtonState();
       if (loadedTweet) {
