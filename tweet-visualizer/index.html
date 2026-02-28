@@ -187,11 +187,26 @@
     }
 
     .clean-card {
-      background: #000;
-      border: 1px solid var(--border);
+      --card-bg: #000000;
+      --card-border: #2f3336;
+      --card-text: #e7e9ea;
+      --card-muted: #71767b;
+      --card-media-bg: #0f1419;
+      --card-avatar-bg: #2f3336;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
       border-radius: 16px;
       padding: 14px;
-      color: var(--text);
+      color: var(--card-text);
+    }
+
+    .clean-card--light {
+      --card-bg: #ffffff;
+      --card-border: #d7dce1;
+      --card-text: #11181f;
+      --card-muted: #536471;
+      --card-media-bg: #eef3f7;
+      --card-avatar-bg: #d7dce1;
     }
 
     .clean-head {
@@ -206,8 +221,8 @@
       height: 44px;
       border-radius: 999px;
       object-fit: cover;
-      background: #2f3336;
-      border: 1px solid #3a3d40;
+      background: var(--card-avatar-bg);
+      border: 1px solid var(--card-border);
     }
 
     .clean-meta {
@@ -229,7 +244,7 @@
     }
 
     .clean-handle {
-      color: var(--muted);
+      color: var(--card-muted);
       font-size: 0.95rem;
     }
 
@@ -267,6 +282,29 @@
       word-break: break-word;
     }
 
+    .clean-time {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--card-muted);
+    }
+
+    .clean-stats {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: var(--card-muted);
+      font-size: 0.9rem;
+    }
+
+    .clean-stats b {
+      color: var(--card-text);
+      font-weight: 700;
+      margin-right: 4px;
+    }
+
     .clean-media-grid {
       margin-top: 12px;
       display: grid;
@@ -285,11 +323,11 @@
       margin-top: 0;
       width: 100%;
       border-radius: 14px;
-      border: 1px solid var(--border);
+      border: 1px solid var(--card-border);
       display: block;
       object-fit: cover;
       aspect-ratio: 1 / 1;
-      background: #0f1419;
+      background: var(--card-media-bg);
     }
 
     .clean-media-grid--1 .clean-media {
@@ -332,7 +370,15 @@
         <label for="viewMode">View Mode</label>
         <select id="viewMode" class="mode-select">
           <option value="clean" selected>Clean (avatar + handle + body)</option>
-          <option value="embed">Real embed</option>
+          <option value="detailed">Detailed (time + metrics)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="themeMode">Theme</label>
+        <select id="themeMode" class="mode-select">
+          <option value="dark" selected>Dark</option>
+          <option value="light">White</option>
         </select>
       </div>
 
@@ -361,14 +407,13 @@
       <div class="preview-shell">
         <article class="tweet" id="tweet">
           <div id="embedContainer" class="tweet-placeholder">
-            Paste a tweet URL to render a clean tweet here.
+            Paste a tweet URL to render a custom tweet card here.
           </div>
         </article>
       </div>
     </section>
   </main>
 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script>
     const $ = (id) => document.getElementById(id);
     let loadedTweet = null;
@@ -424,19 +469,8 @@
     }
 
     function updateDownloadButtonState() {
-      const canDownload = $("viewMode").value === "clean" && Boolean(loadedCleanCardData);
+      const canDownload = Boolean(loadedCleanCardData);
       $("downloadBtn").disabled = !canDownload;
-    }
-
-    async function waitForWidgets(maxWaitMs = 10000) {
-      const started = Date.now();
-      while (Date.now() - started < maxWaitMs) {
-        if (window.twttr && window.twttr.widgets && window.twttr.widgets.createTweet) {
-          return window.twttr.widgets;
-        }
-        await new Promise((resolve) => setTimeout(resolve, 100));
-      }
-      throw new Error("Twitter widgets script did not load.");
     }
 
     function setTweetWidth() {
@@ -446,48 +480,6 @@
       return width;
     }
 
-    async function loadEmbedTweet(tweetId, loadToken = latestLoadToken) {
-      const embedContainer = $("embedContainer");
-      if (isStaleToken(loadToken)) {
-        return;
-      }
-      const width = setTweetWidth();
-      loadedCleanCardData = null;
-      updateDownloadButtonState();
-
-      embedContainer.className = "";
-      embedContainer.innerHTML = "";
-      setStatus("Loading tweet embed...");
-
-      try {
-        const widgets = await waitForWidgets();
-        if (isStaleToken(loadToken)) {
-          return;
-        }
-        const tweetNode = await widgets.createTweet(tweetId, embedContainer, {
-          theme: "dark",
-          width,
-          align: "center",
-          dnt: true
-        });
-
-        if (isStaleToken(loadToken)) {
-          return;
-        }
-        if (!tweetNode) {
-          throw new Error("Tweet not found or not embeddable.");
-        }
-
-        setStatus("Tweet loaded.");
-      } catch (error) {
-        if (isStaleToken(loadToken)) {
-          return;
-        }
-        embedContainer.className = "tweet-placeholder";
-        embedContainer.textContent = "Could not load this tweet. Check the URL and ensure the tweet is public.";
-        setStatus(error.message);
-      }
-    }
 
     function extractHandle(authorUrl) {
       try {
@@ -554,6 +546,44 @@
       return x + 24;
     }
 
+    function getThemePalette(themeMode) {
+      if (themeMode === "light") {
+        return {
+          bg: "#ffffff",
+          border: "#d7dce1",
+          text: "#11181f",
+          muted: "#536471",
+          mediaBg: "#eef3f7",
+          avatarBg: "#d7dce1"
+        };
+      }
+      return {
+        bg: "#000000",
+        border: "#2f3336",
+        text: "#e7e9ea",
+        muted: "#71767b",
+        mediaBg: "#0f1419",
+        avatarBg: "#2f3336"
+      };
+    }
+
+    function formatMetric(value) {
+      if (value === null || value === undefined) {
+        return "-";
+      }
+      const n = Number(value);
+      if (!Number.isFinite(n)) {
+        return String(value);
+      }
+      if (n >= 1000000) {
+        return `${(n / 1000000).toFixed(1)}M`;
+      }
+      if (n >= 1000) {
+        return `${(n / 1000).toFixed(1)}K`;
+      }
+      return String(n);
+    }
+
     async function fetchTweetFromFxApi(parsedUrl) {
       const response = await fetch(`https://api.fxtwitter.com/status/${parsedUrl.id}`);
       if (!response.ok) {
@@ -598,7 +628,14 @@
         handleText: handle ? `@${handle}` : "@unknown",
         avatarCandidates: [author.avatar_url, ...getAvatarCandidates(handle)].filter(Boolean),
         mediaCandidates,
-        verification
+        verification,
+        timestampLabel: data.tweet.created_at || "",
+        metrics: {
+          replies: data.tweet.replies,
+          reposts: data.tweet.reposts ?? data.tweet.retweets,
+          likes: data.tweet.likes,
+          views: data.tweet.views
+        }
       };
     }
 
@@ -624,7 +661,9 @@
         handleText: handle ? `@${handle}` : "@unknown",
         avatarCandidates: getAvatarCandidates(handle),
         mediaCandidates: [],
-        verification: { verified: false, type: null }
+        verification: { verified: false, type: null },
+        timestampLabel: "",
+        metrics: { replies: null, reposts: null, likes: null, views: null }
       };
     }
 
@@ -650,7 +689,18 @@
         if (isStaleToken(loadToken)) {
           return;
         }
-        const { bodyText, displayName, handleText, avatarCandidates, mediaCandidates, verification } = tweetData;
+        const {
+          bodyText,
+          displayName,
+          handleText,
+          avatarCandidates,
+          mediaCandidates,
+          verification,
+          timestampLabel,
+          metrics
+        } = tweetData;
+        const viewMode = $("viewMode").value;
+        const themeMode = $("themeMode").value;
         const bodyAfterReplyStrip = $("stripReplyMentions").checked
           ? stripLeadingReplyMentions(bodyText)
           : bodyText;
@@ -663,7 +713,7 @@
         }
 
         const card = document.createElement("article");
-        card.className = "clean-card";
+        card.className = `clean-card ${themeMode === "light" ? "clean-card--light" : ""}`.trim();
 
         const head = document.createElement("div");
         head.className = "clean-head";
@@ -705,6 +755,12 @@
 
         card.appendChild(head);
         card.appendChild(body);
+        if (viewMode === "detailed") {
+          const timeNode = document.createElement("div");
+          timeNode.className = "clean-time";
+          timeNode.textContent = timestampLabel || "Date unavailable";
+          card.appendChild(timeNode);
+        }
         const mediaUrls = Array.from(new Set((mediaCandidates || []).filter(Boolean))).slice(0, 4);
         const mediaCanvasSrcs = [];
         if (mediaUrls.length > 0) {
@@ -728,6 +784,17 @@
 
           card.appendChild(mediaGrid);
         }
+        if (viewMode === "detailed") {
+          const stats = document.createElement("div");
+          stats.className = "clean-stats";
+          stats.innerHTML = `
+            <span><b>${formatMetric(metrics?.replies)}</b>Replies</span>
+            <span><b>${formatMetric(metrics?.reposts)}</b>Reposts</span>
+            <span><b>${formatMetric(metrics?.likes)}</b>Likes</span>
+            <span><b>${formatMetric(metrics?.views)}</b>Views</span>
+          `;
+          card.appendChild(stats);
+        }
         embedContainer.appendChild(card);
         let avatarCanvasSrc = "";
         for (const candidate of avatarCandidates) {
@@ -750,6 +817,10 @@
           displayName,
           handleText,
           verification,
+          mode: viewMode,
+          themeMode,
+          timestampLabel: timestampLabel || "",
+          metrics: metrics || { replies: null, reposts: null, likes: null, views: null },
           bodyText: finalBodyText,
           avatarUrl,
           avatarCanvasSrc,
@@ -825,11 +896,6 @@
     }
 
     async function downloadCleanPng() {
-      if ($("viewMode").value !== "clean") {
-        setStatus("PNG export is available in Clean mode only.");
-        return;
-      }
-
       if (!loadedCleanCardData) {
         setStatus("Load a clean tweet first, then download PNG.");
         return;
@@ -864,6 +930,10 @@
       const avatarSize = 44;
       const topGap = 12;
       const lineHeight = 30;
+      const palette = getThemePalette(loadedCleanCardData.themeMode || "dark");
+      const isDetailed = loadedCleanCardData.mode === "detailed";
+      const detailLineHeight = 24;
+      const detailGap = 10;
 
       const measureCanvas = document.createElement("canvas");
       const measureCtx = measureCanvas.getContext("2d");
@@ -875,6 +945,9 @@
       const bodyMaxWidth = width - padding * 2;
       const bodyLines = wrapTextLines(measureCtx, loadedCleanCardData.bodyText, bodyMaxWidth);
       const bodyHeight = Math.max(lineHeight, bodyLines.length * lineHeight);
+      const timeHeight = isDetailed ? detailLineHeight : 0;
+      const statsHeight = isDetailed ? detailLineHeight : 0;
+      const detailHeight = isDetailed ? timeHeight + statsHeight + detailGap : 0;
       const rawMediaSources = (loadedCleanCardData.mediaUrls || [])
         .map((url, i) => loadedCleanCardData.mediaCanvasSrcs?.[i] || url)
         .filter(Boolean);
@@ -930,7 +1003,7 @@
         ];
       }
 
-      const height = padding + avatarSize + topGap + bodyHeight + (mediaHeight ? mediaHeight + 12 : 0) + padding;
+      const height = padding + avatarSize + topGap + bodyHeight + detailHeight + (mediaHeight ? mediaHeight + 12 : 0) + padding;
 
       const canvas = document.createElement("canvas");
       canvas.width = Math.round(width * scale);
@@ -942,7 +1015,7 @@
       }
       ctx.scale(scale, scale);
 
-      ctx.fillStyle = "#000000";
+      ctx.fillStyle = palette.bg;
       ctx.fillRect(0, 0, width, height);
 
       try {
@@ -957,13 +1030,13 @@
         ctx.drawImage(avatar, padding, padding, avatarSize, avatarSize);
         ctx.restore();
       } catch {
-        ctx.fillStyle = "#2f3336";
+        ctx.fillStyle = palette.avatarBg;
         ctx.beginPath();
         ctx.arc(padding + avatarSize / 2, padding + avatarSize / 2, avatarSize / 2, 0, Math.PI * 2);
         ctx.fill();
       }
 
-      ctx.fillStyle = "#e7e9ea";
+      ctx.fillStyle = palette.text;
       ctx.font = "700 24px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
       const nameX = padding + avatarSize + 12;
       const nameY = padding + 24;
@@ -972,16 +1045,33 @@
       const nameWidth = ctx.measureText(loadedCleanCardData.displayName || loadedCleanCardData.handleText).width;
       const badgeX = drawVerificationBadge(ctx, nameX + nameWidth + 8, padding + 8, loadedCleanCardData.verification);
 
-      ctx.fillStyle = "#71767b";
+      ctx.fillStyle = palette.muted;
       ctx.font = "400 21px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
       ctx.fillText(loadedCleanCardData.handleText, badgeX + 6, padding + 25);
 
       ctx.font = "400 24px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
-      ctx.fillStyle = "#e7e9ea";
+      ctx.fillStyle = palette.text;
       let y = padding + avatarSize + topGap + 24;
       for (const line of bodyLines) {
         ctx.fillText(line, padding, y);
         y += lineHeight;
+      }
+
+      if (isDetailed) {
+        ctx.fillStyle = palette.muted;
+        ctx.font = "400 19px Segoe UI, Roboto, Helvetica, Arial, sans-serif";
+        ctx.fillText(loadedCleanCardData.timestampLabel || "Date unavailable", padding, y + 4);
+        y += timeHeight;
+
+        ctx.fillText(
+          `${formatMetric(loadedCleanCardData.metrics?.replies)} Replies   ` +
+          `${formatMetric(loadedCleanCardData.metrics?.reposts)} Reposts   ` +
+          `${formatMetric(loadedCleanCardData.metrics?.likes)} Likes   ` +
+          `${formatMetric(loadedCleanCardData.metrics?.views)} Views`,
+          padding,
+          y + 2
+        );
+        y += statsHeight + detailGap;
       }
 
       if (mediaHeight > 0) {
@@ -1006,7 +1096,7 @@
           if (img) {
             ctx.drawImage(img, x, yy, w, h);
           } else {
-            ctx.fillStyle = "#1f2937";
+            ctx.fillStyle = palette.mediaBg;
             ctx.fillRect(x, yy, w, h);
           }
           ctx.restore();
@@ -1044,12 +1134,7 @@
         return;
       }
       const loadToken = nextLoadToken();
-
-      if (loadedTweet.mode === "clean") {
-        await loadCleanTweet(loadedTweet, loadToken);
-      } else {
-        await loadEmbedTweet(loadedTweet.id, loadToken);
-      }
+      await loadCleanTweet(loadedTweet, loadToken);
     }
 
     async function onLoadTweet() {
@@ -1059,16 +1144,9 @@
         return;
       }
 
-      const mode = $("viewMode").value;
-      loadedTweet = { ...parsed, mode };
+      loadedTweet = { ...parsed, mode: $("viewMode").value };
       const loadToken = nextLoadToken();
-
-      if (mode === "clean") {
-        await loadCleanTweet(parsed, loadToken);
-        return;
-      }
-
-      await loadEmbedTweet(parsed.id, loadToken);
+      await loadCleanTweet(parsed, loadToken);
     }
 
     function onWidthInput() {
@@ -1103,7 +1181,12 @@
     });
     $("tweetUrl").addEventListener("paste", onTweetUrlPaste);
     $("stripReplyMentions").addEventListener("change", () => {
-      if (loadedTweet && $("viewMode").value === "clean") {
+      if (loadedTweet) {
+        reloadCurrentTweet();
+      }
+    });
+    $("themeMode").addEventListener("change", () => {
+      if (loadedTweet) {
         reloadCurrentTweet();
       }
     });
