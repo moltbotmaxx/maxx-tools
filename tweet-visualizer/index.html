@@ -387,7 +387,13 @@
         card.appendChild(head);
         card.appendChild(body);
         embedContainer.appendChild(card);
-        loadedCleanCardData = { handleText, bodyText, avatarUrl };
+        let avatarCanvasSrc = avatarUrl;
+        try {
+          avatarCanvasSrc = await fetchImageAsDataUrl(avatarUrl);
+        } catch {
+          // Keep the original URL as fallback if conversion fails.
+        }
+        loadedCleanCardData = { handleText, bodyText, avatarUrl, avatarCanvasSrc };
         setStatus("Clean tweet loaded.");
       } catch (error) {
         embedContainer.className = "tweet-placeholder";
@@ -428,6 +434,20 @@
         img.onload = () => resolve(img);
         img.onerror = reject;
         img.src = url;
+      });
+    }
+
+    async function fetchImageAsDataUrl(url) {
+      const response = await fetch(url, { mode: "cors" });
+      if (!response.ok) {
+        throw new Error("Could not fetch avatar image.");
+      }
+      const blob = await response.blob();
+      return await new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
       });
     }
 
@@ -478,7 +498,9 @@
       ctx.strokeRect(0.5, 0.5, width - 1, height - 1);
 
       try {
-        const avatar = await loadAvatarImage(loadedCleanCardData.avatarUrl);
+        const avatar = await loadAvatarImage(
+          loadedCleanCardData.avatarCanvasSrc || loadedCleanCardData.avatarUrl
+        );
         ctx.save();
         ctx.beginPath();
         ctx.arc(padding + avatarSize / 2, padding + avatarSize / 2, avatarSize / 2, 0, Math.PI * 2);
@@ -505,7 +527,14 @@
       }
 
       const link = document.createElement("a");
-      link.href = canvas.toDataURL("image/png");
+      let pngUrl = "";
+      try {
+        pngUrl = canvas.toDataURL("image/png");
+      } catch {
+        setStatus("PNG export failed due browser image security restrictions.");
+        return;
+      }
+      link.href = pngUrl;
       link.download = `tweet-clean-${Date.now()}.png`;
       link.click();
       setStatus("PNG downloaded.");
