@@ -354,6 +354,18 @@
       }
     }
 
+    function getAvatarCandidates(handle) {
+      if (!handle) {
+        return ["https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"];
+      }
+      const normalized = encodeURIComponent(handle.replace(/^@/, ""));
+      return [
+        `https://unavatar.io/x/${normalized}`,
+        `https://unavatar.io/twitter/${normalized}`,
+        "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      ];
+    }
+
     async function loadCleanTweet(tweetUrl) {
       const embedContainer = $("embedContainer");
       setTweetWidth();
@@ -376,9 +388,8 @@
         const bodyText = (doc.querySelector("p")?.textContent || "").trim();
         const handle = extractHandle(data.author_url || "");
         const handleText = handle ? `@${handle}` : "@unknown";
-        const avatarUrl = handle
-          ? `https://unavatar.io/twitter/${encodeURIComponent(handle)}`
-          : "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
+        const avatarCandidates = getAvatarCandidates(handle);
+        let avatarUrl = avatarCandidates[0];
 
         if (!bodyText) {
           throw new Error("Tweet text is not available for this URL.");
@@ -409,12 +420,17 @@
         card.appendChild(head);
         card.appendChild(body);
         embedContainer.appendChild(card);
-        let avatarCanvasSrc = avatarUrl;
-        try {
-          avatarCanvasSrc = await fetchImageAsDataUrl(avatarUrl);
-        } catch {
-          // Keep the original URL as fallback if conversion fails.
+        let avatarCanvasSrc = "";
+        for (const candidate of avatarCandidates) {
+          try {
+            avatarCanvasSrc = await fetchImageAsDataUrl(candidate);
+            avatarUrl = candidate;
+            break;
+          } catch {
+            // Try the next candidate source.
+          }
         }
+        avatar.src = avatarUrl;
         loadedCleanCardData = { handleText, bodyText, avatarUrl, avatarCanvasSrc };
         updateDownloadButtonState();
         setStatus("Clean tweet loaded.");
@@ -481,6 +497,14 @@
       if (!loadedCleanCardData) {
         setStatus("Load a clean tweet first, then download PNG.");
         return;
+      }
+
+      if (!loadedCleanCardData.avatarCanvasSrc) {
+        try {
+          loadedCleanCardData.avatarCanvasSrc = await fetchImageAsDataUrl(loadedCleanCardData.avatarUrl);
+        } catch {
+          // Keep going; avatar draw will fall back to a placeholder circle.
+        }
       }
 
       const width = setTweetWidth();
