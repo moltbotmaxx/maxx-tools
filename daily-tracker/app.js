@@ -1271,24 +1271,24 @@ async function renderNews(forceRefresh = false) {
         ? sourcingArticlesCache
         : sourcingArticlesCache.filter(item => !doneHeadlines.has(item.headline));
 
-    const top6 = activeArticles.slice(0, 6);
-    const next14 = activeArticles.slice(6, 20);
-    const remaining = activeArticles.slice(20);
+    const featuredArticles = activeArticles.slice(0, 12);
+    const moreStories = activeArticles.slice(12, 36);
+    const remaining = activeArticles.slice(36);
 
     // Render counts
-    if (elements.top6Count) elements.top6Count.textContent = `${top6.length} articles`;
-    if (elements.next6Count) elements.next6Count.textContent = `${next14.length} articles`;
+    if (elements.top6Count) elements.top6Count.textContent = `${featuredArticles.length} articles`;
+    if (elements.next6Count) elements.next6Count.textContent = `${moreStories.length} articles`;
     if (elements.poolCountNews) elements.poolCountNews.textContent = `${remaining.length} articles`;
 
     // Clear and render grids
     elements.featuredGrid.innerHTML = '';
     const featuredFrag = document.createDocumentFragment();
-    top6.forEach((item, i) => featuredFrag.appendChild(createFeaturedCard(item, i)));
+    featuredArticles.forEach((item, i) => featuredFrag.appendChild(createFeaturedCard(item, i)));
     elements.featuredGrid.appendChild(featuredFrag);
 
     elements.simpleGrid.innerHTML = '';
     const simpleFrag = document.createDocumentFragment();
-    next14.forEach((item, i) => simpleFrag.appendChild(createMagazineCard(item, i + 6)));
+    moreStories.forEach((item, i) => simpleFrag.appendChild(createMagazineCard(item, i + 12)));
     elements.simpleGrid.appendChild(simpleFrag);
 
     if (elements.poolListNews) {

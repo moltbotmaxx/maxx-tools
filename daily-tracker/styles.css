@@ -3788,18 +3788,18 @@ canvas {
 }
 
 #sourcing-view .featured-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   margin-bottom: 0;
 }
 
 #sourcing-view .simple-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
 }
 
 #sourcing-view .pool-list {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -3901,7 +3901,7 @@ canvas {
   }
 
   #sourcing-view .featured-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   #sourcing-view .simple-grid {
@@ -3909,17 +3909,21 @@ canvas {
   }
 
   #sourcing-view .pool-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 960px) {
+  #sourcing-view .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   #sourcing-view .simple-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   #sourcing-view .pool-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
