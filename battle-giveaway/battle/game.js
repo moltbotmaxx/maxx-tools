@@ -493,10 +493,10 @@ class BattleScene extends Phaser.Scene {
         const player = this.playersList[spawnedCount];
         const actor = this.createActor(player, positions[spawnedCount], this.playerRadius);
         
-        actor.sprite.setScale(0);
+        actor.sprite.setScale(0.01);
         this.tweens.add({
           targets: actor.sprite,
-          scale: { from: 0, to: 1 },
+          scale: { from: 0.01, to: 1 },
           duration: 300,
           ease: "Back.out",
         });
