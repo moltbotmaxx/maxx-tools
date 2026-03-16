@@ -1,7 +1,9 @@
 const fs = require("fs/promises");
 const path = require("path");
 
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-extra");
+const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+puppeteer.use(StealthPlugin());
 
 function parseArg(argv, name, fallback = null) {
   const prefix = `--${name}=`;

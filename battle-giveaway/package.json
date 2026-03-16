@@ -16,6 +16,8 @@
     "dotenv": "^16.4.7",
     "ffmpeg-static": "^5.2.0",
     "phaser": "^3.90.0",
-    "puppeteer": "^24.7.1"
+    "puppeteer": "^24.7.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
