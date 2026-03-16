@@ -511,6 +511,7 @@ class BattleScene extends Phaser.Scene {
           this.registerCollisionHandler();
           this.startArenaEvents();
           void this.audio.unlock();
+          this.matter.world.pause();
 
           this.isReady = false;
           let count = 3;
@@ -538,7 +539,7 @@ class BattleScene extends Phaser.Scene {
 
           this.time.addEvent({
             delay: 1000,
-            repeat: 3,
+            repeat: 2,
             callback: () => {
               count -= 1;
               if (count > 0) {
@@ -562,16 +563,19 @@ class BattleScene extends Phaser.Scene {
                   ease: "Elastic.out",
                 });
                 this.flashArena();
-              } else {
-                countText.destroy();
-                overlay.destroy();
-                this.isReady = true;
-                this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
-                markBattleReady();
+                
+                this.time.delayedCall(500, () => {
+                  countText.destroy();
+                  overlay.destroy();
+                  this.matter.world.resume();
+                  this.isReady = true;
+                  this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
+                  markBattleReady();
 
-                if (this.actors.length === 1) {
-                  this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
-                }
+                  if (this.actors.length === 1) {
+                    this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
+                  }
+                });
               }
             },
           });
