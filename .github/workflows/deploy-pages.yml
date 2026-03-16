@@ -1,0 +1,71 @@
+name: deploy-pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-pages.yml"
+      - "CNAME"
+      - "index.html"
+      - "theme.css"
+      - "daily-tracker/**"
+      - "fx-tracker/**"
+      - "sentient-accounts/dashboard/**"
+      - "sentient-accounts/data/**"
+      - "tweet-visualizer/**"
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static artifact
+        run: |
+          set -euxo pipefail
+
+          rm -rf .site
+          mkdir -p .site
+
+          cp index.html theme.css CNAME .site/
+          touch .site/.nojekyll
+
+          mkdir -p .site/daily-tracker
+          mkdir -p .site/fx-tracker
+          mkdir -p .site/sentient-accounts/dashboard
+          mkdir -p .site/sentient-accounts/data
+          mkdir -p .site/tweet-visualizer
+
+          rsync -a daily-tracker/ .site/daily-tracker/
+          rsync -a fx-tracker/ .site/fx-tracker/
+          rsync -a tweet-visualizer/ .site/tweet-visualizer/
+          rsync -a sentient-accounts/dashboard/ .site/sentient-accounts/dashboard/
+          rsync -a sentient-accounts/data/ .site/sentient-accounts/data/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
