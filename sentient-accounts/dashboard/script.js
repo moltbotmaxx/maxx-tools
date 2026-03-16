@@ -142,6 +142,36 @@ function daysAgo(dateStr, refDate) {
   return Math.floor((refDate - d) / (1000 * 60 * 60 * 24));
 }
 
+function normalizeAccounts(rawAccounts) {
+  if (!Array.isArray(rawAccounts)) {
+    return [];
+  }
+
+  return rawAccounts
+    .filter((account) => account && typeof account === "object" && typeof account.account === "string")
+    .sort((left, right) => (Number(right.followers) || 0) - (Number(left.followers) || 0));
+}
+
+function normalizeDashboardData(rawData) {
+  const accounts = normalizeAccounts(rawData?.accounts);
+  const totalFollowers = accounts.reduce((sum, account) => sum + (Number(account.followers) || 0), 0);
+  const totalPosts = accounts.reduce((sum, account) => sum + (Number(account.posts) || 0), 0);
+  const totalAvgLikes = accounts.reduce((sum, account) => sum + (Number(account.avg_likes) || 0), 0);
+  const totalAvgComments = accounts.reduce((sum, account) => sum + (Number(account.avg_comments) || 0), 0);
+  const avgEngagementRate = totalFollowers
+    ? (((totalAvgLikes + totalAvgComments) / totalFollowers) * 100)
+    : 0;
+
+  return {
+    ...rawData,
+    accounts,
+    avg_engagement_rate: avgEngagementRate,
+    total_accounts: accounts.length,
+    total_followers: totalFollowers,
+    total_posts: totalPosts,
+  };
+}
+
 /* ── Overview stats ──────────────────────────────────────────── */
 
 function renderOverview(data) {
@@ -514,13 +544,14 @@ function revealPanels() {
 
 async function loadDashboard() {
   try {
-    const data = await fetchJson("global.json");
+    const rawData = await fetchJson("global.json");
+    const data = normalizeDashboardData(rawData);
     state.data = data;
 
     renderOverview(data);
-    renderPortfolioCharts(data.accounts || []);
+    renderPortfolioCharts(data.accounts);
 
-    if (data.accounts?.length) {
+    if (data.accounts.length) {
       state.selectedAccount = data.accounts[0];
       renderAccountList(data.accounts);
       await renderAccountDetail(state.selectedAccount);
