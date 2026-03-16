@@ -1,0 +1,17 @@
+{
+  "name": "battle-giveaway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Instagram giveaway battle royale generator",
+  "scripts": {
+    "serve": "node serve.js",
+    "record": "node record.js",
+    "battle": "node serve.js --open"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ffmpeg-static": "^5.2.0",
+    "phaser": "^3.90.0",
+    "puppeteer": "^24.7.1"
+  }
+}

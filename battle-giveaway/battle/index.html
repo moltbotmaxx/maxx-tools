@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giveaway Battle Royale</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        overflow: hidden;
+        background: #000;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      #viewer {
+        position: fixed;
+        inset: 0;
+        background: #000;
+      }
+
+      #viewport {
+        position: absolute;
+        overflow: hidden;
+        background: #000;
+      }
+
+      #stage {
+        position: absolute;
+        inset: 0;
+      }
+    </style>
+    <script src="../node_modules/phaser/dist/phaser.js"></script>
+    <script>
+      if (!window.Phaser) {
+        document.write('<script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.js"><\/script>');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="viewer">
+      <div id="viewport">
+        <div id="stage"></div>
+      </div>
+    </div>
+    <script type="module" src="./game.js"></script>
+  </body>
+</html>

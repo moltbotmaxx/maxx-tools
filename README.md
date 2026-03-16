@@ -21,6 +21,13 @@ A monorepo of internal mini-apps and productivity tools.
 - High-fidelity preview of tweets in **Dark Mode**.
 - Configurable width for perfect integration into design mockups and presentations.
 
+### [Battle Giveaway](./battle-giveaway/)
+**Instagram Giveaway Battle Royale**
+- Extracts commenters from an Instagram post.
+- Downloads profile pictures and generates an animated battle royale.
+- Requires `IG_USERNAME` and `IG_PASSWORD` in a `.env` file (see [`battle-giveaway/.env.example`](./battle-giveaway/.env.example)).
+- Run with `cd battle-giveaway && npm install && node serve.js`.
+
 ---
 
 ## 🚀 Getting Started

@@ -1,0 +1,7 @@
+temp/
+output/
+avatars/*.jpg
+avatars/*.jpeg
+avatars/*.png
+participants/players.txt
+battle/players.json
