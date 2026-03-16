@@ -1,27 +1,57 @@
 {
-  "generated_at": "2026-03-15T07:08:06+00:00",
-  "date": "2026-03-15",
+  "generated_at": "2026-03-16T06:57:05+00:00",
+  "date": "2026-03-16",
   "account": "em3rging",
   "profile_url": "https://www.instagram.com/em3rging/",
   "full_name": "Emerging Technological Advancements",
   "biography": "\ud83d\udc49 Tech enthusiasts \n\ud83d\udd25 Where technology meets well-being and planetary sustainability\ud83c\udf31\n\ud83d\udc8c contact@sentientagency.io",
   "external_url": "https://sentientagency.io/",
   "is_verified": false,
-  "followers": 218232,
+  "followers": 218250,
   "following": 49,
-  "posts": 1682,
+  "posts": 1685,
   "recent_post_count": 12,
-  "video_post_count": 3,
-  "avg_likes": 355.58,
-  "avg_comments": 14.67,
+  "video_post_count": 5,
+  "avg_likes": 953.5,
+  "avg_comments": 21.25,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
-  "engagement_rate": 0.1697,
+  "engagement_rate": 0.4466,
   "recent_posts": [
+    {
+      "shortcode": "DV7JNM1gF1H",
+      "date": "2026-03-15",
+      "likes": 94,
+      "comments": 0,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "This scene would cost a studio $5M. Someone with AI did it in minutes.\n\n@Higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
+      "url": "https://www.instagram.com/p/DV7JNM1gF1H/"
+    },
+    {
+      "shortcode": "DV64OdAEcXM",
+      "date": "2026-03-15",
+      "likes": 339,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Bamboo is one of the most versatile natural materials on Earth. Its hollow, segmented structure makes it incredibly strong, lightweight, and naturally tubular, which is why many su",
+      "url": "https://www.instagram.com/p/DV64OdAEcXM/"
+    },
+    {
+      "shortcode": "DV6Dq1hgDA1",
+      "date": "2026-03-15",
+      "likes": 156,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Sydney tech entrepreneur Paul Conyngham turned to artificial intelligence when his rescue dog Rosie was diagnosed with an aggressive form of mast cell cancer and given only a few m",
+      "url": "https://www.instagram.com/p/DV6Dq1hgDA1/"
+    },
     {
       "shortcode": "DV3Y0SWgEYY",
       "date": "2026-03-14",
-      "likes": 345,
+      "likes": 381,
       "comments": 2,
       "is_video": true,
       "video_views": 0,
@@ -31,8 +61,8 @@
     {
       "shortcode": "DV1t-jUEV7s",
       "date": "2026-03-13",
-      "likes": 318,
-      "comments": 20,
+      "likes": 334,
+      "comments": 22,
       "is_video": false,
       "video_views": 0,
       "caption": "Coca-Cola is reportedly exploring the idea of a cannabis-inspired beverage designed to capture the distinctive flavor profile associated with cannabis while avoiding any psychoacti",
@@ -41,8 +71,8 @@
     {
       "shortcode": "DV1bmoZEQq5",
       "date": "2026-03-13",
-      "likes": 1208,
-      "comments": 84,
+      "likes": 8912,
+      "comments": 197,
       "is_video": true,
       "video_views": 0,
       "caption": "This robotic mouth recreates human speech by imitating the real physical mechanics of how people talk, instead of depending on text to speech systems or digital voice synthesis.\n\nR",
@@ -51,7 +81,7 @@
     {
       "shortcode": "DVzptSLgP1b",
       "date": "2026-03-13",
-      "likes": 368,
+      "likes": 373,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -61,7 +91,7 @@
     {
       "shortcode": "DVzHTH2Eb0H",
       "date": "2026-03-12",
-      "likes": 153,
+      "likes": 163,
       "comments": 6,
       "is_video": false,
       "video_views": 0,
@@ -71,7 +101,7 @@
     {
       "shortcode": "DVyxnyOgPpT",
       "date": "2026-03-12",
-      "likes": 440,
+      "likes": 443,
       "comments": 2,
       "is_video": true,
       "video_views": 0,
@@ -101,42 +131,12 @@
     {
       "shortcode": "DVv5SXhgAGi",
       "date": "2026-03-11",
-      "likes": 211,
+      "likes": 241,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
       "caption": "Scientists at Harvard University have developed a groundbreaking system of \u201ccyborg\u201d pancreatic organoids that integrates flexible nanoelectronics directly into living tissue to stu",
       "url": "https://www.instagram.com/p/DVv5SXhgAGi/"
-    },
-    {
-      "shortcode": "DVuYgJFgLn8",
-      "date": "2026-03-11",
-      "likes": 81,
-      "comments": 7,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Human actors are cooked.\n\nThis tech lets studios create, clone, and own actors like software.\n\nHiggsfield.ai just dropped a tool that builds photorealistic actors from nothing - an",
-      "url": "https://www.instagram.com/p/DVuYgJFgLn8/"
-    },
-    {
-      "shortcode": "DVuGTfxEVWi",
-      "date": "2026-03-10",
-      "likes": 827,
-      "comments": 21,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "China is taking its fight against desertification to a new level using solar-powered robots.\n\nAcross vast desert regions, autonomous machines are planting thousands of trees with s",
-      "url": "https://www.instagram.com/p/DVuGTfxEVWi/"
-    },
-    {
-      "shortcode": "DVt67lkkTdy",
-      "date": "2026-03-10",
-      "likes": 310,
-      "comments": 11,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Julian Brown introduced a prototype that converts common plastic waste into liquid fuels like gasoline, diesel, and kerosene using a high-temperature thermal process. Videos of the",
-      "url": "https://www.instagram.com/p/DVt67lkkTdy/"
     }
   ]
 }

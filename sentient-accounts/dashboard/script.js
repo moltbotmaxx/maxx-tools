@@ -84,15 +84,21 @@ function buildChartOptions(overrides = {}) {
 /* ── Helpers ──────────────────────────────────────────────────── */
 
 async function fetchJson(relativePath) {
+  const cacheBuster = `?t=${Date.now()}`;
   const candidates = [
-    `../data/${relativePath}`,
-    `./data/${relativePath}`,
-    `data/${relativePath}`,
+    `../data/${relativePath}${cacheBuster}`,
+    `./data/${relativePath}${cacheBuster}`,
+    `data/${relativePath}${cacheBuster}`,
   ];
 
   for (const path of candidates) {
     try {
-      const response = await fetch(path, { cache: "no-store" });
+      const response = await fetch(path, {
+        cache: "no-store",
+        headers: {
+          "Cache-Control": "no-cache"
+        }
+      });
       if (response.ok) return await response.json();
     } catch (_) {
       /* next */

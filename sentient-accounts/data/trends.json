@@ -1,28 +1,38 @@
 {
-  "generated_at": "2026-03-15T07:08:20+00:00",
-  "date": "2026-03-15",
+  "generated_at": "2026-03-16T06:28:59+00:00",
+  "date": "2026-03-16",
   "account": "trends",
   "profile_url": "https://www.instagram.com/trends/",
   "full_name": "Trends",
   "biography": "The internet speaks, we TRANSLATE!\nTrends, memes, viral videos, and stories.\nYour daily dose of internet\u2019s hottest trends.\nBy @sentientagency",
   "external_url": "https://www.sentientagency.io/",
   "is_verified": true,
-  "followers": 18091,
+  "followers": 18255,
   "following": 9,
-  "posts": 313,
+  "posts": 314,
   "recent_post_count": 12,
   "video_post_count": 12,
-  "avg_likes": 352.0,
-  "avg_comments": 2.83,
+  "avg_likes": 536.33,
+  "avg_comments": 2.67,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
-  "engagement_rate": 1.9614,
+  "engagement_rate": 2.9526,
   "recent_posts": [
+    {
+      "shortcode": "DV6RappjS_s",
+      "date": "2026-03-15",
+      "likes": 966,
+      "comments": 8,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "A quiet backyard. A familiar whisper among the trees. And a small visitor who has returned, day after day, just to share a snack and a moment of trust. Then one morning, something ",
+      "url": "https://www.instagram.com/p/DV6RappjS_s/"
+    },
     {
       "shortcode": "DV4DfbKidos",
       "date": "2026-03-14",
-      "likes": 413,
-      "comments": 1,
+      "likes": 2675,
+      "comments": 7,
       "is_video": true,
       "video_views": 0,
       "caption": "During the day, birds of prey such as hawks often chase and harass owls when they discover them resting.\n\nHowever, this behavior is not limited only to hawks. Many diurnal birds, s",
@@ -31,7 +41,7 @@
     {
       "shortcode": "DV2mqpTjaeY",
       "date": "2026-03-14",
-      "likes": 161,
+      "likes": 170,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -41,7 +51,7 @@
     {
       "shortcode": "DV2DfEdjZDB",
       "date": "2026-03-14",
-      "likes": 354,
+      "likes": 365,
       "comments": 4,
       "is_video": true,
       "video_views": 0,
@@ -51,7 +61,7 @@
     {
       "shortcode": "DV1tgdCiQ6D",
       "date": "2026-03-13",
-      "likes": 155,
+      "likes": 159,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -61,7 +71,7 @@
     {
       "shortcode": "DVzsezPDZNU",
       "date": "2026-03-13",
-      "likes": 215,
+      "likes": 218,
       "comments": 2,
       "is_video": true,
       "video_views": 0,
@@ -71,7 +81,7 @@
     {
       "shortcode": "DVy_5imiZPi",
       "date": "2026-03-12",
-      "likes": 714,
+      "likes": 717,
       "comments": 4,
       "is_video": true,
       "video_views": 0,
@@ -81,7 +91,7 @@
     {
       "shortcode": "DVxLjMiDaZI",
       "date": "2026-03-12",
-      "likes": 119,
+      "likes": 121,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -91,7 +101,7 @@
     {
       "shortcode": "DVw0ch2lHzi",
       "date": "2026-03-11",
-      "likes": 209,
+      "likes": 210,
       "comments": 1,
       "is_video": true,
       "video_views": 0,
@@ -101,7 +111,7 @@
     {
       "shortcode": "DVwtzE0Dd8K",
       "date": "2026-03-11",
-      "likes": 375,
+      "likes": 376,
       "comments": 4,
       "is_video": true,
       "video_views": 0,
@@ -111,7 +121,7 @@
     {
       "shortcode": "DVuzIeKDZWE",
       "date": "2026-03-11",
-      "likes": 32,
+      "likes": 35,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -121,22 +131,12 @@
     {
       "shortcode": "DVuG-3SFABM",
       "date": "2026-03-10",
-      "likes": 421,
+      "likes": 424,
       "comments": 2,
       "is_video": true,
       "video_views": 0,
       "caption": "when your cat watches you in silence\u2026 it\u2019s not a coincidence \ud83d\udc31\ud83d\udc40\n\nmany cats unknowingly imitate the play dynamics of their owners. they hide behind doors, sofas, or corners and wait",
       "url": "https://www.instagram.com/p/DVuG-3SFABM/"
-    },
-    {
-      "shortcode": "DVt_T99CWFX",
-      "date": "2026-03-10",
-      "likes": 1056,
-      "comments": 16,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "In 2014, a rehearsal video of the King\u2019s College Choir unexpectedly went viral when a choir boy inhaled helium from a balloon and tried to sing a note. Instead of the usual rich ch",
-      "url": "https://www.instagram.com/p/DVt_T99CWFX/"
     }
   ]
 }
