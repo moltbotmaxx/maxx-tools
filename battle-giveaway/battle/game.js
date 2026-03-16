@@ -482,77 +482,99 @@ class BattleScene extends Phaser.Scene {
     window.__battleState.playerRadius = this.playerRadius;
 
     const positions = this.buildSpawnPositions(this.playersList.length, this.playerRadius);
+    const spawnDelay = Math.min(120, Math.max(15, 3000 / this.playersList.length));
 
-    this.playersList.forEach((player, index) => {
-      const actor = this.createActor(player, positions[index], this.playerRadius);
-      this.actors.push(actor);
-    });
-
-    window.__battleState.total = this.actors.length;
-    window.__battleState.remaining = this.actors.length;
-
-    this.registerCollisionHandler();
-    this.startArenaEvents();
-    void this.audio.unlock();
-
-    this.isReady = false;
-    let count = 3;
-
-    const overlay = this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, 0.4)
-      .setOrigin(0)
-      .setDepth(200);
-
-    const countText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2, "3", {
-      fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
-      fontSize: "200px",
-      fontWeight: "800",
-      color: "#ffffff",
-      stroke: "#000000",
-      strokeThickness: 10,
-    }).setOrigin(0.5).setDepth(201);
-
-    this.tweens.add({
-      targets: countText,
-      scale: { from: 1.5, to: 1 },
-      alpha: { from: 0, to: 1 },
-      duration: 300,
-      ease: "Back.out",
-    });
-
+    let spawnedCount = 0;
+    
     this.time.addEvent({
-      delay: 1000,
-      repeat: 3,
+      delay: spawnDelay,
+      repeat: this.playersList.length - 1,
       callback: () => {
-        count -= 1;
-        if (count > 0) {
-          countText.setText(count.toString());
-          this.tweens.add({
-            targets: countText,
-            scale: { from: 1.3, to: 1 },
-            duration: 200,
-            ease: "Back.out",
-          });
-        } else if (count === 0) {
-          countText.setText("FIGHT!");
-          countText.setFontSize("160px");
-          countText.setColor("#ff2d55");
+        const player = this.playersList[spawnedCount];
+        const actor = this.createActor(player, positions[spawnedCount], this.playerRadius);
+        
+        actor.sprite.setScale(0);
+        this.tweens.add({
+          targets: actor.sprite,
+          scale: { from: 0, to: 1 },
+          duration: 300,
+          ease: "Back.out",
+        });
+
+        this.actors.push(actor);
+        spawnedCount += 1;
+
+        if (spawnedCount === this.playersList.length) {
+          window.__battleState.total = this.actors.length;
+          window.__battleState.remaining = this.actors.length;
+
+          this.registerCollisionHandler();
+          this.startArenaEvents();
+          void this.audio.unlock();
+
+          this.isReady = false;
+          let count = 3;
+
+          const overlay = this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, 0.4)
+            .setOrigin(0)
+            .setDepth(200);
+
+          const countText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2, "3", {
+            fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
+            fontSize: "200px",
+            fontWeight: "800",
+            color: "#ffffff",
+            stroke: "#000000",
+            strokeThickness: 10,
+          }).setOrigin(0.5).setDepth(201);
+
           this.tweens.add({
             targets: countText,
             scale: { from: 1.5, to: 1 },
+            alpha: { from: 0, to: 1 },
             duration: 300,
-            ease: "Elastic.out",
+            ease: "Back.out",
           });
-          this.flashArena();
-        } else {
-          countText.destroy();
-          overlay.destroy();
-          this.isReady = true;
-          this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
-          markBattleReady();
 
-          if (this.actors.length === 1) {
-            this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
-          }
+          this.time.addEvent({
+            delay: 1000,
+            repeat: 3,
+            callback: () => {
+              count -= 1;
+              if (count > 0) {
+                countText.setText(count.toString());
+                this.audio?.playHit({ strong: false });
+                this.tweens.add({
+                  targets: countText,
+                  scale: { from: 1.3, to: 1 },
+                  duration: 200,
+                  ease: "Back.out",
+                });
+              } else if (count === 0) {
+                countText.setText("FIGHT!");
+                countText.setFontSize("160px");
+                countText.setColor("#ff2d55");
+                this.audio?.playHit({ strong: true });
+                this.tweens.add({
+                  targets: countText,
+                  scale: { from: 1.5, to: 1 },
+                  duration: 300,
+                  ease: "Elastic.out",
+                });
+                this.flashArena();
+              } else {
+                countText.destroy();
+                overlay.destroy();
+                this.isReady = true;
+                this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
+                markBattleReady();
+
+                if (this.actors.length === 1) {
+                  this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
+                }
+              }
+            },
+          });
         }
       },
     });
