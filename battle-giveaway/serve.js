@@ -83,7 +83,10 @@ function resolveRequestPath(requestUrl) {
   if (requestPath === "/favicon.ico") {
     return "__favicon__";
   }
-  const relativePath = requestPath === "/" ? "/app/index.html" : requestPath;
+  if (requestPath === "/") {
+    return "__redirect_app__";
+  }
+  const relativePath = requestPath.endsWith("/") ? `${requestPath}index.html` : requestPath;
   const absolutePath = path.resolve(ROOT_DIR, `.${relativePath}`);
 
   if (!absolutePath.startsWith(ROOT_DIR)) {
@@ -409,6 +412,11 @@ function startStaticServer({ port = 0, host = "127.0.0.1" } = {}) {
     }
     if (targetPath === "__favicon__") {
       sendResponse(response, 204, "");
+      return;
+    }
+    if (targetPath === "__redirect_app__") {
+      response.writeHead(302, { Location: "/app/" });
+      response.end();
       return;
     }
 
