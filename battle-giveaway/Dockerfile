@@ -35,7 +35,7 @@ RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
 # Install Node dependencies
 COPY package.json package-lock.json ./
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
 # Copy application code
 COPY . .
