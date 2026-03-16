@@ -4,9 +4,13 @@
   "private": true,
   "description": "Instagram giveaway battle royale generator",
   "scripts": {
+    "start": "node serve.js",
     "serve": "node serve.js",
     "record": "node record.js",
     "battle": "node serve.js --open"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

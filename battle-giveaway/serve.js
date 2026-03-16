@@ -478,8 +478,8 @@ function openUrl(targetUrl) {
 
 async function main() {
   const argv = process.argv.slice(2);
-  const port = Number.parseInt(parseFlag(argv, "port", "3000"), 10);
-  const host = parseFlag(argv, "host", "127.0.0.1");
+  const port = Number.parseInt(parseFlag(argv, "port", process.env.PORT || "3000"), 10);
+  const host = parseFlag(argv, "host", process.env.HOST || "0.0.0.0");
   const shouldOpen = argv.includes("--open");
 
   const server = await startStaticServer({ host, port: Number.isFinite(port) ? port : 3000 });

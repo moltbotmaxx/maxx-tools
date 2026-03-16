@@ -51,10 +51,18 @@ let uploadedPlayers = null;
 
 async function detectMode() {
   const hostname = window.location.hostname;
+
+  // Known static-only hosts
   if (hostname.endsWith(".github.io") || hostname.endsWith(".pages.dev") || hostname.endsWith(".netlify.app")) {
     return "static";
   }
 
+  // Known server hosts (Railway, local dev)
+  if (hostname === "localhost" || hostname === "127.0.0.1" || hostname.endsWith(".railway.app")) {
+    return "server";
+  }
+
+  // Unknown host — probe the API to decide
   try {
     const response = await fetch("/api/state", { cache: "no-store", signal: AbortSignal.timeout(3000) });
     if (response.ok) {

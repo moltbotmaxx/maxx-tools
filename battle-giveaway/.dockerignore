@@ -1,0 +1,13 @@
+node_modules
+.venv
+__pycache__
+temp
+output
+.DS_Store
+.env
+.git
+.github
+*.pyc
+avatars/*.jpg
+avatars/*.jpeg
+avatars/*.png

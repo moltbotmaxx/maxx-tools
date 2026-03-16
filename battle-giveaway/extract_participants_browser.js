@@ -297,14 +297,21 @@ async function scrapeParticipants({
   shortcode,
   username,
 }) {
-  const browser = await puppeteer.launch({
+  const launchOptions = {
     headless: true,
     defaultViewport: {
       width: 1280,
       height: 2000,
       deviceScaleFactor: 1,
     },
-  });
+  };
+
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+    launchOptions.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+    launchOptions.args = ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"];
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
 
   try {
     const page = await browser.newPage();
