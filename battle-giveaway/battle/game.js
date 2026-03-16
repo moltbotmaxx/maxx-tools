@@ -493,17 +493,73 @@ class BattleScene extends Phaser.Scene {
 
     this.registerCollisionHandler();
     this.startArenaEvents();
-    this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
     void this.audio.unlock();
-    markBattleReady();
 
-    if (this.actors.length === 1) {
-      this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
-    }
+    this.isReady = false;
+    let count = 3;
+
+    const overlay = this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, 0.4)
+      .setOrigin(0)
+      .setDepth(200);
+
+    const countText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2, "3", {
+      fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
+      fontSize: "200px",
+      fontWeight: "800",
+      color: "#ffffff",
+      stroke: "#000000",
+      strokeThickness: 10,
+    }).setOrigin(0.5).setDepth(201);
+
+    this.tweens.add({
+      targets: countText,
+      scale: { from: 1.5, to: 1 },
+      alpha: { from: 0, to: 1 },
+      duration: 300,
+      ease: "Back.out",
+    });
+
+    this.time.addEvent({
+      delay: 1000,
+      repeat: 3,
+      callback: () => {
+        count -= 1;
+        if (count > 0) {
+          countText.setText(count.toString());
+          this.tweens.add({
+            targets: countText,
+            scale: { from: 1.3, to: 1 },
+            duration: 200,
+            ease: "Back.out",
+          });
+        } else if (count === 0) {
+          countText.setText("FIGHT!");
+          countText.setFontSize("160px");
+          countText.setColor("#ff2d55");
+          this.tweens.add({
+            targets: countText,
+            scale: { from: 1.5, to: 1 },
+            duration: 300,
+            ease: "Elastic.out",
+          });
+          this.flashArena();
+        } else {
+          countText.destroy();
+          overlay.destroy();
+          this.isReady = true;
+          this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
+          markBattleReady();
+
+          if (this.actors.length === 1) {
+            this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
+          }
+        }
+      },
+    });
   }
 
   update(_, delta) {
-    if (this.finished) {
+    if (this.finished || !this.isReady) {
       return;
     }
 
