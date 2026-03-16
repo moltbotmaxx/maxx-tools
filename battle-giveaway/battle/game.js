@@ -88,6 +88,28 @@ function getBooleanParam(name, fallback) {
 }
 
 async function loadPlayers() {
+  if (Array.isArray(window.__battlePlayers) && window.__battlePlayers.length > 0) {
+    return window.__battlePlayers;
+  }
+
+  // If embedded in an iframe, wait briefly for parent to inject players via postMessage
+  if (window.parent !== window) {
+    const injected = await new Promise((resolve) => {
+      const timeout = setTimeout(() => resolve(null), 800);
+      window.addEventListener("message", (event) => {
+        if (event.data?.type === "battle-players" && Array.isArray(event.data.players)) {
+          clearTimeout(timeout);
+          resolve(event.data.players);
+        }
+      }, { once: true });
+      // Signal parent that we're ready to receive players
+      window.parent.postMessage({ type: "battle-ready" }, "*");
+    });
+    if (injected && injected.length > 0) {
+      return injected;
+    }
+  }
+
   try {
     const response = await fetch(`./players.json?ts=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {

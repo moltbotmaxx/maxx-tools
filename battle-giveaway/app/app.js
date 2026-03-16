@@ -35,32 +35,134 @@ const progressPercent = document.getElementById("progress-percent");
 const participantsPreview = document.getElementById("participants-preview");
 const previewSlot = document.getElementById("preview-slot");
 
+const staticUploadPanel = document.getElementById("static-upload");
+const serverControls = document.getElementById("server-controls");
+const dropZone = document.getElementById("drop-zone");
+const fileInput = document.getElementById("file-input");
+
 const POLL_INTERVAL_MS = 1200;
 
 let latestState = null;
 let pollTimer = null;
+let staticMode = false;
+let uploadedPlayers = null;
 
-postUrlInput.value = "https://www.instagram.com/p/DVy3rKeIPF1/";
-filterTextInput.value = "";
+// ── Mode detection ──────────────────────────────────────────────────
 
-extractButton.addEventListener("click", onExtract);
-battleButton.addEventListener("click", onRunBattle);
-circleSizeInput.addEventListener("input", syncBattleControlLabels);
-nameSizeInput.addEventListener("input", syncBattleControlLabels);
-hitCountInput.addEventListener("input", syncBattleControlLabels);
-finalHitCountInput.addEventListener("input", syncBattleControlLabels);
-soundEnabledInput.addEventListener("change", syncBattleControlLabels);
-soundVolumeInput.addEventListener("input", syncBattleControlLabels);
-shakeScaleInput.addEventListener("input", syncBattleControlLabels);
-centerBiasInput.addEventListener("input", syncBattleControlLabels);
-fightDriveInput.addEventListener("input", syncBattleControlLabels);
-chaosScaleInput.addEventListener("input", syncBattleControlLabels);
-fxIntensityInput.addEventListener("input", syncBattleControlLabels);
+async function detectMode() {
+  const hostname = window.location.hostname;
+  if (hostname.endsWith(".github.io") || hostname.endsWith(".pages.dev") || hostname.endsWith(".netlify.app")) {
+    return "static";
+  }
 
-syncBattleControlLabels();
+  try {
+    const response = await fetch("/api/state", { cache: "no-store", signal: AbortSignal.timeout(3000) });
+    if (response.ok) {
+      return "server";
+    }
+  } catch {
+    // server unreachable
+  }
 
-await refreshState({ showLoading: true });
-syncPolling();
+  return "static";
+}
+
+async function init() {
+  const mode = await detectMode();
+  staticMode = mode === "static";
+
+  syncBattleControlLabels();
+
+  if (staticMode) {
+    initStaticMode();
+  } else {
+    initServerMode();
+  }
+}
+
+// ── Static mode (GitHub Pages) ──────────────────────────────────────
+
+function initStaticMode() {
+  staticUploadPanel.classList.remove("hidden");
+  serverControls.classList.add("hidden");
+  extractButton.classList.add("hidden");
+
+  credentialsStatus.textContent = "N/A";
+  setStatus("Upload a players.json file to start.");
+
+  dropZone.addEventListener("click", () => fileInput.click());
+  fileInput.addEventListener("change", handleFileSelect);
+  dropZone.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    dropZone.classList.add("dragover");
+  });
+  dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragover");
+  });
+  dropZone.addEventListener("drop", (event) => {
+    event.preventDefault();
+    dropZone.classList.remove("dragover");
+    const file = event.dataTransfer?.files?.[0];
+    if (file) {
+      loadJsonFile(file);
+    }
+  });
+}
+
+function handleFileSelect(event) {
+  const file = event.target.files?.[0];
+  if (file) {
+    loadJsonFile(file);
+  }
+}
+
+async function loadJsonFile(file) {
+  try {
+    const text = await file.text();
+    const data = JSON.parse(text);
+
+    if (!Array.isArray(data) || data.length === 0) {
+      setStatus("Invalid file: expected a non-empty JSON array of players.", true);
+      return;
+    }
+
+    uploadedPlayers = data;
+    dropZone.classList.add("loaded");
+    dropZone.querySelector("div > div:last-child").textContent =
+      `✓ Loaded ${data.length} players from ${file.name}`;
+
+    participantCount.textContent = `${data.length}`;
+    extractSummary.textContent = `${data.length} players (file upload)`;
+    battleButton.disabled = false;
+
+    const preview = data.slice(0, 12).map((player) => player.name || player.id);
+    participantsPreview.replaceChildren();
+    for (const username of preview) {
+      const pill = document.createElement("span");
+      pill.textContent = `@${username}`;
+      participantsPreview.append(pill);
+    }
+
+    setStatus(`Ready — ${data.length} players loaded. Hit "Run battle" to start!`);
+  } catch (error) {
+    setStatus(`Failed to parse file: ${error.message}`, true);
+  }
+}
+
+// ── Server mode (local dev) ─────────────────────────────────────────
+
+function initServerMode() {
+  staticUploadPanel.classList.add("hidden");
+  serverControls.classList.remove("hidden");
+  extractButton.classList.remove("hidden");
+
+  postUrlInput.value = "https://www.instagram.com/p/DVy3rKeIPF1/";
+  filterTextInput.value = "";
+
+  extractButton.addEventListener("click", onExtract);
+
+  refreshState({ showLoading: true }).then(() => syncPolling());
+}
 
 async function refreshState(options = {}) {
   const { keepStatus = false, showLoading = false } = options;
@@ -132,13 +234,28 @@ async function onExtract() {
   }
 }
 
-function onRunBattle() {
-  if (!latestState?.battleReady) {
-    setStatus("Extract participants first so the battle has player data.", true);
-    return;
-  }
+// ── Battle launch (both modes) ──────────────────────────────────────
 
-  const query = new URLSearchParams({
+battleButton.addEventListener("click", onRunBattle);
+
+function onRunBattle() {
+  if (staticMode) {
+    if (!uploadedPlayers || uploadedPlayers.length === 0) {
+      setStatus("Upload a players.json file first.", true);
+      return;
+    }
+    launchBattleWithPlayers(uploadedPlayers);
+  } else {
+    if (!latestState?.battleReady) {
+      setStatus("Extract participants first so the battle has player data.", true);
+      return;
+    }
+    launchBattleIframe();
+  }
+}
+
+function buildBattleQuery() {
+  return new URLSearchParams({
     seed: `${Date.now()}`,
     circleScale: toScaleParam(circleSizeInput.value),
     finalDuelHits: `${normalizeFinalHitCount(finalHitCountInput.value)}`,
@@ -155,7 +272,10 @@ function onRunBattle() {
     showNames: showNamesInput.checked ? "1" : "0",
     ts: `${Date.now()}`,
   });
+}
 
+function launchBattleIframe() {
+  const query = buildBattleQuery();
   const iframe = document.createElement("iframe");
   iframe.src = `/battle/index.html?${query.toString()}`;
   iframe.title = "Battle preview";
@@ -163,6 +283,29 @@ function onRunBattle() {
   previewSlot.classList.remove("empty");
   setStatus("Battle running.");
 }
+
+function launchBattleWithPlayers(players) {
+  const query = buildBattleQuery();
+  const iframe = document.createElement("iframe");
+  const basePath = new URL("../battle/index.html", window.location.href).href;
+  iframe.src = `${basePath}?${query.toString()}`;
+  iframe.title = "Battle preview";
+
+  // Listen for the battle iframe to signal it's ready
+  const messageHandler = (event) => {
+    if (event.data?.type === "battle-ready" && event.source === iframe.contentWindow) {
+      iframe.contentWindow.postMessage({ type: "battle-players", players }, "*");
+      window.removeEventListener("message", messageHandler);
+    }
+  };
+  window.addEventListener("message", messageHandler);
+
+  previewSlot.replaceChildren(iframe);
+  previewSlot.classList.remove("empty");
+  setStatus("Battle running.");
+}
+
+// ── Render helpers ──────────────────────────────────────────────────
 
 function renderState(state, options = {}) {
   const { keepStatus = false } = options;
@@ -210,6 +353,20 @@ function renderProgress(progress, isActive) {
   progressLabel.textContent = progress?.detail || (isActive ? "Extraction in progress..." : "Idle.");
 }
 
+// ── Slider labels ───────────────────────────────────────────────────
+
+circleSizeInput.addEventListener("input", syncBattleControlLabels);
+nameSizeInput.addEventListener("input", syncBattleControlLabels);
+hitCountInput.addEventListener("input", syncBattleControlLabels);
+finalHitCountInput.addEventListener("input", syncBattleControlLabels);
+soundEnabledInput.addEventListener("change", syncBattleControlLabels);
+soundVolumeInput.addEventListener("input", syncBattleControlLabels);
+shakeScaleInput.addEventListener("input", syncBattleControlLabels);
+centerBiasInput.addEventListener("input", syncBattleControlLabels);
+fightDriveInput.addEventListener("input", syncBattleControlLabels);
+chaosScaleInput.addEventListener("input", syncBattleControlLabels);
+fxIntensityInput.addEventListener("input", syncBattleControlLabels);
+
 function syncBattleControlLabels() {
   circleSizeValue.textContent = `${normalizePercent(circleSizeInput.value)}%`;
   nameSizeValue.textContent = `${normalizePercent(nameSizeInput.value)}%`;
@@ -225,6 +382,8 @@ function syncBattleControlLabels() {
   chaosScaleValue.textContent = `${normalizeTuningPercent(chaosScaleInput.value, 65)}%`;
   fxIntensityValue.textContent = `${normalizeTuningPercent(fxIntensityInput.value, 100)}%`;
 }
+
+// ── Math utils ──────────────────────────────────────────────────────
 
 function clampPercent(value) {
   const number = Number(value);
@@ -282,6 +441,8 @@ function normalizeTuningPercent(value, fallback = 100) {
   return Math.max(0, Math.min(300, Math.round(number)));
 }
 
+// ── Polling (server mode only) ──────────────────────────────────────
+
 function syncPolling() {
   if (latestState?.extracting) {
     startPolling();
@@ -315,3 +476,7 @@ function setStatus(message, isError = false) {
   statusNote.textContent = message;
   statusNote.classList.toggle("error", isError);
 }
+
+// ── Boot ────────────────────────────────────────────────────────────
+
+init();
