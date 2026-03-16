@@ -154,7 +154,7 @@ async function buildStatePayload() {
   return {
     battleReady: Array.isArray(battlePlayers) && battlePlayers.length > 0,
     extracting: serverState.extracting,
-    hasCredentials: Boolean(process.env.IG_USERNAME && process.env.IG_PASSWORD),
+    hasCredentials: Boolean(process.env.IG_SESSIONID || (process.env.IG_USERNAME && process.env.IG_PASSWORD)),
     lastError: serverState.lastError,
     lastExtract:
       serverState.lastExtract ||
@@ -275,9 +275,9 @@ async function handleExtractRequest(response, bodyText) {
     return;
   }
 
-  if (!process.env.IG_USERNAME || !process.env.IG_PASSWORD) {
+  if (!process.env.IG_SESSIONID && (!process.env.IG_USERNAME || !process.env.IG_PASSWORD)) {
     sendJson(response, 400, {
-      error: "IG_USERNAME and IG_PASSWORD must be present in the server environment.",
+      error: "IG_SESSIONID (or IG_USERNAME and IG_PASSWORD) must be present in the server environment.",
     });
     return;
   }

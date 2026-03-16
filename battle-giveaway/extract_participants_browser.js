@@ -296,6 +296,7 @@ async function scrapeParticipants({
   contains,
   includePostOwner,
   password,
+  sessionId,
   shortcode,
   username,
 }) {
@@ -317,7 +318,20 @@ async function scrapeParticipants({
 
   try {
     const page = await browser.newPage();
-    await loginToInstagram(page, username, password);
+    
+    if (sessionId) {
+      console.log("Using IG_SESSIONID for authentication...");
+      await page.setCookie({
+        name: "sessionid",
+        value: sessionId,
+        domain: ".instagram.com",
+        path: "/",
+        httpOnly: true,
+        secure: true,
+      });
+    } else {
+      await loginToInstagram(page, username, password);
+    }
 
     await page.goto(`https://www.instagram.com/p/${shortcode}/`, {
       waitUntil: "domcontentloaded",
@@ -406,20 +420,22 @@ async function main() {
 
   const username = process.env.IG_USERNAME;
   const password = process.env.IG_PASSWORD;
+  const sessionId = process.env.IG_SESSIONID;
 
   if (!shortcode) {
     throw new Error(
       "Usage: node extract_participants_browser.js SHORTCODE [--contains text] [--output path] [--metadata-output path]",
     );
   }
-  if (!username || !password) {
-    throw new Error("IG_USERNAME and IG_PASSWORD are required");
+  if (!sessionId && (!username || !password)) {
+    throw new Error("IG_SESSIONID (or IG_USERNAME and IG_PASSWORD) are required");
   }
 
   const result = await scrapeParticipants({
     contains,
     includePostOwner,
     password,
+    sessionId,
     shortcode,
     username,
   });
