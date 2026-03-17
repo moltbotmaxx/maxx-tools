@@ -10,6 +10,19 @@ const SLOTS_PER_DAY = 8;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
+const DONE_ARTICLES_KEY = 'done_articles';
+const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
+const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
+const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
+const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
+
+function createEmptyAppData() {
+    return {
+        pool: [],
+        schedule: {},
+        ideas: []
+    };
+}
 
 // Content types
 const CONTENT_TYPES = {
@@ -27,17 +40,17 @@ const CARD_STATUS = {
 // ===========================
 // State
 // ===========================
-let appData = {
-    pool: [],           // Cards in the pool
-    schedule: {},       // Cards scheduled by date key
-    ideas: []           // Captures from Inspiration Board
-};
+let appData = createEmptyAppData();
 let permanentNotes = '';
 let draggedCard = null;
 let globalOffset = 0;
 let currentDate = new Date();
 let activeStagingCardId = null;
 let sourceSelectionDraft = null;
+let currentUser = null;
+let pendingExtensionIdeas = [];
+let isLoadingUserData = false;
+let isHandlingAuthAction = false;
 
 // ===========================
 // News Ticker State
@@ -84,17 +97,9 @@ const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
 let isNewsRefreshing = false;
 
-// Load done headlines from localStorage
-try {
-    const saved = localStorage.getItem('done_articles');
-    if (saved) doneHeadlines = new Set(JSON.parse(saved));
-} catch (e) {
-    console.error('Failed to load done_articles', e);
-}
-
 function ensureAppDataIntegrity() {
     if (!appData || typeof appData !== 'object') {
-        appData = { pool: [], schedule: {}, ideas: [] };
+        appData = createEmptyAppData();
     }
     if (!Array.isArray(appData.pool)) appData.pool = [];
     if (!appData.schedule || typeof appData.schedule !== 'object') appData.schedule = {};
@@ -182,6 +187,12 @@ const elements = {
     sourceSelectionCategorySelector: document.getElementById('sourceSelectionCategorySelector'),
     syncStatus: document.getElementById('syncStatus'),
     syncText: document.querySelector('#syncStatus .sync-text'),
+    authGate: document.getElementById('authGate'),
+    authStatus: document.getElementById('authStatus'),
+    loginBtn: document.getElementById('loginBtn'),
+    authUser: document.getElementById('authUser'),
+    authActionBtn: document.getElementById('authActionBtn'),
+    exportBtn: document.getElementById('exportBtn'),
     // News Tab Elements
     showDoneNews: document.getElementById('showDoneNews'),
     refreshNewsBtn: document.getElementById('refreshNewsBtn'),
@@ -234,6 +245,46 @@ function toSafeNumber(value, fallback = 0) {
     return Number.isFinite(num) ? num : fallback;
 }
 
+function safeGetLocalStorageItem(key) {
+    try {
+        return localStorage.getItem(key);
+    } catch (e) {
+        console.error(`Failed to read localStorage key "${key}"`, e);
+        return null;
+    }
+}
+
+function safeSetLocalStorageItem(key, value) {
+    try {
+        localStorage.setItem(key, value);
+        return true;
+    } catch (e) {
+        console.error(`Failed to write localStorage key "${key}"`, e);
+        return false;
+    }
+}
+
+function safeRemoveLocalStorageItem(key) {
+    try {
+        localStorage.removeItem(key);
+        return true;
+    } catch (e) {
+        console.error(`Failed to remove localStorage key "${key}"`, e);
+        return false;
+    }
+}
+
+function readJsonFromLocalStorage(key, fallback) {
+    const raw = safeGetLocalStorageItem(key);
+    if (raw === null) return fallback;
+    try {
+        return JSON.parse(raw);
+    } catch (e) {
+        console.error(`Failed to parse localStorage key "${key}"`, e);
+        return fallback;
+    }
+}
+
 function getDateKey(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -275,13 +326,11 @@ function isToday(date) {
 }
 
 // ===========================
-// Data Management (API-First with LocalStorage Fallback)
-// ===========================
-// ===========================
-// Imports & Firebase Config
+// Firebase Imports & Config
 // ===========================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { GoogleAuthProvider, browserLocalPersistence, getAuth, onAuthStateChanged, setPersistence, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyD9Q9b_RkQ5KCUSoNdqs8W2C3jrB6Q_pCQ",
@@ -296,89 +345,397 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const DATA_DOC_ID = "global-tracker-data"; // Single document for ELI5 simplicity
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 
 // ===========================
-// Data Management (Firebase Firestore)
+// Data Management
 // ===========================
 
-async function loadData() {
-    updateSyncStatus('pending');
-    try {
-        const docRef = doc(db, "daily-tracker-data", DATA_DOC_ID);
-        const docSnap = await getDoc(docRef);
+function getUserScopedKey(baseKey, user = currentUser) {
+    return user?.uid ? `${baseKey}:${user.uid}` : baseKey;
+}
 
-        if (docSnap.exists()) {
-            // REMOTE DATA EXISTS -> Use it (Source of Truth)
-            const data = docSnap.data();
-            appData = data.appData || {};
-            ensureAppDataIntegrity();
-            permanentNotes = data.permanentNotes || '';
-            updateSyncStatus('online');
-            console.log("Data loaded from Firebase");
+function getUserStorageKeys(user = currentUser) {
+    return {
+        data: getUserScopedKey(STORAGE_KEY, user),
+        notes: getUserScopedKey(NOTES_KEY, user),
+        done: getUserScopedKey(DONE_ARTICLES_KEY, user)
+    };
+}
+
+function getUserDocRef(user = currentUser) {
+    if (!user?.uid) return null;
+    return doc(db, "daily-tracker-data", user.uid);
+}
+
+function getLocalSnapshotForUser(user = currentUser) {
+    const keys = getUserStorageKeys(user);
+    const cachedDone = readJsonFromLocalStorage(keys.done, []);
+    return {
+        appData: readJsonFromLocalStorage(keys.data, null),
+        permanentNotes: safeGetLocalStorageItem(keys.notes) || '',
+        doneHeadlines: Array.isArray(cachedDone) ? cachedDone : []
+    };
+}
+
+function getLegacyLocalSnapshot() {
+    const cachedDone = readJsonFromLocalStorage(DONE_ARTICLES_KEY, []);
+    return {
+        appData: readJsonFromLocalStorage(STORAGE_KEY, null),
+        permanentNotes: safeGetLocalStorageItem(NOTES_KEY) || '',
+        doneHeadlines: Array.isArray(cachedDone) ? cachedDone : []
+    };
+}
+
+function canClaimLegacyLocalSnapshot(user = currentUser) {
+    if (!user?.uid) return false;
+    const claimedBy = safeGetLocalStorageItem(LEGACY_MIGRATION_OWNER_KEY);
+    return !claimedBy || claimedBy === user.uid;
+}
+
+function claimLegacyLocalSnapshot(user = currentUser) {
+    if (user?.uid) safeSetLocalStorageItem(LEGACY_MIGRATION_OWNER_KEY, user.uid);
+}
+
+function applyLoadedState(snapshot = {}) {
+    appData = snapshot.appData || createEmptyAppData();
+    ensureAppDataIntegrity();
+
+    permanentNotes = typeof snapshot.permanentNotes === 'string' ? snapshot.permanentNotes : '';
+
+    const headlines = Array.isArray(snapshot.doneHeadlines) ? snapshot.doneHeadlines : [];
+    doneHeadlines = new Set(
+        headlines
+            .map(item => normalizeWhitespace(item))
+            .filter(Boolean)
+    );
+
+    if (elements.permanentNotes) elements.permanentNotes.value = permanentNotes;
+}
+
+function resetInMemoryState() {
+    applyLoadedState({
+        appData: createEmptyAppData(),
+        permanentNotes: '',
+        doneHeadlines: []
+    });
+}
+
+function persistUserLocalCache(user = currentUser) {
+    if (!user?.uid) return false;
+
+    permanentNotes = elements.permanentNotes ? elements.permanentNotes.value : permanentNotes;
+    const keys = getUserStorageKeys(user);
+
+    const wroteData = safeSetLocalStorageItem(keys.data, JSON.stringify(appData));
+    const wroteNotes = safeSetLocalStorageItem(keys.notes, permanentNotes);
+    const wroteDone = safeSetLocalStorageItem(keys.done, JSON.stringify(Array.from(doneHeadlines)));
+
+    return wroteData && wroteNotes && wroteDone;
+}
+
+function loadPendingExtensionIdeasBuffer() {
+    const cached = readJsonFromLocalStorage(PENDING_EXTENSION_IDEAS_KEY, []);
+    pendingExtensionIdeas = Array.isArray(cached) ? cached : [];
+}
+
+function persistPendingExtensionIdeasBuffer() {
+    if (!pendingExtensionIdeas.length) {
+        safeRemoveLocalStorageItem(PENDING_EXTENSION_IDEAS_KEY);
+        return;
+    }
+    safeSetLocalStorageItem(PENDING_EXTENSION_IDEAS_KEY, JSON.stringify(pendingExtensionIdeas));
+}
+
+function normalizeImportedIdea(rawIdea) {
+    if (!rawIdea || typeof rawIdea !== 'object') return null;
+
+    const title = normalizeWhitespace(rawIdea.title || rawIdea.notes || rawIdea.content || '');
+    if (!title) return null;
+
+    const type = ['post', 'reel', 'promo'].includes(rawIdea.type) ? rawIdea.type : 'post';
+    const notes = typeof rawIdea.notes === 'string'
+        ? rawIdea.notes
+        : (typeof rawIdea.content === 'string' ? rawIdea.content : '');
+
+    return {
+        id: normalizeWhitespace(rawIdea.id) || generateId(),
+        title,
+        url: safeHttpUrl(rawIdea.url, ''),
+        image: typeof rawIdea.image === 'string' ? rawIdea.image : '',
+        content: notes,
+        notes,
+        extraLinks: typeof rawIdea.extraLinks === 'string' ? rawIdea.extraLinks : '',
+        type,
+        createdAt: typeof rawIdea.createdAt === 'string' ? rawIdea.createdAt : new Date().toISOString()
+    };
+}
+
+function queuePendingExtensionIdeas(rawIdeas = []) {
+    const existingIds = new Set(
+        pendingExtensionIdeas
+            .map(idea => normalizeWhitespace(idea?.id))
+            .filter(Boolean)
+    );
+    const acceptedIdeas = [];
+
+    rawIdeas.forEach(rawIdea => {
+        const idea = normalizeImportedIdea(rawIdea);
+        if (!idea || existingIds.has(idea.id)) return;
+        existingIds.add(idea.id);
+        acceptedIdeas.push(idea);
+    });
+
+    if (acceptedIdeas.length) {
+        pendingExtensionIdeas = [...acceptedIdeas, ...pendingExtensionIdeas];
+        persistPendingExtensionIdeasBuffer();
+    }
+
+    return acceptedIdeas;
+}
+
+function mergeIdeasIntoAppData(ideas = []) {
+    const existingIds = new Set(
+        appData.ideas
+            .map(idea => normalizeWhitespace(idea?.id))
+            .filter(Boolean)
+    );
+    let addedCount = 0;
+
+    [...ideas].reverse().forEach(idea => {
+        if (!idea || existingIds.has(idea.id)) return;
+        existingIds.add(idea.id);
+        appData.ideas.unshift(idea);
+        addedCount += 1;
+    });
+
+    return addedCount;
+}
+
+async function drainPendingExtensionIdeas() {
+    if (!currentUser?.uid || !pendingExtensionIdeas.length || isLoadingUserData) return 0;
+
+    const queuedIdeas = pendingExtensionIdeas.slice();
+    pendingExtensionIdeas = [];
+    persistPendingExtensionIdeasBuffer();
+
+    const addedCount = mergeIdeasIntoAppData(queuedIdeas);
+    if (!addedCount) return 0;
+
+    renderInspiration();
+    await saveData();
+    return addedCount;
+}
+
+async function handleExtensionImportEvent(event) {
+    if (event.source !== window) return;
+    if (event.data?.type !== EXTENSION_IMPORT_EVENT) return;
+
+    const acceptedIdeas = queuePendingExtensionIdeas(Array.isArray(event.data.ideas) ? event.data.ideas : []);
+    let importedCount = 0;
+
+    if (acceptedIdeas.length && currentUser?.uid && !isLoadingUserData) {
+        importedCount = await drainPendingExtensionIdeas();
+    }
+
+    window.postMessage({
+        type: EXTENSION_IMPORT_ACK_EVENT,
+        acceptedCount: acceptedIdeas.length,
+        importedCount
+    }, '*');
+}
+
+function getUserLabel(user = currentUser) {
+    if (!user) return '';
+    return normalizeWhitespace(user.displayName || user.email || 'Signed in');
+}
+
+function updateAuthButtons({ busy = false, signedIn = !!currentUser } = {}) {
+    if (elements.authActionBtn) {
+        elements.authActionBtn.disabled = busy;
+        elements.authActionBtn.textContent = busy
+            ? (signedIn ? 'Signing out...' : 'Connecting...')
+            : (signedIn ? 'Logout' : 'Sign In');
+    }
+
+    if (elements.loginBtn) {
+        elements.loginBtn.disabled = busy;
+        elements.loginBtn.textContent = busy ? 'Connecting...' : 'Sign in with Google';
+    }
+
+    if (elements.exportBtn) {
+        elements.exportBtn.disabled = !signedIn || busy;
+    }
+}
+
+function updateAuthUI() {
+    if (elements.authUser) {
+        if (currentUser) {
+            elements.authUser.textContent = getUserLabel(currentUser);
+            elements.authUser.title = currentUser.email || getUserLabel(currentUser);
+            elements.authUser.hidden = false;
         } else {
-            updateSyncStatus('offline', 'No data found');
-            // NO REMOTE DATA -> Check LocalStorage for Migration
-            console.log("No Firebase data found. Checking local storage for migration...");
-            const localData = localStorage.getItem(STORAGE_KEY);
-            const localNotes = localStorage.getItem(NOTES_KEY);
-
-            if (localData || localNotes) {
-                // MIGRATE: Upload Local -> Firebase
-                if (localData) {
-                    appData = JSON.parse(localData);
-                    ensureAppDataIntegrity();
-                }
-                if (localNotes) permanentNotes = localNotes;
-
-                await saveData(); // Save to Firebase immediately
-                console.log("Migration successful: Local data uploaded to Firebase.");
-            }
-        }
-    } catch (e) {
-        console.error("Error loading/migrating data:", e);
-        // Fallback to local if offline or error, just to show something
-        const stored = localStorage.getItem(STORAGE_KEY);
-        if (stored) {
-            appData = JSON.parse(stored);
-            ensureAppDataIntegrity();
+            elements.authUser.textContent = '';
+            elements.authUser.hidden = true;
         }
     }
 
-    // Initial Render
+    updateAuthButtons({ busy: isHandlingAuthAction, signedIn: !!currentUser });
+}
+
+function setAuthGate(visible, statusText = '') {
+    if (elements.authGate) {
+        elements.authGate.classList.toggle('show', visible);
+    }
+    if (elements.authStatus) {
+        elements.authStatus.textContent = statusText;
+    }
+}
+
+async function signInWithGoogle() {
+    if (isHandlingAuthAction) return;
+
+    isHandlingAuthAction = true;
+    updateAuthButtons({ busy: true, signedIn: false });
+    setAuthGate(true, 'Opening Google sign-in...');
+
+    try {
+        await signInWithPopup(auth, googleProvider);
+    } catch (e) {
+        console.error('Google sign-in failed', e);
+        setAuthGate(true, e?.message || 'Google sign-in failed.');
+    } finally {
+        isHandlingAuthAction = false;
+        updateAuthUI();
+    }
+}
+
+async function logoutCurrentUser() {
+    if (isHandlingAuthAction || !currentUser) return;
+
+    isHandlingAuthAction = true;
+    updateAuthButtons({ busy: true, signedIn: true });
+    setAuthGate(true, 'Signing out...');
+
+    try {
+        await signOut(auth);
+    } catch (e) {
+        console.error('Sign-out failed', e);
+        setAuthGate(false, '');
+    } finally {
+        isHandlingAuthAction = false;
+        updateAuthUI();
+    }
+}
+
+async function handleAuthAction() {
+    if (currentUser) {
+        await logoutCurrentUser();
+        return;
+    }
+
+    await signInWithGoogle();
+}
+
+async function loadData() {
+    if (!currentUser?.uid) {
+        resetInMemoryState();
+        render();
+        updateSyncStatus('offline', 'Sign in required');
+        return;
+    }
+
+    updateSyncStatus('pending');
+    const userDocRef = getUserDocRef(currentUser);
+    const localSnapshot = getLocalSnapshotForUser(currentUser);
+
+    try {
+        const docSnap = await getDoc(userDocRef);
+
+        if (docSnap.exists()) {
+            const data = docSnap.data();
+            applyLoadedState({
+                appData: data.appData || localSnapshot.appData || createEmptyAppData(),
+                permanentNotes: data.permanentNotes || localSnapshot.permanentNotes || '',
+                doneHeadlines: Array.isArray(data.doneHeadlines) ? data.doneHeadlines : localSnapshot.doneHeadlines
+            });
+            persistUserLocalCache(currentUser);
+            updateSyncStatus('online');
+        } else if (localSnapshot.appData || localSnapshot.permanentNotes || localSnapshot.doneHeadlines.length) {
+            applyLoadedState(localSnapshot);
+            await saveData();
+        } else if (canClaimLegacyLocalSnapshot(currentUser)) {
+            const legacySnapshot = getLegacyLocalSnapshot();
+            const hasLegacyData = legacySnapshot.appData || legacySnapshot.permanentNotes || legacySnapshot.doneHeadlines.length;
+
+            if (hasLegacyData) {
+                applyLoadedState(legacySnapshot);
+                claimLegacyLocalSnapshot(currentUser);
+                await saveData();
+            } else {
+                applyLoadedState({
+                    appData: createEmptyAppData(),
+                    permanentNotes: '',
+                    doneHeadlines: []
+                });
+                updateSyncStatus('online');
+            }
+        } else {
+            applyLoadedState({
+                appData: createEmptyAppData(),
+                permanentNotes: '',
+                doneHeadlines: []
+            });
+            updateSyncStatus('online');
+        }
+    } catch (e) {
+        console.error("Error loading Firestore data:", e);
+        if (localSnapshot.appData || localSnapshot.permanentNotes || localSnapshot.doneHeadlines.length) {
+            applyLoadedState(localSnapshot);
+        } else {
+            applyLoadedState({
+                appData: createEmptyAppData(),
+                permanentNotes: '',
+                doneHeadlines: []
+            });
+        }
+        updateSyncStatus('offline', 'Firestore unavailable');
+    }
+
     ensureAppDataIntegrity();
     if (elements.permanentNotes) elements.permanentNotes.value = permanentNotes;
     render();
 
-    // Trigger initial tab logic (e.g. fetch news if news is default)
     if (currentView === 'sourcing') {
         renderNews();
+        startNewsAutoRefresh();
     } else if (currentView === 'selection') {
         renderInspiration();
     }
 }
 
 async function saveData() {
-    // ALWAYS save to LocalStorage first so data isn't lost if Firebase fails
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
-    if (elements.permanentNotes) {
-        localStorage.setItem(NOTES_KEY, elements.permanentNotes.value);
+    if (!currentUser?.uid) {
+        updateSyncStatus('offline', 'Sign in required');
+        return;
     }
 
+    permanentNotes = elements.permanentNotes ? elements.permanentNotes.value : permanentNotes;
+    const localPersisted = persistUserLocalCache(currentUser);
     updateSyncStatus('pending');
 
-    // Attempt Firebase sync
     try {
-        await setDoc(doc(db, "daily-tracker-data", DATA_DOC_ID), {
-            appData: appData,
-            permanentNotes: permanentNotes,
+        await setDoc(getUserDocRef(currentUser), {
+            appData,
+            permanentNotes,
+            doneHeadlines: Array.from(doneHeadlines),
             lastUpdated: new Date().toISOString()
         });
         updateSyncStatus('online');
     } catch (e) {
-        console.error("Firebase Sync Error:", e);
-        // We stay 'offline' but local data is safe
-        updateSyncStatus('offline', 'Permissions/Connection Error (Local Active)');
+        console.error("Firestore sync error:", e);
+        updateSyncStatus('offline', localPersisted ? 'Local cache active' : 'Local cache failed');
     }
 }
 
@@ -390,21 +747,23 @@ function updateSyncStatus(status, errorMsg = '') {
 
     if (status === 'online') {
         elements.syncText.textContent = 'Synced';
-        elements.syncStatus.title = 'Cloud Sync Active';
+        elements.syncStatus.title = currentUser?.email
+            ? `Synced as ${currentUser.email}`
+            : 'Cloud sync active';
     } else if (status === 'pending') {
         elements.syncText.textContent = 'Saving...';
-        elements.syncStatus.title = 'Uploading to Cloud...';
+        elements.syncStatus.title = currentUser?.email
+            ? `Saving changes for ${currentUser.email}`
+            : 'Saving changes...';
     } else if (status === 'offline') {
-        elements.syncText.textContent = 'Error';
-        elements.syncStatus.title = 'Sync Failed: ' + errorMsg;
+        elements.syncText.textContent = errorMsg === 'Sign in required' ? 'Login' : 'Offline';
+        elements.syncStatus.title = errorMsg || 'Sync unavailable';
     }
 }
 
 async function saveNotes() {
     permanentNotes = elements.permanentNotes.value;
-    // Debounce or just save directly (Firestore is fast enough for notes usually)
     await saveData();
-    localStorage.setItem(NOTES_KEY, permanentNotes);
     showNotesSaved();
 }
 
@@ -1071,6 +1430,11 @@ function switchTab(viewId) {
         else view.classList.remove('active');
     });
 
+    if (!currentUser?.uid || isLoadingUserData) {
+        stopNewsAutoRefresh();
+        return;
+    }
+
     if (viewId === 'metrics') {
         // When switching to metrics, align the monthly view with the current global focal date
         dashboardMonth = new Date(getWeekDates(globalOffset)[3]); // Use Wednesday of the current focal week
@@ -1621,10 +1985,11 @@ async function saveSourceSelectionIdea() {
     if (url) fetchMetadata(newIdea.id, url);
 }
 
-function markAsDone(headline) {
+async function markAsDone(headline) {
     doneHeadlines.add(headline);
-    localStorage.setItem('done_articles', JSON.stringify(Array.from(doneHeadlines)));
+    persistUserLocalCache(currentUser);
     applyDoneOptimistic(headline);
+    await saveData();
     // Re-render shortly after optimistic fade-out so top sections refill from Buffer.
     setTimeout(() => {
         renderNews(false);
@@ -2506,6 +2871,13 @@ function renderCharts() {
 // Event Listeners
 // ===========================
 function setupEventListeners() {
+    if (elements.authActionBtn) {
+        elements.authActionBtn.addEventListener('click', handleAuthAction);
+    }
+    if (elements.loginBtn) {
+        elements.loginBtn.addEventListener('click', signInWithGoogle);
+    }
+
     // Add card buttons
     elements.addPost.addEventListener('click', () => createCard(CONTENT_TYPES.POST));
     elements.addPromo.addEventListener('click', () => createCard(CONTENT_TYPES.PROMO));
@@ -2538,11 +2910,12 @@ function setupEventListeners() {
         });
     }
     if (elements.resetNewsBtn) {
-        elements.resetNewsBtn.addEventListener('click', () => {
+        elements.resetNewsBtn.addEventListener('click', async () => {
             doneHeadlines.clear();
-            localStorage.removeItem('done_articles');
+            persistUserLocalCache(currentUser);
             sourcingFeedCache.clear();
             sourcingArticlesDirty = true;
+            await saveData();
             renderNews(true);
         });
     }
@@ -2714,16 +3087,21 @@ function setupEventListeners() {
     }
 
     // Export Data
-    const exportBtn = document.getElementById('exportBtn');
-    if (exportBtn) {
-        exportBtn.addEventListener('click', exportData);
+    if (elements.exportBtn) {
+        elements.exportBtn.addEventListener('click', exportData);
     }
 }
 
 function exportData() {
     const backup = {
-        appData: appData,
-        permanentNotes: permanentNotes,
+        user: currentUser ? {
+            uid: currentUser.uid,
+            email: currentUser.email || '',
+            displayName: currentUser.displayName || ''
+        } : null,
+        appData,
+        permanentNotes,
+        doneHeadlines: Array.from(doneHeadlines),
         timestamp: new Date().toISOString()
     };
 
@@ -2745,11 +3123,57 @@ function exportData() {
 // ===========================
 // Initialize
 // ===========================
+async function setupAuthSession() {
+    setAuthGate(true, 'Checking session...');
+    updateAuthUI();
+
+    try {
+        await setPersistence(auth, browserLocalPersistence);
+    } catch (e) {
+        console.error('Failed to set auth persistence', e);
+    }
+
+    onAuthStateChanged(auth, async (user) => {
+        if (!user) {
+            currentUser = null;
+            isLoadingUserData = false;
+            stopNewsAutoRefresh();
+            resetInMemoryState();
+            render();
+            updateAuthUI();
+            updateSyncStatus('offline', 'Sign in required');
+            setAuthGate(true, 'Sign in with Google to load your workspace.');
+            return;
+        }
+
+        currentUser = user;
+        isLoadingUserData = true;
+        updateAuthUI();
+        setAuthGate(true, `Loading ${getUserLabel(user)}...`);
+
+        try {
+            await loadData();
+            isLoadingUserData = false;
+            await drainPendingExtensionIdeas();
+            switchTab(currentView);
+            setAuthGate(false, '');
+        } catch (e) {
+            console.error('Failed to hydrate signed-in user', e);
+            setAuthGate(true, 'We could not load your workspace. Try refreshing.');
+        } finally {
+            isLoadingUserData = false;
+            updateAuthUI();
+        }
+    });
+}
+
 async function init() {
     // Apply persisted tab immediately so refresh doesn't flash/reset to first tab.
     switchTab(currentView);
-    await loadData();
+    loadPendingExtensionIdeasBuffer();
     setupEventListeners();
+    window.addEventListener('message', handleExtensionImportEvent);
+    await setupAuthSession();
 }
 
 document.addEventListener('DOMContentLoaded', init);

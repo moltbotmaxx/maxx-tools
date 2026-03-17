@@ -1,6 +1,4 @@
-const API_KEY = "AIzaSyD9Q9b_RkQ5KCUSoNdqs8W2C3jrB6Q_pCQ";
-const PROJECT_ID = "daily-tracker-ee82c";
-const DOC_PATH = "daily-tracker-data/global-tracker-data";
+const EXTENSION_QUEUE_KEY = 'dailyTrackerIdeaQueue';
 
 function safeHttpUrl(url) {
     if (!url || typeof url !== 'string') return '';
@@ -72,6 +70,51 @@ function resolvePopupTitle(tab) {
     return tabTitle || urlTitle;
 }
 
+function buildQueuedIdea({ title, notes, type, url }) {
+    return {
+        id: Date.now().toString(36) + Math.random().toString(36).slice(2),
+        title,
+        url: safeHttpUrl(url),
+        notes,
+        content: notes,
+        type,
+        image: '',
+        createdAt: new Date().toISOString()
+    };
+}
+
+function getQueuedIdeas() {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.get({ [EXTENSION_QUEUE_KEY]: [] }, items => {
+            if (chrome.runtime.lastError) {
+                reject(new Error(chrome.runtime.lastError.message));
+                return;
+            }
+
+            const queue = Array.isArray(items[EXTENSION_QUEUE_KEY]) ? items[EXTENSION_QUEUE_KEY] : [];
+            resolve(queue);
+        });
+    });
+}
+
+function setQueuedIdeas(queue) {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.set({ [EXTENSION_QUEUE_KEY]: queue.slice(0, 250) }, () => {
+            if (chrome.runtime.lastError) {
+                reject(new Error(chrome.runtime.lastError.message));
+                return;
+            }
+            resolve();
+        });
+    });
+}
+
+async function queueIdea(idea) {
+    const queue = await getQueuedIdeas();
+    queue.unshift(idea);
+    await setQueuedIdeas(queue);
+}
+
 let currentTab = null;
 let selectedType = 'post';
 const statusEl = document.getElementById('status');
@@ -79,16 +122,14 @@ const titleInput = document.getElementById('title');
 const notesInput = document.getElementById('notes');
 const saveBtn = document.getElementById('saveBtn');
 
-// Tab Logic
-chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     currentTab = tabs[0];
     titleInput.value = resolvePopupTitle(currentTab);
     titleInput.focus();
     titleInput.select();
 });
 
-// Category Selector
-document.getElementById('categorySelector').addEventListener('click', (e) => {
+document.getElementById('categorySelector').addEventListener('click', e => {
     if (e.target.classList.contains('cat-opt')) {
         document.querySelectorAll('.cat-opt').forEach(opt => opt.classList.remove('active'));
         e.target.classList.add('active');
@@ -96,92 +137,50 @@ document.getElementById('categorySelector').addEventListener('click', (e) => {
     }
 });
 
-// Save Logic
 document.getElementById('saveBtn').addEventListener('click', async () => {
     const title = titleInput.value.trim();
     const notes = notesInput.value.trim();
 
     if (!title) {
-        statusEl.textContent = "Title is required";
-        statusEl.className = "status error";
+        statusEl.textContent = 'Title is required';
+        statusEl.className = 'status error';
         titleInput.focus();
         return;
     }
 
     saveBtn.disabled = true;
-    saveBtn.textContent = "Saving...";
-    statusEl.textContent = "Saving to Firebase...";
-    statusEl.className = "status";
+    saveBtn.textContent = 'Queueing...';
+    statusEl.textContent = 'Saving in this browser...';
+    statusEl.className = 'status';
 
     try {
-        // 1. Fetch current data
-        const res = await fetch(`https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/${DOC_PATH}?key=${API_KEY}`);
-        if (!res.ok) throw new Error("Failed to fetch data");
-        const doc = await res.json();
+        await queueIdea(buildQueuedIdea({
+            title,
+            notes,
+            type: selectedType,
+            url: currentTab?.url
+        }));
 
-        const appData = doc.fields?.appData?.mapValue?.fields;
-        if (!appData) throw new Error("Invalid document shape");
-        const ideas = appData.ideas?.arrayValue?.values || [];
-
-        // 2. Prepare new idea
-        const newIdea = {
-            mapValue: {
-                fields: {
-                    id: { stringValue: Date.now().toString(36) + Math.random().toString(36).substr(2) },
-                    title: { stringValue: title },
-                    url: { stringValue: safeHttpUrl(currentTab?.url) },
-                    notes: { stringValue: notes },
-                    type: { stringValue: selectedType },
-                    createdAt: { stringValue: new Date().toISOString() },
-                    image: { stringValue: "" } // Placeholder
-                }
-            }
-        };
-
-        // 3. Append to ideas
-        ideas.unshift(newIdea);
-
-        // 4. Update document (Full patch for Firestore REST API simplicity)
-        const updateData = {
-            fields: {
-                appData: doc.fields.appData,
-                permanentNotes: doc.fields.permanentNotes,
-                lastUpdated: { stringValue: new Date().toISOString() }
-            }
-        };
-        // Update the ideas array inside appData
-        updateData.fields.appData.mapValue.fields.ideas = { arrayValue: { values: ideas } };
-
-        const saveRes = await fetch(`https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/${DOC_PATH}?key=${API_KEY}`, {
-            method: 'PATCH',
-            body: JSON.stringify(updateData)
-        });
-
-        if (saveRes.ok) {
-            statusEl.textContent = "Saved successfully!";
-            statusEl.className = "status success";
-            setTimeout(() => window.close(), 1500);
-        } else {
-            const saveErrText = await saveRes.text();
-            throw new Error(`Failed to save: ${saveErrText}`);
-        }
+        statusEl.textContent = 'Queued. Open Daily Tracker to import it.';
+        statusEl.className = 'status success';
+        setTimeout(() => window.close(), 1400);
     } catch (err) {
         console.error(err);
-        statusEl.textContent = "Error saving. Check console.";
-        statusEl.className = "status error";
+        statusEl.textContent = 'Error queueing idea. Check console.';
+        statusEl.className = 'status error';
         saveBtn.disabled = false;
-        saveBtn.textContent = "Retry Save";
+        saveBtn.textContent = 'Retry Save';
     }
 });
 
-titleInput.addEventListener('keydown', (e) => {
+titleInput.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
         e.preventDefault();
         saveBtn.click();
     }
 });
 
-notesInput.addEventListener('keydown', (e) => {
+notesInput.addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
         e.preventDefault();
         saveBtn.click();

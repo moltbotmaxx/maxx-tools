@@ -1,6 +1,9 @@
-const API_KEY = "AIzaSyD9Q9b_RkQ5KCUSoNdqs8W2C3jrB6Q_pCQ";
-const PROJECT_ID = "daily-tracker-ee82c";
-const DOC_PATH = "daily-tracker-data/global-tracker-data";
+const EXTENSION_QUEUE_KEY = 'dailyTrackerIdeaQueue';
+const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
+const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
+
+let queueFlushTimer = null;
+let queueFlushInFlight = false;
 
 function escapeHtml(value) {
   return String(value ?? '')
@@ -83,21 +86,133 @@ function resolveSmartTitle(data) {
   return directTitle;
 }
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.action === "open-clipper-modal") {
+function buildQueuedIdea({ title, notes, type, url }) {
+  return {
+    id: Date.now().toString(36) + Math.random().toString(36).slice(2),
+    title,
+    url: safeHttpUrl(url),
+    notes,
+    content: notes,
+    type,
+    image: '',
+    createdAt: new Date().toISOString()
+  };
+}
+
+function getQueuedIdeas() {
+  return new Promise((resolve, reject) => {
+    chrome.storage.local.get({ [EXTENSION_QUEUE_KEY]: [] }, items => {
+      if (chrome.runtime.lastError) {
+        reject(new Error(chrome.runtime.lastError.message));
+        return;
+      }
+
+      const queue = Array.isArray(items[EXTENSION_QUEUE_KEY]) ? items[EXTENSION_QUEUE_KEY] : [];
+      resolve(queue);
+    });
+  });
+}
+
+function setQueuedIdeas(queue) {
+  return new Promise((resolve, reject) => {
+    chrome.storage.local.set({ [EXTENSION_QUEUE_KEY]: queue.slice(0, 250) }, () => {
+      if (chrome.runtime.lastError) {
+        reject(new Error(chrome.runtime.lastError.message));
+        return;
+      }
+      resolve();
+    });
+  });
+}
+
+async function queueIdea(idea) {
+  const queue = await getQueuedIdeas();
+  queue.unshift(idea);
+  await setQueuedIdeas(queue);
+}
+
+function isDailyTrackerAppPage() {
+  return Boolean(
+    document.getElementById('inspirationGrid') &&
+    document.getElementById('weekGrid') &&
+    document.getElementById('syncStatus')
+  );
+}
+
+async function flushQueuedIdeasToApp() {
+  if (!isDailyTrackerAppPage() || queueFlushInFlight) return;
+
+  const ideas = await getQueuedIdeas();
+  if (!ideas.length) return;
+
+  queueFlushInFlight = true;
+  const sentIds = new Set(ideas.map(idea => idea?.id).filter(Boolean));
+
+  let timeoutId = null;
+  const ackHandler = async event => {
+    if (event.source !== window) return;
+    if (event.data?.type !== EXTENSION_IMPORT_ACK_EVENT) return;
+
+    window.clearTimeout(timeoutId);
+    window.removeEventListener('message', ackHandler);
+    queueFlushInFlight = false;
+
+    try {
+      const currentQueue = await getQueuedIdeas();
+      const remainingQueue = currentQueue.filter(idea => !sentIds.has(idea?.id));
+      await setQueuedIdeas(remainingQueue);
+    } catch (e) {
+      console.error('Failed to clear imported clipper queue', e);
+    }
+  };
+
+  timeoutId = window.setTimeout(() => {
+    window.removeEventListener('message', ackHandler);
+    queueFlushInFlight = false;
+  }, 4000);
+
+  window.addEventListener('message', ackHandler);
+  window.postMessage({ type: EXTENSION_IMPORT_EVENT, ideas }, '*');
+}
+
+function scheduleQueueFlush(delay = 300) {
+  if (!isDailyTrackerAppPage()) return;
+  window.clearTimeout(queueFlushTimer);
+  queueFlushTimer = window.setTimeout(() => {
+    flushQueuedIdeasToApp().catch(err => {
+      queueFlushInFlight = false;
+      console.error('Failed to flush clipper queue into Daily Tracker', err);
+    });
+  }, delay);
+}
+
+if (isDailyTrackerAppPage()) {
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', () => scheduleQueueFlush(700), { once: true });
+  } else {
+    scheduleQueueFlush(700);
+  }
+
+  chrome.storage.onChanged.addListener((changes, areaName) => {
+    if (areaName === 'local' && changes[EXTENSION_QUEUE_KEY]) {
+      scheduleQueueFlush(150);
+    }
+  });
+}
+
+chrome.runtime.onMessage.addListener(request => {
+  if (request.action === 'open-clipper-modal') {
     createClipperModal(request.data);
   }
 });
 
 function createClipperModal(data) {
-  // Check if already exists
   if (document.getElementById('dt-clipper-container')) return;
 
   const container = document.createElement('div');
   container.id = 'dt-clipper-container';
   const shadowRoot = container.attachShadow({ mode: 'open' });
 
-  // Styles
   const style = document.createElement('style');
   style.textContent = `
     :host {
@@ -273,14 +388,15 @@ function createClipperModal(data) {
   overlay.appendChild(modal);
   document.body.appendChild(container);
 
-  // Modal Events
   shadowRoot.querySelector('.close-btn').onclick = closeModal;
-  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  overlay.onclick = event => {
+    if (event.target === overlay) closeModal();
+  };
 
   const catOpts = shadowRoot.querySelectorAll('.cat-opt');
   catOpts.forEach(opt => {
     opt.onclick = () => {
-      catOpts.forEach(o => o.classList.remove('active'));
+      catOpts.forEach(option => option.classList.remove('active'));
       opt.classList.add('active');
       selectedType = opt.dataset.type;
     };
@@ -293,80 +409,49 @@ function createClipperModal(data) {
     const saveBtn = shadowRoot.querySelector('#dt-save');
 
     if (!title) {
-      statusEl.textContent = "Title is required";
+      statusEl.textContent = 'Title is required';
       return;
     }
 
     saveBtn.disabled = true;
-    saveBtn.textContent = "Saving...";
+    saveBtn.textContent = 'Queueing...';
 
     try {
-      const res = await fetch(`https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/${DOC_PATH}?key=${API_KEY}`);
-      const docJson = await res.json();
+      await queueIdea(buildQueuedIdea({
+        title,
+        notes,
+        type: selectedType,
+        url: data?.url
+      }));
 
-      let appDataFields = docJson.fields.appData.mapValue.fields;
-      let ideas = appDataFields.ideas.arrayValue.values || [];
-
-      const newIdea = {
-        mapValue: {
-          fields: {
-            id: { stringValue: Math.random().toString(36).substr(2, 9) },
-            title: { stringValue: title },
-            url: { stringValue: safeHttpUrl(data.url) },
-            notes: { stringValue: notes },
-            type: { stringValue: selectedType },
-            createdAt: { stringValue: new Date().toISOString() },
-            image: { stringValue: "" }
-          }
-        }
-      };
-
-      ideas.unshift(newIdea);
-
-      const updateData = {
-        fields: {
-          appData: docJson.fields.appData,
-          permanentNotes: docJson.fields.permanentNotes,
-          lastUpdated: { stringValue: new Date().toISOString() }
-        }
-      };
-      updateData.fields.appData.mapValue.fields.ideas = { arrayValue: { values: ideas } };
-
-      const saveRes = await fetch(`https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/${DOC_PATH}?key=${API_KEY}`, {
-        method: 'PATCH',
-        body: JSON.stringify(updateData)
-      });
-
-      if (saveRes.ok) {
-        statusEl.textContent = "Saved successfully!";
-        setTimeout(closeModal, 1500);
-      } else {
-        throw new Error();
-      }
+      statusEl.textContent = 'Queued. Open Daily Tracker to import it.';
+      scheduleQueueFlush(150);
+      setTimeout(closeModal, 1400);
     } catch (e) {
-      statusEl.textContent = "Error saving. Check console.";
+      console.error('Clipper queue failed', e);
+      statusEl.textContent = 'Error queueing idea. Check console.';
       saveBtn.disabled = false;
-      saveBtn.textContent = "Retry Save";
+      saveBtn.textContent = 'Retry Save';
     }
   };
 
-  shadowRoot.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      e.preventDefault();
+  shadowRoot.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
       closeModal();
     }
   });
 
-  shadowRoot.querySelector('#dt-title').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
+  shadowRoot.querySelector('#dt-title').addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
       shadowRoot.querySelector('#dt-save').click();
     }
   });
 
-  shadowRoot.querySelector('#dt-notes').addEventListener('keydown', (e) => {
-    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
-      e.preventDefault();
+  shadowRoot.querySelector('#dt-notes').addEventListener('keydown', event => {
+    if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') {
+      event.preventDefault();
       shadowRoot.querySelector('#dt-save').click();
     }
   });

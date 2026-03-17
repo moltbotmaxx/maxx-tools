@@ -3,30 +3,28 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Single shared document used by the app.
-    // NOTE: This still has public reads/writes (no auth flow yet), but limits writes
-    // to valid structure and blocks access to any other document in the collection.
-    match /daily-tracker-data/global-tracker-data {
-      allow read: if true;
-      allow create, update: if isValidPayload();
-      allow delete: if false;
+    match /daily-tracker-data/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId) && isValidPayload();
+      allow delete: if isOwner(userId);
 
       function isValidPayload() {
-        return request.resource.data.keys().hasOnly(['appData', 'permanentNotes', 'lastUpdated'])
+        return request.resource.data.keys().hasOnly(['appData', 'permanentNotes', 'doneHeadlines', 'lastUpdated'])
           && request.resource.data.appData is map
           && request.resource.data.appData.keys().hasOnly(['pool', 'schedule', 'ideas'])
           && request.resource.data.appData.pool is list
           && request.resource.data.appData.schedule is map
           && request.resource.data.appData.ideas is list
+          && request.resource.data.doneHeadlines is list
+          && request.resource.data.doneHeadlines.size() <= 5000
           && request.resource.data.permanentNotes is string
           && request.resource.data.permanentNotes.size() <= 20000
           && request.resource.data.lastUpdated is string;
       }
-    }
 
-    // Block any other doc IDs in daily-tracker-data collection.
-    match /daily-tracker-data/{document} {
-      allow read, write: if false;
+      function isOwner(userId) {
+        return request.auth != null && request.auth.uid == userId;
+      }
     }
 
     // Deny access to all other collections by default

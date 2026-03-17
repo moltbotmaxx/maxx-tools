@@ -15,4 +15,4 @@ This Chrome Extension allows you to save any website directly to your Inspiratio
 - **Smart Popup**: Automatically grabs the page title and URL.
 - **On-Page Modal**: Right-clicking opens a modal directly on the page so you don't have to leave your flow.
 - **Custom Categories**: Select between Post, Reel, or Promo.
-- **Cloud Sync**: Syncs instantly with your Firebase database.
+- **Browser Queue Import**: Saves locally in the browser and imports into the signed-in Daily Tracker account when the app is open.
