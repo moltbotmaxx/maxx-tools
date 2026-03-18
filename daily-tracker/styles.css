@@ -1199,6 +1199,7 @@ canvas {
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-tertiary);
+  white-space: pre-line;
 }
 
 /* ===========================

@@ -593,6 +593,33 @@ function setAuthGate(visible, statusText = '') {
     }
 }
 
+function getFriendlyAuthErrorMessage(error) {
+    const code = error?.code || '';
+    const host = window.location.hostname || '';
+    const isLocalhost = ['localhost', '127.0.0.1'].includes(host);
+
+    if (code === 'auth/configuration-not-found') {
+        const localhostHint = isLocalhost
+            ? ' Also add `localhost` in Firebase Authentication > Settings > Authorized domains.'
+            : '';
+        return `Firebase Auth is not configured for Google sign-in yet. Enable Authentication in the Firebase console, turn on the Google provider under Sign-in method, and make sure this domain is authorized.${localhostHint}`;
+    }
+
+    if (code === 'auth/unauthorized-domain') {
+        return `This domain is not authorized for Firebase Auth: ${window.location.origin}. Add it in Firebase Authentication > Settings > Authorized domains.`;
+    }
+
+    if (code === 'auth/popup-blocked') {
+        return 'The browser blocked the Google sign-in popup. Allow popups for this site and try again.';
+    }
+
+    if (code === 'auth/popup-closed-by-user') {
+        return 'The Google sign-in popup was closed before finishing.';
+    }
+
+    return error?.message || 'Google sign-in failed.';
+}
+
 async function signInWithGoogle() {
     if (isHandlingAuthAction) return;
 
@@ -604,7 +631,7 @@ async function signInWithGoogle() {
         await signInWithPopup(auth, googleProvider);
     } catch (e) {
         console.error('Google sign-in failed', e);
-        setAuthGate(true, e?.message || 'Google sign-in failed.');
+        setAuthGate(true, getFriendlyAuthErrorMessage(e));
     } finally {
         isHandlingAuthAction = false;
         updateAuthUI();
