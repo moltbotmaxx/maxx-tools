@@ -102,6 +102,12 @@
         <!-- Main Content Area -->
         <main class="main-content">
             <div id="authGate" class="auth-gate show" data-mode="resolving">
+                <div class="auth-gate__loader" aria-hidden="true">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="60" cy="60" r="42" class="auth-gate__loader-ring"></circle>
+                        <path d="M60 18A42 42 0 0 1 102 60" class="auth-gate__loader-arc"></path>
+                    </svg>
+                </div>
                 <div class="auth-gate__card bento-box">
                     <h2 id="authGateTitle">Restoring your workspace</h2>
                     <p id="authGateDescription">Checking your saved session...</p>

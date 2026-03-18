@@ -1172,6 +1172,37 @@ canvas {
   display: flex;
 }
 
+.auth-gate__loader {
+  display: none;
+  width: 92px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+}
+
+.auth-gate__loader svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.auth-gate__loader-ring,
+.auth-gate__loader-arc {
+  stroke-linecap: round;
+  stroke-width: 10;
+}
+
+.auth-gate__loader-ring {
+  stroke: rgba(15, 23, 42, 0.08);
+}
+
+.auth-gate__loader-arc {
+  stroke: #111827;
+  animation: auth-gate-spin 0.95s linear infinite;
+  transform-origin: 50% 50%;
+}
+
 .auth-gate__card {
   width: min(460px, 100%);
   text-align: center;
@@ -1200,6 +1231,35 @@ canvas {
   font-weight: 600;
   color: var(--text-tertiary);
   white-space: pre-line;
+}
+
+.auth-gate[data-mode="resolving"] .auth-gate__loader {
+  display: flex;
+}
+
+.auth-gate[data-mode="resolving"] .auth-gate__card {
+  width: auto;
+  padding: 0;
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+}
+
+.auth-gate[data-mode="resolving"] .auth-gate__card h2,
+.auth-gate[data-mode="resolving"] .auth-gate__card p,
+.auth-gate[data-mode="resolving"] .auth-gate__status,
+.auth-gate[data-mode="resolving"] #loginBtn {
+  display: none;
+}
+
+@keyframes auth-gate-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===========================
