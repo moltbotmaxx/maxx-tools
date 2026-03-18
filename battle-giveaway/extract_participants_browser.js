@@ -61,11 +61,21 @@ async function loginToInstagram(page, username, password) {
 }
 
 function extractMediaIdFromHtml(html) {
-  const match = html.match(/"media_id":"(\d+)"/);
-  if (!match) {
-    throw new Error("Could not determine media_id from the post page.");
+  const patterns = [
+    /"media_id":"(\d+)"/,
+    /"media_pk":"(\d+)"/,
+    /instagram:\/\/media\?id=(\d+)/,
+    /property="al:ios:url"\s+content="instagram:\/\/media\?id=(\d+)"/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+    if (match) {
+      return match[1];
+    }
   }
-  return match[1];
+
+  throw new Error("Could not determine media_id from the post page.");
 }
 
 async function extractOwnerUsername(page) {

@@ -4,11 +4,15 @@ const fsp = require("fs/promises");
 const http = require("http");
 const path = require("path");
 const { spawn } = require("child_process");
+const ffmpegPath = require("ffmpeg-static");
 
 const ROOT_DIR = path.resolve(__dirname);
+const OUTPUT_DIR = path.join(ROOT_DIR, "output");
 const PARTICIPANTS_PATH = path.join(ROOT_DIR, "participants", "players.txt");
 const COMMENTERS_PATH = path.join(ROOT_DIR, "participants", "commenters.json");
 const PLAYERS_JSON_PATH = path.join(ROOT_DIR, "battle", "players.json");
+const TEMP_DIR = path.join(ROOT_DIR, "temp");
+const RECORDING_AUDIO_ADVANCE_MS = 55;
 
 const MIME_TYPES = {
   ".css": "text/css; charset=utf-8",
@@ -127,6 +131,25 @@ function readRequestBody(request) {
   });
 }
 
+function readBinaryRequestBody(request, maxBytes = 400_000_000) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    let totalBytes = 0;
+
+    request.on("data", (chunk) => {
+      totalBytes += chunk.length;
+      if (totalBytes > maxBytes) {
+        reject(new Error("Recording payload too large."));
+        request.destroy();
+        return;
+      }
+      chunks.push(chunk);
+    });
+    request.on("end", () => resolve(Buffer.concat(chunks)));
+    request.on("error", reject);
+  });
+}
+
 async function readJsonFile(filePath) {
   try {
     return JSON.parse(await fsp.readFile(filePath, "utf8"));
@@ -174,6 +197,19 @@ async function buildStatePayload() {
     participantsPreview: participants.slice(0, 12),
     progress: serverState.progress,
   };
+}
+
+async function ensureDirectory(targetPath) {
+  await fsp.mkdir(targetPath, { recursive: true });
+}
+
+function sanitizeFilename(value, fallback = "battle-recording") {
+  const normalized = `${value || ""}`
+    .trim()
+    .replace(/[^a-zA-Z0-9_-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+  return normalized || fallback;
 }
 
 function detectPythonExecutable() {
@@ -363,6 +399,73 @@ async function handleExtractRequest(response, bodyText) {
   }
 }
 
+async function handleRecordingRequest(request, response) {
+  const recordingBuffer = await readBinaryRequestBody(request);
+  if (!recordingBuffer.length) {
+    sendJson(response, 400, {
+      error: "Recording body is empty.",
+    });
+    return;
+  }
+
+  const requestedName = request.headers["x-recording-name"];
+  const baseName = sanitizeFilename(Array.isArray(requestedName) ? requestedName[0] : requestedName);
+  const tempInputPath = path.join(TEMP_DIR, `${baseName}-${Date.now()}.webm`);
+  const outputFilename = `${baseName}.mp4`;
+  const outputPath = path.join(OUTPUT_DIR, outputFilename);
+  const audioOffsetSeconds = Math.max(0, RECORDING_AUDIO_ADVANCE_MS) / 1000;
+
+  await ensureDirectory(TEMP_DIR);
+  await ensureDirectory(OUTPUT_DIR);
+
+  try {
+    await fsp.writeFile(tempInputPath, recordingBuffer);
+    await runCommand(
+      ffmpegPath || "ffmpeg",
+      [
+        "-y",
+        "-i",
+        tempInputPath,
+        "-itsoffset",
+        `-${audioOffsetSeconds.toFixed(3)}`,
+        "-i",
+        tempInputPath,
+        "-map",
+        "0:v:0",
+        "-map",
+        "1:a:0?",
+        "-c:v",
+        "libx264",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "-af",
+        "aresample=async=1:first_pts=0",
+        "-c:a",
+        "aac",
+        "-b:a",
+        "192k",
+        outputPath,
+      ],
+      process.env,
+      { timeoutMs: 180_000 },
+    );
+
+    sendJson(response, 200, {
+      downloadUrl: `/output/${outputFilename}`,
+      filename: outputFilename,
+      ok: true,
+    });
+  } catch (error) {
+    sendJson(response, 500, {
+      error: error.message || "Failed to encode the recording.",
+    });
+  } finally {
+    await fsp.rm(tempInputPath, { force: true }).catch(() => null);
+  }
+}
+
 async function handleApiRequest(request, response) {
   const pathname = new URL(request.url || "/", "http://127.0.0.1").pathname;
 
@@ -382,6 +485,11 @@ async function handleApiRequest(request, response) {
     return true;
   }
 
+  if (pathname === "/api/recording" && request.method === "POST") {
+    await handleRecordingRequest(request, response);
+    return true;
+  }
+
   if (pathname.startsWith("/api/")) {
     sendJson(response, 404, {
       error: "API route not found.",
@@ -394,6 +502,8 @@ async function handleApiRequest(request, response) {
 
 function startStaticServer({ port = 0, host = "127.0.0.1" } = {}) {
   const server = http.createServer(async (request, response) => {
+    const requestPathname = new URL(request.url || "/", "http://127.0.0.1").pathname;
+
     try {
       if (await handleApiRequest(request, response)) {
         return;
@@ -428,11 +538,17 @@ function startStaticServer({ port = 0, host = "127.0.0.1" } = {}) {
 
       const extension = path.extname(targetPath).toLowerCase();
       const stream = fs.createReadStream(targetPath);
-      response.writeHead(200, {
+      const headers = {
         "Access-Control-Allow-Origin": "*",
         "Cache-Control": "no-store",
         "Content-Type": MIME_TYPES[extension] || "application/octet-stream",
-      });
+      };
+
+      if (requestPathname.startsWith("/output/") && extension === ".mp4") {
+        headers["Content-Disposition"] = `attachment; filename=\"${path.basename(targetPath)}\"`;
+      }
+
+      response.writeHead(200, headers);
       stream.pipe(response);
       stream.on("error", () => {
         if (!response.headersSent) {

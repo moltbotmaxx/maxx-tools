@@ -46,6 +46,16 @@ let latestState = null;
 let pollTimer = null;
 let staticMode = false;
 let uploadedPlayers = null;
+let activeBattleHandler = null;
+let battleButtonBusy = false;
+let battlePreviewIframe = null;
+let battlePreviewReady = false;
+let battlePreviewSignature = "";
+let battlePreviewVersion = 0;
+let prepareBattleTimer = null;
+let pendingBattleStart = false;
+let uploadedPlayersVersion = 0;
+let appBooted = false;
 
 // ── Mode detection ──────────────────────────────────────────────────
 
@@ -86,6 +96,9 @@ async function init() {
   } else {
     initServerMode();
   }
+
+  appBooted = true;
+  syncBattleButtonState();
 }
 
 // ── Static mode (GitHub Pages) ──────────────────────────────────────
@@ -135,13 +148,14 @@ async function loadJsonFile(file) {
     }
 
     uploadedPlayers = data;
+    uploadedPlayersVersion += 1;
     dropZone.classList.add("loaded");
     dropZone.querySelector("div > div:last-child").textContent =
       `✓ Loaded ${data.length} players from ${file.name}`;
 
     participantCount.textContent = `${data.length}`;
     extractSummary.textContent = `${data.length} players (file upload)`;
-    battleButton.disabled = false;
+    syncBattleButtonState();
 
     const preview = data.slice(0, 12).map((player) => player.name || player.id);
     participantsPreview.replaceChildren();
@@ -152,6 +166,7 @@ async function loadJsonFile(file) {
     }
 
     setStatus(`Ready — ${data.length} players loaded. Hit "Run battle" to start!`);
+    scheduleBattlePreparation({ immediate: true });
   } catch (error) {
     setStatus(`Failed to parse file: ${error.message}`, true);
   }
@@ -164,8 +179,8 @@ function initServerMode() {
   serverControls.classList.remove("hidden");
   extractButton.classList.remove("hidden");
 
-  postUrlInput.value = "https://www.instagram.com/p/DVy3rKeIPF1/";
-  filterTextInput.value = "";
+  postUrlInput.value = "https://www.instagram.com/p/DV6fPoTlWnH/";
+  filterTextInput.value = "plus";
 
   extractButton.addEventListener("click", onExtract);
 
@@ -200,6 +215,7 @@ async function onExtract() {
   }
 
   setBusy(true);
+  resetBattlePreview("Extracting participants and refreshing assets...");
   renderProgress(
     {
       detail: "Starting extraction...",
@@ -252,18 +268,29 @@ function onRunBattle() {
       setStatus("Upload a players.json file first.", true);
       return;
     }
-    launchBattleWithPlayers(uploadedPlayers);
   } else {
     if (!latestState?.battleReady) {
       setStatus("Extract participants first so the battle has player data.", true);
       return;
     }
-    launchBattleIframe();
   }
+
+  pendingBattleStart = true;
+  battleButtonBusy = true;
+  syncBattleButtonState();
+  prepareBattlePreview({ immediate: true, autoStart: true });
 }
 
 function buildBattleQuery() {
   return new URLSearchParams({
+    width: "1080",
+    height: "1920",
+    waitForStart: "1",
+    record: "1",
+    recordDownload: "0",
+    recordFps: "30",
+    recordHoldAfterWinnerMs: "4000",
+    recordFilename: "battle-recording",
     seed: `${Date.now()}`,
     circleScale: toScaleParam(circleSizeInput.value),
     finalDuelHits: `${normalizeFinalHitCount(finalHitCountInput.value)}`,
@@ -282,35 +309,300 @@ function buildBattleQuery() {
   });
 }
 
-function launchBattleIframe() {
-  const query = buildBattleQuery();
-  const iframe = document.createElement("iframe");
-  iframe.src = `/battle/index.html?${query.toString()}`;
-  iframe.title = "Battle preview";
-  previewSlot.replaceChildren(iframe);
-  previewSlot.classList.remove("empty");
-  setStatus("Battle running.");
+function buildBattlePreviewSignature() {
+  return JSON.stringify({
+    battleDataVersion: staticMode
+      ? uploadedPlayersVersion
+      : latestState?.lastExtract?.extractedAt || latestState?.participantCount || 0,
+    centerBias: normalizeTuningPercent(centerBiasInput.value, 135),
+    chaosScale: normalizeTuningPercent(chaosScaleInput.value, 65),
+    circleSize: normalizePercent(circleSizeInput.value),
+    finalHits: normalizeFinalHitCount(finalHitCountInput.value),
+    fightDrive: normalizeTuningPercent(fightDriveInput.value, 145),
+    fxIntensity: normalizeTuningPercent(fxIntensityInput.value, 100),
+    hitCount: normalizeHitCount(hitCountInput.value),
+    mode: staticMode ? "static" : "server",
+    nameSize: normalizePercent(nameSizeInput.value),
+    shakeScale: normalizeTuningPercent(shakeScaleInput.value, 100),
+    showAvatars: showAvatarsInput.checked,
+    showNames: showNamesInput.checked,
+    soundEnabled: soundEnabledInput.checked,
+    soundVolume: normalizeVolume(soundVolumeInput.value),
+  });
 }
 
-function launchBattleWithPlayers(players) {
+function buildRecordingFilenameBase() {
+  return `battle-${new Date().toISOString().replace(/[:.]/g, "-")}`;
+}
+
+function buildBattleIframeSrc() {
   const query = buildBattleQuery();
+  if (staticMode) {
+    const basePath = new URL("../battle/index.html", window.location.href).href;
+    return `${basePath}?${query.toString()}`;
+  }
+  return `/battle/index.html?${query.toString()}`;
+}
+
+function clearPrepareBattleTimer() {
+  if (!prepareBattleTimer) {
+    return;
+  }
+  window.clearTimeout(prepareBattleTimer);
+  prepareBattleTimer = null;
+}
+
+function resetBattlePreview(message = "Run the battle to render the arena here.") {
+  clearPrepareBattleTimer();
+  removeActiveBattleHandler();
+  battlePreviewIframe = null;
+  battlePreviewReady = false;
+  battlePreviewSignature = "";
+  battlePreviewVersion += 1;
+  pendingBattleStart = false;
+  previewSlot.replaceChildren(document.createTextNode(message));
+  previewSlot.classList.add("empty");
+}
+
+function scheduleBattlePreparation(options = {}) {
+  const { autoStart = false, immediate = false } = options;
+  if (!appBooted) {
+    return;
+  }
+
+  if (staticMode) {
+    if (!uploadedPlayers || uploadedPlayers.length === 0) {
+      return;
+    }
+  } else if (!latestState?.battleReady || latestState.extracting) {
+    return;
+  }
+
+  if (autoStart) {
+    pendingBattleStart = true;
+  }
+
+  clearPrepareBattleTimer();
+  if (immediate) {
+    prepareBattlePreview({ autoStart: pendingBattleStart });
+    return;
+  }
+
+  prepareBattleTimer = window.setTimeout(() => {
+    prepareBattleTimer = null;
+    prepareBattlePreview({ autoStart: pendingBattleStart });
+  }, 180);
+}
+
+function prepareBattlePreview(options = {}) {
+  const { autoStart = false } = options;
+  const players = staticMode ? uploadedPlayers : null;
+  const signature = buildBattlePreviewSignature();
+
+  if (battlePreviewIframe && battlePreviewSignature === signature) {
+    if (autoStart) {
+      startPreparedBattle();
+    } else if (battlePreviewReady) {
+      setStatus("Battle loaded. Press Run battle.");
+    }
+    return;
+  }
+
+  battlePreviewReady = false;
+  battlePreviewSignature = signature;
+  const previewVersion = battlePreviewVersion + 1;
+  battlePreviewVersion = previewVersion;
+
   const iframe = document.createElement("iframe");
-  const basePath = new URL("../battle/index.html", window.location.href).href;
-  iframe.src = `${basePath}?${query.toString()}`;
+  iframe.src = buildBattleIframeSrc();
   iframe.title = "Battle preview";
 
-  // Listen for the battle iframe to signal it's ready
-  const messageHandler = (event) => {
-    if (event.data?.type === "battle-ready" && event.source === iframe.contentWindow) {
-      iframe.contentWindow.postMessage({ type: "battle-players", players }, "*");
-      window.removeEventListener("message", messageHandler);
-    }
-  };
-  window.addEventListener("message", messageHandler);
-
+  battlePreviewIframe = iframe;
+  registerBattleMessageHandler(iframe, {
+    autoStart,
+    players,
+    signature,
+    version: previewVersion,
+  });
   previewSlot.replaceChildren(iframe);
   previewSlot.classList.remove("empty");
-  setStatus("Battle running.");
+  setStatus(autoStart ? "Preparing battle scene..." : "Loading battle preview...");
+}
+
+function startPreparedBattle() {
+  if (!battlePreviewIframe) {
+    prepareBattlePreview({ autoStart: true });
+    return;
+  }
+
+  if (!battlePreviewReady) {
+    pendingBattleStart = true;
+    setStatus("Preparing battle scene...");
+    return;
+  }
+
+  pendingBattleStart = false;
+  battlePreviewReady = false;
+  battlePreviewSignature = "";
+  battlePreviewIframe.contentWindow?.postMessage(
+    {
+      type: "battle-start",
+      filenameBase: buildRecordingFilenameBase(),
+    },
+    "*",
+  );
+  setStatus("Battle running. Recording in progress...");
+}
+
+function removeActiveBattleHandler() {
+  if (!activeBattleHandler) {
+    return;
+  }
+  window.removeEventListener("message", activeBattleHandler);
+  activeBattleHandler = null;
+}
+
+function sanitizeDownloadName(value, fallback = "battle-recording") {
+  const normalized = `${value || ""}`
+    .trim()
+    .replace(/[^a-zA-Z0-9_-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+  return normalized || fallback;
+}
+
+function triggerBlobDownload(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
+  document.body.append(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 10_000);
+}
+
+async function exportRecording(blob, filenameBase) {
+  const safeBaseName = sanitizeDownloadName(filenameBase);
+
+  if (staticMode) {
+    triggerBlobDownload(blob, `${safeBaseName}.webm`);
+    setStatus("Recording exported as WebM.");
+    battleButtonBusy = false;
+    syncBattleButtonState();
+    scheduleBattlePreparation({ immediate: true });
+    return;
+  }
+
+  setStatus("Encoding MP4 export...");
+  const response = await fetch("/api/recording", {
+    method: "POST",
+    headers: {
+      "Content-Type": blob.type || "video/webm",
+      "X-Recording-Name": safeBaseName,
+    },
+    body: blob,
+  });
+  const payload = await response.json().catch(() => ({}));
+
+  if (!response.ok) {
+    throw new Error(payload.error || "Failed to encode the recording.");
+  }
+
+  const downloadUrl = payload.downloadUrl;
+  if (!downloadUrl) {
+    throw new Error("Recording encoded, but no download URL was returned.");
+  }
+
+  const outputFilename = payload.filename || `${safeBaseName}.mp4`;
+  setStatus(`Downloading ${outputFilename}...`);
+
+  try {
+    const downloadResponse = await fetch(downloadUrl, { cache: "no-store" });
+    if (!downloadResponse.ok) {
+      throw new Error(`Download request failed with ${downloadResponse.status}.`);
+    }
+
+    const mp4Blob = await downloadResponse.blob();
+    if (!mp4Blob.size) {
+      throw new Error("Downloaded MP4 is empty.");
+    }
+
+    triggerBlobDownload(mp4Blob, outputFilename);
+  } catch (error) {
+    const anchor = document.createElement("a");
+    anchor.href = downloadUrl;
+    anchor.download = outputFilename;
+    document.body.append(anchor);
+    anchor.click();
+    anchor.remove();
+    console.warn("Falling back to direct MP4 download link.", error);
+  }
+
+  setStatus(`Recording exported as ${outputFilename}.`);
+  battleButtonBusy = false;
+  syncBattleButtonState();
+  scheduleBattlePreparation({ immediate: true });
+}
+
+function registerBattleMessageHandler(iframe, context = {}) {
+  const { autoStart = false, players = null, signature = "", version = 0 } = context;
+  removeActiveBattleHandler();
+
+  activeBattleHandler = (event) => {
+    if (event.source !== iframe.contentWindow) {
+      return;
+    }
+
+    if (event.data?.type === "battle-ready" && Array.isArray(players)) {
+      iframe.contentWindow.postMessage({ type: "battle-players", players }, "*");
+      return;
+    }
+
+    if (event.data?.type === "battle-prepared") {
+      if (version !== battlePreviewVersion || iframe !== battlePreviewIframe || signature !== battlePreviewSignature) {
+        return;
+      }
+      battlePreviewReady = true;
+      if (pendingBattleStart || autoStart) {
+        startPreparedBattle();
+      } else {
+        setStatus("Battle loaded. Press Run battle.");
+      }
+      return;
+    }
+
+    if (event.data?.type === "battle-recording-status") {
+      if (event.data.status === "started") {
+        setStatus("Battle running. Recording in progress...");
+      } else if (event.data.status === "winner-selected") {
+        setStatus("Winner selected. Finalizing video...");
+      }
+      return;
+    }
+
+    if (event.data?.type === "battle-recording-error") {
+      battleButtonBusy = false;
+      syncBattleButtonState();
+      setStatus(event.data.error || "Recording failed.", true);
+      return;
+    }
+
+    if (
+      event.data?.type === "battle-recording-ready" &&
+      event.data.blob &&
+      typeof event.data.blob.arrayBuffer === "function"
+    ) {
+      const filenameBase = event.data.filenameBase || "battle-recording";
+      void exportRecording(event.data.blob, filenameBase).catch((error) => {
+        battleButtonBusy = false;
+        syncBattleButtonState();
+        setStatus(error.message, true);
+      });
+    }
+  };
+
+  window.addEventListener("message", activeBattleHandler);
 }
 
 // ── Render helpers ──────────────────────────────────────────────────
@@ -334,8 +626,8 @@ function renderState(state, options = {}) {
     participantsPreview.append(pill);
   }
 
-  battleButton.disabled = !state.battleReady || state.extracting;
-  extractButton.disabled = state.extracting || !state.hasCredentials;
+  syncBattleButtonState();
+  extractButton.disabled = state.extracting || !state.hasCredentials || battleButtonBusy;
 
   if (!keepStatus && !state.hasCredentials) {
     setStatus("Server is missing IG_USERNAME and IG_PASSWORD.", true);
@@ -346,11 +638,18 @@ function renderState(state, options = {}) {
   } else if (!keepStatus) {
     setStatus("Ready.");
   }
+
+  if (state.extracting || !state.battleReady) {
+    resetBattlePreview("Run the battle to render the arena here.");
+  } else {
+    scheduleBattlePreparation();
+  }
 }
 
 function setBusy(isBusy) {
+  battleButtonBusy = isBusy;
   extractButton.disabled = isBusy || !latestState?.hasCredentials;
-  battleButton.disabled = isBusy || !latestState?.battleReady;
+  syncBattleButtonState();
 }
 
 function renderProgress(progress, isActive) {
@@ -389,6 +688,10 @@ function syncBattleControlLabels() {
   fightDriveValue.textContent = `${normalizeTuningPercent(fightDriveInput.value, 145)}%`;
   chaosScaleValue.textContent = `${normalizeTuningPercent(chaosScaleInput.value, 65)}%`;
   fxIntensityValue.textContent = `${normalizeTuningPercent(fxIntensityInput.value, 100)}%`;
+
+  if (appBooted) {
+    scheduleBattlePreparation();
+  }
 }
 
 // ── Math utils ──────────────────────────────────────────────────────
@@ -447,6 +750,11 @@ function normalizeTuningPercent(value, fallback = 100) {
     return fallback;
   }
   return Math.max(0, Math.min(300, Math.round(number)));
+}
+
+function syncBattleButtonState() {
+  const canRun = staticMode ? Boolean(uploadedPlayers?.length) : Boolean(latestState?.battleReady && !latestState?.extracting);
+  battleButton.disabled = battleButtonBusy || !canRun;
 }
 
 // ── Polling (server mode only) ──────────────────────────────────────

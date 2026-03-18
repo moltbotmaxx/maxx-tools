@@ -17,6 +17,14 @@ const SHOW_AVATARS = getBooleanParam("showAvatars", true);
 const SHOW_NAMES = getBooleanParam("showNames", false);
 const SOUND_ENABLED = getBooleanParam("soundEnabled", true);
 const SOUND_VOLUME = clampNumber(getOptionalNumberParam("soundVolume", 0.72), 0, 1);
+const WAIT_FOR_START = getBooleanParam("waitForStart", false);
+const RECORD_ENABLED = getBooleanParam("record", false);
+const RECORD_DOWNLOAD = getBooleanParam("recordDownload", false);
+const RECORD_FPS = Math.round(clampNumber(getOptionalNumberParam("recordFps", 30), 12, 60));
+const RECORD_HOLD_AFTER_WINNER_MS = Math.round(
+  clampNumber(getOptionalNumberParam("recordHoldAfterWinnerMs", 4000), 500, 20000),
+);
+const RECORD_FILENAME_BASE = query.get("recordFilename") || `battle-${Date.now()}`;
 const FINAL_DUEL_HOLD_MS = 520;
 const FINAL_DUEL_MOVE_MS = 980;
 const FINAL_DUEL_TRANSITION_MS = FINAL_DUEL_HOLD_MS + FINAL_DUEL_MOVE_MS + 220;
@@ -42,12 +50,16 @@ window.__battleState = {
   playerRadius: 0,
   ready: false,
   remaining: 0,
+  winnerChosenAt: null,
   shakeScale: SHAKE_SCALE,
   seed: SEED,
   soundEnabled: SOUND_ENABLED,
   soundVolume: SOUND_VOLUME,
   total: 0,
   winner: null,
+  recording: false,
+  prepared: false,
+  started: !WAIT_FOR_START,
 };
 window.__battleReady = false;
 
@@ -140,6 +152,12 @@ function announce(message, urgent = false) {
   console.log(message);
 }
 
+function notifyParent(payload) {
+  if (window.parent !== window) {
+    window.parent.postMessage(payload, "*");
+  }
+}
+
 function setResult(winnerName, avatarUrl, visible = false) {
   void winnerName;
   void avatarUrl;
@@ -174,6 +192,7 @@ function createSeededRandom(seedString) {
 class BattleAudioEngine {
   constructor({ enabled, volume }) {
     this.enabled = Boolean(enabled && volume > 0);
+    this.captureDestination = null;
     this.volume = clampNumber(volume, 0, 1);
     this.context = null;
     this.masterGain = null;
@@ -205,6 +224,8 @@ class BattleAudioEngine {
       this.masterGain = this.context.createGain();
       this.masterGain.gain.value = this.volume;
       this.masterGain.connect(this.context.destination);
+      this.captureDestination = this.context.createMediaStreamDestination();
+      this.masterGain.connect(this.captureDestination);
     }
 
     return this.context;
@@ -227,6 +248,14 @@ class BattleAudioEngine {
     window.removeEventListener("pointerdown", this.unlockHandler);
     window.removeEventListener("touchstart", this.unlockHandler);
     window.removeEventListener("keydown", this.unlockHandler);
+  }
+
+  getCaptureStream() {
+    const context = this.ensureContext();
+    if (!context || !this.captureDestination) {
+      return null;
+    }
+    return this.captureDestination.stream;
   }
 
   getNoiseBuffer(context) {
@@ -436,6 +465,152 @@ class BattleAudioEngine {
   }
 }
 
+class BattleVideoRecorder {
+  constructor({ autoDownload, filenameBase, fps, holdAfterWinnerMs }) {
+    this.autoDownload = autoDownload;
+    this.chunks = [];
+    this.filenameBase = filenameBase;
+    this.fps = fps;
+    this.holdAfterWinnerMs = holdAfterWinnerMs;
+    this.mediaRecorder = null;
+    this.mimeType = "";
+    this.resultPromise = null;
+    this.resultResolve = null;
+    this.started = false;
+    this.stopScheduled = false;
+    this.stream = null;
+    this.winnerName = null;
+  }
+
+  configure(options = {}) {
+    if (this.started) {
+      return;
+    }
+    if (typeof options.filenameBase === "string" && options.filenameBase.trim()) {
+      this.filenameBase = options.filenameBase.trim();
+    }
+  }
+
+  getSupportedMimeType() {
+    const candidates = [
+      "video/webm;codecs=vp9,opus",
+      "video/webm;codecs=vp8,opus",
+      "video/webm;codecs=vp9",
+      "video/webm",
+    ];
+
+    return candidates.find((candidate) => MediaRecorder.isTypeSupported(candidate)) || "";
+  }
+
+  async start(scene) {
+    if (this.started || !RECORD_ENABLED) {
+      return;
+    }
+    if (!window.MediaRecorder || typeof HTMLCanvasElement.prototype.captureStream !== "function") {
+      notifyParent({
+        type: "battle-recording-error",
+        error: "This browser does not support MediaRecorder capture.",
+      });
+      return;
+    }
+
+    this.started = true;
+    this.chunks = [];
+    this.mimeType = this.getSupportedMimeType();
+
+    await scene.audio?.unlock?.().catch(() => null);
+
+    const canvas = scene.game.canvas;
+    const videoStream = canvas.captureStream(this.fps);
+    const audioStream = scene.audio?.getCaptureStream?.();
+    const tracks = [
+      ...videoStream.getVideoTracks(),
+      ...(audioStream ? audioStream.getAudioTracks() : []),
+    ];
+
+    this.stream = new MediaStream(tracks);
+    this.mediaRecorder = new MediaRecorder(
+      this.stream,
+      this.mimeType ? { mimeType: this.mimeType, videoBitsPerSecond: 10_000_000 } : { videoBitsPerSecond: 10_000_000 },
+    );
+    this.resultPromise = new Promise((resolve) => {
+      this.resultResolve = resolve;
+    });
+
+    this.mediaRecorder.addEventListener("dataavailable", (event) => {
+      if (event.data && event.data.size > 0) {
+        this.chunks.push(event.data);
+      }
+    });
+
+    this.mediaRecorder.addEventListener("stop", () => {
+      const blob = new Blob(this.chunks, { type: this.mimeType || "video/webm" });
+      window.__battleState.recording = false;
+
+      if (this.autoDownload) {
+        const extension = blob.type.includes("webm") ? "webm" : "mp4";
+        const anchor = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        anchor.href = url;
+        anchor.download = `${this.filenameBase}.${extension}`;
+        document.body.append(anchor);
+        anchor.click();
+        anchor.remove();
+        window.setTimeout(() => URL.revokeObjectURL(url), 10_000);
+      }
+
+      notifyParent({
+        type: "battle-recording-ready",
+        blob,
+        filenameBase: this.filenameBase,
+        mimeType: blob.type,
+        winner: this.winnerName,
+      });
+
+      this.stream?.getTracks().forEach((track) => track.stop());
+      this.resultResolve?.(blob);
+    });
+
+    this.mediaRecorder.start(1000);
+    window.__battleState.recording = true;
+    notifyParent({
+      type: "battle-recording-status",
+      status: "started",
+    });
+  }
+
+  markWinnerChosen(winnerName) {
+    if (!this.mediaRecorder || this.stopScheduled) {
+      return;
+    }
+
+    this.winnerName = winnerName;
+    this.stopScheduled = true;
+    notifyParent({
+      type: "battle-recording-status",
+      status: "winner-selected",
+      winner: winnerName,
+    });
+    window.setTimeout(() => this.stop(), this.holdAfterWinnerMs);
+  }
+
+  stop() {
+    if (!this.mediaRecorder || this.mediaRecorder.state === "inactive") {
+      return;
+    }
+    this.mediaRecorder.stop();
+  }
+}
+
+window.__battleRecorder = RECORD_ENABLED
+  ? new BattleVideoRecorder({
+    autoDownload: RECORD_DOWNLOAD,
+    filenameBase: RECORD_FILENAME_BASE,
+    fps: RECORD_FPS,
+    holdAfterWinnerMs: RECORD_HOLD_AFTER_WINNER_MS,
+  })
+  : null;
+
 class BattleScene extends Phaser.Scene {
   constructor(playersList) {
     super("battle");
@@ -450,9 +625,17 @@ class BattleScene extends Phaser.Scene {
     this.pullStrength = 0.52;
     this.lastEngageBurstAt = 0;
     this.lastImpactMs = 0;
+    this.isReady = false;
+    this.prepared = false;
+    this.pendingStartPayload = null;
+    this.startSequenceStarted = false;
+    this.arenaEventsStarted = false;
     this.totalPlayers = playersList.length;
     this.safeOrbitRadius = Math.min(GAME_WIDTH, GAME_HEIGHT) * 0.28;
     this.finished = false;
+    this.startOverlay = null;
+    this.startText = null;
+    this.startSubtext = null;
   }
 
   preload() {
@@ -471,9 +654,22 @@ class BattleScene extends Phaser.Scene {
     });
     this.events.once("shutdown", () => this.audio?.destroy());
     this.events.once("destroy", () => this.audio?.destroy());
+    this.handleStartMessage = (event) => {
+      if (event.data?.type === "battle-start") {
+        this.requestStart(event.data);
+      }
+    };
+    window.addEventListener("message", this.handleStartMessage);
+    this.events.once("shutdown", () => window.removeEventListener("message", this.handleStartMessage));
+    this.events.once("destroy", () => window.removeEventListener("message", this.handleStartMessage));
+    if (!WAIT_FOR_START) {
+      void window.__battleRecorder?.start(this);
+    }
 
     this.drawBackdrop();
     this.createBounds();
+    this.drawArenaFrame();
+    this.createActiveCountHud();
 
     this.playerRadius = Phaser.Math.Clamp((52 - Math.sqrt(this.playersList.length) * 2.8) * CIRCLE_SCALE, 10, 40);
     this.labelFontSize = Math.max(10, Math.round(this.playerRadius * 0.88 * NAME_SCALE));
@@ -485,99 +681,177 @@ class BattleScene extends Phaser.Scene {
     const spawnDelay = Math.min(120, Math.max(15, 3000 / this.playersList.length));
 
     let spawnedCount = 0;
-    
+
     this.time.addEvent({
       delay: spawnDelay,
       repeat: this.playersList.length - 1,
       callback: () => {
         const player = this.playersList[spawnedCount];
         const actor = this.createActor(player, positions[spawnedCount], this.playerRadius);
-        
-        actor.sprite.setScale(0.01);
+
         this.tweens.add({
-          targets: actor.sprite,
-          scale: { from: 0.01, to: 1 },
+          targets: actor,
+          spawnScale: 1,
           duration: 300,
           ease: "Back.out",
+          onUpdate: () => {
+            this.syncActorPresentation(actor);
+          },
         });
 
         this.actors.push(actor);
         spawnedCount += 1;
 
         if (spawnedCount === this.playersList.length) {
-          window.__battleState.total = this.actors.length;
-          window.__battleState.remaining = this.actors.length;
+          this.onPlayersSpawned();
+        }
+      },
+    });
+  }
 
-          this.registerCollisionHandler();
-          this.startArenaEvents();
-          void this.audio.unlock();
-          this.matter.world.pause();
+  onPlayersSpawned() {
+    window.__battleState.total = this.actors.length;
+    window.__battleState.remaining = this.actors.length;
+    this.updateActiveCountHud(this.actors.length);
+    this.registerCollisionHandler();
+    this.matter.world.pause();
+    this.prepared = true;
+    window.__battleState.prepared = true;
 
-          this.isReady = false;
-          let count = 3;
+    if (WAIT_FOR_START) {
+      this.showStandbyOverlay();
+      notifyParent({
+        type: "battle-prepared",
+      });
+      if (this.pendingStartPayload) {
+        this.beginBattleStartSequence(this.pendingStartPayload);
+      }
+      return;
+    }
 
-          const overlay = this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, 0.4)
-            .setOrigin(0)
-            .setDepth(200);
+    this.beginBattleStartSequence();
+  }
 
-          const countText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2, "3", {
-            fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
-            fontSize: "200px",
-            fontWeight: "800",
-            color: "#ffffff",
-            stroke: "#000000",
-            strokeThickness: 10,
-          }).setOrigin(0.5).setDepth(201);
+  requestStart(payload = {}) {
+    this.pendingStartPayload = payload;
+    if (!WAIT_FOR_START || !this.prepared || this.startSequenceStarted) {
+      return;
+    }
+    this.beginBattleStartSequence(payload);
+  }
 
+  destroyStartOverlay() {
+    this.startOverlay?.destroy();
+    this.startText?.destroy();
+    this.startSubtext?.destroy();
+    this.startOverlay = null;
+    this.startText = null;
+    this.startSubtext = null;
+  }
+
+  showStandbyOverlay() {
+    this.destroyStartOverlay();
+    this.startOverlay = this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, 0.4)
+      .setOrigin(0)
+      .setDepth(200);
+    this.startText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2 - 48, "READY", {
+      fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
+      fontSize: "128px",
+      fontWeight: "800",
+      color: "#ffffff",
+      stroke: "#000000",
+      strokeThickness: 8,
+    }).setOrigin(0.5).setDepth(201);
+    this.startSubtext = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2 + 70, "Press Run battle to start recording", {
+      fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
+      fontSize: "34px",
+      fontWeight: "600",
+      color: "#d8d8d8",
+      align: "center",
+    }).setOrigin(0.5).setDepth(201);
+  }
+
+  beginBattleStartSequence(payload = {}) {
+    if (this.startSequenceStarted) {
+      return;
+    }
+
+    this.startSequenceStarted = true;
+    this.pendingStartPayload = null;
+    window.__battleState.started = true;
+    this.destroyStartOverlay();
+    window.__battleRecorder?.configure({
+      filenameBase: payload.filenameBase,
+    });
+    if (WAIT_FOR_START) {
+      void window.__battleRecorder?.start(this);
+    }
+    void this.audio.unlock();
+
+    let count = 3;
+
+    this.startOverlay = this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, 0.4)
+      .setOrigin(0)
+      .setDepth(200);
+
+    this.startText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT / 2, "3", {
+      fontFamily: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',
+      fontSize: "200px",
+      fontWeight: "800",
+      color: "#ffffff",
+      stroke: "#000000",
+      strokeThickness: 10,
+    }).setOrigin(0.5).setDepth(201);
+
+    this.tweens.add({
+      targets: this.startText,
+      scale: { from: 1.5, to: 1 },
+      alpha: { from: 0, to: 1 },
+      duration: 300,
+      ease: "Back.out",
+    });
+
+    this.time.addEvent({
+      delay: 1000,
+      repeat: 2,
+      callback: () => {
+        count -= 1;
+        if (count > 0) {
+          this.startText.setText(count.toString());
+          this.audio?.playHit({ strong: false });
           this.tweens.add({
-            targets: countText,
-            scale: { from: 1.5, to: 1 },
-            alpha: { from: 0, to: 1 },
-            duration: 300,
+            targets: this.startText,
+            scale: { from: 1.3, to: 1 },
+            duration: 200,
             ease: "Back.out",
           });
+          return;
+        }
 
-          this.time.addEvent({
-            delay: 1000,
-            repeat: 2,
-            callback: () => {
-              count -= 1;
-              if (count > 0) {
-                countText.setText(count.toString());
-                this.audio?.playHit({ strong: false });
-                this.tweens.add({
-                  targets: countText,
-                  scale: { from: 1.3, to: 1 },
-                  duration: 200,
-                  ease: "Back.out",
-                });
-              } else if (count === 0) {
-                countText.setText("FIGHT!");
-                countText.setFontSize("160px");
-                countText.setColor("#ff2d55");
-                this.audio?.playHit({ strong: true });
-                this.tweens.add({
-                  targets: countText,
-                  scale: { from: 1.5, to: 1 },
-                  duration: 300,
-                  ease: "Elastic.out",
-                });
-                this.flashArena();
-                
-                this.time.delayedCall(500, () => {
-                  countText.destroy();
-                  overlay.destroy();
-                  this.matter.world.resume();
-                  this.isReady = true;
-                  this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
-                  markBattleReady();
+        if (count === 0) {
+          this.startText.setText("FIGHT!");
+          this.startText.setFontSize("160px");
+          this.startText.setColor("#ff2d55");
+          this.audio?.playHit({ strong: true });
+          this.tweens.add({
+            targets: this.startText,
+            scale: { from: 1.5, to: 1 },
+            duration: 300,
+            ease: "Elastic.out",
+          });
+          this.flashArena();
 
-                  if (this.actors.length === 1) {
-                    this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
-                  }
-                });
-              }
-            },
+          this.time.delayedCall(500, () => {
+            this.destroyStartOverlay();
+            this.startArenaEvents();
+            this.matter.world.resume();
+            this.isReady = true;
+            this.time.delayedCall(350, () => this.nudgeAllPlayers(true));
+            markBattleReady();
+
+            if (this.actors.length === 1) {
+              this.time.delayedCall(600, () => this.finishBattle(this.actors[0]));
+            }
           });
         }
       },
@@ -659,6 +933,7 @@ class BattleScene extends Phaser.Scene {
       });
       this.keepActorNearFinalCenter(actor, directionToCenter, distance);
       actor.lastPosition = { x: sprite.x, y: sprite.y };
+      this.keepActorInsideArena(actor);
 
       if (this.showLabels && actor.label) {
         actor.label.setPosition(sprite.x, sprite.y + actor.labelOffset);
@@ -739,10 +1014,10 @@ class BattleScene extends Phaser.Scene {
 
   createBounds() {
     this.bounds = {
-      left: 18,
-      top: 18,
-      width: GAME_WIDTH - 36,
-      height: GAME_HEIGHT - 36,
+      left: 0,
+      top: 0,
+      width: GAME_WIDTH,
+      height: GAME_HEIGHT,
     };
 
     this.matter.world.setBounds(
@@ -750,12 +1025,77 @@ class BattleScene extends Phaser.Scene {
       this.bounds.top,
       this.bounds.width,
       this.bounds.height,
-      80,
+      96,
       true,
       true,
       true,
       true,
     );
+  }
+
+  drawArenaFrame() {
+    const frameInset = 4;
+    const outerFrame = this.add.graphics().setDepth(8);
+    outerFrame.lineStyle(10, 0xffffff, 0.06);
+    outerFrame.strokeRect(
+      frameInset,
+      frameInset,
+      GAME_WIDTH - frameInset * 2,
+      GAME_HEIGHT - frameInset * 2,
+    );
+
+    const innerFrame = this.add.graphics().setDepth(9);
+    innerFrame.lineStyle(2, 0xffffff, 0.24);
+    innerFrame.strokeRect(
+      frameInset + 1,
+      frameInset + 1,
+      GAME_WIDTH - (frameInset + 1) * 2,
+      GAME_HEIGHT - (frameInset + 1) * 2,
+    );
+  }
+
+  createActiveCountHud() {
+    const panelWidth = 178;
+    const panelHeight = 68;
+    const insetX = 24;
+    const insetY = 24;
+    const panelX = GAME_WIDTH - insetX - panelWidth / 2;
+    const panelY = insetY + panelHeight / 2;
+
+    this.activeCountPanel = this.add
+      .rectangle(panelX, panelY, panelWidth, panelHeight, 0x000000, 0.34)
+      .setStrokeStyle(1, 0xffffff, 0.14)
+      .setDepth(82);
+
+    this.activeCountLabel = this.add
+      .text(GAME_WIDTH - insetX - 16, insetY + 10, "ACTIVE", {
+        color: "rgba(255, 255, 255, 0.6)",
+        fontFamily: '"Avenir Next", "Montserrat", sans-serif',
+        fontSize: "18px",
+        fontStyle: "700",
+        letterSpacing: 5,
+      })
+      .setOrigin(1, 0)
+      .setDepth(83);
+
+    this.activeCountText = this.add
+      .text(GAME_WIDTH - insetX - 16, insetY + 28, "0", {
+        color: "#ffffff",
+        fontFamily: '"Avenir Next", "Montserrat", sans-serif',
+        fontSize: "34px",
+        fontStyle: "800",
+      })
+      .setOrigin(1, 0)
+      .setDepth(83);
+  }
+
+  updateActiveCountHud(remaining) {
+    if (!this.activeCountText) {
+      return;
+    }
+
+    const safeRemaining = Math.max(0, Math.round(remaining || 0));
+    this.activeCountText.setText(`${safeRemaining}`);
   }
 
   buildSpawnPositions(count, radius) {
@@ -797,19 +1137,14 @@ class BattleScene extends Phaser.Scene {
   }
 
   createActor(player, position, radius) {
-    const textureKey = this.buildAvatarTexture(player, radius);
+    const { textureDisplayScale, textureKey } = this.buildAvatarTexture(player, radius);
     const sprite = this.matter.add.image(position.x, position.y, textureKey);
-    sprite.setCircle(radius);
-    sprite.setBounce(0.985);
-    sprite.setFriction(0, 0, 0);
-    sprite.setFrictionAir(0.014);
-    sprite.setMass(6);
-    sprite.setAngularVelocity((this.random() - 0.5) * 0.1);
-    sprite.setVelocity((this.random() - 0.5) * 7.4, (this.random() - 0.5) * 7.4);
     sprite.setDepth(20);
+    const collisionRadius = radius * 0.935;
 
     const actor = {
       avatarUrl: player.avatar,
+      collisionRadius,
       colors: player.colors || {},
       eliminated: false,
       health: PLAYER_HITS,
@@ -817,13 +1152,14 @@ class BattleScene extends Phaser.Scene {
       healthPips: [],
       id: player.id,
       label: null,
-      labelOffset: radius + Math.max(24, Math.round(this.labelFontSize * 1.55)),
+      labelOffset: 0,
       lastPosition: { x: position.x, y: position.y },
       maxHealth: PLAYER_HITS,
       name: player.name,
-      baseLabelOffset: radius + Math.max(24, Math.round(this.labelFontSize * 1.55)),
       currentScale: 1,
+      spawnScale: 0.01,
       sprite,
+      textureDisplayScale,
       swirlDirection: this.random() > 0.5 ? 1 : -1,
       textureKey,
       wanderOffset: this.random() * Math.PI * 2,
@@ -831,6 +1167,9 @@ class BattleScene extends Phaser.Scene {
     };
 
     sprite.actor = actor;
+    this.resetActorBody(actor);
+    sprite.setAngularVelocity((this.random() - 0.5) * 0.1);
+    sprite.setVelocity((this.random() - 0.5) * 7.4, (this.random() - 0.5) * 7.4);
 
     if (this.showLabels) {
       actor.label = this.add
@@ -842,9 +1181,11 @@ class BattleScene extends Phaser.Scene {
           stroke: "#08111f",
           strokeThickness: Math.max(4, Math.round(this.labelFontSize * 0.36)),
         })
-        .setOrigin(0.5)
+        .setOrigin(0.5, 0)
         .setDepth(24);
     }
+
+    this.syncActorPresentation(actor);
 
     if (this.showHealthPips) {
       for (let pipIndex = 0; pipIndex < actor.maxHealth; pipIndex += 1) {
@@ -885,6 +1226,27 @@ class BattleScene extends Phaser.Scene {
     });
 
     return nearestActor;
+  }
+
+  resetActorBody(actor) {
+    if (!actor?.sprite) {
+      return;
+    }
+
+    const sprite = actor.sprite;
+    const position = { x: sprite.x, y: sprite.y };
+    const velocity = sprite.body ? { x: sprite.body.velocity.x, y: sprite.body.velocity.y } : { x: 0, y: 0 };
+    const angularVelocity = sprite.body?.angularVelocity || 0;
+    const scaledCollisionRadius = Math.max(2, (actor.collisionRadius || this.playerRadius) * (actor.currentScale || 1));
+
+    sprite.setCircle(scaledCollisionRadius);
+    sprite.setBounce(0.985);
+    sprite.setFriction(0, 0, 0);
+    sprite.setFrictionAir(0.014);
+    sprite.setMass(6);
+    sprite.setPosition(position.x, position.y);
+    sprite.setVelocity(velocity.x, velocity.y);
+    sprite.setAngularVelocity(angularVelocity);
   }
 
   syncActorBodyToSprite(actor) {
@@ -933,42 +1295,67 @@ class BattleScene extends Phaser.Scene {
 
   buildAvatarTexture(player, radius) {
     const outline = Math.max(2, radius * 0.08);
-    const textureSize = Math.ceil(radius * 2 + outline * 6);
+    const logicalTextureSize = Math.ceil(radius * 2 + outline * 6);
+    const targetResolutionScale = clampNumber(this.getWinnerScaleTarget() * 0.7, 2.2, 5);
+    let source = null;
+    let sourceMaxSize = logicalTextureSize;
+
+    if (SHOW_AVATARS) {
+      source = this.textures.get(`avatar-source-${player.id}`).getSourceImage();
+      sourceMaxSize = Math.max(
+        source?.naturalWidth || source?.videoWidth || source?.width || logicalTextureSize,
+        source?.naturalHeight || source?.videoHeight || source?.height || logicalTextureSize,
+      );
+    }
+
+    const resolutionScale = clampNumber(
+      SHOW_AVATARS
+        ? Math.min(targetResolutionScale, sourceMaxSize / Math.max(1, logicalTextureSize))
+        : targetResolutionScale,
+      1.6,
+      targetResolutionScale,
+    );
+    const textureSize = Math.ceil(logicalTextureSize * resolutionScale);
+    const drawRadius = radius * resolutionScale;
+    const drawOutline = outline * resolutionScale;
     const textureKey = `avatar-ready-${player.id}`;
     const texture = this.textures.createCanvas(textureKey, textureSize, textureSize);
     const context = texture.getContext();
     const center = textureSize / 2;
     const initials = getInitials(player.name);
+    const textureDisplayScale = logicalTextureSize / textureSize;
+
+    context.imageSmoothingEnabled = true;
+    context.imageSmoothingQuality = "high";
 
     context.clearRect(0, 0, textureSize, textureSize);
     context.beginPath();
-    context.arc(center, center, radius, 0, Math.PI * 2);
+    context.arc(center, center, drawRadius, 0, Math.PI * 2);
     context.closePath();
 
     if (SHOW_AVATARS) {
-      const source = this.textures.get(`avatar-source-${player.id}`).getSourceImage();
       context.save();
       context.clip();
-      context.drawImage(source, center - radius, center - radius, radius * 2, radius * 2);
+      context.drawImage(source, center - drawRadius, center - drawRadius, drawRadius * 2, drawRadius * 2);
       context.restore();
     } else {
       context.fillStyle = player.colors?.primary || "#444444";
       context.fill();
-      context.font = `700 ${Math.max(12, Math.round(radius * 0.85))}px sans-serif`;
+      context.font = `700 ${Math.max(24, Math.round(radius * 0.85 * resolutionScale))}px sans-serif`;
       context.textAlign = "center";
       context.textBaseline = "middle";
       context.fillStyle = "#ffffff";
-      context.fillText(initials, center, center + radius * 0.04);
+      context.fillText(initials, center, center + drawRadius * 0.04);
     }
 
     context.beginPath();
-    context.arc(center, center, radius + outline * 0.22, 0, Math.PI * 2);
-    context.lineWidth = outline * 0.9;
+    context.arc(center, center, drawRadius + drawOutline * 0.22, 0, Math.PI * 2);
+    context.lineWidth = drawOutline * 0.9;
     context.strokeStyle = "rgba(255, 255, 255, 0.94)";
     context.stroke();
 
     texture.refresh();
-    return textureKey;
+    return { textureDisplayScale, textureKey };
   }
 
   registerCollisionHandler() {
@@ -1054,8 +1441,16 @@ class BattleScene extends Phaser.Scene {
     }
 
     const { x, y } = actor.sprite;
+    const deathDisplayScale = this.getActorDisplayScale(actor);
+    const deathAlpha = actor.sprite.alpha;
+    const deathRotation = actor.sprite.rotation;
     actor.lastPosition = { x, y };
-    const ghost = this.add.image(x, y, actor.sprite.texture.key).setDepth(42);
+    const ghost = this.add
+      .image(x, y, actor.sprite.texture.key)
+      .setDepth(42)
+      .setScale(deathDisplayScale)
+      .setAlpha(deathAlpha)
+      .setRotation(deathRotation);
     const body = actor.sprite.body;
 
     if (body) {
@@ -1075,15 +1470,16 @@ class BattleScene extends Phaser.Scene {
     this.tweens.add({
       targets: ghost,
       alpha: 0,
-      duration: 460,
+      duration: 380,
       ease: "Cubic.In",
-      scaleX: 0.28,
-      scaleY: 0.28,
+      scaleX: Math.max(0.04, deathDisplayScale * 0.14),
+      scaleY: Math.max(0.04, deathDisplayScale * 0.14),
       onComplete: () => ghost.destroy(),
     });
 
     const remaining = this.getAliveActors().length;
     window.__battleState.remaining = remaining;
+    this.updateActiveCountHud(remaining);
 
     if (remaining === 2 && !this.finalDuelStarted) {
       this.activateFinalDuel();
@@ -1205,6 +1601,11 @@ class BattleScene extends Phaser.Scene {
   }
 
   startArenaEvents() {
+    if (this.arenaEventsStarted) {
+      return;
+    }
+    this.arenaEventsStarted = true;
+
     this.time.addEvent({
       delay: 900,
       loop: true,
@@ -1251,17 +1652,17 @@ class BattleScene extends Phaser.Scene {
       const chaosBoost = (0.35 + this.random() * 0.55) * CHAOS_SCALE * (this.finalDuelStarted ? 0.38 : 1);
       actor.sprite.setVelocity(
         actor.sprite.body.velocity.x +
-          (towardCenter.x * centerBoost +
-            towardOpponent.x * pursuitBoost +
-            tangent.x * tangentBoost +
-            chaos.x * chaosBoost) *
-            multiplier,
+        (towardCenter.x * centerBoost +
+          towardOpponent.x * pursuitBoost +
+          tangent.x * tangentBoost +
+          chaos.x * chaosBoost) *
+        multiplier,
         actor.sprite.body.velocity.y +
-          (towardCenter.y * centerBoost +
-            towardOpponent.y * pursuitBoost +
-            tangent.y * tangentBoost +
-            chaos.y * chaosBoost) *
-            multiplier,
+        (towardCenter.y * centerBoost +
+          towardOpponent.y * pursuitBoost +
+          tangent.y * tangentBoost +
+          chaos.y * chaosBoost) *
+        multiplier,
       );
     });
   }
@@ -1296,13 +1697,13 @@ class BattleScene extends Phaser.Scene {
 
       actor.sprite.setVelocity(
         actor.sprite.body.velocity.x +
-          towardOpponent.x * pursuitBoost +
-          towardCenter.x * centerBoost +
-          tangent.x * flankBoost,
+        towardOpponent.x * pursuitBoost +
+        towardCenter.x * centerBoost +
+        tangent.x * flankBoost,
         actor.sprite.body.velocity.y +
-          towardOpponent.y * pursuitBoost +
-          towardCenter.y * centerBoost +
-          tangent.y * flankBoost,
+        towardOpponent.y * pursuitBoost +
+        towardCenter.y * centerBoost +
+        tangent.y * flankBoost,
       );
     });
 
@@ -1445,6 +1846,7 @@ class BattleScene extends Phaser.Scene {
     const centerX = GAME_WIDTH / 2;
     const centerY = GAME_HEIGHT / 2;
     const duelOffset = Math.max(this.playerRadius * 2.1, 88);
+    const duelScale = this.getAliveScaleTarget(2);
     const transitionVeil = this.add
       .rectangle(centerX, centerY, GAME_WIDTH, GAME_HEIGHT, 0x000000, 1)
       .setAlpha(0)
@@ -1472,11 +1874,15 @@ class BattleScene extends Phaser.Scene {
         MatterBody.setAngularVelocity(actor.sprite.body, 0);
       }
 
+      actor.currentScale = Math.max(actor.currentScale || 1, duelScale);
+      this.resetActorBody(actor);
+      this.syncActorPresentation(actor);
+
       actor.sprite
         .setPosition(start.x, start.y)
         .setVelocity(0, 0)
         .setAlpha(1)
-        .setScale(actor.currentScale || 1)
+        .setScale(this.getActorDisplayScale(actor))
         .setAngle(0)
         .setRotation(0)
         .clearTint();
@@ -1506,10 +1912,11 @@ class BattleScene extends Phaser.Scene {
     });
 
     finalists.forEach((actor) => {
+      const displayScale = this.getActorDisplayScale(actor);
       this.tweens.add({
         targets: actor.sprite,
-        scaleX: (actor.currentScale || 1) * 1.04,
-        scaleY: (actor.currentScale || 1) * 1.04,
+        scaleX: displayScale * 1.04,
+        scaleY: displayScale * 1.04,
         duration: FINAL_DUEL_HOLD_MS / 2,
         ease: "Sine.InOut",
         yoyo: true,
@@ -1586,9 +1993,12 @@ class BattleScene extends Phaser.Scene {
     const resolvedWinner = winner || this.pickWinnerFallback();
     const winnerName = resolvedWinner?.name || null;
     setResult(winnerName, resolvedWinner?.avatarUrl || "", false);
+    window.__battleState.winnerChosenAt = Date.now();
+    window.__battleRecorder?.markWinnerChosen(winnerName);
 
     if (winnerName) {
       window.__battleState.remaining = 1;
+      this.updateActiveCountHud(1);
     }
     this.moveWinnerToCenter(resolvedWinner);
     this.time.delayedCall(WINNER_REVEAL_MS - 80, () => this.playWinnerCelebration(resolvedWinner));
@@ -1624,19 +2034,136 @@ class BattleScene extends Phaser.Scene {
     return Phaser.Math.Distance.Between(x, y, centerX, centerY);
   }
 
+  getActorVisibleScale(actor) {
+    return Math.max(0.01, (actor.currentScale || 1) * (actor.spawnScale || 1));
+  }
+
+  getActorVisibleRadius(actor) {
+    return this.playerRadius * this.getActorVisibleScale(actor);
+  }
+
+  getActorDisplayScale(actor) {
+    return this.getActorVisibleScale(actor) * (actor.textureDisplayScale || 1);
+  }
+
+  getLabelScaleTarget(visibleScale) {
+    const visibleRadius = this.playerRadius * visibleScale;
+    return clampNumber(0.74 + visibleRadius / 40, 0.18, 2.35);
+  }
+
+  getLabelOffsetTarget(visibleScale) {
+    const visibleRadius = this.playerRadius * visibleScale;
+    const gap = Math.max(4, Math.round(this.labelFontSize * (0.16 + visibleScale * 0.05)));
+    return visibleRadius + gap;
+  }
+
+  getAliveRadiusTarget(aliveCount) {
+    const collapseProgress =
+      1 - Phaser.Math.Clamp((aliveCount - 1) / Math.max(1, this.totalPlayers - 1), 0, 1);
+    const growthProgress = collapseProgress ** 1.55;
+    const crowdBoost = Phaser.Math.Clamp((Math.sqrt(this.totalPlayers) - 6) / 10, 0, 1.5);
+    let targetRadius = Phaser.Math.Linear(
+      this.playerRadius,
+      Math.max(this.playerRadius * 1.4, 27 + crowdBoost * 5),
+      growthProgress,
+    );
+
+    if (aliveCount <= 24) {
+      targetRadius += 2 + crowdBoost * 1.5;
+    }
+    if (aliveCount <= 12) {
+      targetRadius += 4 + crowdBoost * 2.5;
+    }
+    if (aliveCount <= 6) {
+      targetRadius += 7 + crowdBoost * 4;
+    }
+    if (aliveCount <= 3) {
+      targetRadius += 10 + crowdBoost * 5;
+    }
+    if (this.finalDuelStarted) {
+      targetRadius = Math.max(targetRadius, 52 + crowdBoost * 10);
+    }
+
+    return clampNumber(targetRadius, this.playerRadius, Math.max(this.playerRadius * 6, 66 + crowdBoost * 14));
+  }
+
+  getWinnerScaleTarget() {
+    const crowdBoost = Phaser.Math.Clamp((Math.sqrt(this.totalPlayers) - 6) / 10, 0, 1.5);
+    const winnerRadius = Math.max(this.getAliveRadiusTarget(1) * 1.14, 60 + crowdBoost * 12);
+    return clampNumber(winnerRadius / Math.max(1, this.playerRadius), 1.4, 7.2);
+  }
+
+  syncActorPresentation(actor) {
+    if (!actor?.sprite) {
+      return;
+    }
+
+    const visibleScale = this.getActorVisibleScale(actor);
+    actor.sprite.setScale(this.getActorDisplayScale(actor));
+    actor.labelOffset = this.getLabelOffsetTarget(visibleScale);
+
+    if (actor.label) {
+      actor.label
+        .setScale(this.getLabelScaleTarget(visibleScale))
+        .setAlpha(clampNumber(0.18 + (actor.spawnScale || 1) * 0.82, 0, 1))
+        .setPosition(actor.sprite.x, actor.sprite.y + actor.labelOffset);
+    }
+  }
+
+  keepActorInsideArena(actor) {
+    if (!actor?.sprite?.body) {
+      return;
+    }
+
+    const body = actor.sprite.body;
+    const visibleRadius = this.getActorVisibleRadius(actor);
+    const minX = this.bounds.left + visibleRadius;
+    const maxX = this.bounds.left + this.bounds.width - visibleRadius;
+    const minY = this.bounds.top + visibleRadius;
+    const maxY = this.bounds.top + this.bounds.height - visibleRadius;
+    let nextX = actor.sprite.x;
+    let nextY = actor.sprite.y;
+    let velocityX = body.velocity.x;
+    let velocityY = body.velocity.y;
+    let bounced = false;
+
+    if (nextX < minX) {
+      nextX = minX;
+      velocityX = Math.abs(velocityX) * 0.96 + 0.12;
+      bounced = true;
+    } else if (nextX > maxX) {
+      nextX = maxX;
+      velocityX = -Math.abs(velocityX) * 0.96 - 0.12;
+      bounced = true;
+    }
+
+    if (nextY < minY) {
+      nextY = minY;
+      velocityY = Math.abs(velocityY) * 0.96 + 0.12;
+      bounced = true;
+    } else if (nextY > maxY) {
+      nextY = maxY;
+      velocityY = -Math.abs(velocityY) * 0.96 - 0.12;
+      bounced = true;
+    }
+
+    if (!bounced) {
+      return;
+    }
+
+    MatterBody.setPosition(body, { x: nextX, y: nextY });
+    MatterBody.setVelocity(body, { x: velocityX, y: velocityY });
+    actor.lastPosition = { x: nextX, y: nextY };
+  }
+
   updateActorScales(aliveActors) {
     const targetScale = this.getAliveScaleTarget(aliveActors.length);
     aliveActors.forEach((actor) => this.applyActorScale(actor, targetScale));
   }
 
   getAliveScaleTarget(aliveCount) {
-    const collapseProgress =
-      1 - Phaser.Math.Clamp((aliveCount - 1) / Math.max(1, this.totalPlayers - 1), 0, 1);
-    let targetScale = 1 + collapseProgress * 0.52;
-    if (this.finalDuelStarted) {
-      targetScale = Math.max(targetScale, 1.58);
-    }
-    return clampNumber(targetScale, 1, 1.72);
+    const targetRadius = this.getAliveRadiusTarget(aliveCount);
+    return clampNumber(targetRadius / Math.max(1, this.playerRadius), 1, this.finalDuelStarted ? 5.6 : 5.2);
   }
 
   applyActorScale(actor, targetScale) {
@@ -1649,15 +2176,9 @@ class BattleScene extends Phaser.Scene {
       return;
     }
 
-    const ratio = targetScale / currentScale;
-    MatterBody.scale(actor.sprite.body, ratio, ratio);
-    actor.sprite.setScale(targetScale);
     actor.currentScale = targetScale;
-    actor.labelOffset = actor.baseLabelOffset * (1 + (targetScale - 1) * 0.92);
-
-    if (actor.label) {
-      actor.label.setScale(1 + (targetScale - 1) * 0.16);
-    }
+    this.resetActorBody(actor);
+    this.syncActorPresentation(actor);
 
     this.drawHealthBar(actor);
   }
@@ -1706,11 +2227,11 @@ class BattleScene extends Phaser.Scene {
       .setPosition(x, y)
       .setDepth(52)
       .setAlpha(1)
-      .setScale(winner.currentScale || 1)
       .setRotation(0)
       .setAngle(0)
       .setFlip(false, false)
       .clearTint();
+    this.syncActorPresentation(winner);
   }
 
   moveWinnerToCenter(winner) {
@@ -1733,8 +2254,10 @@ class BattleScene extends Phaser.Scene {
       winner.sprite.setDepth(52);
     }
 
+    winner.currentScale = Math.max(winner.currentScale || 1, this.getWinnerScaleTarget());
     this.stabilizeWinnerSprite(winner, startX, startY);
     winner.healthBarGraphic?.clear();
+    const winnerDisplayScale = this.getActorDisplayScale(winner);
 
     this.tweens.add({
       targets: winner.sprite,
@@ -1742,8 +2265,8 @@ class BattleScene extends Phaser.Scene {
       y: centerY,
       duration: WINNER_REVEAL_MS,
       ease: "Cubic.Out",
-      scaleX: (winner.currentScale || 1) * 1.12,
-      scaleY: (winner.currentScale || 1) * 1.12,
+      scaleX: winnerDisplayScale * 1.12,
+      scaleY: winnerDisplayScale * 1.12,
       onComplete: () => {
         this.stabilizeWinnerSprite(winner, centerX, centerY);
         winner.lastPosition = { x: centerX, y: centerY };
@@ -1753,7 +2276,7 @@ class BattleScene extends Phaser.Scene {
     if (this.showLabels && winner.label) {
       winner.label.setDepth(54);
       winner.label
-        .setOrigin(0.5)
+        .setOrigin(0.5, 0)
         .setPosition(startX, startY + winner.labelOffset)
         .setAngle(0)
         .setRotation(0)
@@ -1766,7 +2289,7 @@ class BattleScene extends Phaser.Scene {
         ease: "Cubic.Out",
         onComplete: () => {
           winner.label
-            .setOrigin(0.5)
+            .setOrigin(0.5, 0)
             .setPosition(centerX, centerY + winner.labelOffset)
             .setAngle(0)
             .setRotation(0)
@@ -1822,7 +2345,11 @@ class BattleScene extends Phaser.Scene {
 
     const centerX = GAME_WIDTH / 2;
     const centerY = GAME_HEIGHT / 2;
-    const winnerRadius = this.playerRadius * (winner.currentScale || 1);
+    winner.currentScale = Math.max(winner.currentScale || 1, this.getWinnerScaleTarget());
+    this.stabilizeWinnerSprite(winner, centerX, centerY);
+    const winnerVisibleScale = this.getActorVisibleScale(winner);
+    const winnerDisplayScale = this.getActorDisplayScale(winner);
+    const winnerRadius = this.playerRadius * winnerVisibleScale;
     const glow = this.add.circle(centerX, centerY, winnerRadius * 1.18, 0xffffff, 0.08).setDepth(46);
     const core = this.add.circle(centerX, centerY, winnerRadius * 0.94, 0xffffff, 0.05).setDepth(47);
     const ringA = this.add.circle(centerX, centerY, winnerRadius * 0.92).setStrokeStyle(3, 0xffffff, 0.8).setDepth(48);
@@ -1854,11 +2381,10 @@ class BattleScene extends Phaser.Scene {
     }
 
     winner.sprite.setDepth(56);
-    this.stabilizeWinnerSprite(winner, centerX, centerY);
     this.tweens.add({
       targets: winner.sprite,
-      scaleX: (winner.currentScale || 1) * 1.18,
-      scaleY: (winner.currentScale || 1) * 1.18,
+      scaleX: winnerDisplayScale * 1.18,
+      scaleY: winnerDisplayScale * 1.18,
       duration: 620,
       yoyo: true,
       repeat: -1,
