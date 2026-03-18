@@ -51,6 +51,7 @@ let currentUser = null;
 let pendingExtensionIdeas = [];
 let isLoadingUserData = false;
 let isHandlingAuthAction = false;
+let isAuthStateResolving = true;
 
 // ===========================
 // News Ticker State
@@ -330,7 +331,17 @@ function isToday(date) {
 // ===========================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { GoogleAuthProvider, browserLocalPersistence, getAuth, onAuthStateChanged, setPersistence, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import {
+    GoogleAuthProvider,
+    browserLocalPersistence,
+    browserPopupRedirectResolver,
+    browserSessionPersistence,
+    indexedDBLocalPersistence,
+    initializeAuth,
+    onAuthStateChanged,
+    signInWithPopup,
+    signOut
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyD9Q9b_RkQ5KCUSoNdqs8W2C3jrB6Q_pCQ",
@@ -345,7 +356,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const auth = getAuth(app);
+const auth = initializeAuth(app, {
+    persistence: [indexedDBLocalPersistence, browserLocalPersistence, browserSessionPersistence],
+    popupRedirectResolver: browserPopupRedirectResolver
+});
 const googleProvider = new GoogleAuthProvider();
 
 // ===========================
@@ -552,20 +566,28 @@ function getUserLabel(user = currentUser) {
 }
 
 function updateAuthButtons({ busy = false, signedIn = !!currentUser } = {}) {
+    const isResolving = isAuthStateResolving && !signedIn;
+
     if (elements.authActionBtn) {
-        elements.authActionBtn.disabled = busy;
+        elements.authActionBtn.disabled = busy || isResolving;
         elements.authActionBtn.textContent = busy
             ? (signedIn ? 'Signing out...' : 'Connecting...')
-            : (signedIn ? 'Logout' : 'Sign In');
+            : isResolving
+                ? 'Checking...'
+                : (signedIn ? 'Logout' : 'Sign In');
     }
 
     if (elements.loginBtn) {
-        elements.loginBtn.disabled = busy;
-        elements.loginBtn.textContent = busy ? 'Connecting...' : 'Sign in with Google';
+        elements.loginBtn.disabled = busy || isResolving;
+        elements.loginBtn.textContent = busy
+            ? 'Connecting...'
+            : isResolving
+                ? 'Checking session...'
+                : 'Sign in with Google';
     }
 
     if (elements.exportBtn) {
-        elements.exportBtn.disabled = !signedIn || busy;
+        elements.exportBtn.disabled = !signedIn || busy || isResolving;
     }
 }
 
@@ -3151,16 +3173,13 @@ function exportData() {
 // Initialize
 // ===========================
 async function setupAuthSession() {
-    setAuthGate(true, 'Checking session...');
+    isAuthStateResolving = true;
+    setAuthGate(true, 'Restoring session...');
     updateAuthUI();
 
-    try {
-        await setPersistence(auth, browserLocalPersistence);
-    } catch (e) {
-        console.error('Failed to set auth persistence', e);
-    }
-
     onAuthStateChanged(auth, async (user) => {
+        isAuthStateResolving = false;
+
         if (!user) {
             currentUser = null;
             isLoadingUserData = false;
