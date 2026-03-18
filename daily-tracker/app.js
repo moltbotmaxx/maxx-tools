@@ -189,6 +189,8 @@ const elements = {
     syncStatus: document.getElementById('syncStatus'),
     syncText: document.querySelector('#syncStatus .sync-text'),
     authGate: document.getElementById('authGate'),
+    authGateTitle: document.getElementById('authGateTitle'),
+    authGateDescription: document.getElementById('authGateDescription'),
     authStatus: document.getElementById('authStatus'),
     loginBtn: document.getElementById('loginBtn'),
     authUser: document.getElementById('authUser'),
@@ -606,12 +608,41 @@ function updateAuthUI() {
     updateAuthButtons({ busy: isHandlingAuthAction, signedIn: !!currentUser });
 }
 
-function setAuthGate(visible, statusText = '') {
+function setAuthGate(mode = 'signin', statusText = '') {
+    const isVisible = mode !== 'hidden';
+    const copy = mode === 'resolving'
+        ? {
+            title: 'Restoring your workspace',
+            description: 'Checking your saved session before showing the sign-in prompt.',
+            showLogin: false
+        }
+        : mode === 'error'
+            ? {
+                title: 'We could not load your workspace',
+                description: 'Try again or sign in again to continue.',
+                showLogin: true
+            }
+            : {
+                title: 'Sign in to load your workspace',
+                description: 'Each Google account gets its own Daily Tracker data inside Firestore.',
+                showLogin: true
+            };
+
     if (elements.authGate) {
-        elements.authGate.classList.toggle('show', visible);
+        elements.authGate.classList.toggle('show', isVisible);
+        elements.authGate.dataset.mode = mode;
+    }
+    if (elements.authGateTitle) {
+        elements.authGateTitle.textContent = copy.title;
+    }
+    if (elements.authGateDescription) {
+        elements.authGateDescription.textContent = copy.description;
     }
     if (elements.authStatus) {
         elements.authStatus.textContent = statusText;
+    }
+    if (elements.loginBtn) {
+        elements.loginBtn.hidden = !copy.showLogin;
     }
 }
 
@@ -647,13 +678,13 @@ async function signInWithGoogle() {
 
     isHandlingAuthAction = true;
     updateAuthButtons({ busy: true, signedIn: false });
-    setAuthGate(true, 'Opening Google sign-in...');
+    setAuthGate('resolving', 'Opening Google sign-in...');
 
     try {
         await signInWithPopup(auth, googleProvider);
     } catch (e) {
         console.error('Google sign-in failed', e);
-        setAuthGate(true, getFriendlyAuthErrorMessage(e));
+        setAuthGate('signin', getFriendlyAuthErrorMessage(e));
     } finally {
         isHandlingAuthAction = false;
         updateAuthUI();
@@ -665,13 +696,13 @@ async function logoutCurrentUser() {
 
     isHandlingAuthAction = true;
     updateAuthButtons({ busy: true, signedIn: true });
-    setAuthGate(true, 'Signing out...');
+    setAuthGate('resolving', 'Signing out...');
 
     try {
         await signOut(auth);
     } catch (e) {
         console.error('Sign-out failed', e);
-        setAuthGate(false, '');
+        setAuthGate('hidden', '');
     } finally {
         isHandlingAuthAction = false;
         updateAuthUI();
@@ -3174,7 +3205,7 @@ function exportData() {
 // ===========================
 async function setupAuthSession() {
     isAuthStateResolving = true;
-    setAuthGate(true, 'Restoring session...');
+    setAuthGate('resolving', 'Restoring session...');
     updateAuthUI();
 
     onAuthStateChanged(auth, async (user) => {
@@ -3188,24 +3219,24 @@ async function setupAuthSession() {
             render();
             updateAuthUI();
             updateSyncStatus('offline', 'Sign in required');
-            setAuthGate(true, 'Sign in with Google to load your workspace.');
+            setAuthGate('signin', 'Sign in with Google to load your workspace.');
             return;
         }
 
         currentUser = user;
         isLoadingUserData = true;
         updateAuthUI();
-        setAuthGate(true, `Loading ${getUserLabel(user)}...`);
+        setAuthGate('resolving', `Loading ${getUserLabel(user)}...`);
 
         try {
             await loadData();
             isLoadingUserData = false;
             await drainPendingExtensionIdeas();
             switchTab(currentView);
-            setAuthGate(false, '');
+            setAuthGate('hidden', '');
         } catch (e) {
             console.error('Failed to hydrate signed-in user', e);
-            setAuthGate(true, 'We could not load your workspace. Try refreshing.');
+            setAuthGate('error', 'We could not load your workspace. Try refreshing.');
         } finally {
             isLoadingUserData = false;
             updateAuthUI();

@@ -34,9 +34,9 @@
                     Content Scheduler
                     <span id="liveBuildBadge"
                         style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(login)</span>
-                    <div id="syncStatus" class="sync-status offline" title="Sign in required">
+                    <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
-                        <span class="sync-text">Login</span>
+                        <span class="sync-text">Checking</span>
                     </div>
                 </h1>
             </div>
@@ -87,7 +87,7 @@
 
             <div class="header-controls">
                 <span id="authUser" class="auth-user" hidden></span>
-                <button class="auth-btn" id="authActionBtn" type="button">Sign In</button>
+                <button class="auth-btn" id="authActionBtn" type="button" disabled>Checking...</button>
                 <button class="icon-btn" id="exportBtn" title="Export Data">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         style="width: 18px; height: 18px;">
@@ -101,12 +101,12 @@
 
         <!-- Main Content Area -->
         <main class="main-content">
-            <div id="authGate" class="auth-gate show">
+            <div id="authGate" class="auth-gate show" data-mode="resolving">
                 <div class="auth-gate__card bento-box">
-                    <h2>Sign in to load your workspace</h2>
-                    <p>Each Google account gets its own Daily Tracker data inside Firestore.</p>
-                    <button id="loginBtn" class="auth-btn auth-btn--primary" type="button">Sign in with Google</button>
-                    <div id="authStatus" class="auth-gate__status">Checking session...</div>
+                    <h2 id="authGateTitle">Restoring your workspace</h2>
+                    <p id="authGateDescription">Checking your saved session...</p>
+                    <button id="loginBtn" class="auth-btn auth-btn--primary" type="button" hidden>Sign in with Google</button>
+                    <div id="authStatus" class="auth-gate__status">Restoring session...</div>
                 </div>
             </div>
 
