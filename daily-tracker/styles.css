@@ -4059,7 +4059,7 @@ canvas {
 }
 
 #sourcing-view .news-main {
-  grid-column: span 3;
+  grid-column: 1 / span 3;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -4070,10 +4070,6 @@ canvas {
   overflow-x: hidden;
   padding-right: 6px;
   scrollbar-gutter: stable;
-}
-
-#sourcing-view .news-sidebar {
-  display: contents;
 }
 
 #sourcing-view .news-group {
@@ -4109,7 +4105,6 @@ canvas {
 }
 
 #sourcing-view .sidebar-section {
-  grid-column: span 1;
   background: var(--bg-card);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: var(--panel-radius);
@@ -4120,6 +4115,18 @@ canvas {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#sourcing-view .sidebar-section--instagram {
+  grid-column: 4 / span 1;
+}
+
+#sourcing-view .sidebar-section--reddit {
+  grid-column: 5 / span 1;
+}
+
+#sourcing-view .sidebar-section--x {
+  grid-column: 6 / span 1;
 }
 
 #sourcing-view .sidebar-section::before {
