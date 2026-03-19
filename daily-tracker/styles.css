@@ -3903,13 +3903,13 @@ canvas {
    =========================== */
 #sourcing-view {
   padding: 0 var(--tab-content-pad) 10px;
-  overflow: visible;
+  overflow: hidden;
   background: transparent;
+  height: 100%;
 }
 
 #sourcing-view .news-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 30;
   margin: 0;
   padding: 12px 16px;
@@ -4044,6 +4044,9 @@ canvas {
   gap: 20px;
   padding: 0;
   align-items: start;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
 }
 
 #sourcing-view .news-main {
@@ -4052,6 +4055,11 @@ canvas {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+  scrollbar-gutter: stable;
 }
 
 #sourcing-view .news-sidebar {
@@ -4061,6 +4069,11 @@ canvas {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   align-content: start;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+  scrollbar-gutter: stable;
 }
 
 #sourcing-view .news-group {
@@ -4101,15 +4114,63 @@ canvas {
   border-radius: var(--panel-radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  position: relative;
 }
 
 #sourcing-view .news-sidebar .sidebar-section:first-child {
   grid-column: 1 / -1;
 }
 
+#sourcing-view .sidebar-section--x {
+  border-color: rgba(17, 24, 39, 0.08);
+  background:
+    radial-gradient(circle at top right, rgba(17, 24, 39, 0.08), transparent 46%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.96) 100%);
+}
+
+#sourcing-view .sidebar-section--x .box-header {
+  background: linear-gradient(90deg, rgba(17, 24, 39, 0.96), rgba(31, 41, 55, 0.9));
+}
+
+#sourcing-view .sidebar-section--x .box-header h2 {
+  color: #f9fafb;
+}
+
+#sourcing-view .sidebar-section--instagram {
+  border-color: rgba(225, 48, 108, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(253, 218, 86, 0.22), transparent 34%),
+    radial-gradient(circle at top right, rgba(193, 53, 132, 0.18), transparent 38%),
+    linear-gradient(180deg, rgba(255, 250, 252, 0.98) 0%, rgba(255, 245, 249, 0.96) 100%);
+}
+
+#sourcing-view .sidebar-section--instagram .box-header {
+  background: linear-gradient(90deg, #f58529 0%, #dd2a7b 52%, #8134af 100%);
+}
+
+#sourcing-view .sidebar-section--instagram .box-header h2 {
+  color: #fff7fb;
+}
+
+#sourcing-view .sidebar-section--reddit {
+  border-color: rgba(255, 69, 0, 0.18);
+  background:
+    radial-gradient(circle at top right, rgba(255, 69, 0, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(255, 252, 250, 0.98) 0%, rgba(255, 246, 242, 0.96) 100%);
+}
+
+#sourcing-view .sidebar-section--reddit .box-header {
+  background: linear-gradient(90deg, #ff4500 0%, #ff6a00 100%);
+}
+
+#sourcing-view .sidebar-section--reddit .box-header h2 {
+  color: #fff8f4;
+}
+
 #sourcing-view .sidebar-section .box-header {
   padding: 12px 14px 8px;
   margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 #sourcing-view .sidebar-section .box-header h2 {
@@ -4191,11 +4252,14 @@ canvas {
 @media (max-width: 1200px) {
   #sourcing-view .news-layout {
     grid-template-columns: 1fr;
+    overflow: visible;
   }
 
   #sourcing-view .news-main,
   #sourcing-view .news-sidebar {
     grid-column: auto;
+    overflow: visible;
+    padding-right: 0;
   }
 
   #sourcing-view .news-sidebar {
