@@ -98,14 +98,15 @@ const SOURCING_FEEDS = [
 ];
 const INSTAGRAM_VIRAL_FEED = {
     id: 'instagram-viral',
-    url: 'https://rss.app/feeds/v1.1/_rJZ1VcmwRQcUDWY7.json'
+    url: 'https://rss.app/feeds/v1.1/_rJZ1VcmwRQcUDWY7.json',
+    format: 'json'
 };
 const REDDIT_VIRAL_FEED = {
     id: 'reddit-viral',
-    url: 'https://www.reddit.com/user/diligent_run882/m/ai/.json?raw_json=1&limit=12'
+    url: 'https://www.reddit.com/user/diligent_run882/m/ai/.rss',
+    format: 'rss'
 };
-// Reddit blocks direct cross-origin fetches, so only this source is proxied.
-const REDDIT_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
+const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
 const SIDEBAR_ITEM_LIMIT = 8;
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
@@ -265,6 +266,12 @@ function safeHttpUrl(url, fallback = '#') {
 function toSafeNumber(value, fallback = 0) {
     const num = Number(value);
     return Number.isFinite(num) ? num : fallback;
+}
+
+function htmlToPlainText(html) {
+    const temp = document.createElement('div');
+    temp.innerHTML = html || '';
+    return normalizeWhitespace(temp.textContent || temp.innerText || '');
 }
 
 function safeGetLocalStorageItem(key) {
@@ -1817,13 +1824,55 @@ function formatSidebarDate(value) {
     return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 }
 
-function buildSidebarFeedRequestUrl(feedConfig, ts = Date.now()) {
-    if (feedConfig?.id === REDDIT_VIRAL_FEED.id) {
-        const sourceUrl = `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}cacheBust=${ts}`;
-        return `${REDDIT_CORS_PROXY_URL}${encodeURIComponent(sourceUrl)}`;
+function buildSidebarFeedRequestUrls(feedConfig, ts = Date.now()) {
+    const sourceUrl = `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}t=${ts}`;
+    const proxyUrl = `${SIDEBAR_CORS_PROXY_URL}${encodeURIComponent(sourceUrl)}`;
+
+    if (feedConfig?.format === 'rss') {
+        return [proxyUrl, sourceUrl];
     }
 
-    return `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}t=${ts}`;
+    return [sourceUrl, proxyUrl];
+}
+
+function parseRedditRssItems(xmlText) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(xmlText, 'application/xml');
+    if (doc.querySelector('parsererror')) {
+        throw new Error('Invalid Reddit RSS response');
+    }
+
+    return Array.from(doc.querySelectorAll('entry')).map((entry) => {
+        const title = decodeEntities(entry.querySelector('title')?.textContent || '');
+        if (!title) return null;
+
+        const link = entry.querySelector('link')?.getAttribute('href') || '';
+        const publishedAt = entry.querySelector('published')?.textContent
+            || entry.querySelector('updated')?.textContent
+            || new Date().toISOString();
+        const subredditLabel = entry.querySelector('category')?.getAttribute('label')
+            || entry.querySelector('category')?.getAttribute('term')
+            || 'r/reddit';
+        const subreddit = subredditLabel.replace(/^r\//, '');
+        const author = normalizeWhitespace(entry.querySelector('author > name')?.textContent || '');
+        const thumbnail = entry.querySelector('media\\:thumbnail, thumbnail')?.getAttribute('url') || '';
+        const rawContent = entry.querySelector('content')?.textContent || '';
+        const reason = htmlToPlainText(rawContent)
+            .replace(/\[link\]|\[comments\]|submitted by/gi, '')
+            .slice(0, 220);
+
+        return {
+            headline: title,
+            link: safeHttpUrl(link, '#'),
+            source: subredditLabel,
+            subreddit,
+            author,
+            published_at: publishedAt,
+            date: toIsoDateString(publishedAt),
+            reason,
+            image_url: safeHttpUrl(decodeEntities(thumbnail), '')
+        };
+    }).filter(Boolean);
 }
 
 async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
@@ -1832,16 +1881,36 @@ async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
         return sidebarFeedCache.get(feedConfig.id);
     }
 
-    const res = await fetch(buildSidebarFeedRequestUrl(feedConfig), { cache: 'no-store' });
-    if (!res.ok) throw new Error(`Sidebar feed ${feedConfig.id} failed with ${res.status}`);
+    const candidates = buildSidebarFeedRequestUrls(feedConfig);
+    let lastError = null;
 
-    const json = await res.json();
-    const items = feedConfig.id === REDDIT_VIRAL_FEED.id
-        ? (Array.isArray(json?.data?.children) ? json.data.children.map(child => child?.data).filter(Boolean) : [])
-        : (Array.isArray(json?.items) ? json.items : []);
+    for (const url of candidates) {
+        try {
+            const res = await fetch(url, { cache: 'no-store' });
+            if (!res.ok) {
+                throw new Error(`Sidebar feed ${feedConfig.id} failed with ${res.status}`);
+            }
 
-    sidebarFeedCache.set(feedConfig.id, items);
-    return items;
+            const text = await res.text();
+            const items = feedConfig.format === 'rss'
+                ? parseRedditRssItems(text)
+                : (() => {
+                    const json = JSON.parse(text);
+                    return Array.isArray(json?.items) ? json.items : [];
+                })();
+
+            if (!items.length) {
+                throw new Error(`Sidebar feed ${feedConfig.id} returned no items`);
+            }
+
+            sidebarFeedCache.set(feedConfig.id, items);
+            return items;
+        } catch (error) {
+            lastError = error;
+        }
+    }
+
+    throw lastError || new Error(`Sidebar feed ${feedConfig.id} failed`);
 }
 
 async function fetchInstagramSidebarItems(forceRefresh = false) {
@@ -1859,41 +1928,10 @@ async function fetchInstagramSidebarItems(forceRefresh = false) {
         .slice(0, SIDEBAR_ITEM_LIMIT);
 }
 
-function normalizeRedditListingItem(item) {
-    const headline = decodeEntities(item?.title || '');
-    if (!headline) return null;
-
-    const permalink = item?.permalink ? `https://www.reddit.com${item.permalink}` : '';
-    const fallbackLink = safeHttpUrl(item?.url_overridden_by_dest || item?.url || '', '#');
-    const publishedAt = item?.created_utc
-        ? new Date(item.created_utc * 1000).toISOString()
-        : new Date().toISOString();
-    const previewImage = decodeEntities(item?.preview?.images?.[0]?.source?.url || item?.thumbnail || '');
-    const reason = normalizeWhitespace(item?.selftext || item?.link_flair_text || item?.domain || '').slice(0, 220);
-    const subreddit = normalizeWhitespace(item?.subreddit || item?.subreddit_name_prefixed?.replace(/^r\//, '') || 'reddit');
-
-    return {
-        headline,
-        link: safeHttpUrl(permalink, fallbackLink),
-        source: `r/${subreddit}`,
-        subreddit,
-        published_at: publishedAt,
-        date: toIsoDateString(publishedAt),
-        score: toSafeNumber(item?.score ?? item?.ups, 0),
-        comments: toSafeNumber(item?.num_comments, 0),
-        reason,
-        image_url: safeHttpUrl(previewImage, '')
-    };
-}
-
 async function fetchRedditSidebarItems(forceRefresh = false) {
     const items = await fetchSidebarFeed(REDDIT_VIRAL_FEED, forceRefresh);
     return items
-        .map(normalizeRedditListingItem)
-        .filter(Boolean)
         .sort((a, b) => {
-            if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
-            if ((b.comments || 0) !== (a.comments || 0)) return (b.comments || 0) - (a.comments || 0);
             return new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
         })
         .slice(0, SIDEBAR_ITEM_LIMIT);
@@ -2410,16 +2448,24 @@ function createInstagramPostItem(item, index) {
 }
 
 function createRedditPostItem(item, index) {
+    const redditMetrics = [];
+    if (toSafeNumber(item.score, 0) > 0) {
+        redditMetrics.push({ icon: '⬆', value: formatCompact(toSafeNumber(item.score, 0)), title: 'Score', tone: 'hot' });
+    }
+    if (toSafeNumber(item.comments, 0) > 0) {
+        redditMetrics.push({ icon: '💬', value: formatCompact(toSafeNumber(item.comments, 0)), title: 'Comments', tone: 'cool' });
+    }
+    if (!redditMetrics.length && item.author) {
+        redditMetrics.push({ icon: '👤', value: item.author.replace(/^\/u\//, ''), title: 'Author', tone: 'cool' });
+    }
+
     return createMagazineCard(item, index, {
         variant: 'sidebar',
         sourceKind: 'reddit',
         sourceLabel: `r/${item.subreddit || 'unknown'}`,
         reasonText: item.reason,
         imageUrl: item.image_url,
-        metricHtml: buildMetricChipGroupHtml([
-            { icon: '⬆', value: formatCompact(toSafeNumber(item.score, 0)), title: 'Score', tone: 'hot' },
-            { icon: '💬', value: formatCompact(toSafeNumber(item.comments, 0)), title: 'Comments', tone: 'cool' }
-        ]),
+        metricHtml: buildMetricChipGroupHtml(redditMetrics),
         includeInternalScore: false
     });
 }
