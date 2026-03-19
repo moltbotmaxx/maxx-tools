@@ -3906,6 +3906,8 @@ canvas {
   overflow: hidden;
   background: transparent;
   height: 100%;
+  flex: 1;
+  min-height: 0;
 }
 
 #sourcing-view .news-header {
@@ -4117,6 +4119,17 @@ canvas {
   position: relative;
 }
 
+#sourcing-view .sidebar-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 14px;
+  right: 14px;
+  height: 3px;
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
 #sourcing-view .news-sidebar .sidebar-section:first-child {
   grid-column: 1 / -1;
 }
@@ -4129,11 +4142,16 @@ canvas {
 }
 
 #sourcing-view .sidebar-section--x .box-header {
-  background: linear-gradient(90deg, rgba(17, 24, 39, 0.96), rgba(31, 41, 55, 0.9));
+  background: transparent;
 }
 
 #sourcing-view .sidebar-section--x .box-header h2 {
-  color: #f9fafb;
+  color: #111827;
+  background: rgba(17, 24, 39, 0.08);
+}
+
+#sourcing-view .sidebar-section--x::before {
+  background: linear-gradient(90deg, rgba(17, 24, 39, 0.95), rgba(75, 85, 99, 0.7));
 }
 
 #sourcing-view .sidebar-section--instagram {
@@ -4145,11 +4163,16 @@ canvas {
 }
 
 #sourcing-view .sidebar-section--instagram .box-header {
-  background: linear-gradient(90deg, #f58529 0%, #dd2a7b 52%, #8134af 100%);
+  background: transparent;
 }
 
 #sourcing-view .sidebar-section--instagram .box-header h2 {
-  color: #fff7fb;
+  color: #b83280;
+  background: rgba(221, 42, 123, 0.1);
+}
+
+#sourcing-view .sidebar-section--instagram::before {
+  background: linear-gradient(90deg, #f58529 0%, #dd2a7b 52%, #8134af 100%);
 }
 
 #sourcing-view .sidebar-section--reddit {
@@ -4160,21 +4183,33 @@ canvas {
 }
 
 #sourcing-view .sidebar-section--reddit .box-header {
-  background: linear-gradient(90deg, #ff4500 0%, #ff6a00 100%);
+  background: transparent;
 }
 
 #sourcing-view .sidebar-section--reddit .box-header h2 {
-  color: #fff8f4;
+  color: #c2410c;
+  background: rgba(255, 106, 0, 0.1);
+}
+
+#sourcing-view .sidebar-section--reddit::before {
+  background: linear-gradient(90deg, #ff4500 0%, #ff7b2c 100%);
 }
 
 #sourcing-view .sidebar-section .box-header {
-  padding: 12px 14px 8px;
+  padding: 14px 14px 6px;
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 0;
 }
 
 #sourcing-view .sidebar-section .box-header h2 {
   font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 #selection-view .inspiration-grid-container {
