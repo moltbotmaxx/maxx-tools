@@ -63,7 +63,7 @@ const SOURCING_FEEDS = [
         id: 'all',
         label: 'ALL',
         kind: 'aggregate',
-        feedIds: ['ai-general', 'anthropic-claude', 'openai-chatgpt', 'robotics']
+        feedIds: ['ai-general', 'anthropic-claude', 'openai-chatgpt', 'robotics', 'technology']
     },
     {
         id: 'ai-general',
@@ -88,6 +88,12 @@ const SOURCING_FEEDS = [
         label: 'Robotics',
         kind: 'news',
         url: 'https://rss.app/feeds/v1.1/cUiUbXPU5KD7L6u1.json'
+    },
+    {
+        id: 'technology',
+        label: 'Technology',
+        kind: 'news',
+        url: 'https://rss.app/feeds/v1.1/tK7d10xMOEoFXoDr.json'
     },
 ];
 const INSTAGRAM_VIRAL_FEED = {
