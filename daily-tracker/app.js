@@ -133,6 +133,7 @@ const sidebarFeedCache = new Map();
 let sourcingArticlesCache = [];
 let publishedTrackerDataCache = null;
 let sourcingArticlesDirty = true;
+let lastSourcingFeedFailures = [];
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
 let isNewsRefreshing = false;
@@ -579,7 +580,7 @@ function applyLoadedState(snapshot = {}) {
     const headlines = Array.isArray(snapshot.doneHeadlines) ? snapshot.doneHeadlines : [];
     doneHeadlines = new Set(
         headlines
-            .map(item => normalizeWhitespace(item))
+            .map(normalizeStoredDoneMarker)
             .filter(Boolean)
     );
 
@@ -2171,6 +2172,40 @@ function dedupeArticlesByLink(articles) {
     return output;
 }
 
+function getLegacyDoneHeadlineKey(value) {
+    const normalized = normalizeWhitespace(decodeEntities(value || '')).toLowerCase();
+    return normalized ? `legacy-headline:${normalized}` : '';
+}
+
+function getSourcingItemKey(item = {}) {
+    const rawLink = normalizeUrlCandidate(item?.link || item?.url || '');
+    const link = rawLink && !rawLink.startsWith('#')
+        ? safeHttpUrl(rawLink, '')
+        : '';
+    if (link) return `link:${link}`;
+
+    const headline = normalizeWhitespace(decodeEntities(item?.headline || item?.title || '')).toLowerCase();
+    if (!headline) return '';
+
+    const source = normalizeWhitespace(item?.source || item?.author || item?.subreddit || '').toLowerCase();
+    return source ? `headline:${headline}|source:${source}` : `headline:${headline}`;
+}
+
+function normalizeStoredDoneMarker(value) {
+    const raw = String(value ?? '').trim();
+    if (!raw) return '';
+    if (/^(link:|headline:|legacy-headline:)/.test(raw)) return raw;
+    return getLegacyDoneHeadlineKey(raw);
+}
+
+function isSourcingItemDone(item = {}) {
+    const itemKey = getSourcingItemKey(item);
+    if (itemKey && doneHeadlines.has(itemKey)) return true;
+
+    const legacyKey = getLegacyDoneHeadlineKey(item?.headline || item?.title || '');
+    return legacyKey ? doneHeadlines.has(legacyKey) : false;
+}
+
 function getNewsSectionCardCount(sectionId) {
     if (sectionId === 'featured') {
         return elements.featuredGrid?.querySelectorAll('.card-wrapper').length || 0;
@@ -2566,6 +2601,20 @@ function renderSidebarList(container, items, createItem, emptyText) {
     container.appendChild(frag);
 }
 
+function renderSourcingGridSection(container, items, createItem, emptyText) {
+    if (!container) return;
+
+    container.innerHTML = '';
+    if (!items.length) {
+        renderSidebarEmpty(container, emptyText);
+        return;
+    }
+
+    const frag = document.createDocumentFragment();
+    items.forEach((item, index) => frag.appendChild(createItem(item, index)));
+    container.appendChild(frag);
+}
+
 async function renderSidebarFeeds(forceRefresh = false) {
     const xFeedConfig = buildXBridgeFeedConfig();
     const tasks = [
@@ -2612,9 +2661,11 @@ function updateSourcingCountsFromDom() {
     updateStickyNewsHeader();
 }
 
-function applyDoneOptimistic(headline) {
-    if (!headline) return;
-    const selector = `.card-wrapper[data-headline="${CSS.escape(headline)}"]`;
+function applyDoneOptimistic(item) {
+    const itemKey = getSourcingItemKey(item);
+    if (!itemKey) return;
+
+    const selector = `.card-wrapper[data-article-key="${CSS.escape(itemKey)}"]`;
     const cards = document.querySelectorAll(selector);
 
     cards.forEach((card) => {
@@ -2651,17 +2702,34 @@ async function fetchSourcingFeed(feedConfig, forceRefresh = false) {
 }
 
 async function rebuildSourcingArticles(forceRefresh = false) {
-    const selectedFeeds = getSelectedFeedConfigs();
-    const feedResults = await Promise.all(
-        selectedFeeds
-            .filter(feed => feed.kind === 'news')
-            .map(async (feed) => ({ items: await fetchSourcingFeed(feed, forceRefresh) }))
+    const selectedFeeds = getSelectedFeedConfigs().filter(feed => feed.kind === 'news');
+    const feedResults = await Promise.allSettled(
+        selectedFeeds.map(feed => fetchSourcingFeed(feed, forceRefresh))
     );
 
     const allArticles = [];
-    feedResults.forEach(({ items }) => {
-        items.forEach((item, i) => allArticles.push(normalizeFeedItemToArticle(item, i)));
+    const failedFeeds = [];
+
+    feedResults.forEach((result, index) => {
+        const feed = selectedFeeds[index];
+
+        if (result.status === 'fulfilled') {
+            result.value.forEach((item, itemIndex) => {
+                allArticles.push(normalizeFeedItemToArticle(item, itemIndex));
+            });
+            return;
+        }
+
+        failedFeeds.push(feed?.label || feed?.id || 'Unknown feed');
+        console.warn(`Failed to load sourcing feed "${feed?.id || 'unknown'}"`, result.reason);
     });
+
+    lastSourcingFeedFailures = failedFeeds;
+    if (!allArticles.length) {
+        throw new Error(failedFeeds.length
+            ? `Unable to load sourcing feeds: ${failedFeeds.join(', ')}`
+            : 'Unable to load sourcing feeds');
+    }
 
     sourcingArticlesCache = dedupeArticlesByLink(allArticles).sort(sortSourcingItemsByScore);
     sourcingArticlesDirty = false;
@@ -2679,33 +2747,35 @@ async function renderNews(forceRefresh = false) {
 
     const activeArticles = showDoneNews
         ? sourcingArticlesCache
-        : sourcingArticlesCache.filter(item => !doneHeadlines.has(item.headline));
+        : sourcingArticlesCache.filter(item => !isSourcingItemDone(item));
 
     const featuredArticles = activeArticles.slice(0, 12);
     const moreStories = activeArticles.slice(12, 36);
     const remaining = activeArticles.slice(36);
+    const noPendingArticles = !showDoneNews && activeArticles.length === 0 && sourcingArticlesCache.length > 0;
 
     // Render counts
     if (elements.next6Count) elements.next6Count.textContent = `${moreStories.length} articles`;
     if (elements.poolCountNews) elements.poolCountNews.textContent = `${remaining.length} articles`;
 
-    // Clear and render grids
-    elements.featuredGrid.innerHTML = '';
-    const featuredFrag = document.createDocumentFragment();
-    featuredArticles.forEach((item, i) => featuredFrag.appendChild(createFeaturedCard(item, i)));
-    elements.featuredGrid.appendChild(featuredFrag);
-
-    elements.simpleGrid.innerHTML = '';
-    const simpleFrag = document.createDocumentFragment();
-    moreStories.forEach((item, i) => simpleFrag.appendChild(createMagazineCard(item, i + 12)));
-    elements.simpleGrid.appendChild(simpleFrag);
-
-    if (elements.poolListNews) {
-        elements.poolListNews.innerHTML = '';
-        const poolFrag = document.createDocumentFragment();
-        remaining.forEach((item, i) => poolFrag.appendChild(createCompactTile(item, i + 36)));
-        elements.poolListNews.appendChild(poolFrag);
-    }
+    renderSourcingGridSection(
+        elements.featuredGrid,
+        featuredArticles,
+        createFeaturedCard,
+        noPendingArticles ? 'Everything in this feed is marked done.' : 'No featured stories available for this feed.'
+    );
+    renderSourcingGridSection(
+        elements.simpleGrid,
+        moreStories,
+        (item, index) => createMagazineCard(item, index + 12),
+        noPendingArticles ? 'Nothing pending beyond the featured picks.' : 'No more stories for this feed yet.'
+    );
+    renderSourcingGridSection(
+        elements.poolListNews,
+        remaining,
+        (item, index) => createCompactTile(item, index + 36),
+        noPendingArticles ? 'Buffer is clear for this feed.' : 'No buffer stories available yet.'
+    );
 
     updateStickyNewsHeader();
     await renderSidebarFeeds(forceRefresh);
@@ -2736,7 +2806,12 @@ async function refreshNewsNow(manual = false) {
     if (manual) {
         if (ok) {
             const hhmm = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-            setNewsRefreshStatus(`Updated ${hhmm}`, 'success');
+            if (lastSourcingFeedFailures.length) {
+                const label = lastSourcingFeedFailures.length === 1 ? 'feed failed' : 'feeds failed';
+                setNewsRefreshStatus(`Updated ${hhmm} · ${lastSourcingFeedFailures.length} ${label}`, 'warning');
+            } else {
+                setNewsRefreshStatus(`Updated ${hhmm}`, 'success');
+            }
         } else {
             setNewsRefreshStatus('Refresh failed', 'error');
         }
@@ -2908,10 +2983,13 @@ async function saveSourceSelectionIdea() {
     if (url) fetchMetadata(newIdea.id, url);
 }
 
-async function markAsDone(headline) {
-    doneHeadlines.add(headline);
+async function markAsDone(item) {
+    const itemKey = getSourcingItemKey(item) || getLegacyDoneHeadlineKey(item?.headline || item?.title || '');
+    if (!itemKey) return;
+
+    doneHeadlines.add(itemKey);
     persistUserLocalCache(currentUser);
-    applyDoneOptimistic(headline);
+    applyDoneOptimistic(item);
     await saveData();
     // Re-render shortly after optimistic fade-out so top sections refill from Buffer.
     setTimeout(() => {
@@ -2950,7 +3028,7 @@ function initSourcingFeedFilter() {
             selectedSourcingFeed = feed.id;
             sourcingArticlesDirty = true;
             initSourcingFeedFilter();
-            renderNews(true);
+            renderNews(false);
         });
         nav.appendChild(tabBtn);
     });
@@ -2974,7 +3052,7 @@ function createMagazineCard(item, index, options = {}) {
     } = options;
 
     const card = document.createElement('div');
-    const isDone = doneHeadlines.has(item.headline);
+    const isDone = isSourcingItemDone(item);
     const safeImageUrl = getItemImageUrl({ image_url: imageUrl });
     const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
     const safeLink = safeHttpUrl(item.link);
@@ -2988,7 +3066,7 @@ function createMagazineCard(item, index, options = {}) {
     const footerMetricHtml = metricHtml ?? getScorePillHtml(item, scoreValue, includeInternalScore);
 
     card.className = wrapperClassName;
-    card.dataset.headline = item.headline || '';
+    card.dataset.articleKey = getSourcingItemKey(item);
 
     const imageHtml = hasImage
         ? `<div class="magazine-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
@@ -3020,7 +3098,7 @@ function createMagazineCard(item, index, options = {}) {
     `;
 
     const doneBtn = card.querySelector('.done-button');
-    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
+    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item); };
     const sendBtn = card.querySelector('.send-selection-btn');
     if (sendBtn) sendBtn.onclick = (e) => {
         e.preventDefault();

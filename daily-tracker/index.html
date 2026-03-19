@@ -33,7 +33,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Content Scheduler
                     <span id="liveBuildBadge"
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(login)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(sourcing-ticker)</span>
                     <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Checking</span>
@@ -122,6 +122,9 @@
                     <div class="news-toolbar">
                         <div class="news-toolbar__meta">
                             <h2 class="news-toolbar__title">Sourcing Desk</h2>
+                        </div>
+                        <div class="news-toolbar__ticker" aria-label="AI news ticker">
+                            <rssapp-ticker id="_OW2KiETYc6j8aVKc"></rssapp-ticker>
                         </div>
                         <div class="view-controls">
                             <label class="toggle-switch">
@@ -243,7 +246,7 @@
                                 <h2>📥 Add Selection</h2>
                                 <a class="selection-clipper-link"
                                     href="./extension/daily-tracker-clipper-login.zip" download>
-                                    Clipper · login
+                                    Clipper · sourcing-ticker
                                 </a>
                             </div>
                             <div class="link-input-group">
@@ -747,8 +750,9 @@
         </div>
     </div>
 
-    <script src="x-feed-config.js?v=login"></script>
-    <script type="module" src="app.js?v=login"></script>
+    <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
+    <script src="x-feed-config.js?v=sourcing-ticker"></script>
+    <script type="module" src="app.js?v=sourcing-ticker"></script>
 </body>
 
 </html>
