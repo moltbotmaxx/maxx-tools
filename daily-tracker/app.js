@@ -108,9 +108,10 @@ const REDDIT_VIRAL_FEED = {
 };
 const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
 const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
+const DAILY_TRACKER_DATASET_URL = new URL('data.json', window.location.href).toString();
 const SIDEBAR_ITEM_LIMIT = 8;
 const DEFAULT_X_RSS_BRIDGE_CONFIG = {
-    enabled: true,
+    enabled: false,
     bridgeUrl: `${window.location.origin}/rss-bridge/`,
     context: 'By keyword or hashtag',
     query: '"artificial intelligence" OR AI OR ChatGPT OR OpenAI OR Anthropic OR Claude OR Gemini OR robotics',
@@ -128,6 +129,7 @@ let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
 const sidebarFeedCache = new Map();
 let sourcingArticlesCache = [];
+let publishedTrackerDataCache = null;
 let sourcingArticlesDirty = true;
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
@@ -2072,6 +2074,78 @@ function parseRssBridgeJsonItems(json) {
     }).filter(item => item.headline && item.link);
 }
 
+function buildPublishedDatasetRequestUrl(ts = Date.now()) {
+    return `${DAILY_TRACKER_DATASET_URL}${DAILY_TRACKER_DATASET_URL.includes('?') ? '&' : '?'}t=${ts}`;
+}
+
+async function fetchPublishedTrackerData(forceRefresh = false) {
+    if (!forceRefresh && publishedTrackerDataCache) {
+        return publishedTrackerDataCache;
+    }
+
+    const res = await fetch(buildPublishedDatasetRequestUrl(), { cache: 'no-store' });
+    if (!res.ok) {
+        throw new Error(`Published dataset failed with ${res.status}`);
+    }
+
+    publishedTrackerDataCache = await res.json();
+    return publishedTrackerDataCache;
+}
+
+function normalizeStaticXSidebarItem(item) {
+    const headline = normalizeWhitespace(item?.headline || item?.title || item?.text || item?.reason || '');
+    const link = safeHttpUrl(item?.link || item?.url || '', '#');
+    if (!headline || !link) return null;
+
+    const publishedAtSource = item?.published_at || item?.created_at || item?.date || new Date().toISOString();
+    const publishedDate = new Date(publishedAtSource);
+    const publishedAt = Number.isNaN(publishedDate.getTime())
+        ? new Date().toISOString()
+        : publishedDate.toISOString();
+    const imageUrl = getDisplayImageUrl(
+        item?.image_url || item?.image || item?.media_url || item?.preview_image || '',
+        ''
+    );
+    const reason = normalizeWhitespace(item?.reason || item?.text || '').slice(0, 220);
+    const rawRanking = clampScore(item?.ranking ?? item?.viral_score ?? item?.virality ?? item?.score ?? 0);
+    const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60));
+    const computedRanking = rawRanking
+        || clampScore(scoreRecency(hoursAgo) * 0.72 + scoreHeadlineClarity(headline) * 0.18 + (imageUrl ? 10 : 0));
+
+    return {
+        headline,
+        link,
+        source: 'X',
+        author: normalizeWhitespace(item?.author || item?.username || item?.handle || '').replace(/^@/, ''),
+        full_name: normalizeWhitespace(item?.full_name || item?.display_name || ''),
+        published_at: publishedAt,
+        date: toIsoDateString(publishedAt),
+        reason: reason || headline,
+        image_url: imageUrl,
+        ranking: computedRanking,
+        virality: clampScore(item?.virality ?? item?.viral_score ?? computedRanking),
+        fit: clampScore(item?.fit ?? computedRanking)
+    };
+}
+
+async function fetchStaticXSidebarItems(forceRefresh = false) {
+    const cacheId = 'x-viral-static';
+    if (!forceRefresh && sidebarFeedCache.has(cacheId)) {
+        return sidebarFeedCache.get(cacheId);
+    }
+
+    const dataset = await fetchPublishedTrackerData(forceRefresh);
+    const items = Array.isArray(dataset?.x_viral?.items)
+        ? dataset.x_viral.items.map((item) => normalizeStaticXSidebarItem(item)).filter(Boolean)
+        : [];
+
+    if (items.length) {
+        sidebarFeedCache.set(cacheId, items);
+    }
+
+    return items;
+}
+
 async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
     if (!feedConfig?.url) return [];
     if (!forceRefresh && sidebarFeedCache.has(feedConfig.id)) {
@@ -2139,6 +2213,20 @@ async function fetchRedditSidebarItems(forceRefresh = false) {
 }
 
 async function fetchXSidebarItems(forceRefresh = false, feedConfig = buildXBridgeFeedConfig()) {
+    try {
+        const staticItems = await fetchStaticXSidebarItems(forceRefresh);
+        if (staticItems.length) {
+            return staticItems
+                .sort((a, b) => {
+                    if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
+                    return new Date(b.published_at || b.date).getTime() - new Date(a.published_at || a.date).getTime();
+                })
+                .slice(0, SIDEBAR_ITEM_LIMIT);
+        }
+    } catch (error) {
+        console.warn('Failed to load static X feed:', error);
+    }
+
     if (!feedConfig) return [];
     const items = await fetchSidebarFeed(feedConfig, forceRefresh);
     return items
@@ -2169,23 +2257,16 @@ function renderSidebarList(container, items, createItem, emptyText) {
 
 async function renderSidebarFeeds(forceRefresh = false) {
     const xFeedConfig = buildXBridgeFeedConfig();
-    if (!xFeedConfig) {
-        renderSidebarEmpty(elements.xViralList, 'Configure RSS-Bridge for X');
-    }
-
     const tasks = [
         fetchInstagramSidebarItems(forceRefresh),
-        fetchRedditSidebarItems(forceRefresh)
+        fetchRedditSidebarItems(forceRefresh),
+        fetchXSidebarItems(forceRefresh, xFeedConfig)
     ];
-
-    if (xFeedConfig) {
-        tasks.push(fetchXSidebarItems(forceRefresh, xFeedConfig));
-    }
 
     const results = await Promise.allSettled(tasks);
     const instagramResult = results[0];
     const redditResult = results[1];
-    const xResult = xFeedConfig ? results[2] : null;
+    const xResult = results[2];
 
     if (instagramResult.status === 'fulfilled') {
         renderSidebarList(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
@@ -2201,9 +2282,9 @@ async function renderSidebarFeeds(forceRefresh = false) {
         renderSidebarEmpty(elements.redditViralList, 'Reddit list unavailable');
     }
 
-    if (xFeedConfig && xResult?.status === 'fulfilled') {
+    if (xResult?.status === 'fulfilled') {
         renderSidebarList(elements.xViralList, xResult.value, createXPostItem, 'No X posts available');
-    } else if (xFeedConfig && xResult) {
+    } else if (xResult) {
         console.error('Failed to load X feed:', xResult.reason);
         renderSidebarEmpty(elements.xViralList, 'X feed unavailable');
     }
@@ -2342,6 +2423,7 @@ async function refreshNewsNow(manual = false) {
     // Force a true refresh from source, not from in-memory cache.
     sourcingFeedCache.clear();
     sidebarFeedCache.clear();
+    publishedTrackerDataCache = null;
     sourcingArticlesDirty = true;
     const ok = await renderNews(true);
 

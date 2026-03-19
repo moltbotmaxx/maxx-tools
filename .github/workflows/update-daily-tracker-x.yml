@@ -1,0 +1,40 @@
+name: Update Daily Tracker X Feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10,40 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-x-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Refresh x_viral in daily-tracker/data.json
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_PER_TOPIC: '10'
+        run: |
+          if [ -z "$X_BEARER_TOKEN" ]; then
+            echo "X_BEARER_TOKEN is not set. Skipping X feed refresh."
+            exit 0
+          fi
+
+          node scripts/update-x-feed.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daily-tracker/data.json
+          git diff --staged --quiet || git commit -m "chore: refresh daily-tracker X feed"
+          git push

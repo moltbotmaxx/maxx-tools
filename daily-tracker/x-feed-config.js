@@ -1,5 +1,5 @@
 window.DAILY_TRACKER_X_FEED = {
-    enabled: true,
+    enabled: false,
     bridgeUrl: `${window.location.origin}/rss-bridge/`,
     context: 'By keyword or hashtag',
     query: '"artificial intelligence" OR AI OR ChatGPT OR OpenAI OR Anthropic OR Claude OR Gemini OR robotics',
