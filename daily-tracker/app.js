@@ -101,17 +101,10 @@ const INSTAGRAM_VIRAL_FEED = {
     url: 'https://rss.app/feeds/v1.1/_rJZ1VcmwRQcUDWY7.json',
     format: 'json'
 };
-const REDDIT_VIRAL_FEED = {
-    id: 'reddit-viral',
-    url: `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/user/diligent_run882/m/ai/.rss')}`,
-    format: 'rss2json'
-};
-const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
-const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
-const DAILY_TRACKER_DATASET_URL = new URL('data.json', window.location.href).toString();
-const SIDEBAR_ITEM_LIMIT = 8;
-const DEFAULT_X_RSS_BRIDGE_CONFIG = {
-    enabled: false,
+const DEFAULT_X_FEED_CONFIG = {
+    rssUrl: 'https://rss.app/feeds/v1.1/_hL57mgTsWKN2ldbw.json',
+    rssFormat: 'json',
+    bridgeEnabled: false,
     bridgeUrl: `${window.location.origin}/rss-bridge/`,
     context: 'By keyword or hashtag',
     query: '"artificial intelligence" OR AI OR ChatGPT OR OpenAI OR Anthropic OR Claude OR Gemini OR robotics',
@@ -125,6 +118,15 @@ const DEFAULT_X_RSS_BRIDGE_CONFIG = {
     hideExternalLinkPreview: false,
     useTweetIdAsTitle: false
 };
+const REDDIT_VIRAL_FEED = {
+    id: 'reddit-viral',
+    url: `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/user/diligent_run882/m/ai/.rss')}`,
+    format: 'rss2json'
+};
+const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
+const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
+const DAILY_TRACKER_DATASET_URL = new URL('data.json', window.location.href).toString();
+const SIDEBAR_ITEM_LIMIT = 8;
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
 const sidebarFeedCache = new Map();
@@ -145,13 +147,31 @@ function ensureAppDataIntegrity() {
     return appData;
 }
 
-function buildXBridgeFeedConfig() {
-    const runtimeConfig = {
-        ...DEFAULT_X_RSS_BRIDGE_CONFIG,
+function getXFeedRuntimeConfig() {
+    return {
+        ...DEFAULT_X_FEED_CONFIG,
         ...(window.DAILY_TRACKER_X_FEED || {})
     };
+}
 
-    if (!runtimeConfig.enabled) return null;
+function buildXRssFeedConfig() {
+    const runtimeConfig = getXFeedRuntimeConfig();
+    const rssUrl = typeof runtimeConfig.rssUrl === 'string'
+        ? runtimeConfig.rssUrl.trim()
+        : '';
+    if (!rssUrl) return null;
+
+    return {
+        id: `x-rss:${rssUrl}`,
+        url: rssUrl,
+        format: runtimeConfig.rssFormat || 'json'
+    };
+}
+
+function buildXBridgeFeedConfig() {
+    const runtimeConfig = getXFeedRuntimeConfig();
+
+    if (!runtimeConfig.bridgeEnabled) return null;
 
     const rawBridgeUrl = typeof runtimeConfig.bridgeUrl === 'string'
         ? runtimeConfig.bridgeUrl.trim()
@@ -1899,6 +1919,37 @@ function normalizeFeedItemToArticle(item, index = 0) {
     };
 }
 
+function parseXAuthorMetadata(item, fallbackSource = '') {
+    const authorName = normalizeWhitespace(
+        item?.authors?.[0]?.name
+        || item?.author?.name
+        || item?.author
+        || fallbackSource
+        || ''
+    );
+    const handleMatch = authorName.match(/@([A-Za-z0-9_]+)/);
+    const handle = handleMatch ? handleMatch[1] : '';
+    const fullName = normalizeWhitespace(authorName.replace(/\(@[A-Za-z0-9_]+\)/g, '').replace(/^@/, ''));
+
+    return {
+        author: handle,
+        full_name: fullName
+    };
+}
+
+function normalizeXFeedItemToArticle(item, index = 0) {
+    const article = normalizeFeedItemToArticle(item, index);
+    const metadata = parseXAuthorMetadata(item, article.source);
+
+    return {
+        ...article,
+        source: 'X',
+        author: metadata.author,
+        full_name: metadata.full_name || article.source,
+        reason: normalizeWhitespace(item?.content_text || article.reason || '').slice(0, 220) || article.reason
+    };
+}
+
 function clampScore(value) {
     const num = Number(value);
     if (!Number.isFinite(num)) return 0;
@@ -2213,6 +2264,27 @@ async function fetchRedditSidebarItems(forceRefresh = false) {
 }
 
 async function fetchXSidebarItems(forceRefresh = false, feedConfig = buildXBridgeFeedConfig()) {
+    const rssFeedConfig = buildXRssFeedConfig();
+    if (rssFeedConfig) {
+        try {
+            const rssItems = await fetchSidebarFeed(rssFeedConfig, forceRefresh);
+            const normalizedRssItems = dedupeArticlesByLink(
+                rssItems.map((item, index) => normalizeXFeedItemToArticle(item, index)).filter(Boolean)
+            );
+
+            if (normalizedRssItems.length) {
+                return normalizedRssItems
+                    .sort((a, b) => {
+                        if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
+                        return new Date(b.published_at || b.date).getTime() - new Date(a.published_at || a.date).getTime();
+                    })
+                    .slice(0, SIDEBAR_ITEM_LIMIT);
+            }
+        } catch (error) {
+            console.warn('Failed to load RSS.app X feed:', error);
+        }
+    }
+
     try {
         const staticItems = await fetchStaticXSidebarItems(forceRefresh);
         if (staticItems.length) {
@@ -2736,12 +2808,13 @@ function formatCompact(n) {
 
 function createXPostItem(item, index) {
     const authorLabel = normalizeWhitespace(item.author || '').replace(/^@/, '');
+    const displayLabel = normalizeWhitespace(item.full_name || item.source || '');
     const xMetrics = [];
 
     if (authorLabel) {
         xMetrics.push({ icon: '@', value: authorLabel, title: 'Author', tone: 'cool' });
-    } else if (item.full_name) {
-        xMetrics.push({ icon: '👤', value: item.full_name, title: 'Author', tone: 'cool' });
+    } else if (displayLabel) {
+        xMetrics.push({ icon: '👤', value: displayLabel, title: 'Author', tone: 'cool' });
     }
 
     if (item.image_url) {
@@ -2751,7 +2824,7 @@ function createXPostItem(item, index) {
     return createMagazineCard(item, index, {
         variant: 'sidebar',
         sourceKind: 'x',
-        sourceLabel: authorLabel ? `@${authorLabel}` : 'X AI',
+        sourceLabel: authorLabel ? `@${authorLabel}` : (displayLabel || 'X AI'),
         reasonText: item.reason,
         imageUrl: item.image_url || item.image || '',
         metricHtml: buildMetricChipGroupHtml(xMetrics),

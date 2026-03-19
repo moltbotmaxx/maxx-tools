@@ -1,5 +1,7 @@
 window.DAILY_TRACKER_X_FEED = {
-    enabled: false,
+    rssUrl: 'https://rss.app/feeds/v1.1/_hL57mgTsWKN2ldbw.json',
+    rssFormat: 'json',
+    bridgeEnabled: false,
     bridgeUrl: `${window.location.origin}/rss-bridge/`,
     context: 'By keyword or hashtag',
     query: '"artificial intelligence" OR AI OR ChatGPT OR OpenAI OR Anthropic OR Claude OR Gemini OR robotics',
