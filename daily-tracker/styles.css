@@ -3947,7 +3947,8 @@ canvas {
 }
 
 #sourcing-view .news-toolbar__meta {
-  min-width: 260px;
+  flex: 0 0 auto;
+  min-width: 0;
 }
 
 #sourcing-view .news-toolbar__ticker {
@@ -3964,8 +3965,13 @@ canvas {
 }
 
 #sourcing-view .news-toolbar__title {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
   font-size: 1rem;
   font-weight: 800;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--text-primary);
 }
