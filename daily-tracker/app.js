@@ -1730,35 +1730,46 @@ function getFeedSourceLabel(item, fallbackUrl = '') {
     }
 }
 
-const IG_POWER_WORDS = [
+const SOURCE_POWER_WORDS = [
     'secret', 'cheat sheet', 'hack', 'workflow', 'hidden', 'must-know',
-    'best', 'top', 'only', 'breakthrough', 'revealed'
+    'best', 'top', 'only', 'breakthrough', 'revealed', 'viral', 'explained'
 ];
 
-const IG_ACTION_TRIGGERS = [
-    'comment', 'save this', 'don\'t miss out', 'dm', 'keyword', 'template', 'free'
+const SOURCE_ACTION_TRIGGERS = [
+    'comment', 'save this', 'don\'t miss out', 'dm', 'keyword', 'template', 'free',
+    'watch', 'see', 'try this', 'thread'
 ];
 
-const IG_TECH_TERMS = [
-    'prompt engineering', 'prompt', 'ai workflow', 'llm', 'productivity', 'growth',
-    'chatgpt', 'claude', 'openai', 'anthropic', 'automation'
+const SOURCE_PRACTICAL_TERMS = [
+    'how to', 'template', 'prompt', 'workflow', 'step-by-step', 'guide',
+    'checklist', 'framework', 'example', 'examples', 'playbook', 'tutorial',
+    'use case', 'strategy', 'automation', 'tool', 'launch', 'agent'
 ];
 
-const IG_URGENCY_WORDS = [
-    'moving fast', 'stay ahead', 'ahead of the curve', 'left behind', 'now', 'today'
+const SOURCE_THEME_TERMS = [
+    'ai', 'artificial intelligence', 'llm', 'model', 'models', 'openai', 'chatgpt',
+    'anthropic', 'claude', 'gemini', 'deepmind', 'robotics', 'robot', 'chip',
+    'gpu', 'nvidia', 'startup', 'software', 'app', 'automation', 'platform',
+    'developer', 'api', 'inference', 'video model', 'image model'
 ];
 
-const IG_SAVEABLE_KEYWORDS = [
+const SOURCE_URGENCY_WORDS = [
+    'moving fast', 'stay ahead', 'ahead of the curve', 'left behind', 'now', 'today',
+    'just in', 'new', 'latest', 'first look'
+];
+
+const SOURCE_SAVEABLE_KEYWORDS = [
     'top', 'tips', 'steps', 'ways', 'guide', 'checklist', 'framework',
-    'mistakes', 'lessons', 'examples'
+    'mistakes', 'lessons', 'examples', 'thread', 'roundup', 'resources'
 ];
 
-const IG_VISUAL_KEYWORDS = [
+const SOURCE_VISUAL_KEYWORDS = [
     'video', 'image', 'photo', 'demo', 'design', 'prototype',
-    'device', 'app', 'ui', 'animation', 'before and after'
+    'device', 'app', 'ui', 'animation', 'before and after', 'showcase',
+    'screen recording', 'screenshot'
 ];
 
-const IG_SOURCE_QUALITY = {
+const SOURCE_QUALITY = {
     'theverge.com': 95,
     'techcrunch.com': 90,
     'wired.com': 88,
@@ -1766,7 +1777,35 @@ const IG_SOURCE_QUALITY = {
     'anthropic.com': 96,
     'googleblog.com': 90,
     'arstechnica.com': 88,
-    'mit.edu': 92
+    'mit.edu': 92,
+    'reuters.com': 96,
+    'apnews.com': 95,
+    'cnbc.com': 84,
+    'axios.com': 80,
+    'microsoft.com': 88,
+    'blog.google': 86,
+    'substack.com': 68,
+    'reddit.com': 58,
+    'x.com': 56
+};
+
+const SOURCING_SCORE_PROFILES = {
+    news: {
+        virality: { recency: 0.3, hook: 0.28, shareability: 0.24, media: 0.18 },
+        fit: { relevance: 0.34, utility: 0.26, clarity: 0.18, sourceQuality: 0.16, recency: 0.06 }
+    },
+    instagram: {
+        virality: { recency: 0.22, hook: 0.28, shareability: 0.24, media: 0.18, socialProof: 0.08 },
+        fit: { relevance: 0.28, utility: 0.28, clarity: 0.2, media: 0.14, sourceQuality: 0.1 }
+    },
+    reddit: {
+        virality: { recency: 0.26, hook: 0.24, shareability: 0.18, socialProof: 0.2, media: 0.12 },
+        fit: { relevance: 0.3, utility: 0.24, clarity: 0.22, sourceQuality: 0.1, recency: 0.14 }
+    },
+    x: {
+        virality: { recency: 0.28, hook: 0.3, shareability: 0.16, media: 0.14, socialProof: 0.12 },
+        fit: { relevance: 0.3, utility: 0.2, clarity: 0.2, sourceQuality: 0.08, recency: 0.12, hook: 0.1 }
+    }
 };
 
 function countKeywordHits(text, keywords) {
@@ -1779,28 +1818,34 @@ function countKeywordHits(text, keywords) {
 }
 
 function scoreRecency(hoursAgo) {
-    return clampScore(100 - (hoursAgo * 100) / 96);
+    const hours = Math.max(0, Number(hoursAgo) || 0);
+    if (hours <= 6) return 100;
+    if (hours <= 24) return clampScore(100 - ((hours - 6) / 18) * 12);
+    if (hours <= 48) return clampScore(88 - ((hours - 24) / 24) * 18);
+    if (hours <= 96) return clampScore(70 - ((hours - 48) / 48) * 30);
+    return clampScore(40 - ((hours - 96) / 72) * 24);
 }
 
 function scoreHookPotential(headline) {
-    const hits = countKeywordHits(headline, IG_POWER_WORDS);
-    const urgencyHits = countKeywordHits(headline, IG_URGENCY_WORDS);
+    const hits = countKeywordHits(headline, SOURCE_POWER_WORDS);
+    const urgencyHits = countKeywordHits(headline, SOURCE_URGENCY_WORDS);
     const hasNumber = /\b\d+\b/.test(headline);
     const hasQuestion = /\?/.test(headline);
-    const bonus = (hasNumber ? 10 : 0) + (hasQuestion ? 8 : 0);
-    return clampScore(hits * 10 + urgencyHits * 12 + bonus + 28);
+    const hasContrast = /\b(vs|versus|beats|loses|wins|finally|instead)\b/i.test(headline);
+    const bonus = (hasNumber ? 10 : 0) + (hasQuestion ? 8 : 0) + (hasContrast ? 10 : 0);
+    return clampScore(hits * 10 + urgencyHits * 10 + bonus + 24);
 }
 
 function scorePracticalValue(headline, reason) {
     const text = `${headline || ''} ${reason || ''}`.toLowerCase();
-    const techHits = countKeywordHits(text, IG_TECH_TERMS);
-    const actionableHits = countKeywordHits(text, ['how to', 'template', 'prompt', 'workflow', 'step-by-step']);
-    return clampScore(techHits * 12 + actionableHits * 14 + 24);
+    const themeHits = countKeywordHits(text, SOURCE_THEME_TERMS);
+    const actionableHits = countKeywordHits(text, SOURCE_PRACTICAL_TERMS);
+    return clampScore(themeHits * 6 + actionableHits * 12 + 24);
 }
 
 function scoreSaveability(headline, reason) {
     const text = `${headline || ''} ${reason || ''}`.toLowerCase();
-    const hits = countKeywordHits(text, IG_SAVEABLE_KEYWORDS);
+    const hits = countKeywordHits(text, SOURCE_SAVEABLE_KEYWORDS);
     const hasListShape = /\b\d+\s*(ways|steps|tips|lessons|reasons|tools)\b/.test(text);
     const hasChecklist = /\b(checklist|framework|template)\b/.test(text);
     return clampScore(hits * 10 + (hasListShape ? 20 : 0) + (hasChecklist ? 18 : 0) + 20);
@@ -1808,14 +1853,14 @@ function scoreSaveability(headline, reason) {
 
 function scoreActionTriggerPotential(headline, reason) {
     const text = `${headline || ''} ${reason || ''}`.toLowerCase();
-    const hits = countKeywordHits(text, IG_ACTION_TRIGGERS);
+    const hits = countKeywordHits(text, SOURCE_ACTION_TRIGGERS);
     const commentKeywordPattern = /\bcomment\s+[a-z0-9_-]{3,}\b/.test(text);
     return clampScore(hits * 14 + (commentKeywordPattern ? 18 : 0) + 20);
 }
 
 function scoreVisualPotential(headline, hasImage) {
-    const hits = countKeywordHits(headline, IG_VISUAL_KEYWORDS);
-    const imageBonus = hasImage ? 45 : 10;
+    const hits = countKeywordHits(headline, SOURCE_VISUAL_KEYWORDS);
+    const imageBonus = hasImage ? 72 : 28;
     return clampScore(imageBonus + hits * 9);
 }
 
@@ -1835,71 +1880,158 @@ function scoreSourceQuality(link) {
     } catch {
         host = '';
     }
-    if (!host) return 60;
-    return IG_SOURCE_QUALITY[host] || 70;
+    if (!host) return 64;
+    return SOURCE_QUALITY[host] || 68;
 }
 
-function buildInstagramRanking(item, index = 0) {
-    const headline = decodeEntities(item?.title || 'Untitled');
-    const link = safeHttpUrl(item?.url || '');
-    const reason = normalizeWhitespace(item?.content_text || '').slice(0, 220);
-    const imageUrl = safeHttpUrl(item?.image || item?.attachments?.[0]?.url || '', '');
-    const hasImage = Boolean(imageUrl);
-    const publishedAt = item?.date_published || item?.date_modified || new Date().toISOString();
-    const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60));
+function scoreTopicalRelevance(headline, reason, source = '') {
+    const text = `${headline || ''} ${reason || ''} ${source || ''}`.toLowerCase();
+    const themeHits = countKeywordHits(text, SOURCE_THEME_TERMS);
+    const hasCoreAiPhrase = /\b(ai|artificial intelligence|llm|chatgpt|openai|claude|anthropic|gemini|robotics?)\b/i.test(text);
+    return clampScore(themeHits * 8 + (hasCoreAiPhrase ? 22 : 0) + 34);
+}
 
-    const recency = scoreRecency(hoursAgo);
-    const hook = scoreHookPotential(headline);
-    const practical = scorePracticalValue(headline, reason);
-    const saveability = scoreSaveability(headline, reason);
-    const cta = scoreActionTriggerPotential(headline, reason);
-    const visual = scoreVisualPotential(headline, hasImage);
-    const clarity = scoreHeadlineClarity(headline);
-    const sourceQuality = scoreSourceQuality(link);
-
-    const ranking = clampScore(
-        recency * 0.22 +
-        hook * 0.2 +
-        practical * 0.2 +
-        saveability * 0.15 +
-        cta * 0.12 +
-        visual * 0.1 +
-        clarity * 0.08 +
-        sourceQuality * 0.05 -
-        index * 0.15
+function scoreSocialProof(sourceType, socialProof = {}) {
+    const rankedSignal = toSafeNumber(
+        socialProof.viralScore
+        ?? socialProof.virality
+        ?? socialProof.ranking
+        ?? socialProof.rating
+        ?? socialProof.score,
+        NaN
     );
+    if (Number.isFinite(rankedSignal) && rankedSignal > 0) {
+        if (rankedSignal > 100) {
+            return clampScore(Math.log10(rankedSignal + 1) * 32);
+        }
+        return clampScore(rankedSignal);
+    }
 
-    const virality = clampScore(
-        hook * 0.35 +
-        cta * 0.25 +
-        saveability * 0.2 +
-        visual * 0.15 +
-        recency * 0.05
-    );
+    if (sourceType === 'reddit') {
+        const score = Math.max(0, toSafeNumber(socialProof.score, 0));
+        const comments = Math.max(0, toSafeNumber(socialProof.comments, 0));
+        if (score > 0 || comments > 0) {
+            return clampScore(Math.log10(score + 1) * 28 + Math.log10(comments + 1) * 24);
+        }
+    }
 
-    const fit = clampScore(
-        practical * 0.35 +
-        clarity * 0.25 +
-        sourceQuality * 0.25 +
-        recency * 0.15
-    );
+    return null;
+}
+
+function getSourcingScoreProfile(sourceType = 'news') {
+    return SOURCING_SCORE_PROFILES[sourceType] || SOURCING_SCORE_PROFILES.news;
+}
+
+function weightedScore(features, weights) {
+    let totalWeight = 0;
+    let weightedTotal = 0;
+
+    Object.entries(weights || {}).forEach(([key, weight]) => {
+        const value = Number(features?.[key]);
+        if (!Number.isFinite(value)) return;
+        totalWeight += weight;
+        weightedTotal += value * weight;
+    });
+
+    if (totalWeight <= 0) return 0;
+    return clampScore(weightedTotal / totalWeight);
+}
+
+function applySourcingScoreGuardrails(overall, virality, fit, features, sourceType = 'news') {
+    let adjustedOverall = overall;
+    let adjustedFit = fit;
+
+    if (features.relevance < 42) {
+        adjustedOverall = Math.min(adjustedOverall, 64);
+    }
+    if (features.relevance < 30) {
+        adjustedOverall = Math.min(adjustedOverall, 54);
+    }
+    if (sourceType === 'news' && features.sourceQuality < 58 && features.utility < 48) {
+        adjustedFit = Math.min(adjustedFit, 62);
+        adjustedOverall = Math.min(adjustedOverall, 66);
+    }
 
     return {
-        ranking,
-        virality,
-        fit,
-        details: { recency, hook, practical, saveability, cta, visual, clarity, sourceQuality }
+        overall: Math.max(1, clampScore(adjustedOverall)),
+        virality: Math.max(1, clampScore(virality)),
+        fit: Math.max(1, clampScore(adjustedFit))
+    };
+}
+
+function scoreSourcingItem({
+    headline = '',
+    reason = '',
+    link = '',
+    imageUrl = '',
+    publishedAt = '',
+    source = '',
+    sourceType = 'news',
+    socialProof = {}
+} = {}) {
+    const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt || new Date().toISOString()).getTime()) / (1000 * 60 * 60));
+    const hasImage = Boolean(imageUrl);
+    const recency = scoreRecency(hoursAgo);
+    const hook = scoreHookPotential(headline);
+    const utility = scorePracticalValue(headline, reason);
+    const shareability = clampScore(scoreSaveability(headline, reason) * 0.6 + scoreActionTriggerPotential(headline, reason) * 0.4);
+    const relevance = scoreTopicalRelevance(headline, reason, source);
+    const media = scoreVisualPotential(headline, hasImage);
+    const clarity = scoreHeadlineClarity(headline);
+    const sourceQuality = scoreSourceQuality(link);
+    const socialProofScore = scoreSocialProof(sourceType, socialProof);
+
+    const features = {
+        recency,
+        hook,
+        utility,
+        shareability,
+        relevance,
+        media,
+        clarity,
+        sourceQuality,
+        socialProof: socialProofScore
+    };
+
+    const profile = getSourcingScoreProfile(sourceType);
+    const virality = weightedScore(features, profile.virality);
+    const fit = weightedScore(features, profile.fit);
+    const overallBase = clampScore(virality * 0.55 + fit * 0.45);
+    const guardrailed = applySourcingScoreGuardrails(overallBase, virality, fit, features, sourceType);
+
+    return {
+        ranking: guardrailed.overall,
+        rating: guardrailed.overall,
+        virality: guardrailed.virality,
+        fit: guardrailed.fit,
+        details: {
+            ...features,
+            sourceType
+        }
     };
 }
 
 function buildRankingReason(existingReason, rankingDetails) {
     const base = normalizeWhitespace(existingReason || '');
-    const detail = `IG fit: H${rankingDetails.hook} P${rankingDetails.practical} S${rankingDetails.saveability} C${rankingDetails.cta}`;
+    const leadFactors = [
+        ['R', rankingDetails.relevance],
+        ['U', rankingDetails.utility],
+        ['H', rankingDetails.hook],
+        ['Rec', rankingDetails.recency]
+    ]
+        .filter(([, value]) => Number.isFinite(value))
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3)
+        .map(([label, value]) => `${label}${Math.round(value)}`)
+        .join(' ');
+
+    const detail = leadFactors ? `Why: ${leadFactors}` : 'Why: balanced virality and fit';
     if (!base) return detail;
     return `${base.slice(0, 155)} • ${detail}`.slice(0, 220);
 }
 
-function normalizeFeedItemToArticle(item, index = 0) {
+function normalizeFeedItemToArticle(item, index = 0, options = {}) {
+    const sourceType = options.sourceType || 'news';
     const link = safeHttpUrl(item?.url || '');
     const publishedAt = item?.date_published || item?.date_modified || new Date().toISOString();
     const publishedDate = toIsoDateString(publishedAt);
@@ -1907,7 +2039,21 @@ function normalizeFeedItemToArticle(item, index = 0) {
     const reason = normalizeWhitespace(item?.content_text || '').slice(0, 220);
     const source = getFeedSourceLabel(item, link);
     const imageUrl = getDisplayImageUrl(item?.image || item?.attachments?.[0]?.url || '', '');
-    const igScores = buildInstagramRanking(item, index);
+    const scores = scoreSourcingItem({
+        headline,
+        reason,
+        link,
+        imageUrl,
+        publishedAt,
+        source,
+        sourceType,
+        socialProof: {
+            ranking: item?.ranking,
+            virality: item?.virality,
+            viralScore: item?.viral_score,
+            score: item?.score
+        }
+    });
 
     return {
         headline,
@@ -1915,12 +2061,42 @@ function normalizeFeedItemToArticle(item, index = 0) {
         source,
         date: publishedDate,
         published_at: publishedAt,
-        ranking: igScores.ranking,
-        rating: igScores.ranking,
-        virality: igScores.virality,
-        fit: igScores.fit,
-        reason: buildRankingReason(reason, igScores.details),
+        ranking: scores.ranking,
+        rating: scores.rating,
+        virality: scores.virality,
+        fit: scores.fit,
+        reason: buildRankingReason(reason, scores.details),
         image_url: imageUrl
+    };
+}
+
+function applySourcingScoresToArticle(article, options = {}) {
+    const sourceType = options.sourceType || 'news';
+    const scores = scoreSourcingItem({
+        headline: article?.headline || '',
+        reason: article?.reason || '',
+        link: article?.link || '',
+        imageUrl: article?.image_url || article?.image || '',
+        publishedAt: article?.published_at || article?.date || new Date().toISOString(),
+        source: article?.source || '',
+        sourceType,
+        socialProof: {
+            ranking: options.socialProof?.ranking ?? article?.ranking,
+            rating: options.socialProof?.rating ?? article?.rating,
+            virality: options.socialProof?.virality ?? article?.virality,
+            viralScore: options.socialProof?.viralScore ?? article?.viral_score,
+            score: options.socialProof?.score ?? article?.score,
+            comments: options.socialProof?.comments ?? article?.comments
+        }
+    });
+
+    return {
+        ...article,
+        ranking: scores.ranking,
+        rating: scores.rating,
+        virality: scores.virality,
+        fit: scores.fit,
+        reason: buildRankingReason(article?.reason || '', scores.details)
     };
 }
 
@@ -1943,16 +2119,32 @@ function parseXAuthorMetadata(item, fallbackSource = '') {
 }
 
 function normalizeXFeedItemToArticle(item, index = 0) {
-    const article = normalizeFeedItemToArticle(item, index);
-    const metadata = parseXAuthorMetadata(item, article.source);
+    const link = safeHttpUrl(item?.url || '');
+    const publishedAt = item?.date_published || item?.date_modified || new Date().toISOString();
+    const headline = decodeEntities(item?.title || 'Untitled');
+    const reason = normalizeWhitespace(item?.content_text || '').slice(0, 220);
+    const imageUrl = getDisplayImageUrl(item?.image || item?.attachments?.[0]?.url || '', '');
+    const metadata = parseXAuthorMetadata(item, 'X');
 
-    return {
-        ...article,
+    return applySourcingScoresToArticle({
+        headline,
+        link,
         source: 'X',
         author: metadata.author,
-        full_name: metadata.full_name || article.source,
-        reason: normalizeWhitespace(item?.content_text || article.reason || '').slice(0, 220) || article.reason
-    };
+        full_name: metadata.full_name || metadata.author || 'X',
+        published_at: publishedAt,
+        date: toIsoDateString(publishedAt),
+        reason: reason || headline,
+        image_url: imageUrl
+    }, {
+        sourceType: 'x',
+        socialProof: {
+            ranking: item?.ranking,
+            virality: item?.virality,
+            viralScore: item?.viral_score,
+            score: item?.score
+        }
+    });
 }
 
 function clampScore(value) {
@@ -2083,7 +2275,7 @@ function parseRedditRssItems(xmlText) {
             .replace(/\[link\]|\[comments\]|submitted by/gi, '')
             .slice(0, 220);
 
-        return {
+        return applySourcingScoresToArticle({
             headline: title,
             link: safeHttpUrl(link, '#'),
             source: subredditLabel,
@@ -2093,7 +2285,7 @@ function parseRedditRssItems(xmlText) {
             date: toIsoDateString(publishedAt),
             reason,
             image_url: safeHttpUrl(decodeEntities(thumbnail), '')
-        };
+        }, { sourceType: 'reddit' });
     }).filter(Boolean);
 }
 
@@ -2107,7 +2299,7 @@ function parseRedditRss2JsonItems(json) {
         const subreddit = normalizeWhitespace(item?.categories?.[0] || 'reddit');
         const rawReason = item?.description || item?.content || '';
 
-        return {
+        return applySourcingScoresToArticle({
             headline: decodeEntities(item?.title || ''),
             link: safeHttpUrl(item?.link || '', '#'),
             source: `r/${subreddit}`,
@@ -2117,7 +2309,13 @@ function parseRedditRss2JsonItems(json) {
             date: toIsoDateString(publishedAt),
             reason: htmlToPlainText(rawReason).replace(/\[link\]|\[comments\]|submitted by/gi, '').slice(0, 220),
             image_url: getDisplayImageUrl(item?.thumbnail || item?.enclosure?.thumbnail || '')
-        };
+        }, {
+            sourceType: 'reddit',
+            socialProof: {
+                score: item?.score,
+                comments: item?.comments
+            }
+        });
     }).filter(item => item.headline && item.link);
 }
 
@@ -2161,12 +2359,7 @@ function parseRssBridgeJsonItems(json) {
         const displayName = getRssBridgeDisplayName(authorName, vendorFields);
         const headline = decodeEntities(item?.title || reason || 'Untitled');
         const imageUrl = getDisplayImageUrl(getRssBridgeAttachmentUrl(item), '');
-        const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60));
-        const recency = scoreRecency(hoursAgo);
-        const clarity = scoreHeadlineClarity(headline);
-        const ranking = clampScore(recency * 0.74 + clarity * 0.18 + (imageUrl ? 8 : 0));
-
-        return {
+        return applySourcingScoresToArticle({
             headline,
             link,
             source: 'X',
@@ -2176,10 +2369,7 @@ function parseRssBridgeJsonItems(json) {
             date: toIsoDateString(publishedAt),
             reason,
             image_url: imageUrl,
-            ranking,
-            virality: ranking,
-            fit: ranking
-        };
+        }, { sourceType: 'x' });
     }).filter(item => item.headline && item.link);
 }
 
@@ -2216,12 +2406,7 @@ function normalizeStaticXSidebarItem(item) {
         ''
     );
     const reason = normalizeWhitespace(item?.reason || item?.text || '').slice(0, 220);
-    const rawRanking = clampScore(item?.ranking ?? item?.viral_score ?? item?.virality ?? item?.score ?? 0);
-    const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60));
-    const computedRanking = rawRanking
-        || clampScore(scoreRecency(hoursAgo) * 0.72 + scoreHeadlineClarity(headline) * 0.18 + (imageUrl ? 10 : 0));
-
-    return {
+    return applySourcingScoresToArticle({
         headline,
         link,
         source: 'X',
@@ -2230,11 +2415,24 @@ function normalizeStaticXSidebarItem(item) {
         published_at: publishedAt,
         date: toIsoDateString(publishedAt),
         reason: reason || headline,
-        image_url: imageUrl,
-        ranking: computedRanking,
-        virality: clampScore(item?.virality ?? item?.viral_score ?? computedRanking),
-        fit: clampScore(item?.fit ?? computedRanking)
-    };
+        image_url: imageUrl
+    }, {
+        sourceType: 'x',
+        socialProof: {
+            ranking: item?.ranking,
+            virality: item?.virality,
+            viralScore: item?.viral_score,
+            score: item?.score
+        }
+    });
+}
+
+function sortSourcingItemsByScore(a, b) {
+    if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
+    if ((b.virality || 0) !== (a.virality || 0)) return (b.virality || 0) - (a.virality || 0);
+    const da = new Date(a.published_at || a.date || 0).getTime();
+    const db = new Date(b.published_at || b.date || 0).getTime();
+    return db - da;
 }
 
 async function fetchStaticXSidebarItems(forceRefresh = false) {
@@ -2300,24 +2498,16 @@ async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
 async function fetchInstagramSidebarItems(forceRefresh = false) {
     const items = await fetchSidebarFeed(INSTAGRAM_VIRAL_FEED, forceRefresh);
     return dedupeArticlesByLink(
-        items.map((item, index) => normalizeFeedItemToArticle(item, index))
+        items.map((item, index) => normalizeFeedItemToArticle(item, index, { sourceType: 'instagram' }))
     )
-        .sort((a, b) => {
-            if ((b.virality || 0) !== (a.virality || 0)) return (b.virality || 0) - (a.virality || 0);
-            if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
-            const da = new Date(a.published_at || a.date).getTime();
-            const db = new Date(b.published_at || b.date).getTime();
-            return db - da;
-        })
+        .sort(sortSourcingItemsByScore)
         .slice(0, SIDEBAR_ITEM_LIMIT);
 }
 
 async function fetchRedditSidebarItems(forceRefresh = false) {
     const items = await fetchSidebarFeed(REDDIT_VIRAL_FEED, forceRefresh);
     return items
-        .sort((a, b) => {
-            return new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
-        })
+        .sort(sortSourcingItemsByScore)
         .slice(0, SIDEBAR_ITEM_LIMIT);
 }
 
@@ -2332,10 +2522,7 @@ async function fetchXSidebarItems(forceRefresh = false, feedConfig = buildXBridg
 
             if (normalizedRssItems.length) {
                 return normalizedRssItems
-                    .sort((a, b) => {
-                        if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
-                        return new Date(b.published_at || b.date).getTime() - new Date(a.published_at || a.date).getTime();
-                    })
+                    .sort(sortSourcingItemsByScore)
                     .slice(0, SIDEBAR_ITEM_LIMIT);
             }
         } catch (error) {
@@ -2347,10 +2534,7 @@ async function fetchXSidebarItems(forceRefresh = false, feedConfig = buildXBridg
         const staticItems = await fetchStaticXSidebarItems(forceRefresh);
         if (staticItems.length) {
             return staticItems
-                .sort((a, b) => {
-                    if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
-                    return new Date(b.published_at || b.date).getTime() - new Date(a.published_at || a.date).getTime();
-                })
+                .sort(sortSourcingItemsByScore)
                 .slice(0, SIDEBAR_ITEM_LIMIT);
         }
     } catch (error) {
@@ -2360,10 +2544,7 @@ async function fetchXSidebarItems(forceRefresh = false, feedConfig = buildXBridg
     if (!feedConfig) return [];
     const items = await fetchSidebarFeed(feedConfig, forceRefresh);
     return items
-        .sort((a, b) => {
-            if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
-            return new Date(b.published_at || b.date).getTime() - new Date(a.published_at || a.date).getTime();
-        })
+        .sort(sortSourcingItemsByScore)
         .slice(0, SIDEBAR_ITEM_LIMIT);
 }
 
@@ -2482,12 +2663,7 @@ async function rebuildSourcingArticles(forceRefresh = false) {
         items.forEach((item, i) => allArticles.push(normalizeFeedItemToArticle(item, i)));
     });
 
-    sourcingArticlesCache = dedupeArticlesByLink(allArticles).sort((a, b) => {
-        if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
-        const da = new Date(a.published_at || a.date).getTime();
-        const db = new Date(b.published_at || b.date).getTime();
-        return db - da;
-    });
+    sourcingArticlesCache = dedupeArticlesByLink(allArticles).sort(sortSourcingItemsByScore);
     sourcingArticlesDirty = false;
 }
 
