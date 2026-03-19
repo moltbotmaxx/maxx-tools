@@ -109,6 +109,21 @@ const REDDIT_VIRAL_FEED = {
 const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
 const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
 const SIDEBAR_ITEM_LIMIT = 8;
+const DEFAULT_X_RSS_BRIDGE_CONFIG = {
+    enabled: true,
+    bridgeUrl: `${window.location.origin}/rss-bridge/`,
+    context: 'By keyword or hashtag',
+    query: '"artificial intelligence" OR AI OR ChatGPT OR OpenAI OR Anthropic OR Claude OR Gemini OR robotics',
+    maxResults: 12,
+    hideReplies: true,
+    hideRetweets: true,
+    hidePinned: true,
+    onlyMedia: false,
+    hideProfilePictures: true,
+    hideTweetImages: false,
+    hideExternalLinkPreview: false,
+    useTweetIdAsTitle: false
+};
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
 const sidebarFeedCache = new Map();
@@ -126,6 +141,59 @@ function ensureAppDataIntegrity() {
     if (!appData.schedule || typeof appData.schedule !== 'object') appData.schedule = {};
     if (!Array.isArray(appData.ideas)) appData.ideas = [];
     return appData;
+}
+
+function buildXBridgeFeedConfig() {
+    const runtimeConfig = {
+        ...DEFAULT_X_RSS_BRIDGE_CONFIG,
+        ...(window.DAILY_TRACKER_X_FEED || {})
+    };
+
+    if (!runtimeConfig.enabled) return null;
+
+    const rawBridgeUrl = typeof runtimeConfig.bridgeUrl === 'string'
+        ? runtimeConfig.bridgeUrl.trim()
+        : '';
+    if (!rawBridgeUrl) return null;
+
+    const context = runtimeConfig.context || 'By keyword or hashtag';
+    const endpoint = new URL(rawBridgeUrl, window.location.href);
+    endpoint.searchParams.set('action', 'display');
+    endpoint.searchParams.set('bridge', 'TwitterV2Bridge');
+    endpoint.searchParams.set('format', 'Json');
+    endpoint.searchParams.set('context', context);
+
+    if (context === 'By username') {
+        const username = String(runtimeConfig.username || '').trim().replace(/^@/, '');
+        if (!username) return null;
+        endpoint.searchParams.set('u', username);
+    } else if (context === 'By list ID') {
+        const listId = String(runtimeConfig.listId || '').trim();
+        if (!listId) return null;
+        endpoint.searchParams.set('listid', listId);
+    } else {
+        const query = String(runtimeConfig.query || '').trim();
+        if (!query) return null;
+        endpoint.searchParams.set('query', query);
+    }
+
+    const maxResults = Math.max(1, Math.min(100, Number(runtimeConfig.maxResults) || SIDEBAR_ITEM_LIMIT));
+    endpoint.searchParams.set('maxresults', String(maxResults));
+
+    if (runtimeConfig.hideReplies) endpoint.searchParams.set('norep', 'on');
+    if (runtimeConfig.hideRetweets) endpoint.searchParams.set('noretweet', 'on');
+    if (runtimeConfig.hidePinned) endpoint.searchParams.set('nopinned', 'on');
+    if (runtimeConfig.onlyMedia) endpoint.searchParams.set('imgonly', 'on');
+    if (runtimeConfig.hideProfilePictures) endpoint.searchParams.set('nopic', 'on');
+    if (runtimeConfig.hideTweetImages) endpoint.searchParams.set('noimg', 'on');
+    if (runtimeConfig.hideExternalLinkPreview) endpoint.searchParams.set('noexternallink', 'on');
+    if (runtimeConfig.useTweetIdAsTitle) endpoint.searchParams.set('idastitle', 'on');
+
+    return {
+        id: `x-viral:${endpoint.toString()}`,
+        url: endpoint.toString(),
+        format: 'rss-bridge-json'
+    };
 }
 
 // ===========================
@@ -1867,6 +1935,10 @@ function buildSidebarFeedRequestUrls(feedConfig, ts = Date.now()) {
         return [sourceUrl];
     }
 
+    if (feedConfig?.format === 'rss-bridge-json') {
+        return [sourceUrl];
+    }
+
     if (feedConfig?.format === 'rss') {
         return [proxyUrl, sourceUrl];
     }
@@ -1938,6 +2010,68 @@ function parseRedditRss2JsonItems(json) {
     }).filter(item => item.headline && item.link);
 }
 
+function getRssBridgeHandle(authorName = '', vendorFields = {}) {
+    const vendorUsername = normalizeWhitespace(vendorFields?.username || '').replace(/^@/, '');
+    if (vendorUsername) return vendorUsername;
+    const match = normalizeWhitespace(authorName).match(/@([A-Za-z0-9_]+)/);
+    return match ? match[1] : '';
+}
+
+function getRssBridgeDisplayName(authorName = '', vendorFields = {}) {
+    const vendorName = normalizeWhitespace(vendorFields?.fullname || '');
+    if (vendorName) return vendorName;
+    return normalizeWhitespace(authorName)
+        .replace(/^RT:\s*/i, '')
+        .replace(/\s*\(@[^)]+\)\s*$/, '')
+        .trim();
+}
+
+function getRssBridgeAttachmentUrl(item) {
+    if (!Array.isArray(item?.attachments)) return '';
+    const preferred = item.attachments.find((attachment) => {
+        return typeof attachment?.mime_type === 'string' && attachment.mime_type.startsWith('image/');
+    }) || item.attachments[0];
+    return safeHttpUrl(preferred?.url || '', '');
+}
+
+function parseRssBridgeJsonItems(json) {
+    if (!Array.isArray(json?.items)) {
+        throw new Error('Invalid RSS-Bridge JSON response');
+    }
+
+    return json.items.map((item) => {
+        const link = safeHttpUrl(item?.url || '', '#');
+        const publishedAt = item?.date_modified || item?.date_published || new Date().toISOString();
+        const contentHtml = item?.content_html || '';
+        const reason = normalizeWhitespace(item?.content_text || htmlToPlainText(contentHtml)).slice(0, 220);
+        const vendorFields = item?._rssbridge && typeof item._rssbridge === 'object' ? item._rssbridge : {};
+        const authorName = normalizeWhitespace(item?.author?.name || '');
+        const handle = getRssBridgeHandle(authorName, vendorFields);
+        const displayName = getRssBridgeDisplayName(authorName, vendorFields);
+        const headline = decodeEntities(item?.title || reason || 'Untitled');
+        const imageUrl = getDisplayImageUrl(getRssBridgeAttachmentUrl(item), '');
+        const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60));
+        const recency = scoreRecency(hoursAgo);
+        const clarity = scoreHeadlineClarity(headline);
+        const ranking = clampScore(recency * 0.74 + clarity * 0.18 + (imageUrl ? 8 : 0));
+
+        return {
+            headline,
+            link,
+            source: 'X',
+            author: handle,
+            full_name: displayName,
+            published_at: publishedAt,
+            date: toIsoDateString(publishedAt),
+            reason,
+            image_url: imageUrl,
+            ranking,
+            virality: ranking,
+            fit: ranking
+        };
+    }).filter(item => item.headline && item.link);
+}
+
 async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
     if (!feedConfig?.url) return [];
     if (!forceRefresh && sidebarFeedCache.has(feedConfig.id)) {
@@ -1959,6 +2093,8 @@ async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
                 ? parseRedditRssItems(text)
                 : feedConfig.format === 'rss2json'
                     ? parseRedditRss2JsonItems(JSON.parse(text))
+                    : feedConfig.format === 'rss-bridge-json'
+                        ? parseRssBridgeJsonItems(JSON.parse(text))
                 : (() => {
                     const json = JSON.parse(text);
                     return Array.isArray(json?.items) ? json.items : [];
@@ -2002,6 +2138,17 @@ async function fetchRedditSidebarItems(forceRefresh = false) {
         .slice(0, SIDEBAR_ITEM_LIMIT);
 }
 
+async function fetchXSidebarItems(forceRefresh = false, feedConfig = buildXBridgeFeedConfig()) {
+    if (!feedConfig) return [];
+    const items = await fetchSidebarFeed(feedConfig, forceRefresh);
+    return items
+        .sort((a, b) => {
+            if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
+            return new Date(b.published_at || b.date).getTime() - new Date(a.published_at || a.date).getTime();
+        })
+        .slice(0, SIDEBAR_ITEM_LIMIT);
+}
+
 function renderSidebarEmpty(container, text) {
     if (!container) return;
     container.innerHTML = `<div class="sourcing-empty">${escapeHtml(text)}</div>`;
@@ -2021,12 +2168,24 @@ function renderSidebarList(container, items, createItem, emptyText) {
 }
 
 async function renderSidebarFeeds(forceRefresh = false) {
-    renderSidebarEmpty(elements.xViralList, 'No X feed configured yet');
+    const xFeedConfig = buildXBridgeFeedConfig();
+    if (!xFeedConfig) {
+        renderSidebarEmpty(elements.xViralList, 'Configure RSS-Bridge for X');
+    }
 
-    const [instagramResult, redditResult] = await Promise.allSettled([
+    const tasks = [
         fetchInstagramSidebarItems(forceRefresh),
         fetchRedditSidebarItems(forceRefresh)
-    ]);
+    ];
+
+    if (xFeedConfig) {
+        tasks.push(fetchXSidebarItems(forceRefresh, xFeedConfig));
+    }
+
+    const results = await Promise.allSettled(tasks);
+    const instagramResult = results[0];
+    const redditResult = results[1];
+    const xResult = xFeedConfig ? results[2] : null;
 
     if (instagramResult.status === 'fulfilled') {
         renderSidebarList(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
@@ -2040,6 +2199,13 @@ async function renderSidebarFeeds(forceRefresh = false) {
     } else {
         console.error('Failed to load Reddit feed:', redditResult.reason);
         renderSidebarEmpty(elements.redditViralList, 'Reddit list unavailable');
+    }
+
+    if (xFeedConfig && xResult?.status === 'fulfilled') {
+        renderSidebarList(elements.xViralList, xResult.value, createXPostItem, 'No X posts available');
+    } else if (xFeedConfig && xResult) {
+        console.error('Failed to load X feed:', xResult.reason);
+        renderSidebarEmpty(elements.xViralList, 'X feed unavailable');
     }
 }
 
@@ -2488,17 +2654,25 @@ function formatCompact(n) {
 
 function createXPostItem(item, index) {
     const authorLabel = normalizeWhitespace(item.author || '').replace(/^@/, '');
+    const xMetrics = [];
+
+    if (authorLabel) {
+        xMetrics.push({ icon: '@', value: authorLabel, title: 'Author', tone: 'cool' });
+    } else if (item.full_name) {
+        xMetrics.push({ icon: '👤', value: item.full_name, title: 'Author', tone: 'cool' });
+    }
+
+    if (item.image_url) {
+        xMetrics.push({ icon: '🖼', value: 'media', title: 'Includes image', tone: 'warm' });
+    }
+
     return createMagazineCard(item, index, {
         variant: 'sidebar',
         sourceKind: 'x',
-        sourceLabel: authorLabel ? `@${authorLabel}` : 'X',
+        sourceLabel: authorLabel ? `@${authorLabel}` : 'X AI',
         reasonText: item.reason,
         imageUrl: item.image_url || item.image || '',
-        metricHtml: buildMetricChipGroupHtml([
-            { icon: '❤️', value: formatCompact(toSafeNumber(item.likes, 0)), title: 'Likes', tone: 'hot' },
-            { icon: '👁', value: formatCompact(toSafeNumber(item.views, 0)), title: 'Views', tone: 'cool' },
-            { icon: '🔁', value: formatCompact(toSafeNumber(item.reposts, 0)), title: 'Reposts', tone: 'warm' }
-        ]),
+        metricHtml: buildMetricChipGroupHtml(xMetrics),
         includeInternalScore: false
     });
 }
