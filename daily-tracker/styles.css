@@ -4077,14 +4077,11 @@ canvas {
   min-width: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: minmax(260px, 0.92fr) minmax(0, 1fr);
   gap: 16px;
-  align-content: start;
   min-height: 0;
   height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 6px;
-  scrollbar-gutter: stable;
+  overflow: hidden;
 }
 
 #sourcing-view .news-group {
@@ -4126,6 +4123,9 @@ canvas {
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   position: relative;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #sourcing-view .sidebar-section::before {
@@ -4242,8 +4242,11 @@ canvas {
   flex-direction: column;
   gap: 12px;
   padding: 12px;
-  max-height: none;
-  overflow: visible;
+  min-height: 0;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 .sourcing-empty {
@@ -4310,6 +4313,8 @@ canvas {
 
   #sourcing-view .news-sidebar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    height: auto;
   }
 
   #sourcing-view .featured-grid,
@@ -4322,10 +4327,15 @@ canvas {
 @media (max-width: 960px) {
   #sourcing-view .news-sidebar {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
   }
 
   #sourcing-view .news-sidebar .sidebar-section:first-child {
     grid-column: auto;
+  }
+
+  #sourcing-view .sidebar-list {
+    overflow: visible;
   }
 
   #sourcing-view .featured-grid,
