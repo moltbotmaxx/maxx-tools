@@ -3573,6 +3573,72 @@ canvas {
 }
 
 /* ═══════════════════════════════════════════ */
+/* INSTAGRAM POST ITEM                         */
+/* ═══════════════════════════════════════════ */
+.instagram-post {
+  display: block;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+
+.instagram-post:hover {
+  background: #fff;
+}
+
+.instagram-post:last-child {
+  border-bottom: none;
+}
+
+.instagram-post__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.instagram-post__source {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #e1306c;
+  opacity: 0.92;
+}
+
+.instagram-post__date {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.instagram-post__title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.instagram-post__metrics {
+  display: flex;
+  gap: 12px;
+}
+
+.instagram-metric {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* ═══════════════════════════════════════════ */
 /* X POST ITEM                                 */
 /* ═══════════════════════════════════════════ */
 .x-post {
@@ -3994,11 +4060,13 @@ canvas {
   font-size: 0.78rem;
 }
 
+#sourcing-view .instagram-post,
 #sourcing-view .x-post,
 #sourcing-view .reddit-post {
   padding: 10px 12px;
 }
 
+#sourcing-view .instagram-post__title,
 #sourcing-view .x-post__title,
 #sourcing-view .reddit-post__title {
   line-clamp: 2;

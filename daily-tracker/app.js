@@ -90,8 +90,20 @@ const SOURCING_FEEDS = [
         url: 'https://rss.app/feeds/v1.1/cUiUbXPU5KD7L6u1.json'
     },
 ];
+const INSTAGRAM_VIRAL_FEED = {
+    id: 'instagram-viral',
+    url: 'https://rss.app/feeds/v1.1/_rJZ1VcmwRQcUDWY7.json'
+};
+const REDDIT_VIRAL_FEED = {
+    id: 'reddit-viral',
+    url: 'https://www.reddit.com/user/diligent_run882/m/ai/.json?raw_json=1&limit=12'
+};
+// Reddit blocks direct cross-origin fetches, so only this source is proxied.
+const REDDIT_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
+const SIDEBAR_ITEM_LIMIT = 8;
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
+const sidebarFeedCache = new Map();
 let sourcingArticlesCache = [];
 let sourcingArticlesDirty = true;
 const NEWS_REFRESH_INTERVAL_MS = 120000;
@@ -206,6 +218,7 @@ const elements = {
     simpleGrid: document.getElementById('simpleGrid'),
     poolListNews: document.getElementById('poolListNews'),
     xViralList: document.getElementById('xViralList'),
+    instagramViralList: document.getElementById('instagramViralList'),
     redditViralList: document.getElementById('redditViralList'),
     top6Count: document.getElementById('top6Count'),
     next6Count: document.getElementById('next6Count'),
@@ -1792,9 +1805,126 @@ function dedupeArticlesByLink(articles) {
     return output;
 }
 
+function formatSidebarDate(value) {
+    const d = new Date(value || '');
+    if (Number.isNaN(d.getTime())) return '';
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function buildSidebarFeedRequestUrl(feedConfig, ts = Date.now()) {
+    if (feedConfig?.id === REDDIT_VIRAL_FEED.id) {
+        const sourceUrl = `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}cacheBust=${ts}`;
+        return `${REDDIT_CORS_PROXY_URL}${encodeURIComponent(sourceUrl)}`;
+    }
+
+    return `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}t=${ts}`;
+}
+
+async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
+    if (!feedConfig?.url) return [];
+    if (!forceRefresh && sidebarFeedCache.has(feedConfig.id)) {
+        return sidebarFeedCache.get(feedConfig.id);
+    }
+
+    const res = await fetch(buildSidebarFeedRequestUrl(feedConfig), { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Sidebar feed ${feedConfig.id} failed with ${res.status}`);
+
+    const json = await res.json();
+    const items = feedConfig.id === REDDIT_VIRAL_FEED.id
+        ? (Array.isArray(json?.data?.children) ? json.data.children.map(child => child?.data).filter(Boolean) : [])
+        : (Array.isArray(json?.items) ? json.items : []);
+
+    sidebarFeedCache.set(feedConfig.id, items);
+    return items;
+}
+
+async function fetchInstagramSidebarItems(forceRefresh = false) {
+    const items = await fetchSidebarFeed(INSTAGRAM_VIRAL_FEED, forceRefresh);
+    return dedupeArticlesByLink(
+        items.map((item, index) => normalizeFeedItemToArticle(item, index))
+    )
+        .sort((a, b) => {
+            if ((b.virality || 0) !== (a.virality || 0)) return (b.virality || 0) - (a.virality || 0);
+            if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
+            const da = new Date(a.published_at || a.date).getTime();
+            const db = new Date(b.published_at || b.date).getTime();
+            return db - da;
+        })
+        .slice(0, SIDEBAR_ITEM_LIMIT);
+}
+
+function normalizeRedditListingItem(item) {
+    const headline = decodeEntities(item?.title || '');
+    if (!headline) return null;
+
+    const permalink = item?.permalink ? `https://www.reddit.com${item.permalink}` : '';
+    const fallbackLink = safeHttpUrl(item?.url_overridden_by_dest || item?.url || '', '#');
+    const publishedAt = item?.created_utc
+        ? new Date(item.created_utc * 1000).toISOString()
+        : new Date().toISOString();
+
+    return {
+        headline,
+        link: safeHttpUrl(permalink, fallbackLink),
+        subreddit: normalizeWhitespace(item?.subreddit || item?.subreddit_name_prefixed?.replace(/^r\//, '') || 'reddit'),
+        published_at: publishedAt,
+        score: toSafeNumber(item?.score ?? item?.ups, 0),
+        comments: toSafeNumber(item?.num_comments, 0)
+    };
+}
+
+async function fetchRedditSidebarItems(forceRefresh = false) {
+    const items = await fetchSidebarFeed(REDDIT_VIRAL_FEED, forceRefresh);
+    return items
+        .map(normalizeRedditListingItem)
+        .filter(Boolean)
+        .sort((a, b) => {
+            if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
+            if ((b.comments || 0) !== (a.comments || 0)) return (b.comments || 0) - (a.comments || 0);
+            return new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
+        })
+        .slice(0, SIDEBAR_ITEM_LIMIT);
+}
+
 function renderSidebarEmpty(container, text) {
     if (!container) return;
     container.innerHTML = `<div class="sourcing-empty">${escapeHtml(text)}</div>`;
+}
+
+function renderSidebarList(container, items, createItem, emptyText) {
+    if (!container) return;
+    if (!items.length) {
+        renderSidebarEmpty(container, emptyText);
+        return;
+    }
+
+    container.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    items.forEach(item => frag.appendChild(createItem(item)));
+    container.appendChild(frag);
+}
+
+async function renderSidebarFeeds(forceRefresh = false) {
+    renderSidebarEmpty(elements.xViralList, 'No X feed configured yet');
+
+    const [instagramResult, redditResult] = await Promise.allSettled([
+        fetchInstagramSidebarItems(forceRefresh),
+        fetchRedditSidebarItems(forceRefresh)
+    ]);
+
+    if (instagramResult.status === 'fulfilled') {
+        renderSidebarList(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
+    } else {
+        console.error('Failed to load Instagram feed:', instagramResult.reason);
+        renderSidebarEmpty(elements.instagramViralList, 'Instagram feed unavailable');
+    }
+
+    if (redditResult.status === 'fulfilled') {
+        renderSidebarList(elements.redditViralList, redditResult.value, createRedditPostItem, 'No Reddit posts available');
+    } else {
+        console.error('Failed to load Reddit feed:', redditResult.reason);
+        renderSidebarEmpty(elements.redditViralList, 'Reddit list unavailable');
+    }
 }
 
 function updateSourcingCountsFromDom() {
@@ -1909,8 +2039,7 @@ async function renderNews(forceRefresh = false) {
         elements.poolListNews.appendChild(poolFrag);
     }
 
-    renderSidebarEmpty(elements.xViralList, 'No X feed configured yet');
-    renderSidebarEmpty(elements.redditViralList, 'No Reddit feed configured yet');
+    await renderSidebarFeeds(forceRefresh);
     return true;
 }
 
@@ -1926,10 +2055,11 @@ async function refreshNewsNow(manual = false) {
     if (elements.refreshNewsBtn) {
         elements.refreshNewsBtn.disabled = true;
     }
-    if (manual) setNewsRefreshStatus('Refreshing RSS...', 'neutral');
+    if (manual) setNewsRefreshStatus('Refreshing feeds...', 'neutral');
 
     // Force a true refresh from source, not from in-memory cache.
     sourcingFeedCache.clear();
+    sidebarFeedCache.clear();
     sourcingArticlesDirty = true;
     const ok = await renderNews(true);
 
@@ -2316,6 +2446,33 @@ function createXPostItem(item) {
             <span class="x-metric" title="Likes">❤️ ${formatCompact(likes)}</span>
             <span class="x-metric" title="Views">👁 ${formatCompact(views)}</span>
             <span class="x-metric" title="Reposts">🔁 ${formatCompact(reposts)}</span>
+        </div>
+    `;
+    return card;
+}
+
+function createInstagramPostItem(item) {
+    const card = document.createElement('a');
+    card.className = 'instagram-post';
+    card.href = safeHttpUrl(item.link);
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+
+    const safeSource = escapeHtml(item.source || 'Instagram');
+    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
+    const safeDate = escapeHtml(formatSidebarDate(item.published_at || item.date));
+    const ranking = toSafeNumber(item.ranking, 0);
+    const virality = toSafeNumber(item.virality, 0);
+
+    card.innerHTML = `
+        <div class="instagram-post__header">
+            <span class="instagram-post__source">${safeSource}</span>
+            ${safeDate ? `<span class="instagram-post__date">${safeDate}</span>` : ''}
+        </div>
+        <div class="instagram-post__title">${safeHeadline}</div>
+        <div class="instagram-post__metrics">
+            <span class="instagram-metric" title="Ranking">⭐ ${formatCompact(ranking)}</span>
+            <span class="instagram-metric" title="Virality">🔥 ${formatCompact(virality)}</span>
         </div>
     `;
     return card;
