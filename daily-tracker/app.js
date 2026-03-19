@@ -126,7 +126,7 @@ const REDDIT_VIRAL_FEED = {
 const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
 const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
 const DAILY_TRACKER_DATASET_URL = new URL('data.json', window.location.href).toString();
-const SIDEBAR_ITEM_LIMIT = 8;
+const SIDEBAR_ITEM_LIMIT = 12;
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
 const sidebarFeedCache = new Map();
