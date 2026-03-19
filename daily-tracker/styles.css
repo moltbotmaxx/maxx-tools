@@ -4076,8 +4076,11 @@ canvas {
   flex-direction: column;
   gap: 18px;
   padding: 16px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(252, 253, 255, 0.72) 100%);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background:
+    radial-gradient(circle at top left, rgba(132, 169, 196, 0.16), transparent 34%),
+    radial-gradient(circle at top right, rgba(186, 202, 216, 0.26), transparent 40%),
+    linear-gradient(180deg, rgba(244, 249, 252, 0.98) 0%, rgba(233, 240, 246, 0.96) 100%);
+  border: 1px solid rgba(116, 138, 155, 0.14);
   border-radius: calc(var(--panel-radius) + 2px);
   box-shadow: var(--shadow-sm);
   overflow-y: auto;
@@ -4091,7 +4094,7 @@ canvas {
   flex-direction: column;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(116, 138, 155, 0.14);
   border-radius: 0;
   padding: 0 0 18px;
   margin-bottom: 0;
@@ -4112,14 +4115,15 @@ canvas {
 #sourcing-view .news-group .box-header h2 {
   font-size: 0.96rem;
   letter-spacing: -0.015em;
+  color: #3d5566;
 }
 
 #sourcing-view .count-badge {
   font-size: 0.68rem;
   padding: 3px 9px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--text-tertiary);
+  border: 1px solid rgba(116, 138, 155, 0.12);
+  background: rgba(247, 251, 254, 0.92);
+  color: #6a7f8d;
   font-weight: 600;
 }
 
