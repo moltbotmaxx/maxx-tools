@@ -124,7 +124,6 @@
                             <h2 class="news-toolbar__title">Sourcing Desk</h2>
                         </div>
                         <div class="view-controls">
-                            <nav class="feed-filter-nav" id="sourcingFeedFilter" aria-label="Sourcing RSS feeds"></nav>
                             <label class="toggle-switch">
                                 <input type="checkbox" id="showDoneNews">
                                 <span class="slider"></span>
@@ -156,7 +155,10 @@
                 <div class="news-layout">
                     <div class="news-main">
                         <div class="news-main__header box-header">
-                            <h2>🔥 Featured Stories <span class="count-badge" id="top6Count">0</span></h2>
+                            <div class="news-main__header-main">
+                                <h2>🔥 Featured Stories <span class="count-badge" id="top6Count">0</span></h2>
+                                <nav class="feed-filter-nav news-main__feed-nav" id="sourcingFeedFilter" aria-label="Sourcing RSS feeds"></nav>
+                            </div>
                         </div>
                         <div class="news-main__scroll">
                             <section class="news-group news-group--featured">
