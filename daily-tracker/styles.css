@@ -4112,6 +4112,7 @@ canvas {
   background: var(--bg-card);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: var(--panel-radius);
+  padding: 0;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   position: relative;
@@ -4133,17 +4134,6 @@ canvas {
   grid-column: 6 / span 1;
 }
 
-#sourcing-view .sidebar-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 14px;
-  right: 14px;
-  height: 3px;
-  border-radius: 999px;
-  opacity: 0.9;
-}
-
 #sourcing-view .sidebar-section--x {
   border-color: rgba(17, 24, 39, 0.08);
   background:
@@ -4157,11 +4147,6 @@ canvas {
 
 #sourcing-view .sidebar-section--x .box-header h2 {
   color: #111827;
-  background: rgba(17, 24, 39, 0.08);
-}
-
-#sourcing-view .sidebar-section--x::before {
-  background: linear-gradient(90deg, rgba(17, 24, 39, 0.95), rgba(75, 85, 99, 0.7));
 }
 
 #sourcing-view .sidebar-section--instagram {
@@ -4178,11 +4163,6 @@ canvas {
 
 #sourcing-view .sidebar-section--instagram .box-header h2 {
   color: #b83280;
-  background: rgba(221, 42, 123, 0.1);
-}
-
-#sourcing-view .sidebar-section--instagram::before {
-  background: linear-gradient(90deg, #f58529 0%, #dd2a7b 52%, #8134af 100%);
 }
 
 #sourcing-view .sidebar-section--reddit {
@@ -4198,28 +4178,24 @@ canvas {
 
 #sourcing-view .sidebar-section--reddit .box-header h2 {
   color: #c2410c;
-  background: rgba(255, 106, 0, 0.1);
-}
-
-#sourcing-view .sidebar-section--reddit::before {
-  background: linear-gradient(90deg, #ff4500 0%, #ff7b2c 100%);
 }
 
 #sourcing-view .sidebar-section .box-header {
-  padding: 14px 14px 6px;
+  padding: 10px 10px 4px;
   margin-bottom: 0;
   border-bottom: 0;
 }
 
 #sourcing-view .sidebar-section .box-header h2 {
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   display: inline-flex;
   align-items: center;
-  min-height: 30px;
-  padding: 0 12px;
-  border-radius: 999px;
+  min-height: auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 #selection-view .inspiration-grid-container {
@@ -4241,8 +4217,8 @@ canvas {
 #sourcing-view .sidebar-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 12px;
+  gap: 10px;
+  padding: 10px;
   min-height: 0;
   flex: 1;
   overflow-y: auto;
