@@ -3910,6 +3910,12 @@ canvas {
   min-height: 0;
 }
 
+#sourcing-view.view-container.active {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  row-gap: var(--tab-content-gap);
+}
+
 #sourcing-view .news-header {
   position: relative;
   z-index: 30;
@@ -4043,12 +4049,13 @@ canvas {
 #sourcing-view .news-layout {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr);
   gap: 20px;
   padding: 0;
-  align-items: start;
-  flex: 1;
+  align-items: stretch;
   min-height: 0;
   overflow: hidden;
+  height: 100%;
 }
 
 #sourcing-view .news-main {
@@ -4058,6 +4065,7 @@ canvas {
   flex-direction: column;
   gap: 16px;
   min-height: 0;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 6px;
@@ -4072,6 +4080,7 @@ canvas {
   gap: 16px;
   align-content: start;
   min-height: 0;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 6px;
@@ -4287,7 +4296,9 @@ canvas {
 @media (max-width: 1200px) {
   #sourcing-view .news-layout {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
     overflow: visible;
+    height: auto;
   }
 
   #sourcing-view .news-main,
