@@ -4058,21 +4058,13 @@ canvas {
   height: 100%;
 }
 
-#sourcing-view .news-main {
-  grid-column: 1 / span 3;
+#sourcing-view .news-group {
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   min-height: 0;
   height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 6px;
-  scrollbar-gutter: stable;
-}
-
-#sourcing-view .news-group {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: var(--panel-radius);
@@ -4081,8 +4073,21 @@ canvas {
   box-shadow: var(--shadow-sm);
 }
 
+#sourcing-view .news-group--featured {
+  grid-column: 1 / span 1;
+}
+
+#sourcing-view .news-group--more {
+  grid-column: 2 / span 1;
+}
+
+#sourcing-view .news-group--buffer {
+  grid-column: 3 / span 1;
+}
+
 #sourcing-view .news-group .box-header {
   margin-bottom: 12px;
+  flex-shrink: 0;
 }
 
 #sourcing-view .news-group .box-header h2 {
@@ -4099,9 +4104,16 @@ canvas {
 #sourcing-view .featured-grid,
 #sourcing-view .simple-grid,
 #sourcing-view .pool-list {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: 1fr;
+  gap: 12px;
   margin-bottom: 0;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-content: start;
+  padding-right: 6px;
+  scrollbar-gutter: stable;
 }
 
 #sourcing-view .sidebar-section {
@@ -4310,31 +4322,26 @@ canvas {
     height: auto;
   }
 
-  #sourcing-view .news-main,
+  #sourcing-view .news-group,
   #sourcing-view .sidebar-section {
     grid-column: auto;
     overflow: visible;
-    padding-right: 0;
     height: auto;
   }
 
+  #sourcing-view .featured-grid,
+  #sourcing-view .simple-grid,
+  #sourcing-view .pool-list,
   #sourcing-view .sidebar-list {
     flex: initial;
     overflow: visible;
+    padding-right: 0;
   }
 
   #sourcing-view .featured-grid,
   #sourcing-view .simple-grid,
   #sourcing-view .pool-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 960px) {
-  #sourcing-view .featured-grid,
-  #sourcing-view .simple-grid,
-  #sourcing-view .pool-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 
