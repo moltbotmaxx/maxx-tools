@@ -4263,6 +4263,15 @@ canvas {
   min-height: 0;
 }
 
+#sourcing-view .sidebar-list .card-wrapper--sidebar {
+  flex: 0 0 auto;
+  height: auto;
+}
+
+#sourcing-view .sidebar-list .card-wrapper--sidebar .magazine-card--sidebar {
+  height: auto;
+}
+
 #sourcing-view .score-badge--featured {
   position: static;
   top: auto;
