@@ -3974,10 +3974,11 @@ canvas {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #fff;
-  border: 1px solid var(--border-subtle);
-  border-radius: 999px;
-  padding: 4px;
+  justify-content: flex-end;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
   max-width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
@@ -3988,9 +3989,9 @@ canvas {
 }
 
 #sourcing-view .feed-tab-btn {
-  border: 1px solid transparent;
-  background: transparent;
-  color: var(--text-primary);
+  border: 1px solid rgba(116, 138, 155, 0.12);
+  background: rgba(255, 255, 255, 0.68);
+  color: #516775;
   font-size: 0.78rem;
   font-weight: 600;
   padding: 6px 10px;
@@ -4001,12 +4002,15 @@ canvas {
 }
 
 #sourcing-view .feed-tab-btn:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(116, 138, 155, 0.22);
 }
 
 #sourcing-view .feed-tab-btn.active {
   background: #fff;
-  border-color: rgba(0, 0, 0, 0.12);
+  color: #243743;
+  border-color: rgba(116, 138, 155, 0.26);
+  box-shadow: 0 6px 14px rgba(116, 138, 155, 0.12);
 }
 
 #sourcing-view .toggle-switch {
@@ -4115,6 +4119,7 @@ canvas {
   align-self: start;
   max-width: 100%;
   min-width: 0;
+  margin-left: auto;
 }
 
 #sourcing-view .news-main__scroll {
