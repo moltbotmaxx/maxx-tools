@@ -156,12 +156,12 @@
                     <div class="news-main">
                         <div class="news-main__header box-header">
                             <div class="news-main__header-main">
-                                <h2>🔥 Featured Stories <span class="count-badge" id="top6Count">0</span></h2>
+                                <h2><span id="newsMainActiveLabel">🔥 Featured Stories</span> <span class="count-badge" id="newsMainActiveCount">0</span></h2>
                                 <nav class="feed-filter-nav news-main__feed-nav" id="sourcingFeedFilter" aria-label="Sourcing RSS feeds"></nav>
                             </div>
                         </div>
-                        <div class="news-main__scroll">
-                            <section class="news-group news-group--featured">
+                        <div class="news-main__scroll" id="newsMainScroll">
+                            <section class="news-group news-group--featured" id="featuredStoriesGroup">
                                 <div class="featured-grid" id="featuredGrid">
                                     <div class="skeleton-card skeleton"></div>
                                     <div class="skeleton-card skeleton"></div>
@@ -172,7 +172,7 @@
                                 </div>
                             </section>
 
-                            <section class="news-group">
+                            <section class="news-group" id="moreStoriesGroup">
                                 <div class="box-header">
                                     <h2>📋 More Stories <span class="count-badge" id="next6Count">..</span></h2>
                                 </div>
@@ -186,7 +186,7 @@
                                 </div>
                             </section>
 
-                            <section class="news-group">
+                            <section class="news-group" id="bufferStoriesGroup">
                                 <div class="box-header">
                                     <h2>📰 Buffer <span class="count-badge" id="poolCountNews">..</span></h2>
                                 </div>

@@ -4094,9 +4094,9 @@ canvas {
 }
 
 #sourcing-view .news-main__header-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
   gap: 14px;
   min-width: 0;
 }
@@ -4105,12 +4105,15 @@ canvas {
   font-size: 0.96rem;
   letter-spacing: -0.015em;
   color: #3d5566;
+  margin: 0;
 }
 
 #sourcing-view .news-main__feed-nav {
-  flex: 1 1 auto;
+  width: 100%;
   justify-content: flex-end;
-  max-width: none;
+  justify-self: end;
+  align-self: start;
+  max-width: 100%;
   min-width: 0;
 }
 
@@ -4385,10 +4388,12 @@ canvas {
   #sourcing-view .news-main__header-main {
     flex-direction: column;
     align-items: flex-start;
+    display: flex;
   }
 
   #sourcing-view .news-main__feed-nav {
     width: 100%;
+    justify-self: auto;
   }
 
   #sourcing-view .news-main__scroll {

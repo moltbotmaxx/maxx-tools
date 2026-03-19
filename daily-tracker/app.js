@@ -312,13 +312,18 @@ const elements = {
     newsRefreshStatus: document.getElementById('newsRefreshStatus'),
     resetNewsBtn: document.getElementById('resetNewsBtn'),
     sourcingFeedFilter: document.getElementById('sourcingFeedFilter'),
+    newsMainScroll: document.getElementById('newsMainScroll'),
+    newsMainActiveLabel: document.getElementById('newsMainActiveLabel'),
+    newsMainActiveCount: document.getElementById('newsMainActiveCount'),
+    featuredStoriesGroup: document.getElementById('featuredStoriesGroup'),
+    moreStoriesGroup: document.getElementById('moreStoriesGroup'),
+    bufferStoriesGroup: document.getElementById('bufferStoriesGroup'),
     featuredGrid: document.getElementById('featuredGrid'),
     simpleGrid: document.getElementById('simpleGrid'),
     poolListNews: document.getElementById('poolListNews'),
     xViralList: document.getElementById('xViralList'),
     instagramViralList: document.getElementById('instagramViralList'),
     redditViralList: document.getElementById('redditViralList'),
-    top6Count: document.getElementById('top6Count'),
     next6Count: document.getElementById('next6Count'),
     poolCountNews: document.getElementById('poolCountNews'),
     selectionPoolCards: document.getElementById('poolCardsSelection')
@@ -1974,6 +1979,59 @@ function dedupeArticlesByLink(articles) {
     return output;
 }
 
+function getNewsSectionCardCount(sectionId) {
+    if (sectionId === 'featured') {
+        return elements.featuredGrid?.querySelectorAll('.card-wrapper').length || 0;
+    }
+    if (sectionId === 'more') {
+        return elements.simpleGrid?.querySelectorAll('.card-wrapper').length || 0;
+    }
+    if (sectionId === 'buffer') {
+        return elements.poolListNews?.querySelectorAll('.card-wrapper').length || 0;
+    }
+    return 0;
+}
+
+function getNewsSectionMeta() {
+    return [
+        {
+            id: 'featured',
+            label: '🔥 Featured Stories',
+            element: elements.featuredStoriesGroup
+        },
+        {
+            id: 'more',
+            label: '📋 More Stories',
+            element: elements.moreStoriesGroup
+        },
+        {
+            id: 'buffer',
+            label: '📰 Buffer',
+            element: elements.bufferStoriesGroup
+        }
+    ].filter(section => section.element);
+}
+
+function updateStickyNewsHeader() {
+    if (!elements.newsMainActiveLabel || !elements.newsMainActiveCount) return;
+
+    const sections = getNewsSectionMeta();
+    if (!sections.length) return;
+
+    const scrollTop = elements.newsMainScroll?.scrollTop || 0;
+    let activeSection = sections[0];
+
+    sections.forEach((section) => {
+        const sectionTop = section.element?.offsetTop || 0;
+        if (scrollTop + 24 >= sectionTop) {
+            activeSection = section;
+        }
+    });
+
+    elements.newsMainActiveLabel.textContent = activeSection.label;
+    elements.newsMainActiveCount.textContent = `${getNewsSectionCardCount(activeSection.id)} articles`;
+}
+
 function formatSidebarDate(value) {
     const d = new Date(value || '');
     if (Number.isNaN(d.getTime())) return '';
@@ -2368,9 +2426,9 @@ function updateSourcingCountsFromDom() {
         if (!container) return 0;
         return container.querySelectorAll('.card-wrapper').length;
     };
-    if (elements.top6Count) elements.top6Count.textContent = `${countCards(elements.featuredGrid)} articles`;
     if (elements.next6Count) elements.next6Count.textContent = `${countCards(elements.simpleGrid)} articles`;
     if (elements.poolCountNews) elements.poolCountNews.textContent = `${countCards(elements.poolListNews)} articles`;
+    updateStickyNewsHeader();
 }
 
 function applyDoneOptimistic(headline) {
@@ -2452,7 +2510,6 @@ async function renderNews(forceRefresh = false) {
     const remaining = activeArticles.slice(36);
 
     // Render counts
-    if (elements.top6Count) elements.top6Count.textContent = `${featuredArticles.length} articles`;
     if (elements.next6Count) elements.next6Count.textContent = `${moreStories.length} articles`;
     if (elements.poolCountNews) elements.poolCountNews.textContent = `${remaining.length} articles`;
 
@@ -2474,6 +2531,7 @@ async function renderNews(forceRefresh = false) {
         elements.poolListNews.appendChild(poolFrag);
     }
 
+    updateStickyNewsHeader();
     await renderSidebarFeeds(forceRefresh);
     return true;
 }
@@ -3620,6 +3678,11 @@ function setupEventListeners() {
             });
         });
     }
+
+    if (elements.newsMainScroll) {
+        elements.newsMainScroll.addEventListener('scroll', updateStickyNewsHeader, { passive: true });
+    }
+    window.addEventListener('resize', updateStickyNewsHeader);
 
     // Modal Actions
     elements.modalCloseBtn.addEventListener('click', hideModal);
