@@ -2989,6 +2989,86 @@ canvas {
   flex-shrink: 0;
 }
 
+.magazine-card__date--ghost {
+  display: none;
+}
+
+.metric-chip-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.metric-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(248, 250, 252, 0.95);
+  color: var(--text-secondary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.metric-chip__icon {
+  line-height: 1;
+}
+
+.metric-chip--warm {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.22);
+  color: #b45309;
+}
+
+.metric-chip--hot {
+  background: rgba(239, 68, 68, 0.10);
+  border-color: rgba(239, 68, 68, 0.18);
+  color: #b91c1c;
+}
+
+.metric-chip--cool {
+  background: rgba(59, 130, 246, 0.10);
+  border-color: rgba(59, 130, 246, 0.18);
+  color: #1d4ed8;
+}
+
+.magazine-card--sidebar .magazine-card__image {
+  height: 148px;
+}
+
+.magazine-card--sidebar .magazine-card__body {
+  padding: 12px;
+}
+
+.magazine-card--sidebar .magazine-card__title {
+  -webkit-line-clamp: 3;
+}
+
+.magazine-card--sidebar .magazine-card__reason {
+  margin-bottom: 10px;
+  -webkit-line-clamp: 2;
+}
+
+.magazine-card--sidebar .magazine-card__footer {
+  align-items: stretch;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.magazine-card--sidebar .magazine-card__actions {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.magazine-card--sidebar .card-pills-actions {
+  margin-left: 0;
+}
+
 
 /* ═══════════════════════════════════════════ */
 /* COMPACT TILES (Buffer, articles 21+)        */
@@ -4000,20 +4080,12 @@ canvas {
   font-weight: 600;
 }
 
-#sourcing-view .featured-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+#sourcing-view .featured-grid,
+#sourcing-view .simple-grid,
+#sourcing-view .pool-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   margin-bottom: 0;
-}
-
-#sourcing-view .simple-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-}
-
-#sourcing-view .pool-list {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
 }
 
 #sourcing-view .sidebar-section {
@@ -4050,6 +4122,10 @@ canvas {
 }
 
 #sourcing-view .sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
   max-height: none;
   overflow: visible;
 }
@@ -4060,17 +4136,8 @@ canvas {
   font-size: 0.78rem;
 }
 
-#sourcing-view .instagram-post,
-#sourcing-view .x-post,
-#sourcing-view .reddit-post {
-  padding: 10px 12px;
-}
-
-#sourcing-view .instagram-post__title,
-#sourcing-view .x-post__title,
-#sourcing-view .reddit-post__title {
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
+#sourcing-view .skeleton-sidebar {
+  margin-bottom: 0;
 }
 
 #sourcing-view .card-wrapper {
@@ -4115,30 +4182,18 @@ canvas {
     grid-template-columns: 1fr;
   }
 
-  #sourcing-view .featured-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  #sourcing-view .simple-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
+  #sourcing-view .featured-grid,
+  #sourcing-view .simple-grid,
   #sourcing-view .pool-list {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 960px) {
-  #sourcing-view .featured-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  #sourcing-view .simple-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
+  #sourcing-view .featured-grid,
+  #sourcing-view .simple-grid,
   #sourcing-view .pool-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -4162,15 +4217,9 @@ canvas {
     justify-content: space-between;
   }
 
-  #sourcing-view .featured-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #sourcing-view .simple-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
+  #sourcing-view .featured-grid,
+  #sourcing-view .simple-grid,
   #sourcing-view .pool-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }

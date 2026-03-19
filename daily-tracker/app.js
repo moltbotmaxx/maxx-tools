@@ -1862,14 +1862,21 @@ function normalizeRedditListingItem(item) {
     const publishedAt = item?.created_utc
         ? new Date(item.created_utc * 1000).toISOString()
         : new Date().toISOString();
+    const previewImage = decodeEntities(item?.preview?.images?.[0]?.source?.url || item?.thumbnail || '');
+    const reason = normalizeWhitespace(item?.selftext || item?.link_flair_text || item?.domain || '').slice(0, 220);
+    const subreddit = normalizeWhitespace(item?.subreddit || item?.subreddit_name_prefixed?.replace(/^r\//, '') || 'reddit');
 
     return {
         headline,
         link: safeHttpUrl(permalink, fallbackLink),
-        subreddit: normalizeWhitespace(item?.subreddit || item?.subreddit_name_prefixed?.replace(/^r\//, '') || 'reddit'),
+        source: `r/${subreddit}`,
+        subreddit,
         published_at: publishedAt,
+        date: toIsoDateString(publishedAt),
         score: toSafeNumber(item?.score ?? item?.ups, 0),
-        comments: toSafeNumber(item?.num_comments, 0)
+        comments: toSafeNumber(item?.num_comments, 0),
+        reason,
+        image_url: safeHttpUrl(previewImage, '')
     };
 }
 
@@ -1900,7 +1907,7 @@ function renderSidebarList(container, items, createItem, emptyText) {
 
     container.innerHTML = '';
     const frag = document.createDocumentFragment();
-    items.forEach(item => frag.appendChild(createItem(item)));
+    items.forEach((item, index) => frag.appendChild(createItem(item, index)));
     container.appendChild(frag);
 }
 
@@ -2035,7 +2042,7 @@ async function renderNews(forceRefresh = false) {
     if (elements.poolListNews) {
         elements.poolListNews.innerHTML = '';
         const poolFrag = document.createDocumentFragment();
-        remaining.forEach(item => poolFrag.appendChild(createCompactTile(item)));
+        remaining.forEach((item, i) => poolFrag.appendChild(createCompactTile(item, i + 36)));
         elements.poolListNews.appendChild(poolFrag);
     }
 
@@ -2121,6 +2128,45 @@ function getSendToSelectionButtonHtml(extraClass = '') {
             <span class="send-selection-btn__label">Selection</span>
         </button>
     `;
+}
+
+function getMagazineFallbackEmoji(index = 0) {
+    const fallbackEmojis = ['📰', '⚡', '💡', '🌐', '🔬', '📊', '🎯', '🌍', '💬', '🔍', '📡', '🤖', '🧠', '📈'];
+    return fallbackEmojis[index % fallbackEmojis.length];
+}
+
+function getItemImageUrl(item, fallback = '') {
+    return safeHttpUrl(item?.image_url || item?.image || item?.thumbnail || fallback || '', '');
+}
+
+function getScorePillHtml(item, scoreValue = item?.ranking, includeInternalScore = true) {
+    const ranking = toSafeNumber(scoreValue, 0);
+    return `
+        <div class="score-pill ${getScoreClass(ranking)}">
+            ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
+            <span>${ranking}</span>
+            ${includeInternalScore ? getScoreInternalHtml(item) : ''}
+        </div>
+    `;
+}
+
+function buildMetricChipHtml({ icon = '', value = '', title = '', tone = 'neutral' } = {}) {
+    if (value === '' || value === null || value === undefined) return '';
+    const toneClass = tone ? ` metric-chip--${tone}` : '';
+    return `
+        <span class="metric-chip${toneClass}" title="${escapeHtml(title)}">
+            ${icon ? `<span class="metric-chip__icon">${escapeHtml(icon)}</span>` : ''}
+            <span class="metric-chip__value">${escapeHtml(String(value))}</span>
+        </span>
+    `;
+}
+
+function buildMetricChipGroupHtml(metrics = []) {
+    const chips = metrics
+        .map(metric => buildMetricChipHtml(metric))
+        .filter(Boolean)
+        .join('');
+    return chips ? `<div class="metric-chip-group">${chips}</div>` : '';
 }
 
 function buildSelectionDraftFromSource(item, sourceKind = 'article') {
@@ -2244,84 +2290,38 @@ function initSourcingFeedFilter() {
 }
 
 function createFeaturedCard(item, index) {
-    const isDone = doneHeadlines.has(item.headline);
-    const safeImageUrl = safeHttpUrl(item.image_url, '');
-    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
-    const safeLink = safeHttpUrl(item.link);
-    const safeSource = escapeHtml(item.source || 'Unknown Source');
-    const safeReason = escapeHtml(item.reason || '');
-    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
-    const ranking = toSafeNumber(item.ranking, 0);
-    const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    const card = document.createElement('div');
-    card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
-    card.dataset.headline = item.headline || '';
-
-    const imageHtml = hasImage
-        ? `<div class="featured-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
-        : `<div class="featured-card__image featured-card__image--fallback">
-             <div class="featured-card__emoji-pattern" aria-hidden="true">
-                <span>📰</span><span>🤖</span><span>⚡</span><span>🧠</span><span>📈</span><span>💬</span>
-             </div>
-             <span class="featured-card__image-icon">${['🔥', '⚡', '💔', '📢', '⚙️'][index] || '📰'}</span>`;
-
-    card.innerHTML = `
-        <a class="featured-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
-            ${imageHtml}
-                <span class="featured-card__source-badge">${safeSource}</span>
-            </div>
-            <div class="featured-card__body">
-                <h3 class="featured-card__title">${safeHeadline}</h3>
-                <p class="featured-card__reason">${safeReason}</p>
-                <div class="featured-card__meta">
-                    <span>${safeDate}</span>
-                    <span class="featured-card__arrow">→</span>
-                </div>
-                <div class="featured-card__footer">
-                    <div class="score-badge score-badge--featured ${getScoreClass(ranking)}">
-                        ${ranking >= 85 ? '<span class="score-badge__icon">🔥</span>' : ''}
-                        <span class="score-badge__value">${ranking}</span>
-                        ${getScoreInternalHtml(item)}
-                    </div>
-                    <div class="card-pills-actions">
-                        ${!isDone ? getDoneButtonHtml('done-button--inline') : ''}
-                        <button class="send-selection-btn send-selection-btn--inline" title="Send to Selection">
-                            <span class="send-selection-btn__icon">↗</span>
-                            <span class="send-selection-btn__label">Selection</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </a>
-    `;
-
-    const doneBtn = card.querySelector('.done-button');
-    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
-    const sendBtn = card.querySelector('.send-selection-btn');
-    if (sendBtn) sendBtn.onclick = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        showSourceSelectionModal(buildSelectionDraftFromSource(item, 'article'));
-    };
-    return card;
+    return createMagazineCard(item, index, { sourceKind: 'article' });
 }
 
-function createMagazineCard(item, index) {
+function createMagazineCard(item, index, options = {}) {
+    const {
+        variant = 'default',
+        sourceKind = 'article',
+        sourceLabel = item?.source || 'Unknown Source',
+        reasonText = item?.reason || '',
+        imageUrl = getItemImageUrl(item),
+        dateValue = item?.published_at || item?.date,
+        metricHtml = null,
+        scoreValue = item?.ranking,
+        includeInternalScore = true
+    } = options;
+
+    const card = document.createElement('div');
     const isDone = doneHeadlines.has(item.headline);
-    const safeImageUrl = safeHttpUrl(item.image_url, '');
+    const safeImageUrl = getItemImageUrl({ image_url: imageUrl });
     const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
     const safeLink = safeHttpUrl(item.link);
     const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
-    const safeReason = escapeHtml(item.reason || '');
-    const safeSource = escapeHtml(item.source || 'Unknown Source');
-    const ranking = toSafeNumber(item.ranking, 0);
-    const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    const card = document.createElement('div');
-    card.className = `card-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
-    card.dataset.headline = item.headline || '';
+    const safeReason = escapeHtml(normalizeWhitespace(reasonText).slice(0, 220));
+    const safeSource = escapeHtml(sourceLabel);
+    const safeDate = escapeHtml(formatSidebarDate(dateValue));
+    const emoji = getMagazineFallbackEmoji(index);
+    const cardClassName = ['magazine-card', variant !== 'default' ? `magazine-card--${variant}` : ''].filter(Boolean).join(' ');
+    const wrapperClassName = ['card-wrapper', variant !== 'default' ? `card-wrapper--${variant}` : '', isDone ? 'card-wrapper--done' : ''].filter(Boolean).join(' ');
+    const footerMetricHtml = metricHtml ?? getScorePillHtml(item, scoreValue, includeInternalScore);
 
-    const fallbackEmojis = ['📰', '⚡', '💡', '🌐', '🔬', '📊', '🎯', '🌍', '💬', '🔍', '📡', '🤖', '🧠', '📈'];
-    const emoji = fallbackEmojis[index % fallbackEmojis.length];
+    card.className = wrapperClassName;
+    card.dataset.headline = item.headline || '';
 
     const imageHtml = hasImage
         ? `<div class="magazine-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
@@ -2329,7 +2329,7 @@ function createMagazineCard(item, index) {
              <div class="magazine-card__emoji-bg" aria-hidden="true">${emoji}</div>`;
 
     card.innerHTML = `
-        <a class="magazine-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
+        <a class="${cardClassName}" href="${safeLink}" target="_blank" rel="noopener noreferrer">
             ${imageHtml}
                 <span class="magazine-card__source-badge">${safeSource}</span>
             </div>
@@ -2338,14 +2338,10 @@ function createMagazineCard(item, index) {
                 ${safeReason ? `<p class="magazine-card__reason">${safeReason}</p>` : ''}
                 <div class="magazine-card__footer">
                     <div class="magazine-card__meta">
-                        <span class="magazine-card__date">${safeDate}</span>
+                        ${safeDate ? `<span class="magazine-card__date">${safeDate}</span>` : '<span class="magazine-card__date magazine-card__date--ghost"></span>'}
                     </div>
                     <div class="magazine-card__actions">
-                        <div class="score-pill ${getScoreClass(ranking)}">
-                            ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
-                            <span>${ranking}</span>
-                            ${getScoreInternalHtml(item)}
-                        </div>
+                        ${footerMetricHtml}
                         <div class="card-pills-actions">
                             ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
                             ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
@@ -2362,62 +2358,13 @@ function createMagazineCard(item, index) {
     if (sendBtn) sendBtn.onclick = (e) => {
         e.preventDefault();
         e.stopPropagation();
-        showSourceSelectionModal(buildSelectionDraftFromSource(item, 'article'));
+        showSourceSelectionModal(buildSelectionDraftFromSource(item, sourceKind));
     };
     return card;
 }
 
-function createCompactTile(item) {
-    const isDone = doneHeadlines.has(item.headline);
-    const safeImageUrl = safeHttpUrl(item.image_url, '');
-    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
-    const safeLink = safeHttpUrl(item.link);
-    const safeReason = escapeHtml(item.reason || '');
-    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
-    const safeSource = escapeHtml(item.source || 'Unknown Source');
-    const ranking = toSafeNumber(item.ranking, 0);
-    const safeDate = new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    const card = document.createElement('div');
-    card.className = `card-wrapper pool-wrapper ${isDone ? 'card-wrapper--done' : ''}`;
-    card.dataset.headline = item.headline || '';
-
-    card.innerHTML = `
-        <div class="compact-tile">
-            <a class="compact-tile__link" href="${safeLink}" target="_blank" rel="noopener noreferrer" title="${safeReason}">
-                <div class="compact-tile__thumb ${hasImage ? 'has-image' : ''}" ${hasImage ? `style="background-image: url('${escapeHtml(safeImageUrl)}');"` : ''}>
-                    ${hasImage ? '' : '📰'}
-                </div>
-                <div class="compact-tile__content">
-                    <div class="compact-tile__title">${safeHeadline}</div>
-                    <div class="compact-tile__meta">
-                        <span class="compact-tile__source">${safeSource}</span>
-                        <span class="compact-tile__sep">·</span>
-                        <span class="compact-tile__date">${safeDate}</span>
-                    </div>
-                </div>
-            </a>
-            <div class="compact-tile__footer">
-                <div class="score-pill score-pill--small ${getScoreClass(ranking)}">
-                    <span>${ranking}</span>
-                    ${getScoreInternalHtml(item)}
-                </div>
-                <div class="card-pills-actions">
-                    ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
-                    ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
-                </div>
-            </div>
-        </div>
-    `;
-
-    const doneBtn = card.querySelector('.done-button');
-    if (doneBtn) doneBtn.onclick = (e) => { e.preventDefault(); markAsDone(item.headline); };
-    const sendBtn = card.querySelector('.send-selection-btn');
-    if (sendBtn) sendBtn.onclick = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        showSourceSelectionModal(buildSelectionDraftFromSource(item, 'article'));
-    };
-    return card;
+function createCompactTile(item, index) {
+    return createMagazineCard(item, index, { sourceKind: 'article' });
 }
 
 function formatCompact(n) {
@@ -2426,79 +2373,49 @@ function formatCompact(n) {
     return n.toString();
 }
 
-function createXPostItem(item) {
-    const card = document.createElement('a');
-    card.className = 'x-post';
-    card.href = safeHttpUrl(item.link);
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
-    const safeAuthor = escapeHtml(item.author || 'Unknown');
-    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
-    const likes = toSafeNumber(item.likes, 0);
-    const views = toSafeNumber(item.views, 0);
-    const reposts = toSafeNumber(item.reposts, 0);
-    card.innerHTML = `
-        <div class="x-post__header">
-            <span class="x-post__author">${safeAuthor}</span>
-        </div>
-        <div class="x-post__title">${safeHeadline}</div>
-        <div class="x-post__metrics">
-            <span class="x-metric" title="Likes">❤️ ${formatCompact(likes)}</span>
-            <span class="x-metric" title="Views">👁 ${formatCompact(views)}</span>
-            <span class="x-metric" title="Reposts">🔁 ${formatCompact(reposts)}</span>
-        </div>
-    `;
-    return card;
+function createXPostItem(item, index) {
+    const authorLabel = normalizeWhitespace(item.author || '').replace(/^@/, '');
+    return createMagazineCard(item, index, {
+        variant: 'sidebar',
+        sourceKind: 'x',
+        sourceLabel: authorLabel ? `@${authorLabel}` : 'X',
+        reasonText: item.reason,
+        imageUrl: item.image_url || item.image || '',
+        metricHtml: buildMetricChipGroupHtml([
+            { icon: '❤️', value: formatCompact(toSafeNumber(item.likes, 0)), title: 'Likes', tone: 'hot' },
+            { icon: '👁', value: formatCompact(toSafeNumber(item.views, 0)), title: 'Views', tone: 'cool' },
+            { icon: '🔁', value: formatCompact(toSafeNumber(item.reposts, 0)), title: 'Reposts', tone: 'warm' }
+        ]),
+        includeInternalScore: false
+    });
 }
 
-function createInstagramPostItem(item) {
-    const card = document.createElement('a');
-    card.className = 'instagram-post';
-    card.href = safeHttpUrl(item.link);
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
-
-    const safeSource = escapeHtml(item.source || 'Instagram');
-    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
-    const safeDate = escapeHtml(formatSidebarDate(item.published_at || item.date));
-    const ranking = toSafeNumber(item.ranking, 0);
-    const virality = toSafeNumber(item.virality, 0);
-
-    card.innerHTML = `
-        <div class="instagram-post__header">
-            <span class="instagram-post__source">${safeSource}</span>
-            ${safeDate ? `<span class="instagram-post__date">${safeDate}</span>` : ''}
-        </div>
-        <div class="instagram-post__title">${safeHeadline}</div>
-        <div class="instagram-post__metrics">
-            <span class="instagram-metric" title="Ranking">⭐ ${formatCompact(ranking)}</span>
-            <span class="instagram-metric" title="Virality">🔥 ${formatCompact(virality)}</span>
-        </div>
-    `;
-    return card;
+function createInstagramPostItem(item, index) {
+    return createMagazineCard(item, index, {
+        variant: 'sidebar',
+        sourceKind: 'instagram',
+        sourceLabel: item.source || 'Instagram',
+        reasonText: item.reason,
+        metricHtml: buildMetricChipGroupHtml([
+            { icon: '⭐', value: toSafeNumber(item.ranking, 0), title: 'Ranking', tone: 'warm' },
+            { icon: '🔥', value: toSafeNumber(item.virality, 0), title: 'Virality', tone: 'hot' }
+        ])
+    });
 }
 
-function createRedditPostItem(item) {
-    const card = document.createElement('a');
-    card.className = 'reddit-post';
-    card.href = safeHttpUrl(item.link);
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
-    const safeSubreddit = escapeHtml(item.subreddit || 'unknown');
-    const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
-    const score = toSafeNumber(item.score, 0);
-    const comments = toSafeNumber(item.comments, 0);
-    card.innerHTML = `
-        <div class="reddit-post__header">
-            <span class="reddit-post__subreddit">r/${safeSubreddit}</span>
-        </div>
-        <div class="reddit-post__title">${safeHeadline}</div>
-        <div class="reddit-post__metrics">
-            <span class="reddit-metric" title="Score">⬆ ${formatCompact(score)}</span>
-            <span class="reddit-metric" title="Comments">💬 ${formatCompact(comments)}</span>
-        </div>
-    `;
-    return card;
+function createRedditPostItem(item, index) {
+    return createMagazineCard(item, index, {
+        variant: 'sidebar',
+        sourceKind: 'reddit',
+        sourceLabel: `r/${item.subreddit || 'unknown'}`,
+        reasonText: item.reason,
+        imageUrl: item.image_url,
+        metricHtml: buildMetricChipGroupHtml([
+            { icon: '⬆', value: formatCompact(toSafeNumber(item.score, 0)), title: 'Score', tone: 'hot' },
+            { icon: '💬', value: formatCompact(toSafeNumber(item.comments, 0)), title: 'Comments', tone: 'cool' }
+        ]),
+        includeInternalScore: false
+    });
 }
 
 function renderInspiration() {
