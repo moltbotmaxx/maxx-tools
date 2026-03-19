@@ -103,10 +103,11 @@ const INSTAGRAM_VIRAL_FEED = {
 };
 const REDDIT_VIRAL_FEED = {
     id: 'reddit-viral',
-    url: 'https://www.reddit.com/user/diligent_run882/m/ai/.rss',
-    format: 'rss'
+    url: `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/user/diligent_run882/m/ai/.rss')}`,
+    format: 'rss2json'
 };
 const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
+const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
 const SIDEBAR_ITEM_LIMIT = 8;
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
@@ -253,10 +254,31 @@ function normalizeWhitespace(value) {
     return String(value ?? '').replace(/\s+/g, ' ').trim();
 }
 
+function normalizeUrlCandidate(value) {
+    let output = decodeEntities(String(value ?? '').trim());
+    if (!output) return '';
+
+    for (let i = 0; i < 2; i += 1) {
+        if (!/^https?%3a/i.test(output) && !/^https?%253a/i.test(output)) break;
+        try {
+            output = decodeURIComponent(output);
+        } catch {
+            break;
+        }
+    }
+
+    if (output.startsWith('//')) {
+        output = `https:${output}`;
+    }
+
+    return output;
+}
+
 function safeHttpUrl(url, fallback = '#') {
-    if (!url || typeof url !== 'string') return fallback;
+    const candidate = normalizeUrlCandidate(url);
+    if (!candidate) return fallback;
     try {
-        const parsed = new URL(url, window.location.origin);
+        const parsed = new URL(candidate, window.location.origin);
         return (parsed.protocol === 'http:' || parsed.protocol === 'https:') ? parsed.href : fallback;
     } catch {
         return fallback;
@@ -272,6 +294,19 @@ function htmlToPlainText(html) {
     const temp = document.createElement('div');
     temp.innerHTML = html || '';
     return normalizeWhitespace(temp.textContent || temp.innerText || '');
+}
+
+function getDisplayImageUrl(url, fallback = '') {
+    const normalized = safeHttpUrl(url, '');
+    if (!normalized) return fallback;
+
+    try {
+        const parsed = new URL(normalized);
+        const source = `${parsed.host}${parsed.pathname}${parsed.search}`;
+        return `${IMAGE_PROXY_URL}${encodeURIComponent(source)}`;
+    } catch {
+        return fallback;
+    }
 }
 
 function safeGetLocalStorageItem(key) {
@@ -1776,7 +1811,7 @@ function normalizeFeedItemToArticle(item, index = 0) {
     const headline = decodeEntities(item?.title || 'Untitled');
     const reason = normalizeWhitespace(item?.content_text || '').slice(0, 220);
     const source = getFeedSourceLabel(item, link);
-    const imageUrl = safeHttpUrl(item?.image || item?.attachments?.[0]?.url || '', '');
+    const imageUrl = getDisplayImageUrl(item?.image || item?.attachments?.[0]?.url || '', '');
     const igScores = buildInstagramRanking(item, index);
 
     return {
@@ -1828,6 +1863,10 @@ function buildSidebarFeedRequestUrls(feedConfig, ts = Date.now()) {
     const sourceUrl = `${feedConfig.url}${feedConfig.url.includes('?') ? '&' : '?'}t=${ts}`;
     const proxyUrl = `${SIDEBAR_CORS_PROXY_URL}${encodeURIComponent(sourceUrl)}`;
 
+    if (feedConfig?.format === 'rss2json') {
+        return [sourceUrl];
+    }
+
     if (feedConfig?.format === 'rss') {
         return [proxyUrl, sourceUrl];
     }
@@ -1875,6 +1914,30 @@ function parseRedditRssItems(xmlText) {
     }).filter(Boolean);
 }
 
+function parseRedditRss2JsonItems(json) {
+    if (json?.status !== 'ok' || !Array.isArray(json?.items)) {
+        throw new Error(json?.message || 'Invalid Reddit rss2json response');
+    }
+
+    return json.items.map((item) => {
+        const publishedAt = item?.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString();
+        const subreddit = normalizeWhitespace(item?.categories?.[0] || 'reddit');
+        const rawReason = item?.description || item?.content || '';
+
+        return {
+            headline: decodeEntities(item?.title || ''),
+            link: safeHttpUrl(item?.link || '', '#'),
+            source: `r/${subreddit}`,
+            subreddit,
+            author: normalizeWhitespace(item?.author || ''),
+            published_at: publishedAt,
+            date: toIsoDateString(publishedAt),
+            reason: htmlToPlainText(rawReason).replace(/\[link\]|\[comments\]|submitted by/gi, '').slice(0, 220),
+            image_url: getDisplayImageUrl(item?.thumbnail || item?.enclosure?.thumbnail || '')
+        };
+    }).filter(item => item.headline && item.link);
+}
+
 async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
     if (!feedConfig?.url) return [];
     if (!forceRefresh && sidebarFeedCache.has(feedConfig.id)) {
@@ -1894,6 +1957,8 @@ async function fetchSidebarFeed(feedConfig, forceRefresh = false) {
             const text = await res.text();
             const items = feedConfig.format === 'rss'
                 ? parseRedditRssItems(text)
+                : feedConfig.format === 'rss2json'
+                    ? parseRedditRss2JsonItems(JSON.parse(text))
                 : (() => {
                     const json = JSON.parse(text);
                     return Array.isArray(json?.items) ? json.items : [];
@@ -2180,7 +2245,11 @@ function getMagazineFallbackEmoji(index = 0) {
 }
 
 function getItemImageUrl(item, fallback = '') {
-    return safeHttpUrl(item?.image_url || item?.image || item?.thumbnail || fallback || '', '');
+    const rawUrl = item?.image_url || item?.image || item?.thumbnail || fallback || '';
+    const normalized = safeHttpUrl(rawUrl, '');
+    if (!normalized) return '';
+    if (normalized.startsWith(IMAGE_PROXY_URL)) return normalized;
+    return getDisplayImageUrl(normalized, '');
 }
 
 function getScorePillHtml(item, scoreValue = item?.ranking, includeInternalScore = true) {
