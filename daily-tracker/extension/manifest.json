@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Daily Tracker Clipper",
     "version": "1.2.1",
-    "version_name": "sourcing-title-fit",
+    "version_name": "scoring-breakdown",
     "description": "Capture inspiration links directly to your Daily Tracker",
     "permissions": [
         "activeTab",

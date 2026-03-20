@@ -1792,20 +1792,48 @@ const SOURCE_QUALITY = {
 
 const SOURCING_SCORE_PROFILES = {
     news: {
-        virality: { recency: 0.3, hook: 0.28, shareability: 0.24, media: 0.18 },
-        fit: { relevance: 0.34, utility: 0.26, clarity: 0.18, sourceQuality: 0.16, recency: 0.06 }
+        recencyHalfLifeHours: 38,
+        freshnessFloor: 18,
+        interest: { relevance: 0.38, utility: 0.22, hook: 0.14, clarity: 0.14, shareability: 0.12 },
+        quality: { sourceQuality: 0.32, clarity: 0.22, utility: 0.16, media: 0.08, contentDepth: 0.22 },
+        confidence: { sourceQuality: 0.28, clarity: 0.2, contentDepth: 0.26, media: 0.08, socialProofConfidence: 0.08, freshness: 0.1 },
+        traction: { shareability: 0.42, hook: 0.24, socialProof: 0.08, media: 0.12, freshness: 0.14 },
+        virality: { traction: 0.36, freshness: 0.28, hook: 0.14, shareability: 0.12, interest: 0.1 },
+        fit: { interest: 0.42, quality: 0.3, utility: 0.12, confidence: 0.16 },
+        final: { virality: 0.34, fit: 0.38, freshness: 0.12, confidence: 0.16 }
     },
     instagram: {
-        virality: { recency: 0.22, hook: 0.28, shareability: 0.24, media: 0.18, socialProof: 0.08 },
-        fit: { relevance: 0.28, utility: 0.28, clarity: 0.2, media: 0.14, sourceQuality: 0.1 }
+        recencyHalfLifeHours: 42,
+        freshnessFloor: 16,
+        interest: { relevance: 0.28, utility: 0.2, hook: 0.18, clarity: 0.14, shareability: 0.2 },
+        quality: { media: 0.28, clarity: 0.18, utility: 0.12, contentDepth: 0.18, sourceQuality: 0.1, socialProof: 0.14 },
+        confidence: { socialProofConfidence: 0.32, contentDepth: 0.2, clarity: 0.16, media: 0.16, freshness: 0.08, sourceQuality: 0.08 },
+        traction: { socialProof: 0.34, shareability: 0.2, hook: 0.18, media: 0.16, freshness: 0.12 },
+        virality: { traction: 0.4, freshness: 0.18, hook: 0.14, shareability: 0.12, media: 0.08, interest: 0.08 },
+        fit: { interest: 0.34, quality: 0.28, confidence: 0.24, utility: 0.14 },
+        final: { virality: 0.36, fit: 0.3, freshness: 0.1, confidence: 0.12, traction: 0.12 }
     },
     reddit: {
-        virality: { recency: 0.26, hook: 0.24, shareability: 0.18, socialProof: 0.2, media: 0.12 },
-        fit: { relevance: 0.3, utility: 0.24, clarity: 0.22, sourceQuality: 0.1, recency: 0.14 }
+        recencyHalfLifeHours: 30,
+        freshnessFloor: 14,
+        interest: { relevance: 0.32, utility: 0.2, hook: 0.16, clarity: 0.16, shareability: 0.16 },
+        quality: { contentDepth: 0.24, clarity: 0.18, utility: 0.14, sourceQuality: 0.08, socialProof: 0.2, media: 0.16 },
+        confidence: { socialProofConfidence: 0.38, contentDepth: 0.2, clarity: 0.14, freshness: 0.12, sourceQuality: 0.06, media: 0.1 },
+        traction: { socialProof: 0.4, shareability: 0.16, hook: 0.16, freshness: 0.14, discussion: 0.14 },
+        virality: { traction: 0.42, freshness: 0.18, hook: 0.12, shareability: 0.12, interest: 0.08, media: 0.08 },
+        fit: { interest: 0.32, quality: 0.28, confidence: 0.26, utility: 0.14 },
+        final: { virality: 0.34, fit: 0.28, freshness: 0.1, confidence: 0.14, traction: 0.14 }
     },
     x: {
-        virality: { recency: 0.28, hook: 0.3, shareability: 0.16, media: 0.14, socialProof: 0.12 },
-        fit: { relevance: 0.3, utility: 0.2, clarity: 0.2, sourceQuality: 0.08, recency: 0.12, hook: 0.1 }
+        recencyHalfLifeHours: 20,
+        freshnessFloor: 12,
+        interest: { relevance: 0.3, utility: 0.16, hook: 0.22, clarity: 0.14, shareability: 0.18 },
+        quality: { clarity: 0.18, media: 0.18, contentDepth: 0.16, sourceQuality: 0.08, socialProof: 0.24, utility: 0.16 },
+        confidence: { socialProofConfidence: 0.34, clarity: 0.16, contentDepth: 0.16, media: 0.14, freshness: 0.12, sourceQuality: 0.08 },
+        traction: { socialProof: 0.38, hook: 0.18, shareability: 0.16, freshness: 0.16, media: 0.12 },
+        virality: { traction: 0.42, freshness: 0.16, hook: 0.14, shareability: 0.12, media: 0.08, interest: 0.08 },
+        fit: { interest: 0.3, quality: 0.28, confidence: 0.28, utility: 0.14 },
+        final: { virality: 0.36, fit: 0.26, freshness: 0.08, confidence: 0.14, traction: 0.16 }
     }
 };
 
@@ -1818,13 +1846,17 @@ function countKeywordHits(text, keywords) {
     return hits;
 }
 
-function scoreRecency(hoursAgo) {
+function getSourcingScoreProfile(sourceType = 'news') {
+    return SOURCING_SCORE_PROFILES[sourceType] || SOURCING_SCORE_PROFILES.news;
+}
+
+function scoreFreshness(hoursAgo, sourceType = 'news') {
+    const profile = getSourcingScoreProfile(sourceType);
     const hours = Math.max(0, Number(hoursAgo) || 0);
-    if (hours <= 6) return 100;
-    if (hours <= 24) return clampScore(100 - ((hours - 6) / 18) * 12);
-    if (hours <= 48) return clampScore(88 - ((hours - 24) / 24) * 18);
-    if (hours <= 96) return clampScore(70 - ((hours - 48) / 48) * 30);
-    return clampScore(40 - ((hours - 96) / 72) * 24);
+    const halfLife = Math.max(1, Number(profile.recencyHalfLifeHours) || 36);
+    const floor = clampScore(profile.freshnessFloor ?? 12);
+    const decayed = floor + (100 - floor) * Math.exp((-Math.log(2) * hours) / halfLife);
+    return clampScore(decayed);
 }
 
 function scoreHookPotential(headline) {
@@ -1865,6 +1897,25 @@ function scoreVisualPotential(headline, hasImage) {
     return clampScore(imageBonus + hits * 9);
 }
 
+function scoreContentDepth(headline, reason) {
+    const safeHeadline = normalizeWhitespace(headline || '');
+    const safeReason = normalizeWhitespace(reason || '');
+    const headlineLength = safeHeadline.length;
+    const reasonLength = safeReason.length;
+    const hasExplainerSignal = /\b(how|why|what|breakdown|analysis|thread|guide|explained)\b/i.test(`${safeHeadline} ${safeReason}`);
+
+    let score = 26;
+    if (headlineLength >= 40 && headlineLength <= 110) score += 18;
+    else if (headlineLength >= 24) score += 10;
+
+    if (reasonLength >= 40) score += 14;
+    if (reasonLength >= 90) score += 16;
+    if (reasonLength >= 160) score += 10;
+    if (hasExplainerSignal) score += 8;
+
+    return clampScore(score);
+}
+
 function scoreHeadlineClarity(headline) {
     const length = (headline || '').trim().length;
     if (length === 0) return 0;
@@ -1892,35 +1943,59 @@ function scoreTopicalRelevance(headline, reason, source = '') {
     return clampScore(themeHits * 8 + (hasCoreAiPhrase ? 22 : 0) + 34);
 }
 
-function scoreSocialProof(sourceType, socialProof = {}) {
-    const rankedSignal = toSafeNumber(
+function normalizeExternalRankSignal(value) {
+    const raw = Number(value);
+    if (!Number.isFinite(raw) || raw <= 0) return null;
+    if (raw > 100) return clampScore(Math.log10(raw + 1) * 32);
+    return clampScore(raw);
+}
+
+function getSocialProofMetrics(sourceType, socialProof = {}) {
+    const explicitRank = normalizeExternalRankSignal(
         socialProof.viralScore
         ?? socialProof.virality
         ?? socialProof.ranking
         ?? socialProof.rating
-        ?? socialProof.score,
-        NaN
     );
-    if (Number.isFinite(rankedSignal) && rankedSignal > 0) {
-        if (rankedSignal > 100) {
-            return clampScore(Math.log10(rankedSignal + 1) * 32);
-        }
-        return clampScore(rankedSignal);
+    const scoreCount = Math.max(0, toSafeNumber(socialProof.score, 0));
+    const commentCount = Math.max(0, toSafeNumber(socialProof.comments, 0));
+    const sampleSize = scoreCount + commentCount * 6;
+    const discussion = commentCount > 0
+        ? clampScore(Math.log10(commentCount + 1) * 26 + Math.min(20, (commentCount / Math.max(1, scoreCount)) * 120))
+        : 0;
+
+    if (scoreCount > 0 || commentCount > 0) {
+        const engagementMagnitude = clampScore(
+            Math.log10(scoreCount + 1) * 24
+            + Math.log10(commentCount + 1) * 18
+            + Math.min(16, (commentCount / Math.max(1, scoreCount)) * 120)
+        );
+        const shrink = 1 - Math.exp(-sampleSize / (sourceType === 'reddit' ? 2200 : 1400));
+        const prior = explicitRank ?? 56;
+
+        return {
+            signal: clampScore(prior * (1 - shrink) + engagementMagnitude * shrink),
+            confidence: clampScore(38 + shrink * 62),
+            discussion,
+            sampleSize
+        };
     }
 
-    if (sourceType === 'reddit') {
-        const score = Math.max(0, toSafeNumber(socialProof.score, 0));
-        const comments = Math.max(0, toSafeNumber(socialProof.comments, 0));
-        if (score > 0 || comments > 0) {
-            return clampScore(Math.log10(score + 1) * 28 + Math.log10(comments + 1) * 24);
-        }
+    if (explicitRank !== null) {
+        return {
+            signal: explicitRank,
+            confidence: clampScore(58 + Math.min(18, explicitRank * 0.12)),
+            discussion,
+            sampleSize
+        };
     }
 
-    return null;
-}
-
-function getSourcingScoreProfile(sourceType = 'news') {
-    return SOURCING_SCORE_PROFILES[sourceType] || SOURCING_SCORE_PROFILES.news;
+    return {
+        signal: null,
+        confidence: null,
+        discussion,
+        sampleSize
+    };
 }
 
 function weightedScore(features, weights) {
@@ -1942,15 +2017,19 @@ function applySourcingScoreGuardrails(overall, virality, fit, features, sourceTy
     let adjustedOverall = overall;
     let adjustedFit = fit;
 
-    if (features.relevance < 42) {
+    if (features.interest < 42) adjustedOverall = Math.min(adjustedOverall, 64);
+    if (features.relevance < 32) adjustedOverall = Math.min(adjustedOverall, 56);
+    if (features.quality < 44) adjustedOverall = Math.min(adjustedOverall, 68);
+    if (features.confidence < 40) adjustedOverall = Math.min(adjustedOverall, 70);
+    if (sourceType !== 'news' && features.traction < 38 && features.freshness < 42) {
         adjustedOverall = Math.min(adjustedOverall, 64);
     }
-    if (features.relevance < 30) {
-        adjustedOverall = Math.min(adjustedOverall, 54);
-    }
     if (sourceType === 'news' && features.sourceQuality < 58 && features.utility < 48) {
-        adjustedFit = Math.min(adjustedFit, 62);
+        adjustedFit = Math.min(adjustedFit, 64);
         adjustedOverall = Math.min(adjustedOverall, 66);
+    }
+    if (features.interest >= 80 && features.quality >= 74 && features.confidence >= 68) {
+        adjustedOverall = clampScore(adjustedOverall + 4);
     }
 
     return {
@@ -1970,9 +2049,12 @@ function scoreSourcingItem({
     sourceType = 'news',
     socialProof = {}
 } = {}) {
-    const hoursAgo = Math.max(0, (Date.now() - new Date(publishedAt || new Date().toISOString()).getTime()) / (1000 * 60 * 60));
+    const publishedTime = new Date(publishedAt || new Date().toISOString()).getTime();
+    const hoursAgo = Number.isFinite(publishedTime)
+        ? Math.max(0, (Date.now() - publishedTime) / (1000 * 60 * 60))
+        : 0;
     const hasImage = Boolean(imageUrl);
-    const recency = scoreRecency(hoursAgo);
+    const freshness = scoreFreshness(hoursAgo, sourceType);
     const hook = scoreHookPotential(headline);
     const utility = scorePracticalValue(headline, reason);
     const shareability = clampScore(scoreSaveability(headline, reason) * 0.6 + scoreActionTriggerPotential(headline, reason) * 0.4);
@@ -1980,10 +2062,11 @@ function scoreSourcingItem({
     const media = scoreVisualPotential(headline, hasImage);
     const clarity = scoreHeadlineClarity(headline);
     const sourceQuality = scoreSourceQuality(link);
-    const socialProofScore = scoreSocialProof(sourceType, socialProof);
+    const contentDepth = scoreContentDepth(headline, reason);
+    const socialMetrics = getSocialProofMetrics(sourceType, socialProof);
 
     const features = {
-        recency,
+        freshness,
         hook,
         utility,
         shareability,
@@ -1991,14 +2074,28 @@ function scoreSourcingItem({
         media,
         clarity,
         sourceQuality,
-        socialProof: socialProofScore
+        contentDepth,
+        socialProof: socialMetrics.signal,
+        socialProofConfidence: socialMetrics.confidence,
+        discussion: socialMetrics.discussion
     };
 
     const profile = getSourcingScoreProfile(sourceType);
-    const virality = weightedScore(features, profile.virality);
-    const fit = weightedScore(features, profile.fit);
-    const overallBase = clampScore(virality * 0.55 + fit * 0.45);
-    const guardrailed = applySourcingScoreGuardrails(overallBase, virality, fit, features, sourceType);
+    const interest = weightedScore(features, profile.interest);
+    const quality = weightedScore(features, profile.quality);
+    const confidence = weightedScore({ ...features, interest, quality }, profile.confidence);
+    const traction = weightedScore({ ...features, interest, quality, confidence }, profile.traction);
+    const richFeatures = {
+        ...features,
+        interest,
+        quality,
+        confidence,
+        traction
+    };
+    const virality = weightedScore(richFeatures, profile.virality);
+    const fit = weightedScore({ ...richFeatures, virality }, profile.fit);
+    const overallBase = weightedScore({ ...richFeatures, virality, fit }, profile.final);
+    const guardrailed = applySourcingScoreGuardrails(overallBase, virality, fit, richFeatures, sourceType);
 
     return {
         ranking: guardrailed.overall,
@@ -2006,7 +2103,13 @@ function scoreSourcingItem({
         virality: guardrailed.virality,
         fit: guardrailed.fit,
         details: {
-            ...features,
+            ...richFeatures,
+            freshness,
+            recency: freshness,
+            virality: guardrailed.virality,
+            fit: guardrailed.fit,
+            final: guardrailed.overall,
+            sampleSize: socialMetrics.sampleSize,
             sourceType
         }
     };
@@ -2015,10 +2118,11 @@ function scoreSourcingItem({
 function buildRankingReason(existingReason, rankingDetails) {
     const base = normalizeWhitespace(existingReason || '');
     const leadFactors = [
-        ['R', rankingDetails.relevance],
-        ['U', rankingDetails.utility],
-        ['H', rankingDetails.hook],
-        ['Rec', rankingDetails.recency]
+        ['Int', rankingDetails.interest],
+        ['Qual', rankingDetails.quality],
+        ['Fresh', rankingDetails.freshness],
+        ['Tra', rankingDetails.traction],
+        ['Conf', rankingDetails.confidence]
     ]
         .filter(([, value]) => Number.isFinite(value))
         .sort((a, b) => b[1] - a[1])
@@ -2066,6 +2170,7 @@ function normalizeFeedItemToArticle(item, index = 0, options = {}) {
         rating: scores.rating,
         virality: scores.virality,
         fit: scores.fit,
+        score_breakdown: scores.details,
         reason: buildRankingReason(reason, scores.details),
         image_url: imageUrl
     };
@@ -2097,6 +2202,7 @@ function applySourcingScoresToArticle(article, options = {}) {
         rating: scores.rating,
         virality: scores.virality,
         fit: scores.fit,
+        score_breakdown: scores.details,
         reason: buildRankingReason(article?.reason || '', scores.details)
     };
 }
@@ -2837,14 +2943,69 @@ function getScoreClass(ranking) {
     return 'score-muted';
 }
 
-function getScoreInternalHtml(item) {
-    const virality = toSafeNumber(item.virality, 0);
-    const fit = toSafeNumber(item.fit, 0);
+function getScoreBreakdown(item = {}) {
+    const breakdown = item?.score_breakdown && typeof item.score_breakdown === 'object'
+        ? item.score_breakdown
+        : {};
+
+    return {
+        final: toSafeNumber(breakdown.final ?? item?.ranking ?? item?.rating, 0),
+        virality: toSafeNumber(breakdown.virality ?? item?.virality, 0),
+        fit: toSafeNumber(breakdown.fit ?? item?.fit, 0),
+        interest: toSafeNumber(breakdown.interest, 0),
+        quality: toSafeNumber(breakdown.quality, 0),
+        freshness: toSafeNumber(breakdown.freshness ?? breakdown.recency, 0),
+        traction: toSafeNumber(breakdown.traction ?? breakdown.socialProof, 0),
+        confidence: toSafeNumber(breakdown.confidence ?? breakdown.socialProofConfidence, 0),
+        hook: toSafeNumber(breakdown.hook, 0),
+        utility: toSafeNumber(breakdown.utility, 0),
+        relevance: toSafeNumber(breakdown.relevance, 0),
+        socialProof: toSafeNumber(breakdown.socialProof, 0),
+        sourceType: breakdown.sourceType || ''
+    };
+}
+
+function buildScoreTooltipRow(label, value) {
+    if (!Number.isFinite(value) || value <= 0) return '';
     return `
-        <span class="score-badge__internal">
-            <span title="Virality">V ${virality}</span>
-            <span title="Fit">F ${fit}</span>
-        </span>
+        <div class="score-tooltip__row">
+            <span>${escapeHtml(label)}</span>
+            <strong>${Math.round(value)}</strong>
+        </div>
+    `;
+}
+
+function getScoreInternalHtml(item) {
+    const breakdown = getScoreBreakdown(item);
+    const summaryRows = [
+        buildScoreTooltipRow('Virality', breakdown.virality),
+        buildScoreTooltipRow('Fit', breakdown.fit),
+        buildScoreTooltipRow('Interest', breakdown.interest),
+        buildScoreTooltipRow('Quality', breakdown.quality),
+        buildScoreTooltipRow('Freshness', breakdown.freshness),
+        buildScoreTooltipRow('Confidence', breakdown.confidence)
+    ].filter(Boolean).join('');
+    const signalRows = [
+        buildScoreTooltipRow('Hook', breakdown.hook),
+        buildScoreTooltipRow('Utility', breakdown.utility),
+        buildScoreTooltipRow('Relevance', breakdown.relevance),
+        buildScoreTooltipRow('Social Proof', breakdown.socialProof || breakdown.traction)
+    ].filter(Boolean).join('');
+
+    if (!summaryRows && !signalRows) return '';
+
+    return `
+        <div class="score-tooltip" role="tooltip">
+            <div class="score-tooltip__title">Score breakdown</div>
+            <div class="score-tooltip__section">
+                ${summaryRows}
+            </div>
+            ${signalRows ? `
+                <div class="score-tooltip__section score-tooltip__section--signals">
+                    ${signalRows}
+                </div>
+            ` : ''}
+        </div>
     `;
 }
 
@@ -2884,9 +3045,9 @@ function getItemImageUrl(item, fallback = '') {
 function getScorePillHtml(item, scoreValue = item?.ranking, includeInternalScore = true) {
     const ranking = toSafeNumber(scoreValue, 0);
     return `
-        <div class="score-pill ${getScoreClass(ranking)}">
+        <div class="score-pill ${getScoreClass(ranking)}" tabindex="0" aria-label="Score ${ranking}">
             ${ranking >= 85 ? '<span class="score-pill__icon">🔥</span>' : ''}
-            <span>${ranking}</span>
+            <span class="score-pill__value">${ranking}</span>
             ${includeInternalScore ? getScoreInternalHtml(item) : ''}
         </div>
     `;
@@ -2909,6 +3070,18 @@ function buildMetricChipGroupHtml(metrics = []) {
         .filter(Boolean)
         .join('');
     return chips ? `<div class="metric-chip-group">${chips}</div>` : '';
+}
+
+function buildScoreMetricStackHtml(item, metrics = [], options = {}) {
+    const scoreHtml = getScorePillHtml(
+        item,
+        options.scoreValue ?? item?.ranking,
+        options.includeInternalScore ?? true
+    );
+    const metricHtml = buildMetricChipGroupHtml(metrics);
+    return metricHtml
+        ? `<div class="score-metric-stack">${scoreHtml}${metricHtml}</div>`
+        : scoreHtml;
 }
 
 function buildSelectionDraftFromSource(item, sourceKind = 'article') {
@@ -3139,8 +3312,7 @@ function createXPostItem(item, index) {
         sourceLabel: authorLabel ? `@${authorLabel}` : (displayLabel || 'X AI'),
         reasonText: item.reason,
         imageUrl: item.image_url || item.image || '',
-        metricHtml: buildMetricChipGroupHtml(xMetrics),
-        includeInternalScore: false
+        metricHtml: buildScoreMetricStackHtml(item, xMetrics)
     });
 }
 
@@ -3150,9 +3322,9 @@ function createInstagramPostItem(item, index) {
         sourceKind: 'instagram',
         sourceLabel: item.source || 'Instagram',
         reasonText: item.reason,
-        metricHtml: buildMetricChipGroupHtml([
-            { icon: '⭐', value: toSafeNumber(item.ranking, 0), title: 'Ranking', tone: 'warm' },
-            { icon: '🔥', value: toSafeNumber(item.virality, 0), title: 'Virality', tone: 'hot' }
+        metricHtml: buildScoreMetricStackHtml(item, [
+            { icon: '🔥', value: toSafeNumber(item.virality, 0), title: 'Virality', tone: 'hot' },
+            { icon: '🎯', value: toSafeNumber(item.fit, 0), title: 'Fit', tone: 'warm' }
         ])
     });
 }
@@ -3175,8 +3347,7 @@ function createRedditPostItem(item, index) {
         sourceLabel: `r/${item.subreddit || 'unknown'}`,
         reasonText: item.reason,
         imageUrl: item.image_url,
-        metricHtml: buildMetricChipGroupHtml(redditMetrics),
-        includeInternalScore: false
+        metricHtml: buildScoreMetricStackHtml(item, redditMetrics)
     });
 }
 
