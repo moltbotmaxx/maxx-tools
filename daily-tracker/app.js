@@ -375,7 +375,13 @@ function safeHttpUrl(url, fallback = '#') {
     if (!candidate) return fallback;
     try {
         const parsed = new URL(candidate, window.location.origin);
-        return (parsed.protocol === 'http:' || parsed.protocol === 'https:') ? parsed.href : fallback;
+        if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return fallback;
+
+        if (parsed.hostname === 'old.reddit.com' || parsed.hostname === 'reddit.com') {
+            parsed.hostname = 'www.reddit.com';
+        }
+
+        return parsed.href;
     } catch {
         return fallback;
     }
