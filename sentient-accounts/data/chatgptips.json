@@ -1,35 +1,37 @@
 {
-  "generated_at": "2026-03-22T04:49:01+00:00",
+  "generated_at": "2026-03-22T05:58:37+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "chatgptips",
   "profile_url": "https://www.instagram.com/chatgptips/",
   "full_name": "ChatGPT Tips",
   "biography": "\ud83e\udd16 On a mission to help you understand AI \n\ud83d\udca1 Find the best ChatGPT tips and tricks \n\ud83d\udcbb Brought to you by @chatgptricks\n\ud83d\udc47 Get our Free ChatGPT Guide",
   "external_url": "http://chatgptricks.store",
   "is_verified": false,
-  "followers": 603172,
+  "followers": 603185,
   "following": 4,
   "posts": 532,
   "recent_post_count": 24,
   "video_post_count": 8,
+  "video_posts_with_view_data": 8,
+  "reel_view_enriched_posts": 8,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-03-07",
-  "avg_likes": 3419.29,
-  "avg_comments": 76.88,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 0.5796,
+  "avg_likes": 3421.21,
+  "avg_comments": 76.92,
+  "avg_video_views": 36088.75,
+  "avg_video_views_per_video": 36088.75,
+  "avg_video_views_per_post": 12029.58,
+  "engagement_rate": 0.5799,
   "recent_posts": [
     {
       "shortcode": "DDvUwkogb2y",
       "date": "2024-12-19",
-      "likes": 32659,
+      "likes": 32660,
       "comments": 233,
       "is_video": false,
       "video_views": 0,
@@ -49,7 +51,7 @@
     {
       "shortcode": "DWIjEcUDVyQ",
       "date": "2026-03-21",
-      "likes": 347,
+      "likes": 351,
       "comments": 21,
       "is_video": false,
       "video_views": 0,
@@ -59,27 +61,29 @@
     {
       "shortcode": "DWH1DM-gJzv",
       "date": "2026-03-20",
-      "likes": 635,
-      "comments": 9,
+      "likes": 638,
+      "comments": 10,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 53300,
       "caption": "AI replacing jobs isn\u2019t the future\nIt\u2019s already happening\n\nCompanies are starting to use AI for support, content, and coding\n\nThe way we work is evolving",
-      "url": "https://www.instagram.com/p/DWH1DM-gJzv/"
+      "url": "https://www.instagram.com/p/DWH1DM-gJzv/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWF7Ud-DXJM",
       "date": "2026-03-20",
-      "likes": 113,
+      "likes": 114,
       "comments": 4,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 16500,
       "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
-      "url": "https://www.instagram.com/p/DWF7Ud-DXJM/"
+      "url": "https://www.instagram.com/p/DWF7Ud-DXJM/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFmxlqjbIF",
       "date": "2026-03-20",
-      "likes": 1151,
+      "likes": 1171,
       "comments": 294,
       "is_video": false,
       "video_views": 0,
@@ -92,9 +96,10 @@
       "likes": 110,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 10,
       "caption": "This tool turns real-world locations into playable Minecraft maps using OpenStreetMap data.\n\nYour neighborhood, your city, even your street\u2026 generated block by block.\n\n100% open so",
-      "url": "https://www.instagram.com/p/DWExZqugIsc/"
+      "url": "https://www.instagram.com/p/DWExZqugIsc/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWC0E4ijcL4",
@@ -109,7 +114,7 @@
     {
       "shortcode": "DWAQIwfDc_p",
       "date": "2026-03-17",
-      "likes": 4131,
+      "likes": 4132,
       "comments": 124,
       "is_video": false,
       "video_views": 0,
@@ -132,9 +137,10 @@
       "likes": 1105,
       "comments": 23,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 57000,
       "caption": "500 million people thought they were catching Pok\u00e9mon\nThey were actually mapping the entire planet \ud83c\udf0d\n\nPok\u00e9mon Go players unknowingly captured 30 billion photos of real-world locati",
-      "url": "https://www.instagram.com/p/DV-VBWijflu/"
+      "url": "https://www.instagram.com/p/DV-VBWijflu/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV-HRwZjZSV",
@@ -142,14 +148,15 @@
       "likes": 418,
       "comments": 5,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 22600,
       "caption": "Somewhere a GPU is fighting for its life \ud83d\ude2d\ud83e\udd23\nAI data centers are eating the world\u2019s RAM supply.\n\nCredit: @vinegar_lens",
-      "url": "https://www.instagram.com/p/DV-HRwZjZSV/"
+      "url": "https://www.instagram.com/p/DV-HRwZjZSV/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV8fLPmgEvs",
       "date": "2026-03-16",
-      "likes": 1124,
+      "likes": 1125,
       "comments": 57,
       "is_video": false,
       "video_views": 0,
@@ -162,9 +169,10 @@
       "likes": 453,
       "comments": 8,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 60700,
       "caption": "This scene would cost a studio $5M. Someone with AI did it in minutes.\n\n@Higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
-      "url": "https://www.instagram.com/p/DV7FE_kjRKV/"
+      "url": "https://www.instagram.com/p/DV7FE_kjRKV/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV6jfB4FibR",
@@ -179,7 +187,7 @@
     {
       "shortcode": "DV56TQBFhbz",
       "date": "2026-03-15",
-      "likes": 1917,
+      "likes": 1920,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -189,7 +197,7 @@
     {
       "shortcode": "DV4YiiAgPm3",
       "date": "2026-03-14",
-      "likes": 1568,
+      "likes": 1570,
       "comments": 84,
       "is_video": false,
       "video_views": 0,
@@ -202,14 +210,15 @@
       "likes": 446,
       "comments": 192,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 46100,
       "caption": "To enter: \n1. Comment \n2. Follow @louisgson \n\nI\u2019ll be revealing the winner in the next couple of days. \n\nShout out to @openai / @chatgpt for the gift \ud83d\ude4c",
-      "url": "https://www.instagram.com/p/DV1uwQ-knqB/"
+      "url": "https://www.instagram.com/p/DV1uwQ-knqB/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVzLrC_D96Q",
       "date": "2026-03-12",
-      "likes": 1457,
+      "likes": 1467,
       "comments": 9,
       "is_video": false,
       "video_views": 0,
@@ -242,9 +251,10 @@
       "likes": 569,
       "comments": 39,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 32500,
       "caption": "Looks like a real movie\n\n\ud83d\udcfd\ufe0f X/sumiturkude007",
-      "url": "https://www.instagram.com/p/DVtx5iDDxqG/"
+      "url": "https://www.instagram.com/p/DVtx5iDDxqG/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVp28zuDehx",

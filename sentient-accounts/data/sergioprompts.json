@@ -1,65 +1,70 @@
 {
-  "generated_at": "2026-03-22T04:50:00+00:00",
+  "generated_at": "2026-03-22T06:00:45+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "sergioprompts",
   "profile_url": "https://www.instagram.com/sergioprompts/",
   "full_name": "Sergio Fabeidi \u2022 Inteligencia Artificial",
   "biography": "\ud83e\udde0 Dominamos el lenguaje de los prompts\n\ud83d\udea8 Si no usas la IA, te vas a quedar atr\u00e1s\n\ud83c\udf10 Parte de @sentientagency\n\ud83d\ude80 Cuenta de @sergiofabeidi",
   "external_url": "",
   "is_verified": true,
-  "followers": 180596,
+  "followers": 180603,
   "following": 86,
   "posts": 788,
   "recent_post_count": 36,
   "video_post_count": 14,
+  "video_posts_with_view_data": 14,
+  "reel_view_enriched_posts": 14,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-03-07",
-  "avg_likes": 886.08,
-  "avg_comments": 422.64,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 0.7247,
+  "avg_likes": 888.83,
+  "avg_comments": 424.33,
+  "avg_video_views": 25430.21,
+  "avg_video_views_per_video": 25430.21,
+  "avg_video_views_per_post": 9889.53,
+  "engagement_rate": 0.7271,
   "recent_posts": [
     {
       "shortcode": "DWCJuw1Aih1",
       "date": "2026-03-18",
-      "likes": 134,
+      "likes": 137,
       "comments": 54,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 8,
       "caption": "En menos de un minuto ya ten\u00eda un clon de mi voz listo para usar en v\u00eddeos.\n\nAdem\u00e1s, al crear una cuenta te dan 10.000 cr\u00e9ditos gratis al mes y varios espacios para crear clones de",
-      "url": "https://www.instagram.com/p/DWCJuw1Aih1/"
+      "url": "https://www.instagram.com/p/DWCJuw1Aih1/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVMSzHXEWd5",
       "date": "2026-02-25",
-      "likes": 2603,
+      "likes": 2604,
       "comments": 2625,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 81200,
       "caption": "Claude acaba de subir el nivel\u2026 y casi matar la ingenier\u00eda de prompts \ud83e\udd2f\ud83d\udd25\n\nLos que usan IA de forma profesional ya no est\u00e1n escribiendo prompts infinitos.\nEst\u00e1n usando Claude Skills",
-      "url": "https://www.instagram.com/p/DVMSzHXEWd5/"
+      "url": "https://www.instagram.com/p/DVMSzHXEWd5/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DTgFyrRkcGt",
       "date": "2026-01-14",
       "likes": 1845,
-      "comments": 4112,
+      "comments": 4114,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 52600,
       "caption": "Deja de perder tiempo buscando prompts \ud83d\ude2e\u200d\ud83d\udca8\n\nExiste una web con cientos de prompts listos para copiar de imagen y v\u00eddeo: UGC, producto, cine, realismo\u2026 eliges, copias y generas. As\u00ed",
-      "url": "https://www.instagram.com/p/DTgFyrRkcGt/"
+      "url": "https://www.instagram.com/p/DTgFyrRkcGt/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWHq219Ee5a",
       "date": "2026-03-20",
-      "likes": 143,
+      "likes": 144,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -72,14 +77,15 @@
       "likes": 3,
       "comments": 12,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 15300,
       "caption": "Un robot camarero se volvi\u00f3 viral\u2026 pero no por lo que esperas.\n\nEn un restaurante de Haidilao en California, un robot que bailaba en la entrada se convirti\u00f3 en \u201cespect\u00e1culo improvi",
-      "url": "https://www.instagram.com/p/DWFndPnjVfx/"
+      "url": "https://www.instagram.com/p/DWFndPnjVfx/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFK-1OEa_l",
       "date": "2026-03-19",
-      "likes": 1015,
+      "likes": 1023,
       "comments": 17,
       "is_video": false,
       "video_views": 0,
@@ -89,7 +95,7 @@
     {
       "shortcode": "DWEqSFbkZJh",
       "date": "2026-03-19",
-      "likes": 416,
+      "likes": 417,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -102,15 +108,16 @@
       "likes": 127,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 15400,
       "caption": "La IA ya no viene por los trabajos\u2026 ahora viene por los que estaban buscando uno. \ud83e\udd16\ud83d\ude05\n\n\ud83e\udd16 S\u00edgueme en @sergioprompts para m\u00e1s contenido de IA y tecnolog\u00eda.\n\n#ia #inteligenciaartificia",
-      "url": "https://www.instagram.com/p/DWC8iwcjeJ2/"
+      "url": "https://www.instagram.com/p/DWC8iwcjeJ2/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWB84WnlGq8",
       "date": "2026-03-18",
-      "likes": 8858,
-      "comments": 5425,
+      "likes": 8928,
+      "comments": 5470,
       "is_video": false,
       "video_views": 0,
       "caption": "\ud83d\ude80 8 prompts de IA que est\u00e1n creando contenido viral en Instagram\n\nSi quieres crecer en Instagram en 2026, no necesitas m\u00e1s ideas, necesitas mejores prompts. Este carrusel re\u00fane 8 e",
@@ -119,12 +126,13 @@
     {
       "shortcode": "DV_BS1cgmjF",
       "date": "2026-03-17",
-      "likes": 177,
+      "likes": 178,
       "comments": 139,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 8,
       "caption": "Haz que Claude suene como humano (y no como IA) en 1 minuto \ud83e\udd2f\u270d\ufe0f\n\nExiste una skill viral que mejora completamente c\u00f3mo escribe Claude: m\u00e1s natural, mejor estructura y sin esos error",
-      "url": "https://www.instagram.com/p/DV_BS1cgmjF/"
+      "url": "https://www.instagram.com/p/DV_BS1cgmjF/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV9JhEfgnT_",
@@ -139,7 +147,7 @@
     {
       "shortcode": "DV83jSHAu40",
       "date": "2026-03-16",
-      "likes": 247,
+      "likes": 248,
       "comments": 261,
       "is_video": false,
       "video_views": 0,
@@ -159,7 +167,7 @@
     {
       "shortcode": "DV4jxhKjQmG",
       "date": "2026-03-14",
-      "likes": 309,
+      "likes": 310,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -182,9 +190,10 @@
       "likes": 748,
       "comments": 24,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 36100,
       "caption": "Ese es el buen timeline. \ud83d\udc40\n\nFuente: Sergio Ramirez, MJJ.Peru, Lory \n\n\ud83e\udd16 S\u00edgueme en @sergioprompts para m\u00e1s contenido de IA y tecnolog\u00eda.\n\n#ia #inteligenciaartificial #claude #cibers",
-      "url": "https://www.instagram.com/p/DV3osRhjZe2/"
+      "url": "https://www.instagram.com/p/DV3osRhjZe2/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV2Fj7PDYl1",
@@ -212,9 +221,10 @@
       "likes": 126,
       "comments": 1,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 15200,
       "caption": "Programar hoy en d\u00eda se siente as\u00ed \ud83d\ude02\n\nEntre IA escribiendo c\u00f3digo, revisando bugs y creando proyectos enteros, el trabajo de desarrollador est\u00e1 cambiando m\u00e1s r\u00e1pido que nunca.\n\nAho",
-      "url": "https://www.instagram.com/p/DV0TBt2jBz7/"
+      "url": "https://www.instagram.com/p/DV0TBt2jBz7/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVzOoDJES76",
@@ -229,8 +239,8 @@
     {
       "shortcode": "DVyrXljggSs",
       "date": "2026-03-12",
-      "likes": 983,
-      "comments": 473,
+      "likes": 984,
+      "comments": 477,
       "is_video": false,
       "video_views": 0,
       "caption": "Claude ahora puede crear planes financieros como los analistas de Goldman Sachs\u2026 gratis \ud83d\udcb0\ud83e\udd2f\n\nEn este carrusel tienes 12 prompts para analizar tu dinero, planificar tu jubilaci\u00f3n, op",
@@ -239,17 +249,18 @@
     {
       "shortcode": "DVxuO_AEXvu",
       "date": "2026-03-12",
-      "likes": 422,
+      "likes": 423,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 18400,
       "caption": "Claude est\u00e1 presionando fuerte a GPT en la carrera por la IA m\u00e1s potente \ud83d\udc40\ud83e\udd16\n\nLos \u00faltimos avances de Anthropic est\u00e1n destacando especialmente en razonamiento complejo y manejo de co",
-      "url": "https://www.instagram.com/p/DVxuO_AEXvu/"
+      "url": "https://www.instagram.com/p/DVxuO_AEXvu/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVw-nYMDRI8",
       "date": "2026-03-12",
-      "likes": 2916,
+      "likes": 2917,
       "comments": 27,
       "is_video": false,
       "video_views": 0,
@@ -259,7 +270,7 @@
     {
       "shortcode": "DVwiPkGEbGp",
       "date": "2026-03-11",
-      "likes": 675,
+      "likes": 676,
       "comments": 11,
       "is_video": false,
       "video_views": 0,
@@ -282,9 +293,10 @@
       "likes": 197,
       "comments": 18,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 31500,
       "caption": "\u00bfPaseando al perro\u2026 o al robot? \ud83e\udd16\ud83d\udc15\n\nUn humanoide caminando tranquilo mientras un robot cuadr\u00fapedo lo sigue como si fuera su mascota. A simple vista parece un paseo normal\u2026 hasta qu",
-      "url": "https://www.instagram.com/p/DVvURDDAhiT/"
+      "url": "https://www.instagram.com/p/DVvURDDAhiT/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVug-o2jcK9",
@@ -309,12 +321,13 @@
     {
       "shortcode": "DVtIkYbgj4O",
       "date": "2026-03-10",
-      "likes": 1094,
-      "comments": 1332,
+      "likes": 1095,
+      "comments": 1338,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 44700,
       "caption": "Si usas Claude y no tienes esto activado\u2026 est\u00e1s perdiendo la mitad de lo que puede hacer \ud83e\udd2f\n\nAqu\u00ed tienes 5 configuraciones clave para sacarle el m\u00e1ximo provecho:\n\n\u2022 Conectar apps ex",
-      "url": "https://www.instagram.com/p/DVtIkYbgj4O/"
+      "url": "https://www.instagram.com/p/DVtIkYbgj4O/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVsyf6qAvgv",
@@ -332,15 +345,16 @@
       "likes": 257,
       "comments": 15,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 25700,
       "caption": "Esto parece ciencia ficci\u00f3n\u2026 pero ya pas\u00f3. \ud83e\udd2f\n\nCient\u00edficos recrearon el cerebro completo de una mosca de la fruta dentro de un ordenador, copiando cada neurona y cada conexi\u00f3n.\n\nLue",
-      "url": "https://www.instagram.com/p/DVr7cvVDDbt/"
+      "url": "https://www.instagram.com/p/DVr7cvVDDbt/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVrd4DcAqa6",
       "date": "2026-03-09",
-      "likes": 766,
-      "comments": 380,
+      "likes": 769,
+      "comments": 384,
       "is_video": false,
       "video_views": 0,
       "caption": "Deja de perder horas en PowerPoint. \ud83e\udd2f\n\nEstos 5 prompts de ChatGPT crean presentaciones completas por ti: estructura, narrativa, datos y hasta el pitch final.\n\nSolo cambia [tema] y ",
@@ -362,9 +376,10 @@
       "likes": 3,
       "comments": 117,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 7,
       "caption": "Crea UGC hiperrealista con IA usando solo un prompt \ud83e\udd2f\n\nSubes la imagen de tu producto, generas una escena hiperrealista con Nano Banana Pro y luego la conviertes en v\u00eddeo con Kling",
-      "url": "https://www.instagram.com/p/DVoL1bBguMe/"
+      "url": "https://www.instagram.com/p/DVoL1bBguMe/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVm9OsHjIjE",
@@ -372,14 +387,15 @@
       "likes": 140,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 19900,
       "caption": "200.000 neuronas humanas aprendiendo a jugar Doom. \ud83d\udc40\n\nLa startup australiana Cortical Labs ha desarrollado CL1, un sistema que cultiva unas 200.000 neuronas humanas sobre un microc",
-      "url": "https://www.instagram.com/p/DVm9OsHjIjE/"
+      "url": "https://www.instagram.com/p/DVm9OsHjIjE/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVmTRFJkXqZ",
       "date": "2026-03-07",
-      "likes": 5041,
+      "likes": 5045,
       "comments": 27,
       "is_video": false,
       "video_views": 0,

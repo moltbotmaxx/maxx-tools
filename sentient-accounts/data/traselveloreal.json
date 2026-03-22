@@ -1,30 +1,32 @@
 {
-  "generated_at": "2026-03-22T04:48:50+00:00",
+  "generated_at": "2026-03-22T05:58:23+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "traselveloreal",
   "profile_url": "https://www.instagram.com/traselveloreal/",
   "full_name": "Tras el Velo | Compa\u00f1\u00eda de Medios",
   "biography": "\ud83c\udfad Historias, tendencias y entretenimiento\n\ud83d\udce9 Colaboraciones: traselveloreal@gmail.com\n\ud83d\udc41\ufe0f \u00danete a nuestra comunidad privada\ud83d\udc47",
   "external_url": "https://stan.store/traselvelo",
   "is_verified": true,
-  "followers": 2242046,
+  "followers": 2242064,
   "following": 54,
   "posts": 1904,
   "recent_post_count": 59,
   "video_post_count": 5,
+  "video_posts_with_view_data": 5,
+  "reel_view_enriched_posts": 5,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-03-07",
-  "avg_likes": 42945.8,
-  "avg_comments": 292.68,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 1.9285,
+  "avg_likes": 43018.98,
+  "avg_comments": 293.02,
+  "avg_video_views": 990420.0,
+  "avg_video_views_per_video": 990420.0,
+  "avg_video_views_per_post": 83933.9,
+  "engagement_rate": 1.9318,
   "recent_posts": [
     {
       "shortcode": "DAEO9dnvT0x",
@@ -39,7 +41,7 @@
     {
       "shortcode": "DKz1f5ePq-Y",
       "date": "2025-06-12",
-      "likes": 312938,
+      "likes": 312939,
       "comments": 545,
       "is_video": false,
       "video_views": 0,
@@ -49,7 +51,7 @@
     {
       "shortcode": "DQcncL4AVJj",
       "date": "2025-10-30",
-      "likes": 528663,
+      "likes": 528664,
       "comments": 266,
       "is_video": false,
       "video_views": 0,
@@ -59,8 +61,8 @@
     {
       "shortcode": "DWKymUojZMO",
       "date": "2026-03-22",
-      "likes": 3271,
-      "comments": 20,
+      "likes": 3586,
+      "comments": 21,
       "is_video": false,
       "video_views": 0,
       "caption": "Los perros suelen elegir lugares soleados dentro de la casa por una raz\u00f3n. La luz del sol ayuda a calentar su cuerpo, lo que hace que sus m\u00fasculos no tengan que trabajar tan duro p",
@@ -69,8 +71,8 @@
     {
       "shortcode": "DWKd89lAeMh",
       "date": "2026-03-21",
-      "likes": 4364,
-      "comments": 115,
+      "likes": 4604,
+      "comments": 119,
       "is_video": false,
       "video_views": 0,
       "caption": "La hija adolescente del l\u00edder norcoreano Kim Jong-un condujo un tanque durante un entrenamiento militar supervisado por su padre. Esta nueva aparici\u00f3n p\u00fablica conjunta ha alimentad",
@@ -79,7 +81,7 @@
     {
       "shortcode": "DWKLBI4CaNh",
       "date": "2026-03-21",
-      "likes": 5678,
+      "likes": 5833,
       "comments": 142,
       "is_video": false,
       "video_views": 0,
@@ -89,7 +91,7 @@
     {
       "shortcode": "DWICNnBjfqS",
       "date": "2026-03-20",
-      "likes": 1621,
+      "likes": 1638,
       "comments": 32,
       "is_video": false,
       "video_views": 0,
@@ -99,7 +101,7 @@
     {
       "shortcode": "DWHgprcCdo1",
       "date": "2026-03-20",
-      "likes": 15802,
+      "likes": 16199,
       "comments": 56,
       "is_video": false,
       "video_views": 0,
@@ -109,8 +111,8 @@
     {
       "shortcode": "DWHZXLgjqW2",
       "date": "2026-03-20",
-      "likes": 112418,
-      "comments": 1937,
+      "likes": 113466,
+      "comments": 1948,
       "is_video": false,
       "video_views": 0,
       "caption": "Una mujer que hab\u00eda sido secuestrada por su exnovio logr\u00f3 escapar al saltar de su veh\u00edculo cuando vio a la polic\u00eda cerca. La dram\u00e1tica huida ocurri\u00f3 mientras el sospechoso estaba c",
@@ -119,7 +121,7 @@
     {
       "shortcode": "DWHSixIDZtH",
       "date": "2026-03-20",
-      "likes": 3545,
+      "likes": 3572,
       "comments": 171,
       "is_video": false,
       "video_views": 0,
@@ -129,7 +131,7 @@
     {
       "shortcode": "DWHK9-rjQDp",
       "date": "2026-03-20",
-      "likes": 4973,
+      "likes": 4983,
       "comments": 137,
       "is_video": false,
       "video_views": 0,
@@ -139,7 +141,7 @@
     {
       "shortcode": "DWF1mTODVsI",
       "date": "2026-03-20",
-      "likes": 1435,
+      "likes": 1437,
       "comments": 54,
       "is_video": false,
       "video_views": 0,
@@ -149,7 +151,7 @@
     {
       "shortcode": "DWFuPLjjUtr",
       "date": "2026-03-20",
-      "likes": 3547,
+      "likes": 3564,
       "comments": 22,
       "is_video": false,
       "video_views": 0,
@@ -159,7 +161,7 @@
     {
       "shortcode": "DWFiMpeDZbx",
       "date": "2026-03-20",
-      "likes": 14111,
+      "likes": 14260,
       "comments": 81,
       "is_video": false,
       "video_views": 0,
@@ -169,27 +171,29 @@
     {
       "shortcode": "DWFVOTXjZRF",
       "date": "2026-03-19",
-      "likes": 531,
+      "likes": 533,
       "comments": 14,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 42100,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
-      "url": "https://www.instagram.com/p/DWFVOTXjZRF/"
+      "url": "https://www.instagram.com/p/DWFVOTXjZRF/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFIu7dATMl",
       "date": "2026-03-19",
-      "likes": 9536,
+      "likes": 9570,
       "comments": 45,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 549000,
       "caption": "Durante el d\u00eda, las aves rapaces como los halcones suelen perseguir y acosar a los b\u00fahos cuando los descubren descansando.\n\nSin embargo, este comportamiento no se limita solo a los",
-      "url": "https://www.instagram.com/p/DWFIu7dATMl/"
+      "url": "https://www.instagram.com/p/DWFIu7dATMl/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWDDIFHjWxq",
       "date": "2026-03-19",
-      "likes": 3403,
+      "likes": 3412,
       "comments": 217,
       "is_video": false,
       "video_views": 0,
@@ -199,7 +203,7 @@
     {
       "shortcode": "DWC7AG5DUG9",
       "date": "2026-03-19",
-      "likes": 19399,
+      "likes": 19459,
       "comments": 58,
       "is_video": false,
       "video_views": 0,
@@ -209,8 +213,8 @@
     {
       "shortcode": "DWCqaCcCf1A",
       "date": "2026-03-18",
-      "likes": 13356,
-      "comments": 401,
+      "likes": 13375,
+      "comments": 403,
       "is_video": false,
       "video_views": 0,
       "caption": "Punch, el beb\u00e9 macaco japon\u00e9s que se rob\u00f3 los corazones al aparecer abrazando un peluche despu\u00e9s de ser abandonado por su madre, \u00a1tiene un nuevo inter\u00e9s amoroso!\n\nHa sido visto jug",
@@ -219,7 +223,7 @@
     {
       "shortcode": "DWCfTSFgaIp",
       "date": "2026-03-18",
-      "likes": 4129,
+      "likes": 4131,
       "comments": 91,
       "is_video": false,
       "video_views": 0,
@@ -229,7 +233,7 @@
     {
       "shortcode": "DWAgUELDVxM",
       "date": "2026-03-18",
-      "likes": 4858,
+      "likes": 4859,
       "comments": 40,
       "is_video": false,
       "video_views": 0,
@@ -239,8 +243,8 @@
     {
       "shortcode": "DWAGVRqgecb",
       "date": "2026-03-17",
-      "likes": 3525,
-      "comments": 20,
+      "likes": 3535,
+      "comments": 21,
       "is_video": false,
       "video_views": 0,
       "caption": "El cerebro est\u00e1 dise\u00f1ado para detectar problemas y protegernos, pero cuando la mente se queda atrapada constantemente en lo negativo, el cuerpo activa la respuesta de estr\u00e9s y libe",
@@ -249,8 +253,8 @@
     {
       "shortcode": "DV_-Mowgcf7",
       "date": "2026-03-17",
-      "likes": 76085,
-      "comments": 385,
+      "likes": 76631,
+      "comments": 386,
       "is_video": false,
       "video_views": 0,
       "caption": "Los fot\u00f3grafos @siberianart y @brandonbroderick captaron estas impactantes im\u00e1genes de un enorme lince canadiense macho en los silenciosos paisajes invernales del norte de Canad\u00e1.\n",
@@ -259,7 +263,7 @@
     {
       "shortcode": "DV_onQeDqV0",
       "date": "2026-03-17",
-      "likes": 4645,
+      "likes": 4696,
       "comments": 56,
       "is_video": false,
       "video_views": 0,
@@ -269,7 +273,7 @@
     {
       "shortcode": "DV-FBmcjZVS",
       "date": "2026-03-17",
-      "likes": 25284,
+      "likes": 25352,
       "comments": 97,
       "is_video": false,
       "video_views": 0,
@@ -279,7 +283,7 @@
     {
       "shortcode": "DV9-IfMjdpS",
       "date": "2026-03-17",
-      "likes": 4288,
+      "likes": 4294,
       "comments": 86,
       "is_video": false,
       "video_views": 0,
@@ -289,8 +293,8 @@
     {
       "shortcode": "DV9uZL9DfMk",
       "date": "2026-03-16",
-      "likes": 35726,
-      "comments": 193,
+      "likes": 35832,
+      "comments": 194,
       "is_video": false,
       "video_views": 0,
       "caption": "En la Primera Guerra Mundial, se estima que unos 500,000 gatos sirvieron en las trincheras y en los barcos, principalmente para controlar roedores y proteger los alimentos, pero ta",
@@ -299,7 +303,7 @@
     {
       "shortcode": "DV9h7z5CafK",
       "date": "2026-03-16",
-      "likes": 7899,
+      "likes": 7910,
       "comments": 233,
       "is_video": false,
       "video_views": 0,
@@ -309,7 +313,7 @@
     {
       "shortcode": "DV9RKMkicyh",
       "date": "2026-03-16",
-      "likes": 60583,
+      "likes": 60644,
       "comments": 358,
       "is_video": false,
       "video_views": 0,
@@ -319,7 +323,7 @@
     {
       "shortcode": "DV7VkBbjZPn",
       "date": "2026-03-16",
-      "likes": 56665,
+      "likes": 56724,
       "comments": 436,
       "is_video": false,
       "video_views": 0,
@@ -329,7 +333,7 @@
     {
       "shortcode": "DV6q3LACS1M",
       "date": "2026-03-15",
-      "likes": 6098,
+      "likes": 6105,
       "comments": 100,
       "is_video": false,
       "video_views": 0,
@@ -342,14 +346,15 @@
       "likes": 1881,
       "comments": 31,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 161000,
       "caption": "Esta escena le costar\u00eda a un estudio 5 millones de d\u00f3lares.\nAlguien con IA la hizo en minutos.\n\nEl modelo Cinema Studio de @higgsfield.ai es CGI llevado al extremo.\n\nNos dirigimos ",
-      "url": "https://www.instagram.com/p/DV4rT4_DWgW/"
+      "url": "https://www.instagram.com/p/DV4rT4_DWgW/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV4YvTtASoU",
       "date": "2026-03-14",
-      "likes": 15093,
+      "likes": 15111,
       "comments": 406,
       "is_video": false,
       "video_views": 0,
@@ -359,7 +364,7 @@
     {
       "shortcode": "DV35AUvjVCU",
       "date": "2026-03-14",
-      "likes": 52787,
+      "likes": 52791,
       "comments": 195,
       "is_video": false,
       "video_views": 0,
@@ -369,7 +374,7 @@
     {
       "shortcode": "DV2OgyBjWBH",
       "date": "2026-03-14",
-      "likes": 52277,
+      "likes": 52352,
       "comments": 239,
       "is_video": false,
       "video_views": 0,
@@ -379,7 +384,7 @@
     {
       "shortcode": "DV2AAD7jWqp",
       "date": "2026-03-13",
-      "likes": 74653,
+      "likes": 74679,
       "comments": 471,
       "is_video": false,
       "video_views": 0,
@@ -389,7 +394,7 @@
     {
       "shortcode": "DV14ovcDftP",
       "date": "2026-03-13",
-      "likes": 10424,
+      "likes": 10436,
       "comments": 462,
       "is_video": false,
       "video_views": 0,
@@ -399,7 +404,7 @@
     {
       "shortcode": "DV1qAUwgTx1",
       "date": "2026-03-13",
-      "likes": 63952,
+      "likes": 63953,
       "comments": 644,
       "is_video": false,
       "video_views": 0,
@@ -409,7 +414,7 @@
     {
       "shortcode": "DV1iFvUCXI-",
       "date": "2026-03-13",
-      "likes": 54251,
+      "likes": 54311,
       "comments": 259,
       "is_video": false,
       "video_views": 0,
@@ -419,7 +424,7 @@
     {
       "shortcode": "DVziDsDjSq9",
       "date": "2026-03-13",
-      "likes": 8121,
+      "likes": 8137,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -439,7 +444,7 @@
     {
       "shortcode": "DVzHRg9AanZ",
       "date": "2026-03-12",
-      "likes": 1798,
+      "likes": 1800,
       "comments": 13,
       "is_video": false,
       "video_views": 0,
@@ -449,17 +454,18 @@
     {
       "shortcode": "DVy-bzlCX3S",
       "date": "2026-03-12",
-      "likes": 106910,
+      "likes": 107006,
       "comments": 487,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2700000,
       "caption": "Un venado macho con manchas es una visi\u00f3n excepcionalmente rara, porque los ciervos normalmente pierden sus manchas poco despu\u00e9s de la etapa de cr\u00eda. Cuando un macho adulto las con",
-      "url": "https://www.instagram.com/p/DVy-bzlCX3S/"
+      "url": "https://www.instagram.com/p/DVy-bzlCX3S/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVxKkTTDRlP",
       "date": "2026-03-12",
-      "likes": 127187,
+      "likes": 127276,
       "comments": 1626,
       "is_video": false,
       "video_views": 0,
@@ -469,7 +475,7 @@
     {
       "shortcode": "DVwsCQPjb3O",
       "date": "2026-03-11",
-      "likes": 32472,
+      "likes": 32536,
       "comments": 136,
       "is_video": false,
       "video_views": 0,
@@ -479,7 +485,7 @@
     {
       "shortcode": "DVwggqAgc40",
       "date": "2026-03-11",
-      "likes": 26710,
+      "likes": 26715,
       "comments": 450,
       "is_video": false,
       "video_views": 0,
@@ -489,8 +495,8 @@
     {
       "shortcode": "DVwYXY4iTsC",
       "date": "2026-03-11",
-      "likes": 79338,
-      "comments": 344,
+      "likes": 79375,
+      "comments": 343,
       "is_video": false,
       "video_views": 0,
       "caption": "Las iguanas marinas de Gal\u00e1pagosson la \u00fanica especie de lagarto en el mundo que vive y prospera en el oc\u00e9ano. Han desarrollado adaptaciones sorprendentes a la vida marina, como la ",
@@ -499,17 +505,18 @@
     {
       "shortcode": "DVu05BUDdcw",
       "date": "2026-03-11",
-      "likes": 80749,
+      "likes": 80759,
       "comments": 670,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 1500000,
       "caption": "Un video viral reciente muestra a un hombre tocando suavemente el rostro y la pata de una ardilla en un breve momento de cuidado y afecto. La escena se vuelve a\u00fan m\u00e1s conmovedora c",
-      "url": "https://www.instagram.com/p/DVu05BUDdcw/"
+      "url": "https://www.instagram.com/p/DVu05BUDdcw/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVus-TSDSQT",
       "date": "2026-03-11",
-      "likes": 32858,
+      "likes": 32921,
       "comments": 92,
       "is_video": false,
       "video_views": 0,
@@ -519,7 +526,7 @@
     {
       "shortcode": "DVuU3-1DdBD",
       "date": "2026-03-11",
-      "likes": 1740,
+      "likes": 1741,
       "comments": 305,
       "is_video": false,
       "video_views": 0,
@@ -529,7 +536,7 @@
     {
       "shortcode": "DVuK1AsDVSJ",
       "date": "2026-03-10",
-      "likes": 155836,
+      "likes": 155895,
       "comments": 2043,
       "is_video": false,
       "video_views": 0,
@@ -539,7 +546,7 @@
     {
       "shortcode": "DVt8G7MAeFe",
       "date": "2026-03-10",
-      "likes": 6478,
+      "likes": 6480,
       "comments": 86,
       "is_video": false,
       "video_views": 0,
@@ -549,7 +556,7 @@
     {
       "shortcode": "DVtzvWNCZTE",
       "date": "2026-03-10",
-      "likes": 7097,
+      "likes": 7100,
       "comments": 95,
       "is_video": false,
       "video_views": 0,
@@ -559,7 +566,7 @@
     {
       "shortcode": "DVsHnXMjde_",
       "date": "2026-03-10",
-      "likes": 25432,
+      "likes": 25525,
       "comments": 198,
       "is_video": false,
       "video_views": 0,
@@ -569,7 +576,7 @@
     {
       "shortcode": "DVsADVjDQFJ",
       "date": "2026-03-10",
-      "likes": 81022,
+      "likes": 81048,
       "comments": 1145,
       "is_video": false,
       "video_views": 0,
@@ -589,7 +596,7 @@
     {
       "shortcode": "DVrN9GvCV-o",
       "date": "2026-03-09",
-      "likes": 67929,
+      "likes": 68049,
       "comments": 83,
       "is_video": false,
       "video_views": 0,
@@ -599,7 +606,7 @@
     {
       "shortcode": "DVo8ubAgRRl",
       "date": "2026-03-08",
-      "likes": 8636,
+      "likes": 8641,
       "comments": 89,
       "is_video": false,
       "video_views": 0,

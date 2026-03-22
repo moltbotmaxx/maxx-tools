@@ -1,50 +1,54 @@
 {
-  "generated_at": "2026-03-22T04:51:41+00:00",
+  "generated_at": "2026-03-22T06:03:25+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "trends",
   "profile_url": "https://www.instagram.com/trends/",
   "full_name": "Trends",
   "biography": "The internet speaks, we TRANSLATE!\nTrends, memes, viral videos, and stories.\nYour daily dose of internet\u2019s hottest trends.\nBy @sentientagency",
   "external_url": "https://www.sentientagency.io",
   "is_verified": true,
-  "followers": 19264,
+  "followers": 19274,
   "following": 9,
   "posts": 327,
   "recent_post_count": 30,
   "video_post_count": 30,
+  "video_posts_with_view_data": 30,
+  "reel_view_enriched_posts": 30,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-03-07",
-  "avg_likes": 884.4,
-  "avg_comments": 7.47,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 4.6297,
+  "avg_likes": 889.93,
+  "avg_comments": 7.5,
+  "avg_video_views": 34578.37,
+  "avg_video_views_per_video": 34578.37,
+  "avg_video_views_per_post": 34578.37,
+  "engagement_rate": 4.6562,
   "recent_posts": [
     {
       "shortcode": "DWKZwTLiU3i",
       "date": "2026-03-21",
-      "likes": 492,
+      "likes": 497,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 31800,
       "caption": "In a split second, adrenaline can flip a hidden switch inside you. Your brain shifts into survival mode, blocking out distractions and preparing your body to fight or escape.\n\n\u2764\ufe0f Y",
-      "url": "https://www.instagram.com/p/DWKZwTLiU3i/"
+      "url": "https://www.instagram.com/p/DWKZwTLiU3i/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWHktjMCWK9",
       "date": "2026-03-20",
-      "likes": 3087,
+      "likes": 3230,
       "comments": 17,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 66600,
       "caption": "The simple gesture of handing a cold drink to a farmer in the middle of a dusty field is a masterclass in high-stakes camaraderie in rural life. Watching a hard day\u2019s work pause fo",
-      "url": "https://www.instagram.com/p/DWHktjMCWK9/"
+      "url": "https://www.instagram.com/p/DWHktjMCWK9/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWHEC9vDXL1",
@@ -52,9 +56,10 @@
       "likes": 564,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 13800,
       "caption": "A short and funny video set in a park: a brown harnessed horse, likely next to a carriage.\n\nThe horse is standing on asphalt or cobblestones, eating grain from a red bucket hanging",
-      "url": "https://www.instagram.com/p/DWHEC9vDXL1/"
+      "url": "https://www.instagram.com/p/DWHEC9vDXL1/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFqwJeNGeJ",
@@ -62,9 +67,10 @@
       "likes": 597,
       "comments": 5,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 36100,
       "caption": "A bull\u2019s reaction went viral when he suddenly realized he was surrounded by cows \u2014 and his face said it all. The moment was caught on video: the bull, seemingly calm and bored, lif",
-      "url": "https://www.instagram.com/p/DWFqwJeNGeJ/"
+      "url": "https://www.instagram.com/p/DWFqwJeNGeJ/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFjTYuDdHs",
@@ -72,9 +78,10 @@
       "likes": 260,
       "comments": 8,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 8,
       "caption": "A breathtaking wildlife moment from India\u2019s Bhadra Tiger Reserve is capturing attention online. A rare black panther and a leopard were seen calmly drinking side by side in the res",
-      "url": "https://www.instagram.com/p/DWFjTYuDdHs/"
+      "url": "https://www.instagram.com/p/DWFjTYuDdHs/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFdgyFDemJ",
@@ -82,19 +89,21 @@
       "likes": 352,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 14100,
       "caption": "Precision note: The episode involving Swedish freeride skier Sverre Liliequist was officially documented at the Swatch Skiers Cup in Zermatt in March 2013 and confirmed by event fo",
-      "url": "https://www.instagram.com/p/DWFdgyFDemJ/"
+      "url": "https://www.instagram.com/p/DWFdgyFDemJ/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWDSd1aDYeN",
       "date": "2026-03-19",
-      "likes": 129,
+      "likes": 130,
       "comments": 1,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 4,
       "caption": "A short 13-second zoo clip captures a group of lions playfully interacting \u2014 until a male suddenly locks in a piercing stare that changes the whole mood. The caption, \u201cThat look is",
-      "url": "https://www.instagram.com/p/DWDSd1aDYeN/"
+      "url": "https://www.instagram.com/p/DWDSd1aDYeN/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWDBnk_jVS_",
@@ -102,9 +111,10 @@
       "likes": 320,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 31200,
       "caption": "Those classroom paper planes were just the beginning \u2014 this one set a global benchmark \u2708\ufe0f\ud83d\udcc4\n\nThe current Guinness World Record for distance was achieved with a single launch that se",
-      "url": "https://www.instagram.com/p/DWDBnk_jVS_/"
+      "url": "https://www.instagram.com/p/DWDBnk_jVS_/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWAkBdljSZ7",
@@ -112,9 +122,10 @@
       "likes": 535,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 20500,
       "caption": "Dolphin sounds, especially their high-frequency echolocation clicks (2,000 Hz to 100,000 Hz), may offer therapeutic benefits for children with cerebral palsy \ud83d\udc2c\ud83e\udde0\n\nThese ultrasonic c",
-      "url": "https://www.instagram.com/p/DWAkBdljSZ7/"
+      "url": "https://www.instagram.com/p/DWAkBdljSZ7/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWATAvADSkN",
@@ -122,9 +133,10 @@
       "likes": 119,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 6,
       "caption": "The golden tortoise beetle (Aspidimorpha sanctaecrucis) is a shiny beetle found mainly in Asia: India, China, and Southeast Asia. It has a golden shell that makes it look like a ti",
-      "url": "https://www.instagram.com/p/DWATAvADSkN/"
+      "url": "https://www.instagram.com/p/DWATAvADSkN/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV_hjq9DSp2",
@@ -132,19 +144,21 @@
       "likes": 133,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "Wild Power Perfected: Nature\u2019s 50-Million-Year Creation \ud83d\udc0e\u2728\n\nHave you ever noticed how a horse at full gallop looks like pure art in motion? It\u2019s more than beauty \u2014 it\u2019s natural per",
-      "url": "https://www.instagram.com/p/DV_hjq9DSp2/"
+      "url": "https://www.instagram.com/p/DV_hjq9DSp2/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV9ydApDfmC",
       "date": "2026-03-17",
-      "likes": 1355,
+      "likes": 1359,
       "comments": 14,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 26400,
       "caption": "We are looking at people who are no longer alive\u2026\n\nIn 1901, people on the streets of Dublin looked at a camera for the first time, unaware they were capturing a moment that would r",
-      "url": "https://www.instagram.com/p/DV9ydApDfmC/"
+      "url": "https://www.instagram.com/p/DV9ydApDfmC/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV9VxznCaj8",
@@ -152,29 +166,32 @@
       "likes": 92,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 4,
       "caption": "A drunk man somehow steals a plane during an air show\u2026 and accidentally becomes the main attraction. The crowd came to watch professionals fly, but got a real-life comedy instead.\n",
-      "url": "https://www.instagram.com/p/DV9VxznCaj8/"
+      "url": "https://www.instagram.com/p/DV9VxznCaj8/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV6RappjS_s",
       "date": "2026-03-15",
-      "likes": 1559,
+      "likes": 1560,
       "comments": 16,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 27500,
       "caption": "A quiet backyard. A familiar whisper among the trees. And a small visitor who has returned, day after day, just to share a snack and a moment of trust. Then one morning, something ",
-      "url": "https://www.instagram.com/p/DV6RappjS_s/"
+      "url": "https://www.instagram.com/p/DV6RappjS_s/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV4DfbKidos",
       "date": "2026-03-14",
-      "likes": 4414,
+      "likes": 4415,
       "comments": 10,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 255000,
       "caption": "During the day, birds of prey such as hawks often chase and harass owls when they discover them resting.\n\nHowever, this behavior is not limited only to hawks. Many diurnal birds, s",
-      "url": "https://www.instagram.com/p/DV4DfbKidos/"
+      "url": "https://www.instagram.com/p/DV4DfbKidos/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV2mqpTjaeY",
@@ -182,9 +199,10 @@
       "likes": 200,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 7,
       "caption": "A rain shaft is a spectacle in the sky: a column of precipitation that descends directly from the base of a cloud to the ground. It is common in dense clouds like cumulonimbus, and",
-      "url": "https://www.instagram.com/p/DV2mqpTjaeY/"
+      "url": "https://www.instagram.com/p/DV2mqpTjaeY/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV2DfEdjZDB",
@@ -192,9 +210,10 @@
       "likes": 392,
       "comments": 5,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 19200,
       "caption": "The waxy monkey tree frog produces its own protective coating and carefully spreads it across its body using both its front and back legs. Native to the harsh Gran Chaco region of ",
-      "url": "https://www.instagram.com/p/DV2DfEdjZDB/"
+      "url": "https://www.instagram.com/p/DV2DfEdjZDB/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV1tgdCiQ6D",
@@ -202,19 +221,21 @@
       "likes": 182,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 18000,
       "caption": "This is how a premium whisky bottle becomes a drinking glass. The bottle doesn\u2019t melt\u2014it becomes the finished product. A marking tool draws a line on the glass at a fixed height. C",
-      "url": "https://www.instagram.com/p/DV1tgdCiQ6D/"
+      "url": "https://www.instagram.com/p/DV1tgdCiQ6D/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVzsezPDZNU",
       "date": "2026-03-13",
-      "likes": 244,
+      "likes": 245,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 11300,
       "caption": "The falcon is a symbol of power, precision, and freedom. With sharp eyesight capable of spotting prey from incredible distances, this majestic bird dominates the skies. Falcons are",
-      "url": "https://www.instagram.com/p/DVzsezPDZNU/"
+      "url": "https://www.instagram.com/p/DVzsezPDZNU/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVy_5imiZPi",
@@ -222,9 +243,10 @@
       "likes": 757,
       "comments": 4,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 10700,
       "caption": "A spotted buck is an incredibly rare sight, since deer usually lose their spots soon after their early fawn stage. When an adult male keeps them, it\u2019s often due to uncommon genetic",
-      "url": "https://www.instagram.com/p/DVy_5imiZPi/"
+      "url": "https://www.instagram.com/p/DVy_5imiZPi/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVxLjMiDaZI",
@@ -232,9 +254,10 @@
       "likes": 140,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 3,
       "caption": "Kestrels are small and highly adaptable falcons, famous for their incredible eyesight and unique hunting techniques. They are one of the few birds of prey capable of \u201chovering\u201d in ",
-      "url": "https://www.instagram.com/p/DVxLjMiDaZI/"
+      "url": "https://www.instagram.com/p/DVxLjMiDaZI/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVw0ch2lHzi",
@@ -242,19 +265,21 @@
       "likes": 226,
       "comments": 1,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 9,
       "caption": "In the mid-1990s in Costa Rica, the orange juice company Del Oro teamed up with ecologists and researchers from Princeton for an unusual experiment. They dumped about 12,000 tons o",
-      "url": "https://www.instagram.com/p/DVw0ch2lHzi/"
+      "url": "https://www.instagram.com/p/DVw0ch2lHzi/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVwtzE0Dd8K",
       "date": "2026-03-11",
       "likes": 389,
-      "comments": 4,
+      "comments": 5,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 21300,
       "caption": "Eagles are the undisputed rulers of the sky, endowed with a biological engineering designed for lethal precision. Their hunting ability begins with extraordinary vision, capable of",
-      "url": "https://www.instagram.com/p/DVwtzE0Dd8K/"
+      "url": "https://www.instagram.com/p/DVwtzE0Dd8K/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVuzIeKDZWE",
@@ -262,9 +287,10 @@
       "likes": 53,
       "comments": 1,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "sometimes falling is part of growing.\nget up, brush it off, and keep going.\n\n@trends is where the internet makes sense. Follow along\n\n#resilience #mindset #growth #discipline #toug",
-      "url": "https://www.instagram.com/p/DVuzIeKDZWE/"
+      "url": "https://www.instagram.com/p/DVuzIeKDZWE/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVuG-3SFABM",
@@ -272,9 +298,10 @@
       "likes": 449,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 10400,
       "caption": "when your cat watches you in silence\u2026 it\u2019s not a coincidence \ud83d\udc31\ud83d\udc40\n\nmany cats unknowingly imitate the play dynamics of their owners. they hide behind doors, sofas, or corners and wait",
-      "url": "https://www.instagram.com/p/DVuG-3SFABM/"
+      "url": "https://www.instagram.com/p/DVuG-3SFABM/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVt_T99CWFX",
@@ -282,9 +309,10 @@
       "likes": 1110,
       "comments": 16,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 18600,
       "caption": "In 2014, a rehearsal video of the King\u2019s College Choir unexpectedly went viral when a choir boy inhaled helium from a balloon and tried to sing a note. Instead of the usual rich ch",
-      "url": "https://www.instagram.com/p/DVt_T99CWFX/"
+      "url": "https://www.instagram.com/p/DVt_T99CWFX/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVr3RcPjT0r",
@@ -292,29 +320,32 @@
       "likes": 77,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 6,
       "caption": "It looks like a solid bust\u2026 until it suddenly moves. \ud83c\udfa8\n\nAt Art Basel Miami, a paper sculpture by Li Hongbo shocked viewers when the seemingly rigid figure suddenly stretched and ex",
-      "url": "https://www.instagram.com/p/DVr3RcPjT0r/"
+      "url": "https://www.instagram.com/p/DVr3RcPjT0r/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVrJ9vvCV--",
       "date": "2026-03-09",
-      "likes": 6491,
+      "likes": 6499,
       "comments": 96,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 349000,
       "caption": "In the wild, the hare is a true master of survival.\n\nIt can accelerate up to 70 km/h and change direction abruptly, confusing predators.\n\nIts long ears are not just \u201clocators\u201d but ",
-      "url": "https://www.instagram.com/p/DVrJ9vvCV--/"
+      "url": "https://www.instagram.com/p/DVrJ9vvCV--/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVo_OFjDcFC",
       "date": "2026-03-08",
-      "likes": 1629,
+      "likes": 1631,
       "comments": 8,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 35500,
       "caption": "The video shows a curious tabby cat nibbling on the tough green rind of a watermelon, before having a funny little \u201ceureka!\u201d moment when it finally tastes the sweet red flesh. Post",
-      "url": "https://www.instagram.com/p/DVo_OFjDcFC/"
+      "url": "https://www.instagram.com/p/DVo_OFjDcFC/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVl2QvQlI_y",
@@ -322,9 +353,10 @@
       "likes": 185,
       "comments": 1,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 20300,
       "caption": "With a mouth full of uneven, protruding teeth, the sand tiger shark looks like something straight out of a horror movie. It can have up to 300 sharp teeth arranged in multiple rows",
-      "url": "https://www.instagram.com/p/DVl2QvQlI_y/"
+      "url": "https://www.instagram.com/p/DVl2QvQlI_y/",
+      "video_views_source": "selenium_reels_grid"
     }
   ]
 }

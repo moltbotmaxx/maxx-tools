@@ -1,35 +1,37 @@
 {
-  "generated_at": "2026-03-22T04:48:13+00:00",
+  "generated_at": "2026-03-22T05:57:29+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "chatgptricks",
   "profile_url": "https://www.instagram.com/chatgptricks/",
   "full_name": "Artificial Intelligence (AI) \u2022 ChatGPT",
   "biography": "\ud83e\udd16 Follow to stay one step ahead of the curve\n\ud83d\udea8 AI is moving fast. Don\u2019t get left behind\n\ud83d\udce9 Collabs: hello@chatgptricks.com\n\ud83d\udc47 Get our Free ChatGPT Guide",
   "external_url": "http://chatgptricks.store",
   "is_verified": true,
-  "followers": 2477211,
+  "followers": 2477245,
   "following": 177,
   "posts": 2532,
   "recent_post_count": 60,
   "video_post_count": 4,
+  "video_posts_with_view_data": 4,
+  "reel_view_enriched_posts": 4,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
   "recent_posts_collection_stop_reason": "hard_limit",
   "recent_posts_window_covered": false,
   "oldest_recent_post_date": "2026-03-10",
-  "avg_likes": 4658.18,
-  "avg_comments": 116.07,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 0.1927,
+  "avg_likes": 4662.23,
+  "avg_comments": 116.5,
+  "avg_video_views": 180400.0,
+  "avg_video_views_per_video": 180400.0,
+  "avg_video_views_per_post": 12026.67,
+  "engagement_rate": 0.1929,
   "recent_posts": [
     {
       "shortcode": "DQwSSlhDkGC",
       "date": "2025-11-07",
-      "likes": 56792,
+      "likes": 56793,
       "comments": 188,
       "is_video": false,
       "video_views": 0,
@@ -39,7 +41,7 @@
     {
       "shortcode": "DP-84lrDWST",
       "date": "2025-10-19",
-      "likes": 91702,
+      "likes": 91704,
       "comments": 1035,
       "is_video": false,
       "video_views": 0,
@@ -60,7 +62,7 @@
       "shortcode": "DWK5gbdAPnm",
       "date": "2026-03-22",
       "likes": 3,
-      "comments": 6,
+      "comments": 9,
       "is_video": false,
       "video_views": 0,
       "caption": "OpenAI is building one AI app.\n\nOpenAI is reportedly working on a unified desktop \u201csuperapp\u201d that combines ChatGPT, Codex (coding assistant), and Atlas (AI browser) into one place.",
@@ -70,11 +72,12 @@
       "shortcode": "DWKuOWdjQke",
       "date": "2026-03-22",
       "likes": 3,
-      "comments": 45,
+      "comments": 64,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 24600,
       "caption": "Build your own AI influencer.\n\nPeople are now creating full digital creators using a few AI tools and a clear process.\n\nYou start by defining your audience with ChatGPT, what they ",
-      "url": "https://www.instagram.com/p/DWKuOWdjQke/"
+      "url": "https://www.instagram.com/p/DWKuOWdjQke/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWKpgMoAEWE",
@@ -99,8 +102,8 @@
     {
       "shortcode": "DWJuABKgJh9",
       "date": "2026-03-21",
-      "likes": 2108,
-      "comments": 37,
+      "likes": 2256,
+      "comments": 40,
       "is_video": false,
       "video_views": 0,
       "caption": "Cursor got called out, fast.\n\nCursor launched Composer 2 on March 19 and described it as the result of continued pretraining plus scaled reinforcement learning. Soon after, develop",
@@ -109,7 +112,7 @@
     {
       "shortcode": "DWIEKTijRyT",
       "date": "2026-03-21",
-      "likes": 1798,
+      "likes": 1811,
       "comments": 68,
       "is_video": false,
       "video_views": 0,
@@ -149,7 +152,7 @@
     {
       "shortcode": "DWFmxlqjbIF",
       "date": "2026-03-20",
-      "likes": 1151,
+      "likes": 1171,
       "comments": 294,
       "is_video": false,
       "video_views": 0,
@@ -159,17 +162,18 @@
     {
       "shortcode": "DWFhtdsjWRQ",
       "date": "2026-03-20",
-      "likes": 3430,
+      "likes": 3434,
       "comments": 98,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 251000,
       "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
-      "url": "https://www.instagram.com/p/DWFhtdsjWRQ/"
+      "url": "https://www.instagram.com/p/DWFhtdsjWRQ/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFUbuwAOin",
       "date": "2026-03-19",
-      "likes": 2200,
+      "likes": 2205,
       "comments": 175,
       "is_video": false,
       "video_views": 0,
@@ -179,7 +183,7 @@
     {
       "shortcode": "DWEUbjogCKM",
       "date": "2026-03-19",
-      "likes": 8407,
+      "likes": 8410,
       "comments": 387,
       "is_video": false,
       "video_views": 0,
@@ -209,7 +213,7 @@
     {
       "shortcode": "DWCELcGgOSe",
       "date": "2026-03-18",
-      "likes": 1647,
+      "likes": 1648,
       "comments": 25,
       "is_video": false,
       "video_views": 0,
@@ -249,7 +253,7 @@
     {
       "shortcode": "DV_GL9rgF8X",
       "date": "2026-03-17",
-      "likes": 3906,
+      "likes": 3915,
       "comments": 93,
       "is_video": false,
       "video_views": 0,
@@ -259,7 +263,7 @@
     {
       "shortcode": "DV9sYSeDaD4",
       "date": "2026-03-16",
-      "likes": 2455,
+      "likes": 2457,
       "comments": 111,
       "is_video": false,
       "video_views": 0,
@@ -269,7 +273,7 @@
     {
       "shortcode": "DV9eFEaILfh",
       "date": "2026-03-16",
-      "likes": 1555,
+      "likes": 1557,
       "comments": 35,
       "is_video": false,
       "video_views": 0,
@@ -279,7 +283,7 @@
     {
       "shortcode": "DV9PJwngFRG",
       "date": "2026-03-16",
-      "likes": 1598,
+      "likes": 1599,
       "comments": 51,
       "is_video": false,
       "video_views": 0,
@@ -299,8 +303,8 @@
     {
       "shortcode": "DV8fIMngOik",
       "date": "2026-03-16",
-      "likes": 2987,
-      "comments": 274,
+      "likes": 2989,
+      "comments": 275,
       "is_video": false,
       "video_views": 0,
       "caption": "Humanoid Robots Are Heading To War\n\nU.S. startup Foundation Robotics has reportedly sent its Phantom MK1 humanoid robots to Ukraine for real-world testing.\n\nThe goal is to see how ",
@@ -309,7 +313,7 @@
     {
       "shortcode": "DV8fLPmgEvs",
       "date": "2026-03-16",
-      "likes": 1124,
+      "likes": 1125,
       "comments": 57,
       "is_video": false,
       "video_views": 0,
@@ -349,7 +353,7 @@
     {
       "shortcode": "DV56TQBFhbz",
       "date": "2026-03-15",
-      "likes": 1917,
+      "likes": 1920,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -369,7 +373,7 @@
     {
       "shortcode": "DV4YiiAgPm3",
       "date": "2026-03-14",
-      "likes": 1568,
+      "likes": 1570,
       "comments": 84,
       "is_video": false,
       "video_views": 0,
@@ -379,7 +383,7 @@
     {
       "shortcode": "DV3-xv3AAwi",
       "date": "2026-03-14",
-      "likes": 3380,
+      "likes": 3388,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -419,7 +423,7 @@
     {
       "shortcode": "DV2HisxDf0q",
       "date": "2026-03-14",
-      "likes": 2856,
+      "likes": 2857,
       "comments": 128,
       "is_video": false,
       "video_views": 0,
@@ -449,17 +453,18 @@
     {
       "shortcode": "DV056S-ESVF",
       "date": "2026-03-13",
-      "likes": 9648,
+      "likes": 9649,
       "comments": 288,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 328000,
       "caption": "That one is the good timeline\n\nSource: Sergio Ramirez , MJJ.Peru, Lory Dimartino",
-      "url": "https://www.instagram.com/p/DV056S-ESVF/"
+      "url": "https://www.instagram.com/p/DV056S-ESVF/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVzeaSvgGI3",
       "date": "2026-03-13",
-      "likes": 1624,
+      "likes": 1625,
       "comments": 308,
       "is_video": false,
       "video_views": 0,
@@ -469,7 +474,7 @@
     {
       "shortcode": "DVzMCkHAGZF",
       "date": "2026-03-12",
-      "likes": 2488,
+      "likes": 2490,
       "comments": 46,
       "is_video": false,
       "video_views": 0,
@@ -489,7 +494,7 @@
     {
       "shortcode": "DVygg-lgEgD",
       "date": "2026-03-12",
-      "likes": 24445,
+      "likes": 24450,
       "comments": 736,
       "is_video": false,
       "video_views": 0,
@@ -542,9 +547,10 @@
       "likes": 2360,
       "comments": 53,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 118000,
       "caption": "AI just made a movie scene.\n\nA short AI film called Mario\u2019s Cart is going viral online. In the clip, two characters dressed in red and green fight over shopping carts inside a supe",
-      "url": "https://www.instagram.com/p/DVv7vTgEfYr/"
+      "url": "https://www.instagram.com/p/DVv7vTgEfYr/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVvnI29AGqw",
@@ -579,7 +585,7 @@
     {
       "shortcode": "DVuANsjgOZA",
       "date": "2026-03-10",
-      "likes": 7581,
+      "likes": 7584,
       "comments": 72,
       "is_video": false,
       "video_views": 0,
@@ -589,7 +595,7 @@
     {
       "shortcode": "DVtrm58AMzW",
       "date": "2026-03-10",
-      "likes": 2159,
+      "likes": 2160,
       "comments": 21,
       "is_video": false,
       "video_views": 0,
@@ -609,7 +615,7 @@
     {
       "shortcode": "DVtCac2ACs1",
       "date": "2026-03-10",
-      "likes": 5174,
+      "likes": 5176,
       "comments": 72,
       "is_video": false,
       "video_views": 0,

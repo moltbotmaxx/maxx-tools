@@ -1,35 +1,37 @@
 {
-  "generated_at": "2026-03-22T04:49:11+00:00",
+  "generated_at": "2026-03-22T05:58:58+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "em3rging",
   "profile_url": "https://www.instagram.com/em3rging/",
   "full_name": "Emerging Technological Advancements",
   "biography": "\ud83d\udc49 Tech enthusiasts \n\ud83d\udd25 Where technology meets well-being and planetary sustainability\ud83c\udf31\n\ud83d\udc8c contact@sentientagency.io",
   "external_url": "https://sentientagency.io",
   "is_verified": false,
-  "followers": 218512,
+  "followers": 218519,
   "following": 49,
   "posts": 1702,
   "recent_post_count": 38,
   "video_post_count": 13,
+  "video_posts_with_view_data": 13,
+  "reel_view_enriched_posts": 13,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-03-07",
-  "avg_likes": 3434.63,
-  "avg_comments": 51.89,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 1.5956,
+  "avg_likes": 3446.61,
+  "avg_comments": 52.03,
+  "avg_video_views": 191824.38,
+  "avg_video_views_per_video": 191824.38,
+  "avg_video_views_per_post": 65624.13,
+  "engagement_rate": 1.6011,
   "recent_posts": [
     {
       "shortcode": "DWKvFvBgCO4",
       "date": "2026-03-22",
-      "likes": 214,
+      "likes": 240,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -39,7 +41,7 @@
     {
       "shortcode": "DWJ96sRgEaR",
       "date": "2026-03-21",
-      "likes": 74,
+      "likes": 75,
       "comments": 9,
       "is_video": false,
       "video_views": 0,
@@ -52,9 +54,10 @@
       "likes": 237,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 27900,
       "caption": "Researchers in China have developed a next-generation Metal-Polymer Conductor (MPC) by combining elastic polymers with liquid metals like gallium and indium, creating a material th",
-      "url": "https://www.instagram.com/p/DWISQvVgDYt/"
+      "url": "https://www.instagram.com/p/DWISQvVgDYt/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWH8Cm2gEFp",
@@ -69,17 +72,18 @@
     {
       "shortcode": "DWHnXN7EcYp",
       "date": "2026-03-20",
-      "likes": 289,
+      "likes": 293,
       "comments": 9,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 26000,
       "caption": "Electrons all carry the same negative charge, so they naturally repel one another. This constant repulsion generates a force strong enough to stop atoms from ever truly overlapping",
-      "url": "https://www.instagram.com/p/DWHnXN7EcYp/"
+      "url": "https://www.instagram.com/p/DWHnXN7EcYp/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWHclVmkdAo",
       "date": "2026-03-20",
-      "likes": 116,
+      "likes": 117,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -89,12 +93,13 @@
     {
       "shortcode": "DWFkcE5gM8D",
       "date": "2026-03-20",
-      "likes": 47,
+      "likes": 49,
       "comments": 10,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 8,
       "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
-      "url": "https://www.instagram.com/p/DWFkcE5gM8D/"
+      "url": "https://www.instagram.com/p/DWFkcE5gM8D/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFcgATgCT1",
@@ -102,14 +107,15 @@
       "likes": 122,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 9,
       "caption": "Allonic has introduced a robotic hand built with a technique called 3D Tissue Braiding, where high strength fibers are woven around a simple internal frame, much like connective ti",
-      "url": "https://www.instagram.com/p/DWFcgATgCT1/"
+      "url": "https://www.instagram.com/p/DWFcgATgCT1/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWFDrQUkR6Y",
       "date": "2026-03-19",
-      "likes": 461,
+      "likes": 463,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -122,14 +128,15 @@
       "likes": 197,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 14500,
       "caption": "Your body never really shuts off. Not even for a moment.\n\nWhat you\u2019re seeing is real biology in action, microscopic motor proteins moving along cellular highways and delivering car",
-      "url": "https://www.instagram.com/p/DWE3Sw2kXOM/"
+      "url": "https://www.instagram.com/p/DWE3Sw2kXOM/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWC-4G6AN69",
       "date": "2026-03-19",
-      "likes": 938,
+      "likes": 947,
       "comments": 10,
       "is_video": false,
       "video_views": 0,
@@ -142,9 +149,10 @@
       "likes": 88,
       "comments": 0,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 18900,
       "caption": "Road repairs don\u2019t have to mean traffic jams and endless delays. New technologies are making it possible to fix potholes in minutes while cars keep moving, turning what used to be ",
-      "url": "https://www.instagram.com/p/DWCjdeMkZ_m/"
+      "url": "https://www.instagram.com/p/DWCjdeMkZ_m/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DWCYReRkbzu",
@@ -182,9 +190,10 @@
       "likes": 299,
       "comments": 7,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 37500,
       "caption": "At first glance it looks like this man is setting the forest on fire. In reality, that\u2019s exactly what he\u2019s supposed to do. \ud83c\udf3e\ud83d\udd25\n\nFire professionals often carry out what are known as ",
-      "url": "https://www.instagram.com/p/DV9bdCjEQnf/"
+      "url": "https://www.instagram.com/p/DV9bdCjEQnf/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV9MrTdEbMu",
@@ -212,9 +221,10 @@
       "likes": 131,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 14600,
       "caption": "This scene would cost a studio $5M. Someone with AI did it in minutes.\n\n@Higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
-      "url": "https://www.instagram.com/p/DV7JNM1gF1H/"
+      "url": "https://www.instagram.com/p/DV7JNM1gF1H/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV64OdAEcXM",
@@ -222,9 +232,10 @@
       "likes": 476,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 42800,
       "caption": "Bamboo is one of the most versatile natural materials on Earth. Its hollow, segmented structure makes it incredibly strong, lightweight, and naturally tubular, which is why many su",
-      "url": "https://www.instagram.com/p/DV64OdAEcXM/"
+      "url": "https://www.instagram.com/p/DV64OdAEcXM/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV6Dq1hgDA1",
@@ -242,9 +253,10 @@
       "likes": 411,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 41500,
       "caption": "China has developed a swallowable capsule powered by AI that can examine the stomach in minutes without the need for tubes, sedation, or invasive procedures.\n\nOnce swallowed, the s",
-      "url": "https://www.instagram.com/p/DV3Y0SWgEYY/"
+      "url": "https://www.instagram.com/p/DV3Y0SWgEYY/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV1t-jUEV7s",
@@ -259,12 +271,13 @@
     {
       "shortcode": "DV1bmoZEQq5",
       "date": "2026-03-13",
-      "likes": 117569,
-      "comments": 1618,
+      "likes": 117965,
+      "comments": 1623,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2200000,
       "caption": "This robotic mouth recreates human speech by imitating the real physical mechanics of how people talk, instead of depending on text to speech systems or digital voice synthesis.\n\nR",
-      "url": "https://www.instagram.com/p/DV1bmoZEQq5/"
+      "url": "https://www.instagram.com/p/DV1bmoZEQq5/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVzptSLgP1b",
@@ -292,9 +305,10 @@
       "likes": 460,
       "comments": 2,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 37600,
       "caption": "Tungsten is one of the densest and toughest metals found on Earth, and when a standard bullet strikes a solid block of it, the outcome is almost always the same: the bullet fails f",
-      "url": "https://www.instagram.com/p/DVyxnyOgPpT/"
+      "url": "https://www.instagram.com/p/DVyxnyOgPpT/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DVw6Ve7gE7j",
@@ -339,7 +353,7 @@
     {
       "shortcode": "DVuGTfxEVWi",
       "date": "2026-03-10",
-      "likes": 1232,
+      "likes": 1233,
       "comments": 37,
       "is_video": false,
       "video_views": 0,
@@ -369,7 +383,7 @@
     {
       "shortcode": "DVrv_1OgJ96",
       "date": "2026-03-10",
-      "likes": 2575,
+      "likes": 2588,
       "comments": 70,
       "is_video": false,
       "video_views": 0,
@@ -402,9 +416,10 @@
       "likes": 330,
       "comments": 8,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 32400,
       "caption": "KnovelCam makes diagnostic imaging mobile instead of stationary.\n\nIt\u2019s compact, easy to carry, and designed to work at the patient\u2019s side, whether in clinics, ambulances, disaster ",
-      "url": "https://www.instagram.com/p/DVmK2OAESqZ/"
+      "url": "https://www.instagram.com/p/DVmK2OAESqZ/",
+      "video_views_source": "selenium_reels_grid"
     }
   ]
 }

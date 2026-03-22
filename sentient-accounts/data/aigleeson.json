@@ -1,18 +1,20 @@
 {
-  "generated_at": "2026-03-22T04:49:45+00:00",
+  "generated_at": "2026-03-22T06:00:25+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "run_started_at": "2026-03-22T05:56:48+00:00",
   "account": "aigleeson",
   "profile_url": "https://www.instagram.com/aigleeson/",
   "full_name": "Louis Gleeson",
   "biography": "\u2023 Founder of @sentientagency (25+ million follower network)\n\u2023 Posting more here @louisgson",
   "external_url": "http://sentientagency.io",
   "is_verified": true,
-  "followers": 36921,
+  "followers": 36922,
   "following": 505,
   "posts": 25,
   "recent_post_count": 24,
   "video_post_count": 24,
+  "video_posts_with_view_data": 24,
+  "reel_view_enriched_posts": 24,
   "recent_posts_window_days": 14,
   "recent_posts_target_limit": 24,
   "recent_posts_hard_limit": 60,
@@ -21,10 +23,10 @@
   "oldest_recent_post_date": "2025-03-20",
   "avg_likes": 1775.42,
   "avg_comments": 113.17,
-  "avg_video_views": 0.0,
-  "avg_video_views_per_video": 0.0,
-  "avg_video_views_per_post": 0.0,
-  "engagement_rate": 5.1152,
+  "avg_video_views": 98784.92,
+  "avg_video_views_per_video": 98784.92,
+  "avg_video_views_per_post": 98784.92,
+  "engagement_rate": 5.1151,
   "recent_posts": [
     {
       "shortcode": "DO_CJAmEiEM",
@@ -32,9 +34,10 @@
       "likes": 32987,
       "comments": 1154,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 1300000,
       "caption": "I have so many ideas when it comes around to playing with AI. Let me know if you want more videos like this, maybe I compare these answers to what Grok says \ud83d\udc40\n-\n#chatgpt #ai #polit",
-      "url": "https://www.instagram.com/p/DO_CJAmEiEM/"
+      "url": "https://www.instagram.com/p/DO_CJAmEiEM/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DKg1ZRIAe7J",
@@ -42,9 +45,10 @@
       "likes": 1319,
       "comments": 36,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 139000,
       "caption": "Best way to make ChatGPT sound Human!\n\nPrompt:\n\nYou are my writing assistant. Follow these style rules in every reply:\n\nDo not use em dashes (\u2014). If a pause is needed, use a comma,",
-      "url": "https://www.instagram.com/p/DKg1ZRIAe7J/"
+      "url": "https://www.instagram.com/p/DKg1ZRIAe7J/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DK6EeigsKdg",
@@ -52,9 +56,10 @@
       "likes": 955,
       "comments": 194,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 126000,
       "caption": "Comment \ud83d\udc49 \u201cScale\u201d and we\u2019ll send you the link.\n\nThis isn\u2019t just another AI newsletter.\n\nIt\u2019s the one that actually helps you save time and make more.\n\nIf you want real AI money-mak",
-      "url": "https://www.instagram.com/p/DK6EeigsKdg/"
+      "url": "https://www.instagram.com/p/DK6EeigsKdg/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DV9VabYklck",
@@ -62,9 +67,10 @@
       "likes": 165,
       "comments": 8,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 14700,
       "caption": "You can turn Claude into your entire marketing team in about 2 minutes.\n\nMost people are using AI for basic prompts.\n\nBut Claude can actually run a full marketing workflow if you c",
-      "url": "https://www.instagram.com/p/DV9VabYklck/"
+      "url": "https://www.instagram.com/p/DV9VabYklck/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DUl1vUEE-3c",
@@ -72,9 +78,10 @@
       "likes": 100,
       "comments": 4,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 9,
       "caption": "Here is a 7 step AI prompting framework that you can use if you want to make money online but you\u2019re too shy. \ud83e\udd1d\ud83e\udd1d",
-      "url": "https://www.instagram.com/p/DUl1vUEE-3c/"
+      "url": "https://www.instagram.com/p/DUl1vUEE-3c/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DS0yyfEkrrp",
@@ -82,9 +89,10 @@
       "likes": 629,
       "comments": 57,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 82500,
       "caption": "Someone tested the trolley problem on all the big LLMs. Honesty was really surprised at the results. Before you watch, drop a prediction in the comments and see how well you predic",
-      "url": "https://www.instagram.com/p/DS0yyfEkrrp/"
+      "url": "https://www.instagram.com/p/DS0yyfEkrrp/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DSiqdsqE0sM",
@@ -92,9 +100,10 @@
       "likes": 100,
       "comments": 7,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 10,
       "caption": "If you comment \u201caudit\u201d I will DM the audit checklist to you. Most people using AI for creative work don\u2019t realize this. If an AI model was trained on copyrighted material, the outp",
-      "url": "https://www.instagram.com/p/DSiqdsqE0sM/"
+      "url": "https://www.instagram.com/p/DSiqdsqE0sM/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DSCstS3krEo",
@@ -102,9 +111,10 @@
       "likes": 166,
       "comments": 10,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 14500,
       "caption": "Watch until the end for the prompt \ud83d\udc40 I wanted to compare what LLM was actually better for social media.. here are my results. Let me know if you agree or have any other models you ",
-      "url": "https://www.instagram.com/p/DSCstS3krEo/"
+      "url": "https://www.instagram.com/p/DSCstS3krEo/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DRjrTwrk0g_",
@@ -112,9 +122,10 @@
       "likes": 193,
       "comments": 4,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 21900,
       "caption": "This might be my favourite ChatGPT hack.. just In time for Black Friday \ud83d\udc40\n\nGoing to be posting more on here, stay tuned",
-      "url": "https://www.instagram.com/p/DRjrTwrk0g_/"
+      "url": "https://www.instagram.com/p/DRjrTwrk0g_/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DOpGRDrEsnU",
@@ -122,9 +133,10 @@
       "likes": 929,
       "comments": 21,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 53400,
       "caption": "OpenAI explained how to structure the perfect ChatGPT prompt \ud83d\udc40 What do you think?\n-\n#ai #chatgpt #openai #machinelearning #prompt",
-      "url": "https://www.instagram.com/p/DOpGRDrEsnU/"
+      "url": "https://www.instagram.com/p/DOpGRDrEsnU/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DNI8WYnA5G5",
@@ -132,9 +144,10 @@
       "likes": 1408,
       "comments": 119,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 161000,
       "caption": "AI isn\u2019t slowing down.\n\nIf you\u2019re not using it, you\u2019re already behind.\n\nJoin our newsletter for simple AI hacks to work less and earn more.\n\nComment \ud83d\udc49 \u201cChat\u201d and we\u2019ll send you the",
-      "url": "https://www.instagram.com/p/DNI8WYnA5G5/"
+      "url": "https://www.instagram.com/p/DNI8WYnA5G5/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DMkIjE5AtsI",
@@ -142,9 +155,10 @@
       "likes": 3,
       "comments": 103,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 94200,
       "caption": "AI isn\u2019t slowing down.\n\nIf you\u2019re not using it, you\u2019re already behind.\n\nJoin our newsletter for simple AI hacks to work less and earn more.\n\nComment \ud83d\udc49 \u201cChat\u201d and we\u2019ll send you the",
-      "url": "https://www.instagram.com/p/DMkIjE5AtsI/"
+      "url": "https://www.instagram.com/p/DMkIjE5AtsI/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DMRmuAqsq04",
@@ -152,9 +166,10 @@
       "likes": 1054,
       "comments": 308,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 117000,
       "caption": "5 GPTs that change the game!\n\n- Excel Formula Generator\n- Creative Writing Coach\n- Prompt Perfect\n- Consensus\n- CanvaGPT\n\nWe\u2019re using these to save time and earn more.\n\nComment \ud83d\udc49 \u201c",
-      "url": "https://www.instagram.com/p/DMRmuAqsq04/"
+      "url": "https://www.instagram.com/p/DMRmuAqsq04/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DKTpASDNk79",
@@ -162,9 +177,10 @@
       "likes": 1000,
       "comments": 171,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 89600,
       "caption": "Comment \ud83d\udc49 \u201cGPT\u201d and we\u2019ll send you the link.\n\nThis isn\u2019t just another AI newsletter.\nIt\u2019s the one that actually saves you time and helps you make more.\n\n- Real AI hacks.\n- Smart up",
-      "url": "https://www.instagram.com/p/DKTpASDNk79/"
+      "url": "https://www.instagram.com/p/DKTpASDNk79/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DKQl57XSyKk",
@@ -172,9 +188,10 @@
       "likes": 44,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "Here is how to make your own font with ChatGPT \ud83d\ude4f\n\nShout out to Rory Flynn (Ror_Fly) on Twitter/X for the breakdown!\n-\n#chatgpt #ai #aitools\n\n-",
-      "url": "https://www.instagram.com/p/DKQl57XSyKk/"
+      "url": "https://www.instagram.com/p/DKQl57XSyKk/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DKN3ltpzSrx",
@@ -182,9 +199,10 @@
       "likes": 40,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "Let me know if the same thing happens to you guys \ud83e\udd14\n-\n#chatgpt #ai #artificialintellgience",
-      "url": "https://www.instagram.com/p/DKN3ltpzSrx/"
+      "url": "https://www.instagram.com/p/DKN3ltpzSrx/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DKBIrG2MltU",
@@ -192,9 +210,10 @@
       "likes": 1313,
       "comments": 472,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 157000,
       "caption": "Comment \ud83d\udc49 \u201cChat\u201d and we\u2019ll send you the link.\n\nThis isn\u2019t just another AI newsletter.\n\nIt\u2019s the one that actually helps you save time and make more.\n\nIf you want real AI money-maki",
-      "url": "https://www.instagram.com/p/DKBIrG2MltU/"
+      "url": "https://www.instagram.com/p/DKBIrG2MltU/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DJ6kFyoAoUQ",
@@ -202,9 +221,10 @@
       "likes": 44,
       "comments": 6,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 1,
       "caption": "Extending videos with AI \ud83d\udc40 How cool\n\nFollow @aigleeson for more \n\n#ai #aivideo #aimarketing #artificialintelligence",
-      "url": "https://www.instagram.com/p/DJ6kFyoAoUQ/"
+      "url": "https://www.instagram.com/p/DJ6kFyoAoUQ/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DJ4ID7lAgLL",
@@ -212,9 +232,10 @@
       "likes": 33,
       "comments": 8,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "Comment \"LTX\" for the link.\n\nLove me some @ltx.studio - my favourite tool for AI image & video creation. \n\nWill be using it for @planet.ai_ videos \ud83d\udd25\n\n#ai #ltx #artificial #aivideo ",
-      "url": "https://www.instagram.com/p/DJ4ID7lAgLL/"
+      "url": "https://www.instagram.com/p/DJ4ID7lAgLL/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DJ0kq-HSTGL",
@@ -222,9 +243,10 @@
       "likes": 41,
       "comments": 9,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 3,
       "caption": "A game changer for sure @getakiflow \ud83d\udd25\n\nComment \u201caki\u201d if you want it\n\n#ai #akiflow #artificialintelligence",
-      "url": "https://www.instagram.com/p/DJ0kq-HSTGL/"
+      "url": "https://www.instagram.com/p/DJ0kq-HSTGL/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DJVTq53ydbS",
@@ -232,9 +254,10 @@
       "likes": 40,
       "comments": 5,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "Here is how to make animations using ChatGPT and Kling \ud83d\udc40\n\n#openai #ai #artificialintelligence #chatgpt",
-      "url": "https://www.instagram.com/p/DJVTq53ydbS/"
+      "url": "https://www.instagram.com/p/DJVTq53ydbS/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DIFWk89AiNx",
@@ -242,9 +265,10 @@
       "likes": 41,
       "comments": 4,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "Which one was the best? \ud83d\udc40\n\n#marketing #socialmedia #viral",
-      "url": "https://www.instagram.com/p/DIFWk89AiNx/"
+      "url": "https://www.instagram.com/p/DIFWk89AiNx/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DHmL4JjA__F",
@@ -252,9 +276,10 @@
       "likes": 3,
       "comments": 7,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 3,
       "caption": "Here is how to go viral with AI. \n\nComment if you have any questions \ud83d\ude4c\n\n#ai #chatgpt #aitools #machinelearning #moneymaking #aiagent #socialmedia #insta",
-      "url": "https://www.instagram.com/p/DHmL4JjA__F/"
+      "url": "https://www.instagram.com/p/DHmL4JjA__F/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DHcHFaTTgCo",
@@ -262,9 +287,10 @@
       "likes": 3,
       "comments": 3,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 2,
       "caption": "The best AI agent for content creation & ads.\n\n#ai #chatgpt #aitools #machinelearning #aiagents #aiagent #socialmedia #insta",
-      "url": "https://www.instagram.com/p/DHcHFaTTgCo/"
+      "url": "https://www.instagram.com/p/DHcHFaTTgCo/",
+      "video_views_source": "selenium_reels_grid"
     }
   ]
 }
