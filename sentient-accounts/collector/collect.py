@@ -4,7 +4,7 @@ import datetime as dt
 import json
 import os
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 from urllib.request import Request, urlopen
 
 import instaloader
@@ -21,6 +21,13 @@ DEFAULT_POST_COLLECTION_WINDOW_DAYS = 30
 DEFAULT_POST_HARD_LIMIT = 180
 DEFAULT_POST_HARD_LIMIT_PER_DAY = 8
 HIDDEN_LIKES_SENTINEL = 3
+
+
+class PostCollectionSettings(NamedTuple):
+    post_limit: int
+    post_window_days: int
+    collection_window_days: int
+    post_hard_limit: int
 
 
 def load_accounts() -> list[str]:
@@ -72,6 +79,19 @@ def get_post_hard_limit(soft_limit: int, collection_window_days: int) -> int:
     configured_limit = get_int_setting("RECENT_POST_HARD_LIMIT", DEFAULT_POST_HARD_LIMIT)
     adaptive_floor = collection_window_days * DEFAULT_POST_HARD_LIMIT_PER_DAY
     return max(soft_limit, configured_limit, adaptive_floor)
+
+
+def get_post_collection_settings() -> PostCollectionSettings:
+    post_limit = get_post_limit()
+    post_window_days = get_post_window_days()
+    collection_window_days = get_post_collection_window_days(post_window_days)
+    post_hard_limit = get_post_hard_limit(post_limit, collection_window_days)
+    return PostCollectionSettings(
+        post_limit=post_limit,
+        post_window_days=post_window_days,
+        collection_window_days=collection_window_days,
+        post_hard_limit=post_hard_limit,
+    )
 
 
 def should_scrape_reel_views() -> bool:
@@ -276,6 +296,7 @@ def collect_account(
     username: str,
     snapshot_date: str,
     run_started_at: str,
+    collection_settings: PostCollectionSettings | None = None,
     reel_view_lookup: dict[str, int] | None = None,
 ) -> dict[str, Any]:
     profile = instaloader.Profile.from_username(loader.context, username)
@@ -285,10 +306,11 @@ def collect_account(
     comments_total = 0
     video_count = 0
 
-    post_limit = get_post_limit()
-    post_window_days = get_post_window_days()
-    collection_window_days = get_post_collection_window_days(post_window_days)
-    post_hard_limit = get_post_hard_limit(post_limit, collection_window_days)
+    settings = collection_settings or get_post_collection_settings()
+    post_limit = settings.post_limit
+    post_window_days = settings.post_window_days
+    collection_window_days = settings.collection_window_days
+    post_hard_limit = settings.post_hard_limit
     snapshot_day = dt.date.fromisoformat(snapshot_date)
     collection_cutoff_date = snapshot_day - dt.timedelta(days=collection_window_days)
     display_cutoff_date = snapshot_day - dt.timedelta(days=post_window_days)
@@ -429,6 +451,7 @@ def main() -> int:
 
     loader = build_loader()
     authenticate_loader(loader)
+    collection_settings = get_post_collection_settings()
     reel_view_scraper = build_reel_view_scraper()
     failures = []
     collected = 0
@@ -440,13 +463,14 @@ def main() -> int:
                 reel_view_lookup = build_reel_view_lookup(
                     reel_view_scraper,
                     username=username,
-                    max_reels=get_post_hard_limit(get_post_limit()),
+                    max_reels=collection_settings.post_hard_limit,
                 )
                 payload = collect_account(
                     loader,
                     username,
                     snapshot_date,
                     run_started_at,
+                    collection_settings=collection_settings,
                     reel_view_lookup=reel_view_lookup,
                 )
                 write_json(DATA_DIR / f"{username}.json", payload)
