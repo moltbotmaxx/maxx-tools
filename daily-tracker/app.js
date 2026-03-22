@@ -1291,18 +1291,14 @@ function renderManagedAccountsOptions(dataset) {
                 value="${escapeHtml(account.account)}"
                 ${selected.has(String(account.account).toLowerCase()) ? 'checked' : ''}
             />
-            <div class="managed-account-option__card">
-                <div class="managed-account-option__identity">
-                    <img class="managed-account-option__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
-                    <div class="managed-account-option__copy">
-                        <strong>@${escapeHtml(account.account)}</strong>
-                        <span>${escapeHtml(account.full_name || 'Sentient account')}</span>
-                    </div>
-                </div>
-                <div class="managed-account-option__meta">
-                    <span>${formatCompact(Number(account.followers) || 0)} followers</span>
-                    <span>${formatPercentCompact(account.engagement_rate)}</span>
-                </div>
+            <span class="managed-account-option__indicator" aria-hidden="true"></span>
+            <div class="managed-account-option__copy">
+                <strong>@${escapeHtml(account.account)}</strong>
+                <span>${escapeHtml(account.full_name || 'Sentient account')}</span>
+            </div>
+            <div class="managed-account-option__meta">
+                <span>${formatCompact(Number(account.followers) || 0)} followers</span>
+                <span>${formatPercentCompact(account.engagement_rate)} eng.</span>
             </div>
         </label>
     `).join('');
@@ -1439,10 +1435,17 @@ function buildManagedAccountMetric(label, value, accent = false) {
 
 function buildManagedAccountCard(account = {}) {
     const bio = normalizeWhitespace(account.biography || '');
-    const bioText = bio.length > 180 ? `${bio.slice(0, 177)}...` : bio;
+    const bioText = bio.length > 120 ? `${bio.slice(0, 117)}...` : bio;
     const viewSuffix = account.recentWindowCovered === false ? '+' : '';
-    const topPostsHtml = account.topPosts.length
-        ? account.topPosts.map(post => `
+    const topPosts = Array.isArray(account.topPosts) ? account.topPosts.slice(0, 2) : [];
+    const quickFacts = [
+        ['Followers', formatCompact(Number(account.followers) || 0)],
+        ['Posts', formatCompact(Number(account.posts) || 0)],
+        ['Engagement', formatPercentCompact(account.engagement_rate)],
+        ['Avg video views', Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0']
+    ];
+    const topPostsHtml = topPosts.length
+        ? topPosts.map(post => `
             <a class="managed-account-post" href="${safeHttpUrl(post.url)}" target="_blank" rel="noopener noreferrer">
                 <div class="managed-account-post__copy">
                     <strong>${escapeHtml(post.caption || 'Open post')}</strong>
@@ -1459,7 +1462,7 @@ function buildManagedAccountCard(account = {}) {
 
     return `
         <article class="bento-box managed-account-card">
-            <div class="box-header managed-account-card__header">
+            <div class="managed-account-card__summary">
                 <div class="managed-account-card__identity">
                     <img class="managed-account-card__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
                     <div class="managed-account-card__identity-copy">
@@ -1470,23 +1473,30 @@ function buildManagedAccountCard(account = {}) {
                         </div>
                     </div>
                 </div>
-                <a class="action-btn" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open Profile</a>
+                <div class="managed-account-card__actions">
+                    <span class="managed-account-card__window">Top posts · ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+                    <a class="managed-account-card__profile-link" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open</a>
+                </div>
             </div>
-            ${bioText ? `<p class="managed-account-card__bio">${escapeHtml(bioText)}</p>` : ''}
+            ${bioText ? `<p class="managed-account-card__bio" title="${escapeHtml(bio)}">${escapeHtml(bioText)}</p>` : ''}
+            <div class="managed-account-card__fact-strip">
+                ${quickFacts.map(([label, value]) => `
+                    <div class="managed-account-fact">
+                        <span>${escapeHtml(label)}</span>
+                        <strong>${escapeHtml(String(value))}</strong>
+                    </div>
+                `).join('')}
+            </div>
             <div class="managed-account-card__metrics">
-                ${buildManagedAccountMetric('Followers', formatCompact(Number(account.followers) || 0), true)}
-                ${buildManagedAccountMetric('Posts', formatCompact(Number(account.posts) || 0))}
                 ${buildManagedAccountMetric('Avg likes', formatCompact(Number(account.avg_likes) || 0))}
                 ${buildManagedAccountMetric('Avg comments', formatCompact(Number(account.avg_comments) || 0))}
                 ${buildManagedAccountMetric('30d likes', `${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`)}
                 ${buildManagedAccountMetric('30d reel views', `${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`, true)}
-                ${buildManagedAccountMetric('Avg video views', Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0')}
-                ${buildManagedAccountMetric('Engagement', formatPercentCompact(account.engagement_rate))}
             </div>
             <div class="managed-account-card__posts">
                 <div class="managed-account-card__posts-header">
-                    <h3>Top posts</h3>
-                    <span>Last ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+                    <h3>Best recent posts</h3>
+                    <span>${topPosts.length || 0} shown</span>
                 </div>
                 <div class="managed-account-card__posts-list">
                     ${topPostsHtml}
