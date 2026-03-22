@@ -14,6 +14,7 @@ const state = {
 
 const DATE_ONLY_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 const ACTIVE_RUN_STATUSES = new Set(["queued", "in_progress", "requested", "waiting", "pending"]);
+const HIDDEN_LIKES_SENTINEL = 3;
 const RUN_STATUS_LABELS = {
   queued: "Queued",
   in_progress: "Running",
@@ -218,6 +219,37 @@ function safeLocalStorageGet(key) {
   } catch (_) {
     return null;
   }
+}
+
+function hasHiddenLikes(post) {
+  return Number(post?.likes) === HIDDEN_LIKES_SENTINEL;
+}
+
+function formatPostLikes(post) {
+  return hasHiddenLikes(post) ? "Hidden" : formatNumber(post?.likes);
+}
+
+function getRecentPostSortValue(post) {
+  return hasHiddenLikes(post) ? (Number(post?.comments) || 0) : (Number(post?.likes) || 0);
+}
+
+function compareRecentPosts(left, right) {
+  const primaryDelta = getRecentPostSortValue(right) - getRecentPostSortValue(left);
+  if (primaryDelta !== 0) {
+    return primaryDelta;
+  }
+
+  const commentsDelta = (Number(right?.comments) || 0) - (Number(left?.comments) || 0);
+  if (commentsDelta !== 0) {
+    return commentsDelta;
+  }
+
+  const likesDelta = (Number(right?.likes) || 0) - (Number(left?.likes) || 0);
+  if (likesDelta !== 0) {
+    return likesDelta;
+  }
+
+  return String(right?.date || "").localeCompare(String(left?.date || ""));
 }
 
 function safeLocalStorageSet(key, value) {
@@ -891,13 +923,13 @@ function renderRecentPosts(account) {
   updateRecentPostsWindow(referenceDate, account);
   const windowDays = Number(account?.recent_posts_window_days) || 14;
 
-  // Filter to the recent collection window, sort by likes desc, take top 5
+  // Hidden likes come through as "3", so those posts fall back to comments for ranking.
   const filtered = allPosts
     .filter((post) => {
       const ageInDays = daysAgo(post.date, referenceDate);
       return ageInDays >= 0 && ageInDays <= windowDays;
     })
-    .sort((a, b) => (b.likes || 0) - (a.likes || 0))
+    .sort(compareRecentPosts)
     .slice(0, 5);
 
   if (!filtered.length) {
@@ -928,7 +960,7 @@ function renderRecentPosts(account) {
           <div class="post-metrics">
             <span class="metric metric--likes">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              ${formatNumber(post.likes)}
+              ${formatPostLikes(post)}
             </span>
             <span class="metric metric--comments">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
