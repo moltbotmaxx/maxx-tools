@@ -94,14 +94,14 @@ jobs:
 
       - name: Commit data updates
         run: |
-          if [ -z "$(git status --porcelain sentient-accounts/data)" ]; then
-            echo "No dataset changes detected."
+          if [ -z "$(git status --porcelain sentient-accounts/data sentient-accounts/avatars)" ]; then
+            echo "No dataset or avatar changes detected."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sentient-accounts/data
+          git add sentient-accounts/data sentient-accounts/avatars
           git commit -m "chore(data): update sentient-accounts metrics"
 
           for attempt in 1 2 3; do

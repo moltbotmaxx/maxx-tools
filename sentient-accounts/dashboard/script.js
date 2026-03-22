@@ -652,8 +652,24 @@ function formatRecentWindowVideoViewsMetric(account) {
   return hasRecentWindowVideos(account) ? "N/A" : "0";
 }
 
+function getAvatarUrl(account) {
+  const accountName = String(account?.account || "").trim();
+  const cacheToken = encodeURIComponent(String(
+    account?.generated_at || account?.run_started_at || account?.date || state.data?.generated_at || ""
+  ));
+  const suffix = cacheToken ? `?v=${cacheToken}` : "";
+  const explicitPath = String(account?.avatar_path || "").trim();
+  if (explicitPath) {
+    return `${explicitPath}${suffix}`;
+  }
+  if (accountName) {
+    return `../avatars/${encodeURIComponent(accountName)}.jpg${suffix}`;
+  }
+  return String(account?.profile_pic_url || "").trim();
+}
+
 function buildAvatarMarkup(account, className) {
-  const profilePicUrl = String(account?.profile_pic_url || "").trim();
+  const profilePicUrl = getAvatarUrl(account);
   const label = String(account?.full_name || account?.account || "Account").trim();
   const initial = escapeHtml(String(account?.account || "?").trim().charAt(0).toUpperCase() || "?");
 
@@ -1047,7 +1063,7 @@ async function renderAccountDetail(account) {
   link.classList.remove("hidden");
 
   const avatar = document.getElementById("detailAvatar");
-  const profilePicUrl = String(account?.profile_pic_url || "").trim();
+  const profilePicUrl = getAvatarUrl(account);
   if (avatar) {
     if (profilePicUrl) {
       avatar.src = profilePicUrl;

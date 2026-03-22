@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 from typing import Any
+from urllib.request import Request, urlopen
 
 import instaloader
 from instagram_auth import authenticate_loader, build_loader, load_local_env
@@ -12,6 +13,7 @@ from instagram_auth import authenticate_loader, build_loader, load_local_env
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR.parent / "data"
 HISTORY_DIR = DATA_DIR / "history"
+AVATARS_DIR = BASE_DIR.parent / "avatars"
 ACCOUNTS_PATH = BASE_DIR / "accounts.json"
 DEFAULT_POST_LIMIT = 24
 DEFAULT_POST_WINDOW_DAYS = 14
@@ -236,6 +238,30 @@ def is_post_within_window(post_date: str, snapshot_date: str, window_days: int) 
     return 0 <= age_in_days <= window_days
 
 
+def avatar_relative_path(username: str) -> str:
+    return f"../avatars/{username}.jpg"
+
+
+def persist_profile_avatar(profile: instaloader.Profile, username: str) -> str:
+    avatar_url = str(getattr(profile, "profile_pic_url", "") or "").strip()
+    destination = AVATARS_DIR / f"{username}.jpg"
+
+    if not avatar_url:
+        return avatar_relative_path(username) if destination.exists() else ""
+
+    try:
+        request = Request(avatar_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urlopen(request, timeout=30) as response:
+            payload = response.read()
+        if payload:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(payload)
+    except Exception as exc:
+        print(f"Failed to save avatar for @{username}: {exc}")
+
+    return avatar_relative_path(username) if destination.exists() else ""
+
+
 def collect_account(
     loader: instaloader.Instaloader,
     username: str,
@@ -302,6 +328,7 @@ def collect_account(
     avg_video_views_per_post = round(views_total / post_count, 2) if post_count else 0
     followers = profile.followers or 0
     engagement_rate = round(((avg_likes + avg_comments) / followers) * 100, 4) if followers else 0
+    avatar_path = persist_profile_avatar(profile, username)
     display_window_covered = stop_reason != "hard_limit" or (
         oldest_recent_post_date is not None and oldest_recent_post_date <= display_cutoff_date.isoformat()
     )
@@ -315,6 +342,7 @@ def collect_account(
         "run_started_at": run_started_at,
         "account": username,
         "profile_url": f"https://www.instagram.com/{username}/",
+        "avatar_path": avatar_path,
         "profile_pic_url": str(getattr(profile, "profile_pic_url", "") or ""),
         "full_name": profile.full_name,
         "biography": profile.biography,
@@ -379,6 +407,7 @@ def main() -> int:
     load_local_env()
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    AVATARS_DIR.mkdir(parents=True, exist_ok=True)
     snapshot_date = dt.date.today().isoformat()
     run_started_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
