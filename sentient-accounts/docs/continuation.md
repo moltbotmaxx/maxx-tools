@@ -112,8 +112,8 @@ Relevant files:
 The `Account` tab currently uses this structure:
 
 - left column:
-  - stable `Managed Account Dashboard` summary
-  - selected-account roster
+  - slim `Managed` summary only
+  - no duplicate account roster
 - right column:
   - sub-tabs for managed accounts
   - one active account panel at a time
@@ -126,7 +126,7 @@ Important implementation details:
 - active account state is handled with `activeManagedAccountTab`
 - account switching is via `data-account-tab`
 - current build tag is:
-  - `account-subtabs`
+  - `account-sidebar-slim`
 
 Relevant implementation points:
 
@@ -169,8 +169,8 @@ Recent relevant commits, newest first:
 ### Daily Tracker
 
 - `Account` is mid-iteration from a design perspective, but functional.
-- The latest structural change is the sub-tab model for multiple managed accounts.
-- No browser QA was done for the latest `account-subtabs` commit in this session; only code validation was run.
+- The latest structural change is the slim sidebar plus sub-tab model for multiple managed accounts.
+- No browser QA was done for the latest Daily Tracker account-layout commit in this session; only code validation was run.
 
 ## Likely next improvements
 

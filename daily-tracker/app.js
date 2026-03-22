@@ -1433,28 +1433,16 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
         ? (((totalAvgLikes + totalAvgComments) / totalFollowers) * 100)
         : 0;
     const snapshot = getAccountDashboardSnapshotMeta(accounts, dataset);
-    const activeKey = normalizeWhitespace(activeManagedAccountTab || '').toLowerCase();
-    const handles = accounts.length
-        ? accounts.map(account => `
-            <a class="account-overview-card__account${String(account.account || '').toLowerCase() === activeKey ? ' account-overview-card__account--active' : ''}" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">
-                <img src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
-                <div>
-                    <strong>@${escapeHtml(account.account)}</strong>
-                    <span>${escapeHtml(formatCompact(Number(account.followers) || 0))} followers</span>
-                </div>
-            </a>
-        `).join('')
-        : '<div class="account-overview-card__empty">Choose accounts to build this dashboard.</div>';
 
     return `
         <article class="bento-box account-overview-card">
             <div class="account-overview-card__header">
                 <div>
                     <span class="account-overview-card__eyebrow">Sentient Accounts</span>
-                    <h2>Managed Account Dashboard</h2>
+                    <h2>Managed</h2>
                     <p>${escapeHtml(snapshot.label)}</p>
                 </div>
-                <button class="action-btn" type="button" data-account-action="manage">Manage Accounts</button>
+                <button class="action-btn account-overview-card__action" type="button" data-account-action="manage">Manage</button>
             </div>
             <div class="account-overview-card__metrics">
                 ${buildManagedAccountMetric('Selected accounts', String(accounts.length))}
@@ -1463,8 +1451,8 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
                 ${buildManagedAccountMetric('30d reel views', `${formatCompact(totalViews30d)}${snapshot.suffix}`, true)}
                 ${buildManagedAccountMetric('Engagement', formatPercentCompact(weightedEngagement))}
             </div>
-            <div class="account-overview-card__accounts">
-                ${handles}
+            <div class="account-overview-card__hint">
+                ${accounts.length ? 'Use the tabs to switch between managed accounts.' : 'Choose accounts to populate this dashboard.'}
             </div>
         </article>
     `;

@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Daily Tracker Clipper",
     "version": "1.2.1",
-    "version_name": "account-subtabs",
+    "version_name": "account-sidebar-slim",
     "description": "Capture inspiration links directly to your Daily Tracker",
     "permissions": [
         "activeTab",

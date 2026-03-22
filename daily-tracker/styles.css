@@ -1357,7 +1357,7 @@ canvas {
 
 .account-dashboard-grid {
   display: grid;
-  grid-template-columns: minmax(260px, 30%) minmax(0, 1fr);
+  grid-template-columns: clamp(150px, 15vw, 190px) minmax(0, 1fr);
   gap: 16px;
   align-items: start;
 }
@@ -1396,18 +1396,18 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
 }
 
 .account-overview-card__header h2 {
   margin: 4px 0 6px;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   color: var(--text-primary);
 }
 
 .account-overview-card__header p {
   margin: 0;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   color: var(--text-secondary);
   line-height: 1.45;
 }
@@ -1423,31 +1423,31 @@ canvas {
 
 .account-overview-card__metrics {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 8px;
 }
 
 .managed-account-metric {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  min-height: 84px;
-  padding: 11px 12px;
-  border-radius: 16px;
+  gap: 3px;
+  min-height: 58px;
+  padding: 10px 11px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .managed-account-metric span {
-  font-size: 0.6rem;
-  letter-spacing: 0.8px;
+  font-size: 0.56rem;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   color: var(--text-tertiary);
   font-weight: 800;
 }
 
 .managed-account-metric strong {
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.1;
   color: var(--text-primary);
   font-weight: 800;
@@ -1458,57 +1458,19 @@ canvas {
   border-color: rgba(0, 122, 255, 0.14);
 }
 
-.account-overview-card__accounts {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.account-overview-card__action {
+  width: 100%;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 10px;
 }
 
-.account-overview-card__account,
-.account-overview-card__empty {
-  display: grid;
-  grid-template-columns: 40px minmax(0, 1fr);
-  align-items: center;
-  gap: 10px;
-  padding: 10px 11px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  color: var(--text-secondary);
-  text-decoration: none;
-}
-
-.account-overview-card__account--active {
-  border-color: rgba(0, 122, 255, 0.22);
-  box-shadow: 0 10px 20px rgba(0, 122, 255, 0.08);
-}
-
-.account-overview-card__account img {
-  width: 40px;
-  height: 40px;
-  border-radius: 14px;
-  object-fit: cover;
-  background: var(--bg-primary);
-}
-
-.account-overview-card__account strong,
-.account-overview-card__empty {
-  font-size: 0.82rem;
-  color: var(--text-primary);
-  font-weight: 800;
-}
-
-.account-overview-card__empty {
-  grid-template-columns: 1fr;
-  min-height: 56px;
-}
-
-.account-overview-card__account span {
-  display: block;
-  margin-top: 2px;
-  font-size: 0.72rem;
+.account-overview-card__hint {
+  font-size: 0.7rem;
+  line-height: 1.45;
   color: var(--text-tertiary);
   font-weight: 700;
+  padding: 2px 2px 0;
 }
 
 .account-subtabs {
@@ -3023,7 +2985,7 @@ canvas {
   }
 
   .account-dashboard-grid {
-    grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
+    grid-template-columns: 170px minmax(0, 1fr);
   }
 
   .account-bento-card__body {
