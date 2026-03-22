@@ -33,7 +33,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Content Scheduler
                     <span id="liveBuildBadge"
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(account-tab-list)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(nav-account-first)</span>
                     <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Checking</span>
@@ -43,7 +43,14 @@
 
             <!-- Tab Navigation -->
             <nav class="tab-nav">
-                <button class="tab-btn active" data-tab="sourcing">
+                <button class="tab-btn active" data-tab="account">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Account
+                </button>
+                <button class="tab-btn" data-tab="sourcing">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M4 11v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11" />
                         <path d="M12 2L4 11h16L12 2z" />
@@ -77,14 +84,7 @@
                     </svg>
                     Metrics
                 </button>
-                <button class="tab-btn" data-tab="account">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    Account
-                </button>
-                <button class="tab-btn" data-tab="history">
+                <button class="tab-btn" data-tab="history" hidden aria-hidden="true" tabindex="-1">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -253,7 +253,7 @@
                                 <h2>📥 Add Selection</h2>
                                 <a class="selection-clipper-link"
                                     href="./extension/daily-tracker-clipper-login.zip" download>
-                                    Clipper · account-tab-list
+                                    Clipper · nav-account-first
                                 </a>
                             </div>
                             <div class="link-input-group">
@@ -795,8 +795,8 @@
     </div>
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
-    <script src="x-feed-config.js?v=account-tab-list"></script>
-    <script type="module" src="app.js?v=account-tab-list"></script>
+    <script src="x-feed-config.js?v=nav-account-first"></script>
+    <script type="module" src="app.js?v=nav-account-first"></script>
 </body>
 
 </html>

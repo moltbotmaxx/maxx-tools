@@ -107,6 +107,15 @@ Relevant files:
 - `daily-tracker/styles.css`
 - `daily-tracker/firestore.rules`
 
+Current main tab order:
+
+- `Account`
+- `Sourcing`
+- `Selection`
+- `Scheduler`
+- `Metrics`
+- `History` still exists, but is hidden from the main nav for now
+
 ### Account tab
 
 The `Account` tab currently uses this structure:
@@ -125,7 +134,7 @@ Important implementation details:
 - active account state is handled with `activeManagedAccountTab`
 - account switching is via `data-account-tab`
 - current build tag is:
-  - `account-tab-list`
+  - `nav-account-first`
 
 Relevant implementation points:
 

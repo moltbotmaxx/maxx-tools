@@ -2320,16 +2320,16 @@ let dashboardMonth = new Date();
 function getInitialViewFromStorage() {
     try {
         const stored = localStorage.getItem(ACTIVE_TAB_KEY);
-        const allowedViews = ['sourcing', 'selection', 'scheduler', 'metrics', 'account', 'history'];
-        return allowedViews.includes(stored) ? stored : 'sourcing';
+        const allowedViews = ['account', 'sourcing', 'selection', 'scheduler', 'metrics'];
+        return allowedViews.includes(stored) ? stored : 'account';
     } catch {
-        return 'sourcing';
+        return 'account';
     }
 }
 
 function switchTab(viewId) {
     const allowedViews = new Set(['sourcing', 'selection', 'scheduler', 'metrics', 'account', 'history']);
-    if (!allowedViews.has(viewId)) viewId = 'sourcing';
+    if (!allowedViews.has(viewId)) viewId = 'account';
 
     currentView = viewId;
     try {
