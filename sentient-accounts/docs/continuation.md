@@ -125,7 +125,7 @@ Important implementation details:
 - active account state is handled with `activeManagedAccountTab`
 - account switching is via `data-account-tab`
 - current build tag is:
-  - `account-post-columns`
+  - `account-tab-list`
 
 Relevant implementation points:
 
@@ -168,7 +168,7 @@ Recent relevant commits, newest first:
 ### Daily Tracker
 
 - `Account` is mid-iteration from a design perspective, but functional.
-- The latest structural change is a three-column `20/20/60` account workspace with Instagram-style post cards shown as 5 columns on desktop.
+- The latest structural change is a three-column `20/20/60` account workspace with Instagram-style post cards shown as 5 columns on desktop, plus a compact vertical account tab list.
 - No browser QA was done for the latest Daily Tracker account-layout commit in this session; only code validation was run.
 
 ## Likely next improvements

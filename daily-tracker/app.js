@@ -1515,23 +1515,26 @@ function buildAccountTabs(accounts = [], activeAccount = null) {
 
     const activeKey = String(activeAccount?.account || '').toLowerCase();
     return `
-        <div class="account-subtabs" role="tablist" aria-label="Managed accounts">
-            ${accounts.map(account => {
-                const accountKey = String(account.account || '').toLowerCase();
-                const isActive = accountKey === activeKey;
-                return `
-                    <button
-                        class="account-subtab${isActive ? ' is-active' : ''}"
-                        type="button"
-                        role="tab"
-                        aria-selected="${isActive ? 'true' : 'false'}"
-                        data-account-tab="${escapeHtml(account.account || '')}"
-                    >
-                        <img src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
-                        <span>@${escapeHtml(account.account)}</span>
-                    </button>
-                `;
-            }).join('')}
+        <div class="account-subtabs-shell">
+            <span class="account-subtabs-shell__label">Switch account</span>
+            <div class="account-subtabs" role="tablist" aria-label="Managed accounts">
+                ${accounts.map(account => {
+                    const accountKey = String(account.account || '').toLowerCase();
+                    const isActive = accountKey === activeKey;
+                    return `
+                        <button
+                            class="account-subtab${isActive ? ' is-active' : ''}"
+                            type="button"
+                            role="tab"
+                            aria-selected="${isActive ? 'true' : 'false'}"
+                            data-account-tab="${escapeHtml(account.account || '')}"
+                        >
+                            <img src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                            <span>@${escapeHtml(account.account)}</span>
+                        </button>
+                    `;
+                }).join('')}
+            </div>
         </div>
     `;
 }

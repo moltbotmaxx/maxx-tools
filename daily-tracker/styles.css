@@ -1494,19 +1494,37 @@ canvas {
   padding: 2px 2px 0;
 }
 
-.account-subtabs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+.account-subtabs-shell {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
+}
+
+.account-subtabs-shell__label {
+  font-size: 0.58rem;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  font-weight: 800;
+}
+
+.account-subtabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 188px;
+  overflow-y: auto;
+  padding-right: 2px;
 }
 
 .account-subtab {
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 46px;
+  width: 100%;
+  min-height: 44px;
   padding: 0 12px;
-  border-radius: 18px;
+  border-radius: 16px;
   border: 1px solid rgba(18, 24, 38, 0.08);
   background: rgba(250, 248, 241, 0.82);
   color: var(--text-secondary);
@@ -1535,6 +1553,14 @@ canvas {
   border-radius: 10px;
   object-fit: cover;
   background: var(--bg-primary);
+  flex-shrink: 0;
+}
+
+.account-subtab span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .account-profile-panel {
