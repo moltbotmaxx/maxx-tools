@@ -19,6 +19,7 @@ DEFAULT_POST_LIMIT = 24
 DEFAULT_POST_WINDOW_DAYS = 14
 DEFAULT_POST_COLLECTION_WINDOW_DAYS = 30
 DEFAULT_POST_HARD_LIMIT = 120
+HIDDEN_LIKES_SENTINEL = 3
 
 
 def load_accounts() -> list[str]:
@@ -238,6 +239,11 @@ def is_post_within_window(post_date: str, snapshot_date: str, window_days: int) 
     return 0 <= age_in_days <= window_days
 
 
+def effective_like_count(post: dict[str, Any]) -> int:
+    likes = int(post.get("likes") or 0)
+    return 0 if likes == HIDDEN_LIKES_SENTINEL else likes
+
+
 def avatar_relative_path(username: str) -> str:
     return f"../avatars/{username}.jpg"
 
@@ -315,6 +321,7 @@ def collect_account(
             collection_window_days,
         )
     ]
+    total_likes_recent_window = sum(effective_like_count(post) for post in recent_window_posts)
     videos_with_view_data = [
         post
         for post in recent_window_posts
@@ -369,6 +376,7 @@ def collect_account(
         "avg_video_views": avg_video_views,
         "avg_video_views_per_video": avg_video_views,
         "avg_video_views_per_post": avg_video_views_per_post,
+        "total_likes_recent_window": total_likes_recent_window,
         "total_video_views_recent_window": views_total,
         "engagement_rate": engagement_rate,
         "recent_posts": recent_posts,

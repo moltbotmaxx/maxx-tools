@@ -604,6 +604,11 @@ function formatVideoViewsMetric(account) {
   return Number(account?.video_post_count || 0) > 0 ? "N/A" : "0";
 }
 
+function getEffectiveLikeCount(post) {
+  const likes = Number(post?.likes) || 0;
+  return likes === HIDDEN_LIKES_SENTINEL ? 0 : likes;
+}
+
 function getCollectionWindowDays(account) {
   const collectionWindow = Number(account?.recent_posts_collection_window_days);
   if (Number.isFinite(collectionWindow) && collectionWindow > 0) {
@@ -636,6 +641,17 @@ function getRecentWindowVideoViewsTotal(account) {
   return getPostsInWindow(account, windowDays)
     .filter((post) => post?.is_video)
     .reduce((sum, post) => sum + (Number(post?.video_views) || 0), 0);
+}
+
+function getRecentWindowLikesTotal(account) {
+  const explicitTotal = Number(account?.total_likes_recent_window);
+  if (Number.isFinite(explicitTotal) && explicitTotal > 0) {
+    return explicitTotal;
+  }
+
+  const windowDays = getCollectionWindowDays(account);
+  return getPostsInWindow(account, windowDays)
+    .reduce((sum, post) => sum + getEffectiveLikeCount(post), 0);
 }
 
 function hasRecentWindowVideos(account) {
@@ -696,6 +712,20 @@ function normalizeDashboardData(rawData) {
   const totalPosts = accounts.reduce((sum, account) => sum + (Number(account.posts) || 0), 0);
   const totalAvgLikes = accounts.reduce((sum, account) => sum + (Number(account.avg_likes) || 0), 0);
   const totalAvgComments = accounts.reduce((sum, account) => sum + (Number(account.avg_comments) || 0), 0);
+  const recentWindowDays = Number(rawData?.recent_window_days) || Math.max(
+    ...accounts.map((account) => getCollectionWindowDays(account)),
+    30,
+  );
+  const totalLikesRecentWindow = Number(rawData?.total_likes_recent_window) || accounts.reduce(
+    (sum, account) => sum + getRecentWindowLikesTotal(account),
+    0,
+  );
+  const totalVideoViewsRecentWindow = Number(rawData?.total_video_views_recent_window) || accounts.reduce(
+    (sum, account) => sum + getRecentWindowVideoViewsTotal(account),
+    0,
+  );
+  const recentWindowCovered = rawData?.recent_window_covered !== false
+    && accounts.every((account) => account?.recent_posts_collection_window_covered !== false);
   const avgEngagementRate = totalFollowers
     ? (((totalAvgLikes + totalAvgComments) / totalFollowers) * 100)
     : 0;
@@ -708,15 +738,28 @@ function normalizeDashboardData(rawData) {
     total_accounts: accounts.length,
     total_followers: totalFollowers,
     total_posts: totalPosts,
+    recent_window_days: recentWindowDays,
+    recent_window_covered: recentWindowCovered,
+    total_likes_recent_window: totalLikesRecentWindow,
+    total_video_views_recent_window: totalVideoViewsRecentWindow,
   };
 }
 
 /* ── Overview stats ──────────────────────────────────────────── */
 
 function renderOverview(data) {
+  const recentWindowDays = Number(data?.recent_window_days) || 30;
+  const totalLikesLabel = document.getElementById("totalLikesLabel");
+  const totalViewsLabel = document.getElementById("totalViewsLabel");
+  if (totalLikesLabel) totalLikesLabel.textContent = `${recentWindowDays}d likes`;
+  if (totalViewsLabel) totalViewsLabel.textContent = `${recentWindowDays}d reel views`;
+
+  const coverageSuffix = data?.recent_window_covered === false ? "+" : "";
   document.getElementById("totalFollowers").textContent = formatNumber(data.total_followers);
   document.getElementById("totalAccounts").textContent = data.total_accounts;
   document.getElementById("totalPosts").textContent = formatNumber(data.total_posts);
+  document.getElementById("totalLikes30d").textContent = `${formatNumber(data.total_likes_recent_window)}${coverageSuffix}`;
+  document.getElementById("totalViews30d").textContent = `${formatNumber(data.total_video_views_recent_window)}${coverageSuffix}`;
   document.getElementById("avgEngagement").textContent = formatPercent(data.avg_engagement_rate);
   document.getElementById("lastUpdated").textContent = `Snapshot · ${formatDate(data.snapshot_date || data.date || data.generated_at)}`;
 }

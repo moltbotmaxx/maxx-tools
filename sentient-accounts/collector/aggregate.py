@@ -11,6 +11,7 @@ HISTORY_DIR = DATA_DIR / "history"
 GLOBAL_DATA_PATH = DATA_DIR / "global.json"
 GLOBAL_HISTORY_PATH = HISTORY_DIR / "global.json"
 SKIP_FILES = {"global.json", "errors.json"}
+HIDDEN_LIKES_SENTINEL = 3
 
 
 def write_json(path: Path, payload: Any) -> None:
@@ -156,6 +157,80 @@ def update_history(history_path: Path, snapshot: dict[str, Any]) -> None:
     write_json(history_path, [snapshots_by_date[date] for date in sorted(snapshots_by_date)])
 
 
+def resolve_collection_window_days(account: dict[str, Any]) -> int:
+    for key in ("recent_posts_collection_window_days", "recent_posts_window_days"):
+        raw_value = account.get(key)
+        if isinstance(raw_value, (int, float)) and raw_value > 0:
+            return int(raw_value)
+    return 30
+
+
+def extract_recent_posts(account: dict[str, Any]) -> list[dict[str, Any]]:
+    posts = account.get("recent_posts")
+    return posts if isinstance(posts, list) else []
+
+
+def parse_snapshot_date(account: dict[str, Any]) -> dt.date | None:
+    for key in ("date", "snapshot_date"):
+        value = account.get(key)
+        if isinstance(value, str):
+            try:
+                return dt.date.fromisoformat(value)
+            except ValueError:
+                continue
+    return None
+
+
+def is_post_within_window(post: dict[str, Any], snapshot_date: dt.date | None, window_days: int) -> bool:
+    if snapshot_date is None or window_days < 0:
+        return False
+
+    raw_date = post.get("date")
+    if not isinstance(raw_date, str):
+        return False
+
+    try:
+        post_date = dt.date.fromisoformat(raw_date)
+    except ValueError:
+        return False
+
+    age_in_days = (snapshot_date - post_date).days
+    return 0 <= age_in_days <= window_days
+
+
+def effective_like_count(post: dict[str, Any]) -> int:
+    likes = int(post.get("likes") or 0)
+    return 0 if likes == HIDDEN_LIKES_SENTINEL else likes
+
+
+def resolve_recent_window_posts(account: dict[str, Any]) -> list[dict[str, Any]]:
+    snapshot_date = parse_snapshot_date(account)
+    window_days = resolve_collection_window_days(account)
+    return [
+        post
+        for post in extract_recent_posts(account)
+        if isinstance(post, dict) and is_post_within_window(post, snapshot_date, window_days)
+    ]
+
+
+def total_likes_recent_window(account: dict[str, Any]) -> int:
+    explicit_total = account.get("total_likes_recent_window")
+    if isinstance(explicit_total, (int, float)) and explicit_total > 0:
+        return int(explicit_total)
+    return sum(effective_like_count(post) for post in resolve_recent_window_posts(account))
+
+
+def total_video_views_recent_window(account: dict[str, Any]) -> int:
+    explicit_total = account.get("total_video_views_recent_window")
+    if isinstance(explicit_total, (int, float)) and explicit_total > 0:
+        return int(explicit_total)
+    return sum(
+        int(post.get("video_views") or 0)
+        for post in resolve_recent_window_posts(account)
+        if post.get("is_video")
+    )
+
+
 def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
@@ -167,6 +242,10 @@ def main() -> int:
     total_posts = sum(int(account.get("posts", 0)) for account in accounts)
     total_avg_likes = sum(float(account.get("avg_likes", 0)) for account in accounts)
     total_avg_comments = sum(float(account.get("avg_comments", 0)) for account in accounts)
+    total_likes_30d = sum(total_likes_recent_window(account) for account in accounts)
+    total_video_views_30d = sum(total_video_views_recent_window(account) for account in accounts)
+    recent_window_days = max((resolve_collection_window_days(account) for account in accounts), default=30)
+    recent_window_covered = all(account.get("recent_posts_collection_window_covered") is not False for account in accounts)
     avg_engagement_rate = round(((total_avg_likes + total_avg_comments) / total_followers) * 100, 4) if total_followers else 0
 
     global_data = {
@@ -177,6 +256,10 @@ def main() -> int:
         "total_accounts": len(accounts),
         "total_followers": total_followers,
         "total_posts": total_posts,
+        "recent_window_days": recent_window_days,
+        "recent_window_covered": recent_window_covered,
+        "total_likes_recent_window": total_likes_30d,
+        "total_video_views_recent_window": total_video_views_30d,
         "avg_engagement_rate": avg_engagement_rate,
         "stale_accounts_excluded": stale_accounts,
         "load_failures": load_failures,
@@ -190,6 +273,9 @@ def main() -> int:
             "date": global_data["date"],
             "total_accounts": global_data["total_accounts"],
             "total_followers": global_data["total_followers"],
+            "recent_window_days": global_data["recent_window_days"],
+            "total_likes_recent_window": global_data["total_likes_recent_window"],
+            "total_video_views_recent_window": global_data["total_video_views_recent_window"],
             "avg_engagement_rate": global_data["avg_engagement_rate"],
         },
     )
