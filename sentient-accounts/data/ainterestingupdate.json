@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-03-22T06:57:18+00:00",
+  "generated_at": "2026-03-22T07:54:39+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:50:56+00:00",
+  "run_started_at": "2026-03-22T07:49:44+00:00",
   "account": "ainterestingupdate",
   "profile_url": "https://www.instagram.com/ainterestingupdate/",
-  "profile_pic_url": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-19/529816806_17960071682963045_8078755290205806234_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmV4cGVyaW1lbnRhbCJ9&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGny4kZg4a1IIXvOAILbC7yVsoMfPe8XanZYUH_bLERSrmBeDXE-wAcAggAQXIo1lc&_nc_ohc=8eM7faNeYM0Q7kNvwE3zh1b&_nc_gid=V34NPJOjm7BfjBNxorX_aA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOZclB9lts0Ml84-AJpeBiQigR1wbmNDAQAB0j-ccb7-5&oh=00_AfxZkXd9riuJFTO5Jd2cK3yrHAK4FLhI45FuQrBAa5BpJg&oe=69C550A1&_nc_sid=1e20d2",
+  "avatar_path": "../avatars/ainterestingupdate.jpg",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/529816806_17960071682963045_8078755290205806234_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFhtXKbSnWSw8VvV6595SIj5S5xbXJJ_VdvKIe3-_l_aIfLobrwtK3Pn61UB9SjEZI&_nc_ohc=8eM7faNeYM0Q7kNvwFGCLMz&_nc_gid=xBerzmChPZCtV2lOe27Vrg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOZclB9lts0Ml84-AJpeBiQigR1wbmNDAQAB0j-ccb7-5&oh=00_Afxd-dJCW2-spiQ44_VbuFe8WD_rPT7PMve_aMf3myQghw&oe=69C588E1&_nc_sid=1e20d2",
   "full_name": "AI / Tech Updates",
   "biography": "\ud83e\udde0 Follow to learn something new about AI\n\ud83e\udd16 Brought to you by @sentientagency 25M+\n\ud83d\udce8 Collab contact@sentientagency.io\n\ud83d\udc47 Get our Free ChatGPT Guide",
   "external_url": "http://chatgptricks.store",
@@ -25,21 +26,21 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 319.49,
-  "avg_comments": 8.55,
-  "avg_video_views": 19696.49,
-  "avg_video_views_per_video": 19696.49,
-  "avg_video_views_per_post": 15812.68,
-  "total_video_views_recent_window": 1122700,
-  "engagement_rate": 0.1788,
+  "avg_likes": 320.69,
+  "avg_comments": 8.56,
+  "avg_video_views": 19789.47,
+  "avg_video_views_per_video": 19789.47,
+  "avg_video_views_per_post": 15887.32,
+  "total_video_views_recent_window": 1128000,
+  "engagement_rate": 0.1795,
   "recent_posts": [
     {
       "shortcode": "DWKN7IcDT5d",
       "date": "2026-03-21",
-      "likes": 607,
+      "likes": 683,
       "comments": 28,
       "is_video": true,
-      "video_views": 34800,
+      "video_views": 39400,
       "caption": "It looks like a full sci-fi battle scene straight out of a $200M movie\u2026 but it\u2019s not.\n\nCreated by @lordofacca, a single character wipes out fleets of war machines with precision, u",
       "url": "https://www.instagram.com/p/DWKN7IcDT5d/",
       "video_views_source": "selenium_reels_grid"
@@ -47,8 +48,8 @@
     {
       "shortcode": "DWH8_GNlOKe",
       "date": "2026-03-20",
-      "likes": 186,
-      "comments": 16,
+      "likes": 187,
+      "comments": 17,
       "is_video": false,
       "video_views": 0,
       "caption": "A 22-year-old bartender from New Brunswick just signed a deal worth over $1M to star in a TV series - without ever stepping foot on a set.\n\nNo cameras. No scripts. No filming. The ",
@@ -68,10 +69,10 @@
     {
       "shortcode": "DWHamZbj_w3",
       "date": "2026-03-20",
-      "likes": 243,
+      "likes": 244,
       "comments": 10,
       "is_video": true,
-      "video_views": 34300,
+      "video_views": 34500,
       "caption": "Booster Robotics K1 demo almost goes wrong \ud83d\ude33 \n\nAsimov\u2019s Three Laws of Robotics\u2014don\u2019t harm humans, obey orders, protect themselves\u2014sound simple, but seeing real humanoid robots move",
       "url": "https://www.instagram.com/p/DWHamZbj_w3/",
       "video_views_source": "selenium_reels_grid"
@@ -79,10 +80,10 @@
     {
       "shortcode": "DWHFSeqEWUl",
       "date": "2026-03-20",
-      "likes": 485,
+      "likes": 486,
       "comments": 8,
       "is_video": true,
-      "video_views": 12600,
+      "video_views": 12700,
       "caption": "This is exactly what AI was built for \ud83d\ude2d \n\nA viral remake of the iconic \u201cwazzup\u201d scene from Scary Movie reimagines it with Spider-Man and the Green Goblin on a chaotic group call\u2014an",
       "url": "https://www.instagram.com/p/DWHFSeqEWUl/",
       "video_views_source": "selenium_reels_grid"
@@ -93,7 +94,7 @@
       "likes": 249,
       "comments": 4,
       "is_video": true,
-      "video_views": 17000,
+      "video_views": 17100,
       "caption": "Seedance 2.0 feels like a speedrun to Hollywood lawsuits \ud83d\ude02 \n\nOne prompt with ByteDance\u2019s model generates a chaotic mashup of Fast & Furious, Jurassic Park, Avengers, and Star Wars ",
       "url": "https://www.instagram.com/p/DWFc5Z-F1eh/",
       "video_views_source": "selenium_reels_grid"
@@ -101,10 +102,10 @@
     {
       "shortcode": "DWFNBW1jbY1",
       "date": "2026-03-19",
-      "likes": 143,
+      "likes": 144,
       "comments": 12,
       "is_video": true,
-      "video_views": 74800,
+      "video_views": 74900,
       "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
       "url": "https://www.instagram.com/p/DWFNBW1jbY1/",
       "video_views_source": "selenium_reels_grid"
@@ -126,7 +127,7 @@
       "likes": 166,
       "comments": 7,
       "is_video": true,
-      "video_views": 24000,
+      "video_views": 24100,
       "caption": "XPeng just unveiled an AI-powered parking feature that lets you draw where the car should go, and it handles the rest. It might seem minor, but it signals a bigger shift: AI is tur",
       "url": "https://www.instagram.com/p/DWCqrddjcNX/",
       "video_views_source": "selenium_reels_grid"
@@ -134,7 +135,7 @@
     {
       "shortcode": "DWCcn2Xic7J",
       "date": "2026-03-18",
-      "likes": 252,
+      "likes": 253,
       "comments": 3,
       "is_video": true,
       "video_views": 22400,
@@ -145,7 +146,7 @@
     {
       "shortcode": "DWCOs5UDEk_",
       "date": "2026-03-18",
-      "likes": 665,
+      "likes": 667,
       "comments": 14,
       "is_video": true,
       "video_views": 21200,
@@ -333,7 +334,7 @@
       "likes": 155,
       "comments": 4,
       "is_video": true,
-      "video_views": 31700,
+      "video_views": 31800,
       "caption": "RAM prices are rising fast. Some high-capacity or specialized memory kits are now approaching $900, fueled by growing demand from AI, data centers, and next-gen hardware.\n\nAs AI wo",
       "url": "https://www.instagram.com/p/DVwXOHnjo_h/",
       "video_views_source": "selenium_reels_grid"
@@ -395,7 +396,7 @@
     {
       "shortcode": "DVtntX_kf_2",
       "date": "2026-03-10",
-      "likes": 215,
+      "likes": 216,
       "comments": 7,
       "is_video": true,
       "video_views": 17600,
@@ -590,7 +591,7 @@
     {
       "shortcode": "DVWsxchEbXG",
       "date": "2026-03-01",
-      "likes": 4649,
+      "likes": 4650,
       "comments": 49,
       "is_video": false,
       "video_views": 0,

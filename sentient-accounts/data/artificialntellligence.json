@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-03-22T06:52:56+00:00",
+  "generated_at": "2026-03-22T07:51:46+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:50:56+00:00",
+  "run_started_at": "2026-03-22T07:49:44+00:00",
   "account": "artificialntellligence",
   "profile_url": "https://www.instagram.com/artificialntellligence/",
-  "profile_pic_url": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gHM3zUcNDUk_pbg4apAQ0IeXdHz35KvN3egMHopoH0UlHozxfBq5OTCsv5R4cT9IGg&_nc_ohc=M1xTIVa7UawQ7kNvwGomv_w&_nc_gid=w2sdT3fH7mFxjToi2p5l-g&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_Afxlrag3pA5pQJ8OT4AzSxKj8OwI1pyV0JtmTLI760H7mA&oe=69C57E56&_nc_sid=1e20d2",
+  "avatar_path": "../avatars/artificialntellligence.jpg",
+  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHxJKMKfDpPfuAr4Q5OaPLBs9_5Bx7mx1FX9A74DkXD8r4YJoElSjMBQkVaAoW1Mf0&_nc_ohc=M1xTIVa7UawQ7kNvwFDRtUN&_nc_gid=M0zHh6sbGrHRasCPIWgBlw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_AfwC8TsiR7XFtmFl0I0RChztw-LsNu0-NfC9laMo2X8Rmw&oe=69C57E56&_nc_sid=1e20d2",
   "full_name": "Artificial Intelligence (AI)",
   "biography": "\ud83d\udcaaWorld\u2019s Best AI Page \n\ud83d\udce9: contact@sentientagency.io\n\ud83d\udc47 Go viral with us",
   "external_url": "https://sentientagency.io",
   "is_verified": true,
-  "followers": 1505159,
+  "followers": 1505144,
   "following": 121,
   "posts": 481,
   "recent_post_count": 74,
@@ -25,21 +26,21 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 2676.5,
-  "avg_comments": 18.24,
-  "avg_video_views": 157010.34,
-  "avg_video_views_per_video": 157010.34,
-  "avg_video_views_per_post": 61531.08,
-  "total_video_views_recent_window": 4553300,
-  "engagement_rate": 0.179,
+  "avg_likes": 2681.07,
+  "avg_comments": 18.26,
+  "avg_video_views": 157548.28,
+  "avg_video_views_per_video": 157548.28,
+  "avg_video_views_per_post": 61741.89,
+  "total_video_views_recent_window": 4568900,
+  "engagement_rate": 0.1793,
   "recent_posts": [
     {
       "shortcode": "DWKTLlzD8Sp",
       "date": "2026-03-21",
-      "likes": 1440,
-      "comments": 15,
+      "likes": 1551,
+      "comments": 16,
       "is_video": true,
-      "video_views": 153000,
+      "video_views": 167000,
       "caption": "It looks like a full sci-fi battle scene straight out of a $200M movie\u2026 but it\u2019s not.\n\nCreated by @lordofacca, a single character wipes out fleets of war machines with precision, u",
       "url": "https://www.instagram.com/p/DWKTLlzD8Sp/",
       "video_views_source": "selenium_reels_grid"
@@ -47,7 +48,7 @@
     {
       "shortcode": "DWH_2cmDoxI",
       "date": "2026-03-20",
-      "likes": 700,
+      "likes": 704,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -57,10 +58,10 @@
     {
       "shortcode": "DWHFzCOjt5v",
       "date": "2026-03-20",
-      "likes": 1600,
+      "likes": 1621,
       "comments": 33,
       "is_video": true,
-      "video_views": 133000,
+      "video_views": 134000,
       "caption": "As part of its Claude Network Partner Program, Anthropic has launched its first official certification: Claude Certified Architect \u2014 Foundations (CCA-F).\n\nThe certification is curr",
       "url": "https://www.instagram.com/p/DWHFzCOjt5v/",
       "video_views_source": "selenium_reels_grid"
@@ -78,10 +79,10 @@
     {
       "shortcode": "DWFNUCSjjWK",
       "date": "2026-03-19",
-      "likes": 289,
+      "likes": 290,
       "comments": 11,
       "is_video": true,
-      "video_views": 63600,
+      "video_views": 63800,
       "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
       "url": "https://www.instagram.com/p/DWFNUCSjjWK/",
       "video_views_source": "selenium_reels_grid"
@@ -89,7 +90,7 @@
     {
       "shortcode": "DWFCceBj5nz",
       "date": "2026-03-19",
-      "likes": 133,
+      "likes": 134,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -99,10 +100,10 @@
     {
       "shortcode": "DWE7DIPjvAr",
       "date": "2026-03-19",
-      "likes": 533,
+      "likes": 534,
       "comments": 10,
       "is_video": true,
-      "video_views": 58200,
+      "video_views": 58300,
       "caption": "GTA 4 reimagined in Russia \ud83d\udc40\n\nFor decades, high-end graphics relied on brute-force physics\u2014calculating every light bounce, surface, and reflection in real time. But that approach i",
       "url": "https://www.instagram.com/p/DWE7DIPjvAr/",
       "video_views_source": "selenium_reels_grid"
@@ -110,7 +111,7 @@
     {
       "shortcode": "DWCmKkpDok8",
       "date": "2026-03-18",
-      "likes": 380,
+      "likes": 382,
       "comments": 8,
       "is_video": false,
       "video_views": 0,
@@ -120,7 +121,7 @@
     {
       "shortcode": "DWCa9oQD7by",
       "date": "2026-03-18",
-      "likes": 924,
+      "likes": 927,
       "comments": 24,
       "is_video": true,
       "video_views": 123000,
@@ -162,7 +163,7 @@
     {
       "shortcode": "DV_WEDTjuOr",
       "date": "2026-03-17",
-      "likes": 390,
+      "likes": 391,
       "comments": 7,
       "is_video": true,
       "video_views": 48700,
@@ -186,7 +187,7 @@
       "likes": 372,
       "comments": 1,
       "is_video": true,
-      "video_views": 54200,
+      "video_views": 54300,
       "caption": "Researchers trained a humanoid robot to play tennis using only 5 hours of human motion-capture data. With that training, the robot learned to coordinate its body, predict the ball\u2019",
       "url": "https://www.instagram.com/p/DV9YN_-j-hY/",
       "video_views_source": "selenium_reels_grid"
@@ -236,7 +237,7 @@
     {
       "shortcode": "DV2I5lRDt6i",
       "date": "2026-03-14",
-      "likes": 4055,
+      "likes": 4059,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -259,7 +260,7 @@
       "likes": 1579,
       "comments": 22,
       "is_video": true,
-      "video_views": 96000,
+      "video_views": 96100,
       "caption": "That\u2019s the good timeline. \ud83d\udc4d\n\n\u2022 Follow @artificialntellligence for more content on AI and technology.\n\n\u2022 \ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n#ai #celebrity #afterlife #vira",
       "url": "https://www.instagram.com/p/DV1oDe5PXYz/",
       "video_views_source": "selenium_reels_grid"
@@ -267,7 +268,7 @@
     {
       "shortcode": "DVzaWrXDqND",
       "date": "2026-03-12",
-      "likes": 5608,
+      "likes": 5609,
       "comments": 16,
       "is_video": false,
       "video_views": 0,
@@ -277,7 +278,7 @@
     {
       "shortcode": "DVzTNxwDo_I",
       "date": "2026-03-12",
-      "likes": 479,
+      "likes": 480,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -342,7 +343,7 @@
       "likes": 1380,
       "comments": 9,
       "is_video": true,
-      "video_views": 77100,
+      "video_views": 77200,
       "caption": "Claude\u2019s latest advances are turning up the heat on GPT in the race to build the most powerful AI model.\n\nWith standout performance on complex reasoning tasks and the ability to ha",
       "url": "https://www.instagram.com/p/DVum9wPMQIe/",
       "video_views_source": "selenium_reels_grid"
@@ -391,7 +392,7 @@
     {
       "shortcode": "DVrIMxXulvp",
       "date": "2026-03-09",
-      "likes": 3016,
+      "likes": 3018,
       "comments": 8,
       "is_video": true,
       "video_views": 196000,
@@ -402,7 +403,7 @@
     {
       "shortcode": "DVrACBHjpgO",
       "date": "2026-03-09",
-      "likes": 377,
+      "likes": 378,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -412,7 +413,7 @@
     {
       "shortcode": "DVoyNt_j9uv",
       "date": "2026-03-08",
-      "likes": 1428,
+      "likes": 1429,
       "comments": 6,
       "is_video": false,
       "video_views": 0,
@@ -422,7 +423,7 @@
     {
       "shortcode": "DVj8-0jDmae",
       "date": "2026-03-06",
-      "likes": 102767,
+      "likes": 102949,
       "comments": 210,
       "is_video": false,
       "video_views": 0,
@@ -577,7 +578,7 @@
     {
       "shortcode": "DVULUmXD9C-",
       "date": "2026-02-28",
-      "likes": 6179,
+      "likes": 6180,
       "comments": 63,
       "is_video": false,
       "video_views": 0,

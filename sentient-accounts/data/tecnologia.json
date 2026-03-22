@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-03-22T07:00:25+00:00",
+  "generated_at": "2026-03-22T07:57:03+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:50:56+00:00",
+  "run_started_at": "2026-03-22T07:49:44+00:00",
   "account": "tecnologia",
   "profile_url": "https://www.instagram.com/tecnologia/",
-  "profile_pic_url": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gF7q-TEwVWmjaTaC-qGNnep0hkwNVMF6ppODBZ88WNxmsTMQhZN8sRUkq6kGQUqsGQ&_nc_ohc=KPbh5fguLbYQ7kNvwHkwM5q&_nc_gid=LWGJwCu_S9GskBXYRZrDmw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_Afw4qE3mrGLolhlSS6pyE2SD41MS9EKgyk9Dt0SZDHnEDA&oe=69C57EDF&_nc_sid=1e20d2",
+  "avatar_path": "../avatars/tecnologia.jpg",
+  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gExz5e_rf6rkE4Ux6aHZBdNn8b-TLuUVSeIcoNgTShjR9kSVTLktkHPphfz3F2nfCw&_nc_ohc=KPbh5fguLbYQ7kNvwEfPrPU&_nc_gid=UivsQfSMLReErgfvgx47CA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_Afy2ZKdfFk3eMT1iFFRfjCR7o-aFRxZ8WnXemiA4Ky762A&oe=69C57EDF&_nc_sid=1e20d2",
   "full_name": "Tecnologia",
   "biography": "\ud83e\udd16 La fuente confiable para todo lo relacionado con tecnolog\u00eda, IA y negocios. S\u00edguenos y no te quedes atr\u00e1s!",
   "external_url": "http://ivanelgrande.com",
   "is_verified": true,
-  "followers": 59827,
+  "followers": 59845,
   "following": 7,
   "posts": 219,
   "recent_post_count": 55,
@@ -25,13 +26,13 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 13597.18,
-  "avg_comments": 65.35,
-  "avg_video_views": 335614.57,
-  "avg_video_views_per_video": 335614.57,
-  "avg_video_views_per_post": 299002.07,
-  "total_video_views_recent_window": 16445114,
-  "engagement_rate": 22.8367,
+  "avg_likes": 13613.64,
+  "avg_comments": 65.36,
+  "avg_video_views": 335786.0,
+  "avg_video_views_per_video": 335786.0,
+  "avg_video_views_per_post": 299154.8,
+  "total_video_views_recent_window": 16453514,
+  "engagement_rate": 22.8574,
   "recent_posts": [
     {
       "shortcode": "DOueE7_DPmm",
@@ -46,10 +47,10 @@
     {
       "shortcode": "DWKSrtmia5k",
       "date": "2026-03-21",
-      "likes": 1020,
+      "likes": 1027,
       "comments": 0,
       "is_video": true,
-      "video_views": 69700,
+      "video_views": 70200,
       "caption": "Un resorte se fabrica comenzando por seleccionar un material adecuado, generalmente acero o acero inoxidable, y estirarlo hasta convertirlo en un alambre m\u00e1s delgado. Luego, el ala",
       "url": "https://www.instagram.com/p/DWKSrtmia5k/",
       "video_views_source": "selenium_reels_grid"
@@ -57,10 +58,10 @@
     {
       "shortcode": "DWHVNUiJTPs",
       "date": "2026-03-20",
-      "likes": 41889,
+      "likes": 42113,
       "comments": 103,
       "is_video": true,
-      "video_views": 475000,
+      "video_views": 479000,
       "caption": "La Kawasaki Ninja H2R es una de las motocicletas m\u00e1s extremas jam\u00e1s construidas.\n\nEst\u00e1 impulsada por un motor de cuatro cilindros en l\u00ednea de 998 cc con supercargador que produce m",
       "url": "https://www.instagram.com/p/DWHVNUiJTPs/",
       "video_views_source": "selenium_reels_grid"
@@ -68,10 +69,10 @@
     {
       "shortcode": "DWHN3RHjrXd",
       "date": "2026-03-20",
-      "likes": 1945,
+      "likes": 1954,
       "comments": 0,
       "is_video": true,
-      "video_views": 30700,
+      "video_views": 30800,
       "caption": "Construido en 2009, el BMW 320si WTCC fue dise\u00f1ado con un nivel de precisi\u00f3n que a\u00fan se siente futurista, enfocado completamente en la eficiencia, el balance y en recortar milisegu",
       "url": "https://www.instagram.com/p/DWHN3RHjrXd/",
       "video_views_source": "selenium_reels_grid"
@@ -79,7 +80,7 @@
     {
       "shortcode": "DWFiluUiT5R",
       "date": "2026-03-20",
-      "likes": 11061,
+      "likes": 11127,
       "comments": 173,
       "is_video": false,
       "video_views": 0,
@@ -89,10 +90,10 @@
     {
       "shortcode": "DWFYDJDiXjk",
       "date": "2026-03-19",
-      "likes": 4380,
+      "likes": 4419,
       "comments": 17,
       "is_video": true,
-      "video_views": 199000,
+      "video_views": 200000,
       "caption": "A velocidades cercanas a 249 mph (unos 400 km/h), detener un Bugatti requiere mucho m\u00e1s que frenos est\u00e1ndar, ya que las fuerzas involucradas son extremas.\n\nCuando el conductor pisa",
       "url": "https://www.instagram.com/p/DWFYDJDiXjk/",
       "video_views_source": "selenium_reels_grid"
@@ -100,10 +101,10 @@
     {
       "shortcode": "DWFVtHtDINY",
       "date": "2026-03-19",
-      "likes": 976,
+      "likes": 979,
       "comments": 35,
       "is_video": true,
-      "video_views": 38400,
+      "video_views": 38500,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
       "url": "https://www.instagram.com/p/DWFVtHtDINY/",
       "video_views_source": "selenium_reels_grid"
@@ -111,10 +112,10 @@
     {
       "shortcode": "DWFAL98CXXT",
       "date": "2026-03-19",
-      "likes": 2697,
+      "likes": 2711,
       "comments": 1,
       "is_video": true,
-      "video_views": 95100,
+      "video_views": 95600,
       "caption": "Mercedes demuestra el flujo aerodin\u00e1mico alrededor del AMG GT utilizando corrientes visibles en un t\u00fanel de viento que revelan c\u00f3mo el aire se desplaza sobre la carrocer\u00eda a alta v",
       "url": "https://www.instagram.com/p/DWFAL98CXXT/",
       "video_views_source": "selenium_reels_grid"
@@ -133,10 +134,10 @@
     {
       "shortcode": "DWCape1CcLl",
       "date": "2026-03-18",
-      "likes": 2742,
+      "likes": 2752,
       "comments": 8,
       "is_video": true,
-      "video_views": 83700,
+      "video_views": 83800,
       "caption": "Los Boeing 737 de Ryanair est\u00e1n construidos con escaleras integradas, lo que permite a los pasajeros abordar sin necesidad de escaleras del aeropuerto ni mangas de embarque. Las es",
       "url": "https://www.instagram.com/p/DWCape1CcLl/",
       "video_views_source": "selenium_reels_grid"
@@ -144,8 +145,8 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 66501,
-      "comments": 716,
+      "likes": 66661,
+      "comments": 717,
       "is_video": false,
       "video_views": 0,
       "caption": "En muchas partes de Estados Unidos, un AR-15 cuesta menos de $500, mientras que un kit de 32GB de RAM para PC gamer puede superar los $600. Esa comparaci\u00f3n por s\u00ed sola ya llama la ",
@@ -175,7 +176,7 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 3992,
+      "likes": 4014,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -185,10 +186,10 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 45149,
+      "likes": 45247,
       "comments": 321,
       "is_video": true,
-      "video_views": 535000,
+      "video_views": 536000,
       "caption": "Los robots de entrega se ven futuristas en los videos promocionales, pero cuando salen al mundo real la historia cambia. Bordillos, baches, autos e incluso trenes se convierten en ",
       "url": "https://www.instagram.com/p/DV6tlKmCcPk/",
       "video_views_source": "selenium_reels_grid"
@@ -265,7 +266,7 @@
       "likes": 660,
       "comments": 0,
       "is_video": true,
-      "video_views": 19600,
+      "video_views": 19700,
       "caption": "Arrastrarse por el t\u00fanel de la tripulaci\u00f3n de un B-29 Superfortress muestra lo compacto y funcional que fue dise\u00f1ado el interior de esta aeronave.\n\nEl estrecho t\u00fanel presurizado co",
       "url": "https://www.instagram.com/p/DVwJeY8jog7/",
       "video_views_source": "selenium_reels_grid"
@@ -273,7 +274,7 @@
     {
       "shortcode": "DVv7Miujsw6",
       "date": "2026-03-11",
-      "likes": 94903,
+      "likes": 95046,
       "comments": 156,
       "is_video": true,
       "video_views": 7200000,
@@ -350,10 +351,10 @@
     {
       "shortcode": "DVj4kXFiT7O",
       "date": "2026-03-06",
-      "likes": 10653,
+      "likes": 10661,
       "comments": 174,
       "is_video": true,
-      "video_views": 945000,
+      "video_views": 946000,
       "caption": "Estados Unidos no solo recibi\u00f3 un Raptor m\u00e1s grande, sino una camioneta fundamentalmente diferente, dise\u00f1ada para ofrecer potencia, mayor tama\u00f1o y capacidad de trabajo pesado.\n\nLa ",
       "url": "https://www.instagram.com/p/DVj4kXFiT7O/",
       "video_views_source": "selenium_reels_grid"
@@ -383,7 +384,7 @@
     {
       "shortcode": "DVg-irDiUGr",
       "date": "2026-03-05",
-      "likes": 72524,
+      "likes": 72527,
       "comments": 288,
       "is_video": true,
       "video_views": 1000000,
@@ -394,7 +395,7 @@
     {
       "shortcode": "DVg4EmCiVE9",
       "date": "2026-03-05",
-      "likes": 35848,
+      "likes": 35860,
       "comments": 66,
       "is_video": true,
       "video_views": 506000,
@@ -427,7 +428,7 @@
     {
       "shortcode": "DVeGhVijiq7",
       "date": "2026-03-04",
-      "likes": 120497,
+      "likes": 120549,
       "comments": 117,
       "is_video": true,
       "video_views": 1100000,
@@ -438,7 +439,7 @@
     {
       "shortcode": "DVb-UPgEvko",
       "date": "2026-03-03",
-      "likes": 37459,
+      "likes": 37476,
       "comments": 23,
       "is_video": true,
       "video_views": 243000,
@@ -537,7 +538,7 @@
     {
       "shortcode": "DVOj0TOjvpO",
       "date": "2026-02-26",
-      "likes": 74885,
+      "likes": 74903,
       "comments": 287,
       "is_video": true,
       "video_views": 1900000,

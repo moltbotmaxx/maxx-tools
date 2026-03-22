@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-03-22T07:01:42+00:00",
+  "generated_at": "2026-03-22T07:57:55+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:50:56+00:00",
+  "run_started_at": "2026-03-22T07:49:44+00:00",
   "account": "artificialmente.ia",
   "profile_url": "https://www.instagram.com/artificialmente.ia/",
-  "profile_pic_url": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gECe1ckixOnLSKZc_Mc5c4HVi2OK34enemfPxHTuMJ8oE5hruVMjWSbxr2FKCuyAtQ&_nc_ohc=l6jLFOmBifEQ7kNvwFDOMZn&_nc_gid=CZEqfaBykBNHNymQge0CqA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_AfwKwJsAtPFS7mFYzyiAgo1zShGRkhWZ1_RpO77P1bWTfQ&oe=69C57D86&_nc_sid=1e20d2",
+  "avatar_path": "../avatars/artificialmente.ia.jpg",
+  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gFH9ZkoM7mQ3rUtL5irBgM2jVd1w-IRpaqzo3saUpC9DPuoQ9TTagSSh2IARs7mY4A&_nc_ohc=l6jLFOmBifEQ7kNvwEhJNdB&_nc_gid=oxqmbOYAugh2MC5sycYPvQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_AfzpubUP8U8pXSf34Gwq9OQxW7gwyuXIhW7RaucsJYpm4g&oe=69C57D86&_nc_sid=1e20d2",
   "full_name": "Ivan \u2022 IA \u2022 Tecnolog\u00eda",
   "biography": "\ud83e\uddd1\u200d\ud83d\udcbb Creador / Futurista @ivanelgrande\n\ud83e\udd16 S\u00edgueme antes de que sea tarde\n\ud83d\udce5 artificialmente.ia@gmail.com\n\ud83d\udc47 O usas IA o te quedas atr\u00e1s",
   "external_url": "http://ivanelgrande.com",
@@ -25,13 +26,13 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 5672.35,
-  "avg_comments": 101.47,
-  "avg_video_views": 127576.32,
-  "avg_video_views_per_video": 127576.32,
-  "avg_video_views_per_post": 64638.67,
-  "total_video_views_recent_window": 4847900,
-  "engagement_rate": 1.6602,
+  "avg_likes": 5681.88,
+  "avg_comments": 101.49,
+  "avg_video_views": 127705.26,
+  "avg_video_views_per_video": 127705.26,
+  "avg_video_views_per_post": 64704.0,
+  "total_video_views_recent_window": 4852800,
+  "engagement_rate": 1.663,
   "recent_posts": [
     {
       "shortcode": "DWByMuajpBM",
@@ -67,10 +68,10 @@
     {
       "shortcode": "DWKLTVOEszL",
       "date": "2026-03-21",
-      "likes": 1696,
+      "likes": 1716,
       "comments": 35,
       "is_video": true,
-      "video_views": 58100,
+      "video_views": 58800,
       "caption": "Parece una escena de batalla sci-fi digna de una pel\u00edcula de $200M\u2026 pero no lo es.\n\nCreado por @lordofacca, un solo personaje destruye flotas de m\u00e1quinas de guerra con precisi\u00f3n us",
       "url": "https://www.instagram.com/p/DWKLTVOEszL/",
       "video_views_source": "selenium_reels_grid"
@@ -78,7 +79,7 @@
     {
       "shortcode": "DWIDtfKj-Lh",
       "date": "2026-03-21",
-      "likes": 801,
+      "likes": 802,
       "comments": 15,
       "is_video": false,
       "video_views": 0,
@@ -88,8 +89,8 @@
     {
       "shortcode": "DWHfwydDz6Q",
       "date": "2026-03-20",
-      "likes": 1015,
-      "comments": 24,
+      "likes": 1023,
+      "comments": 25,
       "is_video": false,
       "video_views": 0,
       "caption": "Toda la industria de chips ahora est\u00e1 observando el Golfo.\n\nTras los ataques de Ir\u00e1n a Catar y el bloqueo del Estrecho de Ormuz, los env\u00edos de helio a trav\u00e9s de la regi\u00f3n se han de",
@@ -98,10 +99,10 @@
     {
       "shortcode": "DWHI2yhDd9L",
       "date": "2026-03-20",
-      "likes": 29272,
+      "likes": 29652,
       "comments": 65,
       "is_video": true,
-      "video_views": 268000,
+      "video_views": 271000,
       "caption": "Esto es exactamente para lo que se cre\u00f3 la IA \ud83d\ude2d Un remake viral de la ic\u00f3nica escena de \u201cwazzup\u201d de Scary Movie la reimagina con Spider-Man y el Duende Verde en una ca\u00f3tica videoll",
       "url": "https://www.instagram.com/p/DWHI2yhDd9L/",
       "video_views_source": "selenium_reels_grid"
@@ -109,7 +110,7 @@
     {
       "shortcode": "DWFoETnDPiU",
       "date": "2026-03-20",
-      "likes": 474,
+      "likes": 475,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -119,10 +120,10 @@
     {
       "shortcode": "DWFVtHtDINY",
       "date": "2026-03-19",
-      "likes": 976,
+      "likes": 979,
       "comments": 35,
       "is_video": true,
-      "video_views": 38400,
+      "video_views": 38500,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
       "url": "https://www.instagram.com/p/DWFVtHtDINY/",
       "video_views_source": "selenium_reels_grid"
@@ -130,7 +131,7 @@
     {
       "shortcode": "DWE7rLYj3bL",
       "date": "2026-03-19",
-      "likes": 1470,
+      "likes": 1471,
       "comments": 7,
       "is_video": true,
       "video_views": 53900,
@@ -152,7 +153,7 @@
     {
       "shortcode": "DWCfzZjlZxe",
       "date": "2026-03-18",
-      "likes": 311,
+      "likes": 312,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -162,8 +163,8 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 66507,
-      "comments": 716,
+      "likes": 66663,
+      "comments": 717,
       "is_video": false,
       "video_views": 0,
       "caption": "En muchas partes de Estados Unidos, un AR-15 cuesta menos de $500, mientras que un kit de 32GB de RAM para PC gamer puede superar los $600. Esa comparaci\u00f3n por s\u00ed sola ya llama la ",
@@ -204,7 +205,7 @@
     {
       "shortcode": "DV9t_p1DPRr",
       "date": "2026-03-16",
-      "likes": 822,
+      "likes": 823,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -225,7 +226,7 @@
     {
       "shortcode": "DV8z0wvDTVG",
       "date": "2026-03-16",
-      "likes": 16332,
+      "likes": 16337,
       "comments": 45,
       "is_video": true,
       "video_views": 224000,
@@ -236,7 +237,7 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 3993,
+      "likes": 4014,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -246,10 +247,10 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 45150,
+      "likes": 45250,
       "comments": 321,
       "is_video": true,
-      "video_views": 535000,
+      "video_views": 536000,
       "caption": "Los robots de entrega se ven futuristas en los videos promocionales, pero cuando salen al mundo real la historia cambia. Bordillos, baches, autos e incluso trenes se convierten en ",
       "url": "https://www.instagram.com/p/DV6tlKmCcPk/",
       "video_views_source": "selenium_reels_grid"
@@ -270,7 +271,7 @@
       "likes": 1245,
       "comments": 22,
       "is_video": true,
-      "video_views": 55400,
+      "video_views": 55500,
       "caption": "Esta escena le costar\u00eda a un estudio 5 millones de d\u00f3lares.\nAlguien con IA la hizo en minutos.\n\nEl modelo Cinema Studio de Higgsfield.ai es CGI llevado al extremo.\n\nNos dirigimos a",
       "url": "https://www.instagram.com/p/DV4r1zxjHRF/",
       "video_views_source": "selenium_reels_grid"
@@ -278,7 +279,7 @@
     {
       "shortcode": "DV33GaTgEHG",
       "date": "2026-03-14",
-      "likes": 1140,
+      "likes": 1141,
       "comments": 60,
       "is_video": false,
       "video_views": 0,
@@ -288,7 +289,7 @@
     {
       "shortcode": "DV2J16ZjMKc",
       "date": "2026-03-14",
-      "likes": 1251,
+      "likes": 1252,
       "comments": 12,
       "is_video": true,
       "video_views": 87500,
@@ -392,7 +393,7 @@
     {
       "shortcode": "DVtl8lUD-kB",
       "date": "2026-03-10",
-      "likes": 4198,
+      "likes": 4199,
       "comments": 156,
       "is_video": true,
       "video_views": 194000,
@@ -403,7 +404,7 @@
     {
       "shortcode": "DVrXEstmRTO",
       "date": "2026-03-09",
-      "likes": 17230,
+      "likes": 17229,
       "comments": 986,
       "is_video": true,
       "video_views": 599000,
@@ -414,7 +415,7 @@
     {
       "shortcode": "DVrP78QlaBS",
       "date": "2026-03-09",
-      "likes": 3177,
+      "likes": 3178,
       "comments": 111,
       "is_video": false,
       "video_views": 0,
@@ -435,7 +436,7 @@
     {
       "shortcode": "DVo6u8ZlW8M",
       "date": "2026-03-08",
-      "likes": 21210,
+      "likes": 21218,
       "comments": 328,
       "is_video": false,
       "video_views": 0,
@@ -445,7 +446,7 @@
     {
       "shortcode": "DVmA_gakica",
       "date": "2026-03-07",
-      "likes": 6674,
+      "likes": 6675,
       "comments": 56,
       "is_video": true,
       "video_views": 120000,
@@ -498,7 +499,7 @@
     {
       "shortcode": "DVg-irDiUGr",
       "date": "2026-03-05",
-      "likes": 72524,
+      "likes": 72527,
       "comments": 288,
       "is_video": true,
       "video_views": 1000000,
@@ -708,7 +709,7 @@
     {
       "shortcode": "DVM-LSzjBDY",
       "date": "2026-02-26",
-      "likes": 2699,
+      "likes": 2700,
       "comments": 45,
       "is_video": false,
       "video_views": 0,
@@ -772,7 +773,7 @@
     {
       "shortcode": "DVCF1DFErwy",
       "date": "2026-02-21",
-      "likes": 6263,
+      "likes": 6264,
       "comments": 78,
       "is_video": false,
       "video_views": 0,
