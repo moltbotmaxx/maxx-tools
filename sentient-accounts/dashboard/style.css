@@ -118,6 +118,69 @@ body {
   align-content: end;
 }
 
+.status-banner {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border: 1px solid rgba(255, 184, 77, 0.22);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(255, 184, 77, 0.08), rgba(255, 184, 77, 0.02)),
+    var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.status-banner__header {
+  display: grid;
+  gap: 6px;
+}
+
+.status-banner__title {
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.status-banner__list {
+  display: grid;
+  gap: 10px;
+}
+
+.status-banner__item {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.status-banner__item strong {
+  font-size: 0.92rem;
+}
+
+.status-banner__item span {
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.86rem;
+}
+
+.status-banner__item--error {
+  border-color: rgba(255, 108, 89, 0.25);
+}
+
+.status-banner__item--error strong {
+  color: #ffb49f;
+}
+
+.status-banner__item--warning {
+  border-color: rgba(255, 200, 87, 0.24);
+}
+
+.status-banner__item--warning strong {
+  color: #ffd272;
+}
+
 /* ── Shared card base ────────────────────────────────── */
 
 .meta-card,
@@ -264,6 +327,12 @@ body {
   color: var(--muted);
   letter-spacing: 0.01em;
   margin-bottom: 16px;
+}
+
+.chart-kicker {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.78rem;
 }
 
 .chart-card canvas {

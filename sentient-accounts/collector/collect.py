@@ -7,13 +7,13 @@ from pathlib import Path
 from typing import Any
 
 import instaloader
-from instaloader.exceptions import InstaloaderException
 from instagram_auth import authenticate_loader, build_loader, load_local_env
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR.parent / "data"
 HISTORY_DIR = DATA_DIR / "history"
 ACCOUNTS_PATH = BASE_DIR / "accounts.json"
+DEFAULT_POST_LIMIT = 12
 
 
 def load_accounts() -> list[str]:
@@ -32,7 +32,24 @@ def load_accounts() -> list[str]:
 
 def get_post_limit() -> int:
     load_local_env()
-    return max(1, int(os.getenv("RECENT_POST_LIMIT", "12")))
+    raw_value = str(os.getenv("RECENT_POST_LIMIT", str(DEFAULT_POST_LIMIT))).strip()
+    try:
+        value = int(raw_value)
+    except ValueError:
+        print(
+            f"Invalid RECENT_POST_LIMIT value '{raw_value}'. "
+            f"Falling back to {DEFAULT_POST_LIMIT}."
+        )
+        return DEFAULT_POST_LIMIT
+    return max(1, value)
+
+
+def build_failure(account: str, exc: Exception) -> dict[str, str]:
+    return {
+        "account": account,
+        "error_type": type(exc).__name__,
+        "error": str(exc),
+    }
 
 
 def get_nested_value(data: dict[str, Any], *keys: str) -> Any:
@@ -89,7 +106,12 @@ def build_recent_post(post: Any) -> dict[str, Any]:
     }
 
 
-def collect_account(loader: instaloader.Instaloader, username: str) -> dict[str, Any]:
+def collect_account(
+    loader: instaloader.Instaloader,
+    username: str,
+    snapshot_date: str,
+    run_started_at: str,
+) -> dict[str, Any]:
     profile = instaloader.Profile.from_username(loader.context, username)
 
     recent_posts = []
@@ -115,14 +137,15 @@ def collect_account(loader: instaloader.Instaloader, username: str) -> dict[str,
     post_count = len(recent_posts)
     avg_likes = round(likes_total / post_count, 2) if post_count else 0
     avg_comments = round(comments_total / post_count, 2) if post_count else 0
-    avg_video_views = round(views_total / post_count, 2) if post_count else 0
-    avg_video_views_per_video = round(views_total / video_count, 2) if video_count else 0
+    avg_video_views = round(views_total / video_count, 2) if video_count else 0
+    avg_video_views_per_post = round(views_total / post_count, 2) if post_count else 0
     followers = profile.followers or 0
     engagement_rate = round(((avg_likes + avg_comments) / followers) * 100, 4) if followers else 0
 
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
-        "date": dt.date.today().isoformat(),
+        "date": snapshot_date,
+        "run_started_at": run_started_at,
         "account": username,
         "profile_url": f"https://www.instagram.com/{username}/",
         "full_name": profile.full_name,
@@ -137,7 +160,8 @@ def collect_account(loader: instaloader.Instaloader, username: str) -> dict[str,
         "avg_likes": avg_likes,
         "avg_comments": avg_comments,
         "avg_video_views": avg_video_views,
-        "avg_video_views_per_video": avg_video_views_per_video,
+        "avg_video_views_per_video": avg_video_views,
+        "avg_video_views_per_post": avg_video_views_per_post,
         "engagement_rate": engagement_rate,
         "recent_posts": recent_posts,
     }
@@ -175,6 +199,8 @@ def main() -> int:
     load_local_env()
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    snapshot_date = dt.date.today().isoformat()
+    run_started_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
     accounts = load_accounts()
     if not accounts:
@@ -189,28 +215,38 @@ def main() -> int:
     for username in accounts:
         print(f"Collecting {username}...")
         try:
-            payload = collect_account(loader, username)
-        except InstaloaderException as exc:
-            failures.append({"account": username, "error": str(exc)})
+            payload = collect_account(loader, username, snapshot_date, run_started_at)
+            write_json(DATA_DIR / f"{username}.json", payload)
+            update_history(
+                HISTORY_DIR / f"{username}.json",
+                {
+                    "date": payload["date"],
+                    "followers": payload["followers"],
+                    "avg_likes": payload["avg_likes"],
+                    "avg_comments": payload["avg_comments"],
+                    "engagement_rate": payload["engagement_rate"],
+                },
+            )
+        except Exception as exc:
+            failures.append(build_failure(username, exc))
             print(f"Failed to collect {username}: {exc}")
             continue
 
-        write_json(DATA_DIR / f"{username}.json", payload)
-        update_history(
-            HISTORY_DIR / f"{username}.json",
-            {
-                "date": payload["date"],
-                "followers": payload["followers"],
-                "avg_likes": payload["avg_likes"],
-                "avg_comments": payload["avg_comments"],
-                "engagement_rate": payload["engagement_rate"],
-            },
-        )
         collected += 1
 
     errors_path = DATA_DIR / "errors.json"
     if failures:
-        write_json(errors_path, {"generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(), "failures": failures})
+        write_json(
+            errors_path,
+            {
+                "generated_at": dt.datetime.now(dt.timezone.utc)
+                .replace(microsecond=0)
+                .isoformat(),
+                "date": snapshot_date,
+                "run_started_at": run_started_at,
+                "failures": failures,
+            },
+        )
     elif errors_path.exists():
         errors_path.unlink()
 

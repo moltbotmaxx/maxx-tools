@@ -31,6 +31,8 @@
         </div>
       </header>
 
+      <section id="statusBanner" class="status-banner hidden" role="status" aria-live="polite"></section>
+
       <main class="layout">
         <section class="panel reveal">
           <div class="section-heading">
@@ -105,7 +107,7 @@
               <canvas id="historyChart"></canvas>
             </article>
             <article class="chart-card">
-              <h3>🔥 Top 5 most liked <span style="font-weight:400;color:var(--muted);font-size:0.78rem">· last 14 days</span></h3>
+              <h3>🔥 Top 5 most liked <span id="recentPostsWindow" class="chart-kicker">· last 14 days</span></h3>
               <div id="recentPosts" class="posts-list"></div>
             </article>
           </div>
@@ -114,4 +116,3 @@
     </div>
   </body>
 </html>
-

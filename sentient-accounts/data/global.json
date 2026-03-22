@@ -1,10 +1,14 @@
 {
-  "generated_at": "2026-03-16T07:00:04+00:00",
+  "generated_at": "2026-03-22T02:17:21+00:00",
   "date": "2026-03-16",
+  "snapshot_date": "2026-03-16",
+  "run_started_at": null,
   "total_accounts": 19,
   "total_followers": 30895598,
   "total_posts": 35525,
   "avg_engagement_rate": 0.9853,
+  "stale_accounts_excluded": [],
+  "load_failures": [],
   "accounts": [
     {
       "generated_at": "2026-03-16T06:57:18+00:00",

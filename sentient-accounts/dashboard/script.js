@@ -1,8 +1,11 @@
 const state = {
   data: null,
+  errors: null,
   selectedAccount: null,
   charts: {},
 };
+
+const DATE_ONLY_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
 /* ── Chart.js global defaults ────────────────────────────────── */
 const chartColors = {
@@ -115,13 +118,29 @@ function formatNumber(value) {
 }
 
 function formatPercent(value) {
-  return `${Number(value || 0).toFixed(2)}%`;
+  const n = Number(value || 0);
+  return `${Number.isFinite(n) ? n.toFixed(2) : "0.00"}%`;
+}
+
+function parseDateValue(value) {
+  if (!value) return null;
+  if (value instanceof Date) {
+    return Number.isNaN(value.getTime()) ? null : value;
+  }
+
+  if (typeof value === "string" && DATE_ONLY_PATTERN.test(value)) {
+    const dateOnly = new Date(`${value}T12:00:00Z`);
+    return Number.isNaN(dateOnly.getTime()) ? null : dateOnly;
+  }
+
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
 }
 
 function formatDate(value) {
   if (!value) return "Unknown";
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
+  const date = parseDateValue(value);
+  if (!date) return String(value);
   return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "short",
@@ -136,10 +155,172 @@ function destroyChart(key) {
   }
 }
 
-function daysAgo(dateStr, refDate) {
-  const d = new Date(dateStr);
-  if (Number.isNaN(d.getTime())) return Infinity;
-  return Math.floor((refDate - d) / (1000 * 60 * 60 * 24));
+function daysAgo(dateValue, refValue) {
+  const date = parseDateValue(dateValue);
+  const refDate = parseDateValue(refValue);
+  if (!date || !refDate) return Infinity;
+
+  const dateDay = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+  const refDay = Date.UTC(refDate.getUTCFullYear(), refDate.getUTCMonth(), refDate.getUTCDate());
+  return Math.floor((refDay - dateDay) / (1000 * 60 * 60 * 24));
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => {
+    switch (char) {
+      case "&":
+        return "&amp;";
+      case "<":
+        return "&lt;";
+      case ">":
+        return "&gt;";
+      case '"':
+        return "&quot;";
+      case "'":
+        return "&#39;";
+      default:
+        return char;
+    }
+  });
+}
+
+function summarizeItems(values, { limit = 4, accountHandles = false } = {}) {
+  const unique = [...new Set(
+    (Array.isArray(values) ? values : [])
+      .map((value) => String(value || "").trim())
+      .filter(Boolean)
+      .map((value) => accountHandles ? value.replace(/^@+/, "") : value)
+  )];
+
+  if (!unique.length) return "unknown";
+
+  const visible = unique
+    .slice(0, limit)
+    .map((value) => escapeHtml(accountHandles ? `@${value}` : value));
+  const remaining = unique.length - visible.length;
+  return remaining > 0 ? `${visible.join(", ")} +${remaining} more` : visible.join(", ");
+}
+
+function buildStatusItem(tone, title, detail) {
+  return `
+    <article class="status-banner__item status-banner__item--${tone}">
+      <strong>${escapeHtml(title)}</strong>
+      <span>${detail}</span>
+    </article>
+  `;
+}
+
+function renderFatalBanner(message) {
+  const banner = document.getElementById("statusBanner");
+  banner.innerHTML = `
+    <div class="status-banner__header">
+      <span class="eyebrow">Status</span>
+      <strong class="status-banner__title">Dashboard load failed</strong>
+    </div>
+    <div class="status-banner__list">
+      ${buildStatusItem("error", "Data source unavailable", escapeHtml(message))}
+    </div>
+  `;
+  banner.classList.remove("hidden");
+}
+
+function renderStatusBanner(data, errorsPayload) {
+  const banner = document.getElementById("statusBanner");
+  const items = [];
+  const collectionFailures = Array.isArray(errorsPayload?.failures) ? errorsPayload.failures : [];
+  const staleAccounts = Array.isArray(data?.stale_accounts_excluded) ? data.stale_accounts_excluded : [];
+  const loadFailures = Array.isArray(data?.load_failures) ? data.load_failures : [];
+
+  if (collectionFailures.length) {
+    const failedAccounts = collectionFailures
+      .map((item) => item?.account)
+      .filter(Boolean);
+    items.push(buildStatusItem(
+      "error",
+      `${collectionFailures.length} collection failure${collectionFailures.length === 1 ? "" : "s"} in the latest run`,
+      `Latest refresh missed ${summarizeItems(failedAccounts, { accountHandles: true })}. Portfolio totals only include the freshest successful snapshots.`
+    ));
+  }
+
+  if (staleAccounts.length) {
+    const excludedAccounts = staleAccounts
+      .map((item) => item?.account)
+      .filter(Boolean);
+    items.push(buildStatusItem(
+      "warning",
+      `${staleAccounts.length} stale dataset${staleAccounts.length === 1 ? "" : "s"} excluded`,
+      `Aggregation skipped ${summarizeItems(excludedAccounts, { accountHandles: true })} because those files do not belong to the latest snapshot.`
+    ));
+  }
+
+  if (loadFailures.length) {
+    const invalidFiles = loadFailures
+      .map((item) => item?.file)
+      .filter(Boolean);
+    items.push(buildStatusItem(
+      "warning",
+      `${loadFailures.length} invalid data file${loadFailures.length === 1 ? "" : "s"} skipped`,
+      `Aggregation ignored ${summarizeItems(invalidFiles, { limit: 3 })} until the JSON is fixed.`
+    ));
+  }
+
+  if (!items.length) {
+    banner.innerHTML = "";
+    banner.classList.add("hidden");
+    return;
+  }
+
+  const snapshotLabel = formatDate(data?.snapshot_date || data?.date);
+  banner.innerHTML = `
+    <div class="status-banner__header">
+      <span class="eyebrow">Status</span>
+      <strong class="status-banner__title">Snapshot checks for ${escapeHtml(snapshotLabel)}</strong>
+    </div>
+    <div class="status-banner__list">
+      ${items.join("")}
+    </div>
+  `;
+  banner.classList.remove("hidden");
+}
+
+function resolveReferenceDate(account) {
+  return (
+    parseDateValue(account?.run_started_at) ||
+    parseDateValue(account?.generated_at) ||
+    parseDateValue(account?.date) ||
+    parseDateValue(state.data?.run_started_at) ||
+    parseDateValue(state.data?.snapshot_date) ||
+    parseDateValue(state.data?.generated_at) ||
+    new Date()
+  );
+}
+
+function updateRecentPostsWindow(referenceDate) {
+  const label = document.getElementById("recentPostsWindow");
+  if (!label) return;
+
+  const resolved = parseDateValue(referenceDate);
+  label.textContent = resolved
+    ? `· last 14 days from ${formatDate(resolved)}`
+    : "· last 14 days";
+}
+
+function getAverageVideoViews(account) {
+  const avgVideoViews = Number(account?.avg_video_views_per_video);
+  if (Number.isFinite(avgVideoViews) && avgVideoViews > 0) {
+    return avgVideoViews;
+  }
+
+  const fallbackAvg = Number(account?.avg_video_views);
+  return Number.isFinite(fallbackAvg) && fallbackAvg > 0 ? fallbackAvg : 0;
+}
+
+function formatVideoViewsMetric(account) {
+  const avgVideoViews = getAverageVideoViews(account);
+  if (avgVideoViews > 0) {
+    return formatNumber(avgVideoViews);
+  }
+  return Number(account?.video_post_count || 0) > 0 ? "N/A" : "0";
 }
 
 function normalizeAccounts(rawAccounts) {
@@ -166,6 +347,7 @@ function normalizeDashboardData(rawData) {
     ...rawData,
     accounts,
     avg_engagement_rate: avgEngagementRate,
+    snapshot_date: rawData?.snapshot_date || rawData?.date || null,
     total_accounts: accounts.length,
     total_followers: totalFollowers,
     total_posts: totalPosts,
@@ -179,7 +361,7 @@ function renderOverview(data) {
   document.getElementById("totalAccounts").textContent = data.total_accounts;
   document.getElementById("totalPosts").textContent = formatNumber(data.total_posts);
   document.getElementById("avgEngagement").textContent = formatPercent(data.avg_engagement_rate);
-  document.getElementById("lastUpdated").textContent = `Last update · ${formatDate(data.generated_at || data.date)}`;
+  document.getElementById("lastUpdated").textContent = `Snapshot · ${formatDate(data.snapshot_date || data.date || data.generated_at)}`;
 }
 
 /* ── Portfolio charts ────────────────────────────────────────── */
@@ -456,11 +638,15 @@ async function renderHistory(account) {
 function renderRecentPosts(account) {
   const container = document.getElementById("recentPosts");
   const allPosts = account.recent_posts || [];
-  const now = new Date("2026-03-15T06:00:00Z"); // use generated_at reference
+  const referenceDate = resolveReferenceDate(account);
+  updateRecentPostsWindow(referenceDate);
 
   // Filter to last 14 days, sort by likes desc, take top 5
   const filtered = allPosts
-    .filter((p) => daysAgo(p.date, now) <= 14)
+    .filter((post) => {
+      const ageInDays = daysAgo(post.date, referenceDate);
+      return ageInDays >= 0 && ageInDays <= 14;
+    })
     .sort((a, b) => (b.likes || 0) - (a.likes || 0))
     .slice(0, 5);
 
@@ -521,7 +707,7 @@ async function renderAccountDetail(account) {
     renderMetaMetric("Posts", formatNumber(account.posts)),
     renderMetaMetric("Avg likes", formatNumber(account.avg_likes)),
     renderMetaMetric("Avg comments", formatNumber(account.avg_comments)),
-    renderMetaMetric("Avg views", formatNumber(account.avg_video_views)),
+    renderMetaMetric("Avg video views", formatVideoViewsMetric(account)),
     renderMetaMetric("Engagement", formatPercent(account.engagement_rate), true),
     renderMetaMetric("Verified", account.is_verified ? "✓ Yes" : "✗ No"),
   ].join("");
@@ -544,11 +730,16 @@ function revealPanels() {
 
 async function loadDashboard() {
   try {
-    const rawData = await fetchJson("global.json");
+    const [rawData, errorsPayload] = await Promise.all([
+      fetchJson("global.json"),
+      fetchJson("errors.json").catch(() => null),
+    ]);
     const data = normalizeDashboardData(rawData);
     state.data = data;
+    state.errors = errorsPayload;
 
     renderOverview(data);
+    renderStatusBanner(data, errorsPayload);
     renderPortfolioCharts(data.accounts);
 
     if (data.accounts.length) {
@@ -560,8 +751,10 @@ async function loadDashboard() {
       document.getElementById("detailMeta").innerHTML =
         '<p class="empty-state">Run the collector to populate the dashboard.</p>';
       document.getElementById("recentPosts").innerHTML = "";
+      updateRecentPostsWindow(data.snapshot_date || data.date);
     }
   } catch (error) {
+    renderFatalBanner(error.message);
     document.getElementById("lastUpdated").textContent =
       "Dashboard data could not be loaded.";
     document.getElementById("detailMeta").innerHTML = `<p class="empty-state">${error.message}</p>`;
