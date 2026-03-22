@@ -9,7 +9,7 @@ service cloud.firestore {
       allow delete: if isOwner(userId);
 
       function isValidPayload() {
-        return request.resource.data.keys().hasOnly(['appData', 'permanentNotes', 'doneHeadlines', 'lastUpdated'])
+        return request.resource.data.keys().hasOnly(['appData', 'permanentNotes', 'doneHeadlines', 'managedSentientAccounts', 'lastUpdated'])
           && request.resource.data.appData is map
           && request.resource.data.appData.keys().hasOnly(['pool', 'schedule', 'ideas'])
           && request.resource.data.appData.pool is list
@@ -17,6 +17,13 @@ service cloud.firestore {
           && request.resource.data.appData.ideas is list
           && request.resource.data.doneHeadlines is list
           && request.resource.data.doneHeadlines.size() <= 5000
+          && (
+            !request.resource.data.keys().hasAny(['managedSentientAccounts']) ||
+            (
+              request.resource.data.managedSentientAccounts is list
+              && request.resource.data.managedSentientAccounts.size() <= 50
+            )
+          )
           && request.resource.data.permanentNotes is string
           && request.resource.data.permanentNotes.size() <= 20000
           && request.resource.data.lastUpdated is string;

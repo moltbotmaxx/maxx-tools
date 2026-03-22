@@ -33,7 +33,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Content Scheduler
                     <span id="liveBuildBadge"
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(reddit-normal-links)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(account-dashboard)</span>
                     <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Checking</span>
@@ -76,6 +76,13 @@
                         <path d="M22 12A10 10 0 0 0 12 2v10z" />
                     </svg>
                     Metrics
+                </button>
+                <button class="tab-btn" data-tab="account">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Account
                 </button>
                 <button class="tab-btn" data-tab="history">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -246,7 +253,7 @@
                                 <h2>📥 Add Selection</h2>
                                 <a class="selection-clipper-link"
                                     href="./extension/daily-tracker-clipper-login.zip" download>
-                                    Clipper · reddit-normal-links
+                                    Clipper · account-dashboard
                                 </a>
                             </div>
                             <div class="link-input-group">
@@ -489,7 +496,57 @@
                 </div>
             </div>
 
-            <!-- VIEW 3: HISTORY -->
+            <!-- VIEW 4: ACCOUNT -->
+            <div id="account-view" class="view-container">
+                <div class="account-dashboard">
+                    <section class="bento-box account-overview-box">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Managed Accounts
+                            </h2>
+                            <div class="account-overview__actions">
+                                <span id="accountSnapshotMeta" class="account-overview__meta">Snapshot · Loading...</span>
+                                <button id="manageAccountsBtn" class="action-btn">Manage Selection</button>
+                            </div>
+                        </div>
+                        <div class="kpi-grid account-kpi-grid">
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">Selected Accounts</div>
+                                <div class="kpi-value" id="accountSelectedCount">0</div>
+                                <div class="kpi-trend">Saved to this login</div>
+                            </div>
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">Followers</div>
+                                <div class="kpi-value" id="accountTotalFollowers">0</div>
+                                <div class="kpi-trend">Combined audience</div>
+                            </div>
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">30d Likes</div>
+                                <div class="kpi-value" id="accountTotalLikes30d">0</div>
+                                <div class="kpi-trend">Selected accounts only</div>
+                            </div>
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">30d Reel Views</div>
+                                <div class="kpi-value" id="accountTotalViews30d">0</div>
+                                <div class="kpi-trend">Selected accounts only</div>
+                            </div>
+                            <div class="bento-box kpi-card">
+                                <div class="kpi-label">Engagement</div>
+                                <div class="kpi-value" id="accountAverageEngagement">0%</div>
+                                <div class="kpi-trend">Weighted by followers</div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="accountViewStatus" class="account-view-status">Loading Sentient account data...</div>
+                    <section id="managedAccountsGrid" class="managed-accounts-grid"></section>
+                </div>
+            </div>
+
+            <!-- VIEW 5: HISTORY -->
             <div id="history-view" class="view-container">
                 <div class="bento-grid" style="grid-template-columns: 1fr; grid-template-rows: 1fr;">
                     <section class="bento-box schedule-section" style="grid-row: 1 / -1;">
@@ -750,9 +807,38 @@
         </div>
     </div>
 
+    <div id="managedAccountsModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box managed-accounts-modal">
+            <div class="box-header">
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <path d="M20 8v6"></path>
+                        <path d="M23 11h-6"></path>
+                    </svg>
+                    <span id="managedAccountsModalTitle">Choose your managed accounts</span>
+                </h2>
+                <button class="icon-btn" id="managedAccountsModalCloseBtn"
+                    style="font-size: 1.5rem; line-height: 1;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="managedAccountsModalDescription" class="managed-accounts-modal__description">
+                    Select the Sentient accounts tied to this login.
+                </p>
+                <div id="managedAccountsModalStatus" class="managed-accounts-modal__status">Loading Sentient accounts...</div>
+                <div id="managedAccountsList" class="managed-accounts-picker"></div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="managedAccountsCancelBtn">Cancel</button>
+                <button class="action-btn premium-btn" id="managedAccountsSaveBtn">Save Accounts</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
-    <script src="x-feed-config.js?v=reddit-normal-links"></script>
-    <script type="module" src="app.js?v=reddit-normal-links"></script>
+    <script src="x-feed-config.js?v=account-dashboard"></script>
+    <script type="module" src="app.js?v=account-dashboard"></script>
 </body>
 
 </html>

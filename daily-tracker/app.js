@@ -11,10 +11,12 @@ const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
 const DONE_ARTICLES_KEY = 'done_articles';
+const MANAGED_SENTIENT_ACCOUNTS_KEY = 'contentSchedulerManagedSentientAccounts';
 const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
 const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
 const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
 const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
+const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
 
 function createEmptyAppData() {
     return {
@@ -48,6 +50,11 @@ let currentDate = new Date();
 let activeStagingCardId = null;
 let sourceSelectionDraft = null;
 let currentUser = null;
+let managedSentientAccounts = [];
+let sentientAccountsDatasetCache = null;
+let sentientAccountsDatasetPromise = null;
+let managedAccountsModalMode = 'edit';
+let isSavingManagedAccounts = false;
 let pendingExtensionIdeas = [];
 let isLoadingUserData = false;
 let isHandlingAuthAction = false;
@@ -126,6 +133,10 @@ const REDDIT_VIRAL_FEED = {
 const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
 const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
 const DAILY_TRACKER_DATASET_URL = new URL('data.json', window.location.href).toString();
+const SENTIENT_ACCOUNTS_DATASET_CANDIDATES = Array.from(new Set([
+    new URL('../sentient-accounts/data/global.json', window.location.href).toString(),
+    `${window.location.origin}/sentient-accounts/data/global.json`
+]));
 const SIDEBAR_ITEM_LIMIT = 25;
 let selectedSourcingFeed = 'all';
 const sourcingFeedCache = new Map();
@@ -307,6 +318,23 @@ const elements = {
     authUser: document.getElementById('authUser'),
     authActionBtn: document.getElementById('authActionBtn'),
     exportBtn: document.getElementById('exportBtn'),
+    manageAccountsBtn: document.getElementById('manageAccountsBtn'),
+    accountSnapshotMeta: document.getElementById('accountSnapshotMeta'),
+    accountSelectedCount: document.getElementById('accountSelectedCount'),
+    accountTotalFollowers: document.getElementById('accountTotalFollowers'),
+    accountTotalLikes30d: document.getElementById('accountTotalLikes30d'),
+    accountTotalViews30d: document.getElementById('accountTotalViews30d'),
+    accountAverageEngagement: document.getElementById('accountAverageEngagement'),
+    accountViewStatus: document.getElementById('accountViewStatus'),
+    managedAccountsGrid: document.getElementById('managedAccountsGrid'),
+    managedAccountsModalOverlay: document.getElementById('managedAccountsModalOverlay'),
+    managedAccountsModalTitle: document.getElementById('managedAccountsModalTitle'),
+    managedAccountsModalDescription: document.getElementById('managedAccountsModalDescription'),
+    managedAccountsModalStatus: document.getElementById('managedAccountsModalStatus'),
+    managedAccountsModalCloseBtn: document.getElementById('managedAccountsModalCloseBtn'),
+    managedAccountsCancelBtn: document.getElementById('managedAccountsCancelBtn'),
+    managedAccountsSaveBtn: document.getElementById('managedAccountsSaveBtn'),
+    managedAccountsList: document.getElementById('managedAccountsList'),
     // News Tab Elements
     showDoneNews: document.getElementById('showDoneNews'),
     refreshNewsBtn: document.getElementById('refreshNewsBtn'),
@@ -348,6 +376,22 @@ function escapeHtml(value) {
 
 function normalizeWhitespace(value) {
     return String(value ?? '').replace(/\s+/g, ' ').trim();
+}
+
+function normalizeManagedSentientAccounts(values = []) {
+    const normalized = [];
+    const seen = new Set();
+
+    values.forEach(value => {
+        const account = normalizeWhitespace(value).replace(/^@/, '');
+        if (!account) return;
+        const key = account.toLowerCase();
+        if (seen.has(key)) return;
+        seen.add(key);
+        normalized.push(account);
+    });
+
+    return normalized;
 }
 
 function normalizeUrlCandidate(value) {
@@ -539,7 +583,8 @@ function getUserStorageKeys(user = currentUser) {
     return {
         data: getUserScopedKey(STORAGE_KEY, user),
         notes: getUserScopedKey(NOTES_KEY, user),
-        done: getUserScopedKey(DONE_ARTICLES_KEY, user)
+        done: getUserScopedKey(DONE_ARTICLES_KEY, user),
+        managedAccounts: getUserScopedKey(MANAGED_SENTIENT_ACCOUNTS_KEY, user)
     };
 }
 
@@ -554,7 +599,10 @@ function getLocalSnapshotForUser(user = currentUser) {
     return {
         appData: readJsonFromLocalStorage(keys.data, null),
         permanentNotes: safeGetLocalStorageItem(keys.notes) || '',
-        doneHeadlines: Array.isArray(cachedDone) ? cachedDone : []
+        doneHeadlines: Array.isArray(cachedDone) ? cachedDone : [],
+        managedSentientAccounts: normalizeManagedSentientAccounts(
+            readJsonFromLocalStorage(keys.managedAccounts, [])
+        )
     };
 }
 
@@ -563,7 +611,10 @@ function getLegacyLocalSnapshot() {
     return {
         appData: readJsonFromLocalStorage(STORAGE_KEY, null),
         permanentNotes: safeGetLocalStorageItem(NOTES_KEY) || '',
-        doneHeadlines: Array.isArray(cachedDone) ? cachedDone : []
+        doneHeadlines: Array.isArray(cachedDone) ? cachedDone : [],
+        managedSentientAccounts: normalizeManagedSentientAccounts(
+            readJsonFromLocalStorage(MANAGED_SENTIENT_ACCOUNTS_KEY, [])
+        )
     };
 }
 
@@ -582,6 +633,7 @@ function applyLoadedState(snapshot = {}) {
     ensureAppDataIntegrity();
 
     permanentNotes = typeof snapshot.permanentNotes === 'string' ? snapshot.permanentNotes : '';
+    managedSentientAccounts = normalizeManagedSentientAccounts(snapshot.managedSentientAccounts || []);
 
     const headlines = Array.isArray(snapshot.doneHeadlines) ? snapshot.doneHeadlines : [];
     doneHeadlines = new Set(
@@ -597,7 +649,8 @@ function resetInMemoryState() {
     applyLoadedState({
         appData: createEmptyAppData(),
         permanentNotes: '',
-        doneHeadlines: []
+        doneHeadlines: [],
+        managedSentientAccounts: []
     });
 }
 
@@ -610,8 +663,12 @@ function persistUserLocalCache(user = currentUser) {
     const wroteData = safeSetLocalStorageItem(keys.data, JSON.stringify(appData));
     const wroteNotes = safeSetLocalStorageItem(keys.notes, permanentNotes);
     const wroteDone = safeSetLocalStorageItem(keys.done, JSON.stringify(Array.from(doneHeadlines)));
+    const wroteManagedAccounts = safeSetLocalStorageItem(
+        keys.managedAccounts,
+        JSON.stringify(managedSentientAccounts)
+    );
 
-    return wroteData && wroteNotes && wroteDone;
+    return wroteData && wroteNotes && wroteDone && wroteManagedAccounts;
 }
 
 function loadPendingExtensionIdeasBuffer() {
@@ -901,16 +958,21 @@ async function loadData() {
             applyLoadedState({
                 appData: data.appData || localSnapshot.appData || createEmptyAppData(),
                 permanentNotes: data.permanentNotes || localSnapshot.permanentNotes || '',
-                doneHeadlines: Array.isArray(data.doneHeadlines) ? data.doneHeadlines : localSnapshot.doneHeadlines
+                doneHeadlines: Array.isArray(data.doneHeadlines) ? data.doneHeadlines : localSnapshot.doneHeadlines,
+                managedSentientAccounts: normalizeManagedSentientAccounts(
+                    Array.isArray(data.managedSentientAccounts)
+                        ? data.managedSentientAccounts
+                        : localSnapshot.managedSentientAccounts
+                )
             });
             persistUserLocalCache(currentUser);
             updateSyncStatus('online');
-        } else if (localSnapshot.appData || localSnapshot.permanentNotes || localSnapshot.doneHeadlines.length) {
+        } else if (localSnapshot.appData || localSnapshot.permanentNotes || localSnapshot.doneHeadlines.length || localSnapshot.managedSentientAccounts.length) {
             applyLoadedState(localSnapshot);
             await saveData();
         } else if (canClaimLegacyLocalSnapshot(currentUser)) {
             const legacySnapshot = getLegacyLocalSnapshot();
-            const hasLegacyData = legacySnapshot.appData || legacySnapshot.permanentNotes || legacySnapshot.doneHeadlines.length;
+            const hasLegacyData = legacySnapshot.appData || legacySnapshot.permanentNotes || legacySnapshot.doneHeadlines.length || legacySnapshot.managedSentientAccounts.length;
 
             if (hasLegacyData) {
                 applyLoadedState(legacySnapshot);
@@ -920,7 +982,8 @@ async function loadData() {
                 applyLoadedState({
                     appData: createEmptyAppData(),
                     permanentNotes: '',
-                    doneHeadlines: []
+                    doneHeadlines: [],
+                    managedSentientAccounts: []
                 });
                 updateSyncStatus('online');
             }
@@ -928,19 +991,21 @@ async function loadData() {
             applyLoadedState({
                 appData: createEmptyAppData(),
                 permanentNotes: '',
-                doneHeadlines: []
+                doneHeadlines: [],
+                managedSentientAccounts: []
             });
             updateSyncStatus('online');
         }
     } catch (e) {
         console.error("Error loading Firestore data:", e);
-        if (localSnapshot.appData || localSnapshot.permanentNotes || localSnapshot.doneHeadlines.length) {
+        if (localSnapshot.appData || localSnapshot.permanentNotes || localSnapshot.doneHeadlines.length || localSnapshot.managedSentientAccounts.length) {
             applyLoadedState(localSnapshot);
         } else {
             applyLoadedState({
                 appData: createEmptyAppData(),
                 permanentNotes: '',
-                doneHeadlines: []
+                doneHeadlines: [],
+                managedSentientAccounts: []
             });
         }
         updateSyncStatus('offline', 'Firestore unavailable');
@@ -973,6 +1038,7 @@ async function saveData() {
             appData,
             permanentNotes,
             doneHeadlines: Array.from(doneHeadlines),
+            managedSentientAccounts,
             lastUpdated: new Date().toISOString()
         });
         updateSyncStatus('online');
@@ -1001,6 +1067,468 @@ function updateSyncStatus(status, errorMsg = '') {
     } else if (status === 'offline') {
         elements.syncText.textContent = errorMsg === 'Sign in required' ? 'Login' : 'Offline';
         elements.syncStatus.title = errorMsg || 'Sync unavailable';
+    }
+}
+
+function parseDateLike(value) {
+    if (!value) return null;
+    if (typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)) {
+        const parsedDate = new Date(`${value}T12:00:00`);
+        return Number.isNaN(parsedDate.getTime()) ? null : parsedDate;
+    }
+
+    const parsedDate = new Date(value);
+    return Number.isNaN(parsedDate.getTime()) ? null : parsedDate;
+}
+
+function formatReadableDate(value) {
+    const parsedDate = parseDateLike(value);
+    if (!parsedDate) return 'Unknown';
+    return new Intl.DateTimeFormat('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+    }).format(parsedDate);
+}
+
+function formatPercentCompact(value) {
+    const numericValue = Number(value);
+    return `${Number.isFinite(numericValue) ? numericValue.toFixed(2) : '0.00'}%`;
+}
+
+function getSentientAccountSnapshotDate(account = {}) {
+    return parseDateLike(account.date || account.generated_at || account.run_started_at);
+}
+
+function getSentientCollectionWindowDays(account = {}) {
+    const explicitDays = Number(account.recent_posts_collection_window_days);
+    if (Number.isFinite(explicitDays) && explicitDays > 0) return explicitDays;
+    const fallbackDays = Number(account.recent_posts_window_days);
+    if (Number.isFinite(fallbackDays) && fallbackDays > 0) return Math.max(fallbackDays, 30);
+    return 30;
+}
+
+function getSentientEffectiveLikeCount(post = {}) {
+    const likes = Number(post.likes) || 0;
+    return likes === SENTIENT_HIDDEN_LIKES_SENTINEL ? 0 : likes;
+}
+
+function getSentientLikesLabel(post = {}) {
+    const likes = Number(post.likes) || 0;
+    return likes === SENTIENT_HIDDEN_LIKES_SENTINEL ? 'Hidden' : formatCompact(likes);
+}
+
+function getSentientRecentPostsInWindow(account = {}, windowDays = getSentientCollectionWindowDays(account)) {
+    const snapshotDate = getSentientAccountSnapshotDate(account);
+    if (!snapshotDate) return [];
+
+    return Array.isArray(account.recent_posts)
+        ? account.recent_posts.filter(post => {
+            const postDate = parseDateLike(post?.date);
+            if (!postDate) return false;
+            const ageInDays = Math.floor((snapshotDate - postDate) / (1000 * 60 * 60 * 24));
+            return ageInDays >= 0 && ageInDays <= windowDays;
+        })
+        : [];
+}
+
+function getSentientAccountLikes30d(account = {}) {
+    const explicitTotal = Number(account.total_likes_recent_window);
+    if (Number.isFinite(explicitTotal) && explicitTotal > 0) return explicitTotal;
+    return getSentientRecentPostsInWindow(account).reduce((sum, post) => sum + getSentientEffectiveLikeCount(post), 0);
+}
+
+function getSentientAccountViews30d(account = {}) {
+    const explicitTotal = Number(account.total_video_views_recent_window);
+    if (Number.isFinite(explicitTotal) && explicitTotal > 0) return explicitTotal;
+    return getSentientRecentPostsInWindow(account)
+        .filter(post => !!post?.is_video)
+        .reduce((sum, post) => sum + (Number(post?.video_views) || 0), 0);
+}
+
+function compareSentientPosts(left = {}, right = {}) {
+    const likeDelta = getSentientEffectiveLikeCount(right) - getSentientEffectiveLikeCount(left);
+    if (likeDelta !== 0) return likeDelta;
+
+    const commentDelta = (Number(right.comments) || 0) - (Number(left.comments) || 0);
+    if (commentDelta !== 0) return commentDelta;
+
+    const viewDelta = (Number(right.video_views) || 0) - (Number(left.video_views) || 0);
+    if (viewDelta !== 0) return viewDelta;
+
+    return String(right.date || '').localeCompare(String(left.date || ''));
+}
+
+function resolveSentientAvatarUrl(account = {}, sourceUrl = '') {
+    const avatarPath = normalizeWhitespace(account.avatar_path || '');
+    if (avatarPath && sourceUrl) {
+        try {
+            return new URL(avatarPath, sourceUrl).toString();
+        } catch (e) {
+            console.warn('Failed to resolve Sentient avatar path', e);
+        }
+    }
+
+    const accountId = normalizeWhitespace(account.account || '').replace(/^@/, '');
+    if (accountId && sourceUrl) {
+        try {
+            return new URL(`../avatars/${accountId}.jpg`, sourceUrl).toString();
+        } catch (e) {
+            console.warn('Failed to resolve Sentient avatar fallback', e);
+        }
+    }
+
+    return safeHttpUrl(account.profile_pic_url || '', '');
+}
+
+function normalizeSentientDataset(rawData = {}, sourceUrl = '') {
+    const accounts = Array.isArray(rawData.accounts)
+        ? rawData.accounts
+            .filter(account => account && typeof account === 'object' && account.account)
+            .map(account => {
+                const collectionWindowDays = getSentientCollectionWindowDays(account);
+                const recentPosts = getSentientRecentPostsInWindow(account, collectionWindowDays);
+                return {
+                    ...account,
+                    avatarUrl: resolveSentientAvatarUrl(account, sourceUrl),
+                    collectionWindowDays,
+                    recentPosts,
+                    likes30d: getSentientAccountLikes30d(account),
+                    views30d: getSentientAccountViews30d(account),
+                    recentWindowCovered: account.recent_posts_collection_window_covered !== false,
+                    topPosts: [...recentPosts].sort(compareSentientPosts).slice(0, 3)
+                };
+            })
+            .sort((left, right) => (Number(right.followers) || 0) - (Number(left.followers) || 0))
+        : [];
+
+    return {
+        ...rawData,
+        sourceUrl,
+        accounts
+    };
+}
+
+async function fetchSentientAccountsDataset(forceRefresh = false) {
+    if (sentientAccountsDatasetCache && !forceRefresh) {
+        return sentientAccountsDatasetCache;
+    }
+
+    if (sentientAccountsDatasetPromise && !forceRefresh) {
+        return sentientAccountsDatasetPromise;
+    }
+
+    sentientAccountsDatasetPromise = (async () => {
+        const attempts = [];
+        for (const candidateUrl of SENTIENT_ACCOUNTS_DATASET_CANDIDATES) {
+            try {
+                const requestUrl = `${candidateUrl}${candidateUrl.includes('?') ? '&' : '?'}t=${Date.now()}`;
+                const response = await fetch(requestUrl, {
+                    cache: 'no-store',
+                    headers: { 'Cache-Control': 'no-cache' }
+                });
+                if (!response.ok) {
+                    attempts.push(`${candidateUrl} (${response.status})`);
+                    continue;
+                }
+
+                const payload = await response.json();
+                sentientAccountsDatasetCache = normalizeSentientDataset(payload, candidateUrl);
+                return sentientAccountsDatasetCache;
+            } catch (e) {
+                attempts.push(`${candidateUrl} (${e.message})`);
+            }
+        }
+
+        throw new Error(`Unable to load Sentient accounts dataset. ${attempts.join(' · ')}`);
+    })();
+
+    try {
+        return await sentientAccountsDatasetPromise;
+    } finally {
+        sentientAccountsDatasetPromise = null;
+    }
+}
+
+function getManagedSentientAccountRecords(dataset = sentientAccountsDatasetCache) {
+    if (!dataset?.accounts?.length || !managedSentientAccounts.length) return [];
+    const selected = new Set(managedSentientAccounts.map(account => account.toLowerCase()));
+    return dataset.accounts.filter(account => selected.has(String(account.account || '').toLowerCase()));
+}
+
+function setManagedAccountsModalStatus(message = '', tone = 'neutral') {
+    if (!elements.managedAccountsModalStatus) return;
+    elements.managedAccountsModalStatus.textContent = message;
+    elements.managedAccountsModalStatus.dataset.tone = tone;
+}
+
+function updateManagedAccountsModalButtons() {
+    if (elements.managedAccountsSaveBtn) {
+        elements.managedAccountsSaveBtn.disabled = isSavingManagedAccounts;
+        elements.managedAccountsSaveBtn.textContent = isSavingManagedAccounts
+            ? 'Saving...'
+            : (managedAccountsModalMode === 'onboarding' ? 'Save & Continue' : 'Save Accounts');
+    }
+
+    const allowDismiss = managedAccountsModalMode !== 'onboarding';
+    if (elements.managedAccountsCancelBtn) {
+        elements.managedAccountsCancelBtn.hidden = !allowDismiss;
+    }
+    if (elements.managedAccountsModalCloseBtn) {
+        elements.managedAccountsModalCloseBtn.hidden = !allowDismiss;
+    }
+}
+
+function renderManagedAccountsOptions(dataset) {
+    if (!elements.managedAccountsList) return;
+    const selected = new Set(managedSentientAccounts.map(account => account.toLowerCase()));
+
+    elements.managedAccountsList.innerHTML = dataset.accounts.map(account => `
+        <label class="managed-account-option">
+            <input
+                class="managed-account-option__checkbox"
+                type="checkbox"
+                value="${escapeHtml(account.account)}"
+                ${selected.has(String(account.account).toLowerCase()) ? 'checked' : ''}
+            />
+            <div class="managed-account-option__card">
+                <div class="managed-account-option__identity">
+                    <img class="managed-account-option__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                    <div class="managed-account-option__copy">
+                        <strong>@${escapeHtml(account.account)}</strong>
+                        <span>${escapeHtml(account.full_name || 'Sentient account')}</span>
+                    </div>
+                </div>
+                <div class="managed-account-option__meta">
+                    <span>${formatCompact(Number(account.followers) || 0)} followers</span>
+                    <span>${formatPercentCompact(account.engagement_rate)}</span>
+                </div>
+            </div>
+        </label>
+    `).join('');
+}
+
+async function openManagedAccountsModal(mode = 'edit') {
+    managedAccountsModalMode = mode;
+    updateManagedAccountsModalButtons();
+
+    if (elements.managedAccountsModalTitle) {
+        elements.managedAccountsModalTitle.textContent = mode === 'onboarding'
+            ? 'Choose the Sentient accounts you manage'
+            : 'Manage your Sentient accounts';
+    }
+    if (elements.managedAccountsModalDescription) {
+        elements.managedAccountsModalDescription.textContent = mode === 'onboarding'
+            ? 'Pick one or more accounts before entering Daily Tracker.'
+            : 'Update the accounts you want to monitor inside Daily Tracker.';
+    }
+    if (elements.managedAccountsList) {
+        elements.managedAccountsList.innerHTML = '<div class="managed-account-option managed-account-option--loading">Loading accounts...</div>';
+    }
+    setManagedAccountsModalStatus('Loading Sentient accounts...', 'neutral');
+    if (elements.managedAccountsModalOverlay) {
+        elements.managedAccountsModalOverlay.classList.add('show');
+    }
+
+    try {
+        const dataset = await fetchSentientAccountsDataset();
+        renderManagedAccountsOptions(dataset);
+        setManagedAccountsModalStatus(
+            `${dataset.accounts.length} Sentient accounts available.`,
+            'success'
+        );
+    } catch (e) {
+        console.error('Failed to load Sentient accounts dataset', e);
+        if (elements.managedAccountsList) {
+            elements.managedAccountsList.innerHTML = '';
+        }
+        setManagedAccountsModalStatus(e.message || 'Could not load Sentient accounts.', 'error');
+    }
+}
+
+function closeManagedAccountsModal(force = false) {
+    if (!force && managedAccountsModalMode === 'onboarding') return;
+    if (elements.managedAccountsModalOverlay) {
+        elements.managedAccountsModalOverlay.classList.remove('show');
+    }
+}
+
+function getManagedAccountsModalSelection() {
+    if (!elements.managedAccountsList) return [];
+    return normalizeManagedSentientAccounts(
+        Array.from(elements.managedAccountsList.querySelectorAll('input[type="checkbox"]:checked'))
+            .map(input => input.value)
+    );
+}
+
+async function saveManagedAccountsSelection() {
+    if (!currentUser?.uid || isSavingManagedAccounts) return;
+
+    const selectedAccounts = getManagedAccountsModalSelection();
+    if (!selectedAccounts.length) {
+        setManagedAccountsModalStatus('Select at least one account to continue.', 'error');
+        return;
+    }
+
+    isSavingManagedAccounts = true;
+    updateManagedAccountsModalButtons();
+    setManagedAccountsModalStatus('Saving managed accounts...', 'neutral');
+
+    try {
+        managedSentientAccounts = selectedAccounts;
+        await saveData();
+        renderAccountView();
+        closeManagedAccountsModal(managedAccountsModalMode !== 'onboarding');
+        setManagedAccountsModalStatus('Managed accounts saved.', 'success');
+
+        if (managedAccountsModalMode === 'onboarding') {
+            closeManagedAccountsModal(true);
+            switchTab('account');
+        }
+    } catch (e) {
+        console.error('Failed to save managed accounts', e);
+        setManagedAccountsModalStatus('Could not save managed accounts. Try again.', 'error');
+    } finally {
+        isSavingManagedAccounts = false;
+        updateManagedAccountsModalButtons();
+    }
+}
+
+function renderAccountSummary(accounts = [], dataset = null) {
+    const totalFollowers = accounts.reduce((sum, account) => sum + (Number(account.followers) || 0), 0);
+    const totalLikes30d = accounts.reduce((sum, account) => sum + (Number(account.likes30d) || 0), 0);
+    const totalViews30d = accounts.reduce((sum, account) => sum + (Number(account.views30d) || 0), 0);
+    const totalAvgLikes = accounts.reduce((sum, account) => sum + (Number(account.avg_likes) || 0), 0);
+    const totalAvgComments = accounts.reduce((sum, account) => sum + (Number(account.avg_comments) || 0), 0);
+    const weightedEngagement = totalFollowers
+        ? (((totalAvgLikes + totalAvgComments) / totalFollowers) * 100)
+        : 0;
+    const isCovered = accounts.every(account => account.recentWindowCovered !== false) && dataset?.recent_window_covered !== false;
+    const suffix = isCovered ? '' : '+';
+
+    if (elements.accountSelectedCount) elements.accountSelectedCount.textContent = String(accounts.length);
+    if (elements.accountTotalFollowers) elements.accountTotalFollowers.textContent = formatCompact(totalFollowers);
+    if (elements.accountTotalLikes30d) elements.accountTotalLikes30d.textContent = `${formatCompact(totalLikes30d)}${suffix}`;
+    if (elements.accountTotalViews30d) elements.accountTotalViews30d.textContent = `${formatCompact(totalViews30d)}${suffix}`;
+    if (elements.accountAverageEngagement) elements.accountAverageEngagement.textContent = formatPercentCompact(weightedEngagement);
+
+    if (elements.accountSnapshotMeta) {
+        const snapshotDate = dataset?.snapshot_date || dataset?.date || '';
+        const windowDays = Number(dataset?.recent_window_days) || 30;
+        elements.accountSnapshotMeta.textContent = `Snapshot · ${formatReadableDate(snapshotDate)} · ${windowDays}d window${suffix ? ' · sample truncated' : ''}`;
+    }
+}
+
+function resetAccountSummary(snapshotText = 'Snapshot · Unavailable') {
+    if (elements.accountSelectedCount) elements.accountSelectedCount.textContent = '0';
+    if (elements.accountTotalFollowers) elements.accountTotalFollowers.textContent = '0';
+    if (elements.accountTotalLikes30d) elements.accountTotalLikes30d.textContent = '0';
+    if (elements.accountTotalViews30d) elements.accountTotalViews30d.textContent = '0';
+    if (elements.accountAverageEngagement) elements.accountAverageEngagement.textContent = '0.00%';
+    if (elements.accountSnapshotMeta) elements.accountSnapshotMeta.textContent = snapshotText;
+}
+
+function buildManagedAccountMetric(label, value, accent = false) {
+    return `
+        <div class="managed-account-metric${accent ? ' managed-account-metric--accent' : ''}">
+            <span>${escapeHtml(label)}</span>
+            <strong>${escapeHtml(String(value))}</strong>
+        </div>
+    `;
+}
+
+function buildManagedAccountCard(account = {}) {
+    const bio = normalizeWhitespace(account.biography || '');
+    const bioText = bio.length > 180 ? `${bio.slice(0, 177)}...` : bio;
+    const viewSuffix = account.recentWindowCovered === false ? '+' : '';
+    const topPostsHtml = account.topPosts.length
+        ? account.topPosts.map(post => `
+            <a class="managed-account-post" href="${safeHttpUrl(post.url)}" target="_blank" rel="noopener noreferrer">
+                <div class="managed-account-post__copy">
+                    <strong>${escapeHtml(post.caption || 'Open post')}</strong>
+                    <span>${escapeHtml(formatReadableDate(post.date))}</span>
+                </div>
+                <div class="managed-account-post__metrics">
+                    <span>❤ ${escapeHtml(getSentientLikesLabel(post))}</span>
+                    <span>💬 ${escapeHtml(formatCompact(Number(post.comments) || 0))}</span>
+                    ${post.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(post.video_views) || 0))}</span>` : ''}
+                </div>
+            </a>
+        `).join('')
+        : '<div class="managed-account-post managed-account-post--empty">No recent posts captured yet.</div>';
+
+    return `
+        <article class="bento-box managed-account-card">
+            <div class="box-header managed-account-card__header">
+                <div class="managed-account-card__identity">
+                    <img class="managed-account-card__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                    <div class="managed-account-card__identity-copy">
+                        <h2>${escapeHtml(account.full_name || account.account)} ${account.is_verified ? '<span class="managed-account-card__verified">✓</span>' : ''}</h2>
+                        <div class="managed-account-card__handle-row">
+                            <span>@${escapeHtml(account.account)}</span>
+                            ${account.external_url ? `<a href="${safeHttpUrl(account.external_url)}" target="_blank" rel="noopener noreferrer">External</a>` : ''}
+                        </div>
+                    </div>
+                </div>
+                <a class="action-btn" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open Profile</a>
+            </div>
+            ${bioText ? `<p class="managed-account-card__bio">${escapeHtml(bioText)}</p>` : ''}
+            <div class="managed-account-card__metrics">
+                ${buildManagedAccountMetric('Followers', formatCompact(Number(account.followers) || 0), true)}
+                ${buildManagedAccountMetric('Posts', formatCompact(Number(account.posts) || 0))}
+                ${buildManagedAccountMetric('Avg likes', formatCompact(Number(account.avg_likes) || 0))}
+                ${buildManagedAccountMetric('Avg comments', formatCompact(Number(account.avg_comments) || 0))}
+                ${buildManagedAccountMetric('30d likes', `${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`)}
+                ${buildManagedAccountMetric('30d reel views', `${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`, true)}
+                ${buildManagedAccountMetric('Avg video views', Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0')}
+                ${buildManagedAccountMetric('Engagement', formatPercentCompact(account.engagement_rate))}
+            </div>
+            <div class="managed-account-card__posts">
+                <div class="managed-account-card__posts-header">
+                    <h3>Top posts</h3>
+                    <span>Last ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+                </div>
+                <div class="managed-account-card__posts-list">
+                    ${topPostsHtml}
+                </div>
+            </div>
+        </article>
+    `;
+}
+
+async function renderAccountView(forceRefresh = false) {
+    if (!elements.managedAccountsGrid || !elements.accountViewStatus) return;
+
+    if (!currentUser?.uid) {
+        resetAccountSummary('Snapshot · Sign in required');
+        elements.accountViewStatus.textContent = 'Sign in to view managed accounts.';
+        elements.managedAccountsGrid.innerHTML = '';
+        return;
+    }
+
+    elements.accountViewStatus.textContent = 'Loading Sentient account data...';
+    elements.managedAccountsGrid.innerHTML = '';
+
+    try {
+        const dataset = await fetchSentientAccountsDataset(forceRefresh);
+        const selectedAccounts = getManagedSentientAccountRecords(dataset);
+
+        renderAccountSummary(selectedAccounts, dataset);
+
+        if (!selectedAccounts.length) {
+            elements.accountViewStatus.textContent = 'Choose the accounts you manage to populate this dashboard.';
+            return;
+        }
+
+        elements.accountViewStatus.textContent = '';
+        elements.managedAccountsGrid.innerHTML = selectedAccounts
+            .map(account => buildManagedAccountCard(account))
+            .join('');
+    } catch (e) {
+        console.error('Failed to render account view', e);
+        resetAccountSummary('Snapshot · Sentient data unavailable');
+        elements.accountViewStatus.textContent = e.message || 'Could not load Sentient account data.';
+        elements.managedAccountsGrid.innerHTML = '';
     }
 }
 
@@ -1628,6 +2156,8 @@ function render() {
     // Also update dashboard if active
     if (currentView === 'metrics') {
         renderDashboard();
+    } else if (currentView === 'account') {
+        renderAccountView();
     }
 
     // Debug Expose
@@ -1643,7 +2173,7 @@ let dashboardMonth = new Date();
 function getInitialViewFromStorage() {
     try {
         const stored = localStorage.getItem(ACTIVE_TAB_KEY);
-        const allowedViews = ['sourcing', 'selection', 'scheduler', 'metrics', 'history'];
+        const allowedViews = ['sourcing', 'selection', 'scheduler', 'metrics', 'account', 'history'];
         return allowedViews.includes(stored) ? stored : 'sourcing';
     } catch {
         return 'sourcing';
@@ -1651,7 +2181,7 @@ function getInitialViewFromStorage() {
 }
 
 function switchTab(viewId) {
-    const allowedViews = new Set(['sourcing', 'selection', 'scheduler', 'metrics', 'history']);
+    const allowedViews = new Set(['sourcing', 'selection', 'scheduler', 'metrics', 'account', 'history']);
     if (!allowedViews.has(viewId)) viewId = 'sourcing';
 
     currentView = viewId;
@@ -1683,6 +2213,9 @@ function switchTab(viewId) {
         dashboardMonth = new Date(getWeekDates(globalOffset)[3]); // Use Wednesday of the current focal week
         stopNewsAutoRefresh();
         renderDashboard();
+    } else if (viewId === 'account') {
+        stopNewsAutoRefresh();
+        renderAccountView();
     } else if (viewId === 'history') {
         stopNewsAutoRefresh();
         renderHistory();
@@ -3970,6 +4503,11 @@ function setupEventListeners() {
     if (elements.loginBtn) {
         elements.loginBtn.addEventListener('click', signInWithGoogle);
     }
+    if (elements.manageAccountsBtn) {
+        elements.manageAccountsBtn.addEventListener('click', () => {
+            openManagedAccountsModal('edit');
+        });
+    }
 
     // Add card buttons
     elements.addPost.addEventListener('click', () => createCard(CONTENT_TYPES.POST));
@@ -4184,6 +4722,23 @@ function setupEventListeners() {
         });
     }
 
+    if (elements.managedAccountsSaveBtn) {
+        elements.managedAccountsSaveBtn.addEventListener('click', saveManagedAccountsSelection);
+    }
+    if (elements.managedAccountsCancelBtn) {
+        elements.managedAccountsCancelBtn.addEventListener('click', () => closeManagedAccountsModal());
+    }
+    if (elements.managedAccountsModalCloseBtn) {
+        elements.managedAccountsModalCloseBtn.addEventListener('click', () => closeManagedAccountsModal());
+    }
+    if (elements.managedAccountsModalOverlay) {
+        elements.managedAccountsModalOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.managedAccountsModalOverlay) {
+                closeManagedAccountsModal();
+            }
+        });
+    }
+
     // Export Data
     if (elements.exportBtn) {
         elements.exportBtn.addEventListener('click', exportData);
@@ -4200,6 +4755,7 @@ function exportData() {
         appData,
         permanentNotes,
         doneHeadlines: Array.from(doneHeadlines),
+        managedSentientAccounts,
         timestamp: new Date().toISOString()
     };
 
@@ -4232,6 +4788,7 @@ async function setupAuthSession() {
         if (!user) {
             currentUser = null;
             isLoadingUserData = false;
+            closeManagedAccountsModal(true);
             stopNewsAutoRefresh();
             resetInMemoryState();
             render();
@@ -4252,6 +4809,10 @@ async function setupAuthSession() {
             await drainPendingExtensionIdeas();
             switchTab(currentView);
             setAuthGate('hidden', '');
+
+            if (!managedSentientAccounts.length) {
+                await openManagedAccountsModal('onboarding');
+            }
         } catch (e) {
             console.error('Failed to hydrate signed-in user', e);
             setAuthGate('error', 'We could not load your workspace. Try refreshing.');

@@ -1336,6 +1336,257 @@ canvas {
   width: 100%;
 }
 
+.account-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 100%;
+}
+
+.account-overview-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.account-overview__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.account-overview__meta {
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+  font-weight: 600;
+}
+
+.account-kpi-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.account-view-status {
+  padding: 14px 18px;
+  border-radius: var(--border-radius-lg);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-tertiary);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.managed-accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.managed-account-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.managed-account-card__header {
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.managed-account-card__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.managed-account-card__avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg-primary);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.managed-account-card__identity-copy {
+  min-width: 0;
+}
+
+.managed-account-card__identity-copy h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.managed-account-card__verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(52, 199, 89, 0.12);
+  color: var(--accent-success);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.managed-account-card__handle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.managed-account-card__handle-row span,
+.managed-account-card__handle-row a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-decoration: none;
+}
+
+.managed-account-card__handle-row a {
+  color: var(--accent-primary);
+}
+
+.managed-account-card__bio {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.managed-account-card__metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.managed-account-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: var(--border-radius-md);
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.managed-account-metric span {
+  font-size: 0.68rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  font-weight: 700;
+}
+
+.managed-account-metric strong {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.managed-account-metric--accent {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.1), rgba(90, 200, 250, 0.08));
+  border-color: rgba(0, 122, 255, 0.12);
+}
+
+.managed-account-card__posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.managed-account-card__posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.managed-account-card__posts-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.managed-account-card__posts-header span {
+  font-size: 0.74rem;
+  color: var(--text-tertiary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.managed-account-card__posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.managed-account-post {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.managed-account-post:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(0, 122, 255, 0.12);
+}
+
+.managed-account-post__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.managed-account-post__copy strong {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.managed-account-post__copy span {
+  color: var(--text-tertiary);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.managed-account-post__metrics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 0.74rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.managed-account-post--empty {
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+}
+
 .dashboard-sidebar {
   display: flex;
   flex-direction: column;
@@ -2039,6 +2290,119 @@ canvas {
   background: var(--gradient-promo);
 }
 
+.managed-accounts-modal {
+  max-width: min(900px, calc(100vw - 32px));
+}
+
+.managed-accounts-modal__description {
+  margin: 0 0 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.managed-accounts-modal__status {
+  min-height: 20px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
+
+.managed-accounts-modal__status[data-tone="success"] {
+  color: var(--accent-success);
+}
+
+.managed-accounts-modal__status[data-tone="error"] {
+  color: #FF3B30;
+}
+
+.managed-accounts-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-height: min(55vh, 560px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.managed-account-option {
+  display: block;
+  cursor: pointer;
+}
+
+.managed-account-option__checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.managed-account-option__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: white;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.managed-account-option__checkbox:checked + .managed-account-option__card {
+  border-color: rgba(0, 122, 255, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 122, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.managed-account-option__identity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.managed-account-option__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  object-fit: cover;
+  background: var(--bg-primary);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.managed-account-option__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.managed-account-option__copy strong {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.managed-account-option__copy span,
+.managed-account-option__meta {
+  font-size: 0.76rem;
+  color: var(--text-tertiary);
+}
+
+.managed-account-option__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.managed-account-option--loading {
+  grid-column: 1 / -1;
+  padding: 18px;
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  color: var(--text-tertiary);
+  background: rgba(255, 255, 255, 0.5);
+}
+
 /* ===========================
    Inspiration Board Layout (Pinterest Style)
    =========================== */
@@ -2385,6 +2749,12 @@ canvas {
   .bottom-row {
     grid-template-columns: 1fr;
     height: auto;
+  }
+
+  .managed-accounts-picker,
+  .managed-accounts-grid,
+  .managed-account-card__metrics {
+    grid-template-columns: 1fr;
   }
 
   .week-grid {
