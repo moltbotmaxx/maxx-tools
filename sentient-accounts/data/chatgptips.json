@@ -1,24 +1,30 @@
 {
-  "generated_at": "2026-03-22T03:32:56+00:00",
+  "generated_at": "2026-03-22T03:59:40+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T03:32:37+00:00",
+  "run_started_at": "2026-03-22T03:59:05+00:00",
   "account": "chatgptips",
   "profile_url": "https://www.instagram.com/chatgptips/",
   "full_name": "ChatGPT Tips",
   "biography": "\ud83e\udd16 On a mission to help you understand AI \n\ud83d\udca1 Find the best ChatGPT tips and tricks \n\ud83d\udcbb Brought to you by @chatgptricks\n\ud83d\udc47 Get our Free ChatGPT Guide",
   "external_url": "http://chatgptricks.store",
   "is_verified": false,
-  "followers": 603164,
+  "followers": 603166,
   "following": 4,
   "posts": 532,
-  "recent_post_count": 12,
-  "video_post_count": 5,
-  "avg_likes": 5523.75,
-  "avg_comments": 82.25,
+  "recent_post_count": 24,
+  "video_post_count": 8,
+  "recent_posts_window_days": 14,
+  "recent_posts_target_limit": 24,
+  "recent_posts_hard_limit": 60,
+  "recent_posts_collection_stop_reason": "window_reached",
+  "recent_posts_window_covered": true,
+  "oldest_recent_post_date": "2026-03-07",
+  "avg_likes": 3417.96,
+  "avg_comments": 76.71,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
   "avg_video_views_per_post": 0.0,
-  "engagement_rate": 0.9294,
+  "engagement_rate": 0.5794,
   "recent_posts": [
     {
       "shortcode": "DDvUwkogb2y",
@@ -73,7 +79,7 @@
     {
       "shortcode": "DWFmxlqjbIF",
       "date": "2026-03-20",
-      "likes": 1128,
+      "likes": 1136,
       "comments": 291,
       "is_video": false,
       "video_views": 0,
@@ -123,7 +129,7 @@
     {
       "shortcode": "DV-VBWijflu",
       "date": "2026-03-17",
-      "likes": 1104,
+      "likes": 1105,
       "comments": 23,
       "is_video": true,
       "video_views": 0,
@@ -133,12 +139,132 @@
     {
       "shortcode": "DV-HRwZjZSV",
       "date": "2026-03-17",
-      "likes": 417,
+      "likes": 418,
       "comments": 5,
       "is_video": true,
       "video_views": 0,
       "caption": "Somewhere a GPU is fighting for its life \ud83d\ude2d\ud83e\udd23\nAI data centers are eating the world\u2019s RAM supply.\n\nCredit: @vinegar_lens",
       "url": "https://www.instagram.com/p/DV-HRwZjZSV/"
+    },
+    {
+      "shortcode": "DV8fLPmgEvs",
+      "date": "2026-03-16",
+      "likes": 1124,
+      "comments": 56,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "He sold his house using ChatGPT.\n\nA homeowner in Cooper City, Florida decided to try something unusual when selling his house. Instead of hiring a real estate agent, he used ChatGP",
+      "url": "https://www.instagram.com/p/DV8fLPmgEvs/"
+    },
+    {
+      "shortcode": "DV7FE_kjRKV",
+      "date": "2026-03-15",
+      "likes": 452,
+      "comments": 8,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "This scene would cost a studio $5M. Someone with AI did it in minutes.\n\n@Higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
+      "url": "https://www.instagram.com/p/DV7FE_kjRKV/"
+    },
+    {
+      "shortcode": "DV6jfB4FibR",
+      "date": "2026-03-15",
+      "likes": 3,
+      "comments": 15,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "That totally makes sense if you ask me, but did you know there are 3 strawberries in the word R? \ud83c\udf53\ud83c\udf53\ud83c\udf53",
+      "url": "https://www.instagram.com/p/DV6jfB4FibR/"
+    },
+    {
+      "shortcode": "DV56TQBFhbz",
+      "date": "2026-03-15",
+      "likes": 1916,
+      "comments": 43,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Man uses AI to save his dog.\n\nSydney tech entrepreneur Paul Conyngham turned to AI after his rescue dog Rosie was diagnosed with aggressive mast cell cancer and given only months t",
+      "url": "https://www.instagram.com/p/DV56TQBFhbz/"
+    },
+    {
+      "shortcode": "DV4YiiAgPm3",
+      "date": "2026-03-14",
+      "likes": 1568,
+      "comments": 84,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Is ChatGPT making us think less?\n\nSome researchers are starting to ask a tough question. What happens to the brain when people rely heavily on AI for thinking and writing.\n\nEarly f",
+      "url": "https://www.instagram.com/p/DV4YiiAgPm3/"
+    },
+    {
+      "shortcode": "DV1uwQ-knqB",
+      "date": "2026-03-13",
+      "likes": 446,
+      "comments": 192,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "To enter: \n1. Comment \n2. Follow @louisgson \n\nI\u2019ll be revealing the winner in the next couple of days. \n\nShout out to @openai / @chatgpt for the gift \ud83d\ude4c",
+      "url": "https://www.instagram.com/p/DV1uwQ-knqB/"
+    },
+    {
+      "shortcode": "DVzLrC_D96Q",
+      "date": "2026-03-12",
+      "likes": 1454,
+      "comments": 9,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "At this point nobody knows what\u2019s real anymore \ud83d\ude02",
+      "url": "https://www.instagram.com/p/DVzLrC_D96Q/"
+    },
+    {
+      "shortcode": "DVuvSL7DZRR",
+      "date": "2026-03-11",
+      "likes": 130,
+      "comments": 36,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Human actors are cooked.\n\nThis tech lets studios create, clone, and own actors like software.\n\n@higgsfield.ai just dropped a tool that builds photorealistic actors from nothing - a",
+      "url": "https://www.instagram.com/p/DVuvSL7DZRR/"
+    },
+    {
+      "shortcode": "DVuVo4iDZCc",
+      "date": "2026-03-11",
+      "likes": 229,
+      "comments": 5,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Just a casual 8\u20130 win against AI. Feeling powerful today \ud83d\ude02",
+      "url": "https://www.instagram.com/p/DVuVo4iDZCc/"
+    },
+    {
+      "shortcode": "DVtx5iDDxqG",
+      "date": "2026-03-10",
+      "likes": 569,
+      "comments": 39,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Looks like a real movie\n\n\ud83d\udcfd\ufe0f X/sumiturkude007",
+      "url": "https://www.instagram.com/p/DVtx5iDDxqG/"
+    },
+    {
+      "shortcode": "DVp28zuDehx",
+      "date": "2026-03-09",
+      "likes": 7236,
+      "comments": 142,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Sam really cooked this time with 5.4 \n\nSource: @theminchoi on X",
+      "url": "https://www.instagram.com/p/DVp28zuDehx/"
+    },
+    {
+      "shortcode": "DVlpS7ljV-F",
+      "date": "2026-03-07",
+      "likes": 609,
+      "comments": 225,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Comment \u201cCHAT\u201d and we\u2019ll send you the link \ud83d\udd17\n\nStop juggling multiple AI tools.\n\nChat, generate images and videos, build apps and websites, and launch real products \u2014 all in one pla",
+      "url": "https://www.instagram.com/p/DVlpS7ljV-F/"
     }
   ]
 }

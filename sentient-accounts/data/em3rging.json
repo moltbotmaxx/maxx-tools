@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-22T03:33:18+00:00",
+  "generated_at": "2026-03-22T04:00:26+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T03:32:37+00:00",
+  "run_started_at": "2026-03-22T03:59:05+00:00",
   "account": "em3rging",
   "profile_url": "https://www.instagram.com/em3rging/",
   "full_name": "Emerging Technological Advancements",
@@ -11,19 +11,25 @@
   "followers": 218509,
   "following": 49,
   "posts": 1702,
-  "recent_post_count": 12,
-  "video_post_count": 6,
-  "avg_likes": 232.58,
-  "avg_comments": 4.42,
+  "recent_post_count": 38,
+  "video_post_count": 13,
+  "recent_posts_window_days": 14,
+  "recent_posts_target_limit": 24,
+  "recent_posts_hard_limit": 60,
+  "recent_posts_collection_stop_reason": "window_reached",
+  "recent_posts_window_covered": true,
+  "oldest_recent_post_date": "2026-03-07",
+  "avg_likes": 3426.21,
+  "avg_comments": 51.82,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
   "avg_video_views_per_post": 0.0,
-  "engagement_rate": 0.1085,
+  "engagement_rate": 1.5917,
   "recent_posts": [
     {
       "shortcode": "DWKvFvBgCO4",
       "date": "2026-03-22",
-      "likes": 176,
+      "likes": 188,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -33,7 +39,7 @@
     {
       "shortcode": "DWJ96sRgEaR",
       "date": "2026-03-21",
-      "likes": 71,
+      "likes": 72,
       "comments": 8,
       "is_video": false,
       "video_views": 0,
@@ -63,7 +69,7 @@
     {
       "shortcode": "DWHnXN7EcYp",
       "date": "2026-03-20",
-      "likes": 285,
+      "likes": 286,
       "comments": 9,
       "is_video": true,
       "video_views": 0,
@@ -73,7 +79,7 @@
     {
       "shortcode": "DWHclVmkdAo",
       "date": "2026-03-20",
-      "likes": 112,
+      "likes": 113,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -123,7 +129,7 @@
     {
       "shortcode": "DWC-4G6AN69",
       "date": "2026-03-19",
-      "likes": 926,
+      "likes": 932,
       "comments": 10,
       "is_video": false,
       "video_views": 0,
@@ -139,6 +145,266 @@
       "video_views": 0,
       "caption": "Road repairs don\u2019t have to mean traffic jams and endless delays. New technologies are making it possible to fix potholes in minutes while cars keep moving, turning what used to be ",
       "url": "https://www.instagram.com/p/DWCjdeMkZ_m/"
+    },
+    {
+      "shortcode": "DWCYReRkbzu",
+      "date": "2026-03-18",
+      "likes": 147,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "\u03c0 has infinitely many digits. But for navigating space, that simply doesn\u2019t matter.\n\nWhile it might seem like high precision missions would require millions of digits, NASA operate",
+      "url": "https://www.instagram.com/p/DWCYReRkbzu/"
+    },
+    {
+      "shortcode": "DWAB_9_kY8T",
+      "date": "2026-03-17",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Nvidia just redefined what a data center is.\n\nAt GTC 2026, the company unveiled Vera Rubin Space-1, a next generation AI compute module designed to operate directly in orbit, marki",
+      "url": "https://www.instagram.com/p/DWAB_9_kY8T/"
+    },
+    {
+      "shortcode": "DV_xMP0EaX6",
+      "date": "2026-03-17",
+      "likes": 549,
+      "comments": 11,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "This is one of the most detailed molecular portraits of a human cell ever assembled, built entirely from real structural biology data.\n\nBy combining cryo electron microscopy, X ray",
+      "url": "https://www.instagram.com/p/DV_xMP0EaX6/"
+    },
+    {
+      "shortcode": "DV9bdCjEQnf",
+      "date": "2026-03-16",
+      "likes": 299,
+      "comments": 7,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "At first glance it looks like this man is setting the forest on fire. In reality, that\u2019s exactly what he\u2019s supposed to do. \ud83c\udf3e\ud83d\udd25\n\nFire professionals often carry out what are known as ",
+      "url": "https://www.instagram.com/p/DV9bdCjEQnf/"
+    },
+    {
+      "shortcode": "DV9MrTdEbMu",
+      "date": "2026-03-16",
+      "likes": 3,
+      "comments": 3,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Chicago once again turned green for one of its most famous traditions. \u2618\ufe0f\ud83c\udf0a\n\nFor the 64th year, the Chicago River was dyed a brilliant emerald to celebrate St. Patrick\u2019s Day, drawin",
+      "url": "https://www.instagram.com/p/DV9MrTdEbMu/"
+    },
+    {
+      "shortcode": "DV8uTR6AMdt",
+      "date": "2026-03-16",
+      "likes": 3,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Students at George Mason University developed a low frequency bass speaker system capable of extinguishing small flames using sound waves. The device works by directing powerful lo",
+      "url": "https://www.instagram.com/p/DV8uTR6AMdt/"
+    },
+    {
+      "shortcode": "DV7JNM1gF1H",
+      "date": "2026-03-15",
+      "likes": 130,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "This scene would cost a studio $5M. Someone with AI did it in minutes.\n\n@Higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
+      "url": "https://www.instagram.com/p/DV7JNM1gF1H/"
+    },
+    {
+      "shortcode": "DV64OdAEcXM",
+      "date": "2026-03-15",
+      "likes": 476,
+      "comments": 3,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Bamboo is one of the most versatile natural materials on Earth. Its hollow, segmented structure makes it incredibly strong, lightweight, and naturally tubular, which is why many su",
+      "url": "https://www.instagram.com/p/DV64OdAEcXM/"
+    },
+    {
+      "shortcode": "DV6Dq1hgDA1",
+      "date": "2026-03-15",
+      "likes": 211,
+      "comments": 3,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Sydney tech entrepreneur Paul Conyngham turned to artificial intelligence when his rescue dog Rosie was diagnosed with an aggressive form of mast cell cancer and given only a few m",
+      "url": "https://www.instagram.com/p/DV6Dq1hgDA1/"
+    },
+    {
+      "shortcode": "DV3Y0SWgEYY",
+      "date": "2026-03-14",
+      "likes": 411,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "China has developed a swallowable capsule powered by AI that can examine the stomach in minutes without the need for tubes, sedation, or invasive procedures.\n\nOnce swallowed, the s",
+      "url": "https://www.instagram.com/p/DV3Y0SWgEYY/"
+    },
+    {
+      "shortcode": "DV1t-jUEV7s",
+      "date": "2026-03-13",
+      "likes": 349,
+      "comments": 23,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Coca-Cola is reportedly exploring the idea of a cannabis-inspired beverage designed to capture the distinctive flavor profile associated with cannabis while avoiding any psychoacti",
+      "url": "https://www.instagram.com/p/DV1t-jUEV7s/"
+    },
+    {
+      "shortcode": "DV1bmoZEQq5",
+      "date": "2026-03-13",
+      "likes": 117304,
+      "comments": 1616,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "This robotic mouth recreates human speech by imitating the real physical mechanics of how people talk, instead of depending on text to speech systems or digital voice synthesis.\n\nR",
+      "url": "https://www.instagram.com/p/DV1bmoZEQq5/"
+    },
+    {
+      "shortcode": "DVzptSLgP1b",
+      "date": "2026-03-13",
+      "likes": 403,
+      "comments": 14,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "A strange food story from the Netherlands went viral after photos showed what looked like ice cream infused with paracetamol, a common painkiller used to treat headaches and fever.",
+      "url": "https://www.instagram.com/p/DVzptSLgP1b/"
+    },
+    {
+      "shortcode": "DVzHTH2Eb0H",
+      "date": "2026-03-12",
+      "likes": 188,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "China\u2019s state power grid operator State Grid has begun using dual-arm robots to carry out maintenance on high-voltage power lines. These systems can place conductors, install clamp",
+      "url": "https://www.instagram.com/p/DVzHTH2Eb0H/"
+    },
+    {
+      "shortcode": "DVyxnyOgPpT",
+      "date": "2026-03-12",
+      "likes": 460,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Tungsten is one of the densest and toughest metals found on Earth, and when a standard bullet strikes a solid block of it, the outcome is almost always the same: the bullet fails f",
+      "url": "https://www.instagram.com/p/DVyxnyOgPpT/"
+    },
+    {
+      "shortcode": "DVw6Ve7gE7j",
+      "date": "2026-03-12",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Compressed air is entering a new era beyond the factory floor.\n\nResearchers recently introduced the world\u2019s most powerful single unit compressed air energy storage compressor, rate",
+      "url": "https://www.instagram.com/p/DVw6Ve7gE7j/"
+    },
+    {
+      "shortcode": "DVwbarcEejL",
+      "date": "2026-03-11",
+      "likes": 3,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Omar Yaghi, winner of the 2025 Nobel Prize in Chemistry, is one of the scientists behind a class of materials that many researchers believe could define the next technological era:",
+      "url": "https://www.instagram.com/p/DVwbarcEejL/"
+    },
+    {
+      "shortcode": "DVv5SXhgAGi",
+      "date": "2026-03-11",
+      "likes": 334,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Scientists at Harvard University have developed a groundbreaking system of \u201ccyborg\u201d pancreatic organoids that integrates flexible nanoelectronics directly into living tissue to stu",
+      "url": "https://www.instagram.com/p/DVv5SXhgAGi/"
+    },
+    {
+      "shortcode": "DVuYgJFgLn8",
+      "date": "2026-03-11",
+      "likes": 86,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Human actors are cooked.\n\nThis tech lets studios create, clone, and own actors like software.\n\nHiggsfield.ai just dropped a tool that builds photorealistic actors from nothing - an",
+      "url": "https://www.instagram.com/p/DVuYgJFgLn8/"
+    },
+    {
+      "shortcode": "DVuGTfxEVWi",
+      "date": "2026-03-10",
+      "likes": 1231,
+      "comments": 37,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "China is taking its fight against desertification to a new level using solar-powered robots.\n\nAcross vast desert regions, autonomous machines are planting thousands of trees with s",
+      "url": "https://www.instagram.com/p/DVuGTfxEVWi/"
+    },
+    {
+      "shortcode": "DVt67lkkTdy",
+      "date": "2026-03-10",
+      "likes": 349,
+      "comments": 11,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Julian Brown introduced a prototype that converts common plastic waste into liquid fuels like gasoline, diesel, and kerosene using a high-temperature thermal process. Videos of the",
+      "url": "https://www.instagram.com/p/DVt67lkkTdy/"
+    },
+    {
+      "shortcode": "DVsIInAgBKi",
+      "date": "2026-03-10",
+      "likes": 1217,
+      "comments": 60,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "A new rumor spreading online claims that Red Bull could be working on an unexpected product: a sleep drink designed to deliver up to twelve hours of uninterrupted rest \ud83e\udd6b\ud83d\udca4\n\nIf true,",
+      "url": "https://www.instagram.com/p/DVsIInAgBKi/"
+    },
+    {
+      "shortcode": "DVrv_1OgJ96",
+      "date": "2026-03-10",
+      "likes": 2566,
+      "comments": 70,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Quantum physics reveals something deeply counterintuitive about reality.\n\nIn quantum mechanics, particles such as electrons can exist in superposition, meaning they occupy multiple",
+      "url": "https://www.instagram.com/p/DVrv_1OgJ96/"
+    },
+    {
+      "shortcode": "DVrb6UREfAo",
+      "date": "2026-03-09",
+      "likes": 3,
+      "comments": 9,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Engineers trained the AI that eventually replaced them.\n\nAmazon had thousands of engineers spend years training artificial intelligence systems designed to automate internal proces",
+      "url": "https://www.instagram.com/p/DVrb6UREfAo/"
+    },
+    {
+      "shortcode": "DVovQZrEbIh",
+      "date": "2026-03-08",
+      "likes": 326,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "A Mexican scientist may have opened a new path in the fight against HPV.\n\nDr. Eva Ram\u00f3n Gallegos, a biomedical researcher at the National Polytechnic Institute of Mexico, has spent",
+      "url": "https://www.instagram.com/p/DVovQZrEbIh/"
+    },
+    {
+      "shortcode": "DVmK2OAESqZ",
+      "date": "2026-03-07",
+      "likes": 330,
+      "comments": 8,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "KnovelCam makes diagnostic imaging mobile instead of stationary.\n\nIt\u2019s compact, easy to carry, and designed to work at the patient\u2019s side, whether in clinics, ambulances, disaster ",
+      "url": "https://www.instagram.com/p/DVmK2OAESqZ/"
     }
   ]
 }

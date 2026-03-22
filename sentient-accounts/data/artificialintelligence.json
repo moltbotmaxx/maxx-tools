@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-22T03:33:22+00:00",
+  "generated_at": "2026-03-22T04:00:33+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T03:32:37+00:00",
+  "run_started_at": "2026-03-22T03:59:05+00:00",
   "account": "artificialintelligence",
   "profile_url": "https://www.instagram.com/artificialintelligence/",
   "full_name": "Maybe: Jazzmin",
@@ -11,14 +11,20 @@
   "followers": 2731,
   "following": 475,
   "posts": 80,
-  "recent_post_count": 12,
+  "recent_post_count": 24,
   "video_post_count": 0,
-  "avg_likes": 63.92,
-  "avg_comments": 5.33,
+  "recent_posts_window_days": 14,
+  "recent_posts_target_limit": 24,
+  "recent_posts_hard_limit": 60,
+  "recent_posts_collection_stop_reason": "window_reached",
+  "recent_posts_window_covered": true,
+  "oldest_recent_post_date": "2024-12-08",
+  "avg_likes": 33.46,
+  "avg_comments": 3.33,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
-  "engagement_rate": 2.5357,
+  "engagement_rate": 1.3471,
   "recent_posts": [
     {
       "shortcode": "BsgrxIlBqyS",
@@ -139,6 +145,126 @@
       "video_views": 0,
       "caption": "I was here slightly longer than Katy Perry & them were in space but I mean\u2026.its all about the experience right? Lol",
       "url": "https://www.instagram.com/p/DIkYdYAxnGg/"
+    },
+    {
+      "shortcode": "DIh1MmGx3Jm",
+      "date": "2025-04-17",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "\u201cI see the light at the end of the tunnel but on my way there hearing the voices that wanna lead me astray with darker ways. I know the phase, I keep away, I stay the pace\u2026.\u201d\n\n.\n.\n",
+      "url": "https://www.instagram.com/p/DIh1MmGx3Jm/"
+    },
+    {
+      "shortcode": "DIcDrGNRtmH",
+      "date": "2025-04-14",
+      "likes": 3,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "A new day",
+      "url": "https://www.instagram.com/p/DIcDrGNRtmH/"
+    },
+    {
+      "shortcode": "DIUzhKgKRQ1",
+      "date": "2025-04-11",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "So\u2026.lets pick up where we left off",
+      "url": "https://www.instagram.com/p/DIUzhKgKRQ1/"
+    },
+    {
+      "shortcode": "DHXYxUCRV_6",
+      "date": "2025-03-19",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "In 57 miles, the destination is on your left.\n\n.\n.\n.\n.\n.\n#seeyourcity #nikon #girlswhotravel #roadtrip #sigmaart #femalephotographer  #travelgirl #madewithlightroom #valleyoffire #",
+      "url": "https://www.instagram.com/p/DHXYxUCRV_6/"
+    },
+    {
+      "shortcode": "DHR0NJjyv_w",
+      "date": "2025-03-16",
+      "likes": 3,
+      "comments": 3,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "\u201cSatellite can\u2019t reach me\nWhere I\u2019m at is not a place, it\u2019s a feeling\u201d",
+      "url": "https://www.instagram.com/p/DHR0NJjyv_w/"
+    },
+    {
+      "shortcode": "DEjQkITxXLU",
+      "date": "2025-01-08",
+      "likes": 3,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "The view down here is way too low\n\n.\n.\n.\n.\n.\n.\n#archdaily #yourshotphotographer #structure_bestshots #streetscapes  #perspective #visualarchitects #nikon #artofvisuals #houseoftone",
+      "url": "https://www.instagram.com/p/DEjQkITxXLU/"
+    },
+    {
+      "shortcode": "DEOEMftRpTx",
+      "date": "2024-12-30",
+      "likes": 3,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "\u201cI said I\u2019d never go & change\nThen got dressed\u2026..\u201d",
+      "url": "https://www.instagram.com/p/DEOEMftRpTx/"
+    },
+    {
+      "shortcode": "DDqmFzjx4Zj",
+      "date": "2024-12-17",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Seven sacred pools & devils kitchen sinkhole via soldier pass trail.\n.\n.\n.\n.\n#seeyourcity #nikon #girlswhotravel #roadtrip #sigmaart #femalephotographer  #travelgirl #madewithlight",
+      "url": "https://www.instagram.com/p/DDqmFzjx4Zj/"
+    },
+    {
+      "shortcode": "DDiVDBtxwgV",
+      "date": "2024-12-13",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "My second time visiting this place. The first time was a few years ago so I decided to fly across the country and drive 4 hours again to see if I could take a better photo. The fir",
+      "url": "https://www.instagram.com/p/DDiVDBtxwgV/"
+    },
+    {
+      "shortcode": "DDavGY3RhbE",
+      "date": "2024-12-11",
+      "likes": 3,
+      "comments": 3,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "\u201cI be really just chillin, no smoke, no beef, no heifer \nOut of sight, out of mind, no pressure\u2026.\u201d",
+      "url": "https://www.instagram.com/p/DDavGY3RhbE/"
+    },
+    {
+      "shortcode": "DDYPHq2SVCA",
+      "date": "2024-12-10",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Begin again\n\n.\n.\n.\n.\n.\n#seeyourcity #nikon #girlswhotravel #roadtrip #sigmaart #femalephotographer  #travelgirl #madewithlightroom #arizona #arizonacollective #arizona_landscapes #",
+      "url": "https://www.instagram.com/p/DDYPHq2SVCA/"
+    },
+    {
+      "shortcode": "DDTAnuPS1Gi",
+      "date": "2024-12-08",
+      "likes": 3,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Sound body and tranquillity",
+      "url": "https://www.instagram.com/p/DDTAnuPS1Gi/"
     }
   ]
 }

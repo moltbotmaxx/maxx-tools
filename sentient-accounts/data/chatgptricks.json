@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-22T03:32:44+00:00",
+  "generated_at": "2026-03-22T03:59:26+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T03:32:37+00:00",
+  "run_started_at": "2026-03-22T03:59:05+00:00",
   "account": "chatgptricks",
   "profile_url": "https://www.instagram.com/chatgptricks/",
   "full_name": "Artificial Intelligence (AI) \u2022 ChatGPT",
@@ -10,15 +10,21 @@
   "is_verified": true,
   "followers": 2477197,
   "following": 177,
-  "posts": 2531,
-  "recent_post_count": 12,
-  "video_post_count": 1,
-  "avg_likes": 12948.83,
-  "avg_comments": 165.17,
+  "posts": 2532,
+  "recent_post_count": 60,
+  "video_post_count": 4,
+  "recent_posts_window_days": 14,
+  "recent_posts_target_limit": 24,
+  "recent_posts_hard_limit": 60,
+  "recent_posts_collection_stop_reason": "hard_limit",
+  "recent_posts_window_covered": false,
+  "oldest_recent_post_date": "2026-03-10",
+  "avg_likes": 4655.05,
+  "avg_comments": 115.68,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
   "avg_video_views_per_post": 0.0,
-  "engagement_rate": 0.5294,
+  "engagement_rate": 0.1926,
   "recent_posts": [
     {
       "shortcode": "DQwSSlhDkGC",
@@ -51,10 +57,20 @@
       "url": "https://www.instagram.com/p/DKUL25_gCnh/"
     },
     {
+      "shortcode": "DWK5gbdAPnm",
+      "date": "2026-03-22",
+      "likes": 3,
+      "comments": 4,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "OpenAI is building one AI app.\n\nOpenAI is reportedly working on a unified desktop \u201csuperapp\u201d that combines ChatGPT, Codex (coding assistant), and Atlas (AI browser) into one place.",
+      "url": "https://www.instagram.com/p/DWK5gbdAPnm/"
+    },
+    {
       "shortcode": "DWKuOWdjQke",
       "date": "2026-03-22",
       "likes": 3,
-      "comments": 30,
+      "comments": 32,
       "is_video": true,
       "video_views": 0,
       "caption": "Build your own AI influencer.\n\nPeople are now creating full digital creators using a few AI tools and a clear process.\n\nYou start by defining your audience with ChatGPT, what they ",
@@ -64,7 +80,7 @@
       "shortcode": "DWKpgMoAEWE",
       "date": "2026-03-22",
       "likes": 3,
-      "comments": 14,
+      "comments": 15,
       "is_video": false,
       "video_views": 0,
       "caption": "Bezos wants to rebuild factories with AI\n\nJeff Bezos is reportedly in early talks to raise a $100 billion fund focused on buying manufacturing companies and upgrading them with AI.",
@@ -83,8 +99,8 @@
     {
       "shortcode": "DWJuABKgJh9",
       "date": "2026-03-21",
-      "likes": 1943,
-      "comments": 33,
+      "likes": 1997,
+      "comments": 35,
       "is_video": false,
       "video_views": 0,
       "caption": "Cursor got called out, fast.\n\nCursor launched Composer 2 on March 19 and described it as the result of continued pretraining plus scaled reinforcement learning. Soon after, develop",
@@ -93,7 +109,7 @@
     {
       "shortcode": "DWIEKTijRyT",
       "date": "2026-03-21",
-      "likes": 1779,
+      "likes": 1786,
       "comments": 68,
       "is_video": false,
       "video_views": 0,
@@ -133,12 +149,482 @@
     {
       "shortcode": "DWFmxlqjbIF",
       "date": "2026-03-20",
-      "likes": 1127,
+      "likes": 1136,
       "comments": 291,
       "is_video": false,
       "video_views": 0,
       "caption": "Comment GTA and I\u2019ll send you the link \ud83c\udfae\n\nTurn your photos into GTA gameplay",
       "url": "https://www.instagram.com/p/DWFmxlqjbIF/"
+    },
+    {
+      "shortcode": "DWFhtdsjWRQ",
+      "date": "2026-03-20",
+      "likes": 3430,
+      "comments": 98,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
+      "url": "https://www.instagram.com/p/DWFhtdsjWRQ/"
+    },
+    {
+      "shortcode": "DWFUbuwAOin",
+      "date": "2026-03-19",
+      "likes": 2198,
+      "comments": 176,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "This AI account fooled a million people\n\nAn Instagram account posing as a U.S. Army soldier just crossed 1M followers using AI-generated photos and political captions.\n\nThe images ",
+      "url": "https://www.instagram.com/p/DWFUbuwAOin/"
+    },
+    {
+      "shortcode": "DWEUbjogCKM",
+      "date": "2026-03-19",
+      "likes": 8401,
+      "comments": 387,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Claude usage reveals global startup hotspots\n\nAnthropic just released a report ranking countries by Claude usage per person. It gives a snapshot of where people are actually buildi",
+      "url": "https://www.instagram.com/p/DWEUbjogCKM/"
+    },
+    {
+      "shortcode": "DWDZv8IDVKo",
+      "date": "2026-03-19",
+      "likes": 1582,
+      "comments": 115,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Meta just killed its VR world\n\nMeta is shutting down Horizon Worlds on Quest headsets. The phase-out starts March 31, with full removal by June 15, 2026.\n\nThe app itself is not gon",
+      "url": "https://www.instagram.com/p/DWDZv8IDVKo/"
+    },
+    {
+      "shortcode": "DWCY07wgEpB",
+      "date": "2026-03-18",
+      "likes": 3,
+      "comments": 19,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "OpenAI is changing its priorities.\n\nAt an internal all-hands meeting, OpenAI leaders told staff the company is shifting focus toward business and productivity tools. The details we",
+      "url": "https://www.instagram.com/p/DWCY07wgEpB/"
+    },
+    {
+      "shortcode": "DWCELcGgOSe",
+      "date": "2026-03-18",
+      "likes": 1645,
+      "comments": 25,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI fooled even Zendaya\u2019s circle\n\nZendaya just addressed viral AI-generated wedding photos showing her and Tom Holland getting married. The images spread fast online, and a lot of p",
+      "url": "https://www.instagram.com/p/DWCELcGgOSe/"
+    },
+    {
+      "shortcode": "DWAQIwfDc_p",
+      "date": "2026-03-17",
+      "likes": 4128,
+      "comments": 124,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "OpenAI CEO Sam Altman says it\u2019s \u201cdifficult to remember\u201d writing code character-by-character, X got something to say",
+      "url": "https://www.instagram.com/p/DWAQIwfDc_p/"
+    },
+    {
+      "shortcode": "DV_tHf7gCXr",
+      "date": "2026-03-17",
+      "likes": 1188,
+      "comments": 11,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "\u201cIt\u2019s mine, my precious\u201d\n\nLOTR: Fellowship of the Slop",
+      "url": "https://www.instagram.com/p/DV_tHf7gCXr/"
+    },
+    {
+      "shortcode": "DV_a2KygBQf",
+      "date": "2026-03-17",
+      "likes": 1436,
+      "comments": 71,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "This robot learned tennis in hours.\n\nResearchers trained a humanoid robot to rally with humans using just 5 hours of motion capture data. It can return fast shots over 15 m/s and k",
+      "url": "https://www.instagram.com/p/DV_a2KygBQf/"
+    },
+    {
+      "shortcode": "DV_GL9rgF8X",
+      "date": "2026-03-17",
+      "likes": 3904,
+      "comments": 93,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI agents just started running meetings.\n\nA developer named Luke shared a demo of an \u201cAI agent office\u201d built with OpenClaw, an open-source framework for autonomous agents. These ag",
+      "url": "https://www.instagram.com/p/DV_GL9rgF8X/"
+    },
+    {
+      "shortcode": "DV9sYSeDaD4",
+      "date": "2026-03-16",
+      "likes": 2452,
+      "comments": 111,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Tesla is building its own AI chips.\n\nTesla is about to open a massive semiconductor factory called Terafab. The goal is simple. Build the company\u2019s own AI chips instead of relying ",
+      "url": "https://www.instagram.com/p/DV9sYSeDaD4/"
+    },
+    {
+      "shortcode": "DV9eFEaILfh",
+      "date": "2026-03-16",
+      "likes": 1552,
+      "comments": 35,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "@1x.technologies humanoid robot \u201cNEO\u201d was on Andrew Schulz podcast this week.\n\nDuring the episode the robot brought the hosts Sesh pouches, opened a water bottle, and even joked wi",
+      "url": "https://www.instagram.com/p/DV9eFEaILfh/"
+    },
+    {
+      "shortcode": "DV9PJwngFRG",
+      "date": "2026-03-16",
+      "likes": 1593,
+      "comments": 51,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "McKinsey\u2019s AI got cracked fast.\n\nSecurity startup CodeWall says its AI agent got into McKinsey\u2019s internal AI platform, Lilli, in under two hours. Lilli is the tool McKinsey rolled ",
+      "url": "https://www.instagram.com/p/DV9PJwngFRG/"
+    },
+    {
+      "shortcode": "DV9DwRFANVn",
+      "date": "2026-03-16",
+      "likes": 3,
+      "comments": 45,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "An AI just emailed a consciousness researcher.\n\nA philosopher studying AI awareness says something unusual happened. Dr. Henry Shevlin from the University of Cambridge received an ",
+      "url": "https://www.instagram.com/p/DV9DwRFANVn/"
+    },
+    {
+      "shortcode": "DV8fIMngOik",
+      "date": "2026-03-16",
+      "likes": 2987,
+      "comments": 274,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Humanoid Robots Are Heading To War\n\nU.S. startup Foundation Robotics has reportedly sent its Phantom MK1 humanoid robots to Ukraine for real-world testing.\n\nThe goal is to see how ",
+      "url": "https://www.instagram.com/p/DV8fIMngOik/"
+    },
+    {
+      "shortcode": "DV8fLPmgEvs",
+      "date": "2026-03-16",
+      "likes": 1124,
+      "comments": 56,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "He sold his house using ChatGPT.\n\nA homeowner in Cooper City, Florida decided to try something unusual when selling his house. Instead of hiring a real estate agent, he used ChatGP",
+      "url": "https://www.instagram.com/p/DV8fLPmgEvs/"
+    },
+    {
+      "shortcode": "DV7gNlVjWNO",
+      "date": "2026-03-16",
+      "likes": 2563,
+      "comments": 63,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Pok\u00e9mon GO players built a 3D map.\n\nBack in 2016, millions of people walked around catching Pok\u00e9mon in Pok\u00e9mon GO. What most players didn\u2019t realize is that every scan, photo, and i",
+      "url": "https://www.instagram.com/p/DV7gNlVjWNO/"
+    },
+    {
+      "shortcode": "DV7HGrijfDd",
+      "date": "2026-03-15",
+      "likes": 1467,
+      "comments": 42,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Tinder wants to read your camera roll.\n\nTinder is testing a new AI feature called Chemistry that aims to improve match quality by learning more about who users are outside their pr",
+      "url": "https://www.instagram.com/p/DV7HGrijfDd/"
+    },
+    {
+      "shortcode": "DV6jfB4FibR",
+      "date": "2026-03-15",
+      "likes": 3,
+      "comments": 15,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "That totally makes sense if you ask me, but did you know there are 3 strawberries in the word R? \ud83c\udf53\ud83c\udf53\ud83c\udf53",
+      "url": "https://www.instagram.com/p/DV6jfB4FibR/"
+    },
+    {
+      "shortcode": "DV56TQBFhbz",
+      "date": "2026-03-15",
+      "likes": 1916,
+      "comments": 43,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Man uses AI to save his dog.\n\nSydney tech entrepreneur Paul Conyngham turned to AI after his rescue dog Rosie was diagnosed with aggressive mast cell cancer and given only months t",
+      "url": "https://www.instagram.com/p/DV56TQBFhbz/"
+    },
+    {
+      "shortcode": "DV6O7Hxltrh",
+      "date": "2026-03-15",
+      "likes": 3,
+      "comments": 10,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "It is not functional, its a little bit broken, the API is exposed in the frontend, I really don\u2019t need it, but I just got it in 1 shot",
+      "url": "https://www.instagram.com/p/DV6O7Hxltrh/"
+    },
+    {
+      "shortcode": "DV4YiiAgPm3",
+      "date": "2026-03-14",
+      "likes": 1568,
+      "comments": 84,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Is ChatGPT making us think less?\n\nSome researchers are starting to ask a tough question. What happens to the brain when people rely heavily on AI for thinking and writing.\n\nEarly f",
+      "url": "https://www.instagram.com/p/DV4YiiAgPm3/"
+    },
+    {
+      "shortcode": "DV3-xv3AAwi",
+      "date": "2026-03-14",
+      "likes": 3375,
+      "comments": 14,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "The moment your brain connects the dots and there\u2019s no going back, and then you are asking stuff like \u2018align to center\u2019 or \u2018change the padding from 5 to 7\u2019 instead of just doing it",
+      "url": "https://www.instagram.com/p/DV3-xv3AAwi/"
+    },
+    {
+      "shortcode": "DV3epw6AAyZ",
+      "date": "2026-03-14",
+      "likes": 1550,
+      "comments": 67,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "This device wants to block microphones.\n\nA startup called Deveillance just introduced Spectre I, a portable device designed to stop nearby microphones from capturing intelligible s",
+      "url": "https://www.instagram.com/p/DV3epw6AAyZ/"
+    },
+    {
+      "shortcode": "DV3cXe1ANm7",
+      "date": "2026-03-14",
+      "likes": 2077,
+      "comments": 47,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "People really picking sides over chatbots now.",
+      "url": "https://www.instagram.com/p/DV3cXe1ANm7/"
+    },
+    {
+      "shortcode": "DV2WlpuDWJP",
+      "date": "2026-03-14",
+      "likes": 1211,
+      "comments": 142,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI might become a utility.\n\nAt a recent BlackRock Infrastructure Summit, OpenAI CEO Sam Altman shared how he thinks AI will be delivered in the future.\n\nHis idea is simple. Intelli",
+      "url": "https://www.instagram.com/p/DV2WlpuDWJP/"
+    },
+    {
+      "shortcode": "DV2HisxDf0q",
+      "date": "2026-03-14",
+      "likes": 2853,
+      "comments": 128,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "The AI models might all become the same.\n\nDuring an Oracle earnings call, Larry Ellison said something surprising about the AI race. He argued that models like ChatGPT, Gemini, Gro",
+      "url": "https://www.instagram.com/p/DV2HisxDf0q/"
+    },
+    {
+      "shortcode": "DV1cMGDgMIt",
+      "date": "2026-03-13",
+      "likes": 3,
+      "comments": 100,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI writes fast. Security still breaks.\n\nDryRun Security put Claude, Codex, and Gemini through a real dev workflow, building apps and shipping updates through pull requests like a n",
+      "url": "https://www.instagram.com/p/DV1cMGDgMIt/"
+    },
+    {
+      "shortcode": "DV1MRmxALvN",
+      "date": "2026-03-13",
+      "likes": 6122,
+      "comments": 95,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Google Maps just got a brain.\n\nGoogle just rolled out its biggest Google Maps update in over a decade.\n\nThe app now includes \u201cAsk Maps,\u201d a Gemini-powered feature that lets you talk",
+      "url": "https://www.instagram.com/p/DV1MRmxALvN/"
+    },
+    {
+      "shortcode": "DV056S-ESVF",
+      "date": "2026-03-13",
+      "likes": 9647,
+      "comments": 288,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "That one is the good timeline\n\nSource: Sergio Ramirez , MJJ.Peru, Lory Dimartino",
+      "url": "https://www.instagram.com/p/DV056S-ESVF/"
+    },
+    {
+      "shortcode": "DVzeaSvgGI3",
+      "date": "2026-03-13",
+      "likes": 1624,
+      "comments": 308,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Spain wants to track online hate.\n\nSpain says it plans to launch HODIO, a new AI system that monitors hate speech on social media. Prime Minister Pedro S\u00e1nchez said the goal is to ",
+      "url": "https://www.instagram.com/p/DVzeaSvgGI3/"
+    },
+    {
+      "shortcode": "DVzMCkHAGZF",
+      "date": "2026-03-12",
+      "likes": 2486,
+      "comments": 46,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Your Mac just became an AI worker.\n\nPerplexity just unveiled Personal Computer, an always-on AI system that runs on a dedicated local machine, like a Mac mini, and works across you",
+      "url": "https://www.instagram.com/p/DVzMCkHAGZF/"
+    },
+    {
+      "shortcode": "DVy3rKeIPF1",
+      "date": "2026-03-12",
+      "likes": 3,
+      "comments": 115,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Comment \u201cINVIDEO\u201d to get Advertising Studio FREE\n\ninvideo just launched the most comprehensive AI production tool for e-commerce.\n\nUpload one product photo \u2192 Pick a preset \u2192 Get ma",
+      "url": "https://www.instagram.com/p/DVy3rKeIPF1/"
+    },
+    {
+      "shortcode": "DVygg-lgEgD",
+      "date": "2026-03-12",
+      "likes": 24440,
+      "comments": 736,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Get paid $800 to bully a chatbot.\n\nA startup called Memvid is offering $800 for a one-day job where people spend eight hours testing AI chatbots by pushing them to their limits.\n\nT",
+      "url": "https://www.instagram.com/p/DVygg-lgEgD/"
+    },
+    {
+      "shortcode": "DVyL8kVAM3n",
+      "date": "2026-03-12",
+      "likes": 2524,
+      "comments": 178,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "ChatGPT boycott goes viral.\n\nAround 4 million people say they plan to stop using ChatGPT after OpenAI signed a deal allowing the U.S. Department of Defense to use its AI systems. T",
+      "url": "https://www.instagram.com/p/DVyL8kVAM3n/"
+    },
+    {
+      "shortcode": "DVw5jXUADTS",
+      "date": "2026-03-12",
+      "likes": 3,
+      "comments": 22,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI is designing medicines now.\n\nArtificial intelligence is starting to play a big role in how new drugs are discovered.\n\nResearchers are using AI systems to search huge chemical li",
+      "url": "https://www.instagram.com/p/DVw5jXUADTS/"
+    },
+    {
+      "shortcode": "DVwk6JvgIvb",
+      "date": "2026-03-11",
+      "likes": 3,
+      "comments": 38,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI layoffs spark backlash at Block.\n\nJack Dorsey\u2019s company Block just cut around 4,000 employees, nearly half its workforce. Leadership says modern AI tools now allow smaller teams",
+      "url": "https://www.instagram.com/p/DVwk6JvgIvb/"
+    },
+    {
+      "shortcode": "DVwQZlGAGl7",
+      "date": "2026-03-11",
+      "likes": 3,
+      "comments": 30,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "10,000 authors just published a blank book.\n\nAround 10,000 writers released a book called \u201cDon\u2019t Steal This Book.\u201d It has no story inside. Just a long list of author names.\n\nThe pr",
+      "url": "https://www.instagram.com/p/DVwQZlGAGl7/"
+    },
+    {
+      "shortcode": "DVv7vTgEfYr",
+      "date": "2026-03-11",
+      "likes": 2360,
+      "comments": 53,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "AI just made a movie scene.\n\nA short AI film called Mario\u2019s Cart is going viral online. In the clip, two characters dressed in red and green fight over shopping carts inside a supe",
+      "url": "https://www.instagram.com/p/DVv7vTgEfYr/"
+    },
+    {
+      "shortcode": "DVvnI29AGqw",
+      "date": "2026-03-11",
+      "likes": 1091,
+      "comments": 26,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI agents just got their own social network.\n\nMeta has reportedly acquired Moltbook, a viral platform built for AI agents to interact with each other online.\n\nMoltbook works like a",
+      "url": "https://www.instagram.com/p/DVvnI29AGqw/"
+    },
+    {
+      "shortcode": "DVuU0CjgLab",
+      "date": "2026-03-11",
+      "likes": 3,
+      "comments": 14,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI Job Applicants Aren\u2019t Who They Seem\n\nMicrosoft says North Korean operatives are using AI tools to get hired at Western companies for remote IT jobs.\n\nIn a new threat report, the",
+      "url": "https://www.instagram.com/p/DVuU0CjgLab/"
+    },
+    {
+      "shortcode": "DVuP2IXDfCL",
+      "date": "2026-03-10",
+      "likes": 1254,
+      "comments": 333,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Human actors are cooked.\n\nThis tech lets studios create, clone, and own actors like software.\n\n@Higgsfield.ai just dropped a tool that builds photorealistic actors from nothing - a",
+      "url": "https://www.instagram.com/p/DVuP2IXDfCL/"
+    },
+    {
+      "shortcode": "DVuANsjgOZA",
+      "date": "2026-03-10",
+      "likes": 7581,
+      "comments": 72,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI agents now run on $9 hardware.\n\nA Chinese hardware team rewrote a 430,000-line AI assistant so it can run on a tiny $9.90 dev board. The original version needed a $599 Mac Mini ",
+      "url": "https://www.instagram.com/p/DVuANsjgOZA/"
+    },
+    {
+      "shortcode": "DVtrm58AMzW",
+      "date": "2026-03-10",
+      "likes": 2159,
+      "comments": 21,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Nvidia is opening the AI agent race.\n\nAccording to a new report, Nvidia is preparing to launch an open-source platform for AI agents ahead of its developer conference. The system i",
+      "url": "https://www.instagram.com/p/DVtrm58AMzW/"
+    },
+    {
+      "shortcode": "DVr-3X-DX0s",
+      "date": "2026-03-10",
+      "likes": 3,
+      "comments": 26,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "OpenAI robotics lead quits over military AI concerns.\n\nCaitlin Kalinowski, who led robotics work at OpenAI, has announced she is leaving the company.\n\nIn a public statement, she sa",
+      "url": "https://www.instagram.com/p/DVr-3X-DX0s/"
+    },
+    {
+      "shortcode": "DVtCac2ACs1",
+      "date": "2026-03-10",
+      "likes": 5174,
+      "comments": 72,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI is now auditing AI code.\n\nAnthropic just introduced Claude Code Security, a new capability inside Claude Code that reviews entire codebases and flags security risks automaticall",
+      "url": "https://www.instagram.com/p/DVtCac2ACs1/"
+    },
+    {
+      "shortcode": "DVr86P5jSne",
+      "date": "2026-03-10",
+      "likes": 1149,
+      "comments": 31,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Startup CEO admits revenue claim was false.\n\n@im_roy_lee CEO of Cluely, just walked back a major number he shared last year. In 2025 he publicly said the startup had reached $7M in",
+      "url": "https://www.instagram.com/p/DVr86P5jSne/"
     }
   ]
 }
