@@ -1,212 +1,277 @@
 # Continuation Guide
 
-This document is the handoff for the next iteration of the project.
+Last updated: 2026-03-22
 
-## Current state
+This file is the handoff doc for future Codex sessions. Keep it current at the end of meaningful work so the next session can resume without reconstructing context from chat history.
 
-- Public metrics are collected with Instaloader and stored as JSON in `data/`.
-- Authentication now supports:
-  - password login,
-  - persisted session files in `.instaloader/`,
-  - browser cookie import through `collector/import_browser_session.py`.
-- The dashboard reads committed JSON only. It does not call Instagram directly.
-- Manual refresh from the dashboard now goes through `refresh-service/`, a FastAPI webhook that dispatches `sentient-collect.yml`.
-- GitHub Pages is deployed through `.github/workflows/deploy-pages.yml`.
-- Scheduled collection is handled by `.github/workflows/sentient-collect.yml`.
+## Non-negotiables
 
-## What is already working
+- Always commit and sync at the end of a completed change.
+- In `daily-tracker`, always update the visible build tag on each committed UI iteration:
+  - `daily-tracker/index.html` live build badge
+  - `daily-tracker/index.html` clipper label
+  - `daily-tracker/index.html` script cache-busters
+  - `daily-tracker/extension/manifest.json` `version_name`
+- Do not touch unrelated user files. In particular, `sentient-accounts/santiago.py` is a user-owned experimental script and should stay intact unless explicitly requested.
+- Use `apply_patch` for manual edits.
 
-- `collector/collect.py` generates per-account datasets.
-- `collector/aggregate.py` generates `data/global.json`.
-- Historical snapshots are written to `data/history/`.
-- Browser cookie import from Chrome worked locally and unblocked scraping.
-- The local dashboard serves correctly from `http://127.0.0.1:8000/sentient-accounts/dashboard/`.
+## Current project map
 
-## Known limitations
+There are two connected systems:
 
-### Collector
+1. `sentient-accounts/`
+   - Instagram data collection, aggregation, GitHub Actions refresh flow, and GitHub Pages data publishing.
+2. `daily-tracker/`
+   - Main planner app.
+   - Consumes `sentient-accounts/data/global.json` to power the `Account` tab.
 
-- `video_view_count` is often missing in the lightweight post node returned by Instagram, so `avg_video_views` may stay at `0`.
-- The collector currently depends on private Instaloader post internals through `post._node`. It is pragmatic, but fragile against upstream changes.
-- A slow or blocked Instagram request can still delay a full run because there is no per-account timeout layer in our code.
-- We only store the latest account snapshot plus daily history. We do not keep raw source payloads for debugging schema changes.
+## Sentient Accounts: current architecture
 
-### Dashboard
+### Data pipeline
 
-- The UI shows core metrics, but there is no filter by date range, no anomaly highlighting, and no dedicated error panel for failed collections.
-- The refresh button is admin-oriented and currently relies on a shared secret stored in the browser local storage on that machine.
-- Historical charts are minimal and only use the stored daily snapshots.
-- There is no loading skeleton or empty-state distinction between "no data yet" and "collection failed".
+- Collector:
+  - `sentient-accounts/collector/collect.py`
+- Aggregator:
+  - `sentient-accounts/collector/aggregate.py`
+- Local reel-views scraper:
+  - `sentient-accounts/collector/scrape_reel_views.py`
+- Dataset output:
+  - per account in `sentient-accounts/data/*.json`
+  - global aggregate in `sentient-accounts/data/global.json`
+  - history in `sentient-accounts/data/history/`
+- Local avatars:
+  - `sentient-accounts/avatars/*.jpg`
 
-### Operations
+### Deployment and refresh
 
-- There are no automated tests yet.
-- There is no schema validation for generated JSON.
-- GitHub Actions can restore a saved session file, but there is no documented rotation process for refreshing that secret.
-- The Render-side `REFRESH_SHARED_SECRET` and GitHub token rotation process is still manual.
+- Public dashboard is static on GitHub Pages.
+- Manual refresh goes:
+  - dashboard button -> Render `refresh-service/` -> GitHub Actions `sentient-collect.yml`
+- Pages deploy is handled by:
+  - `.github/workflows/deploy-pages.yml`
+- Scheduled collection currently runs every 6 hours:
+  - `00:00`, `06:00`, `12:00`, `18:00` UTC
+- The Pages workflow already publishes:
+  - dashboard files
+  - data JSON
+  - avatars
 
-## Recommended order of improvements
+### Authentication / scraping reality
 
-1. Stabilize the collector.
-2. Add validation and tests around generated datasets.
-3. Expand history and derived metrics.
-4. Improve dashboard analysis UX.
-5. Harden GitHub Actions and secret rotation.
+- Browser-cookie import from Chrome was the reliable fix for Instagram auth/rate-limit issues.
+- The important GitHub Actions secret is:
+  - `INSTALOADER_SESSION_FILE_B64`
+- Also required:
+  - `INSTAGRAM_USERNAME`
+  - `INSTAGRAM_PASSWORD`
+- The current workflow can restore the persisted session and collect successfully.
 
-## Improvement backlog
+### Reel views
 
-### 1. Collector hardening
+- The original `santiago.py` was not integrated directly.
+- Instead, its idea was reworked into:
+  - `collector/scrape_reel_views.py`
+- That scraper can read reel view counts from the Reels grid using Selenium and merge them into the collector flow.
+- This enrichment is intended for the published dashboard data, not for the browser UI directly.
 
-Goal: make daily collection predictable and debuggable.
+### Current dataset features
 
-Suggested changes:
+The system currently supports:
 
-- Add a small retry wrapper around account collection with bounded retries and explicit backoff.
-- Add per-account timing logs so slow profiles are easy to identify.
-- Persist a lightweight collection report to `data/run-report.json` with:
-  - start time,
-  - end time,
-  - accounts attempted,
-  - accounts succeeded,
-  - accounts failed,
-  - auth method used.
-- Save raw Instagram node samples for the first post of each account in a debug folder such as `data/debug/` when `DEBUG_COLLECTOR=1`.
-- Isolate fragile field extraction into one module, so future Instagram schema changes only touch one file.
+- profile avatars
+- `30d` likes per account
+- `30d` reel views per account
+- global portfolio totals for:
+  - likes `30d`
+  - reel views `30d`
+- top recent posts
+- handling of hidden Instagram likes:
+  - if likes are `3`, UI treats them as `Hidden`
+  - sorting falls back to comments
 
-Validation checklist:
+## Daily Tracker: current architecture
 
-- Run `python3 -m py_compile collector/*.py`.
-- Run `.venv/bin/python collector/collect.py`.
-- Confirm `data/errors.json` is absent on a fully successful run.
-- Confirm `data/run-report.json` matches the actual account count.
+### Managed accounts flow
 
-### 2. Dataset validation
+- During login/onboarding, users choose which Sentient accounts they manage.
+- That selection is stored with the rest of Daily Tracker user data.
+- Entry points:
+  - onboarding modal
+  - `Manage Accounts` button inside the `Account` tab
 
-Goal: prevent broken JSON from reaching the dashboard.
+Relevant files:
 
-Suggested changes:
+- `daily-tracker/app.js`
+- `daily-tracker/index.html`
+- `daily-tracker/styles.css`
+- `daily-tracker/firestore.rules`
 
-- Add a schema validation script, for example `collector/validate_data.py`.
-- Define required keys for:
-  - per-account files,
-  - `data/global.json`,
-  - history files.
-- Fail CI if generated JSON is malformed or missing required fields.
-- Add a check that history files are date-sorted and deduplicated.
+### Account tab
 
-Validation checklist:
+The `Account` tab currently uses this structure:
 
-- Run the validator after `collect.py` and `aggregate.py`.
-- Make the validator part of `.github/workflows/sentient-collect.yml`.
-- Intentionally break a local JSON file once to confirm the validator fails loudly.
+- left column:
+  - stable `Managed Account Dashboard` summary
+  - selected-account roster
+- right column:
+  - sub-tabs for managed accounts
+  - one active account panel at a time
+  - full metric panel for the active account
+  - top 5 recent posts
 
-### 3. Better historical analytics
+Important implementation details:
 
-Goal: make the project feel more like a private SocialBlade.
+- `topPosts` now keeps 5 posts, not 3
+- active account state is handled with `activeManagedAccountTab`
+- account switching is via `data-account-tab`
+- current build tag is:
+  - `account-subtabs`
 
-Suggested changes:
+Relevant implementation points:
 
-- Extend per-day history with:
-  - following,
-  - posts,
-  - avg likes,
-  - avg comments,
-  - engagement rate.
-- Add derived metrics in aggregation:
-  - follower delta day over day,
-  - follower growth percentage,
-  - engagement trend,
-  - account rank movement.
-- Add `data/global-history.json` or continue using `data/history/global.json` with more fields.
-- Consider keeping weekly and monthly rollups if daily history grows too large.
+- `daily-tracker/app.js`
+  - `normalizeSentientDataset`
+  - `buildAccountOverviewCard`
+  - `buildAccountTabs`
+  - `buildAccountDashboardCard`
+  - `renderAccountDashboard`
+  - `renderAccountView`
+- `daily-tracker/styles.css`
+  - account dashboard layout block
+  - sub-tabs styling
+  - active account detail panel
 
-Validation checklist:
+## Latest important commits
 
-- Confirm history appends once per date and overwrites the same date cleanly on reruns.
-- Confirm aggregated deltas do not break when only one day of history exists.
+Recent relevant commits, newest first:
 
-### 4. Dashboard improvements
+- `3e968cd` `refactor(daily-tracker): add account subtabs layout`
+- `dc8da55` `refactor(daily-tracker): rebuild account bento dashboard`
+- `de993e5` `feat(sentient-accounts): add 30d portfolio totals`
+- `53cc912` `fix(pages): publish sentient account avatars`
+- `dcb4a36` `fix(sentient-accounts): serve local profile avatars`
+- `10cf096` `feat(sentient-accounts): enrich dashboard with reel views`
+- `1dd7cbc` `fix(sentient-accounts): retry data push on main updates`
+- `48e29be` `fix(pages): deploy after sentient collection`
+- `a29f384` `feat(sentient-accounts): add dashboard-triggered refresh service`
 
-Goal: move from a metrics viewer to a usable analysis tool.
+## Current known state
 
-Suggested changes:
+### Sentient Accounts
 
-- Add an error banner fed from `data/errors.json`.
-- Add date-range selectors using the history files.
-- Add follower growth charts and engagement trend charts.
-- Add comparison tables:
-  - top growth,
-  - top engagement,
-  - biggest drop.
-- Add a drilldown section for recent post performance ranking within each account.
-- Show clearly when a metric is unavailable instead of silently rendering `0`.
+- Refresh button and scheduled runs work.
+- GitHub Pages publishing path is fixed.
+- Avatars are served locally and should not depend on hotlinking Instagram.
+- The collector is functional, but still operationally fragile because Instagram auth/rate limits can change.
 
-Validation checklist:
+### Daily Tracker
 
-- Test with:
-  - full data,
-  - empty `accounts`,
-  - one failed account,
-  - all failed accounts.
-- Confirm the dashboard still loads if `errors.json` is missing.
+- `Account` is mid-iteration from a design perspective, but functional.
+- The latest structural change is the sub-tab model for multiple managed accounts.
+- No browser QA was done for the latest `account-subtabs` commit in this session; only code validation was run.
 
-### 5. GitHub Actions and secret hygiene
+## Likely next improvements
 
-Goal: make automation maintainable.
+If the next session continues the current thread, likely tasks are:
 
-Suggested changes:
+1. Further redesign `daily-tracker` `Account` tab visually.
+2. Tighten density/spacing after real browser QA.
+3. Improve metric hierarchy in the active account panel.
+4. Add richer Sentient trend data into Daily Tracker if needed.
 
-- Document how to refresh `INSTALOADER_SESSION_FILE_B64`.
-- Add a helper script that prints the exact Base64 payload for the session file.
-- Consider splitting collection and deployment into separate environments if you want approvals or different secrets later.
-- Add a manual workflow input to force a run for selected accounts only.
+## Operational runbook
 
-Validation checklist:
+### Sentient Accounts local commands
 
-- Trigger `collect-instagram-data` manually.
-- Confirm `data/` is committed only when files change.
-- Confirm `deploy-dashboard` publishes the new artifact after data changes.
-
-## Immediate next steps
-
-If continuing right now, this is the best sequence:
-
-1. Add JSON validation for generated datasets.
-2. Add a run report file for each collection.
-3. Add dashboard handling for `data/errors.json`.
-4. Add follower growth and engagement trend charts from `data/history/`.
-5. Add a helper for rotating the persisted session secret in GitHub Actions.
-
-## Useful commands
-
-Create or refresh a session file:
+Create virtualenv:
 
 ```bash
-.venv/bin/python collector/create_session.py
+cd "/Users/tbnalfaro/Desktop/Sentient apps/maxx-tools/sentient-accounts"
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r collector/requirements.txt
 ```
 
-Import browser cookies into a persisted session:
+Import Instagram browser cookies from Chrome:
 
 ```bash
 .venv/bin/python collector/import_browser_session.py --browser chrome
 ```
 
-Run a full collection locally:
+Run local collection:
 
 ```bash
 .venv/bin/python collector/collect.py
 .venv/bin/python collector/aggregate.py
 ```
 
-Serve the dashboard locally:
+Run local reel-views scrape:
 
 ```bash
+.venv/bin/python collector/scrape_reel_views.py chatgptricks --max-reels 10
+```
+
+Serve static files locally:
+
+```bash
+cd "/Users/tbnalfaro/Desktop/Sentient apps/maxx-tools"
 python3 -m http.server 8000
 ```
 
-## Notes for the next developer
+### Daily Tracker validation
 
-- If Instagram starts returning `401` again, try browser cookie import before changing the collector logic.
-- If the dashboard looks empty, check `data/global.json` first, then `data/errors.json`.
-- If a metric suddenly becomes `0` for many posts, inspect the post node shape before blaming the aggregation formulas.
-- Avoid moving `data/` inside `dashboard/`; the current Pages workflow already assembles the deploy artifact correctly.
+From repo root:
+
+```bash
+node --check daily-tracker/app.js
+git diff --check
+```
+
+### Sentient Accounts validation
+
+From repo root:
+
+```bash
+python3 -m py_compile sentient-accounts/collector/*.py sentient-accounts/refresh-service/main.py
+python3 sentient-accounts/collector/aggregate.py
+git diff --check
+```
+
+## Files to inspect first in a new session
+
+If continuing work on `Account` UI:
+
+- `daily-tracker/app.js`
+- `daily-tracker/styles.css`
+- `daily-tracker/index.html`
+
+If continuing work on Sentient collection/refresh:
+
+- `sentient-accounts/collector/collect.py`
+- `sentient-accounts/collector/aggregate.py`
+- `.github/workflows/sentient-collect.yml`
+- `.github/workflows/deploy-pages.yml`
+- `sentient-accounts/refresh-service/main.py`
+
+## End-of-session checklist
+
+Before ending a substantial session:
+
+1. Run the relevant validation commands.
+2. Commit the work.
+3. Push to `origin/main`.
+4. Update this file with:
+   - what changed
+   - current build tag if `daily-tracker` changed
+   - latest relevant commit hash
+   - known follow-up work
+
+## Notes for the next Codex
+
+- Do not assume the `Account` tab is finished visually. The user is iterating aggressively on layout quality.
+- When working on `daily-tracker`, preserve the current data wiring from `sentient-accounts/data/global.json`.
+- If Instagram breaks again, refresh the browser-derived session before rewriting the collector.
+- If Pages looks stale, check:
+  - the data commit landed on `main`
+  - `deploy-pages.yml` ran
+  - the published asset path includes avatars/data
