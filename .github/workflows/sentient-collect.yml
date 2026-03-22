@@ -35,6 +35,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Log trigger context
         env:
@@ -98,4 +101,16 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sentient-accounts/data
           git commit -m "chore(data): update sentient-accounts metrics"
-          git push
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Push rejected on attempt ${attempt}; fetching latest main and rebasing."
+            git fetch origin main
+            git rebase origin/main
+          done
+
+          echo "Unable to push sentient-accounts data after 3 attempts."
+          exit 1
