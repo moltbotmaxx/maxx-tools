@@ -1,47 +1,58 @@
 {
-  "generated_at": "2026-03-22T08:23:57+00:00",
+  "generated_at": "2026-03-22T20:17:51+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T08:21:20+00:00",
+  "run_started_at": "2026-03-22T20:15:00+00:00",
   "account": "artificialntellligence",
   "profile_url": "https://www.instagram.com/artificialntellligence/",
   "avatar_path": "../avatars/artificialntellligence.jpg",
-  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHAzFVJoN86gsxWN77UXxzoS4qd37DHbiCBrCyBEQF3I-jxONqi88gcv-xBe7IqEx0&_nc_ohc=M1xTIVa7UawQ7kNvwEVhhI0&_nc_gid=-KAAWLGkzFuUvOvR2oCCPA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_Afw82d9_wlPETf4aWMohiJRPiYA0MvayQXhhsyyO7XxZEQ&oe=69C57E56&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHV8iMV5U3bZw0DzR2dI4BKi3B_LsDhUzGuhNfdZl9SIq5RIve3uoGJwcrUIGbzV78&_nc_ohc=M1xTIVa7UawQ7kNvwFda9Go&_nc_gid=ct0vMjAlOdKuOTrXiD8eHw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_Afw-Bmdt-Uk5LH1WkkzVi7TKn4PcWvThAFbZuD6bpqIPAA&oe=69C62716&_nc_sid=1e20d2",
   "full_name": "Artificial Intelligence (AI)",
   "biography": "\ud83d\udcaaWorld\u2019s Best AI Page \n\ud83d\udce9: contact@sentientagency.io\n\ud83d\udc47 Go viral with us",
   "external_url": "https://sentientagency.io",
   "is_verified": true,
-  "followers": 1505143,
+  "followers": 1505077,
   "following": 121,
-  "posts": 481,
-  "recent_post_count": 74,
-  "video_post_count": 29,
-  "video_posts_with_view_data": 29,
-  "video_posts_with_view_data_recent_window": 29,
-  "reel_view_enriched_posts": 29,
+  "posts": 482,
+  "recent_post_count": 75,
+  "video_post_count": 30,
+  "video_posts_with_view_data": 30,
+  "video_posts_with_view_data_recent_window": 30,
+  "reel_view_enriched_posts": 30,
   "recent_posts_window_days": 14,
   "recent_posts_collection_window_days": 30,
   "recent_posts_target_limit": 24,
-  "recent_posts_hard_limit": 120,
+  "recent_posts_hard_limit": 240,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 2683.68,
-  "avg_comments": 18.27,
-  "avg_video_views": 155931.03,
-  "avg_video_views_per_video": 155931.03,
-  "avg_video_views_per_post": 61108.11,
-  "total_likes_recent_window": 198592,
-  "total_video_views_recent_window": 4522000,
-  "engagement_rate": 0.1795,
+  "avg_likes": 2700.12,
+  "avg_comments": 18.4,
+  "avg_video_views": 158153.33,
+  "avg_video_views_per_video": 158153.33,
+  "avg_video_views_per_post": 63261.33,
+  "total_likes_recent_window": 202509,
+  "total_video_views_recent_window": 4744600,
+  "engagement_rate": 0.1806,
   "recent_posts": [
+    {
+      "shortcode": "DWMpNJmjmAf",
+      "date": "2026-03-22",
+      "likes": 524,
+      "comments": 4,
+      "is_video": true,
+      "video_views": 53100,
+      "caption": "OPPO just put its new Find N6 next to the Galaxy Z Fold 7, and the difference was hard to miss. While most foldables still show a visible crease, OPPO\u2019s display looks nearly flat, ",
+      "url": "https://www.instagram.com/p/DWMpNJmjmAf/",
+      "video_views_source": "selenium_reels_grid"
+    },
     {
       "shortcode": "DWKTLlzD8Sp",
       "date": "2026-03-21",
-      "likes": 1607,
-      "comments": 16,
+      "likes": 2219,
+      "comments": 24,
       "is_video": true,
-      "video_views": 174000,
+      "video_views": 260000,
       "caption": "It looks like a full sci-fi battle scene straight out of a $200M movie\u2026 but it\u2019s not.\n\nCreated by @lordofacca, a single character wipes out fleets of war machines with precision, u",
       "url": "https://www.instagram.com/p/DWKTLlzD8Sp/",
       "video_views_source": "selenium_reels_grid"
@@ -49,8 +60,8 @@
     {
       "shortcode": "DWH_2cmDoxI",
       "date": "2026-03-20",
-      "likes": 705,
-      "comments": 14,
+      "likes": 768,
+      "comments": 15,
       "is_video": false,
       "video_views": 0,
       "caption": "A 22-year-old bartender from New Brunswick just signed a deal worth over $1M to star in a TV series - without ever stepping foot on a set.\n\nNo cameras. No scripts. No filming. The ",
@@ -59,10 +70,10 @@
     {
       "shortcode": "DWHFzCOjt5v",
       "date": "2026-03-20",
-      "likes": 1632,
-      "comments": 33,
+      "likes": 1791,
+      "comments": 40,
       "is_video": true,
-      "video_views": 135000,
+      "video_views": 146000,
       "caption": "As part of its Claude Network Partner Program, Anthropic has launched its first official certification: Claude Certified Architect \u2014 Foundations (CCA-F).\n\nThe certification is curr",
       "url": "https://www.instagram.com/p/DWHFzCOjt5v/",
       "video_views_source": "selenium_reels_grid"
@@ -70,7 +81,7 @@
     {
       "shortcode": "DWFdCibDi4D",
       "date": "2026-03-19",
-      "likes": 582,
+      "likes": 593,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -80,10 +91,10 @@
     {
       "shortcode": "DWFNUCSjjWK",
       "date": "2026-03-19",
-      "likes": 290,
+      "likes": 299,
       "comments": 11,
       "is_video": true,
-      "video_views": 63800,
+      "video_views": 66200,
       "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
       "url": "https://www.instagram.com/p/DWFNUCSjjWK/",
       "video_views_source": "selenium_reels_grid"
@@ -91,7 +102,7 @@
     {
       "shortcode": "DWFCceBj5nz",
       "date": "2026-03-19",
-      "likes": 134,
+      "likes": 137,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -101,10 +112,10 @@
     {
       "shortcode": "DWE7DIPjvAr",
       "date": "2026-03-19",
-      "likes": 535,
+      "likes": 548,
       "comments": 10,
       "is_video": true,
-      "video_views": 58400,
+      "video_views": 59900,
       "caption": "GTA 4 reimagined in Russia \ud83d\udc40\n\nFor decades, high-end graphics relied on brute-force physics\u2014calculating every light bounce, surface, and reflection in real time. But that approach i",
       "url": "https://www.instagram.com/p/DWE7DIPjvAr/",
       "video_views_source": "selenium_reels_grid"
@@ -112,7 +123,7 @@
     {
       "shortcode": "DWCmKkpDok8",
       "date": "2026-03-18",
-      "likes": 382,
+      "likes": 386,
       "comments": 8,
       "is_video": false,
       "video_views": 0,
@@ -122,10 +133,10 @@
     {
       "shortcode": "DWCa9oQD7by",
       "date": "2026-03-18",
-      "likes": 928,
+      "likes": 943,
       "comments": 24,
       "is_video": true,
-      "video_views": 123000,
+      "video_views": 125000,
       "caption": "According to Jiemian News, diners at a Haidilao in California saw the incident as \u201cjust a bit of amusement,\u201d and the robot was eventually returned to its spot at the entrance.\n\nA s",
       "url": "https://www.instagram.com/p/DWCa9oQD7by/",
       "video_views_source": "selenium_reels_grid"
@@ -133,7 +144,7 @@
     {
       "shortcode": "DWCMKmmjiGD",
       "date": "2026-03-18",
-      "likes": 277,
+      "likes": 280,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -143,10 +154,10 @@
     {
       "shortcode": "DWAFHVwycNw",
       "date": "2026-03-17",
-      "likes": 2056,
+      "likes": 2071,
       "comments": 21,
       "is_video": true,
-      "video_views": 161000,
+      "video_views": 163000,
       "caption": "A hacker managed to run the iconic video game Doom on a digital pregnancy test, turning an ordinary medical device into one of the strangest gaming gadgets ever seen online. Hacker",
       "url": "https://www.instagram.com/p/DWAFHVwycNw/",
       "video_views_source": "selenium_reels_grid"
@@ -154,7 +165,7 @@
     {
       "shortcode": "DV_97kZD7Fl",
       "date": "2026-03-17",
-      "likes": 158,
+      "likes": 160,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -164,10 +175,10 @@
     {
       "shortcode": "DV_WEDTjuOr",
       "date": "2026-03-17",
-      "likes": 392,
-      "comments": 7,
+      "likes": 393,
+      "comments": 8,
       "is_video": true,
-      "video_views": 48800,
+      "video_views": 49500,
       "caption": "NVIDIA has announced DLSS 5, the latest evolution of its AI-powered upscaling technology for games, using advanced neural rendering to generate frames, boost performance, and deliv",
       "url": "https://www.instagram.com/p/DV_WEDTjuOr/",
       "video_views_source": "selenium_reels_grid"
@@ -175,7 +186,7 @@
     {
       "shortcode": "DV9lkvgDuTK",
       "date": "2026-03-16",
-      "likes": 181,
+      "likes": 182,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -185,10 +196,10 @@
     {
       "shortcode": "DV9YN_-j-hY",
       "date": "2026-03-16",
-      "likes": 372,
+      "likes": 375,
       "comments": 1,
       "is_video": true,
-      "video_views": 54300,
+      "video_views": 55000,
       "caption": "Researchers trained a humanoid robot to play tennis using only 5 hours of human motion-capture data. With that training, the robot learned to coordinate its body, predict the ball\u2019",
       "url": "https://www.instagram.com/p/DV9YN_-j-hY/",
       "video_views_source": "selenium_reels_grid"
@@ -196,7 +207,7 @@
     {
       "shortcode": "DV80SA1jrP6",
       "date": "2026-03-16",
-      "likes": 493,
+      "likes": 501,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -206,10 +217,10 @@
     {
       "shortcode": "DV6ujVjvc3z",
       "date": "2026-03-15",
-      "likes": 1148,
+      "likes": 1157,
       "comments": 8,
       "is_video": true,
-      "video_views": 164000,
+      "video_views": 166000,
       "caption": "Delivery robots look futuristic in promotional videos, but when they hit the real world, the story changes. Curbs, potholes, cars, and even trains quickly turn into obstacles these",
       "url": "https://www.instagram.com/p/DV6ujVjvc3z/",
       "video_views_source": "selenium_reels_grid"
@@ -217,10 +228,10 @@
     {
       "shortcode": "DV4tkmtO2Cr",
       "date": "2026-03-15",
-      "likes": 2708,
+      "likes": 2712,
       "comments": 11,
       "is_video": true,
-      "video_views": 304000,
+      "video_views": 306000,
       "caption": "This scene would cost a studio $5M.\nSomeone with Al did it in minutes.\n\n@higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
       "url": "https://www.instagram.com/p/DV4tkmtO2Cr/",
       "video_views_source": "selenium_reels_grid"
@@ -238,7 +249,7 @@
     {
       "shortcode": "DV2I5lRDt6i",
       "date": "2026-03-14",
-      "likes": 4061,
+      "likes": 4117,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -248,7 +259,7 @@
     {
       "shortcode": "DV2AqWdDrWK",
       "date": "2026-03-14",
-      "likes": 186,
+      "likes": 187,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -258,10 +269,10 @@
     {
       "shortcode": "DV1oDe5PXYz",
       "date": "2026-03-13",
-      "likes": 1580,
+      "likes": 1582,
       "comments": 22,
       "is_video": true,
-      "video_views": 96100,
+      "video_views": 96700,
       "caption": "That\u2019s the good timeline. \ud83d\udc4d\n\n\u2022 Follow @artificialntellligence for more content on AI and technology.\n\n\u2022 \ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n#ai #celebrity #afterlife #vira",
       "url": "https://www.instagram.com/p/DV1oDe5PXYz/",
       "video_views_source": "selenium_reels_grid"
@@ -269,7 +280,7 @@
     {
       "shortcode": "DVzaWrXDqND",
       "date": "2026-03-12",
-      "likes": 5609,
+      "likes": 5618,
       "comments": 16,
       "is_video": false,
       "video_views": 0,
@@ -279,7 +290,7 @@
     {
       "shortcode": "DVzTNxwDo_I",
       "date": "2026-03-12",
-      "likes": 481,
+      "likes": 489,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -289,10 +300,10 @@
     {
       "shortcode": "DVzEUE8khtz",
       "date": "2026-03-12",
-      "likes": 341,
+      "likes": 345,
       "comments": 6,
       "is_video": true,
-      "video_views": 37000,
+      "video_views": 37300,
       "caption": "If you follow these 15 AI hacks you will automatically be in the top 1% of people. Let me know if you have any questions in the comments.\n\n#ai #artificalintelligence",
       "url": "https://www.instagram.com/p/DVzEUE8khtz/",
       "video_views_source": "selenium_reels_grid"
@@ -310,7 +321,7 @@
     {
       "shortcode": "DVwX0SWDgjD",
       "date": "2026-03-11",
-      "likes": 358,
+      "likes": 359,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -320,7 +331,7 @@
     {
       "shortcode": "DVwJdUBjC88",
       "date": "2026-03-11",
-      "likes": 524,
+      "likes": 530,
       "comments": 10,
       "is_video": false,
       "video_views": 0,
@@ -330,10 +341,10 @@
     {
       "shortcode": "DVv7J6sjR5J",
       "date": "2026-03-11",
-      "likes": 5085,
+      "likes": 5091,
       "comments": 79,
       "is_video": true,
-      "video_views": 510000,
+      "video_views": 511000,
       "caption": "Elon Musk reportedly used a Tesla as a decoy to mislead journalists during a recent court appearance in San Francisco related to the 2022 acquisition of Twitter, now called X.\n\nWhi",
       "url": "https://www.instagram.com/p/DVv7J6sjR5J/",
       "video_views_source": "selenium_reels_grid"
@@ -341,10 +352,10 @@
     {
       "shortcode": "DVum9wPMQIe",
       "date": "2026-03-11",
-      "likes": 1380,
+      "likes": 1392,
       "comments": 9,
       "is_video": true,
-      "video_views": 77200,
+      "video_views": 78000,
       "caption": "Claude\u2019s latest advances are turning up the heat on GPT in the race to build the most powerful AI model.\n\nWith standout performance on complex reasoning tasks and the ability to ha",
       "url": "https://www.instagram.com/p/DVum9wPMQIe/",
       "video_views_source": "selenium_reels_grid"
@@ -372,10 +383,10 @@
     {
       "shortcode": "DVtj8lvulMS",
       "date": "2026-03-10",
-      "likes": 375,
+      "likes": 376,
       "comments": 6,
       "is_video": true,
-      "video_views": 58500,
+      "video_views": 58800,
       "caption": "We may have just seen the first real step toward mind uploading.\n\nResearchers simulated a fruit fly\u2019s brain by recreating its connectome \u2014 the full wiring diagram of its neurons \u2014 ",
       "url": "https://www.instagram.com/p/DVtj8lvulMS/",
       "video_views_source": "selenium_reels_grid"
@@ -383,7 +394,7 @@
     {
       "shortcode": "DVrRW-eD1MB",
       "date": "2026-03-09",
-      "likes": 1383,
+      "likes": 1386,
       "comments": 19,
       "is_video": false,
       "video_views": 0,
@@ -393,10 +404,10 @@
     {
       "shortcode": "DVrIMxXulvp",
       "date": "2026-03-09",
-      "likes": 3018,
+      "likes": 3027,
       "comments": 8,
       "is_video": true,
-      "video_views": 196000,
+      "video_views": 197000,
       "caption": "Huawei just unveiled the MateBook Fold Ultimate Design, one of the most futuristic laptops yet.\n\nIt features a flexible 18-inch OLED display that folds into a 13-inch laptop, turni",
       "url": "https://www.instagram.com/p/DVrIMxXulvp/",
       "video_views_source": "selenium_reels_grid"
@@ -404,7 +415,7 @@
     {
       "shortcode": "DVrACBHjpgO",
       "date": "2026-03-09",
-      "likes": 379,
+      "likes": 381,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -414,7 +425,7 @@
     {
       "shortcode": "DVoyNt_j9uv",
       "date": "2026-03-08",
-      "likes": 1429,
+      "likes": 1453,
       "comments": 6,
       "is_video": false,
       "video_views": 0,
@@ -424,8 +435,8 @@
     {
       "shortcode": "DVj8-0jDmae",
       "date": "2026-03-06",
-      "likes": 103062,
-      "comments": 211,
+      "likes": 105317,
+      "comments": 218,
       "is_video": false,
       "video_views": 0,
       "caption": "When they ask about your 5 year plan\u2026 but you know AI is coming in strong.\n\n\u2022 Follow @artificialntellligence for more content on AI and technology.\n\n#ai #future #automation #techno",
@@ -455,7 +466,7 @@
     {
       "shortcode": "DVhMtQmDmD3",
       "date": "2026-03-05",
-      "likes": 580,
+      "likes": 581,
       "comments": 3,
       "is_video": true,
       "video_views": 74700,
@@ -506,7 +517,7 @@
     {
       "shortcode": "DVb4AK5D9bd",
       "date": "2026-03-03",
-      "likes": 255,
+      "likes": 256,
       "comments": 6,
       "is_video": true,
       "video_views": 48400,
@@ -517,7 +528,7 @@
     {
       "shortcode": "DVbu6T1D5iv",
       "date": "2026-03-03",
-      "likes": 1354,
+      "likes": 1355,
       "comments": 31,
       "is_video": false,
       "video_views": 0,
@@ -548,7 +559,7 @@
     {
       "shortcode": "DVY8ymXjpWf",
       "date": "2026-03-02",
-      "likes": 3839,
+      "likes": 3844,
       "comments": 53,
       "is_video": false,
       "video_views": 0,
@@ -579,7 +590,7 @@
     {
       "shortcode": "DVULUmXD9C-",
       "date": "2026-02-28",
-      "likes": 6180,
+      "likes": 6191,
       "comments": 63,
       "is_video": false,
       "video_views": 0,
@@ -640,7 +651,7 @@
     {
       "shortcode": "DVOmM3Tjg6O",
       "date": "2026-02-26",
-      "likes": 10903,
+      "likes": 10938,
       "comments": 70,
       "is_video": false,
       "video_views": 0,
@@ -692,7 +703,7 @@
     {
       "shortcode": "DVMIXQsjqSL",
       "date": "2026-02-25",
-      "likes": 374,
+      "likes": 375,
       "comments": 5,
       "is_video": true,
       "video_views": 53300,
@@ -703,7 +714,7 @@
     {
       "shortcode": "DVJ-ORQkifk",
       "date": "2026-02-24",
-      "likes": 2530,
+      "likes": 2532,
       "comments": 16,
       "is_video": true,
       "video_views": 229000,
@@ -724,7 +735,7 @@
     {
       "shortcode": "DVIODFrDaVR",
       "date": "2026-02-24",
-      "likes": 234,
+      "likes": 235,
       "comments": 6,
       "is_video": true,
       "video_views": 35700,
@@ -756,7 +767,7 @@
     {
       "shortcode": "DVCMtIcj8Aa",
       "date": "2026-02-21",
-      "likes": 771,
+      "likes": 772,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -799,7 +810,7 @@
       "likes": 741,
       "comments": 12,
       "is_video": true,
-      "video_views": 98800,
+      "video_views": 154000,
       "caption": "It feels like a lost Transformers scene \u2014 but it was never real.\n\nA rusty green bus morphs into a roaring mech T-Rex in heavy rain, with wild mechanics and pure cinematic intensity",
       "url": "https://www.instagram.com/p/DU_ada7j_K3/",
       "video_views_source": "selenium_reels_grid"

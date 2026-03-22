@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-03-22T08:28:26+00:00",
+  "generated_at": "2026-03-22T20:23:29+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T08:21:20+00:00",
+  "run_started_at": "2026-03-22T20:15:00+00:00",
   "account": "planet.ai_",
   "profile_url": "https://www.instagram.com/planet.ai_/",
   "avatar_path": "../avatars/planet.ai_.jpg",
-  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/624546261_17986629200922689_2298648820175450049_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NjUuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGzB7zzxdWbNCZDdcPLi1da1JONPflZo-nhK6M2tXvJpWHLQvDClBSXflOT4w7AwZU&_nc_ohc=DCZKwjbM2VkQ7kNvwEXX5yN&_nc_gid=vg5ZiqIu-FMRIUPas55RsQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNXROSVBSDp0vuY-AMGv7VXscOYfbmNDAQAB0j-ccb7-5&oh=00_AfzVYRsf2Hr6bYReLZHSfHRbY9UYPcdTAItwVmzb_YaZ_w&oe=69C57C69&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-19/624546261_17986629200922689_2298648820175450049_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NjUuYzIifQ&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFeXij0k-b7DEhUtLUltM0ktzZ-59vrCzlinJHHWYYMeEtL-CZUpVLZarsb4o6dX1M&_nc_ohc=DCZKwjbM2VkQ7kNvwFYDUp8&_nc_gid=vt4Ziv7vpFKgJ8cS9V7ITA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNXROSVBSDp0vuY-AMGv7VXscOYfbmNDAQAB0j-ccb7-5&oh=00_AfxbyUXHdWslp9ck2Xxw0hI4BuGu6Bw97EJKNtBdn67PKA&oe=69C62529&_nc_sid=1e20d2",
   "full_name": "Planet AI",
   "biography": "AI Generated Content \ud83e\udd16\nDM/Email for promotion/enquiry \u2049\ufe0f\nAI Secrets Revealed \ud83d\udcb8 Check out our e-books \u2b07\ufe0f",
   "external_url": "https://linktr.ee/planet.ai",
   "is_verified": false,
-  "followers": 498668,
+  "followers": 498596,
   "following": 35,
-  "posts": 1071,
-  "recent_post_count": 65,
+  "posts": 1073,
+  "recent_post_count": 67,
   "video_post_count": 45,
   "video_posts_with_view_data": 45,
   "video_posts_with_view_data_recent_window": 45,
@@ -21,27 +21,47 @@
   "recent_posts_window_days": 14,
   "recent_posts_collection_window_days": 30,
   "recent_posts_target_limit": 24,
-  "recent_posts_hard_limit": 120,
+  "recent_posts_hard_limit": 240,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 1145.11,
-  "avg_comments": 21.11,
-  "avg_video_views": 74725.58,
-  "avg_video_views_per_video": 74725.58,
-  "avg_video_views_per_post": 51733.09,
-  "total_likes_recent_window": 74399,
-  "total_video_views_recent_window": 3362651,
-  "engagement_rate": 0.2339,
+  "avg_likes": 1153.07,
+  "avg_comments": 21.15,
+  "avg_video_views": 77736.27,
+  "avg_video_views_per_video": 77736.27,
+  "avg_video_views_per_post": 52210.93,
+  "total_likes_recent_window": 77223,
+  "total_video_views_recent_window": 3498132,
+  "engagement_rate": 0.2355,
   "recent_posts": [
+    {
+      "shortcode": "DWMmwqEFU3u",
+      "date": "2026-03-22",
+      "likes": 83,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "A brand-new Minecraft-inspired land is coming to Chessington World of Adventures as part of a major expansion, with its debut planned for around 2027.\n\nThe project, estimated at ro",
+      "url": "https://www.instagram.com/p/DWMmwqEFU3u/"
+    },
+    {
+      "shortcode": "DWMeeDDjvb8",
+      "date": "2026-03-22",
+      "likes": 39,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "The Superheat H1 looks like a standard 50-gallon electric water heater, but inside it runs specialized Bitcoin mining hardware. Instead of relying only on traditional heating eleme",
+      "url": "https://www.instagram.com/p/DWMeeDDjvb8/"
+    },
     {
       "shortcode": "DWKptocjjfP",
       "date": "2026-03-22",
-      "likes": 2351,
-      "comments": 40,
+      "likes": 3476,
+      "comments": 64,
       "is_video": true,
-      "video_views": 72700,
+      "video_views": 116000,
       "caption": "It looks like a massive sci-fi showdown straight out of a $200M blockbuster\u2026 but it isn\u2019t.\n\nCreated by @lordofacca, a lone figure dismantles entire fleets of war machines with surg",
       "url": "https://www.instagram.com/p/DWKptocjjfP/",
       "video_views_source": "selenium_reels_grid"
@@ -49,10 +69,10 @@
     {
       "shortcode": "DWILp6xjoc2",
       "date": "2026-03-21",
-      "likes": 672,
-      "comments": 12,
+      "likes": 739,
+      "comments": 14,
       "is_video": true,
-      "video_views": 29000,
+      "video_views": 32600,
       "caption": "A creator reimagined Harry Potter through an AI-generated fashion lens with \u201cHarry Potter by Balenciaga (2026),\u201d delivering a cinematic parody that feels far closer to a polished s",
       "url": "https://www.instagram.com/p/DWILp6xjoc2/",
       "video_views_source": "selenium_reels_grid"
@@ -60,10 +80,10 @@
     {
       "shortcode": "DWH5K3djt-d",
       "date": "2026-03-20",
-      "likes": 367,
+      "likes": 388,
       "comments": 2,
       "is_video": true,
-      "video_views": 10,
+      "video_views": 29500,
       "caption": "Here\u2019s a sharper, more impactful variation of your caption:\n\nAI taking over jobs isn\u2019t some distant scenario\nIt\u2019s already unfolding in real time\n\nBusinesses are now relying on AI f",
       "url": "https://www.instagram.com/p/DWH5K3djt-d/",
       "video_views_source": "selenium_reels_grid"
@@ -71,10 +91,10 @@
     {
       "shortcode": "DWGzuanDsmI",
       "date": "2026-03-20",
-      "likes": 573,
-      "comments": 6,
+      "likes": 592,
+      "comments": 7,
       "is_video": true,
-      "video_views": 12500,
+      "video_views": 13000,
       "caption": "The multiverse - AI\n\nCredits: @kasumov_smm\n\nFollow @planet.ai_\n\n#AIVideo #AIGeneratedVideo #AIFilmmaking\n#GenerativeVideo #planetai",
       "url": "https://www.instagram.com/p/DWGzuanDsmI/",
       "video_views_source": "selenium_reels_grid"
@@ -92,7 +112,7 @@
     {
       "shortcode": "DWFMOwJji8R",
       "date": "2026-03-19",
-      "likes": 475,
+      "likes": 481,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -102,8 +122,8 @@
     {
       "shortcode": "DWE61jRlW-8",
       "date": "2026-03-19",
-      "likes": 14791,
-      "comments": 175,
+      "likes": 15929,
+      "comments": 179,
       "is_video": false,
       "video_views": 0,
       "caption": "Someone just open-sourced a tool that turns the real world into a fully playable Minecraft map. \n\nIt uses open data from OpenStreetMap to recreate real cities with surprising accur",
@@ -112,10 +132,10 @@
     {
       "shortcode": "DWEPy3BDvHv",
       "date": "2026-03-19",
-      "likes": 1265,
-      "comments": 17,
+      "likes": 1284,
+      "comments": 19,
       "is_video": true,
-      "video_views": 44400,
+      "video_views": 45400,
       "caption": "AI is starting to reshape iconic stories in ways no one saw coming. In this project, a creator flips the world of Harry Potter into a completely different reality, where Hogwarts f",
       "url": "https://www.instagram.com/p/DWEPy3BDvHv/",
       "video_views_source": "selenium_reels_grid"
@@ -123,10 +143,10 @@
     {
       "shortcode": "DWCzQ9aAs9U",
       "date": "2026-03-18",
-      "likes": 853,
+      "likes": 859,
       "comments": 58,
       "is_video": true,
-      "video_views": 37600,
+      "video_views": 38200,
       "caption": "Asking AI to Draw Countries as Stereotypes!\n.\n.\n#ai #aiart #midjourney #country #stereotype",
       "url": "https://www.instagram.com/p/DWCzQ9aAs9U/",
       "video_views_source": "selenium_reels_grid"
@@ -134,7 +154,7 @@
     {
       "shortcode": "DWCp2DwDjs2",
       "date": "2026-03-18",
-      "likes": 148,
+      "likes": 149,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -144,7 +164,7 @@
     {
       "shortcode": "DWCS8REDrVi",
       "date": "2026-03-18",
-      "likes": 230,
+      "likes": 236,
       "comments": 23,
       "is_video": false,
       "video_views": 0,
@@ -154,10 +174,10 @@
     {
       "shortcode": "DWBswPaDiTS",
       "date": "2026-03-18",
-      "likes": 863,
+      "likes": 873,
       "comments": 27,
       "is_video": true,
-      "video_views": 36400,
+      "video_views": 36800,
       "caption": "500 million people believed they were just playing Pok\u00e9mon.\nIn reality, they were helping build a digital map of the entire world. \ud83c\udf0d\n\nEvery time a Pok\u00e9mon Go player scanned a stree",
       "url": "https://www.instagram.com/p/DWBswPaDiTS/",
       "video_views_source": "selenium_reels_grid"
@@ -195,7 +215,7 @@
     {
       "shortcode": "DV_HAL7jtrm",
       "date": "2026-03-17",
-      "likes": 246,
+      "likes": 248,
       "comments": 4,
       "is_video": true,
       "video_views": 9,
@@ -206,7 +226,7 @@
     {
       "shortcode": "DV-NPE1DjEv",
       "date": "2026-03-17",
-      "likes": 274,
+      "likes": 275,
       "comments": 17,
       "is_video": false,
       "video_views": 0,
@@ -216,8 +236,8 @@
     {
       "shortcode": "DV9eJHIDmaq",
       "date": "2026-03-16",
-      "likes": 693,
-      "comments": 56,
+      "likes": 716,
+      "comments": 62,
       "is_video": false,
       "video_views": 0,
       "caption": "Humanoid Robots Are Heading To War\n\nU.S. startup Foundation Robotics has reportedly sent its Phantom MK1 humanoid robots to Ukraine for real-world testing.\n\nThe goal is to see how ",
@@ -226,7 +246,7 @@
     {
       "shortcode": "DV9IF8ijoNm",
       "date": "2026-03-16",
-      "likes": 212,
+      "likes": 213,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -236,10 +256,10 @@
     {
       "shortcode": "DV7YanbjuOp",
       "date": "2026-03-16",
-      "likes": 664,
+      "likes": 668,
       "comments": 14,
       "is_video": true,
-      "video_views": 20600,
+      "video_views": 20800,
       "caption": "Artificial intelligence can make something incredible appear in seconds. On our screens it looks effortless, almost like magic. But behind that speed is an enormous amount of compu",
       "url": "https://www.instagram.com/p/DV7YanbjuOp/",
       "video_views_source": "selenium_reels_grid"
@@ -258,10 +278,10 @@
     {
       "shortcode": "DV1zeH2jtDP",
       "date": "2026-03-13",
-      "likes": 199,
+      "likes": 200,
       "comments": 5,
       "is_video": true,
-      "video_views": 20300,
+      "video_views": 20400,
       "caption": "AI reimagines Gordon Ramsay as the star of a medical drama, and the result is exactly the kind of chaos you\u2019d expect from him.\n\nFollow @planet.ai_\n\n#AIVideo #AIGeneratedVideo #AIFi",
       "url": "https://www.instagram.com/p/DV1zeH2jtDP/",
       "video_views_source": "selenium_reels_grid"
@@ -269,10 +289,10 @@
     {
       "shortcode": "DV1Wlymjg7Z",
       "date": "2026-03-13",
-      "likes": 3305,
-      "comments": 57,
+      "likes": 3307,
+      "comments": 58,
       "is_video": true,
-      "video_views": 80400,
+      "video_views": 80500,
       "caption": "This moment broke the \nalternative universe\u2019s internet \n\nThis is AI video \n\nCredits: Sergio Ramirez - MJJ.Peru - Lory Dimartino\n\nFollow @planet.ai_\n\n#AIVideo #AIGeneratedVideo #AIF",
       "url": "https://www.instagram.com/p/DV1Wlymjg7Z/",
       "video_views_source": "selenium_reels_grid"
@@ -280,7 +300,7 @@
     {
       "shortcode": "DVzefcrDp5I",
       "date": "2026-03-13",
-      "likes": 468,
+      "likes": 469,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -300,10 +320,10 @@
     {
       "shortcode": "DVyOK8SDmWz",
       "date": "2026-03-12",
-      "likes": 7927,
+      "likes": 7944,
       "comments": 63,
       "is_video": true,
-      "video_views": 160000,
+      "video_views": 161000,
       "caption": "This cut scene completely reframes the moment.\n\nAnakin wasn\u2019t furious just because the title was denied.\nHe was furious because the Council embarrassed him in front of the entire o",
       "url": "https://www.instagram.com/p/DVyOK8SDmWz/",
       "video_views_source": "selenium_reels_grid"
@@ -332,10 +352,10 @@
     {
       "shortcode": "DVwN_StjuSi",
       "date": "2026-03-11",
-      "likes": 591,
+      "likes": 595,
       "comments": 8,
       "is_video": true,
-      "video_views": 20000,
+      "video_views": 20100,
       "caption": "\u201cI\u2019ll give you 20 bucks for it.\u201d \ud83d\udc8d\ud83d\udcb0\n\nIn Wrong Universe \u2013 Episode 1, Frodo walks into the World Famous Gold & Silver Pawn Shop to sell the One Ring. But Rick Harrison isn\u2019t convince",
       "url": "https://www.instagram.com/p/DVwN_StjuSi/",
       "video_views_source": "selenium_reels_grid"
@@ -346,7 +366,7 @@
       "likes": 631,
       "comments": 5,
       "is_video": true,
-      "video_views": 32300,
+      "video_views": 32400,
       "caption": "One simple idea turned into a full cinematic scene.\n\nSeedance 2.0 is evolving incredibly fast.\n\nWhat began as a single prompt quickly transformed into something that feels like a r",
       "url": "https://www.instagram.com/p/DVupctSjkFG/",
       "video_views_source": "selenium_reels_grid"
@@ -364,10 +384,10 @@
     {
       "shortcode": "DVt1vl1kdib",
       "date": "2026-03-10",
-      "likes": 310,
+      "likes": 312,
       "comments": 6,
       "is_video": true,
-      "video_views": 14500,
+      "video_views": 14600,
       "caption": "It\u2019s honestly wild to watch this happening.\n\nScenes that would normally take hundreds of artists, complex VFX pipelines, render farms, and months of production are now being create",
       "url": "https://www.instagram.com/p/DVt1vl1kdib/",
       "video_views_source": "selenium_reels_grid"
@@ -375,10 +395,10 @@
     {
       "shortcode": "DVr7XIKDvox",
       "date": "2026-03-10",
-      "likes": 1269,
+      "likes": 1282,
       "comments": 14,
       "is_video": true,
-      "video_views": 51900,
+      "video_views": 52300,
       "caption": "That transformation is seriously impressive.\nIt\u2019s hard to believe this entire video started from just a single prompt.\n\nTools like Seedance 2.0 are quickly evolving beyond simple A",
       "url": "https://www.instagram.com/p/DVr7XIKDvox/",
       "video_views_source": "selenium_reels_grid"
@@ -410,7 +430,7 @@
       "likes": 765,
       "comments": 12,
       "is_video": true,
-      "video_views": 34500,
+      "video_views": 34600,
       "caption": "AI started by helping us write emails.\nNow it designs images, edits videos, writes code, and even replies to messages faster than we do.\n\nAt this point, the real question isn\u2019t wha",
       "url": "https://www.instagram.com/p/DVoX-ymDmTY/",
       "video_views_source": "selenium_reels_grid"
@@ -418,10 +438,10 @@
     {
       "shortcode": "DVlhxVojqXy",
       "date": "2026-03-07",
-      "likes": 942,
-      "comments": 17,
+      "likes": 944,
+      "comments": 18,
       "is_video": true,
-      "video_views": 38500,
+      "video_views": 38600,
       "caption": "AI video is no longer just evolving, it\u2019s reaching a new level of maturity.\n\nCharacters remain consistent, camera movements feel purposeful, and scenes flow naturally from beginnin",
       "url": "https://www.instagram.com/p/DVlhxVojqXy/",
       "video_views_source": "selenium_reels_grid"
@@ -439,7 +459,7 @@
     {
       "shortcode": "DVjvPzgDknu",
       "date": "2026-03-06",
-      "likes": 519,
+      "likes": 520,
       "comments": 14,
       "is_video": true,
       "video_views": 20100,
@@ -461,10 +481,10 @@
     {
       "shortcode": "DVh1TgtDjWP",
       "date": "2026-03-06",
-      "likes": 4160,
-      "comments": 90,
+      "likes": 4334,
+      "comments": 94,
       "is_video": true,
-      "video_views": 198000,
+      "video_views": 213000,
       "caption": "Titanic (1997)\n\nTitanic tells the story of Jack, a free-spirited artist with little money, and Rose, a young woman bound to a privileged but unhappy life. Their paths cross aboard ",
       "url": "https://www.instagram.com/p/DVh1TgtDjWP/",
       "video_views_source": "selenium_reels_grid"
@@ -475,7 +495,7 @@
       "likes": 616,
       "comments": 10,
       "is_video": true,
-      "video_views": 24000,
+      "video_views": 24100,
       "caption": "This video was produced using AI-based synthetic media technologies and does not represent real-world footage or official performances.\n\nThe project is a transformative parody and ",
       "url": "https://www.instagram.com/p/DVg7i4ikdTb/",
       "video_views_source": "selenium_reels_grid"
@@ -483,7 +503,7 @@
     {
       "shortcode": "DVgPVySDgfm",
       "date": "2026-03-05",
-      "likes": 842,
+      "likes": 843,
       "comments": 5,
       "is_video": true,
       "video_views": 28300,
@@ -519,7 +539,7 @@
       "likes": 1682,
       "comments": 31,
       "is_video": true,
-      "video_views": 61400,
+      "video_views": 61500,
       "caption": "The post features a 1:55 surreal short film titled \u201cIdentity Gravity\u201d by Chinese digital artist Winga (@winga_cg). The piece blends hyper-realistic urban exploration with impossibl",
       "url": "https://www.instagram.com/p/DVcB6WHDulz/",
       "video_views_source": "selenium_reels_grid"
@@ -527,7 +547,7 @@
     {
       "shortcode": "DVbk-urDlMh",
       "date": "2026-03-03",
-      "likes": 8886,
+      "likes": 8921,
       "comments": 73,
       "is_video": true,
       "video_views": 155000,
@@ -563,7 +583,7 @@
       "likes": 511,
       "comments": 5,
       "is_video": true,
-      "video_views": 9,
+      "video_views": 31000,
       "caption": "@EHuanglu ( el.cine ) demonstrates the mind-blowing power of Seedance 2.0, ByteDance\u2019s latest model that can transform a simple child's drawing into a high-fidelity, $100,000-quali",
       "url": "https://www.instagram.com/p/DVXW3k8Do1Q/",
       "video_views_source": "selenium_reels_grid"
@@ -572,7 +592,7 @@
       "shortcode": "DVWbQNfjq-P",
       "date": "2026-03-01",
       "likes": 3955,
-      "comments": 110,
+      "comments": 109,
       "is_video": true,
       "video_views": 1600000,
       "caption": "At first glance, it\u2019s just a big fish swallowing a smaller one.\n\nNothing complicated.\n\nBut this scene was created with Seedance 2.0, and what really stands out isn\u2019t the action, it",
@@ -671,7 +691,7 @@
       "likes": 659,
       "comments": 6,
       "is_video": true,
-      "video_views": 32800,
+      "video_views": 32900,
       "caption": "Was it worth frying your GPU?  RAM prices are starting to look unreal, and it has very little to do with your gaming setup. The real force behind the surge is AI, which is absorbin",
       "url": "https://www.instagram.com/p/DVHOd32EdUS/",
       "video_views_source": "selenium_reels_grid"
@@ -693,7 +713,7 @@
       "likes": 432,
       "comments": 13,
       "is_video": true,
-      "video_views": 16500,
+      "video_views": 24500,
       "caption": "This isn\u2019t archival footage.\n\nThis is a fight that never actually happened.\n\nBruce Lee vs. Jean-Claude Van Damme. Speed versus raw power \ud83d\udca5\n\nI brought this dream matchup to life usi",
       "url": "https://www.instagram.com/p/DVB9vHkDife/",
       "video_views_source": "selenium_reels_grid"

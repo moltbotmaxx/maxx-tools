@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-03-22T08:31:01+00:00",
+  "generated_at": "2026-03-22T20:27:12+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T08:21:20+00:00",
+  "run_started_at": "2026-03-22T20:15:00+00:00",
   "account": "artificialmente.ia",
   "profile_url": "https://www.instagram.com/artificialmente.ia/",
   "avatar_path": "../avatars/artificialmente.ia.jpg",
-  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGc6ZDYVrNeeKvg67tkzE8ceH3dic8GCoXes_dgyV1W9GcLJ07zosv8ErUu69KrmUQ&_nc_ohc=l6jLFOmBifEQ7kNvwHrNXNg&_nc_gid=lA5Ra5RTyGUOuki_8rmdwA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_Afz7574SavOBFr4YkwZQ0jy9WR-ZOmb-EI4bW5OKCbiw9A&oe=69C57D86&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gG5H5aUEECY8OhTidXDuTKb56MgVD6u2jGlCXUQQcEq49K9m9Rg7W_K_-EcD-ncrTA&_nc_ohc=6DJy0r05X6IQ7kNvwFVAoW_&_nc_gid=JWZHIR4Sg4UBey9cUvDHZw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_AfyAwmbFR2h2DZi2sQCn-gGU09vMGxnXXEHa4oeF8Ynyow&oe=69C62646&_nc_sid=1e20d2",
   "full_name": "Ivan \u2022 IA \u2022 Tecnolog\u00eda",
   "biography": "\ud83e\uddd1\u200d\ud83d\udcbb Creador / Futurista @ivanelgrande\n\ud83e\udd16 S\u00edgueme antes de que sea tarde\n\ud83d\udce5 artificialmente.ia@gmail.com\n\ud83d\udc47 O usas IA o te quedas atr\u00e1s",
   "external_url": "http://ivanelgrande.com",
   "is_verified": true,
-  "followers": 347769,
+  "followers": 347852,
   "following": 5,
-  "posts": 850,
-  "recent_post_count": 75,
+  "posts": 851,
+  "recent_post_count": 76,
   "video_post_count": 39,
   "video_posts_with_view_data": 38,
   "video_posts_with_view_data_recent_window": 38,
-  "reel_view_enriched_posts": 38,
+  "reel_view_enriched_posts": 39,
   "recent_posts_window_days": 14,
   "recent_posts_collection_window_days": 30,
   "recent_posts_target_limit": 24,
-  "recent_posts_hard_limit": 120,
+  "recent_posts_hard_limit": 240,
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 5685.84,
-  "avg_comments": 101.51,
-  "avg_video_views": 119581.74,
-  "avg_video_views_per_video": 119581.74,
-  "avg_video_views_per_post": 60588.08,
-  "total_likes_recent_window": 378689,
-  "total_video_views_recent_window": 4544106,
-  "engagement_rate": 1.6641,
+  "avg_likes": 5792.26,
+  "avg_comments": 101.38,
+  "avg_video_views": 129992.11,
+  "avg_video_views_per_video": 129992.11,
+  "avg_video_views_per_post": 64996.05,
+  "total_likes_recent_window": 392464,
+  "total_video_views_recent_window": 4939700,
+  "engagement_rate": 1.6943,
   "recent_posts": [
     {
       "shortcode": "DWByMuajpBM",
@@ -41,7 +41,7 @@
       "likes": 3,
       "comments": 8,
       "is_video": true,
-      "video_views": 6,
+      "video_views": 14800,
       "caption": "Y el ganador de un a\u00f1o completo de ChatGPT Plus es\u2026\n\n@alvaro_nz13 \ud83d\ude4c\n\nGracias a todos los que participaron. Est\u00e9n atentos porque se vienen m\u00e1s",
       "url": "https://www.instagram.com/p/DWByMuajpBM/",
       "video_views_source": "selenium_reels_grid"
@@ -49,12 +49,13 @@
     {
       "shortcode": "DOueE7_DPmm",
       "date": "2025-09-18",
-      "likes": 46924,
+      "likes": 46923,
       "comments": 610,
       "is_video": true,
-      "video_views": 0,
+      "video_views": 1300000,
       "caption": "Meta acaba de convertir los Ray-Ban en un smartphone \n\nEn Meta Connect 2025, @zuck present\u00f3 las Meta Ray-Ban Display, gafas inteligentes con una pantalla integrada para apps, notif",
-      "url": "https://www.instagram.com/p/DOueE7_DPmm/"
+      "url": "https://www.instagram.com/p/DOueE7_DPmm/",
+      "video_views_source": "selenium_reels_grid"
     },
     {
       "shortcode": "DAcoT-wsgF6",
@@ -67,12 +68,22 @@
       "url": "https://www.instagram.com/p/DAcoT-wsgF6/"
     },
     {
+      "shortcode": "DWMn1aGmMXR",
+      "date": "2026-03-22",
+      "likes": 194,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Israel ahora es el pa\u00eds m\u00e1s activo del mundo cuando se trata de usar IA.\n\nLos \u00faltimos datos de Anthropic muestran que Israel ocupa el puesto #1 a nivel mundial en uso de Claude per",
+      "url": "https://www.instagram.com/p/DWMn1aGmMXR/"
+    },
+    {
       "shortcode": "DWKLTVOEszL",
       "date": "2026-03-21",
-      "likes": 1721,
-      "comments": 35,
+      "likes": 2165,
+      "comments": 49,
       "is_video": true,
-      "video_views": 59200,
+      "video_views": 72700,
       "caption": "Parece una escena de batalla sci-fi digna de una pel\u00edcula de $200M\u2026 pero no lo es.\n\nCreado por @lordofacca, un solo personaje destruye flotas de m\u00e1quinas de guerra con precisi\u00f3n us",
       "url": "https://www.instagram.com/p/DWKLTVOEszL/",
       "video_views_source": "selenium_reels_grid"
@@ -80,8 +91,8 @@
     {
       "shortcode": "DWIDtfKj-Lh",
       "date": "2026-03-21",
-      "likes": 804,
-      "comments": 15,
+      "likes": 890,
+      "comments": 17,
       "is_video": false,
       "video_views": 0,
       "caption": "Un bartender de 22 a\u00f1os, de New Brunswick, acaba de firmar un acuerdo de m\u00e1s de $1M para protagonizar una serie\u2026 sin haber pisado nunca un set.\n\nSin c\u00e1maras. Sin guion. Sin rodaje.",
@@ -90,8 +101,8 @@
     {
       "shortcode": "DWHfwydDz6Q",
       "date": "2026-03-20",
-      "likes": 1029,
-      "comments": 25,
+      "likes": 1255,
+      "comments": 32,
       "is_video": false,
       "video_views": 0,
       "caption": "Toda la industria de chips ahora est\u00e1 observando el Golfo.\n\nTras los ataques de Ir\u00e1n a Catar y el bloqueo del Estrecho de Ormuz, los env\u00edos de helio a trav\u00e9s de la regi\u00f3n se han de",
@@ -100,10 +111,10 @@
     {
       "shortcode": "DWHI2yhDd9L",
       "date": "2026-03-20",
-      "likes": 29813,
-      "comments": 66,
+      "likes": 34895,
+      "comments": 71,
       "is_video": true,
-      "video_views": 272000,
+      "video_views": 307000,
       "caption": "Esto es exactamente para lo que se cre\u00f3 la IA \ud83d\ude2d Un remake viral de la ic\u00f3nica escena de \u201cwazzup\u201d de Scary Movie la reimagina con Spider-Man y el Duende Verde en una ca\u00f3tica videoll",
       "url": "https://www.instagram.com/p/DWHI2yhDd9L/",
       "video_views_source": "selenium_reels_grid"
@@ -111,7 +122,7 @@
     {
       "shortcode": "DWFoETnDPiU",
       "date": "2026-03-20",
-      "likes": 475,
+      "likes": 489,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -121,10 +132,10 @@
     {
       "shortcode": "DWFVtHtDINY",
       "date": "2026-03-19",
-      "likes": 981,
-      "comments": 35,
+      "likes": 1031,
+      "comments": 36,
       "is_video": true,
-      "video_views": 38600,
+      "video_views": 40500,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
       "url": "https://www.instagram.com/p/DWFVtHtDINY/",
       "video_views_source": "selenium_reels_grid"
@@ -132,10 +143,10 @@
     {
       "shortcode": "DWE7rLYj3bL",
       "date": "2026-03-19",
-      "likes": 1471,
+      "likes": 1490,
       "comments": 7,
       "is_video": true,
-      "video_views": 53900,
+      "video_views": 54800,
       "caption": "Esto es creatividad de otro nivel para \u201cperder el tiempo\u201d en el trabajo.\n\nLa empresa china de realidad aumentada XREAL mostr\u00f3 c\u00f3mo sus lentes inteligentes pueden convertir una jorn",
       "url": "https://www.instagram.com/p/DWE7rLYj3bL/",
       "video_views_source": "selenium_reels_grid"
@@ -143,10 +154,10 @@
     {
       "shortcode": "DWCsi8EGRyI",
       "date": "2026-03-18",
-      "likes": 962,
+      "likes": 968,
       "comments": 4,
       "is_video": true,
-      "video_views": 66600,
+      "video_views": 67300,
       "caption": "XPeng acaba de presentar una funci\u00f3n de estacionamiento impulsada por IA que te permite dibujar d\u00f3nde quieres que vaya el auto, y el sistema hace el resto. Puede parecer algo peque",
       "url": "https://www.instagram.com/p/DWCsi8EGRyI/",
       "video_views_source": "selenium_reels_grid"
@@ -154,7 +165,7 @@
     {
       "shortcode": "DWCfzZjlZxe",
       "date": "2026-03-18",
-      "likes": 312,
+      "likes": 313,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -164,8 +175,8 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 66722,
-      "comments": 717,
+      "likes": 70054,
+      "comments": 753,
       "is_video": false,
       "video_views": 0,
       "caption": "En muchas partes de Estados Unidos, un AR-15 cuesta menos de $500, mientras que un kit de 32GB de RAM para PC gamer puede superar los $600. Esa comparaci\u00f3n por s\u00ed sola ya llama la ",
@@ -174,10 +185,10 @@
     {
       "shortcode": "DWAFjo2kn3r",
       "date": "2026-03-17",
-      "likes": 1649,
-      "comments": 23,
+      "likes": 1653,
+      "comments": 24,
       "is_video": true,
-      "video_views": 46300,
+      "video_views": 46600,
       "caption": "Un hacker logr\u00f3 ejecutar el ic\u00f3nico videojuego Doom en una prueba de embarazo digital, convirtiendo un dispositivo m\u00e9dico com\u00fan en uno de los gadgets m\u00e1s extra\u00f1os vistos en interne",
       "url": "https://www.instagram.com/p/DWAFjo2kn3r/",
       "video_views_source": "selenium_reels_grid"
@@ -185,7 +196,7 @@
     {
       "shortcode": "DV_5gzMlVj4",
       "date": "2026-03-17",
-      "likes": 969,
+      "likes": 978,
       "comments": 22,
       "is_video": false,
       "video_views": 0,
@@ -195,10 +206,10 @@
     {
       "shortcode": "DV_V4ZfkqGS",
       "date": "2026-03-17",
-      "likes": 414,
-      "comments": 11,
+      "likes": 416,
+      "comments": 12,
       "is_video": true,
-      "video_views": 16100,
+      "video_views": 16300,
       "caption": "NVIDIA acaba de anunciar DLSS 5, la \u00faltima versi\u00f3n de su tecnolog\u00eda de escalado con IA para videojuegos.\n\nLa nueva actualizaci\u00f3n utiliza renderizado neuronal mejorado para generar ",
       "url": "https://www.instagram.com/p/DV_V4ZfkqGS/",
       "video_views_source": "selenium_reels_grid"
@@ -206,8 +217,8 @@
     {
       "shortcode": "DV9t_p1DPRr",
       "date": "2026-03-16",
-      "likes": 823,
-      "comments": 24,
+      "likes": 830,
+      "comments": 25,
       "is_video": false,
       "video_views": 0,
       "caption": "Esto es, honestamente, bastante conmovedor.\n\nPaul Conyngham utiliz\u00f3 herramientas de IA como ChatGPT y AlphaFold para ayudar a dise\u00f1ar una vacuna personalizada contra el c\u00e1ncer para",
@@ -216,10 +227,10 @@
     {
       "shortcode": "DV9XwWxjXa5",
       "date": "2026-03-16",
-      "likes": 386,
+      "likes": 387,
       "comments": 6,
       "is_video": true,
-      "video_views": 27100,
+      "video_views": 27300,
       "caption": "Investigadores entrenaron a un robot humanoide para jugar tenis usando solo 5 horas de datos de captura de movimiento humana. Con ese entrenamiento, el robot aprendi\u00f3 a coordinar s",
       "url": "https://www.instagram.com/p/DV9XwWxjXa5/",
       "video_views_source": "selenium_reels_grid"
@@ -227,10 +238,10 @@
     {
       "shortcode": "DV8z0wvDTVG",
       "date": "2026-03-16",
-      "likes": 16338,
+      "likes": 16432,
       "comments": 45,
       "is_video": true,
-      "video_views": 224000,
+      "video_views": 225000,
       "caption": "Escena donde Cat Fu Samurai regresa a casa despu\u00e9s de la batalla y encuentra a su esposa con otro gato. \n\nDe \u201cThe Last Paw\u201d, 1973, Hong Kong. Lo que parece un momento tonto de pel\u00ed",
       "url": "https://www.instagram.com/p/DV8z0wvDTVG/",
       "video_views_source": "selenium_reels_grid"
@@ -238,8 +249,8 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 4023,
-      "comments": 24,
+      "likes": 4933,
+      "comments": 29,
       "is_video": false,
       "video_views": 0,
       "caption": "Cuando te preguntan por tu plan a 5 a\u00f1os\u2026 pero sabes que la IA viene con todo. \ud83e\udd16\ud83d\udcc8\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA",
@@ -248,10 +259,10 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 45292,
-      "comments": 321,
+      "likes": 48066,
+      "comments": 328,
       "is_video": true,
-      "video_views": 536000,
+      "video_views": 564000,
       "caption": "Los robots de entrega se ven futuristas en los videos promocionales, pero cuando salen al mundo real la historia cambia. Bordillos, baches, autos e incluso trenes se convierten en ",
       "url": "https://www.instagram.com/p/DV6tlKmCcPk/",
       "video_views_source": "selenium_reels_grid"
@@ -269,10 +280,10 @@
     {
       "shortcode": "DV4r1zxjHRF",
       "date": "2026-03-15",
-      "likes": 1245,
+      "likes": 1246,
       "comments": 22,
       "is_video": true,
-      "video_views": 55500,
+      "video_views": 55600,
       "caption": "Esta escena le costar\u00eda a un estudio 5 millones de d\u00f3lares.\nAlguien con IA la hizo en minutos.\n\nEl modelo Cinema Studio de Higgsfield.ai es CGI llevado al extremo.\n\nNos dirigimos a",
       "url": "https://www.instagram.com/p/DV4r1zxjHRF/",
       "video_views_source": "selenium_reels_grid"
@@ -280,7 +291,7 @@
     {
       "shortcode": "DV33GaTgEHG",
       "date": "2026-03-14",
-      "likes": 1141,
+      "likes": 1154,
       "comments": 60,
       "is_video": false,
       "video_views": 0,
@@ -290,10 +301,10 @@
     {
       "shortcode": "DV2J16ZjMKc",
       "date": "2026-03-14",
-      "likes": 1252,
+      "likes": 1257,
       "comments": 12,
       "is_video": true,
-      "video_views": 87500,
+      "video_views": 87900,
       "caption": "Seedance 2.0 es CGI con esteroides \ud83d\udc40. Nos estamos dirigiendo a un futuro donde las pel\u00edculas se har\u00e1n a una fracci\u00f3n de los costos actuales y 100 veces m\u00e1s r\u00e1pido.\n\n\u2022 Sigue a @ivan",
       "url": "https://www.instagram.com/p/DV2J16ZjMKc/",
       "video_views_source": "selenium_reels_grid"
@@ -301,7 +312,7 @@
     {
       "shortcode": "DV1_ooNjcHu",
       "date": "2026-03-13",
-      "likes": 342,
+      "likes": 344,
       "comments": 7,
       "is_video": false,
       "video_views": 0,
@@ -311,10 +322,10 @@
     {
       "shortcode": "DV1b7XJlNfi",
       "date": "2026-03-13",
-      "likes": 6999,
-      "comments": 172,
+      "likes": 7007,
+      "comments": 171,
       "is_video": true,
-      "video_views": 64700,
+      "video_views": 151000,
       "caption": "Esa es la mejor l\u00ednea de tiempo.\n\n\ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA\u201d y ",
       "url": "https://www.instagram.com/p/DV1b7XJlNfi/",
       "video_views_source": "selenium_reels_grid"
@@ -322,7 +333,7 @@
     {
       "shortcode": "DVzVOewDWuI",
       "date": "2026-03-12",
-      "likes": 2420,
+      "likes": 2423,
       "comments": 31,
       "is_video": false,
       "video_views": 0,
@@ -332,8 +343,8 @@
     {
       "shortcode": "DVzCWHxlaDH",
       "date": "2026-03-12",
-      "likes": 397,
-      "comments": 31,
+      "likes": 398,
+      "comments": 30,
       "is_video": false,
       "video_views": 0,
       "caption": "An estimated 2.5 million people have pledged to stop using ChatGPT as the \u201cQuitGPT\u201d movement spreads online.\n\nThe boycott began after OpenAI announced a deal to provide its AI mode",
@@ -342,10 +353,10 @@
     {
       "shortcode": "DVy5lrKEYmz",
       "date": "2026-03-12",
-      "likes": 607,
+      "likes": 608,
       "comments": 11,
       "is_video": true,
-      "video_views": 25200,
+      "video_views": 25400,
       "caption": "Prompt completo dado a Claude Opus 4.6:\n\n\u201c\u00bfPuedes usar los recursos que quieras, y Python, para generar un corto video estilo YouTube Poop y renderizarlo usando FFmpeg? \u00bfPodr\u00edas da",
       "url": "https://www.instagram.com/p/DVy5lrKEYmz/",
       "video_views_source": "selenium_reels_grid"
@@ -353,7 +364,7 @@
     {
       "shortcode": "DVwIX1rDX9q",
       "date": "2026-03-11",
-      "likes": 1154,
+      "likes": 1166,
       "comments": 45,
       "is_video": false,
       "video_views": 0,
@@ -363,10 +374,10 @@
     {
       "shortcode": "DVv7KQLlXTG",
       "date": "2026-03-11",
-      "likes": 1012,
+      "likes": 1014,
       "comments": 22,
       "is_video": true,
-      "video_views": 34800,
+      "video_views": 34900,
       "caption": "Durante a\u00f1os los videojuegos nos hicieron imaginar c\u00f3mo ser\u00eda entrar realmente dentro de un mundo virtual. No solo verlo\u2026 sino caminar dentro de \u00e9l.\n\nAhora esa idea empieza a tomar",
       "url": "https://www.instagram.com/p/DVv7KQLlXTG/",
       "video_views_source": "selenium_reels_grid"
@@ -374,7 +385,7 @@
     {
       "shortcode": "DVuleSFDGWF",
       "date": "2026-03-11",
-      "likes": 3122,
+      "likes": 3142,
       "comments": 61,
       "is_video": false,
       "video_views": 0,
@@ -384,7 +395,7 @@
     {
       "shortcode": "DVuTWbTDEVA",
       "date": "2026-03-11",
-      "likes": 1196,
+      "likes": 1205,
       "comments": 386,
       "is_video": false,
       "video_views": 0,
@@ -394,10 +405,10 @@
     {
       "shortcode": "DVtl8lUD-kB",
       "date": "2026-03-10",
-      "likes": 4201,
-      "comments": 156,
+      "likes": 4220,
+      "comments": 157,
       "is_video": true,
-      "video_views": 194000,
+      "video_views": 195000,
       "caption": "Escenas que antes requer\u00edan grandes equipos de VFX, largos tiempos de render y presupuestos enormes ahora pueden crearse en minutos con los prompts y las im\u00e1genes de referencia cor",
       "url": "https://www.instagram.com/p/DVtl8lUD-kB/",
       "video_views_source": "selenium_reels_grid"
@@ -405,8 +416,8 @@
     {
       "shortcode": "DVrXEstmRTO",
       "date": "2026-03-09",
-      "likes": 17229,
-      "comments": 986,
+      "likes": 17231,
+      "comments": 987,
       "is_video": true,
       "video_views": 599000,
       "caption": "Un equipo logr\u00f3 algo incre\u00edble: copiar el cerebro de una mosca de la fruta y simularlo en una computadora. Lo colocaron en un cuerpo virtual y empez\u00f3 a caminar, alimentarse y limpi",
@@ -416,8 +427,8 @@
     {
       "shortcode": "DVrP78QlaBS",
       "date": "2026-03-09",
-      "likes": 3178,
-      "comments": 111,
+      "likes": 3197,
+      "comments": 113,
       "is_video": false,
       "video_views": 0,
       "caption": "\u00daLTIMA HORA: Anthropic, la empresa detr\u00e1s de Claude, acaba de publicar un estudio que analiza qu\u00e9 trabajos est\u00e1n m\u00e1s expuestos a la IA.\n\nAl analizar millones de interacciones reale",
@@ -426,10 +437,10 @@
     {
       "shortcode": "DVrHmXtj6Oh",
       "date": "2026-03-09",
-      "likes": 1318,
+      "likes": 1320,
       "comments": 14,
       "is_video": true,
-      "video_views": 31400,
+      "video_views": 41400,
       "caption": "Huawei acaba de presentar la MateBook Fold Ultimate Design, una de las laptops m\u00e1s futuristas hasta ahora.\n\nCuenta con una pantalla OLED flexible de 18 pulgadas que se pliega para ",
       "url": "https://www.instagram.com/p/DVrHmXtj6Oh/",
       "video_views_source": "selenium_reels_grid"
@@ -437,7 +448,7 @@
     {
       "shortcode": "DVo6u8ZlW8M",
       "date": "2026-03-08",
-      "likes": 21221,
+      "likes": 21449,
       "comments": 328,
       "is_video": false,
       "video_views": 0,
@@ -447,10 +458,10 @@
     {
       "shortcode": "DVmA_gakica",
       "date": "2026-03-07",
-      "likes": 6675,
+      "likes": 6773,
       "comments": 56,
       "is_video": true,
-      "video_views": 120000,
+      "video_views": 121000,
       "caption": "De Cat Fu\u2026 a Cat Ninja \ud83d\ude3c\ud83e\udd4b\n\nEsto realmente parece una escena de una pel\u00edcula de acci\u00f3n real, excepto que el protagonista es un gato y toda la escena fue generada con IA.\n\nLo impresi",
       "url": "https://www.instagram.com/p/DVmA_gakica/",
       "video_views_source": "selenium_reels_grid"
@@ -479,7 +490,7 @@
     {
       "shortcode": "DVjOdGTFXhb",
       "date": "2026-03-06",
-      "likes": 1788,
+      "likes": 1791,
       "comments": 128,
       "is_video": false,
       "video_views": 0,
@@ -489,7 +500,7 @@
     {
       "shortcode": "DVhfAd4AT_Q",
       "date": "2026-03-06",
-      "likes": 210,
+      "likes": 211,
       "comments": 9,
       "is_video": true,
       "video_views": 12100,
@@ -500,8 +511,8 @@
     {
       "shortcode": "DVg-irDiUGr",
       "date": "2026-03-05",
-      "likes": 72529,
-      "comments": 288,
+      "likes": 72576,
+      "comments": 289,
       "is_video": true,
       "video_views": 1000000,
       "caption": "S\u00ed, exactamente por eso la RAM es tan cara.\n\nLo que parece un clip de pel\u00edcula rid\u00edculo en realidad es una secuencia cinematogr\u00e1fica completa generada con IA. Y de alguna manera\u2026 f",
@@ -514,7 +525,7 @@
       "likes": 420,
       "comments": 19,
       "is_video": true,
-      "video_views": 26700,
+      "video_views": 26800,
       "caption": "Entonces, \u00bfqu\u00e9 pas\u00f3 con el real? \u00bfCu\u00e1ndo lo vamos a tener?\n(\ud83c\udfa5 @thedorbrothers)\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA\u201d y",
       "url": "https://www.instagram.com/p/DVek6SFkici/",
       "video_views_source": "selenium_reels_grid"
@@ -522,7 +533,7 @@
     {
       "shortcode": "DVeS6cHld_d",
       "date": "2026-03-04",
-      "likes": 2621,
+      "likes": 2622,
       "comments": 103,
       "is_video": false,
       "video_views": 0,
@@ -535,7 +546,7 @@
       "likes": 1560,
       "comments": 44,
       "is_video": true,
-      "video_views": 72500,
+      "video_views": 106000,
       "caption": "\u201cSe acab\u00f3 para los artistas de VFX\u2026\u201d.\n\nEsa frase aparece una y otra vez cada vez que la gente ve herramientas de animaci\u00f3n con IA que ahora permiten dirigir el movimiento usando pr",
       "url": "https://www.instagram.com/p/DVeCNkgkWF9/",
       "video_views_source": "selenium_reels_grid"
@@ -546,7 +557,7 @@
       "likes": 263,
       "comments": 36,
       "is_video": true,
-      "video_views": 17700,
+      "video_views": 24000,
       "caption": "Gracias por el regalo / Thank you for the gift \ud83c\udf81\ud83d\ude4c\n\n@openai @chatgpt",
       "url": "https://www.instagram.com/p/DVcPoWNgQSR/",
       "video_views_source": "selenium_reels_grid"
@@ -584,7 +595,7 @@
     {
       "shortcode": "DVZSiQfEqPC",
       "date": "2026-03-02",
-      "likes": 2563,
+      "likes": 2564,
       "comments": 29,
       "is_video": true,
       "video_views": 94900,
@@ -616,7 +627,7 @@
     {
       "shortcode": "DVWourrks-X",
       "date": "2026-03-01",
-      "likes": 2306,
+      "likes": 2307,
       "comments": 57,
       "is_video": false,
       "video_views": 0,
@@ -640,7 +651,7 @@
       "likes": 3349,
       "comments": 26,
       "is_video": true,
-      "video_views": 49300,
+      "video_views": 209000,
       "caption": "Todos hemos escuchado la frase \u201cno reinventes la rueda\u201d, pero investigadores de Imperial College London decidieron ignorarla y lograron un dise\u00f1o brillante. Crearon una rueda que p",
       "url": "https://www.instagram.com/p/DVSLPcbDGM9/",
       "video_views_source": "selenium_reels_grid"
@@ -648,8 +659,8 @@
     {
       "shortcode": "DVR-0AYjWjw",
       "date": "2026-02-28",
-      "likes": 1529,
-      "comments": 61,
+      "likes": 1543,
+      "comments": 63,
       "is_video": false,
       "video_views": 0,
       "caption": "Un nuevo estudio de King\u2019s College London revel\u00f3 que los principales modelos de IA \u2014como ChatGPT, Claude y Gemini\u2014 recurrieron al uso de armas nucleares en casi todos los escenario",
@@ -702,7 +713,7 @@
       "likes": 1792,
       "comments": 30,
       "is_video": true,
-      "video_views": 76300,
+      "video_views": 76400,
       "caption": "Desde que Stranger Things termin\u00f3 en diciembre pasado, los fans han seguido imaginando qu\u00e9 podr\u00eda pasar despu\u00e9s y c\u00f3mo continuar\u00eda la historia m\u00e1s all\u00e1 del \u00faltimo episodio.\n\nUn cre",
       "url": "https://www.instagram.com/p/DVOh6zDjQdO/",
       "video_views_source": "selenium_reels_grid"
@@ -710,7 +721,7 @@
     {
       "shortcode": "DVM-LSzjBDY",
       "date": "2026-02-26",
-      "likes": 2700,
+      "likes": 2702,
       "comments": 45,
       "is_video": false,
       "video_views": 0,
@@ -741,10 +752,10 @@
     {
       "shortcode": "DVJwQR-EtoW",
       "date": "2026-02-24",
-      "likes": 1523,
+      "likes": 1525,
       "comments": 67,
       "is_video": true,
-      "video_views": 53600,
+      "video_views": 53700,
       "caption": "Escenas que antes requer\u00edan grandes equipos de animaci\u00f3n, largos tiempos de producci\u00f3n y presupuestos millonarios de estudio, ahora pueden ser creadas por una sola persona experime",
       "url": "https://www.instagram.com/p/DVJwQR-EtoW/",
       "video_views_source": "selenium_reels_grid"
@@ -752,7 +763,7 @@
     {
       "shortcode": "DVJePIrGXOg",
       "date": "2026-02-24",
-      "likes": 929,
+      "likes": 930,
       "comments": 32,
       "is_video": true,
       "video_views": 30600,
@@ -766,7 +777,7 @@
       "likes": 1523,
       "comments": 14,
       "is_video": true,
-      "video_views": 50700,
+      "video_views": 50800,
       "caption": "Esto qued\u00f3 incre\u00edble. \ud83e\udd4a\ud83c\udfae\ud83d\udc40\n\nEste pap\u00e1 us\u00f3 Seedance 2.0 para convertir un momento que \u00e9l y su hija hab\u00edan imaginado durante mucho tiempo mientras jugaban juntos en una escena complet",
       "url": "https://www.instagram.com/p/DVHtlQ4jNRN/",
       "video_views_source": "selenium_reels_grid"
@@ -774,7 +785,7 @@
     {
       "shortcode": "DVCF1DFErwy",
       "date": "2026-02-21",
-      "likes": 6264,
+      "likes": 6266,
       "comments": 78,
       "is_video": false,
       "video_views": 0,
@@ -807,7 +818,7 @@
       "likes": 850,
       "comments": 15,
       "is_video": true,
-      "video_views": 60000,
+      "video_views": 60100,
       "caption": "Este segundo inc\u00f3modo dijo m\u00e1s que mil palabras \ud83e\udd16\n\nEn India, frente a Narendra Modi, Sam Altman (OpenAI) y Dario Amodei (Anthropic) no lograron sincronizar un simple gesto de unida",
       "url": "https://www.instagram.com/p/DU_hIgkgb58/",
       "video_views_source": "selenium_reels_grid"
