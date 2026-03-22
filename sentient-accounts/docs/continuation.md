@@ -117,7 +117,7 @@ The `Account` tab currently uses this structure:
   - account switcher tabs
   - active account identity, bio and metrics
 - right column:
-  - top 5 Instagram-style post cards in a vertical stack
+  - top 5 Instagram-style post cards in 5 columns on desktop
 
 Important implementation details:
 
@@ -125,7 +125,7 @@ Important implementation details:
 - active account state is handled with `activeManagedAccountTab`
 - account switching is via `data-account-tab`
 - current build tag is:
-  - `account-instagram-board`
+  - `account-post-columns`
 
 Relevant implementation points:
 
@@ -168,7 +168,7 @@ Recent relevant commits, newest first:
 ### Daily Tracker
 
 - `Account` is mid-iteration from a design perspective, but functional.
-- The latest structural change is a three-column `20/20/60` account workspace with Instagram-style post cards.
+- The latest structural change is a three-column `20/20/60` account workspace with Instagram-style post cards shown as 5 columns on desktop.
 - No browser QA was done for the latest Daily Tracker account-layout commit in this session; only code validation was run.
 
 ## Likely next improvements

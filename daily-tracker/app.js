@@ -1614,7 +1614,7 @@ function buildAccountPostsPanel(account = {}) {
                     <span>Top 5 posts</span>
                     <h4>Recent Instagram winners</h4>
                 </div>
-                <small>Visual stack inspired by Sourcing cards</small>
+                <small>Five-column Instagram board</small>
             </div>
             <div class="account-posts-panel__list">
                 ${postListHtml}

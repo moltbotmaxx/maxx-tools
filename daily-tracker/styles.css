@@ -1763,10 +1763,11 @@ canvas {
 
 .account-posts-panel__list {
   display: grid;
-  grid-template-rows: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
   flex: 1;
   min-height: 0;
+  align-items: stretch;
 }
 
 .account-story-card,
@@ -1778,10 +1779,10 @@ canvas {
 }
 
 .account-story-card {
-  display: grid;
-  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
   min-height: 0;
+  height: 100%;
   overflow: hidden;
   color: inherit;
   text-decoration: none;
@@ -1797,7 +1798,8 @@ canvas {
 
 .account-story-card__media {
   position: relative;
-  min-height: 100%;
+  min-height: 0;
+  aspect-ratio: 4 / 5;
   background-color: #f0f2f6;
   background-size: cover;
   background-position: center;
@@ -1846,8 +1848,9 @@ canvas {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-  padding: 14px 16px 14px 0;
+  padding: 14px;
   min-width: 0;
+  flex: 1;
 }
 
 .account-story-card__meta {
@@ -3118,11 +3121,11 @@ canvas {
   }
 
   .account-posts-panel__list {
-    grid-template-rows: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .account-story-card {
-    grid-template-columns: minmax(130px, 170px) minmax(0, 1fr);
+    height: auto;
   }
 }
 
@@ -3131,16 +3134,16 @@ canvas {
     grid-template-columns: 1fr;
   }
 
-  .account-story-card {
+  .account-posts-panel__list {
     grid-template-columns: 1fr;
   }
 
-  .account-story-card__media {
-    min-height: 180px;
+  .account-story-card {
+    height: auto;
   }
 
-  .account-story-card__body {
-    padding: 14px;
+  .account-story-card__media {
+    aspect-ratio: 16 / 10;
   }
 
   .account-story-card__metrics,
