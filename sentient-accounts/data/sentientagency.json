@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-22T07:59:31+00:00",
+  "generated_at": "2026-03-22T08:32:42+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "sentientagency",
   "profile_url": "https://www.instagram.com/sentientagency/",
   "avatar_path": "../avatars/sentientagency.jpg",
-  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/508618897_17953299752973965_5275208862556385129_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MzguYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGsZ2TUxPhqH99S8N54FCLYhPgsH4YTf4X292aT0yawtFrkRTkh-56SU-Txe2nyIq8&_nc_ohc=Oak8uLo2DZcQ7kNvwHnfc1Z&_nc_gid=pkdsBrc0Rv4F_HltcV0_6Q&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GJHoUB6NdlJWbsg-AGlvquCCTjVJbvEnAQAB0j-ccb7-5&oh=00_AfzncOAbCDB5QA8B0yMwgEYtfk-NK70a1YS7ZerLKgeQpw&oe=69C56BBF&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/508618897_17953299752973965_5275208862556385129_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MzguYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFTa9_lKXtBOrzzpQ55YdHvDaQPOpkHdXQoyd3o8NYGXMlG6aJlkEgHXETUGUqJvXE&_nc_ohc=Oak8uLo2DZcQ7kNvwEgitxl&_nc_gid=e3vI1EuxQvkOlw8-6ERh8g&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GJHoUB6NdlJWbsg-AGlvquCCTjVJbvEnAQAB0j-ccb7-5&oh=00_AfxZSYN93dYz6TuriByS8KfYOfL9jrgoD-CFl2DRaW7G3w&oe=69C56BBF&_nc_sid=1e20d2",
   "full_name": "AI Agency",
   "biography": "\ud83e\udd16 The World\u2019s Largest AI Social Media Network \n\ud83d\ude80 25M+ Followers @chatgptricks @chatgptips @planet.ai_ @supercar and more\n\ud83d\udce5 contact@sentientagency.io",
   "external_url": "https://sentientagency.io/",
@@ -31,6 +31,7 @@
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
+  "total_likes_recent_window": 0,
   "total_video_views_recent_window": 0,
   "engagement_rate": 0.7272,
   "recent_posts": [

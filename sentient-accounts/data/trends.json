@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-22T08:01:45+00:00",
+  "generated_at": "2026-03-22T08:34:51+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "trends",
   "profile_url": "https://www.instagram.com/trends/",
   "avatar_path": "../avatars/trends.jpg",
-  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/481278882_479446335240689_2645704680755301852_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFE3pIjDwucYn4exqY7YozCDmVsAq4a9qrNB7jc4cOw_Rbl_4sjN2612l2y1bDh3IM&_nc_ohc=7U892i9x1K0Q7kNvwEbG_GW&_nc_gid=sD5GX-JVhRYL4gnnDNm6KA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GKK7rxzxOYDMDbQBANwNAr1jbrckbkULAAAB0j-ccb7-5&oh=00_AfzwKf-1_WPDl5cBLnqTn7_ywjh52t73Q6nnjl7Rc7Khlg&oe=69C57502&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/481278882_479446335240689_2645704680755301852_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gEAWP7AhOWt_-18tQe0OxdTybzdT9Bdp45AsN4bH7BUrsrh5oQYBWKWMjolaPVbcQE&_nc_ohc=7U892i9x1K0Q7kNvwEomD72&_nc_gid=_Hafp5SbTB8SOJlVBB94jw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GKK7rxzxOYDMDbQBANwNAr1jbrckbkULAAAB0j-ccb7-5&oh=00_AfysjEoskHrBgMbXxWQ3E5gEWBmX9dzYK9V-mE1KVXSx-Q&oe=69C57502&_nc_sid=1e20d2",
   "full_name": "Trends",
   "biography": "The internet speaks, we TRANSLATE!\nTrends, memes, viral videos, and stories.\nYour daily dose of internet\u2019s hottest trends.\nBy @sentientagency",
   "external_url": "https://www.sentientagency.io",
   "is_verified": true,
-  "followers": 19290,
+  "followers": 19293,
   "following": 9,
   "posts": 327,
   "recent_post_count": 67,
@@ -26,21 +26,22 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 7408.43,
-  "avg_comments": 48.25,
-  "avg_video_views": 126693.13,
-  "avg_video_views_per_video": 126693.13,
-  "avg_video_views_per_post": 126693.13,
-  "total_video_views_recent_window": 8488440,
-  "engagement_rate": 38.6557,
+  "avg_likes": 7412.69,
+  "avg_comments": 48.28,
+  "avg_video_views": 125969.63,
+  "avg_video_views_per_video": 125969.63,
+  "avg_video_views_per_post": 125969.63,
+  "total_likes_recent_window": 496650,
+  "total_video_views_recent_window": 8439965,
+  "engagement_rate": 38.6719,
   "recent_posts": [
     {
       "shortcode": "DWKZwTLiU3i",
       "date": "2026-03-21",
-      "likes": 501,
+      "likes": 503,
       "comments": 3,
       "is_video": true,
-      "video_views": 32200,
+      "video_views": 32400,
       "caption": "In a split second, adrenaline can flip a hidden switch inside you. Your brain shifts into survival mode, blocking out distractions and preparing your body to fight or escape.\n\n\u2764\ufe0f Y",
       "url": "https://www.instagram.com/p/DWKZwTLiU3i/",
       "video_views_source": "selenium_reels_grid"
@@ -48,10 +49,10 @@
     {
       "shortcode": "DWHktjMCWK9",
       "date": "2026-03-20",
-      "likes": 3576,
-      "comments": 18,
+      "likes": 3708,
+      "comments": 20,
       "is_video": true,
-      "video_views": 71800,
+      "video_views": 73800,
       "caption": "The simple gesture of handing a cold drink to a farmer in the middle of a dusty field is a masterclass in high-stakes camaraderie in rural life. Watching a hard day\u2019s work pause fo",
       "url": "https://www.instagram.com/p/DWHktjMCWK9/",
       "video_views_source": "selenium_reels_grid"
@@ -59,10 +60,10 @@
     {
       "shortcode": "DWHEC9vDXL1",
       "date": "2026-03-20",
-      "likes": 564,
+      "likes": 565,
       "comments": 2,
       "is_video": true,
-      "video_views": 13800,
+      "video_views": 6,
       "caption": "A short and funny video set in a park: a brown harnessed horse, likely next to a carriage.\n\nThe horse is standing on asphalt or cobblestones, eating grain from a red bucket hanging",
       "url": "https://www.instagram.com/p/DWHEC9vDXL1/",
       "video_views_source": "selenium_reels_grid"
@@ -92,7 +93,7 @@
     {
       "shortcode": "DWFdgyFDemJ",
       "date": "2026-03-20",
-      "likes": 352,
+      "likes": 353,
       "comments": 2,
       "is_video": true,
       "video_views": 14100,
@@ -106,7 +107,7 @@
       "likes": 130,
       "comments": 1,
       "is_video": true,
-      "video_views": 4,
+      "video_views": 5,
       "caption": "A short 13-second zoo clip captures a group of lions playfully interacting \u2014 until a male suddenly locks in a piercing stare that changes the whole mood. The caption, \u201cThat look is",
       "url": "https://www.instagram.com/p/DWDSd1aDYeN/",
       "video_views_source": "selenium_reels_grid"
@@ -114,10 +115,10 @@
     {
       "shortcode": "DWDBnk_jVS_",
       "date": "2026-03-19",
-      "likes": 320,
+      "likes": 321,
       "comments": 3,
       "is_video": true,
-      "video_views": 31300,
+      "video_views": 31400,
       "caption": "Those classroom paper planes were just the beginning \u2014 this one set a global benchmark \u2708\ufe0f\ud83d\udcc4\n\nThe current Guinness World Record for distance was achieved with a single launch that se",
       "url": "https://www.instagram.com/p/DWDBnk_jVS_/",
       "video_views_source": "selenium_reels_grid"
@@ -158,10 +159,10 @@
     {
       "shortcode": "DV9ydApDfmC",
       "date": "2026-03-17",
-      "likes": 1376,
+      "likes": 1379,
       "comments": 14,
       "is_video": true,
-      "video_views": 26600,
+      "video_views": 26700,
       "caption": "We are looking at people who are no longer alive\u2026\n\nIn 1901, people on the streets of Dublin looked at a camera for the first time, unaware they were capturing a moment that would r",
       "url": "https://www.instagram.com/p/DV9ydApDfmC/",
       "video_views_source": "selenium_reels_grid"
@@ -169,7 +170,7 @@
     {
       "shortcode": "DV9VxznCaj8",
       "date": "2026-03-16",
-      "likes": 92,
+      "likes": 93,
       "comments": 0,
       "is_video": true,
       "video_views": 4,
@@ -180,10 +181,10 @@
     {
       "shortcode": "DV6RappjS_s",
       "date": "2026-03-15",
-      "likes": 1564,
+      "likes": 1568,
       "comments": 16,
       "is_video": true,
-      "video_views": 27600,
+      "video_views": 27700,
       "caption": "A quiet backyard. A familiar whisper among the trees. And a small visitor who has returned, day after day, just to share a snack and a moment of trust. Then one morning, something ",
       "url": "https://www.instagram.com/p/DV6RappjS_s/",
       "video_views_source": "selenium_reels_grid"
@@ -191,7 +192,7 @@
     {
       "shortcode": "DV4DfbKidos",
       "date": "2026-03-14",
-      "likes": 4415,
+      "likes": 4416,
       "comments": 10,
       "is_video": true,
       "video_views": 255000,
@@ -202,7 +203,7 @@
     {
       "shortcode": "DV2mqpTjaeY",
       "date": "2026-03-14",
-      "likes": 200,
+      "likes": 201,
       "comments": 0,
       "is_video": true,
       "video_views": 7,
@@ -213,7 +214,7 @@
     {
       "shortcode": "DV2DfEdjZDB",
       "date": "2026-03-14",
-      "likes": 392,
+      "likes": 393,
       "comments": 5,
       "is_video": true,
       "video_views": 19300,
@@ -246,7 +247,7 @@
     {
       "shortcode": "DVy_5imiZPi",
       "date": "2026-03-12",
-      "likes": 757,
+      "likes": 758,
       "comments": 4,
       "is_video": true,
       "video_views": 10700,
@@ -257,7 +258,7 @@
     {
       "shortcode": "DVxLjMiDaZI",
       "date": "2026-03-12",
-      "likes": 140,
+      "likes": 141,
       "comments": 0,
       "is_video": true,
       "video_views": 3,
@@ -268,10 +269,10 @@
     {
       "shortcode": "DVw0ch2lHzi",
       "date": "2026-03-11",
-      "likes": 226,
+      "likes": 227,
       "comments": 1,
       "is_video": true,
-      "video_views": 9,
+      "video_views": 4,
       "caption": "In the mid-1990s in Costa Rica, the orange juice company Del Oro teamed up with ecologists and researchers from Princeton for an unusual experiment. They dumped about 12,000 tons o",
       "url": "https://www.instagram.com/p/DVw0ch2lHzi/",
       "video_views_source": "selenium_reels_grid"
@@ -290,7 +291,7 @@
     {
       "shortcode": "DVuzIeKDZWE",
       "date": "2026-03-11",
-      "likes": 53,
+      "likes": 54,
       "comments": 1,
       "is_video": true,
       "video_views": 2,
@@ -301,10 +302,10 @@
     {
       "shortcode": "DVuG-3SFABM",
       "date": "2026-03-10",
-      "likes": 449,
+      "likes": 451,
       "comments": 3,
       "is_video": true,
-      "video_views": 10400,
+      "video_views": 10500,
       "caption": "when your cat watches you in silence\u2026 it\u2019s not a coincidence \ud83d\udc31\ud83d\udc40\n\nmany cats unknowingly imitate the play dynamics of their owners. they hide behind doors, sofas, or corners and wait",
       "url": "https://www.instagram.com/p/DVuG-3SFABM/",
       "video_views_source": "selenium_reels_grid"
@@ -312,7 +313,7 @@
     {
       "shortcode": "DVt_T99CWFX",
       "date": "2026-03-10",
-      "likes": 1110,
+      "likes": 1111,
       "comments": 16,
       "is_video": true,
       "video_views": 18600,
@@ -326,7 +327,7 @@
       "likes": 77,
       "comments": 2,
       "is_video": true,
-      "video_views": 6,
+      "video_views": 4,
       "caption": "It looks like a solid bust\u2026 until it suddenly moves. \ud83c\udfa8\n\nAt Art Basel Miami, a paper sculpture by Li Hongbo shocked viewers when the seemingly rigid figure suddenly stretched and ex",
       "url": "https://www.instagram.com/p/DVr3RcPjT0r/",
       "video_views_source": "selenium_reels_grid"
@@ -334,10 +335,10 @@
     {
       "shortcode": "DVrJ9vvCV--",
       "date": "2026-03-09",
-      "likes": 6515,
+      "likes": 6520,
       "comments": 96,
       "is_video": true,
-      "video_views": 351000,
+      "video_views": 352000,
       "caption": "In the wild, the hare is a true master of survival.\n\nIt can accelerate up to 70 km/h and change direction abruptly, confusing predators.\n\nIts long ears are not just \u201clocators\u201d but ",
       "url": "https://www.instagram.com/p/DVrJ9vvCV--/",
       "video_views_source": "selenium_reels_grid"
@@ -348,7 +349,7 @@
       "likes": 1635,
       "comments": 8,
       "is_video": true,
-      "video_views": 35500,
+      "video_views": 35600,
       "caption": "The video shows a curious tabby cat nibbling on the tough green rind of a watermelon, before having a funny little \u201ceureka!\u201d moment when it finally tastes the sweet red flesh. Post",
       "url": "https://www.instagram.com/p/DVo_OFjDcFC/",
       "video_views_source": "selenium_reels_grid"
@@ -359,7 +360,7 @@
       "likes": 185,
       "comments": 1,
       "is_video": true,
-      "video_views": 20300,
+      "video_views": 8,
       "caption": "With a mouth full of uneven, protruding teeth, the sand tiger shark looks like something straight out of a horror movie. It can have up to 300 sharp teeth arranged in multiple rows",
       "url": "https://www.instagram.com/p/DVl2QvQlI_y/",
       "video_views_source": "selenium_reels_grid"
@@ -367,7 +368,7 @@
     {
       "shortcode": "DVlvGS4DVjH",
       "date": "2026-03-07",
-      "likes": 52796,
+      "likes": 52804,
       "comments": 584,
       "is_video": true,
       "video_views": 789000,
@@ -458,7 +459,7 @@
       "likes": 419,
       "comments": 2,
       "is_video": true,
-      "video_views": 20000,
+      "video_views": 6,
       "caption": "A breeding bull is a male bovine specifically selected for reproductive purposes. Its main role is to sire offspring, usually for livestock production, whether for beef or dairy.\n\n",
       "url": "https://www.instagram.com/p/DVexBiSjckm/",
       "video_views_source": "selenium_reels_grid"
@@ -469,7 +470,7 @@
       "likes": 83,
       "comments": 1,
       "is_video": true,
-      "video_views": 5,
+      "video_views": 1,
       "caption": "Sometimes snakes can become disoriented and mistake their own tail for prey, especially when they\u2019re stressed or in the middle of shedding. \ud83d\udc0d\n\nIt\u2019s not a normal instinct \u2014 it\u2019s a s",
       "url": "https://www.instagram.com/p/DVb5rEkESqe/",
       "video_views_source": "selenium_reels_grid"
@@ -480,7 +481,7 @@
       "likes": 62,
       "comments": 3,
       "is_video": true,
-      "video_views": 8,
+      "video_views": 3,
       "caption": "The sturgeon said: \u201cTonight I\u2019m having mermaid for dinner, and nothing will stop me.\u201d \ud83d\udc80\ud83d\ude02\n\n@trends is where the internet makes sense. Follow along\n\n#aquarium #sturgeon #mermaid #wil",
       "url": "https://www.instagram.com/p/DVbw2PakZ_N/",
       "video_views_source": "selenium_reels_grid"
@@ -502,7 +503,7 @@
       "likes": 82,
       "comments": 0,
       "is_video": true,
-      "video_views": 4,
+      "video_views": 1,
       "caption": "You don\u2019t always need strength to roar \u2014 sometimes it\u2019s enough not to back down. The goose understood it\u2026 did you?\n\n@trends is where the internet makes sense. Follow along\n\n#courag",
       "url": "https://www.instagram.com/p/DVZnkjAAb-b/",
       "video_views_source": "selenium_reels_grid"
@@ -513,7 +514,7 @@
       "likes": 75,
       "comments": 0,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 934,
       "caption": "Meet Thechikkottukavu Ramachandran, the tallest and most iconic elephant in India. Adorned with temple grandeur, he rises above humans like a living monument of tradition and power",
       "url": "https://www.instagram.com/p/DVZeE3QDt3q/",
       "video_views_source": "selenium_reels_grid"
@@ -535,7 +536,7 @@
       "likes": 93,
       "comments": 0,
       "is_video": true,
-      "video_views": 6,
+      "video_views": 2,
       "caption": "A rocket engine test is a key stage in the development of space propulsion systems, where the engine\u2019s performance, safety, and reliability are validated under real conditions. The",
       "url": "https://www.instagram.com/p/DVWeLALEUDq/",
       "video_views_source": "selenium_reels_grid"
@@ -546,7 +547,7 @@
       "likes": 196,
       "comments": 3,
       "is_video": true,
-      "video_views": 5,
+      "video_views": 3,
       "caption": "What you see here is photosynthesis in action: an aquatic plant releasing oxygen, visible as tiny bubbles rising to the surface. This simple yet fascinating process not only keeps ",
       "url": "https://www.instagram.com/p/DVWWaKYjReN/",
       "video_views_source": "selenium_reels_grid"
@@ -598,7 +599,7 @@
     {
       "shortcode": "DVRmbXPkQi4",
       "date": "2026-02-27",
-      "likes": 266348,
+      "likes": 266438,
       "comments": 1737,
       "is_video": true,
       "video_views": 4700000,
@@ -620,10 +621,10 @@
     {
       "shortcode": "DVPC6XmkQEI",
       "date": "2026-02-26",
-      "likes": 7124,
+      "likes": 7125,
       "comments": 20,
       "is_video": true,
-      "video_views": 463000,
+      "video_views": 464000,
       "caption": "The so-called \u201cDrinking Milkcap\u201d is a unique mushroom capable of storing dozens of liters of water underground, forming a natural reservoir that allows it to survive the summer hea",
       "url": "https://www.instagram.com/p/DVPC6XmkQEI/",
       "video_views_source": "selenium_reels_grid"
@@ -667,7 +668,7 @@
       "likes": 110,
       "comments": 2,
       "is_video": true,
-      "video_views": 6,
+      "video_views": 4,
       "caption": "This farmer uses a plastic bag to reduce the speed of water in the furrows, allowing the soil to absorb it better and preventing waste. A simple, low-cost, and effective method to ",
       "url": "https://www.instagram.com/p/DVKS5lBjcoE/",
       "video_views_source": "selenium_reels_grid"
@@ -675,7 +676,7 @@
     {
       "shortcode": "DVJu4cwkfvt",
       "date": "2026-02-24",
-      "likes": 136113,
+      "likes": 136139,
       "comments": 619,
       "is_video": true,
       "video_views": 1300000,

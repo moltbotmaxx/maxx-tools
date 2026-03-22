@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-03-22T08:19:07+00:00",
+  "generated_at": "2026-03-22T08:35:51+00:00",
   "date": "2026-03-22",
   "snapshot_date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "total_accounts": 21,
-  "total_followers": 12008828,
+  "total_followers": 12008884,
   "total_posts": 18511,
   "recent_window_days": 30,
   "recent_window_covered": false,
-  "total_likes_recent_window": 5679939,
-  "total_video_views_recent_window": 55880569,
-  "avg_engagement_rate": 1.4418,
+  "total_likes_recent_window": 5682775,
+  "total_video_views_recent_window": 53628748,
+  "avg_engagement_rate": 1.4421,
   "stale_accounts_excluded": [],
   "load_failures": [],
   "accounts": [
     {
-      "generated_at": "2026-03-22T07:51:09+00:00",
+      "generated_at": "2026-03-22T08:22:58+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "chatgptricks",
       "profile_url": "https://www.instagram.com/chatgptricks/",
       "avatar_path": "../avatars/chatgptricks.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/640407053_17993839451926057_8051626399473230451_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGzVMoC7gmI4cteT-ZUhCxXLa573BrPOD7-VrpPnv_ARK5VILIPB0Q7l01Pe4dS70I&_nc_ohc=9bL8SHnmoqQQ7kNvwHsOj_d&_nc_gid=_2GiQXBv0I2hF0rgZJv8Jw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GA3WKyYpbq04Te0-AHNiwgyNH71vbmNDAQAB0j-ccb7-5&oh=00_Afx7VbGF7kADr5JrDpTkhyLVUeoY0PyCD8g4fbRGMR8CAQ&oe=69C57AE4&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/640407053_17993839451926057_8051626399473230451_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gG_pg7w0P0IWhK3B1jn9Hw3LbGBVc1lV3Mum9e2dRfcGMjBiuuQK14VP1aFCI3lDOg&_nc_ohc=9bL8SHnmoqQQ7kNvwEWH_Wh&_nc_gid=RHWNsMnZ1WlGk9NtUij_uA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GA3WKyYpbq04Te0-AHNiwgyNH71vbmNDAQAB0j-ccb7-5&oh=00_AfwJwGjERIQBC7BfKsT1gSd78bJLlxcGERjdsg5PjVtRWw&oe=69C57AE4&_nc_sid=1e20d2",
       "full_name": "Artificial Intelligence (AI) \u2022 ChatGPT",
       "biography": "\ud83e\udd16 Follow to stay one step ahead of the curve\n\ud83d\udea8 AI is moving fast. Don\u2019t get left behind\n\ud83d\udce9 Collabs: hello@chatgptricks.com\n\ud83d\udc47 Get our Free ChatGPT Guide",
       "external_url": "http://chatgptricks.store",
       "is_verified": true,
-      "followers": 2477501,
+      "followers": 2477539,
       "following": 177,
       "posts": 2532,
       "recent_post_count": 120,
@@ -42,18 +42,19 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": false,
       "oldest_recent_post_date": "2026-02-24",
-      "avg_likes": 4287.77,
-      "avg_comments": 151.44,
-      "avg_video_views": 279892.86,
-      "avg_video_views_per_video": 279892.86,
-      "avg_video_views_per_post": 32654.17,
-      "total_video_views_recent_window": 3918500,
+      "avg_likes": 4288.68,
+      "avg_comments": 151.62,
+      "avg_video_views": 260357.14,
+      "avg_video_views_per_video": 260357.14,
+      "avg_video_views_per_post": 30375.0,
+      "total_likes_recent_window": 364032,
+      "total_video_views_recent_window": 3645000,
       "engagement_rate": 0.1792,
       "recent_posts": [
         {
           "shortcode": "DQwSSlhDkGC",
           "date": "2025-11-07",
-          "likes": 56798,
+          "likes": 56800,
           "comments": 188,
           "is_video": false,
           "video_views": 0,
@@ -63,7 +64,7 @@
         {
           "shortcode": "DP-84lrDWST",
           "date": "2025-10-19",
-          "likes": 91708,
+          "likes": 91709,
           "comments": 1035,
           "is_video": false,
           "video_views": 0,
@@ -73,7 +74,7 @@
         {
           "shortcode": "DKUL25_gCnh",
           "date": "2025-05-31",
-          "likes": 2027,
+          "likes": 2028,
           "comments": 279,
           "is_video": false,
           "video_views": 0,
@@ -94,9 +95,9 @@
           "shortcode": "DWKuOWdjQke",
           "date": "2026-03-22",
           "likes": 3,
-          "comments": 99,
+          "comments": 112,
           "is_video": true,
-          "video_views": 32500,
+          "video_views": 34200,
           "caption": "Build your own AI influencer.\n\nPeople are now creating full digital creators using a few AI tools and a clear process.\n\nYou start by defining your audience with ChatGPT, what they ",
           "url": "https://www.instagram.com/p/DWKuOWdjQke/",
           "video_views_source": "selenium_reels_grid"
@@ -124,7 +125,7 @@
         {
           "shortcode": "DWJuABKgJh9",
           "date": "2026-03-21",
-          "likes": 2498,
+          "likes": 2551,
           "comments": 49,
           "is_video": false,
           "video_views": 0,
@@ -134,7 +135,7 @@
         {
           "shortcode": "DWIEKTijRyT",
           "date": "2026-03-21",
-          "likes": 1837,
+          "likes": 1838,
           "comments": 68,
           "is_video": false,
           "video_views": 0,
@@ -174,8 +175,8 @@
         {
           "shortcode": "DWFmxlqjbIF",
           "date": "2026-03-20",
-          "likes": 1219,
-          "comments": 298,
+          "likes": 1231,
+          "comments": 306,
           "is_video": false,
           "video_views": 0,
           "caption": "Comment GTA and I\u2019ll send you the link \ud83c\udfae\n\nTurn your photos into GTA gameplay",
@@ -195,7 +196,7 @@
         {
           "shortcode": "DWFUbuwAOin",
           "date": "2026-03-19",
-          "likes": 2213,
+          "likes": 2215,
           "comments": 175,
           "is_video": false,
           "video_views": 0,
@@ -205,7 +206,7 @@
         {
           "shortcode": "DWEUbjogCKM",
           "date": "2026-03-19",
-          "likes": 8421,
+          "likes": 8429,
           "comments": 387,
           "is_video": false,
           "video_views": 0,
@@ -215,7 +216,7 @@
         {
           "shortcode": "DWDZv8IDVKo",
           "date": "2026-03-19",
-          "likes": 1588,
+          "likes": 1589,
           "comments": 115,
           "is_video": false,
           "video_views": 0,
@@ -235,7 +236,7 @@
         {
           "shortcode": "DWCELcGgOSe",
           "date": "2026-03-18",
-          "likes": 1650,
+          "likes": 1651,
           "comments": 25,
           "is_video": false,
           "video_views": 0,
@@ -245,7 +246,7 @@
         {
           "shortcode": "DWAQIwfDc_p",
           "date": "2026-03-17",
-          "likes": 4134,
+          "likes": 4137,
           "comments": 124,
           "is_video": false,
           "video_views": 0,
@@ -265,7 +266,7 @@
         {
           "shortcode": "DV_a2KygBQf",
           "date": "2026-03-17",
-          "likes": 1438,
+          "likes": 1440,
           "comments": 71,
           "is_video": false,
           "video_views": 0,
@@ -275,7 +276,7 @@
         {
           "shortcode": "DV_GL9rgF8X",
           "date": "2026-03-17",
-          "likes": 3937,
+          "likes": 3938,
           "comments": 93,
           "is_video": false,
           "video_views": 0,
@@ -295,7 +296,7 @@
         {
           "shortcode": "DV9eFEaILfh",
           "date": "2026-03-16",
-          "likes": 1557,
+          "likes": 1558,
           "comments": 35,
           "is_video": false,
           "video_views": 0,
@@ -305,7 +306,7 @@
         {
           "shortcode": "DV9PJwngFRG",
           "date": "2026-03-16",
-          "likes": 1611,
+          "likes": 1613,
           "comments": 51,
           "is_video": false,
           "video_views": 0,
@@ -325,7 +326,7 @@
         {
           "shortcode": "DV8fIMngOik",
           "date": "2026-03-16",
-          "likes": 2990,
+          "likes": 2991,
           "comments": 276,
           "is_video": false,
           "video_views": 0,
@@ -355,7 +356,7 @@
         {
           "shortcode": "DV7HGrijfDd",
           "date": "2026-03-15",
-          "likes": 1469,
+          "likes": 1470,
           "comments": 42,
           "is_video": false,
           "video_views": 0,
@@ -405,7 +406,7 @@
         {
           "shortcode": "DV3-xv3AAwi",
           "date": "2026-03-14",
-          "likes": 3402,
+          "likes": 3404,
           "comments": 14,
           "is_video": false,
           "video_views": 0,
@@ -425,7 +426,7 @@
         {
           "shortcode": "DV3cXe1ANm7",
           "date": "2026-03-14",
-          "likes": 2080,
+          "likes": 2081,
           "comments": 47,
           "is_video": false,
           "video_views": 0,
@@ -475,7 +476,7 @@
         {
           "shortcode": "DV056S-ESVF",
           "date": "2026-03-13",
-          "likes": 9650,
+          "likes": 9651,
           "comments": 288,
           "is_video": true,
           "video_views": 328000,
@@ -516,7 +517,7 @@
         {
           "shortcode": "DVygg-lgEgD",
           "date": "2026-03-12",
-          "likes": 24463,
+          "likes": 24465,
           "comments": 737,
           "is_video": false,
           "video_views": 0,
@@ -566,7 +567,7 @@
         {
           "shortcode": "DVv7vTgEfYr",
           "date": "2026-03-11",
-          "likes": 2361,
+          "likes": 2362,
           "comments": 53,
           "is_video": true,
           "video_views": 118000,
@@ -707,7 +708,7 @@
         {
           "shortcode": "DVpAS7hAMx_",
           "date": "2026-03-08",
-          "likes": 4877,
+          "likes": 4881,
           "comments": 20,
           "is_video": false,
           "video_views": 0,
@@ -787,7 +788,7 @@
         {
           "shortcode": "DVjGCm_AMP9",
           "date": "2026-03-06",
-          "likes": 16293,
+          "likes": 16294,
           "comments": 267,
           "is_video": false,
           "video_views": 0,
@@ -952,7 +953,7 @@
           "likes": 6231,
           "comments": 140,
           "is_video": true,
-          "video_views": 356000,
+          "video_views": 197000,
           "caption": "AI art just gone too far with @higgsfield.ai models \n\nThat\u2019s a real comedy series with episodes every week\n\n\ud83c\udfa5: @un.sul",
           "url": "https://www.instagram.com/p/DVZV_8IE9yj/",
           "video_views_source": "selenium_reels_grid"
@@ -1033,7 +1034,7 @@
           "likes": 4287,
           "comments": 55,
           "is_video": true,
-          "video_views": 152000,
+          "video_views": 113000,
           "caption": "Claude just went viral.\n\nAfter the \u201cDoW controversy,\u201d Anthropic\u2019s Claude app shot up from #140 to #2 on the App Store in days.\n\nThe spike followed viral posts comparing Claude\u2019s an",
           "url": "https://www.instagram.com/p/DVTScLZEasD/",
           "video_views_source": "selenium_reels_grid"
@@ -1051,7 +1052,7 @@
         {
           "shortcode": "DVR_-_PkRXt",
           "date": "2026-02-28",
-          "likes": 7050,
+          "likes": 7051,
           "comments": 100,
           "is_video": true,
           "video_views": 405000,
@@ -1176,7 +1177,7 @@
           "likes": 1387,
           "comments": 30,
           "is_video": true,
-          "video_views": 105000,
+          "video_views": 27800,
           "caption": "This AI runs your computer for you.\n\nOpenClaw is an open-source AI agent that doesn\u2019t just chat, it takes action. It can read your emails, manage files, run scripts, and automate t",
           "url": "https://www.instagram.com/p/DVL2XZkkdT-/",
           "video_views_source": "selenium_reels_grid"
@@ -1246,7 +1247,7 @@
         {
           "shortcode": "DVIHxUPAJ74",
           "date": "2026-02-24",
-          "likes": 9231,
+          "likes": 9233,
           "comments": 338,
           "is_video": false,
           "video_views": 0,
@@ -1267,18 +1268,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:52:23+00:00",
+      "generated_at": "2026-03-22T08:25:13+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "traselveloreal",
       "profile_url": "https://www.instagram.com/traselveloreal/",
       "avatar_path": "../avatars/traselveloreal.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.2885-19/455819241_1271293970519971_8790146552743418054_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gFYkmPclTY_PVxp3IXerR6ZSigSd8IhQdK_2nPXmxdEsEpe6r8hybStVmWvK0DQiQY&_nc_ohc=RE7BoyIoAoUQ7kNvwHw6SBy&_nc_gid=3rKgckL2v3EOmAFxKk79tw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOk-Kxujl4QxPIQEAMZY5a_33-x5bkULAAAB0j-ccb7-5&oh=00_AfzihNrUMnLpR6leTIBeU-U9bDxsqNsCvHTFQ-wzZfLj3Q&oe=69C56BE5&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/455819241_1271293970519971_8790146552743418054_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGfxAxw1tIprovfuIP4-FiI4bEqAIcylLAu0SItTrCJ59y5tkFnmbmouHyaOjglJtY&_nc_ohc=RE7BoyIoAoUQ7kNvwHw9Z1o&_nc_gid=hK2xY4DZdYBfK5Bi_pkoXA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOk-Kxujl4QxPIQEAMZY5a_33-x5bkULAAAB0j-ccb7-5&oh=00_AfxbiJT-FSsK0A_RjxgmB63Q0olf0KR_f_JRaJnoC2jS2g&oe=69C56BE5&_nc_sid=1e20d2",
       "full_name": "Tras el Velo | Compa\u00f1\u00eda de Medios",
       "biography": "\ud83c\udfad Historias, tendencias y entretenimiento\n\ud83d\udce9 Colaboraciones: traselveloreal@gmail.com\n\ud83d\udc41\ufe0f \u00danete a nuestra comunidad privada\ud83d\udc47",
       "external_url": "https://stan.store/traselvelo",
       "is_verified": true,
-      "followers": 2242087,
+      "followers": 2242086,
       "following": 54,
       "posts": 1904,
       "recent_post_count": 110,
@@ -1294,13 +1295,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 34438.91,
-      "avg_comments": 361.9,
-      "avg_video_views": 640527.27,
-      "avg_video_views_per_video": 640527.27,
-      "avg_video_views_per_post": 64052.73,
-      "total_video_views_recent_window": 7045800,
-      "engagement_rate": 1.5522,
+      "avg_likes": 34447.68,
+      "avg_comments": 361.95,
+      "avg_video_views": 623264.91,
+      "avg_video_views_per_video": 623264.91,
+      "avg_video_views_per_post": 62326.49,
+      "total_likes_recent_window": 2945618,
+      "total_video_views_recent_window": 6855914,
+      "engagement_rate": 1.5526,
       "recent_posts": [
         {
           "shortcode": "DAEO9dnvT0x",
@@ -1335,7 +1337,7 @@
         {
           "shortcode": "DWKymUojZMO",
           "date": "2026-03-22",
-          "likes": 3864,
+          "likes": 3916,
           "comments": 24,
           "is_video": false,
           "video_views": 0,
@@ -1345,8 +1347,8 @@
         {
           "shortcode": "DWKd89lAeMh",
           "date": "2026-03-21",
-          "likes": 4849,
-          "comments": 121,
+          "likes": 4912,
+          "comments": 122,
           "is_video": false,
           "video_views": 0,
           "caption": "La hija adolescente del l\u00edder norcoreano Kim Jong-un condujo un tanque durante un entrenamiento militar supervisado por su padre. Esta nueva aparici\u00f3n p\u00fablica conjunta ha alimentad",
@@ -1355,7 +1357,7 @@
         {
           "shortcode": "DWKLBI4CaNh",
           "date": "2026-03-21",
-          "likes": 5993,
+          "likes": 6011,
           "comments": 142,
           "is_video": false,
           "video_views": 0,
@@ -1365,7 +1367,7 @@
         {
           "shortcode": "DWICNnBjfqS",
           "date": "2026-03-20",
-          "likes": 1658,
+          "likes": 1664,
           "comments": 33,
           "is_video": false,
           "video_views": 0,
@@ -1375,7 +1377,7 @@
         {
           "shortcode": "DWHgprcCdo1",
           "date": "2026-03-20",
-          "likes": 16600,
+          "likes": 16690,
           "comments": 57,
           "is_video": false,
           "video_views": 0,
@@ -1385,7 +1387,7 @@
         {
           "shortcode": "DWHZXLgjqW2",
           "date": "2026-03-20",
-          "likes": 114451,
+          "likes": 114674,
           "comments": 1967,
           "is_video": false,
           "video_views": 0,
@@ -1395,7 +1397,7 @@
         {
           "shortcode": "DWHSixIDZtH",
           "date": "2026-03-20",
-          "likes": 3607,
+          "likes": 3614,
           "comments": 174,
           "is_video": false,
           "video_views": 0,
@@ -1405,7 +1407,7 @@
         {
           "shortcode": "DWHK9-rjQDp",
           "date": "2026-03-20",
-          "likes": 5006,
+          "likes": 5011,
           "comments": 137,
           "is_video": false,
           "video_views": 0,
@@ -1425,7 +1427,7 @@
         {
           "shortcode": "DWFuPLjjUtr",
           "date": "2026-03-20",
-          "likes": 3579,
+          "likes": 3581,
           "comments": 22,
           "is_video": false,
           "video_views": 0,
@@ -1435,7 +1437,7 @@
         {
           "shortcode": "DWFiMpeDZbx",
           "date": "2026-03-20",
-          "likes": 14370,
+          "likes": 14405,
           "comments": 82,
           "is_video": false,
           "video_views": 0,
@@ -1448,7 +1450,7 @@
           "likes": 535,
           "comments": 14,
           "is_video": true,
-          "video_views": 42300,
+          "video_views": 714,
           "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
           "url": "https://www.instagram.com/p/DWFVOTXjZRF/",
           "video_views_source": "selenium_reels_grid"
@@ -1456,10 +1458,10 @@
         {
           "shortcode": "DWFIu7dATMl",
           "date": "2026-03-19",
-          "likes": 9587,
+          "likes": 9588,
           "comments": 45,
           "is_video": true,
-          "video_views": 551000,
+          "video_views": 552000,
           "caption": "Durante el d\u00eda, las aves rapaces como los halcones suelen perseguir y acosar a los b\u00fahos cuando los descubren descansando.\n\nSin embargo, este comportamiento no se limita solo a los",
           "url": "https://www.instagram.com/p/DWFIu7dATMl/",
           "video_views_source": "selenium_reels_grid"
@@ -1467,7 +1469,7 @@
         {
           "shortcode": "DWDDIFHjWxq",
           "date": "2026-03-19",
-          "likes": 3415,
+          "likes": 3416,
           "comments": 217,
           "is_video": false,
           "video_views": 0,
@@ -1477,7 +1479,7 @@
         {
           "shortcode": "DWC7AG5DUG9",
           "date": "2026-03-19",
-          "likes": 19500,
+          "likes": 19510,
           "comments": 58,
           "is_video": false,
           "video_views": 0,
@@ -1487,7 +1489,7 @@
         {
           "shortcode": "DWCqaCcCf1A",
           "date": "2026-03-18",
-          "likes": 13390,
+          "likes": 13394,
           "comments": 403,
           "is_video": false,
           "video_views": 0,
@@ -1497,7 +1499,7 @@
         {
           "shortcode": "DWCfTSFgaIp",
           "date": "2026-03-18",
-          "likes": 4131,
+          "likes": 4132,
           "comments": 91,
           "is_video": false,
           "video_views": 0,
@@ -1517,7 +1519,7 @@
         {
           "shortcode": "DWAGVRqgecb",
           "date": "2026-03-17",
-          "likes": 3549,
+          "likes": 3553,
           "comments": 21,
           "is_video": false,
           "video_views": 0,
@@ -1527,7 +1529,7 @@
         {
           "shortcode": "DV_-Mowgcf7",
           "date": "2026-03-17",
-          "likes": 77239,
+          "likes": 77355,
           "comments": 389,
           "is_video": false,
           "video_views": 0,
@@ -1537,8 +1539,8 @@
         {
           "shortcode": "DV_onQeDqV0",
           "date": "2026-03-17",
-          "likes": 4745,
-          "comments": 57,
+          "likes": 4750,
+          "comments": 58,
           "is_video": false,
           "video_views": 0,
           "caption": "Los psic\u00f3logos sugieren que la forma m\u00e1s alta de paz consiste en soltar la necesidad de ser comprendido, admirado, compadecido o reconocido, porque esos deseos atan tu estado inter",
@@ -1547,7 +1549,7 @@
         {
           "shortcode": "DV-FBmcjZVS",
           "date": "2026-03-17",
-          "likes": 25421,
+          "likes": 25430,
           "comments": 97,
           "is_video": false,
           "video_views": 0,
@@ -1557,7 +1559,7 @@
         {
           "shortcode": "DV9-IfMjdpS",
           "date": "2026-03-17",
-          "likes": 4300,
+          "likes": 4302,
           "comments": 86,
           "is_video": false,
           "video_views": 0,
@@ -1567,7 +1569,7 @@
         {
           "shortcode": "DV9uZL9DfMk",
           "date": "2026-03-16",
-          "likes": 35967,
+          "likes": 36001,
           "comments": 194,
           "is_video": false,
           "video_views": 0,
@@ -1577,7 +1579,7 @@
         {
           "shortcode": "DV9h7z5CafK",
           "date": "2026-03-16",
-          "likes": 7920,
+          "likes": 7922,
           "comments": 233,
           "is_video": false,
           "video_views": 0,
@@ -1587,7 +1589,7 @@
         {
           "shortcode": "DV9RKMkicyh",
           "date": "2026-03-16",
-          "likes": 60688,
+          "likes": 60699,
           "comments": 358,
           "is_video": false,
           "video_views": 0,
@@ -1597,8 +1599,8 @@
         {
           "shortcode": "DV7VkBbjZPn",
           "date": "2026-03-16",
-          "likes": 56802,
-          "comments": 436,
+          "likes": 56819,
+          "comments": 438,
           "is_video": false,
           "video_views": 0,
           "caption": "Hace muchos a\u00f1os, este video fue grabado en una acera lluviosa en Zhejiang, China, mostrando a un padre y a su peque\u00f1a hija con impermeables, bailando juntos sin m\u00fasica, sin acceso",
@@ -1628,7 +1630,7 @@
         {
           "shortcode": "DV4YvTtASoU",
           "date": "2026-03-14",
-          "likes": 15148,
+          "likes": 15155,
           "comments": 407,
           "is_video": false,
           "video_views": 0,
@@ -1648,7 +1650,7 @@
         {
           "shortcode": "DV2OgyBjWBH",
           "date": "2026-03-14",
-          "likes": 52426,
+          "likes": 52449,
           "comments": 239,
           "is_video": false,
           "video_views": 0,
@@ -1658,7 +1660,7 @@
         {
           "shortcode": "DV2AAD7jWqp",
           "date": "2026-03-13",
-          "likes": 74698,
+          "likes": 74702,
           "comments": 471,
           "is_video": false,
           "video_views": 0,
@@ -1668,7 +1670,7 @@
         {
           "shortcode": "DV14ovcDftP",
           "date": "2026-03-13",
-          "likes": 10446,
+          "likes": 10448,
           "comments": 462,
           "is_video": false,
           "video_views": 0,
@@ -1688,7 +1690,7 @@
         {
           "shortcode": "DV1iFvUCXI-",
           "date": "2026-03-13",
-          "likes": 54368,
+          "likes": 54376,
           "comments": 260,
           "is_video": false,
           "video_views": 0,
@@ -1698,7 +1700,7 @@
         {
           "shortcode": "DVziDsDjSq9",
           "date": "2026-03-13",
-          "likes": 8154,
+          "likes": 8158,
           "comments": 43,
           "is_video": false,
           "video_views": 0,
@@ -1708,7 +1710,7 @@
         {
           "shortcode": "DVzUCMXjVHW",
           "date": "2026-03-12",
-          "likes": 2690,
+          "likes": 2691,
           "comments": 70,
           "is_video": false,
           "video_views": 0,
@@ -1728,7 +1730,7 @@
         {
           "shortcode": "DVy-bzlCX3S",
           "date": "2026-03-12",
-          "likes": 107129,
+          "likes": 107163,
           "comments": 487,
           "is_video": true,
           "video_views": 2700000,
@@ -1739,7 +1741,7 @@
         {
           "shortcode": "DVxKkTTDRlP",
           "date": "2026-03-12",
-          "likes": 127363,
+          "likes": 127370,
           "comments": 1626,
           "is_video": false,
           "video_views": 0,
@@ -1749,7 +1751,7 @@
         {
           "shortcode": "DVwsCQPjb3O",
           "date": "2026-03-11",
-          "likes": 32620,
+          "likes": 32636,
           "comments": 136,
           "is_video": false,
           "video_views": 0,
@@ -1759,7 +1761,7 @@
         {
           "shortcode": "DVwggqAgc40",
           "date": "2026-03-11",
-          "likes": 26720,
+          "likes": 26721,
           "comments": 450,
           "is_video": false,
           "video_views": 0,
@@ -1769,7 +1771,7 @@
         {
           "shortcode": "DVwYXY4iTsC",
           "date": "2026-03-11",
-          "likes": 79414,
+          "likes": 79419,
           "comments": 343,
           "is_video": false,
           "video_views": 0,
@@ -1779,10 +1781,10 @@
         {
           "shortcode": "DVu05BUDdcw",
           "date": "2026-03-11",
-          "likes": 80761,
+          "likes": 80762,
           "comments": 670,
           "is_video": true,
-          "video_views": 1500000,
+          "video_views": 1400000,
           "caption": "Un video viral reciente muestra a un hombre tocando suavemente el rostro y la pata de una ardilla en un breve momento de cuidado y afecto. La escena se vuelve a\u00fan m\u00e1s conmovedora c",
           "url": "https://www.instagram.com/p/DVu05BUDdcw/",
           "video_views_source": "selenium_reels_grid"
@@ -1790,7 +1792,7 @@
         {
           "shortcode": "DVus-TSDSQT",
           "date": "2026-03-11",
-          "likes": 32986,
+          "likes": 33001,
           "comments": 92,
           "is_video": false,
           "video_views": 0,
@@ -1810,7 +1812,7 @@
         {
           "shortcode": "DVuK1AsDVSJ",
           "date": "2026-03-10",
-          "likes": 155944,
+          "likes": 155948,
           "comments": 2043,
           "is_video": false,
           "video_views": 0,
@@ -1840,7 +1842,7 @@
         {
           "shortcode": "DVsHnXMjde_",
           "date": "2026-03-10",
-          "likes": 25631,
+          "likes": 25644,
           "comments": 198,
           "is_video": false,
           "video_views": 0,
@@ -1850,7 +1852,7 @@
         {
           "shortcode": "DVsADVjDQFJ",
           "date": "2026-03-10",
-          "likes": 81063,
+          "likes": 81068,
           "comments": 1145,
           "is_video": false,
           "video_views": 0,
@@ -1870,7 +1872,7 @@
         {
           "shortcode": "DVrN9GvCV-o",
           "date": "2026-03-09",
-          "likes": 68171,
+          "likes": 68191,
           "comments": 83,
           "is_video": false,
           "video_views": 0,
@@ -1880,7 +1882,7 @@
         {
           "shortcode": "DVo8ubAgRRl",
           "date": "2026-03-08",
-          "likes": 8644,
+          "likes": 8645,
           "comments": 89,
           "is_video": false,
           "video_views": 0,
@@ -1930,8 +1932,8 @@
         {
           "shortcode": "DVjVfN0DQQy",
           "date": "2026-03-06",
-          "likes": 89519,
-          "comments": 984,
+          "likes": 89524,
+          "comments": 985,
           "is_video": false,
           "video_views": 0,
           "caption": "Arque\u00f3logos que analizaron fragmentos de pipas de arcilla excavadas en el jard\u00edn de la antigua casa de William Shakespeare en Stratford-upon-Avon descubrieron rastros de residuos d",
@@ -2000,7 +2002,7 @@
         {
           "shortcode": "DVe5AXwjZgs",
           "date": "2026-03-05",
-          "likes": 35004,
+          "likes": 35006,
           "comments": 317,
           "is_video": false,
           "video_views": 0,
@@ -2010,7 +2012,7 @@
         {
           "shortcode": "DVeuvlLDW0P",
           "date": "2026-03-04",
-          "likes": 57990,
+          "likes": 58001,
           "comments": 423,
           "is_video": false,
           "video_views": 0,
@@ -2020,7 +2022,7 @@
         {
           "shortcode": "DVeXMQsAd9u",
           "date": "2026-03-04",
-          "likes": 8637,
+          "likes": 8640,
           "comments": 108,
           "is_video": false,
           "video_views": 0,
@@ -2030,7 +2032,7 @@
         {
           "shortcode": "DVd9ESDDRva",
           "date": "2026-03-04",
-          "likes": 257488,
+          "likes": 257500,
           "comments": 1991,
           "is_video": false,
           "video_views": 0,
@@ -2050,7 +2052,7 @@
         {
           "shortcode": "DVb-luHgU9Z",
           "date": "2026-03-03",
-          "likes": 16305,
+          "likes": 16309,
           "comments": 262,
           "is_video": false,
           "video_views": 0,
@@ -2100,7 +2102,7 @@
         {
           "shortcode": "DVZj9lijVzv",
           "date": "2026-03-02",
-          "likes": 27022,
+          "likes": 27030,
           "comments": 168,
           "is_video": false,
           "video_views": 0,
@@ -2120,7 +2122,7 @@
         {
           "shortcode": "DVY0v8lDZhU",
           "date": "2026-03-02",
-          "likes": 26197,
+          "likes": 26198,
           "comments": 387,
           "is_video": true,
           "video_views": 314000,
@@ -2141,7 +2143,7 @@
         {
           "shortcode": "DVWKc3PDZ8T",
           "date": "2026-03-01",
-          "likes": 15221,
+          "likes": 15223,
           "comments": 178,
           "is_video": false,
           "video_views": 0,
@@ -2154,7 +2156,7 @@
           "likes": 3099,
           "comments": 56,
           "is_video": true,
-          "video_views": 78400,
+          "video_views": 53800,
           "caption": "Esto es lo que est\u00e1 pasando en Ir\u00e1n \ud83c\uddee\ud83c\uddf7 \n\n\u00bfMuri\u00f3 o no el ayatol\u00e1? Mientras Trump incentiva a la poblaci\u00f3n a tomar el poder y los misiles iran\u00edes caen en bases de Catar y Bahr\u00e9in, el",
           "url": "https://www.instagram.com/p/DVUfhIikcnw/",
           "video_views_source": "selenium_reels_grid"
@@ -2162,7 +2164,7 @@
         {
           "shortcode": "DVUTbstAeIg",
           "date": "2026-02-28",
-          "likes": 60443,
+          "likes": 60446,
           "comments": 946,
           "is_video": false,
           "video_views": 0,
@@ -2172,7 +2174,7 @@
         {
           "shortcode": "DVT3SREjjyP",
           "date": "2026-02-28",
-          "likes": 6167,
+          "likes": 6168,
           "comments": 331,
           "is_video": false,
           "video_views": 0,
@@ -2212,7 +2214,7 @@
         {
           "shortcode": "DVPlKVDjYA_",
           "date": "2026-02-27",
-          "likes": 157604,
+          "likes": 157609,
           "comments": 1204,
           "is_video": false,
           "video_views": 0,
@@ -2222,7 +2224,7 @@
         {
           "shortcode": "DVPdjgAjRFY",
           "date": "2026-02-27",
-          "likes": 35834,
+          "likes": 35838,
           "comments": 435,
           "is_video": true,
           "video_views": 1400000,
@@ -2233,7 +2235,7 @@
         {
           "shortcode": "DVPGXwUAQdb",
           "date": "2026-02-26",
-          "likes": 11980,
+          "likes": 11982,
           "comments": 43,
           "is_video": false,
           "video_views": 0,
@@ -2243,7 +2245,7 @@
         {
           "shortcode": "DVOpKqJjfmg",
           "date": "2026-02-26",
-          "likes": 10874,
+          "likes": 10875,
           "comments": 100,
           "is_video": false,
           "video_views": 0,
@@ -2284,7 +2286,7 @@
         {
           "shortcode": "DVMi640gUVz",
           "date": "2026-02-25",
-          "likes": 150735,
+          "likes": 150747,
           "comments": 3011,
           "is_video": false,
           "video_views": 0,
@@ -2307,7 +2309,7 @@
           "likes": 2154,
           "comments": 35,
           "is_video": true,
-          "video_views": 72000,
+          "video_views": 47300,
           "caption": "Es incre\u00edble lo capaz que se ha vuelto la IA.\n\nTr\u00e1ilers que costar\u00edan millones ahora cuestan solo unos cuantos d\u00f3lares en producci\u00f3n en @higgsfield.ai Cinema Studio.\n\n\ud83c\udfa5: @kicha.bla",
           "url": "https://www.instagram.com/p/DVMNKceiYZN/",
           "video_views_source": "selenium_reels_grid"
@@ -2416,18 +2418,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:51:46+00:00",
+      "generated_at": "2026-03-22T08:23:57+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "artificialntellligence",
       "profile_url": "https://www.instagram.com/artificialntellligence/",
       "avatar_path": "../avatars/artificialntellligence.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHxJKMKfDpPfuAr4Q5OaPLBs9_5Bx7mx1FX9A74DkXD8r4YJoElSjMBQkVaAoW1Mf0&_nc_ohc=M1xTIVa7UawQ7kNvwFDRtUN&_nc_gid=M0zHh6sbGrHRasCPIWgBlw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_AfwC8TsiR7XFtmFl0I0RChztw-LsNu0-NfC9laMo2X8Rmw&oe=69C57E56&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHAzFVJoN86gsxWN77UXxzoS4qd37DHbiCBrCyBEQF3I-jxONqi88gcv-xBe7IqEx0&_nc_ohc=M1xTIVa7UawQ7kNvwEVhhI0&_nc_gid=-KAAWLGkzFuUvOvR2oCCPA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_Afw82d9_wlPETf4aWMohiJRPiYA0MvayQXhhsyyO7XxZEQ&oe=69C57E56&_nc_sid=1e20d2",
       "full_name": "Artificial Intelligence (AI)",
       "biography": "\ud83d\udcaaWorld\u2019s Best AI Page \n\ud83d\udce9: contact@sentientagency.io\n\ud83d\udc47 Go viral with us",
       "external_url": "https://sentientagency.io",
       "is_verified": true,
-      "followers": 1505144,
+      "followers": 1505143,
       "following": 121,
       "posts": 481,
       "recent_post_count": 74,
@@ -2443,21 +2445,22 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 2681.07,
-      "avg_comments": 18.26,
-      "avg_video_views": 157548.28,
-      "avg_video_views_per_video": 157548.28,
-      "avg_video_views_per_post": 61741.89,
-      "total_video_views_recent_window": 4568900,
-      "engagement_rate": 0.1793,
+      "avg_likes": 2683.68,
+      "avg_comments": 18.27,
+      "avg_video_views": 155931.03,
+      "avg_video_views_per_video": 155931.03,
+      "avg_video_views_per_post": 61108.11,
+      "total_likes_recent_window": 198592,
+      "total_video_views_recent_window": 4522000,
+      "engagement_rate": 0.1795,
       "recent_posts": [
         {
           "shortcode": "DWKTLlzD8Sp",
           "date": "2026-03-21",
-          "likes": 1551,
+          "likes": 1607,
           "comments": 16,
           "is_video": true,
-          "video_views": 167000,
+          "video_views": 174000,
           "caption": "It looks like a full sci-fi battle scene straight out of a $200M movie\u2026 but it\u2019s not.\n\nCreated by @lordofacca, a single character wipes out fleets of war machines with precision, u",
           "url": "https://www.instagram.com/p/DWKTLlzD8Sp/",
           "video_views_source": "selenium_reels_grid"
@@ -2465,7 +2468,7 @@
         {
           "shortcode": "DWH_2cmDoxI",
           "date": "2026-03-20",
-          "likes": 704,
+          "likes": 705,
           "comments": 14,
           "is_video": false,
           "video_views": 0,
@@ -2475,10 +2478,10 @@
         {
           "shortcode": "DWHFzCOjt5v",
           "date": "2026-03-20",
-          "likes": 1621,
+          "likes": 1632,
           "comments": 33,
           "is_video": true,
-          "video_views": 134000,
+          "video_views": 135000,
           "caption": "As part of its Claude Network Partner Program, Anthropic has launched its first official certification: Claude Certified Architect \u2014 Foundations (CCA-F).\n\nThe certification is curr",
           "url": "https://www.instagram.com/p/DWHFzCOjt5v/",
           "video_views_source": "selenium_reels_grid"
@@ -2486,7 +2489,7 @@
         {
           "shortcode": "DWFdCibDi4D",
           "date": "2026-03-19",
-          "likes": 581,
+          "likes": 582,
           "comments": 0,
           "is_video": false,
           "video_views": 0,
@@ -2517,10 +2520,10 @@
         {
           "shortcode": "DWE7DIPjvAr",
           "date": "2026-03-19",
-          "likes": 534,
+          "likes": 535,
           "comments": 10,
           "is_video": true,
-          "video_views": 58300,
+          "video_views": 58400,
           "caption": "GTA 4 reimagined in Russia \ud83d\udc40\n\nFor decades, high-end graphics relied on brute-force physics\u2014calculating every light bounce, surface, and reflection in real time. But that approach i",
           "url": "https://www.instagram.com/p/DWE7DIPjvAr/",
           "video_views_source": "selenium_reels_grid"
@@ -2538,7 +2541,7 @@
         {
           "shortcode": "DWCa9oQD7by",
           "date": "2026-03-18",
-          "likes": 927,
+          "likes": 928,
           "comments": 24,
           "is_video": true,
           "video_views": 123000,
@@ -2580,10 +2583,10 @@
         {
           "shortcode": "DV_WEDTjuOr",
           "date": "2026-03-17",
-          "likes": 391,
+          "likes": 392,
           "comments": 7,
           "is_video": true,
-          "video_views": 48700,
+          "video_views": 48800,
           "caption": "NVIDIA has announced DLSS 5, the latest evolution of its AI-powered upscaling technology for games, using advanced neural rendering to generate frames, boost performance, and deliv",
           "url": "https://www.instagram.com/p/DV_WEDTjuOr/",
           "video_views_source": "selenium_reels_grid"
@@ -2622,7 +2625,7 @@
         {
           "shortcode": "DV6ujVjvc3z",
           "date": "2026-03-15",
-          "likes": 1146,
+          "likes": 1148,
           "comments": 8,
           "is_video": true,
           "video_views": 164000,
@@ -2654,7 +2657,7 @@
         {
           "shortcode": "DV2I5lRDt6i",
           "date": "2026-03-14",
-          "likes": 4059,
+          "likes": 4061,
           "comments": 43,
           "is_video": false,
           "video_views": 0,
@@ -2674,7 +2677,7 @@
         {
           "shortcode": "DV1oDe5PXYz",
           "date": "2026-03-13",
-          "likes": 1579,
+          "likes": 1580,
           "comments": 22,
           "is_video": true,
           "video_views": 96100,
@@ -2695,7 +2698,7 @@
         {
           "shortcode": "DVzTNxwDo_I",
           "date": "2026-03-12",
-          "likes": 480,
+          "likes": 481,
           "comments": 2,
           "is_video": false,
           "video_views": 0,
@@ -2791,7 +2794,7 @@
           "likes": 375,
           "comments": 6,
           "is_video": true,
-          "video_views": 58400,
+          "video_views": 58500,
           "caption": "We may have just seen the first real step toward mind uploading.\n\nResearchers simulated a fruit fly\u2019s brain by recreating its connectome \u2014 the full wiring diagram of its neurons \u2014 ",
           "url": "https://www.instagram.com/p/DVtj8lvulMS/",
           "video_views_source": "selenium_reels_grid"
@@ -2820,7 +2823,7 @@
         {
           "shortcode": "DVrACBHjpgO",
           "date": "2026-03-09",
-          "likes": 378,
+          "likes": 379,
           "comments": 5,
           "is_video": false,
           "video_views": 0,
@@ -2840,8 +2843,8 @@
         {
           "shortcode": "DVj8-0jDmae",
           "date": "2026-03-06",
-          "likes": 102949,
-          "comments": 210,
+          "likes": 103062,
+          "comments": 211,
           "is_video": false,
           "video_views": 0,
           "caption": "When they ask about your 5 year plan\u2026 but you know AI is coming in strong.\n\n\u2022 Follow @artificialntellligence for more content on AI and technology.\n\n#ai #future #automation #techno",
@@ -3056,7 +3059,7 @@
         {
           "shortcode": "DVOmM3Tjg6O",
           "date": "2026-02-26",
-          "likes": 10902,
+          "likes": 10903,
           "comments": 70,
           "is_video": false,
           "video_views": 0,
@@ -3215,7 +3218,7 @@
           "likes": 741,
           "comments": 12,
           "is_video": true,
-          "video_views": 154000,
+          "video_views": 98800,
           "caption": "It feels like a lost Transformers scene \u2014 but it was never real.\n\nA rusty green bus morphs into a roaring mech T-Rex in heavy rain, with wild mechanics and pure cinematic intensity",
           "url": "https://www.instagram.com/p/DU_ada7j_K3/",
           "video_views_source": "selenium_reels_grid"
@@ -3223,18 +3226,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:54:03+00:00",
+      "generated_at": "2026-03-22T08:26:57+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "stoicreflections",
       "profile_url": "https://www.instagram.com/stoicreflections/",
       "avatar_path": "../avatars/stoicreflections.jpg",
-      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/71959551_1186958791489512_3692125780822720512_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGY5Ps6iOlF0O0zIwkhzJZTbcRtlKPXUU70zTjNiOCfNvbMUnT-2MYiSKRf0SDFSfU&_nc_ohc=OJ6WbvP5eMAQ7kNvwEpWSlr&_nc_gid=g8Cc7m1atHiC9qWYuAoggA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GP8DSgToNyFhiDcEAAAAAADWED0zbkULAAAB0j-ccb7-5&oh=00_AfxIunz0FEjuTgccQ4N0AbS_g7FCHWfCRlhUAZRgUxUskw&oe=69C58392&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/71959551_1186958791489512_3692125780822720512_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gF8k985-IA5zba3ExRo-BLhPvZxH4kJ33ODDDLHe4SsQ5-t3GtOKnf1s3pYgqgHMJM&_nc_ohc=OJ6WbvP5eMAQ7kNvwF-rGvf&_nc_gid=fnrTHVjczIVPByKTGMbgWw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GP8DSgToNyFhiDcEAAAAAADWED0zbkULAAAB0j-ccb7-5&oh=00_AfxuAaoxgANAPiwXFYsChele2p1CqY8TP-Kyfd1NEv_FoQ&oe=69C58392&_nc_sid=1e20d2",
       "full_name": "Stoic Reflections",
       "biography": "Philosophy for high achievers\n-\nShop all products \u2193",
       "external_url": "https://stoicreflections.com",
       "is_verified": true,
-      "followers": 1106546,
+      "followers": 1106547,
       "following": 0,
       "posts": 452,
       "recent_post_count": 24,
@@ -3250,13 +3253,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2025-07-11",
-      "avg_likes": 5380.42,
+      "avg_likes": 5382.25,
       "avg_comments": 54.25,
       "avg_video_views": 0,
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
+      "total_likes_recent_window": 59213,
       "total_video_views_recent_window": 0,
-      "engagement_rate": 0.4911,
+      "engagement_rate": 0.4913,
       "recent_posts": [
         {
           "shortcode": "CDrKjE7HjoU",
@@ -3292,7 +3296,7 @@
         {
           "shortcode": "DWHMnWdFli2",
           "date": "2026-03-20",
-          "likes": 3036,
+          "likes": 3047,
           "comments": 10,
           "is_video": false,
           "video_views": 0,
@@ -3302,7 +3306,7 @@
         {
           "shortcode": "DWEuqQ-COBs",
           "date": "2026-03-19",
-          "likes": 6060,
+          "likes": 6066,
           "comments": 142,
           "is_video": false,
           "video_views": 0,
@@ -3312,7 +3316,7 @@
         {
           "shortcode": "DWDKD63DWsC",
           "date": "2026-03-19",
-          "likes": 2565,
+          "likes": 2566,
           "comments": 11,
           "is_video": false,
           "video_views": 0,
@@ -3322,7 +3326,7 @@
         {
           "shortcode": "DV_5pMND-T_",
           "date": "2026-03-17",
-          "likes": 1694,
+          "likes": 1696,
           "comments": 14,
           "is_video": false,
           "video_views": 0,
@@ -3332,7 +3336,7 @@
         {
           "shortcode": "DV89azqCN-F",
           "date": "2026-03-16",
-          "likes": 9309,
+          "likes": 9316,
           "comments": 38,
           "is_video": false,
           "video_views": 0,
@@ -3342,7 +3346,7 @@
         {
           "shortcode": "DV7KXUgDxnE",
           "date": "2026-03-15",
-          "likes": 4867,
+          "likes": 4870,
           "comments": 59,
           "is_video": false,
           "video_views": 0,
@@ -3362,7 +3366,7 @@
         {
           "shortcode": "DV1QQ4MDS5P",
           "date": "2026-03-13",
-          "likes": 2669,
+          "likes": 2671,
           "comments": 15,
           "is_video": false,
           "video_views": 0,
@@ -3372,7 +3376,7 @@
         {
           "shortcode": "DVyoRWvjRJB",
           "date": "2026-03-12",
-          "likes": 3263,
+          "likes": 3264,
           "comments": 33,
           "is_video": false,
           "video_views": 0,
@@ -3382,7 +3386,7 @@
         {
           "shortcode": "DVwHLrkDWeF",
           "date": "2026-03-11",
-          "likes": 10319,
+          "likes": 10324,
           "comments": 41,
           "is_video": false,
           "video_views": 0,
@@ -3392,7 +3396,7 @@
         {
           "shortcode": "DVt0XBSj6kl",
           "date": "2026-03-10",
-          "likes": 12725,
+          "likes": 12731,
           "comments": 60,
           "is_video": false,
           "video_views": 0,
@@ -3502,18 +3506,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T08:02:27+00:00",
+      "generated_at": "2026-03-22T08:35:23+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "ai.excel",
       "profile_url": "https://www.instagram.com/ai.excel/",
       "avatar_path": "../avatars/ai.excel.jpg",
-      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/655362508_17984438474986711_1707485496012704787_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gFSjnwGcd0TZd-Ny2E6DkiJtX_HcjeYZ8Vd9DcJAKW6SYvaXGBhYQctli8GhFsOQkQ&_nc_ohc=x4TK4QEQVHcQ7kNvwF28o5Y&_nc_gid=tiaaCPRoG5fCZlMbbYOUTA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GMwJECfXVMliwOQ-ABMM_BADNbIXbmNDAQAB0j-ccb7-5&oh=00_AfwNpEfOXfUOLk3Tkd4JgMzohnz6UszmnfZVAN7n7jD5mQ&oe=69C56131&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/655362508_17984438474986711_1707485496012704787_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gHe6nGOpk8-nMMkYwDROD0ONSat3y4dckgRVNrjGOHSCAGXwPuN-15ShkRI99UDQoQ&_nc_ohc=x4TK4QEQVHcQ7kNvwEC86Xs&_nc_gid=QgClV3U5vWCWaSOCsEzxIQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GMwJECfXVMliwOQ-ABMM_BADNbIXbmNDAQAB0j-ccb7-5&oh=00_AfxAYsFBUeMtWUB6ztbour0N7id0fX915zz3Dl7cE6xbhA&oe=69C56131&_nc_sid=1e20d2",
       "full_name": "Excel tips and tricks",
       "biography": "\ud83e\udd16 AI is changing investing.\n\ud83d\udcca I show you how to use it in Excel.\n\ud83d\udd0dResearch faster. Invest smarter. Win bigger.",
       "external_url": "",
       "is_verified": false,
-      "followers": 880730,
+      "followers": 880738,
       "following": 11,
       "posts": 487,
       "recent_post_count": 24,
@@ -3529,18 +3533,19 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-01-30",
-      "avg_likes": 1863.79,
+      "avg_likes": 1865.54,
       "avg_comments": 5.42,
       "avg_video_views": 0,
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
+      "total_likes_recent_window": 18851,
       "total_video_views_recent_window": 0,
-      "engagement_rate": 0.2122,
+      "engagement_rate": 0.2124,
       "recent_posts": [
         {
           "shortcode": "DWI-4l_kxcR",
           "date": "2026-03-21",
-          "likes": 228,
+          "likes": 230,
           "comments": 0,
           "is_video": false,
           "video_views": 0,
@@ -3550,7 +3555,7 @@
         {
           "shortcode": "DWDqWd8E46b",
           "date": "2026-03-19",
-          "likes": 402,
+          "likes": 403,
           "comments": 3,
           "is_video": false,
           "video_views": 0,
@@ -3570,7 +3575,7 @@
         {
           "shortcode": "DV_fTzIk9YC",
           "date": "2026-03-17",
-          "likes": 808,
+          "likes": 811,
           "comments": 0,
           "is_video": false,
           "video_views": 0,
@@ -3580,7 +3585,7 @@
         {
           "shortcode": "DV3OzAckxIw",
           "date": "2026-03-14",
-          "likes": 5273,
+          "likes": 5308,
           "comments": 7,
           "is_video": false,
           "video_views": 0,
@@ -3620,7 +3625,7 @@
         {
           "shortcode": "DVF11f2iCv_",
           "date": "2026-02-23",
-          "likes": 1465,
+          "likes": 1466,
           "comments": 2,
           "is_video": false,
           "video_views": 0,
@@ -3780,18 +3785,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:59:08+00:00",
+      "generated_at": "2026-03-22T08:32:16+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "estoicovivir",
       "profile_url": "https://www.instagram.com/estoicovivir/",
       "avatar_path": "../avatars/estoicovivir.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/466628899_925876776160353_7325755485984072296_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45MTAuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gG8POz4AdlqjfhD9i7hxtuoaDfcpstPZCcLAFIj2BwGpApTsdYX9ZIjf9U5AcL3ULg&_nc_ohc=E1Keeqiz_dwQ7kNvwHJiyG8&_nc_gid=M--A4pocE3bAybt5E8Z4yw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GCMx0BthTFl8FEoDAGgicw3NT6plbkULAAAB0j-ccb7-5&oh=00_Afw1ZO7ik5PavIhH8vyEThVZl9rc5Mzs_jECZw-tKuBNVA&oe=69C56277&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/466628899_925876776160353_7325755485984072296_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45MTAuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gFWXFbAcDWKYdQKMliwMVAojrKqUoMU9tJlcGHcCYrH2l9iGDacJKufbc2Yvv4VJPY&_nc_ohc=E1Keeqiz_dwQ7kNvwFiIqzs&_nc_gid=MAcpZ5JXiZ7xorNX7NLcVg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GCMx0BthTFl8FEoDAGgicw3NT6plbkULAAAB0j-ccb7-5&oh=00_AfyNBoEB7BdumfHaIkitXF5u6ad0s5dAmBbNmciHmJ_G4g&oe=69C56277&_nc_sid=1e20d2",
       "full_name": "\ud835\udd17\ud835\udd2c\ud835\udd21\ud835\udd2c \ud835\udd33\ud835\udd1e \ud835\udd22\ud835\udd30\ud835\udd31\ud835\udd1e\ud835\udd2f \ud835\udd1f\ud835\udd26\ud835\udd22\ud835\udd2b",
       "biography": "Esta p\u00e1gina te ense\u00f1ar\u00e1 fortaleza y dominio sobre ti mismo, especialmente ante dificultades \ud83d\udc41\ufe0f\ud83c\udf43\n\u00danete a nuestra Comunidad Privada\ud83d\udc47",
       "external_url": "https://stan.store/traselvelo",
       "is_verified": true,
-      "followers": 836600,
+      "followers": 836599,
       "following": 7,
       "posts": 351,
       "recent_post_count": 24,
@@ -3807,18 +3812,19 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-01-03",
-      "avg_likes": 54945.38,
+      "avg_likes": 54945.75,
       "avg_comments": 174.79,
-      "avg_video_views": 140220.0,
-      "avg_video_views_per_video": 140220.0,
-      "avg_video_views_per_post": 29212.5,
-      "total_video_views_recent_window": 701100,
+      "avg_video_views": 123320.0,
+      "avg_video_views_per_video": 123320.0,
+      "avg_video_views_per_post": 25691.67,
+      "total_likes_recent_window": 45498,
+      "total_video_views_recent_window": 616600,
       "engagement_rate": 6.5886,
       "recent_posts": [
         {
           "shortcode": "DJvWm13AGDi",
           "date": "2025-05-17",
-          "likes": 421116,
+          "likes": 421115,
           "comments": 410,
           "is_video": false,
           "video_views": 0,
@@ -3851,7 +3857,7 @@
           "likes": 5687,
           "comments": 22,
           "is_video": true,
-          "video_views": 151000,
+          "video_views": 66400,
           "caption": "La mente humana se marchita cuando solo consume, pero se fortalece cuando crea. Porque vivir bien no es acumular lo que otros hicieron, sino aportar algo propio al mundo.\n\n\u2022 Coment",
           "url": "https://www.instagram.com/p/DV2IsQwggQ2/",
           "video_views_source": "selenium_reels_grid"
@@ -3870,10 +3876,10 @@
         {
           "shortcode": "DVrWCX4Eup_",
           "date": "2026-03-09",
-          "likes": 5619,
+          "likes": 5620,
           "comments": 10,
           "is_video": true,
-          "video_views": 99000,
+          "video_views": 99100,
           "caption": "Cuando cargas tu propia agua, comprendes que nada en la vida es realmente peque\u00f1o. Cada gota pesa, cada paso cuesta y cada esfuerzo deja una ense\u00f1anza. Lo que llega f\u00e1cil rara vez ",
           "url": "https://www.instagram.com/p/DVrWCX4Eup_/",
           "video_views_source": "selenium_reels_grid"
@@ -3892,7 +3898,7 @@
         {
           "shortcode": "DVhQ03cgpli",
           "date": "2026-03-05",
-          "likes": 14684,
+          "likes": 14693,
           "comments": 152,
           "is_video": false,
           "video_views": 0,
@@ -3990,7 +3996,7 @@
           "likes": 4819,
           "comments": 28,
           "is_video": true,
-          "video_views": 157000,
+          "video_views": 84100,
           "caption": "Antes de buscar dar afecto, atenci\u00f3n o devoci\u00f3n afuera, revisa si has cumplido con tus deberes m\u00e1s b\u00e1sicos. El estoicismo ense\u00f1a que la virtud comienza en casa, con la gratitud y e",
           "url": "https://www.instagram.com/p/DTvu6g3EpfL/",
           "video_views_source": "selenium_reels_grid"
@@ -4001,7 +4007,7 @@
           "likes": 10508,
           "comments": 38,
           "is_video": true,
-          "video_views": 207000,
+          "video_views": 77800,
           "caption": "A veces el bien no vuelve como recompensa, porque no naci\u00f3 para ser pagado. El estoico comprende que su valor no depende de lo que recibe, sino de lo que encarna. Ser lo bueno que ",
           "url": "https://www.instagram.com/p/DTjbOs7jMhx/",
           "video_views_source": "selenium_reels_grid"
@@ -4055,7 +4061,7 @@
           "likes": 8523,
           "comments": 18,
           "is_video": true,
-          "video_views": 164000,
+          "video_views": 110000,
           "caption": "Memorizar respuestas sin cuestionar las preguntas es aceptar el juego de otros sin haber elegido las reglas. El verdadero dominio no est\u00e1 en repetir lo aprendido, sino en examinar ",
           "url": "https://www.instagram.com/p/DTJukM-jJZW/",
           "video_views_source": "selenium_reels_grid"
@@ -4074,18 +4080,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:52:56+00:00",
+      "generated_at": "2026-03-22T08:25:50+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "chatgptips",
       "profile_url": "https://www.instagram.com/chatgptips/",
       "avatar_path": "../avatars/chatgptips.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.2885-19/432738507_1392419524750250_7881482682454204723_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGNbGJCc2UvID0LxiSwxpGtbFFzi9u5fWu5kWs0Xw32G-HEGDdnhcWrYuiL0Ckmocg&_nc_ohc=QYKOLPFRvEsQ7kNvwFKJaqY&_nc_gid=eoovJ9nP57HBUNadkWOMQA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GMsQyxmqqybvZfIEADNhE_e9pmBtbkULAAAB0j-ccb7-5&oh=00_AfyQOUj7baH6M1VDZ9G1CbdyWh-mmP7gs5tTMfL_Q4pxOQ&oe=69C582B7&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.2885-19/432738507_1392419524750250_7881482682454204723_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gGJxPh-pm3AyD6xk-Pw50dlar3i41bS7i3szlHitwnIeLzZd0JJjz3hIFpFz6nWo4o&_nc_ohc=QYKOLPFRvEsQ7kNvwGhflWk&_nc_gid=iEoDTgz238iPiCLtiXnGAA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GMsQyxmqqybvZfIEADNhE_e9pmBtbkULAAAB0j-ccb7-5&oh=00_AfwWYl7FjOS5agxT5BxwBAbSV2HBQz6R6NgsvsdZBrlRig&oe=69C582B7&_nc_sid=1e20d2",
       "full_name": "ChatGPT Tips",
       "biography": "\ud83e\udd16 On a mission to help you understand AI \n\ud83d\udca1 Find the best ChatGPT tips and tricks \n\ud83d\udcbb Brought to you by @chatgptricks\n\ud83d\udc47 Get our Free ChatGPT Guide",
       "external_url": "http://chatgptricks.store",
       "is_verified": false,
-      "followers": 603204,
+      "followers": 603210,
       "following": 4,
       "posts": 532,
       "recent_post_count": 44,
@@ -4101,13 +4107,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-21",
-      "avg_likes": 2194.41,
-      "avg_comments": 67.82,
-      "avg_video_views": 38724.12,
-      "avg_video_views_per_video": 38724.12,
-      "avg_video_views_per_post": 14961.59,
-      "total_video_views_recent_window": 658310,
-      "engagement_rate": 0.375,
+      "avg_likes": 2195.02,
+      "avg_comments": 67.95,
+      "avg_video_views": 38277.06,
+      "avg_video_views_per_video": 38277.06,
+      "avg_video_views_per_post": 14788.86,
+      "total_likes_recent_window": 39729,
+      "total_video_views_recent_window": 650710,
+      "engagement_rate": 0.3752,
       "recent_posts": [
         {
           "shortcode": "DDvUwkogb2y",
@@ -4142,10 +4149,10 @@
         {
           "shortcode": "DWH1DM-gJzv",
           "date": "2026-03-20",
-          "likes": 659,
+          "likes": 664,
           "comments": 11,
           "is_video": true,
-          "video_views": 55300,
+          "video_views": 55900,
           "caption": "AI replacing jobs isn\u2019t the future\nIt\u2019s already happening\n\nCompanies are starting to use AI for support, content, and coding\n\nThe way we work is evolving",
           "url": "https://www.instagram.com/p/DWH1DM-gJzv/",
           "video_views_source": "selenium_reels_grid"
@@ -4164,8 +4171,8 @@
         {
           "shortcode": "DWFmxlqjbIF",
           "date": "2026-03-20",
-          "likes": 1219,
-          "comments": 300,
+          "likes": 1232,
+          "comments": 306,
           "is_video": false,
           "video_views": 0,
           "caption": "Comment GTA and I\u2019ll send you the link \ud83c\udfae\n\nTurn your photos into GTA gameplay",
@@ -4195,7 +4202,7 @@
         {
           "shortcode": "DWAQIwfDc_p",
           "date": "2026-03-17",
-          "likes": 4134,
+          "likes": 4137,
           "comments": 124,
           "is_video": false,
           "video_views": 0,
@@ -4291,7 +4298,7 @@
           "likes": 446,
           "comments": 192,
           "is_video": true,
-          "video_views": 46100,
+          "video_views": 37900,
           "caption": "To enter: \n1. Comment \n2. Follow @louisgson \n\nI\u2019ll be revealing the winner in the next couple of days. \n\nShout out to @openai / @chatgpt for the gift \ud83d\ude4c",
           "url": "https://www.instagram.com/p/DV1uwQ-knqB/",
           "video_views_source": "selenium_reels_grid"
@@ -4299,7 +4306,7 @@
         {
           "shortcode": "DVzLrC_D96Q",
           "date": "2026-03-12",
-          "likes": 1483,
+          "likes": 1489,
           "comments": 9,
           "is_video": false,
           "video_views": 0,
@@ -4569,18 +4576,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T08:00:04+00:00",
+      "generated_at": "2026-03-22T08:33:24+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "programming__india",
       "profile_url": "https://www.instagram.com/programming__india/",
       "avatar_path": "../avatars/programming__india.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/277942674_746325056753674_866298753036793636_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gFZebIpdgzv_-tHDPqSWrBiNqrPcM_VmHt-uk_CyHd-DNmSFXYlM1MGPm3au4Zu3OQ&_nc_ohc=XCY3L7lUuNcQ7kNvwHsOwGG&_nc_gid=umXJLETzwqn1_61lIiEgeQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GJIRkRAKEOVXx6YCACQ3H0QgtgUMbkULAAAB0j-ccb7-5&oh=00_AfzqVFIrtGRxmcxEhdSjD342PegUEY9AMrxMIokpW1oDvw&oe=69C56B1B&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/277942674_746325056753674_866298753036793636_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEE0AD0FTrirZp1g-QF6AOt248pQoDxd4M1U_HRJ0uzJ2Wvr9k66BWn-F8QibQGeYE&_nc_ohc=XCY3L7lUuNcQ7kNvwEVCErE&_nc_gid=h5lMPdKoRQID-_j8yWJRIw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GJIRkRAKEOVXx6YCACQ3H0QgtgUMbkULAAAB0j-ccb7-5&oh=00_Afxx1St0j5uZ5CEZUZviLCMc7AqtEKYNe1Gi1b4Efh38HQ&oe=69C56B1B&_nc_sid=1e20d2",
       "full_name": "Suraj Yadav",
       "biography": "\ud83d\udcbb | Learn Programming & Coding| memes \n\ud83d\udca1 | Java | C | Python  | c++\n \ud83d\udc49For paid promotion - patelsaheel795@gmail.com\n  Free Python with AI \ud83d\udc47",
       "external_url": "https://tinyurl.com/Free-Python-AI-Training",
       "is_verified": false,
-      "followers": 504885,
+      "followers": 504884,
       "following": 50,
       "posts": 1431,
       "recent_post_count": 24,
@@ -4598,10 +4605,11 @@
       "oldest_recent_post_date": "2025-12-16",
       "avg_likes": 763.62,
       "avg_comments": 8.17,
-      "avg_video_views": 72800.0,
-      "avg_video_views_per_video": 72800.0,
-      "avg_video_views_per_post": 6066.67,
-      "total_video_views_recent_window": 145600,
+      "avg_video_views": 73300.0,
+      "avg_video_views_per_video": 73300.0,
+      "avg_video_views_per_post": 6108.33,
+      "total_likes_recent_window": 5840,
+      "total_video_views_recent_window": 146600,
       "engagement_rate": 0.1529,
       "recent_posts": [
         {
@@ -4620,7 +4628,7 @@
           "likes": 530,
           "comments": 11,
           "is_video": true,
-          "video_views": 102000,
+          "video_views": 103000,
           "caption": "When the future arrives but it clearly skipped leg day Humanoid robots out here trying to:Play basketball \u2192 immediate faceplant\nDo backflips \u2192 elegant 180\u00b0 into the floor\nWalk like",
           "url": "https://www.instagram.com/p/DWBH63tkV2z/",
           "video_views_source": "selenium_reels_grid"
@@ -4851,18 +4859,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:55:23+00:00",
+      "generated_at": "2026-03-22T08:28:26+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "planet.ai_",
       "profile_url": "https://www.instagram.com/planet.ai_/",
       "avatar_path": "../avatars/planet.ai_.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/624546261_17986629200922689_2298648820175450049_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NjUuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFkNEWpeM0kFckDilrAqvCTJ-vaFEGm4C8Y1mxb-yv5z4fpODhrOkAqeR2SjuifCqo&_nc_ohc=DCZKwjbM2VkQ7kNvwFnwCH1&_nc_gid=FalgWhbNO8b20gYis60mKA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNXROSVBSDp0vuY-AMGv7VXscOYfbmNDAQAB0j-ccb7-5&oh=00_AfwWnvE1Rm4BJvYpAmc7aDnCFVhUWNdrJDJw6VwEbzZkNw&oe=69C57C69&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/624546261_17986629200922689_2298648820175450049_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NjUuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGzB7zzxdWbNCZDdcPLi1da1JONPflZo-nhK6M2tXvJpWHLQvDClBSXflOT4w7AwZU&_nc_ohc=DCZKwjbM2VkQ7kNvwEXX5yN&_nc_gid=vg5ZiqIu-FMRIUPas55RsQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNXROSVBSDp0vuY-AMGv7VXscOYfbmNDAQAB0j-ccb7-5&oh=00_AfzVYRsf2Hr6bYReLZHSfHRbY9UYPcdTAItwVmzb_YaZ_w&oe=69C57C69&_nc_sid=1e20d2",
       "full_name": "Planet AI",
       "biography": "AI Generated Content \ud83e\udd16\nDM/Email for promotion/enquiry \u2049\ufe0f\nAI Secrets Revealed \ud83d\udcb8 Check out our e-books \u2b07\ufe0f",
       "external_url": "https://linktr.ee/planet.ai",
       "is_verified": false,
-      "followers": 498677,
+      "followers": 498668,
       "following": 35,
       "posts": 1071,
       "recent_post_count": 65,
@@ -4878,21 +4886,22 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 1142.77,
-      "avg_comments": 21.09,
-      "avg_video_views": 76098.49,
-      "avg_video_views_per_video": 76098.49,
-      "avg_video_views_per_post": 52683.57,
-      "total_video_views_recent_window": 3424432,
-      "engagement_rate": 0.2334,
+      "avg_likes": 1145.11,
+      "avg_comments": 21.11,
+      "avg_video_views": 74725.58,
+      "avg_video_views_per_video": 74725.58,
+      "avg_video_views_per_post": 51733.09,
+      "total_likes_recent_window": 74399,
+      "total_video_views_recent_window": 3362651,
+      "engagement_rate": 0.2339,
       "recent_posts": [
         {
           "shortcode": "DWKptocjjfP",
           "date": "2026-03-22",
-          "likes": 2244,
-          "comments": 39,
+          "likes": 2351,
+          "comments": 40,
           "is_video": true,
-          "video_views": 68900,
+          "video_views": 72700,
           "caption": "It looks like a massive sci-fi showdown straight out of a $200M blockbuster\u2026 but it isn\u2019t.\n\nCreated by @lordofacca, a lone figure dismantles entire fleets of war machines with surg",
           "url": "https://www.instagram.com/p/DWKptocjjfP/",
           "video_views_source": "selenium_reels_grid"
@@ -4900,10 +4909,10 @@
         {
           "shortcode": "DWILp6xjoc2",
           "date": "2026-03-21",
-          "likes": 666,
+          "likes": 672,
           "comments": 12,
           "is_video": true,
-          "video_views": 28800,
+          "video_views": 29000,
           "caption": "A creator reimagined Harry Potter through an AI-generated fashion lens with \u201cHarry Potter by Balenciaga (2026),\u201d delivering a cinematic parody that feels far closer to a polished s",
           "url": "https://www.instagram.com/p/DWILp6xjoc2/",
           "video_views_source": "selenium_reels_grid"
@@ -4914,7 +4923,7 @@
           "likes": 367,
           "comments": 2,
           "is_video": true,
-          "video_views": 27100,
+          "video_views": 10,
           "caption": "Here\u2019s a sharper, more impactful variation of your caption:\n\nAI taking over jobs isn\u2019t some distant scenario\nIt\u2019s already unfolding in real time\n\nBusinesses are now relying on AI f",
           "url": "https://www.instagram.com/p/DWH5K3djt-d/",
           "video_views_source": "selenium_reels_grid"
@@ -4922,7 +4931,7 @@
         {
           "shortcode": "DWGzuanDsmI",
           "date": "2026-03-20",
-          "likes": 572,
+          "likes": 573,
           "comments": 6,
           "is_video": true,
           "video_views": 12500,
@@ -4953,7 +4962,7 @@
         {
           "shortcode": "DWE61jRlW-8",
           "date": "2026-03-19",
-          "likes": 14759,
+          "likes": 14791,
           "comments": 175,
           "is_video": false,
           "video_views": 0,
@@ -4963,10 +4972,10 @@
         {
           "shortcode": "DWEPy3BDvHv",
           "date": "2026-03-19",
-          "likes": 1262,
+          "likes": 1265,
           "comments": 17,
           "is_video": true,
-          "video_views": 44300,
+          "video_views": 44400,
           "caption": "AI is starting to reshape iconic stories in ways no one saw coming. In this project, a creator flips the world of Harry Potter into a completely different reality, where Hogwarts f",
           "url": "https://www.instagram.com/p/DWEPy3BDvHv/",
           "video_views_source": "selenium_reels_grid"
@@ -4995,7 +5004,7 @@
         {
           "shortcode": "DWCS8REDrVi",
           "date": "2026-03-18",
-          "likes": 229,
+          "likes": 230,
           "comments": 23,
           "is_video": false,
           "video_views": 0,
@@ -5250,7 +5259,7 @@
           "likes": 904,
           "comments": 14,
           "is_video": true,
-          "video_views": 54500,
+          "video_views": 54600,
           "caption": "AI really changed the game \ud83d\ude2d\ud83e\udd23\nRAM prices are starting to feel completely out of sync with what normal PC upgrades used to cost. What was once one of the easiest and cheapest upgrad",
           "url": "https://www.instagram.com/p/DVpR2eSDqtR/",
           "video_views_source": "selenium_reels_grid"
@@ -5312,7 +5321,7 @@
         {
           "shortcode": "DVh1TgtDjWP",
           "date": "2026-03-06",
-          "likes": 4158,
+          "likes": 4160,
           "comments": 90,
           "is_video": true,
           "video_views": 198000,
@@ -5414,7 +5423,7 @@
           "likes": 511,
           "comments": 5,
           "is_video": true,
-          "video_views": 31000,
+          "video_views": 9,
           "caption": "@EHuanglu ( el.cine ) demonstrates the mind-blowing power of Seedance 2.0, ByteDance\u2019s latest model that can transform a simple child's drawing into a high-fidelity, $100,000-quali",
           "url": "https://www.instagram.com/p/DVXW3k8Do1Q/",
           "video_views_source": "selenium_reels_grid"
@@ -5544,7 +5553,7 @@
           "likes": 432,
           "comments": 13,
           "is_video": true,
-          "video_views": 24400,
+          "video_views": 16500,
           "caption": "This isn\u2019t archival footage.\n\nThis is a fight that never actually happened.\n\nBruce Lee vs. Jean-Claude Van Damme. Speed versus raw power \ud83d\udca5\n\nI brought this dream matchup to life usi",
           "url": "https://www.instagram.com/p/DVB9vHkDife/",
           "video_views_source": "selenium_reels_grid"
@@ -5584,13 +5593,13 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:57:55+00:00",
+      "generated_at": "2026-03-22T08:31:01+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "artificialmente.ia",
       "profile_url": "https://www.instagram.com/artificialmente.ia/",
       "avatar_path": "../avatars/artificialmente.ia.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gFH9ZkoM7mQ3rUtL5irBgM2jVd1w-IRpaqzo3saUpC9DPuoQ9TTagSSh2IARs7mY4A&_nc_ohc=l6jLFOmBifEQ7kNvwEhJNdB&_nc_gid=oxqmbOYAugh2MC5sycYPvQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_AfzpubUP8U8pXSf34Gwq9OQxW7gwyuXIhW7RaucsJYpm4g&oe=69C57D86&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGc6ZDYVrNeeKvg67tkzE8ceH3dic8GCoXes_dgyV1W9GcLJ07zosv8ErUu69KrmUQ&_nc_ohc=l6jLFOmBifEQ7kNvwHrNXNg&_nc_gid=lA5Ra5RTyGUOuki_8rmdwA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_Afz7574SavOBFr4YkwZQ0jy9WR-ZOmb-EI4bW5OKCbiw9A&oe=69C57D86&_nc_sid=1e20d2",
       "full_name": "Ivan \u2022 IA \u2022 Tecnolog\u00eda",
       "biography": "\ud83e\uddd1\u200d\ud83d\udcbb Creador / Futurista @ivanelgrande\n\ud83e\udd16 S\u00edgueme antes de que sea tarde\n\ud83d\udce5 artificialmente.ia@gmail.com\n\ud83d\udc47 O usas IA o te quedas atr\u00e1s",
       "external_url": "http://ivanelgrande.com",
@@ -5611,13 +5620,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 5681.88,
-      "avg_comments": 101.49,
-      "avg_video_views": 127705.26,
-      "avg_video_views_per_video": 127705.26,
-      "avg_video_views_per_post": 64704.0,
-      "total_video_views_recent_window": 4852800,
-      "engagement_rate": 1.663,
+      "avg_likes": 5685.84,
+      "avg_comments": 101.51,
+      "avg_video_views": 119581.74,
+      "avg_video_views_per_video": 119581.74,
+      "avg_video_views_per_post": 60588.08,
+      "total_likes_recent_window": 378689,
+      "total_video_views_recent_window": 4544106,
+      "engagement_rate": 1.6641,
       "recent_posts": [
         {
           "shortcode": "DWByMuajpBM",
@@ -5625,7 +5635,7 @@
           "likes": 3,
           "comments": 8,
           "is_video": true,
-          "video_views": 14600,
+          "video_views": 6,
           "caption": "Y el ganador de un a\u00f1o completo de ChatGPT Plus es\u2026\n\n@alvaro_nz13 \ud83d\ude4c\n\nGracias a todos los que participaron. Est\u00e9n atentos porque se vienen m\u00e1s",
           "url": "https://www.instagram.com/p/DWByMuajpBM/",
           "video_views_source": "selenium_reels_grid"
@@ -5653,10 +5663,10 @@
         {
           "shortcode": "DWKLTVOEszL",
           "date": "2026-03-21",
-          "likes": 1716,
+          "likes": 1721,
           "comments": 35,
           "is_video": true,
-          "video_views": 58800,
+          "video_views": 59200,
           "caption": "Parece una escena de batalla sci-fi digna de una pel\u00edcula de $200M\u2026 pero no lo es.\n\nCreado por @lordofacca, un solo personaje destruye flotas de m\u00e1quinas de guerra con precisi\u00f3n us",
           "url": "https://www.instagram.com/p/DWKLTVOEszL/",
           "video_views_source": "selenium_reels_grid"
@@ -5664,7 +5674,7 @@
         {
           "shortcode": "DWIDtfKj-Lh",
           "date": "2026-03-21",
-          "likes": 802,
+          "likes": 804,
           "comments": 15,
           "is_video": false,
           "video_views": 0,
@@ -5674,7 +5684,7 @@
         {
           "shortcode": "DWHfwydDz6Q",
           "date": "2026-03-20",
-          "likes": 1023,
+          "likes": 1029,
           "comments": 25,
           "is_video": false,
           "video_views": 0,
@@ -5684,10 +5694,10 @@
         {
           "shortcode": "DWHI2yhDd9L",
           "date": "2026-03-20",
-          "likes": 29652,
-          "comments": 65,
+          "likes": 29813,
+          "comments": 66,
           "is_video": true,
-          "video_views": 271000,
+          "video_views": 272000,
           "caption": "Esto es exactamente para lo que se cre\u00f3 la IA \ud83d\ude2d Un remake viral de la ic\u00f3nica escena de \u201cwazzup\u201d de Scary Movie la reimagina con Spider-Man y el Duende Verde en una ca\u00f3tica videoll",
           "url": "https://www.instagram.com/p/DWHI2yhDd9L/",
           "video_views_source": "selenium_reels_grid"
@@ -5705,10 +5715,10 @@
         {
           "shortcode": "DWFVtHtDINY",
           "date": "2026-03-19",
-          "likes": 979,
+          "likes": 981,
           "comments": 35,
           "is_video": true,
-          "video_views": 38500,
+          "video_views": 38600,
           "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
           "url": "https://www.instagram.com/p/DWFVtHtDINY/",
           "video_views_source": "selenium_reels_grid"
@@ -5748,7 +5758,7 @@
         {
           "shortcode": "DWCQ4NZlTsc",
           "date": "2026-03-18",
-          "likes": 66663,
+          "likes": 66722,
           "comments": 717,
           "is_video": false,
           "video_views": 0,
@@ -5811,7 +5821,7 @@
         {
           "shortcode": "DV8z0wvDTVG",
           "date": "2026-03-16",
-          "likes": 16337,
+          "likes": 16338,
           "comments": 45,
           "is_video": true,
           "video_views": 224000,
@@ -5822,7 +5832,7 @@
         {
           "shortcode": "DV7YV1jDBPB",
           "date": "2026-03-16",
-          "likes": 4014,
+          "likes": 4023,
           "comments": 24,
           "is_video": false,
           "video_views": 0,
@@ -5832,7 +5842,7 @@
         {
           "shortcode": "DV6tlKmCcPk",
           "date": "2026-03-15",
-          "likes": 45250,
+          "likes": 45292,
           "comments": 321,
           "is_video": true,
           "video_views": 536000,
@@ -5898,7 +5908,7 @@
           "likes": 6999,
           "comments": 172,
           "is_video": true,
-          "video_views": 151000,
+          "video_views": 64700,
           "caption": "Esa es la mejor l\u00ednea de tiempo.\n\n\ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA\u201d y ",
           "url": "https://www.instagram.com/p/DV1b7XJlNfi/",
           "video_views_source": "selenium_reels_grid"
@@ -5937,7 +5947,7 @@
         {
           "shortcode": "DVwIX1rDX9q",
           "date": "2026-03-11",
-          "likes": 1153,
+          "likes": 1154,
           "comments": 45,
           "is_video": false,
           "video_views": 0,
@@ -5978,7 +5988,7 @@
         {
           "shortcode": "DVtl8lUD-kB",
           "date": "2026-03-10",
-          "likes": 4199,
+          "likes": 4201,
           "comments": 156,
           "is_video": true,
           "video_views": 194000,
@@ -6013,7 +6023,7 @@
           "likes": 1318,
           "comments": 14,
           "is_video": true,
-          "video_views": 41300,
+          "video_views": 31400,
           "caption": "Huawei acaba de presentar la MateBook Fold Ultimate Design, una de las laptops m\u00e1s futuristas hasta ahora.\n\nCuenta con una pantalla OLED flexible de 18 pulgadas que se pliega para ",
           "url": "https://www.instagram.com/p/DVrHmXtj6Oh/",
           "video_views_source": "selenium_reels_grid"
@@ -6021,7 +6031,7 @@
         {
           "shortcode": "DVo6u8ZlW8M",
           "date": "2026-03-08",
-          "likes": 21218,
+          "likes": 21221,
           "comments": 328,
           "is_video": false,
           "video_views": 0,
@@ -6084,7 +6094,7 @@
         {
           "shortcode": "DVg-irDiUGr",
           "date": "2026-03-05",
-          "likes": 72527,
+          "likes": 72529,
           "comments": 288,
           "is_video": true,
           "video_views": 1000000,
@@ -6119,7 +6129,7 @@
           "likes": 1560,
           "comments": 44,
           "is_video": true,
-          "video_views": 106000,
+          "video_views": 72500,
           "caption": "\u201cSe acab\u00f3 para los artistas de VFX\u2026\u201d.\n\nEsa frase aparece una y otra vez cada vez que la gente ve herramientas de animaci\u00f3n con IA que ahora permiten dirigir el movimiento usando pr",
           "url": "https://www.instagram.com/p/DVeCNkgkWF9/",
           "video_views_source": "selenium_reels_grid"
@@ -6130,7 +6140,7 @@
           "likes": 263,
           "comments": 36,
           "is_video": true,
-          "video_views": 23900,
+          "video_views": 17700,
           "caption": "Gracias por el regalo / Thank you for the gift \ud83c\udf81\ud83d\ude4c\n\n@openai @chatgpt",
           "url": "https://www.instagram.com/p/DVcPoWNgQSR/",
           "video_views_source": "selenium_reels_grid"
@@ -6224,7 +6234,7 @@
           "likes": 3349,
           "comments": 26,
           "is_video": true,
-          "video_views": 209000,
+          "video_views": 49300,
           "caption": "Todos hemos escuchado la frase \u201cno reinventes la rueda\u201d, pero investigadores de Imperial College London decidieron ignorarla y lograron un dise\u00f1o brillante. Crearon una rueda que p",
           "url": "https://www.instagram.com/p/DVSLPcbDGM9/",
           "video_views_source": "selenium_reels_grid"
@@ -6325,7 +6335,7 @@
         {
           "shortcode": "DVJwQR-EtoW",
           "date": "2026-02-24",
-          "likes": 1522,
+          "likes": 1523,
           "comments": 67,
           "is_video": true,
           "video_views": 53600,
@@ -6378,7 +6388,7 @@
         {
           "shortcode": "DU_5IYGjYH0",
           "date": "2026-02-20",
-          "likes": 1248,
+          "likes": 1249,
           "comments": 26,
           "is_video": false,
           "video_views": 0,
@@ -6410,18 +6420,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:53:30+00:00",
+      "generated_at": "2026-03-22T08:26:29+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "em3rging",
       "profile_url": "https://www.instagram.com/em3rging/",
       "avatar_path": "../avatars/em3rging.jpg",
-      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/471958446_1630933680844075_8068801945210581763_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43NzIuYzIifQ&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gGyW4ibtN4gGlXA8B7xlHMNLU4ZJC9nbouSp1g6Ttjhakeg_wSaXzrmB9aqh6R79YU&_nc_ohc=oM1oMmN1hNkQ7kNvwEB3sCs&_nc_gid=x0nd6rfPG2MO5wFVbW7k7Q&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK6DIRwr7bJWU8sFAAPzQWueJPpvbkULAAAB0j-ccb7-5&oh=00_AfwUE40EfQNE5YlkztjgOTvpw35PY_OGwdhau8F23UChKg&oe=69C57EB5&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/471958446_1630933680844075_8068801945210581763_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43NzIuYzIifQ&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gF8Uri8czHXy0__JOnWDc51jj8b7PrqnfvbD0j6Azwp3K45SszYspO3qNvPO6IMCcc&_nc_ohc=oM1oMmN1hNkQ7kNvwHhg8L8&_nc_gid=dPUeUpSGz-so8xzESznZeQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK6DIRwr7bJWU8sFAAPzQWueJPpvbkULAAAB0j-ccb7-5&oh=00_Afz-8CCTz2Eil5BvE_rZ8p5Us4gPSHkkvCrswh8EA82XIw&oe=69C57EB5&_nc_sid=1e20d2",
       "full_name": "Emerging Technological Advancements",
       "biography": "\ud83d\udc49 Tech enthusiasts \n\ud83d\udd25 Where technology meets well-being and planetary sustainability\ud83c\udf31\n\ud83d\udc8c contact@sentientagency.io",
       "external_url": "https://sentientagency.io",
       "is_verified": false,
-      "followers": 218526,
+      "followers": 218528,
       "following": 49,
       "posts": 1702,
       "recent_post_count": 69,
@@ -6437,18 +6447,19 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 2058.48,
-      "avg_comments": 32.55,
-      "avg_video_views": 129766.85,
-      "avg_video_views_per_video": 129766.85,
-      "avg_video_views_per_post": 37613.58,
-      "total_video_views_recent_window": 2595337,
-      "engagement_rate": 0.9569,
+      "avg_likes": 2061.99,
+      "avg_comments": 32.61,
+      "avg_video_views": 124052.3,
+      "avg_video_views_per_video": 124052.3,
+      "avg_video_views_per_post": 35957.19,
+      "total_likes_recent_window": 142238,
+      "total_video_views_recent_window": 2481046,
+      "engagement_rate": 0.9585,
       "recent_posts": [
         {
           "shortcode": "DWKvFvBgCO4",
           "date": "2026-03-22",
-          "likes": 274,
+          "likes": 281,
           "comments": 3,
           "is_video": false,
           "video_views": 0,
@@ -6458,7 +6469,7 @@
         {
           "shortcode": "DWJ96sRgEaR",
           "date": "2026-03-21",
-          "likes": 78,
+          "likes": 79,
           "comments": 9,
           "is_video": false,
           "video_views": 0,
@@ -6468,10 +6479,10 @@
         {
           "shortcode": "DWISQvVgDYt",
           "date": "2026-03-21",
-          "likes": 240,
+          "likes": 243,
           "comments": 2,
           "is_video": true,
-          "video_views": 28200,
+          "video_views": 28300,
           "caption": "Researchers in China have developed a next-generation Metal-Polymer Conductor (MPC) by combining elastic polymers with liquid metals like gallium and indium, creating a material th",
           "url": "https://www.instagram.com/p/DWISQvVgDYt/",
           "video_views_source": "selenium_reels_grid"
@@ -6489,10 +6500,10 @@
         {
           "shortcode": "DWHnXN7EcYp",
           "date": "2026-03-20",
-          "likes": 296,
+          "likes": 298,
           "comments": 9,
           "is_video": true,
-          "video_views": 26300,
+          "video_views": 9,
           "caption": "Electrons all carry the same negative charge, so they naturally repel one another. This constant repulsion generates a force strong enough to stop atoms from ever truly overlapping",
           "url": "https://www.instagram.com/p/DWHnXN7EcYp/",
           "video_views_source": "selenium_reels_grid"
@@ -6500,7 +6511,7 @@
         {
           "shortcode": "DWHclVmkdAo",
           "date": "2026-03-20",
-          "likes": 117,
+          "likes": 118,
           "comments": 2,
           "is_video": false,
           "video_views": 0,
@@ -6513,7 +6524,7 @@
           "likes": 49,
           "comments": 10,
           "is_video": true,
-          "video_views": 8,
+          "video_views": 2,
           "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
           "url": "https://www.instagram.com/p/DWFkcE5gM8D/",
           "video_views_source": "selenium_reels_grid"
@@ -6532,7 +6543,7 @@
         {
           "shortcode": "DWFDrQUkR6Y",
           "date": "2026-03-19",
-          "likes": 466,
+          "likes": 467,
           "comments": 5,
           "is_video": false,
           "video_views": 0,
@@ -6542,7 +6553,7 @@
         {
           "shortcode": "DWE3Sw2kXOM",
           "date": "2026-03-19",
-          "likes": 197,
+          "likes": 198,
           "comments": 2,
           "is_video": true,
           "video_views": 14500,
@@ -6553,7 +6564,7 @@
         {
           "shortcode": "DWC-4G6AN69",
           "date": "2026-03-19",
-          "likes": 964,
+          "likes": 968,
           "comments": 10,
           "is_video": false,
           "video_views": 0,
@@ -6566,7 +6577,7 @@
           "likes": 89,
           "comments": 0,
           "is_video": true,
-          "video_views": 19000,
+          "video_views": 6,
           "caption": "Road repairs don\u2019t have to mean traffic jams and endless delays. New technologies are making it possible to fix potholes in minutes while cars keep moving, turning what used to be ",
           "url": "https://www.instagram.com/p/DWCjdeMkZ_m/",
           "video_views_source": "selenium_reels_grid"
@@ -6670,7 +6681,7 @@
           "likes": 411,
           "comments": 2,
           "is_video": true,
-          "video_views": 41500,
+          "video_views": 13200,
           "caption": "China has developed a swallowable capsule powered by AI that can examine the stomach in minutes without the need for tubes, sedation, or invasive procedures.\n\nOnce swallowed, the s",
           "url": "https://www.instagram.com/p/DV3Y0SWgEYY/",
           "video_views_source": "selenium_reels_grid"
@@ -6688,8 +6699,8 @@
         {
           "shortcode": "DV1bmoZEQq5",
           "date": "2026-03-13",
-          "likes": 118555,
-          "comments": 1632,
+          "likes": 118769,
+          "comments": 1636,
           "is_video": true,
           "video_views": 2200000,
           "caption": "This robotic mouth recreates human speech by imitating the real physical mechanics of how people talk, instead of depending on text to speech systems or digital voice synthesis.\n\nR",
@@ -6800,7 +6811,7 @@
         {
           "shortcode": "DVrv_1OgJ96",
           "date": "2026-03-10",
-          "likes": 2626,
+          "likes": 2633,
           "comments": 70,
           "is_video": false,
           "video_views": 0,
@@ -6963,7 +6974,7 @@
         {
           "shortcode": "DVYiqSBAJS6",
           "date": "2026-03-02",
-          "likes": 586,
+          "likes": 587,
           "comments": 28,
           "is_video": false,
           "video_views": 0,
@@ -6976,7 +6987,7 @@
           "likes": 928,
           "comments": 1,
           "is_video": true,
-          "video_views": 62000,
+          "video_views": 21200,
           "caption": "A long-protected mangrove parcel in Broward County is now facing potential removal from the Environmentally Sensitive Lands (ESL) Map to make way for warehouse development. \ud83d\udea8\n\nMang",
           "url": "https://www.instagram.com/p/DVWu-ATkYIM/",
           "video_views_source": "selenium_reels_grid"
@@ -7158,18 +7169,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:54:39+00:00",
+      "generated_at": "2026-03-22T08:27:50+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "ainterestingupdate",
       "profile_url": "https://www.instagram.com/ainterestingupdate/",
       "avatar_path": "../avatars/ainterestingupdate.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/529816806_17960071682963045_8078755290205806234_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFhtXKbSnWSw8VvV6595SIj5S5xbXJJ_VdvKIe3-_l_aIfLobrwtK3Pn61UB9SjEZI&_nc_ohc=8eM7faNeYM0Q7kNvwFGCLMz&_nc_gid=xBerzmChPZCtV2lOe27Vrg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOZclB9lts0Ml84-AJpeBiQigR1wbmNDAQAB0j-ccb7-5&oh=00_Afxd-dJCW2-spiQ44_VbuFe8WD_rPT7PMve_aMf3myQghw&oe=69C588E1&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/529816806_17960071682963045_8078755290205806234_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGCEk5oMTK6So4BM8oHh4DX01I8eRvrdcghAnF7w3prpPe3yNSzJ-KFh9NIOhgBeNw&_nc_ohc=8eM7faNeYM0Q7kNvwEzUn5q&_nc_gid=VxSWEv4jhJVi4zP0YzsTFg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOZclB9lts0Ml84-AJpeBiQigR1wbmNDAQAB0j-ccb7-5&oh=00_Afyt1jrNgRB76-GGtcj_7uE6moc3XpFmLTlJvX1ZpBDHbw&oe=69C588E1&_nc_sid=1e20d2",
       "full_name": "AI / Tech Updates",
       "biography": "\ud83e\udde0 Follow to learn something new about AI\n\ud83e\udd16 Brought to you by @sentientagency 25M+\n\ud83d\udce8 Collab contact@sentientagency.io\n\ud83d\udc47 Get our Free ChatGPT Guide",
       "external_url": "http://chatgptricks.store",
       "is_verified": false,
-      "followers": 183465,
+      "followers": 183464,
       "following": 43,
       "posts": 923,
       "recent_post_count": 71,
@@ -7185,21 +7196,22 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 320.69,
-      "avg_comments": 8.56,
-      "avg_video_views": 19789.47,
-      "avg_video_views_per_video": 19789.47,
-      "avg_video_views_per_post": 15887.32,
-      "total_video_views_recent_window": 1128000,
-      "engagement_rate": 0.1795,
+      "avg_likes": 321.06,
+      "avg_comments": 8.58,
+      "avg_video_views": 17296.26,
+      "avg_video_views_per_video": 17296.26,
+      "avg_video_views_per_post": 13885.73,
+      "total_likes_recent_window": 22795,
+      "total_video_views_recent_window": 985887,
+      "engagement_rate": 0.1797,
       "recent_posts": [
         {
           "shortcode": "DWKN7IcDT5d",
           "date": "2026-03-21",
-          "likes": 683,
+          "likes": 704,
           "comments": 28,
           "is_video": true,
-          "video_views": 39400,
+          "video_views": 14500,
           "caption": "It looks like a full sci-fi battle scene straight out of a $200M movie\u2026 but it\u2019s not.\n\nCreated by @lordofacca, a single character wipes out fleets of war machines with precision, u",
           "url": "https://www.instagram.com/p/DWKN7IcDT5d/",
           "video_views_source": "selenium_reels_grid"
@@ -7207,7 +7219,7 @@
         {
           "shortcode": "DWH8_GNlOKe",
           "date": "2026-03-20",
-          "likes": 187,
+          "likes": 188,
           "comments": 17,
           "is_video": false,
           "video_views": 0,
@@ -7217,8 +7229,8 @@
         {
           "shortcode": "DWHiXL4hYnc",
           "date": "2026-03-20",
-          "likes": 81,
-          "comments": 0,
+          "likes": 82,
+          "comments": 1,
           "is_video": true,
           "video_views": 7,
           "caption": "This free, open-source project leverages OpenStreetMap data to replicate real-world layouts directly inside Minecraft. Its algorithm accurately places roads, buildings, and terrain",
@@ -7231,7 +7243,7 @@
           "likes": 244,
           "comments": 10,
           "is_video": true,
-          "video_views": 34500,
+          "video_views": 34600,
           "caption": "Booster Robotics K1 demo almost goes wrong \ud83d\ude33 \n\nAsimov\u2019s Three Laws of Robotics\u2014don\u2019t harm humans, obey orders, protect themselves\u2014sound simple, but seeing real humanoid robots move",
           "url": "https://www.instagram.com/p/DWHamZbj_w3/",
           "video_views_source": "selenium_reels_grid"
@@ -7239,7 +7251,7 @@
         {
           "shortcode": "DWHFSeqEWUl",
           "date": "2026-03-20",
-          "likes": 486,
+          "likes": 487,
           "comments": 8,
           "is_video": true,
           "video_views": 12700,
@@ -7275,7 +7287,7 @@
           "likes": 171,
           "comments": 3,
           "is_video": true,
-          "video_views": 9,
+          "video_views": 7,
           "caption": "GTA 4 reimagined in Russia \ud83d\udc40\n\nFor decades, high-end graphics relied on brute-force physics\u2014calculating every light bounce, surface, and reflection in real time. But that approach i",
           "url": "https://www.instagram.com/p/DWE62kSgONO/",
           "video_views_source": "selenium_reels_grid"
@@ -7305,7 +7317,7 @@
         {
           "shortcode": "DWCOs5UDEk_",
           "date": "2026-03-18",
-          "likes": 667,
+          "likes": 668,
           "comments": 14,
           "is_video": true,
           "video_views": 21200,
@@ -7319,7 +7331,7 @@
           "likes": 123,
           "comments": 4,
           "is_video": true,
-          "video_views": 11700,
+          "video_views": 11800,
           "caption": "Huawei is pushing some of the most unconventional hardware in tech\u2014like the MateBook Fold, a single flexible display that shifts from tablet to full laptop. While global attention ",
           "url": "https://www.instagram.com/p/DWAEsjajD6w/",
           "video_views_source": "selenium_reels_grid"
@@ -7330,7 +7342,7 @@
           "likes": 166,
           "comments": 7,
           "is_video": true,
-          "video_views": 10,
+          "video_views": 3,
           "caption": "Harry Spotter and the Half-Rep Prince \ud83d\udcaa\n\n\u2022 Follow @ainterestingupdate for more content on Al and technology.\n\n#ai #bodybuilding #harrypotter #fitness #multiverse",
           "url": "https://www.instagram.com/p/DV_9XclmATf/",
           "video_views_source": "selenium_reels_grid"
@@ -7396,7 +7408,7 @@
           "likes": 270,
           "comments": 4,
           "is_video": true,
-          "video_views": 23800,
+          "video_views": 15800,
           "caption": "This scene would cost a studio $5M.\nSomeone with Al did it in minutes.\n\n@higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
           "url": "https://www.instagram.com/p/DV4sRt_jBZp/",
           "video_views_source": "selenium_reels_grid"
@@ -7439,7 +7451,7 @@
           "likes": 649,
           "comments": 21,
           "is_video": true,
-          "video_views": 25400,
+          "video_views": 17100,
           "caption": "This AI-generated video imagining iconic late celebrities receiving their awards in the afterlife is going viral.\n\n\u2022 Follow @ainterestingupdate for more content on Al and technolog",
           "url": "https://www.instagram.com/p/DV1c6ytjxCn/",
           "video_views_source": "selenium_reels_grid"
@@ -7591,7 +7603,7 @@
           "likes": 62,
           "comments": 0,
           "is_video": true,
-          "video_views": 9,
+          "video_views": 6,
           "caption": "It\u2019s honestly wild how tools like Seedance can turn anime-style scenes into something that looks like a live-action thriller.\n\nWhat once existed only as drawings\u2014exaggerated fights",
           "url": "https://www.instagram.com/p/DVq_NklERut/",
           "video_views_source": "selenium_reels_grid"
@@ -7602,7 +7614,7 @@
           "likes": 394,
           "comments": 8,
           "is_video": true,
-          "video_views": 19700,
+          "video_views": 15400,
           "caption": "AI is becoming more helpful every day\u2014writing emails, summarizing documents, managing schedules, and answering questions instantly. But the smarter these systems get, the more acce",
           "url": "https://www.instagram.com/p/DVlys_EEV15/",
           "video_views_source": "selenium_reels_grid"
@@ -7699,7 +7711,7 @@
           "likes": 187,
           "comments": 1,
           "is_video": true,
-          "video_views": 13800,
+          "video_views": 10000,
           "caption": "Memory prices are rising fast. Some high-capacity RAM kits are now nearing $900, fueled by surging demand from AI, data centers, and next-gen hardware.\n\nAs AI workloads grow more m",
           "url": "https://www.instagram.com/p/DVb5Y_AEco4/",
           "video_views_source": "selenium_reels_grid"
@@ -7721,7 +7733,7 @@
           "likes": 140,
           "comments": 1,
           "is_video": true,
-          "video_views": 15200,
+          "video_views": 3,
           "caption": "An ordinary, unremarkable video. A kid on a sidewalk. Nothing about it seems revealing.\n\nYet AI can analyze background details most people overlook\u2014tree lines, rooftops, shadows, r",
           "url": "https://www.instagram.com/p/DVZZ8Y8keen/",
           "video_views_source": "selenium_reels_grid"
@@ -7763,7 +7775,7 @@
           "likes": 109,
           "comments": 3,
           "is_video": true,
-          "video_views": 6,
+          "video_views": 2,
           "caption": "Si puedes imaginarlo\u2026 ahora puede ser creado \ud83d\udc40\n\nHecho con Seedance 2.0 por @coffeevectors\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Com",
           "url": "https://www.instagram.com/p/DVUKEphEYdg/",
           "video_views_source": "selenium_reels_grid"
@@ -7771,7 +7783,7 @@
         {
           "shortcode": "DVR9mLOkWCM",
           "date": "2026-02-27",
-          "likes": 319,
+          "likes": 320,
           "comments": 13,
           "is_video": false,
           "video_views": 0,
@@ -7784,7 +7796,7 @@
           "likes": 499,
           "comments": 8,
           "is_video": true,
-          "video_views": 45500,
+          "video_views": 16500,
           "caption": "For years we\u2019ve heard \u201cdon\u2019t reinvent the wheel.\u201d \ud83d\udede But some breakthroughs come from doing exactly that.\n\nResearchers developed a wheel that looks conventional yet passively adapts",
           "url": "https://www.instagram.com/p/DVRpBHbEVGr/",
           "video_views_source": "selenium_reels_grid"
@@ -7826,7 +7838,7 @@
           "likes": 602,
           "comments": 22,
           "is_video": true,
-          "video_views": 53500,
+          "video_views": 13600,
           "caption": "This felt straight out of Black Mirror \ud83d\udc80\n\nA video by @aicandy.be imagines the year 2036, where AI and robotics have replaced 80% of jobs. After a massive market crash in 2026, a sy",
           "url": "https://www.instagram.com/p/DVObdf4kfGX/",
           "video_views_source": "selenium_reels_grid"
@@ -7837,7 +7849,7 @@
           "likes": 256,
           "comments": 8,
           "is_video": true,
-          "video_views": 26700,
+          "video_views": 17800,
           "caption": "Since Stranger Things ended last December, fans have been imagining what could come next.\n\nOne creator used Seedance 2.0 to bring that idea to life, crafting a scene where Eleven a",
           "url": "https://www.instagram.com/p/DVM-fOBjoO0/",
           "video_views_source": "selenium_reels_grid"
@@ -7963,25 +7975,25 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:56:29+00:00",
+      "generated_at": "2026-03-22T08:29:34+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "sergioprompts",
       "profile_url": "https://www.instagram.com/sergioprompts/",
       "avatar_path": "../avatars/sergioprompts.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/517338180_17879349849356321_6720889983526730786_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NTMuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFEjMyN2GIc6d81HyT5MGK9eyXJlqtEHg_-0ItzQw-jDeVIG9WSkghsRA8f1E3dAjQ&_nc_ohc=4pE5hcoZnKgQ7kNvwFo1faF&_nc_gid=PrWYWF_qKTpxu0MCHVts2A&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GET01R4h_JWILIU-ACJ8l8rUZUVdbmNDAQAB0j-ccb7-5&oh=00_AfzkPF3o2SwgkpUWZSkN7aqONH9V0yNzhM5Bh_0qcMJ7dQ&oe=69C56E4A&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/517338180_17879349849356321_6720889983526730786_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NTMuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGdE8fZU9-iqlKaJ96b-mtIWsanfQLi1NXZjpeclf52OkCKAHumCmQSe_9I4QW_U-c&_nc_ohc=4pE5hcoZnKgQ7kNvwGTJTSJ&_nc_gid=BiwoHlX8PHqkdSLlMwIdbw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GET01R4h_JWILIU-ACJ8l8rUZUVdbmNDAQAB0j-ccb7-5&oh=00_AfxyNFnwFDh_3xSf9dVPFErKu0RY4fvSBqg84CUR5OPH1Q&oe=69C56E4A&_nc_sid=1e20d2",
       "full_name": "Sergio Fabeidi \u2022 Inteligencia Artificial",
       "biography": "\ud83e\udde0 Dominamos el lenguaje de los prompts\n\ud83d\udea8 Si no usas la IA, te vas a quedar atr\u00e1s\n\ud83c\udf10 Parte de @sentientagency\n\ud83d\ude80 Cuenta de @sergiofabeidi",
       "external_url": "",
       "is_verified": true,
-      "followers": 180615,
+      "followers": 180621,
       "following": 86,
       "posts": 788,
       "recent_post_count": 63,
       "video_post_count": 21,
-      "video_posts_with_view_data": 20,
-      "video_posts_with_view_data_recent_window": 20,
-      "reel_view_enriched_posts": 21,
+      "video_posts_with_view_data": 19,
+      "video_posts_with_view_data_recent_window": 19,
+      "reel_view_enriched_posts": 20,
       "recent_posts_window_days": 14,
       "recent_posts_collection_window_days": 30,
       "recent_posts_target_limit": 24,
@@ -7990,13 +8002,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 744.24,
-      "avg_comments": 297.25,
-      "avg_video_views": 20436.8,
-      "avg_video_views_per_video": 20436.8,
-      "avg_video_views_per_post": 6487.87,
-      "total_video_views_recent_window": 408736,
-      "engagement_rate": 0.5766,
+      "avg_likes": 744.6,
+      "avg_comments": 297.44,
+      "avg_video_views": 15886.79,
+      "avg_video_views_per_video": 15886.79,
+      "avg_video_views_per_post": 4791.25,
+      "total_likes_recent_window": 45041,
+      "total_video_views_recent_window": 301849,
+      "engagement_rate": 0.5769,
       "recent_posts": [
         {
           "shortcode": "DWCJuw1Aih1",
@@ -8047,7 +8060,7 @@
           "likes": 3,
           "comments": 12,
           "is_video": true,
-          "video_views": 15300,
+          "video_views": 6,
           "caption": "Un robot camarero se volvi\u00f3 viral\u2026 pero no por lo que esperas.\n\nEn un restaurante de Haidilao en California, un robot que bailaba en la entrada se convirti\u00f3 en \u201cespect\u00e1culo improvi",
           "url": "https://www.instagram.com/p/DWFndPnjVfx/",
           "video_views_source": "selenium_reels_grid"
@@ -8055,7 +8068,7 @@
         {
           "shortcode": "DWFK-1OEa_l",
           "date": "2026-03-19",
-          "likes": 1035,
+          "likes": 1036,
           "comments": 17,
           "is_video": false,
           "video_views": 0,
@@ -8065,7 +8078,7 @@
         {
           "shortcode": "DWEqSFbkZJh",
           "date": "2026-03-19",
-          "likes": 418,
+          "likes": 419,
           "comments": 0,
           "is_video": false,
           "video_views": 0,
@@ -8078,7 +8091,7 @@
           "likes": 127,
           "comments": 3,
           "is_video": true,
-          "video_views": 15500,
+          "video_views": 9,
           "caption": "La IA ya no viene por los trabajos\u2026 ahora viene por los que estaban buscando uno. \ud83e\udd16\ud83d\ude05\n\n\ud83e\udd16 S\u00edgueme en @sergioprompts para m\u00e1s contenido de IA y tecnolog\u00eda.\n\n#ia #inteligenciaartificia",
           "url": "https://www.instagram.com/p/DWC8iwcjeJ2/",
           "video_views_source": "selenium_reels_grid"
@@ -8086,8 +8099,8 @@
         {
           "shortcode": "DWB84WnlGq8",
           "date": "2026-03-18",
-          "likes": 9011,
-          "comments": 5509,
+          "likes": 9029,
+          "comments": 5521,
           "is_video": false,
           "video_views": 0,
           "caption": "\ud83d\ude80 8 prompts de IA que est\u00e1n creando contenido viral en Instagram\n\nSi quieres crecer en Instagram en 2026, no necesitas m\u00e1s ideas, necesitas mejores prompts. Este carrusel re\u00fane 8 e",
@@ -8099,10 +8112,9 @@
           "likes": 178,
           "comments": 139,
           "is_video": true,
-          "video_views": 8,
+          "video_views": 0,
           "caption": "Haz que Claude suene como humano (y no como IA) en 1 minuto \ud83e\udd2f\u270d\ufe0f\n\nExiste una skill viral que mejora completamente c\u00f3mo escribe Claude: m\u00e1s natural, mejor estructura y sin esos error",
-          "url": "https://www.instagram.com/p/DV_BS1cgmjF/",
-          "video_views_source": "selenium_reels_grid"
+          "url": "https://www.instagram.com/p/DV_BS1cgmjF/"
         },
         {
           "shortcode": "DV9JhEfgnT_",
@@ -8230,7 +8242,7 @@
         {
           "shortcode": "DVw-nYMDRI8",
           "date": "2026-03-12",
-          "likes": 2919,
+          "likes": 2920,
           "comments": 27,
           "is_video": false,
           "video_views": 0,
@@ -8263,7 +8275,7 @@
           "likes": 197,
           "comments": 18,
           "is_video": true,
-          "video_views": 31500,
+          "video_views": 12000,
           "caption": "\u00bfPaseando al perro\u2026 o al robot? \ud83e\udd16\ud83d\udc15\n\nUn humanoide caminando tranquilo mientras un robot cuadr\u00fapedo lo sigue como si fuera su mascota. A simple vista parece un paseo normal\u2026 hasta qu",
           "url": "https://www.instagram.com/p/DVvURDDAhiT/",
           "video_views_source": "selenium_reels_grid"
@@ -8294,7 +8306,7 @@
           "likes": 1096,
           "comments": 1346,
           "is_video": true,
-          "video_views": 44700,
+          "video_views": 33700,
           "caption": "Si usas Claude y no tienes esto activado\u2026 est\u00e1s perdiendo la mitad de lo que puede hacer \ud83e\udd2f\n\nAqu\u00ed tienes 5 configuraciones clave para sacarle el m\u00e1ximo provecho:\n\n\u2022 Conectar apps ex",
           "url": "https://www.instagram.com/p/DVtIkYbgj4O/",
           "video_views_source": "selenium_reels_grid"
@@ -8302,7 +8314,7 @@
         {
           "shortcode": "DVsyf6qAvgv",
           "date": "2026-03-10",
-          "likes": 1085,
+          "likes": 1086,
           "comments": 18,
           "is_video": false,
           "video_views": 0,
@@ -8346,7 +8358,7 @@
           "likes": 3,
           "comments": 117,
           "is_video": true,
-          "video_views": 7,
+          "video_views": 2,
           "caption": "Crea UGC hiperrealista con IA usando solo un prompt \ud83e\udd2f\n\nSubes la imagen de tu producto, generas una escena hiperrealista con Nano Banana Pro y luego la conviertes en v\u00eddeo con Kling",
           "url": "https://www.instagram.com/p/DVoL1bBguMe/",
           "video_views_source": "selenium_reels_grid"
@@ -8357,7 +8369,7 @@
           "likes": 140,
           "comments": 3,
           "is_video": true,
-          "video_views": 19900,
+          "video_views": 9,
           "caption": "200.000 neuronas humanas aprendiendo a jugar Doom. \ud83d\udc40\n\nLa startup australiana Cortical Labs ha desarrollado CL1, un sistema que cultiva unas 200.000 neuronas humanas sobre un microc",
           "url": "https://www.instagram.com/p/DVm9OsHjIjE/",
           "video_views_source": "selenium_reels_grid"
@@ -8467,7 +8479,7 @@
         {
           "shortcode": "DVZvIXVDe1E",
           "date": "2026-03-03",
-          "likes": 2008,
+          "likes": 2009,
           "comments": 36,
           "is_video": false,
           "video_views": 0,
@@ -8592,7 +8604,7 @@
           "likes": 3,
           "comments": 65,
           "is_video": true,
-          "video_views": 10600,
+          "video_views": 2,
           "caption": "Esta es la forma m\u00e1s pro de hacer vibecoding en serio \ud83d\udd25\ud83d\udcbb\n\nCon Verdent AI puedes pasar de una idea a una web o una app funcional sin tocar una sola l\u00ednea de c\u00f3digo manualmente.\n\nLo ",
           "url": "https://www.instagram.com/p/DVJbxUsEUj2/",
           "video_views_source": "selenium_reels_grid"
@@ -8603,7 +8615,7 @@
           "likes": 438,
           "comments": 7,
           "is_video": true,
-          "video_views": 36500,
+          "video_views": 21400,
           "caption": "\u00bfVale la pena el \u201cGPU meltdown\u201d? \ud83d\ude2d\ud83d\udd25\n\nSi sientes que la RAM est\u00e1 rid\u00edculamente cara, no es tu imaginaci\u00f3n\u2026 y tampoco es solo inflaci\u00f3n.\n\nEl verdadero culpable es la IA.\n\nLos data ce",
           "url": "https://www.instagram.com/p/DVH3daXjO-4/",
           "video_views_source": "selenium_reels_grid"
@@ -8652,13 +8664,13 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:58:34+00:00",
+      "generated_at": "2026-03-22T08:31:33+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "ainterestingaf",
       "profile_url": "https://www.instagram.com/ainterestingaf/",
       "avatar_path": "../avatars/ainterestingaf.jpg",
-      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/340832687_561196706115127_844394629568359080_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MTEuYzIifQ&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gHlfC6MW6AfjBY1nBTX8mu8Ql3W65MCaUpRryWd7OMVeJUdYo1H_B4xWg-AHC3NMdw&_nc_ohc=UQj4cptlF1IQ7kNvwEMbAk9&_nc_gid=28EyNKskIUMajhRdQWdwrw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK_xUBQ3LlHKZ-4BAKhqqxlx5LcLbkULAAAB0j-ccb7-5&oh=00_AfzmQoyCaBhJjmygQQohk2Y6dsU0EkRU2IGJ8ES23FV_0Q&oe=69C573C4&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/340832687_561196706115127_844394629568359080_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MTEuYzIifQ&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gE3FiabaNMDSP910vc5liYp5J81z69GG2avIyw9PWYb6DbSrHssgXLOXdsTl1bDbUU&_nc_ohc=UQj4cptlF1IQ7kNvwE18xmA&_nc_gid=37uP5Zs_QYN8L_Xc8N1djQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK_xUBQ3LlHKZ-4BAKhqqxlx5LcLbkULAAAB0j-ccb7-5&oh=00_Afy5if6-FRBRqfZ-G_-0AOIMQ6IV3PKj0jm3Uaa16Qb90Q&oe=69C573C4&_nc_sid=1e20d2",
       "full_name": "AI Gallery",
       "biography": "Welcome to the most interesting AI page on Instagram.\nBrought to you by @sentientagency \ud83e\udd1d",
       "external_url": "https://sentientagency.io/",
@@ -8679,13 +8691,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-01-13",
-      "avg_likes": 17602.5,
+      "avg_likes": 17603.75,
       "avg_comments": 100.08,
       "avg_video_views": 345100.0,
       "avg_video_views_per_video": 345100.0,
       "avg_video_views_per_post": 57516.67,
+      "total_likes_recent_window": 141880,
       "total_video_views_recent_window": 1380400,
-      "engagement_rate": 15.1485,
+      "engagement_rate": 15.1496,
       "recent_posts": [
         {
           "shortcode": "DTI76HUkfZj",
@@ -8710,7 +8723,7 @@
         {
           "shortcode": "DV2f6TdDBWA",
           "date": "2026-03-14",
-          "likes": 1292,
+          "likes": 1293,
           "comments": 60,
           "is_video": true,
           "video_views": 42500,
@@ -8772,7 +8785,7 @@
         {
           "shortcode": "DVJu4cwkfvt",
           "date": "2026-02-24",
-          "likes": 136110,
+          "likes": 136139,
           "comments": 619,
           "is_video": true,
           "video_views": 1300000,
@@ -8943,18 +8956,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T08:00:31+00:00",
+      "generated_at": "2026-03-22T08:33:52+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "beatprocrastinationnow",
       "profile_url": "https://www.instagram.com/beatprocrastinationnow/",
       "avatar_path": "../avatars/beatprocrastinationnow.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.2885-19/459313624_1492693218041617_494632525949196333_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gH1C1fLbeKnssalLdcRp8WYoaY91RkR4Z3ahqC9iyWTJ9K9y3Q3Ep5M3EzisdXc-JI&_nc_ohc=vfBFi6DSVZAQ7kNvwEWVemD&_nc_gid=KmKP9b5PiIx_TUHLRKP1Ww&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNiRYBsRHwW5mE0FAC1YjmOpSd0GbkULAAAB0j-ccb7-5&oh=00_AfxaGNJcwmrAfEj8YiGFjyoxnFPBUeT7nlqNtw2aJDGO6w&oe=69C559A8&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.2885-19/459313624_1492693218041617_494632525949196333_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gF68H8QrtpCZiVgW5lFSnV5R4z1p1LLY9Pev4B8OVoPZ_gJ_x8bw4uVSJAjyI8dYsc&_nc_ohc=vfBFi6DSVZAQ7kNvwFOrYxT&_nc_gid=Ckhhad376-hsCZJZmZQXiQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNiRYBsRHwW5mE0FAC1YjmOpSd0GbkULAAAB0j-ccb7-5&oh=00_Afzp4TumzAIG8MQ2K_fQUyqV2eI-F_MOysGr0wzimOzYlA&oe=69C591E8&_nc_sid=1e20d2",
       "full_name": "Do It Now Every Day",
       "biography": "| Waking you up to Do it now video every day\n| We help you increase productivity\nBy @sentientagency",
       "external_url": "",
       "is_verified": false,
-      "followers": 95783,
+      "followers": 95782,
       "following": 2,
       "posts": 339,
       "recent_post_count": 24,
@@ -8975,6 +8988,7 @@
       "avg_video_views": 0,
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
+      "total_likes_recent_window": 0,
       "total_video_views_recent_window": 0,
       "engagement_rate": 0.4738,
       "recent_posts": [
@@ -9006,7 +9020,7 @@
           "likes": 5664,
           "comments": 24,
           "is_video": true,
-          "video_views": 70000,
+          "video_views": 55500,
           "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
           "url": "https://www.instagram.com/p/DO7KwWojE73/",
           "video_views_source": "selenium_reels_grid"
@@ -9094,7 +9108,7 @@
           "likes": 168,
           "comments": 2,
           "is_video": true,
-          "video_views": 3,
+          "video_views": 692,
           "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
           "url": "https://www.instagram.com/p/DOHUfhhj86F/",
           "video_views_source": "selenium_reels_grid"
@@ -9182,7 +9196,7 @@
           "likes": 249,
           "comments": 0,
           "is_video": true,
-          "video_views": 3,
+          "video_views": 751,
           "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
           "url": "https://www.instagram.com/p/DNn97DbxqoA/",
           "video_views_source": "selenium_reels_grid"
@@ -9204,7 +9218,7 @@
           "likes": 191,
           "comments": 0,
           "is_video": true,
-          "video_views": 2,
+          "video_views": 589,
           "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
           "url": "https://www.instagram.com/p/DNY3-RjP3P6/",
           "video_views_source": "selenium_reels_grid"
@@ -9226,7 +9240,7 @@
           "likes": 249,
           "comments": 1,
           "is_video": true,
-          "video_views": 3,
+          "video_views": 817,
           "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
           "url": "https://www.instagram.com/p/DNUDQfgPpQK/",
           "video_views_source": "selenium_reels_grid"
@@ -9245,18 +9259,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:57:03+00:00",
+      "generated_at": "2026-03-22T08:30:17+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "tecnologia",
       "profile_url": "https://www.instagram.com/tecnologia/",
       "avatar_path": "../avatars/tecnologia.jpg",
-      "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gExz5e_rf6rkE4Ux6aHZBdNn8b-TLuUVSeIcoNgTShjR9kSVTLktkHPphfz3F2nfCw&_nc_ohc=KPbh5fguLbYQ7kNvwEfPrPU&_nc_gid=UivsQfSMLReErgfvgx47CA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_Afy2ZKdfFk3eMT1iFFRfjCR7o-aFRxZ8WnXemiA4Ky762A&oe=69C57EDF&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHIwR_fm8qnI3e7X6Fm7w2bKWh2faBEGE8XfDwfl77JVjoT3nLZr2IQiSDBiA_lJpY&_nc_ohc=KPbh5fguLbYQ7kNvwFD2N4r&_nc_gid=aNSjT33fOgwdkXftTW3uyA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_AfxBY8PRM99lSAweeAGeijxYllclQwUHKSGXyFK1yNmF7g&oe=69C57EDF&_nc_sid=1e20d2",
       "full_name": "Tecnologia",
       "biography": "\ud83e\udd16 La fuente confiable para todo lo relacionado con tecnolog\u00eda, IA y negocios. S\u00edguenos y no te quedes atr\u00e1s!",
       "external_url": "http://ivanelgrande.com",
       "is_verified": true,
-      "followers": 59845,
+      "followers": 59852,
       "following": 7,
       "posts": 219,
       "recent_post_count": 55,
@@ -9272,13 +9286,14 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 13613.64,
+      "avg_likes": 13620.84,
       "avg_comments": 65.36,
-      "avg_video_views": 335786.0,
-      "avg_video_views_per_video": 335786.0,
-      "avg_video_views_per_post": 299154.8,
-      "total_video_views_recent_window": 16453514,
-      "engagement_rate": 22.8574,
+      "avg_video_views": 318065.71,
+      "avg_video_views_per_video": 318065.71,
+      "avg_video_views_per_post": 283367.64,
+      "total_likes_recent_window": 702222,
+      "total_video_views_recent_window": 15585220,
+      "engagement_rate": 22.8667,
       "recent_posts": [
         {
           "shortcode": "DOueE7_DPmm",
@@ -9293,10 +9308,10 @@
         {
           "shortcode": "DWKSrtmia5k",
           "date": "2026-03-21",
-          "likes": 1027,
+          "likes": 1034,
           "comments": 0,
           "is_video": true,
-          "video_views": 70200,
+          "video_views": 70500,
           "caption": "Un resorte se fabrica comenzando por seleccionar un material adecuado, generalmente acero o acero inoxidable, y estirarlo hasta convertirlo en un alambre m\u00e1s delgado. Luego, el ala",
           "url": "https://www.instagram.com/p/DWKSrtmia5k/",
           "video_views_source": "selenium_reels_grid"
@@ -9304,10 +9319,10 @@
         {
           "shortcode": "DWHVNUiJTPs",
           "date": "2026-03-20",
-          "likes": 42113,
+          "likes": 42230,
           "comments": 103,
           "is_video": true,
-          "video_views": 479000,
+          "video_views": 480000,
           "caption": "La Kawasaki Ninja H2R es una de las motocicletas m\u00e1s extremas jam\u00e1s construidas.\n\nEst\u00e1 impulsada por un motor de cuatro cilindros en l\u00ednea de 998 cc con supercargador que produce m",
           "url": "https://www.instagram.com/p/DWHVNUiJTPs/",
           "video_views_source": "selenium_reels_grid"
@@ -9315,7 +9330,7 @@
         {
           "shortcode": "DWHN3RHjrXd",
           "date": "2026-03-20",
-          "likes": 1954,
+          "likes": 1960,
           "comments": 0,
           "is_video": true,
           "video_views": 30800,
@@ -9326,7 +9341,7 @@
         {
           "shortcode": "DWFiluUiT5R",
           "date": "2026-03-20",
-          "likes": 11127,
+          "likes": 11154,
           "comments": 173,
           "is_video": false,
           "video_views": 0,
@@ -9336,10 +9351,10 @@
         {
           "shortcode": "DWFYDJDiXjk",
           "date": "2026-03-19",
-          "likes": 4419,
+          "likes": 4435,
           "comments": 17,
           "is_video": true,
-          "video_views": 200000,
+          "video_views": 201000,
           "caption": "A velocidades cercanas a 249 mph (unos 400 km/h), detener un Bugatti requiere mucho m\u00e1s que frenos est\u00e1ndar, ya que las fuerzas involucradas son extremas.\n\nCuando el conductor pisa",
           "url": "https://www.instagram.com/p/DWFYDJDiXjk/",
           "video_views_source": "selenium_reels_grid"
@@ -9347,10 +9362,10 @@
         {
           "shortcode": "DWFVtHtDINY",
           "date": "2026-03-19",
-          "likes": 979,
+          "likes": 981,
           "comments": 35,
           "is_video": true,
-          "video_views": 38500,
+          "video_views": 38600,
           "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
           "url": "https://www.instagram.com/p/DWFVtHtDINY/",
           "video_views_source": "selenium_reels_grid"
@@ -9358,10 +9373,10 @@
         {
           "shortcode": "DWFAL98CXXT",
           "date": "2026-03-19",
-          "likes": 2711,
+          "likes": 2716,
           "comments": 1,
           "is_video": true,
-          "video_views": 95600,
+          "video_views": 95800,
           "caption": "Mercedes demuestra el flujo aerodin\u00e1mico alrededor del AMG GT utilizando corrientes visibles en un t\u00fanel de viento que revelan c\u00f3mo el aire se desplaza sobre la carrocer\u00eda a alta v",
           "url": "https://www.instagram.com/p/DWFAL98CXXT/",
           "video_views_source": "selenium_reels_grid"
@@ -9380,10 +9395,10 @@
         {
           "shortcode": "DWCape1CcLl",
           "date": "2026-03-18",
-          "likes": 2752,
+          "likes": 2756,
           "comments": 8,
           "is_video": true,
-          "video_views": 83800,
+          "video_views": 27200,
           "caption": "Los Boeing 737 de Ryanair est\u00e1n construidos con escaleras integradas, lo que permite a los pasajeros abordar sin necesidad de escaleras del aeropuerto ni mangas de embarque. Las es",
           "url": "https://www.instagram.com/p/DWCape1CcLl/",
           "video_views_source": "selenium_reels_grid"
@@ -9391,7 +9406,7 @@
         {
           "shortcode": "DWCQ4NZlTsc",
           "date": "2026-03-18",
-          "likes": 66661,
+          "likes": 66721,
           "comments": 717,
           "is_video": false,
           "video_views": 0,
@@ -9422,7 +9437,7 @@
         {
           "shortcode": "DV7YV1jDBPB",
           "date": "2026-03-16",
-          "likes": 4014,
+          "likes": 4023,
           "comments": 24,
           "is_video": false,
           "video_views": 0,
@@ -9432,7 +9447,7 @@
         {
           "shortcode": "DV6tlKmCcPk",
           "date": "2026-03-15",
-          "likes": 45247,
+          "likes": 45292,
           "comments": 321,
           "is_video": true,
           "video_views": 536000,
@@ -9465,10 +9480,10 @@
         {
           "shortcode": "DV1nonDiSiY",
           "date": "2026-03-13",
-          "likes": 7970,
+          "likes": 7971,
           "comments": 18,
           "is_video": true,
-          "video_views": 102000,
+          "video_views": 23500,
           "caption": "Esta bestia de $250,000 es el punto m\u00e1ximo de la ingenier\u00eda todoterreno \ud83c\udfdc\ufe0f\ud83d\udd25\n\nConstruida para conquistar la brutal Baja 1000 y volar sobre el terreno des\u00e9rtico a m\u00e1s de 120 mph \ud83d\ude80, e",
           "url": "https://www.instagram.com/p/DV1nonDiSiY/",
           "video_views_source": "selenium_reels_grid"
@@ -9479,7 +9494,7 @@
           "likes": 6999,
           "comments": 172,
           "is_video": true,
-          "video_views": 151000,
+          "video_views": 99200,
           "caption": "Esa es la mejor l\u00ednea de tiempo.\n\n\ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA\u201d y ",
           "url": "https://www.instagram.com/p/DV1b7XJlNfi/",
           "video_views_source": "selenium_reels_grid"
@@ -9490,7 +9505,7 @@
           "likes": 495,
           "comments": 0,
           "is_video": true,
-          "video_views": 14600,
+          "video_views": 3,
           "caption": "La fabricaci\u00f3n moderna de semiconductores ha alcanzado la escala nanom\u00e9trica, lo que permite a los ingenieros integrar decenas de miles de millones de transistores en un espacio m\u00e1",
           "url": "https://www.instagram.com/p/DVzgsuICevN/",
           "video_views_source": "selenium_reels_grid"
@@ -9498,10 +9513,10 @@
         {
           "shortcode": "DVzZCZSicMr",
           "date": "2026-03-12",
-          "likes": 11449,
+          "likes": 11450,
           "comments": 28,
           "is_video": true,
-          "video_views": 78000,
+          "video_views": 17500,
           "caption": "BMW desarroll\u00f3 una vez un prototipo del M5 impulsado por una versi\u00f3n reducida de su motor V10 inspirado en la F\u00f3rmula 1, combinando tecnolog\u00eda de carreras con un sed\u00e1n de lujo de a",
           "url": "https://www.instagram.com/p/DVzZCZSicMr/",
           "video_views_source": "selenium_reels_grid"
@@ -9520,7 +9535,7 @@
         {
           "shortcode": "DVv7Miujsw6",
           "date": "2026-03-11",
-          "likes": 95046,
+          "likes": 95100,
           "comments": 156,
           "is_video": true,
           "video_views": 7200000,
@@ -9531,10 +9546,10 @@
         {
           "shortcode": "DVuJbAGiazf",
           "date": "2026-03-10",
-          "likes": 1537,
+          "likes": 1538,
           "comments": 3,
           "is_video": true,
-          "video_views": 62000,
+          "video_views": 23900,
           "caption": "Dos equipos de construcci\u00f3n alguna vez compitieron entre s\u00ed para levantar las Torres Gemelas Petronas en Kuala Lumpur, donde cada d\u00eda de retraso costaba unos extraordinarios 700,00",
           "url": "https://www.instagram.com/p/DVuJbAGiazf/",
           "video_views_source": "selenium_reels_grid"
@@ -9575,7 +9590,7 @@
         {
           "shortcode": "DVowVvsCRRk",
           "date": "2026-03-08",
-          "likes": 1731,
+          "likes": 1732,
           "comments": 0,
           "is_video": true,
           "video_views": 32600,
@@ -9597,7 +9612,7 @@
         {
           "shortcode": "DVj4kXFiT7O",
           "date": "2026-03-06",
-          "likes": 10661,
+          "likes": 10665,
           "comments": 174,
           "is_video": true,
           "video_views": 946000,
@@ -9630,10 +9645,10 @@
         {
           "shortcode": "DVg-irDiUGr",
           "date": "2026-03-05",
-          "likes": 72527,
+          "likes": 72529,
           "comments": 288,
           "is_video": true,
-          "video_views": 1000000,
+          "video_views": 681000,
           "caption": "S\u00ed, exactamente por eso la RAM es tan cara.\n\nLo que parece un clip de pel\u00edcula rid\u00edculo en realidad es una secuencia cinematogr\u00e1fica completa generada con IA. Y de alguna manera\u2026 f",
           "url": "https://www.instagram.com/p/DVg-irDiUGr/",
           "video_views_source": "selenium_reels_grid"
@@ -9641,7 +9656,7 @@
         {
           "shortcode": "DVg4EmCiVE9",
           "date": "2026-03-05",
-          "likes": 35860,
+          "likes": 35866,
           "comments": 66,
           "is_video": true,
           "video_views": 506000,
@@ -9655,7 +9670,7 @@
           "likes": 903,
           "comments": 1,
           "is_video": true,
-          "video_views": 22400,
+          "video_views": 14500,
           "caption": "La filmaci\u00f3n con tel\u00e9fono acaba de alcanzar nuevos niveles.\n\nEl Horizon Lock del Galaxy S26 Ultra mantiene tus tomas perfectamente niveladas incluso cuando est\u00e1s girando o movi\u00e9ndo",
           "url": "https://www.instagram.com/p/DVeeQI4Cee0/",
           "video_views_source": "selenium_reels_grid"
@@ -9674,7 +9689,7 @@
         {
           "shortcode": "DVeGhVijiq7",
           "date": "2026-03-04",
-          "likes": 120549,
+          "likes": 120564,
           "comments": 117,
           "is_video": true,
           "video_views": 1100000,
@@ -9685,10 +9700,10 @@
         {
           "shortcode": "DVb-UPgEvko",
           "date": "2026-03-03",
-          "likes": 37476,
+          "likes": 37485,
           "comments": 23,
           "is_video": true,
-          "video_views": 243000,
+          "video_views": 57900,
           "caption": "El Nissan Skyline GT\u2011R R34 es uno de los \u00edconos JDM m\u00e1s modificables jam\u00e1s creados, impulsado por el RB26DETT, un seis en l\u00ednea biturbo capaz de manejar potencias extremas con gran",
           "url": "https://www.instagram.com/p/DVb-UPgEvko/",
           "video_views_source": "selenium_reels_grid"
@@ -9699,7 +9714,7 @@
           "likes": 1899,
           "comments": 11,
           "is_video": true,
-          "video_views": 60800,
+          "video_views": 14900,
           "caption": "Dos engranajes gigantes giran a una velocidad vertiginosa dentro de una arena de acero, chocando entre s\u00ed y lanzando una lluvia de chispas mientras toda la plataforma retumba por l",
           "url": "https://www.instagram.com/p/DVZjg8AEvSX/",
           "video_views_source": "selenium_reels_grid"
@@ -9710,7 +9725,7 @@
           "likes": 175,
           "comments": 1,
           "is_video": true,
-          "video_views": 12900,
+          "video_views": 3,
           "caption": "Cuando las palomitas se preparan en una m\u00e1quina de presi\u00f3n, no se trata solo de aplicar calor, sino de f\u00edsica de presi\u00f3n controlada dentro de un tambor sellado y giratorio.\n\nCada g",
           "url": "https://www.instagram.com/p/DVZbfl4Es7d/",
           "video_views_source": "selenium_reels_grid"
@@ -9784,7 +9799,7 @@
         {
           "shortcode": "DVOj0TOjvpO",
           "date": "2026-02-26",
-          "likes": 74903,
+          "likes": 74907,
           "comments": 287,
           "is_video": true,
           "video_views": 1900000,
@@ -9882,13 +9897,13 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T08:01:04+00:00",
+      "generated_at": "2026-03-22T08:34:18+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "bballclan",
       "profile_url": "https://www.instagram.com/bballclan/",
       "avatar_path": "../avatars/bballclan.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/74385399_2459038164362529_5460277255815036928_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gEGlat6mba7XUQvLVyxmrDMQY-IM2G6bBFnpHJJotXuQpQlf8M5c1iGb_DWKGY8qN4&_nc_ohc=CJ8LnEcDBIIQ7kNvwErKiPJ&_nc_gid=NIqzLxnl8SWRSbmWt0a8ag&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GPcHbwQhpUZwe7wIAAAAAAA8zcZLbkULAAAB0j-ccb7-5&oh=00_AfwarwGpKs09Ot69S7Pm303FtN4oKL4hKV5yiDH0fhoseg&oe=69C5895F&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/74385399_2459038164362529_5460277255815036928_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gH5WOv7Yy72jnhd_DolXC8rXCFPBbvUiRMhPtyAFkPsWpSf5aNIaHcsy2Y6Zh8pZEw&_nc_ohc=CJ8LnEcDBIIQ7kNvwECd9C6&_nc_gid=RHGfiRdwyeq_oc1dFvxOwg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GPcHbwQhpUZwe7wIAAAAAAA8zcZLbkULAAAB0j-ccb7-5&oh=00_AfyW4cvhZMFC7V_z-wIcOxFShU7gB_I7lafEJPCSqtTtvA&oe=69C5895F&_nc_sid=1e20d2",
       "full_name": "For Lovers of Basketball & NBA",
       "biography": "\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66 Best basketball group on IG \ud83c\udfc0",
       "external_url": "",
@@ -9914,6 +9929,7 @@
       "avg_video_views": 0,
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
+      "total_likes_recent_window": 0,
       "total_video_views_recent_window": 0,
       "engagement_rate": 3.7347,
       "recent_posts": [
@@ -10045,7 +10061,7 @@
           "likes": 449,
           "comments": 7,
           "is_video": true,
-          "video_views": 26300,
+          "video_views": 21100,
           "caption": "That\u2019s wild \ud83d\ude02\ud83d\ude02\n-\nFollow @bballclan for more!",
           "url": "https://www.instagram.com/p/Cx_k0x6S9S6/",
           "video_views_source": "selenium_reels_grid"
@@ -10086,7 +10102,7 @@
           "likes": 345,
           "comments": 2,
           "is_video": true,
-          "video_views": 15300,
+          "video_views": 15000,
           "caption": "The king\ud83d\udc51\n-\nFollow @bballclan for more!",
           "url": "https://www.instagram.com/p/Cxg7tDQPZDw/",
           "video_views_source": "selenium_reels_grid"
@@ -10164,13 +10180,13 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:55:58+00:00",
+      "generated_at": "2026-03-22T08:28:55+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "aigleeson",
       "profile_url": "https://www.instagram.com/aigleeson/",
       "avatar_path": "../avatars/aigleeson.jpg",
-      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/573845373_17969049206985624_7113853172028558045_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDU1LmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gGxYoUoW6nCbKNp1NEPAHEj9xKQg-KwHGuynd-jU6T4KGvJtShVJYICVorXxoJwTkI&_nc_ohc=j4d8KSAPFcUQ7kNvwG4V3cj&_nc_gid=fqGnIHUYknOEorfjUlQbqg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GH0vNCKYE_9KwdY-AN1KDOfEe7libmNDAQAB0j-ccb7-5&oh=00_Afzzhnxrb4fPETVfGL2ZU9tfpX3tkCTP3Zao2cfM2XUxEg&oe=69C579FE&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/573845373_17969049206985624_7113853172028558045_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDU1LmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gHS2A-Znx-nJaW7ATbOdZJlF4f5POroxasUToHcL8SRPK32QbmbSMuv_sgEFAbMYv8&_nc_ohc=dYssA6NKL-wQ7kNvwFdu9BM&_nc_gid=Tm30Thr8Hk0b5vAK_0O8fA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GH0vNCKYE_9KwdY-AN1KDOfEe7libmNDAQAB0j-ccb7-5&oh=00_AfwSHGZtjcCUHkzp-ece9AI9q0LP5tTlNG_bXEUYIMmKTw&oe=69C579FE&_nc_sid=1e20d2",
       "full_name": "Louis Gleeson",
       "biography": "\u2023 Founder of @sentientagency (25+ million follower network)\n\u2023 Posting more here @louisgson",
       "external_url": "http://sentientagency.io",
@@ -10193,10 +10209,11 @@
       "oldest_recent_post_date": "2025-03-20",
       "avg_likes": 1775.42,
       "avg_comments": 113.17,
-      "avg_video_views": 14700.0,
-      "avg_video_views_per_video": 14700.0,
-      "avg_video_views_per_post": 612.5,
-      "total_video_views_recent_window": 14700,
+      "avg_video_views": 14800.0,
+      "avg_video_views_per_video": 14800.0,
+      "avg_video_views_per_post": 616.67,
+      "total_likes_recent_window": 165,
+      "total_video_views_recent_window": 14800,
       "engagement_rate": 5.1151,
       "recent_posts": [
         {
@@ -10238,7 +10255,7 @@
           "likes": 165,
           "comments": 8,
           "is_video": true,
-          "video_views": 14700,
+          "video_views": 14800,
           "caption": "You can turn Claude into your entire marketing team in about 2 minutes.\n\nMost people are using AI for basic prompts.\n\nBut Claude can actually run a full marketing workflow if you c",
           "url": "https://www.instagram.com/p/DV9VabYklck/",
           "video_views_source": "selenium_reels_grid"
@@ -10348,7 +10365,7 @@
           "likes": 1000,
           "comments": 171,
           "is_video": true,
-          "video_views": 89600,
+          "video_views": 65000,
           "caption": "Comment \ud83d\udc49 \u201cGPT\u201d and we\u2019ll send you the link.\n\nThis isn\u2019t just another AI newsletter.\nIt\u2019s the one that actually saves you time and helps you make more.\n\n- Real AI hacks.\n- Smart up",
           "url": "https://www.instagram.com/p/DKTpASDNk79/",
           "video_views_source": "selenium_reels_grid"
@@ -10392,7 +10409,7 @@
           "likes": 44,
           "comments": 6,
           "is_video": true,
-          "video_views": 1,
+          "video_views": 289,
           "caption": "Extending videos with AI \ud83d\udc40 How cool\n\nFollow @aigleeson for more \n\n#ai #aivideo #aimarketing #artificialintelligence",
           "url": "https://www.instagram.com/p/DJ6kFyoAoUQ/",
           "video_views_source": "selenium_reels_grid"
@@ -10436,7 +10453,7 @@
           "likes": 41,
           "comments": 4,
           "is_video": true,
-          "video_views": 2,
+          "video_views": 282,
           "caption": "Which one was the best? \ud83d\udc40\n\n#marketing #socialmedia #viral",
           "url": "https://www.instagram.com/p/DIFWk89AiNx/",
           "video_views_source": "selenium_reels_grid"
@@ -10466,13 +10483,13 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T07:59:31+00:00",
+      "generated_at": "2026-03-22T08:32:42+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "sentientagency",
       "profile_url": "https://www.instagram.com/sentientagency/",
       "avatar_path": "../avatars/sentientagency.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/508618897_17953299752973965_5275208862556385129_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MzguYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGsZ2TUxPhqH99S8N54FCLYhPgsH4YTf4X292aT0yawtFrkRTkh-56SU-Txe2nyIq8&_nc_ohc=Oak8uLo2DZcQ7kNvwHnfc1Z&_nc_gid=pkdsBrc0Rv4F_HltcV0_6Q&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GJHoUB6NdlJWbsg-AGlvquCCTjVJbvEnAQAB0j-ccb7-5&oh=00_AfzncOAbCDB5QA8B0yMwgEYtfk-NK70a1YS7ZerLKgeQpw&oe=69C56BBF&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/508618897_17953299752973965_5275208862556385129_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby44MzguYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFTa9_lKXtBOrzzpQ55YdHvDaQPOpkHdXQoyd3o8NYGXMlG6aJlkEgHXETUGUqJvXE&_nc_ohc=Oak8uLo2DZcQ7kNvwEgitxl&_nc_gid=e3vI1EuxQvkOlw8-6ERh8g&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GJHoUB6NdlJWbsg-AGlvquCCTjVJbvEnAQAB0j-ccb7-5&oh=00_AfxZSYN93dYz6TuriByS8KfYOfL9jrgoD-CFl2DRaW7G3w&oe=69C56BBF&_nc_sid=1e20d2",
       "full_name": "AI Agency",
       "biography": "\ud83e\udd16 The World\u2019s Largest AI Social Media Network \n\ud83d\ude80 25M+ Followers @chatgptricks @chatgptips @planet.ai_ @supercar and more\n\ud83d\udce5 contact@sentientagency.io",
       "external_url": "https://sentientagency.io/",
@@ -10498,6 +10515,7 @@
       "avg_video_views": 0,
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
+      "total_likes_recent_window": 0,
       "total_video_views_recent_window": 0,
       "engagement_rate": 0.7272,
       "recent_posts": [
@@ -10514,13 +10532,13 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T08:03:05+00:00",
+      "generated_at": "2026-03-22T08:35:51+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "ivanelgrande",
       "profile_url": "https://www.instagram.com/ivanelgrande/",
       "avatar_path": "../avatars/ivanelgrande.jpg",
-      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/605570584_18551092612041636_2554810630123075843_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFxaaWIAFRCm8C4dg8_CElu7TkoM7ZcVDlgr4I3cujWlFLnOEC84mGCIsDOencScs8&_nc_ohc=x6OXvwkxbJQQ7kNvwF8V3hg&_nc_gid=lJ_99Nm3k-Opm7vC-unzEQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GBhGGCSkC1bVHuhBAAO54Gy7gnQjbmNDAQAB0j-ccb7-5&oh=00_AfxprIoq2ANV-Ep658ScndGAe8UA3synvqo78L1ZmshxTg&oe=69C57E2B&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/605570584_18551092612041636_2554810630123075843_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEBB2FdtbnWlgzGIm5Av_mYJ9A6T-MVB3k--pxCbeKaCbr-CRm1SnfO3UI4ojzl3kM&_nc_ohc=x6OXvwkxbJQQ7kNvwGOey0a&_nc_gid=VYx_Kwxwht0w_OgAhb5Mxw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GBhGGCSkC1bVHuhBAAO54Gy7gnQjbmNDAQAB0j-ccb7-5&oh=00_AfzREC7yGHwM_q0e4G32H45yXDkrS_DlHMA_dU_xJPC9lg&oe=69C57E2B&_nc_sid=1e20d2",
       "full_name": "Ivan \u2022 AI \u2022 Marketing",
       "biography": "I help AI/Tech Companies go Viral \nOwner @chatgptricks (2.4M+ Followers) \nFounder @sentientagency (25M+ Followers Network)",
       "external_url": "https://www.sentientagency.io/",
@@ -10546,6 +10564,7 @@
       "avg_video_views": 32000.0,
       "avg_video_views_per_video": 32000.0,
       "avg_video_views_per_post": 4000.0,
+      "total_likes_recent_window": 1323,
       "total_video_views_recent_window": 96000,
       "engagement_rate": 47.14,
       "recent_posts": [
@@ -10619,7 +10638,7 @@
           "likes": 568,
           "comments": 4,
           "is_video": true,
-          "video_views": 34900,
+          "video_views": 5,
           "caption": "Crea juegos en minutos con esta herramienta \ud83d\udd79\ufe0f\n\nGoogle lanza Project Genie, el modelo que permite crear mundos digitales con solo una foto\n\nEsto cambia el mundo del gaming y del VR",
           "url": "https://www.instagram.com/p/DUKJJNFAKPa/",
           "video_views_source": "selenium_reels_grid"
@@ -10727,7 +10746,7 @@
           "likes": 1803,
           "comments": 40,
           "is_video": true,
-          "video_views": 93700,
+          "video_views": 49900,
           "caption": "Instagram acaba de romper la barrera del idioma \ud83c\udf0d\n\nEl director de Instagram, @mosseri, acaba de anunciar una actualizaci\u00f3n enorme: a partir de esta semana, todas las cuentas p\u00fablic",
           "url": "https://www.instagram.com/p/DNjSFhzBLw5/",
           "video_views_source": "selenium_reels_grid"
@@ -10738,7 +10757,7 @@
           "likes": 941,
           "comments": 24,
           "is_video": true,
-          "video_views": 67900,
+          "video_views": 38000,
           "caption": "OpenAI finalmente lanz\u00f3 GPT-5 \ud83d\udea8\ud83e\udd16\n\nEsta es la IA m\u00e1s inteligente, r\u00e1pida y \u00fatil que han creado.\n\nAhora mismo est\u00e1 gratis en ChatGPT.\n\nPero lo m\u00e1s importante para m\u00ed es que ya no ten",
           "url": "https://www.instagram.com/p/DNJ3TQFsh2A/",
           "video_views_source": "selenium_reels_grid"
@@ -10769,7 +10788,7 @@
           "likes": 1741,
           "comments": 78,
           "is_video": true,
-          "video_views": 87200,
+          "video_views": 30300,
           "caption": "La IA no solo cambi\u00f3 el internet, tambi\u00e9n podr\u00eda estar cambiando la realidad.\n\nCon Veo 3 de Google, ahora cualquiera puede crear videos ultra realistas con solo escribir unas l\u00ednea",
           "url": "https://www.instagram.com/p/DKbjUjMgK_M/",
           "video_views_source": "selenium_reels_grid"
@@ -10780,7 +10799,7 @@
           "likes": 26145,
           "comments": 143,
           "is_video": true,
-          "video_views": 1500000,
+          "video_views": 885000,
           "caption": "El hype de la IA, no se va a detener. \n\nMuchas tendencias anteriores, como el humo de los NFTs y el metaverso, se han ido disipando poco a poco. \n\nPero esta tecnolog\u00eda lleva a\u00f1os e",
           "url": "https://www.instagram.com/p/DKDeHqiADzW/",
           "video_views_source": "selenium_reels_grid"
@@ -10810,18 +10829,18 @@
       ]
     },
     {
-      "generated_at": "2026-03-22T08:01:45+00:00",
+      "generated_at": "2026-03-22T08:34:51+00:00",
       "date": "2026-03-22",
-      "run_started_at": "2026-03-22T07:49:44+00:00",
+      "run_started_at": "2026-03-22T08:21:20+00:00",
       "account": "trends",
       "profile_url": "https://www.instagram.com/trends/",
       "avatar_path": "../avatars/trends.jpg",
-      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/481278882_479446335240689_2645704680755301852_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFE3pIjDwucYn4exqY7YozCDmVsAq4a9qrNB7jc4cOw_Rbl_4sjN2612l2y1bDh3IM&_nc_ohc=7U892i9x1K0Q7kNvwEbG_GW&_nc_gid=sD5GX-JVhRYL4gnnDNm6KA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GKK7rxzxOYDMDbQBANwNAr1jbrckbkULAAAB0j-ccb7-5&oh=00_AfzwKf-1_WPDl5cBLnqTn7_ywjh52t73Q6nnjl7Rc7Khlg&oe=69C57502&_nc_sid=1e20d2",
+      "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/481278882_479446335240689_2645704680755301852_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gEAWP7AhOWt_-18tQe0OxdTybzdT9Bdp45AsN4bH7BUrsrh5oQYBWKWMjolaPVbcQE&_nc_ohc=7U892i9x1K0Q7kNvwEomD72&_nc_gid=_Hafp5SbTB8SOJlVBB94jw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GKK7rxzxOYDMDbQBANwNAr1jbrckbkULAAAB0j-ccb7-5&oh=00_AfysjEoskHrBgMbXxWQ3E5gEWBmX9dzYK9V-mE1KVXSx-Q&oe=69C57502&_nc_sid=1e20d2",
       "full_name": "Trends",
       "biography": "The internet speaks, we TRANSLATE!\nTrends, memes, viral videos, and stories.\nYour daily dose of internet\u2019s hottest trends.\nBy @sentientagency",
       "external_url": "https://www.sentientagency.io",
       "is_verified": true,
-      "followers": 19290,
+      "followers": 19293,
       "following": 9,
       "posts": 327,
       "recent_post_count": 67,
@@ -10837,21 +10856,22 @@
       "recent_posts_window_covered": true,
       "recent_posts_collection_window_covered": true,
       "oldest_recent_post_date": "2026-02-20",
-      "avg_likes": 7408.43,
-      "avg_comments": 48.25,
-      "avg_video_views": 126693.13,
-      "avg_video_views_per_video": 126693.13,
-      "avg_video_views_per_post": 126693.13,
-      "total_video_views_recent_window": 8488440,
-      "engagement_rate": 38.6557,
+      "avg_likes": 7412.69,
+      "avg_comments": 48.28,
+      "avg_video_views": 125969.63,
+      "avg_video_views_per_video": 125969.63,
+      "avg_video_views_per_post": 125969.63,
+      "total_likes_recent_window": 496650,
+      "total_video_views_recent_window": 8439965,
+      "engagement_rate": 38.6719,
       "recent_posts": [
         {
           "shortcode": "DWKZwTLiU3i",
           "date": "2026-03-21",
-          "likes": 501,
+          "likes": 503,
           "comments": 3,
           "is_video": true,
-          "video_views": 32200,
+          "video_views": 32400,
           "caption": "In a split second, adrenaline can flip a hidden switch inside you. Your brain shifts into survival mode, blocking out distractions and preparing your body to fight or escape.\n\n\u2764\ufe0f Y",
           "url": "https://www.instagram.com/p/DWKZwTLiU3i/",
           "video_views_source": "selenium_reels_grid"
@@ -10859,10 +10879,10 @@
         {
           "shortcode": "DWHktjMCWK9",
           "date": "2026-03-20",
-          "likes": 3576,
-          "comments": 18,
+          "likes": 3708,
+          "comments": 20,
           "is_video": true,
-          "video_views": 71800,
+          "video_views": 73800,
           "caption": "The simple gesture of handing a cold drink to a farmer in the middle of a dusty field is a masterclass in high-stakes camaraderie in rural life. Watching a hard day\u2019s work pause fo",
           "url": "https://www.instagram.com/p/DWHktjMCWK9/",
           "video_views_source": "selenium_reels_grid"
@@ -10870,10 +10890,10 @@
         {
           "shortcode": "DWHEC9vDXL1",
           "date": "2026-03-20",
-          "likes": 564,
+          "likes": 565,
           "comments": 2,
           "is_video": true,
-          "video_views": 13800,
+          "video_views": 6,
           "caption": "A short and funny video set in a park: a brown harnessed horse, likely next to a carriage.\n\nThe horse is standing on asphalt or cobblestones, eating grain from a red bucket hanging",
           "url": "https://www.instagram.com/p/DWHEC9vDXL1/",
           "video_views_source": "selenium_reels_grid"
@@ -10903,7 +10923,7 @@
         {
           "shortcode": "DWFdgyFDemJ",
           "date": "2026-03-20",
-          "likes": 352,
+          "likes": 353,
           "comments": 2,
           "is_video": true,
           "video_views": 14100,
@@ -10917,7 +10937,7 @@
           "likes": 130,
           "comments": 1,
           "is_video": true,
-          "video_views": 4,
+          "video_views": 5,
           "caption": "A short 13-second zoo clip captures a group of lions playfully interacting \u2014 until a male suddenly locks in a piercing stare that changes the whole mood. The caption, \u201cThat look is",
           "url": "https://www.instagram.com/p/DWDSd1aDYeN/",
           "video_views_source": "selenium_reels_grid"
@@ -10925,10 +10945,10 @@
         {
           "shortcode": "DWDBnk_jVS_",
           "date": "2026-03-19",
-          "likes": 320,
+          "likes": 321,
           "comments": 3,
           "is_video": true,
-          "video_views": 31300,
+          "video_views": 31400,
           "caption": "Those classroom paper planes were just the beginning \u2014 this one set a global benchmark \u2708\ufe0f\ud83d\udcc4\n\nThe current Guinness World Record for distance was achieved with a single launch that se",
           "url": "https://www.instagram.com/p/DWDBnk_jVS_/",
           "video_views_source": "selenium_reels_grid"
@@ -10969,10 +10989,10 @@
         {
           "shortcode": "DV9ydApDfmC",
           "date": "2026-03-17",
-          "likes": 1376,
+          "likes": 1379,
           "comments": 14,
           "is_video": true,
-          "video_views": 26600,
+          "video_views": 26700,
           "caption": "We are looking at people who are no longer alive\u2026\n\nIn 1901, people on the streets of Dublin looked at a camera for the first time, unaware they were capturing a moment that would r",
           "url": "https://www.instagram.com/p/DV9ydApDfmC/",
           "video_views_source": "selenium_reels_grid"
@@ -10980,7 +11000,7 @@
         {
           "shortcode": "DV9VxznCaj8",
           "date": "2026-03-16",
-          "likes": 92,
+          "likes": 93,
           "comments": 0,
           "is_video": true,
           "video_views": 4,
@@ -10991,10 +11011,10 @@
         {
           "shortcode": "DV6RappjS_s",
           "date": "2026-03-15",
-          "likes": 1564,
+          "likes": 1568,
           "comments": 16,
           "is_video": true,
-          "video_views": 27600,
+          "video_views": 27700,
           "caption": "A quiet backyard. A familiar whisper among the trees. And a small visitor who has returned, day after day, just to share a snack and a moment of trust. Then one morning, something ",
           "url": "https://www.instagram.com/p/DV6RappjS_s/",
           "video_views_source": "selenium_reels_grid"
@@ -11002,7 +11022,7 @@
         {
           "shortcode": "DV4DfbKidos",
           "date": "2026-03-14",
-          "likes": 4415,
+          "likes": 4416,
           "comments": 10,
           "is_video": true,
           "video_views": 255000,
@@ -11013,7 +11033,7 @@
         {
           "shortcode": "DV2mqpTjaeY",
           "date": "2026-03-14",
-          "likes": 200,
+          "likes": 201,
           "comments": 0,
           "is_video": true,
           "video_views": 7,
@@ -11024,7 +11044,7 @@
         {
           "shortcode": "DV2DfEdjZDB",
           "date": "2026-03-14",
-          "likes": 392,
+          "likes": 393,
           "comments": 5,
           "is_video": true,
           "video_views": 19300,
@@ -11057,7 +11077,7 @@
         {
           "shortcode": "DVy_5imiZPi",
           "date": "2026-03-12",
-          "likes": 757,
+          "likes": 758,
           "comments": 4,
           "is_video": true,
           "video_views": 10700,
@@ -11068,7 +11088,7 @@
         {
           "shortcode": "DVxLjMiDaZI",
           "date": "2026-03-12",
-          "likes": 140,
+          "likes": 141,
           "comments": 0,
           "is_video": true,
           "video_views": 3,
@@ -11079,10 +11099,10 @@
         {
           "shortcode": "DVw0ch2lHzi",
           "date": "2026-03-11",
-          "likes": 226,
+          "likes": 227,
           "comments": 1,
           "is_video": true,
-          "video_views": 9,
+          "video_views": 4,
           "caption": "In the mid-1990s in Costa Rica, the orange juice company Del Oro teamed up with ecologists and researchers from Princeton for an unusual experiment. They dumped about 12,000 tons o",
           "url": "https://www.instagram.com/p/DVw0ch2lHzi/",
           "video_views_source": "selenium_reels_grid"
@@ -11101,7 +11121,7 @@
         {
           "shortcode": "DVuzIeKDZWE",
           "date": "2026-03-11",
-          "likes": 53,
+          "likes": 54,
           "comments": 1,
           "is_video": true,
           "video_views": 2,
@@ -11112,10 +11132,10 @@
         {
           "shortcode": "DVuG-3SFABM",
           "date": "2026-03-10",
-          "likes": 449,
+          "likes": 451,
           "comments": 3,
           "is_video": true,
-          "video_views": 10400,
+          "video_views": 10500,
           "caption": "when your cat watches you in silence\u2026 it\u2019s not a coincidence \ud83d\udc31\ud83d\udc40\n\nmany cats unknowingly imitate the play dynamics of their owners. they hide behind doors, sofas, or corners and wait",
           "url": "https://www.instagram.com/p/DVuG-3SFABM/",
           "video_views_source": "selenium_reels_grid"
@@ -11123,7 +11143,7 @@
         {
           "shortcode": "DVt_T99CWFX",
           "date": "2026-03-10",
-          "likes": 1110,
+          "likes": 1111,
           "comments": 16,
           "is_video": true,
           "video_views": 18600,
@@ -11137,7 +11157,7 @@
           "likes": 77,
           "comments": 2,
           "is_video": true,
-          "video_views": 6,
+          "video_views": 4,
           "caption": "It looks like a solid bust\u2026 until it suddenly moves. \ud83c\udfa8\n\nAt Art Basel Miami, a paper sculpture by Li Hongbo shocked viewers when the seemingly rigid figure suddenly stretched and ex",
           "url": "https://www.instagram.com/p/DVr3RcPjT0r/",
           "video_views_source": "selenium_reels_grid"
@@ -11145,10 +11165,10 @@
         {
           "shortcode": "DVrJ9vvCV--",
           "date": "2026-03-09",
-          "likes": 6515,
+          "likes": 6520,
           "comments": 96,
           "is_video": true,
-          "video_views": 351000,
+          "video_views": 352000,
           "caption": "In the wild, the hare is a true master of survival.\n\nIt can accelerate up to 70 km/h and change direction abruptly, confusing predators.\n\nIts long ears are not just \u201clocators\u201d but ",
           "url": "https://www.instagram.com/p/DVrJ9vvCV--/",
           "video_views_source": "selenium_reels_grid"
@@ -11159,7 +11179,7 @@
           "likes": 1635,
           "comments": 8,
           "is_video": true,
-          "video_views": 35500,
+          "video_views": 35600,
           "caption": "The video shows a curious tabby cat nibbling on the tough green rind of a watermelon, before having a funny little \u201ceureka!\u201d moment when it finally tastes the sweet red flesh. Post",
           "url": "https://www.instagram.com/p/DVo_OFjDcFC/",
           "video_views_source": "selenium_reels_grid"
@@ -11170,7 +11190,7 @@
           "likes": 185,
           "comments": 1,
           "is_video": true,
-          "video_views": 20300,
+          "video_views": 8,
           "caption": "With a mouth full of uneven, protruding teeth, the sand tiger shark looks like something straight out of a horror movie. It can have up to 300 sharp teeth arranged in multiple rows",
           "url": "https://www.instagram.com/p/DVl2QvQlI_y/",
           "video_views_source": "selenium_reels_grid"
@@ -11178,7 +11198,7 @@
         {
           "shortcode": "DVlvGS4DVjH",
           "date": "2026-03-07",
-          "likes": 52796,
+          "likes": 52804,
           "comments": 584,
           "is_video": true,
           "video_views": 789000,
@@ -11269,7 +11289,7 @@
           "likes": 419,
           "comments": 2,
           "is_video": true,
-          "video_views": 20000,
+          "video_views": 6,
           "caption": "A breeding bull is a male bovine specifically selected for reproductive purposes. Its main role is to sire offspring, usually for livestock production, whether for beef or dairy.\n\n",
           "url": "https://www.instagram.com/p/DVexBiSjckm/",
           "video_views_source": "selenium_reels_grid"
@@ -11280,7 +11300,7 @@
           "likes": 83,
           "comments": 1,
           "is_video": true,
-          "video_views": 5,
+          "video_views": 1,
           "caption": "Sometimes snakes can become disoriented and mistake their own tail for prey, especially when they\u2019re stressed or in the middle of shedding. \ud83d\udc0d\n\nIt\u2019s not a normal instinct \u2014 it\u2019s a s",
           "url": "https://www.instagram.com/p/DVb5rEkESqe/",
           "video_views_source": "selenium_reels_grid"
@@ -11291,7 +11311,7 @@
           "likes": 62,
           "comments": 3,
           "is_video": true,
-          "video_views": 8,
+          "video_views": 3,
           "caption": "The sturgeon said: \u201cTonight I\u2019m having mermaid for dinner, and nothing will stop me.\u201d \ud83d\udc80\ud83d\ude02\n\n@trends is where the internet makes sense. Follow along\n\n#aquarium #sturgeon #mermaid #wil",
           "url": "https://www.instagram.com/p/DVbw2PakZ_N/",
           "video_views_source": "selenium_reels_grid"
@@ -11313,7 +11333,7 @@
           "likes": 82,
           "comments": 0,
           "is_video": true,
-          "video_views": 4,
+          "video_views": 1,
           "caption": "You don\u2019t always need strength to roar \u2014 sometimes it\u2019s enough not to back down. The goose understood it\u2026 did you?\n\n@trends is where the internet makes sense. Follow along\n\n#courag",
           "url": "https://www.instagram.com/p/DVZnkjAAb-b/",
           "video_views_source": "selenium_reels_grid"
@@ -11324,7 +11344,7 @@
           "likes": 75,
           "comments": 0,
           "is_video": true,
-          "video_views": 3,
+          "video_views": 934,
           "caption": "Meet Thechikkottukavu Ramachandran, the tallest and most iconic elephant in India. Adorned with temple grandeur, he rises above humans like a living monument of tradition and power",
           "url": "https://www.instagram.com/p/DVZeE3QDt3q/",
           "video_views_source": "selenium_reels_grid"
@@ -11346,7 +11366,7 @@
           "likes": 93,
           "comments": 0,
           "is_video": true,
-          "video_views": 6,
+          "video_views": 2,
           "caption": "A rocket engine test is a key stage in the development of space propulsion systems, where the engine\u2019s performance, safety, and reliability are validated under real conditions. The",
           "url": "https://www.instagram.com/p/DVWeLALEUDq/",
           "video_views_source": "selenium_reels_grid"
@@ -11357,7 +11377,7 @@
           "likes": 196,
           "comments": 3,
           "is_video": true,
-          "video_views": 5,
+          "video_views": 3,
           "caption": "What you see here is photosynthesis in action: an aquatic plant releasing oxygen, visible as tiny bubbles rising to the surface. This simple yet fascinating process not only keeps ",
           "url": "https://www.instagram.com/p/DVWWaKYjReN/",
           "video_views_source": "selenium_reels_grid"
@@ -11409,7 +11429,7 @@
         {
           "shortcode": "DVRmbXPkQi4",
           "date": "2026-02-27",
-          "likes": 266348,
+          "likes": 266438,
           "comments": 1737,
           "is_video": true,
           "video_views": 4700000,
@@ -11431,10 +11451,10 @@
         {
           "shortcode": "DVPC6XmkQEI",
           "date": "2026-02-26",
-          "likes": 7124,
+          "likes": 7125,
           "comments": 20,
           "is_video": true,
-          "video_views": 463000,
+          "video_views": 464000,
           "caption": "The so-called \u201cDrinking Milkcap\u201d is a unique mushroom capable of storing dozens of liters of water underground, forming a natural reservoir that allows it to survive the summer hea",
           "url": "https://www.instagram.com/p/DVPC6XmkQEI/",
           "video_views_source": "selenium_reels_grid"
@@ -11478,7 +11498,7 @@
           "likes": 110,
           "comments": 2,
           "is_video": true,
-          "video_views": 6,
+          "video_views": 4,
           "caption": "This farmer uses a plastic bag to reduce the speed of water in the furrows, allowing the soil to absorb it better and preventing waste. A simple, low-cost, and effective method to ",
           "url": "https://www.instagram.com/p/DVKS5lBjcoE/",
           "video_views_source": "selenium_reels_grid"
@@ -11486,7 +11506,7 @@
         {
           "shortcode": "DVJu4cwkfvt",
           "date": "2026-02-24",
-          "likes": 136113,
+          "likes": 136139,
           "comments": 619,
           "is_video": true,
           "video_views": 1300000,

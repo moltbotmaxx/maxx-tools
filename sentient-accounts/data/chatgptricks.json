@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-22T07:51:09+00:00",
+  "generated_at": "2026-03-22T08:22:58+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "chatgptricks",
   "profile_url": "https://www.instagram.com/chatgptricks/",
   "avatar_path": "../avatars/chatgptricks.jpg",
-  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/640407053_17993839451926057_8051626399473230451_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGzVMoC7gmI4cteT-ZUhCxXLa573BrPOD7-VrpPnv_ARK5VILIPB0Q7l01Pe4dS70I&_nc_ohc=9bL8SHnmoqQQ7kNvwHsOj_d&_nc_gid=_2GiQXBv0I2hF0rgZJv8Jw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GA3WKyYpbq04Te0-AHNiwgyNH71vbmNDAQAB0j-ccb7-5&oh=00_Afx7VbGF7kADr5JrDpTkhyLVUeoY0PyCD8g4fbRGMR8CAQ&oe=69C57AE4&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/640407053_17993839451926057_8051626399473230451_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gG_pg7w0P0IWhK3B1jn9Hw3LbGBVc1lV3Mum9e2dRfcGMjBiuuQK14VP1aFCI3lDOg&_nc_ohc=9bL8SHnmoqQQ7kNvwEWH_Wh&_nc_gid=RHWNsMnZ1WlGk9NtUij_uA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GA3WKyYpbq04Te0-AHNiwgyNH71vbmNDAQAB0j-ccb7-5&oh=00_AfwJwGjERIQBC7BfKsT1gSd78bJLlxcGERjdsg5PjVtRWw&oe=69C57AE4&_nc_sid=1e20d2",
   "full_name": "Artificial Intelligence (AI) \u2022 ChatGPT",
   "biography": "\ud83e\udd16 Follow to stay one step ahead of the curve\n\ud83d\udea8 AI is moving fast. Don\u2019t get left behind\n\ud83d\udce9 Collabs: hello@chatgptricks.com\n\ud83d\udc47 Get our Free ChatGPT Guide",
   "external_url": "http://chatgptricks.store",
   "is_verified": true,
-  "followers": 2477501,
+  "followers": 2477539,
   "following": 177,
   "posts": 2532,
   "recent_post_count": 120,
@@ -26,18 +26,19 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": false,
   "oldest_recent_post_date": "2026-02-24",
-  "avg_likes": 4287.77,
-  "avg_comments": 151.44,
-  "avg_video_views": 279892.86,
-  "avg_video_views_per_video": 279892.86,
-  "avg_video_views_per_post": 32654.17,
-  "total_video_views_recent_window": 3918500,
+  "avg_likes": 4288.68,
+  "avg_comments": 151.62,
+  "avg_video_views": 260357.14,
+  "avg_video_views_per_video": 260357.14,
+  "avg_video_views_per_post": 30375.0,
+  "total_likes_recent_window": 364032,
+  "total_video_views_recent_window": 3645000,
   "engagement_rate": 0.1792,
   "recent_posts": [
     {
       "shortcode": "DQwSSlhDkGC",
       "date": "2025-11-07",
-      "likes": 56798,
+      "likes": 56800,
       "comments": 188,
       "is_video": false,
       "video_views": 0,
@@ -47,7 +48,7 @@
     {
       "shortcode": "DP-84lrDWST",
       "date": "2025-10-19",
-      "likes": 91708,
+      "likes": 91709,
       "comments": 1035,
       "is_video": false,
       "video_views": 0,
@@ -57,7 +58,7 @@
     {
       "shortcode": "DKUL25_gCnh",
       "date": "2025-05-31",
-      "likes": 2027,
+      "likes": 2028,
       "comments": 279,
       "is_video": false,
       "video_views": 0,
@@ -78,9 +79,9 @@
       "shortcode": "DWKuOWdjQke",
       "date": "2026-03-22",
       "likes": 3,
-      "comments": 99,
+      "comments": 112,
       "is_video": true,
-      "video_views": 32500,
+      "video_views": 34200,
       "caption": "Build your own AI influencer.\n\nPeople are now creating full digital creators using a few AI tools and a clear process.\n\nYou start by defining your audience with ChatGPT, what they ",
       "url": "https://www.instagram.com/p/DWKuOWdjQke/",
       "video_views_source": "selenium_reels_grid"
@@ -108,7 +109,7 @@
     {
       "shortcode": "DWJuABKgJh9",
       "date": "2026-03-21",
-      "likes": 2498,
+      "likes": 2551,
       "comments": 49,
       "is_video": false,
       "video_views": 0,
@@ -118,7 +119,7 @@
     {
       "shortcode": "DWIEKTijRyT",
       "date": "2026-03-21",
-      "likes": 1837,
+      "likes": 1838,
       "comments": 68,
       "is_video": false,
       "video_views": 0,
@@ -158,8 +159,8 @@
     {
       "shortcode": "DWFmxlqjbIF",
       "date": "2026-03-20",
-      "likes": 1219,
-      "comments": 298,
+      "likes": 1231,
+      "comments": 306,
       "is_video": false,
       "video_views": 0,
       "caption": "Comment GTA and I\u2019ll send you the link \ud83c\udfae\n\nTurn your photos into GTA gameplay",
@@ -179,7 +180,7 @@
     {
       "shortcode": "DWFUbuwAOin",
       "date": "2026-03-19",
-      "likes": 2213,
+      "likes": 2215,
       "comments": 175,
       "is_video": false,
       "video_views": 0,
@@ -189,7 +190,7 @@
     {
       "shortcode": "DWEUbjogCKM",
       "date": "2026-03-19",
-      "likes": 8421,
+      "likes": 8429,
       "comments": 387,
       "is_video": false,
       "video_views": 0,
@@ -199,7 +200,7 @@
     {
       "shortcode": "DWDZv8IDVKo",
       "date": "2026-03-19",
-      "likes": 1588,
+      "likes": 1589,
       "comments": 115,
       "is_video": false,
       "video_views": 0,
@@ -219,7 +220,7 @@
     {
       "shortcode": "DWCELcGgOSe",
       "date": "2026-03-18",
-      "likes": 1650,
+      "likes": 1651,
       "comments": 25,
       "is_video": false,
       "video_views": 0,
@@ -229,7 +230,7 @@
     {
       "shortcode": "DWAQIwfDc_p",
       "date": "2026-03-17",
-      "likes": 4134,
+      "likes": 4137,
       "comments": 124,
       "is_video": false,
       "video_views": 0,
@@ -249,7 +250,7 @@
     {
       "shortcode": "DV_a2KygBQf",
       "date": "2026-03-17",
-      "likes": 1438,
+      "likes": 1440,
       "comments": 71,
       "is_video": false,
       "video_views": 0,
@@ -259,7 +260,7 @@
     {
       "shortcode": "DV_GL9rgF8X",
       "date": "2026-03-17",
-      "likes": 3937,
+      "likes": 3938,
       "comments": 93,
       "is_video": false,
       "video_views": 0,
@@ -279,7 +280,7 @@
     {
       "shortcode": "DV9eFEaILfh",
       "date": "2026-03-16",
-      "likes": 1557,
+      "likes": 1558,
       "comments": 35,
       "is_video": false,
       "video_views": 0,
@@ -289,7 +290,7 @@
     {
       "shortcode": "DV9PJwngFRG",
       "date": "2026-03-16",
-      "likes": 1611,
+      "likes": 1613,
       "comments": 51,
       "is_video": false,
       "video_views": 0,
@@ -309,7 +310,7 @@
     {
       "shortcode": "DV8fIMngOik",
       "date": "2026-03-16",
-      "likes": 2990,
+      "likes": 2991,
       "comments": 276,
       "is_video": false,
       "video_views": 0,
@@ -339,7 +340,7 @@
     {
       "shortcode": "DV7HGrijfDd",
       "date": "2026-03-15",
-      "likes": 1469,
+      "likes": 1470,
       "comments": 42,
       "is_video": false,
       "video_views": 0,
@@ -389,7 +390,7 @@
     {
       "shortcode": "DV3-xv3AAwi",
       "date": "2026-03-14",
-      "likes": 3402,
+      "likes": 3404,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -409,7 +410,7 @@
     {
       "shortcode": "DV3cXe1ANm7",
       "date": "2026-03-14",
-      "likes": 2080,
+      "likes": 2081,
       "comments": 47,
       "is_video": false,
       "video_views": 0,
@@ -459,7 +460,7 @@
     {
       "shortcode": "DV056S-ESVF",
       "date": "2026-03-13",
-      "likes": 9650,
+      "likes": 9651,
       "comments": 288,
       "is_video": true,
       "video_views": 328000,
@@ -500,7 +501,7 @@
     {
       "shortcode": "DVygg-lgEgD",
       "date": "2026-03-12",
-      "likes": 24463,
+      "likes": 24465,
       "comments": 737,
       "is_video": false,
       "video_views": 0,
@@ -550,7 +551,7 @@
     {
       "shortcode": "DVv7vTgEfYr",
       "date": "2026-03-11",
-      "likes": 2361,
+      "likes": 2362,
       "comments": 53,
       "is_video": true,
       "video_views": 118000,
@@ -691,7 +692,7 @@
     {
       "shortcode": "DVpAS7hAMx_",
       "date": "2026-03-08",
-      "likes": 4877,
+      "likes": 4881,
       "comments": 20,
       "is_video": false,
       "video_views": 0,
@@ -771,7 +772,7 @@
     {
       "shortcode": "DVjGCm_AMP9",
       "date": "2026-03-06",
-      "likes": 16293,
+      "likes": 16294,
       "comments": 267,
       "is_video": false,
       "video_views": 0,
@@ -936,7 +937,7 @@
       "likes": 6231,
       "comments": 140,
       "is_video": true,
-      "video_views": 356000,
+      "video_views": 197000,
       "caption": "AI art just gone too far with @higgsfield.ai models \n\nThat\u2019s a real comedy series with episodes every week\n\n\ud83c\udfa5: @un.sul",
       "url": "https://www.instagram.com/p/DVZV_8IE9yj/",
       "video_views_source": "selenium_reels_grid"
@@ -1017,7 +1018,7 @@
       "likes": 4287,
       "comments": 55,
       "is_video": true,
-      "video_views": 152000,
+      "video_views": 113000,
       "caption": "Claude just went viral.\n\nAfter the \u201cDoW controversy,\u201d Anthropic\u2019s Claude app shot up from #140 to #2 on the App Store in days.\n\nThe spike followed viral posts comparing Claude\u2019s an",
       "url": "https://www.instagram.com/p/DVTScLZEasD/",
       "video_views_source": "selenium_reels_grid"
@@ -1035,7 +1036,7 @@
     {
       "shortcode": "DVR_-_PkRXt",
       "date": "2026-02-28",
-      "likes": 7050,
+      "likes": 7051,
       "comments": 100,
       "is_video": true,
       "video_views": 405000,
@@ -1160,7 +1161,7 @@
       "likes": 1387,
       "comments": 30,
       "is_video": true,
-      "video_views": 105000,
+      "video_views": 27800,
       "caption": "This AI runs your computer for you.\n\nOpenClaw is an open-source AI agent that doesn\u2019t just chat, it takes action. It can read your emails, manage files, run scripts, and automate t",
       "url": "https://www.instagram.com/p/DVL2XZkkdT-/",
       "video_views_source": "selenium_reels_grid"
@@ -1230,7 +1231,7 @@
     {
       "shortcode": "DVIHxUPAJ74",
       "date": "2026-02-24",
-      "likes": 9231,
+      "likes": 9233,
       "comments": 338,
       "is_video": false,
       "video_views": 0,

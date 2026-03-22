@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-22T07:57:55+00:00",
+  "generated_at": "2026-03-22T08:31:01+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "artificialmente.ia",
   "profile_url": "https://www.instagram.com/artificialmente.ia/",
   "avatar_path": "../avatars/artificialmente.ia.jpg",
-  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gFH9ZkoM7mQ3rUtL5irBgM2jVd1w-IRpaqzo3saUpC9DPuoQ9TTagSSh2IARs7mY4A&_nc_ohc=l6jLFOmBifEQ7kNvwEhJNdB&_nc_gid=oxqmbOYAugh2MC5sycYPvQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_AfzpubUP8U8pXSf34Gwq9OQxW7gwyuXIhW7RaucsJYpm4g&oe=69C57D86&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/650473582_18005756846889956_8791795175306951865_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGc6ZDYVrNeeKvg67tkzE8ceH3dic8GCoXes_dgyV1W9GcLJ07zosv8ErUu69KrmUQ&_nc_ohc=l6jLFOmBifEQ7kNvwHrNXNg&_nc_gid=lA5Ra5RTyGUOuki_8rmdwA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GG5wxSbkW8X0I-g-ALn8KYohuwJ6bmNDAQAB0j-ccb7-5&oh=00_Afz7574SavOBFr4YkwZQ0jy9WR-ZOmb-EI4bW5OKCbiw9A&oe=69C57D86&_nc_sid=1e20d2",
   "full_name": "Ivan \u2022 IA \u2022 Tecnolog\u00eda",
   "biography": "\ud83e\uddd1\u200d\ud83d\udcbb Creador / Futurista @ivanelgrande\n\ud83e\udd16 S\u00edgueme antes de que sea tarde\n\ud83d\udce5 artificialmente.ia@gmail.com\n\ud83d\udc47 O usas IA o te quedas atr\u00e1s",
   "external_url": "http://ivanelgrande.com",
@@ -26,13 +26,14 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 5681.88,
-  "avg_comments": 101.49,
-  "avg_video_views": 127705.26,
-  "avg_video_views_per_video": 127705.26,
-  "avg_video_views_per_post": 64704.0,
-  "total_video_views_recent_window": 4852800,
-  "engagement_rate": 1.663,
+  "avg_likes": 5685.84,
+  "avg_comments": 101.51,
+  "avg_video_views": 119581.74,
+  "avg_video_views_per_video": 119581.74,
+  "avg_video_views_per_post": 60588.08,
+  "total_likes_recent_window": 378689,
+  "total_video_views_recent_window": 4544106,
+  "engagement_rate": 1.6641,
   "recent_posts": [
     {
       "shortcode": "DWByMuajpBM",
@@ -40,7 +41,7 @@
       "likes": 3,
       "comments": 8,
       "is_video": true,
-      "video_views": 14600,
+      "video_views": 6,
       "caption": "Y el ganador de un a\u00f1o completo de ChatGPT Plus es\u2026\n\n@alvaro_nz13 \ud83d\ude4c\n\nGracias a todos los que participaron. Est\u00e9n atentos porque se vienen m\u00e1s",
       "url": "https://www.instagram.com/p/DWByMuajpBM/",
       "video_views_source": "selenium_reels_grid"
@@ -68,10 +69,10 @@
     {
       "shortcode": "DWKLTVOEszL",
       "date": "2026-03-21",
-      "likes": 1716,
+      "likes": 1721,
       "comments": 35,
       "is_video": true,
-      "video_views": 58800,
+      "video_views": 59200,
       "caption": "Parece una escena de batalla sci-fi digna de una pel\u00edcula de $200M\u2026 pero no lo es.\n\nCreado por @lordofacca, un solo personaje destruye flotas de m\u00e1quinas de guerra con precisi\u00f3n us",
       "url": "https://www.instagram.com/p/DWKLTVOEszL/",
       "video_views_source": "selenium_reels_grid"
@@ -79,7 +80,7 @@
     {
       "shortcode": "DWIDtfKj-Lh",
       "date": "2026-03-21",
-      "likes": 802,
+      "likes": 804,
       "comments": 15,
       "is_video": false,
       "video_views": 0,
@@ -89,7 +90,7 @@
     {
       "shortcode": "DWHfwydDz6Q",
       "date": "2026-03-20",
-      "likes": 1023,
+      "likes": 1029,
       "comments": 25,
       "is_video": false,
       "video_views": 0,
@@ -99,10 +100,10 @@
     {
       "shortcode": "DWHI2yhDd9L",
       "date": "2026-03-20",
-      "likes": 29652,
-      "comments": 65,
+      "likes": 29813,
+      "comments": 66,
       "is_video": true,
-      "video_views": 271000,
+      "video_views": 272000,
       "caption": "Esto es exactamente para lo que se cre\u00f3 la IA \ud83d\ude2d Un remake viral de la ic\u00f3nica escena de \u201cwazzup\u201d de Scary Movie la reimagina con Spider-Man y el Duende Verde en una ca\u00f3tica videoll",
       "url": "https://www.instagram.com/p/DWHI2yhDd9L/",
       "video_views_source": "selenium_reels_grid"
@@ -120,10 +121,10 @@
     {
       "shortcode": "DWFVtHtDINY",
       "date": "2026-03-19",
-      "likes": 979,
+      "likes": 981,
       "comments": 35,
       "is_video": true,
-      "video_views": 38500,
+      "video_views": 38600,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
       "url": "https://www.instagram.com/p/DWFVtHtDINY/",
       "video_views_source": "selenium_reels_grid"
@@ -163,7 +164,7 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 66663,
+      "likes": 66722,
       "comments": 717,
       "is_video": false,
       "video_views": 0,
@@ -226,7 +227,7 @@
     {
       "shortcode": "DV8z0wvDTVG",
       "date": "2026-03-16",
-      "likes": 16337,
+      "likes": 16338,
       "comments": 45,
       "is_video": true,
       "video_views": 224000,
@@ -237,7 +238,7 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 4014,
+      "likes": 4023,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -247,7 +248,7 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 45250,
+      "likes": 45292,
       "comments": 321,
       "is_video": true,
       "video_views": 536000,
@@ -313,7 +314,7 @@
       "likes": 6999,
       "comments": 172,
       "is_video": true,
-      "video_views": 151000,
+      "video_views": 64700,
       "caption": "Esa es la mejor l\u00ednea de tiempo.\n\n\ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA\u201d y ",
       "url": "https://www.instagram.com/p/DV1b7XJlNfi/",
       "video_views_source": "selenium_reels_grid"
@@ -352,7 +353,7 @@
     {
       "shortcode": "DVwIX1rDX9q",
       "date": "2026-03-11",
-      "likes": 1153,
+      "likes": 1154,
       "comments": 45,
       "is_video": false,
       "video_views": 0,
@@ -393,7 +394,7 @@
     {
       "shortcode": "DVtl8lUD-kB",
       "date": "2026-03-10",
-      "likes": 4199,
+      "likes": 4201,
       "comments": 156,
       "is_video": true,
       "video_views": 194000,
@@ -428,7 +429,7 @@
       "likes": 1318,
       "comments": 14,
       "is_video": true,
-      "video_views": 41300,
+      "video_views": 31400,
       "caption": "Huawei acaba de presentar la MateBook Fold Ultimate Design, una de las laptops m\u00e1s futuristas hasta ahora.\n\nCuenta con una pantalla OLED flexible de 18 pulgadas que se pliega para ",
       "url": "https://www.instagram.com/p/DVrHmXtj6Oh/",
       "video_views_source": "selenium_reels_grid"
@@ -436,7 +437,7 @@
     {
       "shortcode": "DVo6u8ZlW8M",
       "date": "2026-03-08",
-      "likes": 21218,
+      "likes": 21221,
       "comments": 328,
       "is_video": false,
       "video_views": 0,
@@ -499,7 +500,7 @@
     {
       "shortcode": "DVg-irDiUGr",
       "date": "2026-03-05",
-      "likes": 72527,
+      "likes": 72529,
       "comments": 288,
       "is_video": true,
       "video_views": 1000000,
@@ -534,7 +535,7 @@
       "likes": 1560,
       "comments": 44,
       "is_video": true,
-      "video_views": 106000,
+      "video_views": 72500,
       "caption": "\u201cSe acab\u00f3 para los artistas de VFX\u2026\u201d.\n\nEsa frase aparece una y otra vez cada vez que la gente ve herramientas de animaci\u00f3n con IA que ahora permiten dirigir el movimiento usando pr",
       "url": "https://www.instagram.com/p/DVeCNkgkWF9/",
       "video_views_source": "selenium_reels_grid"
@@ -545,7 +546,7 @@
       "likes": 263,
       "comments": 36,
       "is_video": true,
-      "video_views": 23900,
+      "video_views": 17700,
       "caption": "Gracias por el regalo / Thank you for the gift \ud83c\udf81\ud83d\ude4c\n\n@openai @chatgpt",
       "url": "https://www.instagram.com/p/DVcPoWNgQSR/",
       "video_views_source": "selenium_reels_grid"
@@ -639,7 +640,7 @@
       "likes": 3349,
       "comments": 26,
       "is_video": true,
-      "video_views": 209000,
+      "video_views": 49300,
       "caption": "Todos hemos escuchado la frase \u201cno reinventes la rueda\u201d, pero investigadores de Imperial College London decidieron ignorarla y lograron un dise\u00f1o brillante. Crearon una rueda que p",
       "url": "https://www.instagram.com/p/DVSLPcbDGM9/",
       "video_views_source": "selenium_reels_grid"
@@ -740,7 +741,7 @@
     {
       "shortcode": "DVJwQR-EtoW",
       "date": "2026-02-24",
-      "likes": 1522,
+      "likes": 1523,
       "comments": 67,
       "is_video": true,
       "video_views": 53600,
@@ -793,7 +794,7 @@
     {
       "shortcode": "DU_5IYGjYH0",
       "date": "2026-02-20",
-      "likes": 1248,
+      "likes": 1249,
       "comments": 26,
       "is_video": false,
       "video_views": 0,

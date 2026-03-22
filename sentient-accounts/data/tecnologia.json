@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-22T07:57:03+00:00",
+  "generated_at": "2026-03-22T08:30:17+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "tecnologia",
   "profile_url": "https://www.instagram.com/tecnologia/",
   "avatar_path": "../avatars/tecnologia.jpg",
-  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gExz5e_rf6rkE4Ux6aHZBdNn8b-TLuUVSeIcoNgTShjR9kSVTLktkHPphfz3F2nfCw&_nc_ohc=KPbh5fguLbYQ7kNvwEfPrPU&_nc_gid=UivsQfSMLReErgfvgx47CA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_Afy2ZKdfFk3eMT1iFFRfjCR7o-aFRxZ8WnXemiA4Ky762A&oe=69C57EDF&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHIwR_fm8qnI3e7X6Fm7w2bKWh2faBEGE8XfDwfl77JVjoT3nLZr2IQiSDBiA_lJpY&_nc_ohc=KPbh5fguLbYQ7kNvwFD2N4r&_nc_gid=aNSjT33fOgwdkXftTW3uyA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_AfxBY8PRM99lSAweeAGeijxYllclQwUHKSGXyFK1yNmF7g&oe=69C57EDF&_nc_sid=1e20d2",
   "full_name": "Tecnologia",
   "biography": "\ud83e\udd16 La fuente confiable para todo lo relacionado con tecnolog\u00eda, IA y negocios. S\u00edguenos y no te quedes atr\u00e1s!",
   "external_url": "http://ivanelgrande.com",
   "is_verified": true,
-  "followers": 59845,
+  "followers": 59852,
   "following": 7,
   "posts": 219,
   "recent_post_count": 55,
@@ -26,13 +26,14 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 13613.64,
+  "avg_likes": 13620.84,
   "avg_comments": 65.36,
-  "avg_video_views": 335786.0,
-  "avg_video_views_per_video": 335786.0,
-  "avg_video_views_per_post": 299154.8,
-  "total_video_views_recent_window": 16453514,
-  "engagement_rate": 22.8574,
+  "avg_video_views": 318065.71,
+  "avg_video_views_per_video": 318065.71,
+  "avg_video_views_per_post": 283367.64,
+  "total_likes_recent_window": 702222,
+  "total_video_views_recent_window": 15585220,
+  "engagement_rate": 22.8667,
   "recent_posts": [
     {
       "shortcode": "DOueE7_DPmm",
@@ -47,10 +48,10 @@
     {
       "shortcode": "DWKSrtmia5k",
       "date": "2026-03-21",
-      "likes": 1027,
+      "likes": 1034,
       "comments": 0,
       "is_video": true,
-      "video_views": 70200,
+      "video_views": 70500,
       "caption": "Un resorte se fabrica comenzando por seleccionar un material adecuado, generalmente acero o acero inoxidable, y estirarlo hasta convertirlo en un alambre m\u00e1s delgado. Luego, el ala",
       "url": "https://www.instagram.com/p/DWKSrtmia5k/",
       "video_views_source": "selenium_reels_grid"
@@ -58,10 +59,10 @@
     {
       "shortcode": "DWHVNUiJTPs",
       "date": "2026-03-20",
-      "likes": 42113,
+      "likes": 42230,
       "comments": 103,
       "is_video": true,
-      "video_views": 479000,
+      "video_views": 480000,
       "caption": "La Kawasaki Ninja H2R es una de las motocicletas m\u00e1s extremas jam\u00e1s construidas.\n\nEst\u00e1 impulsada por un motor de cuatro cilindros en l\u00ednea de 998 cc con supercargador que produce m",
       "url": "https://www.instagram.com/p/DWHVNUiJTPs/",
       "video_views_source": "selenium_reels_grid"
@@ -69,7 +70,7 @@
     {
       "shortcode": "DWHN3RHjrXd",
       "date": "2026-03-20",
-      "likes": 1954,
+      "likes": 1960,
       "comments": 0,
       "is_video": true,
       "video_views": 30800,
@@ -80,7 +81,7 @@
     {
       "shortcode": "DWFiluUiT5R",
       "date": "2026-03-20",
-      "likes": 11127,
+      "likes": 11154,
       "comments": 173,
       "is_video": false,
       "video_views": 0,
@@ -90,10 +91,10 @@
     {
       "shortcode": "DWFYDJDiXjk",
       "date": "2026-03-19",
-      "likes": 4419,
+      "likes": 4435,
       "comments": 17,
       "is_video": true,
-      "video_views": 200000,
+      "video_views": 201000,
       "caption": "A velocidades cercanas a 249 mph (unos 400 km/h), detener un Bugatti requiere mucho m\u00e1s que frenos est\u00e1ndar, ya que las fuerzas involucradas son extremas.\n\nCuando el conductor pisa",
       "url": "https://www.instagram.com/p/DWFYDJDiXjk/",
       "video_views_source": "selenium_reels_grid"
@@ -101,10 +102,10 @@
     {
       "shortcode": "DWFVtHtDINY",
       "date": "2026-03-19",
-      "likes": 979,
+      "likes": 981,
       "comments": 35,
       "is_video": true,
-      "video_views": 38500,
+      "video_views": 38600,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
       "url": "https://www.instagram.com/p/DWFVtHtDINY/",
       "video_views_source": "selenium_reels_grid"
@@ -112,10 +113,10 @@
     {
       "shortcode": "DWFAL98CXXT",
       "date": "2026-03-19",
-      "likes": 2711,
+      "likes": 2716,
       "comments": 1,
       "is_video": true,
-      "video_views": 95600,
+      "video_views": 95800,
       "caption": "Mercedes demuestra el flujo aerodin\u00e1mico alrededor del AMG GT utilizando corrientes visibles en un t\u00fanel de viento que revelan c\u00f3mo el aire se desplaza sobre la carrocer\u00eda a alta v",
       "url": "https://www.instagram.com/p/DWFAL98CXXT/",
       "video_views_source": "selenium_reels_grid"
@@ -134,10 +135,10 @@
     {
       "shortcode": "DWCape1CcLl",
       "date": "2026-03-18",
-      "likes": 2752,
+      "likes": 2756,
       "comments": 8,
       "is_video": true,
-      "video_views": 83800,
+      "video_views": 27200,
       "caption": "Los Boeing 737 de Ryanair est\u00e1n construidos con escaleras integradas, lo que permite a los pasajeros abordar sin necesidad de escaleras del aeropuerto ni mangas de embarque. Las es",
       "url": "https://www.instagram.com/p/DWCape1CcLl/",
       "video_views_source": "selenium_reels_grid"
@@ -145,7 +146,7 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 66661,
+      "likes": 66721,
       "comments": 717,
       "is_video": false,
       "video_views": 0,
@@ -176,7 +177,7 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 4014,
+      "likes": 4023,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -186,7 +187,7 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 45247,
+      "likes": 45292,
       "comments": 321,
       "is_video": true,
       "video_views": 536000,
@@ -219,10 +220,10 @@
     {
       "shortcode": "DV1nonDiSiY",
       "date": "2026-03-13",
-      "likes": 7970,
+      "likes": 7971,
       "comments": 18,
       "is_video": true,
-      "video_views": 102000,
+      "video_views": 23500,
       "caption": "Esta bestia de $250,000 es el punto m\u00e1ximo de la ingenier\u00eda todoterreno \ud83c\udfdc\ufe0f\ud83d\udd25\n\nConstruida para conquistar la brutal Baja 1000 y volar sobre el terreno des\u00e9rtico a m\u00e1s de 120 mph \ud83d\ude80, e",
       "url": "https://www.instagram.com/p/DV1nonDiSiY/",
       "video_views_source": "selenium_reels_grid"
@@ -233,7 +234,7 @@
       "likes": 6999,
       "comments": 172,
       "is_video": true,
-      "video_views": 151000,
+      "video_views": 99200,
       "caption": "Esa es la mejor l\u00ednea de tiempo.\n\n\ud83d\udcf9: Sergio Ram\u00edrez, MJJ.Peru, Lory Dimartino\n\n\u2022 Sigue a @ivanelgrande el creador de @artificialmente.ia y aprende m\u00e1s sobre IA. \n\n\u2022 Comenta \u201cIA\u201d y ",
       "url": "https://www.instagram.com/p/DV1b7XJlNfi/",
       "video_views_source": "selenium_reels_grid"
@@ -244,7 +245,7 @@
       "likes": 495,
       "comments": 0,
       "is_video": true,
-      "video_views": 14600,
+      "video_views": 3,
       "caption": "La fabricaci\u00f3n moderna de semiconductores ha alcanzado la escala nanom\u00e9trica, lo que permite a los ingenieros integrar decenas de miles de millones de transistores en un espacio m\u00e1",
       "url": "https://www.instagram.com/p/DVzgsuICevN/",
       "video_views_source": "selenium_reels_grid"
@@ -252,10 +253,10 @@
     {
       "shortcode": "DVzZCZSicMr",
       "date": "2026-03-12",
-      "likes": 11449,
+      "likes": 11450,
       "comments": 28,
       "is_video": true,
-      "video_views": 78000,
+      "video_views": 17500,
       "caption": "BMW desarroll\u00f3 una vez un prototipo del M5 impulsado por una versi\u00f3n reducida de su motor V10 inspirado en la F\u00f3rmula 1, combinando tecnolog\u00eda de carreras con un sed\u00e1n de lujo de a",
       "url": "https://www.instagram.com/p/DVzZCZSicMr/",
       "video_views_source": "selenium_reels_grid"
@@ -274,7 +275,7 @@
     {
       "shortcode": "DVv7Miujsw6",
       "date": "2026-03-11",
-      "likes": 95046,
+      "likes": 95100,
       "comments": 156,
       "is_video": true,
       "video_views": 7200000,
@@ -285,10 +286,10 @@
     {
       "shortcode": "DVuJbAGiazf",
       "date": "2026-03-10",
-      "likes": 1537,
+      "likes": 1538,
       "comments": 3,
       "is_video": true,
-      "video_views": 62000,
+      "video_views": 23900,
       "caption": "Dos equipos de construcci\u00f3n alguna vez compitieron entre s\u00ed para levantar las Torres Gemelas Petronas en Kuala Lumpur, donde cada d\u00eda de retraso costaba unos extraordinarios 700,00",
       "url": "https://www.instagram.com/p/DVuJbAGiazf/",
       "video_views_source": "selenium_reels_grid"
@@ -329,7 +330,7 @@
     {
       "shortcode": "DVowVvsCRRk",
       "date": "2026-03-08",
-      "likes": 1731,
+      "likes": 1732,
       "comments": 0,
       "is_video": true,
       "video_views": 32600,
@@ -351,7 +352,7 @@
     {
       "shortcode": "DVj4kXFiT7O",
       "date": "2026-03-06",
-      "likes": 10661,
+      "likes": 10665,
       "comments": 174,
       "is_video": true,
       "video_views": 946000,
@@ -384,10 +385,10 @@
     {
       "shortcode": "DVg-irDiUGr",
       "date": "2026-03-05",
-      "likes": 72527,
+      "likes": 72529,
       "comments": 288,
       "is_video": true,
-      "video_views": 1000000,
+      "video_views": 681000,
       "caption": "S\u00ed, exactamente por eso la RAM es tan cara.\n\nLo que parece un clip de pel\u00edcula rid\u00edculo en realidad es una secuencia cinematogr\u00e1fica completa generada con IA. Y de alguna manera\u2026 f",
       "url": "https://www.instagram.com/p/DVg-irDiUGr/",
       "video_views_source": "selenium_reels_grid"
@@ -395,7 +396,7 @@
     {
       "shortcode": "DVg4EmCiVE9",
       "date": "2026-03-05",
-      "likes": 35860,
+      "likes": 35866,
       "comments": 66,
       "is_video": true,
       "video_views": 506000,
@@ -409,7 +410,7 @@
       "likes": 903,
       "comments": 1,
       "is_video": true,
-      "video_views": 22400,
+      "video_views": 14500,
       "caption": "La filmaci\u00f3n con tel\u00e9fono acaba de alcanzar nuevos niveles.\n\nEl Horizon Lock del Galaxy S26 Ultra mantiene tus tomas perfectamente niveladas incluso cuando est\u00e1s girando o movi\u00e9ndo",
       "url": "https://www.instagram.com/p/DVeeQI4Cee0/",
       "video_views_source": "selenium_reels_grid"
@@ -428,7 +429,7 @@
     {
       "shortcode": "DVeGhVijiq7",
       "date": "2026-03-04",
-      "likes": 120549,
+      "likes": 120564,
       "comments": 117,
       "is_video": true,
       "video_views": 1100000,
@@ -439,10 +440,10 @@
     {
       "shortcode": "DVb-UPgEvko",
       "date": "2026-03-03",
-      "likes": 37476,
+      "likes": 37485,
       "comments": 23,
       "is_video": true,
-      "video_views": 243000,
+      "video_views": 57900,
       "caption": "El Nissan Skyline GT\u2011R R34 es uno de los \u00edconos JDM m\u00e1s modificables jam\u00e1s creados, impulsado por el RB26DETT, un seis en l\u00ednea biturbo capaz de manejar potencias extremas con gran",
       "url": "https://www.instagram.com/p/DVb-UPgEvko/",
       "video_views_source": "selenium_reels_grid"
@@ -453,7 +454,7 @@
       "likes": 1899,
       "comments": 11,
       "is_video": true,
-      "video_views": 60800,
+      "video_views": 14900,
       "caption": "Dos engranajes gigantes giran a una velocidad vertiginosa dentro de una arena de acero, chocando entre s\u00ed y lanzando una lluvia de chispas mientras toda la plataforma retumba por l",
       "url": "https://www.instagram.com/p/DVZjg8AEvSX/",
       "video_views_source": "selenium_reels_grid"
@@ -464,7 +465,7 @@
       "likes": 175,
       "comments": 1,
       "is_video": true,
-      "video_views": 12900,
+      "video_views": 3,
       "caption": "Cuando las palomitas se preparan en una m\u00e1quina de presi\u00f3n, no se trata solo de aplicar calor, sino de f\u00edsica de presi\u00f3n controlada dentro de un tambor sellado y giratorio.\n\nCada g",
       "url": "https://www.instagram.com/p/DVZbfl4Es7d/",
       "video_views_source": "selenium_reels_grid"
@@ -538,7 +539,7 @@
     {
       "shortcode": "DVOj0TOjvpO",
       "date": "2026-02-26",
-      "likes": 74903,
+      "likes": 74907,
       "comments": 287,
       "is_video": true,
       "video_views": 1900000,

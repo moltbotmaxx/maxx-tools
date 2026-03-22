@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-22T07:52:23+00:00",
+  "generated_at": "2026-03-22T08:25:13+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "traselveloreal",
   "profile_url": "https://www.instagram.com/traselveloreal/",
   "avatar_path": "../avatars/traselveloreal.jpg",
-  "profile_pic_url": "https://scontent-dfw6-1.cdninstagram.com/v/t51.2885-19/455819241_1271293970519971_8790146552743418054_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gFYkmPclTY_PVxp3IXerR6ZSigSd8IhQdK_2nPXmxdEsEpe6r8hybStVmWvK0DQiQY&_nc_ohc=RE7BoyIoAoUQ7kNvwHw6SBy&_nc_gid=3rKgckL2v3EOmAFxKk79tw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOk-Kxujl4QxPIQEAMZY5a_33-x5bkULAAAB0j-ccb7-5&oh=00_AfzihNrUMnLpR6leTIBeU-U9bDxsqNsCvHTFQ-wzZfLj3Q&oe=69C56BE5&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/455819241_1271293970519971_8790146552743418054_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gGfxAxw1tIprovfuIP4-FiI4bEqAIcylLAu0SItTrCJ59y5tkFnmbmouHyaOjglJtY&_nc_ohc=RE7BoyIoAoUQ7kNvwHw9Z1o&_nc_gid=hK2xY4DZdYBfK5Bi_pkoXA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GOk-Kxujl4QxPIQEAMZY5a_33-x5bkULAAAB0j-ccb7-5&oh=00_AfxbiJT-FSsK0A_RjxgmB63Q0olf0KR_f_JRaJnoC2jS2g&oe=69C56BE5&_nc_sid=1e20d2",
   "full_name": "Tras el Velo | Compa\u00f1\u00eda de Medios",
   "biography": "\ud83c\udfad Historias, tendencias y entretenimiento\n\ud83d\udce9 Colaboraciones: traselveloreal@gmail.com\n\ud83d\udc41\ufe0f \u00danete a nuestra comunidad privada\ud83d\udc47",
   "external_url": "https://stan.store/traselvelo",
   "is_verified": true,
-  "followers": 2242087,
+  "followers": 2242086,
   "following": 54,
   "posts": 1904,
   "recent_post_count": 110,
@@ -26,13 +26,14 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 34438.91,
-  "avg_comments": 361.9,
-  "avg_video_views": 640527.27,
-  "avg_video_views_per_video": 640527.27,
-  "avg_video_views_per_post": 64052.73,
-  "total_video_views_recent_window": 7045800,
-  "engagement_rate": 1.5522,
+  "avg_likes": 34447.68,
+  "avg_comments": 361.95,
+  "avg_video_views": 623264.91,
+  "avg_video_views_per_video": 623264.91,
+  "avg_video_views_per_post": 62326.49,
+  "total_likes_recent_window": 2945618,
+  "total_video_views_recent_window": 6855914,
+  "engagement_rate": 1.5526,
   "recent_posts": [
     {
       "shortcode": "DAEO9dnvT0x",
@@ -67,7 +68,7 @@
     {
       "shortcode": "DWKymUojZMO",
       "date": "2026-03-22",
-      "likes": 3864,
+      "likes": 3916,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -77,8 +78,8 @@
     {
       "shortcode": "DWKd89lAeMh",
       "date": "2026-03-21",
-      "likes": 4849,
-      "comments": 121,
+      "likes": 4912,
+      "comments": 122,
       "is_video": false,
       "video_views": 0,
       "caption": "La hija adolescente del l\u00edder norcoreano Kim Jong-un condujo un tanque durante un entrenamiento militar supervisado por su padre. Esta nueva aparici\u00f3n p\u00fablica conjunta ha alimentad",
@@ -87,7 +88,7 @@
     {
       "shortcode": "DWKLBI4CaNh",
       "date": "2026-03-21",
-      "likes": 5993,
+      "likes": 6011,
       "comments": 142,
       "is_video": false,
       "video_views": 0,
@@ -97,7 +98,7 @@
     {
       "shortcode": "DWICNnBjfqS",
       "date": "2026-03-20",
-      "likes": 1658,
+      "likes": 1664,
       "comments": 33,
       "is_video": false,
       "video_views": 0,
@@ -107,7 +108,7 @@
     {
       "shortcode": "DWHgprcCdo1",
       "date": "2026-03-20",
-      "likes": 16600,
+      "likes": 16690,
       "comments": 57,
       "is_video": false,
       "video_views": 0,
@@ -117,7 +118,7 @@
     {
       "shortcode": "DWHZXLgjqW2",
       "date": "2026-03-20",
-      "likes": 114451,
+      "likes": 114674,
       "comments": 1967,
       "is_video": false,
       "video_views": 0,
@@ -127,7 +128,7 @@
     {
       "shortcode": "DWHSixIDZtH",
       "date": "2026-03-20",
-      "likes": 3607,
+      "likes": 3614,
       "comments": 174,
       "is_video": false,
       "video_views": 0,
@@ -137,7 +138,7 @@
     {
       "shortcode": "DWHK9-rjQDp",
       "date": "2026-03-20",
-      "likes": 5006,
+      "likes": 5011,
       "comments": 137,
       "is_video": false,
       "video_views": 0,
@@ -157,7 +158,7 @@
     {
       "shortcode": "DWFuPLjjUtr",
       "date": "2026-03-20",
-      "likes": 3579,
+      "likes": 3581,
       "comments": 22,
       "is_video": false,
       "video_views": 0,
@@ -167,7 +168,7 @@
     {
       "shortcode": "DWFiMpeDZbx",
       "date": "2026-03-20",
-      "likes": 14370,
+      "likes": 14405,
       "comments": 82,
       "is_video": false,
       "video_views": 0,
@@ -180,7 +181,7 @@
       "likes": 535,
       "comments": 14,
       "is_video": true,
-      "video_views": 42300,
+      "video_views": 714,
       "caption": "Netflix gasta $17 mil millones al a\u00f1o produciendo series.\n\n@Higgsfield.ai acaba de hacerlo sin actores, sin c\u00e1maras y sin presupuestos multimillonarios.\n\nAcaban de lanzar *Arena Ze",
       "url": "https://www.instagram.com/p/DWFVOTXjZRF/",
       "video_views_source": "selenium_reels_grid"
@@ -188,10 +189,10 @@
     {
       "shortcode": "DWFIu7dATMl",
       "date": "2026-03-19",
-      "likes": 9587,
+      "likes": 9588,
       "comments": 45,
       "is_video": true,
-      "video_views": 551000,
+      "video_views": 552000,
       "caption": "Durante el d\u00eda, las aves rapaces como los halcones suelen perseguir y acosar a los b\u00fahos cuando los descubren descansando.\n\nSin embargo, este comportamiento no se limita solo a los",
       "url": "https://www.instagram.com/p/DWFIu7dATMl/",
       "video_views_source": "selenium_reels_grid"
@@ -199,7 +200,7 @@
     {
       "shortcode": "DWDDIFHjWxq",
       "date": "2026-03-19",
-      "likes": 3415,
+      "likes": 3416,
       "comments": 217,
       "is_video": false,
       "video_views": 0,
@@ -209,7 +210,7 @@
     {
       "shortcode": "DWC7AG5DUG9",
       "date": "2026-03-19",
-      "likes": 19500,
+      "likes": 19510,
       "comments": 58,
       "is_video": false,
       "video_views": 0,
@@ -219,7 +220,7 @@
     {
       "shortcode": "DWCqaCcCf1A",
       "date": "2026-03-18",
-      "likes": 13390,
+      "likes": 13394,
       "comments": 403,
       "is_video": false,
       "video_views": 0,
@@ -229,7 +230,7 @@
     {
       "shortcode": "DWCfTSFgaIp",
       "date": "2026-03-18",
-      "likes": 4131,
+      "likes": 4132,
       "comments": 91,
       "is_video": false,
       "video_views": 0,
@@ -249,7 +250,7 @@
     {
       "shortcode": "DWAGVRqgecb",
       "date": "2026-03-17",
-      "likes": 3549,
+      "likes": 3553,
       "comments": 21,
       "is_video": false,
       "video_views": 0,
@@ -259,7 +260,7 @@
     {
       "shortcode": "DV_-Mowgcf7",
       "date": "2026-03-17",
-      "likes": 77239,
+      "likes": 77355,
       "comments": 389,
       "is_video": false,
       "video_views": 0,
@@ -269,8 +270,8 @@
     {
       "shortcode": "DV_onQeDqV0",
       "date": "2026-03-17",
-      "likes": 4745,
-      "comments": 57,
+      "likes": 4750,
+      "comments": 58,
       "is_video": false,
       "video_views": 0,
       "caption": "Los psic\u00f3logos sugieren que la forma m\u00e1s alta de paz consiste en soltar la necesidad de ser comprendido, admirado, compadecido o reconocido, porque esos deseos atan tu estado inter",
@@ -279,7 +280,7 @@
     {
       "shortcode": "DV-FBmcjZVS",
       "date": "2026-03-17",
-      "likes": 25421,
+      "likes": 25430,
       "comments": 97,
       "is_video": false,
       "video_views": 0,
@@ -289,7 +290,7 @@
     {
       "shortcode": "DV9-IfMjdpS",
       "date": "2026-03-17",
-      "likes": 4300,
+      "likes": 4302,
       "comments": 86,
       "is_video": false,
       "video_views": 0,
@@ -299,7 +300,7 @@
     {
       "shortcode": "DV9uZL9DfMk",
       "date": "2026-03-16",
-      "likes": 35967,
+      "likes": 36001,
       "comments": 194,
       "is_video": false,
       "video_views": 0,
@@ -309,7 +310,7 @@
     {
       "shortcode": "DV9h7z5CafK",
       "date": "2026-03-16",
-      "likes": 7920,
+      "likes": 7922,
       "comments": 233,
       "is_video": false,
       "video_views": 0,
@@ -319,7 +320,7 @@
     {
       "shortcode": "DV9RKMkicyh",
       "date": "2026-03-16",
-      "likes": 60688,
+      "likes": 60699,
       "comments": 358,
       "is_video": false,
       "video_views": 0,
@@ -329,8 +330,8 @@
     {
       "shortcode": "DV7VkBbjZPn",
       "date": "2026-03-16",
-      "likes": 56802,
-      "comments": 436,
+      "likes": 56819,
+      "comments": 438,
       "is_video": false,
       "video_views": 0,
       "caption": "Hace muchos a\u00f1os, este video fue grabado en una acera lluviosa en Zhejiang, China, mostrando a un padre y a su peque\u00f1a hija con impermeables, bailando juntos sin m\u00fasica, sin acceso",
@@ -360,7 +361,7 @@
     {
       "shortcode": "DV4YvTtASoU",
       "date": "2026-03-14",
-      "likes": 15148,
+      "likes": 15155,
       "comments": 407,
       "is_video": false,
       "video_views": 0,
@@ -380,7 +381,7 @@
     {
       "shortcode": "DV2OgyBjWBH",
       "date": "2026-03-14",
-      "likes": 52426,
+      "likes": 52449,
       "comments": 239,
       "is_video": false,
       "video_views": 0,
@@ -390,7 +391,7 @@
     {
       "shortcode": "DV2AAD7jWqp",
       "date": "2026-03-13",
-      "likes": 74698,
+      "likes": 74702,
       "comments": 471,
       "is_video": false,
       "video_views": 0,
@@ -400,7 +401,7 @@
     {
       "shortcode": "DV14ovcDftP",
       "date": "2026-03-13",
-      "likes": 10446,
+      "likes": 10448,
       "comments": 462,
       "is_video": false,
       "video_views": 0,
@@ -420,7 +421,7 @@
     {
       "shortcode": "DV1iFvUCXI-",
       "date": "2026-03-13",
-      "likes": 54368,
+      "likes": 54376,
       "comments": 260,
       "is_video": false,
       "video_views": 0,
@@ -430,7 +431,7 @@
     {
       "shortcode": "DVziDsDjSq9",
       "date": "2026-03-13",
-      "likes": 8154,
+      "likes": 8158,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -440,7 +441,7 @@
     {
       "shortcode": "DVzUCMXjVHW",
       "date": "2026-03-12",
-      "likes": 2690,
+      "likes": 2691,
       "comments": 70,
       "is_video": false,
       "video_views": 0,
@@ -460,7 +461,7 @@
     {
       "shortcode": "DVy-bzlCX3S",
       "date": "2026-03-12",
-      "likes": 107129,
+      "likes": 107163,
       "comments": 487,
       "is_video": true,
       "video_views": 2700000,
@@ -471,7 +472,7 @@
     {
       "shortcode": "DVxKkTTDRlP",
       "date": "2026-03-12",
-      "likes": 127363,
+      "likes": 127370,
       "comments": 1626,
       "is_video": false,
       "video_views": 0,
@@ -481,7 +482,7 @@
     {
       "shortcode": "DVwsCQPjb3O",
       "date": "2026-03-11",
-      "likes": 32620,
+      "likes": 32636,
       "comments": 136,
       "is_video": false,
       "video_views": 0,
@@ -491,7 +492,7 @@
     {
       "shortcode": "DVwggqAgc40",
       "date": "2026-03-11",
-      "likes": 26720,
+      "likes": 26721,
       "comments": 450,
       "is_video": false,
       "video_views": 0,
@@ -501,7 +502,7 @@
     {
       "shortcode": "DVwYXY4iTsC",
       "date": "2026-03-11",
-      "likes": 79414,
+      "likes": 79419,
       "comments": 343,
       "is_video": false,
       "video_views": 0,
@@ -511,10 +512,10 @@
     {
       "shortcode": "DVu05BUDdcw",
       "date": "2026-03-11",
-      "likes": 80761,
+      "likes": 80762,
       "comments": 670,
       "is_video": true,
-      "video_views": 1500000,
+      "video_views": 1400000,
       "caption": "Un video viral reciente muestra a un hombre tocando suavemente el rostro y la pata de una ardilla en un breve momento de cuidado y afecto. La escena se vuelve a\u00fan m\u00e1s conmovedora c",
       "url": "https://www.instagram.com/p/DVu05BUDdcw/",
       "video_views_source": "selenium_reels_grid"
@@ -522,7 +523,7 @@
     {
       "shortcode": "DVus-TSDSQT",
       "date": "2026-03-11",
-      "likes": 32986,
+      "likes": 33001,
       "comments": 92,
       "is_video": false,
       "video_views": 0,
@@ -542,7 +543,7 @@
     {
       "shortcode": "DVuK1AsDVSJ",
       "date": "2026-03-10",
-      "likes": 155944,
+      "likes": 155948,
       "comments": 2043,
       "is_video": false,
       "video_views": 0,
@@ -572,7 +573,7 @@
     {
       "shortcode": "DVsHnXMjde_",
       "date": "2026-03-10",
-      "likes": 25631,
+      "likes": 25644,
       "comments": 198,
       "is_video": false,
       "video_views": 0,
@@ -582,7 +583,7 @@
     {
       "shortcode": "DVsADVjDQFJ",
       "date": "2026-03-10",
-      "likes": 81063,
+      "likes": 81068,
       "comments": 1145,
       "is_video": false,
       "video_views": 0,
@@ -602,7 +603,7 @@
     {
       "shortcode": "DVrN9GvCV-o",
       "date": "2026-03-09",
-      "likes": 68171,
+      "likes": 68191,
       "comments": 83,
       "is_video": false,
       "video_views": 0,
@@ -612,7 +613,7 @@
     {
       "shortcode": "DVo8ubAgRRl",
       "date": "2026-03-08",
-      "likes": 8644,
+      "likes": 8645,
       "comments": 89,
       "is_video": false,
       "video_views": 0,
@@ -662,8 +663,8 @@
     {
       "shortcode": "DVjVfN0DQQy",
       "date": "2026-03-06",
-      "likes": 89519,
-      "comments": 984,
+      "likes": 89524,
+      "comments": 985,
       "is_video": false,
       "video_views": 0,
       "caption": "Arque\u00f3logos que analizaron fragmentos de pipas de arcilla excavadas en el jard\u00edn de la antigua casa de William Shakespeare en Stratford-upon-Avon descubrieron rastros de residuos d",
@@ -732,7 +733,7 @@
     {
       "shortcode": "DVe5AXwjZgs",
       "date": "2026-03-05",
-      "likes": 35004,
+      "likes": 35006,
       "comments": 317,
       "is_video": false,
       "video_views": 0,
@@ -742,7 +743,7 @@
     {
       "shortcode": "DVeuvlLDW0P",
       "date": "2026-03-04",
-      "likes": 57990,
+      "likes": 58001,
       "comments": 423,
       "is_video": false,
       "video_views": 0,
@@ -752,7 +753,7 @@
     {
       "shortcode": "DVeXMQsAd9u",
       "date": "2026-03-04",
-      "likes": 8637,
+      "likes": 8640,
       "comments": 108,
       "is_video": false,
       "video_views": 0,
@@ -762,7 +763,7 @@
     {
       "shortcode": "DVd9ESDDRva",
       "date": "2026-03-04",
-      "likes": 257488,
+      "likes": 257500,
       "comments": 1991,
       "is_video": false,
       "video_views": 0,
@@ -782,7 +783,7 @@
     {
       "shortcode": "DVb-luHgU9Z",
       "date": "2026-03-03",
-      "likes": 16305,
+      "likes": 16309,
       "comments": 262,
       "is_video": false,
       "video_views": 0,
@@ -832,7 +833,7 @@
     {
       "shortcode": "DVZj9lijVzv",
       "date": "2026-03-02",
-      "likes": 27022,
+      "likes": 27030,
       "comments": 168,
       "is_video": false,
       "video_views": 0,
@@ -852,7 +853,7 @@
     {
       "shortcode": "DVY0v8lDZhU",
       "date": "2026-03-02",
-      "likes": 26197,
+      "likes": 26198,
       "comments": 387,
       "is_video": true,
       "video_views": 314000,
@@ -873,7 +874,7 @@
     {
       "shortcode": "DVWKc3PDZ8T",
       "date": "2026-03-01",
-      "likes": 15221,
+      "likes": 15223,
       "comments": 178,
       "is_video": false,
       "video_views": 0,
@@ -886,7 +887,7 @@
       "likes": 3099,
       "comments": 56,
       "is_video": true,
-      "video_views": 78400,
+      "video_views": 53800,
       "caption": "Esto es lo que est\u00e1 pasando en Ir\u00e1n \ud83c\uddee\ud83c\uddf7 \n\n\u00bfMuri\u00f3 o no el ayatol\u00e1? Mientras Trump incentiva a la poblaci\u00f3n a tomar el poder y los misiles iran\u00edes caen en bases de Catar y Bahr\u00e9in, el",
       "url": "https://www.instagram.com/p/DVUfhIikcnw/",
       "video_views_source": "selenium_reels_grid"
@@ -894,7 +895,7 @@
     {
       "shortcode": "DVUTbstAeIg",
       "date": "2026-02-28",
-      "likes": 60443,
+      "likes": 60446,
       "comments": 946,
       "is_video": false,
       "video_views": 0,
@@ -904,7 +905,7 @@
     {
       "shortcode": "DVT3SREjjyP",
       "date": "2026-02-28",
-      "likes": 6167,
+      "likes": 6168,
       "comments": 331,
       "is_video": false,
       "video_views": 0,
@@ -944,7 +945,7 @@
     {
       "shortcode": "DVPlKVDjYA_",
       "date": "2026-02-27",
-      "likes": 157604,
+      "likes": 157609,
       "comments": 1204,
       "is_video": false,
       "video_views": 0,
@@ -954,7 +955,7 @@
     {
       "shortcode": "DVPdjgAjRFY",
       "date": "2026-02-27",
-      "likes": 35834,
+      "likes": 35838,
       "comments": 435,
       "is_video": true,
       "video_views": 1400000,
@@ -965,7 +966,7 @@
     {
       "shortcode": "DVPGXwUAQdb",
       "date": "2026-02-26",
-      "likes": 11980,
+      "likes": 11982,
       "comments": 43,
       "is_video": false,
       "video_views": 0,
@@ -975,7 +976,7 @@
     {
       "shortcode": "DVOpKqJjfmg",
       "date": "2026-02-26",
-      "likes": 10874,
+      "likes": 10875,
       "comments": 100,
       "is_video": false,
       "video_views": 0,
@@ -1016,7 +1017,7 @@
     {
       "shortcode": "DVMi640gUVz",
       "date": "2026-02-25",
-      "likes": 150735,
+      "likes": 150747,
       "comments": 3011,
       "is_video": false,
       "video_views": 0,
@@ -1039,7 +1040,7 @@
       "likes": 2154,
       "comments": 35,
       "is_video": true,
-      "video_views": 72000,
+      "video_views": 47300,
       "caption": "Es incre\u00edble lo capaz que se ha vuelto la IA.\n\nTr\u00e1ilers que costar\u00edan millones ahora cuestan solo unos cuantos d\u00f3lares en producci\u00f3n en @higgsfield.ai Cinema Studio.\n\n\ud83c\udfa5: @kicha.bla",
       "url": "https://www.instagram.com/p/DVMNKceiYZN/",
       "video_views_source": "selenium_reels_grid"

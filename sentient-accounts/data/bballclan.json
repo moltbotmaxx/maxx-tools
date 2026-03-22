@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-22T08:01:04+00:00",
+  "generated_at": "2026-03-22T08:34:18+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "bballclan",
   "profile_url": "https://www.instagram.com/bballclan/",
   "avatar_path": "../avatars/bballclan.jpg",
-  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/74385399_2459038164362529_5460277255815036928_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gEGlat6mba7XUQvLVyxmrDMQY-IM2G6bBFnpHJJotXuQpQlf8M5c1iGb_DWKGY8qN4&_nc_ohc=CJ8LnEcDBIIQ7kNvwErKiPJ&_nc_gid=NIqzLxnl8SWRSbmWt0a8ag&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GPcHbwQhpUZwe7wIAAAAAAA8zcZLbkULAAAB0j-ccb7-5&oh=00_AfwarwGpKs09Ot69S7Pm303FtN4oKL4hKV5yiDH0fhoseg&oe=69C5895F&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/74385399_2459038164362529_5460277255815036928_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gH5WOv7Yy72jnhd_DolXC8rXCFPBbvUiRMhPtyAFkPsWpSf5aNIaHcsy2Y6Zh8pZEw&_nc_ohc=CJ8LnEcDBIIQ7kNvwECd9C6&_nc_gid=RHGfiRdwyeq_oc1dFvxOwg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GPcHbwQhpUZwe7wIAAAAAAA8zcZLbkULAAAB0j-ccb7-5&oh=00_AfyW4cvhZMFC7V_z-wIcOxFShU7gB_I7lafEJPCSqtTtvA&oe=69C5895F&_nc_sid=1e20d2",
   "full_name": "For Lovers of Basketball & NBA",
   "biography": "\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66 Best basketball group on IG \ud83c\udfc0",
   "external_url": "",
@@ -31,6 +31,7 @@
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
+  "total_likes_recent_window": 0,
   "total_video_views_recent_window": 0,
   "engagement_rate": 3.7347,
   "recent_posts": [
@@ -162,7 +163,7 @@
       "likes": 449,
       "comments": 7,
       "is_video": true,
-      "video_views": 26300,
+      "video_views": 21100,
       "caption": "That\u2019s wild \ud83d\ude02\ud83d\ude02\n-\nFollow @bballclan for more!",
       "url": "https://www.instagram.com/p/Cx_k0x6S9S6/",
       "video_views_source": "selenium_reels_grid"
@@ -203,7 +204,7 @@
       "likes": 345,
       "comments": 2,
       "is_video": true,
-      "video_views": 15300,
+      "video_views": 15000,
       "caption": "The king\ud83d\udc51\n-\nFollow @bballclan for more!",
       "url": "https://www.instagram.com/p/Cxg7tDQPZDw/",
       "video_views_source": "selenium_reels_grid"

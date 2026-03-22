@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-22T08:03:05+00:00",
+  "generated_at": "2026-03-22T08:35:51+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T07:49:44+00:00",
+  "run_started_at": "2026-03-22T08:21:20+00:00",
   "account": "ivanelgrande",
   "profile_url": "https://www.instagram.com/ivanelgrande/",
   "avatar_path": "../avatars/ivanelgrande.jpg",
-  "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/605570584_18551092612041636_2554810630123075843_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gFxaaWIAFRCm8C4dg8_CElu7TkoM7ZcVDlgr4I3cujWlFLnOEC84mGCIsDOencScs8&_nc_ohc=x6OXvwkxbJQQ7kNvwF8V3hg&_nc_gid=lJ_99Nm3k-Opm7vC-unzEQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GBhGGCSkC1bVHuhBAAO54Gy7gnQjbmNDAQAB0j-ccb7-5&oh=00_AfxprIoq2ANV-Ep658ScndGAe8UA3synvqo78L1ZmshxTg&oe=69C57E2B&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-19/605570584_18551092612041636_2554810630123075843_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEBB2FdtbnWlgzGIm5Av_mYJ9A6T-MVB3k--pxCbeKaCbr-CRm1SnfO3UI4ojzl3kM&_nc_ohc=x6OXvwkxbJQQ7kNvwGOey0a&_nc_gid=VYx_Kwxwht0w_OgAhb5Mxw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GBhGGCSkC1bVHuhBAAO54Gy7gnQjbmNDAQAB0j-ccb7-5&oh=00_AfzREC7yGHwM_q0e4G32H45yXDkrS_DlHMA_dU_xJPC9lg&oe=69C57E2B&_nc_sid=1e20d2",
   "full_name": "Ivan \u2022 AI \u2022 Marketing",
   "biography": "I help AI/Tech Companies go Viral \nOwner @chatgptricks (2.4M+ Followers) \nFounder @sentientagency (25M+ Followers Network)",
   "external_url": "https://www.sentientagency.io/",
@@ -31,6 +31,7 @@
   "avg_video_views": 32000.0,
   "avg_video_views_per_video": 32000.0,
   "avg_video_views_per_post": 4000.0,
+  "total_likes_recent_window": 1323,
   "total_video_views_recent_window": 96000,
   "engagement_rate": 47.14,
   "recent_posts": [
@@ -104,7 +105,7 @@
       "likes": 568,
       "comments": 4,
       "is_video": true,
-      "video_views": 34900,
+      "video_views": 5,
       "caption": "Crea juegos en minutos con esta herramienta \ud83d\udd79\ufe0f\n\nGoogle lanza Project Genie, el modelo que permite crear mundos digitales con solo una foto\n\nEsto cambia el mundo del gaming y del VR",
       "url": "https://www.instagram.com/p/DUKJJNFAKPa/",
       "video_views_source": "selenium_reels_grid"
@@ -212,7 +213,7 @@
       "likes": 1803,
       "comments": 40,
       "is_video": true,
-      "video_views": 93700,
+      "video_views": 49900,
       "caption": "Instagram acaba de romper la barrera del idioma \ud83c\udf0d\n\nEl director de Instagram, @mosseri, acaba de anunciar una actualizaci\u00f3n enorme: a partir de esta semana, todas las cuentas p\u00fablic",
       "url": "https://www.instagram.com/p/DNjSFhzBLw5/",
       "video_views_source": "selenium_reels_grid"
@@ -223,7 +224,7 @@
       "likes": 941,
       "comments": 24,
       "is_video": true,
-      "video_views": 67900,
+      "video_views": 38000,
       "caption": "OpenAI finalmente lanz\u00f3 GPT-5 \ud83d\udea8\ud83e\udd16\n\nEsta es la IA m\u00e1s inteligente, r\u00e1pida y \u00fatil que han creado.\n\nAhora mismo est\u00e1 gratis en ChatGPT.\n\nPero lo m\u00e1s importante para m\u00ed es que ya no ten",
       "url": "https://www.instagram.com/p/DNJ3TQFsh2A/",
       "video_views_source": "selenium_reels_grid"
@@ -254,7 +255,7 @@
       "likes": 1741,
       "comments": 78,
       "is_video": true,
-      "video_views": 87200,
+      "video_views": 30300,
       "caption": "La IA no solo cambi\u00f3 el internet, tambi\u00e9n podr\u00eda estar cambiando la realidad.\n\nCon Veo 3 de Google, ahora cualquiera puede crear videos ultra realistas con solo escribir unas l\u00ednea",
       "url": "https://www.instagram.com/p/DKbjUjMgK_M/",
       "video_views_source": "selenium_reels_grid"
@@ -265,7 +266,7 @@
       "likes": 26145,
       "comments": 143,
       "is_video": true,
-      "video_views": 1500000,
+      "video_views": 885000,
       "caption": "El hype de la IA, no se va a detener. \n\nMuchas tendencias anteriores, como el humo de los NFTs y el metaverso, se han ido disipando poco a poco. \n\nPero esta tecnolog\u00eda lleva a\u00f1os e",
       "url": "https://www.instagram.com/p/DKDeHqiADzW/",
       "video_views_source": "selenium_reels_grid"
