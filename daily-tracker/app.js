@@ -53,6 +53,7 @@ let currentUser = null;
 let managedSentientAccounts = [];
 let sentientAccountsDatasetCache = null;
 let sentientAccountsDatasetPromise = null;
+let activeManagedAccountTab = '';
 let managedAccountsModalMode = 'edit';
 let isSavingManagedAccounts = false;
 let pendingExtensionIdeas = [];
@@ -1189,7 +1190,7 @@ function normalizeSentientDataset(rawData = {}, sourceUrl = '') {
                     likes30d: getSentientAccountLikes30d(account),
                     views30d: getSentientAccountViews30d(account),
                     recentWindowCovered: account.recent_posts_collection_window_covered !== false,
-                    topPosts: [...recentPosts].sort(compareSentientPosts).slice(0, 3)
+                    topPosts: [...recentPosts].sort(compareSentientPosts).slice(0, 5)
                 };
             })
             .sort((left, right) => (Number(right.followers) || 0) - (Number(left.followers) || 0))
@@ -1247,6 +1248,20 @@ function getManagedSentientAccountRecords(dataset = sentientAccountsDatasetCache
     if (!dataset?.accounts?.length || !managedSentientAccounts.length) return [];
     const selected = new Set(managedSentientAccounts.map(account => account.toLowerCase()));
     return dataset.accounts.filter(account => selected.has(String(account.account || '').toLowerCase()));
+}
+
+function syncActiveManagedAccountTab(accounts = []) {
+    if (!Array.isArray(accounts) || !accounts.length) {
+        activeManagedAccountTab = '';
+        return null;
+    }
+
+    const activeKey = normalizeWhitespace(activeManagedAccountTab || '').toLowerCase();
+    const current = accounts.find(account => String(account.account || '').toLowerCase() === activeKey);
+    if (current) return current;
+
+    activeManagedAccountTab = accounts[0].account || '';
+    return accounts[0];
 }
 
 function setManagedAccountsModalStatus(message = '', tone = 'neutral') {
@@ -1418,14 +1433,18 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
         ? (((totalAvgLikes + totalAvgComments) / totalFollowers) * 100)
         : 0;
     const snapshot = getAccountDashboardSnapshotMeta(accounts, dataset);
+    const activeKey = normalizeWhitespace(activeManagedAccountTab || '').toLowerCase();
     const handles = accounts.length
         ? accounts.map(account => `
-            <span class="account-overview-card__handle">
+            <a class="account-overview-card__account${String(account.account || '').toLowerCase() === activeKey ? ' account-overview-card__account--active' : ''}" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">
                 <img src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
-                @${escapeHtml(account.account)}
-            </span>
+                <div>
+                    <strong>@${escapeHtml(account.account)}</strong>
+                    <span>${escapeHtml(formatCompact(Number(account.followers) || 0))} followers</span>
+                </div>
+            </a>
         `).join('')
-        : '<span class="account-overview-card__empty">Choose accounts to build this dashboard.</span>';
+        : '<div class="account-overview-card__empty">Choose accounts to build this dashboard.</div>';
 
     return `
         <article class="bento-box account-overview-card">
@@ -1444,42 +1463,64 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
                 ${buildManagedAccountMetric('30d reel views', `${formatCompact(totalViews30d)}${snapshot.suffix}`, true)}
                 ${buildManagedAccountMetric('Engagement', formatPercentCompact(weightedEngagement))}
             </div>
-            <div class="account-overview-card__handles">
+            <div class="account-overview-card__accounts">
                 ${handles}
             </div>
         </article>
     `;
 }
 
-function buildAccountBestPostTile(bestPost = null) {
-    if (!bestPost) {
-        return `
-            <div class="account-post-tile account-post-tile--empty">
-                <span>Best recent post</span>
-                <strong>No recent post captured</strong>
-            </div>
-        `;
-    }
-
+function buildAccountPostItem(post = {}, index = 0) {
     return `
-        <a class="account-post-tile" href="${safeHttpUrl(bestPost.url)}" target="_blank" rel="noopener noreferrer">
-            <span>Best recent post</span>
-            <strong>${escapeHtml(bestPost.caption || 'Open post')}</strong>
-            <small>${escapeHtml(formatReadableDate(bestPost.date))}</small>
-            <div class="account-post-tile__metrics">
-                <span>❤ ${escapeHtml(getSentientLikesLabel(bestPost))}</span>
-                <span>💬 ${escapeHtml(formatCompact(Number(bestPost.comments) || 0))}</span>
-                ${bestPost.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(bestPost.video_views) || 0))}</span>` : ''}
+        <a class="account-post-item" href="${safeHttpUrl(post.url)}" target="_blank" rel="noopener noreferrer">
+            <span class="account-post-item__rank">${escapeHtml(String(index + 1).padStart(2, '0'))}</span>
+            <div class="account-post-item__copy">
+                <strong>${escapeHtml(post.caption || 'Open post')}</strong>
+                <small>${escapeHtml(formatReadableDate(post.date))}</small>
+            </div>
+            <div class="account-post-item__metrics">
+                <span>❤ ${escapeHtml(getSentientLikesLabel(post))}</span>
+                <span>💬 ${escapeHtml(formatCompact(Number(post.comments) || 0))}</span>
+                ${post.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(post.video_views) || 0))}</span>` : ''}
             </div>
         </a>
     `;
 }
 
+function buildAccountTabs(accounts = [], activeAccount = null) {
+    if (!Array.isArray(accounts) || accounts.length <= 1) return '';
+
+    const activeKey = String(activeAccount?.account || '').toLowerCase();
+    return `
+        <div class="account-subtabs" role="tablist" aria-label="Managed accounts">
+            ${accounts.map(account => {
+                const accountKey = String(account.account || '').toLowerCase();
+                const isActive = accountKey === activeKey;
+                return `
+                    <button
+                        class="account-subtab${isActive ? ' is-active' : ''}"
+                        type="button"
+                        role="tab"
+                        aria-selected="${isActive ? 'true' : 'false'}"
+                        data-account-tab="${escapeHtml(account.account || '')}"
+                    >
+                        <img src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                        <span>@${escapeHtml(account.account)}</span>
+                    </button>
+                `;
+            }).join('')}
+        </div>
+    `;
+}
+
 function buildAccountDashboardCard(account = {}) {
     const bio = normalizeWhitespace(account.biography || '');
-    const bioText = bio.length > 130 ? `${bio.slice(0, 127)}...` : bio;
+    const bioText = bio.length > 170 ? `${bio.slice(0, 167)}...` : bio;
     const viewSuffix = account.recentWindowCovered === false ? '+' : '';
-    const bestPost = Array.isArray(account.topPosts) && account.topPosts.length ? account.topPosts[0] : null;
+    const posts = Array.isArray(account.topPosts) ? account.topPosts.slice(0, 5) : [];
+    const postListHtml = posts.length
+        ? posts.map((post, index) => buildAccountPostItem(post, index)).join('')
+        : '<div class="account-post-list__empty">No recent posts captured yet.</div>';
 
     return `
         <article class="bento-box account-bento-card">
@@ -1499,49 +1540,89 @@ function buildAccountDashboardCard(account = {}) {
                 </div>
                 <a class="account-bento-card__profile-link" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open</a>
             </div>
-            <div class="account-bento-card__grid">
-                <div class="account-micro-tile account-micro-tile--identity">
-                    <span>Bio</span>
-                    <strong>${escapeHtml(bioText || 'No bio available')}</strong>
-                    <small>${escapeHtml(formatCompact(Number(account.followers) || 0))} followers · ${escapeHtml(formatCompact(Number(account.posts) || 0))} posts</small>
+            <div class="account-bento-card__body">
+                <div class="account-bento-card__summary">
+                    <div class="account-summary-tile account-summary-tile--bio">
+                        <span>Bio</span>
+                        <strong>${escapeHtml(bioText || 'No bio available')}</strong>
+                        <small>${escapeHtml(formatCompact(Number(account.followers) || 0))} followers · ${escapeHtml(formatCompact(Number(account.posts) || 0))} posts</small>
+                    </div>
+                    <div class="account-summary-grid">
+                        <div class="account-summary-tile account-summary-tile--hero">
+                            <span>30d likes</span>
+                            <strong>${escapeHtml(`${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`)}</strong>
+                            <small>Recent window total</small>
+                        </div>
+                        <div class="account-summary-tile account-summary-tile--hero">
+                            <span>30d reel views</span>
+                            <strong>${escapeHtml(`${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`)}</strong>
+                            <small>Recent window total</small>
+                        </div>
+                        <div class="account-summary-tile">
+                            <span>Engagement</span>
+                            <strong>${escapeHtml(formatPercentCompact(account.engagement_rate))}</strong>
+                            <small>Weighted average</small>
+                        </div>
+                        <div class="account-summary-tile">
+                            <span>Avg likes</span>
+                            <strong>${escapeHtml(formatCompact(Number(account.avg_likes) || 0))}</strong>
+                            <small>Per captured post</small>
+                        </div>
+                        <div class="account-summary-tile">
+                            <span>Avg comments</span>
+                            <strong>${escapeHtml(formatCompact(Number(account.avg_comments) || 0))}</strong>
+                            <small>Per captured post</small>
+                        </div>
+                        <div class="account-summary-tile">
+                            <span>Avg video views</span>
+                            <strong>${escapeHtml(Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0')}</strong>
+                            <small>${escapeHtml(String(Number(account.video_post_count) || 0))} video posts</small>
+                        </div>
+                    </div>
+                    <div class="account-bento-card__footer">
+                        <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+                        <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
+                    </div>
                 </div>
-                <div class="account-micro-tile account-micro-tile--hero">
-                    <span>30d likes</span>
-                    <strong>${escapeHtml(`${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`)}</strong>
-                    <small>Recent window total</small>
+                <div class="account-post-panel">
+                    <div class="account-post-panel__header">
+                        <div>
+                            <span>Top 5 posts</span>
+                            <h4>Best recent content</h4>
+                        </div>
+                        <small>Sorted by likes, then comments</small>
+                    </div>
+                    <div class="account-post-list">
+                        ${postListHtml}
+                    </div>
                 </div>
-                <div class="account-micro-tile account-micro-tile--hero">
-                    <span>30d reel views</span>
-                    <strong>${escapeHtml(`${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`)}</strong>
-                    <small>Recent window total</small>
-                </div>
-                <div class="account-micro-tile">
-                    <span>Engagement</span>
-                    <strong>${escapeHtml(formatPercentCompact(account.engagement_rate))}</strong>
-                    <small>Weighted average</small>
-                </div>
-                <div class="account-micro-tile">
-                    <span>Avg likes</span>
-                    <strong>${escapeHtml(formatCompact(Number(account.avg_likes) || 0))}</strong>
-                    <small>Per captured post</small>
-                </div>
-                <div class="account-micro-tile">
-                    <span>Avg comments</span>
-                    <strong>${escapeHtml(formatCompact(Number(account.avg_comments) || 0))}</strong>
-                    <small>Per captured post</small>
-                </div>
-                <div class="account-micro-tile">
-                    <span>Avg video views</span>
-                    <strong>${escapeHtml(Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0')}</strong>
-                    <small>${escapeHtml(String(Number(account.video_post_count) || 0))} video posts</small>
-                </div>
-                ${buildAccountBestPostTile(bestPost)}
-            </div>
-            <div class="account-bento-card__footer">
-                <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
-                <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
             </div>
         </article>
+    `;
+}
+
+function renderAccountDashboard(selectedAccounts = [], dataset = null) {
+    const activeAccount = syncActiveManagedAccountTab(selectedAccounts);
+    const overviewCard = buildAccountOverviewCard(selectedAccounts, dataset);
+
+    if (!selectedAccounts.length) {
+        elements.accountViewStatus.textContent = 'Choose the accounts you manage to populate this dashboard.';
+        elements.managedAccountsGrid.innerHTML = `
+            <div class="account-dashboard-grid__sidebar">${overviewCard}</div>
+            <div class="account-dashboard-grid__content">
+                <article class="bento-box account-empty-card">Select one or more accounts from Manage Accounts to fill the dashboard.</article>
+            </div>
+        `;
+        return;
+    }
+
+    elements.accountViewStatus.textContent = '';
+    elements.managedAccountsGrid.innerHTML = `
+        <div class="account-dashboard-grid__sidebar">${overviewCard}</div>
+        <div class="account-dashboard-grid__content">
+            ${buildAccountTabs(selectedAccounts, activeAccount)}
+            ${buildAccountDashboardCard(activeAccount || selectedAccounts[0])}
+        </div>
     `;
 }
 
@@ -1561,19 +1642,7 @@ async function renderAccountView(forceRefresh = false) {
     try {
         const dataset = await fetchSentientAccountsDataset(forceRefresh);
         const selectedAccounts = getManagedSentientAccountRecords(dataset);
-        const overviewCard = buildAccountOverviewCard(selectedAccounts, dataset);
-
-        if (!selectedAccounts.length) {
-            elements.accountViewStatus.textContent = 'Choose the accounts you manage to populate this dashboard.';
-            elements.managedAccountsGrid.innerHTML = overviewCard;
-            return;
-        }
-
-        elements.accountViewStatus.textContent = '';
-        elements.managedAccountsGrid.innerHTML = [
-            overviewCard,
-            ...selectedAccounts.map(account => buildAccountDashboardCard(account))
-        ].join('');
+        renderAccountDashboard(selectedAccounts, dataset);
     } catch (e) {
         console.error('Failed to render account view', e);
         resetAccountSummary('Snapshot · Sentient data unavailable');
@@ -4556,6 +4625,17 @@ function setupEventListeners() {
     }
     if (elements.managedAccountsGrid) {
         elements.managedAccountsGrid.addEventListener('click', (event) => {
+            const tabTrigger = event.target.closest('[data-account-tab]');
+            if (tabTrigger) {
+                event.preventDefault();
+                activeManagedAccountTab = tabTrigger.dataset.accountTab || '';
+                if (sentientAccountsDatasetCache) {
+                    renderAccountDashboard(getManagedSentientAccountRecords(sentientAccountsDatasetCache), sentientAccountsDatasetCache);
+                } else {
+                    renderAccountView();
+                }
+                return;
+            }
             const manageTrigger = event.target.closest('[data-account-action="manage"]');
             if (!manageTrigger) return;
             event.preventDefault();
