@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-22T06:41:46+00:00",
+  "generated_at": "2026-03-22T07:00:25+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:34:02+00:00",
+  "run_started_at": "2026-03-22T06:50:56+00:00",
   "account": "tecnologia",
   "profile_url": "https://www.instagram.com/tecnologia/",
-  "profile_pic_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gHJXSp67I7COSOEGOrNX9OqzriKXi0bV9pwHgUCmN2aJ2_5DO7C10a9nI7dxF37CQw&_nc_ohc=KPbh5fguLbYQ7kNvwEm82xm&_nc_gid=6xH3PzLDxqG38pL8wsM9tA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_Afw85ybvG5EOvECdQKQKIhhpB_MYo71WLeKg--VkFJPXiw&oe=69C5469F&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/627791280_18104708272805879_7842952905364459046_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2gF7q-TEwVWmjaTaC-qGNnep0hkwNVMF6ppODBZ88WNxmsTMQhZN8sRUkq6kGQUqsGQ&_nc_ohc=KPbh5fguLbYQ7kNvwHkwM5q&_nc_gid=LWGJwCu_S9GskBXYRZrDmw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GLBVayX311zhIlJAACbOXRodxNdsbmNDAQAB0j-ccb7-5&oh=00_Afw4qE3mrGLolhlSS6pyE2SD41MS9EKgyk9Dt0SZDHnEDA&oe=69C57EDF&_nc_sid=1e20d2",
   "full_name": "Tecnologia",
   "biography": "\ud83e\udd16 La fuente confiable para todo lo relacionado con tecnolog\u00eda, IA y negocios. S\u00edguenos y no te quedes atr\u00e1s!",
   "external_url": "http://ivanelgrande.com",
   "is_verified": true,
-  "followers": 59819,
+  "followers": 59827,
   "following": 7,
   "posts": 219,
   "recent_post_count": 55,
@@ -25,13 +25,13 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-20",
-  "avg_likes": 13590.78,
-  "avg_comments": 65.31,
-  "avg_video_views": 335561.51,
-  "avg_video_views_per_video": 335561.51,
-  "avg_video_views_per_post": 298954.8,
-  "total_video_views_recent_window": 16442514,
-  "engagement_rate": 22.829,
+  "avg_likes": 13597.18,
+  "avg_comments": 65.35,
+  "avg_video_views": 335614.57,
+  "avg_video_views_per_video": 335614.57,
+  "avg_video_views_per_post": 299002.07,
+  "total_video_views_recent_window": 16445114,
+  "engagement_rate": 22.8367,
   "recent_posts": [
     {
       "shortcode": "DOueE7_DPmm",
@@ -46,10 +46,10 @@
     {
       "shortcode": "DWKSrtmia5k",
       "date": "2026-03-21",
-      "likes": 1015,
+      "likes": 1020,
       "comments": 0,
       "is_video": true,
-      "video_views": 69400,
+      "video_views": 69700,
       "caption": "Un resorte se fabrica comenzando por seleccionar un material adecuado, generalmente acero o acero inoxidable, y estirarlo hasta convertirlo en un alambre m\u00e1s delgado. Luego, el ala",
       "url": "https://www.instagram.com/p/DWKSrtmia5k/",
       "video_views_source": "selenium_reels_grid"
@@ -57,10 +57,10 @@
     {
       "shortcode": "DWHVNUiJTPs",
       "date": "2026-03-20",
-      "likes": 41789,
+      "likes": 41889,
       "comments": 103,
       "is_video": true,
-      "video_views": 474000,
+      "video_views": 475000,
       "caption": "La Kawasaki Ninja H2R es una de las motocicletas m\u00e1s extremas jam\u00e1s construidas.\n\nEst\u00e1 impulsada por un motor de cuatro cilindros en l\u00ednea de 998 cc con supercargador que produce m",
       "url": "https://www.instagram.com/p/DWHVNUiJTPs/",
       "video_views_source": "selenium_reels_grid"
@@ -68,7 +68,7 @@
     {
       "shortcode": "DWHN3RHjrXd",
       "date": "2026-03-20",
-      "likes": 1943,
+      "likes": 1945,
       "comments": 0,
       "is_video": true,
       "video_views": 30700,
@@ -79,7 +79,7 @@
     {
       "shortcode": "DWFiluUiT5R",
       "date": "2026-03-20",
-      "likes": 11033,
+      "likes": 11061,
       "comments": 173,
       "is_video": false,
       "video_views": 0,
@@ -89,10 +89,10 @@
     {
       "shortcode": "DWFYDJDiXjk",
       "date": "2026-03-19",
-      "likes": 4366,
-      "comments": 16,
+      "likes": 4380,
+      "comments": 17,
       "is_video": true,
-      "video_views": 198000,
+      "video_views": 199000,
       "caption": "A velocidades cercanas a 249 mph (unos 400 km/h), detener un Bugatti requiere mucho m\u00e1s que frenos est\u00e1ndar, ya que las fuerzas involucradas son extremas.\n\nCuando el conductor pisa",
       "url": "https://www.instagram.com/p/DWFYDJDiXjk/",
       "video_views_source": "selenium_reels_grid"
@@ -111,10 +111,10 @@
     {
       "shortcode": "DWFAL98CXXT",
       "date": "2026-03-19",
-      "likes": 2694,
+      "likes": 2697,
       "comments": 1,
       "is_video": true,
-      "video_views": 95000,
+      "video_views": 95100,
       "caption": "Mercedes demuestra el flujo aerodin\u00e1mico alrededor del AMG GT utilizando corrientes visibles en un t\u00fanel de viento que revelan c\u00f3mo el aire se desplaza sobre la carrocer\u00eda a alta v",
       "url": "https://www.instagram.com/p/DWFAL98CXXT/",
       "video_views_source": "selenium_reels_grid"
@@ -133,10 +133,10 @@
     {
       "shortcode": "DWCape1CcLl",
       "date": "2026-03-18",
-      "likes": 2741,
+      "likes": 2742,
       "comments": 8,
       "is_video": true,
-      "video_views": 83600,
+      "video_views": 83700,
       "caption": "Los Boeing 737 de Ryanair est\u00e1n construidos con escaleras integradas, lo que permite a los pasajeros abordar sin necesidad de escaleras del aeropuerto ni mangas de embarque. Las es",
       "url": "https://www.instagram.com/p/DWCape1CcLl/",
       "video_views_source": "selenium_reels_grid"
@@ -144,8 +144,8 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 66449,
-      "comments": 715,
+      "likes": 66501,
+      "comments": 716,
       "is_video": false,
       "video_views": 0,
       "caption": "En muchas partes de Estados Unidos, un AR-15 cuesta menos de $500, mientras que un kit de 32GB de RAM para PC gamer puede superar los $600. Esa comparaci\u00f3n por s\u00ed sola ya llama la ",
@@ -175,7 +175,7 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 3986,
+      "likes": 3992,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -185,7 +185,7 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 45110,
+      "likes": 45149,
       "comments": 321,
       "is_video": true,
       "video_views": 535000,
@@ -273,7 +273,7 @@
     {
       "shortcode": "DVv7Miujsw6",
       "date": "2026-03-11",
-      "likes": 94844,
+      "likes": 94903,
       "comments": 156,
       "is_video": true,
       "video_views": 7200000,
@@ -287,7 +287,7 @@
       "likes": 1537,
       "comments": 3,
       "is_video": true,
-      "video_views": 61900,
+      "video_views": 62000,
       "caption": "Dos equipos de construcci\u00f3n alguna vez compitieron entre s\u00ed para levantar las Torres Gemelas Petronas en Kuala Lumpur, donde cada d\u00eda de retraso costaba unos extraordinarios 700,00",
       "url": "https://www.instagram.com/p/DVuJbAGiazf/",
       "video_views_source": "selenium_reels_grid"
@@ -306,7 +306,7 @@
     {
       "shortcode": "DVrbXc0kilc",
       "date": "2026-03-09",
-      "likes": 1307,
+      "likes": 1308,
       "comments": 1,
       "is_video": true,
       "video_views": 19300,
@@ -350,7 +350,7 @@
     {
       "shortcode": "DVj4kXFiT7O",
       "date": "2026-03-06",
-      "likes": 10644,
+      "likes": 10653,
       "comments": 174,
       "is_video": true,
       "video_views": 945000,
@@ -394,7 +394,7 @@
     {
       "shortcode": "DVg4EmCiVE9",
       "date": "2026-03-05",
-      "likes": 35845,
+      "likes": 35848,
       "comments": 66,
       "is_video": true,
       "video_views": 506000,
@@ -427,7 +427,7 @@
     {
       "shortcode": "DVeGhVijiq7",
       "date": "2026-03-04",
-      "likes": 120478,
+      "likes": 120497,
       "comments": 117,
       "is_video": true,
       "video_views": 1100000,
@@ -438,7 +438,7 @@
     {
       "shortcode": "DVb-UPgEvko",
       "date": "2026-03-03",
-      "likes": 37453,
+      "likes": 37459,
       "comments": 23,
       "is_video": true,
       "video_views": 243000,
@@ -504,7 +504,7 @@
     {
       "shortcode": "DVSLPcbDGM9",
       "date": "2026-02-28",
-      "likes": 3350,
+      "likes": 3349,
       "comments": 26,
       "is_video": true,
       "video_views": 209000,
@@ -537,7 +537,7 @@
     {
       "shortcode": "DVOj0TOjvpO",
       "date": "2026-02-26",
-      "likes": 74879,
+      "likes": 74885,
       "comments": 287,
       "is_video": true,
       "video_views": 1900000,

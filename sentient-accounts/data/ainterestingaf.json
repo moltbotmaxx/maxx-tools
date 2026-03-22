@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-22T06:43:11+00:00",
+  "generated_at": "2026-03-22T07:02:21+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:34:02+00:00",
+  "run_started_at": "2026-03-22T06:50:56+00:00",
   "account": "ainterestingaf",
   "profile_url": "https://www.instagram.com/ainterestingaf/",
-  "profile_pic_url": "https://scontent-ord5-3.cdninstagram.com/v/t51.2885-19/340832687_561196706115127_844394629568359080_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MTEuYzIifQ&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEagRcUK9f66aYgdXzdWf-zFHWC9jLRJp0bLwypiSO31_HpKm_Cy9ov52w6pcNK8X4&_nc_ohc=UQj4cptlF1IQ7kNvwESqSqc&_nc_gid=d0VhBjD8YvJ8wCF6YaKtlA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK_xUBQ3LlHKZ-4BAKhqqxlx5LcLbkULAAAB0j-ccb7-5&oh=00_Afzg1qqbKVXAwunEeI74aA8kUQtta4s5Gw-mOg5wQBbBGg&oe=69C573C4&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/340832687_561196706115127_844394629568359080_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MTEuYzIifQ&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEAxW9YaLgndfGSf7lv2SUq9KIvQkUSX4dtaJAh6AlJYPTKBQIlEEoY2tGDEaXaOow&_nc_ohc=UQj4cptlF1IQ7kNvwG69eQY&_nc_gid=Og3MW1P_VGc_lc1vJQem3A&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK_xUBQ3LlHKZ-4BAKhqqxlx5LcLbkULAAAB0j-ccb7-5&oh=00_Afwf6UbdNpwh7m0kJhnPjvZSV4WBzev-KDFmmgZExzlzvg&oe=69C573C4&_nc_sid=1e20d2",
   "full_name": "AI Gallery",
   "biography": "Welcome to the most interesting AI page on Instagram.\nBrought to you by @sentientagency \ud83e\udd1d",
   "external_url": "https://sentientagency.io/",
@@ -25,13 +25,13 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-01-13",
-  "avg_likes": 17600.12,
+  "avg_likes": 17600.92,
   "avg_comments": 100.08,
   "avg_video_views": 345100.0,
   "avg_video_views_per_video": 345100.0,
   "avg_video_views_per_post": 57516.67,
   "total_video_views_recent_window": 1380400,
-  "engagement_rate": 15.1465,
+  "engagement_rate": 15.1472,
   "recent_posts": [
     {
       "shortcode": "DTI76HUkfZj",
@@ -118,7 +118,7 @@
     {
       "shortcode": "DVJu4cwkfvt",
       "date": "2026-02-24",
-      "likes": 136053,
+      "likes": 136072,
       "comments": 619,
       "is_video": true,
       "video_views": 1300000,

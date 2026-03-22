@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-22T06:37:22+00:00",
+  "generated_at": "2026-03-22T06:54:58+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T06:34:02+00:00",
+  "run_started_at": "2026-03-22T06:50:56+00:00",
   "account": "chatgptips",
   "profile_url": "https://www.instagram.com/chatgptips/",
-  "profile_pic_url": "https://scontent-ord5-2.cdninstagram.com/v/t51.2885-19/432738507_1392419524750250_7881482682454204723_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gHKsog3Zaak55UfEaMifSIcTR-mTUOHf4cAcOHrOE2ofHAGGjUMISnig_MZ7OrOnr0&_nc_ohc=QYKOLPFRvEsQ7kNvwE1Ewvx&_nc_gid=lI_Lks6AmoMeZU6ifwvFag&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GMsQyxmqqybvZfIEADNhE_e9pmBtbkULAAAB0j-ccb7-5&oh=00_AfynsEHPU6ewqwPNWWJk7wZn2MDH9VWdikdIAnqAAk61PQ&oe=69C54A77&_nc_sid=1e20d2",
+  "profile_pic_url": "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/432738507_1392419524750250_7881482682454204723_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gHG16FPElR6qMz26UO-qI1g49FYSxuQxz2WGQfrZM1fVW8CayTloJgW5-DIpWMJp5g&_nc_ohc=QYKOLPFRvEsQ7kNvwH2anok&_nc_gid=_YHlomgLYT7l9cOIReExOw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GMsQyxmqqybvZfIEADNhE_e9pmBtbkULAAAB0j-ccb7-5&oh=00_AfxWpmgx48gwX8h6IXvwwrBFUaJ6ZRCzQ9Psy7QwITqiaQ&oe=69C54A77&_nc_sid=1e20d2",
   "full_name": "ChatGPT Tips",
   "biography": "\ud83e\udd16 On a mission to help you understand AI \n\ud83d\udca1 Find the best ChatGPT tips and tricks \n\ud83d\udcbb Brought to you by @chatgptricks\n\ud83d\udc47 Get our Free ChatGPT Guide",
   "external_url": "http://chatgptricks.store",
@@ -25,13 +25,13 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-02-21",
-  "avg_likes": 2192.82,
+  "avg_likes": 2193.14,
   "avg_comments": 67.61,
-  "avg_video_views": 38635.88,
-  "avg_video_views_per_video": 38635.88,
-  "avg_video_views_per_post": 14927.5,
-  "total_video_views_recent_window": 656810,
-  "engagement_rate": 0.3747,
+  "avg_video_views": 38653.53,
+  "avg_video_views_per_video": 38653.53,
+  "avg_video_views_per_post": 14934.32,
+  "total_video_views_recent_window": 657110,
+  "engagement_rate": 0.3748,
   "recent_posts": [
     {
       "shortcode": "DDvUwkogb2y",
@@ -56,7 +56,7 @@
     {
       "shortcode": "DWIjEcUDVyQ",
       "date": "2026-03-21",
-      "likes": 353,
+      "likes": 354,
       "comments": 21,
       "is_video": false,
       "video_views": 0,
@@ -66,10 +66,10 @@
     {
       "shortcode": "DWH1DM-gJzv",
       "date": "2026-03-20",
-      "likes": 647,
+      "likes": 652,
       "comments": 10,
       "is_video": true,
-      "video_views": 53900,
+      "video_views": 54200,
       "caption": "AI replacing jobs isn\u2019t the future\nIt\u2019s already happening\n\nCompanies are starting to use AI for support, content, and coding\n\nThe way we work is evolving",
       "url": "https://www.instagram.com/p/DWH1DM-gJzv/",
       "video_views_source": "selenium_reels_grid"
@@ -88,7 +88,7 @@
     {
       "shortcode": "DWFmxlqjbIF",
       "date": "2026-03-20",
-      "likes": 1184,
+      "likes": 1188,
       "comments": 294,
       "is_video": false,
       "video_views": 0,
@@ -129,7 +129,7 @@
     {
       "shortcode": "DV_tHf7gCXr",
       "date": "2026-03-17",
-      "likes": 1189,
+      "likes": 1190,
       "comments": 11,
       "is_video": false,
       "video_views": 0,
@@ -223,7 +223,7 @@
     {
       "shortcode": "DVzLrC_D96Q",
       "date": "2026-03-12",
-      "likes": 1470,
+      "likes": 1473,
       "comments": 9,
       "is_video": false,
       "video_views": 0,
