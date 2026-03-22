@@ -13,7 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR.parent / "data"
 HISTORY_DIR = DATA_DIR / "history"
 ACCOUNTS_PATH = BASE_DIR / "accounts.json"
-DEFAULT_POST_LIMIT = 12
+DEFAULT_POST_LIMIT = 24
+DEFAULT_POST_WINDOW_DAYS = 14
+DEFAULT_POST_HARD_LIMIT = 60
 
 
 def load_accounts() -> list[str]:
@@ -30,18 +32,30 @@ def load_accounts() -> list[str]:
             accounts.append(normalized)
     return accounts
 
-def get_post_limit() -> int:
+def get_int_setting(env_name: str, default_value: int, minimum: int = 1) -> int:
     load_local_env()
-    raw_value = str(os.getenv("RECENT_POST_LIMIT", str(DEFAULT_POST_LIMIT))).strip()
+    raw_value = str(os.getenv(env_name, str(default_value))).strip()
     try:
         value = int(raw_value)
     except ValueError:
         print(
-            f"Invalid RECENT_POST_LIMIT value '{raw_value}'. "
-            f"Falling back to {DEFAULT_POST_LIMIT}."
+            f"Invalid {env_name} value '{raw_value}'. "
+            f"Falling back to {default_value}."
         )
-        return DEFAULT_POST_LIMIT
-    return max(1, value)
+        return default_value
+    return max(minimum, value)
+
+
+def get_post_limit() -> int:
+    return get_int_setting("RECENT_POST_LIMIT", DEFAULT_POST_LIMIT)
+
+
+def get_post_window_days() -> int:
+    return get_int_setting("RECENT_POST_WINDOW_DAYS", DEFAULT_POST_WINDOW_DAYS, minimum=0)
+
+
+def get_post_hard_limit(soft_limit: int) -> int:
+    return max(soft_limit, get_int_setting("RECENT_POST_HARD_LIMIT", DEFAULT_POST_HARD_LIMIT))
 
 
 def build_failure(account: str, exc: Exception) -> dict[str, str]:
@@ -121,8 +135,15 @@ def collect_account(
     video_count = 0
 
     post_limit = get_post_limit()
-    for index, post in enumerate(profile.get_posts()):
-        if index >= post_limit:
+    post_window_days = get_post_window_days()
+    post_hard_limit = get_post_hard_limit(post_limit)
+    cutoff_date = dt.date.fromisoformat(snapshot_date) - dt.timedelta(days=post_window_days)
+    stop_reason = "exhausted"
+
+    # Keep scanning until we have both a reasonable sample size and coverage of the 14-day window.
+    for post in profile.get_posts():
+        if len(recent_posts) >= post_hard_limit:
+            stop_reason = "hard_limit"
             break
 
         post_data = build_recent_post(post)
@@ -133,6 +154,10 @@ def collect_account(
         if post_data["is_video"]:
             views_total += post_data["video_views"]
             video_count += 1
+
+        if len(recent_posts) >= post_limit and post.date_utc.date() < cutoff_date:
+            stop_reason = "window_reached"
+            break
 
     post_count = len(recent_posts)
     avg_likes = round(likes_total / post_count, 2) if post_count else 0
@@ -157,6 +182,12 @@ def collect_account(
         "posts": profile.mediacount,
         "recent_post_count": post_count,
         "video_post_count": video_count,
+        "recent_posts_window_days": post_window_days,
+        "recent_posts_target_limit": post_limit,
+        "recent_posts_hard_limit": post_hard_limit,
+        "recent_posts_collection_stop_reason": stop_reason,
+        "recent_posts_window_covered": stop_reason != "hard_limit",
+        "oldest_recent_post_date": recent_posts[-1]["date"] if recent_posts else None,
         "avg_likes": avg_likes,
         "avg_comments": avg_comments,
         "avg_video_views": avg_video_views,

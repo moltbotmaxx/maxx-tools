@@ -79,7 +79,9 @@ jobs:
         env:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
-          RECENT_POST_LIMIT: "12"
+          RECENT_POST_LIMIT: "24"
+          RECENT_POST_WINDOW_DAYS: "14"
+          RECENT_POST_HARD_LIMIT: "60"
         run: python sentient-accounts/collector/collect.py
 
       - name: Aggregate datasets

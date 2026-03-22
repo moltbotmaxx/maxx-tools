@@ -533,14 +533,25 @@ function resolveReferenceDate(account) {
   );
 }
 
-function updateRecentPostsWindow(referenceDate) {
+function updateRecentPostsWindow(referenceDate, account = null) {
   const label = document.getElementById("recentPostsWindow");
   if (!label) return;
 
   const resolved = parseDateValue(referenceDate);
-  label.textContent = resolved
-    ? `· last 14 days from ${formatDate(resolved)}`
-    : "· last 14 days";
+  const windowDays = Number(account?.recent_posts_window_days) || 14;
+  const baseLabel = resolved
+    ? `· last ${windowDays} days from ${formatDate(resolved)}`
+    : `· last ${windowDays} days`;
+
+  if (account?.recent_posts_window_covered === false) {
+    const hardLimit = Number(account?.recent_posts_hard_limit) || 0;
+    label.textContent = hardLimit
+      ? `${baseLabel} · truncated at ${formatNumber(hardLimit)} posts`
+      : `${baseLabel} · truncated sample`;
+    return;
+  }
+
+  label.textContent = baseLabel;
 }
 
 function getAverageVideoViews(account) {
@@ -877,19 +888,20 @@ function renderRecentPosts(account) {
   const container = document.getElementById("recentPosts");
   const allPosts = account.recent_posts || [];
   const referenceDate = resolveReferenceDate(account);
-  updateRecentPostsWindow(referenceDate);
+  updateRecentPostsWindow(referenceDate, account);
+  const windowDays = Number(account?.recent_posts_window_days) || 14;
 
-  // Filter to last 14 days, sort by likes desc, take top 5
+  // Filter to the recent collection window, sort by likes desc, take top 5
   const filtered = allPosts
     .filter((post) => {
       const ageInDays = daysAgo(post.date, referenceDate);
-      return ageInDays >= 0 && ageInDays <= 14;
+      return ageInDays >= 0 && ageInDays <= windowDays;
     })
     .sort((a, b) => (b.likes || 0) - (a.likes || 0))
     .slice(0, 5);
 
   if (!filtered.length) {
-    container.innerHTML = '<p class="empty-state">No posts in the last 14 days.</p>';
+    container.innerHTML = `<p class="empty-state">No posts in the last ${windowDays} days.</p>`;
     return;
   }
 
