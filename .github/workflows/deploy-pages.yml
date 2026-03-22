@@ -12,6 +12,7 @@ on:
       - "theme.css"
       - "daily-tracker/**"
       - "fx-tracker/**"
+      - "sentient-accounts/avatars/**"
       - "sentient-accounts/dashboard/**"
       - "sentient-accounts/data/**"
       - "tweet-visualizer/**"
@@ -59,6 +60,7 @@ jobs:
 
           mkdir -p .site/daily-tracker
           mkdir -p .site/fx-tracker
+          mkdir -p .site/sentient-accounts/avatars
           mkdir -p .site/sentient-accounts/dashboard
           mkdir -p .site/sentient-accounts/data
           mkdir -p .site/tweet-visualizer
@@ -66,6 +68,7 @@ jobs:
           rsync -a daily-tracker/ .site/daily-tracker/
           rsync -a fx-tracker/ .site/fx-tracker/
           rsync -a tweet-visualizer/ .site/tweet-visualizer/
+          rsync -a sentient-accounts/avatars/ .site/sentient-accounts/avatars/
           rsync -a sentient-accounts/dashboard/ .site/sentient-accounts/dashboard/
           rsync -a sentient-accounts/data/ .site/sentient-accounts/data/
 
