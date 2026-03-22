@@ -1140,6 +1140,22 @@ function getSentientAccountViews30d(account = {}) {
         .reduce((sum, post) => sum + (Number(post?.video_views) || 0), 0);
 }
 
+function getSentientPostImageUrl(post = {}) {
+    const explicitUrl = getDisplayImageUrl(
+        post.thumbnail_url || post.image_url || post.display_url || post.media_url || '',
+        ''
+    );
+    if (explicitUrl) return explicitUrl;
+
+    const shortcode = normalizeWhitespace(post.shortcode || '');
+    if (!shortcode) return '';
+
+    const mediaPath = post.is_video
+        ? `https://www.instagram.com/reel/${shortcode}/media/?size=l`
+        : `https://www.instagram.com/p/${shortcode}/media/?size=l`;
+    return getDisplayImageUrl(mediaPath, '');
+}
+
 function compareSentientPosts(left = {}, right = {}) {
     const likeDelta = getSentientEffectiveLikeCount(right) - getSentientEffectiveLikeCount(left);
     if (likeDelta !== 0) return likeDelta;
@@ -1438,11 +1454,10 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
         <article class="bento-box account-overview-card">
             <div class="account-overview-card__header">
                 <div>
-                    <span class="account-overview-card__eyebrow">Sentient Accounts</span>
+                    <span class="account-overview-card__eyebrow">Portfolio</span>
                     <h2>Managed</h2>
                     <p>${escapeHtml(snapshot.label)}</p>
                 </div>
-                <button class="action-btn account-overview-card__action" type="button" data-account-action="manage">Manage</button>
             </div>
             <div class="account-overview-card__metrics">
                 ${buildManagedAccountMetric('Selected accounts', String(accounts.length))}
@@ -1452,24 +1467,44 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
                 ${buildManagedAccountMetric('Engagement', formatPercentCompact(weightedEngagement))}
             </div>
             <div class="account-overview-card__hint">
-                ${accounts.length ? 'Use the tabs to switch between managed accounts.' : 'Choose accounts to populate this dashboard.'}
+                ${accounts.length ? 'Switch accounts from the profile panel tabs.' : 'Choose accounts to populate this dashboard.'}
             </div>
+            <button class="action-btn account-overview-card__action" type="button" data-account-action="manage">Manage Accounts</button>
         </article>
     `;
 }
 
-function buildAccountPostItem(post = {}, index = 0) {
+function buildAccountPostCard(post = {}, index = 0) {
+    const safeLink = safeHttpUrl(post.url);
+    const imageUrl = getSentientPostImageUrl(post);
+    const caption = normalizeWhitespace(post.caption || 'Open post');
+    const captionText = caption.length > 180 ? `${caption.slice(0, 177)}...` : caption;
+    const postType = post.is_video ? 'Reel' : 'Post';
+    const mediaClassName = imageUrl
+        ? 'account-story-card__media'
+        : 'account-story-card__media account-story-card__media--fallback';
+    const mediaStyle = imageUrl
+        ? ` style="background-image: url('${escapeHtml(imageUrl)}');"`
+        : '';
+
     return `
-        <a class="account-post-item" href="${safeHttpUrl(post.url)}" target="_blank" rel="noopener noreferrer">
-            <span class="account-post-item__rank">${escapeHtml(String(index + 1).padStart(2, '0'))}</span>
-            <div class="account-post-item__copy">
-                <strong>${escapeHtml(post.caption || 'Open post')}</strong>
-                <small>${escapeHtml(formatReadableDate(post.date))}</small>
+        <a class="account-story-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
+            <div class="${mediaClassName}"${mediaStyle}>
+                <span class="account-story-card__badge">${escapeHtml(postType)}</span>
+                <span class="account-story-card__index">${escapeHtml(String(index + 1).padStart(2, '0'))}</span>
             </div>
-            <div class="account-post-item__metrics">
-                <span>❤ ${escapeHtml(getSentientLikesLabel(post))}</span>
-                <span>💬 ${escapeHtml(formatCompact(Number(post.comments) || 0))}</span>
-                ${post.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(post.video_views) || 0))}</span>` : ''}
+            <div class="account-story-card__body">
+                <div class="account-story-card__meta">
+                    <span>${escapeHtml(formatReadableDate(post.date))}</span>
+                    <span>${escapeHtml(post.is_video ? 'Instagram reel' : 'Instagram post')}</span>
+                </div>
+                <h4>${escapeHtml(captionText || 'Open post')}</h4>
+                <div class="account-story-card__metrics">
+                    <span>❤ ${escapeHtml(getSentientLikesLabel(post))}</span>
+                    <span>💬 ${escapeHtml(formatCompact(Number(post.comments) || 0))}</span>
+                    ${post.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(post.video_views) || 0))}</span>` : ''}
+                </div>
+                <div class="account-story-card__cta">Open on Instagram</div>
             </div>
         </a>
     `;
@@ -1501,89 +1536,88 @@ function buildAccountTabs(accounts = [], activeAccount = null) {
     `;
 }
 
-function buildAccountDashboardCard(account = {}) {
+function buildAccountProfilePanel(account = {}, accounts = []) {
     const bio = normalizeWhitespace(account.biography || '');
-    const bioText = bio.length > 170 ? `${bio.slice(0, 167)}...` : bio;
+    const bioText = bio.length > 280 ? `${bio.slice(0, 277)}...` : bio;
     const viewSuffix = account.recentWindowCovered === false ? '+' : '';
-    const posts = Array.isArray(account.topPosts) ? account.topPosts.slice(0, 5) : [];
-    const postListHtml = posts.length
-        ? posts.map((post, index) => buildAccountPostItem(post, index)).join('')
-        : '<div class="account-post-list__empty">No recent posts captured yet.</div>';
+    const keyFacts = [
+        ['Followers', formatCompact(Number(account.followers) || 0)],
+        ['Posts', formatCompact(Number(account.posts) || 0)],
+        ['Following', formatCompact(Number(account.following) || 0)]
+    ];
+    const metrics = [
+        ['30d likes', `${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`],
+        ['30d reel views', `${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`],
+        ['Engagement', formatPercentCompact(account.engagement_rate)],
+        ['Avg likes', formatCompact(Number(account.avg_likes) || 0)],
+        ['Avg comments', formatCompact(Number(account.avg_comments) || 0)],
+        ['Avg video views', Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0']
+    ];
 
     return `
-        <article class="bento-box account-bento-card">
-            <div class="account-bento-card__header">
-                <div class="account-bento-card__identity">
-                    <img class="account-bento-card__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
-                    <div class="account-bento-card__identity-copy">
-                        <div class="account-bento-card__title">
+        <article class="bento-box account-profile-panel">
+            ${buildAccountTabs(accounts, account)}
+            <div class="account-profile-panel__hero">
+                <div class="account-profile-panel__identity">
+                    <img class="account-profile-panel__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                    <div class="account-profile-panel__identity-copy">
+                        <div class="account-profile-panel__title">
                             <h3>${escapeHtml(account.full_name || account.account)}</h3>
-                            ${account.is_verified ? '<span class="account-bento-card__verified">✓</span>' : ''}
+                            ${account.is_verified ? '<span class="account-profile-panel__verified">✓</span>' : ''}
                         </div>
-                        <div class="account-bento-card__handle-row">
+                        <div class="account-profile-panel__handle-row">
                             <span>@${escapeHtml(account.account)}</span>
                             ${account.external_url ? `<a href="${safeHttpUrl(account.external_url)}" target="_blank" rel="noopener noreferrer">External</a>` : ''}
                         </div>
                     </div>
                 </div>
-                <a class="account-bento-card__profile-link" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open</a>
+                <a class="account-profile-panel__profile-link" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open</a>
             </div>
-            <div class="account-bento-card__body">
-                <div class="account-bento-card__summary">
-                    <div class="account-summary-tile account-summary-tile--bio">
-                        <span>Bio</span>
-                        <strong>${escapeHtml(bioText || 'No bio available')}</strong>
-                        <small>${escapeHtml(formatCompact(Number(account.followers) || 0))} followers · ${escapeHtml(formatCompact(Number(account.posts) || 0))} posts</small>
+            <div class="account-profile-panel__bio">
+                <span>Bio</span>
+                <p>${escapeHtml(bioText || 'No bio available')}</p>
+            </div>
+            <div class="account-profile-panel__facts">
+                ${keyFacts.map(([label, value]) => `
+                    <div class="account-fact-tile">
+                        <span>${escapeHtml(label)}</span>
+                        <strong>${escapeHtml(value)}</strong>
                     </div>
-                    <div class="account-summary-grid">
-                        <div class="account-summary-tile account-summary-tile--hero">
-                            <span>30d likes</span>
-                            <strong>${escapeHtml(`${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`)}</strong>
-                            <small>Recent window total</small>
-                        </div>
-                        <div class="account-summary-tile account-summary-tile--hero">
-                            <span>30d reel views</span>
-                            <strong>${escapeHtml(`${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`)}</strong>
-                            <small>Recent window total</small>
-                        </div>
-                        <div class="account-summary-tile">
-                            <span>Engagement</span>
-                            <strong>${escapeHtml(formatPercentCompact(account.engagement_rate))}</strong>
-                            <small>Weighted average</small>
-                        </div>
-                        <div class="account-summary-tile">
-                            <span>Avg likes</span>
-                            <strong>${escapeHtml(formatCompact(Number(account.avg_likes) || 0))}</strong>
-                            <small>Per captured post</small>
-                        </div>
-                        <div class="account-summary-tile">
-                            <span>Avg comments</span>
-                            <strong>${escapeHtml(formatCompact(Number(account.avg_comments) || 0))}</strong>
-                            <small>Per captured post</small>
-                        </div>
-                        <div class="account-summary-tile">
-                            <span>Avg video views</span>
-                            <strong>${escapeHtml(Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0')}</strong>
-                            <small>${escapeHtml(String(Number(account.video_post_count) || 0))} video posts</small>
-                        </div>
+                `).join('')}
+            </div>
+            <div class="account-profile-panel__metrics">
+                ${metrics.map(([label, value]) => `
+                    <div class="account-data-row">
+                        <span>${escapeHtml(label)}</span>
+                        <strong>${escapeHtml(value)}</strong>
                     </div>
-                    <div class="account-bento-card__footer">
-                        <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
-                        <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
-                    </div>
+                `).join('')}
+            </div>
+            <div class="account-profile-panel__footer">
+                <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+                <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
+            </div>
+        </article>
+    `;
+}
+
+function buildAccountPostsPanel(account = {}) {
+    const posts = Array.isArray(account.topPosts) ? account.topPosts.slice(0, 5) : [];
+    const postListHtml = posts.length
+        ? posts.map((post, index) => buildAccountPostCard(post, index)).join('')
+        : '<div class="account-posts-panel__empty">No recent posts captured yet.</div>';
+
+    return `
+        <article class="bento-box account-posts-panel">
+            <div class="account-posts-panel__header">
+                <div>
+                    <span>Top 5 posts</span>
+                    <h4>Recent Instagram winners</h4>
                 </div>
-                <div class="account-post-panel">
-                    <div class="account-post-panel__header">
-                        <div>
-                            <span>Top 5 posts</span>
-                            <h4>Best recent content</h4>
-                        </div>
-                        <small>Sorted by likes, then comments</small>
-                    </div>
-                    <div class="account-post-list">
-                        ${postListHtml}
-                    </div>
-                </div>
+                <small>Visual stack inspired by Sourcing cards</small>
+            </div>
+            <div class="account-posts-panel__list">
+                ${postListHtml}
             </div>
         </article>
     `;
@@ -1597,7 +1631,7 @@ function renderAccountDashboard(selectedAccounts = [], dataset = null) {
         elements.accountViewStatus.textContent = 'Choose the accounts you manage to populate this dashboard.';
         elements.managedAccountsGrid.innerHTML = `
             <div class="account-dashboard-grid__sidebar">${overviewCard}</div>
-            <div class="account-dashboard-grid__content">
+            <div class="account-dashboard-grid__empty">
                 <article class="bento-box account-empty-card">Select one or more accounts from Manage Accounts to fill the dashboard.</article>
             </div>
         `;
@@ -1607,9 +1641,11 @@ function renderAccountDashboard(selectedAccounts = [], dataset = null) {
     elements.accountViewStatus.textContent = '';
     elements.managedAccountsGrid.innerHTML = `
         <div class="account-dashboard-grid__sidebar">${overviewCard}</div>
-        <div class="account-dashboard-grid__content">
-            ${buildAccountTabs(selectedAccounts, activeAccount)}
-            ${buildAccountDashboardCard(activeAccount || selectedAccounts[0])}
+        <div class="account-dashboard-grid__profile">
+            ${buildAccountProfilePanel(activeAccount || selectedAccounts[0], selectedAccounts)}
+        </div>
+        <div class="account-dashboard-grid__posts">
+            ${buildAccountPostsPanel(activeAccount || selectedAccounts[0])}
         </div>
     `;
 }

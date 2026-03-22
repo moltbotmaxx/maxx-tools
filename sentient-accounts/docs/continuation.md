@@ -112,13 +112,12 @@ Relevant files:
 The `Account` tab currently uses this structure:
 
 - left column:
-  - slim `Managed` summary only
-  - no duplicate account roster
+  - `Managed` portfolio summary
+- middle column:
+  - account switcher tabs
+  - active account identity, bio and metrics
 - right column:
-  - sub-tabs for managed accounts
-  - one active account panel at a time
-  - full metric panel for the active account
-  - top 5 recent posts
+  - top 5 Instagram-style post cards in a vertical stack
 
 Important implementation details:
 
@@ -126,7 +125,7 @@ Important implementation details:
 - active account state is handled with `activeManagedAccountTab`
 - account switching is via `data-account-tab`
 - current build tag is:
-  - `account-sidebar-slim`
+  - `account-instagram-board`
 
 Relevant implementation points:
 
@@ -169,7 +168,7 @@ Recent relevant commits, newest first:
 ### Daily Tracker
 
 - `Account` is mid-iteration from a design perspective, but functional.
-- The latest structural change is the slim sidebar plus sub-tab model for multiple managed accounts.
+- The latest structural change is a three-column `20/20/60` account workspace with Instagram-style post cards.
 - No browser QA was done for the latest Daily Tracker account-layout commit in this session; only code validation was run.
 
 ## Likely next improvements

@@ -1341,14 +1341,15 @@ canvas {
   flex-direction: column;
   gap: 12px;
   min-height: 100%;
+  height: 100%;
 }
 
 .account-view-status {
-  padding: 8px 4px;
+  padding: 4px 2px 0;
   min-height: 24px;
   color: var(--text-tertiary);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
 }
 
 .account-view-status:empty {
@@ -1357,14 +1358,19 @@ canvas {
 
 .account-dashboard-grid {
   display: grid;
-  grid-template-columns: clamp(150px, 15vw, 190px) minmax(0, 1fr);
+  grid-template-columns: minmax(190px, 1fr) minmax(240px, 1fr) minmax(0, 3fr);
   gap: 16px;
-  align-items: start;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
 }
 
 .account-dashboard-grid__sidebar,
-.account-dashboard-grid__content {
+.account-dashboard-grid__profile,
+.account-dashboard-grid__posts,
+.account-dashboard-grid__empty {
   min-width: 0;
+  min-height: 0;
 }
 
 .account-dashboard-grid__sidebar {
@@ -1372,101 +1378,116 @@ canvas {
   flex-direction: column;
 }
 
-.account-dashboard-grid__content {
+.account-dashboard-grid__profile,
+.account-dashboard-grid__posts {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  min-height: 0;
+}
+
+.account-dashboard-grid__empty {
+  grid-column: 2 / 4;
+  display: flex;
 }
 
 .account-overview-card,
-.account-bento-card {
+.account-profile-panel,
+.account-posts-panel {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   min-height: 0;
+  height: 100%;
+  border-radius: 26px;
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  box-shadow:
+    0 16px 40px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
 }
 
 .account-overview-card {
   background:
-    radial-gradient(circle at top right, rgba(0, 122, 255, 0.12), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 248, 252, 0.96));
+    radial-gradient(circle at top left, rgba(201, 255, 90, 0.16), transparent 38%),
+    linear-gradient(180deg, rgba(255, 251, 241, 0.98), rgba(246, 240, 228, 0.98));
 }
 
 .account-overview-card__header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
 }
 
 .account-overview-card__header h2 {
-  margin: 4px 0 6px;
-  font-size: 0.98rem;
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
 }
 
 .account-overview-card__header p {
   margin: 0;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--text-secondary);
   line-height: 1.45;
 }
 
 .account-overview-card__eyebrow {
   display: inline-flex;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 800;
-  letter-spacing: 0.9px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--accent-primary);
+  color: #4f6129;
 }
 
 .account-overview-card__metrics {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
+  flex: 1;
 }
 
 .managed-account-metric {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  min-height: 58px;
-  padding: 10px 11px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  gap: 4px;
+  min-height: 0;
+  padding: 12px 13px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(18, 24, 38, 0.06);
 }
 
 .managed-account-metric span {
-  font-size: 0.56rem;
-  letter-spacing: 0.7px;
+  font-size: 0.58rem;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--text-tertiary);
   font-weight: 800;
 }
 
 .managed-account-metric strong {
-  font-size: 0.9rem;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 1.05;
   color: var(--text-primary);
   font-weight: 800;
 }
 
 .managed-account-metric--accent {
-  background: linear-gradient(135deg, rgba(0, 122, 255, 0.1), rgba(90, 200, 250, 0.08));
-  border-color: rgba(0, 122, 255, 0.14);
+  background: linear-gradient(135deg, rgba(201, 255, 90, 0.18), rgba(255, 255, 255, 0.78));
+  border-color: rgba(120, 180, 40, 0.18);
 }
 
 .account-overview-card__action {
   width: 100%;
   justify-content: center;
-  min-height: 36px;
-  padding: 0 10px;
+  min-height: 42px;
+  padding: 0 12px;
+  margin-top: auto;
 }
 
 .account-overview-card__hint {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   line-height: 1.45;
   color: var(--text-tertiary);
   font-weight: 700;
@@ -1474,333 +1495,416 @@ canvas {
 }
 
 .account-subtabs {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
   gap: 8px;
 }
 
 .account-subtab {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 46px;
   padding: 0 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  background: rgba(250, 248, 241, 0.82);
   color: var(--text-secondary);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 700;
   cursor: pointer;
   transition: var(--transition-fast);
+  text-align: left;
 }
 
 .account-subtab:hover {
-  border-color: rgba(0, 122, 255, 0.18);
-  color: var(--accent-primary);
+  border-color: rgba(120, 180, 40, 0.22);
+  color: #354314;
 }
 
 .account-subtab.is-active {
-  border-color: rgba(0, 122, 255, 0.24);
-  background: linear-gradient(135deg, rgba(0, 122, 255, 0.12), rgba(90, 200, 250, 0.08));
-  color: var(--accent-primary);
-  box-shadow: 0 10px 24px rgba(0, 122, 255, 0.09);
+  border-color: rgba(120, 180, 40, 0.22);
+  background: linear-gradient(135deg, rgba(201, 255, 90, 0.24), rgba(255, 251, 241, 0.98));
+  color: #2c360e;
+  box-shadow: 0 12px 26px rgba(120, 180, 40, 0.12);
 }
 
 .account-subtab img {
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
+  width: 24px;
+  height: 24px;
+  border-radius: 10px;
   object-fit: cover;
   background: var(--bg-primary);
 }
 
-.account-bento-card__header {
+.account-profile-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 248, 252, 0.98));
+}
+
+.account-profile-panel__hero {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 14px;
 }
 
-.account-bento-card__identity {
+.account-profile-panel__identity {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   min-width: 0;
 }
 
-.account-bento-card__avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
+.account-profile-panel__avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 22px;
   object-fit: cover;
   flex-shrink: 0;
   background: var(--bg-primary);
 }
 
-.account-bento-card__identity-copy {
+.account-profile-panel__identity-copy {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   min-width: 0;
 }
 
-.account-bento-card__title {
+.account-profile-panel__title {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.account-bento-card__title h3 {
+.account-profile-panel__title h3 {
   margin: 0;
-  font-size: 1.02rem;
+  font-size: 1.14rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   color: var(--text-primary);
 }
 
-.account-bento-card__verified {
+.account-profile-panel__verified {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: rgba(52, 199, 89, 0.12);
   color: var(--accent-success);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 800;
 }
 
-.account-bento-card__handle-row {
+.account-profile-panel__handle-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.account-bento-card__handle-row span,
-.account-bento-card__handle-row a {
-  font-size: 0.72rem;
+.account-profile-panel__handle-row span,
+.account-profile-panel__handle-row a {
+  font-size: 0.74rem;
   font-weight: 700;
   color: var(--text-tertiary);
   text-decoration: none;
 }
 
-.account-bento-card__handle-row a {
+.account-profile-panel__handle-row a {
   color: var(--accent-primary);
 }
 
-.account-bento-card__profile-link {
+.account-profile-panel__profile-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 0 12px;
+  min-height: 40px;
+  padding: 0 14px;
   border-radius: 999px;
-  border: 1px solid rgba(0, 122, 255, 0.18);
-  background: rgba(0, 122, 255, 0.08);
-  color: var(--accent-primary);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  background: rgba(255, 251, 241, 0.88);
+  color: #22314f;
   font-size: 0.74rem;
   font-weight: 700;
   text-decoration: none;
 }
 
-.account-bento-card__body {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 1.08fr);
-  gap: 14px;
-  min-width: 0;
-}
-
-.account-bento-card__summary {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  min-width: 0;
-}
-
-.account-summary-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.account-summary-tile {
+.account-profile-panel__bio {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  min-height: 102px;
-  padding: 12px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 14px;
+  border-radius: 20px;
+  background: rgba(248, 249, 252, 0.92);
+  border: 1px solid rgba(18, 24, 38, 0.05);
 }
 
-.account-summary-tile span,
-.account-post-panel__header span {
-  font-size: 0.62rem;
+.account-profile-panel__bio span,
+.account-posts-panel__header span {
+  font-size: 0.6rem;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  font-weight: 800;
+}
+
+.account-profile-panel__bio p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.account-profile-panel__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.account-fact-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 0;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 251, 241, 0.82);
+  border: 1px solid rgba(18, 24, 38, 0.05);
+}
+
+.account-fact-tile span,
+.account-data-row span {
+  font-size: 0.56rem;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--text-tertiary);
   font-weight: 800;
 }
 
-.account-summary-tile strong {
-  font-size: 0.98rem;
-  line-height: 1.25;
+.account-fact-tile strong {
+  font-size: 0.88rem;
+  line-height: 1.1;
   color: var(--text-primary);
   font-weight: 800;
 }
 
-.account-summary-tile small {
-  font-size: 0.7rem;
-  line-height: 1.4;
-  color: var(--text-tertiary);
-  font-weight: 600;
+.account-profile-panel__metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
 }
 
-.account-summary-tile--bio {
-  min-height: 128px;
-}
-
-.account-summary-tile--bio strong {
-  font-size: 0.86rem;
-  line-height: 1.45;
-}
-
-.account-summary-tile--hero {
-  background: linear-gradient(135deg, rgba(0, 122, 255, 0.12), rgba(90, 200, 250, 0.08));
-  border-color: rgba(0, 122, 255, 0.14);
-}
-
-.account-summary-tile--hero strong {
-  font-size: 1.28rem;
-  line-height: 1.08;
-}
-
-.account-bento-card__footer {
+.account-data-row {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  align-items: baseline;
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  background: rgba(247, 249, 252, 0.92);
+  border: 1px solid rgba(18, 24, 38, 0.05);
+}
+
+.account-data-row strong {
+  font-size: 0.86rem;
+  color: var(--text-primary);
+  font-weight: 800;
+  text-align: right;
+}
+
+.account-profile-panel__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
   flex-wrap: wrap;
-  font-size: 0.68rem;
+  padding-top: 2px;
+  font-size: 0.66rem;
   color: var(--text-tertiary);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
 
-.account-post-panel {
+.account-posts-panel {
   display: flex;
   flex-direction: column;
   gap: 12px;
   min-width: 0;
-  padding: 12px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 243, 235, 0.98));
 }
 
-.account-post-panel__header {
+.account-posts-panel__header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
 }
 
-.account-post-panel__header h4 {
+.account-posts-panel__header h4 {
   margin: 4px 0 0;
-  font-size: 0.98rem;
+  font-size: 1.16rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   color: var(--text-primary);
 }
 
-.account-post-panel__header small {
-  font-size: 0.7rem;
+.account-posts-panel__header small {
+  font-size: 0.72rem;
   color: var(--text-tertiary);
   font-weight: 700;
 }
 
-.account-post-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.account-posts-panel__list {
+  display: grid;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
 }
 
-.account-post-item,
-.account-post-list__empty,
+.account-story-card,
+.account-posts-panel__empty,
 .account-empty-card {
-  border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 22px;
+  border: 1px solid rgba(18, 24, 38, 0.06);
   background: rgba(255, 255, 255, 0.84);
 }
 
-.account-post-item {
+.account-story-card {
   display: grid;
-  grid-template-columns: 38px minmax(0, 1fr) auto;
-  align-items: center;
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
   gap: 12px;
-  padding: 12px;
+  min-height: 0;
+  overflow: hidden;
   color: inherit;
   text-decoration: none;
   transition: var(--transition-fast);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 249, 252, 0.98));
 }
 
-.account-post-item:hover {
-  border-color: rgba(0, 122, 255, 0.16);
-  transform: translateY(-1px);
+.account-story-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(120, 180, 40, 0.18);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
 }
 
-.account-post-item__rank {
+.account-story-card__media {
+  position: relative;
+  min-height: 100%;
+  background-color: #f0f2f6;
+  background-size: cover;
+  background-position: center;
+}
+
+.account-story-card__media--fallback {
+  background:
+    radial-gradient(circle at top left, rgba(255, 126, 95, 0.55), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(233, 30, 99, 0.42), transparent 38%),
+    linear-gradient(145deg, #1a1f2b, #362238 54%, #845a25);
+}
+
+.account-story-card__badge,
+.account-story-card__index {
+  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 12px;
-  background: rgba(0, 122, 255, 0.08);
-  color: var(--accent-primary);
-  font-size: 0.76rem;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 0.62rem;
   font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
 }
 
-.account-post-item__copy {
+.account-story-card__badge {
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.84);
+  color: #151922;
+}
+
+.account-story-card__index {
+  right: 12px;
+  bottom: 12px;
+  min-width: 42px;
+  background: rgba(21, 25, 34, 0.78);
+  color: #f8fbef;
+}
+
+.account-story-card__body {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 16px 14px 0;
   min-width: 0;
 }
 
-.account-post-item__copy strong {
-  font-size: 0.83rem;
-  line-height: 1.4;
+.account-story-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.account-story-card__body h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
 }
 
-.account-post-item__copy small {
-  font-size: 0.7rem;
-  color: var(--text-tertiary);
-  font-weight: 600;
-}
-
-.account-post-item__metrics {
+.account-story-card__metrics {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   gap: 8px;
-  min-width: 150px;
 }
 
-.account-post-item__metrics span {
-  font-size: 0.72rem;
+.account-story-card__metrics span,
+.account-story-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(243, 246, 251, 0.92);
+  border: 1px solid rgba(18, 24, 38, 0.05);
+  font-size: 0.7rem;
   color: var(--text-secondary);
   font-weight: 700;
-  white-space: nowrap;
 }
 
-.account-post-list__empty,
+.account-story-card__cta {
+  width: fit-content;
+  background: rgba(201, 255, 90, 0.22);
+  color: #31410e;
+}
+
+.account-posts-panel__empty,
 .account-empty-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 18px;
   color: var(--text-tertiary);
   font-weight: 700;
+  min-height: 100%;
 }
 
 .dashboard-sidebar {
@@ -2985,11 +3089,7 @@ canvas {
   }
 
   .account-dashboard-grid {
-    grid-template-columns: 170px minmax(0, 1fr);
-  }
-
-  .account-bento-card__body {
-    grid-template-columns: 1fr;
+    grid-template-columns: 180px minmax(240px, 1fr) minmax(0, 2fr);
   }
 
   .week-grid {
@@ -3007,47 +3107,46 @@ canvas {
     grid-template-columns: 1fr;
   }
 
-  .account-overview-card__header,
-  .account-bento-card__header {
+  .account-dashboard-grid__empty {
+    grid-column: auto;
+  }
+
+  .account-profile-panel__hero,
+  .account-posts-panel__header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .account-post-item {
-    grid-template-columns: 34px minmax(0, 1fr);
+  .account-posts-panel__list {
+    grid-template-rows: none;
   }
 
-  .account-post-item__metrics {
-    grid-column: 2;
-    justify-content: flex-start;
-    min-width: 0;
+  .account-story-card {
+    grid-template-columns: minmax(130px, 170px) minmax(0, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .account-overview-card__metrics,
-  .account-summary-grid {
+  .account-profile-panel__facts {
     grid-template-columns: 1fr;
   }
 
-  .account-post-panel__header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .account-post-item {
+  .account-story-card {
     grid-template-columns: 1fr;
   }
 
-  .account-post-item__metrics,
+  .account-story-card__media {
+    min-height: 180px;
+  }
+
+  .account-story-card__body {
+    padding: 14px;
+  }
+
+  .account-story-card__metrics,
   .managed-account-option__meta {
     justify-content: flex-start;
     text-align: left;
-  }
-
-  .account-post-item__metrics {
-    grid-column: auto;
-    min-width: 0;
   }
 
   .managed-account-option {
