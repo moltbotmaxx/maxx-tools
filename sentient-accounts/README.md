@@ -70,6 +70,37 @@ You can also point to a specific cookie database if needed:
 
 Supported browsers match Instaloader's official browser-cookie flow: Brave, Chrome, Chromium, Edge, Firefox, LibreWolf, Opera, Opera GX, Safari and Vivaldi.
 
+## Local reel view prototype
+
+The main collector still does not reliably populate `video_view_count`, so there is now a separate local prototype that reads the visible view counts from the Instagram Reels grid in Chrome.
+
+Install dependencies if needed:
+
+```bash
+.venv/bin/pip install -r collector/requirements.txt
+```
+
+Run it for one account:
+
+```bash
+.venv/bin/python collector/scrape_reel_views.py chatgptricks
+```
+
+What to expect:
+
+1. A dedicated Chrome profile opens from `sentient-accounts/.chrome-reels-profile/`.
+2. On the first run, log into Instagram in that Chrome window.
+3. The script opens `https://www.instagram.com/<username>/reels/`, scrolls the grid, and saves JSON to `sentient-accounts/.tmp/reel-views/<username>.json`.
+
+Useful options:
+
+```bash
+.venv/bin/python collector/scrape_reel_views.py chatgptricks --max-reels 80
+.venv/bin/python collector/scrape_reel_views.py chatgptricks --output ./chatgptricks-reel-views.json
+```
+
+This script is intentionally local-only for now. It does not run in GitHub Actions and it does not modify the main dashboard datasets yet.
+
 If you prefer env files instead of shell exports, `.env` and `.env.local` in the repository root are supported:
 
 ```bash
