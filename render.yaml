@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: sentient-accounts-refresh
+    env: python
+    rootDir: sentient-accounts/refresh-service
+    plan: starter
+    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: GITHUB_OWNER
+        value: moltbotmaxx
+      - key: GITHUB_REPO
+        value: maxx-tools
+      - key: GITHUB_WORKFLOW_ID
+        value: sentient-collect.yml
+      - key: GITHUB_REF
+        value: main
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: REFRESH_SHARED_SECRET
+        sync: false
+      - key: REFRESH_ALLOWED_ORIGINS
+        sync: false

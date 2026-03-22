@@ -2,11 +2,31 @@ name: collect-sentient-accounts
 
 on:
   workflow_dispatch:
+    inputs:
+      trigger_source:
+        description: Source of the manual refresh request
+        required: false
+        type: string
+        default: dashboard-ui
+      requested_by:
+        description: Free-form label for who asked for the refresh
+        required: false
+        type: string
+        default: dashboard-ui
+      source_url:
+        description: URL that initiated the request
+        required: false
+        type: string
+        default: ""
   schedule:
     - cron: "0 6 * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: sentient-accounts-collect
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -15,6 +35,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Log trigger context
+        env:
+          TRIGGER_SOURCE: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.trigger_source || github.event_name }}
+          REQUESTED_BY: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.requested_by || github.actor }}
+          SOURCE_URL: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.source_url || '' }}
+        run: |
+          echo "Trigger source: ${TRIGGER_SOURCE}"
+          echo "Requested by: ${REQUESTED_BY}"
+          if [ -n "${SOURCE_URL}" ]; then
+            echo "Source URL: ${SOURCE_URL}"
+          fi
 
       - name: Setup Python
         uses: actions/setup-python@v5

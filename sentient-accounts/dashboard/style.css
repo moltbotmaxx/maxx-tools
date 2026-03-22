@@ -116,6 +116,120 @@ body {
   display: grid;
   gap: 14px;
   align-content: end;
+  justify-items: end;
+  width: min(420px, 100%);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.hero-action {
+  appearance: none;
+  border: 1px solid rgba(207, 255, 4, 0.28);
+  background: linear-gradient(180deg, rgba(207, 255, 4, 0.16), rgba(207, 255, 4, 0.05));
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, opacity 180ms ease;
+}
+
+.hero-action:hover,
+.hero-action:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(207, 255, 4, 0.52);
+}
+
+.hero-action:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.hero-action--ghost {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: var(--border-subtle);
+  color: var(--muted);
+}
+
+.hero-action--small {
+  padding: 8px 14px;
+}
+
+.refresh-config {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.refresh-field {
+  display: grid;
+  gap: 6px;
+  text-align: left;
+}
+
+.refresh-field span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.refresh-field input {
+  width: 100%;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--text);
+  padding: 12px 14px;
+  font: inherit;
+}
+
+.refresh-field input:focus {
+  outline: none;
+  border-color: rgba(207, 255, 4, 0.35);
+  box-shadow: 0 0 0 3px rgba(207, 255, 4, 0.08);
+}
+
+.refresh-config__actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.muted[data-tone="error"] {
+  color: #ffb49f;
+}
+
+.muted[data-tone="success"] {
+  color: #cfff04;
+}
+
+.muted[data-tone="warning"] {
+  color: #ffd272;
+}
+
+.muted[data-tone="progress"] {
+  color: #8bdff1;
+}
+
+.muted a {
+  color: inherit;
+  text-decoration-color: currentColor;
 }
 
 .status-banner {
@@ -630,6 +744,16 @@ body {
 
   .hero {
     gap: 20px;
+  }
+
+  .hero-meta {
+    justify-items: start;
+    width: 100%;
+  }
+
+  .hero-actions,
+  .refresh-config__actions {
+    justify-content: flex-start;
   }
 
   .post-metrics {

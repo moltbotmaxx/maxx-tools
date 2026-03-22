@@ -8,6 +8,7 @@ Static Instagram analytics dashboard backed by JSON datasets committed to the re
 collector/   Python scripts that collect and aggregate public metrics
 dashboard/   Static frontend served by GitHub Pages
 data/        Generated datasets consumed by the dashboard
+refresh-service/  FastAPI webhook that queues collector runs from the UI
 ```
 
 ## Local setup
@@ -28,7 +29,7 @@ python collector/aggregate.py
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/dashboard/`.
+Then open `http://localhost:8000/sentient-accounts/dashboard/`.
 
 ## Authenticated scraping
 
@@ -81,9 +82,41 @@ INSTALOADER_COOKIE_FILE="/path/to/browser/cookies.sqlite"
 
 ## GitHub Actions
 
-- `.github/workflows/collect.yml` refreshes datasets on a schedule and commits changes to `data/`.
-- `.github/workflows/pages.yml` publishes a Pages artifact that contains both the dashboard and generated data.
-- `collect.yml` can optionally restore a persisted Instaloader session from a Base64-encoded secret named `INSTALOADER_SESSION_FILE_B64`.
+- `.github/workflows/sentient-collect.yml` refreshes datasets on a schedule and commits changes to `sentient-accounts/data/`.
+- `.github/workflows/deploy-pages.yml` publishes a Pages artifact that contains both the dashboard and generated data.
+- `sentient-collect.yml` can optionally restore a persisted Instaloader session from a Base64-encoded secret named `INSTALOADER_SESSION_FILE_B64`.
+
+## Manual refresh from the dashboard
+
+GitHub Pages stays static. The refresh button uses a tiny Python API to trigger the existing `sentient-collect.yml` workflow securely.
+
+Architecture:
+
+1. User clicks `Refresh data` in `sentient-accounts/dashboard/`.
+2. The frontend calls the FastAPI service in `sentient-accounts/refresh-service/`.
+3. The FastAPI service verifies a shared secret and dispatches `sentient-collect.yml` through the GitHub Actions REST API.
+4. The workflow runs the existing Python collector, commits JSON changes, and `deploy-pages.yml` republishes Pages automatically on push.
+
+### Deploy the refresh API on Render
+
+This repo now includes a root `render.yaml` blueprint for a `sentient-accounts-refresh` service.
+
+1. In Render, create the service from this repository blueprint.
+2. Set the secrets defined in `sentient-accounts/refresh-service/.env.example`:
+   - `GITHUB_TOKEN`
+   - `REFRESH_SHARED_SECRET`
+   - `REFRESH_ALLOWED_ORIGINS`
+3. Use a fine-grained GitHub token with repository access to `maxx-tools` and `Actions: Read and write`.
+4. Keep `GITHUB_WORKFLOW_ID=sentient-collect.yml` and `GITHUB_REF=main`.
+
+### Configure the dashboard button
+
+You have two options:
+
+1. Edit `sentient-accounts/dashboard/config.js` and set `refreshApiBaseUrl` to your Render URL.
+2. Or leave it blank and configure the API URL and admin key directly from the UI with the `Configure` button. The values are stored only in that browser's local storage.
+
+The `Refresh data` button is intentionally admin-only. The frontend never stores the GitHub token; it only sends the shared secret to the FastAPI service, which then talks to GitHub.
 
 ## Continue improving
 

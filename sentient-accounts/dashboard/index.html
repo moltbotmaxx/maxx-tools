@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" defer></script>
+    <script src="./config.js" defer></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -27,7 +28,26 @@
           <h1>Sentient network</h1>
         </div>
         <div class="hero-meta">
+          <div class="hero-actions">
+            <button id="refreshButton" class="hero-action" type="button">Refresh data</button>
+            <button id="refreshConfigButton" class="hero-action hero-action--ghost" type="button">Configure</button>
+          </div>
+          <form id="refreshConfigForm" class="refresh-config hidden">
+            <label class="refresh-field">
+              <span>Refresh API URL</span>
+              <input id="refreshApiUrlInput" type="url" placeholder="https://your-service.onrender.com" autocomplete="url" />
+            </label>
+            <label class="refresh-field">
+              <span>Admin key</span>
+              <input id="refreshAdminKeyInput" type="password" placeholder="Stored only in this browser" autocomplete="off" />
+            </label>
+            <div class="refresh-config__actions">
+              <button class="hero-action hero-action--small" type="submit">Save</button>
+              <button id="refreshConfigCancel" class="hero-action hero-action--ghost hero-action--small" type="button">Close</button>
+            </div>
+          </form>
           <p id="lastUpdated" class="muted">Loading…</p>
+          <p id="refreshStatus" class="muted">Manual refresh unavailable.</p>
         </div>
       </header>
 

@@ -10,8 +10,9 @@ This document is the handoff for the next iteration of the project.
   - persisted session files in `.instaloader/`,
   - browser cookie import through `collector/import_browser_session.py`.
 - The dashboard reads committed JSON only. It does not call Instagram directly.
-- GitHub Pages is deployed through `.github/workflows/pages.yml`.
-- Scheduled collection is handled by `.github/workflows/collect.yml`.
+- Manual refresh from the dashboard now goes through `refresh-service/`, a FastAPI webhook that dispatches `sentient-collect.yml`.
+- GitHub Pages is deployed through `.github/workflows/deploy-pages.yml`.
+- Scheduled collection is handled by `.github/workflows/sentient-collect.yml`.
 
 ## What is already working
 
@@ -19,7 +20,7 @@ This document is the handoff for the next iteration of the project.
 - `collector/aggregate.py` generates `data/global.json`.
 - Historical snapshots are written to `data/history/`.
 - Browser cookie import from Chrome worked locally and unblocked scraping.
-- The local dashboard serves correctly from `http://127.0.0.1:8000/dashboard/`.
+- The local dashboard serves correctly from `http://127.0.0.1:8000/sentient-accounts/dashboard/`.
 
 ## Known limitations
 
@@ -33,6 +34,7 @@ This document is the handoff for the next iteration of the project.
 ### Dashboard
 
 - The UI shows core metrics, but there is no filter by date range, no anomaly highlighting, and no dedicated error panel for failed collections.
+- The refresh button is admin-oriented and currently relies on a shared secret stored in the browser local storage on that machine.
 - Historical charts are minimal and only use the stored daily snapshots.
 - There is no loading skeleton or empty-state distinction between "no data yet" and "collection failed".
 
@@ -41,6 +43,7 @@ This document is the handoff for the next iteration of the project.
 - There are no automated tests yet.
 - There is no schema validation for generated JSON.
 - GitHub Actions can restore a saved session file, but there is no documented rotation process for refreshing that secret.
+- The Render-side `REFRESH_SHARED_SECRET` and GitHub token rotation process is still manual.
 
 ## Recommended order of improvements
 
@@ -94,7 +97,7 @@ Suggested changes:
 Validation checklist:
 
 - Run the validator after `collect.py` and `aggregate.py`.
-- Make the validator part of `.github/workflows/collect.yml`.
+- Make the validator part of `.github/workflows/sentient-collect.yml`.
 - Intentionally break a local JSON file once to confirm the validator fails loudly.
 
 ### 3. Better historical analytics

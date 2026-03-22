@@ -1,11 +1,39 @@
 const state = {
   data: null,
   errors: null,
+  refresh: {
+    activeRun: null,
+    isSubmitting: false,
+    pollAttempts: 0,
+    pollTimer: null,
+    settings: null,
+  },
   selectedAccount: null,
   charts: {},
 };
 
 const DATE_ONLY_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+const ACTIVE_RUN_STATUSES = new Set(["queued", "in_progress", "requested", "waiting", "pending"]);
+const RUN_STATUS_LABELS = {
+  queued: "Queued",
+  in_progress: "Running",
+  requested: "Requested",
+  waiting: "Waiting",
+  pending: "Pending",
+  completed: "Completed",
+  success: "Succeeded",
+  failure: "Failed",
+  cancelled: "Cancelled",
+  timed_out: "Timed out",
+  skipped: "Skipped",
+};
+const refreshConfig = {
+  apiBaseUrl: String(window.SENTIENT_ACCOUNTS_CONFIG?.refreshApiBaseUrl || "").trim(),
+  apiBaseStorageKey: String(window.SENTIENT_ACCOUNTS_CONFIG?.refreshApiBaseStorageKey || "sentient-accounts-refresh-api-url"),
+  adminKeyStorageKey: String(window.SENTIENT_ACCOUNTS_CONFIG?.refreshAdminKeyStorageKey || "sentient-accounts-refresh-admin-key"),
+  statusPollIntervalMs: Number(window.SENTIENT_ACCOUNTS_CONFIG?.statusPollIntervalMs) || 15000,
+  maxStatusPollAttempts: Number(window.SENTIENT_ACCOUNTS_CONFIG?.maxStatusPollAttempts) || 40,
+};
 
 /* ── Chart.js global defaults ────────────────────────────────── */
 const chartColors = {
@@ -182,6 +210,216 @@ function escapeHtml(value) {
         return char;
     }
   });
+}
+
+function safeLocalStorageGet(key) {
+  try {
+    return window.localStorage.getItem(key);
+  } catch (_) {
+    return null;
+  }
+}
+
+function safeLocalStorageSet(key, value) {
+  try {
+    if (!value) {
+      window.localStorage.removeItem(key);
+      return;
+    }
+    window.localStorage.setItem(key, value);
+  } catch (_) {
+    /* ignore storage errors */
+  }
+}
+
+function normalizeApiBaseUrl(value) {
+  return String(value || "").trim().replace(/\/+$/, "");
+}
+
+function loadRefreshSettings() {
+  const storedApiBaseUrl = safeLocalStorageGet(refreshConfig.apiBaseStorageKey);
+  const storedAdminKey = safeLocalStorageGet(refreshConfig.adminKeyStorageKey);
+
+  state.refresh.settings = {
+    apiBaseUrl: normalizeApiBaseUrl(storedApiBaseUrl || refreshConfig.apiBaseUrl),
+    adminKey: String(storedAdminKey || "").trim(),
+  };
+}
+
+function saveRefreshSettings({ apiBaseUrl, adminKey }) {
+  state.refresh.settings = {
+    apiBaseUrl: normalizeApiBaseUrl(apiBaseUrl),
+    adminKey: String(adminKey || "").trim(),
+  };
+  safeLocalStorageSet(refreshConfig.apiBaseStorageKey, state.refresh.settings.apiBaseUrl);
+  safeLocalStorageSet(refreshConfig.adminKeyStorageKey, state.refresh.settings.adminKey);
+}
+
+function hasRefreshService() {
+  return Boolean(state.refresh.settings?.apiBaseUrl);
+}
+
+function hasRefreshCredentials() {
+  return hasRefreshService() && Boolean(state.refresh.settings?.adminKey);
+}
+
+function buildRefreshUrl(pathname) {
+  return `${state.refresh.settings.apiBaseUrl}${pathname}`;
+}
+
+function describeRunState(run) {
+  if (!run) return "No refresh run detected yet.";
+
+  const statusKey = run.status === "completed" && run.conclusion ? run.conclusion : run.status;
+  const label = RUN_STATUS_LABELS[statusKey] || run.status || "Unknown";
+  const startedAt = formatDate(run.created_at);
+  const runNumber = run.run_number ? ` #${run.run_number}` : "";
+  return `Refresh${runNumber} · ${label} · started ${startedAt}`;
+}
+
+function renderRefreshStatus(message, tone = "neutral", href = "") {
+  const node = document.getElementById("refreshStatus");
+  if (!node) return;
+
+  node.dataset.tone = tone;
+  if (href) {
+    node.innerHTML = `<a href="${escapeHtml(href)}" target="_blank" rel="noreferrer">${escapeHtml(message)}</a>`;
+  } else {
+    node.textContent = message;
+  }
+}
+
+function syncRefreshButtonState() {
+  const refreshButton = document.getElementById("refreshButton");
+  if (!refreshButton) return;
+
+  refreshButton.disabled = state.refresh.isSubmitting || !hasRefreshCredentials();
+  if (!hasRefreshService()) {
+    refreshButton.textContent = "Refresh unavailable";
+  } else if (state.refresh.isSubmitting) {
+    refreshButton.textContent = "Queuing…";
+  } else if (state.refresh.activeRun && ACTIVE_RUN_STATUSES.has(state.refresh.activeRun.status)) {
+    refreshButton.textContent = "Refresh running";
+  } else {
+    refreshButton.textContent = "Refresh data";
+  }
+}
+
+function toggleRefreshConfig(open) {
+  const form = document.getElementById("refreshConfigForm");
+  const urlInput = document.getElementById("refreshApiUrlInput");
+  const keyInput = document.getElementById("refreshAdminKeyInput");
+  if (!form || !urlInput || !keyInput) return;
+
+  form.classList.toggle("hidden", !open);
+  urlInput.value = state.refresh.settings?.apiBaseUrl || "";
+  keyInput.value = state.refresh.settings?.adminKey || "";
+}
+
+function applyRefreshStatusFromRun(run) {
+  state.refresh.activeRun = run || null;
+
+  if (!hasRefreshService()) {
+    renderRefreshStatus("Manual refresh unavailable. Configure the refresh service URL first.");
+    syncRefreshButtonState();
+    return;
+  }
+
+  if (!hasRefreshCredentials()) {
+    renderRefreshStatus("Refresh service ready. Save the admin key in this browser to enable the button.");
+    syncRefreshButtonState();
+    return;
+  }
+
+  if (!run) {
+    renderRefreshStatus("Manual refresh ready. This button queues the Python collector on GitHub Actions.");
+    syncRefreshButtonState();
+    return;
+  }
+
+  const statusKey = run.status === "completed" && run.conclusion ? run.conclusion : run.status;
+  const tone = ACTIVE_RUN_STATUSES.has(run.status)
+    ? "progress"
+    : statusKey === "success"
+      ? "success"
+      : statusKey === "failure" || statusKey === "cancelled" || statusKey === "timed_out"
+        ? "error"
+        : "warning";
+  const suffix = statusKey === "success"
+    ? " GitHub Pages will publish the updated JSON after the workflow push."
+    : "";
+  renderRefreshStatus(`${describeRunState(run)}.${suffix}`, tone, run.html_url || "");
+  syncRefreshButtonState();
+}
+
+function stopRefreshPolling() {
+  if (state.refresh.pollTimer) {
+    window.clearTimeout(state.refresh.pollTimer);
+    state.refresh.pollTimer = null;
+  }
+  state.refresh.pollAttempts = 0;
+}
+
+async function fetchRefreshApi(pathname, options = {}) {
+  const response = await fetch(buildRefreshUrl(pathname), options);
+  let payload = null;
+  try {
+    payload = await response.json();
+  } catch (_) {
+    payload = null;
+  }
+
+  if (!response.ok) {
+    const error = new Error(payload?.message || payload?.detail || `Refresh API request failed (${response.status})`);
+    error.payload = payload;
+    throw error;
+  }
+  return payload;
+}
+
+async function refreshWorkflowStatus({ silent = false } = {}) {
+  if (!hasRefreshService()) {
+    applyRefreshStatusFromRun(null);
+    return null;
+  }
+
+  try {
+    const payload = await fetchRefreshApi("/api/status");
+    const run = payload?.run || null;
+    if (!silent || run) {
+      applyRefreshStatusFromRun(run);
+    } else {
+      syncRefreshButtonState();
+    }
+    return run;
+  } catch (error) {
+    if (!silent) {
+      renderRefreshStatus(error.message, "warning");
+      syncRefreshButtonState();
+    }
+    return null;
+  }
+}
+
+function scheduleRefreshStatusPoll() {
+  stopRefreshPolling();
+  if (!hasRefreshService()) return;
+
+  const poll = async () => {
+    state.refresh.pollAttempts += 1;
+    const run = await refreshWorkflowStatus({ silent: true });
+    if (run && ACTIVE_RUN_STATUSES.has(run.status) && state.refresh.pollAttempts < refreshConfig.maxStatusPollAttempts) {
+      state.refresh.pollTimer = window.setTimeout(poll, refreshConfig.statusPollIntervalMs);
+      return;
+    }
+
+    if (run) {
+      applyRefreshStatusFromRun(run);
+    }
+    stopRefreshPolling();
+  };
+
+  state.refresh.pollTimer = window.setTimeout(poll, refreshConfig.statusPollIntervalMs);
 }
 
 function summarizeItems(values, { limit = 4, accountHandles = false } = {}) {
@@ -716,6 +954,88 @@ async function renderAccountDetail(account) {
   await renderHistory(account);
 }
 
+/* ── Manual refresh controls ─────────────────────────────────── */
+
+function setupRefreshControls() {
+  loadRefreshSettings();
+
+  const refreshButton = document.getElementById("refreshButton");
+  const configureButton = document.getElementById("refreshConfigButton");
+  const configForm = document.getElementById("refreshConfigForm");
+  const configCancel = document.getElementById("refreshConfigCancel");
+  const apiUrlInput = document.getElementById("refreshApiUrlInput");
+  const adminKeyInput = document.getElementById("refreshAdminKeyInput");
+
+  if (!refreshButton || !configureButton || !configForm || !configCancel || !apiUrlInput || !adminKeyInput) {
+    return;
+  }
+
+  syncRefreshButtonState();
+  applyRefreshStatusFromRun(null);
+
+  configureButton.addEventListener("click", () => {
+    const isOpen = !configForm.classList.contains("hidden");
+    toggleRefreshConfig(!isOpen);
+  });
+
+  configCancel.addEventListener("click", () => {
+    toggleRefreshConfig(false);
+    applyRefreshStatusFromRun(state.refresh.activeRun);
+  });
+
+  configForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    saveRefreshSettings({
+      apiBaseUrl: apiUrlInput.value,
+      adminKey: adminKeyInput.value,
+    });
+    toggleRefreshConfig(false);
+    applyRefreshStatusFromRun(state.refresh.activeRun);
+    if (hasRefreshService()) {
+      await refreshWorkflowStatus({ silent: false });
+    }
+  });
+
+  refreshButton.addEventListener("click", async () => {
+    if (!hasRefreshCredentials() || state.refresh.isSubmitting) {
+      toggleRefreshConfig(true);
+      renderRefreshStatus("Save a refresh API URL and admin key before triggering a run.", "warning");
+      syncRefreshButtonState();
+      return;
+    }
+
+    state.refresh.isSubmitting = true;
+    syncRefreshButtonState();
+    renderRefreshStatus("Queuing collector workflow…", "progress");
+
+    try {
+      const payload = await fetchRefreshApi("/api/refresh", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${state.refresh.settings.adminKey}`,
+        },
+        body: JSON.stringify({
+          requested_by: "dashboard-ui",
+          source_url: window.location.href,
+        }),
+      });
+      applyRefreshStatusFromRun(payload?.run || null);
+      scheduleRefreshStatusPoll();
+    } catch (error) {
+      if (error.payload?.run) {
+        applyRefreshStatusFromRun(error.payload.run);
+        scheduleRefreshStatusPoll();
+      } else {
+        renderRefreshStatus(error.message, "error");
+      }
+    } finally {
+      state.refresh.isSubmitting = false;
+      syncRefreshButtonState();
+    }
+  });
+}
+
 /* ── Reveal animation ────────────────────────────────────────── */
 
 function revealPanels() {
@@ -729,6 +1049,8 @@ function revealPanels() {
 /* ── Bootstrap ───────────────────────────────────────────────── */
 
 async function loadDashboard() {
+  setupRefreshControls();
+
   try {
     const [rawData, errorsPayload] = await Promise.all([
       fetchJson("global.json"),
@@ -752,6 +1074,10 @@ async function loadDashboard() {
         '<p class="empty-state">Run the collector to populate the dashboard.</p>';
       document.getElementById("recentPosts").innerHTML = "";
       updateRecentPostsWindow(data.snapshot_date || data.date);
+    }
+    await refreshWorkflowStatus({ silent: true });
+    if (state.refresh.activeRun && ACTIVE_RUN_STATUSES.has(state.refresh.activeRun.status)) {
+      scheduleRefreshStatusPoll();
     }
   } catch (error) {
     renderFatalBanner(error.message);
