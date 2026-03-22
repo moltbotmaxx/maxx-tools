@@ -1,142 +1,144 @@
 {
-  "generated_at": "2026-03-16T06:57:47+00:00",
-  "date": "2026-03-16",
+  "generated_at": "2026-03-22T03:16:29+00:00",
+  "date": "2026-03-22",
+  "run_started_at": "2026-03-22T03:14:34+00:00",
   "account": "wizofai",
   "profile_url": "https://www.instagram.com/wizofai/",
   "full_name": "Artificial Intelligence | Technology",
   "biography": "\ud83e\udd16 | Helping You Stay Ahead Of The Curve With A.I\n\ud83d\udcbb | Sharing The Latest Tips & Tricks For A.I To Make Your Life Easier",
-  "external_url": null,
+  "external_url": "",
   "is_verified": false,
-  "followers": 754139,
+  "followers": 761490,
   "following": 2,
-  "posts": 2095,
+  "posts": 2152,
   "recent_post_count": 12,
   "video_post_count": 0,
   "avg_likes": 3.0,
-  "avg_comments": 30.67,
-  "avg_video_views": 0.0,
+  "avg_comments": 56.08,
+  "avg_video_views": 0,
   "avg_video_views_per_video": 0,
-  "engagement_rate": 0.0045,
+  "avg_video_views_per_post": 0.0,
+  "engagement_rate": 0.0078,
   "recent_posts": [
     {
-      "shortcode": "DV7zgMkCPoo",
-      "date": "2026-03-16",
-      "likes": 3,
-      "comments": 0,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Follow @wizofai to stay updated with AI and technology",
-      "url": "https://www.instagram.com/p/DV7zgMkCPoo/"
-    },
-    {
-      "shortcode": "DV6kkPuiLxH",
-      "date": "2026-03-15",
-      "likes": 3,
-      "comments": 67,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Comment \u201c2026\u201d",
-      "url": "https://www.instagram.com/p/DV6kkPuiLxH/"
-    },
-    {
-      "shortcode": "DV6dRn3iDLE",
-      "date": "2026-03-15",
-      "likes": 3,
-      "comments": 30,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Comment \u201c2026\u201d",
-      "url": "https://www.instagram.com/p/DV6dRn3iDLE/"
-    },
-    {
-      "shortcode": "DV6XWZGCAhW",
-      "date": "2026-03-15",
-      "likes": 3,
-      "comments": 95,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Comment \u201c2026\u201d",
-      "url": "https://www.instagram.com/p/DV6XWZGCAhW/"
-    },
-    {
-      "shortcode": "DV6PvuMiFK_",
-      "date": "2026-03-15",
-      "likes": 3,
-      "comments": 56,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Comment \u201c2026\u201d",
-      "url": "https://www.instagram.com/p/DV6PvuMiFK_/"
-    },
-    {
-      "shortcode": "DV6MtMTiApj",
-      "date": "2026-03-15",
-      "likes": 3,
-      "comments": 8,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Comment \u201c2026\u201d",
-      "url": "https://www.instagram.com/p/DV6MtMTiApj/"
-    },
-    {
-      "shortcode": "DV6HEKdiKax",
-      "date": "2026-03-15",
+      "shortcode": "DWK4gdJCAwu",
+      "date": "2026-03-22",
       "likes": 3,
       "comments": 10,
       "is_video": false,
       "video_views": 0,
       "caption": "Comment \u201c2026\u201d",
-      "url": "https://www.instagram.com/p/DV6HEKdiKax/"
+      "url": "https://www.instagram.com/p/DWK4gdJCAwu/"
     },
     {
-      "shortcode": "DV5649XjMqE",
-      "date": "2026-03-15",
+      "shortcode": "DWKVy3vCNyq",
+      "date": "2026-03-21",
       "likes": 3,
-      "comments": 46,
+      "comments": 10,
       "is_video": false,
       "video_views": 0,
-      "caption": "Comment \u201cTHEME\u201d",
-      "url": "https://www.instagram.com/p/DV5649XjMqE/"
+      "caption": "Comment \u201c2026\u201d",
+      "url": "https://www.instagram.com/p/DWKVy3vCNyq/"
     },
     {
-      "shortcode": "DV5xmgXiBKW",
-      "date": "2026-03-15",
+      "shortcode": "DWKO99IiCiz",
+      "date": "2026-03-21",
       "likes": 3,
-      "comments": 0,
+      "comments": 459,
       "is_video": false,
       "video_views": 0,
-      "caption": "Follow @wizofai to stay updated with AI and technology",
-      "url": "https://www.instagram.com/p/DV5xmgXiBKW/"
+      "caption": "Comment \u201c2026\u201d",
+      "url": "https://www.instagram.com/p/DWKO99IiCiz/"
     },
     {
-      "shortcode": "DV5q5-VDASR",
-      "date": "2026-03-15",
+      "shortcode": "DWJjxKgDEQe",
+      "date": "2026-03-21",
       "likes": 3,
-      "comments": 45,
+      "comments": 13,
       "is_video": false,
       "video_views": 0,
       "caption": "Message me the word \u201cTHEME\u201d",
-      "url": "https://www.instagram.com/p/DV5q5-VDASR/"
+      "url": "https://www.instagram.com/p/DWJjxKgDEQe/"
     },
     {
-      "shortcode": "DV5koACCP5l",
-      "date": "2026-03-15",
+      "shortcode": "DWJb1XQiLBR",
+      "date": "2026-03-21",
+      "likes": 3,
+      "comments": 9,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Comment \u201c2026\u201d",
+      "url": "https://www.instagram.com/p/DWJb1XQiLBR/"
+    },
+    {
+      "shortcode": "DWJZtvhjE-s",
+      "date": "2026-03-21",
+      "likes": 3,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Message me the word \u201cTHEME\u201d",
+      "url": "https://www.instagram.com/p/DWJZtvhjE-s/"
+    },
+    {
+      "shortcode": "DWJAD8XiFd0",
+      "date": "2026-03-21",
+      "likes": 3,
+      "comments": 15,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Follow @wizofai to stay updated with AI and technology",
+      "url": "https://www.instagram.com/p/DWJAD8XiFd0/"
+    },
+    {
+      "shortcode": "DWI48IgCMEZ",
+      "date": "2026-03-21",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Follow @wizofai to stay updated with AI and technology",
+      "url": "https://www.instagram.com/p/DWI48IgCMEZ/"
+    },
+    {
+      "shortcode": "DWIy9pJCH91",
+      "date": "2026-03-21",
+      "likes": 3,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Follow @wizofai to stay updated with AI and technology",
+      "url": "https://www.instagram.com/p/DWIy9pJCH91/"
+    },
+    {
+      "shortcode": "DWIsESXiLX1",
+      "date": "2026-03-21",
       "likes": 3,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
       "caption": "Follow @wizofai to stay updated with AI and technology",
-      "url": "https://www.instagram.com/p/DV5koACCP5l/"
+      "url": "https://www.instagram.com/p/DWIsESXiLX1/"
     },
     {
-      "shortcode": "DV5dYyNCO71",
-      "date": "2026-03-15",
+      "shortcode": "DWHteFfAL4c",
+      "date": "2026-03-20",
       "likes": 3,
-      "comments": 11,
+      "comments": 55,
       "is_video": false,
       "video_views": 0,
-      "caption": "Follow @wizofai to stay updated with AI and technology",
-      "url": "https://www.instagram.com/p/DV5dYyNCO71/"
+      "caption": "Message me \u201cTHEME\u201d",
+      "url": "https://www.instagram.com/p/DWHteFfAL4c/"
+    },
+    {
+      "shortcode": "DWHlRKegMW0",
+      "date": "2026-03-20",
+      "likes": 3,
+      "comments": 92,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Message me the word \u201cTHEME\u201d",
+      "url": "https://www.instagram.com/p/DWHlRKegMW0/"
     }
   ]
 }

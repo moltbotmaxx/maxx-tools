@@ -1,142 +1,144 @@
 {
-  "generated_at": "2026-03-16T06:57:05+00:00",
-  "date": "2026-03-16",
+  "generated_at": "2026-03-22T03:15:19+00:00",
+  "date": "2026-03-22",
+  "run_started_at": "2026-03-22T03:14:34+00:00",
   "account": "em3rging",
   "profile_url": "https://www.instagram.com/em3rging/",
   "full_name": "Emerging Technological Advancements",
   "biography": "\ud83d\udc49 Tech enthusiasts \n\ud83d\udd25 Where technology meets well-being and planetary sustainability\ud83c\udf31\n\ud83d\udc8c contact@sentientagency.io",
-  "external_url": "https://sentientagency.io/",
+  "external_url": "https://sentientagency.io",
   "is_verified": false,
-  "followers": 218250,
+  "followers": 218508,
   "following": 49,
-  "posts": 1685,
+  "posts": 1702,
   "recent_post_count": 12,
-  "video_post_count": 5,
-  "avg_likes": 953.5,
-  "avg_comments": 21.25,
+  "video_post_count": 6,
+  "avg_likes": 231.33,
+  "avg_comments": 4.33,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
-  "engagement_rate": 0.4466,
+  "avg_video_views_per_post": 0.0,
+  "engagement_rate": 0.1078,
   "recent_posts": [
     {
-      "shortcode": "DV7JNM1gF1H",
-      "date": "2026-03-15",
-      "likes": 94,
+      "shortcode": "DWKvFvBgCO4",
+      "date": "2026-03-22",
+      "likes": 164,
+      "comments": 3,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "New research suggests that compounds found in cannabis could play a role in tackling metabolic dysfunction-associated steatotic liver disease, a condition that affects roughly one ",
+      "url": "https://www.instagram.com/p/DWKvFvBgCO4/"
+    },
+    {
+      "shortcode": "DWJ96sRgEaR",
+      "date": "2026-03-21",
+      "likes": 71,
+      "comments": 8,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "A 22-year-old bartender from New Brunswick just signed a deal worth over $1M to star in a TV series - without ever stepping foot on a set.\n\nNo cameras. No scripts. No filming. The ",
+      "url": "https://www.instagram.com/p/DWJ96sRgEaR/"
+    },
+    {
+      "shortcode": "DWISQvVgDYt",
+      "date": "2026-03-21",
+      "likes": 234,
+      "comments": 1,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Researchers in China have developed a next-generation Metal-Polymer Conductor (MPC) by combining elastic polymers with liquid metals like gallium and indium, creating a material th",
+      "url": "https://www.instagram.com/p/DWISQvVgDYt/"
+    },
+    {
+      "shortcode": "DWH8Cm2gEFp",
+      "date": "2026-03-20",
+      "likes": 70,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "In the 1920s, a team of scientists led by Frederick Banting successfully isolated insulin, completely transforming the treatment of diabetes. Before this breakthrough, patients had",
+      "url": "https://www.instagram.com/p/DWH8Cm2gEFp/"
+    },
+    {
+      "shortcode": "DWHnXN7EcYp",
+      "date": "2026-03-20",
+      "likes": 285,
+      "comments": 9,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Electrons all carry the same negative charge, so they naturally repel one another. This constant repulsion generates a force strong enough to stop atoms from ever truly overlapping",
+      "url": "https://www.instagram.com/p/DWHnXN7EcYp/"
+    },
+    {
+      "shortcode": "DWHclVmkdAo",
+      "date": "2026-03-20",
+      "likes": 112,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "This technology is quietly transforming one of the most common medical procedures that almost everyone has experienced at some point. Finding a vein may seem simple, but for many p",
+      "url": "https://www.instagram.com/p/DWHclVmkdAo/"
+    },
+    {
+      "shortcode": "DWFkcE5gM8D",
+      "date": "2026-03-20",
+      "likes": 47,
+      "comments": 10,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Netflix spends $17B a year making series.\n\n@Higgsfield.ai just did it with zero actors, zero cameras, and zero billion-dollar budgets.\n\nThey just dropped Arena Zero, the first-ever",
+      "url": "https://www.instagram.com/p/DWFkcE5gM8D/"
+    },
+    {
+      "shortcode": "DWFcgATgCT1",
+      "date": "2026-03-19",
+      "likes": 122,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Allonic has introduced a robotic hand built with a technique called 3D Tissue Braiding, where high strength fibers are woven around a simple internal frame, much like connective ti",
+      "url": "https://www.instagram.com/p/DWFcgATgCT1/"
+    },
+    {
+      "shortcode": "DWFDrQUkR6Y",
+      "date": "2026-03-19",
+      "likes": 461,
+      "comments": 5,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Researchers in Sweden are testing an unusual solution to urban waste by combining animal intelligence with smart technology. They have developed a system that trains crows to colle",
+      "url": "https://www.instagram.com/p/DWFDrQUkR6Y/"
+    },
+    {
+      "shortcode": "DWE3Sw2kXOM",
+      "date": "2026-03-19",
+      "likes": 197,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Your body never really shuts off. Not even for a moment.\n\nWhat you\u2019re seeing is real biology in action, microscopic motor proteins moving along cellular highways and delivering car",
+      "url": "https://www.instagram.com/p/DWE3Sw2kXOM/"
+    },
+    {
+      "shortcode": "DWC-4G6AN69",
+      "date": "2026-03-19",
+      "likes": 925,
+      "comments": 10,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Scientists are moving beyond managing chronic neck and back pain and starting to reverse its root cause.\n\nThe breakthrough is an injectable hydrogel designed to mimic the nucleus p",
+      "url": "https://www.instagram.com/p/DWC-4G6AN69/"
+    },
+    {
+      "shortcode": "DWCjdeMkZ_m",
+      "date": "2026-03-18",
+      "likes": 88,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
-      "caption": "This scene would cost a studio $5M. Someone with AI did it in minutes.\n\n@Higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
-      "url": "https://www.instagram.com/p/DV7JNM1gF1H/"
-    },
-    {
-      "shortcode": "DV64OdAEcXM",
-      "date": "2026-03-15",
-      "likes": 339,
-      "comments": 2,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Bamboo is one of the most versatile natural materials on Earth. Its hollow, segmented structure makes it incredibly strong, lightweight, and naturally tubular, which is why many su",
-      "url": "https://www.instagram.com/p/DV64OdAEcXM/"
-    },
-    {
-      "shortcode": "DV6Dq1hgDA1",
-      "date": "2026-03-15",
-      "likes": 156,
-      "comments": 1,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Sydney tech entrepreneur Paul Conyngham turned to artificial intelligence when his rescue dog Rosie was diagnosed with an aggressive form of mast cell cancer and given only a few m",
-      "url": "https://www.instagram.com/p/DV6Dq1hgDA1/"
-    },
-    {
-      "shortcode": "DV3Y0SWgEYY",
-      "date": "2026-03-14",
-      "likes": 381,
-      "comments": 2,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "China has developed a swallowable capsule powered by AI that can examine the stomach in minutes without the need for tubes, sedation, or invasive procedures.\n\nOnce swallowed, the s",
-      "url": "https://www.instagram.com/p/DV3Y0SWgEYY/"
-    },
-    {
-      "shortcode": "DV1t-jUEV7s",
-      "date": "2026-03-13",
-      "likes": 334,
-      "comments": 22,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Coca-Cola is reportedly exploring the idea of a cannabis-inspired beverage designed to capture the distinctive flavor profile associated with cannabis while avoiding any psychoacti",
-      "url": "https://www.instagram.com/p/DV1t-jUEV7s/"
-    },
-    {
-      "shortcode": "DV1bmoZEQq5",
-      "date": "2026-03-13",
-      "likes": 8912,
-      "comments": 197,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "This robotic mouth recreates human speech by imitating the real physical mechanics of how people talk, instead of depending on text to speech systems or digital voice synthesis.\n\nR",
-      "url": "https://www.instagram.com/p/DV1bmoZEQq5/"
-    },
-    {
-      "shortcode": "DVzptSLgP1b",
-      "date": "2026-03-13",
-      "likes": 373,
-      "comments": 14,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "A strange food story from the Netherlands went viral after photos showed what looked like ice cream infused with paracetamol, a common painkiller used to treat headaches and fever.",
-      "url": "https://www.instagram.com/p/DVzptSLgP1b/"
-    },
-    {
-      "shortcode": "DVzHTH2Eb0H",
-      "date": "2026-03-12",
-      "likes": 163,
-      "comments": 6,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "China\u2019s state power grid operator State Grid has begun using dual-arm robots to carry out maintenance on high-voltage power lines. These systems can place conductors, install clamp",
-      "url": "https://www.instagram.com/p/DVzHTH2Eb0H/"
-    },
-    {
-      "shortcode": "DVyxnyOgPpT",
-      "date": "2026-03-12",
-      "likes": 443,
-      "comments": 2,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Tungsten is one of the densest and toughest metals found on Earth, and when a standard bullet strikes a solid block of it, the outcome is almost always the same: the bullet fails f",
-      "url": "https://www.instagram.com/p/DVyxnyOgPpT/"
-    },
-    {
-      "shortcode": "DVw6Ve7gE7j",
-      "date": "2026-03-12",
-      "likes": 3,
-      "comments": 1,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Compressed air is entering a new era beyond the factory floor.\n\nResearchers recently introduced the world\u2019s most powerful single unit compressed air energy storage compressor, rate",
-      "url": "https://www.instagram.com/p/DVw6Ve7gE7j/"
-    },
-    {
-      "shortcode": "DVwbarcEejL",
-      "date": "2026-03-11",
-      "likes": 3,
-      "comments": 7,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Omar Yaghi, winner of the 2025 Nobel Prize in Chemistry, is one of the scientists behind a class of materials that many researchers believe could define the next technological era:",
-      "url": "https://www.instagram.com/p/DVwbarcEejL/"
-    },
-    {
-      "shortcode": "DVv5SXhgAGi",
-      "date": "2026-03-11",
-      "likes": 241,
-      "comments": 1,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Scientists at Harvard University have developed a groundbreaking system of \u201ccyborg\u201d pancreatic organoids that integrates flexible nanoelectronics directly into living tissue to stu",
-      "url": "https://www.instagram.com/p/DVv5SXhgAGi/"
+      "caption": "Road repairs don\u2019t have to mean traffic jams and endless delays. New technologies are making it possible to fix potholes in minutes while cars keep moving, turning what used to be ",
+      "url": "https://www.instagram.com/p/DWCjdeMkZ_m/"
     }
   ]
 }

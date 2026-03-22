@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-03-16T06:57:33+00:00",
-  "date": "2026-03-16",
+  "generated_at": "2026-03-22T03:15:57+00:00",
+  "date": "2026-03-22",
+  "run_started_at": "2026-03-22T03:14:34+00:00",
   "account": "artificialintelligencenews.in",
   "profile_url": "https://www.instagram.com/artificialintelligencenews.in/",
   "full_name": "Artificial Intelligence | AI",
   "biography": "Machine learning | Future Of AI | Neural Networks",
-  "external_url": null,
+  "external_url": "",
   "is_verified": false,
-  "followers": 40,
+  "followers": 41,
   "following": 44,
   "posts": 7,
   "recent_post_count": 7,
@@ -16,7 +17,8 @@
   "avg_comments": 5.29,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
-  "engagement_rate": 380.375,
+  "avg_video_views_per_post": 0.0,
+  "engagement_rate": 371.0976,
   "recent_posts": [
     {
       "shortcode": "DP64HoAE2wP",
