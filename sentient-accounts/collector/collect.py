@@ -15,7 +15,8 @@ HISTORY_DIR = DATA_DIR / "history"
 ACCOUNTS_PATH = BASE_DIR / "accounts.json"
 DEFAULT_POST_LIMIT = 24
 DEFAULT_POST_WINDOW_DAYS = 14
-DEFAULT_POST_HARD_LIMIT = 60
+DEFAULT_POST_COLLECTION_WINDOW_DAYS = 30
+DEFAULT_POST_HARD_LIMIT = 120
 
 
 def load_accounts() -> list[str]:
@@ -52,6 +53,15 @@ def get_post_limit() -> int:
 
 def get_post_window_days() -> int:
     return get_int_setting("RECENT_POST_WINDOW_DAYS", DEFAULT_POST_WINDOW_DAYS, minimum=0)
+
+
+def get_post_collection_window_days(display_window_days: int) -> int:
+    configured = get_int_setting(
+        "RECENT_POST_COLLECTION_WINDOW_DAYS",
+        DEFAULT_POST_COLLECTION_WINDOW_DAYS,
+        minimum=0,
+    )
+    return max(display_window_days, configured)
 
 
 def get_post_hard_limit(soft_limit: int) -> int:
@@ -213,6 +223,19 @@ def enrich_recent_posts_with_reel_views(
     return enriched
 
 
+def is_post_within_window(post_date: str, snapshot_date: str, window_days: int) -> bool:
+    if not post_date:
+        return False
+    try:
+        post_day = dt.date.fromisoformat(post_date)
+        snapshot_day = dt.date.fromisoformat(snapshot_date)
+    except ValueError:
+        return False
+
+    age_in_days = (snapshot_day - post_day).days
+    return 0 <= age_in_days <= window_days
+
+
 def collect_account(
     loader: instaloader.Instaloader,
     username: str,
@@ -229,14 +252,21 @@ def collect_account(
 
     post_limit = get_post_limit()
     post_window_days = get_post_window_days()
+    collection_window_days = get_post_collection_window_days(post_window_days)
     post_hard_limit = get_post_hard_limit(post_limit)
-    cutoff_date = dt.date.fromisoformat(snapshot_date) - dt.timedelta(days=post_window_days)
+    snapshot_day = dt.date.fromisoformat(snapshot_date)
+    collection_cutoff_date = snapshot_day - dt.timedelta(days=collection_window_days)
+    display_cutoff_date = snapshot_day - dt.timedelta(days=post_window_days)
     stop_reason = "exhausted"
 
-    # Keep scanning until we have both a reasonable sample size and coverage of the 14-day window.
+    # Keep scanning until we have both a reasonable sample size and coverage of the collection window.
     for post in profile.get_posts():
         if len(recent_posts) >= post_hard_limit:
             stop_reason = "hard_limit"
+            break
+
+        if len(recent_posts) >= post_limit and post.date_utc.date() < collection_cutoff_date:
+            stop_reason = "window_reached"
             break
 
         post_data = build_recent_post(post)
@@ -247,15 +277,21 @@ def collect_account(
         if post_data["is_video"]:
             video_count += 1
 
-        if len(recent_posts) >= post_limit and post.date_utc.date() < cutoff_date:
-            stop_reason = "window_reached"
-            break
-
     post_count = len(recent_posts)
     enriched_view_posts = enrich_recent_posts_with_reel_views(recent_posts, reel_view_lookup)
-    videos_with_view_data = [
+    oldest_recent_post_date = recent_posts[-1]["date"] if recent_posts else None
+    recent_window_posts = [
         post
         for post in recent_posts
+        if is_post_within_window(
+            str(post.get("date") or ""),
+            snapshot_date,
+            collection_window_days,
+        )
+    ]
+    videos_with_view_data = [
+        post
+        for post in recent_window_posts
         if post.get("is_video") and int(post.get("video_views") or 0) > 0
     ]
     views_total = sum(int(post.get("video_views") or 0) for post in videos_with_view_data)
@@ -266,6 +302,12 @@ def collect_account(
     avg_video_views_per_post = round(views_total / post_count, 2) if post_count else 0
     followers = profile.followers or 0
     engagement_rate = round(((avg_likes + avg_comments) / followers) * 100, 4) if followers else 0
+    display_window_covered = stop_reason != "hard_limit" or (
+        oldest_recent_post_date is not None and oldest_recent_post_date <= display_cutoff_date.isoformat()
+    )
+    collection_window_covered = stop_reason != "hard_limit" or (
+        oldest_recent_post_date is not None and oldest_recent_post_date <= collection_cutoff_date.isoformat()
+    )
 
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
@@ -273,6 +315,7 @@ def collect_account(
         "run_started_at": run_started_at,
         "account": username,
         "profile_url": f"https://www.instagram.com/{username}/",
+        "profile_pic_url": str(getattr(profile, "profile_pic_url", "") or ""),
         "full_name": profile.full_name,
         "biography": profile.biography,
         "external_url": profile.external_url,
@@ -283,18 +326,22 @@ def collect_account(
         "recent_post_count": post_count,
         "video_post_count": video_count,
         "video_posts_with_view_data": videos_with_view_data_count,
+        "video_posts_with_view_data_recent_window": videos_with_view_data_count,
         "reel_view_enriched_posts": enriched_view_posts,
         "recent_posts_window_days": post_window_days,
+        "recent_posts_collection_window_days": collection_window_days,
         "recent_posts_target_limit": post_limit,
         "recent_posts_hard_limit": post_hard_limit,
         "recent_posts_collection_stop_reason": stop_reason,
-        "recent_posts_window_covered": stop_reason != "hard_limit",
-        "oldest_recent_post_date": recent_posts[-1]["date"] if recent_posts else None,
+        "recent_posts_window_covered": display_window_covered,
+        "recent_posts_collection_window_covered": collection_window_covered,
+        "oldest_recent_post_date": oldest_recent_post_date,
         "avg_likes": avg_likes,
         "avg_comments": avg_comments,
         "avg_video_views": avg_video_views,
         "avg_video_views_per_video": avg_video_views,
         "avg_video_views_per_post": avg_video_views_per_post,
+        "total_video_views_recent_window": views_total,
         "engagement_rate": engagement_rate,
         "recent_posts": recent_posts,
     }

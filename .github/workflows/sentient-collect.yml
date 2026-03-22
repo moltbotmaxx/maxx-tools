@@ -85,7 +85,8 @@ jobs:
           ENABLE_REEL_VIEW_SCRAPE: "1"
           RECENT_POST_LIMIT: "24"
           RECENT_POST_WINDOW_DAYS: "14"
-          RECENT_POST_HARD_LIMIT: "60"
+          RECENT_POST_COLLECTION_WINDOW_DAYS: "30"
+          RECENT_POST_HARD_LIMIT: "120"
         run: python sentient-accounts/collector/collect.py
 
       - name: Aggregate datasets

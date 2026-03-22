@@ -604,6 +604,66 @@ function formatVideoViewsMetric(account) {
   return Number(account?.video_post_count || 0) > 0 ? "N/A" : "0";
 }
 
+function getCollectionWindowDays(account) {
+  const collectionWindow = Number(account?.recent_posts_collection_window_days);
+  if (Number.isFinite(collectionWindow) && collectionWindow > 0) {
+    return collectionWindow;
+  }
+
+  const displayWindow = Number(account?.recent_posts_window_days);
+  if (Number.isFinite(displayWindow) && displayWindow > 0) {
+    return Math.max(displayWindow, 30);
+  }
+
+  return 30;
+}
+
+function getPostsInWindow(account, windowDays) {
+  const referenceDate = resolveReferenceDate(account);
+  return (account?.recent_posts || []).filter((post) => {
+    const ageInDays = daysAgo(post.date, referenceDate);
+    return ageInDays >= 0 && ageInDays <= windowDays;
+  });
+}
+
+function getRecentWindowVideoViewsTotal(account) {
+  const explicitTotal = Number(account?.total_video_views_recent_window);
+  if (Number.isFinite(explicitTotal) && explicitTotal > 0) {
+    return explicitTotal;
+  }
+
+  const windowDays = getCollectionWindowDays(account);
+  return getPostsInWindow(account, windowDays)
+    .filter((post) => post?.is_video)
+    .reduce((sum, post) => sum + (Number(post?.video_views) || 0), 0);
+}
+
+function hasRecentWindowVideos(account) {
+  return getPostsInWindow(account, getCollectionWindowDays(account)).some((post) => post?.is_video);
+}
+
+function formatRecentWindowVideoViewsMetric(account) {
+  const totalViews = getRecentWindowVideoViewsTotal(account);
+  if (totalViews > 0) {
+    return account?.recent_posts_collection_window_covered === false
+      ? `${formatNumber(totalViews)}+`
+      : formatNumber(totalViews);
+  }
+  return hasRecentWindowVideos(account) ? "N/A" : "0";
+}
+
+function buildAvatarMarkup(account, className) {
+  const profilePicUrl = String(account?.profile_pic_url || "").trim();
+  const label = String(account?.full_name || account?.account || "Account").trim();
+  const initial = escapeHtml(String(account?.account || "?").trim().charAt(0).toUpperCase() || "?");
+
+  if (profilePicUrl) {
+    return `<img class="${className}" src="${escapeHtml(profilePicUrl)}" alt="${escapeHtml(label)} profile photo" loading="lazy" referrerpolicy="no-referrer" />`;
+  }
+
+  return `<span class="${className} ${className}--placeholder" aria-hidden="true">${initial}</span>`;
+}
+
 function normalizeAccounts(rawAccounts) {
   if (!Array.isArray(rawAccounts)) {
     return [];
@@ -819,9 +879,12 @@ function renderAccountList(accounts) {
       account.engagement_rate >= 1 ? chartColors.accent : chartColors.accent;
 
     button.innerHTML = `
-      <div class="chip-header">
-        <span class="chip-dot" style="background:${engColor}"></span>
-        <span class="account-name">@${account.account}</span>
+      <div class="chip-topline">
+        ${buildAvatarMarkup(account, "chip-avatar")}
+        <div class="chip-header">
+          <span class="chip-dot" style="background:${engColor}"></span>
+          <span class="account-name">@${escapeHtml(account.account)}</span>
+        </div>
       </div>
       <span class="account-followers">${formatNumber(account.followers)} followers</span>
       <span class="account-engagement">${formatPercent(account.engagement_rate)} eng.</span>
@@ -983,6 +1046,22 @@ async function renderAccountDetail(account) {
   link.href = account.profile_url;
   link.classList.remove("hidden");
 
+  const avatar = document.getElementById("detailAvatar");
+  const profilePicUrl = String(account?.profile_pic_url || "").trim();
+  if (avatar) {
+    if (profilePicUrl) {
+      avatar.src = profilePicUrl;
+      avatar.alt = `@${account.account} profile photo`;
+      avatar.classList.remove("hidden");
+    } else {
+      avatar.removeAttribute("src");
+      avatar.alt = "";
+      avatar.classList.add("hidden");
+    }
+  }
+
+  const collectionWindowDays = getCollectionWindowDays(account);
+
   document.getElementById("detailMeta").innerHTML = [
     renderMetaMetric("Followers", formatNumber(account.followers), true),
     renderMetaMetric("Following", formatNumber(account.following)),
@@ -990,6 +1069,7 @@ async function renderAccountDetail(account) {
     renderMetaMetric("Avg likes", formatNumber(account.avg_likes)),
     renderMetaMetric("Avg comments", formatNumber(account.avg_comments)),
     renderMetaMetric("Avg video views", formatVideoViewsMetric(account)),
+    renderMetaMetric(`${collectionWindowDays}d reel views`, formatRecentWindowVideoViewsMetric(account), true),
     renderMetaMetric("Engagement", formatPercent(account.engagement_rate), true),
     renderMetaMetric("Verified", account.is_verified ? "✓ Yes" : "✗ No"),
   ].join("");

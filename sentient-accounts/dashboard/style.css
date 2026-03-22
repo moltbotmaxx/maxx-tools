@@ -350,6 +350,43 @@ body {
   font-weight: 600;
 }
 
+.detail-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.detail-avatar,
+.chip-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(207, 255, 4, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.detail-avatar {
+  width: 68px;
+  height: 68px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+}
+
+.chip-avatar {
+  width: 42px;
+  height: 42px;
+}
+
+.detail-avatar--placeholder,
+.chip-avatar--placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 /* ── Layout ──────────────────────────────────────────── */
 
 .layout {
@@ -498,6 +535,12 @@ body {
   border-color: rgba(207, 255, 4, 0.35);
   background: linear-gradient(180deg, rgba(207, 255, 4, 0.06), transparent);
   box-shadow: 0 8px 32px rgba(207, 255, 4, 0.06);
+}
+
+.chip-topline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .account-name {
@@ -744,6 +787,10 @@ body {
 
   .hero {
     gap: 20px;
+  }
+
+  .detail-heading {
+    align-items: flex-start;
   }
 
   .hero-meta {
