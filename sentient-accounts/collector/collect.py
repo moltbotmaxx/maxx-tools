@@ -58,6 +58,75 @@ def get_post_hard_limit(soft_limit: int) -> int:
     return max(soft_limit, get_int_setting("RECENT_POST_HARD_LIMIT", DEFAULT_POST_HARD_LIMIT))
 
 
+def should_scrape_reel_views() -> bool:
+    load_local_env()
+    return str(os.getenv("ENABLE_REEL_VIEW_SCRAPE", "")).strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
+
+
+def build_reel_view_scraper() -> Any | None:
+    if not should_scrape_reel_views():
+        return None
+
+    try:
+        from instagram_auth import get_instagram_username, resolve_session_file
+        from scrape_reel_views import ReelViewScraper
+    except ModuleNotFoundError as exc:
+        print(f"Reel view scraping disabled because Selenium dependencies are unavailable: {exc}")
+        return None
+
+    session_username = get_instagram_username()
+    session_file = resolve_session_file(session_username) if session_username else None
+    if session_file is None or not session_file.exists():
+        print("Reel view scraping disabled because no persisted Instagram session file is available.")
+        return None
+
+    scraper = None
+    try:
+        scraper = ReelViewScraper(
+            headless=True,
+            session_file=session_file,
+            skip_login_prompt=True,
+        )
+        scraper.open()
+    except Exception as exc:
+        print(f"Reel view scraping disabled because the headless browser could not start: {exc}")
+        try:
+            scraper.close()
+        except Exception:
+            pass
+        return None
+
+    print(f"Enabled reel view scraping via Selenium using {session_file}.")
+    return scraper
+
+
+def build_reel_view_lookup(scraper: Any | None, username: str, max_reels: int) -> dict[str, int]:
+    if scraper is None:
+        return {}
+
+    try:
+        scraped_reels = scraper.scrape_account(username, max_reels=max_reels)
+    except Exception as exc:
+        print(f"Failed to scrape reel views for @{username}: {exc}")
+        return {}
+
+    lookup: dict[str, int] = {}
+    for item in scraped_reels:
+        shortcode = str(item.get("shortcode") or "").strip()
+        views = item.get("views")
+        if shortcode and isinstance(views, int) and views > 0:
+            lookup[shortcode] = views
+
+    if lookup:
+        print(f"Captured headless reel view counts for @{username}: {len(lookup)}")
+    return lookup
+
+
 def build_failure(account: str, exc: Exception) -> dict[str, str]:
     return {
         "account": account,
@@ -120,18 +189,42 @@ def build_recent_post(post: Any) -> dict[str, Any]:
     }
 
 
+def enrich_recent_posts_with_reel_views(
+    recent_posts: list[dict[str, Any]],
+    reel_view_lookup: dict[str, int] | None = None,
+) -> int:
+    if not reel_view_lookup:
+        return 0
+
+    enriched = 0
+    for post in recent_posts:
+        shortcode = str(post.get("shortcode") or "").strip()
+        if not shortcode:
+            continue
+
+        view_count = reel_view_lookup.get(shortcode)
+        if not isinstance(view_count, int) or view_count <= 0:
+            continue
+
+        post["video_views"] = view_count
+        post["video_views_source"] = "selenium_reels_grid"
+        enriched += 1
+
+    return enriched
+
+
 def collect_account(
     loader: instaloader.Instaloader,
     username: str,
     snapshot_date: str,
     run_started_at: str,
+    reel_view_lookup: dict[str, int] | None = None,
 ) -> dict[str, Any]:
     profile = instaloader.Profile.from_username(loader.context, username)
 
     recent_posts = []
     likes_total = 0
     comments_total = 0
-    views_total = 0
     video_count = 0
 
     post_limit = get_post_limit()
@@ -152,7 +245,6 @@ def collect_account(
         comments_total += post_data["comments"]
 
         if post_data["is_video"]:
-            views_total += post_data["video_views"]
             video_count += 1
 
         if len(recent_posts) >= post_limit and post.date_utc.date() < cutoff_date:
@@ -160,9 +252,17 @@ def collect_account(
             break
 
     post_count = len(recent_posts)
+    enriched_view_posts = enrich_recent_posts_with_reel_views(recent_posts, reel_view_lookup)
+    videos_with_view_data = [
+        post
+        for post in recent_posts
+        if post.get("is_video") and int(post.get("video_views") or 0) > 0
+    ]
+    views_total = sum(int(post.get("video_views") or 0) for post in videos_with_view_data)
+    videos_with_view_data_count = len(videos_with_view_data)
     avg_likes = round(likes_total / post_count, 2) if post_count else 0
     avg_comments = round(comments_total / post_count, 2) if post_count else 0
-    avg_video_views = round(views_total / video_count, 2) if video_count else 0
+    avg_video_views = round(views_total / videos_with_view_data_count, 2) if videos_with_view_data_count else 0
     avg_video_views_per_post = round(views_total / post_count, 2) if post_count else 0
     followers = profile.followers or 0
     engagement_rate = round(((avg_likes + avg_comments) / followers) * 100, 4) if followers else 0
@@ -182,6 +282,8 @@ def collect_account(
         "posts": profile.mediacount,
         "recent_post_count": post_count,
         "video_post_count": video_count,
+        "video_posts_with_view_data": videos_with_view_data_count,
+        "reel_view_enriched_posts": enriched_view_posts,
         "recent_posts_window_days": post_window_days,
         "recent_posts_target_limit": post_limit,
         "recent_posts_hard_limit": post_hard_limit,
@@ -240,30 +342,49 @@ def main() -> int:
 
     loader = build_loader()
     authenticate_loader(loader)
+    reel_view_scraper = build_reel_view_scraper()
     failures = []
     collected = 0
 
-    for username in accounts:
-        print(f"Collecting {username}...")
-        try:
-            payload = collect_account(loader, username, snapshot_date, run_started_at)
-            write_json(DATA_DIR / f"{username}.json", payload)
-            update_history(
-                HISTORY_DIR / f"{username}.json",
-                {
-                    "date": payload["date"],
-                    "followers": payload["followers"],
-                    "avg_likes": payload["avg_likes"],
-                    "avg_comments": payload["avg_comments"],
-                    "engagement_rate": payload["engagement_rate"],
-                },
-            )
-        except Exception as exc:
-            failures.append(build_failure(username, exc))
-            print(f"Failed to collect {username}: {exc}")
-            continue
+    try:
+        for username in accounts:
+            print(f"Collecting {username}...")
+            try:
+                reel_view_lookup = build_reel_view_lookup(
+                    reel_view_scraper,
+                    username=username,
+                    max_reels=get_post_hard_limit(get_post_limit()),
+                )
+                payload = collect_account(
+                    loader,
+                    username,
+                    snapshot_date,
+                    run_started_at,
+                    reel_view_lookup=reel_view_lookup,
+                )
+                write_json(DATA_DIR / f"{username}.json", payload)
+                update_history(
+                    HISTORY_DIR / f"{username}.json",
+                    {
+                        "date": payload["date"],
+                        "followers": payload["followers"],
+                        "avg_likes": payload["avg_likes"],
+                        "avg_comments": payload["avg_comments"],
+                        "engagement_rate": payload["engagement_rate"],
+                    },
+                )
+            except Exception as exc:
+                failures.append(build_failure(username, exc))
+                print(f"Failed to collect {username}: {exc}")
+                continue
 
-        collected += 1
+            collected += 1
+    finally:
+        if reel_view_scraper is not None:
+            try:
+                reel_view_scraper.close()
+            except Exception:
+                pass
 
     errors_path = DATA_DIR / "errors.json"
     if failures:

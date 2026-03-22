@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import pickle
 import re
 import time
 import unicodedata
@@ -16,6 +17,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.ui import WebDriverWait
+
+from instagram_auth import get_instagram_username, load_local_env, resolve_session_file
 
 BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent
@@ -42,6 +45,7 @@ IGNORE_LINE_KEYWORDS = (
     "reel",
     "reels",
 )
+INSTAGRAM_HOME_URL = "https://www.instagram.com/"
 
 
 def parse_args() -> argparse.Namespace:
@@ -150,6 +154,41 @@ def build_driver(profile_dir: Path, headless: bool) -> webdriver.Chrome:
         options.add_argument("--headless=new")
 
     return webdriver.Chrome(options=options)
+
+
+def load_instaloader_session_cookies(session_file: Path) -> dict[str, str]:
+    raw = pickle.loads(session_file.read_bytes())
+    if not isinstance(raw, dict):
+        raise ValueError(f"Session file {session_file} does not contain a cookie mapping.")
+
+    cookies: dict[str, str] = {}
+    for key, value in raw.items():
+        if isinstance(key, str) and isinstance(value, str) and value:
+            cookies[key] = value
+    if not cookies:
+        raise ValueError(f"Session file {session_file} did not yield any Instagram cookies.")
+    return cookies
+
+
+def apply_instagram_session_cookies(driver: webdriver.Chrome, session_file: Path) -> bool:
+    if not session_file.exists():
+        return False
+
+    cookies = load_instaloader_session_cookies(session_file)
+    driver.get(INSTAGRAM_HOME_URL)
+    for name, value in cookies.items():
+        driver.add_cookie(
+            {
+                "name": name,
+                "value": value,
+                "domain": ".instagram.com",
+                "path": "/",
+                "secure": True,
+            }
+        )
+    driver.get(INSTAGRAM_HOME_URL)
+    time.sleep(1)
+    return not page_requires_login(driver)
 
 
 def wait_for_reel_tiles(driver: webdriver.Chrome, timeout_seconds: int = 15) -> None:
@@ -298,6 +337,60 @@ def collect_reel_views(
     return collected
 
 
+class ReelViewScraper:
+    def __init__(
+        self,
+        profile_dir: Path | None = None,
+        headless: bool = False,
+        session_file: Path | None = None,
+        skip_login_prompt: bool = False,
+    ) -> None:
+        self.profile_dir = profile_dir or DEFAULT_PROFILE_DIR
+        self.headless = headless
+        self.session_file = session_file
+        self.skip_login_prompt = skip_login_prompt
+        self.driver: webdriver.Chrome | None = None
+        self.session_authenticated = False
+
+    def open(self) -> webdriver.Chrome:
+        if self.driver is not None:
+            return self.driver
+
+        self.driver = build_driver(self.profile_dir, self.headless)
+        if self.session_file:
+            try:
+                self.session_authenticated = apply_instagram_session_cookies(self.driver, self.session_file)
+            except Exception as exc:
+                print(f"Failed to apply Instagram session cookies from {self.session_file}: {exc}")
+                self.session_authenticated = False
+        return self.driver
+
+    def close(self) -> None:
+        if self.driver is None:
+            return
+        try:
+            self.driver.quit()
+        except Exception:
+            pass
+        self.driver = None
+
+    def scrape_account(self, username: str, max_reels: int) -> list[dict[str, Any]]:
+        driver = self.open()
+        return collect_reel_views(
+            driver,
+            username=username,
+            max_reels=max_reels,
+            skip_login_prompt=self.skip_login_prompt,
+        )
+
+    def __enter__(self) -> ReelViewScraper:
+        self.open()
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> None:
+        self.close()
+
+
 def build_output_payload(username: str, reels: list[dict[str, Any]], target_url: str) -> dict[str, Any]:
     reels_with_views = [item for item in reels if item.get("views") is not None]
     return {
@@ -322,32 +415,35 @@ def main() -> int:
     if not username:
         raise SystemExit("A valid Instagram username is required.")
 
+    load_local_env()
     profile_dir = Path(args.profile_dir).expanduser()
     if not profile_dir.is_absolute():
         profile_dir = REPO_ROOT / profile_dir
 
     output_path = resolve_output_path(username, args.output)
     target_url = f"https://www.instagram.com/{username}/reels/"
+    configured_username = get_instagram_username()
+    session_file = resolve_session_file(configured_username) if configured_username else None
 
     print(f"Launching Chrome profile at {profile_dir}")
     print(f"Target account: @{username}")
     print(f"Output file: {output_path}")
+    if session_file and session_file.exists():
+        print(f"Will attempt to preload Instagram cookies from {session_file}")
 
-    driver: webdriver.Chrome | None = None
     try:
-        driver = build_driver(profile_dir, args.headless)
-        reels = collect_reel_views(driver, username, max(1, args.max_reels), args.skip_login_prompt)
+        with ReelViewScraper(
+            profile_dir=profile_dir,
+            headless=args.headless,
+            session_file=session_file,
+            skip_login_prompt=args.skip_login_prompt,
+        ) as scraper:
+            reels = scraper.scrape_account(username, max(1, args.max_reels))
     except WebDriverException as exc:
         raise SystemExit(
             "Unable to launch Chrome through Selenium. Make sure Google Chrome is installed, "
             "then retry inside the sentient-accounts virtual environment."
         ) from exc
-    finally:
-        if driver is not None:
-            try:
-                driver.quit()
-            except Exception:
-                pass
 
     payload = build_output_payload(username, reels, target_url)
     write_output(output_path, payload)

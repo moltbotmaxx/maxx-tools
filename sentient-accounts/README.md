@@ -99,7 +99,7 @@ Useful options:
 .venv/bin/python collector/scrape_reel_views.py chatgptricks --output ./chatgptricks-reel-views.json
 ```
 
-This script is intentionally local-only for now. It does not run in GitHub Actions and it does not modify the main dashboard datasets yet.
+This script is still the easiest way to validate reel-view extraction locally. Separately, when `ENABLE_REEL_VIEW_SCRAPE=1` and a persisted Instaloader session file is available, `collector/collect.py` now reuses the same Selenium-based reel grid scrape headlessly to enrich `recent_posts[].video_views` before writing the dashboard JSON.
 
 If you prefer env files instead of shell exports, `.env` and `.env.local` in the repository root are supported:
 
