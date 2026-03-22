@@ -81,6 +81,7 @@ The system currently supports:
 - profile avatars
 - `30d` likes per account
 - `30d` reel views per account
+- adaptive recent-post scanning for high-volume accounts so the 30d window is less likely to end as `Sample truncated`
 - global portfolio totals for:
   - likes `30d`
   - reel views `30d`
@@ -163,6 +164,7 @@ Recent relevant commits, newest first:
 - GitHub Pages publishing path is fixed.
 - Avatars are served locally and should not depend on hotlinking Instagram.
 - The collector is functional, but still operationally fragile because Instagram auth/rate limits can change.
+- Recent-post collection now auto-expands the hard limit based on collection window size, so high-volume accounts can scan deeper before being marked truncated.
 
 ### Daily Tracker
 
@@ -275,3 +277,7 @@ Before ending a substantial session:
   - the data commit landed on `main`
   - `deploy-pages.yml` ran
   - the published asset path includes avatars/data
+- If `Sample truncated` appears for a high-volume account, inspect the account JSON fields:
+  - `recent_posts_hard_limit`
+  - `recent_posts_collection_stop_reason`
+  - `oldest_recent_post_date`

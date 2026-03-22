@@ -86,7 +86,7 @@ jobs:
           RECENT_POST_LIMIT: "24"
           RECENT_POST_WINDOW_DAYS: "14"
           RECENT_POST_COLLECTION_WINDOW_DAYS: "30"
-          RECENT_POST_HARD_LIMIT: "120"
+          RECENT_POST_HARD_LIMIT: "180"
         run: python sentient-accounts/collector/collect.py
 
       - name: Aggregate datasets

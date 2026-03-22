@@ -18,7 +18,8 @@ ACCOUNTS_PATH = BASE_DIR / "accounts.json"
 DEFAULT_POST_LIMIT = 24
 DEFAULT_POST_WINDOW_DAYS = 14
 DEFAULT_POST_COLLECTION_WINDOW_DAYS = 30
-DEFAULT_POST_HARD_LIMIT = 120
+DEFAULT_POST_HARD_LIMIT = 180
+DEFAULT_POST_HARD_LIMIT_PER_DAY = 8
 HIDDEN_LIKES_SENTINEL = 3
 
 
@@ -67,8 +68,10 @@ def get_post_collection_window_days(display_window_days: int) -> int:
     return max(display_window_days, configured)
 
 
-def get_post_hard_limit(soft_limit: int) -> int:
-    return max(soft_limit, get_int_setting("RECENT_POST_HARD_LIMIT", DEFAULT_POST_HARD_LIMIT))
+def get_post_hard_limit(soft_limit: int, collection_window_days: int) -> int:
+    configured_limit = get_int_setting("RECENT_POST_HARD_LIMIT", DEFAULT_POST_HARD_LIMIT)
+    adaptive_floor = collection_window_days * DEFAULT_POST_HARD_LIMIT_PER_DAY
+    return max(soft_limit, configured_limit, adaptive_floor)
 
 
 def should_scrape_reel_views() -> bool:
@@ -285,7 +288,7 @@ def collect_account(
     post_limit = get_post_limit()
     post_window_days = get_post_window_days()
     collection_window_days = get_post_collection_window_days(post_window_days)
-    post_hard_limit = get_post_hard_limit(post_limit)
+    post_hard_limit = get_post_hard_limit(post_limit, collection_window_days)
     snapshot_day = dt.date.fromisoformat(snapshot_date)
     collection_cutoff_date = snapshot_day - dt.timedelta(days=collection_window_days)
     display_cutoff_date = snapshot_day - dt.timedelta(days=post_window_days)
