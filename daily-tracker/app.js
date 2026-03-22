@@ -325,6 +325,7 @@ const elements = {
     accountTotalLikes30d: document.getElementById('accountTotalLikes30d'),
     accountTotalViews30d: document.getElementById('accountTotalViews30d'),
     accountAverageEngagement: document.getElementById('accountAverageEngagement'),
+    managedAccountsRoster: document.getElementById('managedAccountsRoster'),
     accountViewStatus: document.getElementById('accountViewStatus'),
     managedAccountsGrid: document.getElementById('managedAccountsGrid'),
     managedAccountsModalOverlay: document.getElementById('managedAccountsModalOverlay'),
@@ -1390,6 +1391,107 @@ async function saveManagedAccountsSelection() {
     }
 }
 
+function resetAccountSummary(snapshotText = 'Snapshot · Unavailable') {
+    if (elements.accountSelectedCount) elements.accountSelectedCount.textContent = '0';
+    if (elements.accountTotalFollowers) elements.accountTotalFollowers.textContent = '0';
+    if (elements.accountTotalLikes30d) elements.accountTotalLikes30d.textContent = '0';
+    if (elements.accountTotalViews30d) elements.accountTotalViews30d.textContent = '0';
+    if (elements.accountAverageEngagement) elements.accountAverageEngagement.textContent = '0.00%';
+    if (elements.accountSnapshotMeta) elements.accountSnapshotMeta.textContent = snapshotText;
+    if (elements.managedAccountsRoster) {
+        elements.managedAccountsRoster.innerHTML = '<div class="managed-accounts-roster__empty">No managed accounts selected yet.</div>';
+    }
+}
+
+function buildManagedAccountRosterItem(account = {}) {
+    return `
+        <a class="managed-account-roster-item" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">
+            <img class="managed-account-roster-item__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+            <div class="managed-account-roster-item__copy">
+                <strong>@${escapeHtml(account.account)}</strong>
+                <span>${escapeHtml(formatCompact(Number(account.followers) || 0))} followers</span>
+            </div>
+        </a>
+    `;
+}
+
+function buildManagedAccountMetric(label, value, accent = false) {
+    return `
+        <div class="managed-account-metric${accent ? ' managed-account-metric--accent' : ''}">
+            <span>${escapeHtml(label)}</span>
+            <strong>${escapeHtml(String(value))}</strong>
+        </div>
+    `;
+}
+
+function buildManagedAccountCard(account = {}) {
+    const bio = normalizeWhitespace(account.biography || '');
+    const bioText = bio.length > 120 ? `${bio.slice(0, 117)}...` : bio;
+    const viewSuffix = account.recentWindowCovered === false ? '+' : '';
+    const topPosts = Array.isArray(account.topPosts) ? account.topPosts.slice(0, 2) : [];
+    const bestPost = topPosts[0] || null;
+    const quickFacts = [
+        formatCompact(Number(account.followers) || 0),
+        `${formatCompact(Number(account.posts) || 0)} posts`,
+        `${formatPercentCompact(account.engagement_rate)} eng.`,
+        `${Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0'} avg video views`
+    ];
+    const spotlightHtml = bestPost
+        ? `
+            <a class="managed-account-row__spotlight" href="${safeHttpUrl(bestPost.url)}" target="_blank" rel="noopener noreferrer">
+                <span class="managed-account-row__spotlight-label">Best recent post</span>
+                <strong>${escapeHtml(bestPost.caption || 'Open post')}</strong>
+                <div class="managed-account-row__spotlight-meta">
+                    <span>${escapeHtml(formatReadableDate(bestPost.date))}</span>
+                    <span>❤ ${escapeHtml(getSentientLikesLabel(bestPost))}</span>
+                    <span>💬 ${escapeHtml(formatCompact(Number(bestPost.comments) || 0))}</span>
+                    ${bestPost.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(bestPost.video_views) || 0))}</span>` : ''}
+                </div>
+            </a>
+        `
+        : '<div class="managed-account-row__spotlight managed-account-row__spotlight--empty">No recent post captured yet.</div>';
+
+    return `
+        <article class="managed-account-row">
+            <div class="managed-account-row__identity">
+                <img class="managed-account-row__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                <div class="managed-account-row__identity-copy">
+                    <div class="managed-account-row__title">
+                        <h3>${escapeHtml(account.full_name || account.account)}</h3>
+                        ${account.is_verified ? '<span class="managed-account-row__verified">✓</span>' : ''}
+                    </div>
+                    <div class="managed-account-row__handle">
+                        <span>@${escapeHtml(account.account)}</span>
+                        ${account.external_url ? `<a href="${safeHttpUrl(account.external_url)}" target="_blank" rel="noopener noreferrer">External</a>` : ''}
+                    </div>
+                    <div class="managed-account-row__facts">
+                        ${quickFacts.map(fact => `<span>${escapeHtml(fact)}</span>`).join('')}
+                    </div>
+                    ${bioText ? `<p class="managed-account-row__bio" title="${escapeHtml(bio)}">${escapeHtml(bioText)}</p>` : ''}
+                </div>
+            </div>
+            <div class="managed-account-row__metrics">
+                ${buildManagedAccountMetric('30d likes', `${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`, true)}
+                ${buildManagedAccountMetric('30d reel views', `${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`, true)}
+                ${buildManagedAccountMetric('Avg likes', formatCompact(Number(account.avg_likes) || 0))}
+                ${buildManagedAccountMetric('Avg comments', formatCompact(Number(account.avg_comments) || 0))}
+            </div>
+            ${spotlightHtml}
+            <div class="managed-account-row__actions">
+                <a class="managed-account-row__profile-link" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open Profile</a>
+                <span class="managed-account-row__window">Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+            </div>
+        </article>
+    `;
+}
+
+function renderManagedAccountsRoster(accounts = []) {
+    if (!elements.managedAccountsRoster) return;
+    elements.managedAccountsRoster.innerHTML = accounts.length
+        ? accounts.map(account => buildManagedAccountRosterItem(account)).join('')
+        : '<div class="managed-accounts-roster__empty">No managed accounts selected yet.</div>';
+}
+
 function renderAccountSummary(accounts = [], dataset = null) {
     const totalFollowers = accounts.reduce((sum, account) => sum + (Number(account.followers) || 0), 0);
     const totalLikes30d = accounts.reduce((sum, account) => sum + (Number(account.likes30d) || 0), 0);
@@ -1413,97 +1515,8 @@ function renderAccountSummary(accounts = [], dataset = null) {
         const windowDays = Number(dataset?.recent_window_days) || 30;
         elements.accountSnapshotMeta.textContent = `Snapshot · ${formatReadableDate(snapshotDate)} · ${windowDays}d window${suffix ? ' · sample truncated' : ''}`;
     }
-}
 
-function resetAccountSummary(snapshotText = 'Snapshot · Unavailable') {
-    if (elements.accountSelectedCount) elements.accountSelectedCount.textContent = '0';
-    if (elements.accountTotalFollowers) elements.accountTotalFollowers.textContent = '0';
-    if (elements.accountTotalLikes30d) elements.accountTotalLikes30d.textContent = '0';
-    if (elements.accountTotalViews30d) elements.accountTotalViews30d.textContent = '0';
-    if (elements.accountAverageEngagement) elements.accountAverageEngagement.textContent = '0.00%';
-    if (elements.accountSnapshotMeta) elements.accountSnapshotMeta.textContent = snapshotText;
-}
-
-function buildManagedAccountMetric(label, value, accent = false) {
-    return `
-        <div class="managed-account-metric${accent ? ' managed-account-metric--accent' : ''}">
-            <span>${escapeHtml(label)}</span>
-            <strong>${escapeHtml(String(value))}</strong>
-        </div>
-    `;
-}
-
-function buildManagedAccountCard(account = {}) {
-    const bio = normalizeWhitespace(account.biography || '');
-    const bioText = bio.length > 120 ? `${bio.slice(0, 117)}...` : bio;
-    const viewSuffix = account.recentWindowCovered === false ? '+' : '';
-    const topPosts = Array.isArray(account.topPosts) ? account.topPosts.slice(0, 2) : [];
-    const quickFacts = [
-        ['Followers', formatCompact(Number(account.followers) || 0)],
-        ['Posts', formatCompact(Number(account.posts) || 0)],
-        ['Engagement', formatPercentCompact(account.engagement_rate)],
-        ['Avg video views', Number(account.video_post_count) > 0 ? formatCompact(Number(account.avg_video_views_per_video) || 0) : '0']
-    ];
-    const topPostsHtml = topPosts.length
-        ? topPosts.map(post => `
-            <a class="managed-account-post" href="${safeHttpUrl(post.url)}" target="_blank" rel="noopener noreferrer">
-                <div class="managed-account-post__copy">
-                    <strong>${escapeHtml(post.caption || 'Open post')}</strong>
-                    <span>${escapeHtml(formatReadableDate(post.date))}</span>
-                </div>
-                <div class="managed-account-post__metrics">
-                    <span>❤ ${escapeHtml(getSentientLikesLabel(post))}</span>
-                    <span>💬 ${escapeHtml(formatCompact(Number(post.comments) || 0))}</span>
-                    ${post.is_video ? `<span>▶ ${escapeHtml(formatCompact(Number(post.video_views) || 0))}</span>` : ''}
-                </div>
-            </a>
-        `).join('')
-        : '<div class="managed-account-post managed-account-post--empty">No recent posts captured yet.</div>';
-
-    return `
-        <article class="bento-box managed-account-card">
-            <div class="managed-account-card__summary">
-                <div class="managed-account-card__identity">
-                    <img class="managed-account-card__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
-                    <div class="managed-account-card__identity-copy">
-                        <h2>${escapeHtml(account.full_name || account.account)} ${account.is_verified ? '<span class="managed-account-card__verified">✓</span>' : ''}</h2>
-                        <div class="managed-account-card__handle-row">
-                            <span>@${escapeHtml(account.account)}</span>
-                            ${account.external_url ? `<a href="${safeHttpUrl(account.external_url)}" target="_blank" rel="noopener noreferrer">External</a>` : ''}
-                        </div>
-                    </div>
-                </div>
-                <div class="managed-account-card__actions">
-                    <span class="managed-account-card__window">Top posts · ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
-                    <a class="managed-account-card__profile-link" href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open</a>
-                </div>
-            </div>
-            ${bioText ? `<p class="managed-account-card__bio" title="${escapeHtml(bio)}">${escapeHtml(bioText)}</p>` : ''}
-            <div class="managed-account-card__fact-strip">
-                ${quickFacts.map(([label, value]) => `
-                    <div class="managed-account-fact">
-                        <span>${escapeHtml(label)}</span>
-                        <strong>${escapeHtml(String(value))}</strong>
-                    </div>
-                `).join('')}
-            </div>
-            <div class="managed-account-card__metrics">
-                ${buildManagedAccountMetric('Avg likes', formatCompact(Number(account.avg_likes) || 0))}
-                ${buildManagedAccountMetric('Avg comments', formatCompact(Number(account.avg_comments) || 0))}
-                ${buildManagedAccountMetric('30d likes', `${formatCompact(Number(account.likes30d) || 0)}${viewSuffix}`)}
-                ${buildManagedAccountMetric('30d reel views', `${formatCompact(Number(account.views30d) || 0)}${viewSuffix}`, true)}
-            </div>
-            <div class="managed-account-card__posts">
-                <div class="managed-account-card__posts-header">
-                    <h3>Best recent posts</h3>
-                    <span>${topPosts.length || 0} shown</span>
-                </div>
-                <div class="managed-account-card__posts-list">
-                    ${topPostsHtml}
-                </div>
-            </div>
-        </article>
-    `;
+    renderManagedAccountsRoster(accounts);
 }
 
 async function renderAccountView(forceRefresh = false) {

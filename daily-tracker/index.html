@@ -33,7 +33,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Content Scheduler
                     <span id="liveBuildBadge"
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(account-compact)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(account-rebuild)</span>
                     <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Checking</span>
@@ -253,7 +253,7 @@
                                 <h2>📥 Add Selection</h2>
                                 <a class="selection-clipper-link"
                                     href="./extension/daily-tracker-clipper-login.zip" download>
-                                    Clipper · account-compact
+                                    Clipper · account-rebuild
                                 </a>
                             </div>
                             <div class="link-input-group">
@@ -499,18 +499,16 @@
             <!-- VIEW 4: ACCOUNT -->
             <div id="account-view" class="view-container">
                 <div class="account-dashboard">
-                    <section class="bento-box account-overview-box">
-                        <div class="box-header">
-                            <h2>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                                Managed Accounts
-                            </h2>
+                    <section class="bento-box account-command-box">
+                        <div class="account-command-box__top">
+                            <div class="account-command-box__copy">
+                                <span class="account-command-box__eyebrow">Sentient Accounts</span>
+                                <h2>Account Command Center</h2>
+                                <p>One view for the accounts attached to this login, with portfolio totals and a comparison board.</p>
+                            </div>
                             <div class="account-overview__actions">
                                 <span id="accountSnapshotMeta" class="account-overview__meta">Snapshot · Loading...</span>
-                                <button id="manageAccountsBtn" class="action-btn">Manage Selection</button>
+                                <button id="manageAccountsBtn" class="action-btn">Manage Accounts</button>
                             </div>
                         </div>
                         <div class="kpi-grid account-kpi-grid">
@@ -540,9 +538,23 @@
                                 <div class="kpi-trend">Weighted by followers</div>
                             </div>
                         </div>
+                        <div id="managedAccountsRoster" class="managed-accounts-roster"></div>
                     </section>
                     <div id="accountViewStatus" class="account-view-status">Loading Sentient account data...</div>
-                    <section id="managedAccountsGrid" class="managed-accounts-grid"></section>
+                    <section class="bento-box account-board">
+                        <div class="box-header">
+                            <h2>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3h18v18H3z"></path>
+                                    <path d="M8 12h3v6H8z"></path>
+                                    <path d="M13 8h3v10h-3z"></path>
+                                </svg>
+                                Performance Board
+                            </h2>
+                            <span class="account-board__hint">Each row compares one managed account</span>
+                        </div>
+                        <section id="managedAccountsGrid" class="managed-accounts-board"></section>
+                    </section>
                 </div>
             </div>
 
@@ -837,8 +849,8 @@
     </div>
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
-    <script src="x-feed-config.js?v=account-compact"></script>
-    <script type="module" src="app.js?v=account-compact"></script>
+    <script src="x-feed-config.js?v=account-rebuild"></script>
+    <script type="module" src="app.js?v=account-rebuild"></script>
 </body>
 
 </html>
