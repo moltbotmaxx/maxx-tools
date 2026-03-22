@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-03-22T04:51:08+00:00",
+  "date": "2026-03-22",
+  "run_started_at": "2026-03-22T04:47:47+00:00",
+  "account": "sentientagency",
+  "profile_url": "https://www.instagram.com/sentientagency/",
+  "full_name": "AI Agency",
+  "biography": "\ud83e\udd16 The World\u2019s Largest AI Social Media Network \n\ud83d\ude80 25M+ Followers @chatgptricks @chatgptips @planet.ai_ @supercar and more\n\ud83d\udce5 contact@sentientagency.io",
+  "external_url": "https://sentientagency.io/",
+  "is_verified": true,
+  "followers": 27502,
+  "following": 23,
+  "posts": 1,
+  "recent_post_count": 1,
+  "video_post_count": 0,
+  "recent_posts_window_days": 14,
+  "recent_posts_target_limit": 24,
+  "recent_posts_hard_limit": 60,
+  "recent_posts_collection_stop_reason": "exhausted",
+  "recent_posts_window_covered": true,
+  "oldest_recent_post_date": "2024-11-13",
+  "avg_likes": 172.0,
+  "avg_comments": 28.0,
+  "avg_video_views": 0,
+  "avg_video_views_per_video": 0,
+  "avg_video_views_per_post": 0.0,
+  "engagement_rate": 0.7272,
+  "recent_posts": [
+    {
+      "shortcode": "DCS9ETbtx3N",
+      "date": "2024-11-13",
+      "likes": 172,
+      "comments": 28,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Visit the link in our bio and schedule a call with us. \n\nLet\u2019s get to work! \ud83e\udd16\ud83d\udcaa",
+      "url": "https://www.instagram.com/p/DCS9ETbtx3N/"
+    }
+  ]
+}

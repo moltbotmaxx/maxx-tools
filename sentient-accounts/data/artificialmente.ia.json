@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-22T04:04:03+00:00",
+  "generated_at": "2026-03-22T04:50:44+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T03:59:05+00:00",
+  "run_started_at": "2026-03-22T04:47:47+00:00",
   "account": "artificialmente.ia",
   "profile_url": "https://www.instagram.com/artificialmente.ia/",
   "full_name": "Ivan \u2022 IA \u2022 Tecnolog\u00eda",
   "biography": "\ud83e\uddd1\u200d\ud83d\udcbb Creador / Futurista @ivanelgrande\n\ud83e\udd16 S\u00edgueme antes de que sea tarde\n\ud83d\udce5 artificialmente.ia@gmail.com\n\ud83d\udc47 O usas IA o te quedas atr\u00e1s",
   "external_url": "http://ivanelgrande.com",
   "is_verified": true,
-  "followers": 347754,
+  "followers": 347758,
   "following": 5,
   "posts": 850,
   "recent_post_count": 40,
@@ -19,12 +19,12 @@
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-03-07",
-  "avg_likes": 7315.82,
-  "avg_comments": 129.7,
+  "avg_likes": 7345.65,
+  "avg_comments": 129.72,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
   "avg_video_views_per_post": 0.0,
-  "engagement_rate": 2.141,
+  "engagement_rate": 2.1496,
   "recent_posts": [
     {
       "shortcode": "DWByMuajpBM",
@@ -59,7 +59,7 @@
     {
       "shortcode": "DWKLTVOEszL",
       "date": "2026-03-21",
-      "likes": 1605,
+      "likes": 1636,
       "comments": 34,
       "is_video": true,
       "video_views": 0,
@@ -69,7 +69,7 @@
     {
       "shortcode": "DWIDtfKj-Lh",
       "date": "2026-03-21",
-      "likes": 788,
+      "likes": 791,
       "comments": 15,
       "is_video": false,
       "video_views": 0,
@@ -79,8 +79,8 @@
     {
       "shortcode": "DWHfwydDz6Q",
       "date": "2026-03-20",
-      "likes": 964,
-      "comments": 21,
+      "likes": 984,
+      "comments": 20,
       "is_video": false,
       "video_views": 0,
       "caption": "Toda la industria de chips ahora est\u00e1 observando el Golfo.\n\nTras los ataques de Ir\u00e1n a Catar y el bloqueo del Estrecho de Ormuz, los env\u00edos de helio a trav\u00e9s de la regi\u00f3n se han de",
@@ -89,7 +89,7 @@
     {
       "shortcode": "DWHI2yhDd9L",
       "date": "2026-03-20",
-      "likes": 27096,
+      "likes": 27810,
       "comments": 64,
       "is_video": true,
       "video_views": 0,
@@ -109,7 +109,7 @@
     {
       "shortcode": "DWFVtHtDINY",
       "date": "2026-03-19",
-      "likes": 972,
+      "likes": 974,
       "comments": 35,
       "is_video": true,
       "video_views": 0,
@@ -149,7 +149,7 @@
     {
       "shortcode": "DWCQ4NZlTsc",
       "date": "2026-03-18",
-      "likes": 65673,
+      "likes": 65930,
       "comments": 713,
       "is_video": false,
       "video_views": 0,
@@ -169,7 +169,7 @@
     {
       "shortcode": "DV_5gzMlVj4",
       "date": "2026-03-17",
-      "likes": 966,
+      "likes": 968,
       "comments": 22,
       "is_video": false,
       "video_views": 0,
@@ -209,7 +209,7 @@
     {
       "shortcode": "DV8z0wvDTVG",
       "date": "2026-03-16",
-      "likes": 16317,
+      "likes": 16322,
       "comments": 45,
       "is_video": true,
       "video_views": 0,
@@ -219,7 +219,7 @@
     {
       "shortcode": "DV7YV1jDBPB",
       "date": "2026-03-16",
-      "likes": 3887,
+      "likes": 3916,
       "comments": 24,
       "is_video": false,
       "video_views": 0,
@@ -229,7 +229,7 @@
     {
       "shortcode": "DV6tlKmCcPk",
       "date": "2026-03-15",
-      "likes": 44718,
+      "likes": 44832,
       "comments": 321,
       "is_video": true,
       "video_views": 0,
@@ -259,7 +259,7 @@
     {
       "shortcode": "DV33GaTgEHG",
       "date": "2026-03-14",
-      "likes": 1135,
+      "likes": 1137,
       "comments": 60,
       "is_video": false,
       "video_views": 0,
@@ -289,7 +289,7 @@
     {
       "shortcode": "DV1b7XJlNfi",
       "date": "2026-03-13",
-      "likes": 6998,
+      "likes": 6997,
       "comments": 172,
       "is_video": true,
       "video_views": 0,
@@ -349,7 +349,7 @@
     {
       "shortcode": "DVuleSFDGWF",
       "date": "2026-03-11",
-      "likes": 3116,
+      "likes": 3117,
       "comments": 61,
       "is_video": false,
       "video_views": 0,
@@ -360,7 +360,7 @@
       "shortcode": "DVuTWbTDEVA",
       "date": "2026-03-11",
       "likes": 1195,
-      "comments": 384,
+      "comments": 386,
       "is_video": false,
       "video_views": 0,
       "caption": "Los actores humanos est\u00e1n acabados.\n\nEsta tecnolog\u00eda permite a los estudios crear, clonar y poseer actores como si fueran software.\n\nHiggsfield.ai acaba de lanzar una herramienta q",
@@ -369,7 +369,7 @@
     {
       "shortcode": "DVtl8lUD-kB",
       "date": "2026-03-10",
-      "likes": 4195,
+      "likes": 4196,
       "comments": 155,
       "is_video": true,
       "video_views": 0,
@@ -389,7 +389,7 @@
     {
       "shortcode": "DVrP78QlaBS",
       "date": "2026-03-09",
-      "likes": 3174,
+      "likes": 3175,
       "comments": 111,
       "is_video": false,
       "video_views": 0,
@@ -409,7 +409,7 @@
     {
       "shortcode": "DVo6u8ZlW8M",
       "date": "2026-03-08",
-      "likes": 21178,
+      "likes": 21188,
       "comments": 327,
       "is_video": false,
       "video_views": 0,
@@ -419,7 +419,7 @@
     {
       "shortcode": "DVmA_gakica",
       "date": "2026-03-07",
-      "likes": 6662,
+      "likes": 6664,
       "comments": 56,
       "is_video": true,
       "video_views": 0,

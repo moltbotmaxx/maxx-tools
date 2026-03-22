@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-22T04:00:14+00:00",
+  "generated_at": "2026-03-22T04:50:54+00:00",
   "date": "2026-03-22",
-  "run_started_at": "2026-03-22T03:59:05+00:00",
+  "run_started_at": "2026-03-22T04:47:47+00:00",
   "account": "ainterestingaf",
   "profile_url": "https://www.instagram.com/ainterestingaf/",
   "full_name": "AI Gallery",
@@ -19,12 +19,12 @@
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "oldest_recent_post_date": "2026-01-13",
-  "avg_likes": 17596.58,
+  "avg_likes": 17597.46,
   "avg_comments": 100.08,
   "avg_video_views": 0.0,
   "avg_video_views_per_video": 0.0,
   "avg_video_views_per_post": 0.0,
-  "engagement_rate": 15.1435,
+  "engagement_rate": 15.1442,
   "recent_posts": [
     {
       "shortcode": "DTI76HUkfZj",
@@ -109,7 +109,7 @@
     {
       "shortcode": "DVJu4cwkfvt",
       "date": "2026-02-24",
-      "likes": 135968,
+      "likes": 135989,
       "comments": 619,
       "is_video": true,
       "video_views": 0,
