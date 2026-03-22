@@ -46,8 +46,16 @@
               <button id="refreshConfigCancel" class="hero-action hero-action--ghost hero-action--small" type="button">Close</button>
             </div>
           </form>
-          <p id="lastUpdated" class="muted">Loading…</p>
-          <p id="refreshStatus" class="muted">Manual refresh unavailable.</p>
+          <div class="snapshot-status">
+            <p id="lastUpdated" class="muted snapshot-meta">
+              <span class="snapshot-hover">
+                <span id="snapshotTrigger" class="snapshot-trigger" tabindex="0" aria-describedby="refreshStatus">Snapshot</span>
+                <span id="refreshStatus" class="muted snapshot-tooltip" role="status" aria-live="polite">Manual refresh unavailable.</span>
+              </span>
+              <span class="snapshot-separator" aria-hidden="true">&middot;</span>
+              <span id="lastUpdatedDate">Loading...</span>
+            </p>
+          </div>
         </div>
       </header>
 

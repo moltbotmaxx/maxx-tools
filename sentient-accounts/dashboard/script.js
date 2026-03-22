@@ -321,6 +321,12 @@ function renderRefreshStatus(message, tone = "neutral", href = "") {
   }
 }
 
+function renderSnapshotDate(value) {
+  const node = document.getElementById("lastUpdatedDate");
+  if (!node) return;
+  node.textContent = value;
+}
+
 function syncRefreshButtonState() {
   const refreshButton = document.getElementById("refreshButton");
   if (!refreshButton) return;
@@ -761,7 +767,7 @@ function renderOverview(data) {
   document.getElementById("totalLikes30d").textContent = `${formatNumber(data.total_likes_recent_window)}${coverageSuffix}`;
   document.getElementById("totalViews30d").textContent = `${formatNumber(data.total_video_views_recent_window)}${coverageSuffix}`;
   document.getElementById("avgEngagement").textContent = formatPercent(data.avg_engagement_rate);
-  document.getElementById("lastUpdated").textContent = `Snapshot · ${formatDate(data.snapshot_date || data.date || data.generated_at)}`;
+  renderSnapshotDate(formatDate(data.snapshot_date || data.date || data.generated_at));
 }
 
 /* ── Portfolio charts ────────────────────────────────────────── */
@@ -1264,8 +1270,8 @@ async function loadDashboard() {
     }
   } catch (error) {
     renderFatalBanner(error.message);
-    document.getElementById("lastUpdated").textContent =
-      "Dashboard data could not be loaded.";
+    renderSnapshotDate("Unavailable");
+    renderRefreshStatus("Dashboard data could not be loaded.", "error");
     document.getElementById("detailMeta").innerHTML = `<p class="empty-state">${error.message}</p>`;
   }
 
