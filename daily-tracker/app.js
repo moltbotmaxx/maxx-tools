@@ -749,6 +749,15 @@ function buildMobileSettingsPanelContent() {
     const statusText = normalizeWhitespace(elements.newsRefreshStatus?.textContent || 'Idle');
     const authActionLabel = getMobileAuthActionLabel();
     const authBusy = isHandlingAuthAction || (isAuthStateResolving && !currentUser);
+    const reloadButton = `
+        <button
+            class="mobile-settings-panel__button"
+            type="button"
+            data-mobile-settings-action="reload"
+        >
+            Reload App
+        </button>
+    `;
     const themeToggle = `
         <label class="mobile-settings-panel__toggle" for="mobileSettingsDarkMode">
             <span>Dark Mode</span>
@@ -786,6 +795,7 @@ function buildMobileSettingsPanelContent() {
                 >
                     Manage Accounts
                 </button>
+                ${reloadButton}
                 ${showAuthButton}
             </div>
         `;
@@ -823,6 +833,7 @@ function buildMobileSettingsPanelContent() {
                     Reset All
                 </button>
                 <span class="mobile-settings-panel__status" data-tone="${escapeHtml(statusTone)}">${escapeHtml(statusText)}</span>
+                ${reloadButton}
                 ${showAuthButton}
             </div>
         `;
@@ -831,6 +842,7 @@ function buildMobileSettingsPanelContent() {
     return `
         <div class="mobile-settings-panel__section">
             ${themeToggle}
+            ${reloadButton}
             ${showAuthButton}
         </div>
     `;
@@ -5521,6 +5533,12 @@ function setupEventListeners() {
             if (action === 'manage-accounts') {
                 setMobileSettingsOpen(false);
                 openManagedAccountsModal('edit');
+                return;
+            }
+
+            if (action === 'reload') {
+                setMobileSettingsOpen(false);
+                window.location.reload();
                 return;
             }
 
