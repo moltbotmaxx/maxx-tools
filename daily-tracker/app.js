@@ -71,7 +71,7 @@ let lastKnownMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
 // ===========================
 let showDoneNews = false;
 let doneHeadlines = new Set();
-let activeMobileSourcingSection = 'featured';
+let activeMobileSourcingSection = 'news';
 const SOURCING_FEEDS = [
     {
         id: 'all',
@@ -4145,9 +4145,7 @@ function stopNewsAutoRefresh() {
 
 function getMobileSourcingSections() {
     return [
-        { id: 'featured', label: 'Featured', panel: elements.featuredStoriesGroup, parent: elements.sourcingNewsMain },
-        { id: 'more', label: 'More', panel: elements.moreStoriesGroup, parent: elements.sourcingNewsMain },
-        { id: 'buffer', label: 'Buffer', panel: elements.bufferStoriesGroup, parent: elements.sourcingNewsMain },
+        { id: 'news', label: 'News', panel: elements.sourcingNewsMain, parent: elements.sourcingNewsMain },
         { id: 'instagram', label: 'Instagram', panel: elements.instagramSidebarSection, parent: elements.instagramSidebarSection },
         { id: 'reddit', label: 'Reddit', panel: elements.redditSidebarSection, parent: elements.redditSidebarSection },
         { id: 'x', label: 'X', panel: elements.xSidebarSection, parent: elements.xSidebarSection }
@@ -4166,11 +4164,15 @@ function syncMobileSourcingPanels() {
                 section.panel.classList.remove('mobile-sourcing-section-active');
             }
         });
+        if (elements.mobileSourcingControls) {
+            const mobileFilter = elements.mobileSourcingControls.querySelector('.mobile-sourcing-filter');
+            if (mobileFilter) mobileFilter.hidden = false;
+        }
         return;
     }
 
     const activeSection = sections.find(section => section.id === activeMobileSourcingSection) || sections[0];
-    const newsMainActive = ['featured', 'more', 'buffer'].includes(activeSection.id);
+    const newsMainActive = activeSection.id === 'news';
 
     if (elements.sourcingNewsMain) {
         elements.sourcingNewsMain.hidden = !newsMainActive;
@@ -4186,6 +4188,13 @@ function syncMobileSourcingPanels() {
         }
         section.panel.classList.toggle('mobile-sourcing-section-active', isActive);
     });
+
+    if (elements.mobileSourcingControls) {
+        const mobileFilter = elements.mobileSourcingControls.querySelector('.mobile-sourcing-filter');
+        if (mobileFilter) {
+            mobileFilter.hidden = !newsMainActive;
+        }
+    }
 }
 
 function initSourcingFeedFilter() {

@@ -5622,8 +5622,41 @@ canvas {
 
   #sourcing-view .view-controls {
     width: 100%;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
     order: 3;
+  }
+
+  #sourcing-view .toggle-switch {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    background: #FFFFFF;
+  }
+
+  #sourcing-view .toggle-switch .label {
+    min-width: 0;
+    font-size: 0.76rem;
+  }
+
+  #sourcing-view #refreshNewsBtn,
+  #sourcing-view #resetNewsBtn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    padding: 9px 10px;
+  }
+
+  #sourcing-view .news-refresh-status {
+    grid-column: 1 / -1;
+    min-width: 0;
+    width: 100%;
+    text-align: center;
   }
 
   #sourcing-view .featured-grid,
@@ -5638,10 +5671,10 @@ canvas {
 }
 
 .mobile-sourcing-tabs {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  min-width: 0;
 }
 
 .mobile-sourcing-tabs::-webkit-scrollbar {
@@ -5652,11 +5685,19 @@ canvas {
   border: 1px solid rgba(116, 138, 155, 0.16);
   background: #FFFFFF;
   color: #516775;
-  font-size: 0.78rem;
+  font-size: clamp(0.64rem, 2.8vw, 0.76rem);
   font-weight: 700;
-  padding: 8px 12px;
-  border-radius: 999px;
-  white-space: nowrap;
+  min-width: 0;
+  min-height: 42px;
+  padding: 8px 6px;
+  border-radius: 14px;
+  line-height: 1.15;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-sourcing-tab.active {
@@ -5669,9 +5710,14 @@ canvas {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  min-width: 0;
   color: var(--text-secondary);
   font-size: 0.74rem;
   font-weight: 700;
+}
+
+.mobile-sourcing-filter[hidden] {
+  display: none !important;
 }
 
 .mobile-sourcing-filter select {
@@ -5892,10 +5938,14 @@ canvas {
     flex-direction: column;
     gap: 10px;
     margin-top: 12px;
+    min-width: 0;
   }
 
   #sourcing-view .news-main,
   #sourcing-view .sidebar-section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     min-height: auto;
     height: auto;
   }
@@ -5923,5 +5973,29 @@ canvas {
   #sourcing-view .pool-list,
   #sourcing-view .sidebar-list {
     grid-template-columns: 1fr;
+  }
+
+  #sourcing-view .news-layout > *,
+  #sourcing-view .card-wrapper,
+  #sourcing-view .card-wrapper--sidebar,
+  #sourcing-view .magazine-card,
+  #sourcing-view .compact-tile,
+  #sourcing-view .compact-tile__link,
+  #sourcing-view .magazine-card__body,
+  #sourcing-view .magazine-card__footer,
+  #sourcing-view .magazine-card__actions,
+  #sourcing-view .score-metric-stack,
+  #sourcing-view .compact-tile__footer,
+  #sourcing-view .compact-tile__meta,
+  #sourcing-view .compact-tile__content {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #sourcing-view .magazine-card__footer,
+  #sourcing-view .magazine-card__actions,
+  #sourcing-view .score-metric-stack,
+  #sourcing-view .compact-tile__meta {
+    flex-wrap: wrap;
   }
 }
