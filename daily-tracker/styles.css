@@ -5945,7 +5945,7 @@ canvas {
   flex: 0 0 auto;
   border: 1px solid rgba(116, 138, 155, 0.16);
   background: rgba(255, 255, 255, 0.96);
-  color: #516775;
+  color: #626262;
   font-size: clamp(0.68rem, 2.4vw, 0.76rem);
   font-weight: 700;
   min-width: fit-content;
@@ -5983,34 +5983,66 @@ canvas {
   font-size: 0.66rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #6a7f8d;
+  color: #747474;
 }
 
 .mobile-sourcing-filter[hidden] {
   display: none !important;
 }
 
-.mobile-sourcing-filter select {
-  width: 100%;
-  min-height: 46px;
-  padding: 10px 14px;
+  .mobile-sourcing-filter select {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 14px;
   border-radius: 16px;
   border: 1px solid rgba(18, 24, 38, 0.08);
   background: #FFFFFF;
   color: var(--text-primary);
-  font: inherit;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
+    font: inherit;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
 
 @media (max-width: 768px) {
   body {
     --accent-primary: #9acd32;
     --accent-secondary: #7fa52d;
+    --accent-post: #9acd32;
+    --accent-today: #9acd32;
     --gradient-primary: linear-gradient(135deg, #a6d84c 0%, #8fbe2f 100%);
+    --gradient-post: linear-gradient(135deg, #b5e256 0%, #9acd32 100%);
     --shadow-premium: 0 15px 38px rgba(154, 205, 50, 0.18);
     height: auto;
     min-height: 100vh;
     overflow: auto;
+  }
+
+  #sourcing-view .feed-tab-btn {
+    color: #626262;
+    border-color: rgba(128, 128, 128, 0.14);
+    background: rgba(255, 255, 255, 0.82);
+  }
+
+  #sourcing-view .feed-tab-btn.active {
+    background: var(--gradient-primary);
+    color: #223000;
+    border-color: rgba(154, 205, 50, 0.42);
+    box-shadow: 0 8px 18px rgba(154, 205, 50, 0.16);
+  }
+
+  #sourcing-view .news-group .box-header h2 {
+    color: #4b4b4b;
+  }
+
+  #sourcing-view .count-badge {
+    color: #747474;
+    background: rgba(248, 250, 242, 0.96);
+    border-color: rgba(154, 205, 50, 0.18);
+  }
+
+  #stagingCardReturnBtn {
+    background: rgba(154, 205, 50, 0.12) !important;
+    border: 1px solid rgba(154, 205, 50, 0.3) !important;
+    color: #223000 !important;
   }
 
   .app-container {
@@ -6082,7 +6114,7 @@ canvas {
     border-radius: 12px;
     border: 1px solid rgba(18, 24, 38, 0.08);
     background: rgba(255, 255, 255, 0.94);
-    color: #335466;
+    color: #575757;
     box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1);
   }
 
@@ -6126,7 +6158,7 @@ canvas {
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #5f7280;
+    color: #6d6d6d;
   }
 
   .mobile-settings-panel__section {
@@ -6142,7 +6174,7 @@ canvas {
     border-radius: 16px;
     border: 1px solid rgba(116, 138, 155, 0.16);
     background: rgba(255, 255, 255, 0.96);
-    color: #324454;
+    color: #383838;
     font: inherit;
     font-size: 0.88rem;
     font-weight: 700;
@@ -6173,7 +6205,7 @@ canvas {
     border: 1px solid rgba(18, 24, 38, 0.08);
     background: linear-gradient(180deg, rgba(247, 250, 252, 0.98), rgba(255, 255, 255, 0.96));
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
-    color: #324454;
+    color: #383838;
     font-size: 0.88rem;
     font-weight: 700;
   }
@@ -6235,7 +6267,7 @@ canvas {
     font-weight: 700;
     background: rgba(242, 247, 251, 0.96);
     border: 1px solid rgba(116, 138, 155, 0.14);
-    color: #5f7280;
+    color: #6d6d6d;
   }
 
   .mobile-settings-panel__status[data-tone="success"] {
@@ -6265,7 +6297,10 @@ canvas {
     --bg-glass: rgba(24, 24, 24, 0.9);
     --accent-primary: #cfff04;
     --accent-secondary: #b6df10;
+    --accent-post: #cfff04;
+    --accent-today: #cfff04;
     --gradient-primary: linear-gradient(135deg, #ddff54 0%, #cfff04 100%);
+    --gradient-post: linear-gradient(135deg, #e2ff6b 0%, #cfff04 100%);
     --shadow-premium: 0 18px 40px rgba(207, 255, 4, 0.2);
     --text-primary: #f5f5f5;
     --text-secondary: #d0d0d0;
@@ -6556,6 +6591,35 @@ canvas {
 
   body[data-mobile-theme="dark"] .mobile-settings-panel__switch-track::after {
     background: #f8fbff;
+  }
+
+  body[data-mobile-theme="dark"] #sourcing-view .feed-tab-btn {
+    background: rgba(36, 36, 36, 0.94);
+    color: var(--text-secondary);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  body[data-mobile-theme="dark"] #sourcing-view .feed-tab-btn.active {
+    background: var(--gradient-primary);
+    color: #263100;
+    border-color: rgba(207, 255, 4, 0.32);
+    box-shadow: 0 10px 20px rgba(207, 255, 4, 0.18);
+  }
+
+  body[data-mobile-theme="dark"] #sourcing-view .news-group .box-header h2 {
+    color: var(--text-primary);
+  }
+
+  body[data-mobile-theme="dark"] #sourcing-view .count-badge {
+    background: rgba(207, 255, 4, 0.08);
+    border-color: rgba(207, 255, 4, 0.16);
+    color: var(--text-primary);
+  }
+
+  body[data-mobile-theme="dark"] #stagingCardReturnBtn {
+    background: rgba(207, 255, 4, 0.14) !important;
+    border-color: rgba(207, 255, 4, 0.28) !important;
+    color: #cfff04 !important;
   }
 
   body[data-mobile-theme="dark"] .mobile-settings-panel__status {
