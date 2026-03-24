@@ -619,6 +619,56 @@ function getMobileAuthActionLabel() {
     return currentUser ? 'Logout' : 'Login';
 }
 
+function getAuthGateCopy(mode = 'signin') {
+    const mobileViewport = isMobileViewport();
+
+    if (mobileViewport) {
+        if (mode === 'resolving') {
+            return {
+                title: 'Login',
+                description: 'Checking your session.',
+                showLogin: false
+            };
+        }
+
+        if (mode === 'error') {
+            return {
+                title: 'Login',
+                description: 'Try again to continue.',
+                showLogin: true
+            };
+        }
+
+        return {
+            title: 'Login',
+            description: 'Continue with Google to open Daily Tracker.',
+            showLogin: true
+        };
+    }
+
+    if (mode === 'resolving') {
+        return {
+            title: 'Restoring your workspace',
+            description: 'Checking your saved session before showing the sign-in prompt.',
+            showLogin: false
+        };
+    }
+
+    if (mode === 'error') {
+        return {
+            title: 'We could not load your workspace',
+            description: 'Try again or sign in again to continue.',
+            showLogin: true
+        };
+    }
+
+    return {
+        title: 'Sign in to load your workspace',
+        description: 'Each Google account gets its own Daily Tracker data inside Firestore.',
+        showLogin: true
+    };
+}
+
 function buildMobileSettingsPanelContent() {
     const statusTone = elements.newsRefreshStatus?.dataset.tone || 'neutral';
     const statusText = normalizeWhitespace(elements.newsRefreshStatus?.textContent || 'Idle');
@@ -1167,10 +1217,10 @@ function updateAuthButtons({ busy = false, signedIn = !!currentUser } = {}) {
     if (elements.loginBtn) {
         elements.loginBtn.disabled = busy || isResolving;
         elements.loginBtn.textContent = busy
-            ? 'Connecting...'
+            ? (isMobileViewport() ? 'Opening...' : 'Connecting...')
             : isResolving
-                ? 'Checking session...'
-                : 'Sign in with Google';
+                ? (isMobileViewport() ? 'Checking...' : 'Checking session...')
+                : (isMobileViewport() ? 'Login with Google' : 'Sign in with Google');
     }
 
     if (elements.exportBtn && !(isMobileViewport() && MOBILE_PRIMARY_TABS.has(currentView))) {
@@ -1197,27 +1247,19 @@ function updateAuthUI() {
 
 function setAuthGate(mode = 'signin', statusText = '') {
     const isVisible = mode !== 'hidden';
-    const copy = mode === 'resolving'
-        ? {
-            title: 'Restoring your workspace',
-            description: 'Checking your saved session before showing the sign-in prompt.',
-            showLogin: false
-        }
-        : mode === 'error'
-            ? {
-                title: 'We could not load your workspace',
-                description: 'Try again or sign in again to continue.',
-                showLogin: true
-            }
-            : {
-                title: 'Sign in to load your workspace',
-                description: 'Each Google account gets its own Daily Tracker data inside Firestore.',
-                showLogin: true
-            };
+    const copy = getAuthGateCopy(mode);
+    const resolvedStatusText = isMobileViewport() && mode === 'signin'
+        ? ''
+        : statusText;
 
     if (elements.authGate) {
         elements.authGate.classList.toggle('show', isVisible);
         elements.authGate.dataset.mode = mode;
+    }
+    if (isVisible) {
+        document.body.dataset.authGate = 'open';
+    } else {
+        delete document.body.dataset.authGate;
     }
     if (elements.authGateTitle) {
         elements.authGateTitle.textContent = copy.title;
@@ -1226,7 +1268,7 @@ function setAuthGate(mode = 'signin', statusText = '') {
         elements.authGateDescription.textContent = copy.description;
     }
     if (elements.authStatus) {
-        elements.authStatus.textContent = statusText;
+        elements.authStatus.textContent = resolvedStatusText;
     }
     if (elements.loginBtn) {
         elements.loginBtn.hidden = !copy.showLogin;
