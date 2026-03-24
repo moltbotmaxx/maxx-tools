@@ -8,6 +8,7 @@
 // ===========================
 const SLOTS_PER_DAY = 8;
 const MOBILE_BREAKPOINT = 768;
+const LAUNCH_SPLASH_MIN_MS = 650;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
@@ -86,6 +87,8 @@ let mobileSelectedPoolCardId = null;
 let lastKnownMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
 let isMobileSettingsOpen = false;
 let mobileVisualTheme = getInitialMobileTheme();
+const launchSplashStartedAt = typeof performance !== 'undefined' ? performance.now() : Date.now();
+let launchSplashHideTimer = null;
 
 // ===========================
 // News Ticker State
@@ -221,6 +224,37 @@ function syncTabButtonVisibility() {
     });
 }
 
+function shouldUseLaunchSplash() {
+    const standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    return standalone || isMobileViewport();
+}
+
+function hideLaunchSplash({ immediate = false } = {}) {
+    const splash = document.getElementById('launchSplash');
+    if (!splash || splash.dataset.state === 'hidden') return;
+
+    const finalizeHide = () => {
+        splash.classList.add('is-hidden');
+        splash.dataset.state = 'hidden';
+        window.setTimeout(() => {
+            splash.hidden = true;
+        }, 260);
+    };
+
+    clearTimeout(launchSplashHideTimer);
+
+    if (immediate || !shouldUseLaunchSplash()) {
+        finalizeHide();
+        return;
+    }
+
+    const now = typeof performance !== 'undefined' ? performance.now() : Date.now();
+    const elapsed = now - launchSplashStartedAt;
+    const delay = Math.max(0, LAUNCH_SPLASH_MIN_MS - elapsed);
+
+    launchSplashHideTimer = window.setTimeout(finalizeHide, delay);
+}
+
 function getMobileSettingsViewLabel(viewId = currentView) {
     if (viewId === 'account') return 'Account';
     if (viewId === 'sourcing') return 'Sourcing';
@@ -349,6 +383,9 @@ function syncResponsiveLayout(force = false) {
     if (!force && nextIsMobile === lastKnownMobileViewport) return;
 
     lastKnownMobileViewport = nextIsMobile;
+    if (!shouldUseLaunchSplash()) {
+        hideLaunchSplash({ immediate: true });
+    }
     applyMobileVisualTheme();
     syncTabButtonVisibility();
     syncMobileHeaderActions();
@@ -1274,6 +1311,10 @@ function setAuthGate(mode = 'signin', statusText = '') {
     }
     if (elements.loginBtn) {
         elements.loginBtn.hidden = !copy.showLogin;
+    }
+
+    if (mode === 'hidden' || mode === 'signin' || mode === 'error') {
+        hideLaunchSplash();
     }
 }
 
