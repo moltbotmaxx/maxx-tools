@@ -4168,6 +4168,33 @@ function updateMobileSourcingTabButtons() {
     });
 }
 
+function clearMobileSourcingPanelState(panel) {
+    if (!panel) return;
+    panel.hidden = false;
+    panel.setAttribute('aria-hidden', 'false');
+    panel.style.removeProperty('display');
+}
+
+function setMobileSourcingPanelState(panel, isVisible) {
+    if (!panel) return;
+    panel.hidden = !isVisible;
+    panel.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+    panel.style.setProperty('display', isVisible ? 'flex' : 'none', 'important');
+}
+
+function setMobileSourcingFilterState(isVisible, { clearInline = false } = {}) {
+    const mobileFilter = elements.mobileSourcingControls?.querySelector('.mobile-sourcing-filter');
+    if (!mobileFilter) return;
+
+    mobileFilter.hidden = !isVisible;
+    mobileFilter.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+    if (clearInline) {
+        mobileFilter.style.removeProperty('display');
+        return;
+    }
+    mobileFilter.style.setProperty('display', isVisible ? 'flex' : 'none', 'important');
+}
+
 function syncMobileSourcingPanels() {
     const isMobile = isMobileSourcingUiActive();
     const sections = getMobileSourcingSections();
@@ -4181,18 +4208,14 @@ function syncMobileSourcingPanels() {
         if (sourcingView) {
             delete sourcingView.dataset.mobileSourcingSection;
         }
-        if (elements.sourcingNewsMain) elements.sourcingNewsMain.hidden = false;
         sections.forEach(section => {
             if (section.panel) {
-                section.panel.hidden = false;
+                clearMobileSourcingPanelState(section.panel);
                 section.panel.classList.remove('mobile-sourcing-section-active');
             }
         });
         updateMobileSourcingTabButtons();
-        if (elements.mobileSourcingControls) {
-            const mobileFilter = elements.mobileSourcingControls.querySelector('.mobile-sourcing-filter');
-            if (mobileFilter) mobileFilter.hidden = false;
-        }
+        setMobileSourcingFilterState(true, { clearInline: true });
         return;
     }
 
@@ -4202,28 +4225,15 @@ function syncMobileSourcingPanels() {
         sourcingView.dataset.mobileSourcingSection = activeSection.id;
     }
 
-    if (elements.sourcingNewsMain) {
-        elements.sourcingNewsMain.hidden = !newsMainActive;
-    }
-
     sections.forEach(section => {
         if (!section.panel) return;
         const isActive = section.id === activeSection.id;
-        if (section.parent === elements.sourcingNewsMain) {
-            section.panel.hidden = !isActive;
-        } else {
-            section.panel.hidden = !isActive;
-        }
+        setMobileSourcingPanelState(section.panel, isActive);
         section.panel.classList.toggle('mobile-sourcing-section-active', isActive);
     });
 
     updateMobileSourcingTabButtons();
-    if (elements.mobileSourcingControls) {
-        const mobileFilter = elements.mobileSourcingControls.querySelector('.mobile-sourcing-filter');
-        if (mobileFilter) {
-            mobileFilter.hidden = !newsMainActive;
-        }
-    }
+    setMobileSourcingFilterState(newsMainActive);
 }
 
 function initSourcingFeedFilter() {
