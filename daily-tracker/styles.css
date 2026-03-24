@@ -5941,6 +5941,21 @@ canvas {
     min-width: 0;
   }
 
+  #sourcing-view[data-mobile-sourcing-section="news"] #instagramSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="news"] #redditSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="news"] #xSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="instagram"] #sourcingNewsMain,
+  #sourcing-view[data-mobile-sourcing-section="instagram"] #redditSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="instagram"] #xSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="reddit"] #sourcingNewsMain,
+  #sourcing-view[data-mobile-sourcing-section="reddit"] #instagramSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="reddit"] #xSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="x"] #sourcingNewsMain,
+  #sourcing-view[data-mobile-sourcing-section="x"] #instagramSidebarSection,
+  #sourcing-view[data-mobile-sourcing-section="x"] #redditSidebarSection {
+    display: none !important;
+  }
+
   #sourcing-view .news-main,
   #sourcing-view .sidebar-section {
     width: 100%;

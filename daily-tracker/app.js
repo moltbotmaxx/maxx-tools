@@ -20,6 +20,7 @@ const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
 const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics', 'history']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
+const MOBILE_SOURCING_SECTIONS = new Set(['news', 'instagram', 'reddit', 'x']);
 
 function createEmptyAppData() {
     return {
@@ -650,6 +651,12 @@ function isToday(date) {
     return date.getFullYear() === today.getFullYear() &&
         date.getMonth() === today.getMonth() &&
         date.getDate() === today.getDate();
+}
+
+function isMobileSourcingUiActive() {
+    if (isMobileViewport()) return true;
+    if (!elements.mobileSourcingControls) return false;
+    return window.getComputedStyle(elements.mobileSourcingControls).display !== 'none';
 }
 
 // ===========================
@@ -4152,11 +4159,28 @@ function getMobileSourcingSections() {
     ];
 }
 
+function updateMobileSourcingTabButtons() {
+    if (!elements.mobileSourcingTabs) return;
+    elements.mobileSourcingTabs.querySelectorAll('.mobile-sourcing-tab').forEach((btn) => {
+        const isActive = btn.dataset.section === activeMobileSourcingSection;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+}
+
 function syncMobileSourcingPanels() {
-    const isMobile = isMobileViewport();
+    const isMobile = isMobileSourcingUiActive();
     const sections = getMobileSourcingSections();
+    const sourcingView = document.getElementById('sourcing-view');
+
+    if (!MOBILE_SOURCING_SECTIONS.has(activeMobileSourcingSection)) {
+        activeMobileSourcingSection = 'news';
+    }
 
     if (!isMobile) {
+        if (sourcingView) {
+            delete sourcingView.dataset.mobileSourcingSection;
+        }
         if (elements.sourcingNewsMain) elements.sourcingNewsMain.hidden = false;
         sections.forEach(section => {
             if (section.panel) {
@@ -4164,6 +4188,7 @@ function syncMobileSourcingPanels() {
                 section.panel.classList.remove('mobile-sourcing-section-active');
             }
         });
+        updateMobileSourcingTabButtons();
         if (elements.mobileSourcingControls) {
             const mobileFilter = elements.mobileSourcingControls.querySelector('.mobile-sourcing-filter');
             if (mobileFilter) mobileFilter.hidden = false;
@@ -4173,6 +4198,9 @@ function syncMobileSourcingPanels() {
 
     const activeSection = sections.find(section => section.id === activeMobileSourcingSection) || sections[0];
     const newsMainActive = activeSection.id === 'news';
+    if (sourcingView) {
+        sourcingView.dataset.mobileSourcingSection = activeSection.id;
+    }
 
     if (elements.sourcingNewsMain) {
         elements.sourcingNewsMain.hidden = !newsMainActive;
@@ -4189,6 +4217,7 @@ function syncMobileSourcingPanels() {
         section.panel.classList.toggle('mobile-sourcing-section-active', isActive);
     });
 
+    updateMobileSourcingTabButtons();
     if (elements.mobileSourcingControls) {
         const mobileFilter = elements.mobileSourcingControls.querySelector('.mobile-sourcing-filter');
         if (mobileFilter) {
@@ -4243,12 +4272,6 @@ function initSourcingFeedFilter() {
             if (section.id === activeMobileSourcingSection) {
                 tabBtn.classList.add('active');
             }
-            tabBtn.addEventListener('click', () => {
-                if (activeMobileSourcingSection === section.id) return;
-                activeMobileSourcingSection = section.id;
-                initSourcingFeedFilter();
-                syncMobileSourcingPanels();
-            });
             elements.mobileSourcingTabs.appendChild(tabBtn);
         });
     }
@@ -5067,6 +5090,17 @@ function setupEventListeners() {
             sourcingArticlesDirty = true;
             initSourcingFeedFilter();
             renderNews(false);
+        });
+    }
+
+    if (elements.mobileSourcingTabs) {
+        elements.mobileSourcingTabs.addEventListener('click', (event) => {
+            const tabBtn = event.target.closest('.mobile-sourcing-tab[data-section]');
+            if (!tabBtn) return;
+            const nextSection = tabBtn.dataset.section || 'news';
+            if (!MOBILE_SOURCING_SECTIONS.has(nextSection) || activeMobileSourcingSection === nextSection) return;
+            activeMobileSourcingSection = nextSection;
+            syncMobileSourcingPanels();
         });
     }
 
