@@ -8,7 +8,7 @@
 // ===========================
 const SLOTS_PER_DAY = 8;
 const MOBILE_BREAKPOINT = 768;
-const LAUNCH_SPLASH_MIN_MS = 650;
+const LAUNCH_SPLASH_MIN_MS = 820;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
@@ -238,7 +238,7 @@ function hideLaunchSplash({ immediate = false } = {}) {
         splash.dataset.state = 'hidden';
         window.setTimeout(() => {
             splash.hidden = true;
-        }, 260);
+        }, 380);
     };
 
     clearTimeout(launchSplashHideTimer);
