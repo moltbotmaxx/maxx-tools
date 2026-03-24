@@ -21,6 +21,23 @@ const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
 const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics', 'history']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
 const MOBILE_SOURCING_SECTIONS = new Set(['news', 'instagram', 'reddit', 'x']);
+const EXPORT_BUTTON_DOWNLOAD_MARKUP = `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+`;
+const EXPORT_BUTTON_SETTINGS_MARKUP = `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;">
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+        <circle cx="9" cy="6" r="2" fill="currentColor" stroke="none" />
+        <circle cx="15" cy="12" r="2" fill="currentColor" stroke="none" />
+        <circle cx="11" cy="18" r="2" fill="currentColor" stroke="none" />
+    </svg>
+`;
 
 function createEmptyAppData() {
     return {
@@ -66,6 +83,7 @@ let isHandlingAuthAction = false;
 let isAuthStateResolving = true;
 let mobileSelectedPoolCardId = null;
 let lastKnownMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
+let isMobileSourcingSettingsOpen = false;
 
 // ===========================
 // News Ticker State
@@ -201,6 +219,58 @@ function syncTabButtonVisibility() {
     });
 }
 
+function setMobileSourcingSettingsOpen(isOpen) {
+    const sourcingView = document.getElementById('sourcing-view');
+    const canOpen = isMobileViewport() && currentView === 'sourcing';
+
+    isMobileSourcingSettingsOpen = canOpen && !!isOpen;
+
+    if (sourcingView) {
+        if (isMobileSourcingSettingsOpen) {
+            sourcingView.dataset.mobileSettingsOpen = 'true';
+        } else {
+            delete sourcingView.dataset.mobileSettingsOpen;
+        }
+    }
+
+    if (elements.exportBtn) {
+        elements.exportBtn.classList.toggle('is-active', isMobileSourcingSettingsOpen);
+        elements.exportBtn.setAttribute('aria-expanded', isMobileSourcingSettingsOpen ? 'true' : 'false');
+    }
+}
+
+function syncMobileHeaderActions() {
+    if (!elements.exportBtn) return;
+
+    const mobileViewport = isMobileViewport();
+    const mobileSourcingView = mobileViewport && currentView === 'sourcing';
+
+    if (!mobileSourcingView) {
+        setMobileSourcingSettingsOpen(false);
+    }
+
+    if (mobileViewport) {
+        elements.exportBtn.hidden = !mobileSourcingView;
+        if (mobileSourcingView) {
+            elements.exportBtn.disabled = false;
+            elements.exportBtn.title = 'Sourcing settings';
+            elements.exportBtn.setAttribute('aria-label', 'Sourcing settings');
+            elements.exportBtn.innerHTML = EXPORT_BUTTON_SETTINGS_MARKUP;
+            elements.exportBtn.classList.add('mobile-settings-btn');
+        } else {
+            elements.exportBtn.classList.remove('mobile-settings-btn');
+        }
+        return;
+    }
+
+    elements.exportBtn.hidden = false;
+    elements.exportBtn.title = 'Export Data';
+    elements.exportBtn.setAttribute('aria-label', 'Export data');
+    elements.exportBtn.innerHTML = EXPORT_BUTTON_DOWNLOAD_MARKUP;
+    elements.exportBtn.classList.remove('mobile-settings-btn', 'is-active');
+    elements.exportBtn.removeAttribute('aria-expanded');
+}
+
 function getSelectedMobilePoolCard() {
     if (!mobileSelectedPoolCardId) return null;
     return appData.pool.find(card => card.id === mobileSelectedPoolCardId) || null;
@@ -258,6 +328,7 @@ function syncResponsiveLayout(force = false) {
 
     lastKnownMobileViewport = nextIsMobile;
     syncTabButtonVisibility();
+    syncMobileHeaderActions();
 
     if (!nextIsMobile) {
         mobileSelectedPoolCardId = null;
@@ -935,6 +1006,8 @@ function updateAuthButtons({ busy = false, signedIn = !!currentUser } = {}) {
     if (elements.exportBtn) {
         elements.exportBtn.disabled = !signedIn || busy || isResolving;
     }
+
+    syncMobileHeaderActions();
 }
 
 function updateAuthUI() {
@@ -2612,6 +2685,7 @@ function switchTab(viewId) {
 
     currentView = viewId;
     syncTabButtonVisibility();
+    syncMobileHeaderActions();
     try {
         localStorage.setItem(ACTIVE_TAB_KEY, viewId);
     } catch (e) {
@@ -5329,8 +5403,30 @@ function setupEventListeners() {
 
     // Export Data
     if (elements.exportBtn) {
-        elements.exportBtn.addEventListener('click', exportData);
+        elements.exportBtn.addEventListener('click', (event) => {
+            if (isMobileViewport() && currentView === 'sourcing') {
+                event.preventDefault();
+                setMobileSourcingSettingsOpen(!isMobileSourcingSettingsOpen);
+                return;
+            }
+            exportData();
+        });
     }
+
+    document.addEventListener('click', (event) => {
+        if (!isMobileSourcingSettingsOpen || !isMobileViewport()) return;
+        const controls = document.querySelector('#sourcing-view .view-controls');
+        const clickedSettingsButton = event.target.closest('#exportBtn');
+        if (clickedSettingsButton) return;
+        if (controls?.contains(event.target)) return;
+        setMobileSourcingSettingsOpen(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && isMobileSourcingSettingsOpen) {
+            setMobileSourcingSettingsOpen(false);
+        }
+    });
 }
 
 function exportData() {
