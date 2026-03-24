@@ -5813,6 +5813,10 @@ canvas {
     -webkit-backdrop-filter: blur(16px);
   }
 
+  .mobile-settings-panel[hidden] {
+    display: none !important;
+  }
+
   .mobile-settings-panel__header {
     display: flex;
     align-items: center;
