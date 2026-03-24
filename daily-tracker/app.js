@@ -83,7 +83,7 @@ let isHandlingAuthAction = false;
 let isAuthStateResolving = true;
 let mobileSelectedPoolCardId = null;
 let lastKnownMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
-let isMobileSourcingSettingsOpen = false;
+let isMobileSettingsOpen = false;
 
 // ===========================
 // News Ticker State
@@ -219,47 +219,51 @@ function syncTabButtonVisibility() {
     });
 }
 
-function setMobileSourcingSettingsOpen(isOpen) {
-    const sourcingView = document.getElementById('sourcing-view');
-    const canOpen = isMobileViewport() && currentView === 'sourcing';
+function getMobileSettingsViewLabel(viewId = currentView) {
+    if (viewId === 'account') return 'Account';
+    if (viewId === 'sourcing') return 'Sourcing';
+    if (viewId === 'selection') return 'Selection';
+    return 'Workspace';
+}
 
-    isMobileSourcingSettingsOpen = canOpen && !!isOpen;
+function setMobileSettingsOpen(isOpen) {
+    const canOpen = isMobileViewport() && MOBILE_PRIMARY_TABS.has(currentView);
+    isMobileSettingsOpen = canOpen && !!isOpen;
 
-    if (sourcingView) {
-        if (isMobileSourcingSettingsOpen) {
-            sourcingView.dataset.mobileSettingsOpen = 'true';
+    if (elements.exportBtn) {
+        elements.exportBtn.classList.toggle('is-active', isMobileSettingsOpen);
+        if (isMobileViewport() && MOBILE_PRIMARY_TABS.has(currentView)) {
+            elements.exportBtn.setAttribute('aria-expanded', isMobileSettingsOpen ? 'true' : 'false');
         } else {
-            delete sourcingView.dataset.mobileSettingsOpen;
+            elements.exportBtn.removeAttribute('aria-expanded');
         }
     }
 
-    if (elements.exportBtn) {
-        elements.exportBtn.classList.toggle('is-active', isMobileSourcingSettingsOpen);
-        elements.exportBtn.setAttribute('aria-expanded', isMobileSourcingSettingsOpen ? 'true' : 'false');
-    }
+    renderMobileSettingsPanel();
 }
 
 function syncMobileHeaderActions() {
     if (!elements.exportBtn) return;
 
     const mobileViewport = isMobileViewport();
-    const mobileSourcingView = mobileViewport && currentView === 'sourcing';
+    const mobilePrimaryView = mobileViewport && MOBILE_PRIMARY_TABS.has(currentView);
 
-    if (!mobileSourcingView) {
-        setMobileSourcingSettingsOpen(false);
+    if (!mobilePrimaryView) {
+        setMobileSettingsOpen(false);
     }
 
     if (mobileViewport) {
-        elements.exportBtn.hidden = !mobileSourcingView;
-        if (mobileSourcingView) {
+        elements.exportBtn.hidden = !mobilePrimaryView;
+        if (mobilePrimaryView) {
             elements.exportBtn.disabled = false;
-            elements.exportBtn.title = 'Sourcing settings';
-            elements.exportBtn.setAttribute('aria-label', 'Sourcing settings');
+            elements.exportBtn.title = `${getMobileSettingsViewLabel()} settings`;
+            elements.exportBtn.setAttribute('aria-label', `${getMobileSettingsViewLabel()} settings`);
             elements.exportBtn.innerHTML = EXPORT_BUTTON_SETTINGS_MARKUP;
             elements.exportBtn.classList.add('mobile-settings-btn');
         } else {
             elements.exportBtn.classList.remove('mobile-settings-btn');
         }
+        renderMobileSettingsPanel();
         return;
     }
 
@@ -269,6 +273,7 @@ function syncMobileHeaderActions() {
     elements.exportBtn.innerHTML = EXPORT_BUTTON_DOWNLOAD_MARKUP;
     elements.exportBtn.classList.remove('mobile-settings-btn', 'is-active');
     elements.exportBtn.removeAttribute('aria-expanded');
+    renderMobileSettingsPanel();
 }
 
 function getSelectedMobilePoolCard() {
@@ -507,6 +512,7 @@ const elements = {
     authUser: document.getElementById('authUser'),
     authActionBtn: document.getElementById('authActionBtn'),
     exportBtn: document.getElementById('exportBtn'),
+    mobileSettingsPanel: document.getElementById('mobileSettingsPanel'),
     accountViewStatus: document.getElementById('accountViewStatus'),
     managedAccountsGrid: document.getElementById('managedAccountsGrid'),
     managedAccountsModalOverlay: document.getElementById('managedAccountsModalOverlay'),
@@ -565,6 +571,112 @@ function escapeHtml(value) {
 
 function normalizeWhitespace(value) {
     return String(value ?? '').replace(/\s+/g, ' ').trim();
+}
+
+function getMobileAuthActionLabel() {
+    if (isHandlingAuthAction) {
+        return currentUser ? 'Signing out...' : 'Connecting...';
+    }
+    if (isAuthStateResolving && !currentUser) {
+        return 'Checking...';
+    }
+    return currentUser ? 'Logout' : 'Login';
+}
+
+function buildMobileSettingsPanelContent() {
+    const statusTone = elements.newsRefreshStatus?.dataset.tone || 'neutral';
+    const statusText = normalizeWhitespace(elements.newsRefreshStatus?.textContent || 'Idle');
+    const authActionLabel = getMobileAuthActionLabel();
+    const authBusy = isHandlingAuthAction || (isAuthStateResolving && !currentUser);
+    const showAuthButton = `
+        <button
+            class="mobile-settings-panel__button mobile-settings-panel__button--primary"
+            type="button"
+            data-mobile-settings-action="auth"
+            ${authBusy ? 'disabled' : ''}
+        >
+            ${escapeHtml(authActionLabel)}
+        </button>
+    `;
+
+    if (currentView === 'account') {
+        return `
+            <div class="mobile-settings-panel__section">
+                <button
+                    class="mobile-settings-panel__button"
+                    type="button"
+                    data-mobile-settings-action="manage-accounts"
+                    ${!currentUser ? 'disabled' : ''}
+                >
+                    Manage Accounts
+                </button>
+                ${showAuthButton}
+            </div>
+        `;
+    }
+
+    if (currentView === 'sourcing') {
+        return `
+            <div class="mobile-settings-panel__section">
+                <label class="mobile-settings-panel__toggle" for="mobileSettingsShowDone">
+                    <span>Show Done</span>
+                    <span class="mobile-settings-panel__switch">
+                        <input
+                            id="mobileSettingsShowDone"
+                            type="checkbox"
+                            data-mobile-settings-toggle="show-done"
+                            ${showDoneNews ? 'checked' : ''}
+                        >
+                        <span class="mobile-settings-panel__switch-track"></span>
+                    </span>
+                </label>
+                <button
+                    class="mobile-settings-panel__button"
+                    type="button"
+                    data-mobile-settings-action="refresh-news"
+                    ${isNewsRefreshing ? 'disabled' : ''}
+                >
+                    ${isNewsRefreshing ? 'Refreshing...' : 'Refresh News'}
+                </button>
+                <button
+                    class="mobile-settings-panel__button"
+                    type="button"
+                    data-mobile-settings-action="reset-news"
+                >
+                    Reset All
+                </button>
+                <span class="mobile-settings-panel__status" data-tone="${escapeHtml(statusTone)}">${escapeHtml(statusText)}</span>
+                ${showAuthButton}
+            </div>
+        `;
+    }
+
+    return `
+        <div class="mobile-settings-panel__section">
+            ${showAuthButton}
+        </div>
+    `;
+}
+
+function renderMobileSettingsPanel() {
+    if (!elements.mobileSettingsPanel) return;
+
+    const canRender = isMobileViewport() && MOBILE_PRIMARY_TABS.has(currentView);
+    if (!canRender) {
+        elements.mobileSettingsPanel.hidden = true;
+        elements.mobileSettingsPanel.innerHTML = '';
+        delete elements.mobileSettingsPanel.dataset.view;
+        return;
+    }
+
+    elements.mobileSettingsPanel.dataset.view = currentView;
+    elements.mobileSettingsPanel.innerHTML = `
+        <div class="mobile-settings-panel__header">
+            <span>${escapeHtml(getMobileSettingsViewLabel())} Settings</span>
+        </div>
+        ${buildMobileSettingsPanelContent()}
+    `;
+    elements.mobileSettingsPanel.hidden = !isMobileSettingsOpen;
 }
 
 function normalizeManagedSentientAccounts(values = []) {
@@ -1008,7 +1120,7 @@ function updateAuthButtons({ busy = false, signedIn = !!currentUser } = {}) {
                 : 'Sign in with Google';
     }
 
-    if (elements.exportBtn) {
+    if (elements.exportBtn && !(isMobileViewport() && MOBILE_PRIMARY_TABS.has(currentView))) {
         elements.exportBtn.disabled = !signedIn || busy || isResolving;
     }
 
@@ -1866,7 +1978,6 @@ function buildMobileAccountSummaryPanel(account = {}, accounts = [], dataset = n
                     <h2>${escapeHtml(account.full_name || account.account || 'Managed account')}</h2>
                     <p>${escapeHtml(snapshot.label)}</p>
                 </div>
-                <button class="action-btn account-mobile-panel__manage" type="button" data-account-action="manage">Manage</button>
             </div>
 
             ${accounts.length > 1 ? `
@@ -1926,10 +2037,6 @@ function buildMobileAccountSummaryPanel(account = {}, accounts = [], dataset = n
             <div class="account-mobile-panel__footer">
                 <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
                 <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
-            </div>
-
-            <div class="account-mobile-panel__actions">
-                <button class="account-mobile-panel__logout" type="button" data-account-action="auth">Sign out</button>
             </div>
         </article>
     `;
@@ -2687,6 +2794,7 @@ function getInitialViewFromStorage() {
 
 function switchTab(viewId) {
     viewId = normalizeViewForViewport(viewId);
+    setMobileSettingsOpen(false);
 
     currentView = viewId;
     syncTabButtonVisibility();
@@ -3938,11 +4046,13 @@ function setNewsRefreshStatus(text, tone = 'neutral') {
     if (!elements.newsRefreshStatus) return;
     elements.newsRefreshStatus.textContent = text;
     elements.newsRefreshStatus.dataset.tone = tone;
+    renderMobileSettingsPanel();
 }
 
 async function refreshNewsNow(manual = false) {
     if (isNewsRefreshing) return;
     isNewsRefreshing = true;
+    renderMobileSettingsPanel();
     if (elements.refreshNewsBtn) {
         elements.refreshNewsBtn.disabled = true;
     }
@@ -3973,6 +4083,7 @@ async function refreshNewsNow(manual = false) {
         elements.refreshNewsBtn.disabled = false;
     }
     isNewsRefreshing = false;
+    renderMobileSettingsPanel();
 }
 
 function decodeEntities(text) {
@@ -5196,6 +5307,7 @@ function setupEventListeners() {
     if (elements.showDoneNews) {
         elements.showDoneNews.addEventListener('change', (e) => {
             showDoneNews = e.target.checked;
+            renderMobileSettingsPanel();
             renderNews(false);
         });
     }
@@ -5211,7 +5323,47 @@ function setupEventListeners() {
             sourcingFeedCache.clear();
             sourcingArticlesDirty = true;
             await saveData();
+            renderMobileSettingsPanel();
             renderNews(true);
+        });
+    }
+
+    if (elements.mobileSettingsPanel) {
+        elements.mobileSettingsPanel.addEventListener('click', (event) => {
+            const trigger = event.target.closest('[data-mobile-settings-action]');
+            if (!trigger) return;
+
+            event.preventDefault();
+            const action = trigger.dataset.mobileSettingsAction || '';
+
+            if (action === 'auth') {
+                setMobileSettingsOpen(false);
+                handleAuthAction();
+                return;
+            }
+
+            if (action === 'manage-accounts') {
+                setMobileSettingsOpen(false);
+                openManagedAccountsModal('edit');
+                return;
+            }
+
+            if (action === 'refresh-news') {
+                elements.refreshNewsBtn?.click();
+                return;
+            }
+
+            if (action === 'reset-news') {
+                elements.resetNewsBtn?.click();
+            }
+        });
+
+        elements.mobileSettingsPanel.addEventListener('change', (event) => {
+            const toggle = event.target.closest('[data-mobile-settings-toggle="show-done"]');
+            if (!toggle || !elements.showDoneNews) return;
+
+            elements.showDoneNews.checked = toggle.checked;
+            elements.showDoneNews.dispatchEvent(new Event('change', { bubbles: true }));
         });
     }
 
@@ -5409,9 +5561,9 @@ function setupEventListeners() {
     // Export Data
     if (elements.exportBtn) {
         elements.exportBtn.addEventListener('click', (event) => {
-            if (isMobileViewport() && currentView === 'sourcing') {
+            if (isMobileViewport() && MOBILE_PRIMARY_TABS.has(currentView)) {
                 event.preventDefault();
-                setMobileSourcingSettingsOpen(!isMobileSourcingSettingsOpen);
+                setMobileSettingsOpen(!isMobileSettingsOpen);
                 return;
             }
             exportData();
@@ -5419,17 +5571,17 @@ function setupEventListeners() {
     }
 
     document.addEventListener('click', (event) => {
-        if (!isMobileSourcingSettingsOpen || !isMobileViewport()) return;
-        const controls = document.querySelector('#sourcing-view .view-controls');
+        if (!isMobileSettingsOpen || !isMobileViewport()) return;
+        const settingsPanel = elements.mobileSettingsPanel;
         const clickedSettingsButton = event.target.closest('#exportBtn');
         if (clickedSettingsButton) return;
-        if (controls?.contains(event.target)) return;
-        setMobileSourcingSettingsOpen(false);
+        if (settingsPanel?.contains(event.target)) return;
+        setMobileSettingsOpen(false);
     });
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && isMobileSourcingSettingsOpen) {
-            setMobileSourcingSettingsOpen(false);
+        if (event.key === 'Escape' && isMobileSettingsOpen) {
+            setMobileSettingsOpen(false);
         }
     });
 }

@@ -5796,6 +5796,165 @@ canvas {
     border-color: rgba(36, 55, 67, 0.88);
   }
 
+  .mobile-settings-panel {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 58px);
+    right: 12px;
+    width: min(320px, calc(100vw - 24px));
+    z-index: 95;
+    display: grid;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(18, 24, 38, 0.08);
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .mobile-settings-panel__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+  }
+
+  .mobile-settings-panel__header span {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5f7280;
+  }
+
+  .mobile-settings-panel__section {
+    display: grid;
+    gap: 10px;
+  }
+
+  .mobile-settings-panel__button {
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 0 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(116, 138, 155, 0.16);
+    background: rgba(255, 255, 255, 0.96);
+    color: #324454;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 10px 22px rgba(116, 138, 155, 0.1);
+  }
+
+  .mobile-settings-panel__button:disabled {
+    opacity: 0.56;
+    box-shadow: none;
+  }
+
+  .mobile-settings-panel__button--primary {
+    background: #243743;
+    color: #FFFFFF;
+    border-color: rgba(36, 55, 67, 0.88);
+    box-shadow: 0 14px 28px rgba(36, 55, 67, 0.16);
+  }
+
+  .mobile-settings-panel__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 52px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(18, 24, 38, 0.08);
+    background: linear-gradient(180deg, rgba(247, 250, 252, 0.98), rgba(255, 255, 255, 0.96));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    color: #324454;
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .mobile-settings-panel__switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 46px;
+    height: 28px;
+  }
+
+  .mobile-settings-panel__switch input {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .mobile-settings-panel__switch-track {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.34);
+    transition: background 160ms ease;
+  }
+
+  .mobile-settings-panel__switch-track::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.16);
+    transition: transform 160ms ease;
+  }
+
+  .mobile-settings-panel__switch input:checked + .mobile-settings-panel__switch-track {
+    background: rgba(36, 55, 67, 0.9);
+  }
+
+  .mobile-settings-panel__switch input:checked + .mobile-settings-panel__switch-track::after {
+    transform: translateX(18px);
+  }
+
+  .mobile-settings-panel__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    width: 100%;
+    min-height: 36px;
+    padding: 0 12px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 0.76rem;
+    font-weight: 700;
+    background: rgba(242, 247, 251, 0.96);
+    border: 1px solid rgba(116, 138, 155, 0.14);
+    color: #5f7280;
+  }
+
+  .mobile-settings-panel__status[data-tone="success"] {
+    background: rgba(222, 247, 230, 0.92);
+    border-color: rgba(52, 199, 89, 0.16);
+    color: #1f9d52;
+  }
+
+  .mobile-settings-panel__status[data-tone="error"] {
+    background: rgba(254, 242, 242, 0.95);
+    border-color: rgba(239, 68, 68, 0.16);
+    color: #c2410c;
+  }
+
+  .mobile-settings-panel__status[data-tone="warning"] {
+    background: rgba(255, 248, 235, 0.95);
+    border-color: rgba(245, 158, 11, 0.18);
+    color: #b45309;
+  }
+
   .main-content {
     padding: 12px 8px 104px;
     overflow-x: hidden;
@@ -5922,16 +6081,11 @@ canvas {
   }
 
   .account-mobile-panel__topbar {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .account-mobile-panel__topbar p {
-    max-width: 210px;
-  }
-
-  .account-mobile-panel__logout {
-    min-height: 28px;
-    padding: 0 10px;
+    max-width: none;
   }
 
   #sourcing-view .news-toolbar__ticker {
@@ -5953,117 +6107,6 @@ canvas {
     background: linear-gradient(180deg, rgba(244, 248, 251, 0.96), rgba(255, 255, 255, 0.98));
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
     min-width: 0;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .view-controls {
-    position: fixed;
-    top: 76px;
-    right: 12px;
-    width: min(320px, calc(100vw - 24px));
-    z-index: 95;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 14px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.98);
-    border: 1px solid rgba(18, 24, 38, 0.08);
-    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .view-controls::before {
-    content: 'Sourcing Settings';
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #5f7280;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .toggle-switch {
-    width: 100%;
-    min-width: 0;
-    justify-content: space-between;
-    min-height: 52px;
-    padding: 10px 12px;
-    border: 1px solid rgba(18, 24, 38, 0.08);
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(247, 250, 252, 0.98), rgba(255, 255, 255, 0.96));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .toggle-switch .label {
-    min-width: 0;
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #324454;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] #refreshNewsBtn,
-  #sourcing-view[data-mobile-settings-open="true"] #resetNewsBtn {
-    width: 100%;
-    min-width: 0;
-    justify-content: center;
-    min-height: 48px;
-    padding: 10px 12px;
-    white-space: normal;
-    line-height: 1.15;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] #refreshNewsBtn {
-    background: linear-gradient(135deg, #243743 0%, #335466 100%);
-    color: #FFFFFF;
-    border-color: rgba(36, 55, 67, 0.88);
-    box-shadow: 0 14px 28px rgba(36, 55, 67, 0.16);
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] #resetNewsBtn {
-    background: rgba(255, 255, 255, 0.96);
-    color: #516775;
-    border-color: rgba(116, 138, 155, 0.16);
-    box-shadow: 0 10px 22px rgba(116, 138, 155, 0.1);
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] #refreshNewsBtn svg,
-  #sourcing-view[data-mobile-settings-open="true"] #resetNewsBtn svg {
-    flex-shrink: 0;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .news-refresh-status {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
-    width: 100%;
-    min-height: 36px;
-    padding: 0 12px;
-    border-radius: 999px;
-    text-align: center;
-    font-size: 0.76rem;
-    font-weight: 700;
-    background: rgba(242, 247, 251, 0.96);
-    border: 1px solid rgba(116, 138, 155, 0.14);
-    color: #5f7280;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .news-refresh-status[data-tone="success"] {
-    background: rgba(222, 247, 230, 0.92);
-    border-color: rgba(52, 199, 89, 0.16);
-    color: #1f9d52;
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .news-refresh-status[data-tone="error"] {
-    background: rgba(254, 242, 242, 0.95);
-    border-color: rgba(239, 68, 68, 0.16);
-  }
-
-  #sourcing-view[data-mobile-settings-open="true"] .news-refresh-status[data-tone="warning"] {
-    background: rgba(255, 248, 235, 0.95);
-    border-color: rgba(245, 158, 11, 0.18);
   }
 
   #sourcing-view[data-mobile-sourcing-section="news"] #instagramSidebarSection,
