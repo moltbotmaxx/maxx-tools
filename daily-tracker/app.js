@@ -18,6 +18,8 @@ const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
 const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
 const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
+const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics', 'history']);
+const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
 
 function createEmptyAppData() {
     return {
@@ -171,6 +173,33 @@ function isMobileViewport() {
     return viewportWidth <= MOBILE_BREAKPOINT || touchViewport || mobileUa;
 }
 
+function getDefaultViewForViewport() {
+    return isMobileViewport() ? 'sourcing' : 'account';
+}
+
+function normalizeViewForViewport(viewId) {
+    if (!ALL_TRACKER_TABS.has(viewId)) {
+        return getDefaultViewForViewport();
+    }
+    if (isMobileViewport() && !MOBILE_PRIMARY_TABS.has(viewId)) {
+        return 'sourcing';
+    }
+    return viewId;
+}
+
+function syncTabButtonVisibility() {
+    if (!elements?.tabBtns) return;
+
+    const mobileViewport = isMobileViewport();
+    elements.tabBtns.forEach((btn) => {
+        const tabId = btn.dataset.tab || '';
+        const shouldHide = tabId === 'history' || (mobileViewport && !MOBILE_PRIMARY_TABS.has(tabId));
+        btn.hidden = shouldHide;
+        btn.setAttribute('aria-hidden', shouldHide ? 'true' : 'false');
+        btn.tabIndex = shouldHide ? -1 : 0;
+    });
+}
+
 function getSelectedMobilePoolCard() {
     if (!mobileSelectedPoolCardId) return null;
     return appData.pool.find(card => card.id === mobileSelectedPoolCardId) || null;
@@ -227,9 +256,17 @@ function syncResponsiveLayout(force = false) {
     if (!force && nextIsMobile === lastKnownMobileViewport) return;
 
     lastKnownMobileViewport = nextIsMobile;
+    syncTabButtonVisibility();
 
     if (!nextIsMobile) {
         mobileSelectedPoolCardId = null;
+    }
+
+    const normalizedView = normalizeViewForViewport(currentView);
+    if (normalizedView !== currentView) {
+        switchTab(normalizedView);
+        syncMobileSourcingPanels();
+        return;
     }
 
     render();
@@ -1805,6 +1842,10 @@ function buildMobileAccountSummaryPanel(account = {}, accounts = [], dataset = n
                 <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
                 <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
             </div>
+
+            <div class="account-mobile-panel__actions">
+                <button class="account-mobile-panel__logout" type="button" data-account-action="auth">Sign out</button>
+            </div>
         </article>
     `;
 }
@@ -2550,20 +2591,20 @@ let currentView = getInitialViewFromStorage();
 let dashboardMonth = new Date();
 
 function getInitialViewFromStorage() {
+    const fallbackView = getDefaultViewForViewport();
     try {
         const stored = localStorage.getItem(ACTIVE_TAB_KEY);
-        const allowedViews = ['account', 'sourcing', 'selection', 'scheduler', 'metrics'];
-        return allowedViews.includes(stored) ? stored : 'account';
+        return normalizeViewForViewport(stored);
     } catch {
-        return 'account';
+        return fallbackView;
     }
 }
 
 function switchTab(viewId) {
-    const allowedViews = new Set(['sourcing', 'selection', 'scheduler', 'metrics', 'account', 'history']);
-    if (!allowedViews.has(viewId)) viewId = 'account';
+    viewId = normalizeViewForViewport(viewId);
 
     currentView = viewId;
+    syncTabButtonVisibility();
     try {
         localStorage.setItem(ACTIVE_TAB_KEY, viewId);
     } catch (e) {
@@ -4974,6 +5015,12 @@ function setupEventListeners() {
                 } else {
                     renderAccountView();
                 }
+                return;
+            }
+            const authTrigger = event.target.closest('[data-account-action="auth"]');
+            if (authTrigger) {
+                event.preventDefault();
+                handleAuthAction();
                 return;
             }
             const manageTrigger = event.target.closest('[data-account-action="manage"]');

@@ -2043,6 +2043,28 @@ canvas {
   letter-spacing: 0.6px;
 }
 
+.account-mobile-panel__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.account-mobile-panel__logout {
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  background: rgba(247, 249, 252, 0.92);
+  color: var(--text-tertiary);
+  min-height: 30px;
+  padding: 0 11px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.account-mobile-panel__logout:hover:not(:disabled) {
+  color: var(--text-primary);
+  border-color: rgba(18, 24, 38, 0.14);
+}
+
 .account-story-card,
 .account-posts-panel__empty,
 .account-empty-card {
@@ -5703,7 +5725,7 @@ canvas {
   .header-controls {
     width: 100%;
     gap: 8px;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   .auth-user {
@@ -5713,6 +5735,10 @@ canvas {
   .auth-btn {
     flex: 1;
     justify-content: center;
+  }
+
+  #authActionBtn {
+    display: none;
   }
 
   .main-content {
@@ -5731,7 +5757,7 @@ canvas {
     bottom: 12px;
     z-index: 70;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 4px;
     padding: 8px;
     border-radius: 20px;
@@ -5739,6 +5765,12 @@ canvas {
     box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
+  }
+
+  .tab-nav .tab-btn[data-tab="scheduler"],
+  .tab-nav .tab-btn[data-tab="metrics"],
+  .tab-nav .tab-btn[data-tab="history"] {
+    display: none;
   }
 
   .tab-btn {
@@ -5840,6 +5872,11 @@ canvas {
 
   .account-mobile-panel__topbar p {
     max-width: 210px;
+  }
+
+  .account-mobile-panel__logout {
+    min-height: 28px;
+    padding: 0 10px;
   }
 
   #sourcing-view .news-toolbar__ticker {
