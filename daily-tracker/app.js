@@ -9,11 +9,15 @@
 const SLOTS_PER_DAY = 8;
 const MOBILE_BREAKPOINT = 768;
 const LAUNCH_SPLASH_MIN_MS = 820;
+const MOBILE_CLIPBOARD_HANDOFF_TTL_MS = 10 * 60 * 1000;
+const MOBILE_CLIPBOARD_READ_COOLDOWN_MS = 2 * 1000;
+const MOBILE_CLIPBOARD_FAILURE_COOLDOWN_MS = 60 * 1000;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
 const MOBILE_THEME_KEY = 'contentSchedulerMobileTheme';
 const IOS_INSTALL_PROMPT_DISMISSED_KEY = 'contentSchedulerIosInstallPromptDismissed';
+const MOBILE_CLIPBOARD_HANDOFF_KEY = 'contentSchedulerMobileClipboardHandoff';
 const DONE_ARTICLES_KEY = 'done_articles';
 const MANAGED_SENTIENT_ACCOUNTS_KEY = 'contentSchedulerManagedSentientAccounts';
 const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
@@ -90,6 +94,10 @@ let isMobileSettingsOpen = false;
 let mobileVisualTheme = getInitialMobileTheme();
 const launchSplashStartedAt = typeof performance !== 'undefined' ? performance.now() : Date.now();
 let launchSplashHideTimer = null;
+let clipboardImportInFlight = null;
+let lastClipboardReadAttemptAt = 0;
+let lastClipboardReadFailureAt = 0;
+let lastHandledClipboardUrl = '';
 
 // ===========================
 // News Ticker State
@@ -241,6 +249,10 @@ function isIPhoneSafari() {
     return isIPhone && isSafari;
 }
 
+function isIPhoneDevice() {
+    return /iPhone/i.test(navigator.userAgent || '');
+}
+
 function isIosInstallPromptDismissed() {
     return safeGetLocalStorageItem(IOS_INSTALL_PROMPT_DISMISSED_KEY) === '1';
 }
@@ -259,6 +271,132 @@ function syncIosInstallPrompt() {
     prompt.hidden = !shouldShow;
 }
 
+function getRecentClipboardHandoff() {
+    const recent = readJsonFromLocalStorage(MOBILE_CLIPBOARD_HANDOFF_KEY, null);
+    if (!recent || typeof recent !== 'object') return null;
+
+    const url = safeHttpUrl(recent.url || '', '');
+    const at = Number(recent.at || 0);
+    if (!url || !Number.isFinite(at)) {
+        safeRemoveLocalStorageItem(MOBILE_CLIPBOARD_HANDOFF_KEY);
+        return null;
+    }
+
+    if (Date.now() - at > MOBILE_CLIPBOARD_HANDOFF_TTL_MS) {
+        safeRemoveLocalStorageItem(MOBILE_CLIPBOARD_HANDOFF_KEY);
+        return null;
+    }
+
+    return { url, at };
+}
+
+function markClipboardUrlHandled(url) {
+    const normalizedUrl = safeHttpUrl(url, '');
+    if (!normalizedUrl) return;
+
+    lastHandledClipboardUrl = normalizedUrl;
+    safeSetLocalStorageItem(MOBILE_CLIPBOARD_HANDOFF_KEY, JSON.stringify({
+        url: normalizedUrl,
+        at: Date.now()
+    }));
+}
+
+function hasRecentlyHandledClipboardUrl(url) {
+    const normalizedUrl = safeHttpUrl(url, '');
+    if (!normalizedUrl) return false;
+    if (normalizedUrl === lastHandledClipboardUrl) return true;
+
+    const recent = getRecentClipboardHandoff();
+    if (!recent) return false;
+    return recent.url === normalizedUrl;
+}
+
+function extractClipboardSelectionUrl(text = '') {
+    const normalized = normalizeWhitespace(text);
+    if (!normalized) return '';
+
+    const directMatch = normalized.match(/https?:\/\/[^\s"'<>]+/i);
+    if (directMatch?.[0]) {
+        return safeHttpUrl(directMatch[0].replace(/[),.;!?]+$/, ''), '');
+    }
+
+    const wwwMatch = normalized.match(/(?:^|\s)(www\.[^\s"'<>]+)/i);
+    if (wwwMatch?.[1]) {
+        return safeHttpUrl(wwwMatch[1].replace(/[),.;!?]+$/, ''), '');
+    }
+
+    if (!/\s/.test(normalized) && normalized.includes('.')) {
+        return safeHttpUrl(normalized.replace(/[),.;!?]+$/, ''), '');
+    }
+
+    return '';
+}
+
+function canAutoImportClipboardSelection() {
+    const splash = document.getElementById('launchSplash');
+    const splashVisible = !!splash && !splash.hidden && splash.dataset.state !== 'hidden';
+
+    return isStandaloneMode()
+        && isIPhoneDevice()
+        && !!currentUser?.uid
+        && !isLoadingUserData
+        && !isAuthStateResolving
+        && !document.hidden
+        && !splashVisible
+        && window.isSecureContext
+        && typeof navigator.clipboard?.readText === 'function'
+        && document.documentElement.dataset.authGate !== 'open'
+        && !document.querySelector('.modal-overlay.show');
+}
+
+function openClipboardSelectionModal(url) {
+    const normalizedUrl = safeHttpUrl(url, '');
+    if (!normalizedUrl) return false;
+
+    markClipboardUrlHandled(normalizedUrl);
+    switchTab('selection');
+    showInspirationModal(normalizedUrl);
+    return true;
+}
+
+async function maybeImportClipboardSelection({ force = false } = {}) {
+    if (!force && clipboardImportInFlight) return clipboardImportInFlight;
+    if (!canAutoImportClipboardSelection()) return false;
+
+    const now = Date.now();
+    if (!force && now - lastClipboardReadAttemptAt < MOBILE_CLIPBOARD_READ_COOLDOWN_MS) {
+        return false;
+    }
+    if (!force && lastClipboardReadFailureAt && now - lastClipboardReadFailureAt < MOBILE_CLIPBOARD_FAILURE_COOLDOWN_MS) {
+        return false;
+    }
+
+    lastClipboardReadAttemptAt = now;
+    clipboardImportInFlight = (async () => {
+        try {
+            const clipboardText = await navigator.clipboard.readText();
+            const clipboardUrl = extractClipboardSelectionUrl(clipboardText);
+            if (!canAutoImportClipboardSelection()) {
+                return false;
+            }
+            if (!clipboardUrl || hasRecentlyHandledClipboardUrl(clipboardUrl)) {
+                return false;
+            }
+
+            lastClipboardReadFailureAt = 0;
+            return openClipboardSelectionModal(clipboardUrl);
+        } catch (error) {
+            lastClipboardReadFailureAt = Date.now();
+            console.debug('Clipboard selection import skipped', error);
+            return false;
+        } finally {
+            clipboardImportInFlight = null;
+        }
+    })();
+
+    return clipboardImportInFlight;
+}
+
 function hideLaunchSplash({ immediate = false } = {}) {
     const splash = document.getElementById('launchSplash');
     if (!splash || splash.dataset.state === 'hidden') return;
@@ -269,6 +407,7 @@ function hideLaunchSplash({ immediate = false } = {}) {
         window.setTimeout(() => {
             splash.hidden = true;
             syncIosInstallPrompt();
+            void maybeImportClipboardSelection();
         }, 380);
     };
 
@@ -1863,6 +2002,7 @@ function closeManagedAccountsModal(force = false) {
     if (elements.managedAccountsModalOverlay) {
         elements.managedAccountsModalOverlay.classList.remove('show');
     }
+    void maybeImportClipboardSelection();
 }
 
 function getManagedAccountsModalSelection() {
@@ -5559,6 +5699,13 @@ function setupEventListeners() {
             renderNews(true);
         }
         syncIosInstallPrompt();
+        if (!document.hidden) {
+            void maybeImportClipboardSelection();
+        }
+    });
+
+    window.addEventListener('focus', () => {
+        void maybeImportClipboardSelection();
     });
 
     // Global Week Navigation (ONLY for History now)
@@ -5838,6 +5985,7 @@ async function setupAuthSession() {
             await drainPendingExtensionIdeas();
             switchTab(currentView);
             setAuthGate('hidden', '');
+            void maybeImportClipboardSelection({ force: true });
 
             if (!managedSentientAccounts.length) {
                 await openManagedAccountsModal('onboarding');
