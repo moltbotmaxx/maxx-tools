@@ -7,6 +7,7 @@
 // Constants & Configuration
 // ===========================
 const SLOTS_PER_DAY = 8;
+const MOBILE_BREAKPOINT = 768;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
@@ -60,12 +61,15 @@ let pendingExtensionIdeas = [];
 let isLoadingUserData = false;
 let isHandlingAuthAction = false;
 let isAuthStateResolving = true;
+let mobileSelectedPoolCardId = null;
+let lastKnownMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
 
 // ===========================
 // News Ticker State
 // ===========================
 let showDoneNews = false;
 let doneHeadlines = new Set();
+let activeMobileSourcingSection = 'featured';
 const SOURCING_FEEDS = [
     {
         id: 'all',
@@ -158,6 +162,78 @@ function ensureAppDataIntegrity() {
     if (!appData.schedule || typeof appData.schedule !== 'object') appData.schedule = {};
     if (!Array.isArray(appData.ideas)) appData.ideas = [];
     return appData;
+}
+
+function isMobileViewport() {
+    return window.innerWidth <= MOBILE_BREAKPOINT;
+}
+
+function getSelectedMobilePoolCard() {
+    if (!mobileSelectedPoolCardId) return null;
+    return appData.pool.find(card => card.id === mobileSelectedPoolCardId) || null;
+}
+
+function toggleMobilePoolCardSelection(cardId) {
+    if (!isMobileViewport()) return;
+    mobileSelectedPoolCardId = mobileSelectedPoolCardId === cardId ? null : cardId;
+    renderPool();
+    renderWeekGrid();
+}
+
+async function schedulePoolCardToDay(cardId, targetDate, slotIndex = null) {
+    const card = appData.pool.find(item => item.id === cardId);
+    if (!card) return;
+
+    appData.pool = appData.pool.filter(item => item.id !== cardId);
+
+    const targetKey = getDateKey(targetDate);
+    if (!appData.schedule[targetKey]) {
+        appData.schedule[targetKey] = Array(SLOTS_PER_DAY).fill(null);
+    }
+
+    const targetDay = appData.schedule[targetKey];
+    let nextSlotIndex = typeof slotIndex === 'number'
+        ? slotIndex
+        : targetDay.findIndex(item => item === null);
+
+    if (nextSlotIndex === -1) {
+        nextSlotIndex = targetDay.length;
+        targetDay.push(null);
+    }
+
+    while (nextSlotIndex >= targetDay.length) {
+        targetDay.push(null);
+    }
+
+    targetDay[nextSlotIndex] = {
+        ...card,
+        status: CARD_STATUS.SCHEDULED
+    };
+
+    if (targetDay[targetDay.length - 1] !== null) {
+        targetDay.push(null);
+    }
+
+    mobileSelectedPoolCardId = null;
+    render();
+    await saveData();
+}
+
+function syncResponsiveLayout(force = false) {
+    const nextIsMobile = isMobileViewport();
+    if (!force && nextIsMobile === lastKnownMobileViewport) return;
+
+    lastKnownMobileViewport = nextIsMobile;
+
+    if (!nextIsMobile) {
+        mobileSelectedPoolCardId = null;
+    }
+
+    render();
+    if (currentView === 'history') {
+        renderHistory();
+    }
+    syncMobileSourcingPanels();
 }
 
 function getXFeedRuntimeConfig() {
@@ -341,6 +417,10 @@ const elements = {
     featuredStoriesGroup: document.getElementById('featuredStoriesGroup'),
     moreStoriesGroup: document.getElementById('moreStoriesGroup'),
     bufferStoriesGroup: document.getElementById('bufferStoriesGroup'),
+    sourcingNewsMain: document.getElementById('sourcingNewsMain'),
+    instagramSidebarSection: document.getElementById('instagramSidebarSection'),
+    redditSidebarSection: document.getElementById('redditSidebarSection'),
+    xSidebarSection: document.getElementById('xSidebarSection'),
     featuredGrid: document.getElementById('featuredGrid'),
     simpleGrid: document.getElementById('simpleGrid'),
     poolListNews: document.getElementById('poolListNews'),
@@ -349,6 +429,9 @@ const elements = {
     redditViralList: document.getElementById('redditViralList'),
     next6Count: document.getElementById('next6Count'),
     poolCountNews: document.getElementById('poolCountNews'),
+    mobileSourcingControls: document.getElementById('mobileSourcingControls'),
+    mobileSourcingTabs: document.getElementById('mobileSourcingTabs'),
+    mobileSourcingFeedSelect: document.getElementById('mobileSourcingFeedSelect'),
     selectionPoolCards: document.getElementById('poolCardsSelection')
 };
 
@@ -1718,6 +1801,9 @@ function createCard(type) {
 function deleteCard(cardId, fromPool = true) {
     if (fromPool) {
         appData.pool = appData.pool.filter(c => c.id !== cardId);
+        if (mobileSelectedPoolCardId === cardId) {
+            mobileSelectedPoolCardId = null;
+        }
     } else {
         // Remove from schedule - look through all days and all slots
         for (const dateKey in appData.schedule) {
@@ -1736,6 +1822,7 @@ function clearPool() {
     if (appData.pool.length === 0) return;
     if (confirm("Are you sure you want to clear all cards from the pool?")) {
         appData.pool = [];
+        mobileSelectedPoolCardId = null;
         saveData();
         render();
     }
@@ -2080,6 +2167,9 @@ function renderPool() {
 function createPoolCardElement(card) {
     const el = document.createElement('div');
     el.className = `content-card ${card.type}`;
+    if (card.id === mobileSelectedPoolCardId) {
+        el.classList.add('is-selected');
+    }
     el.dataset.id = card.id;
     el.draggable = true;
 
@@ -2100,6 +2190,9 @@ function createPoolCardElement(card) {
                     <line x1="6" y1="6" x2="18" y2="18"/>
                 </svg>
             </button>
+            <button class="mobile-plan-btn ${card.id === mobileSelectedPoolCardId ? 'active' : ''}" data-action="mobile-plan" type="button">
+                ${card.id === mobileSelectedPoolCardId ? 'Picked' : 'Pick'}
+            </button>
         </div>
         <textarea class="card-description" placeholder="Add description..." rows="1"></textarea>
     `;
@@ -2107,6 +2200,14 @@ function createPoolCardElement(card) {
     el.addEventListener('dragstart', (e) => handleDragStart(e, card, true));
     el.addEventListener('dragend', handleDragEnd);
     el.querySelector('.card-delete').addEventListener('click', () => showStagingCardModal(card.id));
+    const mobilePlanBtn = el.querySelector('[data-action="mobile-plan"]');
+    if (mobilePlanBtn) {
+        mobilePlanBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMobilePoolCardSelection(card.id);
+        });
+    }
     const textarea = el.querySelector('.card-description');
     textarea.value = card.description || '';
     textarea.addEventListener('input', (e) => updateCardDescription(card.id, e.target.value, true));
@@ -2121,8 +2222,9 @@ function createPoolCardElement(card) {
 }
 
 function renderWeekGrid() {
-    const dates = getWeekDates(0);
+    const dates = isMobileViewport() ? [new Date()] : getWeekDates(0);
     elements.weekGrid.innerHTML = '';
+    const mobileSelectedCard = isMobileViewport() ? getSelectedMobilePoolCard() : null;
 
     // Update week indicator if it exists
     if (elements.weekIndicator && currentView === 'history') {
@@ -2159,14 +2261,29 @@ function renderWeekGrid() {
                     <span class="day-name">${getDayName(date)}</span>
                     <span class="day-date">${formatDateShort(date)}</span>
                 </div>
-                <div class="day-progress ${isComplete ? 'complete' : ''}">
-                    ${activeCardsCount}/${SLOTS_PER_DAY} ${isComplete ? '✓' : ''}
+                <div class="day-header-actions">
+                    <div class="day-progress ${isComplete ? 'complete' : ''}">
+                        ${activeCardsCount}/${SLOTS_PER_DAY} ${isComplete ? '✓' : ''}
+                    </div>
+                    ${mobileSelectedCard ? `
+                        <button class="mobile-day-add-btn" type="button" title="Place selected staging card here">
+                            Add here
+                        </button>
+                    ` : ''}
                 </div>
             </div>
             <div class="day-slots"></div>
         `;
 
         const slotsContainer = column.querySelector('.day-slots');
+        const mobileDayAddBtn = column.querySelector('.mobile-day-add-btn');
+        if (mobileDayAddBtn && mobileSelectedCard) {
+            mobileDayAddBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                schedulePoolCardToDay(mobileSelectedCard.id, date);
+            });
+        }
 
         // Render all available slots
         for (let i = 0; i < scheduleDay.length; i++) {
@@ -2234,6 +2351,11 @@ function renderWeekGrid() {
                     e.stopPropagation();
                     slot.classList.remove('drag-over-slot');
                     handleDrop(e, date, i);
+                });
+                slot.addEventListener('click', () => {
+                    const selectedCard = getSelectedMobilePoolCard();
+                    if (!selectedCard || !isMobileViewport()) return;
+                    schedulePoolCardToDay(selectedCard.id, date, i);
                 });
 
                 slotsContainer.appendChild(slot);
@@ -3571,6 +3693,7 @@ async function renderNews(forceRefresh = false) {
 
     updateStickyNewsHeader();
     await renderSidebarFeeds(forceRefresh);
+    syncMobileSourcingPanels();
     return true;
 }
 
@@ -3869,6 +3992,51 @@ function stopNewsAutoRefresh() {
     newsAutoRefreshTimer = null;
 }
 
+function getMobileSourcingSections() {
+    return [
+        { id: 'featured', label: 'Featured', panel: elements.featuredStoriesGroup, parent: elements.sourcingNewsMain },
+        { id: 'more', label: 'More', panel: elements.moreStoriesGroup, parent: elements.sourcingNewsMain },
+        { id: 'buffer', label: 'Buffer', panel: elements.bufferStoriesGroup, parent: elements.sourcingNewsMain },
+        { id: 'instagram', label: 'Instagram', panel: elements.instagramSidebarSection, parent: elements.instagramSidebarSection },
+        { id: 'reddit', label: 'Reddit', panel: elements.redditSidebarSection, parent: elements.redditSidebarSection },
+        { id: 'x', label: 'X', panel: elements.xSidebarSection, parent: elements.xSidebarSection }
+    ];
+}
+
+function syncMobileSourcingPanels() {
+    const isMobile = isMobileViewport();
+    const sections = getMobileSourcingSections();
+
+    if (!isMobile) {
+        if (elements.sourcingNewsMain) elements.sourcingNewsMain.hidden = false;
+        sections.forEach(section => {
+            if (section.panel) {
+                section.panel.hidden = false;
+                section.panel.classList.remove('mobile-sourcing-section-active');
+            }
+        });
+        return;
+    }
+
+    const activeSection = sections.find(section => section.id === activeMobileSourcingSection) || sections[0];
+    const newsMainActive = ['featured', 'more', 'buffer'].includes(activeSection.id);
+
+    if (elements.sourcingNewsMain) {
+        elements.sourcingNewsMain.hidden = !newsMainActive;
+    }
+
+    sections.forEach(section => {
+        if (!section.panel) return;
+        const isActive = section.id === activeSection.id;
+        if (section.parent === elements.sourcingNewsMain) {
+            section.panel.hidden = !isActive;
+        } else {
+            section.panel.hidden = !isActive;
+        }
+        section.panel.classList.toggle('mobile-sourcing-section-active', isActive);
+    });
+}
+
 function initSourcingFeedFilter() {
     if (!elements.sourcingFeedFilter) return;
     const nav = elements.sourcingFeedFilter;
@@ -3891,6 +4059,41 @@ function initSourcingFeedFilter() {
         });
         nav.appendChild(tabBtn);
     });
+
+    if (elements.mobileSourcingFeedSelect) {
+        elements.mobileSourcingFeedSelect.innerHTML = '';
+        SOURCING_FEEDS.forEach(feed => {
+            const option = document.createElement('option');
+            option.value = feed.id;
+            option.textContent = feed.label;
+            option.selected = feed.id === selectedSourcingFeed;
+            elements.mobileSourcingFeedSelect.appendChild(option);
+        });
+    }
+
+    if (elements.mobileSourcingTabs) {
+        elements.mobileSourcingTabs.innerHTML = '';
+        getMobileSourcingSections().forEach(section => {
+            const tabBtn = document.createElement('button');
+            tabBtn.type = 'button';
+            tabBtn.className = 'mobile-sourcing-tab';
+            tabBtn.dataset.section = section.id;
+            tabBtn.textContent = section.label;
+            tabBtn.setAttribute('aria-pressed', section.id === activeMobileSourcingSection ? 'true' : 'false');
+            if (section.id === activeMobileSourcingSection) {
+                tabBtn.classList.add('active');
+            }
+            tabBtn.addEventListener('click', () => {
+                if (activeMobileSourcingSection === section.id) return;
+                activeMobileSourcingSection = section.id;
+                initSourcingFeedFilter();
+                syncMobileSourcingPanels();
+            });
+            elements.mobileSourcingTabs.appendChild(tabBtn);
+        });
+    }
+
+    syncMobileSourcingPanels();
 }
 
 function createFeaturedCard(item, index) {
@@ -4690,6 +4893,17 @@ function setupEventListeners() {
     // News Listeners
     initSourcingFeedFilter();
 
+    if (elements.mobileSourcingFeedSelect) {
+        elements.mobileSourcingFeedSelect.addEventListener('change', (e) => {
+            const nextFeed = e.target.value;
+            if (!nextFeed || selectedSourcingFeed === nextFeed) return;
+            selectedSourcingFeed = nextFeed;
+            sourcingArticlesDirty = true;
+            initSourcingFeedFilter();
+            renderNews(false);
+        });
+    }
+
     if (elements.showDoneNews) {
         elements.showDoneNews.addEventListener('change', (e) => {
             showDoneNews = e.target.checked;
@@ -4812,7 +5026,10 @@ function setupEventListeners() {
     if (elements.newsMainScroll) {
         elements.newsMainScroll.addEventListener('scroll', updateStickyNewsHeader, { passive: true });
     }
-    window.addEventListener('resize', updateStickyNewsHeader);
+    window.addEventListener('resize', () => {
+        updateStickyNewsHeader();
+        syncResponsiveLayout();
+    });
 
     // Modal Actions
     elements.modalCloseBtn.addEventListener('click', hideModal);
@@ -4990,6 +5207,7 @@ async function init() {
     loadPendingExtensionIdeasBuffer();
     setupEventListeners();
     window.addEventListener('message', handleExtensionImportEvent);
+    syncResponsiveLayout(true);
     await setupAuthSession();
 }
 

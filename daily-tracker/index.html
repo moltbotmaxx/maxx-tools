@@ -160,10 +160,17 @@
                             </button>
                         </div>
                     </div>
+                    <div class="mobile-sourcing-controls" id="mobileSourcingControls">
+                        <div class="mobile-sourcing-tabs" id="mobileSourcingTabs" aria-label="Mobile sourcing sections"></div>
+                        <label class="mobile-sourcing-filter" for="mobileSourcingFeedSelect">
+                            <span>Feed</span>
+                            <select id="mobileSourcingFeedSelect" aria-label="Select sourcing feed"></select>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="news-layout">
-                    <div class="news-main">
+                    <div class="news-main" id="sourcingNewsMain">
                         <div class="news-main__header box-header">
                             <div class="news-main__header-main">
                                 <h2><span id="newsMainActiveLabel">🔥 Featured Stories</span> <span class="count-badge" id="newsMainActiveCount">0</span></h2>
@@ -211,7 +218,7 @@
                         </div>
                     </div>
 
-                    <section class="sidebar-section sidebar-section--instagram bento-box">
+                    <section class="sidebar-section sidebar-section--instagram bento-box" id="instagramSidebarSection">
                         <div class="box-header">
                             <h2>📸 Instagram</h2>
                         </div>
@@ -221,7 +228,7 @@
                             <div class="skeleton-sidebar skeleton"></div>
                         </div>
                     </section>
-                    <section class="sidebar-section sidebar-section--reddit bento-box">
+                    <section class="sidebar-section sidebar-section--reddit bento-box" id="redditSidebarSection">
                         <div class="box-header">
                             <h2>🔴 Viral on Reddit</h2>
                         </div>
@@ -231,7 +238,7 @@
                             <div class="skeleton-sidebar skeleton"></div>
                         </div>
                     </section>
-                    <section class="sidebar-section sidebar-section--x bento-box">
+                    <section class="sidebar-section sidebar-section--x bento-box" id="xSidebarSection">
                         <div class="box-header">
                             <h2>𝕏 Trending</h2>
                         </div>
