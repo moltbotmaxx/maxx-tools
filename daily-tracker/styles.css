@@ -1302,6 +1302,7 @@ canvas {
 }
 
 @media (max-width: 768px) {
+  html[data-auth-gate="open"],
   body[data-auth-gate="open"] {
     overflow: hidden;
   }

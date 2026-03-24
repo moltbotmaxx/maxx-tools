@@ -1257,8 +1257,10 @@ function setAuthGate(mode = 'signin', statusText = '') {
         elements.authGate.dataset.mode = mode;
     }
     if (isVisible) {
+        document.documentElement.dataset.authGate = 'open';
         document.body.dataset.authGate = 'open';
     } else {
+        delete document.documentElement.dataset.authGate;
         delete document.body.dataset.authGate;
     }
     if (elements.authGateTitle) {
