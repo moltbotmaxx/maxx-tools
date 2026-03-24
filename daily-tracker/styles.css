@@ -132,7 +132,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #050505;
+  background: #171717;
   opacity: 1;
   transition: opacity 360ms cubic-bezier(0.22, 1, 0.36, 1), visibility 360ms ease;
 }
@@ -1561,17 +1561,17 @@ canvas {
   }
 
   body[data-mobile-theme="dark"] .auth-gate {
-    background: linear-gradient(180deg, #050505 0%, #090909 100%);
+    background: linear-gradient(180deg, #1d1d1d 0%, #141414 100%);
   }
 
   body[data-mobile-theme="dark"] .auth-gate__card {
-    background: rgba(10, 10, 10, 0.96);
+    background: rgba(32, 32, 32, 0.96);
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 28px 72px rgba(0, 0, 0, 0.42);
   }
 
   body[data-mobile-theme="dark"] .auth-gate__loader {
-    color: #f5f5f5;
+    color: var(--accent-primary);
   }
 
   body[data-mobile-theme="dark"] .auth-gate__loader-ring {
@@ -1579,7 +1579,7 @@ canvas {
   }
 
   body[data-mobile-theme="dark"] .auth-gate__loader-arc {
-    stroke: #f5f5f5;
+    stroke: var(--accent-primary);
   }
 }
 
@@ -5963,10 +5963,10 @@ canvas {
 }
 
 .mobile-sourcing-tab.active {
-  background: #243743;
-  color: #FFFFFF;
-  border-color: rgba(36, 55, 67, 0.88);
-  box-shadow: 0 10px 18px rgba(36, 55, 67, 0.18);
+  background: var(--gradient-primary);
+  color: #223000;
+  border-color: rgba(154, 205, 50, 0.42);
+  box-shadow: 0 10px 18px rgba(154, 205, 50, 0.18);
 }
 
 .mobile-sourcing-filter {
@@ -6004,6 +6004,10 @@ canvas {
 
 @media (max-width: 768px) {
   body {
+    --accent-primary: #9acd32;
+    --accent-secondary: #7fa52d;
+    --gradient-primary: linear-gradient(135deg, #a6d84c 0%, #8fbe2f 100%);
+    --shadow-premium: 0 15px 38px rgba(154, 205, 50, 0.18);
     height: auto;
     min-height: 100vh;
     overflow: auto;
@@ -6062,6 +6066,12 @@ canvas {
     justify-content: center;
   }
 
+  .auth-btn--primary {
+    background: var(--gradient-primary);
+    color: #223000;
+    box-shadow: 0 14px 28px rgba(154, 205, 50, 0.18);
+  }
+
   #authActionBtn {
     display: none;
   }
@@ -6077,9 +6087,10 @@ canvas {
   }
 
   #exportBtn.mobile-settings-btn.is-active {
-    background: #243743;
-    color: #FFFFFF;
-    border-color: rgba(36, 55, 67, 0.88);
+    background: var(--gradient-primary);
+    color: #223000;
+    border-color: rgba(154, 205, 50, 0.42);
+    box-shadow: 0 12px 24px rgba(154, 205, 50, 0.2);
   }
 
   .mobile-settings-panel {
@@ -6145,10 +6156,10 @@ canvas {
   }
 
   .mobile-settings-panel__button--primary {
-    background: #243743;
-    color: #FFFFFF;
-    border-color: rgba(36, 55, 67, 0.88);
-    box-shadow: 0 14px 28px rgba(36, 55, 67, 0.16);
+    background: var(--gradient-primary);
+    color: #223000;
+    border-color: rgba(154, 205, 50, 0.42);
+    box-shadow: 0 14px 28px rgba(154, 205, 50, 0.22);
   }
 
   .mobile-settings-panel__toggle {
@@ -6203,7 +6214,7 @@ canvas {
   }
 
   .mobile-settings-panel__switch input:checked + .mobile-settings-panel__switch-track {
-    background: rgba(36, 55, 67, 0.9);
+    background: rgba(154, 205, 50, 0.95);
   }
 
   .mobile-settings-panel__switch input:checked + .mobile-settings-panel__switch-track::after {
@@ -6247,11 +6258,15 @@ canvas {
 
   html[data-mobile-theme="dark"],
   body[data-mobile-theme="dark"] {
-    --bg-primary: #050505;
-    --bg-secondary: #0b0b0b;
-    --bg-tertiary: #161616;
-    --bg-card: rgba(12, 12, 12, 0.94);
-    --bg-glass: rgba(8, 8, 8, 0.88);
+    --bg-primary: #171717;
+    --bg-secondary: #202020;
+    --bg-tertiary: #2a2a2a;
+    --bg-card: rgba(30, 30, 30, 0.94);
+    --bg-glass: rgba(24, 24, 24, 0.9);
+    --accent-primary: #cfff04;
+    --accent-secondary: #b6df10;
+    --gradient-primary: linear-gradient(135deg, #ddff54 0%, #cfff04 100%);
+    --shadow-premium: 0 18px 40px rgba(207, 255, 4, 0.2);
     --text-primary: #f5f5f5;
     --text-secondary: #d0d0d0;
     --text-tertiary: #939393;
@@ -6262,7 +6277,7 @@ canvas {
     --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.26);
     --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.34);
     --shadow-lg: 0 28px 56px rgba(0, 0, 0, 0.42);
-    background: #050505;
+    background: #171717;
     color-scheme: dark;
   }
 
@@ -6271,12 +6286,12 @@ canvas {
   body[data-mobile-theme="dark"] .main-content {
     background:
       radial-gradient(circle at top, rgba(255, 255, 255, 0.035), transparent 38%),
-      linear-gradient(180deg, #050505 0%, #090909 100%) !important;
+      linear-gradient(180deg, #1c1c1c 0%, #131313 100%) !important;
     color: var(--text-primary);
   }
 
   body[data-mobile-theme="dark"] .header {
-    background: rgba(8, 8, 8, 0.94);
+    background: rgba(25, 25, 25, 0.94);
     border-bottom-color: rgba(255, 255, 255, 0.08);
   }
 
@@ -6491,7 +6506,7 @@ canvas {
   }
 
   body[data-mobile-theme="dark"] .tab-nav {
-    background: rgba(8, 8, 8, 0.96);
+    background: rgba(24, 24, 24, 0.96);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32);
   }
@@ -6501,12 +6516,12 @@ canvas {
   }
 
   body[data-mobile-theme="dark"] .tab-btn.active {
-    background: rgba(28, 28, 28, 0.96);
-    color: #ffffff;
+    background: rgba(207, 255, 4, 0.12);
+    color: var(--accent-primary);
   }
 
   body[data-mobile-theme="dark"] #exportBtn.mobile-settings-btn {
-    background: rgba(14, 14, 14, 0.96);
+    background: rgba(28, 28, 28, 0.96);
     color: #e8e8e8;
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.26);
@@ -6515,9 +6530,10 @@ canvas {
   body[data-mobile-theme="dark"] #exportBtn.mobile-settings-btn.is-active,
   body[data-mobile-theme="dark"] .mobile-settings-panel__button--primary,
   body[data-mobile-theme="dark"] .mobile-sourcing-tab.active {
-    background: linear-gradient(135deg, #1f1f1f 0%, #090909 100%) !important;
-    color: #ffffff !important;
-    border-color: rgba(255, 255, 255, 0.14) !important;
+    background: var(--gradient-primary) !important;
+    color: #263100 !important;
+    border-color: rgba(207, 255, 4, 0.32) !important;
+    box-shadow: 0 16px 30px rgba(207, 255, 4, 0.18);
   }
 
   body[data-mobile-theme="dark"] .mobile-settings-panel__toggle,
@@ -6532,6 +6548,10 @@ canvas {
 
   body[data-mobile-theme="dark"] .mobile-settings-panel__switch-track {
     background: rgba(255, 255, 255, 0.14);
+  }
+
+  body[data-mobile-theme="dark"] .mobile-settings-panel__switch input:checked + .mobile-settings-panel__switch-track {
+    background: rgba(207, 255, 4, 0.78);
   }
 
   body[data-mobile-theme="dark"] .mobile-settings-panel__switch-track::after {
@@ -6550,7 +6570,7 @@ canvas {
   }
 
   body[data-mobile-theme="dark"] .ios-install-prompt {
-    background: rgba(10, 10, 10, 0.96);
+    background: rgba(28, 28, 28, 0.96);
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 48px rgba(0, 0, 0, 0.36);
   }
