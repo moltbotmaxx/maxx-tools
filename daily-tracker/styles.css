@@ -227,8 +227,81 @@ body {
   }
 }
 
+.ios-install-prompt {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 90px);
+  z-index: 160;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.ios-install-prompt[hidden] {
+  display: none !important;
+}
+
+.ios-install-prompt__copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.ios-install-prompt__eyebrow {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.ios-install-prompt__copy strong {
+  font-size: 0.92rem;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+.ios-install-prompt__copy p {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.ios-install-prompt__share,
+.ios-install-prompt__copy p span:last-child {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ios-install-prompt__dismiss {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  background: rgba(247, 249, 252, 0.92);
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
 @media (min-width: 769px) {
   .launch-splash {
+    display: none !important;
+  }
+
+  .ios-install-prompt {
     display: none !important;
   }
 }
@@ -6474,6 +6547,29 @@ canvas {
     background: rgba(12, 12, 12, 0.96);
     color: var(--text-primary);
     border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  body[data-mobile-theme="dark"] .ios-install-prompt {
+    background: rgba(10, 10, 10, 0.96);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.36);
+  }
+
+  body[data-mobile-theme="dark"] .ios-install-prompt__eyebrow,
+  body[data-mobile-theme="dark"] .ios-install-prompt__copy p {
+    color: var(--text-tertiary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-install-prompt__copy strong,
+  body[data-mobile-theme="dark"] .ios-install-prompt__share,
+  body[data-mobile-theme="dark"] .ios-install-prompt__copy p span:last-child {
+    color: var(--text-primary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-install-prompt__dismiss {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
   }
 
   body[data-mobile-theme="dark"] .account-mobile-chip.is-active {

@@ -13,6 +13,7 @@ const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
 const MOBILE_THEME_KEY = 'contentSchedulerMobileTheme';
+const IOS_INSTALL_PROMPT_DISMISSED_KEY = 'contentSchedulerIosInstallPromptDismissed';
 const DONE_ARTICLES_KEY = 'done_articles';
 const MANAGED_SENTIENT_ACCOUNTS_KEY = 'contentSchedulerManagedSentientAccounts';
 const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
@@ -229,6 +230,35 @@ function shouldUseLaunchSplash() {
     return standalone || isMobileViewport();
 }
 
+function isStandaloneMode() {
+    return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+
+function isIPhoneSafari() {
+    const ua = navigator.userAgent || '';
+    const isIPhone = /iPhone/i.test(ua);
+    const isSafari = /Safari/i.test(ua) && !/(CriOS|FxiOS|EdgiOS|OPiOS|OPT|GSA|DuckDuckGo|YaBrowser)/i.test(ua);
+    return isIPhone && isSafari;
+}
+
+function isIosInstallPromptDismissed() {
+    return safeGetLocalStorageItem(IOS_INSTALL_PROMPT_DISMISSED_KEY) === '1';
+}
+
+function syncIosInstallPrompt() {
+    const prompt = document.getElementById('iosInstallPrompt');
+    const splash = document.getElementById('launchSplash');
+    if (!prompt) return;
+
+    const shouldShow = isIPhoneSafari()
+        && !isStandaloneMode()
+        && !isIosInstallPromptDismissed()
+        && (!splash || splash.hidden)
+        && !document.hidden;
+
+    prompt.hidden = !shouldShow;
+}
+
 function hideLaunchSplash({ immediate = false } = {}) {
     const splash = document.getElementById('launchSplash');
     if (!splash || splash.dataset.state === 'hidden') return;
@@ -238,6 +268,7 @@ function hideLaunchSplash({ immediate = false } = {}) {
         splash.dataset.state = 'hidden';
         window.setTimeout(() => {
             splash.hidden = true;
+            syncIosInstallPrompt();
         }, 380);
     };
 
@@ -389,6 +420,7 @@ function syncResponsiveLayout(force = false) {
     applyMobileVisualTheme();
     syncTabButtonVisibility();
     syncMobileHeaderActions();
+    syncIosInstallPrompt();
 
     if (!nextIsMobile) {
         mobileSelectedPoolCardId = null;
@@ -568,6 +600,8 @@ const elements = {
     authActionBtn: document.getElementById('authActionBtn'),
     exportBtn: document.getElementById('exportBtn'),
     mobileSettingsPanel: document.getElementById('mobileSettingsPanel'),
+    iosInstallPrompt: document.getElementById('iosInstallPrompt'),
+    iosInstallDismissBtn: document.getElementById('iosInstallDismissBtn'),
     accountViewStatus: document.getElementById('accountViewStatus'),
     managedAccountsGrid: document.getElementById('managedAccountsGrid'),
     managedAccountsModalOverlay: document.getElementById('managedAccountsModalOverlay'),
@@ -5513,10 +5547,18 @@ function setupEventListeners() {
         });
     }
 
+    if (elements.iosInstallDismissBtn) {
+        elements.iosInstallDismissBtn.addEventListener('click', () => {
+            safeSetLocalStorageItem(IOS_INSTALL_PROMPT_DISMISSED_KEY, '1');
+            syncIosInstallPrompt();
+        });
+    }
+
     document.addEventListener('visibilitychange', () => {
         if (!document.hidden && currentView === 'sourcing') {
             renderNews(true);
         }
+        syncIosInstallPrompt();
     });
 
     // Global Week Navigation (ONLY for History now)

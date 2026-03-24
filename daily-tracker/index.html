@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=mobile-settings-global-11">
+    <link rel="stylesheet" href="styles.css?v=mobile-settings-global-12">
     <!-- Chart.js for Analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -31,6 +31,14 @@
         <div class="launch-splash__panel">
             <img class="launch-splash__logo" src="sentient.png?v=ios-splash-1" alt="">
         </div>
+    </div>
+    <div id="iosInstallPrompt" class="ios-install-prompt" hidden>
+        <div class="ios-install-prompt__copy">
+            <span class="ios-install-prompt__eyebrow">Install App</span>
+            <strong>Add Daily Tracker to your iPhone</strong>
+            <p>Open <span class="ios-install-prompt__share">Share</span> and tap <span>Add to Home Screen</span>.</p>
+        </div>
+        <button id="iosInstallDismissBtn" class="ios-install-prompt__dismiss" type="button" aria-label="Dismiss install prompt">Not now</button>
     </div>
     <div class="app-container">
         <!-- Header with Tabs -->
@@ -817,8 +825,8 @@
     </div>
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
-    <script src="x-feed-config.js?v=mobile-settings-global-11"></script>
-    <script type="module" src="app.js?v=mobile-settings-global-11"></script>
+    <script src="x-feed-config.js?v=mobile-settings-global-12"></script>
+    <script type="module" src="app.js?v=mobile-settings-global-12"></script>
 </body>
 
 </html>
