@@ -1709,6 +1709,103 @@ function buildAccountPostsPanel(account = {}) {
     `;
 }
 
+function buildMobileAccountSummaryPanel(account = {}, accounts = [], dataset = null) {
+    const snapshot = getAccountDashboardSnapshotMeta(accounts, dataset);
+    const totalFollowers = accounts.reduce((sum, item) => sum + (Number(item.followers) || 0), 0);
+    const totalLikes30d = accounts.reduce((sum, item) => sum + (Number(item.likes30d) || 0), 0);
+    const totalViews30d = accounts.reduce((sum, item) => sum + (Number(item.views30d) || 0), 0);
+    const compactBio = normalizeWhitespace(account.biography || '');
+    const compactBioText = compactBio.length > 120 ? `${compactBio.slice(0, 117)}...` : compactBio;
+    const portfolioPills = [
+        ['Accounts', String(accounts.length)],
+        ['Followers', formatCompact(totalFollowers)],
+        ['30d likes', `${formatCompact(totalLikes30d)}${snapshot.suffix}`],
+        ['30d views', `${formatCompact(totalViews30d)}${snapshot.suffix}`]
+    ];
+    const metricTiles = [
+        ['Followers', formatCompact(Number(account.followers) || 0)],
+        ['Posts', formatCompact(Number(account.posts) || 0)],
+        ['Following', formatCompact(Number(account.following) || 0)],
+        ['30d likes', `${formatCompact(Number(account.likes30d) || 0)}${account.recentWindowCovered === false ? '+' : ''}`],
+        ['30d reel views', `${formatCompact(Number(account.views30d) || 0)}${account.recentWindowCovered === false ? '+' : ''}`],
+        ['Engagement', formatPercentCompact(account.engagement_rate)],
+        ['Avg likes', formatCompact(Number(account.avg_likes) || 0)],
+        ['Avg comments', formatCompact(Number(account.avg_comments) || 0)]
+    ];
+
+    return `
+        <article class="bento-box account-mobile-panel">
+            <div class="account-mobile-panel__topbar">
+                <div>
+                    <span class="account-mobile-panel__eyebrow">Account</span>
+                    <h2>${escapeHtml(account.full_name || account.account || 'Managed account')}</h2>
+                    <p>${escapeHtml(snapshot.label)}</p>
+                </div>
+                <button class="action-btn account-mobile-panel__manage" type="button" data-account-action="manage">Manage</button>
+            </div>
+
+            ${accounts.length > 1 ? `
+                <div class="account-mobile-panel__switcher" role="tablist" aria-label="Managed accounts">
+                    ${accounts.map(item => {
+                        const accountKey = String(item.account || '').toLowerCase();
+                        const activeKey = String(account.account || '').toLowerCase();
+                        const isActive = accountKey === activeKey;
+                        return `
+                            <button
+                                class="account-mobile-chip${isActive ? ' is-active' : ''}"
+                                type="button"
+                                role="tab"
+                                aria-selected="${isActive ? 'true' : 'false'}"
+                                data-account-tab="${escapeHtml(item.account || '')}"
+                            >
+                                @${escapeHtml(item.account || '')}
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            ` : ''}
+
+            <div class="account-mobile-panel__hero">
+                <img class="account-mobile-panel__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account || 'Account')} avatar" loading="lazy" />
+                <div class="account-mobile-panel__hero-copy">
+                    <div class="account-mobile-panel__title-row">
+                        <strong>@${escapeHtml(account.account || '')}</strong>
+                        ${account.is_verified ? '<span class="account-mobile-panel__verified">✓</span>' : ''}
+                    </div>
+                    <div class="account-mobile-panel__links">
+                        ${account.external_url ? `<a href="${safeHttpUrl(account.external_url)}" target="_blank" rel="noopener noreferrer">External</a>` : ''}
+                        ${account.profile_url ? `<a href="${safeHttpUrl(account.profile_url)}" target="_blank" rel="noopener noreferrer">Open</a>` : ''}
+                    </div>
+                    ${compactBioText ? `<p>${escapeHtml(compactBioText)}</p>` : ''}
+                </div>
+            </div>
+
+            <div class="account-mobile-panel__portfolio">
+                ${portfolioPills.map(([label, value]) => `
+                    <div class="account-mobile-pill">
+                        <span>${escapeHtml(label)}</span>
+                        <strong>${escapeHtml(value)}</strong>
+                    </div>
+                `).join('')}
+            </div>
+
+            <div class="account-mobile-panel__metrics">
+                ${metricTiles.map(([label, value]) => `
+                    <div class="account-mobile-metric">
+                        <span>${escapeHtml(label)}</span>
+                        <strong>${escapeHtml(value)}</strong>
+                    </div>
+                `).join('')}
+            </div>
+
+            <div class="account-mobile-panel__footer">
+                <span>Window ${escapeHtml(String(Number(account.collectionWindowDays) || 30))}d</span>
+                <span>${account.recentWindowCovered === false ? 'Sample truncated' : 'Full recent sample'}</span>
+            </div>
+        </article>
+    `;
+}
+
 function renderAccountDashboard(selectedAccounts = [], dataset = null) {
     const activeAccount = syncActiveManagedAccountTab(selectedAccounts);
     const overviewCard = buildAccountOverviewCard(selectedAccounts, dataset);
@@ -1721,6 +1818,16 @@ function renderAccountDashboard(selectedAccounts = [], dataset = null) {
                 <article class="bento-box account-empty-card">Select one or more accounts from Manage Accounts to fill the dashboard.</article>
             </div>
         `;
+        return;
+    }
+
+    if (isMobileViewport()) {
+        elements.accountViewStatus.textContent = '';
+        elements.managedAccountsGrid.innerHTML = buildMobileAccountSummaryPanel(
+            activeAccount || selectedAccounts[0],
+            selectedAccounts,
+            dataset
+        );
         return;
     }
 
