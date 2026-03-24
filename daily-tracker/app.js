@@ -165,7 +165,10 @@ function ensureAppDataIntegrity() {
 }
 
 function isMobileViewport() {
-    return window.innerWidth <= MOBILE_BREAKPOINT;
+    const viewportWidth = Math.min(window.innerWidth || Infinity, window.screen?.width || Infinity);
+    const touchViewport = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    const mobileUa = /iPhone|iPod|Android.+Mobile|Mobile\/|Windows Phone/i.test(navigator.userAgent || '');
+    return viewportWidth <= MOBILE_BREAKPOINT || touchViewport || mobileUa;
 }
 
 function getSelectedMobilePoolCard() {
