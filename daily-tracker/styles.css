@@ -6179,6 +6179,64 @@ canvas {
     color: var(--text-secondary) !important;
   }
 
+  body[data-mobile-theme="dark"] .score-pill,
+  body[data-mobile-theme="dark"] .score-badge,
+  body[data-mobile-theme="dark"] .score-badge--featured {
+    background: rgba(18, 18, 18, 0.96) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-primary) !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-pill:hover,
+  body[data-mobile-theme="dark"] .score-pill:focus-visible,
+  body[data-mobile-theme="dark"] .score-badge:hover {
+    background: rgba(28, 28, 28, 0.98) !important;
+    border-color: rgba(255, 255, 255, 0.14) !important;
+    color: #ffffff !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-badge__internal,
+  body[data-mobile-theme="dark"] .score-pill__value,
+  body[data-mobile-theme="dark"] .score-badge__value {
+    color: inherit !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-badge:hover .score-badge__internal {
+    border-left-color: rgba(255, 255, 255, 0.12);
+  }
+
+  body[data-mobile-theme="dark"] .score-fire {
+    background: rgba(255, 115, 64, 0.14) !important;
+    color: #ffb493 !important;
+    border-color: rgba(255, 115, 64, 0.28) !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-orange {
+    background: rgba(251, 191, 36, 0.14) !important;
+    color: #ffd86b !important;
+    border-color: rgba(251, 191, 36, 0.26) !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-amber {
+    background: rgba(250, 204, 21, 0.12) !important;
+    color: #ffe580 !important;
+    border-color: rgba(250, 204, 21, 0.24) !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-blue {
+    background: rgba(96, 165, 250, 0.14) !important;
+    color: #a9d0ff !important;
+    border-color: rgba(96, 165, 250, 0.24) !important;
+  }
+
+  body[data-mobile-theme="dark"] .score-muted,
+  body[data-mobile-theme="dark"] .score-dim {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: var(--text-secondary) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
   body[data-mobile-theme="dark"] .compact-tile,
   body[data-mobile-theme="dark"] .compact-tile__thumb,
   body[data-mobile-theme="dark"] .compact-tile__footer {
