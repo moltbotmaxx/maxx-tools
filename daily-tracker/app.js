@@ -637,6 +637,11 @@ function getDisplayImageUrl(url, fallback = '') {
 
     try {
         const parsed = new URL(normalized);
+        const hostname = parsed.hostname.replace(/^www\./, '').toLowerCase();
+        const encodedProxyPath = /^\/img\/https?%3a/i.test(parsed.pathname);
+        if (hostname === 'ipxy.io' || hostname === 'images.weserv.nl' || hostname === 'wsrv.nl' || encodedProxyPath) {
+            return normalized;
+        }
         const source = `${parsed.host}${parsed.pathname}${parsed.search}`;
         return `${IMAGE_PROXY_URL}${encodeURIComponent(source)}`;
     } catch {
