@@ -248,11 +248,13 @@ function applyMobileVisualTheme() {
     const darkThemeActive = isMobileViewport() && mobileVisualTheme === 'dark';
 
     if (darkThemeActive) {
+        document.documentElement.dataset.mobileTheme = 'dark';
         document.body.dataset.mobileTheme = 'dark';
         document.documentElement.style.colorScheme = 'dark';
         return;
     }
 
+    delete document.documentElement.dataset.mobileTheme;
     delete document.body.dataset.mobileTheme;
     document.documentElement.style.colorScheme = 'light';
 }
