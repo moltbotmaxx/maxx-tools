@@ -1307,6 +1307,17 @@ canvas {
     overflow: hidden;
   }
 
+  body[data-auth-gate="open"] {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+  }
+
+  body[data-auth-gate="open"] .app-container {
+    height: 100svh;
+    overflow: hidden;
+  }
+
   body[data-auth-gate="open"] .main-content {
     overflow: hidden;
   }
