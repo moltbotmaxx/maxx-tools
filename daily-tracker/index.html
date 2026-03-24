@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=mobile-settings-global-13">
+    <link rel="stylesheet" href="styles.css?v=mobile-settings-global-14">
     <!-- Chart.js for Analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -39,6 +39,18 @@
             <p>Open <span class="ios-install-prompt__share">Share</span> and tap <span>Add to Home Screen</span>.</p>
         </div>
         <button id="iosInstallDismissBtn" class="ios-install-prompt__dismiss" type="button" aria-label="Dismiss install prompt">Not now</button>
+    </div>
+    <div id="iosClipboardPrompt" class="ios-clipboard-prompt" hidden>
+        <div class="ios-clipboard-prompt__copy">
+            <span class="ios-clipboard-prompt__eyebrow">Clipboard</span>
+            <strong>Paste link into Selection</strong>
+            <p>Open the link you copied in one tap.</p>
+            <p id="iosClipboardPromptStatus" class="ios-clipboard-prompt__status" hidden></p>
+        </div>
+        <div class="ios-clipboard-prompt__actions">
+            <button id="iosClipboardPasteBtn" class="ios-clipboard-prompt__button ios-clipboard-prompt__button--primary" type="button">Paste link</button>
+            <button id="iosClipboardDismissBtn" class="ios-clipboard-prompt__button" type="button" aria-label="Dismiss clipboard prompt">Not now</button>
+        </div>
     </div>
     <div class="app-container">
         <!-- Header with Tabs -->
@@ -826,7 +838,7 @@
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
     <script src="x-feed-config.js?v=mobile-settings-global-12"></script>
-    <script type="module" src="app.js?v=mobile-settings-global-13"></script>
+    <script type="module" src="app.js?v=mobile-settings-global-14"></script>
 </body>
 
 </html>

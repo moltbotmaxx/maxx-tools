@@ -98,6 +98,7 @@ let clipboardImportInFlight = null;
 let lastClipboardReadAttemptAt = 0;
 let lastClipboardReadFailureAt = 0;
 let lastHandledClipboardUrl = '';
+let suppressIosClipboardPrompt = false;
 
 // ===========================
 // News Ticker State
@@ -271,6 +272,44 @@ function syncIosInstallPrompt() {
     prompt.hidden = !shouldShow;
 }
 
+function setIosClipboardPromptStatus(message = '', tone = 'neutral') {
+    if (!elements?.iosClipboardPromptStatus) return;
+
+    const normalizedMessage = normalizeWhitespace(message);
+    elements.iosClipboardPromptStatus.textContent = normalizedMessage;
+    elements.iosClipboardPromptStatus.hidden = !normalizedMessage;
+    if (normalizedMessage) {
+        elements.iosClipboardPromptStatus.dataset.tone = tone;
+    } else {
+        delete elements.iosClipboardPromptStatus.dataset.tone;
+    }
+}
+
+function syncIosClipboardPrompt() {
+    const prompt = elements?.iosClipboardPrompt;
+    const splash = document.getElementById('launchSplash');
+    if (!prompt) return;
+
+    const splashVisible = !!splash && !splash.hidden && splash.dataset.state !== 'hidden';
+    const shouldShow = isStandaloneMode()
+        && isIPhoneDevice()
+        && !!currentUser?.uid
+        && !isLoadingUserData
+        && !isAuthStateResolving
+        && !document.hidden
+        && !splashVisible
+        && window.isSecureContext
+        && typeof navigator.clipboard?.readText === 'function'
+        && document.documentElement.dataset.authGate !== 'open'
+        && !document.querySelector('.modal-overlay.show')
+        && !suppressIosClipboardPrompt;
+
+    prompt.hidden = !shouldShow;
+    if (!shouldShow) {
+        setIosClipboardPromptStatus('');
+    }
+}
+
 function getRecentClipboardHandoff() {
     const recent = readJsonFromLocalStorage(MOBILE_CLIPBOARD_HANDOFF_KEY, null);
     if (!recent || typeof recent !== 'object') return null;
@@ -353,13 +392,15 @@ function openClipboardSelectionModal(url) {
     const normalizedUrl = safeHttpUrl(url, '');
     if (!normalizedUrl) return false;
 
+    suppressIosClipboardPrompt = true;
     markClipboardUrlHandled(normalizedUrl);
     switchTab('selection');
     showInspirationModal(normalizedUrl);
+    syncIosClipboardPrompt();
     return true;
 }
 
-async function maybeImportClipboardSelection({ force = false } = {}) {
+async function maybeImportClipboardSelection({ force = false, manual = false } = {}) {
     if (!force && clipboardImportInFlight) return clipboardImportInFlight;
     if (!canAutoImportClipboardSelection()) return false;
 
@@ -374,12 +415,18 @@ async function maybeImportClipboardSelection({ force = false } = {}) {
     lastClipboardReadAttemptAt = now;
     clipboardImportInFlight = (async () => {
         try {
+            if (manual) {
+                setIosClipboardPromptStatus('Reading clipboard...', 'neutral');
+            }
             const clipboardText = await navigator.clipboard.readText();
             const clipboardUrl = extractClipboardSelectionUrl(clipboardText);
             if (!canAutoImportClipboardSelection()) {
                 return false;
             }
             if (!clipboardUrl || hasRecentlyHandledClipboardUrl(clipboardUrl)) {
+                if (manual) {
+                    setIosClipboardPromptStatus('No new link found in clipboard.', 'warning');
+                }
                 return false;
             }
 
@@ -388,9 +435,13 @@ async function maybeImportClipboardSelection({ force = false } = {}) {
         } catch (error) {
             lastClipboardReadFailureAt = Date.now();
             console.debug('Clipboard selection import skipped', error);
+            if (manual) {
+                setIosClipboardPromptStatus('iPhone blocked paste. Try tapping Paste again.', 'error');
+            }
             return false;
         } finally {
             clipboardImportInFlight = null;
+            syncIosClipboardPrompt();
         }
     })();
 
@@ -408,6 +459,7 @@ function hideLaunchSplash({ immediate = false } = {}) {
             splash.hidden = true;
             syncIosInstallPrompt();
             void maybeImportClipboardSelection();
+            syncIosClipboardPrompt();
         }, 380);
     };
 
@@ -560,6 +612,7 @@ function syncResponsiveLayout(force = false) {
     syncTabButtonVisibility();
     syncMobileHeaderActions();
     syncIosInstallPrompt();
+    syncIosClipboardPrompt();
 
     if (!nextIsMobile) {
         mobileSelectedPoolCardId = null;
@@ -741,6 +794,10 @@ const elements = {
     mobileSettingsPanel: document.getElementById('mobileSettingsPanel'),
     iosInstallPrompt: document.getElementById('iosInstallPrompt'),
     iosInstallDismissBtn: document.getElementById('iosInstallDismissBtn'),
+    iosClipboardPrompt: document.getElementById('iosClipboardPrompt'),
+    iosClipboardPromptStatus: document.getElementById('iosClipboardPromptStatus'),
+    iosClipboardPasteBtn: document.getElementById('iosClipboardPasteBtn'),
+    iosClipboardDismissBtn: document.getElementById('iosClipboardDismissBtn'),
     accountViewStatus: document.getElementById('accountViewStatus'),
     managedAccountsGrid: document.getElementById('managedAccountsGrid'),
     managedAccountsModalOverlay: document.getElementById('managedAccountsModalOverlay'),
@@ -1980,6 +2037,7 @@ async function openManagedAccountsModal(mode = 'edit') {
     if (elements.managedAccountsModalOverlay) {
         elements.managedAccountsModalOverlay.classList.add('show');
     }
+    syncIosClipboardPrompt();
 
     try {
         const dataset = await fetchSentientAccountsDataset();
@@ -2003,6 +2061,7 @@ function closeManagedAccountsModal(force = false) {
         elements.managedAccountsModalOverlay.classList.remove('show');
     }
     void maybeImportClipboardSelection();
+    syncIosClipboardPrompt();
 }
 
 function getManagedAccountsModalSelection() {
@@ -4587,6 +4646,7 @@ function showSourceSelectionModal(draft) {
 
     elements.sourceSelectionModalOverlay.classList.add('show');
     elements.sourceSelectionTitle.focus();
+    syncIosClipboardPrompt();
 }
 
 function hideSourceSelectionModal() {
@@ -4594,6 +4654,7 @@ function hideSourceSelectionModal() {
         elements.sourceSelectionModalOverlay.classList.remove('show');
     }
     sourceSelectionDraft = null;
+    syncIosClipboardPrompt();
 }
 
 async function saveSourceSelectionIdea() {
@@ -5039,10 +5100,12 @@ function showInspirationModal(initialValue) {
 
     elements.inspirationModalOverlay.classList.add('show');
     elements.insModalTitle.focus();
+    syncIosClipboardPrompt();
 }
 
 function hideInspirationModal() {
     elements.inspirationModalOverlay.classList.remove('show');
+    syncIosClipboardPrompt();
 }
 
 async function addInspiration() {
@@ -5694,11 +5757,31 @@ function setupEventListeners() {
         });
     }
 
+    if (elements.iosClipboardPasteBtn) {
+        elements.iosClipboardPasteBtn.addEventListener('click', async () => {
+            const imported = await maybeImportClipboardSelection({ force: true, manual: true });
+            if (!imported) {
+                syncIosClipboardPrompt();
+            }
+        });
+    }
+
+    if (elements.iosClipboardDismissBtn) {
+        elements.iosClipboardDismissBtn.addEventListener('click', () => {
+            suppressIosClipboardPrompt = true;
+            syncIosClipboardPrompt();
+        });
+    }
+
     document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            suppressIosClipboardPrompt = false;
+        }
         if (!document.hidden && currentView === 'sourcing') {
             renderNews(true);
         }
         syncIosInstallPrompt();
+        syncIosClipboardPrompt();
         if (!document.hidden) {
             void maybeImportClipboardSelection();
         }
@@ -5706,6 +5789,7 @@ function setupEventListeners() {
 
     window.addEventListener('focus', () => {
         void maybeImportClipboardSelection();
+        syncIosClipboardPrompt();
     });
 
     // Global Week Navigation (ONLY for History now)
@@ -5971,6 +6055,7 @@ async function setupAuthSession() {
             updateAuthUI();
             updateSyncStatus('offline', 'Sign in required');
             setAuthGate('signin', 'Sign in with Google to load your workspace.');
+            syncIosClipboardPrompt();
             return;
         }
 
@@ -5996,6 +6081,7 @@ async function setupAuthSession() {
         } finally {
             isLoadingUserData = false;
             updateAuthUI();
+            syncIosClipboardPrompt();
         }
     });
 }

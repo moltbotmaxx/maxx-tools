@@ -296,12 +296,111 @@ body {
   font-weight: 700;
 }
 
+.ios-clipboard-prompt {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 90px);
+  z-index: 161;
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.16);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.ios-clipboard-prompt[hidden] {
+  display: none !important;
+}
+
+.ios-clipboard-prompt__copy {
+  display: grid;
+  gap: 4px;
+}
+
+.ios-clipboard-prompt__eyebrow {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.ios-clipboard-prompt__copy strong {
+  font-size: 0.98rem;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+.ios-clipboard-prompt__copy p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.ios-clipboard-prompt__status {
+  margin-top: 2px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+}
+
+.ios-clipboard-prompt__status[data-tone="success"] {
+  color: #14804a;
+}
+
+.ios-clipboard-prompt__status[data-tone="warning"] {
+  color: #b15d13;
+}
+
+.ios-clipboard-prompt__status[data-tone="error"] {
+  color: #c03a2b;
+}
+
+.ios-clipboard-prompt__actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.ios-clipboard-prompt__button {
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  background: rgba(247, 249, 252, 0.96);
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.ios-clipboard-prompt__button--primary {
+  background: #121826;
+  border-color: #121826;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(18, 24, 38, 0.18);
+}
+
+.ios-clipboard-prompt__button:disabled {
+  opacity: 0.55;
+}
+
 @media (min-width: 769px) {
   .launch-splash {
     display: none !important;
   }
 
   .ios-install-prompt {
+    display: none !important;
+  }
+
+  .ios-clipboard-prompt {
     display: none !important;
   }
 }
@@ -6570,6 +6669,50 @@ canvas {
     background: rgba(255, 255, 255, 0.06);
     border-color: rgba(255, 255, 255, 0.08);
     color: var(--text-secondary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt {
+    background: rgba(10, 10, 10, 0.96);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.42);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__eyebrow,
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__copy p {
+    color: var(--text-tertiary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__copy strong {
+    color: var(--text-primary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__button {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__button--primary {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #050505;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__status {
+    color: var(--text-tertiary);
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__status[data-tone="success"] {
+    color: #62d692;
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__status[data-tone="warning"] {
+    color: #ffb15c;
+  }
+
+  body[data-mobile-theme="dark"] .ios-clipboard-prompt__status[data-tone="error"] {
+    color: #ff8e8e;
   }
 
   body[data-mobile-theme="dark"] .account-mobile-chip.is-active {
