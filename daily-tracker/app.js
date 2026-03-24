@@ -11,6 +11,7 @@ const MOBILE_BREAKPOINT = 768;
 const STORAGE_KEY = 'contentSchedulerData';
 const NOTES_KEY = 'contentSchedulerNotes';
 const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
+const MOBILE_THEME_KEY = 'contentSchedulerMobileTheme';
 const DONE_ARTICLES_KEY = 'done_articles';
 const MANAGED_SENTIENT_ACCOUNTS_KEY = 'contentSchedulerManagedSentientAccounts';
 const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
@@ -84,6 +85,7 @@ let isAuthStateResolving = true;
 let mobileSelectedPoolCardId = null;
 let lastKnownMobileViewport = window.innerWidth <= MOBILE_BREAKPOINT;
 let isMobileSettingsOpen = false;
+let mobileVisualTheme = getInitialMobileTheme();
 
 // ===========================
 // News Ticker State
@@ -242,6 +244,19 @@ function setMobileSettingsOpen(isOpen) {
     renderMobileSettingsPanel();
 }
 
+function applyMobileVisualTheme() {
+    const darkThemeActive = isMobileViewport() && mobileVisualTheme === 'dark';
+
+    if (darkThemeActive) {
+        document.body.dataset.mobileTheme = 'dark';
+        document.documentElement.style.colorScheme = 'dark';
+        return;
+    }
+
+    delete document.body.dataset.mobileTheme;
+    document.documentElement.style.colorScheme = 'light';
+}
+
 function syncMobileHeaderActions() {
     if (!elements.exportBtn) return;
 
@@ -332,6 +347,7 @@ function syncResponsiveLayout(force = false) {
     if (!force && nextIsMobile === lastKnownMobileViewport) return;
 
     lastKnownMobileViewport = nextIsMobile;
+    applyMobileVisualTheme();
     syncTabButtonVisibility();
     syncMobileHeaderActions();
 
@@ -573,6 +589,24 @@ function normalizeWhitespace(value) {
     return String(value ?? '').replace(/\s+/g, ' ').trim();
 }
 
+function getInitialMobileTheme() {
+    const storedTheme = normalizeWhitespace(safeGetLocalStorageItem(MOBILE_THEME_KEY) || '').toLowerCase();
+    return storedTheme === 'dark' ? 'dark' : 'light';
+}
+
+function setMobileVisualTheme(nextTheme) {
+    mobileVisualTheme = nextTheme === 'dark' ? 'dark' : 'light';
+
+    if (mobileVisualTheme === 'dark') {
+        safeSetLocalStorageItem(MOBILE_THEME_KEY, 'dark');
+    } else {
+        safeRemoveLocalStorageItem(MOBILE_THEME_KEY);
+    }
+
+    applyMobileVisualTheme();
+    renderMobileSettingsPanel();
+}
+
 function getMobileAuthActionLabel() {
     if (isHandlingAuthAction) {
         return currentUser ? 'Signing out...' : 'Connecting...';
@@ -588,6 +622,20 @@ function buildMobileSettingsPanelContent() {
     const statusText = normalizeWhitespace(elements.newsRefreshStatus?.textContent || 'Idle');
     const authActionLabel = getMobileAuthActionLabel();
     const authBusy = isHandlingAuthAction || (isAuthStateResolving && !currentUser);
+    const themeToggle = `
+        <label class="mobile-settings-panel__toggle" for="mobileSettingsDarkMode">
+            <span>Dark Mode</span>
+            <span class="mobile-settings-panel__switch">
+                <input
+                    id="mobileSettingsDarkMode"
+                    type="checkbox"
+                    data-mobile-settings-toggle="dark-mode"
+                    ${mobileVisualTheme === 'dark' ? 'checked' : ''}
+                >
+                <span class="mobile-settings-panel__switch-track"></span>
+            </span>
+        </label>
+    `;
     const showAuthButton = `
         <button
             class="mobile-settings-panel__button mobile-settings-panel__button--primary"
@@ -602,6 +650,7 @@ function buildMobileSettingsPanelContent() {
     if (currentView === 'account') {
         return `
             <div class="mobile-settings-panel__section">
+                ${themeToggle}
                 <button
                     class="mobile-settings-panel__button"
                     type="button"
@@ -618,6 +667,7 @@ function buildMobileSettingsPanelContent() {
     if (currentView === 'sourcing') {
         return `
             <div class="mobile-settings-panel__section">
+                ${themeToggle}
                 <label class="mobile-settings-panel__toggle" for="mobileSettingsShowDone">
                     <span>Show Done</span>
                     <span class="mobile-settings-panel__switch">
@@ -653,6 +703,7 @@ function buildMobileSettingsPanelContent() {
 
     return `
         <div class="mobile-settings-panel__section">
+            ${themeToggle}
             ${showAuthButton}
         </div>
     `;
@@ -5359,11 +5410,19 @@ function setupEventListeners() {
         });
 
         elements.mobileSettingsPanel.addEventListener('change', (event) => {
-            const toggle = event.target.closest('[data-mobile-settings-toggle="show-done"]');
-            if (!toggle || !elements.showDoneNews) return;
+            const toggle = event.target.closest('[data-mobile-settings-toggle]');
+            if (!toggle) return;
 
-            elements.showDoneNews.checked = toggle.checked;
-            elements.showDoneNews.dispatchEvent(new Event('change', { bubbles: true }));
+            const toggleType = toggle.dataset.mobileSettingsToggle || '';
+            if (toggleType === 'dark-mode') {
+                setMobileVisualTheme(toggle.checked ? 'dark' : 'light');
+                return;
+            }
+
+            if (toggleType === 'show-done' && elements.showDoneNews) {
+                elements.showDoneNews.checked = toggle.checked;
+                elements.showDoneNews.dispatchEvent(new Event('change', { bubbles: true }));
+            }
         });
     }
 
@@ -5666,6 +5725,7 @@ async function setupAuthSession() {
 
 async function init() {
     // Apply persisted tab immediately so refresh doesn't flash/reset to first tab.
+    applyMobileVisualTheme();
     switchTab(currentView);
     loadPendingExtensionIdeasBuffer();
     setupEventListeners();

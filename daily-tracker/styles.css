@@ -5959,6 +5959,166 @@ canvas {
     color: #b45309;
   }
 
+  body[data-mobile-theme="dark"] {
+    --bg-primary: #071019;
+    --bg-secondary: #0d1622;
+    --bg-tertiary: #162131;
+    --bg-card: rgba(13, 22, 34, 0.9);
+    --bg-glass: rgba(10, 18, 28, 0.82);
+    --text-primary: #f3f7fd;
+    --text-secondary: #c3d1e2;
+    --text-tertiary: #8da2ba;
+    --text-muted: #6d8198;
+    --border-subtle: rgba(148, 163, 184, 0.14);
+    --border-light: rgba(148, 163, 184, 0.2);
+    --border-glass: rgba(148, 163, 184, 0.18);
+    --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.18);
+    --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.28);
+    --shadow-lg: 0 28px 56px rgba(0, 0, 0, 0.36);
+    background:
+      radial-gradient(circle at top, rgba(36, 84, 145, 0.2), transparent 42%),
+      linear-gradient(180deg, #071019 0%, #0b1420 100%);
+    color-scheme: dark;
+  }
+
+  body[data-mobile-theme="dark"] .header {
+    background: rgba(9, 15, 24, 0.92);
+    border-bottom-color: rgba(148, 163, 184, 0.12);
+  }
+
+  body[data-mobile-theme="dark"] .sync-status,
+  body[data-mobile-theme="dark"] .auth-user,
+  body[data-mobile-theme="dark"] .week-indicator,
+  body[data-mobile-theme="dark"] .global-week-nav,
+  body[data-mobile-theme="dark"] .auth-btn,
+  body[data-mobile-theme="dark"] .action-btn,
+  body[data-mobile-theme="dark"] .icon-btn,
+  body[data-mobile-theme="dark"] .content-card,
+  body[data-mobile-theme="dark"] .scheduled-card,
+  body[data-mobile-theme="dark"] .inspiration-card,
+  body[data-mobile-theme="dark"] .magazine-card,
+  body[data-mobile-theme="dark"] .account-story-card,
+  body[data-mobile-theme="dark"] .account-empty-card,
+  body[data-mobile-theme="dark"] .account-mobile-panel__hero,
+  body[data-mobile-theme="dark"] .account-mobile-pill,
+  body[data-mobile-theme="dark"] .account-mobile-metric,
+  body[data-mobile-theme="dark"] .account-mobile-chip,
+  body[data-mobile-theme="dark"] .mobile-sourcing-tab,
+  body[data-mobile-theme="dark"] .mobile-settings-panel,
+  body[data-mobile-theme="dark"] .mobile-settings-panel__button,
+  body[data-mobile-theme="dark"] .mobile-settings-panel__toggle,
+  body[data-mobile-theme="dark"] .mobile-settings-panel__status,
+  body[data-mobile-theme="dark"] #sourcing-view .news-header,
+  body[data-mobile-theme="dark"] #sourcing-view .mobile-sourcing-controls,
+  body[data-mobile-theme="dark"] #sourcing-view .news-main,
+  body[data-mobile-theme="dark"] #sourcing-view .sidebar-section,
+  body[data-mobile-theme="dark"] #selection-view .inspiration-grid-container,
+  body[data-mobile-theme="dark"] #selection-view .inspiration-input-box {
+    background: rgba(13, 22, 34, 0.92) !important;
+    color: var(--text-primary);
+    border-color: rgba(148, 163, 184, 0.16) !important;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+  }
+
+  body[data-mobile-theme="dark"] .sync-status,
+  body[data-mobile-theme="dark"] .auth-user {
+    background: rgba(148, 163, 184, 0.1) !important;
+  }
+
+  body[data-mobile-theme="dark"] .mobile-settings-panel__header span,
+  body[data-mobile-theme="dark"] .account-mobile-panel__topbar p,
+  body[data-mobile-theme="dark"] .account-mobile-panel__hero-copy p,
+  body[data-mobile-theme="dark"] .account-mobile-panel__footer,
+  body[data-mobile-theme="dark"] .account-mobile-pill span,
+  body[data-mobile-theme="dark"] .account-mobile-metric span,
+  body[data-mobile-theme="dark"] .magazine-card__reason,
+  body[data-mobile-theme="dark"] .magazine-card__date,
+  body[data-mobile-theme="dark"] .magazine-card__meta,
+  body[data-mobile-theme="dark"] .card-link-btn,
+  body[data-mobile-theme="dark"] .card-delete,
+  body[data-mobile-theme="dark"] .box-header h2 svg {
+    color: var(--text-tertiary) !important;
+  }
+
+  body[data-mobile-theme="dark"] .tab-nav {
+    background: rgba(9, 15, 24, 0.94);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32);
+  }
+
+  body[data-mobile-theme="dark"] .tab-btn {
+    color: var(--text-tertiary);
+  }
+
+  body[data-mobile-theme="dark"] .tab-btn.active {
+    background: rgba(24, 38, 55, 0.96);
+    color: #f8fbff;
+  }
+
+  body[data-mobile-theme="dark"] #exportBtn.mobile-settings-btn {
+    background: rgba(14, 24, 36, 0.96);
+    color: #d6e4f3;
+    border-color: rgba(148, 163, 184, 0.14);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.26);
+  }
+
+  body[data-mobile-theme="dark"] #exportBtn.mobile-settings-btn.is-active,
+  body[data-mobile-theme="dark"] .mobile-settings-panel__button--primary,
+  body[data-mobile-theme="dark"] .mobile-sourcing-tab.active {
+    background: linear-gradient(135deg, #2a6edc 0%, #1c4fa2 100%) !important;
+    color: #ffffff !important;
+    border-color: rgba(72, 145, 255, 0.44) !important;
+  }
+
+  body[data-mobile-theme="dark"] .mobile-settings-panel__toggle,
+  body[data-mobile-theme="dark"] .mobile-settings-panel__button,
+  body[data-mobile-theme="dark"] .mobile-sourcing-tab,
+  body[data-mobile-theme="dark"] .account-mobile-chip,
+  body[data-mobile-theme="dark"] .account-mobile-panel__hero,
+  body[data-mobile-theme="dark"] .account-mobile-pill,
+  body[data-mobile-theme="dark"] .account-mobile-metric {
+    color: var(--text-secondary);
+  }
+
+  body[data-mobile-theme="dark"] .mobile-settings-panel__switch-track {
+    background: rgba(148, 163, 184, 0.22);
+  }
+
+  body[data-mobile-theme="dark"] .mobile-settings-panel__switch-track::after {
+    background: #f8fbff;
+  }
+
+  body[data-mobile-theme="dark"] .mobile-settings-panel__status {
+    background: rgba(18, 28, 42, 0.96) !important;
+    color: var(--text-secondary) !important;
+  }
+
+  body[data-mobile-theme="dark"] .mobile-sourcing-filter select {
+    background: rgba(13, 22, 34, 0.96);
+    color: var(--text-primary);
+    border-color: rgba(148, 163, 184, 0.16);
+  }
+
+  body[data-mobile-theme="dark"] .account-mobile-chip.is-active {
+    background: linear-gradient(135deg, rgba(42, 110, 220, 0.28), rgba(13, 22, 34, 0.98)) !important;
+    border-color: rgba(72, 145, 255, 0.34) !important;
+    color: #eaf2ff !important;
+  }
+
+  body[data-mobile-theme="dark"] .send-selection-btn,
+  body[data-mobile-theme="dark"] .selection-clipper-link {
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+  }
+
+  body[data-mobile-theme="dark"] .empty-slot {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(148, 163, 184, 0.18);
+  }
+
+  body[data-mobile-theme="dark"] .empty-slot::after {
+    color: rgba(148, 163, 184, 0.3);
+  }
+
   .main-content {
     padding: 12px 8px 104px;
     overflow-x: hidden;
