@@ -20,6 +20,12 @@ const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
 const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
 const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
 const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
+const SHORTCUT_SHARE_TARGET_PARAMS = ['dt_share', 'share'];
+const SHORTCUT_SHARE_QUERY_PARAMS = ['dt_share', 'share', 'url', 'link', 'title', 'name', 'notes', 'text', 'type', 'uid', 'user', 'ownerUid'];
+const SHORTCUT_SHARE_OWNER_PARAMS = ['uid', 'user', 'ownerUid'];
+const SHORTCUT_SHARE_SELECTION_TARGET = 'selection';
+const SHORTCUT_URL_PLACEHOLDER = '__ENCODED_SHARED_URL__';
+const SHORTCUT_INSTALL_SHARE_URL = '';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
 const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics', 'history']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
@@ -593,6 +599,18 @@ const elements = {
     sourceSelectionTitle: document.getElementById('sourceSelectionTitle'),
     sourceSelectionNotes: document.getElementById('sourceSelectionNotes'),
     sourceSelectionCategorySelector: document.getElementById('sourceSelectionCategorySelector'),
+    shortcutInstallLink: document.getElementById('shortcutInstallLink'),
+    shortcutSetupBtn: document.getElementById('shortcutSetupBtn'),
+    shortcutModalOverlay: document.getElementById('shortcutModalOverlay'),
+    shortcutModalCloseBtn: document.getElementById('shortcutModalCloseBtn'),
+    shortcutModalDismissBtn: document.getElementById('shortcutModalDismissBtn'),
+    shortcutConfigBaseUrl: document.getElementById('shortcutConfigBaseUrl'),
+    shortcutConfigUid: document.getElementById('shortcutConfigUid'),
+    shortcutConfigExampleUrl: document.getElementById('shortcutConfigExampleUrl'),
+    shortcutConfigStatus: document.getElementById('shortcutConfigStatus'),
+    shortcutCopyBaseUrlBtn: document.getElementById('shortcutCopyBaseUrlBtn'),
+    shortcutCopyUidBtn: document.getElementById('shortcutCopyUidBtn'),
+    shortcutCopyExampleUrlBtn: document.getElementById('shortcutCopyExampleUrlBtn'),
     syncStatus: document.getElementById('syncStatus'),
     syncText: document.querySelector('#syncStatus .sync-text'),
     authGate: document.getElementById('authGate'),
@@ -922,6 +940,267 @@ function safeHttpUrl(url, fallback = '#') {
     }
 }
 
+function prettifyUrlTitlePart(value) {
+    let decoded = String(value ?? '').trim();
+    if (!decoded) return '';
+    try {
+        decoded = decodeURIComponent(decoded);
+    } catch {
+        // Ignore malformed segments and keep the raw value.
+    }
+    decoded = decodeEntities(decoded);
+    if (!decoded) return '';
+    return decoded
+        .replace(/[-_+]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .replace(/\b\w/g, char => char.toUpperCase());
+}
+
+function buildImportedIdeaTitle(rawTitle = '', rawUrl = '', fallbackText = '') {
+    const explicitTitle = normalizeWhitespace(rawTitle);
+    if (explicitTitle && !explicitTitle.includes('://')) return explicitTitle;
+
+    const noteLead = normalizeWhitespace(fallbackText);
+    if (noteLead && noteLead.length <= 80 && !noteLead.includes('://')) {
+        return noteLead;
+    }
+
+    const safeUrl = safeHttpUrl(rawUrl, '');
+    if (!safeUrl) return explicitTitle || '';
+
+    try {
+        const parsed = new URL(safeUrl);
+        const segments = parsed.pathname.split('/').filter(Boolean);
+
+        for (let index = segments.length - 1; index >= 0; index -= 1) {
+            const segment = segments[index];
+            if (!segment || /^\d+$/.test(segment) || segment.toLowerCase() === 'status') continue;
+
+            const prettySegment = prettifyUrlTitlePart(segment);
+            if (prettySegment) return prettySegment;
+        }
+
+        const hostname = parsed.hostname.replace(/^www\./i, '');
+        const hostRoot = hostname.split('.').slice(0, -1).join('.') || hostname;
+        return prettifyUrlTitlePart(hostRoot) || hostname;
+    } catch {
+        return explicitTitle || '';
+    }
+}
+
+function getSearchParamValue(searchParams, paramNames = []) {
+    for (const paramName of paramNames) {
+        const value = searchParams.get(paramName);
+        if (value !== null && String(value).trim() !== '') return value;
+    }
+    return '';
+}
+
+function normalizeIdeaType(value) {
+    const normalized = normalizeWhitespace(value).toLowerCase();
+    return ['post', 'reel', 'promo'].includes(normalized) ? normalized : 'post';
+}
+
+function clearShortcutShareParams(url) {
+    if (!url || typeof window === 'undefined' || !window.history?.replaceState) return;
+
+    let didMutate = false;
+    SHORTCUT_SHARE_QUERY_PARAMS.forEach((paramName) => {
+        if (!url.searchParams.has(paramName)) return;
+        url.searchParams.delete(paramName);
+        didMutate = true;
+    });
+
+    if (!didMutate) return;
+
+    const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+    window.history.replaceState({}, document.title, nextUrl);
+}
+
+function consumeShortcutShareFromUrl() {
+    let currentUrl;
+    try {
+        currentUrl = new URL(window.location.href);
+    } catch {
+        return false;
+    }
+
+    const shareTarget = normalizeWhitespace(
+        getSearchParamValue(currentUrl.searchParams, SHORTCUT_SHARE_TARGET_PARAMS)
+    ).toLowerCase();
+
+    if (shareTarget !== SHORTCUT_SHARE_SELECTION_TARGET) {
+        return false;
+    }
+
+    const sharedUrl = safeHttpUrl(
+        getSearchParamValue(currentUrl.searchParams, ['url', 'link']),
+        ''
+    );
+    const sharedNotes = [
+        String(currentUrl.searchParams.get('notes') || '').trim(),
+        String(currentUrl.searchParams.get('text') || '').trim()
+    ].filter((value, index, list) => value && list.indexOf(value) === index).join('\n\n');
+    const sharedType = normalizeIdeaType(currentUrl.searchParams.get('type'));
+    const sharedOwnerUid = normalizeWhitespace(
+        getSearchParamValue(currentUrl.searchParams, SHORTCUT_SHARE_OWNER_PARAMS)
+    );
+    const sharedTitle = buildImportedIdeaTitle(
+        getSearchParamValue(currentUrl.searchParams, ['title', 'name']),
+        sharedUrl,
+        sharedNotes
+    );
+
+    clearShortcutShareParams(currentUrl);
+
+    if (!sharedUrl && !sharedTitle && !sharedNotes) {
+        return false;
+    }
+
+    queuePendingExtensionIdeas([{
+        id: generateId(),
+        title: sharedTitle || 'Shared Link',
+        url: sharedUrl,
+        notes: sharedNotes,
+        content: sharedNotes,
+        type: sharedType,
+        ownerUid: sharedOwnerUid,
+        image: '',
+        createdAt: new Date().toISOString()
+    }]);
+
+    currentView = 'selection';
+    try {
+        localStorage.setItem(ACTIVE_TAB_KEY, currentView);
+    } catch (e) {
+        console.warn('Failed to persist shared-link tab focus', e);
+    }
+
+    return true;
+}
+
+function getTrackerAppShareUrl() {
+    return `${window.location.origin}${window.location.pathname}`;
+}
+
+function getShortcutInstallShareUrl() {
+    return safeHttpUrl(SHORTCUT_INSTALL_SHARE_URL, '');
+}
+
+function buildShortcutShareExampleUrl(user = currentUser) {
+    const url = new URL(getTrackerAppShareUrl());
+    url.searchParams.set('dt_share', SHORTCUT_SHARE_SELECTION_TARGET);
+    if (user?.uid) {
+        url.searchParams.set('uid', user.uid);
+    }
+    url.searchParams.set('url', SHORTCUT_URL_PLACEHOLDER);
+    return url.toString();
+}
+
+function setShortcutConfigStatus(message = '', tone = 'neutral') {
+    if (!elements.shortcutConfigStatus) return;
+    elements.shortcutConfigStatus.textContent = message;
+    elements.shortcutConfigStatus.dataset.tone = tone;
+}
+
+function syncShortcutSetupUi() {
+    const signedIn = !!currentUser?.uid;
+    const installUrl = getShortcutInstallShareUrl();
+    const buttonLabel = signedIn ? 'Shortcut Setup' : 'Shortcut Setup · sign in';
+
+    if (elements.shortcutInstallLink) {
+        elements.shortcutInstallLink.hidden = !installUrl;
+        if (installUrl) {
+            elements.shortcutInstallLink.href = installUrl;
+            elements.shortcutInstallLink.title = 'Install the shared iPhone Shortcut';
+        } else {
+            elements.shortcutInstallLink.removeAttribute('href');
+            elements.shortcutInstallLink.title = 'Add a shared shortcut URL in app.js to enable one-tap install';
+        }
+    }
+
+    if (elements.shortcutSetupBtn) {
+        elements.shortcutSetupBtn.disabled = !signedIn;
+        elements.shortcutSetupBtn.textContent = buttonLabel;
+        elements.shortcutSetupBtn.title = signedIn
+            ? 'Configure the iPhone Share Sheet shortcut'
+            : 'Sign in first to scope the shortcut to your account';
+    }
+
+    if (elements.shortcutConfigBaseUrl) {
+        elements.shortcutConfigBaseUrl.value = getTrackerAppShareUrl();
+    }
+    if (elements.shortcutConfigUid) {
+        elements.shortcutConfigUid.value = signedIn ? currentUser.uid : '';
+    }
+    if (elements.shortcutConfigExampleUrl) {
+        elements.shortcutConfigExampleUrl.value = signedIn ? buildShortcutShareExampleUrl(currentUser) : '';
+    }
+
+    if (!signedIn) {
+        setShortcutConfigStatus('Sign in first so the shortcut can stay scoped to your account.', 'error');
+        return;
+    }
+
+    const label = currentUser.email || getUserLabel(currentUser) || currentUser.uid;
+    const installSuffix = installUrl
+        ? ' Install Shortcut is available above.'
+        : ' Add a shared shortcut URL in app.js to enable one-tap install.';
+    setShortcutConfigStatus(`Shares from this shortcut will wait for ${label}.${installSuffix}`, 'success');
+}
+
+function openShortcutSetupModal() {
+    syncShortcutSetupUi();
+    if (!elements.shortcutModalOverlay) return;
+    elements.shortcutModalOverlay.classList.add('show');
+}
+
+function closeShortcutSetupModal() {
+    if (!elements.shortcutModalOverlay) return;
+    elements.shortcutModalOverlay.classList.remove('show');
+}
+
+async function copyTextToClipboard(text) {
+    if (!text) return false;
+
+    try {
+        if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(text);
+            return true;
+        }
+    } catch (e) {
+        console.warn('Clipboard API unavailable', e);
+    }
+
+    const helper = document.createElement('textarea');
+    helper.value = text;
+    helper.setAttribute('readonly', 'readonly');
+    helper.style.position = 'fixed';
+    helper.style.opacity = '0';
+    document.body.appendChild(helper);
+    helper.focus();
+    helper.select();
+
+    let copied = false;
+    try {
+        copied = document.execCommand('copy');
+    } catch (e) {
+        console.warn('execCommand copy failed', e);
+    }
+
+    helper.remove();
+    return copied;
+}
+
+async function copyShortcutConfigValue(value, successMessage) {
+    const copied = await copyTextToClipboard(value);
+    setShortcutConfigStatus(
+        copied ? successMessage : 'Copy failed. Select the field manually and try again.',
+        copied ? 'success' : 'error'
+    );
+}
+
 function toSafeNumber(value, fallback = 0) {
     const num = Number(value);
     return Number.isFinite(num) ? num : fallback;
@@ -1193,6 +1472,7 @@ function normalizeImportedIdea(rawIdea) {
     if (!title) return null;
 
     const type = ['post', 'reel', 'promo'].includes(rawIdea.type) ? rawIdea.type : 'post';
+    const ownerUid = normalizeWhitespace(rawIdea.ownerUid || rawIdea.userUid || '');
     const notes = typeof rawIdea.notes === 'string'
         ? rawIdea.notes
         : (typeof rawIdea.content === 'string' ? rawIdea.content : '');
@@ -1206,6 +1486,7 @@ function normalizeImportedIdea(rawIdea) {
         notes,
         extraLinks: typeof rawIdea.extraLinks === 'string' ? rawIdea.extraLinks : '',
         type,
+        ownerUid,
         createdAt: typeof rawIdea.createdAt === 'string' ? rawIdea.createdAt : new Date().toISOString()
     };
 }
@@ -1244,7 +1525,9 @@ function mergeIdeasIntoAppData(ideas = []) {
     [...ideas].reverse().forEach(idea => {
         if (!idea || existingIds.has(idea.id)) return;
         existingIds.add(idea.id);
-        appData.ideas.unshift(idea);
+        const persistedIdea = { ...idea };
+        delete persistedIdea.ownerUid;
+        appData.ideas.unshift(persistedIdea);
         addedCount += 1;
     });
 
@@ -1255,10 +1538,22 @@ async function drainPendingExtensionIdeas() {
     if (!currentUser?.uid || !pendingExtensionIdeas.length || isLoadingUserData) return 0;
 
     const queuedIdeas = pendingExtensionIdeas.slice();
-    pendingExtensionIdeas = [];
+    const acceptedIdeas = [];
+    const deferredIdeas = [];
+
+    queuedIdeas.forEach((idea) => {
+        const expectedOwnerUid = normalizeWhitespace(idea?.ownerUid || '');
+        if (expectedOwnerUid && expectedOwnerUid !== currentUser.uid) {
+            deferredIdeas.push(idea);
+            return;
+        }
+        acceptedIdeas.push(idea);
+    });
+
+    pendingExtensionIdeas = deferredIdeas;
     persistPendingExtensionIdeasBuffer();
 
-    const addedCount = mergeIdeasIntoAppData(queuedIdeas);
+    const addedCount = mergeIdeasIntoAppData(acceptedIdeas);
     if (!addedCount) return 0;
 
     renderInspiration();
@@ -1330,6 +1625,7 @@ function updateAuthUI() {
     }
 
     updateAuthButtons({ busy: isHandlingAuthAction, signedIn: !!currentUser });
+    syncShortcutSetupUi();
 }
 
 function setAuthGate(mode = 'signin', statusText = '') {
@@ -5751,6 +6047,47 @@ function setupEventListeners() {
         });
     }
 
+    if (elements.shortcutSetupBtn) {
+        elements.shortcutSetupBtn.addEventListener('click', openShortcutSetupModal);
+    }
+    if (elements.shortcutModalDismissBtn) {
+        elements.shortcutModalDismissBtn.addEventListener('click', closeShortcutSetupModal);
+    }
+    if (elements.shortcutModalCloseBtn) {
+        elements.shortcutModalCloseBtn.addEventListener('click', closeShortcutSetupModal);
+    }
+    if (elements.shortcutModalOverlay) {
+        elements.shortcutModalOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.shortcutModalOverlay) {
+                closeShortcutSetupModal();
+            }
+        });
+    }
+    if (elements.shortcutCopyBaseUrlBtn) {
+        elements.shortcutCopyBaseUrlBtn.addEventListener('click', () => {
+            copyShortcutConfigValue(
+                elements.shortcutConfigBaseUrl?.value || '',
+                'Daily Tracker URL copied.'
+            );
+        });
+    }
+    if (elements.shortcutCopyUidBtn) {
+        elements.shortcutCopyUidBtn.addEventListener('click', () => {
+            copyShortcutConfigValue(
+                elements.shortcutConfigUid?.value || '',
+                'Expected user ID copied.'
+            );
+        });
+    }
+    if (elements.shortcutCopyExampleUrlBtn) {
+        elements.shortcutCopyExampleUrlBtn.addEventListener('click', () => {
+            copyShortcutConfigValue(
+                elements.shortcutConfigExampleUrl?.value || '',
+                'Shortcut URL example copied.'
+            );
+        });
+    }
+
     if (elements.managedAccountsSaveBtn) {
         elements.managedAccountsSaveBtn.addEventListener('click', saveManagedAccountsSelection);
     }
@@ -5875,10 +6212,13 @@ async function setupAuthSession() {
 }
 
 async function init() {
+    loadPendingExtensionIdeasBuffer();
+    consumeShortcutShareFromUrl();
+
     // Apply persisted tab immediately so refresh doesn't flash/reset to first tab.
     applyMobileVisualTheme();
     switchTab(currentView);
-    loadPendingExtensionIdeasBuffer();
+    syncShortcutSetupUi();
     setupEventListeners();
     window.addEventListener('message', handleExtensionImportEvent);
     syncResponsiveLayout(true);

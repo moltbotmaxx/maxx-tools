@@ -281,10 +281,19 @@
                         <section class="inspiration-input-box bento-box" style="margin-bottom: 24px;">
                             <div class="box-header">
                                 <h2>📥 Add Selection</h2>
-                                <a class="selection-clipper-link"
-                                    href="./extension/daily-tracker-clipper-login.zip" download>
-                                    Clipper · nav-account-first
-                                </a>
+                                <div class="selection-header-actions">
+                                    <a class="selection-shortcut-action selection-shortcut-action--install" id="shortcutInstallLink"
+                                        href="#" target="_blank" rel="noopener noreferrer" hidden>
+                                        Install Shortcut
+                                    </a>
+                                    <button class="selection-clipper-link selection-clipper-link--button" id="shortcutSetupBtn" type="button">
+                                        Shortcut Setup
+                                    </button>
+                                    <a class="selection-clipper-link"
+                                        href="./extension/daily-tracker-clipper-login.zip" download>
+                                        Clipper · nav-account-first
+                                    </a>
+                                </div>
                             </div>
                             <div class="link-input-group">
                                 <input type="text" id="inspirationMainInput"
@@ -791,6 +800,51 @@
             <div class="modal-actions">
                 <button class="action-btn" id="sourceSelectionCancelBtn">Cancel</button>
                 <button class="action-btn premium-btn" id="sourceSelectionSaveBtn">Save to Selection</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="shortcutModalOverlay" class="modal-overlay">
+        <div class="modal-content bento-box shortcut-modal" style="max-width: 520px;">
+            <div class="box-header">
+                <h2 style="color: var(--accent-primary);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 7V5a4 4 0 0 1 8 0v2"></path>
+                        <rect x="4" y="7" width="16" height="13" rx="2"></rect>
+                        <path d="M12 11v5"></path>
+                    </svg>
+                    iPhone Share Shortcut
+                </h2>
+                <button class="icon-btn" id="shortcutModalCloseBtn"
+                    style="font-size: 1.5rem; line-height: 1;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="shortcut-modal__description">
+                    Build the Share Sheet shortcut with these values. The shortcut will carry your expected user ID, so imported links stay queued until this same account is logged in.
+                </p>
+                <div class="shortcut-modal__status" id="shortcutConfigStatus" data-tone="neutral"></div>
+                <div class="modal-field">
+                    <label>Daily Tracker URL</label>
+                    <div class="shortcut-modal__field-row">
+                        <input type="text" id="shortcutConfigBaseUrl" readonly />
+                        <button class="action-btn" id="shortcutCopyBaseUrlBtn" type="button">Copy</button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label>Expected User ID</label>
+                    <div class="shortcut-modal__field-row">
+                        <input type="text" id="shortcutConfigUid" readonly />
+                        <button class="action-btn" id="shortcutCopyUidBtn" type="button">Copy</button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label>Shortcut URL Example</label>
+                    <textarea id="shortcutConfigExampleUrl" class="modal-textarea" rows="4" readonly></textarea>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" id="shortcutCopyExampleUrlBtn" type="button">Copy Example</button>
+                <button class="action-btn premium-btn" id="shortcutModalDismissBtn" type="button">Close</button>
             </div>
         </div>
     </div>

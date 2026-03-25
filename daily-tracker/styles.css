@@ -3374,8 +3374,109 @@ canvas {
   transition: color var(--transition-fast);
 }
 
+.selection-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.selection-shortcut-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 122, 255, 0.18);
+  background: rgba(0, 122, 255, 0.08);
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+.selection-shortcut-action:hover {
+  background: rgba(0, 122, 255, 0.14);
+  box-shadow: 0 8px 18px rgba(0, 122, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.selection-clipper-link--button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.selection-clipper-link--button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .selection-clipper-link:hover {
   color: var(--accent-primary);
+}
+
+.selection-clipper-link--button:disabled:hover {
+  color: var(--text-muted);
+}
+
+.shortcut-modal__description {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.shortcut-modal__status {
+  min-height: 20px;
+  margin-bottom: 14px;
+  color: var(--text-tertiary);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.shortcut-modal__status[data-tone="success"] {
+  color: var(--accent-success);
+}
+
+.shortcut-modal__status[data-tone="error"] {
+  color: #FF3B30;
+}
+
+.shortcut-modal__field-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.shortcut-modal__field-row .action-btn {
+  min-height: 48px;
+  padding: 0 16px;
+  height: auto;
+  white-space: nowrap;
+}
+
+.shortcut-modal input[readonly],
+.shortcut-modal textarea[readonly] {
+  background: var(--bg-primary);
+}
+
+@media (max-width: 520px) {
+  .shortcut-modal__field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .selection-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 .premium-btn {
