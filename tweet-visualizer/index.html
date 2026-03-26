@@ -85,7 +85,7 @@
     /* ── Main Layout ── */
     .app-body {
       display: grid;
-      grid-template-columns: 320px 1fr;
+      grid-template-columns: 390px 1fr;
       flex: 1;
       min-height: 0;
       overflow: hidden;
@@ -143,7 +143,8 @@
     }
 
     .field__input,
-    .field__select {
+    .field__select,
+    .field__textarea {
       width: 100%;
       border: 1px solid var(--border-light);
       background: var(--bg-primary);
@@ -157,7 +158,8 @@
     }
 
     .field__input:focus,
-    .field__select:focus {
+    .field__select:focus,
+    .field__textarea:focus {
       border-color: var(--accent-primary);
       box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
     }
@@ -167,6 +169,41 @@
       font-size: 0.82rem;
     }
 
+    .field__textarea {
+      min-height: 150px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+
+    .field__label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .field__hint {
+      margin: 0;
+      font-size: 0.72rem;
+      line-height: 1.35;
+      color: var(--text-muted);
+    }
+
+    .field__hint-inline {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .field__input--number {
+      width: 92px;
+      padding: 9px 10px;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
     /* ── Two-Column Grid ── */
     .grid-2 {
       display: grid;
@@ -174,31 +211,31 @@
       gap: 10px;
     }
 
-    /* ── Slider Row ── */
-    .slider-row {
+    .url-row,
+    .slider-pair,
+    .actions-row,
+    .chip-row {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .slider-row input[type="range"] {
+    .slider-pair {
+      width: 100%;
+    }
+
+    .slider-pair input[type="range"] {
       flex: 1;
       accent-color: var(--accent-primary);
       height: 4px;
     }
 
-    .slider-row__value {
-      min-width: 52px;
-      text-align: right;
-      color: var(--accent-primary);
-      font-weight: 700;
-      font-size: 0.82rem;
-      font-variant-numeric: tabular-nums;
+    .url-row {
+      align-items: stretch;
     }
 
-    .slider-row__value--sm {
-      min-width: 38px;
-      font-size: 0.78rem;
+    .url-row .field__input {
+      flex: 1;
     }
 
     /* ── Switch Row ── */
@@ -215,6 +252,55 @@
       height: 15px;
       accent-color: var(--accent-primary);
       flex-shrink: 0;
+    }
+
+    .actions-row,
+    .chip-row {
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    .chip-row {
+      gap: 8px;
+    }
+
+    .btn-secondary,
+    .btn-chip {
+      border: 1px solid var(--border-light);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      border-radius: 999px;
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+    }
+
+    .btn-secondary {
+      border-radius: var(--radius-sm);
+      padding: 10px 13px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    .btn-secondary:hover,
+    .btn-chip:hover {
+      border-color: rgba(29, 155, 240, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-chip.is-active {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: #ffffff;
+      box-shadow: 0 8px 18px rgba(0, 122, 255, 0.18);
+    }
+
+    .btn-secondary--ghost {
+      background: transparent;
     }
 
     /* ── Status Bar ── */
@@ -348,10 +434,19 @@
       --card-muted: #71767b;
       --card-media-bg: #0f1419;
       --card-avatar-bg: #2f3336;
+      --tweet-padding: 20px;
+      --tweet-radius: 18px;
+      --tweet-avatar-size: 44px;
+      --tweet-body-size: 18.5px;
+      --tweet-body-line-height: 1.45;
+      --tweet-name-size: 16px;
+      --tweet-handle-size: 15px;
+      --tweet-detail-size: 14px;
+      --tweet-section-gap: 12px;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      border-radius: 18px;
-      padding: 20px;
+      border-radius: var(--tweet-radius);
+      padding: var(--tweet-padding);
       color: var(--card-text);
       display: grid;
       gap: 0;
@@ -369,13 +464,13 @@
     .tweet-head {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: calc(var(--tweet-avatar-size) * 0.23);
+      margin-bottom: var(--tweet-section-gap);
     }
 
     .tweet-avatar {
-      width: 44px;
-      height: 44px;
+      width: var(--tweet-avatar-size);
+      height: var(--tweet-avatar-size);
       border-radius: 999px;
       object-fit: cover;
       background: var(--card-avatar-bg);
@@ -397,7 +492,7 @@
     }
 
     .tweet-name {
-      font-size: 1rem;
+      font-size: var(--tweet-name-size);
       font-weight: 800;
       color: var(--card-text);
       letter-spacing: -0.01em;
@@ -409,7 +504,7 @@
 
     .tweet-handle {
       color: var(--card-muted);
-      font-size: 0.95rem;
+      font-size: var(--tweet-handle-size);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -417,13 +512,13 @@
     }
 
     .verify-badge {
-      width: 18px;
-      height: 18px;
+      width: calc(var(--tweet-name-size) + 2px);
+      height: calc(var(--tweet-name-size) + 2px);
       border-radius: 999px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 11px;
+      font-size: calc(var(--tweet-name-size) * 0.65);
       line-height: 1;
       font-weight: 700;
       color: #fff;
@@ -446,27 +541,27 @@
     .tweet-body {
       margin: 0;
       color: var(--card-text);
-      line-height: 1.45;
-      font-size: 1.16rem;
+      line-height: var(--tweet-body-line-height);
+      font-size: var(--tweet-body-size);
       white-space: pre-wrap;
       word-break: break-word;
     }
 
     .tweet-time {
-      margin-top: 8px;
-      font-size: 0.9rem;
+      margin-top: var(--tweet-section-gap);
+      font-size: var(--tweet-detail-size);
       color: var(--card-muted);
     }
 
     .tweet-stats {
-      margin-top: 10px;
-      padding-top: 10px;
+      margin-top: var(--tweet-section-gap);
+      padding-top: var(--tweet-section-gap);
       border-top: 1px solid var(--card-border);
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
       color: var(--card-muted);
-      font-size: 0.9rem;
+      font-size: var(--tweet-detail-size);
     }
 
     .tweet-stats b {
@@ -476,9 +571,9 @@
     }
 
     .media-grid {
-      margin-top: 12px;
+      margin-top: var(--tweet-section-gap);
       display: grid;
-      gap: 8px;
+      gap: calc(var(--tweet-section-gap) * 0.66);
       width: 100%;
       grid-template-columns: 1fr;
     }
@@ -534,6 +629,38 @@
         transform: translateX(100%);
       }
     }
+
+    @media (max-width: 980px) {
+      body {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+      }
+
+      .app-body {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .preview {
+        min-height: 52vh;
+      }
+
+      .url-row,
+      .slider-pair {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .field__input--number {
+        width: 100%;
+        text-align: left;
+      }
+    }
   </style>
 </head>
 
@@ -544,7 +671,7 @@
       <div class="app-header__icon">🐦</div>
       <div>
         <div class="app-header__title">Tweet Visualizer</div>
-        <div class="app-header__version">v2.0 · maxx-tools</div>
+        <div class="app-header__version">v3.0 · maxx-tools</div>
       </div>
     </div>
     <div class="app-header__right">
@@ -562,46 +689,174 @@
         <!-- URL Input -->
         <div class="controls__section">
           <span class="controls__section-label">Tweet URL</span>
-          <input id="tweetUrl" class="field__input" placeholder="https://x.com/user/status/..." autocomplete="off" />
+          <div class="url-row">
+            <input id="tweetUrl" class="field__input" placeholder="https://x.com/user/status/..." autocomplete="off" />
+            <button id="loadBtn" class="btn-secondary" type="button">Load tweet</button>
+          </div>
+          <p class="field__hint">Paste a public X/Twitter URL. Enter and paste-to-load still work.</p>
         </div>
 
         <div class="controls__divider"></div>
 
-        <!-- Card Settings -->
+        <!-- Style Presets -->
         <div class="controls__section">
-          <span class="controls__section-label">Card Settings</span>
-          <div class="grid-2">
-            <div class="field">
-              <label class="field__label" for="viewMode">Mode</label>
-              <select id="viewMode" class="field__select">
-                <option value="clean" selected>Clean</option>
-                <option value="detailed">Detailed</option>
-              </select>
+          <span class="controls__section-label">Style Presets</span>
+          <div class="chip-row">
+            <button class="btn-chip" type="button" data-style-preset="native">Native</button>
+            <button class="btn-chip" type="button" data-style-preset="compact">Compact</button>
+            <button class="btn-chip" type="button" data-style-preset="hero">Hero</button>
+          </div>
+          <div class="actions-row">
+            <button id="resetStyleBtn" class="btn-secondary btn-secondary--ghost" type="button">Reset style</button>
+          </div>
+        </div>
+
+        <div class="controls__divider"></div>
+
+        <!-- Content Settings -->
+        <div class="controls__section">
+          <span class="controls__section-label">Content</span>
+          <div class="field">
+            <label class="field__label" for="themeMode">Theme</label>
+            <select id="themeMode" class="field__select">
+              <option value="dark" selected>Dark</option>
+              <option value="light">Light</option>
+            </select>
+          </div>
+          <label class="switch-row" for="showStats">
+            <input id="showStats" type="checkbox" />
+            Show metrics
+          </label>
+          <label class="switch-row" for="showTimestamp">
+            <input id="showTimestamp" type="checkbox" />
+            Show timestamp
+          </label>
+          <label class="switch-row" for="stripReplyMentions">
+            <input id="stripReplyMentions" type="checkbox" checked />
+            Strip leading @mentions
+          </label>
+        </div>
+
+        <div class="controls__divider"></div>
+
+        <!-- Layout -->
+        <div class="controls__section">
+          <span class="controls__section-label">Layout</span>
+          <div class="field">
+            <div class="field__label-row">
+              <label class="field__label" for="width">Card width</label>
+              <span class="field__hint-inline">Export width</span>
             </div>
-            <div class="field">
-              <label class="field__label" for="themeMode">Theme</label>
-              <select id="themeMode" class="field__select">
-                <option value="dark" selected>Dark</option>
-                <option value="light">Light</option>
-              </select>
+            <div class="slider-pair">
+              <input id="width" type="range" min="360" max="1400" step="10" value="760" />
+              <input id="widthNumber" class="field__input field__input--number" type="number" min="360" max="1400" step="10" value="760" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="cardPadding">Card padding</label>
+            <div class="slider-pair">
+              <input id="cardPadding" type="range" min="10" max="48" step="1" value="20" />
+              <input id="cardPaddingNumber" class="field__input field__input--number" type="number" min="10" max="48" step="1" value="20" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="sectionGap">Content spacing</label>
+            <div class="slider-pair">
+              <input id="sectionGap" type="range" min="6" max="28" step="1" value="12" />
+              <input id="sectionGapNumber" class="field__input field__input--number" type="number" min="6" max="28" step="1" value="12" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="avatarSize">Avatar size</label>
+            <div class="slider-pair">
+              <input id="avatarSize" type="range" min="32" max="72" step="1" value="44" />
+              <input id="avatarSizeNumber" class="field__input field__input--number" type="number" min="32" max="72" step="1" value="44" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="cardRadius">Corner radius</label>
+            <div class="slider-pair">
+              <input id="cardRadius" type="range" min="8" max="36" step="1" value="18" />
+              <input id="cardRadiusNumber" class="field__input field__input--number" type="number" min="8" max="36" step="1" value="18" />
             </div>
           </div>
         </div>
 
-        <!-- Width -->
-        <div class="field">
-          <label class="field__label" for="width">Width</label>
-          <div class="slider-row">
-            <input id="width" type="range" min="520" max="1120" value="760" />
-            <output id="widthValue" class="slider-row__value">760px</output>
+        <div class="controls__divider"></div>
+
+        <!-- Typography -->
+        <div class="controls__section">
+          <span class="controls__section-label">Typography</span>
+          <div class="field">
+            <label class="field__label" for="bodyFontSize">Body font size</label>
+            <div class="slider-pair">
+              <input id="bodyFontSize" type="range" min="14" max="32" step="0.5" value="18.5" />
+              <input id="bodyFontSizeNumber" class="field__input field__input--number" type="number" min="14" max="32" step="0.5" value="18.5" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="bodyLineHeight">Body line height</label>
+            <div class="slider-pair">
+              <input id="bodyLineHeight" type="range" min="1.1" max="1.9" step="0.05" value="1.45" />
+              <input id="bodyLineHeightNumber" class="field__input field__input--number" type="number" min="1.1" max="1.9" step="0.05" value="1.45" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="nameFontSize">Name font size</label>
+            <div class="slider-pair">
+              <input id="nameFontSize" type="range" min="14" max="22" step="0.5" value="16" />
+              <input id="nameFontSizeNumber" class="field__input field__input--number" type="number" min="14" max="22" step="0.5" value="16" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="metaFontSize">Handle font size</label>
+            <div class="slider-pair">
+              <input id="metaFontSize" type="range" min="12" max="20" step="0.5" value="15" />
+              <input id="metaFontSizeNumber" class="field__input field__input--number" type="number" min="12" max="20" step="0.5" value="15" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="detailFontSize">Details font size</label>
+            <div class="slider-pair">
+              <input id="detailFontSize" type="range" min="11" max="18" step="0.5" value="14" />
+              <input id="detailFontSizeNumber" class="field__input field__input--number" type="number" min="11" max="18" step="0.5" value="14" />
+            </div>
           </div>
         </div>
 
-        <!-- Text Cleanup -->
-        <label class="switch-row" for="stripReplyMentions">
-          <input id="stripReplyMentions" type="checkbox" checked />
-          Strip @mentions
-        </label>
+        <div class="controls__divider"></div>
+
+        <!-- Body Copy -->
+        <div class="controls__section">
+          <span class="controls__section-label">Body Copy</span>
+          <div class="field">
+            <div class="field__label-row">
+              <label class="field__label" for="bodyText">Editable text</label>
+              <span class="field__hint-inline">Line breaks supported</span>
+            </div>
+            <textarea id="bodyText" class="field__textarea" placeholder="Load a tweet to tweak the copy or add manual line breaks."></textarea>
+          </div>
+          <div class="actions-row">
+            <button id="resetTextBtn" class="btn-secondary btn-secondary--ghost" type="button">Reset fetched text</button>
+          </div>
+        </div>
+
+        <div class="controls__divider"></div>
+
+        <!-- Export -->
+        <div class="controls__section">
+          <span class="controls__section-label">Export</span>
+          <div class="field">
+            <label class="field__label" for="exportScale">PNG scale</label>
+            <select id="exportScale" class="field__select">
+              <option value="1">1x</option>
+              <option value="2" selected>2x</option>
+              <option value="3">3x</option>
+              <option value="4">4x</option>
+            </select>
+          </div>
+          <p class="field__hint">Use higher scale for crisp mockups. Bigger files and slower export.</p>
+        </div>
 
       </div>
 
@@ -619,7 +874,7 @@
             <polyline points="7 10 12 15 17 10" />
             <line x1="12" y1="15" x2="12" y2="3" />
           </svg>
-          Download PNG
+          <span id="downloadLabel">Download PNG @2x</span>
         </button>
       </div>
     </aside>
@@ -639,36 +894,150 @@
 
   <script src="https://unpkg.com/html-to-image@1.11.11/dist/html-to-image.js"></script>
   <script>
+    const STORAGE_KEY = "maxx-tools:tweet-visualizer:v3";
+    const STYLE_DEFAULTS = {
+      width: 760,
+      themeMode: "dark",
+      stripReplyMentions: true,
+      showStats: false,
+      showTimestamp: false,
+      cardPadding: 20,
+      sectionGap: 12,
+      avatarSize: 44,
+      cardRadius: 18,
+      bodyFontSize: 18.5,
+      bodyLineHeight: 1.45,
+      nameFontSize: 16,
+      metaFontSize: 15,
+      detailFontSize: 14,
+      exportScale: 2
+    };
+
+    const STYLE_PRESETS = {
+      native: {
+        width: 760,
+        cardPadding: 20,
+        sectionGap: 12,
+        avatarSize: 44,
+        cardRadius: 18,
+        bodyFontSize: 18.5,
+        bodyLineHeight: 1.45,
+        nameFontSize: 16,
+        metaFontSize: 15,
+        detailFontSize: 14
+      },
+      compact: {
+        width: 640,
+        cardPadding: 16,
+        sectionGap: 10,
+        avatarSize: 40,
+        cardRadius: 16,
+        bodyFontSize: 16.5,
+        bodyLineHeight: 1.38,
+        nameFontSize: 15,
+        metaFontSize: 13.5,
+        detailFontSize: 13
+      },
+      hero: {
+        width: 980,
+        cardPadding: 28,
+        sectionGap: 16,
+        avatarSize: 52,
+        cardRadius: 24,
+        bodyFontSize: 24,
+        bodyLineHeight: 1.34,
+        nameFontSize: 18,
+        metaFontSize: 16,
+        detailFontSize: 15
+      }
+    };
+
+    const NUMERIC_CONTROLS = [
+      { key: "width", rangeId: "width", numberId: "widthNumber", min: 360, max: 1400, step: 10, decimals: 0 },
+      { key: "cardPadding", rangeId: "cardPadding", numberId: "cardPaddingNumber", min: 10, max: 48, step: 1, decimals: 0 },
+      { key: "sectionGap", rangeId: "sectionGap", numberId: "sectionGapNumber", min: 6, max: 28, step: 1, decimals: 0 },
+      { key: "avatarSize", rangeId: "avatarSize", numberId: "avatarSizeNumber", min: 32, max: 72, step: 1, decimals: 0 },
+      { key: "cardRadius", rangeId: "cardRadius", numberId: "cardRadiusNumber", min: 8, max: 36, step: 1, decimals: 0 },
+      { key: "bodyFontSize", rangeId: "bodyFontSize", numberId: "bodyFontSizeNumber", min: 14, max: 32, step: 0.5, decimals: 1 },
+      { key: "bodyLineHeight", rangeId: "bodyLineHeight", numberId: "bodyLineHeightNumber", min: 1.1, max: 1.9, step: 0.05, decimals: 2 },
+      { key: "nameFontSize", rangeId: "nameFontSize", numberId: "nameFontSizeNumber", min: 14, max: 22, step: 0.5, decimals: 1 },
+      { key: "metaFontSize", rangeId: "metaFontSize", numberId: "metaFontSizeNumber", min: 12, max: 20, step: 0.5, decimals: 1 },
+      { key: "detailFontSize", rangeId: "detailFontSize", numberId: "detailFontSizeNumber", min: 11, max: 18, step: 0.5, decimals: 1 }
+    ];
+
+    const PERSISTED_KEYS = [
+      "width",
+      "themeMode",
+      "stripReplyMentions",
+      "showStats",
+      "showTimestamp",
+      "cardPadding",
+      "sectionGap",
+      "avatarSize",
+      "cardRadius",
+      "bodyFontSize",
+      "bodyLineHeight",
+      "nameFontSize",
+      "metaFontSize",
+      "detailFontSize",
+      "exportScale"
+    ];
+
     const el = {
       tweetUrl: document.getElementById("tweetUrl"),
-      viewMode: document.getElementById("viewMode"),
+      loadBtn: document.getElementById("loadBtn"),
       themeMode: document.getElementById("themeMode"),
+      showStats: document.getElementById("showStats"),
+      showTimestamp: document.getElementById("showTimestamp"),
       stripReplyMentions: document.getElementById("stripReplyMentions"),
       width: document.getElementById("width"),
-      widthValue: document.getElementById("widthValue"),
+      widthNumber: document.getElementById("widthNumber"),
+      cardPadding: document.getElementById("cardPadding"),
+      cardPaddingNumber: document.getElementById("cardPaddingNumber"),
+      sectionGap: document.getElementById("sectionGap"),
+      sectionGapNumber: document.getElementById("sectionGapNumber"),
+      avatarSize: document.getElementById("avatarSize"),
+      avatarSizeNumber: document.getElementById("avatarSizeNumber"),
+      cardRadius: document.getElementById("cardRadius"),
+      cardRadiusNumber: document.getElementById("cardRadiusNumber"),
+      bodyFontSize: document.getElementById("bodyFontSize"),
+      bodyFontSizeNumber: document.getElementById("bodyFontSizeNumber"),
+      bodyLineHeight: document.getElementById("bodyLineHeight"),
+      bodyLineHeightNumber: document.getElementById("bodyLineHeightNumber"),
+      nameFontSize: document.getElementById("nameFontSize"),
+      nameFontSizeNumber: document.getElementById("nameFontSizeNumber"),
+      metaFontSize: document.getElementById("metaFontSize"),
+      metaFontSizeNumber: document.getElementById("metaFontSizeNumber"),
+      detailFontSize: document.getElementById("detailFontSize"),
+      detailFontSizeNumber: document.getElementById("detailFontSizeNumber"),
+      bodyText: document.getElementById("bodyText"),
+      resetTextBtn: document.getElementById("resetTextBtn"),
+      resetStyleBtn: document.getElementById("resetStyleBtn"),
+      exportScale: document.getElementById("exportScale"),
       status: document.getElementById("status"),
       downloadBtn: document.getElementById("downloadBtn"),
+      downloadLabel: document.getElementById("downloadLabel"),
       cardShell: document.getElementById("cardShell"),
-      placeholder: document.getElementById("placeholder")
+      placeholder: document.getElementById("placeholder"),
+      presetButtons: Array.from(document.querySelectorAll("[data-style-preset]"))
     };
 
     const state = {
       rawTweet: null,
       cardData: null,
       loading: false,
-      width: 760,
-      viewMode: "clean",
-      themeMode: "dark",
-      stripReplyMentions: true,
+      ...STYLE_DEFAULTS,
       activeToken: 0,
       abortController: null,
       fetchCache: new Map(),
       imageDataCache: new Map(),
-      widthFrame: null,
+      renderFrame: null,
       mediaPositions: [],
       mediaScales: [],
       selectedMediaIndex: 0,
-      dragState: null
+      dragState: null,
+      bodyTextDraft: "",
+      bodyTextCustom: false
     };
 
     function setStatus(message, tone = "info") {
@@ -676,13 +1045,123 @@
       el.status.className = `status-bar status-bar--${tone}`;
     }
 
-    function updateWidthUI() {
-      el.widthValue.textContent = `${state.width}px`;
-      el.cardShell.style.width = `${state.width}px`;
-    }
-
     function clamp(value, min, max) {
       return Math.min(max, Math.max(min, value));
+    }
+
+    function roundToStep(value, step) {
+      if (!step) {
+        return value;
+      }
+      return Math.round(value / step) * step;
+    }
+
+    function sanitizeNumericValue(rawValue, control) {
+      const fallback = STYLE_DEFAULTS[control.key];
+      const numeric = Number(rawValue);
+      if (!Number.isFinite(numeric)) {
+        return fallback;
+      }
+      const stepped = roundToStep(numeric, control.step);
+      return clamp(stepped, control.min, control.max);
+    }
+
+    function formatControlValue(value, decimals) {
+      if (!Number.isFinite(value)) {
+        return "";
+      }
+      return decimals > 0 ? value.toFixed(decimals) : String(Math.round(value));
+    }
+
+    function loadPersistedSettings() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) {
+          return {};
+        }
+        const parsed = JSON.parse(raw);
+        const next = {};
+        NUMERIC_CONTROLS.forEach((control) => {
+          if (parsed[control.key] !== undefined) {
+            next[control.key] = sanitizeNumericValue(parsed[control.key], control);
+          }
+        });
+        if (parsed.themeMode === "light" || parsed.themeMode === "dark") {
+          next.themeMode = parsed.themeMode;
+        }
+        if (typeof parsed.stripReplyMentions === "boolean") {
+          next.stripReplyMentions = parsed.stripReplyMentions;
+        }
+        if (typeof parsed.showStats === "boolean") {
+          next.showStats = parsed.showStats;
+        }
+        if (typeof parsed.showTimestamp === "boolean") {
+          next.showTimestamp = parsed.showTimestamp;
+        }
+        const exportScale = Number(parsed.exportScale);
+        if ([1, 2, 3, 4].includes(exportScale)) {
+          next.exportScale = exportScale;
+        }
+        return next;
+      } catch {
+        return {};
+      }
+    }
+
+    Object.assign(state, loadPersistedSettings());
+
+    function persistSettings() {
+      const payload = {};
+      PERSISTED_KEYS.forEach((key) => {
+        payload[key] = state[key];
+      });
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      } catch {
+        // Ignore persistence failures.
+      }
+    }
+
+    function syncNumericControl(control) {
+      const value = state[control.key];
+      el[control.rangeId].value = String(value);
+      el[control.numberId].value = formatControlValue(value, control.decimals);
+    }
+
+    function syncControlPanel() {
+      NUMERIC_CONTROLS.forEach(syncNumericControl);
+      el.themeMode.value = state.themeMode;
+      el.showStats.checked = state.showStats;
+      el.showTimestamp.checked = state.showTimestamp;
+      el.stripReplyMentions.checked = state.stripReplyMentions;
+      el.exportScale.value = String(state.exportScale);
+      updatePresetButtons();
+      updateDownloadLabel();
+    }
+
+    function valuesMatch(a, b) {
+      return Math.abs(Number(a) - Number(b)) < 0.001;
+    }
+
+    function detectActivePreset() {
+      return Object.entries(STYLE_PRESETS).find(([, preset]) => {
+        return Object.entries(preset).every(([key, value]) => valuesMatch(state[key], value));
+      })?.[0] || null;
+    }
+
+    function updatePresetButtons() {
+      const activePreset = detectActivePreset();
+      el.presetButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.stylePreset === activePreset);
+      });
+    }
+
+    function updateDownloadLabel() {
+      el.downloadLabel.textContent = `Download PNG @${state.exportScale}x`;
+    }
+
+    function updateWidthUI() {
+      el.cardShell.style.width = `${state.width}px`;
     }
 
     function ensureMediaPositions(mediaCount) {
@@ -941,6 +1420,50 @@
       `;
     }
 
+    function buildBodyText(rawTweet) {
+      if (!rawTweet) {
+        return "";
+      }
+      const textAfterMentions = state.stripReplyMentions
+        ? stripLeadingReplyMentions(rawTweet.bodyRaw)
+        : rawTweet.bodyRaw;
+      const finalBodyText = removeLinksFromText(textAfterMentions);
+      return finalBodyText || rawTweet.bodyRaw || "";
+    }
+
+    function syncBodyTextEditor(force = false) {
+      if (!state.rawTweet) {
+        if (force) {
+          state.bodyTextDraft = "";
+          state.bodyTextCustom = false;
+          el.bodyText.value = "";
+        }
+        el.bodyText.disabled = true;
+        el.resetTextBtn.disabled = true;
+        return;
+      }
+
+      if (force || !state.bodyTextCustom) {
+        state.bodyTextDraft = buildBodyText(state.rawTweet);
+        state.bodyTextCustom = false;
+        el.bodyText.value = state.bodyTextDraft;
+      }
+      el.bodyText.disabled = false;
+      el.resetTextBtn.disabled = false;
+    }
+
+    function applyCardStyleTokens(card, data) {
+      card.style.setProperty("--tweet-padding", `${data.cardPadding}px`);
+      card.style.setProperty("--tweet-radius", `${data.cardRadius}px`);
+      card.style.setProperty("--tweet-avatar-size", `${data.avatarSize}px`);
+      card.style.setProperty("--tweet-body-size", `${data.bodyFontSize}px`);
+      card.style.setProperty("--tweet-body-line-height", String(data.bodyLineHeight));
+      card.style.setProperty("--tweet-name-size", `${data.nameFontSize}px`);
+      card.style.setProperty("--tweet-handle-size", `${data.metaFontSize}px`);
+      card.style.setProperty("--tweet-detail-size", `${data.detailFontSize}px`);
+      card.style.setProperty("--tweet-section-gap", `${data.sectionGap}px`);
+    }
+
     function deriveCardData(rawTweet) {
       if (!rawTweet) {
         return null;
@@ -950,14 +1473,8 @@
       ensureMediaPositions(media.length);
       ensureMediaScales(media.length);
 
-      const textAfterMentions = state.stripReplyMentions
-        ? stripLeadingReplyMentions(rawTweet.bodyRaw)
-        : rawTweet.bodyRaw;
-
-      const finalBodyText = removeLinksFromText(textAfterMentions);
-      const bodyText = finalBodyText || rawTweet.bodyRaw || "";
-
       const avatarUrl = rawTweet.avatarUrl || (rawTweet.avatarCandidates ? rawTweet.avatarCandidates[0] : "");
+      const bodyText = state.bodyTextCustom ? state.bodyTextDraft : buildBodyText(rawTweet);
 
       return {
         ...rawTweet,
@@ -965,8 +1482,18 @@
         media,
         mediaPositions: state.mediaPositions.map((p) => ({ x: p.x, y: p.y })),
         bodyText,
-        mode: state.viewMode,
-        themeMode: state.themeMode
+        themeMode: state.themeMode,
+        showStats: state.showStats,
+        showTimestamp: state.showTimestamp,
+        cardPadding: state.cardPadding,
+        sectionGap: state.sectionGap,
+        avatarSize: state.avatarSize,
+        cardRadius: state.cardRadius,
+        bodyFontSize: state.bodyFontSize,
+        bodyLineHeight: state.bodyLineHeight,
+        nameFontSize: state.nameFontSize,
+        metaFontSize: state.metaFontSize,
+        detailFontSize: state.detailFontSize
       };
     }
 
@@ -986,6 +1513,7 @@
       const data = state.cardData;
       const card = document.createElement("article");
       card.className = `tweet-card ${data.themeMode === "light" ? "tweet-card--light" : ""}`.trim();
+      applyCardStyleTokens(card, data);
 
       const head = document.createElement("div");
       head.className = "tweet-head";
@@ -1020,12 +1548,14 @@
       head.appendChild(avatar);
       head.appendChild(meta);
 
-      const body = document.createElement("p");
-      body.className = "tweet-body";
-      body.textContent = data.bodyText;
-
       card.appendChild(head);
-      card.appendChild(body);
+
+      if (data.bodyText) {
+        const body = document.createElement("p");
+        body.className = "tweet-body";
+        body.textContent = data.bodyText;
+        card.appendChild(body);
+      }
 
       if (data.media.length > 0) {
         const mediaGrid = document.createElement("div");
@@ -1066,7 +1596,7 @@
         card.appendChild(mediaGrid);
       }
 
-      if (data.mode === "detailed") {
+      if (data.showStats) {
         const stats = document.createElement("div");
         stats.className = "tweet-stats";
         stats.innerHTML = `
@@ -1078,7 +1608,7 @@
         card.appendChild(stats);
       }
 
-      if (data.mode === "detailed") {
+      if (data.showTimestamp) {
         const timeNode = document.createElement("div");
         timeNode.className = "tweet-time";
         timeNode.textContent = data.timestampLabel || "Date unavailable";
@@ -1361,11 +1891,15 @@
           return;
         }
 
-        if (!state.rawTweet || state.rawTweet.id !== rawTweet.id) {
+        const isNewTweet = !state.rawTweet || state.rawTweet.id !== rawTweet.id;
+        if (isNewTweet) {
           state.selectedMediaIndex = 0;
           state.mediaPositions = [];
+          state.mediaScales = [];
+          state.bodyTextCustom = false;
         }
         state.rawTweet = rawTweet;
+        syncBodyTextEditor(isNewTweet);
         state.cardData = deriveCardData(rawTweet);
         updateSourceMeta(rawTweet);
         renderPreview();
@@ -1381,9 +1915,20 @@
         state.cardData = null;
         setLoading(false);
         updateSourceMeta(null);
+        syncBodyTextEditor(true);
         showPlaceholder("<strong>Could not load this tweet.</strong> Check the URL and make sure the post is public.");
         setStatus(error.message || "Could not load tweet.", "error");
       }
+    }
+
+    function scheduleRender() {
+      if (state.renderFrame) {
+        cancelAnimationFrame(state.renderFrame);
+      }
+      state.renderFrame = requestAnimationFrame(() => {
+        state.renderFrame = null;
+        renderPreview();
+      });
     }
 
     function refreshCardFromState() {
@@ -1391,19 +1936,54 @@
         return;
       }
       state.cardData = deriveCardData(state.rawTweet);
-      renderPreview();
+      scheduleRender();
       el.downloadBtn.disabled = false;
     }
 
-    function onWidthInput() {
-      state.width = Number(el.width.value);
-      updateWidthUI();
-      if (state.widthFrame) {
-        cancelAnimationFrame(state.widthFrame);
+    function updateNumericSetting(control, rawValue) {
+      state[control.key] = sanitizeNumericValue(rawValue, control);
+      syncNumericControl(control);
+      if (control.key === "width") {
+        updateWidthUI();
       }
-      state.widthFrame = requestAnimationFrame(() => {
-        renderPreview();
-      });
+      updatePresetButtons();
+      persistSettings();
+      if (state.rawTweet) {
+        refreshCardFromState();
+      }
+    }
+
+    function applyStylePreset(name) {
+      const preset = STYLE_PRESETS[name];
+      if (!preset) {
+        return;
+      }
+      Object.assign(state, preset);
+      syncControlPanel();
+      updateWidthUI();
+      persistSettings();
+      if (state.rawTweet) {
+        refreshCardFromState();
+      }
+    }
+
+    function resetStyleSettings() {
+      Object.assign(state, STYLE_DEFAULTS);
+      syncControlPanel();
+      updateWidthUI();
+      syncBodyTextEditor();
+      persistSettings();
+      if (state.rawTweet) {
+        refreshCardFromState();
+      }
+    }
+
+    function resetTextToFetched() {
+      if (!state.rawTweet) {
+        return;
+      }
+      syncBodyTextEditor(true);
+      refreshCardFromState();
     }
 
     function onPasteAutoLoad() {
@@ -1511,7 +2091,7 @@
         await ensurePreviewUsesDataUrls(cardNode, state.cardData);
         const pngUrl = await window.htmlToImage.toPng(cardNode, {
           cacheBust: true,
-          pixelRatio: 2
+          pixelRatio: state.exportScale
         });
 
         const link = document.createElement("a");
@@ -1533,35 +2113,88 @@
         }
       });
 
+      el.loadBtn.addEventListener("click", loadTweetFromInput);
       el.tweetUrl.addEventListener("paste", onPasteAutoLoad);
-
-      el.viewMode.addEventListener("change", () => {
-        state.viewMode = el.viewMode.value;
-        refreshCardFromState();
-      });
 
       el.themeMode.addEventListener("change", () => {
         state.themeMode = el.themeMode.value;
-        refreshCardFromState();
+        persistSettings();
+        if (state.rawTweet) {
+          refreshCardFromState();
+        }
+      });
+
+      el.showStats.addEventListener("change", () => {
+        state.showStats = el.showStats.checked;
+        persistSettings();
+        if (state.rawTweet) {
+          refreshCardFromState();
+        }
+      });
+
+      el.showTimestamp.addEventListener("change", () => {
+        state.showTimestamp = el.showTimestamp.checked;
+        persistSettings();
+        if (state.rawTweet) {
+          refreshCardFromState();
+        }
       });
 
       el.stripReplyMentions.addEventListener("change", () => {
         state.stripReplyMentions = el.stripReplyMentions.checked;
+        syncBodyTextEditor();
+        persistSettings();
+        if (state.rawTweet) {
+          refreshCardFromState();
+        }
+      });
+
+      NUMERIC_CONTROLS.forEach((control) => {
+        el[control.rangeId].addEventListener("input", () => {
+          updateNumericSetting(control, el[control.rangeId].value);
+        });
+        el[control.numberId].addEventListener("change", () => {
+          updateNumericSetting(control, el[control.numberId].value);
+        });
+        el[control.numberId].addEventListener("keydown", (event) => {
+          if (event.key === "Enter") {
+            updateNumericSetting(control, el[control.numberId].value);
+          }
+        });
+      });
+
+      el.bodyText.addEventListener("input", () => {
+        if (!state.rawTweet) {
+          return;
+        }
+        state.bodyTextDraft = el.bodyText.value;
+        state.bodyTextCustom = true;
         refreshCardFromState();
       });
 
-      el.width.addEventListener("input", onWidthInput);
+      el.resetTextBtn.addEventListener("click", resetTextToFetched);
+      el.resetStyleBtn.addEventListener("click", resetStyleSettings);
+      el.exportScale.addEventListener("change", () => {
+        state.exportScale = clamp(Number(el.exportScale.value) || STYLE_DEFAULTS.exportScale, 1, 4);
+        updateDownloadLabel();
+        persistSettings();
+      });
+
+      el.presetButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyStylePreset(button.dataset.stylePreset);
+        });
+      });
 
       el.downloadBtn.addEventListener("click", downloadPng);
     }
 
     function init() {
-      state.width = Number(el.width.value);
-      state.viewMode = el.viewMode.value;
-      state.themeMode = el.themeMode.value;
-      state.stripReplyMentions = el.stripReplyMentions.checked;
+      syncControlPanel();
       updateWidthUI();
+      syncBodyTextEditor(true);
       bindEvents();
+      renderPreview();
     }
 
     init();
