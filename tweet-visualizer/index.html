@@ -1031,6 +1031,8 @@
       abortController: null,
       fetchCache: new Map(),
       imageDataCache: new Map(),
+      fontEmbedCss: null,
+      fontEmbedCssPromise: null,
       renderFrame: null,
       mediaPositions: [],
       mediaScales: [],
@@ -1706,12 +1708,12 @@
       await Promise.allSettled(targets.map((url) => getDataUrlCached(url)));
     }
 
-    async function ensurePreviewUsesDataUrls(cardNode, data) {
-      if (!cardNode || !data) {
+    async function ensureNodeUsesDataUrls(node, data) {
+      if (!node || !data) {
         return;
       }
 
-      const avatarNode = cardNode.querySelector(".tweet-avatar");
+      const avatarNode = node.querySelector(".tweet-avatar");
       if (avatarNode && data.avatarUrl) {
         const avatarData = data.avatarDataUrl || await getDataUrlCached(data.avatarUrl);
         if (avatarData) {
@@ -1719,7 +1721,7 @@
         }
       }
 
-      const mediaNodes = cardNode.querySelectorAll(".media-item");
+      const mediaNodes = node.querySelectorAll(".media-item");
       for (let i = 0; i < mediaNodes.length; i += 1) {
         const mediaItemData = data.media[i];
         if (!mediaItemData) {
@@ -1730,6 +1732,97 @@
           mediaNodes[i].src = mediaData;
         }
       }
+    }
+
+    function nextFrame() {
+      return new Promise((resolve) => requestAnimationFrame(() => resolve()));
+    }
+
+    async function waitForFontsReady() {
+      if (!document.fonts?.ready) {
+        return;
+      }
+      try {
+        await document.fonts.ready;
+      } catch {
+        // Ignore font readiness failures.
+      }
+    }
+
+    async function waitForImageElement(img) {
+      if (!img) {
+        return;
+      }
+      if (img.complete && img.naturalWidth > 0) {
+        return;
+      }
+      try {
+        if (typeof img.decode === "function") {
+          await img.decode();
+          return;
+        }
+      } catch {
+        // Fall through to event-based waiting.
+      }
+      await new Promise((resolve) => {
+        const finish = () => {
+          img.removeEventListener("load", finish);
+          img.removeEventListener("error", finish);
+          resolve();
+        };
+        img.addEventListener("load", finish, { once: true });
+        img.addEventListener("error", finish, { once: true });
+      });
+    }
+
+    async function waitForNodeImages(node) {
+      const images = Array.from(node.querySelectorAll("img"));
+      await Promise.all(images.map((img) => waitForImageElement(img)));
+    }
+
+    async function getFontEmbedCssCached(sourceNode) {
+      if (state.fontEmbedCss) {
+        return state.fontEmbedCss;
+      }
+      if (!window.htmlToImage?.getFontEmbedCSS) {
+        return null;
+      }
+      if (!state.fontEmbedCssPromise) {
+        state.fontEmbedCssPromise = window.htmlToImage.getFontEmbedCSS(sourceNode || document.documentElement)
+          .then((css) => {
+            state.fontEmbedCss = css;
+            return css;
+          })
+          .catch(() => null);
+      }
+      return state.fontEmbedCssPromise;
+    }
+
+    function createExportMount(cardNode) {
+      const mount = document.createElement("div");
+      mount.style.position = "fixed";
+      mount.style.left = "-20000px";
+      mount.style.top = "0";
+      mount.style.pointerEvents = "none";
+      mount.style.opacity = "0";
+      mount.style.zIndex = "-1";
+      mount.style.background = "transparent";
+      mount.style.margin = "0";
+      mount.style.padding = "0";
+
+      const exportNode = cardNode.cloneNode(true);
+      exportNode.style.width = getComputedStyle(cardNode).width;
+      exportNode.style.margin = "0";
+
+      mount.appendChild(exportNode);
+      document.body.appendChild(mount);
+
+      return {
+        exportNode,
+        cleanup() {
+          mount.remove();
+        }
+      };
     }
 
     async function fetchTweetFromFxApi(parsed, signal) {
@@ -2087,12 +2180,28 @@
       el.downloadBtn.disabled = true;
       setStatus("Generating PNG…", "loading");
 
+      let exportCleanup = null;
       try {
-        await ensurePreviewUsesDataUrls(cardNode, state.cardData);
-        const pngUrl = await window.htmlToImage.toPng(cardNode, {
+        await waitForFontsReady();
+
+        const { exportNode, cleanup } = createExportMount(cardNode);
+        exportCleanup = cleanup;
+
+        await ensureNodeUsesDataUrls(exportNode, state.cardData);
+        await waitForNodeImages(exportNode);
+        await nextFrame();
+        await nextFrame();
+
+        const fontEmbedCSS = await getFontEmbedCssCached(cardNode);
+        const pngOptions = {
           cacheBust: true,
           pixelRatio: state.exportScale
-        });
+        };
+        if (fontEmbedCSS) {
+          pngOptions.fontEmbedCSS = fontEmbedCSS;
+        }
+
+        const pngUrl = await window.htmlToImage.toPng(exportNode, pngOptions);
 
         const link = document.createElement("a");
         link.href = pngUrl;
@@ -2102,6 +2211,9 @@
       } catch (error) {
         setStatus("Export failed", "error");
       } finally {
+        if (exportCleanup) {
+          exportCleanup();
+        }
         el.downloadBtn.disabled = state.loading || !state.cardData;
       }
     }
