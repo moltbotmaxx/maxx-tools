@@ -552,9 +552,10 @@
           <div class="controls__section-label">Presets</div>
           <p class="controls__section-copy">Usa un preset para arrancar rapido y luego reemplaza la data con la tuya.</p>
           <div class="chip-row" id="presetChips">
-            <button class="btn-chip is-active" type="button" data-preset="timeline">Timeline anual</button>
-            <button class="btn-chip" type="button" data-preset="compare">Comparativo</button>
-            <button class="btn-chip" type="button" data-preset="single">Serie unica</button>
+            <button class="btn-chip is-active" type="button" data-preset="timeline">Timeline</button>
+            <button class="btn-chip" type="button" data-preset="compare">Compare</button>
+            <button class="btn-chip" type="button" data-preset="ranking">Ranking</button>
+            <button class="btn-chip" type="button" data-preset="stacked">Stacked</button>
             <button class="btn-chip" type="button" data-preset="donut">Donut</button>
           </div>
         </section>
@@ -592,7 +593,7 @@
               </select>
             </label>
             <label class="field">
-              <span class="field__label">Badge</span>
+              <span class="field__label">Kicker</span>
               <input class="field__input" id="badge" type="text" value="INSTAGRAM READY" maxlength="28" />
             </label>
           </div>
@@ -723,11 +724,11 @@
       <div class="preview__inner">
         <div class="preview__toolbar">
           <div class="preview__meta">
-            <span class="preview__pill preview__pill--accent">1080 x 1440</span>
-            <span class="preview__pill" id="previewModePill">Timeline</span>
+            <span class="preview__pill preview__pill--accent">Live preview</span>
+            <span class="preview__pill" id="previewModePill">Timeline layout</span>
           </div>
           <div class="preview__pill-row">
-            <span class="preview__pill" id="previewStatsPill">4 series · 4 puntos</span>
+            <span class="preview__pill" id="previewStatsPill">Bar chart · 4 puntos</span>
           </div>
         </div>
         <div class="preview__stage-shell">
@@ -745,9 +746,9 @@
         chartType: "bar",
         presentationMode: "timeline",
         palette: "editorial",
-        badge: "INSTAGRAM READY",
+        badge: "YEAR BY YEAR",
         title: "How the market shifted each year",
-        subtitle: "Each dataset becomes a frame, so the bars morph from one year to the next and make the change obvious.",
+        subtitle: "Each frame highlights one period so the change is obvious without overloading the post.",
         footer: "Source: internal dashboard",
         dataText: `labels: LATAM, US, EU, APAC
 2022: 32, 48, 41, 27
@@ -772,7 +773,7 @@
         palette: "midnight",
         badge: "YOY COMPARE",
         title: "Revenue climb by quarter",
-        subtitle: "Use compare mode when you want all years visible at once on the same scale.",
+        subtitle: "Compare mode keeps every period on the same scale so the gap reads instantly.",
         footer: "Values in USD millions",
         dataText: `labels: Q1, Q2, Q3, Q4
 2024: 18, 27, 39, 52
@@ -789,13 +790,13 @@
         showPoints: true,
         loopTimeline: false
       },
-      single: {
+      ranking: {
         chartType: "horizontalBar",
         presentationMode: "compare",
         palette: "ocean",
-        badge: "SINGLE ARRAY",
+        badge: "RANKING SNAPSHOT",
         title: "Top product categories this month",
-        subtitle: "One array is enough when the goal is a simple ranked snapshot for a story or carousel cover.",
+        subtitle: "",
         footer: "Units sold",
         dataText: `labels: AI Assistants, Templates, Workflows, Courses, Prompts
 2026: 84, 67, 58, 45, 31`,
@@ -811,13 +812,38 @@
         showPoints: false,
         loopTimeline: false
       },
+      stacked: {
+        chartType: "stackedBar",
+        presentationMode: "compare",
+        palette: "moss",
+        badge: "MIX OVER TIME",
+        title: "Traffic mix changed every quarter",
+        subtitle: "Stacked bars work best when the story is composition, not just raw growth.",
+        footer: "Share of sessions by channel",
+        dataText: `labels: Q1, Q2, Q3, Q4
+Organic: 34, 36, 39, 41
+Paid: 22, 24, 26, 28
+Referral: 14, 16, 15, 18
+Direct: 12, 12, 13, 14`,
+        prefix: "",
+        suffix: "%",
+        decimals: "0",
+        duration: 1100,
+        hold: 600,
+        tension: 0.25,
+        showLegend: true,
+        showGrid: true,
+        showValues: false,
+        showPoints: false,
+        loopTimeline: false
+      },
       donut: {
         chartType: "doughnut",
         presentationMode: "timeline",
         palette: "moss",
         badge: "AUDIENCE MIX",
         title: "Audience composition evolved fast",
-        subtitle: "Doughnut works well when every frame shows a new distribution instead of a fixed trend line.",
+        subtitle: "Use timeline mode here to show a clean before and after without stacking multiple rings.",
         footer: "Share of total audience",
         dataText: `labels: Organic, Paid, Referral, Direct
 2024: 44, 22, 18, 16
@@ -946,6 +972,8 @@
       id: "stageChrome",
       beforeDraw(chart) {
         const palette = getPalette();
+        const settings = readSettings();
+        const layout = getCanvasLayout(settings, state.parsed);
         const { ctx, canvas, chartArea } = chart;
         const width = canvas.width;
         const height = canvas.height;
@@ -957,44 +985,35 @@
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, width, height);
 
-        const glow = ctx.createRadialGradient(width * 0.15, height * 0.18, 10, width * 0.15, height * 0.18, width * 0.52);
-        glow.addColorStop(0, palette.glow);
-        glow.addColorStop(1, "rgba(255,255,255,0)");
-        ctx.fillStyle = glow;
+        const topGlow = ctx.createRadialGradient(width * 0.18, height * 0.16, 20, width * 0.18, height * 0.16, width * 0.44);
+        topGlow.addColorStop(0, palette.glow);
+        topGlow.addColorStop(1, "rgba(255,255,255,0)");
+        ctx.fillStyle = topGlow;
         ctx.fillRect(0, 0, width, height);
 
-        ctx.strokeStyle = withAlpha(palette.text, 0.04);
-        ctx.lineWidth = 1;
-        for (let x = 40; x < width; x += 72) {
-          ctx.beginPath();
-          ctx.moveTo(x, 0);
-          ctx.lineTo(x, height);
-          ctx.stroke();
-        }
-        for (let y = 40; y < height; y += 72) {
-          ctx.beginPath();
-          ctx.moveTo(0, y);
-          ctx.lineTo(width, y);
-          ctx.stroke();
-        }
+        const sideGlow = ctx.createRadialGradient(width * 0.86, height * 0.68, 10, width * 0.86, height * 0.68, width * 0.38);
+        sideGlow.addColorStop(0, withAlpha(palette.series[0], 0.1));
+        sideGlow.addColorStop(1, "rgba(255,255,255,0)");
+        ctx.fillStyle = sideGlow;
+        ctx.fillRect(0, 0, width, height);
 
         if (chartArea) {
-          const panelPad = 42;
-          const panelX = chartArea.left - panelPad;
-          const panelY = chartArea.top - panelPad;
-          const panelW = chartArea.right - chartArea.left + panelPad * 2;
-          const panelH = chartArea.bottom - chartArea.top + panelPad * 2;
+          const legendBottom = chart.legend?.options?.display ? chart.legend.bottom : chartArea.bottom;
+          const panelX = chartArea.left - layout.panelPad.left;
+          const panelY = chartArea.top - layout.panelPad.top;
+          const panelW = chartArea.right - chartArea.left + layout.panelPad.left + layout.panelPad.right;
+          const panelH = legendBottom - chartArea.top + layout.panelPad.top + layout.panelPad.bottom;
 
           ctx.save();
-          ctx.shadowColor = withAlpha("#0f172a", 0.12);
-          ctx.shadowBlur = 34;
-          ctx.shadowOffsetY = 14;
-          roundedRect(ctx, panelX, panelY, panelW, panelH, 36);
+          ctx.shadowColor = withAlpha("#0f172a", palette === PALETTES.midnight ? 0.34 : 0.12);
+          ctx.shadowBlur = palette === PALETTES.midnight ? 42 : 28;
+          ctx.shadowOffsetY = 16;
+          roundedRect(ctx, panelX, panelY, panelW, panelH, layout.panelRadius);
           ctx.fillStyle = palette.panel;
           ctx.fill();
           ctx.restore();
 
-          roundedRect(ctx, panelX, panelY, panelW, panelH, 36);
+          roundedRect(ctx, panelX, panelY, panelW, panelH, layout.panelRadius);
           ctx.strokeStyle = palette.panelStroke;
           ctx.lineWidth = 2;
           ctx.stroke();
@@ -1003,49 +1022,68 @@
       },
       afterDraw(chart) {
         const palette = getPalette();
+        const settings = readSettings();
+        const layout = getCanvasLayout(settings, state.parsed);
+        const focus = getFocusDataset();
         const { ctx, canvas } = chart;
         const width = canvas.width;
-        const settings = readSettings();
-        const focus = getFocusDataset();
-        const values = focus ? focus.values : [];
-        const peak = values.length ? Math.max(...values) : 0;
-        const delta = values.length > 1 ? values[values.length - 1] - values[0] : peak;
-        const points = state.parsed ? state.parsed.labels.length : 0;
-        const title = settings.title || "Untitled chart";
-        const subtitle = settings.subtitle || "";
-        const footer = settings.footer || "";
-        const modeLabel = settings.presentationMode === "timeline" && state.parsed && state.parsed.datasets.length > 1
-          ? focus?.label || "Timeline"
-          : settings.presentationMode === "compare"
-            ? "COMPARE VIEW"
-            : "SINGLE SERIES";
+        const height = canvas.height;
+        const headerX = layout.pagePaddingX;
+        const kicker = settings.badge.trim();
 
         ctx.save();
-        drawPill(ctx, 76, 72, settings.badge || "INSTAGRAM", palette.chipBg, palette.chipText, 24, 15);
-        drawPill(ctx, width - 250, 72, "1080 x 1440", palette.chipBg, palette.chipText, 22, 15, "right");
-        const titleBlock = drawWrappedText(ctx, title, 76, 150, width - 152, 76, 2, `700 68px "Space Grotesk", sans-serif`, palette.text);
-        const subtitleY = 150 + titleBlock.height + 18;
-        const subtitleBlock = drawWrappedText(ctx, subtitle, 76, subtitleY, width - 152, 38, 2, `600 28px "Manrope", sans-serif`, palette.muted);
 
-        const statY = subtitleY + subtitleBlock.height + 28;
-        drawStatCard(ctx, 76, statY, 270, 116, "PEAK", formatValue(peak, false), palette, false);
-        drawStatCard(ctx, 366, statY, 270, 116, "DELTA", formatSignedValue(delta), palette, delta >= 0);
-        drawStatCard(ctx, 656, statY, 348, 116, "FOCUS", `${modeLabel} · ${points} pts`, palette, false);
+        let currentY = layout.headerTop;
+        if (kicker) {
+          drawPill(ctx, headerX, currentY, kicker, palette.chipBg, palette.chipText, 22, 12);
+          currentY += 62;
+        }
 
-        ctx.strokeStyle = withAlpha(palette.text, 0.14);
-        ctx.lineWidth = 2;
-        ctx.beginPath();
-        ctx.moveTo(76, 1320);
-        ctx.lineTo(width - 76, 1320);
-        ctx.stroke();
+        if (layout.mode === "timeline" && focus?.label) {
+          drawPill(ctx, width - layout.pagePaddingX, layout.headerTop, focus.label, palette.chipBg, palette.chipText, 24, 13, "right");
+        }
 
-        ctx.font = `700 24px "Manrope", sans-serif`;
-        ctx.fillStyle = palette.footer;
-        ctx.textAlign = "left";
-        ctx.fillText(footer, 76, 1366);
-        ctx.textAlign = "right";
-        ctx.fillStyle = palette.muted;
-        ctx.fillText("Generated with chart-animator", width - 76, 1366);
+        const titleBlock = drawWrappedText(
+          ctx,
+          settings.title || "Untitled chart",
+          headerX,
+          currentY,
+          width - layout.pagePaddingX * 2,
+          layout.titleLineHeight,
+          2,
+          `700 ${layout.titleFontSize}px "Space Grotesk", sans-serif`,
+          palette.text
+        );
+
+        currentY += titleBlock.height + 16;
+
+        let subtitleBlock = { height: 0 };
+        if (settings.subtitle) {
+          subtitleBlock = drawWrappedText(
+            ctx,
+            settings.subtitle,
+            headerX,
+            currentY,
+            width - layout.pagePaddingX * 2,
+            layout.subtitleLineHeight,
+            2,
+            `600 ${layout.subtitleFontSize}px "Manrope", sans-serif`,
+            palette.muted
+          );
+        }
+
+        if (settings.chartType === "doughnut") {
+          drawDoughnutCenter(ctx, chart, focus, palette);
+        }
+
+        if (settings.footer) {
+          ctx.font = `700 22px "Manrope", sans-serif`;
+          ctx.fillStyle = palette.footer;
+          ctx.textAlign = "left";
+          ctx.textBaseline = "alphabetic";
+          ctx.fillText(settings.footer, layout.pagePaddingX, height - 70);
+        }
+
         ctx.restore();
       }
     };
@@ -1054,18 +1092,15 @@
       id: "valueLabels",
       afterDatasetsDraw(chart) {
         const settings = readSettings();
-        if (!settings.showValues) return;
+        if (!shouldDrawValueLabels(settings, state.parsed)) return;
         if (!state.parsed) return;
-
-        const totalLabels = chart.data.datasets.reduce((count, dataset) => count + dataset.data.length, 0);
-        if (totalLabels > 26) return;
 
         const palette = getPalette();
         const chartType = settings.chartType;
         const ctx = chart.ctx;
 
         ctx.save();
-        ctx.font = `800 22px "Manrope", sans-serif`;
+        ctx.font = `800 ${chartType === "horizontalBar" ? 20 : 22}px "Manrope", sans-serif`;
         ctx.fillStyle = palette.text;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
@@ -1073,30 +1108,26 @@
         chart.data.datasets.forEach((dataset, datasetIndex) => {
           const meta = chart.getDatasetMeta(datasetIndex);
           if (meta.hidden) return;
+
           meta.data.forEach((element, index) => {
             const rawValue = dataset.data[index];
             if (rawValue == null || Number.isNaN(rawValue)) return;
 
             const label = formatValue(rawValue, true);
-
-            if (chartType === "doughnut") {
-              const pos = element.tooltipPosition();
-              ctx.fillStyle = palette.text;
-              ctx.fillText(label, pos.x, pos.y);
-              return;
-            }
+            const pos = element.tooltipPosition();
 
             if (chartType === "horizontalBar") {
-              const pos = element.tooltipPosition();
               ctx.textAlign = "left";
-              ctx.fillStyle = palette.text;
               ctx.fillText(label, pos.x + 18, pos.y);
               ctx.textAlign = "center";
               return;
             }
 
-            const pos = element.tooltipPosition();
-            ctx.fillStyle = palette.text;
+            if (chartType === "line" || chartType === "area") {
+              ctx.fillText(label, pos.x, pos.y - 28);
+              return;
+            }
+
             ctx.fillText(label, pos.x, pos.y - 22);
           });
         });
@@ -1136,7 +1167,7 @@
       };
     }
 
-    function syncPresetToControls(presetKey) {
+    function syncPresetToControls(presetKey, options = {}) {
       const preset = PRESETS[presetKey];
       if (!preset) return;
       state.lastPreset = presetKey;
@@ -1162,6 +1193,11 @@
       updateSliderLabels();
       updatePresetButtons();
       updateControlVisibility();
+      if (!options.skipUrl) {
+        const url = new URL(window.location.href);
+        url.searchParams.set("preset", presetKey);
+        window.history.replaceState({}, "", url);
+      }
     }
 
     function updatePresetButtons() {
@@ -1280,23 +1316,199 @@
       };
     }
 
-    function drawStatCard(ctx, x, y, width, height, label, value, palette, positive) {
+    function getEffectiveMode(settings = readSettings(), parsed = state.parsed) {
+      if (!parsed || parsed.datasets.length <= 1) return "snapshot";
+      return settings.presentationMode === "timeline" ? "timeline" : "compare";
+    }
+
+    function getMaxLabelLength(parsed = state.parsed) {
+      if (!parsed?.labels?.length) return 0;
+      return parsed.labels.reduce((max, label) => Math.max(max, String(label).length), 0);
+    }
+
+    function shouldDisplayLegend(settings = readSettings(), parsed = state.parsed) {
+      if (!settings.showLegend || !parsed) return false;
+      if (settings.chartType === "doughnut") return parsed.labels.length <= 6 || parsed.datasets.length > 1;
+      return parsed.datasets.length > 1;
+    }
+
+    function shouldDrawValueLabels(settings = readSettings(), parsed = state.parsed) {
+      if (!settings.showValues || !parsed) return false;
+
+      const mode = getEffectiveMode(settings, parsed);
+      const visibleSeries = mode === "compare" ? parsed.datasets.length : 1;
+      const totalPoints = parsed.labels.length * visibleSeries;
+
+      if (settings.chartType === "doughnut") return parsed.labels.length <= 4;
+      if (settings.chartType === "stackedBar") return parsed.labels.length <= 5 && parsed.datasets.length <= 2;
+      if (settings.chartType === "horizontalBar") return parsed.labels.length <= 8;
+      if (settings.chartType === "line" || settings.chartType === "area") return totalPoints <= 18;
+      return totalPoints <= 20;
+    }
+
+    function getAdaptiveTextStyles(settings = readSettings(), parsed = state.parsed) {
+      const titleLength = (settings.title || "").length;
+      const subtitleLength = (settings.subtitle || "").length;
+      let titleFontSize = 78;
+
+      if (settings.chartType === "horizontalBar") titleFontSize = 82;
+      if (settings.chartType === "doughnut") titleFontSize = 72;
+      if (titleLength > 24) titleFontSize -= 6;
+      if (titleLength > 38) titleFontSize -= 8;
+      if (titleLength > 54) titleFontSize -= 8;
+      if (subtitleLength > 110) titleFontSize -= 2;
+
+      titleFontSize = Math.max(52, titleFontSize);
+
+      let subtitleFontSize = 28;
+      if (subtitleLength > 95) subtitleFontSize = 26;
+      if (subtitleLength > 135) subtitleFontSize = 24;
+
+      return {
+        titleFontSize,
+        titleLineHeight: Math.round(titleFontSize * 0.96),
+        subtitleFontSize,
+        subtitleLineHeight: Math.round(subtitleFontSize * 1.34)
+      };
+    }
+
+    function getAxisStyles(settings = readSettings(), parsed = state.parsed) {
+      const labelCount = parsed?.labels?.length || 0;
+      const maxLabelLength = getMaxLabelLength(parsed);
+
+      let categorySize = 22;
+      if (labelCount >= 6) categorySize = 20;
+      if (labelCount >= 9) categorySize = 18;
+      if (maxLabelLength >= 12) categorySize = Math.min(categorySize, 18);
+      if (maxLabelLength >= 18) categorySize = Math.min(categorySize, 16);
+
+      let valueSize = 21;
+      if (settings.chartType === "horizontalBar") valueSize = 20;
+      if (settings.chartType === "doughnut") valueSize = 18;
+
+      return {
+        categorySize,
+        valueSize,
+        labelRotation: settings.chartType === "bar" && (labelCount >= 6 || maxLabelLength > 9) ? 26 : 0
+      };
+    }
+
+    function getCanvasLayout(settings = readSettings(), parsed = state.parsed) {
+      const typography = getAdaptiveTextStyles(settings, parsed);
+      const mode = getEffectiveMode(settings, parsed);
+      const hasSubtitle = Boolean(settings.subtitle);
+      const showLegend = shouldDisplayLegend(settings, parsed);
+      const maxLabelLength = getMaxLabelLength(parsed);
+
+      const layout = {
+        mode,
+        hasSubtitle,
+        showLegend,
+        pagePaddingX: 76,
+        headerTop: 84,
+        panelRadius: 32,
+        panelPad: { top: 20, right: 24, bottom: showLegend ? 26 : 18, left: 24 },
+        titleFontSize: typography.titleFontSize,
+        titleLineHeight: typography.titleLineHeight,
+        subtitleFontSize: typography.subtitleFontSize,
+        subtitleLineHeight: typography.subtitleLineHeight,
+        chartPadding: {
+          top: 330,
+          right: 82,
+          bottom: showLegend ? 166 : 118,
+          left: 92
+        }
+      };
+
+      if (!hasSubtitle) {
+        layout.chartPadding.top -= 44;
+      }
+
+      if (mode === "timeline") {
+        layout.chartPadding.top += 30;
+      }
+
+      switch (settings.chartType) {
+        case "horizontalBar":
+          layout.chartPadding.top = hasSubtitle ? 302 : 248;
+          if (mode === "timeline") layout.chartPadding.top += 28;
+          layout.chartPadding.right = 92;
+          layout.chartPadding.bottom = showLegend ? 142 : 96;
+          layout.chartPadding.left = 122 + Math.min(maxLabelLength * 4, 120);
+          layout.panelPad = { top: 22, right: 24, bottom: showLegend ? 24 : 18, left: 28 };
+          break;
+        case "line":
+        case "area":
+          layout.chartPadding.top = hasSubtitle ? 360 : 304;
+          if (mode === "timeline") layout.chartPadding.top += 24;
+          layout.chartPadding.right = 72;
+          layout.chartPadding.bottom = showLegend ? 162 : 112;
+          layout.chartPadding.left = 88;
+          layout.panelPad = { top: 18, right: 20, bottom: showLegend ? 24 : 18, left: 20 };
+          break;
+        case "stackedBar":
+          layout.chartPadding.top = hasSubtitle ? 368 : 312;
+          if (mode === "timeline") layout.chartPadding.top += 20;
+          layout.chartPadding.right = 80;
+          layout.chartPadding.bottom = showLegend ? 174 : 120;
+          layout.chartPadding.left = 94;
+          break;
+        case "doughnut":
+          layout.chartPadding.top = hasSubtitle ? 352 : 296;
+          if (mode === "timeline") layout.chartPadding.top += 12;
+          layout.chartPadding.right = 126;
+          layout.chartPadding.bottom = showLegend ? 210 : 150;
+          layout.chartPadding.left = 126;
+          layout.panelPad = { top: 26, right: 28, bottom: showLegend ? 32 : 24, left: 28 };
+          layout.panelRadius = 38;
+          break;
+        default:
+          layout.chartPadding.top = hasSubtitle ? 338 : 286;
+          if (mode === "timeline") layout.chartPadding.top += 24;
+          layout.chartPadding.right = 76;
+          layout.chartPadding.bottom = showLegend ? 164 : 114;
+          layout.chartPadding.left = 94;
+      }
+
+      return layout;
+    }
+
+    function getFriendlyChartType(chartType) {
+      switch (chartType) {
+        case "horizontalBar":
+          return "Ranking";
+        case "stackedBar":
+          return "Stacked";
+        case "line":
+          return "Line";
+        case "area":
+          return "Area";
+        case "doughnut":
+          return "Donut";
+        default:
+          return "Bar";
+      }
+    }
+
+    function drawDoughnutCenter(ctx, chart, focus, palette) {
+      const meta = chart.getDatasetMeta(0);
+      if (!meta?.data?.length) return;
+
+      const centerX = meta.data[0].x;
+      const centerY = meta.data[0].y;
+      const total = focus?.values?.reduce((sum, value) => sum + value, 0) ?? 0;
+
       ctx.save();
-      roundedRect(ctx, x, y, width, height, 28);
-      ctx.fillStyle = withAlpha("#ffffff", palette === PALETTES.midnight ? 0.06 : 0.48);
-      ctx.fill();
-      ctx.strokeStyle = withAlpha(palette.text, 0.09);
-      ctx.lineWidth = 2;
-      ctx.stroke();
-
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
       ctx.fillStyle = palette.muted;
-      ctx.font = `800 20px "Manrope", sans-serif`;
-      ctx.textAlign = "left";
-      ctx.fillText(label, x + 22, y + 32);
-
-      ctx.fillStyle = positive ? "#18a957" : palette.text;
-      ctx.font = `800 34px "Space Grotesk", sans-serif`;
-      ctx.fillText(value, x + 22, y + 77);
+      ctx.font = `800 18px "Manrope", sans-serif`;
+      if (focus?.label) {
+        ctx.fillText(focus.label, centerX, centerY - 18);
+      }
+      ctx.fillStyle = palette.text;
+      ctx.font = `800 50px "Space Grotesk", sans-serif`;
+      ctx.fillText(formatValue(total, false), centerX, centerY + 24);
       ctx.restore();
     }
 
@@ -1456,8 +1668,12 @@
     function createChartConfig(parsed) {
       const settings = readSettings();
       const palette = getPalette();
+      const canvasLayout = getCanvasLayout(settings, parsed);
+      const axisStyles = getAxisStyles(settings, parsed);
       const baseType = getBaseChartType(settings.chartType);
-      const compareMode = settings.presentationMode === "compare" || parsed.datasets.length === 1;
+      const effectiveMode = getEffectiveMode(settings, parsed);
+      const compareMode = effectiveMode === "compare" || effectiveMode === "snapshot";
+      const animationProfile = getAnimationProfile(settings, parsed);
       const datasets = compareMode
         ? parsed.datasets.map((dataset, index) => buildDataset(dataset, index, parsed.datasets.length))
         : [buildDataset(parsed.datasets[state.timelineIndex], state.timelineIndex, parsed.datasets.length)];
@@ -1471,32 +1687,24 @@
         options: {
           responsive: false,
           maintainAspectRatio: false,
-          animation: {
-            duration: settings.duration,
-            easing: "easeOutQuart"
-          },
+          animation: animationProfile,
           layout: {
-            padding: {
-              top: 600,
-              right: settings.chartType === "horizontalBar" ? 120 : 92,
-              bottom: 170,
-              left: settings.chartType === "horizontalBar" ? 140 : 92
-            }
+            padding: canvasLayout.chartPadding
           },
           plugins: {
             legend: {
-              display: settings.showLegend && (compareMode ? parsed.datasets.length > 1 || settings.chartType === "doughnut" : true),
+              display: shouldDisplayLegend(settings, parsed),
               position: "bottom",
-              align: "start",
+              align: settings.chartType === "doughnut" ? "center" : "start",
               labels: {
                 color: palette.text,
                 usePointStyle: true,
-                padding: 26,
+                padding: settings.chartType === "doughnut" ? 22 : 24,
                 boxWidth: 12,
                 pointStyle: settings.chartType === "doughnut" ? "circle" : "rectRounded",
                 font: {
                   family: "Manrope",
-                  size: 23,
+                  size: settings.chartType === "doughnut" ? 20 : 21,
                   weight: "700"
                 }
               }
@@ -1507,20 +1715,20 @@
           },
           elements: {
             line: {
-              borderWidth: 8,
+              borderWidth: parsed.labels.length > 8 ? 5 : 6,
               tension: settings.lineTension
             },
             point: {
-              radius: settings.showPoints && isLineType(settings.chartType) ? 6 : 0,
-              hoverRadius: settings.showPoints && isLineType(settings.chartType) ? 7 : 0,
+              radius: settings.showPoints && isLineType(settings.chartType) ? (parsed.labels.length > 8 ? 4 : 5) : 0,
+              hoverRadius: settings.showPoints && isLineType(settings.chartType) ? 6 : 0,
               borderWidth: 0
             },
             bar: {
-              borderRadius: settings.chartType === "stackedBar" ? 0 : 20,
+              borderRadius: settings.chartType === "stackedBar" ? 12 : 20,
               borderSkipped: false
             },
             arc: {
-              borderWidth: 5,
+              borderWidth: 4,
               borderColor: withAlpha("#ffffff", palette === PALETTES.midnight ? 0.08 : 0.68)
             }
           }
@@ -1549,10 +1757,13 @@
             },
             ticks: {
               color: palette.muted,
-              padding: 14,
+              padding: 12,
+              autoSkip: settings.chartType !== "horizontalBar" && parsed.labels.length > 8,
+              maxRotation: axisStyles.labelRotation,
+              minRotation: axisStyles.labelRotation,
               font: {
                 family: "Manrope",
-                size: 22,
+                size: axisStyles.categorySize,
                 weight: "700"
               }
             }
@@ -1561,6 +1772,7 @@
             display: true,
             stacked,
             beginAtZero,
+            grace: settings.showValues ? "12%" : "6%",
             grid: {
               display: settings.showGrid,
               color: palette.grid,
@@ -1571,10 +1783,10 @@
             },
             ticks: {
               color: palette.muted,
-              padding: 14,
+              padding: 12,
               font: {
                 family: "Manrope",
-                size: 22,
+                size: axisStyles.valueSize,
                 weight: "700"
               },
               callback: (value) => formatAxisValue(value)
@@ -1584,10 +1796,19 @@
 
         if (settings.chartType === "horizontalBar") {
           config.options.scales.x.ticks.callback = (value) => formatAxisValue(value);
+          config.options.scales.x.grace = settings.showValues ? "16%" : "8%";
+          config.options.scales.x.ticks.font.size = axisStyles.valueSize;
           config.options.scales.y.ticks.callback = undefined;
+          config.options.scales.y.ticks.font.size = axisStyles.categorySize;
+          config.options.scales.y.grid.display = false;
+        }
+
+        if (settings.chartType === "line" || settings.chartType === "area") {
+          config.options.scales.x.grid.display = false;
+          config.options.scales.y.grace = settings.showValues ? "18%" : "10%";
         }
       } else {
-        config.options.cutout = "58%";
+        config.options.cutout = parsed.labels.length >= 5 ? "62%" : "58%";
       }
 
       return config;
@@ -1597,14 +1818,16 @@
       const settings = readSettings();
       const palette = getPalette();
       const baseColor = palette.series[index % palette.series.length];
-      const compareMode = settings.presentationMode === "compare" || totalSeries === 1;
+      const mode = getEffectiveMode(settings, state.parsed);
+      const compareMode = mode !== "timeline";
       const isSingleVisibleSeries = compareMode && totalSeries === 1;
+      const segmentColors = buildSegmentColors(index, dataset.values.length);
 
       if (settings.chartType === "doughnut") {
         return {
           label: dataset.label,
           data: dataset.values,
-          backgroundColor: buildSegmentColors(index, dataset.values.length),
+          backgroundColor: segmentColors,
           hoverOffset: 0
         };
       }
@@ -1614,20 +1837,26 @@
           label: dataset.label,
           data: dataset.values,
           borderColor: baseColor,
-          backgroundColor: settings.chartType === "area" ? withAlpha(baseColor, 0.18) : withAlpha(baseColor, 0.12),
+          backgroundColor: settings.chartType === "area"
+            ? (context) => createAreaGradient(context.chart, baseColor)
+            : withAlpha(baseColor, 0.12),
           fill: settings.chartType === "area",
-          pointBackgroundColor: baseColor
+          pointBackgroundColor: baseColor,
+          pointHoverBackgroundColor: baseColor
         };
       }
 
       if (settings.chartType === "horizontalBar" || settings.chartType === "bar" || settings.chartType === "stackedBar") {
+        const thicknessBase = settings.chartType === "horizontalBar" ? 88 : 74;
         return {
           label: dataset.label,
           data: dataset.values,
-          backgroundColor: isSingleVisibleSeries ? buildSegmentColors(index, dataset.values.length) : withAlpha(baseColor, 0.9),
-          borderColor: isSingleVisibleSeries ? buildSegmentColors(index, dataset.values.length) : baseColor,
+          backgroundColor: isSingleVisibleSeries ? segmentColors : withAlpha(baseColor, 0.9),
+          borderColor: isSingleVisibleSeries ? segmentColors : baseColor,
           borderWidth: isSingleVisibleSeries ? 0 : 1,
-          maxBarThickness: settings.chartType === "horizontalBar" ? 74 : 66
+          maxBarThickness: Math.max(42, thicknessBase - dataset.values.length * 3),
+          categoryPercentage: settings.chartType === "stackedBar" ? 0.72 : 0.68,
+          barPercentage: totalSeries > 1 ? 0.82 : 0.92
         };
       }
 
@@ -1642,6 +1871,47 @@
     function buildSegmentColors(offset, count) {
       const palette = getPalette();
       return Array.from({ length: count }, (_, index) => palette.series[(offset + index) % palette.series.length]);
+    }
+
+    function createAreaGradient(chart, color) {
+      const { ctx, chartArea } = chart;
+      if (!chartArea) return withAlpha(color, 0.2);
+      const gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+      gradient.addColorStop(0, withAlpha(color, 0.32));
+      gradient.addColorStop(1, withAlpha(color, 0.02));
+      return gradient;
+    }
+
+    function getAnimationProfile(settings, parsed) {
+      const mode = getEffectiveMode(settings, parsed);
+      const chartType = settings.chartType;
+
+      if (mode === "snapshot") {
+        return {
+          duration: Math.min(settings.duration, 900),
+          easing: chartType === "line" || chartType === "area" ? "easeOutQuart" : "easeOutCubic",
+          delay(context) {
+            if (context.type !== "data") return 0;
+            return context.dataIndex * 45;
+          }
+        };
+      }
+
+      if (mode === "compare") {
+        return {
+          duration: settings.duration,
+          easing: chartType === "line" || chartType === "area" ? "easeOutQuart" : "easeOutCubic",
+          delay(context) {
+            if (context.type !== "data") return 0;
+            return context.datasetIndex * 110 + context.dataIndex * 26;
+          }
+        };
+      }
+
+      return {
+        duration: settings.duration,
+        easing: chartType === "line" || chartType === "area" ? "easeInOutQuart" : "easeOutExpo"
+      };
     }
 
     function renderChart() {
@@ -1670,11 +1940,16 @@
       state.chart = new Chart(el.stageCanvas.getContext("2d"), config);
 
       const settings = readSettings();
-      const modeText = settings.presentationMode === "timeline" && parsed.datasets.length > 1 ? "Timeline" : "Compare";
-      el.previewModePill.textContent = modeText;
-      el.previewStatsPill.textContent = `${parsed.datasets.length} series · ${parsed.labels.length} puntos`;
+      const effectiveMode = getEffectiveMode(settings, parsed);
+      const modeLabels = {
+        timeline: "Timeline layout",
+        compare: "Compare layout",
+        snapshot: "Snapshot layout"
+      };
+      el.previewModePill.textContent = modeLabels[effectiveMode];
+      el.previewStatsPill.textContent = `${getFriendlyChartType(settings.chartType)} · ${parsed.labels.length} puntos`;
 
-      if (settings.presentationMode === "timeline" && parsed.datasets.length > 1) {
+      if (effectiveMode === "timeline") {
         startTimelinePlayback(state.recording ? false : settings.loopTimeline);
       }
 
@@ -1909,6 +2184,10 @@
     }
 
     async function boot() {
+      const initialPreset = new URL(window.location.href).searchParams.get("preset");
+      if (initialPreset && PRESETS[initialPreset]) {
+        syncPresetToControls(initialPreset, { skipUrl: true });
+      }
       updateSliderLabels();
       updatePresetButtons();
       updateControlVisibility();
@@ -1920,7 +2199,7 @@
       renderChart();
     }
 
-    syncPresetToControls("timeline");
+    syncPresetToControls("timeline", { skipUrl: true });
     boot();
   </script>
 </body>
