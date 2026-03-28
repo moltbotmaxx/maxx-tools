@@ -459,12 +459,14 @@
 
     .preview__stage-canvas {
       display: block;
-      width: 100%;
-      height: auto;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
       aspect-ratio: 1080 / 1440;
       border-radius: 22px;
       background: #f8fafc;
       box-shadow: 0 16px 44px rgba(15, 23, 42, 0.14);
+      vertical-align: top;
     }
 
     .is-hidden {
@@ -1021,10 +1023,11 @@
         ctx.save();
         drawPill(ctx, 76, 72, settings.badge || "INSTAGRAM", palette.chipBg, palette.chipText, 24, 15);
         drawPill(ctx, width - 250, 72, "1080 x 1440", palette.chipBg, palette.chipText, 22, 15, "right");
-        drawWrappedText(ctx, title, 76, 156, width - 152, 82, 2, `700 74px "Space Grotesk", sans-serif`, palette.text);
-        drawWrappedText(ctx, subtitle, 76, 286, width - 152, 44, 3, `600 30px "Manrope", sans-serif`, palette.muted);
+        const titleBlock = drawWrappedText(ctx, title, 76, 150, width - 152, 76, 2, `700 68px "Space Grotesk", sans-serif`, palette.text);
+        const subtitleY = 150 + titleBlock.height + 18;
+        const subtitleBlock = drawWrappedText(ctx, subtitle, 76, subtitleY, width - 152, 38, 2, `600 28px "Manrope", sans-serif`, palette.muted);
 
-        const statY = 376;
+        const statY = subtitleY + subtitleBlock.height + 28;
         drawStatCard(ctx, 76, statY, 270, 116, "PEAK", formatValue(peak, false), palette, false);
         drawStatCard(ctx, 366, statY, 270, 116, "DELTA", formatSignedValue(delta), palette, delta >= 0);
         drawStatCard(ctx, 656, statY, 348, 116, "FOCUS", `${modeLabel} · ${points} pts`, palette, false);
@@ -1233,7 +1236,9 @@
     }
 
     function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight, maxLines, font, color) {
-      if (!text) return;
+      if (!text) {
+        return { lineCount: 0, height: 0 };
+      }
       ctx.save();
       ctx.font = font;
       ctx.fillStyle = color;
@@ -1269,6 +1274,10 @@
         ctx.fillText(line, x, y + index * lineHeight);
       });
       ctx.restore();
+      return {
+        lineCount: clamped.length,
+        height: clamped.length * lineHeight
+      };
     }
 
     function drawStatCard(ctx, x, y, width, height, label, value, palette, positive) {
@@ -1468,7 +1477,7 @@
           },
           layout: {
             padding: {
-              top: 560,
+              top: 600,
               right: settings.chartType === "horizontalBar" ? 120 : 92,
               bottom: 170,
               left: settings.chartType === "horizontalBar" ? 140 : 92
