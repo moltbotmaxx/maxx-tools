@@ -10,6 +10,7 @@ on:
       - "CNAME"
       - "index.html"
       - "theme.css"
+      - "chart-animator/**"
       - "daily-tracker/**"
       - "fx-tracker/**"
       - "sentient-accounts/avatars/**"
@@ -58,6 +59,7 @@ jobs:
           cp index.html theme.css CNAME .site/
           touch .site/.nojekyll
 
+          mkdir -p .site/chart-animator
           mkdir -p .site/daily-tracker
           mkdir -p .site/fx-tracker
           mkdir -p .site/sentient-accounts/avatars
@@ -65,6 +67,7 @@ jobs:
           mkdir -p .site/sentient-accounts/data
           mkdir -p .site/tweet-visualizer
 
+          rsync -a chart-animator/ .site/chart-animator/
           rsync -a daily-tracker/ .site/daily-tracker/
           rsync -a fx-tracker/ .site/fx-tracker/
           rsync -a tweet-visualizer/ .site/tweet-visualizer/

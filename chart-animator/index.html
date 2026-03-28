@@ -1,0 +1,1919 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chart Animator | Maxx Tools</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --tool-accent: #ff6b35;
+      --tool-accent-soft: rgba(255, 107, 53, 0.12);
+      --tool-border-strong: rgba(0, 0, 0, 0.12);
+    }
+
+    body {
+      font-family: "Manrope", var(--font-main);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(255, 107, 53, 0.12), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(0, 122, 255, 0.1), transparent 24%),
+        var(--bg-primary);
+    }
+
+    .app-header {
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      flex-shrink: 0;
+    }
+
+    .app-header__left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .app-header__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff7b47 0%, #ffd166 100%);
+      box-shadow: 0 10px 24px rgba(255, 107, 53, 0.24);
+      font-size: 19px;
+      flex-shrink: 0;
+    }
+
+    .app-header__title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+    }
+
+    .app-header__subtitle {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .app-header__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .app-header__back:hover {
+      color: var(--accent-primary);
+    }
+
+    .app-body {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      overflow: hidden;
+    }
+
+    .controls {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-right: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .controls__inner {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      overflow-y: auto;
+      min-height: 0;
+    }
+
+    .controls__section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.64);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .controls__section-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .controls__section-copy {
+      font-size: 0.8rem;
+      line-height: 1.45;
+      color: var(--text-tertiary);
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field__label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    .field__input,
+    .field__select,
+    .field__textarea {
+      width: 100%;
+      border: 1px solid var(--border-light);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--text-primary);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .field__input:focus,
+    .field__select:focus,
+    .field__textarea:focus {
+      border-color: rgba(255, 107, 53, 0.6);
+      box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.12);
+    }
+
+    .field__textarea {
+      min-height: 180px;
+      resize: vertical;
+      line-height: 1.5;
+      font-family: ui-monospace, SFMono-Regular, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.82rem;
+    }
+
+    .field__hint {
+      font-size: 0.72rem;
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+
+    .field__mini {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .slider-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .slider-row input[type="range"] {
+      width: 100%;
+      accent-color: var(--tool-accent);
+    }
+
+    .slider-value {
+      min-width: 54px;
+      text-align: right;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--text-secondary);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+
+    .toggle-row input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      accent-color: var(--tool-accent);
+      flex-shrink: 0;
+    }
+
+    .chip-row,
+    .actions-row {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-chip,
+    .btn-secondary,
+    .btn-primary,
+    .btn-download {
+      border: 1px solid var(--border-light);
+      border-radius: 999px;
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast), opacity var(--transition-fast);
+    }
+
+    .btn-chip,
+    .btn-secondary,
+    .btn-primary {
+      padding: 11px 14px;
+    }
+
+    .btn-chip,
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.88);
+      color: var(--text-primary);
+    }
+
+    .btn-chip:hover,
+    .btn-secondary:hover,
+    .btn-primary:hover,
+    .btn-download:hover:not(:disabled) {
+      transform: translateY(-1px);
+    }
+
+    .btn-chip:hover,
+    .btn-secondary:hover {
+      border-color: rgba(255, 107, 53, 0.45);
+    }
+
+    .btn-chip.is-active {
+      background: var(--tool-accent);
+      border-color: var(--tool-accent);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(255, 107, 53, 0.22);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff7b47 0%, #ff9f43 100%);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 12px 28px rgba(255, 107, 53, 0.22);
+    }
+
+    .btn-secondary {
+      border-radius: 14px;
+    }
+
+    .btn-download {
+      width: 100%;
+      border-radius: 14px;
+      padding: 12px 14px;
+      background: #111827;
+      border-color: #111827;
+      color: #fff;
+      box-shadow: 0 16px 34px rgba(17, 24, 39, 0.18);
+    }
+
+    .btn-download--ghost {
+      background: rgba(255, 255, 255, 0.92);
+      border-color: var(--border-light);
+      color: var(--text-primary);
+      box-shadow: none;
+    }
+
+    .btn-download:disabled,
+    .btn-primary:disabled,
+    .btn-secondary:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .controls__footer {
+      padding: 14px 18px 18px;
+      border-top: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.84);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      min-height: 18px;
+    }
+
+    .status-bar--error {
+      color: var(--accent-danger);
+    }
+
+    .status-bar--success {
+      color: var(--accent-success);
+    }
+
+    .status-bar--loading {
+      color: var(--accent-primary);
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    .preview {
+      min-height: 0;
+      overflow: auto;
+      padding: 26px;
+      display: flex;
+      justify-content: center;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(242, 242, 247, 0.96)),
+        linear-gradient(135deg, rgba(255, 107, 53, 0.08), transparent 40%);
+    }
+
+    .preview__inner {
+      width: min(100%, 720px);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .preview__toolbar {
+      width: min(100%, 620px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .preview__meta,
+    .preview__pill-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .preview__pill {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      color: var(--text-secondary);
+    }
+
+    .preview__pill--accent {
+      background: rgba(255, 107, 53, 0.12);
+      border-color: rgba(255, 107, 53, 0.2);
+      color: #c54d1c;
+    }
+
+    .preview__stage-shell {
+      width: min(100%, 620px);
+      padding: 20px;
+      border-radius: 34px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.56)),
+        rgba(255, 255, 255, 0.5);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 22px 54px rgba(15, 23, 42, 0.12);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .preview__stage-frame {
+      border-radius: 28px;
+      padding: 16px;
+      background: linear-gradient(180deg, rgba(17, 24, 39, 0.08), rgba(17, 24, 39, 0.02));
+      border: 1px solid rgba(17, 24, 39, 0.06);
+    }
+
+    .preview__stage-canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1080 / 1440;
+      border-radius: 22px;
+      background: #f8fafc;
+      box-shadow: 0 16px 44px rgba(15, 23, 42, 0.14);
+    }
+
+    .is-hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1180px) {
+      .app-body {
+        grid-template-columns: 390px 1fr;
+      }
+    }
+
+    @media (max-width: 980px) {
+      body {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+      }
+
+      .app-body {
+        grid-template-columns: 1fr;
+        overflow: visible;
+      }
+
+      .controls {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .preview {
+        padding-top: 18px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .app-header {
+        padding: 12px 14px;
+      }
+
+      .controls__inner,
+      .controls__footer,
+      .preview {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .controls__section {
+        padding: 14px;
+      }
+
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .preview__stage-shell {
+        padding: 12px;
+      }
+
+      .preview__stage-frame {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="app-header__left">
+      <div class="app-header__icon">📈</div>
+      <div>
+        <div class="app-header__title">chart-animator</div>
+        <div class="app-header__subtitle">Charts animados para Instagram en formato 1080 x 1440</div>
+      </div>
+    </div>
+    <a class="app-header__back" href="../">← Volver al hub</a>
+  </header>
+
+  <main class="app-body">
+    <aside class="controls">
+      <div class="controls__inner">
+        <section class="controls__section">
+          <div class="controls__section-label">Presets</div>
+          <p class="controls__section-copy">Usa un preset para arrancar rapido y luego reemplaza la data con la tuya.</p>
+          <div class="chip-row" id="presetChips">
+            <button class="btn-chip is-active" type="button" data-preset="timeline">Timeline anual</button>
+            <button class="btn-chip" type="button" data-preset="compare">Comparativo</button>
+            <button class="btn-chip" type="button" data-preset="single">Serie unica</button>
+            <button class="btn-chip" type="button" data-preset="donut">Donut</button>
+          </div>
+        </section>
+
+        <section class="controls__section">
+          <div class="controls__section-label">Setup</div>
+          <div class="grid-2">
+            <label class="field">
+              <span class="field__label">Tipo de chart</span>
+              <select class="field__select" id="chartType">
+                <option value="bar">Bar vertical</option>
+                <option value="horizontalBar">Bar horizontal</option>
+                <option value="stackedBar">Stacked bar</option>
+                <option value="line">Line</option>
+                <option value="area">Area</option>
+                <option value="doughnut">Doughnut</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="field__label">Modo</span>
+              <select class="field__select" id="presentationMode">
+                <option value="timeline">Timeline</option>
+                <option value="compare">Comparar series</option>
+              </select>
+            </label>
+          </div>
+          <div class="grid-2">
+            <label class="field">
+              <span class="field__label">Paleta</span>
+              <select class="field__select" id="palette">
+                <option value="editorial">Editorial Peach</option>
+                <option value="midnight">Midnight Electric</option>
+                <option value="ocean">Ocean Poster</option>
+                <option value="moss">Moss Ledger</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="field__label">Badge</span>
+              <input class="field__input" id="badge" type="text" value="INSTAGRAM READY" maxlength="28" />
+            </label>
+          </div>
+        </section>
+
+        <section class="controls__section">
+          <div class="controls__section-label">Copy</div>
+          <label class="field">
+            <span class="field__label">Titulo</span>
+            <input class="field__input" id="titleInput" type="text" value="How the market shifted each year" maxlength="80" />
+          </label>
+          <label class="field">
+            <span class="field__label">Subtitulo</span>
+            <textarea class="field__textarea" id="subtitleInput" style="min-height: 96px;">Each dataset becomes a frame, so the bars morph from one year to the next and make the change obvious.</textarea>
+          </label>
+          <label class="field">
+            <span class="field__label">Footer / fuente</span>
+            <input class="field__input" id="footerInput" type="text" value="Source: internal dashboard" maxlength="60" />
+          </label>
+        </section>
+
+        <section class="controls__section">
+          <div class="controls__section-label">Data</div>
+          <p class="controls__section-copy">Puedes pegar texto simple o JSON. Formato rapido recomendado:</p>
+          <div class="field">
+            <span class="field__label">Input de data</span>
+            <textarea class="field__textarea" id="dataInput">labels: LATAM, US, EU, APAC
+2022: 32, 48, 41, 27
+2023: 39, 57, 46, 35
+2024: 51, 66, 55, 42
+2025: 60, 78, 63, 54</textarea>
+            <div class="field__hint">Acepta:
+              <br>`labels: Ene, Feb, Mar`
+              <br>`2024: 20, 35, 42`
+              <br>`2025: 28, 44, 58`
+              <br>o JSON tipo <code>{"labels":["Q1"],"datasets":[{"label":"2024","values":[24]}]}</code>
+            </div>
+          </div>
+          <div class="grid-3">
+            <label class="field">
+              <span class="field__label">Prefijo</span>
+              <input class="field__input" id="valuePrefix" type="text" value="" maxlength="8" placeholder="$" />
+            </label>
+            <label class="field">
+              <span class="field__label">Sufijo</span>
+              <input class="field__input" id="valueSuffix" type="text" value="" maxlength="8" placeholder="%" />
+            </label>
+            <label class="field">
+              <span class="field__label">Decimales</span>
+              <select class="field__select" id="decimals">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </label>
+          </div>
+        </section>
+
+        <section class="controls__section">
+          <div class="controls__section-label">Animacion</div>
+          <label class="field">
+            <span class="field__label">Duracion por paso</span>
+            <div class="slider-row">
+              <input id="duration" type="range" min="500" max="3000" step="100" value="1200" />
+              <span class="slider-value" id="durationValue">1200ms</span>
+            </div>
+          </label>
+          <label class="field" id="holdField">
+            <span class="field__label">Pausa entre pasos</span>
+            <div class="slider-row">
+              <input id="hold" type="range" min="0" max="2500" step="100" value="800" />
+              <span class="slider-value" id="holdValue">800ms</span>
+            </div>
+          </label>
+          <label class="field" id="tensionField">
+            <span class="field__label">Curvatura line/area</span>
+            <div class="slider-row">
+              <input id="lineTension" type="range" min="0" max="0.5" step="0.05" value="0.3" />
+              <span class="slider-value" id="lineTensionValue">0.30</span>
+            </div>
+          </label>
+          <div class="grid-2">
+            <label class="toggle-row">
+              <input id="showLegend" type="checkbox" checked />
+              <span>Mostrar leyenda</span>
+            </label>
+            <label class="toggle-row">
+              <input id="showGrid" type="checkbox" checked />
+              <span>Mostrar grid</span>
+            </label>
+            <label class="toggle-row">
+              <input id="showValues" type="checkbox" checked />
+              <span>Mostrar valores</span>
+            </label>
+            <label class="toggle-row">
+              <input id="showPoints" type="checkbox" checked />
+              <span>Mostrar puntos</span>
+            </label>
+            <label class="toggle-row">
+              <input id="loopTimeline" type="checkbox" checked />
+              <span>Loop timeline</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="controls__section">
+          <div class="controls__section-label">Acciones</div>
+          <div class="actions-row">
+            <button class="btn-primary" id="renderBtn" type="button">Actualizar chart</button>
+            <button class="btn-secondary" id="replayBtn" type="button">Repetir animacion</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="controls__footer">
+        <div class="status-bar" id="statusBar">
+          <span class="status-dot"></span>
+          <span id="statusText">Listo para renderizar.</span>
+        </div>
+        <div class="grid-2">
+          <button class="btn-download btn-download--ghost" id="downloadBtn" type="button">Download PNG</button>
+          <button class="btn-download" id="recordBtn" type="button">Record WebM</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="preview">
+      <div class="preview__inner">
+        <div class="preview__toolbar">
+          <div class="preview__meta">
+            <span class="preview__pill preview__pill--accent">1080 x 1440</span>
+            <span class="preview__pill" id="previewModePill">Timeline</span>
+          </div>
+          <div class="preview__pill-row">
+            <span class="preview__pill" id="previewStatsPill">4 series · 4 puntos</span>
+          </div>
+        </div>
+        <div class="preview__stage-shell">
+          <div class="preview__stage-frame">
+            <canvas class="preview__stage-canvas" id="stageCanvas" width="1080" height="1440"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const PRESETS = {
+      timeline: {
+        chartType: "bar",
+        presentationMode: "timeline",
+        palette: "editorial",
+        badge: "INSTAGRAM READY",
+        title: "How the market shifted each year",
+        subtitle: "Each dataset becomes a frame, so the bars morph from one year to the next and make the change obvious.",
+        footer: "Source: internal dashboard",
+        dataText: `labels: LATAM, US, EU, APAC
+2022: 32, 48, 41, 27
+2023: 39, 57, 46, 35
+2024: 51, 66, 55, 42
+2025: 60, 78, 63, 54`,
+        prefix: "",
+        suffix: "",
+        decimals: "0",
+        duration: 1200,
+        hold: 800,
+        tension: 0.3,
+        showLegend: true,
+        showGrid: true,
+        showValues: true,
+        showPoints: true,
+        loopTimeline: true
+      },
+      compare: {
+        chartType: "line",
+        presentationMode: "compare",
+        palette: "midnight",
+        badge: "YOY COMPARE",
+        title: "Revenue climb by quarter",
+        subtitle: "Use compare mode when you want all years visible at once on the same scale.",
+        footer: "Values in USD millions",
+        dataText: `labels: Q1, Q2, Q3, Q4
+2024: 18, 27, 39, 52
+2025: 24, 34, 48, 68`,
+        prefix: "$",
+        suffix: "M",
+        decimals: "0",
+        duration: 1100,
+        hold: 600,
+        tension: 0.35,
+        showLegend: true,
+        showGrid: true,
+        showValues: true,
+        showPoints: true,
+        loopTimeline: false
+      },
+      single: {
+        chartType: "horizontalBar",
+        presentationMode: "compare",
+        palette: "ocean",
+        badge: "SINGLE ARRAY",
+        title: "Top product categories this month",
+        subtitle: "One array is enough when the goal is a simple ranked snapshot for a story or carousel cover.",
+        footer: "Units sold",
+        dataText: `labels: AI Assistants, Templates, Workflows, Courses, Prompts
+2026: 84, 67, 58, 45, 31`,
+        prefix: "",
+        suffix: "",
+        decimals: "0",
+        duration: 900,
+        hold: 500,
+        tension: 0.25,
+        showLegend: false,
+        showGrid: true,
+        showValues: true,
+        showPoints: false,
+        loopTimeline: false
+      },
+      donut: {
+        chartType: "doughnut",
+        presentationMode: "timeline",
+        palette: "moss",
+        badge: "AUDIENCE MIX",
+        title: "Audience composition evolved fast",
+        subtitle: "Doughnut works well when every frame shows a new distribution instead of a fixed trend line.",
+        footer: "Share of total audience",
+        dataText: `labels: Organic, Paid, Referral, Direct
+2024: 44, 22, 18, 16
+2025: 37, 29, 20, 14`,
+        prefix: "",
+        suffix: "%",
+        decimals: "0",
+        duration: 1300,
+        hold: 900,
+        tension: 0.25,
+        showLegend: true,
+        showGrid: false,
+        showValues: true,
+        showPoints: false,
+        loopTimeline: true
+      }
+    };
+
+    const PALETTES = {
+      editorial: {
+        bgA: "#fff4e6",
+        bgB: "#ffd0ae",
+        panel: "rgba(255, 250, 244, 0.78)",
+        panelStroke: "rgba(73, 32, 10, 0.08)",
+        glow: "rgba(255, 107, 53, 0.28)",
+        grid: "rgba(40, 20, 8, 0.08)",
+        text: "#1e120d",
+        muted: "rgba(30, 18, 13, 0.64)",
+        footer: "rgba(30, 18, 13, 0.82)",
+        chipBg: "rgba(255, 255, 255, 0.68)",
+        chipText: "#7f3a16",
+        series: ["#ff6b35", "#ff9f43", "#0081a7", "#2ec4b6", "#2251ff", "#d62828"]
+      },
+      midnight: {
+        bgA: "#0b1229",
+        bgB: "#1b2b5c",
+        panel: "rgba(15, 22, 42, 0.62)",
+        panelStroke: "rgba(255, 255, 255, 0.08)",
+        glow: "rgba(95, 178, 255, 0.24)",
+        grid: "rgba(255, 255, 255, 0.11)",
+        text: "#edf2ff",
+        muted: "rgba(237, 242, 255, 0.66)",
+        footer: "rgba(237, 242, 255, 0.82)",
+        chipBg: "rgba(255, 255, 255, 0.09)",
+        chipText: "#d5deff",
+        series: ["#5fb2ff", "#9bff66", "#ff7b54", "#ffd166", "#ff5d8f", "#8d7dff"]
+      },
+      ocean: {
+        bgA: "#ecfeff",
+        bgB: "#b7f0ff",
+        panel: "rgba(247, 254, 255, 0.76)",
+        panelStroke: "rgba(7, 44, 66, 0.08)",
+        glow: "rgba(0, 124, 255, 0.18)",
+        grid: "rgba(7, 44, 66, 0.08)",
+        text: "#082235",
+        muted: "rgba(8, 34, 53, 0.64)",
+        footer: "rgba(8, 34, 53, 0.84)",
+        chipBg: "rgba(255, 255, 255, 0.7)",
+        chipText: "#0a5780",
+        series: ["#0077b6", "#00b4d8", "#48cae4", "#f95738", "#1d3557", "#80ed99"]
+      },
+      moss: {
+        bgA: "#f5f7ef",
+        bgB: "#d7e7bf",
+        panel: "rgba(251, 253, 247, 0.78)",
+        panelStroke: "rgba(35, 52, 24, 0.08)",
+        glow: "rgba(78, 127, 79, 0.14)",
+        grid: "rgba(35, 52, 24, 0.08)",
+        text: "#152011",
+        muted: "rgba(21, 32, 17, 0.64)",
+        footer: "rgba(21, 32, 17, 0.84)",
+        chipBg: "rgba(255, 255, 255, 0.7)",
+        chipText: "#365329",
+        series: ["#4f772d", "#90a955", "#2d6a4f", "#bc4749", "#386641", "#dda15e"]
+      }
+    };
+
+    const el = {
+      presetChips: document.getElementById("presetChips"),
+      chartType: document.getElementById("chartType"),
+      presentationMode: document.getElementById("presentationMode"),
+      palette: document.getElementById("palette"),
+      badge: document.getElementById("badge"),
+      titleInput: document.getElementById("titleInput"),
+      subtitleInput: document.getElementById("subtitleInput"),
+      footerInput: document.getElementById("footerInput"),
+      dataInput: document.getElementById("dataInput"),
+      valuePrefix: document.getElementById("valuePrefix"),
+      valueSuffix: document.getElementById("valueSuffix"),
+      decimals: document.getElementById("decimals"),
+      duration: document.getElementById("duration"),
+      hold: document.getElementById("hold"),
+      lineTension: document.getElementById("lineTension"),
+      durationValue: document.getElementById("durationValue"),
+      holdValue: document.getElementById("holdValue"),
+      lineTensionValue: document.getElementById("lineTensionValue"),
+      showLegend: document.getElementById("showLegend"),
+      showGrid: document.getElementById("showGrid"),
+      showValues: document.getElementById("showValues"),
+      showPoints: document.getElementById("showPoints"),
+      loopTimeline: document.getElementById("loopTimeline"),
+      holdField: document.getElementById("holdField"),
+      tensionField: document.getElementById("tensionField"),
+      renderBtn: document.getElementById("renderBtn"),
+      replayBtn: document.getElementById("replayBtn"),
+      downloadBtn: document.getElementById("downloadBtn"),
+      recordBtn: document.getElementById("recordBtn"),
+      statusBar: document.getElementById("statusBar"),
+      statusText: document.getElementById("statusText"),
+      previewModePill: document.getElementById("previewModePill"),
+      previewStatsPill: document.getElementById("previewStatsPill"),
+      stageCanvas: document.getElementById("stageCanvas")
+    };
+
+    const state = {
+      chart: null,
+      parsed: null,
+      timelineIndex: 0,
+      timelineTimer: null,
+      renderDebounce: null,
+      recording: false,
+      lastPreset: "timeline"
+    };
+
+    const stagePlugin = {
+      id: "stageChrome",
+      beforeDraw(chart) {
+        const palette = getPalette();
+        const { ctx, canvas, chartArea } = chart;
+        const width = canvas.width;
+        const height = canvas.height;
+
+        ctx.save();
+        const gradient = ctx.createLinearGradient(0, 0, width, height);
+        gradient.addColorStop(0, palette.bgA);
+        gradient.addColorStop(1, palette.bgB);
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, width, height);
+
+        const glow = ctx.createRadialGradient(width * 0.15, height * 0.18, 10, width * 0.15, height * 0.18, width * 0.52);
+        glow.addColorStop(0, palette.glow);
+        glow.addColorStop(1, "rgba(255,255,255,0)");
+        ctx.fillStyle = glow;
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.strokeStyle = withAlpha(palette.text, 0.04);
+        ctx.lineWidth = 1;
+        for (let x = 40; x < width; x += 72) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, height);
+          ctx.stroke();
+        }
+        for (let y = 40; y < height; y += 72) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(width, y);
+          ctx.stroke();
+        }
+
+        if (chartArea) {
+          const panelPad = 42;
+          const panelX = chartArea.left - panelPad;
+          const panelY = chartArea.top - panelPad;
+          const panelW = chartArea.right - chartArea.left + panelPad * 2;
+          const panelH = chartArea.bottom - chartArea.top + panelPad * 2;
+
+          ctx.save();
+          ctx.shadowColor = withAlpha("#0f172a", 0.12);
+          ctx.shadowBlur = 34;
+          ctx.shadowOffsetY = 14;
+          roundedRect(ctx, panelX, panelY, panelW, panelH, 36);
+          ctx.fillStyle = palette.panel;
+          ctx.fill();
+          ctx.restore();
+
+          roundedRect(ctx, panelX, panelY, panelW, panelH, 36);
+          ctx.strokeStyle = palette.panelStroke;
+          ctx.lineWidth = 2;
+          ctx.stroke();
+        }
+        ctx.restore();
+      },
+      afterDraw(chart) {
+        const palette = getPalette();
+        const { ctx, canvas } = chart;
+        const width = canvas.width;
+        const settings = readSettings();
+        const focus = getFocusDataset();
+        const values = focus ? focus.values : [];
+        const peak = values.length ? Math.max(...values) : 0;
+        const delta = values.length > 1 ? values[values.length - 1] - values[0] : peak;
+        const points = state.parsed ? state.parsed.labels.length : 0;
+        const title = settings.title || "Untitled chart";
+        const subtitle = settings.subtitle || "";
+        const footer = settings.footer || "";
+        const modeLabel = settings.presentationMode === "timeline" && state.parsed && state.parsed.datasets.length > 1
+          ? focus?.label || "Timeline"
+          : settings.presentationMode === "compare"
+            ? "COMPARE VIEW"
+            : "SINGLE SERIES";
+
+        ctx.save();
+        drawPill(ctx, 76, 72, settings.badge || "INSTAGRAM", palette.chipBg, palette.chipText, 24, 15);
+        drawPill(ctx, width - 250, 72, "1080 x 1440", palette.chipBg, palette.chipText, 22, 15, "right");
+        drawWrappedText(ctx, title, 76, 156, width - 152, 82, 2, `700 74px "Space Grotesk", sans-serif`, palette.text);
+        drawWrappedText(ctx, subtitle, 76, 286, width - 152, 44, 3, `600 30px "Manrope", sans-serif`, palette.muted);
+
+        const statY = 376;
+        drawStatCard(ctx, 76, statY, 270, 116, "PEAK", formatValue(peak, false), palette, false);
+        drawStatCard(ctx, 366, statY, 270, 116, "DELTA", formatSignedValue(delta), palette, delta >= 0);
+        drawStatCard(ctx, 656, statY, 348, 116, "FOCUS", `${modeLabel} · ${points} pts`, palette, false);
+
+        ctx.strokeStyle = withAlpha(palette.text, 0.14);
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(76, 1320);
+        ctx.lineTo(width - 76, 1320);
+        ctx.stroke();
+
+        ctx.font = `700 24px "Manrope", sans-serif`;
+        ctx.fillStyle = palette.footer;
+        ctx.textAlign = "left";
+        ctx.fillText(footer, 76, 1366);
+        ctx.textAlign = "right";
+        ctx.fillStyle = palette.muted;
+        ctx.fillText("Generated with chart-animator", width - 76, 1366);
+        ctx.restore();
+      }
+    };
+
+    const valueLabelsPlugin = {
+      id: "valueLabels",
+      afterDatasetsDraw(chart) {
+        const settings = readSettings();
+        if (!settings.showValues) return;
+        if (!state.parsed) return;
+
+        const totalLabels = chart.data.datasets.reduce((count, dataset) => count + dataset.data.length, 0);
+        if (totalLabels > 26) return;
+
+        const palette = getPalette();
+        const chartType = settings.chartType;
+        const ctx = chart.ctx;
+
+        ctx.save();
+        ctx.font = `800 22px "Manrope", sans-serif`;
+        ctx.fillStyle = palette.text;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        chart.data.datasets.forEach((dataset, datasetIndex) => {
+          const meta = chart.getDatasetMeta(datasetIndex);
+          if (meta.hidden) return;
+          meta.data.forEach((element, index) => {
+            const rawValue = dataset.data[index];
+            if (rawValue == null || Number.isNaN(rawValue)) return;
+
+            const label = formatValue(rawValue, true);
+
+            if (chartType === "doughnut") {
+              const pos = element.tooltipPosition();
+              ctx.fillStyle = palette.text;
+              ctx.fillText(label, pos.x, pos.y);
+              return;
+            }
+
+            if (chartType === "horizontalBar") {
+              const pos = element.tooltipPosition();
+              ctx.textAlign = "left";
+              ctx.fillStyle = palette.text;
+              ctx.fillText(label, pos.x + 18, pos.y);
+              ctx.textAlign = "center";
+              return;
+            }
+
+            const pos = element.tooltipPosition();
+            ctx.fillStyle = palette.text;
+            ctx.fillText(label, pos.x, pos.y - 22);
+          });
+        });
+        ctx.restore();
+      }
+    };
+
+    Chart.register(stagePlugin, valueLabelsPlugin);
+    Chart.defaults.font.family = `"Manrope", ${Chart.defaults.font.family}`;
+    Chart.defaults.color = "#334155";
+
+    function getPalette() {
+      return PALETTES[el.palette.value] || PALETTES.editorial;
+    }
+
+    function readSettings() {
+      return {
+        chartType: el.chartType.value,
+        presentationMode: el.presentationMode.value,
+        palette: el.palette.value,
+        badge: el.badge.value.trim(),
+        title: el.titleInput.value.trim(),
+        subtitle: el.subtitleInput.value.trim(),
+        footer: el.footerInput.value.trim(),
+        dataText: el.dataInput.value,
+        prefix: el.valuePrefix.value,
+        suffix: el.valueSuffix.value,
+        decimals: Number(el.decimals.value),
+        duration: Number(el.duration.value),
+        hold: Number(el.hold.value),
+        lineTension: Number(el.lineTension.value),
+        showLegend: el.showLegend.checked,
+        showGrid: el.showGrid.checked,
+        showValues: el.showValues.checked,
+        showPoints: el.showPoints.checked,
+        loopTimeline: el.loopTimeline.checked
+      };
+    }
+
+    function syncPresetToControls(presetKey) {
+      const preset = PRESETS[presetKey];
+      if (!preset) return;
+      state.lastPreset = presetKey;
+      el.chartType.value = preset.chartType;
+      el.presentationMode.value = preset.presentationMode;
+      el.palette.value = preset.palette;
+      el.badge.value = preset.badge;
+      el.titleInput.value = preset.title;
+      el.subtitleInput.value = preset.subtitle;
+      el.footerInput.value = preset.footer;
+      el.dataInput.value = preset.dataText;
+      el.valuePrefix.value = preset.prefix;
+      el.valueSuffix.value = preset.suffix;
+      el.decimals.value = preset.decimals;
+      el.duration.value = String(preset.duration);
+      el.hold.value = String(preset.hold);
+      el.lineTension.value = String(preset.tension);
+      el.showLegend.checked = preset.showLegend;
+      el.showGrid.checked = preset.showGrid;
+      el.showValues.checked = preset.showValues;
+      el.showPoints.checked = preset.showPoints;
+      el.loopTimeline.checked = preset.loopTimeline;
+      updateSliderLabels();
+      updatePresetButtons();
+      updateControlVisibility();
+    }
+
+    function updatePresetButtons() {
+      el.presetChips.querySelectorAll("[data-preset]").forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.preset === state.lastPreset);
+      });
+    }
+
+    function updateSliderLabels() {
+      el.durationValue.textContent = `${el.duration.value}ms`;
+      el.holdValue.textContent = `${el.hold.value}ms`;
+      el.lineTensionValue.textContent = Number(el.lineTension.value).toFixed(2);
+    }
+
+    function updateControlVisibility() {
+      const settings = readSettings();
+      const showTimelineFields = settings.presentationMode === "timeline";
+      const showLineTension = settings.chartType === "line" || settings.chartType === "area";
+      const showPoints = settings.chartType === "line" || settings.chartType === "area";
+
+      el.holdField.classList.toggle("is-hidden", !showTimelineFields);
+      el.loopTimeline.parentElement?.classList?.toggle("is-hidden", !showTimelineFields);
+      el.tensionField.classList.toggle("is-hidden", !showLineTension);
+      el.showPoints.parentElement?.classList?.toggle("is-hidden", !showPoints);
+    }
+
+    function setStatus(message, tone = "") {
+      el.statusBar.className = "status-bar";
+      if (tone) {
+        el.statusBar.classList.add(`status-bar--${tone}`);
+      }
+      el.statusText.textContent = message;
+    }
+
+    function roundedRect(ctx, x, y, width, height, radius) {
+      const r = Math.min(radius, width / 2, height / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + width, y, x + width, y + height, r);
+      ctx.arcTo(x + width, y + height, x, y + height, r);
+      ctx.arcTo(x, y + height, x, y, r);
+      ctx.arcTo(x, y, x + width, y, r);
+      ctx.closePath();
+    }
+
+    function withAlpha(color, alpha) {
+      if (color.startsWith("rgba(") || color.startsWith("hsla(")) return color;
+      if (!color.startsWith("#")) return color;
+      const normalized = color.replace("#", "");
+      const value = normalized.length === 3
+        ? normalized.split("").map((char) => char + char).join("")
+        : normalized;
+      const r = Number.parseInt(value.slice(0, 2), 16);
+      const g = Number.parseInt(value.slice(2, 4), 16);
+      const b = Number.parseInt(value.slice(4, 6), 16);
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function drawPill(ctx, x, y, text, bg, color, fontSize, padY, align = "left") {
+      ctx.save();
+      ctx.font = `800 ${fontSize}px "Manrope", sans-serif`;
+      const width = ctx.measureText(text).width + 36;
+      const pillX = align === "right" ? x - width : x;
+      roundedRect(ctx, pillX, y, width, fontSize + padY * 2, (fontSize + padY * 2) / 2);
+      ctx.fillStyle = bg;
+      ctx.fill();
+      ctx.fillStyle = color;
+      ctx.textAlign = "left";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, pillX + 18, y + (fontSize + padY * 2) / 2);
+      ctx.restore();
+    }
+
+    function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight, maxLines, font, color) {
+      if (!text) return;
+      ctx.save();
+      ctx.font = font;
+      ctx.fillStyle = color;
+      ctx.textAlign = "left";
+      ctx.textBaseline = "top";
+
+      const words = String(text).split(/\s+/).filter(Boolean);
+      const lines = [];
+      let current = "";
+
+      words.forEach((word) => {
+        const next = current ? `${current} ${word}` : word;
+        if (ctx.measureText(next).width <= maxWidth || !current) {
+          current = next;
+        } else {
+          lines.push(current);
+          current = word;
+        }
+      });
+
+      if (current) lines.push(current);
+
+      const clamped = lines.slice(0, maxLines);
+      if (lines.length > maxLines) {
+        let last = clamped[clamped.length - 1];
+        while (ctx.measureText(`${last}...`).width > maxWidth && last.length > 0) {
+          last = last.slice(0, -1);
+        }
+        clamped[clamped.length - 1] = `${last}...`;
+      }
+
+      clamped.forEach((line, index) => {
+        ctx.fillText(line, x, y + index * lineHeight);
+      });
+      ctx.restore();
+    }
+
+    function drawStatCard(ctx, x, y, width, height, label, value, palette, positive) {
+      ctx.save();
+      roundedRect(ctx, x, y, width, height, 28);
+      ctx.fillStyle = withAlpha("#ffffff", palette === PALETTES.midnight ? 0.06 : 0.48);
+      ctx.fill();
+      ctx.strokeStyle = withAlpha(palette.text, 0.09);
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      ctx.fillStyle = palette.muted;
+      ctx.font = `800 20px "Manrope", sans-serif`;
+      ctx.textAlign = "left";
+      ctx.fillText(label, x + 22, y + 32);
+
+      ctx.fillStyle = positive ? "#18a957" : palette.text;
+      ctx.font = `800 34px "Space Grotesk", sans-serif`;
+      ctx.fillText(value, x + 22, y + 77);
+      ctx.restore();
+    }
+
+    function parseDataInput(rawText) {
+      const text = rawText.trim();
+      if (!text) {
+        throw new Error("Pega una serie o JSON en el input de data.");
+      }
+
+      if (text.startsWith("{") || text.startsWith("[")) {
+        return normalizeJsonPayload(JSON.parse(text));
+      }
+
+      return normalizeLinePayload(text);
+    }
+
+    function normalizeJsonPayload(payload) {
+      if (Array.isArray(payload)) {
+        if (payload.every((item) => typeof item === "number")) {
+          return finalizeParsedData({
+            labels: payload.map((_, index) => `P${index + 1}`),
+            datasets: [{ label: "Serie 1", values: payload }]
+          });
+        }
+
+        if (payload.every((item) => Array.isArray(item))) {
+          const maxLength = Math.max(...payload.map((item) => item.length));
+          return finalizeParsedData({
+            labels: Array.from({ length: maxLength }, (_, index) => `P${index + 1}`),
+            datasets: payload.map((values, index) => ({
+              label: `Serie ${index + 1}`,
+              values
+            }))
+          });
+        }
+
+        if (payload.every((item) => item && typeof item === "object")) {
+          return finalizeParsedData({
+            labels: payload[0].labels || [],
+            datasets: payload.map((item, index) => ({
+              label: item.label || `Serie ${index + 1}`,
+              values: item.values || item.data || []
+            }))
+          });
+        }
+      }
+
+      if (payload && typeof payload === "object") {
+        const labels = Array.isArray(payload.labels) ? payload.labels : [];
+
+        if (Array.isArray(payload.datasets)) {
+          return finalizeParsedData({
+            labels,
+            datasets: payload.datasets.map((dataset, index) => ({
+              label: dataset.label || `Serie ${index + 1}`,
+              values: dataset.values || dataset.data || []
+            }))
+          });
+        }
+
+        const datasetEntries = Object.entries(payload).filter(([key, value]) => key !== "labels" && Array.isArray(value));
+        if (datasetEntries.length) {
+          return finalizeParsedData({
+            labels,
+            datasets: datasetEntries.map(([label, values]) => ({ label, values }))
+          });
+        }
+      }
+
+      throw new Error("No pude interpretar el JSON. Usa labels + datasets o un arreglo simple.");
+    }
+
+    function normalizeLinePayload(text) {
+      const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+      const result = { labels: [], datasets: [] };
+
+      lines.forEach((line, index) => {
+        const colonIndex = line.indexOf(":");
+        if (colonIndex === -1) {
+          const values = parseNumberList(line);
+          result.datasets.push({
+            label: `Serie ${index + 1}`,
+            values
+          });
+          return;
+        }
+
+        const key = line.slice(0, colonIndex).trim();
+        const valueText = line.slice(colonIndex + 1).trim();
+
+        if (/^labels$/i.test(key)) {
+          result.labels = valueText.split(",").map((item) => item.trim()).filter(Boolean);
+          return;
+        }
+
+        result.datasets.push({
+          label: key || `Serie ${index + 1}`,
+          values: parseNumberList(valueText)
+        });
+      });
+
+      return finalizeParsedData(result);
+    }
+
+    function finalizeParsedData(input) {
+      const datasets = (input.datasets || []).map((dataset, index) => ({
+        label: String(dataset.label || `Serie ${index + 1}`).trim(),
+        values: (dataset.values || []).map((value) => Number(value))
+      })).filter((dataset) => dataset.values.length);
+
+      if (!datasets.length) {
+        throw new Error("No encontré valores numericos en la data.");
+      }
+
+      const maxLength = Math.max(...datasets.map((dataset) => dataset.values.length));
+      const labels = (input.labels || []).map((label) => String(label).trim()).filter(Boolean);
+      const finalLabels = labels.length ? labels : Array.from({ length: maxLength }, (_, index) => `P${index + 1}`);
+
+      if (finalLabels.length !== maxLength) {
+        throw new Error(`Tus labels tienen ${finalLabels.length} items, pero la serie mas larga tiene ${maxLength} valores.`);
+      }
+
+      datasets.forEach((dataset) => {
+        if (dataset.values.length !== maxLength) {
+          throw new Error(`La serie "${dataset.label}" no tiene ${maxLength} valores.`);
+        }
+      });
+
+      return {
+        labels: finalLabels,
+        datasets
+      };
+    }
+
+    function parseNumberList(text) {
+      const values = text.split(/[,\s]+/).map((item) => item.trim()).filter(Boolean).map((item) => Number(item));
+      if (!values.length || values.some((value) => Number.isNaN(value))) {
+        throw new Error(`No pude leer esta linea: "${text}".`);
+      }
+      return values;
+    }
+
+    function isCartesianType(chartType) {
+      return chartType !== "doughnut";
+    }
+
+    function isLineType(chartType) {
+      return chartType === "line" || chartType === "area";
+    }
+
+    function getBaseChartType(chartType) {
+      if (chartType === "line" || chartType === "area") return "line";
+      if (chartType === "doughnut") return "doughnut";
+      return "bar";
+    }
+
+    function createChartConfig(parsed) {
+      const settings = readSettings();
+      const palette = getPalette();
+      const baseType = getBaseChartType(settings.chartType);
+      const compareMode = settings.presentationMode === "compare" || parsed.datasets.length === 1;
+      const datasets = compareMode
+        ? parsed.datasets.map((dataset, index) => buildDataset(dataset, index, parsed.datasets.length))
+        : [buildDataset(parsed.datasets[state.timelineIndex], state.timelineIndex, parsed.datasets.length)];
+
+      const config = {
+        type: baseType,
+        data: {
+          labels: parsed.labels,
+          datasets
+        },
+        options: {
+          responsive: false,
+          maintainAspectRatio: false,
+          animation: {
+            duration: settings.duration,
+            easing: "easeOutQuart"
+          },
+          layout: {
+            padding: {
+              top: 560,
+              right: settings.chartType === "horizontalBar" ? 120 : 92,
+              bottom: 170,
+              left: settings.chartType === "horizontalBar" ? 140 : 92
+            }
+          },
+          plugins: {
+            legend: {
+              display: settings.showLegend && (compareMode ? parsed.datasets.length > 1 || settings.chartType === "doughnut" : true),
+              position: "bottom",
+              align: "start",
+              labels: {
+                color: palette.text,
+                usePointStyle: true,
+                padding: 26,
+                boxWidth: 12,
+                pointStyle: settings.chartType === "doughnut" ? "circle" : "rectRounded",
+                font: {
+                  family: "Manrope",
+                  size: 23,
+                  weight: "700"
+                }
+              }
+            },
+            tooltip: {
+              enabled: false
+            }
+          },
+          elements: {
+            line: {
+              borderWidth: 8,
+              tension: settings.lineTension
+            },
+            point: {
+              radius: settings.showPoints && isLineType(settings.chartType) ? 6 : 0,
+              hoverRadius: settings.showPoints && isLineType(settings.chartType) ? 7 : 0,
+              borderWidth: 0
+            },
+            bar: {
+              borderRadius: settings.chartType === "stackedBar" ? 0 : 20,
+              borderSkipped: false
+            },
+            arc: {
+              borderWidth: 5,
+              borderColor: withAlpha("#ffffff", palette === PALETTES.midnight ? 0.08 : 0.68)
+            }
+          }
+        }
+      };
+
+      if (settings.chartType === "horizontalBar") {
+        config.options.indexAxis = "y";
+      }
+
+      if (isCartesianType(settings.chartType)) {
+        const beginAtZero = parsed.datasets.every((dataset) => dataset.values.every((value) => value >= 0));
+        const stacked = settings.chartType === "stackedBar";
+
+        config.options.scales = {
+          x: {
+            display: true,
+            stacked,
+            grid: {
+              display: settings.showGrid,
+              color: palette.grid,
+              drawBorder: false
+            },
+            border: {
+              display: false
+            },
+            ticks: {
+              color: palette.muted,
+              padding: 14,
+              font: {
+                family: "Manrope",
+                size: 22,
+                weight: "700"
+              }
+            }
+          },
+          y: {
+            display: true,
+            stacked,
+            beginAtZero,
+            grid: {
+              display: settings.showGrid,
+              color: palette.grid,
+              drawBorder: false
+            },
+            border: {
+              display: false
+            },
+            ticks: {
+              color: palette.muted,
+              padding: 14,
+              font: {
+                family: "Manrope",
+                size: 22,
+                weight: "700"
+              },
+              callback: (value) => formatAxisValue(value)
+            }
+          }
+        };
+
+        if (settings.chartType === "horizontalBar") {
+          config.options.scales.x.ticks.callback = (value) => formatAxisValue(value);
+          config.options.scales.y.ticks.callback = undefined;
+        }
+      } else {
+        config.options.cutout = "58%";
+      }
+
+      return config;
+    }
+
+    function buildDataset(dataset, index, totalSeries) {
+      const settings = readSettings();
+      const palette = getPalette();
+      const baseColor = palette.series[index % palette.series.length];
+      const compareMode = settings.presentationMode === "compare" || totalSeries === 1;
+      const isSingleVisibleSeries = compareMode && totalSeries === 1;
+
+      if (settings.chartType === "doughnut") {
+        return {
+          label: dataset.label,
+          data: dataset.values,
+          backgroundColor: buildSegmentColors(index, dataset.values.length),
+          hoverOffset: 0
+        };
+      }
+
+      if (settings.chartType === "line" || settings.chartType === "area") {
+        return {
+          label: dataset.label,
+          data: dataset.values,
+          borderColor: baseColor,
+          backgroundColor: settings.chartType === "area" ? withAlpha(baseColor, 0.18) : withAlpha(baseColor, 0.12),
+          fill: settings.chartType === "area",
+          pointBackgroundColor: baseColor
+        };
+      }
+
+      if (settings.chartType === "horizontalBar" || settings.chartType === "bar" || settings.chartType === "stackedBar") {
+        return {
+          label: dataset.label,
+          data: dataset.values,
+          backgroundColor: isSingleVisibleSeries ? buildSegmentColors(index, dataset.values.length) : withAlpha(baseColor, 0.9),
+          borderColor: isSingleVisibleSeries ? buildSegmentColors(index, dataset.values.length) : baseColor,
+          borderWidth: isSingleVisibleSeries ? 0 : 1,
+          maxBarThickness: settings.chartType === "horizontalBar" ? 74 : 66
+        };
+      }
+
+      return {
+        label: dataset.label,
+        data: dataset.values,
+        borderColor: baseColor,
+        backgroundColor: withAlpha(baseColor, 0.88)
+      };
+    }
+
+    function buildSegmentColors(offset, count) {
+      const palette = getPalette();
+      return Array.from({ length: count }, (_, index) => palette.series[(offset + index) % palette.series.length]);
+    }
+
+    function renderChart() {
+      clearTimeline();
+      updateSliderLabels();
+      updateControlVisibility();
+
+      let parsed;
+      try {
+        parsed = parseDataInput(el.dataInput.value);
+      } catch (error) {
+        state.parsed = null;
+        setStatus(error.message, "error");
+        updateButtons();
+        return;
+      }
+
+      state.parsed = parsed;
+      state.timelineIndex = 0;
+
+      if (state.chart) {
+        state.chart.destroy();
+      }
+
+      const config = createChartConfig(parsed);
+      state.chart = new Chart(el.stageCanvas.getContext("2d"), config);
+
+      const settings = readSettings();
+      const modeText = settings.presentationMode === "timeline" && parsed.datasets.length > 1 ? "Timeline" : "Compare";
+      el.previewModePill.textContent = modeText;
+      el.previewStatsPill.textContent = `${parsed.datasets.length} series · ${parsed.labels.length} puntos`;
+
+      if (settings.presentationMode === "timeline" && parsed.datasets.length > 1) {
+        startTimelinePlayback(state.recording ? false : settings.loopTimeline);
+      }
+
+      setStatus(`Render listo: ${parsed.datasets.length} series y ${parsed.labels.length} puntos.`, "success");
+      updateButtons();
+    }
+
+    function clearTimeline() {
+      if (state.timelineTimer) {
+        window.clearTimeout(state.timelineTimer);
+        state.timelineTimer = null;
+      }
+    }
+
+    function startTimelinePlayback(loop) {
+      clearTimeline();
+      if (!state.parsed || !state.chart || state.parsed.datasets.length < 2) return;
+      const settings = readSettings();
+
+      const advance = () => {
+        if (!state.chart || !state.parsed) return;
+        const nextIndex = state.timelineIndex + 1;
+        if (nextIndex >= state.parsed.datasets.length) {
+          if (loop) {
+            state.timelineIndex = 0;
+          } else {
+            return;
+          }
+        } else {
+          state.timelineIndex = nextIndex;
+        }
+
+        state.chart.data.datasets = [
+          buildDataset(state.parsed.datasets[state.timelineIndex], state.timelineIndex, state.parsed.datasets.length)
+        ];
+        state.chart.update();
+
+        state.timelineTimer = window.setTimeout(advance, settings.duration + settings.hold);
+      };
+
+      state.timelineTimer = window.setTimeout(advance, settings.duration + settings.hold);
+    }
+
+    function getFocusDataset() {
+      if (!state.parsed) return null;
+      const settings = readSettings();
+      if (settings.presentationMode === "timeline" && state.parsed.datasets.length > 1) {
+        return state.parsed.datasets[state.timelineIndex] || state.parsed.datasets[0];
+      }
+      return state.parsed.datasets[state.parsed.datasets.length - 1] || state.parsed.datasets[0];
+    }
+
+    function formatAxisValue(value) {
+      return formatValue(Number(value), true);
+    }
+
+    function formatValue(value, compact) {
+      const settings = readSettings();
+      if (!Number.isFinite(value)) return "";
+      const abs = Math.abs(value);
+      let numberText = "";
+
+      if (compact && abs >= 1000) {
+        if (abs >= 1000000) {
+          numberText = `${(value / 1000000).toFixed(abs >= 10000000 ? 0 : 1).replace(/\.0$/, "")}M`;
+        } else {
+          numberText = `${(value / 1000).toFixed(abs >= 10000 ? 0 : 1).replace(/\.0$/, "")}k`;
+        }
+      } else {
+        numberText = value.toFixed(settings.decimals);
+      }
+
+      return `${settings.prefix || ""}${numberText}${settings.suffix || ""}`;
+    }
+
+    function formatSignedValue(value) {
+      const prefix = value > 0 ? "+" : value < 0 ? "-" : "";
+      return `${prefix}${formatValue(Math.abs(value), false)}`;
+    }
+
+    function updateButtons() {
+      const hasChart = Boolean(state.chart && state.parsed);
+      el.replayBtn.disabled = !hasChart || state.recording;
+      el.downloadBtn.disabled = !hasChart || state.recording;
+      el.recordBtn.disabled = !hasChart || state.recording;
+      el.renderBtn.disabled = state.recording;
+    }
+
+    function scheduleRender() {
+      window.clearTimeout(state.renderDebounce);
+      state.renderDebounce = window.setTimeout(renderChart, 220);
+    }
+
+    function downloadPng() {
+      if (!state.chart) return;
+      el.stageCanvas.toBlob((blob) => {
+        if (!blob) {
+          setStatus("No pude generar el PNG.", "error");
+          return;
+        }
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `chart-animator-${Date.now()}.png`;
+        link.click();
+        URL.revokeObjectURL(url);
+        setStatus("PNG descargado.", "success");
+      }, "image/png");
+    }
+
+    function pickRecordMimeType() {
+      const candidates = [
+        "video/webm;codecs=vp9",
+        "video/webm;codecs=vp8",
+        "video/webm"
+      ];
+      return candidates.find((candidate) => window.MediaRecorder && MediaRecorder.isTypeSupported(candidate)) || "";
+    }
+
+    function getPlaybackDurationMs() {
+      const settings = readSettings();
+      if (!state.parsed) return settings.duration + 400;
+      if (settings.presentationMode !== "timeline" || state.parsed.datasets.length === 1) {
+        return settings.duration + 400;
+      }
+      return state.parsed.datasets.length * settings.duration + (state.parsed.datasets.length - 1) * settings.hold + 500;
+    }
+
+    async function recordWebm() {
+      if (!state.chart || !state.parsed) return;
+      if (!window.MediaRecorder) {
+        setStatus("Este navegador no soporta MediaRecorder.", "error");
+        return;
+      }
+
+      const mimeType = pickRecordMimeType();
+      if (!mimeType) {
+        setStatus("No encontre un codec WebM compatible.", "error");
+        return;
+      }
+
+      state.recording = true;
+      updateButtons();
+      clearTimeline();
+      setStatus("Grabando animacion WebM...", "loading");
+
+      const stream = el.stageCanvas.captureStream(60);
+      const recorder = new MediaRecorder(stream, {
+        mimeType,
+        videoBitsPerSecond: 12000000
+      });
+
+      const chunks = [];
+      recorder.addEventListener("dataavailable", (event) => {
+        if (event.data && event.data.size > 0) {
+          chunks.push(event.data);
+        }
+      });
+
+      recorder.addEventListener("stop", () => {
+        const blob = new Blob(chunks, { type: recorder.mimeType });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `chart-animator-${Date.now()}.webm`;
+        link.click();
+        URL.revokeObjectURL(url);
+        stream.getTracks().forEach((track) => track.stop());
+        state.recording = false;
+        updateButtons();
+        setStatus("WebM exportado.", "success");
+      });
+
+      recorder.start();
+      renderChart();
+      setStatus("Grabando animacion WebM...", "loading");
+
+      window.setTimeout(() => {
+        if (recorder.state !== "inactive") {
+          recorder.stop();
+        }
+      }, getPlaybackDurationMs());
+    }
+
+    function bindEvents() {
+      el.presetChips.addEventListener("click", (event) => {
+        const target = event.target.closest("[data-preset]");
+        if (!target) return;
+        syncPresetToControls(target.dataset.preset);
+        renderChart();
+      });
+
+      [
+        el.chartType,
+        el.presentationMode,
+        el.palette,
+        el.badge,
+        el.titleInput,
+        el.subtitleInput,
+        el.footerInput,
+        el.dataInput,
+        el.valuePrefix,
+        el.valueSuffix,
+        el.decimals,
+        el.duration,
+        el.hold,
+        el.lineTension,
+        el.showLegend,
+        el.showGrid,
+        el.showValues,
+        el.showPoints,
+        el.loopTimeline
+      ].forEach((node) => {
+        const eventName = node.tagName === "SELECT" || node.type === "checkbox" || node.type === "range" ? "change" : "input";
+        node.addEventListener(eventName, () => {
+          updateSliderLabels();
+          updateControlVisibility();
+          scheduleRender();
+        });
+        if (eventName !== "input") {
+          node.addEventListener("input", () => {
+            updateSliderLabels();
+            updateControlVisibility();
+          });
+        }
+      });
+
+      el.renderBtn.addEventListener("click", renderChart);
+      el.replayBtn.addEventListener("click", renderChart);
+      el.downloadBtn.addEventListener("click", downloadPng);
+      el.recordBtn.addEventListener("click", recordWebm);
+    }
+
+    async function boot() {
+      updateSliderLabels();
+      updatePresetButtons();
+      updateControlVisibility();
+      bindEvents();
+      updateButtons();
+      if (document.fonts?.ready) {
+        await document.fonts.ready;
+      }
+      renderChart();
+    }
+
+    syncPresetToControls("timeline");
+    boot();
+  </script>
+</body>
+
+</html>
