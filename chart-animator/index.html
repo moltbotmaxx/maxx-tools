@@ -968,6 +968,9 @@ Direct: 12, 12, 13, 14`,
       lastPreset: "timeline"
     };
 
+    const measurementCanvas = document.createElement("canvas");
+    const measurementContext = measurementCanvas.getContext("2d");
+
     const stagePlugin = {
       id: "stageChrome",
       beforeDraw(chart) {
@@ -1280,7 +1283,19 @@ Direct: 12, 12, 13, 14`,
       ctx.fillStyle = color;
       ctx.textAlign = "left";
       ctx.textBaseline = "top";
+      const clamped = computeWrappedLines(ctx, text, maxWidth, maxLines);
 
+      clamped.forEach((line, index) => {
+        ctx.fillText(line, x, y + index * lineHeight);
+      });
+      ctx.restore();
+      return {
+        lineCount: clamped.length,
+        height: clamped.length * lineHeight
+      };
+    }
+
+    function computeWrappedLines(ctx, text, maxWidth, maxLines) {
       const words = String(text).split(/\s+/).filter(Boolean);
       const lines = [];
       let current = "";
@@ -1306,13 +1321,16 @@ Direct: 12, 12, 13, 14`,
         clamped[clamped.length - 1] = `${last}...`;
       }
 
-      clamped.forEach((line, index) => {
-        ctx.fillText(line, x, y + index * lineHeight);
-      });
-      ctx.restore();
+      return clamped;
+    }
+
+    function measureWrappedTextBlock(text, maxWidth, lineHeight, maxLines, font) {
+      if (!text) return { lineCount: 0, height: 0 };
+      measurementContext.font = font;
+      const lines = computeWrappedLines(measurementContext, text, maxWidth, maxLines);
       return {
-        lineCount: clamped.length,
-        height: clamped.length * lineHeight
+        lineCount: lines.length,
+        height: lines.length * lineHeight
       };
     }
 
@@ -1328,7 +1346,9 @@ Direct: 12, 12, 13, 14`,
 
     function shouldDisplayLegend(settings = readSettings(), parsed = state.parsed) {
       if (!settings.showLegend || !parsed) return false;
+      const mode = getEffectiveMode(settings, parsed);
       if (settings.chartType === "doughnut") return parsed.labels.length <= 6 || parsed.datasets.length > 1;
+      if (mode === "timeline") return false;
       return parsed.datasets.length > 1;
     }
 
@@ -1349,10 +1369,14 @@ Direct: 12, 12, 13, 14`,
     function getAdaptiveTextStyles(settings = readSettings(), parsed = state.parsed) {
       const titleLength = (settings.title || "").length;
       const subtitleLength = (settings.subtitle || "").length;
-      let titleFontSize = 78;
+      const mode = getEffectiveMode(settings, parsed);
+      let titleFontSize = 68;
 
-      if (settings.chartType === "horizontalBar") titleFontSize = 82;
-      if (settings.chartType === "doughnut") titleFontSize = 72;
+      if (settings.chartType === "horizontalBar") titleFontSize = 60;
+      if (settings.chartType === "line" || settings.chartType === "area") titleFontSize = 62;
+      if (settings.chartType === "doughnut") titleFontSize = 60;
+      if (mode === "timeline" && settings.chartType === "bar") titleFontSize = 58;
+      if (mode === "timeline" && settings.chartType === "stackedBar") titleFontSize = 56;
       if (titleLength > 24) titleFontSize -= 6;
       if (titleLength > 38) titleFontSize -= 8;
       if (titleLength > 54) titleFontSize -= 8;
@@ -1360,9 +1384,9 @@ Direct: 12, 12, 13, 14`,
 
       titleFontSize = Math.max(52, titleFontSize);
 
-      let subtitleFontSize = 28;
-      if (subtitleLength > 95) subtitleFontSize = 26;
-      if (subtitleLength > 135) subtitleFontSize = 24;
+      let subtitleFontSize = 24;
+      if (subtitleLength > 95) subtitleFontSize = 22;
+      if (subtitleLength > 135) subtitleFontSize = 20;
 
       return {
         titleFontSize,
@@ -1399,13 +1423,34 @@ Direct: 12, 12, 13, 14`,
       const hasSubtitle = Boolean(settings.subtitle);
       const showLegend = shouldDisplayLegend(settings, parsed);
       const maxLabelLength = getMaxLabelLength(parsed);
+      const pagePaddingX = 76;
+      const headerTop = 84;
+      const kickerHeight = settings.badge.trim() ? 56 : 0;
+      const titleStart = headerTop + kickerHeight + (kickerHeight ? 10 : 0);
+      const headerWidth = 1080 - pagePaddingX * 2;
+      const titleMetrics = measureWrappedTextBlock(
+        settings.title || "Untitled chart",
+        headerWidth,
+        typography.titleLineHeight,
+        2,
+        `700 ${typography.titleFontSize}px "Space Grotesk", sans-serif`
+      );
+      const subtitleMetrics = measureWrappedTextBlock(
+        settings.subtitle,
+        headerWidth,
+        typography.subtitleLineHeight,
+        2,
+        `600 ${typography.subtitleFontSize}px "Manrope", sans-serif`
+      );
+      const headerBottom = titleStart + titleMetrics.height + (subtitleMetrics.height ? 16 + subtitleMetrics.height : 0);
 
       const layout = {
         mode,
         hasSubtitle,
         showLegend,
-        pagePaddingX: 76,
-        headerTop: 84,
+        pagePaddingX,
+        headerTop,
+        headerBottom,
         panelRadius: 32,
         panelPad: { top: 20, right: 24, bottom: showLegend ? 26 : 18, left: 24 },
         titleFontSize: typography.titleFontSize,
@@ -1413,25 +1458,15 @@ Direct: 12, 12, 13, 14`,
         subtitleFontSize: typography.subtitleFontSize,
         subtitleLineHeight: typography.subtitleLineHeight,
         chartPadding: {
-          top: 330,
+          top: 0,
           right: 82,
           bottom: showLegend ? 166 : 118,
           left: 92
         }
       };
 
-      if (!hasSubtitle) {
-        layout.chartPadding.top -= 44;
-      }
-
-      if (mode === "timeline") {
-        layout.chartPadding.top += 30;
-      }
-
       switch (settings.chartType) {
         case "horizontalBar":
-          layout.chartPadding.top = hasSubtitle ? 302 : 248;
-          if (mode === "timeline") layout.chartPadding.top += 28;
           layout.chartPadding.right = 92;
           layout.chartPadding.bottom = showLegend ? 142 : 96;
           layout.chartPadding.left = 122 + Math.min(maxLabelLength * 4, 120);
@@ -1439,23 +1474,17 @@ Direct: 12, 12, 13, 14`,
           break;
         case "line":
         case "area":
-          layout.chartPadding.top = hasSubtitle ? 360 : 304;
-          if (mode === "timeline") layout.chartPadding.top += 24;
           layout.chartPadding.right = 72;
           layout.chartPadding.bottom = showLegend ? 162 : 112;
           layout.chartPadding.left = 88;
           layout.panelPad = { top: 18, right: 20, bottom: showLegend ? 24 : 18, left: 20 };
           break;
         case "stackedBar":
-          layout.chartPadding.top = hasSubtitle ? 368 : 312;
-          if (mode === "timeline") layout.chartPadding.top += 20;
           layout.chartPadding.right = 80;
           layout.chartPadding.bottom = showLegend ? 174 : 120;
           layout.chartPadding.left = 94;
           break;
         case "doughnut":
-          layout.chartPadding.top = hasSubtitle ? 352 : 296;
-          if (mode === "timeline") layout.chartPadding.top += 12;
           layout.chartPadding.right = 126;
           layout.chartPadding.bottom = showLegend ? 210 : 150;
           layout.chartPadding.left = 126;
@@ -1463,12 +1492,13 @@ Direct: 12, 12, 13, 14`,
           layout.panelRadius = 38;
           break;
         default:
-          layout.chartPadding.top = hasSubtitle ? 338 : 286;
-          if (mode === "timeline") layout.chartPadding.top += 24;
           layout.chartPadding.right = 76;
           layout.chartPadding.bottom = showLegend ? 164 : 114;
           layout.chartPadding.left = 94;
       }
+
+      const chartTopGap = settings.chartType === "doughnut" ? 54 : settings.chartType === "horizontalBar" ? 46 : 56;
+      layout.chartPadding.top = headerBottom + chartTopGap;
 
       return layout;
     }
