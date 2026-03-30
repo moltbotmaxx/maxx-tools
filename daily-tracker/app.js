@@ -25,6 +25,19 @@ const EXTENSION_AUTH_STATE_REQUEST_EVENT = 'DAILY_TRACKER_EXTENSION_AUTH_STATE_R
 const TEAM_SELECTIONS_COLLECTION = 'daily-tracker-team-selections';
 const TEAM_SELECTIONS_DISPLAY_LIMIT = 12;
 const TEAM_SELECTIONS_QUERY_LIMIT = 40;
+const TEAM_SELECTION_ENTRY_SOURCE = {
+    MANUAL: 'manual',
+    EXTENSION: 'extension',
+    SHORTCUT: 'shortcut',
+    SOURCING: 'sourcing',
+    RECOVERED: 'recovered',
+    UNKNOWN: 'unknown'
+};
+const TEAM_SELECTION_VISIBLE_SOURCES = new Set([
+    TEAM_SELECTION_ENTRY_SOURCE.MANUAL,
+    TEAM_SELECTION_ENTRY_SOURCE.EXTENSION,
+    TEAM_SELECTION_ENTRY_SOURCE.SHORTCUT
+]);
 const SHORTCUT_SHARE_TARGET_PARAMS = ['dt_share', 'share'];
 const SHORTCUT_SHARE_QUERY_PARAMS = ['dt_share', 'share', 'url', 'link', 'title', 'name', 'notes', 'text', 'type', 'uid', 'user', 'ownerUid'];
 const SHORTCUT_SHARE_OWNER_PARAMS = ['uid', 'user', 'ownerUid'];
@@ -1082,6 +1095,7 @@ function consumeShortcutShareFromUrl() {
         content: sharedNotes,
         type: sharedType,
         ownerUid: sharedOwnerUid,
+        entrySource: TEAM_SELECTION_ENTRY_SOURCE.SHORTCUT,
         image: '',
         createdAt: new Date().toISOString()
     }]);
@@ -1511,6 +1525,7 @@ function normalizeImportedIdea(rawIdea) {
     const notes = typeof rawIdea.notes === 'string'
         ? rawIdea.notes
         : (typeof rawIdea.content === 'string' ? rawIdea.content : '');
+    const entrySource = resolveTeamSelectionEntrySource(rawIdea);
 
     return {
         id: normalizeWhitespace(rawIdea.id) || generateId(),
@@ -1522,8 +1537,49 @@ function normalizeImportedIdea(rawIdea) {
         extraLinks: typeof rawIdea.extraLinks === 'string' ? rawIdea.extraLinks : '',
         type,
         ownerUid,
+        entrySource,
         createdAt: typeof rawIdea.createdAt === 'string' ? rawIdea.createdAt : new Date().toISOString()
     };
+}
+
+function normalizeTeamSelectionEntrySource(value = '') {
+    const normalized = normalizeWhitespace(value).toLowerCase();
+    if (Object.values(TEAM_SELECTION_ENTRY_SOURCE).includes(normalized)) {
+        return normalized;
+    }
+    return TEAM_SELECTION_ENTRY_SOURCE.UNKNOWN;
+}
+
+function looksLikeSharedSourcingSelection(rawItem = {}) {
+    const combinedText = [
+        rawItem.notesPreview,
+        rawItem.notes,
+        rawItem.content
+    ]
+        .filter(value => typeof value === 'string' && value.trim())
+        .join('\n');
+
+    return /\bSource type:\b/i.test(combinedText)
+        || (/\bScore:\b/i.test(combinedText) && /\bReason:\b/i.test(combinedText));
+}
+
+function resolveTeamSelectionEntrySource(rawItem = {}) {
+    const explicitSource = normalizeTeamSelectionEntrySource(
+        rawItem.entrySource || rawItem.source || rawItem.origin
+    );
+    if (explicitSource !== TEAM_SELECTION_ENTRY_SOURCE.UNKNOWN) {
+        return explicitSource;
+    }
+
+    if (looksLikeSharedSourcingSelection(rawItem)) {
+        return TEAM_SELECTION_ENTRY_SOURCE.SOURCING;
+    }
+
+    return TEAM_SELECTION_ENTRY_SOURCE.MANUAL;
+}
+
+function shouldAppearInTeamSelections(rawItem = {}) {
+    return TEAM_SELECTION_VISIBLE_SOURCES.has(resolveTeamSelectionEntrySource(rawItem));
 }
 
 function getTeamSelectionOwnerLabel(user = currentUser) {
@@ -1559,6 +1615,7 @@ function buildTeamSelectionPayload(idea, user = currentUser) {
 }
 
 async function publishTeamSelectionActivity(idea, user = currentUser) {
+    if (!shouldAppearInTeamSelections(idea)) return false;
     const docId = getTeamSelectionDocId(idea, user);
     const payload = buildTeamSelectionPayload(idea, user);
     if (!docId || !payload) return false;
@@ -1986,6 +2043,7 @@ function normalizeTeamSelectionActivity(rawItem = {}, fallbackId = '') {
         title,
         url: safeHttpUrl(rawItem.url, ''),
         type: normalizeIdeaType(rawItem.type),
+        entrySource: resolveTeamSelectionEntrySource(rawItem),
         notesPreview: typeof rawItem.notesPreview === 'string' ? rawItem.notesPreview : '',
         selectedAt: typeof rawItem.selectedAt === 'string' ? rawItem.selectedAt : ''
     };
@@ -2048,12 +2106,13 @@ async function loadTeamSelections() {
         teamSelections = snapshot.docs
             .map(docSnap => normalizeTeamSelectionActivity(docSnap.data(), docSnap.id))
             .filter(Boolean)
+            .filter(item => shouldAppearInTeamSelections(item))
             .filter(item => item.ownerUid !== currentUser.uid)
             .slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT);
 
         teamSelectionsStatusMessage = teamSelections.length
-            ? 'Latest from the team'
-            : 'No recent team selections yet.';
+            ? 'Latest clipped and manual links'
+            : 'No recent clipped or manual links yet.';
     } catch (e) {
         console.error('Failed to load team selections', e);
         teamSelectionsStatusMessage = teamSelections.length
@@ -3062,6 +3121,7 @@ async function returnStagingCardToSelection(cardId) {
         notes,
         extraLinks: card.extraLinks || '',
         type: card.type || 'post',
+        entrySource: TEAM_SELECTION_ENTRY_SOURCE.RECOVERED,
         createdAt: new Date().toISOString()
     };
 
@@ -5075,6 +5135,7 @@ async function saveSourceSelectionIdea() {
         content: notes,
         notes,
         type: selectedType,
+        entrySource: TEAM_SELECTION_ENTRY_SOURCE.SOURCING,
         createdAt: new Date().toISOString()
     };
 
@@ -5530,6 +5591,7 @@ async function addInspiration() {
         image: '', // Will fetch in background
         content: url ? '' : rawValue,
         type: type,
+        entrySource: TEAM_SELECTION_ENTRY_SOURCE.MANUAL,
         createdAt: new Date().toISOString()
     };
 

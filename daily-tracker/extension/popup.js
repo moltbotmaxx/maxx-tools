@@ -81,6 +81,7 @@ function buildQueuedIdea({ title, notes, type, url, ownerUid }) {
         content: notes,
         type,
         ownerUid: typeof ownerUid === 'string' ? ownerUid : '',
+        entrySource: 'extension',
         image: '',
         createdAt: new Date().toISOString()
     };

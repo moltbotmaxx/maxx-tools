@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Schedulr Clipper",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "Capture inspiration links directly to your Schedulr workspace.",
     "homepage_url": "https://maxxbot.cloud/daily-tracker/",
     "permissions": [
