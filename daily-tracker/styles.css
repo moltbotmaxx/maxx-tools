@@ -5353,6 +5353,72 @@ canvas {
   white-space: nowrap;
 }
 
+.team-selections-grid {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 4px 4px;
+  column-count: 1;
+  column-gap: 20px;
+  width: 100%;
+  mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+}
+
+.team-selections-grid .inspiration-card {
+  margin-bottom: 16px;
+}
+
+.inspiration-card--team {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 249, 252, 0.96));
+}
+
+.ins-team-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ins-team-owner,
+.ins-team-time {
+  font-size: 0.74rem;
+  color: var(--text-tertiary);
+}
+
+.ins-team-owner {
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.team-selections-placeholder {
+  color: var(--text-secondary);
+}
+
+.team-selections-placeholder p {
+  margin: 0;
+}
+
+@media (max-width: 1220px) {
+  .team-selections-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .team-selections-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .team-selections-grid {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
 .team-selections-list {
   display: flex;
   flex-direction: column;

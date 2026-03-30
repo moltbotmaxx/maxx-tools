@@ -15,6 +15,7 @@ const ACTIVE_TAB_KEY = 'contentSchedulerActiveTab';
 const MOBILE_THEME_KEY = 'contentSchedulerMobileTheme';
 const IOS_INSTALL_PROMPT_DISMISSED_KEY = 'contentSchedulerIosInstallPromptDismissed';
 const DONE_ARTICLES_KEY = 'done_articles';
+const DISMISSED_TEAM_SELECTIONS_KEY = 'contentSchedulerDismissedTeamSelections';
 const MANAGED_SENTIENT_ACCOUNTS_KEY = 'contentSchedulerManagedSentientAccounts';
 const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
 const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
@@ -1393,6 +1394,37 @@ function readJsonFromLocalStorage(key, fallback) {
     }
 }
 
+function getDismissedTeamSelectionsStorageKey(user = currentUser) {
+    const uid = normalizeWhitespace(user?.uid || '');
+    return uid ? `${DISMISSED_TEAM_SELECTIONS_KEY}:${uid}` : DISMISSED_TEAM_SELECTIONS_KEY;
+}
+
+function getDismissedTeamSelectionIds(user = currentUser) {
+    const stored = readJsonFromLocalStorage(getDismissedTeamSelectionsStorageKey(user), []);
+    return new Set(
+        Array.isArray(stored)
+            ? stored.map((value) => normalizeWhitespace(value)).filter(Boolean)
+            : []
+    );
+}
+
+function persistDismissedTeamSelectionIds(ids, user = currentUser) {
+    const normalizedIds = Array.from(new Set(
+        Array.from(ids || [])
+            .map((value) => normalizeWhitespace(value))
+            .filter(Boolean)
+    ));
+    safeSetLocalStorageItem(getDismissedTeamSelectionsStorageKey(user), JSON.stringify(normalizedIds));
+}
+
+function dismissTeamSelectionId(id, user = currentUser) {
+    const normalizedId = normalizeWhitespace(id);
+    if (!normalizedId) return;
+    const dismissedIds = getDismissedTeamSelectionIds(user);
+    dismissedIds.add(normalizedId);
+    persistDismissedTeamSelectionIds(dismissedIds, user);
+}
+
 function getDateKey(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -1696,7 +1728,14 @@ function buildTeamSelectionPayload(idea, user = currentUser) {
     const title = normalizeWhitespace(idea.title || idea.notes || idea.content || '');
     if (!title) return null;
 
-    const notesPreview = normalizeWhitespace(idea.notes || idea.content || '').slice(0, 280);
+    const notes = typeof idea.notes === 'string'
+        ? idea.notes.trim()
+        : typeof idea.content === 'string'
+            ? idea.content.trim()
+            : '';
+    const content = typeof idea.content === 'string' ? idea.content.trim() : '';
+    const extraLinks = typeof idea.extraLinks === 'string' ? idea.extraLinks.trim() : '';
+    const notesPreview = normalizeWhitespace(notes || content).slice(0, 280);
     const selectedAt = typeof idea.createdAt === 'string' ? idea.createdAt : new Date().toISOString();
 
     return {
@@ -1705,8 +1744,12 @@ function buildTeamSelectionPayload(idea, user = currentUser) {
         ownerLabel: getTeamSelectionOwnerLabel(user),
         title,
         url: safeHttpUrl(idea.url, ''),
+        image: safeHttpUrl(idea.image, ''),
         type: normalizeIdeaType(idea.type),
+        notes,
         notesPreview,
+        extraLinks,
+        content,
         selectedAt,
         updatedAt: new Date().toISOString()
     };
@@ -2143,9 +2186,13 @@ function normalizeTeamSelectionActivity(rawItem = {}, fallbackId = '') {
         ownerLabel: normalizeWhitespace(rawItem.ownerLabel || 'Team member'),
         title,
         url: safeHttpUrl(rawItem.url, ''),
+        image: safeHttpUrl(rawItem.image, ''),
         type: normalizeIdeaType(rawItem.type),
         entrySource: resolveTeamSelectionEntrySource(rawItem),
+        notes: typeof rawItem.notes === 'string' ? rawItem.notes : '',
         notesPreview: typeof rawItem.notesPreview === 'string' ? rawItem.notesPreview : '',
+        extraLinks: typeof rawItem.extraLinks === 'string' ? rawItem.extraLinks : '',
+        content: typeof rawItem.content === 'string' ? rawItem.content : '',
         selectedAt: typeof rawItem.selectedAt === 'string' ? rawItem.selectedAt : ''
     };
 }
@@ -2156,6 +2203,162 @@ function getTeamSelectionDomainLabel(url) {
     } catch {
         return 'Manual note';
     }
+}
+
+function getSelectionNotesValue(item = {}) {
+    if (typeof item.notes === 'string' && item.notes.trim()) return item.notes.trim();
+    if (typeof item.notesPreview === 'string' && item.notesPreview.trim()) return item.notesPreview.trim();
+    if (typeof item.content === 'string' && item.content.trim()) return item.content.trim();
+    return '';
+}
+
+function getSelectionExtraLinksValue(item = {}) {
+    return typeof item.extraLinks === 'string' ? item.extraLinks.trim() : '';
+}
+
+function getSelectionCardDomainMeta(url = '') {
+    const safeUrl = safeHttpUrl(url, '');
+    if (!safeUrl) {
+        return {
+            domain: '',
+            favicon: ''
+        };
+    }
+
+    try {
+        const domain = new URL(safeUrl).hostname.replace(/^www\./, '');
+        return {
+            domain,
+            favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=64`
+        };
+    } catch {
+        return {
+            domain: 'Reference',
+            favicon: ''
+        };
+    }
+}
+
+function buildPoolCardFromSelection(item = {}) {
+    const title = normalizeWhitespace(item.title || item.notes || item.content || 'Untitled Idea') || 'Untitled Idea';
+    const notes = getSelectionNotesValue(item);
+    let description = title;
+
+    if (notes && notes !== title) {
+        description += `\n---\nNotes: ${notes}`;
+    }
+
+    return {
+        id: generateId(),
+        type: normalizeIdeaType(item.type),
+        description,
+        url: safeHttpUrl(item.url, ''),
+        extraLinks: getSelectionExtraLinksValue(item),
+        status: CARD_STATUS.SCHEDULED,
+        createdAt: new Date().toISOString()
+    };
+}
+
+function buildIdeaFromSelection(item = {}, overrides = {}) {
+    const title = normalizeWhitespace(item.title || item.notes || item.content || 'Untitled Idea') || 'Untitled Idea';
+    const notes = getSelectionNotesValue(item);
+    const content = typeof item.content === 'string' && item.content.trim()
+        ? item.content.trim()
+        : notes;
+
+    return {
+        id: generateId(),
+        title,
+        url: safeHttpUrl(item.url, ''),
+        image: safeHttpUrl(item.image, ''),
+        content,
+        notes,
+        extraLinks: getSelectionExtraLinksValue(item),
+        type: normalizeIdeaType(item.type),
+        entrySource: TEAM_SELECTION_ENTRY_SOURCE.RECOVERED,
+        createdAt: new Date().toISOString(),
+        ...overrides
+    };
+}
+
+function createSelectionCardElement(item, options = {}) {
+    const card = document.createElement('div');
+    const extraClass = normalizeWhitespace(options.extraClass || '');
+    card.className = `inspiration-card${extraClass ? ` ${extraClass}` : ''}`;
+
+    const { domain, favicon } = getSelectionCardDomainMeta(item?.url || '');
+    const safeId = escapeHtml(item?.id || '');
+    const safeType = normalizeIdeaType(item?.type);
+    const typeIcon = safeType === 'reel' ? '🎬' : safeType === 'promo' ? '📢' : '📷';
+    const notes = getSelectionNotesValue(item);
+    const extraLinks = getSelectionExtraLinksValue(item);
+    const hasExtra = Boolean(notes || extraLinks);
+    const safeTitle = escapeHtml(item?.title || 'Untitled Idea');
+    const safeMainUrl = safeHttpUrl(item?.url, '');
+    const safeMainUrlText = escapeHtml(item?.url || '');
+    const safePreviewImage = safeHttpUrl(item?.image, '');
+    const safeFavicon = safeHttpUrl(favicon, '');
+    const safeDomain = escapeHtml(domain);
+    const safeMetaHtml = typeof options.metaHtml === 'string' ? options.metaHtml : '';
+    const sendLabel = escapeHtml(options.sendLabel || 'Send to Staging');
+    const showEdit = options.showEdit !== false;
+    const showSend = options.showSend !== false;
+    const showDelete = options.showDelete !== false;
+
+    card.innerHTML = `
+        ${safeFavicon || safePreviewImage ? `
+            <div class="ins-preview">
+                ${safePreviewImage ? `<img src="${safePreviewImage}" class="ins-thumb" alt="preview" loading="lazy" referrerpolicy="no-referrer">` : ''}
+                ${safeFavicon ? `<img src="${safeFavicon}" class="ins-favicon" alt="icon" loading="lazy" referrerpolicy="no-referrer">` : ''}
+                <span class="ins-domain">${safeDomain}</span>
+            </div>
+        ` : ''}
+        <div class="ins-content">
+            ${safeMetaHtml}
+            <div class="ins-type-badge ${safeType}">${typeIcon} ${safeType}</div>
+            <div class="ins-title">${safeTitle}</div>
+            ${safeMainUrl ? `<a href="${safeMainUrl}" target="_blank" rel="noopener noreferrer" class="ins-url">${safeMainUrlText}</a>` : ''}
+            ${hasExtra ? `
+                <div class="ins-extra-indicators">
+                    ${notes ? `<span title="Has Notes">📝</span>` : ''}
+                    ${extraLinks ? `<span title="Has Extra links">🔗</span>` : ''}
+                </div>
+            ` : ''}
+        </div>
+        <div class="ins-actions">
+            ${showEdit ? `
+                <button class="ins-edit-btn" data-idea-id="${safeId}" data-action="edit" title="${escapeHtml(options.editTitle || 'Edit')}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                </button>
+            ` : ''}
+            ${showSend ? `<button class="ins-send-btn" data-idea-id="${safeId}" data-action="send">${sendLabel}</button>` : ''}
+            ${showDelete ? `
+                <button class="ins-del-btn" data-idea-id="${safeId}" data-action="delete" title="${escapeHtml(options.deleteTitle || 'Delete')}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;">
+                        <path d="M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </button>
+            ` : ''}
+        </div>
+    `;
+
+    const editBtn = card.querySelector('[data-action="edit"]');
+    const sendBtn = card.querySelector('[data-action="send"]');
+    const deleteBtn = card.querySelector('[data-action="delete"]');
+    if (editBtn && typeof options.onEdit === 'function') {
+        editBtn.addEventListener('click', () => options.onEdit(item));
+    }
+    if (sendBtn && typeof options.onSend === 'function') {
+        sendBtn.addEventListener('click', () => options.onSend(item));
+    }
+    if (deleteBtn && typeof options.onDelete === 'function') {
+        deleteBtn.addEventListener('click', () => options.onDelete(item));
+    }
+
+    return card;
 }
 
 function formatRelativeTimestamp(value) {
@@ -2196,6 +2399,7 @@ async function loadTeamSelections() {
     renderTeamSelections();
 
     try {
+        const dismissedIds = getDismissedTeamSelectionIds(currentUser);
         const snapshot = await getDocs(
             query(
                 collection(db, TEAM_SELECTIONS_COLLECTION),
@@ -2210,6 +2414,7 @@ async function loadTeamSelections() {
             .filter(item => isTeamSelectionAfterReset(item.selectedAt))
             .filter(item => shouldAppearInTeamSelections(item))
             .filter(item => item.ownerUid !== currentUser.uid)
+            .filter(item => !dismissedIds.has(item.id))
             .slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT);
 
         teamSelectionsStatusMessage = teamSelections.length
@@ -2228,6 +2433,47 @@ async function loadTeamSelections() {
     return teamSelections;
 }
 
+async function saveTeamSelectionCopy(item, { openEditor = false } = {}) {
+    if (!item) return null;
+
+    const newIdea = buildIdeaFromSelection(item, {
+        entrySource: TEAM_SELECTION_ENTRY_SOURCE.RECOVERED
+    });
+    appData.ideas.unshift(newIdea);
+    renderInspiration();
+    await saveData();
+
+    if (newIdea.url && !newIdea.image) {
+        fetchMetadata(newIdea.id, newIdea.url);
+    }
+
+    if (openEditor) {
+        openEditInspiration(newIdea.id);
+    }
+
+    return newIdea;
+}
+
+function removeTeamSelectionFromVisibleFeed(id, { persist = true } = {}) {
+    const normalizedId = normalizeWhitespace(id);
+    if (!normalizedId) return;
+    if (persist) dismissTeamSelectionId(normalizedId, currentUser);
+    teamSelections = teamSelections.filter((item) => item.id !== normalizedId);
+    if (!teamSelections.length && !isLoadingTeamSelections) {
+        teamSelectionsStatusMessage = 'No visible team selections right now.';
+    }
+    renderTeamSelections();
+}
+
+async function sendTeamSelectionToPool(item) {
+    if (!item) return;
+    const newCard = buildPoolCardFromSelection(item);
+    appData.pool.unshift(newCard);
+    removeTeamSelectionFromVisibleFeed(item.id, { persist: true });
+    renderPool();
+    await saveData();
+}
+
 function renderTeamSelections() {
     if (!elements.teamSelectionsList || !elements.teamSelectionsStatus || !elements.teamSelectionsCount) return;
 
@@ -2235,7 +2481,7 @@ function renderTeamSelections() {
         elements.teamSelectionsCount.textContent = '0';
         elements.teamSelectionsStatus.textContent = 'Sign in required';
         elements.teamSelectionsList.innerHTML = `
-            <div class="team-selection-card team-selection-card--placeholder">
+            <div class="inspiration-card team-selections-placeholder">
                 <strong>Sign in first</strong>
                 <p>Team Selections appears once your Schedulr profile is active.</p>
             </div>
@@ -2250,7 +2496,7 @@ function renderTeamSelections() {
 
     if (!teamSelections.length) {
         elements.teamSelectionsList.innerHTML = `
-            <div class="team-selection-card team-selection-card--placeholder">
+            <div class="inspiration-card team-selections-placeholder">
                 <strong>No team selections yet</strong>
                 <p>${escapeHtml(teamSelectionsStatusMessage || 'Recent selections from other users will appear here.')}</p>
             </div>
@@ -2261,34 +2507,28 @@ function renderTeamSelections() {
     elements.teamSelectionsList.innerHTML = '';
 
     teamSelections.forEach(item => {
-        const card = document.createElement('article');
-        card.className = 'team-selection-card';
-
-        const safeTitle = escapeHtml(item.title);
         const safeOwner = escapeHtml(item.ownerLabel);
-        const safeType = escapeHtml(item.type);
-        const safeNotes = escapeHtml(item.notesPreview || '');
-        const safeUrl = safeHttpUrl(item.url, '');
-        const safeUrlText = escapeHtml(item.url || '');
-        const safeDomain = escapeHtml(getTeamSelectionDomainLabel(item.url));
         const safeWhen = escapeHtml(formatRelativeTimestamp(item.selectedAt));
-
-        card.innerHTML = `
-            <div class="team-selection-card__top">
-                <div class="team-selection-card__author">
-                    <strong>${safeOwner}</strong>
-                    <span class="team-selection-card__meta">${safeWhen}</span>
+        const card = createSelectionCardElement(item, {
+            extraClass: 'inspiration-card--team',
+            metaHtml: `
+                <div class="ins-team-meta">
+                    <span class="ins-team-owner">${safeOwner}</span>
+                    <span class="ins-team-time">${safeWhen}</span>
                 </div>
-                <span class="team-selection-card__type">${safeType}</span>
-            </div>
-            <div class="team-selection-card__title">${safeTitle}</div>
-            ${safeNotes ? `<div class="team-selection-card__notes">${safeNotes}</div>` : ''}
-            <div class="team-selection-card__footer">
-                <span class="team-selection-card__domain">${safeDomain}</span>
-                ${safeUrl ? `<a class="team-selection-card__link" href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeUrlText ? 'Open link' : 'Open'}</a>` : ''}
-            </div>
-        `;
-
+            `,
+            editTitle: 'Save a copy and edit',
+            deleteTitle: 'Hide from team feed',
+            onEdit: async (teamItem) => {
+                await saveTeamSelectionCopy(teamItem, { openEditor: true });
+            },
+            onSend: async (teamItem) => {
+                await sendTeamSelectionToPool(teamItem);
+            },
+            onDelete: (teamItem) => {
+                removeTeamSelectionFromVisibleFeed(teamItem.id, { persist: true });
+            }
+        });
         elements.teamSelectionsList.appendChild(card);
     });
 }
@@ -5631,71 +5871,11 @@ function renderInspiration() {
     elements.inspirationGrid.innerHTML = '';
 
     appData.ideas.forEach(idea => {
-        const card = document.createElement('div');
-        card.className = 'inspiration-card';
-
-        let domain = '';
-        let favicon = '';
-        if (idea.url) {
-            try {
-                domain = new URL(idea.url).hostname.replace('www.', '');
-                favicon = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
-            } catch (e) {
-                domain = 'Reference';
-            }
-        }
-
-        const safeId = escapeHtml(idea.id || '');
-        const safeType = ['post', 'reel', 'promo'].includes(idea.type) ? idea.type : 'post';
-        const typeIcon = safeType === 'reel' ? '🎬' : safeType === 'promo' ? '📢' : '📷';
-        const hasExtra = (idea.notes && idea.notes.trim()) || (idea.extraLinks && idea.extraLinks.trim());
-        const safeTitle = escapeHtml(idea.title || 'Untitled Idea');
-        const safeMainUrl = safeHttpUrl(idea.url, '');
-        const safeMainUrlText = escapeHtml(idea.url || '');
-        const safePreviewImage = safeHttpUrl(idea.image, '');
-        const safeFavicon = safeHttpUrl(favicon, '');
-        const safeDomain = escapeHtml(domain);
-
-        card.innerHTML = `
-            ${safeFavicon || safePreviewImage ? `
-                <div class="ins-preview">
-                    ${safePreviewImage ? `<img src="${safePreviewImage}" class="ins-thumb" alt="preview" loading="lazy" referrerpolicy="no-referrer">` : ''}
-                    ${safeFavicon ? `<img src="${safeFavicon}" class="ins-favicon" alt="icon" loading="lazy" referrerpolicy="no-referrer">` : ''}
-                    <span class="ins-domain">${safeDomain}</span>
-                </div>
-            ` : ''}
-            <div class="ins-content">
-                <div class="ins-type-badge ${safeType}">${typeIcon} ${safeType}</div>
-                <div class="ins-title">${safeTitle}</div>
-                ${safeMainUrl ? `<a href="${safeMainUrl}" target="_blank" rel="noopener noreferrer" class="ins-url">${safeMainUrlText}</a>` : ''}
-                ${hasExtra ? `
-                    <div class="ins-extra-indicators">
-                        ${idea.notes ? `<span title="Has Notes">📝</span>` : ''}
-                        ${idea.extraLinks ? `<span title="Has Extra links">🔗</span>` : ''}
-                    </div>
-                ` : ''}
-            </div>
-            <div class="ins-actions">
-                <button class="ins-edit-btn" data-idea-id="${safeId}" data-action="edit">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;">
-                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                        <path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                    </svg>
-                </button>
-                <button class="ins-send-btn" data-idea-id="${safeId}" data-action="send">Send to Staging</button>
-                <button class="ins-del-btn" data-idea-id="${safeId}" data-action="delete">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;">
-                        <path d="M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                    </svg>
-                </button>
-            </div>
-        `;
-        const editBtn = card.querySelector('[data-action="edit"]');
-        const sendBtn = card.querySelector('[data-action="send"]');
-        const deleteBtn = card.querySelector('[data-action="delete"]');
-        if (editBtn) editBtn.addEventListener('click', () => openEditInspiration(idea.id));
-        if (sendBtn) sendBtn.addEventListener('click', () => moveIdeaToPool(idea.id));
-        if (deleteBtn) deleteBtn.addEventListener('click', () => deleteIdea(idea.id));
+        const card = createSelectionCardElement(idea, {
+            onEdit: (currentIdea) => openEditInspiration(currentIdea.id),
+            onSend: async (currentIdea) => moveIdeaToPool(currentIdea.id),
+            onDelete: async (currentIdea) => deleteIdea(currentIdea.id)
+        });
         elements.inspirationGrid.appendChild(card);
     });
 }
@@ -5787,6 +5967,7 @@ async function fetchMetadata(ideaId, url) {
                 appData.ideas[index].image = data.data.image.url;
                 renderInspiration(); // Re-render to show image
                 await saveData();
+                await publishTeamSelectionActivity(appData.ideas[index]);
             }
         }
     } catch (e) {
@@ -5804,24 +5985,7 @@ async function moveIdeaToPool(id) {
     const idea = appData.ideas.find(i => i.id === id);
     if (!idea) return;
 
-    // Combine main notes with description for the simpler pool card if they exist
-    let description = idea.title;
-    if (idea.notes) {
-        description += `\n---\nNotes: ${idea.notes}`;
-    }
-
-    // Create a new card in the pool
-    const newCard = {
-        id: generateId(),
-        type: idea.type || 'post', // Use the idea's selected type
-        description: description,
-        url: idea.url, // Store the reference link
-        extraLinks: idea.extraLinks || '', // Also carry over extra links
-        status: CARD_STATUS.SCHEDULED,
-        createdAt: new Date().toISOString()
-    };
-
-    appData.pool.unshift(newCard);
+    appData.pool.unshift(buildPoolCardFromSelection(idea));
 
     // Remove from ideas board
     appData.ideas = appData.ideas.filter(i => i.id !== id);
@@ -5881,6 +6045,7 @@ async function saveInspirationEdit() {
     renderInspiration();
     hideInsEditModal();
     await saveData();
+    await publishTeamSelectionActivity(idea);
 }
 
 window.moveIdeaToPool = moveIdeaToPool;
