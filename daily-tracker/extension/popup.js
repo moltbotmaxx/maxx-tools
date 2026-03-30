@@ -1,6 +1,6 @@
 const EXTENSION_QUEUE_KEY = 'dailyTrackerIdeaQueue';
 const EXTENSION_PROFILE_KEY = 'dailyTrackerExtensionProfile';
-const DAILY_TRACKER_APP_URL = 'https://schedulr.work/';
+const DAILY_TRACKER_APP_URL = 'https://maxxbot.cloud/daily-tracker/';
 
 function safeHttpUrl(url) {
     if (!url || typeof url !== 'string') return '';

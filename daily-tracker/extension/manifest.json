@@ -3,7 +3,7 @@
     "name": "Schedulr Clipper",
     "version": "1.5.0",
     "description": "Capture inspiration links directly to your Schedulr workspace.",
-    "homepage_url": "https://schedulr.work/",
+    "homepage_url": "https://maxxbot.cloud/daily-tracker/",
     "permissions": [
         "activeTab",
         "storage",
