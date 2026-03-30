@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-30T14:03:40.432Z",
+    "generated_at": "2026-03-30T15:42:55.967Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Every AI assistant built is reactive by design. It waits for you to notice things first. That's already the wrong model for what intelligence should do.",
+        "link": "https://reddit.com/r/openclaw/comments/1s7tkzr/every_ai_assistant_built_is_reactive_by_design_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-03-30T15:21:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Qwen3.5 Omni - Qwen’s latest generation of fully omnimodal LLM",
+        "link": "https://reddit.com/r/singularity/comments/1s7rcwr/qwen35_omni_qwens_latest_generation_of_fully/",
+        "subreddit": "singularity",
+        "published_at": "2026-03-30T13:58:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Robots won't take your job. They'll bury you in work.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1s7qs82/robots_wont_take_your_job_theyll_bury_you_in_work/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-03-30T13:35:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "AI 2027 current accuracy",
+        "link": "https://reddit.com/r/singularity/comments/1s7q8g5/ai_2027_current_accuracy/",
+        "subreddit": "singularity",
+        "published_at": "2026-03-30T13:13:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": ": PSA: Using ANY script, wrapper, or third-party tool with Claude Pro/Max = instant 3rd-party violation + lifetime ban (March 2026 wave)",
         "link": "https://reddit.com/r/openclaw/comments/1s7pllb/psa_using_any_script_wrapper_or_thirdparty_tool/",
@@ -379,7 +415,7 @@
         "published_at": "2026-03-30T12:47:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Claude subscriptions double in just two months, overshadowing users leaving because of rate limits",
@@ -388,16 +424,7 @@
         "published_at": "2026-03-30T12:44:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "The Anti-AI Bro Problem.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s7omfj/the_antiai_bro_problem/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-03-30T12:03:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "After it refused to generate the requested image and I threaten to cancel my subscription, Gemini suddenly gets 'updated'",
@@ -406,7 +433,16 @@
         "published_at": "2026-03-30T11:37:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
+      },
+      {
+        "headline": "Imagine dragons",
+        "link": "https://reddit.com/r/ChatGPT/comments/1s7nssf/imagine_dragons/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-03-30T11:24:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "PSA: Claude Code has two cache bugs that can silently 10-20x your API costs — here's the root cause and workarounds",
@@ -415,7 +451,7 @@
         "published_at": "2026-03-30T10:17:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "The AI documentary is out, from the creators of Everything Everywhere All At Once.",
@@ -424,50 +460,14 @@
         "published_at": "2026-03-30T10:13:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I built a Steam game in 10 days with Claude Code — here's what actually happened behind the scenes",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s7mfil/i_built_a_steam_game_in_10_days_with_claude_code/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-03-30T10:09:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "The Meowtollah!",
-        "link": "https://reddit.com/r/ChatGPT/comments/1s7m3o9/the_meowtollah/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-03-30T09:50:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "AI slop is in the base?!",
-        "link": "https://reddit.com/r/aimemes/comments/1s7kcz8/ai_slop_is_in_the_base/",
-        "subreddit": "aimemes",
-        "published_at": "2026-03-30T08:01:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Iran releases AI generated propaganda video against the Trump administration.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1s7jt96/iran_releases_ai_generated_propaganda_video/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-03-30T07:26:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-30T14:03:40.432Z",
+    "reddit_viral_generated_at": "2026-03-30T15:42:55.967Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
