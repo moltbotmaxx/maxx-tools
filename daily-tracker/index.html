@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=schedulr-shortcut-manual-1">
+    <link rel="stylesheet" href="styles.css?v=metrics-day-history-1">
     <!-- Chart.js for Analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -105,12 +105,6 @@
                         <path d="M22 12A10 10 0 0 0 12 2v10z" />
                     </svg>
                     Metrics
-                </button>
-                <button class="tab-btn" data-tab="history" hidden aria-hidden="true" tabindex="-1">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    History
                 </button>
             </nav>
 
@@ -486,6 +480,7 @@
                                 <span id="currentMonthLabel" style="font-size: 0.9rem; font-weight: 600;">...</span>
                             </div>
                         </div>
+                        <p class="calendar-box__hint">Click any day to open that day's published history.</p>
                         <div class="calendar-grid" id="monthCalendar">
                             <!-- Calendar JS Injected -->
                         </div>
@@ -555,37 +550,32 @@
                 </div>
             </div>
 
-            <!-- VIEW 5: HISTORY -->
-            <div id="history-view" class="view-container">
-                <div class="bento-grid" style="grid-template-columns: 1fr; grid-template-rows: 1fr;">
-                    <section class="bento-box schedule-section" style="grid-row: 1 / -1;">
-                        <div class="box-header">
-                            <h2>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                Weekly History
-                            </h2>
-                            <div class="calendar-nav global-week-nav" style="margin-left: auto;">
-                                <button id="weekPrev" class="icon-btn" title="Previous Week">←</button>
-                                <button id="jumpToday" class="icon-btn" title="Jump to Today"
-                                    style="font-size: 0.7rem; padding: 0 8px; width: auto; border-radius: 12px;">Today</button>
-                                <div class="week-indicator" id="weekIndicator">
-                                    Jan 16 - Jan 22
-                                </div>
-                                <button id="weekNext" class="icon-btn" title="Next Week">→</button>
-                            </div>
-                        </div>
-                        <div class="week-grid" id="historyGrid">
-                            <!-- Helper function will inject grid columns here -->
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-
-
         </main>
+    </div>
+
+    <div id="metricsHistoryModalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content bento-box metrics-history-modal">
+            <div class="box-header">
+                <div class="metrics-history-modal__header-copy">
+                    <h2>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Day History
+                    </h2>
+                    <p id="metricsHistoryModalDate" class="metrics-history-modal__date">Mar 30, 2026</p>
+                </div>
+                <button class="icon-btn" id="metricsHistoryModalCloseBtn" type="button"
+                    style="font-size: 1.5rem; line-height: 1;" aria-label="Close day history">&times;</button>
+            </div>
+            <div class="modal-body metrics-history-modal__body">
+                <div id="metricsHistoryModalSummary" class="metrics-history-modal__summary">0 published items</div>
+                <div id="metricsHistoryList" class="metrics-history-list"></div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn premium-btn" id="metricsHistoryModalDismissBtn" type="button">Close</button>
+            </div>
+        </div>
     </div>
 
     <!-- Custom Context Menu for Cards -->
@@ -910,7 +900,7 @@
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
     <script src="x-feed-config.js?v=mobile-settings-global-12"></script>
-    <script type="module" src="app.js?v=schedulr-shortcut-manual-1"></script>
+    <script type="module" src="app.js?v=metrics-day-history-1"></script>
 </body>
 
 </html>

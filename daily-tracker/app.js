@@ -48,7 +48,7 @@ const SHORTCUT_INSTALL_SHARE_URL = '';
 const SCHEDULR_PUBLIC_DOMAIN_URL = 'https://schedulr.work/';
 const SCHEDULR_SHORTCUT_TARGET_URL = 'https://maxxbot.cloud/daily-tracker/';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
-const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics', 'history']);
+const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
 const MOBILE_SOURCING_SECTIONS = new Set(['news', 'instagram', 'reddit', 'x']);
 const EXPORT_BUTTON_DOWNLOAD_MARKUP = `
@@ -121,6 +121,7 @@ let teamSelections = [];
 let isLoadingTeamSelections = false;
 let teamSelectionsStatusMessage = 'Loading...';
 let lastTeamSelectionsBackfillUid = '';
+let activeMetricsHistoryDateKey = '';
 
 // ===========================
 // News Ticker State
@@ -257,7 +258,7 @@ function syncTabButtonVisibility() {
     const mobileViewport = isMobileViewport();
     elements.tabBtns.forEach((btn) => {
         const tabId = btn.dataset.tab || '';
-        const shouldHide = tabId === 'history' || (mobileViewport && !MOBILE_PRIMARY_TABS.has(tabId));
+        const shouldHide = mobileViewport && !MOBILE_PRIMARY_TABS.has(tabId);
         btn.hidden = shouldHide;
         btn.setAttribute('aria-hidden', shouldHide ? 'true' : 'false');
         btn.tabIndex = shouldHide ? -1 : 0;
@@ -477,9 +478,6 @@ function syncResponsiveLayout(force = false) {
     }
 
     render();
-    if (currentView === 'history') {
-        renderHistory();
-    }
     syncMobileSourcingPanels();
 }
 
@@ -578,13 +576,12 @@ const elements = {
     currentMonthLabel: document.getElementById('currentMonthLabel'),
     totalPostsValue: document.getElementById('totalPostsValue'),
     completionRateValue: document.getElementById('completionRateValue'),
-    jumpToday: document.getElementById('jumpToday'),
-    // History
-    historyGrid: document.getElementById('historyGrid'),
-    historyWeekLabel: document.getElementById('historyWeekLabel'),
-    // Global Navigation
-    weekPrev: document.getElementById('weekPrev'),
-    weekNext: document.getElementById('weekNext'),
+    metricsHistoryModalOverlay: document.getElementById('metricsHistoryModalOverlay'),
+    metricsHistoryModalCloseBtn: document.getElementById('metricsHistoryModalCloseBtn'),
+    metricsHistoryModalDismissBtn: document.getElementById('metricsHistoryModalDismissBtn'),
+    metricsHistoryModalDate: document.getElementById('metricsHistoryModalDate'),
+    metricsHistoryModalSummary: document.getElementById('metricsHistoryModalSummary'),
+    metricsHistoryList: document.getElementById('metricsHistoryList'),
     // Context Menu
     cardContextMenu: document.getElementById('cardContextMenu'),
     menuDelete: document.getElementById('menuDelete'),
@@ -3532,14 +3529,6 @@ function renderWeekGrid() {
     elements.weekGrid.innerHTML = '';
     const mobileSelectedCard = isMobileViewport() ? getSelectedMobilePoolCard() : null;
 
-    // Update week indicator if it exists
-    if (elements.weekIndicator && currentView === 'history') {
-        const startDate = dates[0];
-        const endDate = dates[dates.length - 1];
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        elements.weekIndicator.textContent = `${months[startDate.getMonth()]} ${startDate.getDate()} - ${months[endDate.getMonth()]} ${endDate.getDate()}`;
-    }
-
     dates.forEach(date => {
         const dateKey = getDateKey(date);
 
@@ -3732,6 +3721,9 @@ function render() {
     // Also update dashboard if active
     if (currentView === 'metrics') {
         renderDashboard();
+        if (activeMetricsHistoryDateKey && elements.metricsHistoryModalOverlay?.classList.contains('show')) {
+            renderMetricsHistoryModal(activeMetricsHistoryDateKey);
+        }
     } else if (currentView === 'account') {
         renderAccountView();
     }
@@ -3781,6 +3773,10 @@ function switchTab(viewId) {
         else view.classList.remove('active');
     });
 
+    if (viewId !== 'metrics') {
+        closeMetricsHistoryModal();
+    }
+
     if (!currentUser?.uid || isLoadingUserData) {
         stopNewsAutoRefresh();
         return;
@@ -3794,9 +3790,6 @@ function switchTab(viewId) {
     } else if (viewId === 'account') {
         stopNewsAutoRefresh();
         renderAccountView();
-    } else if (viewId === 'history') {
-        stopNewsAutoRefresh();
-        renderHistory();
     } else if (viewId === 'selection') {
         renderInspiration();
         loadTeamSelections();
@@ -5891,83 +5884,6 @@ window.moveIdeaToPool = moveIdeaToPool;
 window.deleteIdea = deleteIdea;
 window.openEditInspiration = openEditInspiration;
 
-
-function renderHistory() {
-    const dates = getWeekDates(globalOffset);
-    const startDate = dates[0];
-    const endDate = dates[dates.length - 1];
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-    // Update Header
-    if (elements.weekIndicator) {
-        elements.weekIndicator.textContent = `${months[startDate.getMonth()]} ${startDate.getDate()} - ${months[endDate.getMonth()]} ${endDate.getDate()}`;
-    }
-
-    // Clear Grid
-    elements.historyGrid.innerHTML = '';
-    elements.historyGrid.className = 'history-week-grid';
-
-    // Logic: Render 7 columns, just like Scheduler but read-only and filtering for POSTED
-    dates.forEach(date => {
-        const dateKey = getDateKey(date);
-        const dayCards = appData.schedule[dateKey] || []; // default to empty
-
-        // Filter for PUBLISHED cards only
-        const postedCards = dayCards.filter(c => c && c.status === CARD_STATUS.POSTED);
-
-        // Create Column
-        const column = document.createElement('div');
-        column.className = 'day-column';
-        // Optional: Highlight current day in history too?
-        if (isToday(date)) column.classList.add('today');
-
-        // Header
-        column.innerHTML = `
-            <div class="day-header">
-                <div class="day-info">
-                    <span class="day-name">${getDayName(date)}</span>
-                    <span class="day-date">${formatDateShort(date)}</span>
-                </div>
-                <div class="day-progress complete">
-                    ${postedCards.length} Published
-                </div>
-            </div>
-            <div class="day-slots history-slots"></div>
-        `;
-
-        const slotsContainer = column.querySelector('.day-slots');
-
-        // Render Cards
-        if (postedCards.length > 0) {
-            postedCards.forEach(card => {
-                const type = Object.values(CONTENT_TYPES).find(t => t.id === card.type);
-                const cardEl = document.createElement('div');
-                // Reuse .content-card class for consistent styling
-                cardEl.className = `content-card ${card.type}`;
-                // Don't make draggable in history
-                cardEl.draggable = false;
-
-                cardEl.innerHTML = `
-                    <div class="card-description" style="pointer-events: none; margin-top: 0;">${escapeHtml(card.description || '')}</div>
-                `;
-
-                // Add margins since slots container might lack gaps compared to drag grid
-                cardEl.style.marginBottom = '8px';
-                slotsContainer.appendChild(cardEl);
-            });
-        } else {
-            // Empty state for day
-            const emptyEl = document.createElement('div');
-            emptyEl.className = 'empty-slot';
-            emptyEl.style.border = 'none'; // Clean look
-            // emptyEl.textContent = 'No posts';
-            slotsContainer.appendChild(emptyEl);
-        }
-
-        elements.historyGrid.appendChild(column);
-    });
-}
-
 // ===========================
 // Dashboard & Analytics
 // ===========================
@@ -5978,6 +5894,80 @@ function renderDashboard() {
     renderCalendar();
     renderKPIs();
     renderCharts();
+}
+
+function getPostedHistoryCardsForDate(dateKey) {
+    const dayCards = Array.isArray(appData.schedule?.[dateKey]) ? appData.schedule[dateKey] : [];
+    return dayCards.filter((card) => card && card.status === CARD_STATUS.POSTED);
+}
+
+function formatMetricsHistoryDate(value) {
+    const parsedDate = parseDateLike(value);
+    if (!parsedDate) return 'Unknown day';
+    return new Intl.DateTimeFormat('en-US', {
+        weekday: 'long',
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+    }).format(parsedDate);
+}
+
+function renderMetricsHistoryModal(dateKey) {
+    if (!elements.metricsHistoryModalDate || !elements.metricsHistoryModalSummary || !elements.metricsHistoryList) return;
+
+    const postedCards = getPostedHistoryCardsForDate(dateKey);
+    elements.metricsHistoryModalDate.textContent = formatMetricsHistoryDate(dateKey);
+    elements.metricsHistoryModalSummary.textContent = postedCards.length === 1
+        ? '1 published item'
+        : `${postedCards.length} published items`;
+
+    if (!postedCards.length) {
+        elements.metricsHistoryList.innerHTML = `
+            <div class="metrics-history-empty">
+                No published cards were logged for this day yet.
+            </div>
+        `;
+        return;
+    }
+
+    elements.metricsHistoryList.innerHTML = postedCards.map((card) => {
+        const typeMeta = Object.values(CONTENT_TYPES).find((type) => type.id === card.type) || CONTENT_TYPES.POST;
+        const safeLink = safeHttpUrl(card.url);
+        const hasLink = safeLink !== '#';
+
+        return `
+            <article class="metrics-history-item metrics-history-item--${escapeHtml(card.type || CONTENT_TYPES.POST.id)}">
+                <div class="metrics-history-item__top">
+                    <span class="metrics-history-item__type">
+                        <span class="metrics-history-item__emoji" aria-hidden="true">${escapeHtml(typeMeta.icon)}</span>
+                        <span>${escapeHtml(typeMeta.label)}</span>
+                    </span>
+                    ${hasLink ? `
+                        <a href="${safeLink}" target="_blank" rel="noopener noreferrer" class="metrics-history-item__link">
+                            Open link
+                        </a>
+                    ` : ''}
+                </div>
+                <p class="metrics-history-item__desc">${escapeHtml(card.description || 'Untitled entry')}</p>
+            </article>
+        `;
+    }).join('');
+}
+
+function openMetricsHistoryModal(dateKey) {
+    if (!elements.metricsHistoryModalOverlay) return;
+    activeMetricsHistoryDateKey = dateKey;
+    renderMetricsHistoryModal(dateKey);
+    elements.metricsHistoryModalOverlay.classList.add('show');
+    elements.metricsHistoryModalOverlay.setAttribute('aria-hidden', 'false');
+    elements.metricsHistoryModalCloseBtn?.focus();
+}
+
+function closeMetricsHistoryModal() {
+    if (!elements.metricsHistoryModalOverlay) return;
+    activeMetricsHistoryDateKey = '';
+    elements.metricsHistoryModalOverlay.classList.remove('show');
+    elements.metricsHistoryModalOverlay.setAttribute('aria-hidden', 'true');
 }
 
 function renderKPIs() {
@@ -6076,6 +6066,8 @@ function renderCalendar() {
         // Use local date format for key to match schedule state
         const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
         const cards = appData.schedule[dateStr] || [];
+        const activeCards = cards.filter((card) => card !== null);
+        const postedCards = activeCards.filter((card) => card.status === CARD_STATUS.POSTED);
 
         let dotsHTML = '';
         cards.forEach(c => {
@@ -6087,15 +6079,21 @@ function renderCalendar() {
         });
 
         // Goal met indicator (e.g., >= 5 items)
-        let isSuccess = cards.filter(c => c !== null).length >= 5;
+        let isSuccess = activeCards.length >= 5;
 
-        const cell = document.createElement('div');
-        cell.className = `cal-day ${isSuccess ? 'success' : ''}`;
+        const cell = document.createElement('button');
+        cell.type = 'button';
+        cell.className = `cal-day ${isSuccess ? 'success' : ''} ${postedCards.length ? 'has-history' : ''}`;
+        if (isToday(new Date(`${dateStr}T12:00:00`))) {
+            cell.classList.add('today');
+        }
+        cell.setAttribute('aria-label', `${formatMetricsHistoryDate(dateStr)}. ${postedCards.length} published items. Open day history.`);
 
         cell.innerHTML = `
             <div class="cal-date">${i}</div>
             <div class="cal-activity-dots">${dotsHTML}</div>
         `;
+        cell.addEventListener('click', () => openMetricsHistoryModal(dateStr));
 
         elements.monthCalendar.appendChild(cell);
     }
@@ -6411,27 +6409,6 @@ function setupEventListeners() {
         syncIosInstallPrompt();
     });
 
-    // Global Week Navigation (ONLY for History now)
-    if (elements.weekPrev) {
-        elements.weekPrev.addEventListener('click', () => {
-            globalOffset--;
-            if (currentView === 'history') renderHistory();
-        });
-    }
-    if (elements.weekNext) {
-        elements.weekNext.addEventListener('click', () => {
-            globalOffset++;
-            if (currentView === 'history') renderHistory();
-        });
-    }
-    if (elements.jumpToday) {
-        elements.jumpToday.addEventListener('click', () => {
-            globalOffset = 0;
-            dashboardMonth = new Date();
-            if (currentView === 'history') renderHistory();
-        });
-    }
-
     // Context Menu Actions
     elements.menuDelete.addEventListener('click', handleMenuDelete);
     elements.menuEdit.addEventListener('click', handleMenuEdit);
@@ -6519,6 +6496,25 @@ function setupEventListeners() {
     elements.editModalOverlay.addEventListener('click', (e) => {
         if (e.target === elements.editModalOverlay) {
             hideModal();
+        }
+    });
+
+    if (elements.metricsHistoryModalCloseBtn) {
+        elements.metricsHistoryModalCloseBtn.addEventListener('click', closeMetricsHistoryModal);
+    }
+    if (elements.metricsHistoryModalDismissBtn) {
+        elements.metricsHistoryModalDismissBtn.addEventListener('click', closeMetricsHistoryModal);
+    }
+    if (elements.metricsHistoryModalOverlay) {
+        elements.metricsHistoryModalOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.metricsHistoryModalOverlay) {
+                closeMetricsHistoryModal();
+            }
+        });
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && elements.metricsHistoryModalOverlay?.classList.contains('show')) {
+            closeMetricsHistoryModal();
         }
     });
 
