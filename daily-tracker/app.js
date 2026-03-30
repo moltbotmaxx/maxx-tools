@@ -25,6 +25,7 @@ const EXTENSION_AUTH_STATE_REQUEST_EVENT = 'DAILY_TRACKER_EXTENSION_AUTH_STATE_R
 const TEAM_SELECTIONS_COLLECTION = 'daily-tracker-team-selections';
 const TEAM_SELECTIONS_DISPLAY_LIMIT = 12;
 const TEAM_SELECTIONS_QUERY_LIMIT = 40;
+const TEAM_SELECTIONS_RESET_AT = '2026-03-30T00:00:00.000Z';
 const TEAM_SELECTION_ENTRY_SOURCE = {
     MANUAL: 'manual',
     EXTENSION: 'extension',
@@ -1663,6 +1664,22 @@ function shouldAppearInTeamSelections(rawItem = {}) {
     return TEAM_SELECTION_VISIBLE_SOURCES.has(resolveTeamSelectionEntrySource(rawItem));
 }
 
+function getTeamSelectionTimestamp(value = '') {
+    const timestamp = Date.parse(value || '');
+    return Number.isFinite(timestamp) ? timestamp : null;
+}
+
+function isTeamSelectionAfterReset(value = '') {
+    const selectedAt = getTeamSelectionTimestamp(value);
+    const resetAt = getTeamSelectionTimestamp(TEAM_SELECTIONS_RESET_AT);
+    if (selectedAt === null || resetAt === null) return false;
+    return selectedAt >= resetAt;
+}
+
+function isEligibleTeamSelectionIdea(idea = {}) {
+    return shouldAppearInTeamSelections(idea) && isTeamSelectionAfterReset(idea?.createdAt);
+}
+
 function getTeamSelectionOwnerLabel(user = currentUser) {
     return normalizeWhitespace(user?.displayName || user?.email || 'Team member');
 }
@@ -1696,6 +1713,7 @@ function buildTeamSelectionPayload(idea, user = currentUser) {
 }
 
 async function publishTeamSelectionActivity(idea, user = currentUser) {
+    if (!isEligibleTeamSelectionIdea(idea)) return false;
     if (!shouldAppearInTeamSelections(idea)) return false;
     const docId = getTeamSelectionDocId(idea, user);
     const payload = buildTeamSelectionPayload(idea, user);
@@ -1720,7 +1738,9 @@ async function backfillRecentTeamSelections(user = currentUser) {
     lastTeamSelectionsBackfillUid = user.uid;
 
     const recentIdeas = Array.isArray(appData?.ideas)
-        ? appData.ideas.slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT)
+        ? appData.ideas
+            .filter((idea) => isEligibleTeamSelectionIdea(idea))
+            .slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT)
         : [];
 
     if (!recentIdeas.length) return;
@@ -2187,13 +2207,14 @@ async function loadTeamSelections() {
         teamSelections = snapshot.docs
             .map(docSnap => normalizeTeamSelectionActivity(docSnap.data(), docSnap.id))
             .filter(Boolean)
+            .filter(item => isTeamSelectionAfterReset(item.selectedAt))
             .filter(item => shouldAppearInTeamSelections(item))
             .filter(item => item.ownerUid !== currentUser.uid)
             .slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT);
 
         teamSelectionsStatusMessage = teamSelections.length
             ? 'Latest clipped and manual links'
-            : 'No recent clipped or manual links yet.';
+            : 'Team feed was reset. New clipped or manual links will appear here.';
     } catch (e) {
         console.error('Failed to load team selections', e);
         teamSelectionsStatusMessage = teamSelections.length
