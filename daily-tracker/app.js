@@ -1279,6 +1279,79 @@ function getDisplayImageUrl(url, fallback = '') {
     }
 }
 
+function getImageSourceSet(rawUrl, fallback = '') {
+    const originalUrl = safeHttpUrl(rawUrl || fallback, '');
+    if (!originalUrl) {
+        return { originalUrl: '', displayUrl: '' };
+    }
+    return {
+        originalUrl,
+        displayUrl: getDisplayImageUrl(originalUrl, originalUrl) || originalUrl
+    };
+}
+
+function getAvatarFallbackText(value = '') {
+    const cleaned = normalizeWhitespace(String(value || '').replace(/\s*avatar\s*$/i, '').replace(/^@/, ''));
+    const token = cleaned.charAt(0).toUpperCase();
+    return token || '@';
+}
+
+function replaceBrokenAvatarImage(target) {
+    if (!(target instanceof HTMLImageElement) || !target.parentNode) return;
+    const fallback = document.createElement('span');
+    fallback.className = `${target.className || ''} account-avatar-fallback`.trim();
+    fallback.setAttribute('aria-hidden', 'true');
+    fallback.textContent = getAvatarFallbackText(target.getAttribute('alt') || target.dataset.accountLabel || '');
+    target.replaceWith(fallback);
+}
+
+function tryRecoverOriginalImage(target) {
+    if (!(target instanceof HTMLImageElement)) return false;
+    const originalSrc = safeHttpUrl(target.dataset.originalSrc || '', '');
+    const currentSrc = safeHttpUrl(target.currentSrc || target.src || '', '');
+    if (!originalSrc || originalSrc === currentSrc || target.dataset.fallbackRetried === 'true') return false;
+    target.dataset.fallbackRetried = 'true';
+    target.src = originalSrc;
+    return true;
+}
+
+function handleUiImageLoadError(target) {
+    if (!(target instanceof HTMLImageElement)) return;
+
+    if (tryRecoverOriginalImage(target)) return;
+
+    if (target.classList.contains('magazine-card__image-media')) {
+        target.closest('.magazine-card__image')?.classList.add('magazine-card__image--fallback');
+        target.remove();
+        return;
+    }
+
+    if (target.classList.contains('account-story-card__media-image')) {
+        target.closest('.account-story-card__media')?.classList.add('account-story-card__media--fallback');
+        target.remove();
+        return;
+    }
+
+    if (
+        target.classList.contains('account-profile-panel__avatar')
+        || target.classList.contains('account-mobile-panel__avatar')
+        || target.classList.contains('account-subtab__avatar')
+    ) {
+        replaceBrokenAvatarImage(target);
+        return;
+    }
+
+    if (target.classList.contains('ins-thumb')) {
+        target.closest('.ins-preview')?.classList.add('ins-preview--fallback');
+        target.remove();
+        return;
+    }
+
+    if (target.classList.contains('ins-favicon')) {
+        target.remove();
+    }
+}
+
 function safeGetLocalStorageItem(key) {
     try {
         return localStorage.getItem(key);
@@ -2298,11 +2371,13 @@ function getSentientAccountViews30d(account = {}) {
 }
 
 function getSentientPostImageUrl(post = {}) {
-    const explicitUrl = getDisplayImageUrl(
+    const explicitOriginalUrl = safeHttpUrl(
         post.thumbnail_url || post.image_url || post.display_url || post.media_url || '',
         ''
     );
-    if (explicitUrl) return explicitUrl;
+    if (explicitOriginalUrl) {
+        return getDisplayImageUrl(explicitOriginalUrl, explicitOriginalUrl) || explicitOriginalUrl;
+    }
 
     const shortcode = normalizeWhitespace(post.shortcode || '');
     if (!shortcode) return '';
@@ -2311,6 +2386,27 @@ function getSentientPostImageUrl(post = {}) {
         ? `https://www.instagram.com/reel/${shortcode}/media/?size=l`
         : `https://www.instagram.com/p/${shortcode}/media/?size=l`;
     return getDisplayImageUrl(mediaPath, '');
+}
+
+function getSentientPostImageSources(post = {}) {
+    const explicitOriginalUrl = safeHttpUrl(
+        post.thumbnail_url || post.image_url || post.display_url || post.media_url || '',
+        ''
+    );
+
+    if (explicitOriginalUrl) {
+        return getImageSourceSet(explicitOriginalUrl);
+    }
+
+    const shortcode = normalizeWhitespace(post.shortcode || '');
+    if (!shortcode) {
+        return { originalUrl: '', displayUrl: '' };
+    }
+
+    const mediaPath = post.is_video
+        ? `https://www.instagram.com/reel/${shortcode}/media/?size=l`
+        : `https://www.instagram.com/p/${shortcode}/media/?size=l`;
+    return getImageSourceSet(mediaPath);
 }
 
 function compareSentientPosts(left = {}, right = {}) {
@@ -2633,20 +2729,27 @@ function buildAccountOverviewCard(accounts = [], dataset = null) {
 
 function buildAccountPostCard(post = {}, index = 0) {
     const safeLink = safeHttpUrl(post.url);
-    const imageUrl = getSentientPostImageUrl(post);
+    const imageSources = getSentientPostImageSources(post);
+    const imageUrl = imageSources.displayUrl || imageSources.originalUrl;
     const caption = normalizeWhitespace(post.caption || 'Open post');
     const captionText = caption.length > 180 ? `${caption.slice(0, 177)}...` : caption;
     const postType = post.is_video ? 'Reel' : 'Post';
     const mediaClassName = imageUrl
         ? 'account-story-card__media'
         : 'account-story-card__media account-story-card__media--fallback';
-    const mediaStyle = imageUrl
-        ? ` style="background-image: url('${escapeHtml(imageUrl)}');"`
+    const originalSourceAttr = imageSources.originalUrl && imageSources.originalUrl !== imageUrl
+        ? ` data-original-src="${escapeHtml(imageSources.originalUrl)}"`
         : '';
+    const mediaImageHtml = imageUrl
+        ? `<img class="account-story-card__media-image" src="${escapeHtml(imageUrl)}"${originalSourceAttr} alt="${escapeHtml(captionText || postType)}" loading="lazy" referrerpolicy="no-referrer" />`
+        : '';
+    const mediaFallbackHtml = `<div class="account-story-card__media-fallback-art" aria-hidden="true">${post.is_video ? '🎬' : '📷'}</div>`;
 
     return `
         <a class="account-story-card" href="${safeLink}" target="_blank" rel="noopener noreferrer">
-            <div class="${mediaClassName}"${mediaStyle}>
+            <div class="${mediaClassName}">
+                ${mediaImageHtml}
+                ${mediaFallbackHtml}
                 <span class="account-story-card__badge">${escapeHtml(postType)}</span>
                 <span class="account-story-card__index">${escapeHtml(String(index + 1).padStart(2, '0'))}</span>
             </div>
@@ -2686,7 +2789,7 @@ function buildAccountTabs(accounts = [], activeAccount = null) {
                             aria-selected="${isActive ? 'true' : 'false'}"
                             data-account-tab="${escapeHtml(account.account || '')}"
                         >
-                            <img src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                            <img class="account-subtab__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" referrerpolicy="no-referrer" />
                             <span>@${escapeHtml(account.account)}</span>
                         </button>
                     `;
@@ -2719,7 +2822,7 @@ function buildAccountProfilePanel(account = {}, accounts = []) {
             ${buildAccountTabs(accounts, account)}
             <div class="account-profile-panel__hero">
                 <div class="account-profile-panel__identity">
-                    <img class="account-profile-panel__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" />
+                    <img class="account-profile-panel__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account)} avatar" loading="lazy" referrerpolicy="no-referrer" />
                     <div class="account-profile-panel__identity-copy">
                         <div class="account-profile-panel__title">
                             <h3>${escapeHtml(account.full_name || account.account)}</h3>
@@ -2839,7 +2942,7 @@ function buildMobileAccountSummaryPanel(account = {}, accounts = [], dataset = n
             ` : ''}
 
             <div class="account-mobile-panel__hero">
-                <img class="account-mobile-panel__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account || 'Account')} avatar" loading="lazy" />
+                <img class="account-mobile-panel__avatar" src="${escapeHtml(account.avatarUrl || '')}" alt="${escapeHtml(account.account || 'Account')} avatar" loading="lazy" referrerpolicy="no-referrer" />
                 <div class="account-mobile-panel__hero-copy">
                     <div class="account-mobile-panel__title-row">
                         <strong>@${escapeHtml(account.account || '')}</strong>
@@ -5063,12 +5166,14 @@ function getMagazineFallbackEmoji(index = 0) {
     return fallbackEmojis[index % fallbackEmojis.length];
 }
 
-function getItemImageUrl(item, fallback = '') {
+function getItemImageSources(item, fallback = '') {
     const rawUrl = item?.image_url || item?.image || item?.thumbnail || fallback || '';
-    const normalized = safeHttpUrl(rawUrl, '');
-    if (!normalized) return '';
-    if (normalized.startsWith(IMAGE_PROXY_URL)) return normalized;
-    return getDisplayImageUrl(normalized, '');
+    return getImageSourceSet(rawUrl);
+}
+
+function getItemImageUrl(item, fallback = '') {
+    const imageSources = getItemImageSources(item, fallback);
+    return imageSources.displayUrl || imageSources.originalUrl || '';
 }
 
 function getScorePillHtml(item, scoreValue = item?.ranking, includeInternalScore = true) {
@@ -5363,7 +5468,7 @@ function createMagazineCard(item, index, options = {}) {
         sourceKind = 'article',
         sourceLabel = item?.source || 'Unknown Source',
         reasonText = item?.reason || '',
-        imageUrl = getItemImageUrl(item),
+        imageUrl = item?.image_url || item?.image || item?.thumbnail || '',
         dateValue = item?.published_at || item?.date,
         metricHtml = null,
         scoreValue = item?.ranking,
@@ -5372,8 +5477,9 @@ function createMagazineCard(item, index, options = {}) {
 
     const card = document.createElement('div');
     const isDone = isSourcingItemDone(item);
-    const safeImageUrl = getItemImageUrl({ image_url: imageUrl });
-    const hasImage = safeImageUrl && !safeImageUrl.includes('placeholder');
+    const imageSources = getItemImageSources({ image_url: imageUrl });
+    const safeImageUrl = imageSources.displayUrl || imageSources.originalUrl;
+    const hasImage = Boolean(safeImageUrl);
     const safeLink = safeHttpUrl(item.link);
     const safeHeadline = escapeHtml(decodeEntities(item.headline || 'Untitled'));
     const safeReason = escapeHtml(normalizeWhitespace(reasonText).slice(0, 220));
@@ -5383,14 +5489,20 @@ function createMagazineCard(item, index, options = {}) {
     const cardClassName = ['magazine-card', variant !== 'default' ? `magazine-card--${variant}` : ''].filter(Boolean).join(' ');
     const wrapperClassName = ['card-wrapper', variant !== 'default' ? `card-wrapper--${variant}` : '', isDone ? 'card-wrapper--done' : ''].filter(Boolean).join(' ');
     const footerMetricHtml = metricHtml ?? getScorePillHtml(item, scoreValue, includeInternalScore);
+    const originalSourceAttr = imageSources.originalUrl && imageSources.originalUrl !== safeImageUrl
+        ? ` data-original-src="${escapeHtml(imageSources.originalUrl)}"`
+        : '';
 
     card.className = wrapperClassName;
     card.dataset.articleKey = getSourcingItemKey(item);
 
-    const imageHtml = hasImage
-        ? `<div class="magazine-card__image" style="background-image: url('${escapeHtml(safeImageUrl)}'); background-size: cover; background-position: center;">`
-        : `<div class="magazine-card__image magazine-card__image--fallback">
-             <div class="magazine-card__emoji-bg" aria-hidden="true">${emoji}</div>`;
+    const imageHtml = `
+        <div class="magazine-card__image${hasImage ? '' : ' magazine-card__image--fallback'}">
+            ${hasImage ? `<img class="magazine-card__image-media" src="${escapeHtml(safeImageUrl)}"${originalSourceAttr} alt="" loading="lazy" referrerpolicy="no-referrer" />` : ''}
+            <div class="magazine-card__fallback-art" aria-hidden="true">
+                <div class="magazine-card__emoji-bg">${emoji}</div>
+            </div>
+    `;
 
     card.innerHTML = `
         <a class="${cardClassName}" href="${safeLink}" target="_blank" rel="noopener noreferrer">
@@ -5530,8 +5642,8 @@ function renderInspiration() {
         card.innerHTML = `
             ${safeFavicon || safePreviewImage ? `
                 <div class="ins-preview">
-                    ${safePreviewImage ? `<img src="${safePreviewImage}" class="ins-thumb" alt="preview">` : ''}
-                    ${safeFavicon ? `<img src="${safeFavicon}" class="ins-favicon" alt="icon">` : ''}
+                    ${safePreviewImage ? `<img src="${safePreviewImage}" class="ins-thumb" alt="preview" loading="lazy" referrerpolicy="no-referrer">` : ''}
+                    ${safeFavicon ? `<img src="${safeFavicon}" class="ins-favicon" alt="icon" loading="lazy" referrerpolicy="no-referrer">` : ''}
                     <span class="ins-domain">${safeDomain}</span>
                 </div>
             ` : ''}
@@ -6106,6 +6218,10 @@ function renderCharts() {
 // Event Listeners
 // ===========================
 function setupEventListeners() {
+    document.addEventListener('error', (event) => {
+        handleUiImageLoadError(event.target);
+    }, true);
+
     if (elements.authActionBtn) {
         elements.authActionBtn.addEventListener('click', handleAuthAction);
     }

@@ -1873,13 +1873,25 @@ canvas {
   box-shadow: 0 12px 26px rgba(120, 180, 40, 0.12);
 }
 
-.account-subtab img {
+.account-subtab__avatar {
   width: 24px;
   height: 24px;
   border-radius: 10px;
   object-fit: cover;
   background: var(--bg-primary);
   flex-shrink: 0;
+}
+
+.account-avatar-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #2c360e;
+  border: 1px solid rgba(120, 180, 40, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(201, 255, 90, 0.58), transparent 42%),
+    linear-gradient(145deg, rgba(255, 251, 241, 0.98), rgba(239, 245, 226, 0.96));
 }
 
 .account-subtab span {
@@ -2382,8 +2394,7 @@ canvas {
   min-height: 0;
   aspect-ratio: 4 / 5;
   background-color: #f0f2f6;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 
 .account-story-card__media--fallback {
@@ -2391,6 +2402,31 @@ canvas {
     radial-gradient(circle at top left, rgba(255, 126, 95, 0.55), transparent 34%),
     radial-gradient(circle at bottom right, rgba(233, 30, 99, 0.42), transparent 38%),
     linear-gradient(145deg, #1a1f2b, #362238 54%, #845a25);
+}
+
+.account-story-card__media-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.account-story-card__media-fallback-art {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.35rem;
+  opacity: 0.28;
+}
+
+.account-story-card__media--fallback .account-story-card__media-image {
+  display: none;
+}
+
+.account-story-card__media--fallback .account-story-card__media-fallback-art {
+  display: flex;
 }
 
 .account-story-card__badge,
@@ -3639,6 +3675,17 @@ canvas {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.ins-preview--fallback::before {
+  content: "🔗";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  opacity: 0.22;
+}
+
 .ins-domain {
   position: absolute;
   bottom: 8px;
@@ -4425,15 +4472,34 @@ canvas {
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
+  background-color: #f0f2f6;
 }
 
 .magazine-card__image--fallback {
   background: linear-gradient(135deg, #f0f1f4 0%, #e8e9ed 100%);
-  display: flex;
+}
+
+.magazine-card__image-media {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.magazine-card__fallback-art {
+  position: absolute;
+  inset: 0;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+
+.magazine-card__image--fallback .magazine-card__image-media {
+  display: none;
+}
+
+.magazine-card__image--fallback .magazine-card__fallback-art {
+  display: flex;
 }
 
 .magazine-card__emoji-bg {
