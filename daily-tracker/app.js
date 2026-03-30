@@ -20,6 +20,11 @@ const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
 const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
 const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
 const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
+const EXTENSION_AUTH_STATE_EVENT = 'DAILY_TRACKER_EXTENSION_AUTH_STATE';
+const EXTENSION_AUTH_STATE_REQUEST_EVENT = 'DAILY_TRACKER_EXTENSION_AUTH_STATE_REQUEST';
+const TEAM_SELECTIONS_COLLECTION = 'daily-tracker-team-selections';
+const TEAM_SELECTIONS_DISPLAY_LIMIT = 12;
+const TEAM_SELECTIONS_QUERY_LIMIT = 40;
 const SHORTCUT_SHARE_TARGET_PARAMS = ['dt_share', 'share'];
 const SHORTCUT_SHARE_QUERY_PARAMS = ['dt_share', 'share', 'url', 'link', 'title', 'name', 'notes', 'text', 'type', 'uid', 'user', 'ownerUid'];
 const SHORTCUT_SHARE_OWNER_PARAMS = ['uid', 'user', 'ownerUid'];
@@ -96,6 +101,10 @@ let isMobileSettingsOpen = false;
 let mobileVisualTheme = getInitialMobileTheme();
 const launchSplashStartedAt = typeof performance !== 'undefined' ? performance.now() : Date.now();
 let launchSplashHideTimer = null;
+let teamSelections = [];
+let isLoadingTeamSelections = false;
+let teamSelectionsStatusMessage = 'Loading...';
+let lastTeamSelectionsBackfillUid = '';
 
 // ===========================
 // News Ticker State
@@ -575,6 +584,9 @@ const elements = {
     clearPoolBtn: document.getElementById('clearPoolBtn'),
     // Inspiration Board
     inspirationGrid: document.getElementById('inspirationGrid'),
+    teamSelectionsList: document.getElementById('teamSelectionsList'),
+    teamSelectionsStatus: document.getElementById('teamSelectionsStatus'),
+    teamSelectionsCount: document.getElementById('teamSelectionsCount'),
     inspirationMainInput: document.getElementById('inspirationMainInput'),
     inspirationModalOverlay: document.getElementById('inspirationModalOverlay'),
     insModalTitle: document.getElementById('insModalTitle'),
@@ -1320,7 +1332,7 @@ function isMobileSourcingUiActive() {
 // Firebase Imports & Config
 // ===========================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { getFirestore, collection, doc, getDoc, getDocs, limit, orderBy, query, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import {
     GoogleAuthProvider,
     browserLocalPersistence,
@@ -1433,6 +1445,7 @@ function resetInMemoryState() {
         doneHeadlines: [],
         managedSentientAccounts: []
     });
+    resetTeamSelectionsState('Sign in to see team selections.');
 }
 
 function persistUserLocalCache(user = currentUser) {
@@ -1455,6 +1468,13 @@ function persistUserLocalCache(user = currentUser) {
 function loadPendingExtensionIdeasBuffer() {
     const cached = readJsonFromLocalStorage(PENDING_EXTENSION_IDEAS_KEY, []);
     pendingExtensionIdeas = Array.isArray(cached) ? cached : [];
+}
+
+function resetTeamSelectionsState(statusMessage = 'Loading...') {
+    teamSelections = [];
+    isLoadingTeamSelections = false;
+    teamSelectionsStatusMessage = statusMessage;
+    lastTeamSelectionsBackfillUid = '';
 }
 
 function persistPendingExtensionIdeasBuffer() {
@@ -1491,6 +1511,69 @@ function normalizeImportedIdea(rawIdea) {
     };
 }
 
+function getTeamSelectionOwnerLabel(user = currentUser) {
+    return normalizeWhitespace(user?.displayName || user?.email || 'Team member');
+}
+
+function getTeamSelectionDocId(idea, user = currentUser) {
+    const ideaId = normalizeWhitespace(idea?.id || '');
+    if (!user?.uid || !ideaId) return '';
+    return `${user.uid}__${ideaId}`;
+}
+
+function buildTeamSelectionPayload(idea, user = currentUser) {
+    if (!idea || !user?.uid) return null;
+
+    const title = normalizeWhitespace(idea.title || idea.notes || idea.content || '');
+    if (!title) return null;
+
+    const notesPreview = normalizeWhitespace(idea.notes || idea.content || '').slice(0, 280);
+    const selectedAt = typeof idea.createdAt === 'string' ? idea.createdAt : new Date().toISOString();
+
+    return {
+        selectionId: normalizeWhitespace(idea.id || ''),
+        ownerUid: user.uid,
+        ownerLabel: getTeamSelectionOwnerLabel(user),
+        title,
+        url: safeHttpUrl(idea.url, ''),
+        type: normalizeIdeaType(idea.type),
+        notesPreview,
+        selectedAt,
+        updatedAt: new Date().toISOString()
+    };
+}
+
+async function publishTeamSelectionActivity(idea, user = currentUser) {
+    const docId = getTeamSelectionDocId(idea, user);
+    const payload = buildTeamSelectionPayload(idea, user);
+    if (!docId || !payload) return false;
+
+    try {
+        await setDoc(doc(db, TEAM_SELECTIONS_COLLECTION, docId), payload);
+        return true;
+    } catch (e) {
+        console.warn('Failed to publish team selection activity', e);
+        return false;
+    }
+}
+
+async function publishTeamSelectionActivities(ideas = [], user = currentUser) {
+    if (!Array.isArray(ideas) || !ideas.length || !user?.uid) return;
+    await Promise.allSettled(ideas.map(idea => publishTeamSelectionActivity(idea, user)));
+}
+
+async function backfillRecentTeamSelections(user = currentUser) {
+    if (!user?.uid || lastTeamSelectionsBackfillUid === user.uid) return;
+    lastTeamSelectionsBackfillUid = user.uid;
+
+    const recentIdeas = Array.isArray(appData?.ideas)
+        ? appData.ideas.slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT)
+        : [];
+
+    if (!recentIdeas.length) return;
+    await publishTeamSelectionActivities(recentIdeas, user);
+}
+
 function queuePendingExtensionIdeas(rawIdeas = []) {
     const existingIds = new Set(
         pendingExtensionIdeas
@@ -1520,7 +1603,7 @@ function mergeIdeasIntoAppData(ideas = []) {
             .map(idea => normalizeWhitespace(idea?.id))
             .filter(Boolean)
     );
-    let addedCount = 0;
+    const addedIdeas = [];
 
     [...ideas].reverse().forEach(idea => {
         if (!idea || existingIds.has(idea.id)) return;
@@ -1528,10 +1611,10 @@ function mergeIdeasIntoAppData(ideas = []) {
         const persistedIdea = { ...idea };
         delete persistedIdea.ownerUid;
         appData.ideas.unshift(persistedIdea);
-        addedCount += 1;
+        addedIdeas.push(persistedIdea);
     });
 
-    return addedCount;
+    return addedIdeas;
 }
 
 async function drainPendingExtensionIdeas() {
@@ -1553,16 +1636,22 @@ async function drainPendingExtensionIdeas() {
     pendingExtensionIdeas = deferredIdeas;
     persistPendingExtensionIdeasBuffer();
 
-    const addedCount = mergeIdeasIntoAppData(acceptedIdeas);
+    const addedIdeas = mergeIdeasIntoAppData(acceptedIdeas);
+    const addedCount = addedIdeas.length;
     if (!addedCount) return 0;
 
     renderInspiration();
     await saveData();
+    await publishTeamSelectionActivities(addedIdeas);
     return addedCount;
 }
 
 async function handleExtensionImportEvent(event) {
     if (event.source !== window) return;
+    if (event.data?.type === EXTENSION_AUTH_STATE_REQUEST_EVENT) {
+        broadcastExtensionAuthState();
+        return;
+    }
     if (event.data?.type !== EXTENSION_IMPORT_EVENT) return;
 
     const acceptedIdeas = queuePendingExtensionIdeas(Array.isArray(event.data.ideas) ? event.data.ideas : []);
@@ -1575,13 +1664,31 @@ async function handleExtensionImportEvent(event) {
     window.postMessage({
         type: EXTENSION_IMPORT_ACK_EVENT,
         acceptedCount: acceptedIdeas.length,
-        importedCount
+        importedCount,
+        acceptedIds: acceptedIdeas.map(idea => idea.id)
     }, '*');
 }
 
 function getUserLabel(user = currentUser) {
     if (!user) return '';
     return normalizeWhitespace(user.displayName || user.email || 'Signed in');
+}
+
+function getExtensionAuthProfile(user = currentUser) {
+    if (!user?.uid) return null;
+    return {
+        uid: user.uid,
+        email: normalizeWhitespace(user.email || ''),
+        displayName: normalizeWhitespace(user.displayName || ''),
+        lastSyncedAt: new Date().toISOString()
+    };
+}
+
+function broadcastExtensionAuthState() {
+    window.postMessage({
+        type: EXTENSION_AUTH_STATE_EVENT,
+        profile: getExtensionAuthProfile()
+    }, '*');
 }
 
 function updateAuthButtons({ busy = false, signedIn = !!currentUser } = {}) {
@@ -1626,6 +1733,7 @@ function updateAuthUI() {
 
     updateAuthButtons({ busy: isHandlingAuthAction, signedIn: !!currentUser });
     syncShortcutSetupUi();
+    broadcastExtensionAuthState();
 }
 
 function setAuthGate(mode = 'signin', statusText = '') {
@@ -1744,6 +1852,7 @@ async function loadData() {
         return;
     }
 
+    resetTeamSelectionsState('Loading...');
     updateSyncStatus('pending');
     const userDocRef = getUserDocRef(currentUser);
     const localSnapshot = getLocalSnapshotForUser(currentUser);
@@ -1812,12 +1921,14 @@ async function loadData() {
     ensureAppDataIntegrity();
     if (elements.permanentNotes) elements.permanentNotes.value = permanentNotes;
     render();
+    backfillRecentTeamSelections(currentUser);
 
     if (currentView === 'sourcing') {
         renderNews();
         startNewsAutoRefresh();
     } else if (currentView === 'selection') {
         renderInspiration();
+        loadTeamSelections();
     }
 }
 
@@ -1844,6 +1955,166 @@ async function saveData() {
         console.error("Firestore sync error:", e);
         updateSyncStatus('offline', localPersisted ? 'Local cache active' : 'Local cache failed');
     }
+}
+
+function normalizeTeamSelectionActivity(rawItem = {}, fallbackId = '') {
+    if (!rawItem || typeof rawItem !== 'object') return null;
+
+    const title = normalizeWhitespace(rawItem.title || '');
+    const ownerUid = normalizeWhitespace(rawItem.ownerUid || '');
+    if (!title || !ownerUid) return null;
+
+    return {
+        id: normalizeWhitespace(rawItem.selectionId || fallbackId) || fallbackId,
+        ownerUid,
+        ownerLabel: normalizeWhitespace(rawItem.ownerLabel || 'Team member'),
+        title,
+        url: safeHttpUrl(rawItem.url, ''),
+        type: normalizeIdeaType(rawItem.type),
+        notesPreview: typeof rawItem.notesPreview === 'string' ? rawItem.notesPreview : '',
+        selectedAt: typeof rawItem.selectedAt === 'string' ? rawItem.selectedAt : ''
+    };
+}
+
+function getTeamSelectionDomainLabel(url) {
+    try {
+        return new URL(url).hostname.replace(/^www\./, '') || 'Reference';
+    } catch {
+        return 'Manual note';
+    }
+}
+
+function formatRelativeTimestamp(value) {
+    const parsed = Date.parse(value || '');
+    if (!Number.isFinite(parsed)) return 'Recently';
+
+    const diffMs = parsed - Date.now();
+    const absMs = Math.abs(diffMs);
+    const units = [
+        ['day', 86400000],
+        ['hour', 3600000],
+        ['minute', 60000]
+    ];
+
+    const relativeFormatter = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+    for (const [unit, size] of units) {
+        if (absMs >= size || unit === 'minute') {
+            return relativeFormatter.format(Math.round(diffMs / size), unit);
+        }
+    }
+
+    return 'Just now';
+}
+
+async function loadTeamSelections() {
+    if (!elements.teamSelectionsList) return [];
+
+    if (!currentUser?.uid) {
+        resetTeamSelectionsState('Sign in to see team selections.');
+        renderTeamSelections();
+        return [];
+    }
+
+    if (isLoadingTeamSelections) return teamSelections;
+
+    isLoadingTeamSelections = true;
+    teamSelectionsStatusMessage = teamSelections.length ? 'Refreshing...' : 'Loading...';
+    renderTeamSelections();
+
+    try {
+        const snapshot = await getDocs(
+            query(
+                collection(db, TEAM_SELECTIONS_COLLECTION),
+                orderBy('selectedAt', 'desc'),
+                limit(TEAM_SELECTIONS_QUERY_LIMIT)
+            )
+        );
+
+        teamSelections = snapshot.docs
+            .map(docSnap => normalizeTeamSelectionActivity(docSnap.data(), docSnap.id))
+            .filter(Boolean)
+            .filter(item => item.ownerUid !== currentUser.uid)
+            .slice(0, TEAM_SELECTIONS_DISPLAY_LIMIT);
+
+        teamSelectionsStatusMessage = teamSelections.length
+            ? 'Latest from the team'
+            : 'No recent team selections yet.';
+    } catch (e) {
+        console.error('Failed to load team selections', e);
+        teamSelectionsStatusMessage = teamSelections.length
+            ? 'Showing cached results'
+            : 'Could not load team selections.';
+    } finally {
+        isLoadingTeamSelections = false;
+        renderTeamSelections();
+    }
+
+    return teamSelections;
+}
+
+function renderTeamSelections() {
+    if (!elements.teamSelectionsList || !elements.teamSelectionsStatus || !elements.teamSelectionsCount) return;
+
+    if (!currentUser?.uid) {
+        elements.teamSelectionsCount.textContent = '0';
+        elements.teamSelectionsStatus.textContent = 'Sign in required';
+        elements.teamSelectionsList.innerHTML = `
+            <div class="team-selection-card team-selection-card--placeholder">
+                <strong>Sign in first</strong>
+                <p>Team Selections appears once your Daily Tracker profile is active.</p>
+            </div>
+        `;
+        return;
+    }
+
+    elements.teamSelectionsCount.textContent = String(teamSelections.length);
+    elements.teamSelectionsStatus.textContent = isLoadingTeamSelections
+        ? (teamSelections.length ? 'Refreshing...' : 'Loading...')
+        : teamSelectionsStatusMessage;
+
+    if (!teamSelections.length) {
+        elements.teamSelectionsList.innerHTML = `
+            <div class="team-selection-card team-selection-card--placeholder">
+                <strong>No team selections yet</strong>
+                <p>${escapeHtml(teamSelectionsStatusMessage || 'Recent selections from other users will appear here.')}</p>
+            </div>
+        `;
+        return;
+    }
+
+    elements.teamSelectionsList.innerHTML = '';
+
+    teamSelections.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'team-selection-card';
+
+        const safeTitle = escapeHtml(item.title);
+        const safeOwner = escapeHtml(item.ownerLabel);
+        const safeType = escapeHtml(item.type);
+        const safeNotes = escapeHtml(item.notesPreview || '');
+        const safeUrl = safeHttpUrl(item.url, '');
+        const safeUrlText = escapeHtml(item.url || '');
+        const safeDomain = escapeHtml(getTeamSelectionDomainLabel(item.url));
+        const safeWhen = escapeHtml(formatRelativeTimestamp(item.selectedAt));
+
+        card.innerHTML = `
+            <div class="team-selection-card__top">
+                <div class="team-selection-card__author">
+                    <strong>${safeOwner}</strong>
+                    <span class="team-selection-card__meta">${safeWhen}</span>
+                </div>
+                <span class="team-selection-card__type">${safeType}</span>
+            </div>
+            <div class="team-selection-card__title">${safeTitle}</div>
+            ${safeNotes ? `<div class="team-selection-card__notes">${safeNotes}</div>` : ''}
+            <div class="team-selection-card__footer">
+                <span class="team-selection-card__domain">${safeDomain}</span>
+                ${safeUrl ? `<a class="team-selection-card__link" href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeUrlText ? 'Open link' : 'Open'}</a>` : ''}
+            </div>
+        `;
+
+        elements.teamSelectionsList.appendChild(card);
+    });
 }
 
 function updateSyncStatus(status, errorMsg = '') {
@@ -2784,6 +3055,7 @@ async function returnStagingCardToSelection(cardId) {
     renderInspiration();
     renderPool();
     await saveData();
+    await publishTeamSelectionActivity(newIdea);
 }
 
 function handleMenuMoveToPool() {
@@ -3248,6 +3520,7 @@ function render() {
     renderWeekGrid();
     renderMetrics();
     renderInspiration();
+    renderTeamSelections();
 
     // Also update dashboard if active
     if (currentView === 'metrics') {
@@ -3319,6 +3592,7 @@ function switchTab(viewId) {
         renderHistory();
     } else if (viewId === 'selection') {
         renderInspiration();
+        loadTeamSelections();
         stopNewsAutoRefresh();
         renderPool(); // Ensure pool is synced on Selection tab
     } else if (viewId === 'sourcing') {
@@ -4792,6 +5066,7 @@ async function saveSourceSelectionIdea() {
     appData.ideas.unshift(newIdea);
     renderInspiration();
     await saveData();
+    await publishTeamSelectionActivity(newIdea);
     hideSourceSelectionModal();
 
     if (url) fetchMetadata(newIdea.id, url);
@@ -5254,6 +5529,7 @@ async function addInspiration() {
     }
 
     await saveData();
+    await publishTeamSelectionActivity(newIdea);
 }
 
 async function fetchMetadata(ideaId, url) {
@@ -5875,6 +6151,9 @@ function setupEventListeners() {
     document.addEventListener('visibilitychange', () => {
         if (!document.hidden && currentView === 'sourcing') {
             renderNews(true);
+        }
+        if (!document.hidden && currentView === 'selection' && currentUser?.uid) {
+            loadTeamSelections();
         }
         syncIosInstallPrompt();
     });

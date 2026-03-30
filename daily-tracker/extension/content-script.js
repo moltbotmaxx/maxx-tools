@@ -1,6 +1,12 @@
+(() => {
 const EXTENSION_QUEUE_KEY = 'dailyTrackerIdeaQueue';
+const EXTENSION_PROFILE_KEY = 'dailyTrackerExtensionProfile';
 const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
 const EXTENSION_IMPORT_ACK_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT_ACK';
+const EXTENSION_AUTH_STATE_EVENT = 'DAILY_TRACKER_EXTENSION_AUTH_STATE';
+const EXTENSION_AUTH_STATE_REQUEST_EVENT = 'DAILY_TRACKER_EXTENSION_AUTH_STATE_REQUEST';
+const QUEUE_FLUSH_TIMEOUT_MS = 4000;
+const QUEUE_FLUSH_RETRY_MS = 1500;
 
 let queueFlushTimer = null;
 let queueFlushInFlight = false;
@@ -86,7 +92,62 @@ function resolveSmartTitle(data) {
   return directTitle;
 }
 
-function buildQueuedIdea({ title, notes, type, url }) {
+function normalizeProfile(rawProfile) {
+  if (!rawProfile || typeof rawProfile !== 'object') return null;
+  const uid = String(rawProfile.uid || '').trim();
+  if (!uid) return null;
+
+  return {
+    uid,
+    email: String(rawProfile.email || '').trim(),
+    displayName: String(rawProfile.displayName || '').trim()
+  };
+}
+
+function getProfileLabel(profile) {
+  if (!profile) return '';
+  return profile.displayName || profile.email || 'your profile';
+}
+
+function getActiveProfile() {
+  return new Promise((resolve, reject) => {
+    chrome.storage.local.get({ [EXTENSION_PROFILE_KEY]: null }, items => {
+      if (chrome.runtime.lastError) {
+        reject(new Error(chrome.runtime.lastError.message));
+        return;
+      }
+
+      resolve(normalizeProfile(items[EXTENSION_PROFILE_KEY]));
+    });
+  });
+}
+
+function setActiveProfile(profile) {
+  return new Promise((resolve, reject) => {
+    const normalizedProfile = normalizeProfile(profile);
+    const callback = () => {
+      if (chrome.runtime.lastError) {
+        reject(new Error(chrome.runtime.lastError.message));
+        return;
+      }
+
+      resolve(normalizedProfile);
+    };
+
+    if (normalizedProfile) {
+      chrome.storage.local.set({ [EXTENSION_PROFILE_KEY]: normalizedProfile }, callback);
+      return;
+    }
+
+    chrome.storage.local.remove(EXTENSION_PROFILE_KEY, callback);
+  });
+}
+
+function requestExtensionAuthState() {
+  window.postMessage({ type: EXTENSION_AUTH_STATE_REQUEST_EVENT }, '*');
+}
+
+function buildQueuedIdea({ title, notes, type, url, ownerUid }) {
   return {
     id: Date.now().toString(36) + Math.random().toString(36).slice(2),
     title,
@@ -94,6 +155,7 @@ function buildQueuedIdea({ title, notes, type, url }) {
     notes,
     content: notes,
     type,
+    ownerUid: typeof ownerUid === 'string' ? ownerUid : '',
     image: '',
     createdAt: new Date().toISOString()
   };
@@ -158,8 +220,12 @@ async function flushQueuedIdeasToApp() {
     queueFlushInFlight = false;
 
     try {
+      const acceptedIds = Array.isArray(event.data?.acceptedIds)
+        ? event.data.acceptedIds.map(value => String(value || '').trim()).filter(Boolean)
+        : [];
+      const idsToRemove = acceptedIds.length ? new Set(acceptedIds) : sentIds;
       const currentQueue = await getQueuedIdeas();
-      const remainingQueue = currentQueue.filter(idea => !sentIds.has(idea?.id));
+      const remainingQueue = currentQueue.filter(idea => !idsToRemove.has(idea?.id));
       await setQueuedIdeas(remainingQueue);
     } catch (e) {
       console.error('Failed to clear imported clipper queue', e);
@@ -169,7 +235,8 @@ async function flushQueuedIdeasToApp() {
   timeoutId = window.setTimeout(() => {
     window.removeEventListener('message', ackHandler);
     queueFlushInFlight = false;
-  }, 4000);
+    scheduleQueueFlush(QUEUE_FLUSH_RETRY_MS);
+  }, QUEUE_FLUSH_TIMEOUT_MS);
 
   window.addEventListener('message', ackHandler);
   window.postMessage({ type: EXTENSION_IMPORT_EVENT, ideas }, '*');
@@ -187,14 +254,35 @@ function scheduleQueueFlush(delay = 300) {
 }
 
 if (isDailyTrackerAppPage()) {
+  window.addEventListener('message', event => {
+    if (event.source !== window) return;
+    if (event.data?.type !== EXTENSION_AUTH_STATE_EVENT) return;
+
+    setActiveProfile(event.data.profile).catch(error => {
+      console.error('Failed to sync Daily Tracker auth state', error);
+    });
+  });
+
   if (document.readyState === 'loading') {
-    window.addEventListener('DOMContentLoaded', () => scheduleQueueFlush(700), { once: true });
+    window.addEventListener('DOMContentLoaded', () => {
+      requestExtensionAuthState();
+      scheduleQueueFlush(700);
+    }, { once: true });
   } else {
+    requestExtensionAuthState();
     scheduleQueueFlush(700);
   }
 
   chrome.storage.onChanged.addListener((changes, areaName) => {
     if (areaName === 'local' && changes[EXTENSION_QUEUE_KEY]) {
+      scheduleQueueFlush(150);
+    }
+  });
+
+  window.addEventListener('focus', () => scheduleQueueFlush(150));
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      requestExtensionAuthState();
       scheduleQueueFlush(150);
     }
   });
@@ -208,6 +296,10 @@ chrome.runtime.onMessage.addListener(request => {
 
 function createClipperModal(data) {
   if (document.getElementById('dt-clipper-container')) return;
+  if (!document.body) {
+    window.addEventListener('DOMContentLoaded', () => createClipperModal(data), { once: true });
+    return;
+  }
 
   const container = document.createElement('div');
   container.id = 'dt-clipper-container';
@@ -345,6 +437,12 @@ function createClipperModal(data) {
       color: var(--text-secondary);
       font-weight: 500;
     }
+    .session-hint {
+      margin-top: 8px;
+      font-size: 0.76rem;
+      line-height: 1.4;
+      color: var(--text-secondary);
+    }
   `;
 
   shadowRoot.appendChild(style);
@@ -380,6 +478,7 @@ function createClipperModal(data) {
       <label>Notes</label>
       <textarea id="dt-notes" rows="3">${safeSelection}</textarea>
     </div>
+    <div class="session-hint" id="dt-session-hint">Checking Daily Tracker login...</div>
     <button class="btn-save" id="dt-save">Save to Daily Tracker</button>
     <div class="status" id="dt-status"></div>
   `;
@@ -387,6 +486,16 @@ function createClipperModal(data) {
   shadowRoot.appendChild(overlay);
   overlay.appendChild(modal);
   document.body.appendChild(container);
+
+  const sessionHintEl = shadowRoot.querySelector('#dt-session-hint');
+  const applySessionHint = profile => {
+    sessionHintEl.textContent = profile?.uid
+      ? `Saving for ${getProfileLabel(profile)}.`
+      : 'Sign in to Daily Tracker first so this idea is linked to the right profile.';
+  };
+  getActiveProfile()
+    .then(applySessionHint)
+    .catch(() => applySessionHint(null));
 
   shadowRoot.querySelector('.close-btn').onclick = closeModal;
   overlay.onclick = event => {
@@ -413,6 +522,13 @@ function createClipperModal(data) {
       return;
     }
 
+    const activeProfile = await getActiveProfile().catch(() => null);
+    if (!activeProfile?.uid) {
+      statusEl.textContent = 'Sign in to Daily Tracker first.';
+      applySessionHint(null);
+      return;
+    }
+
     saveBtn.disabled = true;
     saveBtn.textContent = 'Queueing...';
 
@@ -421,10 +537,12 @@ function createClipperModal(data) {
         title,
         notes,
         type: selectedType,
-        url: data?.url
+        url: data?.url,
+        ownerUid: activeProfile.uid
       }));
 
-      statusEl.textContent = 'Queued. Open Daily Tracker to import it.';
+      statusEl.textContent = `Queued for ${getProfileLabel(activeProfile)}. Open Daily Tracker to import it.`;
+      applySessionHint(activeProfile);
       scheduleQueueFlush(150);
       setTimeout(closeModal, 1400);
     } catch (e) {
@@ -463,3 +581,4 @@ function createClipperModal(data) {
     container.remove();
   }
 }
+})();

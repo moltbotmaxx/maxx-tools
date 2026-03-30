@@ -1,3 +1,6 @@
+const CONTEXT_MENU_ID = 'add-to-daily-tracker';
+const CONTENT_SCRIPT_FILE = 'content-script.js';
+
 function prettifySlugPart(part) {
     if (!part) return '';
     try {
@@ -114,61 +117,97 @@ async function resolveCaptureTitle({ linkText, selectionText, pageTitle, linkUrl
     return toLeadWords(cleanPageTitle, 4);
 }
 
-// Create Context Menu items on install
-chrome.runtime.onInstalled.addListener(() => {
-    chrome.contextMenus.create({
-        id: "add-to-daily-tasks",
-        title: "Add to Daily Tasks",
-        contexts: ["selection", "link", "page"]
+function isScriptableUrl(rawUrl) {
+    if (!rawUrl) return false;
+    try {
+        const parsed = new URL(rawUrl);
+        return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+    } catch {
+        return false;
+    }
+}
+
+function ensureContextMenu() {
+    chrome.contextMenus.removeAll(() => {
+        if (chrome.runtime.lastError) {
+            console.warn('Failed clearing old context menus:', chrome.runtime.lastError.message);
+        }
+
+        chrome.contextMenus.create({
+            id: CONTEXT_MENU_ID,
+            title: 'Save to Daily Tracker',
+            contexts: ['selection', 'link', 'page']
+        }, () => {
+            if (chrome.runtime.lastError) {
+                console.error('Failed creating context menu:', chrome.runtime.lastError.message);
+            }
+        });
     });
+}
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function sendCaptureMessage(tabId, data) {
+    await chrome.tabs.sendMessage(tabId, {
+        action: 'open-clipper-modal',
+        data
+    });
+}
+
+chrome.runtime.onInstalled.addListener(() => {
+    ensureContextMenu();
+});
+
+chrome.runtime.onStartup.addListener(() => {
+    ensureContextMenu();
 });
 
 // Handle Context Menu clicks
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
-    if (info.menuItemId === "add-to-daily-tasks") {
-        const resolvedTitle = await resolveCaptureTitle({
-            linkText: info.linkText,
-            selectionText: info.selectionText,
-            pageTitle: tab.title,
-            linkUrl: info.linkUrl,
-            pageUrl: tab.url
-        });
+    if (info.menuItemId !== CONTEXT_MENU_ID) return;
 
-        const data = {
-            title: resolvedTitle,
-            url: info.linkUrl || tab.url,
-            selection: info.selectionText || "",
-            linkText: info.linkText || ""
-        };
+    if (!tab?.id || !isScriptableUrl(tab.url)) {
+        console.warn('Scripting is restricted on this page.');
+        return;
+    }
 
-        // Helper to send message
-        const sendCapture = () => {
-            chrome.tabs.sendMessage(tab.id, {
-                action: "open-clipper-modal",
-                data: data
-            }).catch(err => {
-                console.error("Content script still not ready, injecting manually...");
-                chrome.scripting.executeScript({
-                    target: { tabId: tab.id },
-                    files: ["content-script.js"]
-                }).then(() => {
-                    // Try again after injection
-                    setTimeout(() => {
-                        chrome.tabs.sendMessage(tab.id, {
-                            action: "open-clipper-modal",
-                            data: data
-                        });
-                    }, 100);
-                }).catch(e => console.error("Manual injection failed:", e));
-            });
-        };
+    const resolvedTitle = await resolveCaptureTitle({
+        linkText: info.linkText,
+        selectionText: info.selectionText,
+        pageTitle: tab.title,
+        linkUrl: info.linkUrl,
+        pageUrl: tab.url
+    });
 
-        // Don't run on restricted pages
-        if (!tab.url || tab.url.startsWith('chrome://') || tab.url.startsWith('edge://') || tab.url.startsWith('about:')) {
-            console.warn("Scripting restricted on this page.");
+    const data = {
+        title: resolvedTitle,
+        url: info.linkUrl || tab.url,
+        selection: info.selectionText || '',
+        linkText: info.linkText || ''
+    };
+
+    try {
+        await sendCaptureMessage(tab.id, data);
+    } catch (error) {
+        const errorMessage = error?.message || '';
+        const needsInjection = errorMessage.includes('Receiving end does not exist');
+
+        if (!needsInjection) {
+            console.error('Failed sending clipper message:', error);
             return;
         }
 
-        sendCapture();
+        try {
+            await chrome.scripting.executeScript({
+                target: { tabId: tab.id },
+                files: [CONTENT_SCRIPT_FILE]
+            });
+            await delay(120);
+            await sendCaptureMessage(tab.id, data);
+        } catch (injectionError) {
+            console.error('Manual content script injection failed:', injectionError);
+        }
     }
 });

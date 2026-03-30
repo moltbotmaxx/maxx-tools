@@ -39,6 +39,50 @@
             color: var(--accent-primary);
         }
 
+        .session-card {
+            margin-bottom: 16px;
+            padding: 12px;
+            border: 1px solid #D2D2D7;
+            border-radius: 10px;
+            background: #F8F8FA;
+        }
+
+        .session-card.connected {
+            background: #F1FBF6;
+            border-color: #B7E4C7;
+        }
+
+        .session-card.disconnected {
+            background: #FFF7ED;
+            border-color: #FED7AA;
+        }
+
+        .session-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .session-meta {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .session-btn {
+            width: 100%;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 12px;
+            background: var(--text-primary);
+            color: white;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
         .field {
             margin-bottom: 12px;
         }
@@ -154,6 +198,12 @@
             <line x1="3" y1="10" x2="21" y2="10" />
         </svg>
         <h2>Capture Link</h2>
+    </div>
+
+    <div class="session-card disconnected" id="sessionCard">
+        <div class="session-title" id="sessionTitle">Sign in required</div>
+        <div class="session-meta" id="sessionMeta">Open Daily Tracker and sign in with Google to link this extension to a profile.</div>
+        <button class="session-btn" id="sessionActionBtn" type="button">Open Daily Tracker</button>
     </div>
 
     <div class="field">

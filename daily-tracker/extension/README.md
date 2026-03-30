@@ -11,8 +11,18 @@ This Chrome Extension allows you to save any website directly to your Inspiratio
 5. Pin the extension to your toolbar for easy access.
 
 ## Features:
-- **Right-Click Capture**: Highlight text or right-click any link and select "Add to Daily Tasks" to clip inspiration instantly.
+- **Right-Click Capture**: Highlight text or right-click any link and choose **Save to Daily Tracker** to clip inspiration instantly.
 - **Smart Popup**: Automatically grabs the page title and URL.
 - **On-Page Modal**: Right-clicking opens a modal directly on the page so you don't have to leave your flow.
 - **Custom Categories**: Select between Post, Reel, or Promo.
+- **Profile Linking**: Open Daily Tracker, sign in with Google, and the extension will link future captures to that same profile.
 - **Browser Queue Import**: Saves locally in the browser and imports into the signed-in Daily Tracker account when the app is open.
+- **Store-Friendlier Permissions**: The app listener runs only on Daily Tracker URLs, and other pages are clipped on demand through the context menu.
+
+## Packaging
+
+Run `./package-extension.sh` inside this folder to generate:
+
+- A Chrome Web Store upload ZIP
+- A side-loadable CRX
+- A PEM key you should keep for future CRX rebuilds

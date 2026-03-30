@@ -1,4 +1,6 @@
 const EXTENSION_QUEUE_KEY = 'dailyTrackerIdeaQueue';
+const EXTENSION_PROFILE_KEY = 'dailyTrackerExtensionProfile';
+const DAILY_TRACKER_APP_URL = 'https://maxxbot.cloud/daily-tracker/';
 
 function safeHttpUrl(url) {
     if (!url || typeof url !== 'string') return '';
@@ -70,7 +72,7 @@ function resolvePopupTitle(tab) {
     return tabTitle || urlTitle;
 }
 
-function buildQueuedIdea({ title, notes, type, url }) {
+function buildQueuedIdea({ title, notes, type, url, ownerUid }) {
     return {
         id: Date.now().toString(36) + Math.random().toString(36).slice(2),
         title,
@@ -78,9 +80,40 @@ function buildQueuedIdea({ title, notes, type, url }) {
         notes,
         content: notes,
         type,
+        ownerUid: typeof ownerUid === 'string' ? ownerUid : '',
         image: '',
         createdAt: new Date().toISOString()
     };
+}
+
+function normalizeProfile(rawProfile) {
+    if (!rawProfile || typeof rawProfile !== 'object') return null;
+    const uid = String(rawProfile.uid || '').trim();
+    if (!uid) return null;
+
+    return {
+        uid,
+        email: String(rawProfile.email || '').trim(),
+        displayName: String(rawProfile.displayName || '').trim()
+    };
+}
+
+function getProfileLabel(profile) {
+    if (!profile) return '';
+    return profile.displayName || profile.email || 'your profile';
+}
+
+function getActiveProfile() {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.get({ [EXTENSION_PROFILE_KEY]: null }, items => {
+            if (chrome.runtime.lastError) {
+                reject(new Error(chrome.runtime.lastError.message));
+                return;
+            }
+
+            resolve(normalizeProfile(items[EXTENSION_PROFILE_KEY]));
+        });
+    });
 }
 
 function getQueuedIdeas() {
@@ -121,6 +154,42 @@ const statusEl = document.getElementById('status');
 const titleInput = document.getElementById('title');
 const notesInput = document.getElementById('notes');
 const saveBtn = document.getElementById('saveBtn');
+const sessionCard = document.getElementById('sessionCard');
+const sessionTitle = document.getElementById('sessionTitle');
+const sessionMeta = document.getElementById('sessionMeta');
+const sessionActionBtn = document.getElementById('sessionActionBtn');
+
+function updateSessionUi(profile) {
+    const isConnected = Boolean(profile?.uid);
+    sessionCard.classList.toggle('connected', isConnected);
+    sessionCard.classList.toggle('disconnected', !isConnected);
+    sessionTitle.textContent = isConnected
+        ? 'Connected profile'
+        : 'Sign in required';
+    sessionMeta.textContent = isConnected
+        ? `New captures will be queued for ${getProfileLabel(profile)}.`
+        : 'Open Daily Tracker and sign in with Google to link this extension to a profile.';
+    sessionActionBtn.textContent = isConnected
+        ? 'Open Daily Tracker'
+        : 'Sign in to Daily Tracker';
+    saveBtn.disabled = !isConnected;
+}
+
+async function refreshSessionUi() {
+    try {
+        const profile = await getActiveProfile();
+        updateSessionUi(profile);
+        return profile;
+    } catch (error) {
+        console.error('Failed to load linked Daily Tracker profile', error);
+        updateSessionUi(null);
+        return null;
+    }
+}
+
+sessionActionBtn.addEventListener('click', () => {
+    chrome.tabs.create({ url: DAILY_TRACKER_APP_URL });
+});
 
 chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     currentTab = tabs[0];
@@ -140,11 +209,18 @@ document.getElementById('categorySelector').addEventListener('click', e => {
 document.getElementById('saveBtn').addEventListener('click', async () => {
     const title = titleInput.value.trim();
     const notes = notesInput.value.trim();
+    const activeProfile = await refreshSessionUi();
 
     if (!title) {
         statusEl.textContent = 'Title is required';
         statusEl.className = 'status error';
         titleInput.focus();
+        return;
+    }
+
+    if (!activeProfile?.uid) {
+        statusEl.textContent = 'Sign in to Daily Tracker first.';
+        statusEl.className = 'status error';
         return;
     }
 
@@ -158,10 +234,11 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
             title,
             notes,
             type: selectedType,
-            url: currentTab?.url
+            url: currentTab?.url,
+            ownerUid: activeProfile.uid
         }));
 
-        statusEl.textContent = 'Queued. Open Daily Tracker to import it.';
+        statusEl.textContent = `Queued for ${getProfileLabel(activeProfile)}. Open Daily Tracker to import it.`;
         statusEl.className = 'status success';
         setTimeout(() => window.close(), 1400);
     } catch (err) {
@@ -172,6 +249,14 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
         saveBtn.textContent = 'Retry Save';
     }
 });
+
+chrome.storage.onChanged.addListener((changes, areaName) => {
+    if (areaName === 'local' && changes[EXTENSION_PROFILE_KEY]) {
+        updateSessionUi(normalizeProfile(changes[EXTENSION_PROFILE_KEY].newValue));
+    }
+});
+
+refreshSessionUi();
 
 titleInput.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
