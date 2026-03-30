@@ -1,6 +1,6 @@
-# RSS-Bridge for Daily Tracker
+# RSS-Bridge for Schedulr
 
-This folder wires `daily-tracker` to a self-hosted `RSS-Bridge` instance for the `X` sidebar feed.
+This folder wires `daily-tracker` (Schedulr) to a self-hosted `RSS-Bridge` instance for the `X` sidebar feed.
 
 ## What this setup does
 
@@ -54,4 +54,4 @@ You can change the query, switch to `By username`, or `By list ID` in [x-feed-co
 
 ## Current bridge limitation
 
-The stock `TwitterV2Bridge` feed shape includes tweet text, author, date and media, but not public engagement counters like likes, views or reposts. The `daily-tracker` `X` cards are therefore rendered from author, recency and media presence instead of engagement metrics.
+The stock `TwitterV2Bridge` feed shape includes tweet text, author, date and media, but not public engagement counters like likes, views or reposts. The Schedulr `X` cards are therefore rendered from author, recency and media presence instead of engagement metrics.

@@ -4,10 +4,10 @@ A monorepo of internal mini-apps and productivity tools.
 
 ## 🛠️ Included Tools
 
-### [Daily Tracker](./daily-tracker/)
-**Content Scheduler & Planner**
+### [Schedulr](./daily-tracker/)
+**Scheduling Workspace**
 - Plan and organize weekly content.
-- Includes a dedicated Chrome/Edge extension ([Daily Tracker Clipper](./daily-tracker/extension/)) for quick data collection.
+- Includes a dedicated Chrome/Edge extension ([Schedulr Clipper](./daily-tracker/extension/)) for quick data collection.
 - Automated data sourcing pipeline for articles, X (Twitter), and Reddit.
 
 ### [FX Tracker](./fx-tracker/)

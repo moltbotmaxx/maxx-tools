@@ -1,6 +1,6 @@
 const EXTENSION_QUEUE_KEY = 'dailyTrackerIdeaQueue';
 const EXTENSION_PROFILE_KEY = 'dailyTrackerExtensionProfile';
-const DAILY_TRACKER_APP_URL = 'https://maxxbot.cloud/daily-tracker/';
+const DAILY_TRACKER_APP_URL = 'https://schedulr.work/';
 
 function safeHttpUrl(url) {
     if (!url || typeof url !== 'string') return '';
@@ -168,10 +168,10 @@ function updateSessionUi(profile) {
         : 'Sign in required';
     sessionMeta.textContent = isConnected
         ? `New captures will be queued for ${getProfileLabel(profile)}.`
-        : 'Open Daily Tracker and sign in with Google to link this extension to a profile.';
+        : 'Open Schedulr and sign in with Google to link this extension to a profile.';
     sessionActionBtn.textContent = isConnected
-        ? 'Open Daily Tracker'
-        : 'Sign in to Daily Tracker';
+        ? 'Open Schedulr'
+        : 'Sign in to Schedulr';
     saveBtn.disabled = !isConnected;
 }
 
@@ -181,7 +181,7 @@ async function refreshSessionUi() {
         updateSessionUi(profile);
         return profile;
     } catch (error) {
-        console.error('Failed to load linked Daily Tracker profile', error);
+        console.error('Failed to load linked Schedulr profile', error);
         updateSessionUi(null);
         return null;
     }
@@ -219,7 +219,7 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
     }
 
     if (!activeProfile?.uid) {
-        statusEl.textContent = 'Sign in to Daily Tracker first.';
+        statusEl.textContent = 'Sign in to Schedulr first.';
         statusEl.className = 'status error';
         return;
     }
@@ -238,7 +238,7 @@ document.getElementById('saveBtn').addEventListener('click', async () => {
             ownerUid: activeProfile.uid
         }));
 
-        statusEl.textContent = `Queued for ${getProfileLabel(activeProfile)}. Open Daily Tracker to import it.`;
+        statusEl.textContent = `Queued for ${getProfileLabel(activeProfile)}. Open Schedulr to import it.`;
         statusEl.className = 'status success';
         setTimeout(() => window.close(), 1400);
     } catch (err) {

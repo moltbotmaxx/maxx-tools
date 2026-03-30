@@ -135,7 +135,7 @@ function ensureContextMenu() {
 
         chrome.contextMenus.create({
             id: CONTEXT_MENU_ID,
-            title: 'Save to Daily Tracker',
+            title: 'Save to Schedulr',
             contexts: ['selection', 'link', 'page']
         }, () => {
             if (chrome.runtime.lastError) {

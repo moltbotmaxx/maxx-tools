@@ -9,3 +9,4 @@ __pycache__/
 daily-tracker/extension/*.crx
 daily-tracker/extension/*.pem
 daily-tracker/extension/daily-tracker-clipper-v*.zip
+daily-tracker/extension/schedulr-clipper-v*.zip

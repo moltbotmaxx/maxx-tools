@@ -13,8 +13,8 @@ if [[ ! -x "$CHROME_BIN" ]]; then
 fi
 
 VERSION="$(node -e "console.log(require(process.argv[1]).version)" "$MANIFEST_PATH")"
-PACKAGE_BASENAME="daily-tracker-clipper-v${VERSION}"
-LATEST_BASENAME="daily-tracker-clipper-latest"
+PACKAGE_BASENAME="schedulr-clipper-v${VERSION}"
+LATEST_BASENAME="schedulr-clipper-latest"
 STAGE_DIR="$BUILD_DIR/$PACKAGE_BASENAME"
 
 rm -rf "$STAGE_DIR"

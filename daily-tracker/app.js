@@ -1,5 +1,5 @@
 /**
- * Content Scheduler App
+ * Schedulr App
  * Drag & drop content planning for the week
  */
 
@@ -746,7 +746,7 @@ function getAuthGateCopy(mode = 'signin') {
 
         return {
             title: 'Login',
-            description: 'Continue with Google to open Daily Tracker.',
+            description: 'Continue with Google to open Schedulr.',
             showLogin: true
         };
     }
@@ -769,7 +769,7 @@ function getAuthGateCopy(mode = 'signin') {
 
     return {
         title: 'Sign in to load your workspace',
-        description: 'Each Google account gets its own Daily Tracker data inside Firestore.',
+        description: 'Each Google account gets its own Schedulr workspace inside Firestore.',
         showLogin: true
     };
 }
@@ -2061,7 +2061,7 @@ function renderTeamSelections() {
         elements.teamSelectionsList.innerHTML = `
             <div class="team-selection-card team-selection-card--placeholder">
                 <strong>Sign in first</strong>
-                <p>Team Selections appears once your Daily Tracker profile is active.</p>
+                <p>Team Selections appears once your Schedulr profile is active.</p>
             </div>
         `;
         return;
@@ -2414,8 +2414,8 @@ async function openManagedAccountsModal(mode = 'edit') {
     }
     if (elements.managedAccountsModalDescription) {
         elements.managedAccountsModalDescription.textContent = mode === 'onboarding'
-            ? 'Pick one or more accounts before entering Daily Tracker.'
-            : 'Update the accounts you want to monitor inside Daily Tracker.';
+            ? 'Pick one or more accounts before entering Schedulr.'
+            : 'Update the accounts you want to monitor inside Schedulr.';
     }
     if (elements.managedAccountsList) {
         elements.managedAccountsList.innerHTML = '<div class="managed-account-option managed-account-option--loading">Loading accounts...</div>';
@@ -6346,7 +6346,7 @@ function setupEventListeners() {
         elements.shortcutCopyBaseUrlBtn.addEventListener('click', () => {
             copyShortcutConfigValue(
                 elements.shortcutConfigBaseUrl?.value || '',
-                'Daily Tracker URL copied.'
+                'Schedulr URL copied.'
             );
         });
     }
@@ -6434,7 +6434,7 @@ function exportData() {
     // Create temp link and click it
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", url);
-    downloadAnchorNode.setAttribute("download", `daily_tracker_backup_${new Date().toISOString().split('T')[0]}.json`);
+    downloadAnchorNode.setAttribute("download", `schedulr_backup_${new Date().toISOString().split('T')[0]}.json`);
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();

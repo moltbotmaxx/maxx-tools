@@ -1,7 +1,7 @@
 {
-  "name": "Daily Tracker",
-  "short_name": "Tracker",
-  "description": "Daily Tracker for sourcing, selection and scheduling.",
+  "name": "Schedulr",
+  "short_name": "Schedulr",
+  "description": "Schedulr for sourcing, selection and scheduling.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

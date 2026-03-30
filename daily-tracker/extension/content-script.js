@@ -248,7 +248,7 @@ function scheduleQueueFlush(delay = 300) {
   queueFlushTimer = window.setTimeout(() => {
     flushQueuedIdeasToApp().catch(err => {
       queueFlushInFlight = false;
-      console.error('Failed to flush clipper queue into Daily Tracker', err);
+      console.error('Failed to flush clipper queue into Schedulr', err);
     });
   }, delay);
 }
@@ -259,7 +259,7 @@ if (isDailyTrackerAppPage()) {
     if (event.data?.type !== EXTENSION_AUTH_STATE_EVENT) return;
 
     setActiveProfile(event.data.profile).catch(error => {
-      console.error('Failed to sync Daily Tracker auth state', error);
+      console.error('Failed to sync Schedulr auth state', error);
     });
   });
 
@@ -478,8 +478,8 @@ function createClipperModal(data) {
       <label>Notes</label>
       <textarea id="dt-notes" rows="3">${safeSelection}</textarea>
     </div>
-    <div class="session-hint" id="dt-session-hint">Checking Daily Tracker login...</div>
-    <button class="btn-save" id="dt-save">Save to Daily Tracker</button>
+    <div class="session-hint" id="dt-session-hint">Checking Schedulr login...</div>
+    <button class="btn-save" id="dt-save">Save to Schedulr</button>
     <div class="status" id="dt-status"></div>
   `;
 
@@ -491,7 +491,7 @@ function createClipperModal(data) {
   const applySessionHint = profile => {
     sessionHintEl.textContent = profile?.uid
       ? `Saving for ${getProfileLabel(profile)}.`
-      : 'Sign in to Daily Tracker first so this idea is linked to the right profile.';
+      : 'Sign in to Schedulr first so this idea is linked to the right profile.';
   };
   getActiveProfile()
     .then(applySessionHint)
@@ -524,7 +524,7 @@ function createClipperModal(data) {
 
     const activeProfile = await getActiveProfile().catch(() => null);
     if (!activeProfile?.uid) {
-      statusEl.textContent = 'Sign in to Daily Tracker first.';
+      statusEl.textContent = 'Sign in to Schedulr first.';
       applySessionHint(null);
       return;
     }
@@ -541,7 +541,7 @@ function createClipperModal(data) {
         ownerUid: activeProfile.uid
       }));
 
-      statusEl.textContent = `Queued for ${getProfileLabel(activeProfile)}. Open Daily Tracker to import it.`;
+      statusEl.textContent = `Queued for ${getProfileLabel(activeProfile)}. Open Schedulr to import it.`;
       applySessionHint(activeProfile);
       scheduleQueueFlush(150);
       setTimeout(closeModal, 1400);
