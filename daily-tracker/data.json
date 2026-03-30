@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-30T21:03:36.672Z",
+    "generated_at": "2026-03-30T21:59:38.188Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How I built a fully automated cold email system using OpenClaw, sharing my complete setup + walkthrough",
+        "link": "https://reddit.com/r/openclaw/comments/1s82vhe/how_i_built_a_fully_automated_cold_email_system/",
+        "subreddit": "openclaw",
+        "published_at": "2026-03-30T20:49:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Istg, its unhinged",
         "link": "https://reddit.com/r/ClaudeAI/comments/1s820s3/istg_its_unhinged/",
@@ -379,7 +388,7 @@
         "published_at": "2026-03-30T20:17:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Florida Man Uses ChatGPT To Successfully Sell His House In Just Five Days—And Realtors Are Sweating",
@@ -388,7 +397,7 @@
         "published_at": "2026-03-30T19:38:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "PSA: The anatomy of a fake \"Unprompted AI\" post (and why they are suddenly everywhere)",
@@ -397,7 +406,7 @@
         "published_at": "2026-03-30T19:04:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Claude Mythos leaked: \"by far the most powerful AI model we've ever developed\"",
@@ -406,7 +415,7 @@
         "published_at": "2026-03-30T19:02:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Which AI chatbot has the fastest response time in 2026",
@@ -415,16 +424,7 @@
         "published_at": "2026-03-30T18:39:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Computer use is now in Claude Code",
-        "link": "https://reddit.com/r/singularity/comments/1s7xb09/computer_use_is_now_in_claude_code/",
-        "subreddit": "singularity",
-        "published_at": "2026-03-30T17:31:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 94
       },
       {
         "headline": "Computer use is now in Claude Code.",
@@ -433,7 +433,7 @@
         "published_at": "2026-03-30T17:05:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Figure AI's Humanoid Walks into A Photoshoot By Itself!",
@@ -442,7 +442,7 @@
         "published_at": "2026-03-30T17:04:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "I spent a weekend with OpenClaw and ended up with a pipeline that makes full videos from a prompt.",
@@ -451,23 +451,23 @@
         "published_at": "2026-03-30T16:58:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
-        "headline": "Why is it not working? It was able to do it before, unless they changed something.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s7t193/why_is_it_not_working_it_was_able_to_do_it_before/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-03-30T15:01:36+00:00",
+        "headline": "Stanford and Harvard just dropped the most disturbing AI paper of the year",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s7w10n/stanford_and_harvard_just_dropped_the_most/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-03-30T16:47:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-30T21:03:36.672Z",
+    "reddit_viral_generated_at": "2026-03-30T21:59:38.188Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
