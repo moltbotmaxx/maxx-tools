@@ -7,9 +7,7 @@ const requiredArticles = Number(getArg('--articles', '30')) || 30;
 const requiredXPerTopic = Number(getArg('--x-per-topic', '10')) || 10;
 const requiredReddit = Number(getArg('--reddit-count', '10')) || 10;
 const requiredImageCoverage = Number(getArg('--image-coverage', '0.6'));
-
 const requiredXTopics = ['AI', 'CLAUDE', 'CHATGPT', 'GEMINI'];
-const allowedSubreddits = new Set(['singularity', 'openai', 'chatgpt']);
 
 function hoursAgo(isoDate) {
   const d = new Date(isoDate || '');
@@ -97,9 +95,7 @@ async function main() {
   }
   redditItems.forEach((item, idx) => {
     const sr = String(item.subreddit || '').toLowerCase();
-    if (!allowedSubreddits.has(sr)) {
-      errors.push(`reddit_viral.items[${idx}] subreddit=${item.subreddit} not in allowed set`);
-    }
+    if (!sr) errors.push(`reddit_viral.items[${idx}] missing subreddit`);
     if (hoursAgo(item.published_at) > windowHours) {
       errors.push(`reddit_viral.items[${idx}] outside ${windowHours}h window`);
     }

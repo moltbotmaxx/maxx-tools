@@ -26,6 +26,7 @@ echo "[run-all] start $(date -u +%FT%TZ)" | tee -a "$LOG_FILE"
 echo "[run-all] input=${INPUT_FILE} target=${TARGET_FILE}" | tee -a "$LOG_FILE"
 
 node scripts/scrape.mjs --in "$INPUT_FILE" --out "$RAW_FILE" | tee -a "$LOG_FILE"
+node scripts/update-reddit-feed.mjs --in "$RAW_FILE" --out "$RAW_FILE" --window-hours "$WINDOW_HOURS" --count "$REDDIT_COUNT" | tee -a "$LOG_FILE"
 node scripts/enrich.mjs --in "$RAW_FILE" --out "$ENRICHED_FILE" --window-hours "$WINDOW_HOURS" --articles "$ARTICLES_COUNT" | tee -a "$LOG_FILE"
 node scripts/validate.mjs --in "$ENRICHED_FILE" --window-hours "$WINDOW_HOURS" --articles "$ARTICLES_COUNT" --x-per-topic "$X_PER_TOPIC" --reddit-count "$REDDIT_COUNT" --image-coverage "$IMAGE_COVERAGE" | tee -a "$LOG_FILE"
 

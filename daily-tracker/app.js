@@ -192,6 +192,7 @@ const REDDIT_VIRAL_FEED = {
     url: `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://old.reddit.com/user/diligent_run882/m/ai/.rss')}`,
     format: 'rss2json'
 };
+const REDDIT_SIDEBAR_MAX_AGE_HOURS = 48;
 const SIDEBAR_CORS_PROXY_URL = 'https://api.allorigins.win/raw?url=';
 const IMAGE_PROXY_URL = 'https://images.weserv.nl/?url=';
 const DAILY_TRACKER_DATASET_URL = new URL('data.json', window.location.href).toString();
@@ -4264,6 +4265,19 @@ function dedupeArticlesByLink(articles) {
     return output;
 }
 
+function getItemAgeHours(value) {
+    const publishedDate = new Date(value || '');
+    if (Number.isNaN(publishedDate.getTime())) return Number.POSITIVE_INFINITY;
+    return (Date.now() - publishedDate.getTime()) / (1000 * 60 * 60);
+}
+
+function filterFreshRedditSidebarItems(items) {
+    return dedupeArticlesByLink(items).filter((item) => {
+        const ageHours = getItemAgeHours(item?.published_at || item?.date);
+        return Number.isFinite(ageHours) && ageHours >= 0 && ageHours <= REDDIT_SIDEBAR_MAX_AGE_HOURS;
+    });
+}
+
 function getLegacyDoneHeadlineKey(value) {
     const normalized = normalizeWhitespace(decodeEntities(value || '')).toLowerCase();
     return normalized ? `legacy-headline:${normalized}` : '';
@@ -4633,7 +4647,7 @@ async function fetchInstagramSidebarItems(forceRefresh = false) {
 
 async function fetchRedditSidebarItems(forceRefresh = false) {
     const items = await fetchSidebarFeed(REDDIT_VIRAL_FEED, forceRefresh);
-    return items
+    return filterFreshRedditSidebarItems(items)
         .sort(sortSourcingItemsByScore)
         .slice(0, SIDEBAR_ITEM_LIMIT);
 }
