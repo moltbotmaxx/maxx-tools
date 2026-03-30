@@ -135,6 +135,13 @@ const SOURCING_FEEDS = [
         feedIds: ['ai-general', 'anthropic-claude', 'openai-chatgpt', 'robotics', 'technology']
     },
     {
+        id: 'recent',
+        label: 'Recent',
+        kind: 'aggregate',
+        sort: 'recent',
+        feedIds: ['ai-general', 'anthropic-claude', 'openai-chatgpt', 'robotics', 'technology']
+    },
+    {
         id: 'ai-general',
         label: 'AI General',
         kind: 'news',
@@ -3707,6 +3714,10 @@ function getSelectedFeedConfigs() {
     return active?.kind === 'news' && active.url ? [active] : [];
 }
 
+function getActiveSourcingFeedConfig() {
+    return SOURCING_FEEDS.find(feed => feed.id === selectedSourcingFeed) || SOURCING_FEEDS[0];
+}
+
 function getFeedSourceLabel(item, fallbackUrl = '') {
     const authorName = item?.authors?.[0]?.name;
     if (authorName) return authorName;
@@ -4576,6 +4587,20 @@ function sortSourcingItemsByScore(a, b) {
     return db - da;
 }
 
+function sortSourcingItemsByRecent(a, b) {
+    const da = new Date(a.published_at || a.date || 0).getTime();
+    const db = new Date(b.published_at || b.date || 0).getTime();
+    if (db !== da) return db - da;
+    if ((b.ranking || 0) !== (a.ranking || 0)) return (b.ranking || 0) - (a.ranking || 0);
+    return (b.virality || 0) - (a.virality || 0);
+}
+
+function getSourcingItemsSortFn() {
+    return getActiveSourcingFeedConfig()?.sort === 'recent'
+        ? sortSourcingItemsByRecent
+        : sortSourcingItemsByScore;
+}
+
 async function fetchStaticXSidebarItems(forceRefresh = false) {
     const cacheId = 'x-viral-static';
     if (!forceRefresh && sidebarFeedCache.has(cacheId)) {
@@ -4837,7 +4862,7 @@ async function rebuildSourcingArticles(forceRefresh = false) {
             : 'Unable to load sourcing feeds');
     }
 
-    sourcingArticlesCache = dedupeArticlesByLink(allArticles).sort(sortSourcingItemsByScore);
+    sourcingArticlesCache = dedupeArticlesByLink(allArticles).sort(getSourcingItemsSortFn());
     sourcingArticlesDirty = false;
 }
 
