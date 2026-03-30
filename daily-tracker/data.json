@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-30T21:59:38.188Z",
+    "generated_at": "2026-03-30T22:57:25.375Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -400,13 +400,22 @@
         "viral_score": 97
       },
       {
+        "headline": "Hot take: LLMs have zero foresight ability. Everything else is hype.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s802ji/hot_take_llms_have_zero_foresight_ability/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-03-30T19:07:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
         "headline": "PSA: The anatomy of a fake \"Unprompted AI\" post (and why they are suddenly everywhere)",
         "link": "https://reddit.com/r/GeminiAI/comments/1s7zyqs/psa_the_anatomy_of_a_fake_unprompted_ai_post_and/",
         "subreddit": "GeminiAI",
         "published_at": "2026-03-30T19:04:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Claude Mythos leaked: \"by far the most powerful AI model we've ever developed\"",
@@ -418,6 +427,15 @@
         "viral_score": 95
       },
       {
+        "headline": "I built an app that detects clothes from any photo, builds your digital wardrobe, and lets you virtually try on outfits with AI",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s7zlc8/i_built_an_app_that_detects_clothes_from_any/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-03-30T18:51:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
         "headline": "Which AI chatbot has the fastest response time in 2026",
         "link": "https://reddit.com/r/GeminiAI/comments/1s7za3p/which_ai_chatbot_has_the_fastest_response_time_in/",
         "subreddit": "GeminiAI",
@@ -427,47 +445,29 @@
         "viral_score": 94
       },
       {
+        "headline": "Musk pitched Zuckerberg on his unsolicited bid for OpenAI's IP, newly unsealed court documents show",
+        "link": "https://reddit.com/r/OpenAI/comments/1s7xgfk/musk_pitched_zuckerberg_on_his_unsolicited_bid/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-30T17:36:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
         "headline": "Computer use is now in Claude Code.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1s7wkky/computer_use_is_now_in_claude_code/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-03-30T17:05:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Figure AI's Humanoid Walks into A Photoshoot By Itself!",
-        "link": "https://reddit.com/r/singularity/comments/1s7wilx/figure_ais_humanoid_walks_into_a_photoshoot_by/",
-        "subreddit": "singularity",
-        "published_at": "2026-03-30T17:04:05+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "I spent a weekend with OpenClaw and ended up with a pipeline that makes full videos from a prompt.",
-        "link": "https://reddit.com/r/openclaw/comments/1s7wd2a/i_spent_a_weekend_with_openclaw_and_ended_up_with/",
-        "subreddit": "openclaw",
-        "published_at": "2026-03-30T16:58:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Stanford and Harvard just dropped the most disturbing AI paper of the year",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s7w10n/stanford_and_harvard_just_dropped_the_most/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-03-30T16:47:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-30T21:59:38.188Z",
+    "reddit_viral_generated_at": "2026-03-30T22:57:25.375Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
