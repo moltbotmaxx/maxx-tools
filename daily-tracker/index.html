@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=mobile-settings-global-17">
+    <link rel="stylesheet" href="styles.css?v=schedulr-shortcut-manual-1">
     <!-- Chart.js for Analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -832,11 +832,18 @@
             </div>
             <div class="modal-body">
                 <p class="shortcut-modal__description">
-                    Build the Share Sheet shortcut with these values. The shortcut will carry your expected user ID, so imported links stay queued until this same account is logged in.
+                    Use the public Schedulr domain for people-facing links, but use the shortcut target URL below inside the automation for now. The shortcut carries your expected user ID, so imported links stay queued until this same account is logged in.
                 </p>
                 <div class="shortcut-modal__status" id="shortcutConfigStatus" data-tone="neutral"></div>
                 <div class="modal-field">
-                    <label>Schedulr URL</label>
+                    <label>Public Schedulr Domain</label>
+                    <div class="shortcut-modal__field-row">
+                        <input type="text" id="shortcutConfigPublicUrl" readonly />
+                        <button class="action-btn" id="shortcutCopyPublicUrlBtn" type="button">Copy</button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label>Shortcut Target URL</label>
                     <div class="shortcut-modal__field-row">
                         <input type="text" id="shortcutConfigBaseUrl" readonly />
                         <button class="action-btn" id="shortcutCopyBaseUrlBtn" type="button">Copy</button>
@@ -853,6 +860,17 @@
                     <label>Shortcut URL Example</label>
                     <textarea id="shortcutConfigExampleUrl" class="modal-textarea" rows="4" readonly></textarea>
                 </div>
+                <ol class="shortcut-modal__manual">
+                    <li>Create a new shortcut in Apple Shortcuts and enable <strong>Show in Share Sheet</strong>.</li>
+                    <li>Set the accepted types to at least <strong>URLs</strong> and <strong>Safari Web Pages</strong>.</li>
+                    <li>Add an action that URL-encodes the incoming <strong>Shortcut Input</strong>.</li>
+                    <li>Add a <strong>Text</strong> action and paste the example URL shown above.</li>
+                    <li>Inside that Text action, replace <code class="shortcut-modal__code">__ENCODED_SHARED_URL__</code> with the encoded magic variable from the previous step.</li>
+                    <li>Add an <strong>Open URLs</strong> action that opens the final Text result.</li>
+                </ol>
+                <p class="shortcut-modal__note">
+                    The app can infer a title from the shared link, so title and notes are optional. If you want to categorize manually later, the imported item will land in <strong>Selection</strong>.
+                </p>
             </div>
             <div class="modal-actions">
                 <button class="action-btn" id="shortcutCopyExampleUrlBtn" type="button">Copy Example</button>
@@ -892,7 +910,7 @@
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
     <script src="x-feed-config.js?v=mobile-settings-global-12"></script>
-    <script type="module" src="app.js?v=mobile-settings-global-16"></script>
+    <script type="module" src="app.js?v=schedulr-shortcut-manual-1"></script>
 </body>
 
 </html>

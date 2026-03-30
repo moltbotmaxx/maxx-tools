@@ -31,6 +31,8 @@ const SHORTCUT_SHARE_OWNER_PARAMS = ['uid', 'user', 'ownerUid'];
 const SHORTCUT_SHARE_SELECTION_TARGET = 'selection';
 const SHORTCUT_URL_PLACEHOLDER = '__ENCODED_SHARED_URL__';
 const SHORTCUT_INSTALL_SHARE_URL = '';
+const SCHEDULR_PUBLIC_DOMAIN_URL = 'https://schedulr.work/';
+const SCHEDULR_SHORTCUT_TARGET_URL = 'https://maxxbot.cloud/daily-tracker/';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
 const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics', 'history']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
@@ -616,10 +618,12 @@ const elements = {
     shortcutModalOverlay: document.getElementById('shortcutModalOverlay'),
     shortcutModalCloseBtn: document.getElementById('shortcutModalCloseBtn'),
     shortcutModalDismissBtn: document.getElementById('shortcutModalDismissBtn'),
+    shortcutConfigPublicUrl: document.getElementById('shortcutConfigPublicUrl'),
     shortcutConfigBaseUrl: document.getElementById('shortcutConfigBaseUrl'),
     shortcutConfigUid: document.getElementById('shortcutConfigUid'),
     shortcutConfigExampleUrl: document.getElementById('shortcutConfigExampleUrl'),
     shortcutConfigStatus: document.getElementById('shortcutConfigStatus'),
+    shortcutCopyPublicUrlBtn: document.getElementById('shortcutCopyPublicUrlBtn'),
     shortcutCopyBaseUrlBtn: document.getElementById('shortcutCopyBaseUrlBtn'),
     shortcutCopyUidBtn: document.getElementById('shortcutCopyUidBtn'),
     shortcutCopyExampleUrlBtn: document.getElementById('shortcutCopyExampleUrlBtn'),
@@ -1092,8 +1096,16 @@ function consumeShortcutShareFromUrl() {
     return true;
 }
 
-function getTrackerAppShareUrl() {
-    return `${window.location.origin}${window.location.pathname}`;
+function getShortcutTargetUrl() {
+    const host = String(window.location.hostname || '').toLowerCase();
+    if (host === 'localhost' || host === '127.0.0.1' || host === 'schedulr.work' || host === 'www.schedulr.work') {
+        return `${window.location.origin}${window.location.pathname}`;
+    }
+    return SCHEDULR_SHORTCUT_TARGET_URL;
+}
+
+function getSchedulrPublicDomainUrl() {
+    return safeHttpUrl(SCHEDULR_PUBLIC_DOMAIN_URL, SCHEDULR_SHORTCUT_TARGET_URL);
 }
 
 function getShortcutInstallShareUrl() {
@@ -1101,7 +1113,7 @@ function getShortcutInstallShareUrl() {
 }
 
 function buildShortcutShareExampleUrl(user = currentUser) {
-    const url = new URL(getTrackerAppShareUrl());
+    const url = new URL(getShortcutTargetUrl());
     url.searchParams.set('dt_share', SHORTCUT_SHARE_SELECTION_TARGET);
     if (user?.uid) {
         url.searchParams.set('uid', user.uid);
@@ -1140,8 +1152,11 @@ function syncShortcutSetupUi() {
             : 'Sign in first to scope the shortcut to your account';
     }
 
+    if (elements.shortcutConfigPublicUrl) {
+        elements.shortcutConfigPublicUrl.value = getSchedulrPublicDomainUrl();
+    }
     if (elements.shortcutConfigBaseUrl) {
-        elements.shortcutConfigBaseUrl.value = getTrackerAppShareUrl();
+        elements.shortcutConfigBaseUrl.value = getShortcutTargetUrl();
     }
     if (elements.shortcutConfigUid) {
         elements.shortcutConfigUid.value = signedIn ? currentUser.uid : '';
@@ -1158,7 +1173,7 @@ function syncShortcutSetupUi() {
     const label = currentUser.email || getUserLabel(currentUser) || currentUser.uid;
     const installSuffix = installUrl
         ? ' Install Shortcut is available above.'
-        : ' Add a shared shortcut URL in app.js to enable one-tap install.';
+        : ' Manual setup steps are listed below.';
     setShortcutConfigStatus(`Shares from this shortcut will wait for ${label}.${installSuffix}`, 'success');
 }
 
@@ -6346,7 +6361,15 @@ function setupEventListeners() {
         elements.shortcutCopyBaseUrlBtn.addEventListener('click', () => {
             copyShortcutConfigValue(
                 elements.shortcutConfigBaseUrl?.value || '',
-                'Schedulr URL copied.'
+                'Shortcut target URL copied.'
+            );
+        });
+    }
+    if (elements.shortcutCopyPublicUrlBtn) {
+        elements.shortcutCopyPublicUrlBtn.addEventListener('click', () => {
+            copyShortcutConfigValue(
+                elements.shortcutConfigPublicUrl?.value || '',
+                'Schedulr public domain copied.'
             );
         });
     }

@@ -3463,6 +3463,34 @@ canvas {
   white-space: nowrap;
 }
 
+.shortcut-modal__manual {
+  margin: 8px 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.shortcut-modal__manual li + li {
+  margin-top: 6px;
+}
+
+.shortcut-modal__note {
+  margin: 14px 0 0;
+  color: var(--text-tertiary);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.shortcut-modal__code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.78rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  background: rgba(0, 122, 255, 0.08);
+  color: var(--accent-primary);
+}
+
 .shortcut-modal input[readonly],
 .shortcut-modal textarea[readonly] {
   background: var(--bg-primary);
