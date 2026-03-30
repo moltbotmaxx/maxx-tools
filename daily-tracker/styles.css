@@ -2549,6 +2549,23 @@ canvas {
   font-size: 0.8rem;
 }
 
+.month-nav {
+  margin-left: auto;
+}
+
+.month-nav__today {
+  width: auto;
+  min-width: 52px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.month-nav__label {
+  min-width: 160px;
+}
+
 .calendar-nav {
   display: flex;
   align-items: center;

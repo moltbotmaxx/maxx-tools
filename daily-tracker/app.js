@@ -574,6 +574,9 @@ const elements = {
     views: document.querySelectorAll('.view-container'),
     monthCalendar: document.getElementById('monthCalendar'),
     currentMonthLabel: document.getElementById('currentMonthLabel'),
+    metricsMonthPrev: document.getElementById('metricsMonthPrev'),
+    metricsMonthToday: document.getElementById('metricsMonthToday'),
+    metricsMonthNext: document.getElementById('metricsMonthNext'),
     totalPostsValue: document.getElementById('totalPostsValue'),
     completionRateValue: document.getElementById('completionRateValue'),
     metricsHistoryModalOverlay: document.getElementById('metricsHistoryModalOverlay'),
@@ -5970,6 +5973,22 @@ function closeMetricsHistoryModal() {
     elements.metricsHistoryModalOverlay.setAttribute('aria-hidden', 'true');
 }
 
+function shiftDashboardMonth(monthDelta) {
+    dashboardMonth = new Date(
+        dashboardMonth.getFullYear(),
+        dashboardMonth.getMonth() + monthDelta,
+        1
+    );
+    closeMetricsHistoryModal();
+    renderDashboard();
+}
+
+function jumpDashboardMonthToToday() {
+    dashboardMonth = new Date();
+    closeMetricsHistoryModal();
+    renderDashboard();
+}
+
 function renderKPIs() {
     const today = new Date();
     const targetMonth = dashboardMonth.getMonth();
@@ -6517,6 +6536,16 @@ function setupEventListeners() {
             closeMetricsHistoryModal();
         }
     });
+
+    if (elements.metricsMonthPrev) {
+        elements.metricsMonthPrev.addEventListener('click', () => shiftDashboardMonth(-1));
+    }
+    if (elements.metricsMonthToday) {
+        elements.metricsMonthToday.addEventListener('click', jumpDashboardMonthToToday);
+    }
+    if (elements.metricsMonthNext) {
+        elements.metricsMonthNext.addEventListener('click', () => shiftDashboardMonth(1));
+    }
 
     // Delete Modal Actions
     elements.deleteConfirmBtn.addEventListener('click', confirmDelete);

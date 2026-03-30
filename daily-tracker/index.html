@@ -476,8 +476,12 @@
                                 </svg>
                                 Monthly Overview
                             </h2>
-                            <div class="calendar-nav month-label-container">
-                                <span id="currentMonthLabel" style="font-size: 0.9rem; font-weight: 600;">...</span>
+                            <div class="calendar-nav global-week-nav month-nav">
+                                <button id="metricsMonthPrev" class="icon-btn" title="Previous Month" type="button">←</button>
+                                <button id="metricsMonthToday" class="icon-btn month-nav__today" title="Jump to Current Month"
+                                    type="button">Today</button>
+                                <div class="week-indicator month-nav__label" id="currentMonthLabel">...</div>
+                                <button id="metricsMonthNext" class="icon-btn" title="Next Month" type="button">→</button>
                             </div>
                         </div>
                         <p class="calendar-box__hint">Click any day to open that day's published history.</p>
