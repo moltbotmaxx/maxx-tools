@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-30T15:42:55.967Z",
+    "generated_at": "2026-03-30T17:12:49.701Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,31 @@
         "viral_score": 100
       },
       {
+        "headline": "Why is it not working? It was able to do it before, unless they changed something.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s7t193/why_is_it_not_working_it_was_able_to_do_it_before/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-03-30T15:01:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Ai vs toilet flush: which one consumes more water?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s7rp2m/ai_vs_toilet_flush_which_one_consumes_more_water/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-03-30T14:11:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "Qwen3.5 Omni - Qwen’s latest generation of fully omnimodal LLM",
         "link": "https://reddit.com/r/singularity/comments/1s7rcwr/qwen35_omni_qwens_latest_generation_of_fully/",
         "subreddit": "singularity",
         "published_at": "2026-03-30T13:58:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Robots won't take your job. They'll bury you in work.",
@@ -397,7 +415,7 @@
         "published_at": "2026-03-30T13:35:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "AI 2027 current accuracy",
@@ -406,7 +424,7 @@
         "published_at": "2026-03-30T13:13:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": ": PSA: Using ANY script, wrapper, or third-party tool with Claude Pro/Max = instant 3rd-party violation + lifetime ban (March 2026 wave)",
@@ -415,7 +433,7 @@
         "published_at": "2026-03-30T12:47:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Claude subscriptions double in just two months, overshadowing users leaving because of rate limits",
@@ -433,7 +451,7 @@
         "published_at": "2026-03-30T11:37:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Imagine dragons",
@@ -442,32 +460,14 @@
         "published_at": "2026-03-30T11:24:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "PSA: Claude Code has two cache bugs that can silently 10-20x your API costs — here's the root cause and workarounds",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s7mkn3/psa_claude_code_has_two_cache_bugs_that_can/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-03-30T10:17:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "The AI documentary is out, from the creators of Everything Everywhere All At Once.",
-        "link": "https://reddit.com/r/OpenAI/comments/1s7mi69/the_ai_documentary_is_out_from_the_creators_of/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-03-30T10:13:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-30T15:42:55.967Z",
+    "reddit_viral_generated_at": "2026-03-30T17:12:49.701Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
