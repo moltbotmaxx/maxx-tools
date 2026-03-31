@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-31T03:31:16.818Z",
+    "generated_at": "2026-03-31T05:56:23.755Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,40 @@
         "viral_score": 100
       },
       {
-        "headline": "Gemini 3.1 flash image-preview scored highest on adversarial physics benchmark: 83.5% across 34 laws",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s883iy/gemini_31_flash_imagepreview_scored_highest_on/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-03-31T00:18:21+00:00",
+        "headline": "What people hate artificial intelligence and see it as replacement instead of a tool?",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8booa/what_people_hate_artificial_intelligence_and_see/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T02:59:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 99
+      },
+      {
+        "headline": "i got bored so i decided to test what gemini would do if i gave it the order to have free thought and think to get past it. IT RICKROLLED ME",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s8bi8u/i_got_bored_so_i_decided_to_test_what_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-03-31T02:51:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I just found out my videos are being turned into AI on Facebook",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8aj3f/i_just_found_out_my_videos_are_being_turned_into/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T02:07:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Snap chat Bots are easily spotted.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1s8a8aj/snap_chat_bots_are_easily_spotted/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-03-31T01:54:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "New features and widgets",
@@ -397,7 +424,7 @@
         "published_at": "2026-03-30T23:33:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "This is just how my version of GPT operates, I love it",
@@ -406,7 +433,7 @@
         "published_at": "2026-03-30T23:32:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Openclaw is dead, switch to claude code",
@@ -415,7 +442,7 @@
         "published_at": "2026-03-30T22:19:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "I gave Claude its own computer and let it run 24/7. Here's what it built.",
@@ -424,7 +451,7 @@
         "published_at": "2026-03-30T21:52:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       },
       {
         "headline": "Creator of Node.js says humans writing code is over",
@@ -433,41 +460,14 @@
         "published_at": "2026-03-30T21:38:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Istg, its unhinged",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s820s3/istg_its_unhinged/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-03-30T20:17:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Florida Man Uses ChatGPT To Successfully Sell His House In Just Five Days—And Realtors Are Sweating",
-        "link": "https://reddit.com/r/ChatGPT/comments/1s80wzm/florida_man_uses_chatgpt_to_successfully_sell_his/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-03-30T19:38:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Hot take: LLMs have zero foresight ability. Everything else is hype.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s802ji/hot_take_llms_have_zero_foresight_ability/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-03-30T19:07:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-31T03:31:16.818Z",
+    "reddit_viral_generated_at": "2026-03-31T05:56:23.755Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
