@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-31T22:53:33.641Z",
+    "generated_at": "2026-03-31T23:50:08.921Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Oracle with about 162K employees, is laying off thousands of workers again to cut costs amid its push into AI",
+        "link": "https://reddit.com/r/singularity/comments/1s92y01/oracle_with_about_162k_employees_is_laying_off/",
+        "subreddit": "singularity",
+        "published_at": "2026-03-31T22:55:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Bruh 🥀",
         "link": "https://reddit.com/r/aimemes/comments/1s92bqq/bruh/",
@@ -379,7 +388,7 @@
         "published_at": "2026-03-31T22:30:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Been using NB2 and NBP to generate different art style.",
@@ -388,7 +397,7 @@
         "published_at": "2026-03-31T21:36:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "OpenAI raises $122 billion to accelerate the next phase of AI",
@@ -397,7 +406,16 @@
         "published_at": "2026-03-31T21:14:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
+      },
+      {
+        "headline": "Thanks to the leaked source code for Claude Code, I used Codex to find and patch the root cause of the insane token drain in Claude Code and patched it. Usage limits are back to normal for me!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1s8zxt4/thanks_to_the_leaked_source_code_for_claude_code/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-03-31T20:58:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "What peak image prompt engineering looks like:",
@@ -406,7 +424,16 @@
         "published_at": "2026-03-31T20:48:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
+      },
+      {
+        "headline": "Even chatgpt knows",
+        "link": "https://reddit.com/r/ChatGPT/comments/1s8zngc/even_chatgpt_knows/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-03-31T20:47:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "OpenAI closes record $122 billion funding round as IPO anticipation grows, valuing the company at $852 billion",
@@ -415,7 +442,7 @@
         "published_at": "2026-03-31T20:24:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Claude Code's source code just leaked — so I had Claude Code analyze its own internals and build an open-source multi-agent framework from it",
@@ -424,7 +451,7 @@
         "published_at": "2026-03-31T19:28:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "filial piety according to AI",
@@ -433,41 +460,14 @@
         "published_at": "2026-03-31T18:57:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Quantum computers need just 10,000 qubits to break the most secure encryption, scientists warn",
-        "link": "https://reddit.com/r/singularity/comments/1s8txf4/quantum_computers_need_just_10000_qubits_to_break/",
-        "subreddit": "singularity",
-        "published_at": "2026-03-31T17:25:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Guys, stop bad mouthing your AI.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s8tf4q/guys_stop_bad_mouthing_your_ai/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-03-31T17:07:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I didn’t expect this… but Gemini is the only AI I still use now",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s8s9qi/i_didnt_expect_this_but_gemini_is_the_only_ai_i/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-03-31T16:26:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-31T22:53:33.641Z",
+    "reddit_viral_generated_at": "2026-03-31T23:50:08.921Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
