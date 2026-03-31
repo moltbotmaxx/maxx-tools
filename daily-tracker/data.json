@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-31T15:38:15.917Z",
+    "generated_at": "2026-03-31T17:15:49.455Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude vs ChatGPT",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8sjc5/claude_vs_chatgpt/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T16:36:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Sources: Anthropic Internally Expects AGI Within 6-12 Months",
+        "link": "https://reddit.com/r/singularity/comments/1s8s9cm/sources_anthropic_internally_expects_agi_within/",
+        "subreddit": "singularity",
+        "published_at": "2026-03-31T16:26:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The only winner of a race to superintelligence is the superintelligence itself",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8rqa5/the_only_winner_of_a_race_to_superintelligence_is/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T16:07:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I had LLMs GM/DM solo campaigns for 50+ hours so you didn't have to. AMA",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8repj/i_had_llms_gmdm_solo_campaigns_for_50_hours_so/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T15:56:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Why are people so vague about openclaw use cases?",
         "link": "https://reddit.com/r/openclaw/comments/1s8q67l/why_are_people_so_vague_about_openclaw_use_cases/",
@@ -379,7 +415,7 @@
         "published_at": "2026-03-31T15:10:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "A man used AI to call 3,000 Irish bartenders to track the cost of Guinness. Now pubs are lowering their prices to compete",
@@ -388,34 +424,16 @@
         "published_at": "2026-03-31T14:57:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "AI Chip Market is Exploding — $31B to $846B by 2035",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s8oxdq/ai_chip_market_is_exploding_31b_to_846b_by_2035/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-03-31T14:25:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "I've been building with Openclaw over the past month basically for 12 hours a day every single day and here my top takeaways",
-        "link": "https://reddit.com/r/openclaw/comments/1s8mw3l/ive_been_building_with_openclaw_over_the_past/",
-        "subreddit": "openclaw",
-        "published_at": "2026-03-31T13:06:16+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 95
       },
       {
-        "headline": "Critical security alert: 8 vulnerabilities patched in OpenClaw 2026.3.28 (including sandbox escape and SSRF)",
-        "link": "https://reddit.com/r/openclaw/comments/1s8mbvs/critical_security_alert_8_vulnerabilities_patched/",
-        "subreddit": "openclaw",
-        "published_at": "2026-03-31T12:42:20+00:00",
+        "headline": "How I Brought Claude Into Codex",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8pk73/how_i_brought_claude_into_codex/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T14:49:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 95
       },
       {
         "headline": "An excellent parody movie poster",
@@ -424,25 +442,7 @@
         "published_at": "2026-03-31T12:30:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I spent months building memory for my OpenClaw bot. Then I discovered the flaw",
-        "link": "https://reddit.com/r/openclaw/comments/1s8lz7x/i_spent_months_building_memory_for_my_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-03-31T12:26:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "How do we know that OpenClaw's sandbox actually guarantees system security?",
-        "link": "https://reddit.com/r/openclaw/comments/1s8ll2w/how_do_we_know_that_openclaws_sandbox_actually/",
-        "subreddit": "openclaw",
-        "published_at": "2026-03-31T12:08:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "i dug through claude code's leaked source and anthropic's codebase is absolutely unhinged",
@@ -451,7 +451,7 @@
         "published_at": "2026-03-31T12:07:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "it's everywhere",
@@ -460,14 +460,14 @@
         "published_at": "2026-03-31T11:55:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-31T15:38:15.917Z",
+    "reddit_viral_generated_at": "2026-03-31T17:15:49.455Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
