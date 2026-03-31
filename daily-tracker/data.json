@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-31T14:03:30.161Z",
+    "generated_at": "2026-03-31T15:38:15.917Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why are people so vague about openclaw use cases?",
+        "link": "https://reddit.com/r/openclaw/comments/1s8q67l/why_are_people_so_vague_about_openclaw_use_cases/",
+        "subreddit": "openclaw",
+        "published_at": "2026-03-31T15:10:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A man used AI to call 3,000 Irish bartenders to track the cost of Guinness. Now pubs are lowering their prices to compete",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s8prqq/a_man_used_ai_to_call_3000_irish_bartenders_to/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-03-31T14:57:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "AI Chip Market is Exploding — $31B to $846B by 2035",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s8oxdq/ai_chip_market_is_exploding_31b_to_846b_by_2035/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-03-31T14:25:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "I've been building with Openclaw over the past month basically for 12 hours a day every single day and here my top takeaways",
         "link": "https://reddit.com/r/openclaw/comments/1s8mw3l/ive_been_building_with_openclaw_over_the_past/",
@@ -379,7 +406,16 @@
         "published_at": "2026-03-31T13:06:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Critical security alert: 8 vulnerabilities patched in OpenClaw 2026.3.28 (including sandbox escape and SSRF)",
+        "link": "https://reddit.com/r/openclaw/comments/1s8mbvs/critical_security_alert_8_vulnerabilities_patched/",
+        "subreddit": "openclaw",
+        "published_at": "2026-03-31T12:42:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "An excellent parody movie poster",
@@ -388,7 +424,7 @@
         "published_at": "2026-03-31T12:30:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "I spent months building memory for my OpenClaw bot. Then I discovered the flaw",
@@ -397,7 +433,7 @@
         "published_at": "2026-03-31T12:26:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "How do we know that OpenClaw's sandbox actually guarantees system security?",
@@ -406,7 +442,7 @@
         "published_at": "2026-03-31T12:08:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "i dug through claude code's leaked source and anthropic's codebase is absolutely unhinged",
@@ -415,49 +451,13 @@
         "published_at": "2026-03-31T12:07:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "it's everywhere",
         "link": "https://reddit.com/r/GeminiAI/comments/1s8lao4/its_everywhere/",
         "subreddit": "GeminiAI",
         "published_at": "2026-03-31T11:55:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Found this peak",
-        "link": "https://reddit.com/r/aimemes/comments/1s8kmol/found_this_peak/",
-        "subreddit": "aimemes",
-        "published_at": "2026-03-31T11:21:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "How long did it take you to give root?",
-        "link": "https://reddit.com/r/openclaw/comments/1s8j9jz/how_long_did_it_take_you_to_give_root/",
-        "subreddit": "openclaw",
-        "published_at": "2026-03-31T10:07:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Someone just leaked claude code's Source code on X",
-        "link": "https://reddit.com/r/ChatGPT/comments/1s8j27e/someone_just_leaked_claude_codes_source_code_on_x/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-03-31T09:56:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude code source code has been leaked via a map file in their npm registry",
-        "link": "https://reddit.com/r/singularity/comments/1s8izpi/claude_code_source_code_has_been_leaked_via_a_map/",
-        "subreddit": "singularity",
-        "published_at": "2026-03-31T09:52:20+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-31T14:03:30.161Z",
+    "reddit_viral_generated_at": "2026-03-31T15:38:15.917Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
