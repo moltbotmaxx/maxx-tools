@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-31T19:30:36.872Z",
+    "generated_at": "2026-03-31T20:58:33.547Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenAI closes record $122 billion funding round as IPO anticipation grows, valuing the company at $852 billion",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8z0aj/openai_closes_record_122_billion_funding_round_as/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T20:24:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "filial piety according to AI",
         "link": "https://reddit.com/r/aimemes/comments/1s8wjey/filial_piety_according_to_ai/",
@@ -379,16 +388,16 @@
         "published_at": "2026-03-31T18:57:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
-        "headline": "Two competing AI models discussed the ethics of the companies that created them. They agreed more than their creators ever have.",
-        "link": "https://reddit.com/r/OpenAI/comments/1s8u89l/two_competing_ai_models_discussed_the_ethics_of/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-03-31T17:35:56+00:00",
+        "headline": "Quantum computers need just 10,000 qubits to break the most secure encryption, scientists warn",
+        "link": "https://reddit.com/r/singularity/comments/1s8txf4/quantum_computers_need_just_10000_qubits_to_break/",
+        "subreddit": "singularity",
+        "published_at": "2026-03-31T17:25:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Guys, stop bad mouthing your AI.",
@@ -397,7 +406,7 @@
         "published_at": "2026-03-31T17:07:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Claude vs ChatGPT",
@@ -406,7 +415,7 @@
         "published_at": "2026-03-31T16:36:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "I didn’t expect this… but Gemini is the only AI I still use now",
@@ -415,7 +424,7 @@
         "published_at": "2026-03-31T16:26:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "The only winner of a race to superintelligence is the superintelligence itself",
@@ -424,7 +433,7 @@
         "published_at": "2026-03-31T16:07:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Must pay the respects",
@@ -433,7 +442,7 @@
         "published_at": "2026-03-31T16:03:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I had LLMs GM/DM solo campaigns for 50+ hours so you didn't have to. AMA",
@@ -442,7 +451,7 @@
         "published_at": "2026-03-31T15:56:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Why are people so vague about openclaw use cases?",
@@ -451,23 +460,14 @@
         "published_at": "2026-03-31T15:10:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "A man used AI to call 3,000 Irish bartenders to track the cost of Guinness. Now pubs are lowering their prices to compete",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s8prqq/a_man_used_ai_to_call_3000_irish_bartenders_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-03-31T14:57:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-31T19:30:36.872Z",
+    "reddit_viral_generated_at": "2026-03-31T20:58:33.547Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
