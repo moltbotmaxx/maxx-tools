@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-03-31T17:15:49.455Z",
+    "generated_at": "2026-03-31T18:09:04.602Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Two competing AI models discussed the ethics of the companies that created them. They agreed more than their creators ever have.",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8u89l/two_competing_ai_models_discussed_the_ethics_of/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T17:35:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I have built something that you all find useful ig",
+        "link": "https://reddit.com/r/OpenAI/comments/1s8t237/i_have_built_something_that_you_all_find_useful_ig/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-03-31T16:54:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Claude vs ChatGPT",
         "link": "https://reddit.com/r/OpenAI/comments/1s8sjc5/claude_vs_chatgpt/",
@@ -379,7 +397,7 @@
         "published_at": "2026-03-31T16:36:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Sources: Anthropic Internally Expects AGI Within 6-12 Months",
@@ -388,7 +406,7 @@
         "published_at": "2026-03-31T16:26:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "The only winner of a race to superintelligence is the superintelligence itself",
@@ -397,7 +415,7 @@
         "published_at": "2026-03-31T16:07:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "I had LLMs GM/DM solo campaigns for 50+ hours so you didn't have to. AMA",
@@ -406,7 +424,7 @@
         "published_at": "2026-03-31T15:56:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Why are people so vague about openclaw use cases?",
@@ -415,7 +433,7 @@
         "published_at": "2026-03-31T15:10:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "A man used AI to call 3,000 Irish bartenders to track the cost of Guinness. Now pubs are lowering their prices to compete",
@@ -424,7 +442,7 @@
         "published_at": "2026-03-31T14:57:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "How I Brought Claude Into Codex",
@@ -433,7 +451,7 @@
         "published_at": "2026-03-31T14:49:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "An excellent parody movie poster",
@@ -442,32 +460,14 @@
         "published_at": "2026-03-31T12:30:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "i dug through claude code's leaked source and anthropic's codebase is absolutely unhinged",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s8lkkm/i_dug_through_claude_codes_leaked_source_and/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-03-31T12:07:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "it's everywhere",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s8lao4/its_everywhere/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-03-31T11:55:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-03-31T17:15:49.455Z",
+    "reddit_viral_generated_at": "2026-03-31T18:09:04.602Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
