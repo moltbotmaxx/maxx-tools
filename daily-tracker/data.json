@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-01T14:06:51.321Z",
+    "generated_at": "2026-04-01T15:44:45.869Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is that Trump's strait",
+        "link": "https://reddit.com/r/ChatGPT/comments/1s9mswk/is_that_trumps_strait/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-01T14:52:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Openclaw recent update 3.31",
+        "link": "https://reddit.com/r/openclaw/comments/1s9lrim/openclaw_recent_update_331/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-01T14:13:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I built an AI powered time machine to visualise places in the world throughout the years",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s9l2sh/i_built_an_ai_powered_time_machine_to_visualise/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-01T13:47:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Gemini has turned into a terrible product lately.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s9kakf/gemini_has_turned_into_a_terrible_product_lately/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-01T13:16:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Someone just sold a CEO's OpenClaw agent for $25,000. Check your settings.",
         "link": "https://reddit.com/r/openclaw/comments/1s9k7zv/someone_just_sold_a_ceos_openclaw_agent_for_25000/",
@@ -379,7 +415,16 @@
         "published_at": "2026-04-01T13:14:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "OpenAI “internal model” solved 3 more Erdős problems",
+        "link": "https://reddit.com/r/singularity/comments/1s9iz2x/openai_internal_model_solved_3_more_erd%C5%91s_problems/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-01T12:21:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Brother",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-01T12:21:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Thousands lose their jobs in deep cuts at tech giant Oracle",
@@ -397,7 +442,7 @@
         "published_at": "2026-04-01T11:41:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Demis Hassabis secretly built a hedge fund inside DeepMind trying to beat Jim Simons. Google shut it down.",
@@ -406,7 +451,7 @@
         "published_at": "2026-04-01T11:03:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Gemini hit 750 million monthly users , is the google is behind narrative finally dead ???",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-01T10:51:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Chinese state media releases episode 2 of their AI generated Iran war animated series",
-        "link": "https://reddit.com/r/singularity/comments/1s9gh9g/chinese_state_media_releases_episode_2_of_their/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-01T10:16:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Finally ditched ChatGPT for Gemini 3.1. Why is every other dev sprinting to Claude?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s9g4op/finally_ditched_chatgpt_for_gemini_31_why_is/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-01T09:58:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Has anyone noticed that Gemini Pro has gotten worse?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s9fdph/has_anyone_noticed_that_gemini_pro_has_gotten/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-01T09:14:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "The dystopian jackpot",
-        "link": "https://reddit.com/r/aimemes/comments/1s9ekjf/the_dystopian_jackpot/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-01T08:26:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Anthropic staff reacts to Claude code leak 👀",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s9dvi8/anthropic_staff_reacts_to_claude_code_leak/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-01T07:43:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-01T14:06:51.321Z",
+    "reddit_viral_generated_at": "2026-04-01T15:44:45.869Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
