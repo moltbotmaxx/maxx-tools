@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-01T15:44:45.869Z",
+    "generated_at": "2026-04-01T17:13:06.149Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Is that Trump's strait",
-        "link": "https://reddit.com/r/ChatGPT/comments/1s9mswk/is_that_trumps_strait/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-01T14:52:56+00:00",
+        "headline": "Marc Andreessen says AI layoffs are a farce: Companies are 75% overstaffed and AI is the \"silver bullet excuse\" to clean house",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s9peha/marc_andreessen_says_ai_layoffs_are_a_farce/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-01T16:24:57+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Bay Area therapists say AI workers are in crisis",
+        "link": "https://reddit.com/r/OpenAI/comments/1s9muxh/bay_area_therapists_say_ai_workers_are_in_crisis/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-01T14:55:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Openclaw recent update 3.31",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-01T14:13:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "I built an AI powered time machine to visualise places in the world throughout the years",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-01T13:47:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Gemini has turned into a terrible product lately.",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-01T13:16:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Someone just sold a CEO's OpenClaw agent for $25,000. Check your settings.",
@@ -415,7 +424,16 @@
         "published_at": "2026-04-01T13:14:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
+      },
+      {
+        "headline": "Why can't we opt out of follow up questions",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s9juiz/why_cant_we_opt_out_of_follow_up_questions/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-01T12:59:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "OpenAI “internal model” solved 3 more Erdős problems",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-01T12:21:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Brother",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-01T12:21:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Thousands lose their jobs in deep cuts at tech giant Oracle",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-01T11:41:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Demis Hassabis secretly built a hedge fund inside DeepMind trying to beat Jim Simons. Google shut it down.",
-        "link": "https://reddit.com/r/singularity/comments/1s9hca9/demis_hassabis_secretly_built_a_hedge_fund_inside/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-01T11:03:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gemini hit 750 million monthly users , is the google is behind narrative finally dead ???",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s9h3qe/gemini_hit_750_million_monthly_users_is_the/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-01T10:51:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-01T15:44:45.869Z",
+    "reddit_viral_generated_at": "2026-04-01T17:13:06.149Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
