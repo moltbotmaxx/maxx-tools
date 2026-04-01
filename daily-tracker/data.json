@@ -367,20 +367,11 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-01T22:59:01.005Z",
+    "generated_at": "2026-04-01T23:51:19.332Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
-      {
-        "headline": "Do we know how that CEO's openclaw got hacked?",
-        "link": "https://reddit.com/r/openclaw/comments/1s9zqhc/do_we_know_how_that_ceos_openclaw_got_hacked/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-01T22:35:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
       {
         "headline": "Claude Code got leaked. So I rebuilt it in Rust. It’s faster and open-source.",
         "link": "https://reddit.com/r/openclaw/comments/1s9zhqz/claude_code_got_leaked_so_i_rebuilt_it_in_rust/",
@@ -388,7 +379,16 @@
         "published_at": "2026-04-01T22:25:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 100
+      },
+      {
+        "headline": "They solved AI’s memory problem!",
+        "link": "https://reddit.com/r/singularity/comments/1s9ve3e/they_solved_ais_memory_problem/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-01T19:52:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "I gave AI access to my bank account and I didn't know it can block retail purchases? Anyone know how to fix this in the app?",
@@ -397,7 +397,7 @@
         "published_at": "2026-04-01T19:07:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 93
       },
       {
         "headline": "Revenge",
@@ -406,7 +406,7 @@
         "published_at": "2026-04-01T18:45:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 92
       },
       {
         "headline": "grandad said calculators were cheating, our prof said google was cheating, tech lead said stack overflow was cheating and now we're surprised the AI meltdown looks exactly the same?",
@@ -427,13 +427,13 @@
         "viral_score": 90
       },
       {
-        "headline": "Why is it that MiniMax M2.7 works better on openclaw than the other LLMs? Am I crazy?",
-        "link": "https://reddit.com/r/openclaw/comments/1s9qdaw/why_is_it_that_minimax_m27_works_better_on/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-01T16:59:01+00:00",
+        "headline": "Pro-AI group to spend $100mn on US midterm elections as backlash grows",
+        "link": "https://reddit.com/r/singularity/comments/1s9rl7j/proai_group_to_spend_100mn_on_us_midterm/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-01T17:41:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       },
       {
         "headline": "Marc Andreessen says AI layoffs are a farce: Companies are 75% overstaffed and AI is the \"silver bullet excuse\" to clean house",
@@ -445,6 +445,15 @@
         "viral_score": 86
       },
       {
+        "headline": "My Takeaway After 5 Months of Gemini 3 — For Those Who Care",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s9ozaq/my_takeaway_after_5_months_of_gemini_3_for_those/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-01T16:10:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 85
+      },
+      {
         "headline": "This person/thing posting \"openpull.ai\" links all over reddit - AVOID!",
         "link": "https://reddit.com/r/OpenAI/comments/1s9nlzr/this_personthing_posting_openpullai_links_all/",
         "subreddit": "OpenAI",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 83
-      },
-      {
-        "headline": "Bay Area therapists say AI workers are in crisis",
-        "link": "https://reddit.com/r/OpenAI/comments/1s9muxh/bay_area_therapists_say_ai_workers_are_in_crisis/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-01T14:55:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-01T22:59:01.005Z",
+    "reddit_viral_generated_at": "2026-04-01T23:51:19.332Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
