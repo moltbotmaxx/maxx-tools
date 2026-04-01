@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-01T11:15:34.827Z",
+    "generated_at": "2026-04-01T12:02:59.691Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Demis Hassabis secretly built a hedge fund inside DeepMind trying to beat Jim Simons. Google shut it down.",
+        "link": "https://reddit.com/r/singularity/comments/1s9hca9/demis_hassabis_secretly_built_a_hedge_fund_inside/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-01T11:03:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Had my first day at Anthropic yesterday and was already able to successfully push my first update of Claude Code 🤘",
         "link": "https://reddit.com/r/singularity/comments/1s9h3st/had_my_first_day_at_anthropic_yesterday_and_was/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-01T10:51:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "Gemini hit 750 million monthly users , is the google is behind narrative finally dead ???",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s9h3qe/gemini_hit_750_million_monthly_users_is_the/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-01T10:51:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Chinese state media releases episode 2 of their AI generated Iran war animated series",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-01T10:16:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Finally ditched ChatGPT for Gemini 3.1. Why is every other dev sprinting to Claude?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-01T09:58:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "The dystopian jackpot",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-01T08:26:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "I mean, technically...",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-01T08:18:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Anthropic staff reacts to Claude code leak 👀",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-01T07:43:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Wan 2.7-Image just dropped. When will Wan 2.7 video model be releases?",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-01T07:40:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "OpenClaw patched a Critical privilege escalation in the /pair approve path — relevant if you're running local LLM agents with tool access (GHSA-hc5h-pmr3-3497)",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-01T06:42:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Just so all you deviants know...",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s9cc84/just_so_all_you_deviants_know/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-01T06:12:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "OpenAI raises $122,000,000,000",
-        "link": "https://reddit.com/r/OpenAI/comments/1s9bjdz/openai_raises_122000000000/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-01T05:26:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-01T11:15:34.827Z",
+    "reddit_viral_generated_at": "2026-04-01T12:02:59.691Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
