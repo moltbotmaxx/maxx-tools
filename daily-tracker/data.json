@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-01T03:47:07.699Z",
+    "generated_at": "2026-04-01T06:04:51.085Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Asked Gemini for a pic of a college party photo taken in 2004",
+        "link": "https://reddit.com/r/GeminiAI/comments/1s9a7su/asked_gemini_for_a_pic_of_a_college_party_photo/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-01T04:16:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Claude...",
         "link": "https://reddit.com/r/aimemes/comments/1s998v9/claude/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-01T03:29:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "You can now build a fully functional Claude Code executable directly from source code now - modding claude code has never been easier",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1s98srg/you_can_now_build_a_fully_functional_claude_code/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-01T03:08:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Promises, promises",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-01T02:50:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Neuralink enabling people with ALS to speak again.",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-01T02:02:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "There are 500,000 OpenClaw instances on the public internet. one just sold on BreachForums for $25K.",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-01T01:57:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Never thank the internal signals, Claude! (My favorite part from the Claude Code leak)",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-01T01:14:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Did something happen with censorship in recent days/hours??",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-01T00:25:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "WARNING - Browser Extentions are reading every word you write in ChatGPT - AND Selling it!",
@@ -433,7 +451,7 @@
         "published_at": "2026-03-31T23:58:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "I asked Chat to make a photo of a college party in 2004 taken on a flip phone",
@@ -442,32 +460,14 @@
         "published_at": "2026-03-31T23:39:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude Mythos benchmarks leaked",
-        "link": "https://reddit.com/r/singularity/comments/1s93q1j/claude_mythos_benchmarks_leaked/",
-        "subreddit": "singularity",
-        "published_at": "2026-03-31T23:27:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude rebuilt a working Claude Code executable entirely from leaked sourcemap, then edited its source to add a custom startup animation",
-        "link": "https://reddit.com/r/singularity/comments/1s939g5/claude_rebuilt_a_working_claude_code_executable/",
-        "subreddit": "singularity",
-        "published_at": "2026-03-31T23:08:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-01T03:47:07.699Z",
+    "reddit_viral_generated_at": "2026-04-01T06:04:51.085Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
