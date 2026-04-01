@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-01T21:02:40.456Z",
+    "generated_at": "2026-04-01T21:59:19.213Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Does anyone recommend Nvidia NIM?",
+        "link": "https://reddit.com/r/openclaw/comments/1s9y29j/does_anyone_recommend_nvidia_nim/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-01T21:29:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Revenge",
         "link": "https://reddit.com/r/GeminiAI/comments/1s9thyy/revenge/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-01T18:45:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "grandad said calculators were cheating, our prof said google was cheating, tech lead said stack overflow was cheating and now we're surprised the AI meltdown looks exactly the same?",
@@ -388,7 +397,16 @@
         "published_at": "2026-04-01T18:29:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "v2026.4.1 unusable spam fest",
+        "link": "https://reddit.com/r/openclaw/comments/1s9svu0/v202641_unusable_spam_fest/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-01T18:24:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "😭😭",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-01T18:11:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Why is it that MiniMax M2.7 works better on openclaw than the other LLMs? Am I crazy?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-01T16:59:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Marc Andreessen says AI layoffs are a farce: Companies are 75% overstaffed and AI is the \"silver bullet excuse\" to clean house",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-01T16:24:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "This person/thing posting \"openpull.ai\" links all over reddit - AVOID!",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-01T15:21:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Bay Area therapists say AI workers are in crisis",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-01T14:55:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "Openclaw recent update 3.31",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-01T14:13:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I built an AI powered time machine to visualise places in the world throughout the years",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s9l2sh/i_built_an_ai_powered_time_machine_to_visualise/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-01T13:47:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Gemini has turned into a terrible product lately.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1s9kakf/gemini_has_turned_into_a_terrible_product_lately/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-01T13:16:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-01T21:02:40.456Z",
+    "reddit_viral_generated_at": "2026-04-01T21:59:19.213Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
