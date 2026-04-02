@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T03:27:33.385Z",
+    "generated_at": "2026-04-02T05:50:55.895Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I was using live and didn't say that.. since when can it swear",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sa72kl/i_was_using_live_and_didnt_say_that_since_when/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-02T04:04:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Haha Doordash support",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sa6jrs/haha_doordash_support/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-02T03:38:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "What is your AI toolkit along side Gemini?",
         "link": "https://reddit.com/r/GeminiAI/comments/1sa5cmp/what_is_your_ai_toolkit_along_side_gemini/",
@@ -379,16 +397,7 @@
         "published_at": "2026-04-02T02:41:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Is Gemini having issues",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sa5b4d/is_gemini_having_issues/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-02T02:39:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "AI Pro storage increases",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-02T02:11:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "I deployed AI receptionists for local service businesses using OpenClaw — here's what I learned",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-02T02:03:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "el diagrama de Venn de la distopía extendida",
@@ -415,7 +424,25 @@
         "published_at": "2026-04-02T01:30:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
+      },
+      {
+        "headline": "They are coming for Physical Jobs",
+        "link": "https://reddit.com/r/singularity/comments/1sa3n9d/they_are_coming_for_physical_jobs/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-02T01:25:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "I built a tool that saves ~50K tokens per Claude Code conversation by pre-indexing your codebase",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sa2jbz/i_built_a_tool_that_saves_50k_tokens_per_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T00:35:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Gemini 4 is coming ??",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-02T00:28:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "WHAT JUST HAPPENED",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-01T23:16:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude Code got leaked. So I rebuilt it in Rust. It’s faster and open-source.",
-        "link": "https://reddit.com/r/openclaw/comments/1s9zhqz/claude_code_got_leaked_so_i_rebuilt_it_in_rust/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-01T22:25:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Reddit's Servers Begin Communicating Autonomously. Federal Investigators Have No Explanation.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1s9xdh7/reddits_servers_begin_communicating_autonomously/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-01T21:03:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "My Opus model has gone off the rails",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1s9vry6/my_opus_model_has_gone_off_the_rails/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-01T20:06:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T03:27:33.385Z",
+    "reddit_viral_generated_at": "2026-04-02T05:50:55.895Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
