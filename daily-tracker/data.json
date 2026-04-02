@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T10:14:05.732Z",
+    "generated_at": "2026-04-02T11:11:17.649Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How are people using Claude as a personal assistant (Slack + Outlook + To-Do)? ADHD-friendly setup help 🙏",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sad9rb/how_are_people_using_claude_as_a_personal/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T10:08:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Maybe the ASI will just adopt us as pets.",
         "link": "https://reddit.com/r/aimemes/comments/1sac6j6/maybe_the_asi_will_just_adopt_us_as_pets/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-02T09:02:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "How on earth is UBI impossible?",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-02T08:52:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Iran is winning the AI slop propaganda war",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-02T06:39:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "NEW PATCH in Claude products",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-02T06:27:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Google AI Pro Boosts Storage to 5TB at No Extra Cost",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-02T06:16:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "but my ai🥺",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-02T06:01:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "I replaced chaotic solo Claude coding with a simple 3-agent team (Architect + Builder + Reviewer) — it's stupidly effective and token-efficient",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-02T04:28:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "Haha Doordash support",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-02T03:38:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "AI Pro storage increases",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-02T02:11:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "I deployed AI receptionists for local service businesses using OpenClaw — here's what I learned",
-        "link": "https://reddit.com/r/openclaw/comments/1sa4i91/i_deployed_ai_receptionists_for_local_service/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-02T02:03:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T10:14:05.732Z",
+    "reddit_viral_generated_at": "2026-04-02T11:11:17.649Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
