@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T19:59:26.690Z",
+    "generated_at": "2026-04-02T20:55:52.557Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -377,6 +377,15 @@
         "link": "https://reddit.com/r/aimemes/comments/1sardkk/sora_will_not_be_missed/",
         "subreddit": "aimemes",
         "published_at": "2026-04-02T19:36:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenClaw vs Claude Code",
+        "link": "https://reddit.com/r/openclaw/comments/1sarakk/openclaw_vs_claude_code/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-02T19:33:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -415,7 +424,7 @@
         "published_at": "2026-04-02T18:30:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Latest Research By Anthrophic Highlights that Claude Might Have Functional Emotions",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-02T17:43:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Claude - tried to kill me",
@@ -436,6 +445,15 @@
         "viral_score": 92
       },
       {
+        "headline": "Working better than ever",
+        "link": "https://reddit.com/r/openclaw/comments/1salz3a/working_better_than_ever/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-02T16:20:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
         "headline": "Gemma 4 Benchmarks",
         "link": "https://reddit.com/r/singularity/comments/1salsf5/gemma_4_benchmarks/",
         "subreddit": "singularity",
@@ -443,31 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "Gemma 4 has been released in Google AI Studio.",
-        "link": "https://reddit.com/r/singularity/comments/1sali3d/gemma_4_has_been_released_in_google_ai_studio/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T16:03:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I gave several AIs money to invest in the stock market",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1salhpg/i_gave_several_ais_money_to_invest_in_the_stock/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-02T16:02:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T19:59:26.690Z",
+    "reddit_viral_generated_at": "2026-04-02T20:55:52.557Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
