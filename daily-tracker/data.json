@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T13:58:16.762Z",
+    "generated_at": "2026-04-02T15:18:06.902Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "SpaceX is charging a $500B cover for vibes",
+        "link": "https://reddit.com/r/singularity/comments/1saivpd/spacex_is_charging_a_500b_cover_for_vibes/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-02T14:26:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "How to implement UBI: Tax AI output to fund small human businesses",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1saioou/how_to_implement_ubi_tax_ai_output_to_fund_small/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-02T14:18:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Generalist | Introducing GEN-1",
+        "link": "https://reddit.com/r/singularity/comments/1sai9i8/generalist_introducing_gen1/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-02T14:02:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "OpenClaw is MASSIVELY overrated.",
         "link": "https://reddit.com/r/openclaw/comments/1sagc49/openclaw_is_massively_overrated/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-02T12:42:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "OpenAI president on AGI: • \"I'd say I'm basically like 70, 80% there. So I think we're quite close.\" • \"I think it's extremely clear that we are going to have AGI within the next couple years.\"",
@@ -388,7 +415,16 @@
         "published_at": "2026-04-02T11:50:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
+      },
+      {
+        "headline": "Perhaps the first 2 person company with $1B in revenue, powered by AI workflows",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1saezvo/perhaps_the_first_2_person_company_with_1b_in/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-02T11:40:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Americans fear AI job loss more than ever, time for regulation?",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-02T10:53:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "How likely am I to lose my job to AI in the next decade?",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-02T10:48:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "How are people using Claude as a personal assistant (Slack + Outlook + To-Do)? ADHD-friendly setup help 🙏",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-02T10:08:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Snapchat bots are everywhere 😔",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-02T09:37:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "The MSP \"Death Spiral\" begins: a16z-backed Treeline claims its agents resolve 98% of IT tickets without human intervention",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sacju3/the_msp_death_spiral_begins_a16zbacked_treeline/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-02T09:25:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Maybe the ASI will just adopt us as pets.",
-        "link": "https://reddit.com/r/aimemes/comments/1sac6j6/maybe_the_asi_will_just_adopt_us_as_pets/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-02T09:02:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "/Buddy is Awesome",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sabp9j/buddy_is_awesome/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-02T08:33:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Gemini Deep Research visiting 368 websites is INSANE, way above chatGPT",
-        "link": "https://reddit.com/r/GeminiAI/comments/1saaaby/gemini_deep_research_visiting_368_websites_is/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-02T07:04:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T13:58:16.762Z",
+    "reddit_viral_generated_at": "2026-04-02T15:18:06.902Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
