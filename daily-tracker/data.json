@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T11:11:17.649Z",
+    "generated_at": "2026-04-02T11:59:42.679Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Americans fear AI job loss more than ever, time for regulation?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sae30t/americans_fear_ai_job_loss_more_than_ever_time/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-02T10:53:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "How are people using Claude as a personal assistant (Slack + Outlook + To-Do)? ADHD-friendly setup help 🙏",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sad9rb/how_are_people_using_claude_as_a_personal/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-02T10:08:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Snapchat bots are everywhere 😔",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sacqp0/snapchat_bots_are_everywhere/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-02T09:37:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Maybe the ASI will just adopt us as pets.",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-02T09:02:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "How on earth is UBI impossible?",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-02T08:52:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
+      },
+      {
+        "headline": "Gemini Deep Research visiting 368 websites is INSANE, way above chatGPT",
+        "link": "https://reddit.com/r/GeminiAI/comments/1saaaby/gemini_deep_research_visiting_368_websites_is/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-02T07:04:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Iran is winning the AI slop propaganda war",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-02T06:39:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "NEW PATCH in Claude products",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-02T06:27:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "Google AI Pro Boosts Storage to 5TB at No Extra Cost",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-02T06:16:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "but my ai🥺",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-02T06:01:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I replaced chaotic solo Claude coding with a simple 3-agent team (Architect + Builder + Reviewer) — it's stupidly effective and token-efficient",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sa7ju4/i_replaced_chaotic_solo_claude_coding_with_a/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-02T04:28:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Haha Doordash support",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sa6jrs/haha_doordash_support/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-02T03:38:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "AI Pro storage increases",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sa4okd/ai_pro_storage_increases/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-02T02:11:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T11:11:17.649Z",
+    "reddit_viral_generated_at": "2026-04-02T11:59:42.679Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
