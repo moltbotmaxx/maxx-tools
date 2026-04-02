@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T17:11:17.735Z",
+    "generated_at": "2026-04-02T18:03:22.460Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -418,6 +418,15 @@
         "viral_score": 98
       },
       {
+        "headline": "Switched from MCPs to CLIs for Claude Code and honestly never going back",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sakut1/switched_from_mcps_to_clis_for_claude_code_and/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T15:39:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "Claude launches NO_FLICKER Mode - Boris Cherny Thread (9 details)",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sakkoh/claude_launches_no_flicker_mode_boris_cherny/",
         "subreddit": "ClaudeAI",
@@ -425,15 +434,6 @@
         "score": 0,
         "comments": 0,
         "viral_score": 96
-      },
-      {
-        "headline": "Sam Altman’s sister files renewed sexual assault lawsuit",
-        "link": "https://reddit.com/r/OpenAI/comments/1sajzk6/sam_altmans_sister_files_renewed_sexual_assault/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-02T15:07:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
       },
       {
         "headline": "SpaceX is charging a $500B cover for vibes",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T17:11:17.735Z",
+    "reddit_viral_generated_at": "2026-04-02T18:03:22.460Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
