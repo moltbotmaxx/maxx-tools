@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T16:14:26.946Z",
+    "generated_at": "2026-04-02T17:11:17.735Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI \"slop\" is flooding YouTube Kids—and more than 200 groups and experts are calling for a ban",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1same23/ai_slop_is_flooding_youtube_kidsand_more_than_200/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-02T16:35:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude - tried to kill me",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sam5pw/claude_tried_to_kill_me/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T16:27:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Gemma 4 Benchmarks",
+        "link": "https://reddit.com/r/singularity/comments/1salsf5/gemma_4_benchmarks/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-02T16:13:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Gemma 4 has been released in Google AI Studio.",
+        "link": "https://reddit.com/r/singularity/comments/1sali3d/gemma_4_has_been_released_in_google_ai_studio/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-02T16:03:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I gave several AIs money to invest in the stock market",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1salhpg/i_gave_several_ais_money_to_invest_in_the_stock/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T16:02:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Claude launches NO_FLICKER Mode - Boris Cherny Thread (9 details)",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sakkoh/claude_launches_no_flicker_mode_boris_cherny/",
@@ -379,7 +424,7 @@
         "published_at": "2026-04-02T15:29:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Sam Altman’s sister files renewed sexual assault lawsuit",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-02T15:07:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "SpaceX is charging a $500B cover for vibes",
@@ -397,7 +442,7 @@
         "published_at": "2026-04-02T14:26:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "How to implement UBI: Tax AI output to fund small human businesses",
@@ -406,7 +451,7 @@
         "published_at": "2026-04-02T14:18:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Generalist | Introducing GEN-1",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-02T14:02:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "OpenClaw is MASSIVELY overrated.",
-        "link": "https://reddit.com/r/openclaw/comments/1sagc49/openclaw_is_massively_overrated/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-02T12:42:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "OpenAI president on AGI: • \"I'd say I'm basically like 70, 80% there. So I think we're quite close.\" • \"I think it's extremely clear that we are going to have AGI within the next couple years.\"",
-        "link": "https://reddit.com/r/singularity/comments/1saf7m8/openai_president_on_agi_id_say_im_basically_like/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T11:50:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Perhaps the first 2 person company with $1B in revenue, powered by AI workflows",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1saezvo/perhaps_the_first_2_person_company_with_1b_in/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-02T11:40:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Americans fear AI job loss more than ever, time for regulation?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sae30t/americans_fear_ai_job_loss_more_than_ever_time/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-02T10:53:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "How are people using Claude as a personal assistant (Slack + Outlook + To-Do)? ADHD-friendly setup help 🙏",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sad9rb/how_are_people_using_claude_as_a_personal/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-02T10:08:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T16:14:26.946Z",
+    "reddit_viral_generated_at": "2026-04-02T17:11:17.735Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
