@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T20:55:52.557Z",
+    "generated_at": "2026-04-02T21:53:58.828Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI-2027 forecasters move their timelines ~1.5 years earlier, predict 2027 or 2028 most likely year for AGI",
+        "link": "https://reddit.com/r/singularity/comments/1sat07i/ai2027_forecasters_move_their_timelines_15_years/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-02T20:37:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Sora will not be missed.",
         "link": "https://reddit.com/r/aimemes/comments/1sardkk/sora_will_not_be_missed/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-02T19:36:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "OpenClaw vs Claude Code",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-02T19:33:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Sam Altman says he 'miscalibrated' the mood of distrust toward AI and the government in the Pentagon deal",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-02T19:23:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "So, claude have emotions? What????",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-02T19:18:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "How much influence will AI have on CFOs and Accountants?",
@@ -415,16 +424,7 @@
         "published_at": "2026-04-02T19:00:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Elon Musk, world's first trillionaire: one implication of the massive SpaceX IPO",
-        "link": "https://reddit.com/r/singularity/comments/1sapklz/elon_musk_worlds_first_trillionaire_one/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T18:30:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Latest Research By Anthrophic Highlights that Claude Might Have Functional Emotions",
@@ -433,7 +433,16 @@
         "published_at": "2026-04-02T17:43:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
+      },
+      {
+        "headline": "AI \"slop\" is flooding YouTube Kids—and more than 200 groups and experts are calling for a ban",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1same23/ai_slop_is_flooding_youtube_kidsand_more_than_200/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-02T16:35:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Claude - tried to kill me",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-02T16:27:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Working better than ever",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-02T16:20:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemma 4 Benchmarks",
-        "link": "https://reddit.com/r/singularity/comments/1salsf5/gemma_4_benchmarks/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T16:13:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T20:55:52.557Z",
+    "reddit_viral_generated_at": "2026-04-02T21:53:58.828Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
