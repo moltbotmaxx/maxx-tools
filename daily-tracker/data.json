@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T15:18:06.902Z",
+    "generated_at": "2026-04-02T16:14:26.946Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude launches NO_FLICKER Mode - Boris Cherny Thread (9 details)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sakkoh/claude_launches_no_flicker_mode_boris_cherny/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T15:29:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Sam Altman’s sister files renewed sexual assault lawsuit",
+        "link": "https://reddit.com/r/OpenAI/comments/1sajzk6/sam_altmans_sister_files_renewed_sexual_assault/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-02T15:07:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "SpaceX is charging a $500B cover for vibes",
         "link": "https://reddit.com/r/singularity/comments/1saivpd/spacex_is_charging_a_500b_cover_for_vibes/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-02T14:26:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "How to implement UBI: Tax AI output to fund small human businesses",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-02T14:18:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Generalist | Introducing GEN-1",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-02T14:02:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "OpenClaw is MASSIVELY overrated.",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-02T12:42:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "OpenAI president on AGI: • \"I'd say I'm basically like 70, 80% there. So I think we're quite close.\" • \"I think it's extremely clear that we are going to have AGI within the next couple years.\"",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-02T11:50:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Perhaps the first 2 person company with $1B in revenue, powered by AI workflows",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-02T11:40:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Americans fear AI job loss more than ever, time for regulation?",
@@ -433,16 +451,7 @@
         "published_at": "2026-04-02T10:53:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "How likely am I to lose my job to AI in the next decade?",
-        "link": "https://reddit.com/r/singularity/comments/1sadzrd/how_likely_am_i_to_lose_my_job_to_ai_in_the_next/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T10:48:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "How are people using Claude as a personal assistant (Slack + Outlook + To-Do)? ADHD-friendly setup help 🙏",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-02T10:08:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Snapchat bots are everywhere 😔",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sacqp0/snapchat_bots_are_everywhere/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-02T09:37:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T15:18:06.902Z",
+    "reddit_viral_generated_at": "2026-04-02T16:14:26.946Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
