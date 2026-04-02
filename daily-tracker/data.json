@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-02T07:42:34.894Z",
+    "generated_at": "2026-04-02T09:16:53.041Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "ChatGPT was crashing my browser every day until I figured out what was causing it",
-        "link": "https://reddit.com/r/OpenAI/comments/1saajbd/chatgpt_was_crashing_my_browser_every_day_until_i/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-02T07:20:11+00:00",
+        "headline": "Maybe the ASI will just adopt us as pets.",
+        "link": "https://reddit.com/r/aimemes/comments/1sac6j6/maybe_the_asi_will_just_adopt_us_as_pets/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-02T09:02:37+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "What should my domain knowledge be? [for applied AI]",
+        "link": "https://reddit.com/r/OpenAI/comments/1saaxqd/what_should_my_domain_knowledge_be_for_applied_ai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-02T07:45:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Iran is winning the AI slop propaganda war",
@@ -388,7 +397,25 @@
         "published_at": "2026-04-02T06:39:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
+      },
+      {
+        "headline": "NEW PATCH in Claude products",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sa9ob5/new_patch_in_claude_products/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T06:27:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Google AI Pro Boosts Storage to 5TB at No Extra Cost",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sa9hy1/google_ai_pro_boosts_storage_to_5tb_at_no_extra/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-02T06:16:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "but my ai🥺",
@@ -397,7 +424,16 @@
         "published_at": "2026-04-02T06:01:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
+      },
+      {
+        "headline": "I replaced chaotic solo Claude coding with a simple 3-agent team (Architect + Builder + Reviewer) — it's stupidly effective and token-efficient",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sa7ju4/i_replaced_chaotic_solo_claude_coding_with_a/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-02T04:28:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "Haha Doordash support",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-02T03:38:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "AI Pro storage increases",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-02T02:11:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       },
       {
         "headline": "I deployed AI receptionists for local service businesses using OpenClaw — here's what I learned",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-02T02:03:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "el diagrama de Venn de la distopía extendida",
-        "link": "https://reddit.com/r/aimemes/comments/1sa3rj2/el_diagrama_de_venn_de_la_distop%C3%ADa_extendida/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-02T01:30:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "They are coming for Physical Jobs",
-        "link": "https://reddit.com/r/singularity/comments/1sa3n9d/they_are_coming_for_physical_jobs/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T01:25:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "I built a tool that saves ~50K tokens per Claude Code conversation by pre-indexing your codebase",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sa2jbz/i_built_a_tool_that_saves_50k_tokens_per_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-02T00:35:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Gemini 4 is coming ??",
-        "link": "https://reddit.com/r/singularity/comments/1sa2dmt/gemini_4_is_coming/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-02T00:28:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-02T07:42:34.894Z",
+    "reddit_viral_generated_at": "2026-04-02T09:16:53.041Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
