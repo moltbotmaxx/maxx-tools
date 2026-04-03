@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-03T19:07:10.226Z",
+    "generated_at": "2026-04-03T19:53:56.057Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Banned for asking about AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbn1vc/banned_for_asking_about_ai/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-03T19:20:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "How long until the current models take over the job of OpenClaw?",
         "link": "https://reddit.com/r/openclaw/comments/1sbm3bd/how_long_until_the_current_models_take_over_the/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-03T18:45:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "should we ban ai generated content (posts/comments)?",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-03T18:37:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Taught Claude to talk like a caveman to use 75% less tokens.",
@@ -397,7 +406,16 @@
         "published_at": "2026-04-03T18:19:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
+      },
+      {
+        "headline": "I used ChatGPT to help me go from 229lbs to 176lbs",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sbkr23/i_used_chatgpt_to_help_me_go_from_229lbs_to_176lbs/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-03T17:56:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "I see where this is going, and I hate it.",
@@ -406,16 +424,16 @@
         "published_at": "2026-04-03T17:41:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
-        "headline": "After building automation for barbers, therapists, law firms, and game devs/creators I found the setup looks different for each. here's what I got.",
-        "link": "https://reddit.com/r/openclaw/comments/1sbk0zk/after_building_automation_for_barbers_therapists/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-03T17:30:00+00:00",
+        "headline": "Built a simple Gemini watermark remover (free & runs locally)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sbioyn/built_a_simple_gemini_watermark_remover_free_runs/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-03T16:41:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Why 74% of companies say AI has positive ROI while 95% of pilots still fail to hit the P&L",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-03T15:48:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Asked it to improve the quality of a photo from my bird feeder camera. Not a bad job",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-03T15:40:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Am I doing it wrong, or is using OpenClaw just super expensive?",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-03T15:21:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Humanoid robots are actively training",
-        "link": "https://reddit.com/r/singularity/comments/1sbflwe/humanoid_robots_are_actively_training/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-03T14:46:47+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "AI explained with MS paint",
-        "link": "https://reddit.com/r/aimemes/comments/1sbf0ek/ai_explained_with_ms_paint/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-03T14:23:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-03T19:07:10.226Z",
+    "reddit_viral_generated_at": "2026-04-03T19:53:56.057Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
