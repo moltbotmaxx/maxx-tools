@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-03T21:50:55.504Z",
+    "generated_at": "2026-04-03T22:54:49.045Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude OAuth for OC is officially, actually dead now",
+        "link": "https://reddit.com/r/openclaw/comments/1sbsgms/claude_oauth_for_oc_is_officially_actually_dead/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-03T22:52:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude OAuth / fun while it lasted!",
+        "link": "https://reddit.com/r/openclaw/comments/1sbsfwc/claude_oauth_fun_while_it_lasted/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-03T22:51:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Netflix releases Void a video model that can remove objects from video and their physical interactions on the scene",
+        "link": "https://reddit.com/r/singularity/comments/1sbpuhp/netflix_releases_void_a_video_model_that_can/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-03T21:06:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "i guess bro",
         "link": "https://reddit.com/r/GeminiAI/comments/1sbpc16/i_guess_bro/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-03T20:46:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "\"Create a pic of the most average female at the most average location\"",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-03T19:52:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "OpenAI's Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up",
@@ -397,7 +424,16 @@
         "published_at": "2026-04-03T19:45:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
+      },
+      {
+        "headline": "Anthropics Latest Paper Claims Claude has \"functional emotions\" and turns to blackmail/cheating when it gets \"desperate\"",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbnhvq/anthropics_latest_paper_claims_claude_has/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-03T19:37:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Banned for asking about AI",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-03T19:20:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "How long until the current models take over the job of OpenClaw?",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-03T18:45:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "should we ban ai generated content (posts/comments)?",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-03T18:37:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Taught Claude to talk like a caveman to use 75% less tokens.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sble09/taught_claude_to_talk_like_a_caveman_to_use_75/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-03T18:19:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I used ChatGPT to help me go from 229lbs to 176lbs",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sbkr23/i_used_chatgpt_to_help_me_go_from_229lbs_to_176lbs/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-03T17:56:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Built a simple Gemini watermark remover (free & runs locally)",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sbioyn/built_a_simple_gemini_watermark_remover_free_runs/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-03T16:41:50+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Why 74% of companies say AI has positive ROI while 95% of pilots still fail to hit the P&L",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbh9ff/why_74_of_companies_say_ai_has_positive_roi_while/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-03T15:48:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-03T21:50:55.504Z",
+    "reddit_viral_generated_at": "2026-04-03T22:54:49.045Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
