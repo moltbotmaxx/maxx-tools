@@ -367,28 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-03T22:54:49.045Z",
+    "generated_at": "2026-04-03T23:50:24.721Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Claude OAuth for OC is officially, actually dead now",
-        "link": "https://reddit.com/r/openclaw/comments/1sbsgms/claude_oauth_for_oc_is_officially_actually_dead/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-03T22:52:44+00:00",
+        "headline": "Some meatbags are alright",
+        "link": "https://reddit.com/r/singularity/comments/1sbtbba/some_meatbags_are_alright/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-03T23:29:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Claude OAuth / fun while it lasted!",
-        "link": "https://reddit.com/r/openclaw/comments/1sbsfwc/claude_oauth_fun_while_it_lasted/",
+        "headline": "Anthropic is cutting off third-party harnesses (OpenClaw, etc.) from subscription limits starting April 4 -- here's what it means",
+        "link": "https://reddit.com/r/openclaw/comments/1sbshpu/anthropic_is_cutting_off_thirdparty_harnesses/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-03T22:51:50+00:00",
+        "published_at": "2026-04-03T22:54:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "GPT-IMAGE-2 Likely on LMarena",
+        "link": "https://reddit.com/r/singularity/comments/1sbsasq/gptimage2_likely_on_lmarena/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-03T22:45:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I Gave Claude Its Own Radio Station — It Won't Stop Broadcasting (It's Fine)",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbrlet/i_gave_claude_its_own_radio_station_it_wont_stop/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-03T22:16:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Netflix releases Void a video model that can remove objects from video and their physical interactions on the scene",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-03T21:06:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "i guess bro",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-03T20:46:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "\"Create a pic of the most average female at the most average location\"",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-03T19:52:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "OpenAI's Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-03T19:45:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Anthropics Latest Paper Claims Claude has \"functional emotions\" and turns to blackmail/cheating when it gets \"desperate\"",
@@ -433,31 +451,13 @@
         "published_at": "2026-04-03T19:37:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Banned for asking about AI",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbn1vc/banned_for_asking_about_ai/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-04-03T19:20:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "How long until the current models take over the job of OpenClaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1sbm3bd/how_long_until_the_current_models_take_over_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-03T18:45:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "should we ban ai generated content (posts/comments)?",
-        "link": "https://reddit.com/r/openclaw/comments/1sblvtd/should_we_ban_ai_generated_content_postscomments/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-03T18:37:50+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-03T22:54:49.045Z",
+    "reddit_viral_generated_at": "2026-04-03T23:50:24.721Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
