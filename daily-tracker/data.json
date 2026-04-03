@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-03T20:55:21.302Z",
+    "generated_at": "2026-04-03T21:50:55.504Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "i guess bro",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sbpc16/i_guess_bro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-03T20:46:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "\"Create a pic of the most average female at the most average location\"",
         "link": "https://reddit.com/r/ChatGPT/comments/1sbnvup/create_a_pic_of_the_most_average_female_at_the/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-03T19:52:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "OpenAI's Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up",
+        "link": "https://reddit.com/r/OpenAI/comments/1sbnpu1/openais_fidji_simo_is_taking_medical_leave_amid/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-03T19:45:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Banned for asking about AI",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-03T19:20:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "How long until the current models take over the job of OpenClaw?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-03T18:45:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "should we ban ai generated content (posts/comments)?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-03T18:37:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Taught Claude to talk like a caveman to use 75% less tokens.",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-03T18:19:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "I used ChatGPT to help me go from 229lbs to 176lbs",
@@ -424,16 +442,7 @@
         "published_at": "2026-04-03T17:56:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "I see where this is going, and I hate it.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sbkc3l/i_see_where_this_is_going_and_i_hate_it/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-03T17:41:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Built a simple Gemini watermark remover (free & runs locally)",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-03T16:41:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Why 74% of companies say AI has positive ROI while 95% of pilots still fail to hit the P&L",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-03T15:48:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Asked it to improve the quality of a photo from my bird feeder camera. Not a bad job",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sbh1ju/asked_it_to_improve_the_quality_of_a_photo_from/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-03T15:40:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-03T20:55:21.302Z",
+    "reddit_viral_generated_at": "2026-04-03T21:50:55.504Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
