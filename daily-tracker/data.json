@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-03T15:55:36.142Z",
+    "generated_at": "2026-04-03T16:58:01.370Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why 74% of companies say AI has positive ROI while 95% of pilots still fail to hit the P&L",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbh9ff/why_74_of_companies_say_ai_has_positive_roi_while/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-03T15:48:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Am I doing it wrong, or is using OpenClaw just super expensive?",
+        "link": "https://reddit.com/r/openclaw/comments/1sbgj89/am_i_doing_it_wrong_or_is_using_openclaw_just/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-03T15:21:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Humanoid robots are actively training",
         "link": "https://reddit.com/r/singularity/comments/1sbflwe/humanoid_robots_are_actively_training/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-03T14:46:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "AI explained with MS paint",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-03T14:23:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Early anti-clankerite violence caught on film",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-03T14:18:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Seedance 2.0 Finally Here!!!",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-03T14:04:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Just checked my OpenClaw token usage in my own openclaw agent observability for the first time since February. 88 million tokens",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-03T13:53:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "💀",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-03T12:56:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Altman met with astonished physicist using their internal system, “decades worth of theoretical physics progress in the next couple years”",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-03T12:28:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "AI corps be like: \"I'm definitely going to prioritize safety... starting next Monday.\"",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-03T11:40:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Okay perfect, just making sure.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sb9dmj/okay_perfect_just_making_sure/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-03T10:01:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I created the #1 skill that will change how you live. Here's how. /s",
-        "link": "https://reddit.com/r/openclaw/comments/1sb97sw/i_created_the_1_skill_that_will_change_how_you/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-03T09:52:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-03T15:55:36.142Z",
+    "reddit_viral_generated_at": "2026-04-03T16:58:01.370Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
