@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-03T16:58:01.370Z",
+    "generated_at": "2026-04-03T17:53:57.857Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "After building automation for barbers, therapists, law firms, and game devs/creators I found the setup looks different for each. here's what I got.",
+        "link": "https://reddit.com/r/openclaw/comments/1sbk0zk/after_building_automation_for_barbers_therapists/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-03T17:30:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Why 74% of companies say AI has positive ROI while 95% of pilots still fail to hit the P&L",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbh9ff/why_74_of_companies_say_ai_has_positive_roi_while/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-03T15:48:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Am I doing it wrong, or is using OpenClaw just super expensive?",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-03T15:21:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Humanoid robots are actively training",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-03T14:46:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "AI explained with MS paint",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-03T14:23:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Early anti-clankerite violence caught on film",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-03T14:18:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Seedance 2.0 Finally Here!!!",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-03T14:04:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Just checked my OpenClaw token usage in my own openclaw agent observability for the first time since February. 88 million tokens",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-03T13:53:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "💀",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-03T12:56:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Altman met with astonished physicist using their internal system, “decades worth of theoretical physics progress in the next couple years”",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-03T12:28:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "AI corps be like: \"I'm definitely going to prioritize safety... starting next Monday.\"",
-        "link": "https://reddit.com/r/aimemes/comments/1sbb7mj/ai_corps_be_like_im_definitely_going_to/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-03T11:40:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-03T16:58:01.370Z",
+    "reddit_viral_generated_at": "2026-04-03T17:53:57.857Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
