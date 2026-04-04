@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T03:17:38.560Z",
+    "generated_at": "2026-04-04T05:04:15.312Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How is the Anthropic ban on OpenClaw affecting you, and what are your workarounds?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbyw2i/how_is_the_anthropic_ban_on_openclaw_affecting/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-04T03:49:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "OpenAI President Greg Brockman Says Company Is Building an AI ‘Super App’ as Next Phase of ChatGPT",
         "link": "https://reddit.com/r/OpenAI/comments/1sbwgja/openai_president_greg_brockman_says_company_is/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-04T01:51:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Any Claude users revisit Chat GPT 5.4 lately? They should.",
@@ -388,7 +397,16 @@
         "published_at": "2026-04-04T01:06:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
+      },
+      {
+        "headline": "Alright Gemini -- Fair Enough",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sbv94w/alright_gemini_fair_enough/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-04T00:55:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "New model from Openai spotted on LMarena",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-04T00:48:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Google AI Pro Student Plan just got upgraded to 5TB",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-03T23:37:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Some meatbags are alright",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-03T23:29:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "This AI startup envisions '100 million new people' making videogames",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-03T23:07:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Anthropic just gave us 1 month worth of subscription value as usage",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-03T22:54:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Anthropic is cutting off third-party harnesses (OpenClaw, etc.) from subscription limits starting April 4 -- here's what it means",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-03T22:54:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GPT-IMAGE-2 Likely on LMarena",
-        "link": "https://reddit.com/r/singularity/comments/1sbsasq/gptimage2_likely_on_lmarena/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-03T22:45:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I Gave Claude Its Own Radio Station — It Won't Stop Broadcasting (It's Fine)",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbrlet/i_gave_claude_its_own_radio_station_it_wont_stop/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-03T22:16:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T03:17:38.560Z",
+    "reddit_viral_generated_at": "2026-04-04T05:04:15.312Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
