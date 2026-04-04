@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T21:47:29.692Z",
+    "generated_at": "2026-04-04T22:50:22.746Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How do you feel about this?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1scn3ab/how_do_you_feel_about_this/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-04T22:45:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Chatting with chatgpt is impossible now",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sclvd4/chatting_with_chatgpt_is_impossible_now/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-04T21:52:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "What the next best coding model then?",
         "link": "https://reddit.com/r/openclaw/comments/1sclim7/what_the_next_best_coding_model_then/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-04T21:37:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "You okay there bud?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1scl132/you_okay_there_bud/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-04T21:17:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Confused about the anthropic credit",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-04T19:37:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Iran just threatened to blow up stargate",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-04T19:21:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Wearable touch-sensing fabrics: the next step for humanoid robots, to feel... and respond accordingly",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-04T17:57:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I was about to lose access to Claude on my OpenClaw setup. Then I found the loophole Anthropic left wide open.",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-04T17:48:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Credit over with simple text 🥲",
@@ -424,40 +451,13 @@
         "published_at": "2026-04-04T17:02:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "What Memory feels like",
-        "link": "https://reddit.com/r/ChatGPT/comments/1scdin0/what_memory_feels_like/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-04T16:22:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       },
       {
         "headline": "Some human written nuance and perspective on the rates situation, from someone in the industry.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1scdilx/some_human_written_nuance_and_perspective_on_the/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-04-04T16:22:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Next GPT will be specifically improved for OpenClaw!",
-        "link": "https://reddit.com/r/openclaw/comments/1sccyuw/next_gpt_will_be_specifically_improved_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T16:01:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I don't know whether to laugh or cry",
-        "link": "https://reddit.com/r/ChatGPT/comments/1scbpz5/i_dont_know_whether_to_laugh_or_cry/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-04T15:11:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 85
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T21:47:29.692Z",
+    "reddit_viral_generated_at": "2026-04-04T22:50:22.746Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
