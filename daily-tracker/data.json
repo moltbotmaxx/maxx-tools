@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T13:29:59.275Z",
+    "generated_at": "2026-04-04T14:53:37.396Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The duality of the AI hype cycle.",
+        "link": "https://reddit.com/r/OpenAI/comments/1sc8s58/the_duality_of_the_ai_hype_cycle/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-04T13:06:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Peter Steinberger (OpenClaw Creator) credits Boris Cherny (Claude Code Creator) amid anthropic subscription ban for using openclaw - Complete Thread",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc720i/peter_steinberger_openclaw_creator_credits_boris/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-04T11:40:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Chatgpt confirmed an error in my Cat's blood panel by an incompetent vet hospital and quite literally saved her life",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-04T11:37:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "I'M DONE",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-04T10:44:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "This title seems suspicious... Hmmmm...",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-04T10:36:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "\"Cognitive surrender\" leads AI users to abandon logical thinking, research finds",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-04T10:31:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Boris Cherny (creator of CC) complete thread - anthropic bans subscription on 3rd party usage",
@@ -424,16 +433,7 @@
         "published_at": "2026-04-04T10:07:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anyone notice 5.4 Thinking is better since launch?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sc57ft/anyone_notice_54_thinking_is_better_since_launch/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-04T09:53:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "gemini's image understanding is so far ahead of everything else I've used and I don't see enough people talking about it",
@@ -442,7 +442,7 @@
         "published_at": "2026-04-04T08:57:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Anthropic just killed my 17-agent pipeline. Here's how I migrated everything to Claude Code in one afternoon",
@@ -451,7 +451,7 @@
         "published_at": "2026-04-04T08:53:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "why does gemini do this?",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-04T08:42:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T13:29:59.275Z",
+    "reddit_viral_generated_at": "2026-04-04T14:53:37.396Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
