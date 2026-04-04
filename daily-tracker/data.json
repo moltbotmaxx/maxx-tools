@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T14:53:37.396Z",
+    "generated_at": "2026-04-04T15:48:03.153Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I don't know whether to laugh or cry",
+        "link": "https://reddit.com/r/OpenAI/comments/1scbpic/i_dont_know_whether_to_laugh_or_cry/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-04T15:10:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I sent Claude to 1998 and it rebuilt my childhood computer!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1scameo/i_sent_claude_to_1998_and_it_rebuilt_my_childhood/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-04T14:26:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "The duality of the AI hype cycle.",
         "link": "https://reddit.com/r/OpenAI/comments/1sc8s58/the_duality_of_the_ai_hype_cycle/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-04T13:06:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "How is it legal to have a pricing structure where the vendor controls the meter, the unit, and the amount of product consumed?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc85b4/how_is_it_legal_to_have_a_pricing_structure_where/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-04T12:36:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Peter Steinberger (OpenClaw Creator) credits Boris Cherny (Claude Code Creator) amid anthropic subscription ban for using openclaw - Complete Thread",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-04T11:40:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Chatgpt confirmed an error in my Cat's blood panel by an incompetent vet hospital and quite literally saved her life",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-04T11:37:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "I'M DONE",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-04T10:44:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "This title seems suspicious... Hmmmm...",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-04T10:36:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "\"Cognitive surrender\" leads AI users to abandon logical thinking, research finds",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-04T10:31:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Boris Cherny (creator of CC) complete thread - anthropic bans subscription on 3rd party usage",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-04T10:07:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "gemini's image understanding is so far ahead of everything else I've used and I don't see enough people talking about it",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sc4b3d/geminis_image_understanding_is_so_far_ahead_of/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-04T08:57:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anthropic just killed my 17-agent pipeline. Here's how I migrated everything to Claude Code in one afternoon",
-        "link": "https://reddit.com/r/openclaw/comments/1sc48l6/anthropic_just_killed_my_17agent_pipeline_heres/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T08:53:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "why does gemini do this?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sc42f4/why_does_gemini_do_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-04T08:42:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T14:53:37.396Z",
+    "reddit_viral_generated_at": "2026-04-04T15:48:03.153Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
