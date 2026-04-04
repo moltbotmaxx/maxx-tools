@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T16:55:22.865Z",
+    "generated_at": "2026-04-04T17:49:17.039Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What Memory feels like",
+        "link": "https://reddit.com/r/ChatGPT/comments/1scdin0/what_memory_feels_like/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-04T16:22:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Some human written nuance and perspective on the rates situation, from someone in the industry.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1scdilx/some_human_written_nuance_and_perspective_on_the/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-04T16:22:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Next GPT will be specifically improved for OpenClaw!",
+        "link": "https://reddit.com/r/openclaw/comments/1sccyuw/next_gpt_will_be_specifically_improved_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-04T16:01:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "I don't know whether to laugh or cry",
         "link": "https://reddit.com/r/ChatGPT/comments/1scbpz5/i_dont_know_whether_to_laugh_or_cry/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-04T15:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I don't know whether to laugh or cry",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-04T15:10:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Bruh",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-04T14:55:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "I sent Claude to 1998 and it rebuilt my childhood computer!",
@@ -406,7 +433,16 @@
         "published_at": "2026-04-04T14:26:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
+      },
+      {
+        "headline": "You can continue to use Claude with Oauth and Openclaw by using my Headless TMUX library.",
+        "link": "https://reddit.com/r/openclaw/comments/1sc9h58/you_can_continue_to_use_claude_with_oauth_and/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-04T13:37:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "How is it legal to have a pricing structure where the vendor controls the meter, the unit, and the amount of product consumed?",
@@ -415,59 +451,23 @@
         "published_at": "2026-04-04T12:36:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
-        "headline": "Chatgpt confirmed an error in my Cat's blood panel by an incompetent vet hospital and quite literally saved her life",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sc6zf0/chatgpt_confirmed_an_error_in_my_cats_blood_panel/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-04T11:37:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I'M DONE",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sc61uj/im_done/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-04T10:44:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "This title seems suspicious... Hmmmm...",
-        "link": "https://reddit.com/r/aimemes/comments/1sc5wym/this_title_seems_suspicious_hmmmm/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-04T10:36:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "\"Cognitive surrender\" leads AI users to abandon logical thinking, research finds",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc5u8g/cognitive_surrender_leads_ai_users_to_abandon/",
+        "headline": "Peter Steinberger (OpenClaw Creator) credits Boris Cherny (Claude Code Creator) amid anthropic subscription ban for using openclaw - Complete Thread",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc720i/peter_steinberger_openclaw_creator_credits_boris/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-04T10:31:56+00:00",
+        "published_at": "2026-04-04T11:40:59+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Boris Cherny (creator of CC) complete thread - anthropic bans subscription on 3rd party usage",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sc5fj9/boris_cherny_creator_of_cc_complete_thread/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-04T10:07:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T16:55:22.865Z",
+    "reddit_viral_generated_at": "2026-04-04T17:49:17.039Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
