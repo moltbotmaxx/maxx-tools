@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T19:03:44.069Z",
+    "generated_at": "2026-04-04T19:47:26.475Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Iran just threatened to blow up stargate",
+        "link": "https://reddit.com/r/singularity/comments/1sci4c8/iran_just_threatened_to_blow_up_stargate/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-04T19:21:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Wearable touch-sensing fabrics: the next step for humanoid robots, to feel... and respond accordingly",
         "link": "https://reddit.com/r/singularity/comments/1scfyth/wearable_touchsensing_fabrics_the_next_step_for/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-04T17:57:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "What Memory feels like",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-04T16:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Some human written nuance and perspective on the rates situation, from someone in the industry.",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-04T16:22:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Next GPT will be specifically improved for OpenClaw!",
@@ -406,16 +415,7 @@
         "published_at": "2026-04-04T16:01:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Why is nobody talking about this? (Trinity-Large-Thinking Open-Source)",
-        "link": "https://reddit.com/r/openclaw/comments/1sccg2y/why_is_nobody_talking_about_this/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T15:40:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "I don't know whether to laugh or cry",
@@ -424,7 +424,7 @@
         "published_at": "2026-04-04T15:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "I don't know whether to laugh or cry",
@@ -433,7 +433,7 @@
         "published_at": "2026-04-04T15:10:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Bruh",
@@ -442,7 +442,7 @@
         "published_at": "2026-04-04T14:55:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I sent Claude to 1998 and it rebuilt my childhood computer!",
@@ -451,7 +451,7 @@
         "published_at": "2026-04-04T14:26:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "You can continue to use Claude with Oauth and Openclaw by using my Headless TMUX library.",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-04T13:37:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T19:03:44.069Z",
+    "reddit_viral_generated_at": "2026-04-04T19:47:26.475Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
