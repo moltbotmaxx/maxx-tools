@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T15:48:03.153Z",
+    "generated_at": "2026-04-04T16:55:22.865Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I don't know whether to laugh or cry",
+        "link": "https://reddit.com/r/ChatGPT/comments/1scbpz5/i_dont_know_whether_to_laugh_or_cry/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-04T15:11:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I don't know whether to laugh or cry",
         "link": "https://reddit.com/r/OpenAI/comments/1scbpic/i_dont_know_whether_to_laugh_or_cry/",
@@ -380,6 +389,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Bruh",
+        "link": "https://reddit.com/r/ChatGPT/comments/1scbb4u/bruh/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-04T14:55:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "I sent Claude to 1998 and it rebuilt my childhood computer!",
@@ -391,15 +409,6 @@
         "viral_score": 98
       },
       {
-        "headline": "The duality of the AI hype cycle.",
-        "link": "https://reddit.com/r/OpenAI/comments/1sc8s58/the_duality_of_the_ai_hype_cycle/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-04T13:06:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
         "headline": "How is it legal to have a pricing structure where the vendor controls the meter, the unit, and the amount of product consumed?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc85b4/how_is_it_legal_to_have_a_pricing_structure_where/",
         "subreddit": "ArtificialInteligence",
@@ -407,15 +416,6 @@
         "score": 0,
         "comments": 0,
         "viral_score": 94
-      },
-      {
-        "headline": "Peter Steinberger (OpenClaw Creator) credits Boris Cherny (Claude Code Creator) amid anthropic subscription ban for using openclaw - Complete Thread",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc720i/peter_steinberger_openclaw_creator_credits_boris/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-04T11:40:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
       },
       {
         "headline": "Chatgpt confirmed an error in my Cat's blood panel by an incompetent vet hospital and quite literally saved her life",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T15:48:03.153Z",
+    "reddit_viral_generated_at": "2026-04-04T16:55:22.865Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
