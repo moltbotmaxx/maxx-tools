@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T09:00:48.962Z",
+    "generated_at": "2026-04-04T09:56:35.173Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "gemini's image understanding is so far ahead of everything else I've used and I don't see enough people talking about it",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sc4b3d/geminis_image_understanding_is_so_far_ahead_of/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-04T08:57:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Harness Engineering: Turning AI Agents Into Reliable Engineers",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc3m1t/harness_engineering_turning_ai_agents_into/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-04T08:14:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Relaxing vacation",
         "link": "https://reddit.com/r/aimemes/comments/1sc2xyi/relaxing_vacation/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-04T07:34:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "AI is better than me😭",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-04T07:32:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Claude has arguably the best model are we seeing “actions speak louder than words” actually play out like this?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-04T07:10:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Half of planned US data center builds have been delayed or canceled, growth limited by shortages of power infrastructure and parts from China — the AI build-out flips the breakers",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-04T04:09:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "This prompt is generating some highly disturbing content.",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-04T03:57:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "How is the Anthropic ban on OpenClaw affecting you, and what are your workarounds?",
@@ -424,16 +442,7 @@
         "published_at": "2026-04-04T03:49:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Running Gemma 4 on Dual 3090s with OpenClaw - 120 TPS and Agentic workflows are a game changer",
-        "link": "https://reddit.com/r/openclaw/comments/1sbxy2z/running_gemma_4_on_dual_3090s_with_openclaw_120/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T03:02:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "OpenAI President Greg Brockman Says Company Is Building an AI ‘Super App’ as Next Phase of ChatGPT",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-04T01:51:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       },
       {
         "headline": "Any Claude users revisit Chat GPT 5.4 lately? They should.",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-04T01:06:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Alright Gemini -- Fair Enough",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sbv94w/alright_gemini_fair_enough/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-04T00:55:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T09:00:48.962Z",
+    "reddit_viral_generated_at": "2026-04-04T09:56:35.173Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
