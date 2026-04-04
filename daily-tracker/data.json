@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T19:47:26.475Z",
+    "generated_at": "2026-04-04T20:50:57.816Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Confused about the anthropic credit",
+        "link": "https://reddit.com/r/openclaw/comments/1sciiqd/confused_about_the_anthropic_credit/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-04T19:37:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Iran just threatened to blow up stargate",
         "link": "https://reddit.com/r/singularity/comments/1sci4c8/iran_just_threatened_to_blow_up_stargate/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-04T19:21:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Wearable touch-sensing fabrics: the next step for humanoid robots, to feel... and respond accordingly",
@@ -388,7 +397,25 @@
         "published_at": "2026-04-04T17:57:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
+      },
+      {
+        "headline": "I was about to lose access to Claude on my OpenClaw setup. Then I found the loophole Anthropic left wide open.",
+        "link": "https://reddit.com/r/openclaw/comments/1scfqu7/i_was_about_to_lose_access_to_claude_on_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-04T17:48:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Credit over with simple text 🥲",
+        "link": "https://reddit.com/r/ChatGPT/comments/1scejkn/credit_over_with_simple_text/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-04T17:02:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "What Memory feels like",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-04T16:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Some human written nuance and perspective on the rates situation, from someone in the industry.",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-04T16:22:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Next GPT will be specifically improved for OpenClaw!",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-04T16:01:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "I don't know whether to laugh or cry",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-04T15:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "I don't know whether to laugh or cry",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-04T15:10:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Bruh",
-        "link": "https://reddit.com/r/ChatGPT/comments/1scbb4u/bruh/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-04T14:55:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I sent Claude to 1998 and it rebuilt my childhood computer!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scameo/i_sent_claude_to_1998_and_it_rebuilt_my_childhood/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-04T14:26:49+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "You can continue to use Claude with Oauth and Openclaw by using my Headless TMUX library.",
-        "link": "https://reddit.com/r/openclaw/comments/1sc9h58/you_can_continue_to_use_claude_with_oauth_and/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T13:37:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T19:47:26.475Z",
+    "reddit_viral_generated_at": "2026-04-04T20:50:57.816Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
