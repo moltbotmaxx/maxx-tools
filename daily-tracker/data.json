@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T10:53:50.274Z",
+    "generated_at": "2026-04-04T11:45:15.168Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why is Education the last to adopt the technology that could change it the most ???",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc6q5y/why_is_education_the_last_to_adopt_the_technology/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-04T11:22:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I'M DONE",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sc61uj/im_done/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-04T10:44:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "This title seems suspicious... Hmmmm...",
         "link": "https://reddit.com/r/aimemes/comments/1sc5wym/this_title_seems_suspicious_hmmmm/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-04T10:36:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "\"Cognitive surrender\" leads AI users to abandon logical thinking, research finds",
@@ -388,7 +406,16 @@
         "published_at": "2026-04-04T10:31:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Anyone notice 5.4 Thinking is better since launch?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sc57ft/anyone_notice_54_thinking_is_better_since_launch/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-04T09:53:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "gemini's image understanding is so far ahead of everything else I've used and I don't see enough people talking about it",
@@ -397,16 +424,16 @@
         "published_at": "2026-04-04T08:57:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
-        "headline": "Harness Engineering: Turning AI Agents Into Reliable Engineers",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc3m1t/harness_engineering_turning_ai_agents_into/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-04T08:14:12+00:00",
+        "headline": "why does gemini do this?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sc42f4/why_does_gemini_do_this/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-04T08:42:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Relaxing vacation",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-04T07:34:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "AI is better than me😭",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-04T07:32:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Claude has arguably the best model are we seeing “actions speak louder than words” actually play out like this?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-04T07:10:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Half of planned US data center builds have been delayed or canceled, growth limited by shortages of power infrastructure and parts from China — the AI build-out flips the breakers",
-        "link": "https://reddit.com/r/singularity/comments/1sbza4p/half_of_planned_us_data_center_builds_have_been/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-04T04:09:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "This prompt is generating some highly disturbing content.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sbz1kd/this_prompt_is_generating_some_highly_disturbing/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-04T03:57:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "How is the Anthropic ban on OpenClaw affecting you, and what are your workarounds?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sbyw2i/how_is_the_anthropic_ban_on_openclaw_affecting/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-04T03:49:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T10:53:50.274Z",
+    "reddit_viral_generated_at": "2026-04-04T11:45:15.168Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
