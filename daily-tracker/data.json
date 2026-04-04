@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-04T09:56:35.173Z",
+    "generated_at": "2026-04-04T10:53:50.274Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "This title seems suspicious... Hmmmm...",
+        "link": "https://reddit.com/r/aimemes/comments/1sc5wym/this_title_seems_suspicious_hmmmm/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-04T10:36:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "\"Cognitive surrender\" leads AI users to abandon logical thinking, research finds",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sc5u8g/cognitive_surrender_leads_ai_users_to_abandon/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-04T10:31:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "gemini's image understanding is so far ahead of everything else I've used and I don't see enough people talking about it",
         "link": "https://reddit.com/r/GeminiAI/comments/1sc4b3d/geminis_image_understanding_is_so_far_ahead_of/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-04T08:57:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Harness Engineering: Turning AI Agents Into Reliable Engineers",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-04T08:14:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Relaxing vacation",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-04T07:34:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "AI is better than me😭",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-04T07:32:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Claude has arguably the best model are we seeing “actions speak louder than words” actually play out like this?",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-04T07:10:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Half of planned US data center builds have been delayed or canceled, growth limited by shortages of power infrastructure and parts from China — the AI build-out flips the breakers",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-04T04:09:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 85
       },
       {
         "headline": "This prompt is generating some highly disturbing content.",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-04T03:57:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       },
       {
         "headline": "How is the Anthropic ban on OpenClaw affecting you, and what are your workarounds?",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-04T03:49:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "OpenAI President Greg Brockman Says Company Is Building an AI ‘Super App’ as Next Phase of ChatGPT",
-        "link": "https://reddit.com/r/OpenAI/comments/1sbwgja/openai_president_greg_brockman_says_company_is/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-04T01:51:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Any Claude users revisit Chat GPT 5.4 lately? They should.",
-        "link": "https://reddit.com/r/OpenAI/comments/1sbvi35/any_claude_users_revisit_chat_gpt_54_lately_they/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-04T01:06:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-04T09:56:35.173Z",
+    "reddit_viral_generated_at": "2026-04-04T10:53:50.274Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
