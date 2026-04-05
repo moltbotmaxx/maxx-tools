@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T20:51:31.028Z",
+    "generated_at": "2026-04-05T21:48:57.489Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "A struggling OpenClaw user, what should I do",
+        "link": "https://reddit.com/r/openclaw/comments/1sdekmt/a_struggling_openclaw_user_what_should_i_do/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T20:45:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I built a tool that tracks how many times someone posts a Claude usage limit tracker",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sdee3e/i_built_a_tool_that_tracks_how_many_times_someone/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-05T20:37:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "After Claude ban I found my new main model",
         "link": "https://reddit.com/r/openclaw/comments/1sdd32v/after_claude_ban_i_found_my_new_main_model/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-05T19:46:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "[Megathread] The Ultimate OpenClaw + Gemma 4 Stack: \"Main Brain\" Architecture, Turbo Quant 1-Clicks, & The Ollama Tool Calling Fix",
+        "link": "https://reddit.com/r/openclaw/comments/1sdcp7b/megathread_the_ultimate_openclaw_gemma_4_stack/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T19:30:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "How I get same result to with cheaper ai ?",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-05T18:49:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "OpenAI's New Stunning Image Model (Before & After)",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-05T17:29:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "this is so right ..",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-05T17:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Gemma 4 is the #1 trending model on Hugging Face ;)",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-05T17:04:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Image Create guardrails are made of wet cardboard.",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-05T16:35:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Quest to find a model that compares to Claude Sonnet 4.6 for my daily orchestrating Openclaw Agent",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-05T16:33:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Everybody celebrated Matthew Gallagher as an AI entrepreneur genius, now he is being exposed as a fraud",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sd78cr/everybody_celebrated_matthew_gallagher_as_an_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-05T15:57:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Is Gemini ragebaiting me?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sd6kf4/is_gemini_ragebaiting_me/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-05T15:30:58+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "The biggest lie we were told about AI is that it would do our jobs for us.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sd5oto/the_biggest_lie_we_were_told_about_ai_is_that_it/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-05T14:55:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T20:51:31.028Z",
+    "reddit_viral_generated_at": "2026-04-05T21:48:57.489Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
