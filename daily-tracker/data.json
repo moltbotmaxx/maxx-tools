@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T09:58:14.723Z",
+    "generated_at": "2026-04-05T10:55:39.054Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Switching to Claude Code (via VS Code/Terminal) or Moving to the OpenAI $200 Plan and sticking with OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1sd0dl7/switching_to_claude_code_via_vs_codeterminal_or/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T10:38:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "His latest interview in a nutshell",
+        "link": "https://reddit.com/r/OpenAI/comments/1scyz7f/his_latest_interview_in_a_nutshell/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-05T09:10:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "how to save 80% on your claude bill with better context",
         "link": "https://reddit.com/r/ClaudeAI/comments/1scylcr/how_to_save_80_on_your_claude_bill_with_better/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-05T08:45:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "5 Days, $25, and Still Useless? My Honest Experience Building an AI Assistant",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-05T07:39:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Claude has been saved!!!! (10+ prompts with long context)",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-05T07:35:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
+      },
+      {
+        "headline": "The greatest floor plan ever?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1scwhtg/the_greatest_floor_plan_ever/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-05T06:36:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "obviously not from Dall-E but still a hilarious example of what CGPT slop coukd actually be good at (Harry Potter and the boy who Dripped)",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-05T05:53:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Pssst... I heard some of you are having trouble connecting OpenClaw to Claude",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-05T05:42:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Sam Altman responds to viral ChatGPT issue:",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-05T05:29:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Anthropic says Claude is a “method actor.” A few months ago, we tested that. Turns out they were understating it.",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-05T05:10:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "OpenAI OAuth Success Story - Coming from Kimi and Minimax",
-        "link": "https://reddit.com/r/openclaw/comments/1scs4ho/openai_oauth_success_story_coming_from_kimi_and/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-05T02:42:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Today, I got to experience Opus 4.6 in a blazing fast speed without being queued or rate limited for like 25 minutes.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scqyh8/today_i_got_to_experience_opus_46_in_a_blazing/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T01:44:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "I got Claude Code to stop burning 40K tokens by just figuring out my codebase",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scq9vk/i_got_claude_code_to_stop_burning_40k_tokens_by/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T01:12:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T09:58:14.723Z",
+    "reddit_viral_generated_at": "2026-04-05T10:55:39.054Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
