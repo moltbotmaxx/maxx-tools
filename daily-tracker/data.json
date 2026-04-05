@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T22:53:09.377Z",
+    "generated_at": "2026-04-05T23:50:58.626Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How are we supposed to know what is \"real\" now that AI-generated content and deepfakes are almost identical to reality?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sdi6d9/how_are_we_supposed_to_know_what_is_real_now_that/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-05T23:14:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Opinion from those who have used both OpenClaw and Paperclip ?",
         "link": "https://reddit.com/r/openclaw/comments/1sdgngk/opinion_from_those_who_have_used_both_openclaw/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-05T22:09:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Microsoft says Copilot is for entertainment purposes only, not serious use — firm pushing AI hard to consumers and businesses tells users not to rely on it for important advice",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sdgn2f/microsoft_says_copilot_is_for_entertainment/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-05T22:09:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "I built a tool that tracks how many times someone posts a Claude usage limit tracker",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-05T20:37:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "After Claude ban I found my new main model",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-05T19:46:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "[Megathread] The Ultimate OpenClaw + Gemma 4 Stack: \"Main Brain\" Architecture, Turbo Quant 1-Clicks, & The Ollama Tool Calling Fix",
@@ -406,16 +424,7 @@
         "published_at": "2026-04-05T19:30:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "How I get same result to with cheaper ai ?",
-        "link": "https://reddit.com/r/openclaw/comments/1sdbndp/how_i_get_same_result_to_with_cheaper_ai/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-05T18:49:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "OpenAI's New Stunning Image Model (Before & After)",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-05T17:29:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "this is so right ..",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-05T17:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "Gemma 4 is the #1 trending model on Hugging Face ;)",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-05T17:04:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "Image Create guardrails are made of wet cardboard.",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-05T16:35:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Everybody celebrated Matthew Gallagher as an AI entrepreneur genius, now he is being exposed as a fraud",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sd78cr/everybody_celebrated_matthew_gallagher_as_an_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-05T15:57:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T22:53:09.377Z",
+    "reddit_viral_generated_at": "2026-04-05T23:50:58.626Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
