@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T10:55:39.054Z",
+    "generated_at": "2026-04-05T11:46:27.226Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Couldn’t get refund on Claude despite receiving email from Anthropic",
+        "link": "https://reddit.com/r/openclaw/comments/1sd0rdq/couldnt_get_refund_on_claude_despite_receiving/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T11:01:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Switching to Claude Code (via VS Code/Terminal) or Moving to the OpenAI $200 Plan and sticking with OpenClaw",
         "link": "https://reddit.com/r/openclaw/comments/1sd0dl7/switching_to_claude_code_via_vs_codeterminal_or/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-05T10:38:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "His latest interview in a nutshell",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-05T09:10:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "how to save 80% on your claude bill with better context",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-05T08:45:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "5 Days, $25, and Still Useless? My Honest Experience Building an AI Assistant",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-05T07:39:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Claude has been saved!!!! (10+ prompts with long context)",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-05T07:35:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "The greatest floor plan ever?",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-05T06:36:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "obviously not from Dall-E but still a hilarious example of what CGPT slop coukd actually be good at (Harry Potter and the boy who Dripped)",
@@ -433,31 +442,22 @@
         "published_at": "2026-04-05T05:53:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
+      },
+      {
+        "headline": "I built OpenMarket.cc — an agent marketplace where your OpenClaw agent can earn. Looking for early testers.",
+        "link": "https://reddit.com/r/openclaw/comments/1scvnuz/i_built_openmarketcc_an_agent_marketplace_where/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T05:48:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "Pssst... I heard some of you are having trouble connecting OpenClaw to Claude",
         "link": "https://reddit.com/r/openclaw/comments/1scvk8q/pssst_i_heard_some_of_you_are_having_trouble/",
         "subreddit": "openclaw",
         "published_at": "2026-04-05T05:42:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Sam Altman responds to viral ChatGPT issue:",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1scvc3r/sam_altman_responds_to_viral_chatgpt_issue/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-05T05:29:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Anthropic says Claude is a “method actor.” A few months ago, we tested that. Turns out they were understating it.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scuzur/anthropic_says_claude_is_a_method_actor_a_few/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T05:10:26+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T10:55:39.054Z",
+    "reddit_viral_generated_at": "2026-04-05T11:46:27.226Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
