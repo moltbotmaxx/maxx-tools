@@ -367,16 +367,25 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T13:31:03.153Z",
+    "generated_at": "2026-04-05T14:55:39.883Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "How to stop Claude telling me to go to sleep at 12pm etc?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sd2z9d/how_to_stop_claude_telling_me_to_go_to_sleep_at/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T12:58:15+00:00",
+        "headline": "One month replacing ChatGPT with OpenClaw. Personalization good. Breakage bad.",
+        "link": "https://reddit.com/r/openclaw/comments/1sd3298/one_month_replacing_chatgpt_with_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T13:01:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "One research paper wiped tens of billions from memory stocks in 48 hours. This is what happens when nobody actually reads the news they trade on.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sd31w9/one_research_paper_wiped_tens_of_billions_from/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-05T13:01:26+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -397,7 +406,16 @@
         "published_at": "2026-04-05T12:30:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "Can you make 2 AI bots talk to each other in discord?",
+        "link": "https://reddit.com/r/openclaw/comments/1sd2bly/can_you_make_2_ai_bots_talk_to_each_other_in/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T12:26:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Anyone using Grok/X AI with OpenClaw?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-05T11:52:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "‘It’s a real shock’: quantum-computing breakthroughs pose imminent risks to cybersecurity",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-05T11:32:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Switching to Claude Code (via VS Code/Terminal) or Moving to the OpenAI $200 Plan and sticking with OpenClaw",
@@ -424,7 +442,16 @@
         "published_at": "2026-04-05T10:38:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
+      },
+      {
+        "headline": "My Uncle was Arnold Schwarzenegger’s costumer spanning 11 different movies",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sczvuh/my_uncle_was_arnold_schwarzeneggers_costumer/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-05T10:07:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "His latest interview in a nutshell",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-05T09:10:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "how to save 80% on your claude bill with better context",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scylcr/how_to_save_80_on_your_claude_bill_with_better/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T08:45:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude has been saved!!!! (10+ prompts with long context)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scxheg/claude_has_been_saved_10_prompts_with_long_context/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T07:35:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Be smart with ChatGPT",
-        "link": "https://reddit.com/r/ChatGPT/comments/1scx4wn/be_smart_with_chatgpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-05T07:14:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T13:31:03.153Z",
+    "reddit_viral_generated_at": "2026-04-05T14:55:39.883Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
