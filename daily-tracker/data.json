@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T07:33:38.566Z",
+    "generated_at": "2026-04-05T09:01:23.393Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "5 Days, $25, and Still Useless? My Honest Experience Building an AI Assistant",
+        "link": "https://reddit.com/r/openclaw/comments/1scxjnu/5_days_25_and_still_useless_my_honest_experience/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T07:39:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude has been saved!!!! (10+ prompts with long context)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1scxheg/claude_has_been_saved_10_prompts_with_long_context/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-05T07:35:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I burned $40 in ONE HOUR on Claude API tokens. Then I found the pattern that cut my bill by 95%.",
+        "link": "https://reddit.com/r/openclaw/comments/1scxgx9/i_burned_40_in_one_hour_on_claude_api_tokens_then/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T07:34:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "My first open claw tool attempt,",
         "link": "https://reddit.com/r/openclaw/comments/1scvwgw/my_first_open_claw_tool_attempt/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-05T06:01:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "obviously not from Dall-E but still a hilarious example of what CGPT slop coukd actually be good at (Harry Potter and the boy who Dripped)",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-05T05:53:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "I built OpenMarket.cc — an agent marketplace where your OpenClaw agent can earn. Looking for early testers.",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-05T05:48:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Pssst... I heard some of you are having trouble connecting OpenClaw to Claude",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-05T05:42:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Sam Altman responds to viral ChatGPT issue:",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-05T05:29:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Anthropic says Claude is a “method actor.” A few months ago, we tested that. Turns out they were understating it.",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-05T05:10:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Got two agents talking with one another with less obstructions - lessons learned",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-05T03:47:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "OpenAI OAuth Success Story - Coming from Kimi and Minimax",
-        "link": "https://reddit.com/r/openclaw/comments/1scs4ho/openai_oauth_success_story_coming_from_kimi_and/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-05T02:42:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Separate email address for your Agent(s)?",
-        "link": "https://reddit.com/r/openclaw/comments/1scrlc2/separate_email_address_for_your_agents/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-05T02:16:15+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "Today, I got to experience Opus 4.6 in a blazing fast speed without being queued or rate limited for like 25 minutes.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1scqyh8/today_i_got_to_experience_opus_46_in_a_blazing/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T01:44:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T07:33:38.566Z",
+    "reddit_viral_generated_at": "2026-04-05T09:01:23.393Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
