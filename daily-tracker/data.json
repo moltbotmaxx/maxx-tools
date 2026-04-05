@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-05T03:39:35.992Z",
+    "generated_at": "2026-04-05T05:54:39.802Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Got two agents talking with one another with less obstructions - lessons learned",
+        "link": "https://reddit.com/r/openclaw/comments/1sctevg/got_two_agents_talking_with_one_another_with_less/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T03:47:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenAI OAuth Success Story - Coming from Kimi and Minimax",
+        "link": "https://reddit.com/r/openclaw/comments/1scs4ho/openai_oauth_success_story_coming_from_kimi_and/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-05T02:42:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Separate email address for your Agent(s)?",
         "link": "https://reddit.com/r/openclaw/comments/1scrlc2/separate_email_address_for_your_agents/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-05T02:16:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Today, I got to experience Opus 4.6 in a blazing fast speed without being queued or rate limited for like 25 minutes.",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-05T01:44:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "I got Claude Code to stop burning 40K tokens by just figuring out my codebase",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-05T01:12:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Gemini Watermarks in ChatGPT",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-05T00:54:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Claude is bypassing Permissions",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-05T00:53:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "I have started treating claude like a creative director instead of an assistant and the quality of my work jumped overnight",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-05T00:45:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Why are you still paying for this? #7",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-05T00:03:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Why are you still paying for this? #7",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-04T23:55:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Stop building complex \"Agent Swarms\". Just put them in a single workspace.",
-        "link": "https://reddit.com/r/openclaw/comments/1scoasa/stop_building_complex_agent_swarms_just_put_them/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T23:39:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Gemma4:12b vs Qwen3:8b quantized on my 24gb Mac Mini",
-        "link": "https://reddit.com/r/openclaw/comments/1scn3pu/gemma412b_vs_qwen38b_quantized_on_my_24gb_mac_mini/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-04T22:46:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-05T03:39:35.992Z",
+    "reddit_viral_generated_at": "2026-04-05T05:54:39.802Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
