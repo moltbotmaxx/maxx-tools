@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T21:53:03.892Z",
+    "generated_at": "2026-04-06T22:57:36.032Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,31 @@
         "viral_score": 100
       },
       {
+        "headline": "enjoy the meme",
+        "link": "https://reddit.com/r/ChatGPT/comments/1se9k59/enjoy_the_meme/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-06T19:53:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I'm having to bypass policy filter when doing legit bioinformatics",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1se9fct/im_having_to_bypass_policy_filter_when_doing/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-06T19:48:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
         "headline": "\"You need to understand that Sam can never be trusted ... He is a sociopath. He would do anything.\" - Aaron Swartz on Altman, shortly before he took his own life",
         "link": "https://reddit.com/r/OpenAI/comments/1se9cm0/you_need_to_understand_that_sam_can_never_be/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-06T19:45:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "I tried Hermes so you don't have to.",
@@ -397,22 +415,13 @@
         "published_at": "2026-04-06T17:52:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Someone made a whip for Claude",
         "link": "https://reddit.com/r/singularity/comments/1se5wfr/someone_made_a_whip_for_claude/",
         "subreddit": "singularity",
         "published_at": "2026-04-06T17:44:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Axios: Sam Altman States Superintelligence Is So Close That America Needs A New Social Contract On The Scale Of The New Deal During The Great Depression",
-        "link": "https://reddit.com/r/singularity/comments/1se5dcs/axios_sam_altman_states_superintelligence_is_so/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-06T17:26:06+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
@@ -442,22 +451,13 @@
         "published_at": "2026-04-06T15:09:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "Hermes bots taking over?",
         "link": "https://reddit.com/r/openclaw/comments/1se18em/hermes_bots_taking_over/",
         "subreddit": "openclaw",
         "published_at": "2026-04-06T14:57:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Klarna fired 700 people for AI and then admitted they messed up and started rehiring.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1se0njg/klarna_fired_700_people_for_ai_and_then_admitted/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-06T14:35:59+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 85
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T21:53:03.892Z",
+    "reddit_viral_generated_at": "2026-04-06T22:57:36.032Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
