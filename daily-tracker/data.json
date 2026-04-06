@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T03:43:06.488Z",
+    "generated_at": "2026-04-06T06:10:49.606Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenClaw 2026.4.5",
+        "link": "https://reddit.com/r/openclaw/comments/1sdq2b9/openclaw_202645/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-06T05:30:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I asked Gemini what Sun Tzu would do in Trump's position",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sdo6hj/i_asked_gemini_what_sun_tzu_would_do_in_trumps/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-06T03:50:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "TBPN",
+        "link": "https://reddit.com/r/OpenAI/comments/1sdnroz/tbpn/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-06T03:29:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "But yeah. Deepseek is censored.",
         "link": "https://reddit.com/r/ChatGPT/comments/1sdnrmh/but_yeah_deepseek_is_censored/",
@@ -379,25 +406,43 @@
         "published_at": "2026-04-06T03:29:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
-        "headline": "AI should be an assistant, not a moral authority.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sdmikg/ai_should_be_an_assistant_not_a_moral_authority/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-06T02:30:24+00:00",
+        "headline": "Senior engineer best practice for scaling yourself with Claude Code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sdne02/senior_engineer_best_practice_for_scaling/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-06T03:11:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
-        "headline": "If you're building a product that involves AI video, do you actually know which type of \"live AI video\" model you need to integrate?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sdm7n1/if_youre_building_a_product_that_involves_ai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-06T02:16:31+00:00",
+        "headline": "After months with Claude Code, the biggest time sink isn't bugs — it's silent fake success",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sdmohb/after_months_with_claude_code_the_biggest_time/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-06T02:38:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
+      },
+      {
+        "headline": "Hermes vs OpenClaw - What am I missing?",
+        "link": "https://reddit.com/r/openclaw/comments/1sdmbv2/hermes_vs_openclaw_what_am_i_missing/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-06T02:21:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "What’s the most unusual way you’ve made money using Claude?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sdieo4/whats_the_most_unusual_way_youve_made_money_using/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-05T23:24:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       },
       {
         "headline": "How are we supposed to know what is \"real\" now that AI-generated content and deepfakes are almost identical to reality?",
@@ -406,16 +451,7 @@
         "published_at": "2026-04-05T23:14:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Finally no more screen on the back of the laptop",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sdhzpq/finally_no_more_screen_on_the_back_of_the_laptop/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-05T23:06:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "Microsoft says Copilot is for entertainment purposes only, not serious use — firm pushing AI hard to consumers and businesses tells users not to rely on it for important advice",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-05T22:09:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I built a tool that tracks how many times someone posts a Claude usage limit tracker",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sdee3e/i_built_a_tool_that_tracks_how_many_times_someone/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-05T20:37:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "After Claude ban I found my new main model",
-        "link": "https://reddit.com/r/openclaw/comments/1sdd32v/after_claude_ban_i_found_my_new_main_model/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-05T19:46:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "[Megathread] The Ultimate OpenClaw + Gemma 4 Stack: \"Main Brain\" Architecture, Turbo Quant 1-Clicks, & The Ollama Tool Calling Fix",
-        "link": "https://reddit.com/r/openclaw/comments/1sdcp7b/megathread_the_ultimate_openclaw_gemma_4_stack/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-05T19:30:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Gemini Learn Mode is S Tier",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sdawmr/gemini_learn_mode_is_s_tier/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-05T18:20:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T03:43:06.488Z",
+    "reddit_viral_generated_at": "2026-04-06T06:10:49.606Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
