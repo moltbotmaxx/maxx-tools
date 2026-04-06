@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T13:47:55.697Z",
+    "generated_at": "2026-04-06T15:07:57.159Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Help Getting Started (Open, Pico, Hermes)",
+        "link": "https://reddit.com/r/openclaw/comments/1se0p3k/help_getting_started_open_pico_hermes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-06T14:37:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Bruh 💀",
+        "link": "https://reddit.com/r/GeminiAI/comments/1se0elf/bruh/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-06T14:26:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Burnt Through OpenAI OAuth Usage Limit W/O Using?",
+        "link": "https://reddit.com/r/openclaw/comments/1se00uz/burnt_through_openai_oauth_usage_limit_wo_using/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-06T14:13:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "An app visualising countries' passport powers, to see your visa requirements for different countries",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sdziq8/an_app_visualising_countries_passport_powers_to/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-06T13:54:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Gemini ad from December 2023 showcasing a capability that ended up not being real. When will we get multimodal LLMs that can actually process video in real time as accurately?",
+        "link": "https://reddit.com/r/singularity/comments/1sdzf2q/gemini_ad_from_december_2023_showcasing_a/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-06T13:50:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Bernie Sanders’s New, Necessary, Bold Act: Taking on the AI Oligarchs",
+        "link": "https://reddit.com/r/singularity/comments/1sdzdt5/bernie_sanderss_new_necessary_bold_act_taking_on/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-06T13:48:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Has Gemini gotten dramatically worse, or have we just gotten spoiled by Claude?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sdzcsw/has_gemini_gotten_dramatically_worse_or_have_we/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-06T13:47:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Is OpenClaw low-key teaching me stuff?",
         "link": "https://reddit.com/r/openclaw/comments/1sdym2h/is_openclaw_lowkey_teaching_me_stuff/",
@@ -379,7 +442,7 @@
         "published_at": "2026-04-06T13:17:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "New Yorker published a major investigation into Sam Altman and OpenAI today — based on never-before-disclosed internal memos and 100+ interviews",
@@ -388,16 +451,7 @@
         "published_at": "2026-04-06T13:10:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "had my research agent scan reddit, X, and youtube for what models people are actually switching to post-ban.",
-        "link": "https://reddit.com/r/openclaw/comments/1sdy731/had_my_research_agent_scan_reddit_x_and_youtube/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-06T13:00:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "AI breakthrough cuts energy use by 100x while boosting accuracy",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-06T12:24:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Seeing a lot of migrating from OpenClaw to Hermes posts lately. think people are missing the point",
-        "link": "https://reddit.com/r/openclaw/comments/1sdw7xc/seeing_a_lot_of_migrating_from_openclaw_to_hermes/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-06T11:30:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Just overhauled my entire smart home and NAS using Gemini as my sysadmin co-pilot, and I am genuinely blown away.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sdvn6v/just_overhauled_my_entire_smart_home_and_nas/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-06T11:01:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I’m the bottleneck",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sdv7br/im_the_bottleneck/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T10:37:19+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "Iran threatens $30bn Stargate AI hub in Abu Dhabi",
-        "link": "https://reddit.com/r/OpenAI/comments/1sduo0p/iran_threatens_30bn_stargate_ai_hub_in_abu_dhabi/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-06T10:07:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Is AI quietly killing the value of being pretty good at things?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sdtzzg/is_ai_quietly_killing_the_value_of_being_pretty/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-06T09:27:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "OpenClaw is not going to become a real product.",
-        "link": "https://reddit.com/r/openclaw/comments/1sds5ex/openclaw_is_not_going_to_become_a_real_product/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-06T07:33:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T13:47:55.697Z",
+    "reddit_viral_generated_at": "2026-04-06T15:07:57.159Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
