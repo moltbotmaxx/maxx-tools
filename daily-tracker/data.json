@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T19:31:35.965Z",
+    "generated_at": "2026-04-06T20:57:06.596Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "\"You need to understand that Sam can never be trusted ... He is a sociopath. He would do anything.\" - Aaron Swartz on Altman, shortly before he took his own life",
+        "link": "https://reddit.com/r/OpenAI/comments/1se9cm0/you_need_to_understand_that_sam_can_never_be/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-06T19:45:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I tried Hermes so you don't have to.",
         "link": "https://reddit.com/r/openclaw/comments/1se64gt/i_tried_hermes_so_you_dont_have_to/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-06T17:52:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Someone made a whip for Claude",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-06T17:44:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Axios: Sam Altman States Superintelligence Is So Close That America Needs A New Social Contract On The Scale Of The New Deal During The Great Depression",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-06T17:26:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Curious what people think of personal intelligence?",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-06T16:33:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "I set up OpenClaw for 10+ people this year , here’s what actually matters",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-06T15:26:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "the most profitable AI in my business doesnt generate images or write code. it checks stripe and posts to slack.",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-06T15:23:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Claude Code v2.1.92 introduces Ultraplan — draft plans in the cloud, review in your browser, execute anywhere",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-06T15:09:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Hermes bots taking over?",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-06T14:57:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Klarna fired 700 people for AI and then admitted they messed up and started rehiring.",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-06T14:35:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Bruh 💀",
-        "link": "https://reddit.com/r/GeminiAI/comments/1se0elf/bruh/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-06T14:26:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T19:31:35.965Z",
+    "reddit_viral_generated_at": "2026-04-06T20:57:06.596Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
