@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T11:13:52.973Z",
+    "generated_at": "2026-04-06T12:00:17.581Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Problem with Openclaw not continually working",
+        "link": "https://reddit.com/r/openclaw/comments/1sdv7ce/problem_with_openclaw_not_continually_working/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-06T10:37:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I’m the bottleneck",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sdv7br/im_the_bottleneck/",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-06T10:07:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Is AI quietly killing the value of being pretty good at things?",
@@ -409,19 +418,19 @@
         "viral_score": 93
       },
       {
-        "headline": "Astounding OpenAI Training Costs vs. Anthropic",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sdrrqd/astounding_openai_training_costs_vs_anthropic/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T07:10:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
         "headline": "Ambient “manager” with Claude Haiku — one unsolicited line, rich context, no chat UI",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sdro16/ambient_manager_with_claude_haiku_one_unsolicited/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-04-06T07:04:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "Astounding OpenAI Training Costs vs. Anthropic",
+        "link": "https://reddit.com/r/OpenAI/comments/1sdrkcz/astounding_openai_training_costs_vs_anthropic/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-06T06:58:45+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -433,7 +442,7 @@
         "published_at": "2026-04-06T06:54:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Gemini watermark on a crowd presentation in my university.",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-06T06:03:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "As an autistic person, claude is the friend I always wanted but never had",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sdq4eu/as_an_autistic_person_claude_is_the_friend_i/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T05:34:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T11:13:52.973Z",
+    "reddit_viral_generated_at": "2026-04-06T12:00:17.581Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
