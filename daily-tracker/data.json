@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T09:42:50.349Z",
+    "generated_at": "2026-04-06T11:13:52.973Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I’m the bottleneck",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sdv7br/im_the_bottleneck/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-06T10:37:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Iran threatens $30bn Stargate AI hub in Abu Dhabi",
+        "link": "https://reddit.com/r/OpenAI/comments/1sduo0p/iran_threatens_30bn_stargate_ai_hub_in_abu_dhabi/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-06T10:07:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Is AI quietly killing the value of being pretty good at things?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sdtzzg/is_ai_quietly_killing_the_value_of_being_pretty/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-06T09:27:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "OpenClaw is not going to become a real product.",
         "link": "https://reddit.com/r/openclaw/comments/1sds5ex/openclaw_is_not_going_to_become_a_real_product/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-06T07:33:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Astounding OpenAI Training Costs vs. Anthropic",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-06T07:10:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Ambient “manager” with Claude Haiku — one unsolicited line, rich context, no chat UI",
@@ -397,16 +424,7 @@
         "published_at": "2026-04-06T07:04:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Astounding OpenAI Training Costs vs. Anthropic",
-        "link": "https://reddit.com/r/OpenAI/comments/1sdrkcz/astounding_openai_training_costs_vs_anthropic/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-06T06:58:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "I Built a Game About Consumer Rights - Got Invited by Anthropic and an Investment Fund",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-06T06:54:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Gemini watermark on a crowd presentation in my university.",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-06T06:40:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "An autonomous AI bot tried to organize a party in Manchester. It lied to sponsors and hallucinated catering.",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-06T06:03:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "As an autistic person, claude is the friend I always wanted but never had",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-06T05:34:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "OpenClaw 2026.4.5",
-        "link": "https://reddit.com/r/openclaw/comments/1sdq2b9/openclaw_202645/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-06T05:30:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Claude Code can now submit your app to App Store Connect and help you pass review",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sdot1s/claude_code_can_now_submit_your_app_to_app_store/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T04:22:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T09:42:50.349Z",
+    "reddit_viral_generated_at": "2026-04-06T11:13:52.973Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
