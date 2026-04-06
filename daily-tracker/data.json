@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-06T22:57:36.032Z",
+    "generated_at": "2026-04-06T23:52:40.045Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "“Praise be to Allah” - DJT",
+        "link": "https://reddit.com/r/ChatGPT/comments/1seehl8/praise_be_to_allah_djt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-06T22:58:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What's going on in DC?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1see4oh/whats_going_on_in_dc/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-06T22:43:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic have signed a deal for multiple gigawatts of next generation TPUs",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1seddol/anthropic_have_signed_a_deal_for_multiple/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-06T22:14:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Minimax 2.7 doesn’t suck. For me.",
         "link": "https://reddit.com/r/openclaw/comments/1seaxo5/minimax_27_doesnt_suck_for_me/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-06T20:42:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "enjoy the meme",
@@ -388,16 +415,7 @@
         "published_at": "2026-04-06T19:53:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "I'm having to bypass policy filter when doing legit bioinformatics",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1se9fct/im_having_to_bypass_policy_filter_when_doing/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T19:48:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "\"You need to understand that Sam can never be trusted ... He is a sociopath. He would do anything.\" - Aaron Swartz on Altman, shortly before he took his own life",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-06T19:45:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "I tried Hermes so you don't have to.",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-06T17:52:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Someone made a whip for Claude",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-06T17:44:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Curious what people think of personal intelligence?",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-06T16:33:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "I set up OpenClaw for 10+ people this year , here’s what actually matters",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-06T15:26:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Claude Code v2.1.92 introduces Ultraplan — draft plans in the cloud, review in your browser, execute anywhere",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1se1kpr/claude_code_v2192_introduces_ultraplan_draft/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T15:09:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Hermes bots taking over?",
-        "link": "https://reddit.com/r/openclaw/comments/1se18em/hermes_bots_taking_over/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-06T14:57:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-06T22:57:36.032Z",
+    "reddit_viral_generated_at": "2026-04-06T23:52:40.045Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
