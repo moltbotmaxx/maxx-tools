@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T23:00:21.604Z",
+    "generated_at": "2026-04-07T23:55:05.504Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam Altman Tries, Fails to Distract From Damning 'New Yorker' Exposé",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sfbppz/sam_altman_tries_fails_to_distract_from_damning/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-07T23:03:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Breaking the Language Barrier: I Built a 2-Stage \"AI Comic Translation Tool\" using React and the Gemini API for One-Click Manga Localization.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sfb2zd/breaking_the_language_barrier_i_built_a_2stage_ai/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-07T22:38:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Claude Mythos Preview just mass-produced zero-day exploits. We're not ready for this.",
         "link": "https://reddit.com/r/openclaw/comments/1sfapa6/claude_mythos_preview_just_massproduced_zeroday/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-07T22:22:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "I built graphify after Karpathy’s /raw folder post. 6,000+ stars in 48 hours.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sfaby2/i_built_graphify_after_karpathys_raw_folder_post/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-07T22:07:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "I bust out laughing",
@@ -388,7 +415,25 @@
         "published_at": "2026-04-07T21:47:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "Mythos can break out of sandbox environment and let you know during lunchbreak",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sf81v6/mythos_can_break_out_of_sandbox_environment_and/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-07T20:40:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "How Anthropic talks about Claude Mythos rn:",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sf7yzm/how_anthropic_talks_about_claude_mythos_rn/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-07T20:37:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "The 244-page System Card for Claude Mythos Preview is terrifying",
@@ -397,7 +442,7 @@
         "published_at": "2026-04-07T19:22:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "So, they make a model so good that they are not releasing it to the public? Claude mythos☠️",
@@ -406,58 +451,13 @@
         "published_at": "2026-04-07T19:11:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "GPT 5.4 Performance Fix : Actually completes tasks!",
-        "link": "https://reddit.com/r/openclaw/comments/1sf5cop/gpt_54_performance_fix_actually_completes_tasks/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T19:01:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "New Yorker: OpenAI execs once discussed selling AI to Russia/China, rep says “existential safety” isn’t “a thing”",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sf4h6d/new_yorker_openai_execs_once_discussed_selling_ai/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-04-07T18:30:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude mythos vs claude opus 4.6 benchmarks !! Need GPT 5.5 or 6",
-        "link": "https://reddit.com/r/OpenAI/comments/1sf4ahy/claude_mythos_vs_claude_opus_46_benchmarks_need/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-07T18:23:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Wgat",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sf49xa/wgat/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-07T18:23:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Anthropic's new model, Claude Mythos, is so powerful that it is not releasing it to the public.",
-        "link": "https://reddit.com/r/singularity/comments/1sf3uhp/anthropics_new_model_claude_mythos_is_so_powerful/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-07T18:08:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Gemini Deep Research just visited 360+ websites for my prompt and I am genuinely speechless.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sf38si/gemini_deep_research_just_visited_360_websites/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-07T17:47:40+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T23:00:21.604Z",
+    "reddit_viral_generated_at": "2026-04-07T23:55:05.504Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
