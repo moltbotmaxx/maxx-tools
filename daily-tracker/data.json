@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T14:02:41.994Z",
+    "generated_at": "2026-04-07T15:47:09.620Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude API costs are through the roof. Any one have cost saving tips?",
+        "link": "https://reddit.com/r/openclaw/comments/1sezis7/claude_api_costs_are_through_the_roof_any_one/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T15:38:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Openclaw for the poor",
+        "link": "https://reddit.com/r/openclaw/comments/1sey0bq/openclaw_for_the_poor/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T14:43:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "An actress Milla Jovovich just released a free open-source AI memory system that scored 100% on LongMemEval, beating every paid solution",
+        "link": "https://reddit.com/r/singularity/comments/1sexr5v/an_actress_milla_jovovich_just_released_a_free/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-07T14:34:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I feel like all my agents just had a collective aneurysm.",
+        "link": "https://reddit.com/r/openclaw/comments/1sexfhx/i_feel_like_all_my_agents_just_had_a_collective/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T14:22:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "OpenClaw + lazy GPT - SOLVED!",
+        "link": "https://reddit.com/r/openclaw/comments/1sex45x/openclaw_lazy_gpt_solved/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T14:10:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I switched to Minimax m2.7",
+        "link": "https://reddit.com/r/openclaw/comments/1sewv8f/i_switched_to_minimax_m27/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T14:01:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "AI hype is running into a $7 trillion wall and the real bottleneck",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sevuza/ai_hype_is_running_into_a_7_trillion_wall_and_the/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-07T13:22:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Pro is in high demand right now",
+        "link": "https://reddit.com/r/GeminiAI/comments/1seuq8y/pro_is_in_high_demand_right_now/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-07T12:36:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
       {
         "headline": "Actual OC implementations",
         "link": "https://reddit.com/r/openclaw/comments/1setwvz/actual_oc_implementations/",
@@ -379,85 +451,13 @@
         "published_at": "2026-04-07T12:00:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Megathread: If you've moved OpenClaw off Claude as your primary model, what have you moved to?",
-        "link": "https://reddit.com/r/openclaw/comments/1sethaw/megathread_if_youve_moved_openclaw_off_claude_as/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T11:39:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Netflix recently launched VOID their subject removal model [under physics laws]",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1seso7w/netflix_recently_launched_void_their_subject/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-07T10:58:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Anonymous Sources Detail Sam Altman’s Alleged Untrustworthiness in New Report",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sesjf4/anonymous_sources_detail_sam_altmans_alleged/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-07T10:51:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Mood",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ses90x/mood/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-07T10:35:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67%",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ses1qm/anthropic_stayed_quiet_until_someone_showed/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T10:24:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "They should try thinking about thinking....",
-        "link": "https://reddit.com/r/aimemes/comments/1seqpw9/they_should_try_thinking_about_thinking/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-07T09:06:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "it's happening, recursive self improvement: AI improves AI",
-        "link": "https://reddit.com/r/singularity/comments/1seqm3k/its_happening_recursive_self_improvement_ai/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-07T09:00:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Boris Charny, creator of Claude Code, engages with external developers and accepts task performance degradation since February was not only due to user error.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1seqhsw/boris_charny_creator_of_claude_code_engages_with/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T08:53:03+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "I agree with this take that human advice will still have a upper hand in the future",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sepuol/i_agree_with_this_take_that_human_advice_will/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-07T08:12:30+00:00",
+        "headline": "Cancelled my Granola subscription, OpenClaw handles my meetings now",
+        "link": "https://reddit.com/r/openclaw/comments/1setr8z/cancelled_my_granola_subscription_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T11:52:52+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T14:02:41.994Z",
+    "reddit_viral_generated_at": "2026-04-07T15:47:09.620Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
