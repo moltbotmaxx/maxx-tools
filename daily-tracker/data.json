@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T17:17:08.080Z",
+    "generated_at": "2026-04-07T18:12:02.389Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Overall, OpenAI is crushing Anthropic for my setup",
+        "link": "https://reddit.com/r/openclaw/comments/1sf3ead/overall_openai_is_crushing_anthropic_for_my_setup/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T17:53:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Peak AI",
         "link": "https://reddit.com/r/aimemes/comments/1sf203u/peak_ai/",
@@ -379,25 +388,16 @@
         "published_at": "2026-04-07T17:05:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Kracuible Spiral Memory 🜛",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sf0vc2/kracuible_spiral_memory/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-07T16:25:53+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 98
       },
       {
-        "headline": "Claude API costs are through the roof. Any one have cost saving tips?",
-        "link": "https://reddit.com/r/openclaw/comments/1sezis7/claude_api_costs_are_through_the_roof_any_one/",
+        "headline": "Making r/OpenClaw less mind-numbing: New rules, less slop",
+        "link": "https://reddit.com/r/openclaw/comments/1sf1wvq/making_ropenclaw_less_mindnumbing_new_rules_less/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-07T15:38:31+00:00",
+        "published_at": "2026-04-07T17:02:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 98
       },
       {
         "headline": "Openclaw for the poor",
@@ -406,7 +406,7 @@
         "published_at": "2026-04-07T14:43:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "An actress Milla Jovovich just released a free open-source AI memory system that scored 100% on LongMemEval, beating every paid solution",
@@ -415,7 +415,7 @@
         "published_at": "2026-04-07T14:34:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "I feel like all my agents just had a collective aneurysm.",
@@ -424,7 +424,7 @@
         "published_at": "2026-04-07T14:22:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "I switched to Minimax m2.7",
@@ -433,7 +433,7 @@
         "published_at": "2026-04-07T14:01:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "new claude users: \"call me an engineer\"",
@@ -442,7 +442,7 @@
         "published_at": "2026-04-07T13:25:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "AI hype is running into a $7 trillion wall and the real bottleneck",
@@ -451,7 +451,7 @@
         "published_at": "2026-04-07T13:22:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "“The problem is Sam Altman”: OpenAI Insiders don’t trust CEO",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-07T13:00:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T17:17:08.080Z",
+    "reddit_viral_generated_at": "2026-04-07T18:12:02.389Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
