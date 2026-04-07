@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T11:15:52.982Z",
+    "generated_at": "2026-04-07T12:04:50.571Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Netflix recently launched VOID their subject removal model [under physics laws]",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1seso7w/netflix_recently_launched_void_their_subject/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-07T10:58:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anonymous Sources Detail Sam Altman’s Alleged Untrustworthiness in New Report",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sesjf4/anonymous_sources_detail_sam_altmans_alleged/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-07T10:51:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Mood",
         "link": "https://reddit.com/r/GeminiAI/comments/1ses90x/mood/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-07T10:35:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67%",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-07T10:24:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Can you tell me that doing this is totally possible in openclaw?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-07T09:43:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "They should try thinking about thinking....",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-07T09:06:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "I agree with this take that human advice will still have a upper hand in the future",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-07T08:12:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "You accidentally say “Hello” to Claude and it consumes 4% of your session limit.",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-07T08:06:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Ummm... What? Apparently, Gemini is now in fact ChatGPT",
@@ -433,41 +451,23 @@
         "published_at": "2026-04-07T07:43:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
-        "headline": "Sam Altman's sister accusing him of rampant sexual abuse when they were young",
-        "link": "https://reddit.com/r/ChatGPT/comments/1seo978/sam_altmans_sister_accusing_him_of_rampant_sexual/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-07T06:36:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Life after Claude",
-        "link": "https://reddit.com/r/openclaw/comments/1sen8m6/life_after_claude/",
+        "headline": "Spent more on Paperclip heartbeats than on rent. Had to fix that.",
+        "link": "https://reddit.com/r/openclaw/comments/1seolaj/spent_more_on_paperclip_heartbeats_than_on_rent/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-07T05:38:23+00:00",
+        "published_at": "2026-04-07T06:56:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Robo security dog doing his rounds in Atlanta",
-        "link": "https://reddit.com/r/singularity/comments/1semz16/robo_security_dog_doing_his_rounds_in_atlanta/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-07T05:23:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T11:15:52.982Z",
+    "reddit_viral_generated_at": "2026-04-07T12:04:50.571Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
