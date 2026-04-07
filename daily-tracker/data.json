@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T03:32:22.237Z",
+    "generated_at": "2026-04-07T05:57:27.823Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Life after Claude",
+        "link": "https://reddit.com/r/openclaw/comments/1sen8m6/life_after_claude/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T05:38:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What to use openclaw for as a regular person who don't need to work with Emails and all?",
+        "link": "https://reddit.com/r/openclaw/comments/1sekzv1/what_to_use_openclaw_for_as_a_regular_person_who/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T03:43:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "MUFFLED YELL! DESPERATE! 🔥🔥🔥🔥🔥✍️🦅🦅🦅🦅🚗",
         "link": "https://reddit.com/r/aimemes/comments/1sekb7g/muffled_yell_desperate/",
@@ -379,7 +397,34 @@
         "published_at": "2026-04-07T03:10:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "What is the best OS for Open Claw and why ? Linux vs Mac OS",
+        "link": "https://reddit.com/r/openclaw/comments/1sekb03/what_is_the_best_os_for_open_claw_and_why_linux/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T03:10:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Someone made a digital whip to make claude work faster 💀",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sek7gk/someone_made_a_digital_whip_to_make_claude_work/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-07T03:06:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Thanks ChatGPT, for literally saving my life last night.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sejdgs/thanks_chatgpt_for_literally_saving_my_life_last/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-07T02:28:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Gemini Projects are here!!!",
@@ -388,25 +433,16 @@
         "published_at": "2026-04-07T02:12:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
-        "headline": "I had Claude Cowork do my taxes for me and it worked perfectly",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1seigxa/i_had_claude_cowork_do_my_taxes_for_me_and_it/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T01:47:49+00:00",
+        "headline": "Am I the only one that reads this and thinks “Woah, Gemini thinks Humans are perfect”",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sei2ys/am_i_the_only_one_that_reads_this_and_thinks_woah/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-07T01:31:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Walking back home w/ phone in pocket. Didn’t once talk to Claude.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sehz8m/walking_back_home_w_phone_in_pocket_didnt_once/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T01:26:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "I switched my OpenClaw setup from Claude to ChatGPT, and the part I missed wasn’t what I expected",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-07T00:52:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Anthropic has now hit $30b in revenue",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-07T00:23:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "13 shots fired into home of Indianapolis city councilor; note reading “No data centers” left at scene.",
-        "link": "https://reddit.com/r/singularity/comments/1seflyg/13_shots_fired_into_home_of_indianapolis_city/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-06T23:44:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini App preparing for Projects rollout (apparently)",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sefhlv/gemini_app_preparing_for_projects_rollout/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-06T23:39:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Opus 4.6 doesn't like rocks lol",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1seeoh7/opus_46_doesnt_like_rocks_lol/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-06T23:06:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "“Praise be to Allah” - DJT",
-        "link": "https://reddit.com/r/ChatGPT/comments/1seehl8/praise_be_to_allah_djt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-06T22:58:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T03:32:22.237Z",
+    "reddit_viral_generated_at": "2026-04-07T05:57:27.823Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
