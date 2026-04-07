@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T09:35:49.061Z",
+    "generated_at": "2026-04-07T11:15:52.982Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Mood",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ses90x/mood/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-07T10:35:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67%",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ses1qm/anthropic_stayed_quiet_until_someone_showed/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-07T10:24:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Can you tell me that doing this is totally possible in openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1serby3/can_you_tell_me_that_doing_this_is_totally/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-07T09:43:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "They should try thinking about thinking....",
         "link": "https://reddit.com/r/aimemes/comments/1seqpw9/they_should_try_thinking_about_thinking/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-07T09:06:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "I agree with this take that human advice will still have a upper hand in the future",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-07T08:12:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "You accidentally say “Hello” to Claude and it consumes 4% of your session limit.",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-07T08:06:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Ummm... What? Apparently, Gemini is now in fact ChatGPT",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-07T07:43:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Sam Altman's sister accusing him of rampant sexual abuse when they were young",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-07T06:36:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Life after Claude",
@@ -424,50 +451,23 @@
         "published_at": "2026-04-07T05:38:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
-        "headline": "I ran Gemma 4 26B vs Qwen 3.5 27B across 18 real local business tests on my RTX 4090. Gemma won 13 to 5.",
-        "link": "https://reddit.com/r/openclaw/comments/1semnva/i_ran_gemma_4_26b_vs_qwen_35_27b_across_18_real/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T05:07:06+00:00",
+        "headline": "Robo security dog doing his rounds in Atlanta",
+        "link": "https://reddit.com/r/singularity/comments/1semz16/robo_security_dog_doing_his_rounds_in_atlanta/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-07T05:23:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "You could force the \"Rule 1/2\" even before leak. Just make a slash command.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1selzc1/you_could_force_the_rule_12_even_before_leak_just/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-07T04:31:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "MUFFLED YELL! DESPERATE! 🔥🔥🔥🔥🔥✍️🦅🦅🦅🦅🚗",
-        "link": "https://reddit.com/r/aimemes/comments/1sekb7g/muffled_yell_desperate/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-07T03:10:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Someone made a digital whip to make claude work faster 💀",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sek7gk/someone_made_a_digital_whip_to_make_claude_work/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T03:06:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T09:35:49.061Z",
+    "reddit_viral_generated_at": "2026-04-07T11:15:52.982Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
