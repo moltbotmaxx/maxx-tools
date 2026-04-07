@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T22:00:00.066Z",
+    "generated_at": "2026-04-07T23:00:21.604Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Claude API account banned despite pay as you go setup",
-        "link": "https://reddit.com/r/openclaw/comments/1sf7iac/claude_api_account_banned_despite_pay_as_you_go/",
+        "headline": "Claude Mythos Preview just mass-produced zero-day exploits. We're not ready for this.",
+        "link": "https://reddit.com/r/openclaw/comments/1sfapa6/claude_mythos_preview_just_massproduced_zeroday/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-07T20:20:53+00:00",
+        "published_at": "2026-04-07T22:22:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "I bust out laughing",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sf9sub/i_bust_out_laughing/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-07T21:47:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "The 244-page System Card for Claude Mythos Preview is terrifying",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-07T19:22:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "So, they make a model so good that they are not releasing it to the public? Claude mythos☠️",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-07T19:11:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "GPT 5.4 Performance Fix : Actually completes tasks!",
@@ -406,16 +415,7 @@
         "published_at": "2026-04-07T19:01:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic's new Mythos Preview model is a \"step change\" in model capability, but it won't be available to general public",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sf4xfr/anthropics_new_mythos_preview_model_is_a_step/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T18:46:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "New Yorker: OpenAI execs once discussed selling AI to Russia/China, rep says “existential safety” isn’t “a thing”",
@@ -424,7 +424,16 @@
         "published_at": "2026-04-07T18:30:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
+      },
+      {
+        "headline": "Claude mythos vs claude opus 4.6 benchmarks !! Need GPT 5.5 or 6",
+        "link": "https://reddit.com/r/OpenAI/comments/1sf4ahy/claude_mythos_vs_claude_opus_46_benchmarks_need/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-07T18:23:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Wgat",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-07T18:23:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Anthropic's new model, Claude Mythos, is so powerful that it is not releasing it to the public.",
@@ -442,32 +451,23 @@
         "published_at": "2026-04-07T18:08:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
-        "headline": "I made a USB-Claude who gets my attention when Claude Code finishes a response",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sf2m3p/i_made_a_usbclaude_who_gets_my_attention_when/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-07T17:25:46+00:00",
+        "headline": "Gemini Deep Research just visited 360+ websites for my prompt and I am genuinely speechless.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sf38si/gemini_deep_research_just_visited_360_websites/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-07T17:47:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Peak AI",
-        "link": "https://reddit.com/r/aimemes/comments/1sf203u/peak_ai/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-07T17:05:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T22:00:00.066Z",
+    "reddit_viral_generated_at": "2026-04-07T23:00:21.604Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
