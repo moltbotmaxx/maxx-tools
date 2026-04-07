@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-07T19:33:32.068Z",
+    "generated_at": "2026-04-07T21:05:10.230Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "So, they make a model so good that they are not releasing it to the public? Claude mythos☠️",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sf5m3o/so_they_make_a_model_so_good_that_they_are_not/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-07T19:11:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "GPT 5.4 Performance Fix : Actually completes tasks!",
         "link": "https://reddit.com/r/openclaw/comments/1sf5cop/gpt_54_performance_fix_actually_completes_tasks/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-07T19:01:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic's new Mythos Preview model is a \"step change\" in model capability, but it won't be available to general public",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sf4xfr/anthropics_new_mythos_preview_model_is_a_step/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-07T18:46:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "New Yorker: OpenAI execs once discussed selling AI to Russia/China, rep says “existential safety” isn’t “a thing”",
@@ -388,13 +406,13 @@
         "published_at": "2026-04-07T18:30:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
-        "headline": "Is \"Geometric Security\" the missing trust layer for web agents? (Or am I just overthinking my VRAM bottleneck?)",
-        "link": "https://reddit.com/r/openclaw/comments/1sf3ojw/is_geometric_security_the_missing_trust_layer_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T18:02:53+00:00",
+        "headline": "Anthropic's new model, Claude Mythos, is so powerful that it is not releasing it to the public.",
+        "link": "https://reddit.com/r/singularity/comments/1sf3uhp/anthropics_new_model_claude_mythos_is_so_powerful/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-07T18:08:30+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
@@ -406,7 +424,7 @@
         "published_at": "2026-04-07T17:53:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "I made a USB-Claude who gets my attention when Claude Code finishes a response",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-07T17:25:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Peak AI",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-07T17:05:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Making r/OpenClaw less mind-numbing: New rules, less slop",
@@ -433,16 +451,7 @@
         "published_at": "2026-04-07T17:02:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Openclaw for the poor",
-        "link": "https://reddit.com/r/openclaw/comments/1sey0bq/openclaw_for_the_poor/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T14:43:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 93
       },
       {
         "headline": "An actress Milla Jovovich just released a free open-source AI memory system that scored 100% on LongMemEval, beating every paid solution",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-07T14:34:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I switched to Minimax m2.7",
-        "link": "https://reddit.com/r/openclaw/comments/1sewv8f/i_switched_to_minimax_m27/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T14:01:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-07T19:33:32.068Z",
+    "reddit_viral_generated_at": "2026-04-07T21:05:10.230Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
