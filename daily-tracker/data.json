@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T19:41:26.040Z",
+    "generated_at": "2026-04-08T21:03:26.443Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "\"No AI\" disclaimers are rising among marketers",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sg43dk/no_ai_disclaimers_are_rising_among_marketers/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-08T20:12:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Roasting challenge",
+        "link": "https://reddit.com/r/aimemes/comments/1sg3rfy/roasting_challenge/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-08T20:00:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I effing hate open ai with open claw",
+        "link": "https://reddit.com/r/openclaw/comments/1sg2vjq/i_effing_hate_open_ai_with_open_claw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T19:27:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude announces Managed Agents",
+        "link": "https://reddit.com/r/openclaw/comments/1sg2iz8/claude_announces_managed_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T19:15:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Stuck in \"Subscription Limbo\": Anthropic Ban + Alibaba Sold Out. Best OpenClaw strategy?",
+        "link": "https://reddit.com/r/openclaw/comments/1sg2ckp/stuck_in_subscription_limbo_anthropic_ban_alibaba/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T19:08:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "All because y’all couldn’t stop yourselves from posting celebs in bikinis 🤣",
         "link": "https://reddit.com/r/GeminiAI/comments/1sg0qnv/all_because_yall_couldnt_stop_yourselves_from/",
@@ -379,7 +424,7 @@
         "published_at": "2026-04-08T18:11:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "OpenRouter Free Throttled?",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-08T17:55:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "From Inside the Meat - short film",
@@ -397,7 +442,16 @@
         "published_at": "2026-04-08T17:52:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "If You Want OpenClaw to Feel More Like a System, Start Here",
+        "link": "https://reddit.com/r/openclaw/comments/1sg07ej/if_you_want_openclaw_to_feel_more_like_a_system/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T17:52:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Is this sub just bots that bash Gemini?",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-08T17:22:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Muse Spark, first model from Meta Superintelligence Labs",
-        "link": "https://reddit.com/r/singularity/comments/1sfxfv3/muse_spark_first_model_from_meta/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T16:15:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Something happened to Opus 4.6's reasoning effort",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sfw9b5/something_happened_to_opus_46s_reasoning_effort/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-08T15:32:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Silicon Valley tech bros in a nutshell",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sfuvpf/silicon_valley_tech_bros_in_a_nutshell/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-08T14:43:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I vibe coded a web app to turn Wikipedia rabbit holes into visual maps",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sfu9d9/i_vibe_coded_a_web_app_to_turn_wikipedia_rabbit/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-08T14:21:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "when the customer requests their backup",
-        "link": "https://reddit.com/r/aimemes/comments/1sftloh/when_the_customer_requests_their_backup/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-08T13:57:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Monetization truly doesn’t care how big your user base is. People will always pay for what is working best for them in the moment. Entrepreneurial lesson of this era",
-        "link": "https://reddit.com/r/OpenAI/comments/1sftdkl/monetization_truly_doesnt_care_how_big_your_user/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-08T13:48:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T19:41:26.040Z",
+    "reddit_viral_generated_at": "2026-04-08T21:03:26.443Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
