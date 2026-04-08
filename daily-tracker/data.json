@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T15:49:07.672Z",
+    "generated_at": "2026-04-08T17:33:36.731Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is this sub just bots that bash Gemini?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sfzctr/is_this_sub_just_bots_that_bash_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-08T17:22:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Muse Spark, first model from Meta Superintelligence Labs",
+        "link": "https://reddit.com/r/singularity/comments/1sfxfv3/muse_spark_first_model_from_meta/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-08T16:15:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Something happened to Opus 4.6's reasoning effort",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sfw9b5/something_happened_to_opus_46s_reasoning_effort/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-08T15:32:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Silicon Valley tech bros in a nutshell",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sfuvpf/silicon_valley_tech_bros_in_a_nutshell/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-08T14:43:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "I vibe coded a web app to turn Wikipedia rabbit holes into visual maps",
         "link": "https://reddit.com/r/GeminiAI/comments/1sfu9d9/i_vibe_coded_a_web_app_to_turn_wikipedia_rabbit/",
@@ -379,25 +415,7 @@
         "published_at": "2026-04-08T14:21:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Gemini CLI is completely unusable now.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sftzgq/gemini_cli_is_completely_unusable_now/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-08T14:11:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Sam Altman's Coworkers Say He Can Barely Code and Misunderstands Basic Machine Learning Concepts: \"\"I think there's a small but real chance he's eventually remembered as a Bernie Madoff- or Sam Bankman-Fried-level scammer.\"",
-        "link": "https://reddit.com/r/singularity/comments/1sftwg9/sam_altmans_coworkers_say_he_can_barely_code_and/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T14:08:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "when the customer requests their backup",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-08T13:57:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Monetization truly doesn’t care how big your user base is. People will always pay for what is working best for them in the moment. Entrepreneurial lesson of this era",
@@ -415,7 +433,16 @@
         "published_at": "2026-04-08T13:48:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
+      },
+      {
+        "headline": "Sam Altman and Vinod Khosla agree: AI will break the economy. Their fix is no income tax for most Americans",
+        "link": "https://reddit.com/r/singularity/comments/1sft6f8/sam_altman_and_vinod_khosla_agree_ai_will_break/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-08T13:40:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Sam Altman says AI superintelligence is so big that we need a \"New Deal.\" Critics say OpenAI’s policy ideas are a cover for \"regulatory nihilism\"",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-08T13:39:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Kept getting my accounts banned trying to get social data for my AI agents so I built my own API layer for it",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-08T13:35:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "When you let AI work on your code and environment",
-        "link": "https://reddit.com/r/aimemes/comments/1sft0ai/when_you_let_ai_work_on_your_code_and_environment/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-08T13:33:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "I gave Claude my dead game's 30-year-old files and asked it to bring the game back to life",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sfsz67/i_gave_claude_my_dead_games_30yearold_files_and/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-08T13:32:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Bluesky users are mastering the fine art of blaming everything on \"vibe coding\"",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sfr4x2/bluesky_users_are_mastering_the_fine_art_of/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-08T12:16:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T15:49:07.672Z",
+    "reddit_viral_generated_at": "2026-04-08T17:33:36.731Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
