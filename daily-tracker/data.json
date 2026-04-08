@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T21:03:26.443Z",
+    "generated_at": "2026-04-08T22:02:02.479Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "~77% of all new \"Success\" self-help books on Amazon are likely written by AI, with 1 author, Noah Felix Bennett, publishing a stunning 74 books in mid-2025 alone, at a rate of >1 per day. Richard Trillion Mantey, who has published hundreds of books, was assessed to have used AI for every single book",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sg5aqc/77_of_all_new_success_selfhelp_books_on_amazon/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-08T20:57:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "\"No AI\" disclaimers are rising among marketers",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sg43dk/no_ai_disclaimers_are_rising_among_marketers/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-08T20:12:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Roasting challenge",
@@ -388,7 +397,16 @@
         "published_at": "2026-04-08T20:00:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude Opus vs Mythos",
+        "link": "https://reddit.com/r/singularity/comments/1sg2wwj/claude_opus_vs_mythos/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-08T19:29:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "I effing hate open ai with open claw",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-08T19:27:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Claude announces Managed Agents",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-08T19:15:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Stuck in \"Subscription Limbo\": Anthropic Ban + Alibaba Sold Out. Best OpenClaw strategy?",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-08T19:08:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "All because y’all couldn’t stop yourselves from posting celebs in bikinis 🤣",
@@ -424,7 +442,16 @@
         "published_at": "2026-04-08T18:11:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
+      },
+      {
+        "headline": "Former OpenAI exec: \"The truth is, we're building portals from which we're genuinely summoning aliens ... The portals currently exist in the US, and China, and Sam has added one in the Middle East ... It's the most reckless thing that has been done.\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1sg0kpp/former_openai_exec_the_truth_is_were_building/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-08T18:05:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "OpenRouter Free Throttled?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-08T17:55:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "From Inside the Meat - short film",
-        "link": "https://reddit.com/r/singularity/comments/1sg07os/from_inside_the_meat_short_film/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T17:52:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "If You Want OpenClaw to Feel More Like a System, Start Here",
-        "link": "https://reddit.com/r/openclaw/comments/1sg07ej/if_you_want_openclaw_to_feel_more_like_a_system/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-08T17:52:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Is this sub just bots that bash Gemini?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sfzctr/is_this_sub_just_bots_that_bash_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-08T17:22:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T21:03:26.443Z",
+    "reddit_viral_generated_at": "2026-04-08T22:02:02.479Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
