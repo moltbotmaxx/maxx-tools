@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T03:33:36.407Z",
+    "generated_at": "2026-04-08T05:59:14.022Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Meta's internal leaderboard ranks employees by AI token consumption...are we measuring the wrong thing?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sfjjj8/metas_internal_leaderboard_ranks_employees_by_ai/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-08T05:05:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Ohhhh, I'm sorrrry, AI safety means megacorps only.",
+        "link": "https://reddit.com/r/singularity/comments/1sfj1e9/ohhhh_im_sorrrry_ai_safety_means_megacorps_only/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-08T04:37:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Joanne Jang , has left OpenAI",
+        "link": "https://reddit.com/r/OpenAI/comments/1sfigi4/joanne_jang_has_left_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-08T04:07:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Carlini, one of the world best AI security researchers: \"I've found more bugs in the last few weeks with Mythos than in the rest of my entire life combined\"",
+        "link": "https://reddit.com/r/singularity/comments/1sfhvpa/carlini_one_of_the_world_best_ai_security/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-08T03:39:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Ok wtf is going on",
         "link": "https://reddit.com/r/GeminiAI/comments/1sfex9m/ok_wtf_is_going_on/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-08T01:22:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "Anthropic’s Restraint Is a Terrifying Warning Sign (Gift Article)",
@@ -388,16 +424,7 @@
         "published_at": "2026-04-08T01:06:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "90%+ fewer tokens per session by reading a pre-compiled wiki instead of exploring files cold. Built from Karpathy's workflow.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sfdztg/90_fewer_tokens_per_session_by_reading_a/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-08T00:41:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 90
       },
       {
         "headline": "Every Anthropic press release",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-08T00:37:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
       },
       {
         "headline": "Codex resets its usage limit today! 3M users it seems",
@@ -415,7 +442,16 @@
         "published_at": "2026-04-07T23:28:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
+      },
+      {
+        "headline": "Funny prompt : Based on your experience talking to me, give me character from a movie or series that’s just like me and just tell me the name",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sfbuvx/funny_prompt_based_on_your_experience_talking_to/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-07T23:09:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       },
       {
         "headline": "Sam Altman Tries, Fails to Distract From Damning 'New Yorker' Exposé",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-07T23:03:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Sam Altman Tries, Fails to Distract From Damning 'New Yorker' Exposé",
-        "link": "https://reddit.com/r/OpenAI/comments/1sfbjjn/sam_altman_tries_fails_to_distract_from_damning/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-07T22:56:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Breaking the Language Barrier: I Built a 2-Stage \"AI Comic Translation Tool\" using React and the Gemini API for One-Click Manga Localization.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sfb2zd/breaking_the_language_barrier_i_built_a_2stage_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-07T22:38:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Claude Mythos Preview just mass-produced zero-day exploits. We're not ready for this.",
-        "link": "https://reddit.com/r/openclaw/comments/1sfapa6/claude_mythos_preview_just_massproduced_zeroday/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-07T22:22:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I bust out laughing",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sf9sub/i_bust_out_laughing/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-07T21:47:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T03:33:36.407Z",
+    "reddit_viral_generated_at": "2026-04-08T05:59:14.022Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
