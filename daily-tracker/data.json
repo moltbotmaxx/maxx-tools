@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T23:02:29.494Z",
+    "generated_at": "2026-04-08T23:54:02.368Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Source code for Claude",
+        "link": "https://reddit.com/r/openclaw/comments/1sg87bw/source_code_for_claude/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T22:51:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "~77% of all new \"Success\" self-help books on Amazon are likely written by AI, with 1 author, Noah Felix Bennett, publishing a stunning 74 books in mid-2025 alone, at a rate of >1 per day. Richard Trillion Mantey, who has published hundreds of books, was assessed to have used AI for every single book",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sg5aqc/77_of_all_new_success_selfhelp_books_on_amazon/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-08T20:57:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Help with RTX 3090 and Qwen3.5",
+        "link": "https://reddit.com/r/openclaw/comments/1sg4pvh/help_with_rtx_3090_and_qwen35/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T20:35:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "\"No AI\" disclaimers are rising among marketers",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-08T20:12:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Roasting challenge",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-08T20:00:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Claude Opus vs Mythos",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-08T19:29:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "I effing hate open ai with open claw",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-08T19:27:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Claude announces Managed Agents",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-08T19:15:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Stuck in \"Subscription Limbo\": Anthropic Ban + Alibaba Sold Out. Best OpenClaw strategy?",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-08T19:08:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "All because y’all couldn’t stop yourselves from posting celebs in bikinis 🤣",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-08T18:11:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Former OpenAI exec: \"The truth is, we're building portals from which we're genuinely summoning aliens ... The portals currently exist in the US, and China, and Sam has added one in the Middle East ... It's the most reckless thing that has been done.\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1sg0kpp/former_openai_exec_the_truth_is_were_building/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-08T18:05:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "OpenRouter Free Throttled?",
-        "link": "https://reddit.com/r/openclaw/comments/1sg0at5/openrouter_free_throttled/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-08T17:55:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T23:02:29.494Z",
+    "reddit_viral_generated_at": "2026-04-08T23:54:02.368Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
