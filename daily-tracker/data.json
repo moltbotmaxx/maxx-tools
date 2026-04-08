@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T11:16:12.031Z",
+    "generated_at": "2026-04-08T12:05:05.452Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,22 @@
         "viral_score": 100
       },
       {
-        "headline": "Reset",
-        "link": "https://reddit.com/r/singularity/comments/1sfnpvk/reset/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T09:14:57+00:00",
+        "headline": "Is it worth to have a $300/day openclaw running in a startup",
+        "link": "https://reddit.com/r/openclaw/comments/1sfnlip/is_it_worth_to_have_a_300day_openclaw_running_in/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T09:07:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
+      },
+      {
+        "headline": "Lesson’s learned: Transition from Claude Sonnet to Codex-GPT5.4",
+        "link": "https://reddit.com/r/openclaw/comments/1sfn9e0/lessons_learned_transition_from_claude_sonnet_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-08T08:47:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Okay this is getting ridiculous. Does not make the video, takes the credits anyways.",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-08T07:58:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Sam Altman's coworkers say he can barely code and misunderstands basic machine learning concepts",
@@ -418,13 +427,13 @@
         "viral_score": 94
       },
       {
-        "headline": "Is OpenAI about to release a Mythos level AI to the public?",
-        "link": "https://reddit.com/r/singularity/comments/1sfl50i/is_openai_about_to_release_a_mythos_level_ai_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T06:36:15+00:00",
+        "headline": "\"You need to understand that Sam can never be trusted ... He is a sociopath. He would do anything.\" - Aaron Swartz on Altman, shortly before he took his own life",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sfloem/you_need_to_understand_that_sam_can_never_be/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-08T07:08:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 92
       },
       {
         "headline": "7 models in training on Colossus 2",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-08T05:05:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       },
       {
         "headline": "Joanne Jang , has left OpenAI",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 85
-      },
-      {
-        "headline": "Carlini, one of the world best AI security researchers: \"I've found more bugs in the last few weeks with Mythos than in the rest of my entire life combined\"",
-        "link": "https://reddit.com/r/singularity/comments/1sfhvpa/carlini_one_of_the_world_best_ai_security/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T03:39:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T11:16:12.031Z",
+    "reddit_viral_generated_at": "2026-04-08T12:05:05.452Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
