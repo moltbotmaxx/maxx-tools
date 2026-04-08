@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-08T14:04:26.845Z",
+    "generated_at": "2026-04-08T15:49:07.672Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I vibe coded a web app to turn Wikipedia rabbit holes into visual maps",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sfu9d9/i_vibe_coded_a_web_app_to_turn_wikipedia_rabbit/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-08T14:21:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini CLI is completely unusable now.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sftzgq/gemini_cli_is_completely_unusable_now/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-08T14:11:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Sam Altman's Coworkers Say He Can Barely Code and Misunderstands Basic Machine Learning Concepts: \"\"I think there's a small but real chance he's eventually remembered as a Bernie Madoff- or Sam Bankman-Fried-level scammer.\"",
+        "link": "https://reddit.com/r/singularity/comments/1sftwg9/sam_altmans_coworkers_say_he_can_barely_code_and/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-08T14:08:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "when the customer requests their backup",
         "link": "https://reddit.com/r/aimemes/comments/1sftloh/when_the_customer_requests_their_backup/",
@@ -379,7 +406,25 @@
         "published_at": "2026-04-08T13:57:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Monetization truly doesn’t care how big your user base is. People will always pay for what is working best for them in the moment. Entrepreneurial lesson of this era",
+        "link": "https://reddit.com/r/OpenAI/comments/1sftdkl/monetization_truly_doesnt_care_how_big_your_user/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-08T13:48:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Sam Altman says AI superintelligence is so big that we need a \"New Deal.\" Critics say OpenAI’s policy ideas are a cover for \"regulatory nihilism\"",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sft4vs/sam_altman_says_ai_superintelligence_is_so_big/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-08T13:39:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Kept getting my accounts banned trying to get social data for my AI agents so I built my own API layer for it",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-08T13:35:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "When you let AI work on your code and environment",
@@ -397,25 +442,16 @@
         "published_at": "2026-04-08T13:33:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "How to save 80% on your claude bill with better context",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sfsqq5/how_to_save_80_on_your_claude_bill_with_better/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-08T13:23:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Not sure if this is real or not, but was interested to know what you guys think",
-        "link": "https://reddit.com/r/singularity/comments/1sfs86e/not_sure_if_this_is_real_or_not_but_was/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T13:02:48+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 97
+      },
+      {
+        "headline": "I gave Claude my dead game's 30-year-old files and asked it to bring the game back to life",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sfsz67/i_gave_claude_my_dead_games_30yearold_files_and/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-08T13:32:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Bluesky users are mastering the fine art of blaming everything on \"vibe coding\"",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-08T12:16:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "We're ok, AGI is around the corner",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sfpsbv/were_ok_agi_is_around_the_corner/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-08T11:12:09+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "I vibe-coded my cat",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sfpopp/i_vibecoded_my_cat/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-08T11:07:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Re-writing all my Openclaw agent tasks... again...",
-        "link": "https://reddit.com/r/openclaw/comments/1sfp76s/rewriting_all_my_openclaw_agent_tasks_again/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-08T10:41:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Is it worth to have a $300/day openclaw running in a startup",
-        "link": "https://reddit.com/r/openclaw/comments/1sfnlip/is_it_worth_to_have_a_300day_openclaw_running_in/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-08T09:07:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-08T14:04:26.845Z",
+    "reddit_viral_generated_at": "2026-04-08T15:49:07.672Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
