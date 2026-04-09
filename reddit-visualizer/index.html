@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddit Visualizer | Maxx Tools</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
+  <style>
+    /* ── App Shell ── */
+    body {
+      font-family: 'Inter', var(--font-main);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .app-header {
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-subtle);
+      flex-shrink: 0;
+      background: var(--bg-secondary);
+    }
+
+    .app-header__left { display: flex; align-items: center; gap: 12px; }
+
+    .app-header__icon {
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(255, 69, 0, 0.12);
+      border-radius: 10px; font-size: 18px;
+    }
+
+    .app-header__title {
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--text-primary); letter-spacing: -0.02em;
+    }
+
+    .app-header__version { font-size: 0.65rem; color: var(--text-muted); font-weight: 500; }
+
+    .app-header__right { display: flex; align-items: center; gap: 10px; }
+
+    .app-header__back {
+      font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary);
+      text-decoration: none; display: flex; align-items: center; gap: 4px;
+      transition: color var(--transition-fast);
+    }
+
+    .app-header__back:hover { color: var(--accent-primary); }
+
+    /* ── Layout ── */
+    .app-body {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      flex: 1; min-height: 0; overflow: hidden;
+    }
+
+    /* ── Controls Panel ── */
+    .controls {
+      background: var(--bg-secondary);
+      border-right: 1px solid var(--border-subtle);
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+
+    .controls__scroll {
+      flex: 1; overflow-y: auto;
+      padding: 14px; display: flex; flex-direction: column; gap: 12px;
+    }
+
+    .section {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 14px 16px;
+      display: flex; flex-direction: column; gap: 11px;
+    }
+
+    .section__header {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .section__title {
+      font-size: 0.69rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em;
+      color: var(--text-tertiary);
+    }
+
+    /* ── Fetch Section ── */
+    .fetch-input-row {
+      display: flex; gap: 8px;
+    }
+
+    .fetch-input-row .form-input {
+      flex: 1; min-width: 0;
+    }
+
+    .post-info {
+      display: flex; flex-direction: column; gap: 3px;
+      padding: 8px 10px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+    }
+
+    .post-info__sub {
+      font-size: 0.7rem; font-weight: 700;
+      color: #FF4500;
+    }
+
+    .post-info__title {
+      font-size: 0.78rem; font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ── Comment Browser ── */
+    .comment-browser {
+      display: flex; flex-direction: column; gap: 5px;
+      max-height: 260px; overflow-y: auto;
+    }
+
+    .browser-item {
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary);
+      overflow: hidden;
+    }
+
+    .browser-item__head {
+      display: flex; align-items: flex-start; gap: 8px;
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: background var(--transition-fast);
+    }
+
+    .browser-item__head:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .browser-item__avatar {
+      width: 20px; height: 20px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 9px; font-weight: 700; color: #fff;
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    .browser-item__info { flex: 1; min-width: 0; }
+
+    .browser-item__user {
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 2px;
+    }
+
+    .browser-item__text {
+      font-size: 0.69rem; color: var(--text-muted);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    .browser-item__actions {
+      display: flex; gap: 4px; flex-shrink: 0;
+    }
+
+    .browser-item__depth {
+      font-size: 0.6rem; color: var(--text-muted);
+      padding: 2px 4px; background: var(--bg-tertiary);
+      border-radius: var(--radius-sm); flex-shrink: 0;
+    }
+
+    /* Nested replies in browser */
+    .browser-item__replies {
+      padding: 0 8px 8px 28px;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+
+    .browser-reply {
+      display: flex; align-items: flex-start; gap: 7px;
+      padding: 6px 8px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .browser-reply__avatar {
+      width: 16px; height: 16px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 8px; font-weight: 700; color: #fff;
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    .browser-reply__info { flex: 1; min-width: 0; }
+
+    .browser-reply__user {
+      font-size: 0.67rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 1px;
+    }
+
+    .browser-reply__text {
+      font-size: 0.66rem; color: var(--text-muted);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    .browser-chain-btn {
+      display: flex; align-items: center; gap: 5px;
+      padding: 6px 10px;
+      margin: 0 10px 8px;
+      border: 1px dashed var(--border-light);
+      border-radius: var(--radius-md);
+      background: transparent;
+      color: var(--accent-primary);
+      font-size: 0.72rem; font-weight: 600;
+      font-family: inherit; cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .browser-chain-btn:hover {
+      background: rgba(0, 122, 255, 0.06);
+      border-color: var(--accent-primary);
+    }
+
+    /* ── Form ── */
+    .form-group { display: flex; flex-direction: column; gap: 5px; }
+
+    .form-label { font-size: 0.73rem; font-weight: 600; color: var(--text-secondary); }
+
+    .form-input, .form-select {
+      width: 100%; padding: 7px 10px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary); color: var(--text-primary);
+      font-size: 0.82rem; font-family: inherit;
+      transition: border-color var(--transition-fast);
+      box-sizing: border-box;
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none; border-color: var(--accent-primary);
+    }
+
+    .form-textarea {
+      width: 100%; padding: 7px 10px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary); color: var(--text-primary);
+      font-size: 0.82rem; font-family: inherit;
+      resize: vertical; min-height: 72px;
+      transition: border-color var(--transition-fast);
+      box-sizing: border-box;
+    }
+
+    .form-textarea:focus { outline: none; border-color: var(--accent-primary); }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 6px; padding: 8px 14px; border: none;
+      border-radius: var(--radius-md);
+      font-size: 0.8rem; font-weight: 600; font-family: inherit;
+      cursor: pointer; transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .btn--primary { background: var(--accent-primary); color: #fff; }
+    .btn--primary:hover:not(:disabled) { filter: brightness(1.1); }
+    .btn--primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .btn--orange { background: #FF4500; color: #fff; }
+    .btn--orange:hover:not(:disabled) { filter: brightness(1.1); }
+    .btn--orange:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .btn--ghost {
+      background: transparent; color: var(--text-tertiary);
+      border: 1px solid var(--border-light);
+    }
+    .btn--ghost:hover { background: var(--bg-tertiary); color: var(--text-secondary); }
+
+    .btn--sm { padding: 4px 10px; font-size: 0.72rem; }
+    .btn--xs { padding: 3px 7px; font-size: 0.67rem; }
+    .btn--full { width: 100%; }
+
+    /* Loading spinner */
+    .btn--loading::before {
+      content: '';
+      width: 12px; height: 12px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Color Palette ── */
+    .color-palette { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+
+    .color-swatch {
+      width: 24px; height: 24px; border-radius: 50%;
+      cursor: pointer; border: 3px solid transparent;
+      transition: all var(--transition-fast); flex-shrink: 0;
+    }
+
+    .color-swatch:hover { transform: scale(1.18); }
+    .color-swatch--active { border-color: var(--text-primary); }
+
+    .color-swatch--custom {
+      border: 2px dashed var(--border-light);
+      background: var(--bg-secondary) !important;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: var(--text-muted);
+      position: relative; overflow: hidden;
+    }
+
+    .color-swatch--custom input[type="color"] {
+      position: absolute; opacity: 0; width: 100%; height: 100%;
+      cursor: pointer; border: none; padding: 0;
+    }
+
+    /* ── Indent Selector ── */
+    .indent-selector { display: flex; gap: 5px; }
+
+    .indent-btn {
+      flex: 1; padding: 6px 4px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary); color: var(--text-tertiary);
+      font-size: 0.75rem; font-weight: 700; font-family: inherit;
+      cursor: pointer; transition: all var(--transition-fast); text-align: center;
+    }
+
+    .indent-btn:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+    .indent-btn--active { background: var(--accent-primary); color: #fff; border-color: var(--accent-primary); }
+
+    /* ── Thread sidebar list ── */
+    .comments-list { display: flex; flex-direction: column; gap: 5px; }
+
+    .comment-item {
+      display: flex; align-items: flex-start; gap: 8px;
+      padding: 7px 9px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary);
+      cursor: pointer; transition: all var(--transition-fast);
+    }
+
+    .comment-item:hover { border-color: var(--border-light); }
+    .comment-item--selected { border-color: var(--accent-primary); background: rgba(0,122,255,0.04); }
+
+    .comment-item__avatar {
+      width: 22px; height: 22px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 700; color: #fff;
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    .comment-item__info { flex: 1; min-width: 0; }
+
+    .comment-item__username {
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 2px;
+    }
+
+    .comment-item__preview {
+      font-size: 0.68rem; color: var(--text-muted);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    .comment-item__depth {
+      font-size: 0.6rem; color: var(--text-muted);
+      padding: 2px 5px; background: var(--bg-tertiary);
+      border-radius: var(--radius-sm); flex-shrink: 0; align-self: flex-start;
+    }
+
+    .comment-item__actions { display: flex; gap: 1px; flex-shrink: 0; }
+
+    .comment-item__btn {
+      width: 22px; height: 22px; border: none; background: transparent;
+      cursor: pointer; font-size: 11px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      transition: background var(--transition-fast); color: var(--text-muted);
+    }
+
+    .comment-item__btn:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+    .comment-item__btn--delete:hover { background: rgba(255,59,48,0.1); color: var(--accent-danger); }
+
+    /* ── Range Controls ── */
+    .range-row { display: flex; align-items: center; gap: 8px; }
+    .range-row input[type="range"] { flex: 1; accent-color: var(--accent-primary); }
+
+    .range-num {
+      width: 50px; padding: 4px 6px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary); color: var(--text-primary);
+      font-size: 0.75rem; font-family: inherit; text-align: center;
+    }
+
+    .range-num:focus { outline: none; border-color: var(--accent-primary); }
+
+    /* ── Collapsible section ── */
+    .section--collapsed .section__collapsible { display: none; }
+
+    .section__toggle-btn {
+      background: none; border: none; cursor: pointer;
+      color: var(--text-muted); font-size: 0.7rem; padding: 0;
+      display: flex; align-items: center; gap: 4px;
+      transition: color var(--transition-fast);
+    }
+
+    .section__toggle-btn:hover { color: var(--text-primary); }
+
+    .section__toggle-arrow { transition: transform var(--transition-fast); }
+    .section--collapsed .section__toggle-arrow { transform: rotate(-90deg); }
+
+    /* ── Preview Area ── */
+    .preview {
+      background: var(--bg-tertiary);
+      display: flex; align-items: center; justify-content: center;
+      overflow: auto; padding: 40px;
+    }
+
+    .preview__canvas {
+      display: flex; align-items: flex-start; justify-content: center;
+      min-width: 100%; min-height: 100%;
+    }
+
+    /* ── Placeholder ── */
+    .preview-placeholder {
+      text-align: center; color: var(--text-muted);
+      font-size: 0.85rem; padding: 48px 40px;
+    }
+
+    .preview-placeholder__icon { font-size: 2.8rem; margin-bottom: 12px; opacity: 0.4; }
+
+    /* ── Empty State ── */
+    .empty-state {
+      text-align: center; color: var(--text-muted);
+      font-size: 0.75rem; padding: 10px 8px; font-style: italic;
+    }
+
+    /* ── Status Bar ── */
+    .status-bar {
+      padding: 5px 20px; font-size: 0.72rem; color: var(--text-muted);
+      background: var(--bg-secondary); border-top: 1px solid var(--border-subtle);
+      flex-shrink: 0; min-height: 26px; display: flex; align-items: center;
+    }
+
+    .status-bar--error { color: var(--accent-danger); }
+    .status-bar--success { color: var(--accent-success); }
+    .status-bar--loading { color: var(--accent-primary); }
+
+    /* ── Reddit Card ── */
+    .reddit-card {
+      font-family: 'Inter', -apple-system, sans-serif;
+      border-radius: 16px; display: inline-block;
+    }
+
+    .reddit-card--dark {
+      background: #000000;
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+    }
+
+    .reddit-card--light {
+      background: #FFFFFF;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .reddit-thread { display: flex; flex-direction: column; }
+
+    .reddit-comment { display: flex; align-items: stretch; }
+
+    .reddit-comment__indents { display: flex; flex-shrink: 0; }
+
+    .reddit-comment__indent-col {
+      display: flex; justify-content: center;
+      align-items: stretch; flex-shrink: 0;
+    }
+
+    .reddit-comment__indent-line { width: 2px; border-radius: 1px; align-self: stretch; }
+
+    .reddit-comment__body-wrap {
+      flex: 1; min-width: 0;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    .reddit-comment__head { display: flex; align-items: center; }
+
+    .reddit-comment__avatar {
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: #ffffff; flex-shrink: 0; line-height: 1;
+    }
+
+    .reddit-comment__username { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .reddit-comment__text { font-weight: 500; line-height: 1.5; word-break: break-word; }
+  </style>
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="app-header__left">
+      <div class="app-header__icon">🤖</div>
+      <div>
+        <div class="app-header__title">Reddit Visualizer</div>
+        <div class="app-header__version">v1.1</div>
+      </div>
+    </div>
+    <div class="app-header__right">
+      <a class="app-header__back" href="../">← Hub</a>
+      <button id="app-theme-toggle" class="btn btn--ghost btn--sm">🌙 Dark</button>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <aside class="controls">
+      <div class="controls__scroll">
+
+        <!-- ── Fetch from URL ── -->
+        <div class="section">
+          <div class="section__header">
+            <span class="section__title">Fetch Thread</span>
+          </div>
+
+          <div class="fetch-input-row">
+            <input type="text" id="url-input" class="form-input"
+              placeholder="reddit.com/r/.../comments/...">
+            <button id="load-btn" class="btn btn--orange">Load</button>
+          </div>
+
+          <div id="post-info" style="display:none;" class="post-info">
+            <div class="post-info__sub" id="post-sub"></div>
+            <div class="post-info__title" id="post-title"></div>
+          </div>
+
+          <!-- Comment Browser (shown after fetch) -->
+          <div id="browser-wrap" style="display:none;">
+            <div class="form-label" style="margin-bottom:5px;">Comment Chains — click to import</div>
+            <div class="comment-browser" id="comment-browser"></div>
+          </div>
+        </div>
+
+        <!-- ── Manual Add ── -->
+        <div class="section" id="manual-section">
+          <div class="section__header">
+            <span class="section__title" id="form-title">Add Manually</span>
+            <div style="display:flex;gap:6px;align-items:center;">
+              <button id="cancel-edit-btn" class="btn btn--ghost btn--sm" style="display:none;">Cancel</button>
+              <button class="section__toggle-btn" id="manual-toggle-btn">
+                <span class="section__toggle-arrow">▾</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="section__collapsible" id="manual-collapsible">
+            <div class="form-group">
+              <label class="form-label">Username</label>
+              <input type="text" id="input-username" class="form-input" placeholder="u/username">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Avatar Color</label>
+              <div class="color-palette" id="color-palette"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Comment Text</label>
+              <textarea id="input-text" class="form-textarea" placeholder="Write the comment..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Indent Level</label>
+              <div class="indent-selector" id="indent-selector"></div>
+            </div>
+
+            <button id="add-btn" class="btn btn--primary btn--full">Add Comment</button>
+          </div>
+        </div>
+
+        <!-- ── Thread List ── -->
+        <div class="section">
+          <div class="section__header">
+            <span class="section__title">Thread</span>
+            <div style="display:flex;gap:6px;">
+              <button id="example-btn" class="btn btn--ghost btn--sm">Example</button>
+              <button id="clear-btn" class="btn btn--ghost btn--sm">Clear</button>
+            </div>
+          </div>
+          <div id="comments-list"></div>
+        </div>
+
+        <!-- ── Style ── -->
+        <div class="section">
+          <div class="section__header">
+            <span class="section__title">Style</span>
+            <button id="reset-style-btn" class="btn btn--ghost btn--sm">Reset</button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Card Theme</label>
+            <select id="card-theme" class="form-select">
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Card Width</label>
+            <div class="range-row">
+              <input type="range" id="range-card-width" min="320" max="900" step="10">
+              <input type="number" id="num-card-width" class="range-num" min="320" max="900">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Card Padding</label>
+            <div class="range-row">
+              <input type="range" id="range-card-padding" min="8" max="56" step="2">
+              <input type="number" id="num-card-padding" class="range-num" min="8" max="56">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Text Size</label>
+            <div class="range-row">
+              <input type="range" id="range-body-font" min="12" max="36" step="1">
+              <input type="number" id="num-body-font" class="range-num" min="12" max="36">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Username Size</label>
+            <div class="range-row">
+              <input type="range" id="range-username-font" min="10" max="24" step="1">
+              <input type="number" id="num-username-font" class="range-num" min="10" max="24">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Avatar Size</label>
+            <div class="range-row">
+              <input type="range" id="range-avatar-size" min="20" max="64" step="2">
+              <input type="number" id="num-avatar-size" class="range-num" min="20" max="64">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Corner Radius</label>
+            <div class="range-row">
+              <input type="range" id="range-card-radius" min="0" max="40" step="2">
+              <input type="number" id="num-card-radius" class="range-num" min="0" max="40">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Comment Gap</label>
+            <div class="range-row">
+              <input type="range" id="range-comment-gap" min="0" max="40" step="2">
+              <input type="number" id="num-comment-gap" class="range-num" min="0" max="40">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Indent Width</label>
+            <div class="range-row">
+              <input type="range" id="range-indent-width" min="10" max="40" step="2">
+              <input type="number" id="num-indent-width" class="range-num" min="10" max="40">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Comment V. Padding</label>
+            <div class="range-row">
+              <input type="range" id="range-comment-padding" min="4" max="32" step="2">
+              <input type="number" id="num-comment-padding" class="range-num" min="4" max="32">
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Export ── -->
+        <div class="section">
+          <div class="section__header">
+            <span class="section__title">Export</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Scale</label>
+            <select id="export-scale" class="form-select">
+              <option value="1">1× (screen)</option>
+              <option value="2" selected>2× (retina)</option>
+              <option value="3">3× (high DPI)</option>
+              <option value="4">4× (max)</option>
+            </select>
+          </div>
+          <button id="download-btn" class="btn btn--primary btn--full">↓ Download PNG</button>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- Preview -->
+    <div class="preview">
+      <div class="preview__canvas">
+        <div id="card-shell"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="status-bar" class="status-bar">Ready. Paste a Reddit thread URL or add comments manually.</div>
+
+  <script>
+    // ── Constants ────────────────────────────────────────────────────────────
+    const STORAGE_KEY = 'reddit-visualizer-v2';
+
+    const AVATAR_COLORS = [
+      '#FF4500', '#FF6314', '#FFB000', '#FF585B',
+      '#46D160', '#46A508', '#0DD3BB', '#24A0ED',
+      '#7193FF', '#FF66AC', '#DB0064', '#A06A42',
+    ];
+
+    const STYLE_DEFAULTS = {
+      cardTheme: 'dark',
+      cardWidth: 680,
+      cardPadding: 28,
+      bodyFontSize: 20,
+      usernameFontSize: 14,
+      avatarSize: 36,
+      cardRadius: 18,
+      commentGap: 0,
+      indentWidth: 22,
+      commentPadding: 14,
+      exportScale: 2,
+    };
+
+    const NUMERIC_CONTROLS = [
+      { key: 'cardWidth',        rangeId: 'range-card-width',      numberId: 'num-card-width' },
+      { key: 'cardPadding',      rangeId: 'range-card-padding',    numberId: 'num-card-padding' },
+      { key: 'bodyFontSize',     rangeId: 'range-body-font',       numberId: 'num-body-font' },
+      { key: 'usernameFontSize', rangeId: 'range-username-font',   numberId: 'num-username-font' },
+      { key: 'avatarSize',       rangeId: 'range-avatar-size',     numberId: 'num-avatar-size' },
+      { key: 'cardRadius',       rangeId: 'range-card-radius',     numberId: 'num-card-radius' },
+      { key: 'commentGap',       rangeId: 'range-comment-gap',     numberId: 'num-comment-gap' },
+      { key: 'indentWidth',      rangeId: 'range-indent-width',    numberId: 'num-indent-width' },
+      { key: 'commentPadding',   rangeId: 'range-comment-padding', numberId: 'num-comment-padding' },
+    ];
+
+    const EXAMPLE_THREAD = [
+      { username: 'u/Hashtaglibertarian', avatarColor: '#FF6314', depth: 0,
+        text: "As a biologist.... This is SO COOL. I'm talking to an ASTRONAUT!!" },
+      { username: 'u/ExampleLittle2672',  avatarColor: '#46D160', depth: 1,
+        text: "As someone who loves potatoes and space This is SO COOL!" },
+      { username: 'u/newshirtworthy',      avatarColor: '#FF66AC', depth: 2,
+        text: "As a gas station attendant... this is SO COOL. I'm talking to a BIOLOGIST!!" },
+      { username: 'u/klimekam',            avatarColor: '#0DD3BB', depth: 3,
+        text: "As a person who loves late night junk food runs this is SO COOL. I'm talking to a GAS STATION ATTENDANT" },
+    ];
+
+    // ── State ────────────────────────────────────────────────────────────────
+    const state = {
+      comments: [],
+      fetchedChains: [],   // [{topComment, replies[]}]
+      selectedColor: AVATAR_COLORS[0],
+      selectedDepth: 0,
+      editingId: null,
+      appTheme: 'light',
+      manualCollapsed: false,
+      fetchAbortController: null,
+      ...STYLE_DEFAULTS,
+    };
+
+    function loadPersistedSettings() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const saved = JSON.parse(raw);
+        const skip = new Set(['editingId', 'fetchedChains', 'fetchAbortController']);
+        Object.keys(saved).forEach(k => { if (!skip.has(k)) state[k] = saved[k]; });
+      } catch {}
+    }
+
+    function saveSettings() {
+      try {
+        const skip = new Set(['editingId', 'fetchedChains', 'fetchAbortController']);
+        const toSave = {};
+        const keys = ['comments', 'appTheme', 'selectedColor', 'selectedDepth', 'manualCollapsed',
+                       ...Object.keys(STYLE_DEFAULTS)];
+        keys.forEach(k => { if (!skip.has(k)) toSave[k] = state[k]; });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
+      } catch {}
+    }
+
+    // ── DOM Refs ──────────────────────────────────────────────────────────────
+    const el = {
+      cardShell:        document.getElementById('card-shell'),
+      commentsList:     document.getElementById('comments-list'),
+      colorPalette:     document.getElementById('color-palette'),
+      indentSelector:   document.getElementById('indent-selector'),
+      inputUsername:    document.getElementById('input-username'),
+      inputText:        document.getElementById('input-text'),
+      addBtn:           document.getElementById('add-btn'),
+      cancelEditBtn:    document.getElementById('cancel-edit-btn'),
+      clearBtn:         document.getElementById('clear-btn'),
+      exampleBtn:       document.getElementById('example-btn'),
+      formTitle:        document.getElementById('form-title'),
+      cardTheme:        document.getElementById('card-theme'),
+      appThemeToggle:   document.getElementById('app-theme-toggle'),
+      resetStyleBtn:    document.getElementById('reset-style-btn'),
+      downloadBtn:      document.getElementById('download-btn'),
+      exportScale:      document.getElementById('export-scale'),
+      statusBar:        document.getElementById('status-bar'),
+      urlInput:         document.getElementById('url-input'),
+      loadBtn:          document.getElementById('load-btn'),
+      postInfo:         document.getElementById('post-info'),
+      postSub:          document.getElementById('post-sub'),
+      postTitle:        document.getElementById('post-title'),
+      browserWrap:      document.getElementById('browser-wrap'),
+      commentBrowser:   document.getElementById('comment-browser'),
+      manualSection:    document.getElementById('manual-section'),
+      manualToggleBtn:  document.getElementById('manual-toggle-btn'),
+      manualCollapsible:document.getElementById('manual-collapsible'),
+    };
+
+    // ── Utilities ─────────────────────────────────────────────────────────────
+    function generateId() { return Math.random().toString(36).slice(2, 10); }
+
+    function normalizeUsername(raw) {
+      const t = raw.trim();
+      if (!t) return '';
+      return t.startsWith('u/') ? t : `u/${t}`;
+    }
+
+    function getAvatarLetter(username) {
+      return (username.replace(/^u\//, '')[0] || '?').toUpperCase();
+    }
+
+    function clamp(v, min, max) { return Math.min(max, Math.max(min, Number(v) || 0)); }
+
+    function setStatus(msg, type = '') {
+      el.statusBar.textContent = msg;
+      el.statusBar.className = `status-bar${type ? ` status-bar--${type}` : ''}`;
+    }
+
+    function nextFrame() { return new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))); }
+
+    async function waitForFonts() {
+      if (document.fonts?.ready) await document.fonts.ready;
+    }
+
+    function colorFromUsername(username) {
+      let hash = 0;
+      for (let i = 0; i < username.length; i++) {
+        hash = ((hash << 5) - hash) + username.charCodeAt(i);
+        hash |= 0;
+      }
+      return AVATAR_COLORS[Math.abs(hash) % AVATAR_COLORS.length];
+    }
+
+    // ── Reddit URL Parsing ────────────────────────────────────────────────────
+    function parseRedditUrl(input) {
+      const url = input.trim().replace(/\/$/, '');
+
+      // Short redd.it links → need to follow redirect, skip for now
+      const shortMatch = url.match(/redd\.it\/([a-z0-9]+)/i);
+      if (shortMatch) {
+        // Build a speculative URL — we'll try to fetch it and rely on the post data
+        return { path: null, postId: shortMatch[1] };
+      }
+
+      // Standard reddit.com URLs
+      const match = url.match(/reddit\.com(\/r\/[^/?#]+\/comments\/[a-z0-9]+(?:\/[^/?#]*)?)/i);
+      if (match) {
+        // Split into parts: ['r','sub','comments','id', optional_slug...]
+        const parts = match[1].split('/').filter(Boolean);
+        if (parts.length >= 4) {
+          return { path: `/${parts.slice(0, 4).join('/')}`, postId: parts[3] };
+        }
+      }
+
+      return null;
+    }
+
+    function buildJsonUrl(parsed) {
+      if (parsed.path) return `https://www.reddit.com${parsed.path}.json?limit=100&depth=6&sort=top`;
+      if (parsed.postId) return `https://www.reddit.com/comments/${parsed.postId}.json?limit=100&depth=6&sort=top`;
+      return null;
+    }
+
+    // ── Reddit Fetch ──────────────────────────────────────────────────────────
+    async function fetchJson(url, signal) {
+      // 1. Try direct
+      try {
+        const r = await fetch(url, { signal, headers: { 'Accept': 'application/json' } });
+        if (r.ok) return await r.json();
+      } catch (e) {
+        if (e.name === 'AbortError') throw e;
+      }
+
+      // 2. Try corsproxy.io
+      const proxy = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+      try {
+        const r = await fetch(proxy, { signal });
+        if (r.ok) return await r.json();
+      } catch (e) {
+        if (e.name === 'AbortError') throw e;
+      }
+
+      // 3. Try allorigins
+      const ao = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+      const r = await fetch(ao, { signal });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const wrapper = await r.json();
+      return JSON.parse(wrapper.contents);
+    }
+
+    // ── Comment Parsing ───────────────────────────────────────────────────────
+    function parseCommentNode(child, depth) {
+      if (child.kind !== 't1') return null;
+      const d = child.data;
+      if (!d || !d.body || d.body === '[deleted]' || d.body === '[removed]') return null;
+      if (d.author === '[deleted]') return null;
+
+      const replies = [];
+      const replyChildren = d.replies?.data?.children || [];
+      for (const rc of replyChildren) {
+        const r = parseCommentNode(rc, depth + 1);
+        if (r) replies.push(r);
+      }
+
+      return {
+        id: d.id,
+        username: `u/${d.author}`,
+        text: d.body,
+        score: d.score || 0,
+        depth,
+        avatarColor: colorFromUsername(d.author),
+        replies,
+      };
+    }
+
+    function extractChains(commentListings) {
+      const chains = [];
+      for (const child of commentListings) {
+        const node = parseCommentNode(child, 0);
+        if (node) chains.push(node);
+      }
+      return chains;
+    }
+
+    // Follow the highest-scored reply at each level to build a linear chain
+    function buildBestChain(topComment, maxDepth = 4) {
+      const chain = [];
+      let current = topComment;
+      let depth = 0;
+
+      while (current && depth <= maxDepth) {
+        chain.push({ ...current, depth });
+        if (!current.replies || current.replies.length === 0) break;
+        // pick top-scored reply
+        current = current.replies.reduce((best, r) => (r.score > best.score ? r : best), current.replies[0]);
+        depth++;
+      }
+
+      return chain;
+    }
+
+    // ── Fetch Thread ──────────────────────────────────────────────────────────
+    async function loadThread() {
+      const raw = el.urlInput.value.trim();
+      if (!raw) { setStatus('Paste a Reddit thread URL first.', 'error'); return; }
+
+      const parsed = parseRedditUrl(raw);
+      if (!parsed) { setStatus('Could not parse that URL. Try copying the full reddit.com link.', 'error'); return; }
+
+      const jsonUrl = buildJsonUrl(parsed);
+      if (!jsonUrl) { setStatus('Could not build API URL from that link.', 'error'); return; }
+
+      // Abort any in-flight request
+      if (state.fetchAbortController) state.fetchAbortController.abort();
+      state.fetchAbortController = new AbortController();
+
+      el.loadBtn.disabled = true;
+      el.loadBtn.classList.add('btn--loading');
+      el.loadBtn.textContent = '';
+      setStatus('Fetching thread…', 'loading');
+      el.postInfo.style.display = 'none';
+      el.browserWrap.style.display = 'none';
+
+      try {
+        const data = await fetchJson(jsonUrl, state.fetchAbortController.signal);
+
+        if (!Array.isArray(data) || data.length < 2) {
+          throw new Error('Unexpected response format from Reddit API.');
+        }
+
+        // Post metadata
+        const postData = data[0]?.data?.children?.[0]?.data;
+        if (postData) {
+          el.postSub.textContent = `r/${postData.subreddit}`;
+          el.postTitle.textContent = postData.title || '(no title)';
+          el.postInfo.style.display = '';
+        }
+
+        // Comments
+        const commentChildren = data[1]?.data?.children || [];
+        const chains = extractChains(commentChildren);
+
+        if (chains.length === 0) {
+          setStatus('No comments found in this thread.', 'error');
+          return;
+        }
+
+        state.fetchedChains = chains;
+        renderCommentBrowser(chains);
+        el.browserWrap.style.display = '';
+
+        // Auto-import the best chain from the top comment
+        const bestChain = buildBestChain(chains[0]);
+        importChain(bestChain, false);
+
+        setStatus(`Loaded ${chains.length} top-level comments. Best chain auto-imported.`, 'success');
+
+      } catch (err) {
+        if (err.name === 'AbortError') return;
+        console.error(err);
+        setStatus(`Failed to load: ${err.message}`, 'error');
+      } finally {
+        el.loadBtn.disabled = false;
+        el.loadBtn.classList.remove('btn--loading');
+        el.loadBtn.textContent = 'Load';
+      }
+    }
+
+    // ── Comment Browser ───────────────────────────────────────────────────────
+    function renderCommentBrowser(chains) {
+      el.commentBrowser.innerHTML = '';
+
+      const shown = chains.slice(0, 10);
+
+      shown.forEach((chain, i) => {
+        const item = document.createElement('div');
+        item.className = 'browser-item';
+
+        // Head row
+        const head = document.createElement('div');
+        head.className = 'browser-item__head';
+
+        const avatar = document.createElement('div');
+        avatar.className = 'browser-item__avatar';
+        avatar.style.background = chain.avatarColor;
+        avatar.textContent = getAvatarLetter(chain.username);
+
+        const info = document.createElement('div');
+        info.className = 'browser-item__info';
+        info.innerHTML = `
+          <div class="browser-item__user">${chain.username}</div>
+          <div class="browser-item__text">${chain.text}</div>
+        `;
+
+        const depthTag = document.createElement('div');
+        depthTag.className = 'browser-item__depth';
+        depthTag.textContent = `${chain.replies.length} repl.`;
+
+        head.appendChild(avatar);
+        head.appendChild(info);
+        head.appendChild(depthTag);
+        item.appendChild(head);
+
+        // Show first 2 nested replies as preview
+        if (chain.replies.length > 0) {
+          const repliesEl = document.createElement('div');
+          repliesEl.className = 'browser-item__replies';
+
+          chain.replies.slice(0, 2).forEach(reply => {
+            const rEl = document.createElement('div');
+            rEl.className = 'browser-reply';
+            rEl.innerHTML = `
+              <div class="browser-reply__avatar" style="background:${reply.avatarColor}">${getAvatarLetter(reply.username)}</div>
+              <div class="browser-reply__info">
+                <div class="browser-reply__user">${reply.username}</div>
+                <div class="browser-reply__text">${reply.text}</div>
+              </div>
+            `;
+            repliesEl.appendChild(rEl);
+          });
+
+          item.appendChild(repliesEl);
+        }
+
+        // Import chain button
+        const chainBtn = document.createElement('button');
+        chainBtn.className = 'browser-chain-btn';
+        chainBtn.textContent = '↓ Import this chain';
+        chainBtn.addEventListener('click', () => {
+          const best = buildBestChain(chain);
+          importChain(best, true);
+        });
+        item.appendChild(chainBtn);
+
+        el.commentBrowser.appendChild(item);
+      });
+    }
+
+    function importChain(chain, showStatus = true) {
+      state.comments = chain.map(c => ({
+        id: generateId(),
+        username: c.username,
+        text: c.text,
+        avatarColor: c.avatarColor,
+        depth: c.depth,
+      }));
+      cancelEdit();
+      saveSettings();
+      renderAll();
+      if (showStatus) setStatus(`Imported chain of ${chain.length} comments.`, 'success');
+    }
+
+    // ── Color Palette ─────────────────────────────────────────────────────────
+    function buildColorPalette() {
+      el.colorPalette.innerHTML = '';
+      AVATAR_COLORS.forEach(color => {
+        const swatch = document.createElement('div');
+        swatch.className = `color-swatch${color === state.selectedColor ? ' color-swatch--active' : ''}`;
+        swatch.style.background = color;
+        swatch.addEventListener('click', () => selectColor(color));
+        el.colorPalette.appendChild(swatch);
+      });
+
+      const customSwatch = document.createElement('label');
+      customSwatch.className = 'color-swatch color-swatch--custom';
+      customSwatch.textContent = '+';
+      const colorInput = document.createElement('input');
+      colorInput.type = 'color';
+      colorInput.value = state.selectedColor.startsWith('#') ? state.selectedColor : '#FF4500';
+      colorInput.addEventListener('input', () => selectColor(colorInput.value));
+      customSwatch.appendChild(colorInput);
+      el.colorPalette.appendChild(customSwatch);
+    }
+
+    function selectColor(color) {
+      state.selectedColor = color;
+      if (state.editingId) {
+        const c = state.comments.find(c => c.id === state.editingId);
+        if (c) { c.avatarColor = color; renderCard(); }
+      }
+      saveSettings();
+      buildColorPalette();
+    }
+
+    // ── Indent Selector ───────────────────────────────────────────────────────
+    function buildIndentSelector() {
+      el.indentSelector.innerHTML = '';
+      for (let d = 0; d <= 4; d++) {
+        const btn = document.createElement('button');
+        btn.className = `indent-btn${d === state.selectedDepth ? ' indent-btn--active' : ''}`;
+        btn.textContent = d === 0 ? '0' : String(d);
+        btn.title = d === 0 ? 'Top level' : `Nested ${d} level${d > 1 ? 's' : ''} deep`;
+        btn.addEventListener('click', () => {
+          state.selectedDepth = d;
+          saveSettings();
+          buildIndentSelector();
+        });
+        el.indentSelector.appendChild(btn);
+      }
+    }
+
+    // ── Comments Sidebar ──────────────────────────────────────────────────────
+    function renderCommentsList() {
+      if (state.comments.length === 0) {
+        el.commentsList.innerHTML = '<div class="empty-state">No comments yet.</div>';
+        return;
+      }
+      el.commentsList.innerHTML = '';
+      state.comments.forEach((comment, i) => {
+        const item = document.createElement('div');
+        item.className = `comment-item${state.editingId === comment.id ? ' comment-item--selected' : ''}`;
+
+        const avatarEl = document.createElement('div');
+        avatarEl.className = 'comment-item__avatar';
+        avatarEl.style.background = comment.avatarColor;
+        avatarEl.textContent = getAvatarLetter(comment.username);
+
+        const info = document.createElement('div');
+        info.className = 'comment-item__info';
+        info.innerHTML = `
+          <div class="comment-item__username">${comment.username || '(no username)'}</div>
+          <div class="comment-item__preview">${comment.text || '(empty)'}</div>
+        `;
+
+        const depthTag = document.createElement('div');
+        depthTag.className = 'comment-item__depth';
+        depthTag.textContent = `↳${comment.depth}`;
+
+        const actions = document.createElement('div');
+        actions.className = 'comment-item__actions';
+        actions.innerHTML = `
+          <button class="comment-item__btn" data-action="up" title="Move up">↑</button>
+          <button class="comment-item__btn" data-action="down" title="Move down">↓</button>
+          <button class="comment-item__btn comment-item__btn--delete" data-action="delete" title="Delete">✕</button>
+        `;
+
+        item.appendChild(avatarEl);
+        item.appendChild(info);
+        item.appendChild(depthTag);
+        item.appendChild(actions);
+
+        item.addEventListener('click', e => {
+          const action = e.target.closest('[data-action]')?.dataset.action;
+          if (action === 'delete') { deleteComment(comment.id); }
+          else if (action === 'up') { moveComment(i, -1); }
+          else if (action === 'down') { moveComment(i, 1); }
+          else { startEditing(comment.id); }
+        });
+
+        el.commentsList.appendChild(item);
+      });
+    }
+
+    function deleteComment(id) {
+      state.comments = state.comments.filter(c => c.id !== id);
+      if (state.editingId === id) cancelEdit();
+      saveSettings(); renderAll();
+      setStatus('Comment deleted.');
+    }
+
+    function moveComment(index, dir) {
+      const ni = index + dir;
+      if (ni < 0 || ni >= state.comments.length) return;
+      [state.comments[index], state.comments[ni]] = [state.comments[ni], state.comments[index]];
+      saveSettings(); renderAll();
+    }
+
+    function startEditing(id) {
+      const c = state.comments.find(c => c.id === id);
+      if (!c) return;
+      state.editingId = id;
+      el.inputUsername.value = c.username;
+      el.inputText.value = c.text;
+      state.selectedColor = c.avatarColor;
+      state.selectedDepth = c.depth;
+      el.formTitle.textContent = 'Edit Comment';
+      el.addBtn.textContent = 'Update Comment';
+      el.cancelEditBtn.style.display = '';
+      // Expand manual section if collapsed
+      if (state.manualCollapsed) toggleManualSection();
+      buildColorPalette();
+      buildIndentSelector();
+      renderCommentsList();
+      el.inputUsername.focus();
+    }
+
+    function cancelEdit() {
+      state.editingId = null;
+      el.inputUsername.value = '';
+      el.inputText.value = '';
+      el.formTitle.textContent = 'Add Manually';
+      el.addBtn.textContent = 'Add Comment';
+      el.cancelEditBtn.style.display = 'none';
+      renderCommentsList();
+    }
+
+    // ── Add / Update ──────────────────────────────────────────────────────────
+    function submitComment() {
+      const username = normalizeUsername(el.inputUsername.value);
+      const text = el.inputText.value.trim();
+      if (!username) { setStatus('Enter a username.', 'error'); el.inputUsername.focus(); return; }
+      if (!text) { setStatus('Enter comment text.', 'error'); el.inputText.focus(); return; }
+
+      if (state.editingId) {
+        const c = state.comments.find(c => c.id === state.editingId);
+        if (c) Object.assign(c, { username, text, avatarColor: state.selectedColor, depth: state.selectedDepth });
+        cancelEdit();
+        setStatus('Comment updated.', 'success');
+      } else {
+        state.comments.push({ id: generateId(), username, text, avatarColor: state.selectedColor, depth: state.selectedDepth });
+        el.inputText.value = '';
+        setStatus('Comment added.', 'success');
+      }
+      saveSettings(); renderAll();
+    }
+
+    function loadExample() {
+      state.comments = EXAMPLE_THREAD.map(c => ({ ...c, id: generateId() }));
+      cancelEdit(); saveSettings(); renderAll();
+      setStatus('Example thread loaded.');
+    }
+
+    // ── Collapsible Manual Section ────────────────────────────────────────────
+    function toggleManualSection() {
+      state.manualCollapsed = !state.manualCollapsed;
+      if (state.manualCollapsed) {
+        el.manualSection.classList.add('section--collapsed');
+      } else {
+        el.manualSection.classList.remove('section--collapsed');
+      }
+      saveSettings();
+    }
+
+    // ── Reddit Card Render ────────────────────────────────────────────────────
+    function renderCard() {
+      if (state.comments.length === 0) {
+        el.cardShell.innerHTML = `
+          <div class="preview-placeholder">
+            <div class="preview-placeholder__icon">🤖</div>
+            <p>Paste a Reddit URL above and click <strong>Load</strong>,<br>
+            or click <strong>Example</strong> to see a sample thread.</p>
+          </div>`;
+        return;
+      }
+
+      const isDark = state.cardTheme === 'dark';
+      const card = document.createElement('div');
+      card.className = `reddit-card reddit-card--${state.cardTheme}`;
+      card.style.width = `${state.cardWidth}px`;
+      card.style.padding = `${state.cardPadding}px`;
+      card.style.borderRadius = `${state.cardRadius}px`;
+
+      const thread = document.createElement('div');
+      thread.className = 'reddit-thread';
+      thread.style.gap = `${state.commentGap}px`;
+
+      state.comments.forEach(comment => thread.appendChild(buildCommentEl(comment, isDark)));
+
+      card.appendChild(thread);
+      el.cardShell.innerHTML = '';
+      el.cardShell.appendChild(card);
+    }
+
+    function buildCommentEl(comment, isDark) {
+      const row = document.createElement('div');
+      row.className = 'reddit-comment';
+
+      if (comment.depth > 0) {
+        const indents = document.createElement('div');
+        indents.className = 'reddit-comment__indents';
+        for (let i = 0; i < comment.depth; i++) {
+          const col = document.createElement('div');
+          col.className = 'reddit-comment__indent-col';
+          col.style.width = `${state.indentWidth}px`;
+          const line = document.createElement('div');
+          line.className = 'reddit-comment__indent-line';
+          line.style.background = isDark ? '#343536' : '#EDEFF1';
+          col.appendChild(line);
+          indents.appendChild(col);
+        }
+        row.appendChild(indents);
+      }
+
+      const body = document.createElement('div');
+      body.className = 'reddit-comment__body-wrap';
+      body.style.paddingTop = `${state.commentPadding}px`;
+      body.style.paddingBottom = `${state.commentPadding}px`;
+      if (comment.depth > 0) body.style.paddingLeft = '12px';
+
+      const head = document.createElement('div');
+      head.className = 'reddit-comment__head';
+      head.style.gap = '8px';
+      head.style.marginBottom = `${Math.round(state.bodyFontSize * 0.35)}px`;
+
+      const avatar = document.createElement('div');
+      avatar.className = 'reddit-comment__avatar';
+      avatar.style.cssText = `width:${state.avatarSize}px;height:${state.avatarSize}px;min-width:${state.avatarSize}px;background:${comment.avatarColor};font-size:${Math.round(state.avatarSize * 0.42)}px`;
+      avatar.textContent = getAvatarLetter(comment.username);
+
+      const username = document.createElement('span');
+      username.className = 'reddit-comment__username';
+      username.style.fontSize = `${state.usernameFontSize}px`;
+      username.style.color = isDark ? '#818384' : '#878A8C';
+      username.textContent = comment.username;
+
+      head.appendChild(avatar);
+      head.appendChild(username);
+
+      const text = document.createElement('div');
+      text.className = 'reddit-comment__text';
+      text.style.fontSize = `${state.bodyFontSize}px`;
+      text.style.color = isDark ? '#FFFFFF' : '#1A1A1B';
+      text.textContent = comment.text;
+
+      body.appendChild(head);
+      body.appendChild(text);
+      row.appendChild(body);
+      return row;
+    }
+
+    // ── Style Controls ────────────────────────────────────────────────────────
+    function syncStyleControls() {
+      el.cardTheme.value = state.cardTheme;
+      el.exportScale.value = String(state.exportScale);
+      NUMERIC_CONTROLS.forEach(({ key, rangeId, numberId }) => {
+        document.getElementById(rangeId).value = state[key];
+        document.getElementById(numberId).value = state[key];
+      });
+    }
+
+    function applyNumericControl(key, rawVal) {
+      const ctrl = NUMERIC_CONTROLS.find(c => c.key === key);
+      const range = document.getElementById(ctrl.rangeId);
+      const v = clamp(rawVal, Number(range.min), Number(range.max));
+      state[key] = v;
+      syncStyleControls();
+      saveSettings();
+      renderCard();
+    }
+
+    // ── Export ────────────────────────────────────────────────────────────────
+    async function downloadPng() {
+      const cardNode = el.cardShell.querySelector('.reddit-card');
+      if (!cardNode) { setStatus('No card to export.', 'error'); return; }
+      if (!window.htmlToImage?.toPng) { setStatus('PNG exporter not loaded.', 'error'); return; }
+
+      el.downloadBtn.disabled = true;
+      setStatus('Generating PNG…');
+
+      try {
+        await waitForFonts();
+        await nextFrame();
+
+        const pngUrl = await window.htmlToImage.toPng(cardNode, {
+          cacheBust: true,
+          pixelRatio: state.exportScale,
+        });
+
+        const link = document.createElement('a');
+        link.href = pngUrl;
+        link.download = `reddit-thread-${Date.now()}.png`;
+        link.click();
+        setStatus('Downloaded!', 'success');
+      } catch (err) {
+        console.error(err);
+        setStatus('Export failed. Try a lower scale.', 'error');
+      } finally {
+        el.downloadBtn.disabled = false;
+      }
+    }
+
+    // ── App Theme ─────────────────────────────────────────────────────────────
+    function applyAppTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      el.appThemeToggle.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+      state.appTheme = theme;
+      saveSettings();
+    }
+
+    // ── Render All ────────────────────────────────────────────────────────────
+    function renderAll() { renderCommentsList(); renderCard(); }
+
+    // ── Events ────────────────────────────────────────────────────────────────
+    function bindEvents() {
+      // Fetch
+      el.loadBtn.addEventListener('click', loadThread);
+      el.urlInput.addEventListener('keydown', e => { if (e.key === 'Enter') loadThread(); });
+      el.urlInput.addEventListener('paste', () => setTimeout(loadThread, 50));
+
+      // Manual form
+      el.addBtn.addEventListener('click', submitComment);
+      el.inputText.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) submitComment();
+      });
+      el.cancelEditBtn.addEventListener('click', cancelEdit);
+
+      // Manual section collapse
+      el.manualToggleBtn.addEventListener('click', toggleManualSection);
+
+      // Thread mgmt
+      el.exampleBtn.addEventListener('click', loadExample);
+      el.clearBtn.addEventListener('click', () => {
+        if (!state.comments.length) return;
+        if (confirm('Clear all comments?')) {
+          state.comments = [];
+          cancelEdit();
+          saveSettings(); renderAll();
+          setStatus('Thread cleared.');
+        }
+      });
+
+      // Style
+      el.cardTheme.addEventListener('change', () => {
+        state.cardTheme = el.cardTheme.value;
+        saveSettings(); renderCard();
+      });
+
+      el.appThemeToggle.addEventListener('click', () => {
+        applyAppTheme(state.appTheme === 'dark' ? 'light' : 'dark');
+      });
+
+      el.resetStyleBtn.addEventListener('click', () => {
+        Object.assign(state, STYLE_DEFAULTS);
+        syncStyleControls(); saveSettings(); renderCard();
+      });
+
+      el.downloadBtn.addEventListener('click', downloadPng);
+      el.exportScale.addEventListener('change', () => {
+        state.exportScale = Number(el.exportScale.value);
+        saveSettings();
+      });
+
+      NUMERIC_CONTROLS.forEach(({ key, rangeId, numberId }) => {
+        document.getElementById(rangeId).addEventListener('input', e => applyNumericControl(key, e.target.value));
+        document.getElementById(numberId).addEventListener('change', e => applyNumericControl(key, e.target.value));
+        document.getElementById(numberId).addEventListener('keydown', e => {
+          if (e.key === 'Enter') applyNumericControl(key, e.target.value);
+        });
+      });
+    }
+
+    // ── Init ──────────────────────────────────────────────────────────────────
+    function init() {
+      loadPersistedSettings();
+      if (!Array.isArray(state.comments)) state.comments = [];
+      if (!state.selectedColor) state.selectedColor = AVATAR_COLORS[0];
+      if (state.selectedDepth === undefined) state.selectedDepth = 0;
+
+      applyAppTheme(state.appTheme || 'light');
+
+      if (state.manualCollapsed) el.manualSection.classList.add('section--collapsed');
+
+      buildColorPalette();
+      buildIndentSelector();
+      syncStyleControls();
+      bindEvents();
+      renderAll();
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
