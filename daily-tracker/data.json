@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T09:42:13.468Z",
+    "generated_at": "2026-04-09T11:17:49.369Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Claude Mythos and escaping the sandbox",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sghwzi/claude_mythos_and_escaping_the_sandbox/",
+        "headline": "Actress Milla Jovovich just released a free open-source AI memory system",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sglxqb/actress_milla_jovovich_just_released_a_free/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T06:36:45+00:00",
+        "published_at": "2026-04-09T10:36:34+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "To be honest, which one do you use the most?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sgl2j2/to_be_honest_which_one_do_you_use_the_most/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-09T09:46:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Why are people running Claude Code on a Mac mini instead of their personal MacBook?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sgix71/why_are_people_running_claude_code_on_a_mac_mini/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-09T07:36:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "This is our new hierarchy",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sghxlh/this_is_our_new_hierarchy/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-09T06:37:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "OpenClaw is OpenClaw: if you don’t like it, maybe don’t hang on this sub?",
@@ -388,16 +415,7 @@
         "published_at": "2026-04-09T06:26:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "If AI was actually killing software engineering, why is there more code than ever?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sggpxv/if_ai_was_actually_killing_software_engineering/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T05:28:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "New York Times: Anthropic’s Restraint Is a Terrifying Warning Sign",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-09T05:20:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 88
       },
       {
         "headline": "Every OpenClaw update is a surprise party",
@@ -415,16 +433,7 @@
         "published_at": "2026-04-09T05:16:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I don't understand AI. How does it work?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sge708/i_dont_understand_ai_how_does_it_work/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T03:19:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "I Love My Gemeni's Personality",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-09T03:12:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 83
       },
       {
         "headline": "Gemini projects have been officially released on web.",
@@ -442,16 +451,7 @@
         "published_at": "2026-04-09T01:40:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Can We Please Stop Calling Every New AI Development “Terrifying”?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sgbxav/can_we_please_stop_calling_every_new_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T01:35:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 80
       },
       {
         "headline": "Ronan Farrow on Sam Altman: \"We interviewed more than 100 people... a majority did say some variation on the theme of: he's a pathological liar\"",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-09T00:31:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 77
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T09:42:13.468Z",
+    "reddit_viral_generated_at": "2026-04-09T11:17:49.369Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
