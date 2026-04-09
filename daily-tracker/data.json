@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T03:29:47.884Z",
+    "generated_at": "2026-04-09T05:58:37.296Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Lessons from running autonomous prospecting on OpenClaw for 2 weeks",
+        "link": "https://reddit.com/r/openclaw/comments/1sggpft/lessons_from_running_autonomous_prospecting_on/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T05:28:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Every OpenClaw update is a surprise party",
+        "link": "https://reddit.com/r/openclaw/comments/1sgghx7/every_openclaw_update_is_a_surprise_party/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T05:16:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "How to Set Up a Main-Controlled Multi-Agent Workflow in OpenClaw That Actually Executes Work",
+        "link": "https://reddit.com/r/openclaw/comments/1sgg2ih/how_to_set_up_a_maincontrolled_multiagent/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T04:53:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I don't understand AI. How does it work?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sge708/i_dont_understand_ai_how_does_it_work/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-09T03:19:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "I Love My Gemeni's Personality",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sge1ak/i_love_my_gemenis_personality/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-09T03:12:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Has anyone gotten GPT 5.4 to feel like Opus?",
         "link": "https://reddit.com/r/openclaw/comments/1sgc6na/has_anyone_gotten_gpt_54_to_feel_like_opus/",
@@ -379,7 +424,16 @@
         "published_at": "2026-04-09T01:47:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
+      },
+      {
+        "headline": "Gemini projects have been officially released on web.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sgc1al/gemini_projects_have_been_officially_released_on/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-09T01:40:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Can We Please Stop Calling Every New AI Development “Terrifying”?",
@@ -388,7 +442,7 @@
         "published_at": "2026-04-09T01:35:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
         "headline": "Ronan Farrow on Sam Altman: \"We interviewed more than 100 people... a majority did say some variation on the theme of: he's a pathological liar\"",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-09T00:31:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 88
       },
       {
         "headline": "stop blaming codex. opus was carrying your entire setup and you never knew it.",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-09T00:19:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "If you had to pick 3 OpenClaw use cases you swear by, what would they be?",
-        "link": "https://reddit.com/r/openclaw/comments/1sg8o28/if_you_had_to_pick_3_openclaw_use_cases_you_swear/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-08T23:11:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "~77% of all new \"Success\" self-help books on Amazon are likely written by AI, with 1 author, Noah Felix Bennett, publishing a stunning 74 books in mid-2025 alone, at a rate of >1 per day. Richard Trillion Mantey, who has published hundreds of books, was assessed to have used AI for every single book",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sg5aqc/77_of_all_new_success_selfhelp_books_on_amazon/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-08T20:57:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anthropic's recent run of \"Bad Luck\" is exactly what State sponsored AI attacks would look like",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sg5088/anthropics_recent_run_of_bad_luck_is_exactly_what/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-08T20:46:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Roasting challenge",
-        "link": "https://reddit.com/r/aimemes/comments/1sg3rfy/roasting_challenge/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-08T20:00:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Claude Opus vs Mythos",
-        "link": "https://reddit.com/r/singularity/comments/1sg2wwj/claude_opus_vs_mythos/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-08T19:29:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "I effing hate open ai with open claw",
-        "link": "https://reddit.com/r/openclaw/comments/1sg2vjq/i_effing_hate_open_ai_with_open_claw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-08T19:27:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T03:29:47.884Z",
+    "reddit_viral_generated_at": "2026-04-09T05:58:37.296Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
