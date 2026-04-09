@@ -367,20 +367,11 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T07:56:17.404Z",
+    "generated_at": "2026-04-09T09:42:13.468Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
-      {
-        "headline": "Scientists invented a fake disease. AI told people it was real",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sgigd2/scientists_invented_a_fake_disease_ai_told_people/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T07:08:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
       {
         "headline": "Claude Mythos and escaping the sandbox",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sghwzi/claude_mythos_and_escaping_the_sandbox/",
@@ -388,7 +379,7 @@
         "published_at": "2026-04-09T06:36:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 100
       },
       {
         "headline": "OpenClaw is OpenClaw: if you don’t like it, maybe don’t hang on this sub?",
@@ -397,7 +388,7 @@
         "published_at": "2026-04-09T06:26:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 99
       },
       {
         "headline": "If AI was actually killing software engineering, why is there more code than ever?",
@@ -406,13 +397,13 @@
         "published_at": "2026-04-09T05:28:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 97
       },
       {
-        "headline": "Lessons from running autonomous prospecting on OpenClaw for 2 weeks",
-        "link": "https://reddit.com/r/openclaw/comments/1sggpft/lessons_from_running_autonomous_prospecting_on/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T05:28:02+00:00",
+        "headline": "New York Times: Anthropic’s Restraint Is a Terrifying Warning Sign",
+        "link": "https://reddit.com/r/singularity/comments/1sggktf/new_york_times_anthropics_restraint_is_a/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-09T05:20:55+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
@@ -424,7 +415,7 @@
         "published_at": "2026-04-09T05:16:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 96
       },
       {
         "headline": "I don't understand AI. How does it work?",
@@ -433,7 +424,7 @@
         "published_at": "2026-04-09T03:19:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 92
       },
       {
         "headline": "I Love My Gemeni's Personality",
@@ -442,16 +433,7 @@
         "published_at": "2026-04-09T03:12:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Has anyone gotten GPT 5.4 to feel like Opus?",
-        "link": "https://reddit.com/r/openclaw/comments/1sgc6na/has_anyone_gotten_gpt_54_to_feel_like_opus/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T01:47:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 91
       },
       {
         "headline": "Gemini projects have been officially released on web.",
@@ -460,14 +442,32 @@
         "published_at": "2026-04-09T01:40:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
+      },
+      {
+        "headline": "Can We Please Stop Calling Every New AI Development “Terrifying”?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sgbxav/can_we_please_stop_calling_every_new_ai/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-09T01:35:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
+      },
+      {
+        "headline": "Ronan Farrow on Sam Altman: \"We interviewed more than 100 people... a majority did say some variation on the theme of: he's a pathological liar\"",
+        "link": "https://reddit.com/r/singularity/comments/1sgaijv/ronan_farrow_on_sam_altman_we_interviewed_more/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-09T00:31:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T07:56:17.404Z",
+    "reddit_viral_generated_at": "2026-04-09T09:42:13.468Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
