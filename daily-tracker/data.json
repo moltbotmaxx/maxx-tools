@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T23:02:37.894Z",
+    "generated_at": "2026-04-09T23:54:57.176Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -409,15 +409,6 @@
         "viral_score": 97
       },
       {
-        "headline": "What is the most stable version",
-        "link": "https://reddit.com/r/openclaw/comments/1sgzpan/what_is_the_most_stable_version/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T19:29:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
         "headline": "Heavyweight orchestrator or lightweight coordinator?",
         "link": "https://reddit.com/r/openclaw/comments/1sgz2ue/heavyweight_orchestrator_or_lightweight/",
         "subreddit": "openclaw",
@@ -434,6 +425,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 92
+      },
+      {
+        "headline": "We're bringing the advisor strategy to the Claude Platform.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sgy11x/were_bringing_the_advisor_strategy_to_the_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-09T18:30:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "OpenAl launch $100 ChatGPT plan",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T23:02:37.894Z",
+    "reddit_viral_generated_at": "2026-04-09T23:54:57.176Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
