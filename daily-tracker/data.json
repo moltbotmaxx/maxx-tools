@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T19:40:07.347Z",
+    "generated_at": "2026-04-09T21:04:54.691Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Elon Musk leaks the size of Sonnet and Opus",
-        "link": "https://reddit.com/r/singularity/comments/1sgyk9u/elon_musk_leaks_the_size_of_sonnet_and_opus/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-09T18:49:43+00:00",
+        "headline": "We're rethinking openClaw UX, and we need your input first!",
+        "link": "https://reddit.com/r/openclaw/comments/1sh0f3w/were_rethinking_openclaw_ux_and_we_need_your/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T19:55:32+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "What is the most stable version",
+        "link": "https://reddit.com/r/openclaw/comments/1sgzpan/what_is_the_most_stable_version/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T19:29:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Heavyweight orchestrator or lightweight coordinator?",
+        "link": "https://reddit.com/r/openclaw/comments/1sgz2ue/heavyweight_orchestrator_or_lightweight/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T19:07:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "People messing up their punctuation to hide that they've used an LLM",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sgyyg1/people_messing_up_their_punctuation_to_hide_that/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-09T19:03:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Just saw you can open a bank account through ChatGPT now",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-09T18:00:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "OpenAl launch $100 ChatGPT plan",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-09T17:45:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "OpenAI launch $100 ChatGPT plan",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-09T17:45:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Found the clanker",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-09T17:03:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "AI generated cow, 2014",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-09T16:58:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "What happens when AI can see the physical world everywhere, in real time?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-09T16:48:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Karat: 71% of Hiring Leaders Say AI Is Breaking Technical Interviews",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sgu41w/karat_71_of_hiring_leaders_say_ai_is_breaking/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T16:12:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "White-collar workers are quietly rebelling against AI as 80% outright refuse adoption mandates",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sgsqk7/whitecollar_workers_are_quietly_rebelling_against/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T15:23:34+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "Turns out... everything is more fun than writing essay",
-        "link": "https://reddit.com/r/aimemes/comments/1sgslij/turns_out_everything_is_more_fun_than_writing/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-09T15:18:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T19:40:07.347Z",
+    "reddit_viral_generated_at": "2026-04-09T21:04:54.691Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
