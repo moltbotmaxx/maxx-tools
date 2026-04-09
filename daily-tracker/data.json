@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T14:16:07.953Z",
+    "generated_at": "2026-04-09T15:56:38.655Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Turns out... everything is more fun than writing essay",
+        "link": "https://reddit.com/r/aimemes/comments/1sgslij/turns_out_everything_is_more_fun_than_writing/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-09T15:18:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "BREAKING: Anthropic’s new “Mythos” model reportedly found the One Piece before the Straw Hats",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sgs0b4/breaking_anthropics_new_mythos_model_reportedly/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-09T14:57:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Axios updates its first story as inaccurate, instead Spud sounds like it will still release to public, separate from cybersecurity product for select partners",
+        "link": "https://reddit.com/r/singularity/comments/1sgrhq7/axios_updates_its_first_story_as_inaccurate/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-09T14:39:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "This new rage-bait sentence ChatGPT learned is driving me mad",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sgpr3v/this_new_ragebait_sentence_chatgpt_learned_is/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-09T13:32:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Chinese AI companies are shipping faster and cheaper than anyone expected and I'm not sure the west has a good answer for it",
         "link": "https://reddit.com/r/singularity/comments/1sgov6y/chinese_ai_companies_are_shipping_faster_and/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-09T12:56:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "A private company now has powerful zero-day exploits of almost every software project you've heard of.",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-09T12:43:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Is there alternatives to ChatGPT that is more friendly?",
@@ -397,16 +433,16 @@
         "published_at": "2026-04-09T12:04:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
-        "headline": "Passed Anthropic's Claude Certified Architect (893/1000)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sgn0cf/passed_anthropics_claude_certified_architect/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-09T11:32:19+00:00",
+        "headline": "Is this sub 'dead internet' and only bots?",
+        "link": "https://reddit.com/r/openclaw/comments/1sgmoq8/is_this_sub_dead_internet_and_only_bots/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T11:16:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "OpenClaw relationship changed to \"it's complicated\" ;)",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-09T11:13:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Actress Milla Jovovich just released a free open-source AI memory system",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-09T10:36:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "In 2017, Altman straight up lied to US officials that China had launched an \"AGI Manhattan Project\". He claimed he needed billions in government funding to keep pace. An intelligence official concluded: \"It was just being used as a sales pitch.\"",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sgle9h/in_2017_altman_straight_up_lied_to_us_officials/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-09T10:05:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "To be honest, which one do you use the most?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sgl2j2/to_be_honest_which_one_do_you_use_the_most/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-09T09:46:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "New: Context usage warning on session resume",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sgkju2/new_context_usage_warning_on_session_resume/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-09T09:15:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Most developers have a graveyard of unfinished projects. I used Claude to give them a proper burial.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sgkdk5/most_developers_have_a_graveyard_of_unfinished/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-09T09:04:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T14:16:07.953Z",
+    "reddit_viral_generated_at": "2026-04-09T15:56:38.655Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
