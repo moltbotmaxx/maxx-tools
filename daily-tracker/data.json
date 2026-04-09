@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T15:56:38.655Z",
+    "generated_at": "2026-04-09T17:32:59.733Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI generated cow, 2014",
+        "link": "https://reddit.com/r/singularity/comments/1sgve5m/ai_generated_cow_2014/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-09T16:58:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What my job feels like now",
+        "link": "https://reddit.com/r/singularity/comments/1sgu7s6/what_my_job_feels_like_now/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-09T16:16:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Turns out... everything is more fun than writing essay",
         "link": "https://reddit.com/r/aimemes/comments/1sgslij/turns_out_everything_is_more_fun_than_writing/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-09T15:18:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "BREAKING: Anthropic’s new “Mythos” model reportedly found the One Piece before the Straw Hats",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-09T14:57:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Axios updates its first story as inaccurate, instead Spud sounds like it will still release to public, separate from cybersecurity product for select partners",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-09T14:39:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "This new rage-bait sentence ChatGPT learned is driving me mad",
@@ -406,7 +424,16 @@
         "published_at": "2026-04-09T13:32:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
+      },
+      {
+        "headline": "A lot of the new \"GPT 5.4 sucks in OpenClaw\" posts are really config issues",
+        "link": "https://reddit.com/r/openclaw/comments/1sgpg8b/a_lot_of_the_new_gpt_54_sucks_in_openclaw_posts/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T13:20:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Chinese AI companies are shipping faster and cheaper than anyone expected and I'm not sure the west has a good answer for it",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-09T12:56:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "A private company now has powerful zero-day exploits of almost every software project you've heard of.",
@@ -424,40 +451,13 @@
         "published_at": "2026-04-09T12:43:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Is there alternatives to ChatGPT that is more friendly?",
         "link": "https://reddit.com/r/ChatGPT/comments/1sgnopm/is_there_alternatives_to_chatgpt_that_is_more/",
         "subreddit": "ChatGPT",
         "published_at": "2026-04-09T12:04:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Is this sub 'dead internet' and only bots?",
-        "link": "https://reddit.com/r/openclaw/comments/1sgmoq8/is_this_sub_dead_internet_and_only_bots/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T11:16:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "OpenClaw relationship changed to \"it's complicated\" ;)",
-        "link": "https://reddit.com/r/openclaw/comments/1sgmn6q/openclaw_relationship_changed_to_its_complicated/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T11:13:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Actress Milla Jovovich just released a free open-source AI memory system",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sglxqb/actress_milla_jovovich_just_released_a_free/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-09T10:36:34+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T15:56:38.655Z",
+    "reddit_viral_generated_at": "2026-04-09T17:32:59.733Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
