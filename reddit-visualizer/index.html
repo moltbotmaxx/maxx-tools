@@ -546,7 +546,7 @@
 
           <!-- Comment Browser (shown after fetch) -->
           <div id="browser-wrap" style="display:none;">
-            <div class="form-label" style="margin-bottom:5px;">Comment Chains — click to import</div>
+            <div class="form-label" style="margin-bottom:5px;">Comentarios — haz clic para importar</div>
             <div class="comment-browser" id="comment-browser"></div>
           </div>
         </div>
@@ -909,17 +909,25 @@
       const proxy = `https://corsproxy.io/?${encodeURIComponent(url)}`;
       try {
         const r = await fetch(proxy, { signal });
-        if (r.ok) return await r.json();
+        if (r.ok) {
+          try { return await r.json(); } catch {}
+        }
       } catch (e) {
         if (e.name === 'AbortError') throw e;
       }
 
       // 3. Try allorigins
       const ao = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
-      const r = await fetch(ao, { signal });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      const wrapper = await r.json();
-      return JSON.parse(wrapper.contents);
+      try {
+        const r = await fetch(ao, { signal });
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const wrapper = await r.json();
+        if (!wrapper.contents) throw new Error('Empty proxy response');
+        return JSON.parse(wrapper.contents);
+      } catch (e) {
+        if (e.name === 'AbortError') throw e;
+        throw new Error(`Failed to fetch thread. Reddit may be blocking requests. Try opening the link in a new tab and re-pasting. (${e.message})`);
+      }
     }
 
     // ── Comment Parsing ───────────────────────────────────────────────────────
@@ -1070,6 +1078,12 @@
         depthTag.className = 'browser-item__depth';
         depthTag.textContent = `${chain.replies.length} repl.`;
 
+        head.title = 'Click to import this chain';
+        head.addEventListener('click', () => {
+          const best = buildBestChain(chain);
+          importChain(best, true);
+        });
+
         head.appendChild(avatar);
         head.appendChild(info);
         head.appendChild(depthTag);
@@ -1099,7 +1113,7 @@
         // Import chain button
         const chainBtn = document.createElement('button');
         chainBtn.className = 'browser-chain-btn';
-        chainBtn.textContent = '↓ Import this chain';
+        chainBtn.textContent = '↓ Agregar cadena al hilo';
         chainBtn.addEventListener('click', () => {
           const best = buildBestChain(chain);
           importChain(best, true);
