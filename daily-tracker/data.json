@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-09T11:17:49.369Z",
+    "generated_at": "2026-04-09T12:06:36.178Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenClaw relationship changed to \"it's complicated\" ;)",
+        "link": "https://reddit.com/r/openclaw/comments/1sgmn6q/openclaw_relationship_changed_to_its_complicated/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-09T11:13:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Actress Milla Jovovich just released a free open-source AI memory system",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sglxqb/actress_milla_jovovich_just_released_a_free/",
@@ -379,7 +388,25 @@
         "published_at": "2026-04-09T10:36:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "In 2017, Altman straight up lied to US officials that China had launched an \"AGI Manhattan Project\". He claimed he needed billions in government funding to keep pace. An intelligence official concluded: \"It was just being used as a sales pitch.\"",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sgle9h/in_2017_altman_straight_up_lied_to_us_officials/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-09T10:05:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "In 2017, Altman straight up lied to US officials that China had launched an \"AGI Manhattan Project\". He claimed he needed billions in government funding to keep pace. An intelligence official concluded: \"It was just being used as a sales pitch.\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1sgldnx/in_2017_altman_straight_up_lied_to_us_officials/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-09T10:04:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "To be honest, which one do you use the most?",
@@ -388,7 +415,16 @@
         "published_at": "2026-04-09T09:46:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
+      },
+      {
+        "headline": "Most developers have a graveyard of unfinished projects. I used Claude to give them a proper burial.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sgkdk5/most_developers_have_a_graveyard_of_unfinished/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-09T09:04:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Why are people running Claude Code on a Mac mini instead of their personal MacBook?",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-09T07:36:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "This is our new hierarchy",
@@ -406,16 +442,16 @@
         "published_at": "2026-04-09T06:37:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
-        "headline": "OpenClaw is OpenClaw: if you don’t like it, maybe don’t hang on this sub?",
-        "link": "https://reddit.com/r/openclaw/comments/1sghqjq/openclaw_is_openclaw_if_you_dont_like_it_maybe/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T06:26:23+00:00",
+        "headline": "OpenAI Stakeholders Return Values at Current $852B Valuation",
+        "link": "https://reddit.com/r/OpenAI/comments/1sgh9tl/openai_stakeholders_return_values_at_current_852b/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-09T06:00:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "New York Times: Anthropic’s Restraint Is a Terrifying Warning Sign",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-09T05:20:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Every OpenClaw update is a surprise party",
-        "link": "https://reddit.com/r/openclaw/comments/1sgghx7/every_openclaw_update_is_a_surprise_party/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-09T05:16:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I Love My Gemeni's Personality",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sge1ak/i_love_my_gemenis_personality/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-09T03:12:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Gemini projects have been officially released on web.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sgc1al/gemini_projects_have_been_officially_released_on/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-09T01:40:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
-      },
-      {
-        "headline": "Ronan Farrow on Sam Altman: \"We interviewed more than 100 people... a majority did say some variation on the theme of: he's a pathological liar\"",
-        "link": "https://reddit.com/r/singularity/comments/1sgaijv/ronan_farrow_on_sam_altman_we_interviewed_more/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-09T00:31:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 77
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-09T11:17:49.369Z",
+    "reddit_viral_generated_at": "2026-04-09T12:06:36.178Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
