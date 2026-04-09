@@ -13,6 +13,7 @@ on:
       - "chart-animator/**"
       - "daily-tracker/**"
       - "fx-tracker/**"
+      - "reddit-visualizer/**"
       - "sentient-accounts/avatars/**"
       - "sentient-accounts/dashboard/**"
       - "sentient-accounts/data/**"
@@ -62,6 +63,7 @@ jobs:
           mkdir -p .site/chart-animator
           mkdir -p .site/daily-tracker
           mkdir -p .site/fx-tracker
+          mkdir -p .site/reddit-visualizer
           mkdir -p .site/sentient-accounts/avatars
           mkdir -p .site/sentient-accounts/dashboard
           mkdir -p .site/sentient-accounts/data
@@ -70,6 +72,7 @@ jobs:
           rsync -a chart-animator/ .site/chart-animator/
           rsync -a daily-tracker/ .site/daily-tracker/
           rsync -a fx-tracker/ .site/fx-tracker/
+          rsync -a reddit-visualizer/ .site/reddit-visualizer/
           rsync -a tweet-visualizer/ .site/tweet-visualizer/
           rsync -a sentient-accounts/avatars/ .site/sentient-accounts/avatars/
           rsync -a sentient-accounts/dashboard/ .site/sentient-accounts/dashboard/
