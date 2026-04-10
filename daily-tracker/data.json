@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T19:13:49.908Z",
+    "generated_at": "2026-04-10T19:56:13.835Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "vibecoders using claude, chat gpt and gemini for the same project be like:",
+        "link": "https://reddit.com/r/ChatGPT/comments/1shw1vp/vibecoders_using_claude_chat_gpt_and_gemini_for/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-10T19:09:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Deepmind/Google solving highly researched, but previously unsolved Number Theory problems",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1shva2a/deepmindgoogle_solving_highly_researched_but/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-10T18:41:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "OpenClaw literally made me £93 today and I did absolutely nothing",
+        "link": "https://reddit.com/r/openclaw/comments/1shutzt/openclaw_literally_made_me_93_today_and_i_did/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-10T18:25:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "George Hotz argues that discovering zero-day vulnerabilities isn’t especially difficult but the financial incentives for doing so are too weak to make it worthwhile for most people.",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-10T18:17:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "\"Firebomb thrown at Sam Altman's mansion in terrifying Molotov cocktail attack\"",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-10T18:11:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Someone threw a Molotov cocktail at Sam Altman’s home and then made threats outside OAI. (No injuries, only minimal damage)",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-10T17:30:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Bro the chart. I am crying",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-10T17:13:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Some of you mfs",
@@ -424,40 +442,22 @@
         "published_at": "2026-04-10T16:56:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
+      },
+      {
+        "headline": "OpenAI researcher says his Anthropic roommate lost his mind over Mythos",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1shs4ej/openai_researcher_says_his_anthropic_roommate/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-10T16:50:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Claude Mythos is Delusionali",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sho9f1/claude_mythos_is_delusionali/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-04-10T14:32:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "We know how this whole AI thing ends. We’re doing it anyway.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sho8s7/we_know_how_this_whole_ai_thing_ends_were_doing/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-10T14:32:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I automated most of my job",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1shngqm/i_automated_most_of_my_job/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-10T14:03:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "The Atlantic: Is Schoolwork Optional Now? | Education is on the verge of becoming fully automated.",
-        "link": "https://reddit.com/r/singularity/comments/1shn7qq/the_atlantic_is_schoolwork_optional_now_education/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-10T13:53:58+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T19:13:49.908Z",
+    "reddit_viral_generated_at": "2026-04-10T19:56:13.835Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
