@@ -1008,20 +1008,26 @@
     function renderCommentBrowser(chains) {
       el.commentBrowser.innerHTML = '';
 
-      // Flatten ALL comments at every depth level
+      // Iterative flatten — avoids call-stack overflow on deep threads
       const flat = [];
-      function flatten(node, root) {
-        flat.push({ node, root });
-        for (const reply of (node.replies || [])) {
-          flatten(reply, root);
-        }
+      const stack = [];
+      for (let i = chains.slice(0, 25).length - 1; i >= 0; i--) {
+        stack.push({ node: chains[i], root: chains[i] });
       }
-      for (const chain of chains.slice(0, 25)) {
-        flatten(chain, chain);
+      while (stack.length > 0 && flat.length < 150) {
+        const { node, root } = stack.pop();
+        flat.push({ node, root });
+        const replies = node.replies || [];
+        for (let i = replies.length - 1; i >= 0; i--) {
+          stack.push({ node: replies[i], root });
+        }
       }
 
       if (flat.length === 0) {
-        el.commentBrowser.innerHTML = '<div class="empty-state">No se encontraron comentarios.</div>';
+        const empty = document.createElement('div');
+        empty.className = 'empty-state';
+        empty.textContent = 'No se encontraron comentarios.';
+        el.commentBrowser.appendChild(empty);
         return;
       }
 
@@ -1050,12 +1056,19 @@
         avatar.style.background = node.avatarColor;
         avatar.textContent = getAvatarLetter(node.username);
 
+        // Use textContent for all user content — prevents HTML injection breaking the DOM
+        const userEl = document.createElement('div');
+        userEl.className = 'browser-item__user';
+        userEl.textContent = node.username;
+
+        const textEl = document.createElement('div');
+        textEl.className = 'browser-item__text';
+        textEl.textContent = node.text;
+
         const info = document.createElement('div');
         info.className = 'browser-item__info';
-        info.innerHTML = `
-          <div class="browser-item__user">${node.username}</div>
-          <div class="browser-item__text">${node.text}</div>
-        `;
+        info.appendChild(userEl);
+        info.appendChild(textEl);
 
         head.appendChild(avatar);
         head.appendChild(info);
