@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T17:09:10.464Z",
+    "generated_at": "2026-04-10T18:03:22.066Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Stalking victim sues OpenAI, claims ChatGPT fueled her abuser’s delusions and ignored her warnings",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1shs9kj/stalking_victim_sues_openai_claims_chatgpt_fueled/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-10T16:55:17+00:00",
+        "headline": "Someone threw a Molotov cocktail at Sam Altman’s home and then made threats outside OAI. (No injuries, only minimal damage)",
+        "link": "https://reddit.com/r/singularity/comments/1shtaau/someone_threw_a_molotov_cocktail_at_sam_altmans/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-10T17:30:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Some of you mfs",
+        "link": "https://reddit.com/r/singularity/comments/1shsalw/some_of_you_mfs/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-10T16:56:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude Mythos is Delusionali",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sho9f1/claude_mythos_is_delusionali/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-10T14:32:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "We know how this whole AI thing ends. We’re doing it anyway.",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-10T14:32:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Is this really the future of all programmers? Does it make sense to still doing things by hand?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-10T14:11:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "I automated most of my job",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-10T14:03:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "The Atlantic: Is Schoolwork Optional Now? | Education is on the verge of becoming fully automated.",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-10T13:53:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "there's a regression in 2026.4.8 that silently breaks daily session reset and inflates your API bill",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-10T13:23:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Ask your Gemini to appear human!",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-10T13:18:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "The ultimate study hack",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-10T12:46:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "The ultimate study hack",
-        "link": "https://reddit.com/r/ChatGPT/comments/1shli05/the_ultimate_study_hack/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-10T12:44:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Gemma 4 and Ollama vision models now work natively in OpenClaw (2026.4.7)",
-        "link": "https://reddit.com/r/openclaw/comments/1shlftz/gemma_4_and_ollama_vision_models_now_work/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-10T12:42:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T17:09:10.464Z",
+    "reddit_viral_generated_at": "2026-04-10T18:03:22.066Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
