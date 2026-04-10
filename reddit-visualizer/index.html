@@ -852,38 +852,51 @@
     }
 
     // ── Reddit Fetch ──────────────────────────────────────────────────────────
+    function fetchWithTimeout(input, init, ms = 9000) {
+      const tc = new AbortController();
+      const timer = setTimeout(() => tc.abort(), ms);
+      const combined = { ...init, signal: tc.signal };
+      // If the caller already has a signal, race both
+      if (init?.signal) {
+        init.signal.addEventListener('abort', () => tc.abort());
+      }
+      return fetch(input, combined).finally(() => clearTimeout(timer));
+    }
+
     async function fetchJson(url, signal) {
-      // 1. Try direct
-      try {
-        const r = await fetch(url, { signal, headers: { 'Accept': 'application/json' } });
-        if (r.ok) return await r.json();
-      } catch (e) {
-        if (e.name === 'AbortError') throw e;
-      }
+      const opts = { signal };
 
-      // 2. Try corsproxy.io
-      const proxy = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+      // 1. Direct (works when served via localhost; blocked from file://)
       try {
-        const r = await fetch(proxy, { signal });
+        const r = await fetchWithTimeout(url, { ...opts, headers: { 'Accept': 'application/json' } });
+        if (r.ok) { try { return await r.json(); } catch {} }
+      } catch (e) { if (e.name === 'AbortError') throw e; }
+
+      // 2. corsproxy.io
+      setStatus('Fetching… (proxy 1/3)', 'loading');
+      try {
+        const r = await fetchWithTimeout(`https://corsproxy.io/?${encodeURIComponent(url)}`, opts);
+        if (r.ok) { try { return await r.json(); } catch {} }
+      } catch (e) { if (e.name === 'AbortError') throw e; }
+
+      // 3. allorigins
+      setStatus('Fetching… (proxy 2/3)', 'loading');
+      try {
+        const r = await fetchWithTimeout(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`, opts);
         if (r.ok) {
-          try { return await r.json(); } catch {}
+          const w = await r.json();
+          if (w.contents) { try { return JSON.parse(w.contents); } catch {} }
         }
-      } catch (e) {
-        if (e.name === 'AbortError') throw e;
-      }
+      } catch (e) { if (e.name === 'AbortError') throw e; }
 
-      // 3. Try allorigins
-      const ao = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+      // 4. codetabs
+      setStatus('Fetching… (proxy 3/3)', 'loading');
       try {
-        const r = await fetch(ao, { signal });
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        const wrapper = await r.json();
-        if (!wrapper.contents) throw new Error('Empty proxy response');
-        return JSON.parse(wrapper.contents);
-      } catch (e) {
-        if (e.name === 'AbortError') throw e;
-        throw new Error(`Failed to fetch thread. Reddit may be blocking requests. Try opening the link in a new tab and re-pasting. (${e.message})`);
-      }
+        const r = await fetchWithTimeout(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`, opts);
+        if (r.ok) { try { return await r.json(); } catch {} }
+      } catch (e) { if (e.name === 'AbortError') throw e; }
+
+      throw new Error('All proxies failed. Check the URL or try again in a moment.');
     }
 
     // ── Comment Parsing ───────────────────────────────────────────────────────
