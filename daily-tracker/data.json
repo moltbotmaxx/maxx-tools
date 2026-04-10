@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T21:55:32.851Z",
+    "generated_at": "2026-04-10T22:57:37.660Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How I'm using AI to manage email avoidance as someone self-employed with ADHD",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1si02d4/how_im_using_ai_to_manage_email_avoidance_as/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-10T21:38:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "We chose GLM-5.1 because its the best alternative to opus",
+        "link": "https://reddit.com/r/openclaw/comments/1shztzz/we_chose_glm51_because_its_the_best_alternative/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-10T21:29:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "vibecoders using claude, chat gpt and gemini for the same project be like:",
         "link": "https://reddit.com/r/ChatGPT/comments/1shw1vp/vibecoders_using_claude_chat_gpt_and_gemini_for/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-10T19:09:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Deepmind/Google solving highly researched, but previously unsolved Number Theory problems",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1shva2a/deepmindgoogle_solving_highly_researched_but/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-10T18:41:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "OpenClaw literally made me £93 today and I did absolutely nothing",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-10T18:25:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "George Hotz argues that discovering zero-day vulnerabilities isn’t especially difficult but the financial incentives for doing so are too weak to make it worthwhile for most people.",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-10T18:17:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "\"Firebomb thrown at Sam Altman's mansion in terrifying Molotov cocktail attack\"",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-10T18:11:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Someone threw a Molotov cocktail at Sam Altman’s home and then made threats outside OAI. (No injuries, only minimal damage)",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-10T17:30:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Gemini is keeping me in check 😂😂",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-10T17:26:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Bro the chart. I am crying",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-10T17:13:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Some of you mfs",
-        "link": "https://reddit.com/r/singularity/comments/1shsalw/some_of_you_mfs/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-10T16:56:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "OpenAI researcher says his Anthropic roommate lost his mind over Mythos",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1shs4ej/openai_researcher_says_his_anthropic_roommate/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-10T16:50:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "What the hell is this!?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1shrt6e/what_the_hell_is_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-10T16:39:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T21:55:32.851Z",
+    "reddit_viral_generated_at": "2026-04-10T22:57:37.660Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
