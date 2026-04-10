@@ -852,51 +852,51 @@
     }
 
     // ── Reddit Fetch ──────────────────────────────────────────────────────────
-    function fetchWithTimeout(input, init, ms = 9000) {
-      const tc = new AbortController();
-      const timer = setTimeout(() => tc.abort(), ms);
-      const combined = { ...init, signal: tc.signal };
-      // If the caller already has a signal, race both
-      if (init?.signal) {
-        init.signal.addEventListener('abort', () => tc.abort());
-      }
-      return fetch(input, combined).finally(() => clearTimeout(timer));
-    }
-
     async function fetchJson(url, signal) {
-      const opts = { signal };
+      // Race a fetch against a plain timeout — timeout rejects with Error (not AbortError)
+      // so we can distinguish "user cancelled" from "this proxy timed out"
+      const timed = (input, init = {}, ms = 9000) =>
+        Promise.race([
+          fetch(input, { ...init, signal }),
+          new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), ms)),
+        ]);
 
-      // 1. Direct (works when served via localhost; blocked from file://)
-      try {
-        const r = await fetchWithTimeout(url, { ...opts, headers: { 'Accept': 'application/json' } });
-        if (r.ok) { try { return await r.json(); } catch {} }
-      } catch (e) { if (e.name === 'AbortError') throw e; }
+      // Returns parsed JSON or null; re-throws only if the USER aborted
+      const attempt = async (input, init = {}) => {
+        try {
+          const r = await timed(input, init);
+          if (r.ok) { try { return await r.json(); } catch {} }
+        } catch (e) {
+          if (signal?.aborted) throw e;   // user hit Load again — stop everything
+        }
+        return null;
+      };
+
+      // 1. Direct (works from localhost; blocked from file://)
+      let d = await attempt(url, { headers: { 'Accept': 'application/json' } });
+      if (d) return d;
 
       // 2. corsproxy.io
-      setStatus('Fetching… (proxy 1/3)', 'loading');
-      try {
-        const r = await fetchWithTimeout(`https://corsproxy.io/?${encodeURIComponent(url)}`, opts);
-        if (r.ok) { try { return await r.json(); } catch {} }
-      } catch (e) { if (e.name === 'AbortError') throw e; }
+      setStatus('Cargando… (proxy 1/3)', 'loading');
+      d = await attempt(`https://corsproxy.io/?${encodeURIComponent(url)}`);
+      if (d) return d;
 
-      // 3. allorigins
-      setStatus('Fetching… (proxy 2/3)', 'loading');
+      // 3. allorigins (wrapped response)
+      setStatus('Cargando… (proxy 2/3)', 'loading');
       try {
-        const r = await fetchWithTimeout(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`, opts);
+        const r = await timed(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
         if (r.ok) {
           const w = await r.json();
-          if (w.contents) { try { return JSON.parse(w.contents); } catch {} }
+          if (w?.contents) { try { return JSON.parse(w.contents); } catch {} }
         }
-      } catch (e) { if (e.name === 'AbortError') throw e; }
+      } catch (e) { if (signal?.aborted) throw e; }
 
       // 4. codetabs
-      setStatus('Fetching… (proxy 3/3)', 'loading');
-      try {
-        const r = await fetchWithTimeout(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`, opts);
-        if (r.ok) { try { return await r.json(); } catch {} }
-      } catch (e) { if (e.name === 'AbortError') throw e; }
+      setStatus('Cargando… (proxy 3/3)', 'loading');
+      d = await attempt(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`);
+      if (d) return d;
 
-      throw new Error('All proxies failed. Check the URL or try again in a moment.');
+      throw new Error('Todos los proxies fallaron. Verifica la URL o intenta en unos segundos.');
     }
 
     // ── Comment Parsing ───────────────────────────────────────────────────────
