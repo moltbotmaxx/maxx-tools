@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T09:40:06.046Z",
+    "generated_at": "2026-04-10T11:13:33.638Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I'm not going to pay 12x more for the Ultra plan, stop spamming this already",
+        "link": "https://reddit.com/r/GeminiAI/comments/1shicsh/im_not_going_to_pay_12x_more_for_the_ultra_plan/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-10T10:10:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Grok for you",
+        "link": "https://reddit.com/r/ChatGPT/comments/1shi3fn/grok_for_you/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-10T09:56:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "OpenClaw + Ollama: Skip gemma and qwen - glm4.7 is the local LLM that actually works",
         "link": "https://reddit.com/r/openclaw/comments/1shf2gj/openclaw_ollama_skip_gemma_and_qwen_glm47_is_the/",
@@ -379,16 +397,7 @@
         "published_at": "2026-04-10T06:56:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Running one autonomous agent 24/7 for a month - the real bottlenecks nobody talks about",
-        "link": "https://reddit.com/r/openclaw/comments/1shf1k0/running_one_autonomous_agent_247_for_a_month_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-10T06:54:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Gemini Pro 3.1 has really stopped “thinking” and is now delivering useless responses.",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-10T06:52:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Claude used to push back, now it just agrees with everything",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-10T06:49:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Anthropic just shipped 74 product releases in 52 days and silently turned Claude into something that isn't a chatbot anymore",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-10T06:08:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Researchers infected an AI agent with a \"thought virus\". Then, the AI used subliminal messaging (to slip past defenses) and infect an entire network of AI agents.",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-10T06:05:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Any other ADHD programmers find ClaudeCode to be a dream come true?",
@@ -433,16 +442,7 @@
         "published_at": "2026-04-10T04:33:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "My mom has started texting my house",
-        "link": "https://reddit.com/r/openclaw/comments/1shbxd3/my_mom_has_started_texting_my_house/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-10T04:02:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "My chatgpt said the N-Word",
@@ -451,7 +451,7 @@
         "published_at": "2026-04-10T03:17:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "800 Million non paying accounts for free inference, but theyre nickle and diming paid users with lessened Codex rate limits.",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-10T01:59:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T09:40:06.046Z",
+    "reddit_viral_generated_at": "2026-04-10T11:13:33.638Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
