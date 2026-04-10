@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T13:51:31.551Z",
+    "generated_at": "2026-04-10T15:08:37.472Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "We know how this whole AI thing ends. We’re doing it anyway.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sho8s7/we_know_how_this_whole_ai_thing_ends_were_doing/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-10T14:32:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The Atlantic: Is Schoolwork Optional Now? | Education is on the verge of becoming fully automated.",
+        "link": "https://reddit.com/r/singularity/comments/1shn7qq/the_atlantic_is_schoolwork_optional_now_education/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-10T13:53:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "The ultimate study hack",
         "link": "https://reddit.com/r/OpenAI/comments/1shlj4u/the_ultimate_study_hack/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-10T12:46:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "The ultimate study hack",
+        "link": "https://reddit.com/r/ChatGPT/comments/1shli05/the_ultimate_study_hack/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-10T12:44:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "As a heavy Gemini user, I'm very disappointed after trying Claude",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-10T12:11:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "AI Inluencers",
@@ -397,16 +424,7 @@
         "published_at": "2026-04-10T11:51:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Did AI just solve the \"Hard Problem\" by proving consciousness is just a byproduct of scale?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1shk2b2/did_ai_just_solve_the_hard_problem_by_proving/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-10T11:39:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Is anyone low-key embarrassed for humanity that our Robot Overlord is manifesting not as Skynet, but rather as a lippy spell checker that decided we needed a bedtime?",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-10T11:18:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Running agents on a cheap model + using Claude Code as an \"advisor\" on your subscription - Anthropic's Advisor pattern, adapted for OpenClaw",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-10T11:09:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "I'm not going to pay 12x more for the Ultra plan, stop spamming this already",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-10T10:10:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Grok for you",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-10T09:56:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "OpenClaw + Ollama: Skip gemma and qwen - glm4.7 is the local LLM that actually works",
-        "link": "https://reddit.com/r/openclaw/comments/1shf2gj/openclaw_ollama_skip_gemma_and_qwen_glm47_is_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-10T06:56:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Gemini Pro 3.1 has really stopped “thinking” and is now delivering useless responses.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1shezts/gemini_pro_31_has_really_stopped_thinking_and_is/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-10T06:52:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T13:51:31.551Z",
+    "reddit_viral_generated_at": "2026-04-10T15:08:37.472Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
