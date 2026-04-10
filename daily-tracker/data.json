@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T11:13:33.638Z",
+    "generated_at": "2026-04-10T12:01:31.558Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI Inluencers",
+        "link": "https://reddit.com/r/aimemes/comments/1shkazl/ai_inluencers/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-10T11:51:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Is anyone low-key embarrassed for humanity that our Robot Overlord is manifesting not as Skynet, but rather as a lippy spell checker that decided we needed a bedtime?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1shjmpu/is_anyone_lowkey_embarrassed_for_humanity_that/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-10T11:18:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "I'm not going to pay 12x more for the Ultra plan, stop spamming this already",
         "link": "https://reddit.com/r/GeminiAI/comments/1shicsh/im_not_going_to_pay_12x_more_for_the_ultra_plan/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-10T10:10:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Grok for you",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-10T09:56:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "OpenClaw + Ollama: Skip gemma and qwen - glm4.7 is the local LLM that actually works",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-10T06:56:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Gemini Pro 3.1 has really stopped “thinking” and is now delivering useless responses.",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-10T06:52:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Claude used to push back, now it just agrees with everything",
@@ -415,7 +433,16 @@
         "published_at": "2026-04-10T06:49:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
+      },
+      {
+        "headline": "GLM-5.1 just sitting with Opus 4.6 on SWE-Bench Pro and it’s completely open. but costs Input $1.4 / Output $4.4",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1shep99/glm51_just_sitting_with_opus_46_on_swebench_pro/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-10T06:34:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "Anthropic just shipped 74 product releases in 52 days and silently turned Claude into something that isn't a chatbot anymore",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-10T06:08:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Researchers infected an AI agent with a \"thought virus\". Then, the AI used subliminal messaging (to slip past defenses) and infect an entire network of AI agents.",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-10T06:05:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Any other ADHD programmers find ClaudeCode to be a dream come true?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1shciwa/any_other_adhd_programmers_find_claudecode_to_be/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-10T04:33:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "My chatgpt said the N-Word",
-        "link": "https://reddit.com/r/ChatGPT/comments/1shb001/my_chatgpt_said_the_nword/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-10T03:17:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "800 Million non paying accounts for free inference, but theyre nickle and diming paid users with lessened Codex rate limits.",
-        "link": "https://reddit.com/r/OpenAI/comments/1sh9aar/800_million_non_paying_accounts_for_free/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-10T01:59:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T11:13:33.638Z",
+    "reddit_viral_generated_at": "2026-04-10T12:01:31.558Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
