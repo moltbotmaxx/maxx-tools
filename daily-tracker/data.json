@@ -367,25 +367,25 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T19:56:13.835Z",
+    "generated_at": "2026-04-10T20:57:16.884Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "vibecoders using claude, chat gpt and gemini for the same project be like:",
-        "link": "https://reddit.com/r/ChatGPT/comments/1shw1vp/vibecoders_using_claude_chat_gpt_and_gemini_for/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-10T19:09:02+00:00",
+        "headline": "To all OpenClaw fans who are frustrated from Anthropic block and finding it hard to deal with GPT 5.4 like me",
+        "link": "https://reddit.com/r/openclaw/comments/1shws2u/to_all_openclaw_fans_who_are_frustrated_from/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-10T19:35:26+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Deepmind/Google solving highly researched, but previously unsolved Number Theory problems",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1shva2a/deepmindgoogle_solving_highly_researched_but/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-10T18:41:36+00:00",
+        "headline": "vibecoders using claude, chat gpt and gemini for the same project be like:",
+        "link": "https://reddit.com/r/ChatGPT/comments/1shw1vp/vibecoders_using_claude_chat_gpt_and_gemini_for/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-10T19:09:02+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
@@ -397,7 +397,7 @@
         "published_at": "2026-04-10T18:25:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "George Hotz argues that discovering zero-day vulnerabilities isn’t especially difficult but the financial incentives for doing so are too weak to make it worthwhile for most people.",
@@ -415,7 +415,7 @@
         "published_at": "2026-04-10T18:11:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Someone threw a Molotov cocktail at Sam Altman’s home and then made threats outside OAI. (No injuries, only minimal damage)",
@@ -424,7 +424,7 @@
         "published_at": "2026-04-10T17:30:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Bro the chart. I am crying",
@@ -433,7 +433,7 @@
         "published_at": "2026-04-10T17:13:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Some of you mfs",
@@ -442,7 +442,7 @@
         "published_at": "2026-04-10T16:56:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "OpenAI researcher says his Anthropic roommate lost his mind over Mythos",
@@ -451,23 +451,23 @@
         "published_at": "2026-04-10T16:50:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
-        "headline": "Claude Mythos is Delusionali",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sho9f1/claude_mythos_is_delusionali/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-10T14:32:57+00:00",
+        "headline": "What the hell is this!?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1shrt6e/what_the_hell_is_this/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-10T16:39:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T19:56:13.835Z",
+    "reddit_viral_generated_at": "2026-04-10T20:57:16.884Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
