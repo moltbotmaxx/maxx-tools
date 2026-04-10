@@ -502,8 +502,8 @@
 
           <!-- Comment Browser (shown after fetch) -->
           <div id="browser-wrap" style="display:none;">
-            <div class="form-label" style="margin-bottom:5px;">Comentarios — haz clic para importar</div>
-            <div class="comment-browser" id="comment-browser"></div>
+            <div class="form-label" style="margin-bottom:5px;" id="browser-label">Comentarios — haz clic para importar</div>
+            <div id="comment-browser" style="display:flex;flex-direction:column;gap:4px;max-height:400px;overflow-y:auto;"></div>
           </div>
         </div>
 
@@ -1021,10 +1021,10 @@
     function renderCommentBrowser(chains) {
       el.commentBrowser.innerHTML = '';
 
-      // Iterative flatten — avoids call-stack overflow on deep threads
+      // Iterative flatten
       const flat = [];
       const stack = [];
-      for (let i = chains.slice(0, 25).length - 1; i >= 0; i--) {
+      for (let i = Math.min(chains.length, 25) - 1; i >= 0; i--) {
         stack.push({ node: chains[i], root: chains[i] });
       }
       while (stack.length > 0 && flat.length < 150) {
@@ -1036,69 +1036,75 @@
         }
       }
 
+      // Update label with count
+      const lbl = document.getElementById('browser-label');
+      if (lbl) lbl.textContent = `Comentarios (${flat.length}) — haz clic para importar`;
+
+      console.log('[CommentBrowser] chains:', chains.length, '| flat:', flat.length);
+
       if (flat.length === 0) {
-        const empty = document.createElement('div');
-        empty.className = 'empty-state';
-        empty.textContent = 'No se encontraron comentarios.';
-        el.commentBrowser.appendChild(empty);
+        el.commentBrowser.innerHTML = '<div style="padding:10px;font-size:12px;color:#888;font-style:italic;">No se encontraron comentarios.</div>';
         return;
       }
 
       flat.forEach(({ node, root }) => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const bg   = isDark ? '#1c1c2e' : '#ffffff';
+        const border = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
+        const userColor = isDark ? '#ffffff' : '#000000';
+        const textColor = isDark ? '#888' : '#666';
+
         const item = document.createElement('div');
-        item.className = 'browser-item';
-
-        const head = document.createElement('div');
-        head.className = 'browser-item__head';
-        head.title = 'Clic para importar esta cadena';
-
-        // Depth indicator lines
-        if (node.depth > 0) {
-          const indent = document.createElement('div');
-          indent.className = 'browser-item__indent';
-          for (let d = 0; d < node.depth; d++) {
-            const line = document.createElement('div');
-            line.className = 'browser-item__indent-line';
-            indent.appendChild(line);
-          }
-          head.appendChild(indent);
-        }
+        item.style.cssText = `
+          display:flex; align-items:center; gap:10px;
+          padding:8px 12px;
+          margin-left:${node.depth * 14}px;
+          border:1px solid ${border};
+          border-radius:10px;
+          background:${bg};
+          cursor:pointer;
+          transition:opacity .15s;
+        `;
+        item.addEventListener('mouseenter', () => item.style.opacity = '0.75');
+        item.addEventListener('mouseleave', () => item.style.opacity = '1');
 
         const avatar = document.createElement('div');
-        avatar.className = 'browser-item__avatar';
-        avatar.style.background = node.avatarColor;
+        avatar.style.cssText = `
+          width:28px; height:28px; border-radius:50%;
+          background:${node.avatarColor}; color:#fff;
+          display:flex; align-items:center; justify-content:center;
+          font-size:11px; font-weight:700; flex-shrink:0;
+        `;
         avatar.textContent = getAvatarLetter(node.username);
 
-        // Use textContent for all user content — prevents HTML injection breaking the DOM
+        const info = document.createElement('div');
+        info.style.cssText = 'flex:1; min-width:0;';
+
         const userEl = document.createElement('div');
-        userEl.className = 'browser-item__user';
+        userEl.style.cssText = `font-size:13px; font-weight:600; color:${userColor}; margin-bottom:2px;`;
         userEl.textContent = node.username;
 
         const textEl = document.createElement('div');
-        textEl.className = 'browser-item__text';
+        textEl.style.cssText = `font-size:12px; color:${textColor}; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;`;
         textEl.textContent = node.text;
 
-        const info = document.createElement('div');
-        info.className = 'browser-item__info';
         info.appendChild(userEl);
         info.appendChild(textEl);
-
-        head.appendChild(avatar);
-        head.appendChild(info);
+        item.appendChild(avatar);
+        item.appendChild(info);
 
         if (node.replies && node.replies.length > 0) {
-          const depthTag = document.createElement('div');
-          depthTag.className = 'browser-item__depth';
-          depthTag.textContent = `↳${node.replies.length}`;
-          head.appendChild(depthTag);
+          const tag = document.createElement('div');
+          tag.style.cssText = `font-size:11px; color:${textColor}; padding:2px 6px; border-radius:6px; background:${isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)'}; flex-shrink:0; white-space:nowrap;`;
+          tag.textContent = `↳${node.replies.length}`;
+          item.appendChild(tag);
         }
 
-        head.addEventListener('click', () => {
+        item.addEventListener('click', () => {
           const best = buildBestChain(root);
           importChain(best, true);
         });
 
-        item.appendChild(head);
         el.commentBrowser.appendChild(item);
       });
     }
