@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T03:43:03.956Z",
+    "generated_at": "2026-04-10T06:10:02.814Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claws app completely broke my working OpenClaw setup - avoid it",
+        "link": "https://reddit.com/r/openclaw/comments/1shdj2n/claws_app_completely_broke_my_working_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-10T05:28:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Any other ADHD programmers find ClaudeCode to be a dream come true?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1shciwa/any_other_adhd_programmers_find_claudecode_to_be/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-10T04:33:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "My mom has started texting my house",
+        "link": "https://reddit.com/r/openclaw/comments/1shbxd3/my_mom_has_started_texting_my_house/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-10T04:02:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "My chatgpt said the N-Word",
+        "link": "https://reddit.com/r/ChatGPT/comments/1shb001/my_chatgpt_said_the_nword/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-10T03:17:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "dreaming is great but it exposed 3 gaps in my setup",
         "link": "https://reddit.com/r/openclaw/comments/1shaxwq/dreaming_is_great_but_it_exposed_3_gaps_in_my/",
@@ -379,16 +415,7 @@
         "published_at": "2026-04-10T03:14:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Lighter joke??",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sh9hma/lighter_joke/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-10T02:08:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Openclaw use cases for technical engineering work",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-10T01:01:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "AI slop is art",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-10T00:30:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "OpenAI Backs Bill That Would Limit Liability for AI-Enabled Mass Deaths or Financial Disasters",
@@ -415,25 +442,7 @@
         "published_at": "2026-04-10T00:27:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Fuck, marry, kill",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sh6fk9/fuck_marry_kill/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-09T23:51:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Is ChatGPT really as bad for the environment as people say?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sh5obk/is_chatgpt_really_as_bad_for_the_environment_as/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-09T23:19:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "How much money are you guys spending on AI tools?",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-09T23:08:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "Anthropic’s Head of Reliability has been unemployed for 4 months and service has continued to deteriorate.. 🙂‍↔️",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-09T22:04:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "AI agents can now open their own bank accounts",
-        "link": "https://reddit.com/r/OpenAI/comments/1sh2qm1/ai_agents_can_now_open_their_own_bank_accounts/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-09T21:21:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T03:43:03.956Z",
+    "reddit_viral_generated_at": "2026-04-10T06:10:02.814Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
