@@ -129,8 +129,8 @@
 
     /* ── Comment Browser ── */
     .comment-browser {
-      display: flex; flex-direction: column; gap: 6px;
-      max-height: 320px; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 4px;
+      max-height: 400px; overflow-y: auto;
     }
 
     .browser-item {
@@ -142,94 +142,48 @@
 
     .browser-item__head {
       display: flex; align-items: center; gap: 10px;
-      padding: 10px 12px;
+      padding: 9px 12px;
       cursor: pointer;
       transition: background var(--transition-fast);
     }
 
-    .browser-item__head:hover {
-      background: var(--bg-tertiary);
-    }
+    .browser-item__head:hover { background: var(--bg-tertiary); }
 
     .browser-item__avatar {
-      width: 30px; height: 30px; border-radius: 50%;
+      width: 28px; height: 28px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-size: 12px; font-weight: 700; color: #fff;
+      font-size: 11px; font-weight: 700; color: #fff;
       flex-shrink: 0;
     }
 
     .browser-item__info { flex: 1; min-width: 0; }
 
     .browser-item__user {
-      font-size: 0.8rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 3px;
+      font-size: 0.78rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 2px;
     }
 
     .browser-item__text {
-      font-size: 0.76rem; color: var(--text-muted);
+      font-size: 0.73rem; color: var(--text-muted);
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
 
-    .browser-item__actions {
-      display: flex; gap: 4px; flex-shrink: 0;
-    }
-
     .browser-item__depth {
-      font-size: 0.68rem; color: var(--text-muted);
-      padding: 3px 7px; background: var(--bg-tertiary);
+      font-size: 0.66rem; color: var(--text-muted);
+      padding: 2px 6px; background: var(--bg-tertiary);
       border-radius: var(--radius-sm); flex-shrink: 0;
       white-space: nowrap;
     }
 
-    /* Nested replies in browser */
-    .browser-item__replies {
-      padding: 0 8px 8px 28px;
-      display: flex; flex-direction: column; gap: 4px;
+    /* depth indent line in browser */
+    .browser-item__indent {
+      display: flex; align-items: stretch; flex-shrink: 0;
     }
 
-    .browser-reply {
-      display: flex; align-items: flex-start; gap: 7px;
-      padding: 6px 8px;
-      background: var(--bg-primary);
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-subtle);
-    }
-
-    .browser-reply__avatar {
-      width: 16px; height: 16px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 8px; font-weight: 700; color: #fff;
-      flex-shrink: 0; margin-top: 1px;
-    }
-
-    .browser-reply__info { flex: 1; min-width: 0; }
-
-    .browser-reply__user {
-      font-size: 0.67rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 1px;
-    }
-
-    .browser-reply__text {
-      font-size: 0.66rem; color: var(--text-muted);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-
-    .browser-chain-btn {
-      display: flex; align-items: center; gap: 5px;
-      padding: 6px 10px;
-      margin: 0 10px 8px;
-      border: 1px dashed var(--border-light);
-      border-radius: var(--radius-md);
-      background: transparent;
-      color: var(--accent-primary);
-      font-size: 0.72rem; font-weight: 600;
-      font-family: inherit; cursor: pointer;
-      transition: all var(--transition-fast);
-    }
-
-    .browser-chain-btn:hover {
-      background: rgba(0, 122, 255, 0.06);
-      border-color: var(--accent-primary);
+    .browser-item__indent-line {
+      width: 2px; border-radius: 1px;
+      background: var(--border-light);
+      margin-right: 10px;
     }
 
     /* ── Form ── */
@@ -1053,74 +1007,71 @@
     function renderCommentBrowser(chains) {
       el.commentBrowser.innerHTML = '';
 
-      const shown = chains.slice(0, 10);
+      // Flatten ALL comments at every depth level
+      const flat = [];
+      function flatten(node, root) {
+        flat.push({ node, root });
+        for (const reply of (node.replies || [])) {
+          flatten(reply, root);
+        }
+      }
+      for (const chain of chains.slice(0, 25)) {
+        flatten(chain, chain);
+      }
 
-      shown.forEach((chain, i) => {
+      if (flat.length === 0) {
+        el.commentBrowser.innerHTML = '<div class="empty-state">No se encontraron comentarios.</div>';
+        return;
+      }
+
+      flat.forEach(({ node, root }) => {
         const item = document.createElement('div');
         item.className = 'browser-item';
 
-        // Head row
         const head = document.createElement('div');
         head.className = 'browser-item__head';
+        head.title = 'Clic para importar esta cadena';
+
+        // Depth indicator lines
+        if (node.depth > 0) {
+          const indent = document.createElement('div');
+          indent.className = 'browser-item__indent';
+          for (let d = 0; d < node.depth; d++) {
+            const line = document.createElement('div');
+            line.className = 'browser-item__indent-line';
+            indent.appendChild(line);
+          }
+          head.appendChild(indent);
+        }
 
         const avatar = document.createElement('div');
         avatar.className = 'browser-item__avatar';
-        avatar.style.background = chain.avatarColor;
-        avatar.textContent = getAvatarLetter(chain.username);
+        avatar.style.background = node.avatarColor;
+        avatar.textContent = getAvatarLetter(node.username);
 
         const info = document.createElement('div');
         info.className = 'browser-item__info';
         info.innerHTML = `
-          <div class="browser-item__user">${chain.username}</div>
-          <div class="browser-item__text">${chain.text}</div>
+          <div class="browser-item__user">${node.username}</div>
+          <div class="browser-item__text">${node.text}</div>
         `;
-
-        const depthTag = document.createElement('div');
-        depthTag.className = 'browser-item__depth';
-        depthTag.textContent = `${chain.replies.length} repl.`;
-
-        head.title = 'Click to import this chain';
-        head.addEventListener('click', () => {
-          const best = buildBestChain(chain);
-          importChain(best, true);
-        });
 
         head.appendChild(avatar);
         head.appendChild(info);
-        head.appendChild(depthTag);
-        item.appendChild(head);
 
-        // Show first 2 nested replies as preview
-        if (chain.replies.length > 0) {
-          const repliesEl = document.createElement('div');
-          repliesEl.className = 'browser-item__replies';
-
-          chain.replies.slice(0, 2).forEach(reply => {
-            const rEl = document.createElement('div');
-            rEl.className = 'browser-reply';
-            rEl.innerHTML = `
-              <div class="browser-reply__avatar" style="background:${reply.avatarColor}">${getAvatarLetter(reply.username)}</div>
-              <div class="browser-reply__info">
-                <div class="browser-reply__user">${reply.username}</div>
-                <div class="browser-reply__text">${reply.text}</div>
-              </div>
-            `;
-            repliesEl.appendChild(rEl);
-          });
-
-          item.appendChild(repliesEl);
+        if (node.replies && node.replies.length > 0) {
+          const depthTag = document.createElement('div');
+          depthTag.className = 'browser-item__depth';
+          depthTag.textContent = `↳${node.replies.length}`;
+          head.appendChild(depthTag);
         }
 
-        // Import chain button
-        const chainBtn = document.createElement('button');
-        chainBtn.className = 'browser-chain-btn';
-        chainBtn.textContent = '↓ Agregar cadena al hilo';
-        chainBtn.addEventListener('click', () => {
-          const best = buildBestChain(chain);
+        head.addEventListener('click', () => {
+          const best = buildBestChain(root);
           importChain(best, true);
         });
-        item.appendChild(chainBtn);
 
+        item.appendChild(head);
         el.commentBrowser.appendChild(item);
       });
     }
