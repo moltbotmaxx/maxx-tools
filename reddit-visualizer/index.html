@@ -825,30 +825,35 @@
     function parseRedditUrl(input) {
       const url = input.trim().replace(/\/$/, '');
 
-      // Short redd.it links → need to follow redirect, skip for now
+      // Short redd.it links
       const shortMatch = url.match(/redd\.it\/([a-z0-9]+)/i);
-      if (shortMatch) {
-        // Build a speculative URL — we'll try to fetch it and rely on the post data
-        return { path: null, postId: shortMatch[1] };
-      }
+      if (shortMatch) return { postId: shortMatch[1], commentId: null, sub: null };
 
-      // Standard reddit.com URLs
-      const match = url.match(/reddit\.com(\/r\/[^/?#]+\/comments\/[a-z0-9]+(?:\/[^/?#]*)?)/i);
-      if (match) {
-        // Split into parts: ['r','sub','comments','id', optional_slug...]
-        const parts = match[1].split('/').filter(Boolean);
-        if (parts.length >= 4) {
-          return { path: `/${parts.slice(0, 4).join('/')}`, postId: parts[3] };
-        }
+      // Matches:
+      //   /r/sub/comments/postId
+      //   /r/sub/comments/postId/slug
+      //   /r/sub/comments/postId/slug/commentId   ← specific comment link
+      //   /r/sub/comments/postId/comment/commentId ← alternate format
+      const m = url.match(/reddit\.com\/r\/([^/?#]+)\/comments\/([a-z0-9]+)(?:\/[^/?#]*\/([a-z0-9]+))?/i);
+      if (m) {
+        return { sub: m[1], postId: m[2], commentId: m[3] || null };
       }
 
       return null;
     }
 
     function buildJsonUrl(parsed) {
-      if (parsed.path) return `https://www.reddit.com${parsed.path}.json?limit=100&depth=6&sort=top`;
-      if (parsed.postId) return `https://www.reddit.com/comments/${parsed.postId}.json?limit=100&depth=6&sort=top`;
-      return null;
+      // When there's a specific comment ID, use the comment-context endpoint —
+      // it returns the full ancestor chain + replies for that comment.
+      // We still fetch the whole thread too (see loadThread) for the browser list.
+      if (parsed.sub && parsed.commentId) {
+        return `https://www.reddit.com/r/${parsed.sub}/comments/${parsed.postId}/comment/${parsed.commentId}.json?limit=500&depth=10`;
+      }
+      if (parsed.sub) {
+        return `https://www.reddit.com/r/${parsed.sub}/comments/${parsed.postId}.json?limit=500&depth=10&sort=top`;
+      }
+      // fallback for redd.it / postId-only
+      return `https://www.reddit.com/comments/${parsed.postId}.json?limit=500&depth=10&sort=top`;
     }
 
     // ── Reddit Fetch ──────────────────────────────────────────────────────────
@@ -973,7 +978,8 @@
       el.browserWrap.style.display = 'none';
 
       try {
-        const data = await fetchJson(jsonUrl, state.fetchAbortController.signal);
+        const sig = state.fetchAbortController.signal;
+        const data = await fetchJson(jsonUrl, sig);
 
         if (!Array.isArray(data) || data.length < 2) {
           throw new Error('Unexpected response format from Reddit API.');
@@ -987,9 +993,22 @@
           el.postInfo.style.display = '';
         }
 
-        // Comments
-        const commentChildren = data[1]?.data?.children || [];
-        const chains = extractChains(commentChildren);
+        // Primary comment list from this fetch
+        let chains = extractChains(data[1]?.data?.children || []);
+
+        // If a specific comment was linked, also fetch the full thread for the browser
+        // so the user sees ALL comments, not just the context of one
+        if (parsed.commentId && parsed.sub) {
+          const fullUrl = `https://www.reddit.com/r/${parsed.sub}/comments/${parsed.postId}.json?limit=500&depth=10&sort=top`;
+          try {
+            setStatus('Cargando hilo completo…', 'loading');
+            const fullData = await fetchJson(fullUrl, sig);
+            if (Array.isArray(fullData) && fullData.length >= 2) {
+              const fullChains = extractChains(fullData[1]?.data?.children || []);
+              if (fullChains.length > chains.length) chains = fullChains;
+            }
+          } catch {}  // non-fatal — use comment-context chains as fallback
+        }
 
         if (chains.length === 0) {
           setStatus('No comments found in this thread.', 'error');
