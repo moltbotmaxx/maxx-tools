@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-10T22:57:37.660Z",
+    "generated_at": "2026-04-10T23:53:29.247Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "My brain is full, so I built a crew of 8+ AI agents that runs my Obsidian vault for me. Open Source and It runs on Gemini CLI.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1si1gs9/my_brain_is_full_so_i_built_a_crew_of_8_ai_agents/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-10T22:34:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "GPT-5.4-x-high is worse than GPT-5.2-high (and many other models) in agentic coding on independent METR benchmark - one area where 5.4 was supposed to be ambiguously better than 5.2 it fails due to reward hacking",
+        "link": "https://reddit.com/r/OpenAI/comments/1si0nmr/gpt54xhigh_is_worse_than_gpt52high_and_many_other/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-10T22:02:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "How I'm using AI to manage email avoidance as someone self-employed with ADHD",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1si02d4/how_im_using_ai_to_manage_email_avoidance_as/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-10T21:38:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "We chose GLM-5.1 because its the best alternative to opus",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-10T21:29:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "vibecoders using claude, chat gpt and gemini for the same project be like:",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-10T19:09:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Deepmind/Google solving highly researched, but previously unsolved Number Theory problems",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-10T18:41:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "OpenClaw literally made me £93 today and I did absolutely nothing",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-10T18:25:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "George Hotz argues that discovering zero-day vulnerabilities isn’t especially difficult but the financial incentives for doing so are too weak to make it worthwhile for most people.",
@@ -424,16 +442,7 @@
         "published_at": "2026-04-10T18:17:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "\"Firebomb thrown at Sam Altman's mansion in terrifying Molotov cocktail attack\"",
-        "link": "https://reddit.com/r/ChatGPT/comments/1shugf8/firebomb_thrown_at_sam_altmans_mansion_in/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-10T18:11:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "Someone threw a Molotov cocktail at Sam Altman’s home and then made threats outside OAI. (No injuries, only minimal damage)",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-10T17:30:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Gemini is keeping me in check 😂😂",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-10T17:26:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Bro the chart. I am crying",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1shssj4/bro_the_chart_i_am_crying/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-10T17:13:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-10T22:57:37.660Z",
+    "reddit_viral_generated_at": "2026-04-10T23:53:29.247Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
