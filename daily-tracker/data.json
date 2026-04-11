@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T13:32:20.282Z",
+    "generated_at": "2026-04-11T14:56:40.523Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Curated 550+ free or low cost AI tools for building LLM applications (APIs, local models, RAG, agents)",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sikye5/curated_550_free_or_low_cost_ai_tools_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-11T14:44:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "AI might be giving lawyers their busiest years right before making them obsolete",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sikxmb/ai_might_be_giving_lawyers_their_busiest_years/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-11T14:43:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "How are you guys controlling AI agent costs?",
+        "link": "https://reddit.com/r/openclaw/comments/1siklja/how_are_you_guys_controlling_ai_agent_costs/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-11T14:30:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "AI didn’t replace jobs… it just confused them",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sike32/ai_didnt_replace_jobs_it_just_confused_them/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-11T14:21:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "AI didn’t replace jobs… it just confused them",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sikcyd/ai_didnt_replace_jobs_it_just_confused_them/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-11T14:20:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Dead internet theory",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sijj14/dead_internet_theory/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T13:45:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "It finally happened - Not folders, but Notebooks!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sijgvl/it_finally_happened_not_folders_but_notebooks/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T13:43:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Update: ChatGPT pointed me toward ADHD, and today I got officially diagnosed",
+        "link": "https://reddit.com/r/OpenAI/comments/1sij9mm/update_chatgpt_pointed_me_toward_adhd_and_today_i/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-11T13:34:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Unitree makes a humanoid that runs at 10m/s (Bolt runs at 12.42 m/s)",
         "link": "https://reddit.com/r/singularity/comments/1siiarz/unitree_makes_a_humanoid_that_runs_at_10ms_bolt/",
@@ -379,7 +451,7 @@
         "published_at": "2026-04-11T12:53:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "The Case For Cooperation as an AI Capability Overhang",
@@ -388,86 +460,14 @@
         "published_at": "2026-04-11T12:04:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Unexpected",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sigyui/unexpected/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-11T11:49:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "What’s a real task OpenClaw handles better than you expected?",
-        "link": "https://reddit.com/r/openclaw/comments/1sigll7/whats_a_real_task_openclaw_handles_better_than/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-11T11:30:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "AMD AI directors analysis confirms lobotomization of Claude",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sifepi/amd_ai_directors_analysis_confirms_lobotomization/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-11T10:25:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Pro has been in high demand for 24 hrs",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sieydh/pro_has_been_in_high_demand_for_24_hrs/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-11T09:59:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I met an Anthropic shill at an OpenClaw event yesterday...",
-        "link": "https://reddit.com/r/openclaw/comments/1siecbh/i_met_an_anthropic_shill_at_an_openclaw_event/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-11T09:22:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Been running a fully Mistral AI stack on OpenClaw and honestly it's underrated",
-        "link": "https://reddit.com/r/openclaw/comments/1siebbd/been_running_a_fully_mistral_ai_stack_on_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-11T09:21:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Rough month for Axios",
-        "link": "https://reddit.com/r/OpenAI/comments/1siayrm/rough_month_for_axios/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-11T06:04:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Tool that \"uses AI to.....\" did nothing of the sort.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1si9qyj/tool_that_uses_ai_to_did_nothing_of_the_sort/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-11T04:58:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T13:32:20.282Z",
+    "reddit_viral_generated_at": "2026-04-11T14:56:40.523Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
