@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T09:03:03.075Z",
+    "generated_at": "2026-04-11T09:58:28.722Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,22 @@
         "viral_score": 100
       },
       {
+        "headline": "Damm it's been patched",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sibzw2/damm_its_been_patched/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T07:02:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
         "headline": "Rough month for Axios",
         "link": "https://reddit.com/r/OpenAI/comments/1siayrm/rough_month_for_axios/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-11T06:04:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Tool that \"uses AI to.....\" did nothing of the sort.",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-11T04:17:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Gemini accidentaly leaks full system rules and hallucinates",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-11T02:59:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "Gemini safety filter is getting out of hand",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-11T02:10:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "6 Months Using AI for Actual Work: What's Incredible, What's Overhyped, and What's Quietly Dangerous",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-11T01:48:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       },
       {
         "headline": "Anthropic is now banning people who are under 18",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-11T01:30:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       },
       {
         "headline": "Altman’s post about the Molotov attack- blames the journalists for this?",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 84
-      },
-      {
-        "headline": "Gemini broke confirmed",
-        "link": "https://reddit.com/r/GeminiAI/comments/1si46bj/gemini_broke_confirmed/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-11T00:31:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T09:03:03.075Z",
+    "reddit_viral_generated_at": "2026-04-11T09:58:28.722Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
