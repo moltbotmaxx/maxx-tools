@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T20:52:44.055Z",
+    "generated_at": "2026-04-11T21:49:35.458Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What would you build with an unlimited token budget?",
+        "link": "https://reddit.com/r/openclaw/comments/1sivejq/what_would_you_build_with_an_unlimited_token/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-11T21:24:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Best cost-quality alternative model for agentic tasks?",
         "link": "https://reddit.com/r/openclaw/comments/1siu215/best_costquality_alternative_model_for_agentic/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-11T20:30:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Workers in some Indian factories have started wearing cameras on their heads to record their movements so robots can be trained using the footage.",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-11T20:01:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Is Jensen right on who the smartest person in the world is?",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-11T19:42:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "I sent ChatGPT fart audio saying it was my music",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-11T19:12:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Started with GPT-5.4 + OpenClaw, what am I missing?",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-11T18:37:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Anthropic: Stop shipping. Seriously.",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-11T18:30:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Gemini pro has been in high demand for the past 3 days now.",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-11T16:56:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "Did they remove OpenAI Oauth? I dont see it in the model options anymore.",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-11T16:35:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "AMD's senior director of AI thinks 'Claude has regressed' and that it 'cannot be trusted to perform complex engineering'",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-11T16:15:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I can’t believe ChatGPT can do this…",
-        "link": "https://reddit.com/r/ChatGPT/comments/1simu44/i_cant_believe_chatgpt_can_do_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-11T15:57:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T20:52:44.055Z",
+    "reddit_viral_generated_at": "2026-04-11T21:49:35.458Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
