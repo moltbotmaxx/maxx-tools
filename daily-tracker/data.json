@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T09:58:28.722Z",
+    "generated_at": "2026-04-11T10:56:17.272Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Pro has been in high demand for 24 hrs",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sieydh/pro_has_been_in_high_demand_for_24_hrs/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T09:59:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The golden age is over",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sieszs/the_golden_age_is_over/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T09:50:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The annotation trick works perfectly: Flattening a 3D hardware image to 2D with Nano Banana",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sidyod/the_annotation_trick_works_perfectly_flattening_a/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T08:59:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "How do we distinguish content created by humans vs AI?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sicx8r/how_do_we_distinguish_content_created_by_humans/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-11T07:57:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Damm it's been patched",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-11T07:02:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Rough month for Axios",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-11T06:04:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Tool that \"uses AI to.....\" did nothing of the sort.",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-11T04:58:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Clanker crime rates are rising",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-11T04:17:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Gemini accidentaly leaks full system rules and hallucinates",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-11T02:59:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 83
       },
       {
         "headline": "Gemini safety filter is getting out of hand",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-11T02:10:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "6 Months Using AI for Actual Work: What's Incredible, What's Overhyped, and What's Quietly Dangerous",
-        "link": "https://reddit.com/r/singularity/comments/1si5vd3/6_months_using_ai_for_actual_work_whats/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-11T01:48:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Anthropic is now banning people who are under 18",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1si5hel/anthropic_is_now_banning_people_who_are_under_18/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-11T01:30:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Altman’s post about the Molotov attack- blames the journalists for this?",
-        "link": "https://reddit.com/r/OpenAI/comments/1si5bwb/altmans_post_about_the_molotov_attack_blames_the/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-11T01:23:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T09:58:28.722Z",
+    "reddit_viral_generated_at": "2026-04-11T10:56:17.272Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
