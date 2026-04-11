@@ -367,16 +367,16 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T16:56:39.283Z",
+    "generated_at": "2026-04-11T17:50:52.495Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Crunchbase data shows global venture capital hit $300 billion in Q1 2026",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sino21/crunchbase_data_shows_global_venture_capital_hit/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-11T16:29:22+00:00",
+        "headline": "Did they remove OpenAI Oauth? I dont see it in the model options anymore.",
+        "link": "https://reddit.com/r/openclaw/comments/1sinu5t/did_they_remove_openai_oauth_i_dont_see_it_in_the/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-11T16:35:57+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -389,6 +389,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 99
+      },
+      {
+        "headline": "I can’t believe ChatGPT can do this…",
+        "link": "https://reddit.com/r/ChatGPT/comments/1simu44/i_cant_believe_chatgpt_can_do_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-11T15:57:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Leads for real estate",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-11T15:42:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "GPT Image 2 preview",
@@ -442,16 +451,7 @@
         "published_at": "2026-04-11T14:26:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Dead internet theory",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sijj14/dead_internet_theory/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-11T13:45:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 93
       },
       {
         "headline": "It finally happened - Not folders, but Notebooks!",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T16:56:39.283Z",
+    "reddit_viral_generated_at": "2026-04-11T17:50:52.495Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
