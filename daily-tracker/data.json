@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T15:49:01.629Z",
+    "generated_at": "2026-04-11T16:56:39.283Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Crunchbase data shows global venture capital hit $300 billion in Q1 2026",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sino21/crunchbase_data_shows_global_venture_capital_hit/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-11T16:29:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "AMD's senior director of AI thinks 'Claude has regressed' and that it 'cannot be trusted to perform complex engineering'",
+        "link": "https://reddit.com/r/singularity/comments/1sinatl/amds_senior_director_of_ai_thinks_claude_has/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-11T16:15:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Leads for real estate",
+        "link": "https://reddit.com/r/openclaw/comments/1simp97/leads_for_real_estate/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-11T15:52:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "OpenAI Says Not to Worry About UBI, Because It Has Another Idea",
+        "link": "https://reddit.com/r/singularity/comments/1simfsz/openai_says_not_to_worry_about_ubi_because_it_has/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-11T15:42:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "GPT Image 2 preview",
         "link": "https://reddit.com/r/OpenAI/comments/1simerz/gpt_image_2_preview/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-11T15:41:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "AI might be giving lawyers their busiest years right before making them obsolete",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-11T14:43:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "How are you guys controlling AI agent costs?",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-11T14:30:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Firecrawl + Claude just replaced McKinsey consultants",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-11T14:26:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Dead internet theory",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-11T13:45:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "It finally happened - Not folders, but Notebooks!",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-11T13:43:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Update: ChatGPT pointed me toward ADHD, and today I got officially diagnosed",
-        "link": "https://reddit.com/r/OpenAI/comments/1sij9mm/update_chatgpt_pointed_me_toward_adhd_and_today_i/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-11T13:34:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Neuralink enables nonverbal ALS patient to speak again with thoughts and AI-cloned voice",
-        "link": "https://reddit.com/r/singularity/comments/1siiz7j/neuralink_enables_nonverbal_als_patient_to_speak/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-11T13:22:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Unitree makes a humanoid that runs at 10m/s (Bolt runs at 12.42 m/s)",
-        "link": "https://reddit.com/r/singularity/comments/1siiarz/unitree_makes_a_humanoid_that_runs_at_10ms_bolt/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-11T12:53:08+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "This is a medical emergency",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1siheld/this_is_a_medical_emergency/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-11T12:11:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T15:49:01.629Z",
+    "reddit_viral_generated_at": "2026-04-11T16:56:39.283Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
