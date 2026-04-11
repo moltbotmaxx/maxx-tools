@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T03:21:09.572Z",
+    "generated_at": "2026-04-11T05:40:32.558Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Clanker crime rates are rising",
+        "link": "https://reddit.com/r/singularity/comments/1si8ytw/clanker_crime_rates_are_rising/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-11T04:17:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini safety filter is getting out of hand",
+        "link": "https://reddit.com/r/GeminiAI/comments/1si6bv9/gemini_safety_filter_is_getting_out_of_hand/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T02:10:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "6 Months Using AI for Actual Work: What's Incredible, What's Overhyped, and What's Quietly Dangerous",
         "link": "https://reddit.com/r/singularity/comments/1si5vd3/6_months_using_ai_for_actual_work_whats/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-11T01:48:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Anthropic is now banning people who are under 18",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-11T01:30:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Altman’s post about the Molotov attack- blames the journalists for this?",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-11T01:23:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "Gemini broke confirmed",
+        "link": "https://reddit.com/r/GeminiAI/comments/1si46bj/gemini_broke_confirmed/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-11T00:31:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Sam Altman and Elon Musk",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-11T00:24:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "My brain is full, so I built a crew of 8+ AI agents that runs my Obsidian vault for me. Open Source and It runs on Gemini CLI.",
@@ -415,16 +442,7 @@
         "published_at": "2026-04-10T22:34:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GPT-5.4-x-high is worse than GPT-5.2-high (and many other models) in agentic coding on independent METR benchmark - one area where 5.4 was supposed to be ambiguously better than 5.2 it fails due to reward hacking",
-        "link": "https://reddit.com/r/OpenAI/comments/1si0nmr/gpt54xhigh_is_worse_than_gpt52high_and_many_other/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-10T22:02:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "We chose GLM-5.1 because its the best alternative to opus",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-10T21:29:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 84
       },
       {
         "headline": "vibecoders using claude, chat gpt and gemini for the same project be like:",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-10T19:09:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Deepmind/Google solving highly researched, but previously unsolved Number Theory problems",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1shva2a/deepmindgoogle_solving_highly_researched_but/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-10T18:41:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "OpenClaw literally made me £93 today and I did absolutely nothing",
-        "link": "https://reddit.com/r/openclaw/comments/1shutzt/openclaw_literally_made_me_93_today_and_i_did/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-10T18:25:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T03:21:09.572Z",
+    "reddit_viral_generated_at": "2026-04-11T05:40:32.558Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
