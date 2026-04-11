@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-11T19:06:20.635Z",
+    "generated_at": "2026-04-11T19:51:18.395Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I sent ChatGPT fart audio saying it was my music",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sis1b8/i_sent_chatgpt_fart_audio_saying_it_was_my_music/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-11T19:12:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Started with GPT-5.4 + OpenClaw, what am I missing?",
         "link": "https://reddit.com/r/openclaw/comments/1sir2z6/started_with_gpt54_openclaw_what_am_i_missing/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-11T18:37:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "AMD Senior director on Opus regression: \"we did not find that any of the suggested settings changes meaningfully changed our experience\"",
@@ -388,16 +397,16 @@
         "published_at": "2026-04-11T18:34:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
-        "headline": "Why is OpenClaw typing a message to all my contacts on Whatsapp",
-        "link": "https://reddit.com/r/openclaw/comments/1sip7kf/why_is_openclaw_typing_a_message_to_all_my/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-11T17:27:39+00:00",
+        "headline": "Anthropic: Stop shipping. Seriously.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1siqwmp/anthropic_stop_shipping_seriously/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-11T18:30:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 98
       },
       {
         "headline": "Did they remove OpenAI Oauth? I dont see it in the model options anymore.",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-11T16:35:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "AMD's senior director of AI thinks 'Claude has regressed' and that it 'cannot be trusted to perform complex engineering'",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-11T16:15:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "I can’t believe ChatGPT can do this…",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-11T15:57:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Leads for real estate",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-11T15:52:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "OpenAI Says Not to Worry About UBI, Because It Has Another Idea",
@@ -442,22 +451,13 @@
         "published_at": "2026-04-11T15:42:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "GPT Image 2 preview",
         "link": "https://reddit.com/r/OpenAI/comments/1simerz/gpt_image_2_preview/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-11T15:41:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "AI might be giving lawyers their busiest years right before making them obsolete",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sikxmb/ai_might_be_giving_lawyers_their_busiest_years/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-11T14:43:34+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-11T19:06:20.635Z",
+    "reddit_viral_generated_at": "2026-04-11T19:51:18.395Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
