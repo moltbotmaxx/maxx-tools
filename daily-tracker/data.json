@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T16:57:48.655Z",
+    "generated_at": "2026-04-12T17:53:28.262Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "No, AI will not take your jobs, it will make you work more than ever.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sjk144/no_ai_will_not_take_your_jobs_it_will_make_you/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-12T17:01:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "What is my purpose? \"You chase pigs.\" Oh my God.",
         "link": "https://reddit.com/r/singularity/comments/1sjjayz/what_is_my_purpose_you_chase_pigs_oh_my_god/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-12T16:34:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Tired of Claws - I built my own 24/7 AI assistant using just CC",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-12T16:20:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Anyone Try Common Lisp?",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-12T16:01:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "‘I hate working 5 days’: Zoom CEO says traditional work schedules are becoming obsolete—and predicts a 3-day workweek by 2031",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-12T15:08:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "The confidence lol",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-12T14:34:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Terence Tao Says That A 'Copernican View Of Intelligence' Fits Better, Just As Earth Is Not The Center Of The Universe, Human Intelligence Is Not The Center Of All Cognition",
@@ -424,16 +433,7 @@
         "published_at": "2026-04-12T14:32:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Why does ChatGPT freeze with 1000 messages but Claude and Gemini don't",
-        "link": "https://reddit.com/r/OpenAI/comments/1sjfqnt/why_does_chatgpt_freeze_with_1000_messages_but/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-12T14:17:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "If AI eliminates jobs, who’s left to buy what companies are selling?",
@@ -442,7 +442,7 @@
         "published_at": "2026-04-12T12:52:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Are AI tools actually making you too productive to switch off?",
@@ -451,13 +451,13 @@
         "published_at": "2026-04-12T12:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
-        "headline": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch — claims of 'thousands' of severe zero-days rely on just 198 manual reviews",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sjbsyg/anthropics_claude_mythos_isnt_a_sentient/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-12T11:17:41+00:00",
+        "headline": "Does anybody know where the instruction manual is? My daughter is having trouble doing her homework and I'm needing help after her",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sjcb90/does_anybody_know_where_the_instruction_manual_is/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-12T11:44:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T16:57:48.655Z",
+    "reddit_viral_generated_at": "2026-04-12T17:53:28.262Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
