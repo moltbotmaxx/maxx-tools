@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T22:56:04.236Z",
+    "generated_at": "2026-04-12T23:53:02.921Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "So Adult Mode is never coming?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sjsx5z/so_adult_mode_is_never_coming/",
+        "headline": "Sam Altman’s House targeted second time",
+        "link": "https://reddit.com/r/OpenAI/comments/1sjtuv4/sam_altmans_house_targeted_second_time/",
         "subreddit": "OpenAI",
-        "published_at": "2026-04-12T22:36:53+00:00",
+        "published_at": "2026-04-12T23:16:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Various types of slop 😂",
+        "link": "https://reddit.com/r/aimemes/comments/1sjtkh8/various_types_of_slop/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-12T23:04:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Sam Altman’s home targeted in second attack",
+        "link": "https://reddit.com/r/singularity/comments/1sjtebt/sam_altmans_home_targeted_in_second_attack/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-12T22:57:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "My 87 use cases for OpenClaw (They became more complex over time)",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-12T21:24:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Safari translated “BBC” as “Big Black Cock” in Russian",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-12T20:59:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Two.",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-12T20:39:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Second time with OpenClaw. Lasted a little longer but I'm strongly considering pulling the plug again.",
@@ -415,7 +433,16 @@
         "published_at": "2026-04-12T19:20:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
+      },
+      {
+        "headline": "I vibecoded a global ai satellite intelligence tool… then realized this is literally how wars are watched now",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sjncp0/i_vibecoded_a_global_ai_satellite_intelligence/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-12T19:04:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Updates to Codex usage on Plus",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-12T19:00:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "Is Anthropic’s Claude mythos just marketing?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-12T18:36:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Linux lays down the law on AI-generated code, says yes to Copilot, no to AI slop, and humans take the fall for mistakes — after months of fierce debate, Torvalds and maintainers come to an agreement",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sjkuof/linux_lays_down_the_law_on_aigenerated_code_says/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-12T17:31:31+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "No, AI will not take your jobs, it will make you work more than ever.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sjk144/no_ai_will_not_take_your_jobs_it_will_make_you/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-12T17:01:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "What is my purpose? \"You chase pigs.\" Oh my God.",
-        "link": "https://reddit.com/r/singularity/comments/1sjjayz/what_is_my_purpose_you_chase_pigs_oh_my_god/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-12T16:34:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T22:56:04.236Z",
+    "reddit_viral_generated_at": "2026-04-12T23:53:02.921Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
