@@ -367,16 +367,16 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T03:47:41.900Z",
+    "generated_at": "2026-04-12T06:03:42.280Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Openclaw gateway is extremely slow, no insight into why",
-        "link": "https://reddit.com/r/openclaw/comments/1sj2g6z/openclaw_gateway_is_extremely_slow_no_insight/",
+        "headline": "My molty makes phone calls for me",
+        "link": "https://reddit.com/r/openclaw/comments/1sj4x1b/my_molty_makes_phone_calls_for_me/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-12T02:43:59+00:00",
+        "published_at": "2026-04-12T04:47:11+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -388,7 +388,7 @@
         "published_at": "2026-04-12T02:25:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "When the subscription tells you to unsubscribe",
@@ -397,7 +397,7 @@
         "published_at": "2026-04-12T02:15:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Follow up: OpenClaw found me my dream job!",
@@ -406,7 +406,7 @@
         "published_at": "2026-04-12T01:51:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "I made a site that uses Anthropic and OpenAI data to calculate how soon your job will be replaced by AI",
@@ -415,16 +415,7 @@
         "published_at": "2026-04-12T01:15:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I was eager to dive into Openclaw, but reading all these posts and comments got me discouraged.",
-        "link": "https://reddit.com/r/openclaw/comments/1sj0knm/i_was_eager_to_dive_into_openclaw_but_reading_all/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T01:13:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "I replaced all my AI agent's paid search APIs with one Docker command",
@@ -433,7 +424,7 @@
         "published_at": "2026-04-12T00:05:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "My friend had ChatGPT make a Lisa Frank picture of my cat, Jellyfish. Isn’t she adorable!",
@@ -442,7 +433,7 @@
         "published_at": "2026-04-11T23:58:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Accurate…",
@@ -451,7 +442,7 @@
         "published_at": "2026-04-11T23:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "For newbies this isn’t cheap",
@@ -460,14 +451,23 @@
         "published_at": "2026-04-11T22:55:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
+      },
+      {
+        "headline": "Reminder: LLMs don’t have current information by default",
+        "link": "https://reddit.com/r/ChatGPT/comments/1siw7bk/reminder_llms_dont_have_current_information_by/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-11T21:58:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T03:47:41.900Z",
+    "reddit_viral_generated_at": "2026-04-12T06:03:42.280Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
