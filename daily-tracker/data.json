@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T19:09:29.217Z",
+    "generated_at": "2026-04-12T19:54:04.219Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Second time with OpenClaw. Lasted a little longer but I'm strongly considering pulling the plug again.",
+        "link": "https://reddit.com/r/openclaw/comments/1sjnsx9/second_time_with_openclaw_lasted_a_little_longer/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-12T19:20:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Updates to Codex usage on Plus",
+        "link": "https://reddit.com/r/OpenAI/comments/1sjn8uc/updates_to_codex_usage_on_plus/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-12T19:00:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Is Anthropic’s Claude mythos just marketing?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sjmlcn/is_anthropics_claude_mythos_just_marketing/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-12T18:36:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Linux lays down the law on AI-generated code, says yes to Copilot, no to AI slop, and humans take the fall for mistakes — after months of fierce debate, Torvalds and maintainers come to an agreement",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-12T17:31:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "No, AI will not take your jobs, it will make you work more than ever.",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-12T17:01:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "What is my purpose? \"You chase pigs.\" Oh my God.",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-12T16:34:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Tired of Claws - I built my own 24/7 AI assistant using just CC",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-12T16:20:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Anyone Try Common Lisp?",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-12T16:01:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "‘I hate working 5 days’: Zoom CEO says traditional work schedules are becoming obsolete—and predicts a 3-day workweek by 2031",
@@ -433,31 +451,13 @@
         "published_at": "2026-04-12T15:08:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "The confidence lol",
         "link": "https://reddit.com/r/ChatGPT/comments/1sjg64c/the_confidence_lol/",
         "subreddit": "ChatGPT",
         "published_at": "2026-04-12T14:34:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Terence Tao Says That A 'Copernican View Of Intelligence' Fits Better, Just As Earth Is Not The Center Of The Universe, Human Intelligence Is Not The Center Of All Cognition",
-        "link": "https://reddit.com/r/singularity/comments/1sjg4ji/terence_tao_says_that_a_copernican_view_of/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-12T14:32:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Frog put Claude in the box",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sjex0y/frog_put_claude_in_the_box/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-12T13:43:17+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T19:09:29.217Z",
+    "reddit_viral_generated_at": "2026-04-12T19:54:04.219Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
