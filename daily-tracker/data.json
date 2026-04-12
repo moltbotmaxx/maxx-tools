@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T19:54:04.219Z",
+    "generated_at": "2026-04-12T20:54:27.487Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -380,6 +380,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "40% unemployment and a 3-day work week: they're the same thing, top economist says",
+        "link": "https://reddit.com/r/singularity/comments/1sjnlhr/40_unemployment_and_a_3day_work_week_theyre_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-12T19:13:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Updates to Codex usage on Plus",
@@ -436,15 +445,6 @@
         "viral_score": 92
       },
       {
-        "headline": "Anyone Try Common Lisp?",
-        "link": "https://reddit.com/r/openclaw/comments/1sjif13/anyone_try_common_lisp/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T16:01:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
         "headline": "‘I hate working 5 days’: Zoom CEO says traditional work schedules are becoming obsolete—and predicts a 3-day workweek by 2031",
         "link": "https://reddit.com/r/singularity/comments/1sjh1d7/i_hate_working_5_days_zoom_ceo_says_traditional/",
         "subreddit": "singularity",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T19:54:04.219Z",
+    "reddit_viral_generated_at": "2026-04-12T20:54:27.487Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
