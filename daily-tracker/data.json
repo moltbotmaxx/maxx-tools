@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T11:01:23.943Z",
+    "generated_at": "2026-04-12T11:49:39.328Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "It's official",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sja2au/its_official/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-12T09:38:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "My manager watching how I work after I hit the Claude usage limit.",
         "link": "https://reddit.com/r/ChatGPT/comments/1sj9nyr/my_manager_watching_how_i_work_after_i_hit_the/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-12T09:15:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Is v.2026.4.11 the first version in a while that did not break things?",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-12T09:06:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "For All Noobies - Heartbeat.MD",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-12T08:55:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Made my claw help me with personal finance",
@@ -406,7 +415,16 @@
         "published_at": "2026-04-12T08:53:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
+      },
+      {
+        "headline": "It already happened to me. Bad advice from ai while messaging my doctor.",
+        "link": "https://reddit.com/r/OpenAI/comments/1sj90bz/it_already_happened_to_me_bad_advice_from_ai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-12T08:36:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Meta started rolling out Contemplating mode for Muse Spark, where 16 agents will work on your prompt to synthesize a consolidated answer!",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-12T07:31:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Is openclaw really that expensive?",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-12T06:46:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "I updated Yesterday and Minimax 2.7 is actually… good?",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-12T06:43:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "“Wow” - my brother in silicon you are the demand curve",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-12T05:38:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "When the subscription tells you to unsubscribe",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sj1v6x/when_the_subscription_tells_you_to_unsubscribe/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-12T02:15:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Follow up: OpenClaw found me my dream job!",
-        "link": "https://reddit.com/r/openclaw/comments/1sj1dby/follow_up_openclaw_found_me_my_dream_job/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T01:51:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T11:01:23.943Z",
+    "reddit_viral_generated_at": "2026-04-12T11:49:39.328Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
