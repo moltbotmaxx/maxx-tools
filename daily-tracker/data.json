@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T15:53:54.723Z",
+    "generated_at": "2026-04-12T16:57:48.655Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What is my purpose? \"You chase pigs.\" Oh my God.",
+        "link": "https://reddit.com/r/singularity/comments/1sjjayz/what_is_my_purpose_you_chase_pigs_oh_my_god/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-12T16:34:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Tired of Claws - I built my own 24/7 AI assistant using just CC",
+        "link": "https://reddit.com/r/openclaw/comments/1sjixkz/tired_of_claws_i_built_my_own_247_ai_assistant/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-12T16:20:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anyone Try Common Lisp?",
+        "link": "https://reddit.com/r/openclaw/comments/1sjif13/anyone_try_common_lisp/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-12T16:01:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "‘I hate working 5 days’: Zoom CEO says traditional work schedules are becoming obsolete—and predicts a 3-day workweek by 2031",
         "link": "https://reddit.com/r/singularity/comments/1sjh1d7/i_hate_working_5_days_zoom_ceo_says_traditional/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-12T15:08:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "The confidence lol",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sjg64c/the_confidence_lol/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-12T14:34:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Terence Tao Says That A 'Copernican View Of Intelligence' Fits Better, Just As Earth Is Not The Center Of The Universe, Human Intelligence Is Not The Center Of All Cognition",
@@ -388,16 +424,7 @@
         "published_at": "2026-04-12T14:32:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "I love Gemma 4, right until it starts using tools",
-        "link": "https://reddit.com/r/openclaw/comments/1sjfrv2/i_love_gemma_4_right_until_it_starts_using_tools/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T14:18:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Why does ChatGPT freeze with 1000 messages but Claude and Gemini don't",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-12T14:17:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "If AI eliminates jobs, who’s left to buy what companies are selling?",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-12T12:52:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Are AI tools actually making you too productive to switch off?",
@@ -424,25 +451,7 @@
         "published_at": "2026-04-12T12:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Just for fun: What (trendy) prompts should I tell my openclaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1sjcnfu/just_for_fun_what_trendy_prompts_should_i_tell_my/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T12:01:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Why aren't the OC repo maintainers considering an LTS (Long Term Support) kinda updates?",
-        "link": "https://reddit.com/r/openclaw/comments/1sjbwfw/why_arent_the_oc_repo_maintainers_considering_an/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T11:22:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch — claims of 'thousands' of severe zero-days rely on just 198 manual reviews",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-12T11:17:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "It's official",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sja2au/its_official/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-12T09:38:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T15:53:54.723Z",
+    "reddit_viral_generated_at": "2026-04-12T16:57:48.655Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
