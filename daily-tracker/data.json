@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T14:59:32.660Z",
+    "generated_at": "2026-04-12T15:53:54.723Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "‘I hate working 5 days’: Zoom CEO says traditional work schedules are becoming obsolete—and predicts a 3-day workweek by 2031",
+        "link": "https://reddit.com/r/singularity/comments/1sjh1d7/i_hate_working_5_days_zoom_ceo_says_traditional/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-12T15:08:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Terence Tao Says That A 'Copernican View Of Intelligence' Fits Better, Just As Earth Is Not The Center Of The Universe, Human Intelligence Is Not The Center Of All Cognition",
         "link": "https://reddit.com/r/singularity/comments/1sjg4ji/terence_tao_says_that_a_copernican_view_of/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-12T14:32:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "I love Gemma 4, right until it starts using tools",
@@ -388,7 +397,16 @@
         "published_at": "2026-04-12T14:18:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "Why does ChatGPT freeze with 1000 messages but Claude and Gemini don't",
+        "link": "https://reddit.com/r/OpenAI/comments/1sjfqnt/why_does_chatgpt_freeze_with_1000_messages_but/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-12T14:17:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "If AI eliminates jobs, who’s left to buy what companies are selling?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-12T12:52:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Are AI tools actually making you too productive to switch off?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-12T12:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Just for fun: What (trendy) prompts should I tell my openclaw?",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-12T12:01:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Why aren't the OC repo maintainers considering an LTS (Long Term Support) kinda updates?",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-12T11:22:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch — claims of 'thousands' of severe zero-days rely on just 198 manual reviews",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-12T11:17:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "It's official",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-12T09:38:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "My manager watching how I work after I hit the Claude usage limit.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sj9nyr/my_manager_watching_how_i_work_after_i_hit_the/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-12T09:15:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Is v.2026.4.11 the first version in a while that did not break things?",
-        "link": "https://reddit.com/r/openclaw/comments/1sj9ich/is_v2026411_the_first_version_in_a_while_that_did/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T09:06:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T14:59:32.660Z",
+    "reddit_viral_generated_at": "2026-04-12T15:53:54.723Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
