@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T13:35:47.704Z",
+    "generated_at": "2026-04-12T14:59:32.660Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Terence Tao Says That A 'Copernican View Of Intelligence' Fits Better, Just As Earth Is Not The Center Of The Universe, Human Intelligence Is Not The Center Of All Cognition",
+        "link": "https://reddit.com/r/singularity/comments/1sjg4ji/terence_tao_says_that_a_copernican_view_of/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-12T14:32:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I love Gemma 4, right until it starts using tools",
+        "link": "https://reddit.com/r/openclaw/comments/1sjfrv2/i_love_gemma_4_right_until_it_starts_using_tools/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-12T14:18:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "If AI eliminates jobs, who’s left to buy what companies are selling?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sjdqhq/if_ai_eliminates_jobs_whos_left_to_buy_what/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-12T12:52:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Are AI tools actually making you too productive to switch off?",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-12T12:22:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Just for fun: What (trendy) prompts should I tell my openclaw?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-12T12:01:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Why aren't the OC repo maintainers considering an LTS (Long Term Support) kinda updates?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-12T11:22:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch — claims of 'thousands' of severe zero-days rely on just 198 manual reviews",
@@ -415,16 +433,7 @@
         "published_at": "2026-04-12T11:17:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Average vibe coder discourse",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sjb4ft/average_vibe_coder_discourse/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-12T10:40:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "It's official",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-12T09:38:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "My manager watching how I work after I hit the Claude usage limit.",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-12T09:15:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Is v.2026.4.11 the first version in a while that did not break things?",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-12T09:06:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "For All Noobies - Heartbeat.MD",
-        "link": "https://reddit.com/r/openclaw/comments/1sj9bzr/for_all_noobies_heartbeatmd/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T08:55:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T13:35:47.704Z",
+    "reddit_viral_generated_at": "2026-04-12T14:59:32.660Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
