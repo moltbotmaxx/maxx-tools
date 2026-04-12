@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-12T09:06:57.162Z",
+    "generated_at": "2026-04-12T10:02:48.545Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "My manager watching how I work after I hit the Claude usage limit.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sj9nyr/my_manager_watching_how_i_work_after_i_hit_the/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-12T09:15:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Is v.2026.4.11 the first version in a while that did not break things?",
+        "link": "https://reddit.com/r/openclaw/comments/1sj9ich/is_v2026411_the_first_version_in_a_while_that_did/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-12T09:06:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "For All Noobies - Heartbeat.MD",
         "link": "https://reddit.com/r/openclaw/comments/1sj9bzr/for_all_noobies_heartbeatmd/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-12T08:55:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Meta started rolling out Contemplating mode for Muse Spark, where 16 agents will work on your prompt to synthesize a consolidated answer!",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-12T07:31:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Is openclaw really that expensive?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-12T06:46:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "I updated Yesterday and Minimax 2.7 is actually… good?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-12T06:43:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "“Wow” - my brother in silicon you are the demand curve",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-12T05:38:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "\"Nope—this is where people trip up\" 🤣",
@@ -424,7 +442,16 @@
         "published_at": "2026-04-12T04:33:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
+      },
+      {
+        "headline": "ask chatgpt the same prompt and show what you got",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sj45hq/ask_chatgpt_the_same_prompt_and_show_what_you_got/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-12T04:07:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "When the subscription tells you to unsubscribe",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-12T02:15:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Follow up: OpenClaw found me my dream job!",
-        "link": "https://reddit.com/r/openclaw/comments/1sj1dby/follow_up_openclaw_found_me_my_dream_job/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-12T01:51:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "I made a site that uses Anthropic and OpenAI data to calculate how soon your job will be replaced by AI",
-        "link": "https://reddit.com/r/singularity/comments/1sj0mcw/i_made_a_site_that_uses_anthropic_and_openai_data/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-12T01:15:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Why has ChatGPT become so annoying and disagreeable?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sj045m/why_has_chatgpt_become_so_annoying_and/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-12T00:51:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-12T09:06:57.162Z",
+    "reddit_viral_generated_at": "2026-04-12T10:02:48.545Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
