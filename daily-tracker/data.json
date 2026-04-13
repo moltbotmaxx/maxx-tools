@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-13T21:09:58.254Z",
+    "generated_at": "2026-04-13T22:04:22.991Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Submitted the viral ai photo to chat, told it to make it more ridiculous.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sko2qh/submitted_the_viral_ai_photo_to_chat_told_it_to/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-13T21:06:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I spent 2 days rebuilding my 12-agent OpenClaw setup from scratch. Here's what I learned.",
         "link": "https://reddit.com/r/openclaw/comments/1sknm6o/i_spent_2_days_rebuilding_my_12agent_openclaw/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-13T20:50:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "From Opus to GPT5.4 - what a set back",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-13T20:31:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Sam Altman's Molotov attack suspect listed the names of other AI CEOs and investors in a 'last warning' note, the feds said",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-13T20:05:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "You can now switch models mid-chat",
@@ -418,13 +427,22 @@
         "viral_score": 97
       },
       {
+        "headline": "Ai skepticism sounds a lot like internet skepticism from the 90s",
+        "link": "https://reddit.com/r/singularity/comments/1skl8r1/ai_skepticism_sounds_a_lot_like_internet/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-13T19:28:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
         "headline": "A non-programmer approach to Openclaw",
         "link": "https://reddit.com/r/openclaw/comments/1skkc2h/a_nonprogrammer_approach_to_openclaw/",
         "subreddit": "openclaw",
         "published_at": "2026-04-13T18:57:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Anthropic been nerfing models according to BridgeBench, looks like a marketing strategy.",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-13T17:43:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "I asked Gemini to return the exact same imagen with text translated to Spanish",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-13T17:37:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Just set up a business bank account entirely through Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1skgrxn/just_set_up_a_business_bank_account_entirely/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-13T16:56:06+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "🙃 Elon made another bold prediction",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1skfyik/elon_made_another_bold_prediction/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-13T16:28:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-13T21:09:58.254Z",
+    "reddit_viral_generated_at": "2026-04-13T22:04:22.991Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
