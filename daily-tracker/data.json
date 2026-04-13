@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-13T09:13:39.965Z",
+    "generated_at": "2026-04-13T10:57:11.863Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Local MCP that blocks prompt injection attacks",
+        "link": "https://reddit.com/r/openclaw/comments/1sk6fp8/local_mcp_that_blocks_prompt_injection_attacks/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T10:06:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "would openclaw be a good fit for an voice todo use case ?",
+        "link": "https://reddit.com/r/openclaw/comments/1sk6ad5/would_openclaw_be_a_good_fit_for_an_voice_todo/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T09:58:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Ollama Cloud Pro ($20/mo) vs OpenAI Plus ($23/mo) .Which gives more tokens ?",
+        "link": "https://reddit.com/r/openclaw/comments/1sk5l0m/ollama_cloud_pro_20mo_vs_openai_plus_23mo_which/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T09:16:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Running an Actual Agent System on a $20 Chromebook",
         "link": "https://reddit.com/r/openclaw/comments/1sk4nef/running_an_actual_agent_system_on_a_20_chromebook/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-13T08:20:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "this changes everything 😂",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-13T08:17:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "follow-up: anthropic quietly switched the default cache TTL from 1 hour to 5 minutes on april 2. here's the data.",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-13T07:18:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "AI Race",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-13T06:24:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "We’re moving faster but understanding less",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-13T05:39:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Photo restoration Gemini, stunning result",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-13T04:23:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "My OpenClaw bot died on April 4. I got it back inside Claude Code.",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-13T03:22:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Claude isn't dumber, it's just not trying. Here's how to fix it in Chat.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sjz1hg/claude_isnt_dumber_its_just_not_trying_heres_how/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-13T03:13:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Which LLM are you using for Openclaw post the Claude ban?",
-        "link": "https://reddit.com/r/openclaw/comments/1sjyblb/which_llm_are_you_using_for_openclaw_post_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-13T02:39:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Did they just find the issue with Claude? \"Cache TTL silently regressed from 1h to 5m\"",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sjxrp1/did_they_just_find_the_issue_with_claude_cache/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-13T02:14:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-13T09:13:39.965Z",
+    "reddit_viral_generated_at": "2026-04-13T10:57:11.863Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
