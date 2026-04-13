@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-13T14:09:56.287Z",
+    "generated_at": "2026-04-13T15:48:22.716Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is it weird that?",
+        "link": "https://reddit.com/r/openclaw/comments/1skduje/is_it_weird_that/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T15:15:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Still using anthropic API keys",
+        "link": "https://reddit.com/r/openclaw/comments/1skcn4n/still_using_anthropic_api_keys/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T14:34:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "New robotic hand by Chinese tech company",
+        "link": "https://reddit.com/r/singularity/comments/1skcikl/new_robotic_hand_by_chinese_tech_company/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-13T14:29:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "AI Security Institute Findings on Claude Mythos Preview",
+        "link": "https://reddit.com/r/singularity/comments/1skc04d/ai_security_institute_findings_on_claude_mythos/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-13T14:11:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Best solution to hosting for free/-$20 a month",
+        "link": "https://reddit.com/r/openclaw/comments/1skbyjg/best_solution_to_hosting_for_free20_a_month/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T14:09:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Sam Altman invested $10,000 in a brain preservation procedure that is 100% fatal. Is this a sign of an AGI future, or are we just seeing some interesting sci-fi?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1skan53/sam_altman_invested_10000_in_a_brain_preservation/",
@@ -379,7 +424,16 @@
         "published_at": "2026-04-13T13:20:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Google Hires Consciousness Philosopher",
+        "link": "https://reddit.com/r/GeminiAI/comments/1skamfb/google_hires_consciousness_philosopher/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-13T13:19:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Tried Gemma4 for openclaw - Not Impressed",
@@ -388,7 +442,7 @@
         "published_at": "2026-04-13T13:11:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Why is nobody talking about these Ilya Sutskever predictions that are now visible in the hindsight",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-13T13:06:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "once again asking!!!",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-13T12:37:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Sam Altman's home targeted in drive-by shooting hours after firebomb attack",
-        "link": "https://reddit.com/r/OpenAI/comments/1sk82sc/sam_altmans_home_targeted_in_driveby_shooting/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-13T11:30:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "My OpenClaw agent is telling me to install playwright-python",
-        "link": "https://reddit.com/r/openclaw/comments/1sk7gr5/my_openclaw_agent_is_telling_me_to_install/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-13T11:01:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Local MCP that blocks prompt injection attacks",
-        "link": "https://reddit.com/r/openclaw/comments/1sk6fp8/local_mcp_that_blocks_prompt_injection_attacks/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-13T10:06:43+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Ollama Cloud Pro ($20/mo) vs OpenAI Plus ($23/mo) .Which gives more tokens ?",
-        "link": "https://reddit.com/r/openclaw/comments/1sk5l0m/ollama_cloud_pro_20mo_vs_openai_plus_23mo_which/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-13T09:16:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "The creator of Claude Code notes on the current Caching Issue",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sk4wfx/the_creator_of_claude_code_notes_on_the_current/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-13T08:35:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Running an Actual Agent System on a $20 Chromebook",
-        "link": "https://reddit.com/r/openclaw/comments/1sk4nef/running_an_actual_agent_system_on_a_20_chromebook/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-13T08:20:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-13T14:09:56.287Z",
+    "reddit_viral_generated_at": "2026-04-13T15:48:22.716Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
