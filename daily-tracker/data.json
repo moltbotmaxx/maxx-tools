@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-14T03:44:38.658Z",
+    "generated_at": "2026-04-14T06:12:12.965Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I benchmarked 5 OpenClaw alternatives. Turns out the cheapest stack isn't Hermes.",
+        "link": "https://reddit.com/r/openclaw/comments/1skzbag/i_benchmarked_5_openclaw_alternatives_turns_out/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-14T05:17:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Mark Zuckerberg Reportedly Building AI Clone of Himself to Sit in Meetings",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sky91o/mark_zuckerberg_reportedly_building_ai_clone_of/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-14T04:21:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What's the best low-code stack for building cheap AI agents for offline-first SMBs?",
+        "link": "https://reddit.com/r/openclaw/comments/1sky7e9/whats_the_best_lowcode_stack_for_building_cheap/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-14T04:19:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "OpenClaw vs Hermes Agent, My Experience After Testing Both",
+        "link": "https://reddit.com/r/openclaw/comments/1sky2w1/openclaw_vs_hermes_agent_my_experience_after/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-14T04:13:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "For The First Time In War, Drones & Ground Robotic Systems Seized Enemy positions Without A Single Soldier",
+        "link": "https://reddit.com/r/singularity/comments/1skxzk3/for_the_first_time_in_war_drones_ground_robotic/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-14T04:08:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Thanks Anthropic",
         "link": "https://reddit.com/r/openclaw/comments/1skwh7k/thanks_anthropic/",
@@ -379,16 +424,16 @@
         "published_at": "2026-04-14T02:57:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
-        "headline": "I vibe coded a tool that’s going to beat Palantir. Thousands using it in a day. Free. Works on Tesla too ❤️",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1skvl7a/i_vibe_coded_a_tool_thats_going_to_beat_palantir/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-14T02:16:59+00:00",
+        "headline": "Another murder attempt on Sam Altman, as gunshots are fired at his residence",
+        "link": "https://reddit.com/r/ChatGPT/comments/1skwdp7/another_murder_attempt_on_sam_altman_as_gunshots/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-14T02:52:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "7 years ago",
@@ -397,16 +442,16 @@
         "published_at": "2026-04-14T02:08:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
-        "headline": "Professional Exploded View",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sksnso/professional_exploded_view/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-14T00:08:55+00:00",
+        "headline": "Pew Pew Machine Aquired",
+        "link": "https://reddit.com/r/openclaw/comments/1skrb4i/pew_pew_machine_aquired/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-13T23:11:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 85
       },
       {
         "headline": "I asked Gemini to generate me a screenshot of a Google screenshot asking \"Who invented math?\", this is ABSURDLY good, even having gmail there.",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-13T22:53:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "TUI to see where Claude Code tokens actually go",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1skqub5/tui_to_see_where_claude_code_tokens_actually_go/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-13T22:53:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Fair",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1skq7bb/fair/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-13T22:26:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "NASA unveils an ambitious $20 billion plan to build a lunar base near the Moon's south pole... and that budget is equivalent to 11 days of war in Iran.",
-        "link": "https://reddit.com/r/singularity/comments/1skq764/nasa_unveils_an_ambitious_20_billion_plan_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-13T22:26:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "How come my prompt keeps depicting me as a Jesus like figure?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1skq2k6/how_come_my_prompt_keeps_depicting_me_as_a_jesus/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-13T22:21:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Something is coming. Gemini models are no longer marked as \"new\"",
-        "link": "https://reddit.com/r/GeminiAI/comments/1skp7iz/something_is_coming_gemini_models_are_no_longer/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-13T21:48:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-14T03:44:38.658Z",
+    "reddit_viral_generated_at": "2026-04-14T06:12:12.965Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
