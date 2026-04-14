@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-14T15:41:54.727Z",
+    "generated_at": "2026-04-14T17:36:17.443Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -389,6 +389,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "NVIDIA introduces Ising, the world’s first open AI models to accelerate the path to useful quantum computers.",
+        "link": "https://reddit.com/r/singularity/comments/1slbrm4/nvidia_introduces_ising_the_worlds_first_open_ai/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-14T15:20:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "GPT-5.4 Pro solves Erdős Problem #1196",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-14T12:53:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "I tried using ChatGPT for ONE random thing… now I can’t stop 💀",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-14T12:44:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Now the Claude Mythos is considered too dangerous to release. But it's already available for companies to use. So is this dangerous claim a PR stunt like the OpenAl did 7 years ago?",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "every openclaw 4.x update breakage and fix in one place because i'm tired of debugging the same things everyone else is",
-        "link": "https://reddit.com/r/openclaw/comments/1sl6g0c/every_openclaw_4x_update_breakage_and_fix_in_one/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-14T11:53:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-14T15:41:54.727Z",
+    "reddit_viral_generated_at": "2026-04-14T17:36:17.443Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
