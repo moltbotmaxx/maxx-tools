@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-14T22:07:00.391Z",
+    "generated_at": "2026-04-14T23:05:58.774Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "If you feel like you're behind, remember that we live in a bubble. The vast majority of people view anything that AI touches as slop.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sln9ny/if_you_feel_like_youre_behind_remember_that_we/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-14T22:10:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "learning to work with openclaw's tendencies instead of trying to bend it to my will",
         "link": "https://reddit.com/r/openclaw/comments/1sllb0k/learning_to_work_with_openclaws_tendencies/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-14T20:56:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Anthropic Is About to Overtake OpenAI on Business Spending.",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-14T19:18:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "He was just following instructions 😭",
@@ -397,7 +406,25 @@
         "published_at": "2026-04-14T19:02:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
+      },
+      {
+        "headline": "Memory frameworks recommendations?",
+        "link": "https://reddit.com/r/openclaw/comments/1slhm49/memory_frameworks_recommendations/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-14T18:44:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "The Information: Anthropic Preps Opus 4.7 Model, could be released as soon as this week",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1slhkt8/the_information_anthropic_preps_opus_47_model/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-14T18:43:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Gemini is crazy good",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-14T18:31:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-14T18:30:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Sam Altman's attacker had a kill list of AI executives. Experts warn this is just the beginning",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-14T17:38:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Most of your AI requests don't need a frontier model. Here's how I cut my spend.",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-14T17:22:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini Intelligence Index",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sle1ih/gemini_intelligence_index/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-14T16:40:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "GAGA DODA",
-        "link": "https://reddit.com/r/aimemes/comments/1slbvfz/gaga_doda/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-14T15:23:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Major Security Concerns?",
-        "link": "https://reddit.com/r/openclaw/comments/1slbrnb/major_security_concerns/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-14T15:20:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-14T22:07:00.391Z",
+    "reddit_viral_generated_at": "2026-04-14T23:05:58.774Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
