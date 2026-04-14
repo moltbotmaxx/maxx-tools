@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-14T09:50:54.983Z",
+    "generated_at": "2026-04-14T11:30:59.578Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Everyone is switching to GLM-5.1 after the Anthropic ban. Here's what they're reporting",
+        "link": "https://reddit.com/r/openclaw/comments/1sl5avl/everyone_is_switching_to_glm51_after_the/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-14T10:57:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "My Uni permanently expelled a student for using Gemini during exams",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sl3cy5/my_uni_permanently_expelled_a_student_for_using/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-14T09:11:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Claude vs GPT in a bomberman-style 1v1 game",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sl23pl/claude_vs_gpt_in_a_bombermanstyle_1v1_game/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-14T07:56:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Agents Think, Wikis Remember: A Cleaner LLM Architecture?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sl21oq/agents_think_wikis_remember_a_cleaner_llm/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-14T07:53:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "gog skill works in TUI / CLI, but Whatsapp has no clue",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-14T07:15:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Gemini has EVERYTHING… so why is it still losing? 🤔",
@@ -397,16 +424,7 @@
         "published_at": "2026-04-14T06:42:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "when duplicating the chatgpt logo it forms a symmetric star pattern is this just geometri",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sl0ceb/when_duplicating_the_chatgpt_logo_it_forms_a/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-14T06:13:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Claude has just fixed over-usage of their compute",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-14T05:17:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 87
       },
       {
         "headline": "I benchmarked 5 OpenClaw alternatives. Turns out the cheapest stack isn't Hermes.",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-14T05:17:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 87
       },
       {
         "headline": "Mark Zuckerberg Reportedly Building AI Clone of Himself to Sit in Meetings",
@@ -433,16 +451,7 @@
         "published_at": "2026-04-14T04:21:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "What's the best low-code stack for building cheap AI agents for offline-first SMBs?",
-        "link": "https://reddit.com/r/openclaw/comments/1sky7e9/whats_the_best_lowcode_stack_for_building_cheap/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-14T04:19:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "OpenClaw vs Hermes Agent, My Experience After Testing Both",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-14T04:13:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "For The First Time In War, Drones & Ground Robotic Systems Seized Enemy positions Without A Single Soldier",
-        "link": "https://reddit.com/r/singularity/comments/1skxzk3/for_the_first_time_in_war_drones_ground_robotic/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-14T04:08:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-14T09:50:54.983Z",
+    "reddit_viral_generated_at": "2026-04-14T11:30:59.578Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
