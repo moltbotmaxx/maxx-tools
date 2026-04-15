@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-04-15T05:18:52+00:00",
-  "date": "2026-04-14",
-  "run_started_at": "2026-04-15T05:17:32+00:00",
+  "generated_at": "2026-04-15T23:04:24+00:00",
+  "date": "2026-04-15",
+  "run_started_at": "2026-04-15T23:03:06+00:00",
   "account": "artificialntellligence",
   "profile_url": "https://www.instagram.com/artificialntellligence/",
   "avatar_path": "../avatars/artificialntellligence.jpg",
-  "profile_pic_url": "https://instagram.fsyq2-1.fna.fbcdn.net/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fsyq2-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2gEri7PqvuGTgjJbNRocbpSena4tf2AME7YQmDLj0PV8axKMOfyp0AOaGkm4ICDrMm4&_nc_ohc=_1pw8ebk2tEQ7kNvwFybmcP&_nc_gid=oFg_qPiuSkhY7d6mWM54bA&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_Af3x2ZHlRbvGlxHDsgxAPQv9g_ZGI-lAGHhdLq1CRzuUyQ&oe=69E4EA16&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq2-1.fna.fbcdn.net/v/t51.82787-19/552087517_18091688110747317_2038322597261164365_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fsyq2-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2gHDRJ2RKGBDQU3gVrdv8cfkCdZY4QZBbS1Q4_-fBW_q5lWUr-9tp5H2Ev7B4Q0rEHY&_nc_ohc=_1pw8ebk2tEQ7kNvwFybmcP&_nc_gid=9yl88p5knwcqoM3YvlZZQQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GN0v6CC1bjpjS0ZAAE0-Z0uak0kcbmNDAQAB0j-ccb7-5&oh=00_Af0ekBIas1L2N2kqRL8cWt3pktqztTksGR2ms8n6pfRz_w&oe=69E60356&_nc_sid=1e20d2",
   "full_name": "Artificial Intelligence (AI)",
   "biography": "\ud83d\udcaaWorld\u2019s Best AI Page \n\ud83d\udce9: contact@sentientagency.io\n\ud83d\udc47 Go viral with us",
   "external_url": "https://sentientagency.io",
   "is_verified": true,
-  "followers": 1504781,
+  "followers": 1504728,
   "following": 121,
-  "posts": 546,
-  "recent_post_count": 83,
+  "posts": 550,
+  "recent_post_count": 85,
   "video_post_count": 39,
   "video_posts_with_view_data": 0,
   "video_posts_with_view_data_recent_window": 0,
@@ -25,21 +25,61 @@
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
-  "oldest_recent_post_date": "2026-03-15",
-  "avg_likes": 3266.92,
-  "avg_comments": 68.99,
+  "oldest_recent_post_date": "2026-03-16",
+  "avg_likes": 3359.89,
+  "avg_comments": 71.58,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
-  "total_likes_recent_window": 269853,
+  "total_likes_recent_window": 285591,
   "total_video_views_recent_window": 0,
-  "engagement_rate": 0.2217,
+  "engagement_rate": 0.228,
   "recent_posts": [
+    {
+      "shortcode": "DXKdCMOkQcU",
+      "date": "2026-04-15",
+      "likes": 794,
+      "comments": 2,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Huawei just added AI that tells you how to pose before you take the photo.\n\nInstead of fixing shots after, it analyzes the scene in real time and suggests poses you can follow inst",
+      "url": "https://www.instagram.com/p/DXKdCMOkQcU/"
+    },
+    {
+      "shortcode": "DXKPuEUjlKL",
+      "date": "2026-04-15",
+      "likes": 187,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "NVIDIA just introduced \u201cIsing,\u201d a new open source AI model family designed to boost quantum computing systems.\n\nThe focus is on calibration and error correction, two of the biggest",
+      "url": "https://www.instagram.com/p/DXKPuEUjlKL/"
+    },
+    {
+      "shortcode": "DXKCZfHpAS4",
+      "date": "2026-04-15",
+      "likes": 702,
+      "comments": 9,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "A humanoid robot was filmed chasing wild boars through a parking lot in Warsaw. Nicknamed Edward Warchocki, it\u2019s a customized Unitree G1 brought to Poland by two IT specialists. Wh",
+      "url": "https://www.instagram.com/p/DXKCZfHpAS4/"
+    },
+    {
+      "shortcode": "DXJsI6GDPMU",
+      "date": "2026-04-15",
+      "likes": 924,
+      "comments": 15,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Another big move from Anthropic.\n\nThey\u2019ve built a Lovable-style interface directly into Claude, where you can prompt full-stack apps, games, and entire projects end to end, with da",
+      "url": "https://www.instagram.com/p/DXJsI6GDPMU/"
+    },
     {
       "shortcode": "DXIjZmtDI_r",
       "date": "2026-04-15",
-      "likes": 1301,
-      "comments": 4,
+      "likes": 2809,
+      "comments": 13,
       "is_video": false,
       "video_views": 0,
       "caption": "In 2019, the scariest thing an AI could do was write a convincing news article, and that alone was enough for OpenAI to keep GPT-2 under wraps.\n\nFast forward a few years, and now A",
@@ -48,8 +88,8 @@
     {
       "shortcode": "DXHljJHkf8w",
       "date": "2026-04-14",
-      "likes": 696,
-      "comments": 6,
+      "likes": 1108,
+      "comments": 13,
       "is_video": true,
       "video_views": 0,
       "caption": "This piece was concepted, generated, and finalized in a single afternoon using Runway. By collapsing the traditional production pipeline\u2014from storyboard to final grade\u2014into a one-p",
@@ -58,8 +98,8 @@
     {
       "shortcode": "DXGAuIdDIgL",
       "date": "2026-04-14",
-      "likes": 2256,
-      "comments": 17,
+      "likes": 2401,
+      "comments": 18,
       "is_video": true,
       "video_views": 0,
       "caption": "Imagine being inside a massive 360\u00b0 screen.\n\nThis is one of the most stunning moments from \u201cThe End of Genesys,\u201d the show by Anyma, the electronic project of Matteo Milleri, held a",
@@ -68,7 +108,7 @@
     {
       "shortcode": "DXF2InODIbw",
       "date": "2026-04-14",
-      "likes": 470,
+      "likes": 516,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -78,8 +118,8 @@
     {
       "shortcode": "DXFOnG1jpon",
       "date": "2026-04-13",
-      "likes": 30552,
-      "comments": 522,
+      "likes": 32424,
+      "comments": 551,
       "is_video": true,
       "video_views": 0,
       "caption": "Is the drone hovering in place or flying at nearly 100 km/h?\n\nIt may look perfectly still inside the car, but in reality it\u2019s moving at the exact same speed as the vehicle. This is",
@@ -88,8 +128,8 @@
     {
       "shortcode": "DXE8Q3TDkTB",
       "date": "2026-04-13",
-      "likes": 77396,
-      "comments": 1567,
+      "likes": 87396,
+      "comments": 1735,
       "is_video": false,
       "video_views": 0,
       "caption": "In China, a new form of entertainment is taking over plazas, parks, and shopping malls: real-life battle royale games where everyone competes until only one winner remains.\n\nThe di",
@@ -98,8 +138,8 @@
     {
       "shortcode": "DXDAcFhjr3D",
       "date": "2026-04-12",
-      "likes": 2097,
-      "comments": 167,
+      "likes": 2170,
+      "comments": 181,
       "is_video": true,
       "video_views": 0,
       "caption": "Created by a single person using AI tools, this piece proves you don\u2019t need a massive studio, just a powerful idea worth expressing. \n\nMade by @lordofacca, one of the leading talen",
@@ -108,7 +148,7 @@
     {
       "shortcode": "DW_4_DTjlyL",
       "date": "2026-04-11",
-      "likes": 1229,
+      "likes": 1240,
       "comments": 8,
       "is_video": true,
       "video_views": 0,
@@ -118,7 +158,7 @@
     {
       "shortcode": "DW-RihUjLQQ",
       "date": "2026-04-11",
-      "likes": 196,
+      "likes": 198,
       "comments": 1,
       "is_video": true,
       "video_views": 0,
@@ -128,7 +168,7 @@
     {
       "shortcode": "DW9XMTWDvYs",
       "date": "2026-04-10",
-      "likes": 374,
+      "likes": 380,
       "comments": 8,
       "is_video": false,
       "video_views": 0,
@@ -138,7 +178,7 @@
     {
       "shortcode": "DW9Pi-EDtka",
       "date": "2026-04-10",
-      "likes": 311,
+      "likes": 316,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -148,8 +188,8 @@
     {
       "shortcode": "DW7u3ReJPU1",
       "date": "2026-04-10",
-      "likes": 15555,
-      "comments": 238,
+      "likes": 16702,
+      "comments": 288,
       "is_video": true,
       "video_views": 0,
       "caption": "Charging an electric car as fast as refueling a gas vehicle may be closer than it seems.\n\nBYD just unveiled a new generation of batteries and an ultra-powerful charging system that",
@@ -158,7 +198,7 @@
     {
       "shortcode": "DW7gsTjjPLd",
       "date": "2026-04-09",
-      "likes": 465,
+      "likes": 472,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -168,7 +208,7 @@
     {
       "shortcode": "DW6t3VlDtWH",
       "date": "2026-04-09",
-      "likes": 2372,
+      "likes": 2402,
       "comments": 9,
       "is_video": true,
       "video_views": 0,
@@ -178,8 +218,8 @@
     {
       "shortcode": "DW6m2CsjtOZ",
       "date": "2026-04-09",
-      "likes": 2021,
-      "comments": 59,
+      "likes": 2049,
+      "comments": 62,
       "is_video": false,
       "video_views": 0,
       "caption": "\ud83d\udea8 North Korean hacker exposed during a job interview\n\nIn recent months, several companies have started detecting infiltration attempts during remote hiring processes. In this case,",
@@ -188,7 +228,7 @@
     {
       "shortcode": "DW5BBOKjK9Z",
       "date": "2026-04-09",
-      "likes": 712,
+      "likes": 716,
       "comments": 6,
       "is_video": false,
       "video_views": 0,
@@ -198,7 +238,7 @@
     {
       "shortcode": "DW41F98Dihu",
       "date": "2026-04-08",
-      "likes": 335,
+      "likes": 341,
       "comments": 34,
       "is_video": false,
       "video_views": 0,
@@ -208,7 +248,7 @@
     {
       "shortcode": "DW4XMA_DlEm",
       "date": "2026-04-08",
-      "likes": 952,
+      "likes": 954,
       "comments": 48,
       "is_video": false,
       "video_views": 0,
@@ -218,7 +258,7 @@
     {
       "shortcode": "DW4OK-JjrNw",
       "date": "2026-04-08",
-      "likes": 2507,
+      "likes": 2523,
       "comments": 33,
       "is_video": true,
       "video_views": 0,
@@ -228,7 +268,7 @@
     {
       "shortcode": "DW2lqSJDBqi",
       "date": "2026-04-08",
-      "likes": 2302,
+      "likes": 2317,
       "comments": 22,
       "is_video": true,
       "video_views": 0,
@@ -238,7 +278,7 @@
     {
       "shortcode": "DW1wHoWjmUP",
       "date": "2026-04-07",
-      "likes": 354,
+      "likes": 355,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -248,7 +288,7 @@
     {
       "shortcode": "DW1n3GDjgJz",
       "date": "2026-04-07",
-      "likes": 1129,
+      "likes": 1140,
       "comments": 19,
       "is_video": false,
       "video_views": 0,
@@ -258,7 +298,7 @@
     {
       "shortcode": "DWz0MvkDMIk",
       "date": "2026-04-07",
-      "likes": 558,
+      "likes": 567,
       "comments": 6,
       "is_video": false,
       "video_views": 0,
@@ -268,7 +308,7 @@
     {
       "shortcode": "DWzoAg5Dn6-",
       "date": "2026-04-06",
-      "likes": 3088,
+      "likes": 3102,
       "comments": 25,
       "is_video": false,
       "video_views": 0,
@@ -278,7 +318,7 @@
     {
       "shortcode": "DWzKtJ5jhj5",
       "date": "2026-04-06",
-      "likes": 2774,
+      "likes": 2842,
       "comments": 34,
       "is_video": true,
       "video_views": 0,
@@ -288,8 +328,8 @@
     {
       "shortcode": "DWyzyQLDv4m",
       "date": "2026-04-06",
-      "likes": 1176,
-      "comments": 722,
+      "likes": 1294,
+      "comments": 789,
       "is_video": false,
       "video_views": 0,
       "caption": "Comment \u201cHORIZON\u201d and we\u2019ll send you the link for early access \ud83d\udd17\n\nMost trading tools are honestly a bit complicated\n\nThis one feels different\n\nYou just describe an idea,\nand it tur",
@@ -298,7 +338,7 @@
     {
       "shortcode": "DWxLHE1DtFV",
       "date": "2026-04-05",
-      "likes": 2808,
+      "likes": 2832,
       "comments": 26,
       "is_video": true,
       "video_views": 0,
@@ -308,7 +348,7 @@
     {
       "shortcode": "DWr8LqNDhTK",
       "date": "2026-04-03",
-      "likes": 2530,
+      "likes": 2536,
       "comments": 27,
       "is_video": true,
       "video_views": 0,
@@ -328,7 +368,7 @@
     {
       "shortcode": "DWrZJKKjsGW",
       "date": "2026-04-03",
-      "likes": 826,
+      "likes": 828,
       "comments": 12,
       "is_video": false,
       "video_views": 0,
@@ -338,7 +378,7 @@
     {
       "shortcode": "DWpHntkJEY8",
       "date": "2026-04-02",
-      "likes": 1722,
+      "likes": 1727,
       "comments": 14,
       "is_video": true,
       "video_views": 0,
@@ -348,7 +388,7 @@
     {
       "shortcode": "DWo_GZnEelc",
       "date": "2026-04-02",
-      "likes": 1468,
+      "likes": 1470,
       "comments": 22,
       "is_video": false,
       "video_views": 0,
@@ -358,7 +398,7 @@
     {
       "shortcode": "DWox5T6DlL7",
       "date": "2026-04-02",
-      "likes": 882,
+      "likes": 886,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -368,7 +408,7 @@
     {
       "shortcode": "DWokNI1DgX-",
       "date": "2026-04-02",
-      "likes": 682,
+      "likes": 688,
       "comments": 7,
       "is_video": false,
       "video_views": 0,
@@ -388,7 +428,7 @@
     {
       "shortcode": "DWmSIzTDq3f",
       "date": "2026-04-01",
-      "likes": 4349,
+      "likes": 4353,
       "comments": 35,
       "is_video": false,
       "video_views": 0,
@@ -398,8 +438,8 @@
     {
       "shortcode": "DWmA1cvjsRy",
       "date": "2026-04-01",
-      "likes": 6031,
-      "comments": 63,
+      "likes": 6161,
+      "comments": 64,
       "is_video": true,
       "video_views": 0,
       "caption": "China showcases coordinated combat where humans, drones, and robot dogs operate as one system. Aerial surveillance feeds real-time data while ground units move in sync, with quadru",
@@ -408,7 +448,7 @@
     {
       "shortcode": "DWko8-fDHcZ",
       "date": "2026-04-01",
-      "likes": 1031,
+      "likes": 1032,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -418,7 +458,7 @@
     {
       "shortcode": "DWkgop6DIeq",
       "date": "2026-04-01",
-      "likes": 1264,
+      "likes": 1266,
       "comments": 11,
       "is_video": true,
       "video_views": 0,
@@ -438,8 +478,8 @@
     {
       "shortcode": "DWjhBKVjkUi",
       "date": "2026-03-31",
-      "likes": 2864,
-      "comments": 113,
+      "likes": 2921,
+      "comments": 115,
       "is_video": true,
       "video_views": 0,
       "caption": "A delivery robot stopped at a crosswalk and asked someone to press the button for it, and the moment quickly went viral. It highlights a key gap: robots can navigate cities, but th",
@@ -448,7 +488,7 @@
     {
       "shortcode": "DWhgUJcDiC2",
       "date": "2026-03-30",
-      "likes": 3278,
+      "likes": 3282,
       "comments": 15,
       "is_video": true,
       "video_views": 0,
@@ -458,8 +498,8 @@
     {
       "shortcode": "DWhZY8HD_yk",
       "date": "2026-03-30",
-      "likes": 12875,
-      "comments": 155,
+      "likes": 12913,
+      "comments": 156,
       "is_video": false,
       "video_views": 0,
       "caption": "For 25 years, one man lived with symptoms no specialist could fully explain, until a single AI conversation helped connect the dots.\n\nAfter years of visits across neurology and nep",
@@ -478,7 +518,7 @@
     {
       "shortcode": "DWfF84jjhB8",
       "date": "2026-03-29",
-      "likes": 7984,
+      "likes": 7987,
       "comments": 57,
       "is_video": true,
       "video_views": 0,
@@ -528,7 +568,7 @@
     {
       "shortcode": "DWXjw8CJWy5",
       "date": "2026-03-27",
-      "likes": 3344,
+      "likes": 3345,
       "comments": 37,
       "is_video": true,
       "video_views": 0,
@@ -568,7 +608,7 @@
     {
       "shortcode": "DWVUBIAjN2p",
       "date": "2026-03-26",
-      "likes": 1294,
+      "likes": 1296,
       "comments": 47,
       "is_video": true,
       "video_views": 0,
@@ -578,7 +618,7 @@
     {
       "shortcode": "DWUXR94EXvM",
       "date": "2026-03-25",
-      "likes": 5795,
+      "likes": 5797,
       "comments": 15,
       "is_video": true,
       "video_views": 0,
@@ -588,7 +628,7 @@
     {
       "shortcode": "DWSYpEnjHNA",
       "date": "2026-03-25",
-      "likes": 5282,
+      "likes": 5291,
       "comments": 26,
       "is_video": true,
       "video_views": 0,
@@ -618,7 +658,7 @@
     {
       "shortcode": "DWRmGJzBT2V",
       "date": "2026-03-24",
-      "likes": 8836,
+      "likes": 8848,
       "comments": 970,
       "is_video": true,
       "video_views": 0,
@@ -658,7 +698,7 @@
     {
       "shortcode": "DWPebSwDzt7",
       "date": "2026-03-23",
-      "likes": 3256,
+      "likes": 3262,
       "comments": 13,
       "is_video": false,
       "video_views": 0,
@@ -678,7 +718,7 @@
     {
       "shortcode": "DWMpNJmjmAf",
       "date": "2026-03-22",
-      "likes": 3840,
+      "likes": 3841,
       "comments": 27,
       "is_video": true,
       "video_views": 0,
@@ -688,7 +728,7 @@
     {
       "shortcode": "DWKTLlzD8Sp",
       "date": "2026-03-21",
-      "likes": 2748,
+      "likes": 2749,
       "comments": 46,
       "is_video": true,
       "video_views": 0,
@@ -788,7 +828,7 @@
     {
       "shortcode": "DWAFHVwycNw",
       "date": "2026-03-17",
-      "likes": 2187,
+      "likes": 2188,
       "comments": 24,
       "is_video": true,
       "video_views": 0,
@@ -844,26 +884,6 @@
       "video_views": 0,
       "caption": "Paul Conyngham turned to AI after his rescue dog Rosie was diagnosed with aggressive mast cell cancer and given only months to live.\n\nWith no background in biology, he spent about ",
       "url": "https://www.instagram.com/p/DV80SA1jrP6/"
-    },
-    {
-      "shortcode": "DV6ujVjvc3z",
-      "date": "2026-03-15",
-      "likes": 1233,
-      "comments": 9,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Delivery robots look futuristic in promotional videos, but when they hit the real world, the story changes. Curbs, potholes, cars, and even trains quickly turn into obstacles these",
-      "url": "https://www.instagram.com/p/DV6ujVjvc3z/"
-    },
-    {
-      "shortcode": "DV4tkmtO2Cr",
-      "date": "2026-03-15",
-      "likes": 2816,
-      "comments": 12,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "This scene would cost a studio $5M.\nSomeone with Al did it in minutes.\n\n@higgsfield.ai Cinema Studio model is CGI on steroids.\n\nWe\u2019re heading to a future where films are made at a ",
-      "url": "https://www.instagram.com/p/DV4tkmtO2Cr/"
     }
   ]
 }

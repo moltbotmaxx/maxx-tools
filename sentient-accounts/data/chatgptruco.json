@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T05:18:22+00:00",
-  "date": "2026-04-14",
-  "run_started_at": "2026-04-15T05:17:32+00:00",
+  "generated_at": "2026-04-15T23:03:54+00:00",
+  "date": "2026-04-15",
+  "run_started_at": "2026-04-15T23:03:06+00:00",
   "account": "chatgptruco",
   "profile_url": "https://www.instagram.com/chatgptruco/",
   "avatar_path": "../avatars/chatgptruco.jpg",
-  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.82787-19/639729687_17980986704975469_5370662162721910281_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2gHSOVzSHxgxlf2SewfAZz47o6-ybgb0_8BHn3oCkTX2Jq8wijcLzVnQldRzfpQYIY0&_nc_ohc=UQbH3KdLwlQQ7kNvwELJx9x&_nc_gid=cHuU3AmuFwOdbGJdRxVqZw&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GBeAISZt1kK1nOE-AAmuqzHIbIhKbmNDAQAB0j-ccb7-5&oh=00_Af1O3ytLCMLfb54AchH-azCvY-Fl3fNAU7kEggjgCXLhfg&oe=69E4EB1B&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.82787-19/639729687_17980986704975469_5370662162721910281_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2gEkfOK-PPexOMbfvD6bBDRO-974K6M_8PQ0jvPs_73vJC3TAdWfaNxkriJWplFl1dg&_nc_ohc=y19NjSWWS28Q7kNvwFo22vE&_nc_gid=uicDAsOaHsrDiIORm-DENg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GBeAISZt1kK1nOE-AAmuqzHIbIhKbmNDAQAB0j-ccb7-5&oh=00_Af0cb8So9pVuYGh1y1z0ITh9mxgyUNMO-WNz5LswSy0BfQ&oe=69E6045B&_nc_sid=1e20d2",
   "full_name": "ChatGPT | Inteligencia Artificial",
   "biography": "\ud83e\udd16 S\u00edguenos para ir un paso adelante\n\ud83d\ude80 La IA avanza r\u00e1pido. No te quedes atr\u00e1s.\n\ud83d\udce9 Colaboraciones: hello@chatgptricks.com\n\ud83d\udcf2 Tra\u00eddo por @chatgptricks",
   "external_url": "https://sentientagency.io",
   "is_verified": true,
-  "followers": 47114,
+  "followers": 47111,
   "following": 97,
-  "posts": 255,
+  "posts": 256,
   "recent_post_count": 61,
   "video_post_count": 26,
   "video_posts_with_view_data": 0,
@@ -25,20 +25,30 @@
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
-  "oldest_recent_post_date": "2026-03-15",
-  "avg_likes": 728.87,
-  "avg_comments": 9.43,
+  "oldest_recent_post_date": "2026-03-16",
+  "avg_likes": 748.82,
+  "avg_comments": 9.69,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
-  "total_likes_recent_window": 44461,
+  "total_likes_recent_window": 45678,
   "total_video_views_recent_window": 0,
-  "engagement_rate": 1.5671,
+  "engagement_rate": 1.61,
   "recent_posts": [
+    {
+      "shortcode": "DXJuanRk46L",
+      "date": "2026-04-15",
+      "likes": 410,
+      "comments": 1,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Chuck Norris no hace giros de trama. \u00c9l termina la historia de una patada.\n\nIndiana Jones y los Cazadores del Arca Perdida, Pee-wee\u2019s Big Adventure, Taxi Driver\u2026 algunas de las esc",
+      "url": "https://www.instagram.com/p/DXJuanRk46L/"
+    },
     {
       "shortcode": "DXIUn5th8TI",
       "date": "2026-04-14",
-      "likes": 161,
+      "likes": 186,
       "comments": 3,
       "is_video": true,
       "video_views": 0,
@@ -48,7 +58,7 @@
     {
       "shortcode": "DXIKqxPk2zv",
       "date": "2026-04-14",
-      "likes": 128,
+      "likes": 151,
       "comments": 1,
       "is_video": true,
       "video_views": 0,
@@ -58,7 +68,7 @@
     {
       "shortcode": "DXGHqstlU_l",
       "date": "2026-04-14",
-      "likes": 10,
+      "likes": 11,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -68,8 +78,8 @@
     {
       "shortcode": "DXFlJWTE5dn",
       "date": "2026-04-13",
-      "likes": 16848,
-      "comments": 130,
+      "likes": 17761,
+      "comments": 135,
       "is_video": true,
       "video_views": 0,
       "caption": "\u00bfEl dron est\u00e1 flotando en el mismo lugar o volando a casi 100 km/h?\n\nPuede parecer completamente quieto dentro del auto, pero en realidad se mueve exactamente a la misma velocidad ",
@@ -78,7 +88,7 @@
     {
       "shortcode": "DXAFD06hfkJ",
       "date": "2026-04-11",
-      "likes": 121,
+      "likes": 123,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -88,7 +98,7 @@
     {
       "shortcode": "DW_5mZ_EyoS",
       "date": "2026-04-11",
-      "likes": 18,
+      "likes": 19,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -118,8 +128,8 @@
     {
       "shortcode": "DW7qvewhlvA",
       "date": "2026-04-10",
-      "likes": 524,
-      "comments": 145,
+      "likes": 541,
+      "comments": 155,
       "is_video": true,
       "video_views": 0,
       "caption": "Estos son 5 c\u00f3digos secretos que pocos conocen para sacarle el m\u00e1ximo provecho a ChatGPT.\n\n\ud83d\udc47 Si quieres m\u00e1s prompts como estos, s\u00edgueme y comenta la palabra \u201cLista\u201d para que te los",
@@ -128,7 +138,7 @@
     {
       "shortcode": "DW7X4DXE5bl",
       "date": "2026-04-09",
-      "likes": 154,
+      "likes": 155,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -148,7 +158,7 @@
     {
       "shortcode": "DW43lFjFUHc",
       "date": "2026-04-08",
-      "likes": 24,
+      "likes": 25,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -168,7 +178,7 @@
     {
       "shortcode": "DW2DwHfk9QX",
       "date": "2026-04-07",
-      "likes": 418,
+      "likes": 419,
       "comments": 5,
       "is_video": true,
       "video_views": 0,
@@ -188,7 +198,7 @@
     {
       "shortcode": "DWw_uEAkWr0",
       "date": "2026-04-05",
-      "likes": 219,
+      "likes": 221,
       "comments": 1,
       "is_video": true,
       "video_views": 0,
@@ -208,7 +218,7 @@
     {
       "shortcode": "DWsPBhQkZbT",
       "date": "2026-04-04",
-      "likes": 249,
+      "likes": 250,
       "comments": 3,
       "is_video": true,
       "video_views": 0,
@@ -248,7 +258,7 @@
     {
       "shortcode": "DWnN_BgE0ud",
       "date": "2026-04-02",
-      "likes": 584,
+      "likes": 586,
       "comments": 9,
       "is_video": true,
       "video_views": 0,
@@ -428,7 +438,7 @@
     {
       "shortcode": "DWQXZV8jlv8",
       "date": "2026-03-24",
-      "likes": 13246,
+      "likes": 13286,
       "comments": 18,
       "is_video": true,
       "video_views": 0,
@@ -498,7 +508,7 @@
     {
       "shortcode": "DWHZw79BHBY",
       "date": "2026-03-20",
-      "likes": 5273,
+      "likes": 5278,
       "comments": 14,
       "is_video": true,
       "video_views": 0,
@@ -634,16 +644,6 @@
       "video_views": 0,
       "caption": "Los robots humanoides se dirigen a la guerra\n\nLa startup estadounidense Foundation Robotics habr\u00eda enviado sus robots humanoides Phantom MK1 a Ucrania para realizar pruebas en cond",
       "url": "https://www.instagram.com/p/DV9K4tflaRb/"
-    },
-    {
-      "shortcode": "DV6s0Vuk4XS",
-      "date": "2026-03-15",
-      "likes": 228,
-      "comments": 0,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Seedance 2.0 es CGI con esteroides \ud83d\udc40. Nos estamos dirigiendo a un futuro donde las pel\u00edculas se har\u00e1n a una fracci\u00f3n de los costos actuales y 100 veces m\u00e1s r\u00e1pido.\n\n\u2022 Sigue a @chat",
-      "url": "https://www.instagram.com/p/DV6s0Vuk4XS/"
     }
   ]
 }
