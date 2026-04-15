@@ -3425,12 +3425,16 @@ canvas {
   grid-template-columns: 18px minmax(0, 1fr) auto;
   align-items: center;
   gap: 12px;
+  width: 100%;
   padding: 10px 12px;
   border: 1px solid var(--border-subtle);
   border-radius: 14px;
   background: white;
   box-shadow: var(--shadow-sm);
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: left;
 }
 
 .managed-account-option:hover {
@@ -3441,12 +3445,6 @@ canvas {
   border-color: rgba(0, 122, 255, 0.24);
   background: rgba(0, 122, 255, 0.04);
   box-shadow: 0 10px 20px rgba(0, 122, 255, 0.08);
-}
-
-.managed-account-option__checkbox {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .managed-account-option__indicator {
@@ -3468,16 +3466,16 @@ canvas {
   opacity: 0;
 }
 
-.managed-account-option__checkbox:checked ~ .managed-account-option__indicator {
+.managed-account-option.managed-account-option--selected .managed-account-option__indicator {
   border-color: rgba(0, 122, 255, 0.28);
   background: rgba(0, 122, 255, 0.08);
 }
 
-.managed-account-option__checkbox:checked ~ .managed-account-option__indicator::after {
+.managed-account-option.managed-account-option--selected .managed-account-option__indicator::after {
   opacity: 1;
 }
 
-.managed-account-option__checkbox:checked ~ .managed-account-option__copy strong {
+.managed-account-option.managed-account-option--selected .managed-account-option__copy strong {
   color: var(--accent-primary);
 }
 

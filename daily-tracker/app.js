@@ -110,6 +110,7 @@ let sentientAccountsDatasetCache = null;
 let sentientAccountsDatasetPromise = null;
 let activeManagedAccountTab = '';
 let managedAccountsModalMode = 'edit';
+let managedAccountsModalSelection = [];
 let isSavingManagedAccounts = false;
 let pendingExtensionIdeas = [];
 let isLoadingUserData = false;
@@ -2874,10 +2875,28 @@ function setManagedAccountsModalStatus(message = '', tone = 'neutral') {
 function syncManagedAccountOptionState(scope = elements.managedAccountsList) {
     if (!scope) return;
 
+    const selected = new Set(managedAccountsModalSelection.map((account) => account.toLowerCase()));
     scope.querySelectorAll('.managed-account-option').forEach((option) => {
-        const checkbox = option.querySelector('.managed-account-option__checkbox');
-        option.classList.toggle('managed-account-option--selected', Boolean(checkbox?.checked));
+        const accountKey = normalizeWhitespace(option.dataset.account || '').toLowerCase();
+        const isSelected = selected.has(accountKey);
+        option.classList.toggle('managed-account-option--selected', isSelected);
+        option.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
     });
+}
+
+function toggleManagedAccountModalSelection(accountName = '') {
+    const normalized = normalizeWhitespace(accountName).replace(/^@/, '');
+    if (!normalized) return;
+
+    const key = normalized.toLowerCase();
+    const selected = managedAccountsModalSelection.map((account) => account.toLowerCase());
+    if (selected.includes(key)) {
+        managedAccountsModalSelection = managedAccountsModalSelection.filter((account) => account.toLowerCase() !== key);
+    } else {
+        managedAccountsModalSelection = [...managedAccountsModalSelection, normalized];
+    }
+
+    syncManagedAccountOptionState(elements.managedAccountsList);
 }
 
 function updateManagedAccountsModalButtons() {
@@ -2899,16 +2918,15 @@ function updateManagedAccountsModalButtons() {
 
 function renderManagedAccountsOptions(dataset) {
     if (!elements.managedAccountsList) return;
-    const selected = new Set(managedSentientAccounts.map(account => account.toLowerCase()));
+    const selected = new Set(managedAccountsModalSelection.map(account => account.toLowerCase()));
 
     elements.managedAccountsList.innerHTML = dataset.accounts.map(account => `
-        <label class="managed-account-option${selected.has(String(account.account).toLowerCase()) ? ' managed-account-option--selected' : ''}">
-            <input
-                class="managed-account-option__checkbox"
-                type="checkbox"
-                value="${escapeHtml(account.account)}"
-                ${selected.has(String(account.account).toLowerCase()) ? 'checked' : ''}
-            />
+        <button
+            class="managed-account-option${selected.has(String(account.account).toLowerCase()) ? ' managed-account-option--selected' : ''}"
+            type="button"
+            data-account="${escapeHtml(account.account)}"
+            aria-pressed="${selected.has(String(account.account).toLowerCase()) ? 'true' : 'false'}"
+        >
             <span class="managed-account-option__indicator" aria-hidden="true"></span>
             <div class="managed-account-option__copy">
                 <strong>@${escapeHtml(account.account)}</strong>
@@ -2918,7 +2936,7 @@ function renderManagedAccountsOptions(dataset) {
                 <span>${formatCompact(Number(account.followers) || 0)} followers</span>
                 <span>${formatPercentCompact(account.engagement_rate)} eng.</span>
             </div>
-        </label>
+        </button>
     `).join('');
 
     syncManagedAccountOptionState(elements.managedAccountsList);
@@ -2926,6 +2944,7 @@ function renderManagedAccountsOptions(dataset) {
 
 async function openManagedAccountsModal(mode = 'edit') {
     managedAccountsModalMode = mode;
+    managedAccountsModalSelection = [...managedSentientAccounts];
     updateManagedAccountsModalButtons();
 
     if (elements.managedAccountsModalTitle) {
@@ -2970,11 +2989,7 @@ function closeManagedAccountsModal(force = false) {
 }
 
 function getManagedAccountsModalSelection() {
-    if (!elements.managedAccountsList) return [];
-    return normalizeManagedSentientAccounts(
-        Array.from(elements.managedAccountsList.querySelectorAll('input[type="checkbox"]:checked'))
-            .map(input => input.value)
-    );
+    return normalizeManagedSentientAccounts(managedAccountsModalSelection);
 }
 
 async function saveManagedAccountsSelection() {
@@ -6907,10 +6922,10 @@ function setupEventListeners() {
         elements.managedAccountsSaveBtn.addEventListener('click', saveManagedAccountsSelection);
     }
     if (elements.managedAccountsList) {
-        elements.managedAccountsList.addEventListener('change', (event) => {
-            const checkbox = event.target.closest('.managed-account-option__checkbox');
-            if (!checkbox) return;
-            syncManagedAccountOptionState(elements.managedAccountsList);
+        elements.managedAccountsList.addEventListener('click', (event) => {
+            const option = event.target.closest('.managed-account-option');
+            if (!option) return;
+            toggleManagedAccountModalSelection(option.dataset.account || '');
         });
     }
     if (elements.managedAccountsCancelBtn) {
