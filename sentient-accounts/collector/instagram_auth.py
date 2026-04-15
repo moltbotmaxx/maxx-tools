@@ -139,6 +139,19 @@ def resolve_session_file(username: str | None = None) -> Path | None:
     return SESSION_DIR / f"session-{resolved_username}"
 
 
+def list_available_session_files() -> list[Path]:
+    if not SESSION_DIR.exists():
+        return []
+
+    return sorted(
+        (
+            path for path in SESSION_DIR.glob("session-*")
+            if path.is_file()
+        ),
+        key=lambda path: path.name,
+    )
+
+
 def should_trust_unverified_session() -> bool:
     load_local_env()
     raw_value = str(os.getenv("INSTALOADER_TRUST_SESSION_FILE", "")).strip().lower()
@@ -186,6 +199,33 @@ def load_persisted_session(
         "Treating the session as stale so password login can refresh it."
     )
     return None, session_file
+
+
+def try_alternate_persisted_sessions(
+    loader: instaloader.Instaloader,
+    skip_files: set[Path] | None = None,
+) -> tuple[str | None, Path | None]:
+    skip_files = skip_files or set()
+
+    for session_file in list_available_session_files():
+        if session_file in skip_files:
+            continue
+
+        candidate_username = session_file.name.replace("session-", "", 1).strip()
+        if not candidate_username:
+            continue
+
+        try:
+            logged_in_as, resolved_file = load_persisted_session(loader, candidate_username)
+        except (InstaloaderException, OSError, FileNotFoundError) as exc:
+            print(f"Could not load alternate session from {session_file}: {exc}")
+            continue
+
+        if logged_in_as:
+            print(f"Authenticated using alternate persisted session {resolved_file}")
+            return logged_in_as, resolved_file
+
+    return None, None
 
 
 def login_and_persist_session(
@@ -302,8 +342,10 @@ def authenticate_loader(
 ) -> str | None:
     username = get_instagram_username()
     session_file = resolve_session_file(username) if username else None
+    attempted_session_files: set[Path] = set()
 
     if username and session_file and session_file.exists():
+        attempted_session_files.add(session_file)
         try:
             logged_in_as, _ = load_persisted_session(loader, username)
             if logged_in_as:
@@ -315,6 +357,25 @@ def authenticate_loader(
         except (InstaloaderException, OSError, FileNotFoundError) as exc:
             print(f"Could not load persisted session from {session_file}: {exc}")
 
+    alternate_username, alternate_session_file = try_alternate_persisted_sessions(
+        loader,
+        skip_files=attempted_session_files,
+    )
+    if alternate_username:
+        return alternate_username
+
+    configured_browser = get_instaloader_browser()
+    if configured_browser:
+        try:
+            imported_username, imported_session_file = import_session_from_browser(
+                loader,
+                browser=configured_browser,
+            )
+            print(f"Authenticated using browser cookies from {configured_browser}: {imported_session_file}")
+            return imported_username
+        except (InstaloaderException, RuntimeError, ValueError) as exc:
+            print(f"Could not authenticate from browser cookies ({configured_browser}): {exc}")
+
     if allow_password_fallback and username and get_instagram_password():
         logged_in_as, _ = login_and_persist_session(loader, interactive=False)
         return logged_in_as
@@ -324,5 +385,13 @@ def authenticate_loader(
             f"No persisted Instaloader session found at {session_file}. "
             "Run collector/create_session.py once to create it."
         )
+
+    if not attempted_session_files and not alternate_session_file:
+        available = list_available_session_files()
+        if available:
+            print(
+                "Found persisted session files, but none could be used automatically: "
+                + ", ".join(path.name for path in available)
+            )
 
     return None
