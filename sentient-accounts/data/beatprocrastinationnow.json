@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-03-22T20:31:25+00:00",
-  "date": "2026-03-22",
-  "run_started_at": "2026-03-22T20:15:00+00:00",
+  "generated_at": "2026-04-15T23:11:45+00:00",
+  "date": "2026-04-15",
+  "run_started_at": "2026-04-15T23:03:06+00:00",
   "account": "beatprocrastinationnow",
   "profile_url": "https://www.instagram.com/beatprocrastinationnow/",
   "avatar_path": "../avatars/beatprocrastinationnow.jpg",
-  "profile_pic_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.2885-19/459313624_1492693218041617_494632525949196333_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gH2mLFZZxmv4oFyKDmduhPzZpe4sXecbKpbt7fnqCKCyF2ndUnrIEBqacFF2Z4TuKA&_nc_ohc=1TwT5jj364YQ7kNvwHbwQyz&_nc_gid=appYrjYpkm073cBqiBeLCg&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNiRYBsRHwW5mE0FAC1YjmOpSd0GbkULAAAB0j-ccb7-5&oh=00_AfxsT4_j76oPyMhCkRwOFGqyeg11GDb7Oc1-jx9i07g8CQ&oe=69C63AA8&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.2885-19/459313624_1492693218041617_494632525949196333_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gFmvmNlRVf0fGhyQtIykceWExQKX6EcO0IU3axVYTSZ-HxhCjTQqnJnZppMhEfRIzQ&_nc_ohc=1VhazNKFpFgQ7kNvwGKQ4dp&_nc_gid=S9_FBSmQSf7gB7yUL8-hog&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GNiRYBsRHwW5mE0FAC1YjmOpSd0GbkULAAAB0j-ccb7-5&oh=00_Af2xMRR9MTFLUbdnlsdh8PZgvOJhhofD6B26vwcYWbbwiQ&oe=69E5DEA8&_nc_sid=1e20d2",
   "full_name": "Do It Now Every Day",
   "biography": "| Waking you up to Do it now video every day\n| We help you increase productivity\nBy @sentientagency",
   "external_url": "",
   "is_verified": false,
-  "followers": 95771,
+  "followers": 95230,
   "following": 2,
   "posts": 339,
   "recent_post_count": 24,
   "video_post_count": 24,
   "video_posts_with_view_data": 0,
   "video_posts_with_view_data_recent_window": 0,
-  "reel_view_enriched_posts": 24,
+  "reel_view_enriched_posts": 0,
   "recent_posts_window_days": 14,
   "recent_posts_collection_window_days": 30,
   "recent_posts_target_limit": 24,
@@ -26,14 +26,14 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2025-08-12",
-  "avg_likes": 451.21,
+  "avg_likes": 450.33,
   "avg_comments": 2.62,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
   "total_likes_recent_window": 0,
   "total_video_views_recent_window": 0,
-  "engagement_rate": 0.4739,
+  "engagement_rate": 0.4756,
   "recent_posts": [
     {
       "shortcode": "DPmEHqxkf_T",
@@ -41,10 +41,9 @@
       "likes": 323,
       "comments": 7,
       "is_video": true,
-      "video_views": 5,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DPmEHqxkf_T/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DPmEHqxkf_T/"
     },
     {
       "shortcode": "DO_z0U1j78u",
@@ -52,43 +51,39 @@
       "likes": 219,
       "comments": 5,
       "is_video": true,
-      "video_views": 4,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DO_z0U1j78u/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DO_z0U1j78u/"
     },
     {
       "shortcode": "DO7KwWojE73",
       "date": "2025-09-23",
-      "likes": 5664,
+      "likes": 5651,
       "comments": 24,
       "is_video": true,
-      "video_views": 70000,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DO7KwWojE73/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DO7KwWojE73/"
     },
     {
       "shortcode": "DOzKCHwj9cz",
       "date": "2025-09-19",
-      "likes": 1093,
+      "likes": 1092,
       "comments": 3,
       "is_video": true,
-      "video_views": 14500,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOzKCHwj9cz/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOzKCHwj9cz/"
     },
     {
       "shortcode": "DOhSIX3jypb",
       "date": "2025-09-12",
-      "likes": 202,
+      "likes": 201,
       "comments": 1,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOhSIX3jypb/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOhSIX3jypb/"
     },
     {
       "shortcode": "DOexqNtD0W_",
@@ -96,32 +91,29 @@
       "likes": 173,
       "comments": 2,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOexqNtD0W_/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOexqNtD0W_/"
     },
     {
       "shortcode": "DOb3KJBj6QA",
       "date": "2025-09-10",
-      "likes": 137,
+      "likes": 136,
       "comments": 3,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOb3KJBj6QA/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOb3KJBj6QA/"
     },
     {
       "shortcode": "DOWJL7kjbjy",
       "date": "2025-09-08",
-      "likes": 131,
+      "likes": 130,
       "comments": 0,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOWJL7kjbjy/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOWJL7kjbjy/"
     },
     {
       "shortcode": "DOL-Fm4kQwM",
@@ -129,32 +121,29 @@
       "likes": 115,
       "comments": 0,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOL-Fm4kQwM/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOL-Fm4kQwM/"
     },
     {
       "shortcode": "DOJxI8mj_6X",
       "date": "2025-09-03",
-      "likes": 114,
+      "likes": 113,
       "comments": 1,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOJxI8mj_6X/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOJxI8mj_6X/"
     },
     {
       "shortcode": "DOHUfhhj86F",
       "date": "2025-09-02",
-      "likes": 168,
+      "likes": 167,
       "comments": 2,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOHUfhhj86F/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOHUfhhj86F/"
     },
     {
       "shortcode": "DOET8ODka5I",
@@ -162,10 +151,9 @@
       "likes": 129,
       "comments": 1,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DOET8ODka5I/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DOET8ODka5I/"
     },
     {
       "shortcode": "DN8h0AtDUcw",
@@ -173,10 +161,9 @@
       "likes": 154,
       "comments": 2,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DN8h0AtDUcw/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DN8h0AtDUcw/"
     },
     {
       "shortcode": "DN55kEPjbN1",
@@ -184,10 +171,9 @@
       "likes": 64,
       "comments": 1,
       "is_video": true,
-      "video_views": 1,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DN55kEPjbN1/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DN55kEPjbN1/"
     },
     {
       "shortcode": "DN36kevD8pB",
@@ -195,21 +181,19 @@
       "likes": 321,
       "comments": 6,
       "is_video": true,
-      "video_views": 7,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DN36kevD8pB/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DN36kevD8pB/"
     },
     {
       "shortcode": "DNyU7H14oKm",
       "date": "2025-08-25",
-      "likes": 170,
+      "likes": 169,
       "comments": 0,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNyU7H14oKm/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNyU7H14oKm/"
     },
     {
       "shortcode": "DNq35Prv9oL",
@@ -217,10 +201,9 @@
       "likes": 162,
       "comments": 0,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNq35Prv9oL/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNq35Prv9oL/"
     },
     {
       "shortcode": "DNop51JvqIN",
@@ -228,10 +211,9 @@
       "likes": 139,
       "comments": 0,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNop51JvqIN/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNop51JvqIN/"
     },
     {
       "shortcode": "DNn97DbxqoA",
@@ -239,10 +221,9 @@
       "likes": 249,
       "comments": 0,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNn97DbxqoA/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNn97DbxqoA/"
     },
     {
       "shortcode": "DNgXt3SvIM2",
@@ -250,10 +231,9 @@
       "likes": 302,
       "comments": 2,
       "is_video": true,
-      "video_views": 4,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNgXt3SvIM2/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNgXt3SvIM2/"
     },
     {
       "shortcode": "DNY3-RjP3P6",
@@ -261,10 +241,9 @@
       "likes": 191,
       "comments": 0,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNY3-RjP3P6/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNY3-RjP3P6/"
     },
     {
       "shortcode": "DNWmYn-voOF",
@@ -272,21 +251,19 @@
       "likes": 179,
       "comments": 1,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNWmYn-voOF/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNWmYn-voOF/"
     },
     {
       "shortcode": "DNUDQfgPpQK",
       "date": "2025-08-13",
-      "likes": 249,
+      "likes": 248,
       "comments": 1,
       "is_video": true,
-      "video_views": 3,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNUDQfgPpQK/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNUDQfgPpQK/"
     },
     {
       "shortcode": "DNRUNpRP8Qe",
@@ -294,10 +271,9 @@
       "likes": 181,
       "comments": 1,
       "is_video": true,
-      "video_views": 2,
+      "video_views": 0,
       "caption": "Wake up every day ready to beat procastination \u2193\n\nFollow for more useful content \u2199\ufe0f\n\n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\u25b5 @beatprocrastinationnow \n\n@beatprocrast",
-      "url": "https://www.instagram.com/p/DNRUNpRP8Qe/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DNRUNpRP8Qe/"
     }
   ]
 }

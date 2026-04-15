@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-03-22T20:28:10+00:00",
-  "date": "2026-03-22",
-  "run_started_at": "2026-03-22T20:15:00+00:00",
+  "generated_at": "2026-04-15T23:10:38+00:00",
+  "date": "2026-04-15",
+  "run_started_at": "2026-04-15T23:03:06+00:00",
   "account": "ainterestingaf",
   "profile_url": "https://www.instagram.com/ainterestingaf/",
   "avatar_path": "../avatars/ainterestingaf.jpg",
-  "profile_pic_url": "https://scontent-ord5-3.cdninstagram.com/v/t51.2885-19/340832687_561196706115127_844394629568359080_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MTEuYzIifQ&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gHtOjXQ-bSjF8dbeu0JRkYSP5RZZymFWDGDVRwkPVN8jgeqtbF5CZOeYBfOIxxYWHM&_nc_ohc=kr24FmbjgBEQ7kNvwHOb845&_nc_gid=iHNFAUXf0AD0Wrmn11_D_Q&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK_xUBQ3LlHKZ-4BAKhqqxlx5LcLbkULAAAB0j-ccb7-5&oh=00_Afze577_uVAGYMxxnwIgFbLkFR2_V4ObqfVlEQDEa16AZQ&oe=69C61C84&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq3-1.fna.fbcdn.net/v/t51.2885-19/340832687_561196706115127_844394629568359080_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MTEuYzEifQ&_nc_ht=instagram.fsyq3-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gGlE-AzanqQmpIZ_lNzwtyrtkfmNOdLR_x1-wod9b3lw8MSFE37EvY0c85Xl7oi8pU&_nc_ohc=aIgFL-Y5XXkQ7kNvwEVQLPz&_nc_gid=VP-nnWU654oVVZnGUYqA8w&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GK_xUBQ3LlHKZ-4BAKhqqxlx5LcLbkULAAAB0j-ccb7-5&oh=00_Af2fBbGqE2ctEg6WVgU7Rci_dm70GoQtk_VzrLQ6Y-8IhA&oe=69E5F8C4&_nc_sid=1e20d2",
   "full_name": "AI Gallery",
   "biography": "Welcome to the most interesting AI page on Instagram.\nBrought to you by @sentientagency \ud83e\udd1d",
   "external_url": "https://sentientagency.io/",
   "is_verified": false,
-  "followers": 116855,
-  "following": 338,
-  "posts": 857,
+  "followers": 116304,
+  "following": 335,
+  "posts": 864,
   "recent_post_count": 24,
   "video_post_count": 13,
-  "video_posts_with_view_data": 5,
-  "video_posts_with_view_data_recent_window": 5,
-  "reel_view_enriched_posts": 13,
+  "video_posts_with_view_data": 0,
+  "video_posts_with_view_data_recent_window": 0,
+  "reel_view_enriched_posts": 0,
   "recent_posts_window_days": 14,
   "recent_posts_collection_window_days": 30,
   "recent_posts_target_limit": 24,
@@ -25,20 +25,20 @@
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
-  "oldest_recent_post_date": "2026-01-16",
-  "avg_likes": 17626.29,
-  "avg_comments": 100.04,
-  "avg_video_views": 276100.8,
-  "avg_video_views_per_video": 276100.8,
-  "avg_video_views_per_post": 57521.0,
-  "total_likes_recent_window": 142696,
-  "total_video_views_recent_window": 1380504,
-  "engagement_rate": 15.1695,
+  "oldest_recent_post_date": "2026-02-10",
+  "avg_likes": 17733.83,
+  "avg_comments": 100.71,
+  "avg_video_views": 0,
+  "avg_video_views_per_video": 0,
+  "avg_video_views_per_post": 0.0,
+  "total_likes_recent_window": 2713,
+  "total_video_views_recent_window": 0,
+  "engagement_rate": 15.3344,
   "recent_posts": [
     {
       "shortcode": "DTI76HUkfZj",
       "date": "2026-01-05",
-      "likes": 135463,
+      "likes": 135319,
       "comments": 904,
       "is_video": false,
       "video_views": 0,
@@ -48,7 +48,7 @@
     {
       "shortcode": "C7pyG2LubhF",
       "date": "2024-06-01",
-      "likes": 137609,
+      "likes": 137515,
       "comments": 564,
       "is_video": false,
       "video_views": 0,
@@ -56,31 +56,99 @@
       "url": "https://www.instagram.com/p/C7pyG2LubhF/"
     },
     {
+      "shortcode": "DXKkF9mgpxA",
+      "date": "2026-04-15",
+      "likes": 98,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "The crew doing a BBQ and someone left a blue bag on the table \ud83d\ude02\n\nBy @a.i_se_eu_te_pego",
+      "url": "https://www.instagram.com/p/DXKkF9mgpxA/"
+    },
+    {
+      "shortcode": "DXFZAnGmjXp",
+      "date": "2026-04-13",
+      "likes": 328,
+      "comments": 9,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "AI is getting dangerously real WTHHHH\n\nBy @maxdgsov",
+      "url": "https://www.instagram.com/p/DXFZAnGmjXp/"
+    },
+    {
+      "shortcode": "DW6sDGEFfs1",
+      "date": "2026-04-09",
+      "likes": 407,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Breaking Bad Then & Now\n\nBy @vividcore_ai",
+      "url": "https://www.instagram.com/p/DW6sDGEFfs1/"
+    },
+    {
+      "shortcode": "DW4ZtD-giQ4",
+      "date": "2026-04-08",
+      "likes": 106,
+      "comments": 3,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "\ud83e\udd23\ud83e\udd23\n\nBy X/Gunblaze1969",
+      "url": "https://www.instagram.com/p/DW4ZtD-giQ4/"
+    },
+    {
+      "shortcode": "DWuZLQAAskM",
+      "date": "2026-04-04",
+      "likes": 172,
+      "comments": 3,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Amazing \ud83d\ude02",
+      "url": "https://www.instagram.com/p/DWuZLQAAskM/"
+    },
+    {
+      "shortcode": "DWm6LTQAv3-",
+      "date": "2026-04-01",
+      "likes": 429,
+      "comments": 15,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "10/10 casting\n\nTikTok/nerdsoul",
+      "url": "https://www.instagram.com/p/DWm6LTQAv3-/"
+    },
+    {
+      "shortcode": "DWQJiVuFcbn",
+      "date": "2026-03-24",
+      "likes": 1038,
+      "comments": 9,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "The Lord of the Rings \u2014 Then and Now\n\nBy @vividcore_ai",
+      "url": "https://www.instagram.com/p/DWQJiVuFcbn/"
+    },
+    {
       "shortcode": "DWMSh3eAmam",
       "date": "2026-03-22",
-      "likes": 91,
-      "comments": 1,
+      "likes": 135,
+      "comments": 5,
       "is_video": true,
-      "video_views": 4,
+      "video_views": 0,
       "caption": "This is the kind of AI content the internet runs wild with \ud83d\ude2d\n\nCinematic, chaotic, and weirdly real.\n\n\ud83c\udfa5 @kasumov_smm",
-      "url": "https://www.instagram.com/p/DWMSh3eAmam/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DWMSh3eAmam/"
     },
     {
       "shortcode": "DV2f6TdDBWA",
       "date": "2026-03-14",
-      "likes": 1293,
+      "likes": 1298,
       "comments": 60,
       "is_video": true,
-      "video_views": 42600,
+      "video_views": 0,
       "caption": "Wild \ud83d\ude2d",
-      "url": "https://www.instagram.com/p/DV2f6TdDBWA/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DV2f6TdDBWA/"
     },
     {
       "shortcode": "DVtzATwGpsl",
       "date": "2026-03-10",
-      "likes": 337,
+      "likes": 341,
       "comments": 6,
       "is_video": false,
       "video_views": 0,
@@ -90,8 +158,8 @@
     {
       "shortcode": "DVji_1UGtv3",
       "date": "2026-03-06",
-      "likes": 1032,
-      "comments": 50,
+      "likes": 1405,
+      "comments": 61,
       "is_video": false,
       "video_views": 0,
       "caption": "The Wolf of the White House \n\nBy @maxdgsov",
@@ -100,8 +168,8 @@
     {
       "shortcode": "DVg_j-Cmu5E",
       "date": "2026-03-05",
-      "likes": 1033,
-      "comments": 21,
+      "likes": 1035,
+      "comments": 22,
       "is_video": false,
       "video_views": 0,
       "caption": "AI imagined a city where thousands of lives are stacked in one building.\nWorking. Eating. Meeting. Living.\n\nWhich floor are you on?\n\nBy @dernadler",
@@ -113,15 +181,14 @@
       "likes": 464,
       "comments": 9,
       "is_video": true,
-      "video_views": 22300,
+      "video_views": 0,
       "caption": "AI is undefeated \ud83d\ude02",
-      "url": "https://www.instagram.com/p/DVeEAm_EQHS/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DVeEAm_EQHS/"
     },
     {
       "shortcode": "DVSJS1Rkbzv",
       "date": "2026-02-28",
-      "likes": 1254,
+      "likes": 1255,
       "comments": 34,
       "is_video": false,
       "video_views": 0,
@@ -131,13 +198,12 @@
     {
       "shortcode": "DVJu4cwkfvt",
       "date": "2026-02-24",
-      "likes": 136858,
-      "comments": 621,
+      "likes": 141198,
+      "comments": 640,
       "is_video": true,
-      "video_views": 1300000,
+      "video_views": 0,
       "caption": "CJ from GTA Goes Pro in Football \u2013 Road to Stardom\n\nBy YT/CanalRedub",
-      "url": "https://www.instagram.com/p/DVJu4cwkfvt/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DVJu4cwkfvt/"
     },
     {
       "shortcode": "DVFVYVdEUh5",
@@ -145,10 +211,9 @@
       "likes": 334,
       "comments": 6,
       "is_video": true,
-      "video_views": 15600,
+      "video_views": 0,
       "caption": "No words...\n\nBy X/EHuanglu",
-      "url": "https://www.instagram.com/p/DVFVYVdEUh5/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DVFVYVdEUh5/"
     },
     {
       "shortcode": "DU8mxHSjsM5",
@@ -156,32 +221,29 @@
       "likes": 413,
       "comments": 6,
       "is_video": true,
-      "video_views": 19700,
+      "video_views": 0,
       "caption": "Naruto (2026) \ud83d\udd25\u2014 Ultimate Ninja Fights | AI Cinematic Trailer\n\nBy X/bluehorizon_ai",
-      "url": "https://www.instagram.com/p/DU8mxHSjsM5/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DU8mxHSjsM5/"
     },
     {
       "shortcode": "DU4fk4EkYMV",
       "date": "2026-02-18",
-      "likes": 458,
+      "likes": 460,
       "comments": 11,
       "is_video": true,
-      "video_views": 20100,
+      "video_views": 0,
       "caption": "Future of game graphics is INSANE\n\nCompletely photorealistic video games are just a few years away with AI\n\nBy Youtube/Aillusory",
-      "url": "https://www.instagram.com/p/DU4fk4EkYMV/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DU4fk4EkYMV/"
     },
     {
       "shortcode": "DU06HcLkels",
       "date": "2026-02-16",
-      "likes": 652,
+      "likes": 655,
       "comments": 16,
       "is_video": true,
-      "video_views": 27600,
+      "video_views": 0,
       "caption": "Faster than light\n\nBy X/LinusEkenstam",
-      "url": "https://www.instagram.com/p/DU06HcLkels/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DU06HcLkels/"
     },
     {
       "shortcode": "DUw-CeTgoQe",
@@ -189,10 +251,9 @@
       "likes": 652,
       "comments": 20,
       "is_video": true,
-      "video_views": 18900,
+      "video_views": 0,
       "caption": "AI has gone too far \ud83d\ude02\n\nBy X/geesehowardt7",
-      "url": "https://www.instagram.com/p/DUw-CeTgoQe/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DUw-CeTgoQe/"
     },
     {
       "shortcode": "DUoIshgkSuC",
@@ -200,10 +261,9 @@
       "likes": 332,
       "comments": 8,
       "is_video": true,
-      "video_views": 19300,
+      "video_views": 0,
       "caption": "The acting, the gesture, the tone \ud83d\udc80\n\nX/NotAnActualEmu",
-      "url": "https://www.instagram.com/p/DUoIshgkSuC/",
-      "video_views_source": "selenium_reels_grid"
+      "url": "https://www.instagram.com/p/DUoIshgkSuC/"
     },
     {
       "shortcode": "DUliWsMEQzk",
@@ -214,79 +274,6 @@
       "video_views": 0,
       "caption": "Him and Her \ud83e\udd70\ud83e\udd2a\n\nBy @mrbankzzzz",
       "url": "https://www.instagram.com/p/DUliWsMEQzk/"
-    },
-    {
-      "shortcode": "DUcYVnBAPRK",
-      "date": "2026-02-07",
-      "likes": 579,
-      "comments": 8,
-      "is_video": true,
-      "video_views": 23700,
-      "caption": "And somehow he will still be alive \ud83d\udc80\ud83d\ude4f",
-      "url": "https://www.instagram.com/p/DUcYVnBAPRK/",
-      "video_views_source": "selenium_reels_grid"
-    },
-    {
-      "shortcode": "DUL8pqOkfIu",
-      "date": "2026-01-31",
-      "likes": 209,
-      "comments": 9,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Someone just reimagined Fortnite as a movie using AI",
-      "url": "https://www.instagram.com/p/DUL8pqOkfIu/"
-    },
-    {
-      "shortcode": "DUGuplhkZP5",
-      "date": "2026-01-29",
-      "likes": 621,
-      "comments": 3,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Bilbo asks ChatGPT",
-      "url": "https://www.instagram.com/p/DUGuplhkZP5/"
-    },
-    {
-      "shortcode": "DTyUfwYEQki",
-      "date": "2026-01-21",
-      "likes": 84,
-      "comments": 2,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "This is the worst painter ever, according to ChatGPT\n\nBy u/GT8686",
-      "url": "https://www.instagram.com/p/DTyUfwYEQki/"
-    },
-    {
-      "shortcode": "DTvd75lEWzd",
-      "date": "2026-01-20",
-      "likes": 586,
-      "comments": 10,
-      "is_video": true,
-      "video_views": 24700,
-      "caption": "Not gonna lie, this is the kind of hideout people daydream about as kids\n\nBy u/kango888",
-      "url": "https://www.instagram.com/p/DTvd75lEWzd/",
-      "video_views_source": "selenium_reels_grid"
-    },
-    {
-      "shortcode": "DTs4D5TkZR0",
-      "date": "2026-01-19",
-      "likes": 342,
-      "comments": 10,
-      "is_video": true,
-      "video_views": 25000,
-      "caption": "\u201cThis might feel a little different \ud83d\ude02\u201d\n\nBy @raddixofficial",
-      "url": "https://www.instagram.com/p/DTs4D5TkZR0/",
-      "video_views_source": "selenium_reels_grid"
-    },
-    {
-      "shortcode": "DTlTX__keki",
-      "date": "2026-01-16",
-      "likes": 2112,
-      "comments": 17,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Tao of the Ring \n\nBy U/zaicab",
-      "url": "https://www.instagram.com/p/DTlTX__keki/"
     }
   ]
 }
