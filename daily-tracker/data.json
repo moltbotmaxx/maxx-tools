@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-15T21:08:15.794Z",
+    "generated_at": "2026-04-15T22:09:11.285Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Which OS to choose if you run OpenClaw on a separate machine?",
-        "link": "https://reddit.com/r/openclaw/comments/1smh3t2/which_os_to_choose_if_you_run_openclaw_on_a/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T19:59:13+00:00",
+        "headline": "Vibe change",
+        "link": "https://reddit.com/r/OpenAI/comments/1smiol3/vibe_change/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-15T20:55:19+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Are we gonna look back on Mythos like this in a few years?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1smgz06/are_we_gonna_look_back_on_mythos_like_this_in_a/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-15T19:54:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Things are about to get crazy",
@@ -388,7 +397,16 @@
         "published_at": "2026-04-15T19:51:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
+      },
+      {
+        "headline": "Google launches native Gemini app for Mac",
+        "link": "https://reddit.com/r/GeminiAI/comments/1smgual/google_launches_native_gemini_app_for_mac/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-15T19:49:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Ran ChatGPT Plus and Claude Pro side by side for 30 days, here's what I found as a daily ChatGPT user",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-15T19:45:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Gemma 4:26b on OC using LM Studio and Docker",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-15T18:20:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "This book written in 1986",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-15T18:08:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Me when Claude already wrote like 3k lines of code and I notice an error on my prompt",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-15T17:18:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "The dirty secret behind Big Tech’s AI arms race: Massive hardware investments that are obsolete in 3 years",
@@ -433,41 +451,23 @@
         "published_at": "2026-04-15T16:42:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
-        "headline": "Feeling like I am fighting gravity",
-        "link": "https://reddit.com/r/openclaw/comments/1smaqmk/feeling_like_i_am_fighting_gravity/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T16:16:15+00:00",
+        "headline": "Google Launches Gemini 3.1 Flash TTS Text-to-Speech Model",
+        "link": "https://reddit.com/r/GeminiAI/comments/1smbfek/google_launches_gemini_31_flash_tts_texttospeech/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-15T16:40:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "This sub is mostly screenshots of ChatGPT being wrong. Meanwhile people on RunLobster (OpenClaw) are quietly running real businesses on AI.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sm99ud/this_sub_is_mostly_screenshots_of_chatgpt_being/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-15T15:25:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Allbirds, the shoe company, just announced it's raising $50M to buy AI chips and rent them to AI companies. Stock up 428% this morning.",
-        "link": "https://reddit.com/r/OpenAI/comments/1sm95qe/allbirds_the_shoe_company_just_announced_its/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-15T15:20:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-15T21:08:15.794Z",
+    "reddit_viral_generated_at": "2026-04-15T22:09:11.285Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
