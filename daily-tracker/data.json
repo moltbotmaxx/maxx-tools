@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-15T22:09:11.285Z",
+    "generated_at": "2026-04-15T23:03:57.578Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -415,25 +415,16 @@
         "published_at": "2026-04-15T19:45:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
-        "headline": "Gemma 4:26b on OC using LM Studio and Docker",
-        "link": "https://reddit.com/r/openclaw/comments/1smebr6/gemma_426b_on_oc_using_lm_studio_and_docker/",
+        "headline": "For those running a *local* OpenClaw instance, how do you manage sandboxing and prevention of unwanted behavior?",
+        "link": "https://reddit.com/r/openclaw/comments/1smge2n/for_those_running_a_local_openclaw_instance_how/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-15T18:20:45+00:00",
+        "published_at": "2026-04-15T19:33:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "This book written in 1986",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1smdyql/this_book_written_in_1986/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-15T18:08:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 96
       },
       {
         "headline": "Me when Claude already wrote like 3k lines of code and I notice an error on my prompt",
@@ -461,13 +452,22 @@
         "score": 0,
         "comments": 0,
         "viral_score": 89
+      },
+      {
+        "headline": "Feeling like I am fighting gravity",
+        "link": "https://reddit.com/r/openclaw/comments/1smaqmk/feeling_like_i_am_fighting_gravity/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-15T16:16:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-15T22:09:11.285Z",
+    "reddit_viral_generated_at": "2026-04-15T23:03:57.578Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
