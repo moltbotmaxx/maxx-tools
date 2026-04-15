@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-15T11:18:00.398Z",
+    "generated_at": "2026-04-15T12:08:22.074Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Using PinchBench as a Guide for OpenClaw (Model Selection Strategy)",
-        "link": "https://reddit.com/r/openclaw/comments/1sm1uwa/using_pinchbench_as_a_guide_for_openclaw_model/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T10:14:48+00:00",
+        "headline": "The bottleneck in AI reasoning: why predicting the next word isn't enough for strict logic",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sm3p3x/the_bottleneck_in_ai_reasoning_why_predicting_the/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-15T11:46:13+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Claude had enough of this user",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sm3jlg/claude_had_enough_of_this_user/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-15T11:39:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Did Opus actually got dumber than GPT?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sm2ocg/did_opus_actually_got_dumber_than_gpt/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-15T10:57:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I built a Claude Code plugin that extracts any website's full design system",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sm23sp/i_built_a_claude_code_plugin_that_extracts_any/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-15T10:28:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Is there ANY legit way to use OpenClaw for free (or super cheap)?",
@@ -388,7 +415,16 @@
         "published_at": "2026-04-15T09:38:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
+      },
+      {
+        "headline": "Finally killing the Context Tax: How we finally solved AI memory drift using the LLM Wiki pattern",
+        "link": "https://reddit.com/r/openclaw/comments/1sm0rcf/finally_killing_the_context_tax_how_we_finally/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-15T09:11:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Best Free Model for OpenClaw",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-15T07:17:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-15T06:28:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Best course to learn how to use agents",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-15T06:03:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Does anybody else find themselves using Gemini in place of Google search?",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-15T03:36:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "What in the ever loving f",
-        "link": "https://reddit.com/r/ChatGPT/comments/1slught/what_in_the_ever_loving_f/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-15T03:23:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "What in the ever loving f",
-        "link": "https://reddit.com/r/OpenAI/comments/1sluay3/what_in_the_ever_loving_f/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-15T03:16:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Who is Elephant-Alpha??? Why has it suddenly become so popular?",
-        "link": "https://reddit.com/r/singularity/comments/1sltmyx/who_is_elephantalpha_why_has_it_suddenly_become/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-15T02:46:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "What actually makes AI agents reliable on long projects? Mine keep getting stuck halfway through execution",
-        "link": "https://reddit.com/r/openclaw/comments/1sltjrt/what_actually_makes_ai_agents_reliable_on_long/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T02:42:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-15T11:18:00.398Z",
+    "reddit_viral_generated_at": "2026-04-15T12:08:22.074Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
