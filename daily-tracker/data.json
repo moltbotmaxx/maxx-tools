@@ -367,28 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-15T14:06:39.048Z",
+    "generated_at": "2026-04-15T15:39:26.686Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "the 5 commands i run every morning before trusting my openclaw agents with anything important",
-        "link": "https://reddit.com/r/openclaw/comments/1sm6x7b/the_5_commands_i_run_every_morning_before/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T13:59:16+00:00",
+        "headline": "Stanford's 2026 AI Index: Agentic AI Hiring Is Surging, But Data Interviews Still Test the Basics",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sm974v/stanfords_2026_ai_index_agentic_ai_hiring_is/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-15T15:22:20+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "New usecase - Find people to hangout with",
-        "link": "https://reddit.com/r/openclaw/comments/1sm6wyh/new_usecase_find_people_to_hangout_with/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T13:59:01+00:00",
+        "headline": "Hollywood is so screwed",
+        "link": "https://reddit.com/r/singularity/comments/1sm88v5/hollywood_is_so_screwed/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-15T14:48:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "Reduced my OpenClaw costs from $20 to $2 a day still using Sonnet",
+        "link": "https://reddit.com/r/openclaw/comments/1sm7igb/reduced_my_openclaw_costs_from_20_to_2_a_day/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-15T14:21:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Bro I said wake me up, not fix my life",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sm70t6/bro_i_said_wake_me_up_not_fix_my_life/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-15T14:02:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "An interactive periodic table app to visualise atoms in 3D",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sm6vtk/an_interactive_periodic_table_app_to_visualise/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-15T13:57:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Can anyone confirm that it is so",
+        "link": "https://reddit.com/r/OpenAI/comments/1sm68px/can_anyone_confirm_that_it_is_so/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-15T13:32:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "‘I miss you’: Mother speaks to AI son regularly, unaware he died last year",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-15T12:48:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Which LLM actually works best for agent workflows like OpenClaw?",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-15T12:20:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Anthropic May Be About to Launch Claude Opus 4.7",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-15T12:10:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "why AI agents break under long conversations even when they pass every safety benchmark",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-15T12:09:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "updated to 4.14 this morning. it broke lossless-claw and my agent won't start. here's the fix if you're stuck.",
-        "link": "https://reddit.com/r/openclaw/comments/1sm46if/updated_to_414_this_morning_it_broke_losslessclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T12:08:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "The bottleneck in AI reasoning: why predicting the next word isn't enough for strict logic",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sm3p3x/the_bottleneck_in_ai_reasoning_why_predicting_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-15T11:46:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Claude had enough of this user",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sm3jlg/claude_had_enough_of_this_user/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-15T11:39:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Best model for Openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1sm3a9i/best_model_for_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T11:26:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-15T14:06:39.048Z",
+    "reddit_viral_generated_at": "2026-04-15T15:39:26.686Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
