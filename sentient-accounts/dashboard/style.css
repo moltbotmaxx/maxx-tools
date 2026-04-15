@@ -481,6 +481,12 @@ body {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.detail-notes {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
 .stat-card,
 .mini-card {
   border-radius: var(--radius-md);
@@ -621,6 +627,45 @@ body {
   font-size: 1rem;
 }
 
+.chip-header-text {
+  display: grid;
+  gap: 6px;
+}
+
+.chip-badges,
+.detail-note-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-badge,
+.detail-note-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.chip-badge--manual,
+.detail-note-badge--manual {
+  border-color: rgba(0, 229, 255, 0.22);
+  color: var(--accent-cool);
+}
+
+.chip-badge--placeholder,
+.detail-note-badge--placeholder {
+  border-color: rgba(255, 200, 87, 0.24);
+  color: #ffd272;
+}
+
 .account-followers {
   color: var(--muted);
   font-size: 0.88rem;
@@ -691,6 +736,25 @@ body {
 .detail-grid {
   align-items: stretch;
   margin-top: 20px;
+}
+
+.detail-note {
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.detail-note strong {
+  font-size: 0.9rem;
+}
+
+.detail-note p {
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.88rem;
 }
 
 /* ── Posts list ───────────────────────────────────────── */

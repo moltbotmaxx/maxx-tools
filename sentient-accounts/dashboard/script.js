@@ -7,6 +7,9 @@ const state = {
     pollAttempts: 0,
     pollTimer: null,
     settings: null,
+    awaitingPublishedData: false,
+    publishRetryAttempts: 0,
+    publishRetryTimer: null,
   },
   selectedAccount: null,
   charts: {},
@@ -343,6 +346,14 @@ function syncRefreshButtonState() {
   }
 }
 
+function stopPublishedDataReload() {
+  if (state.refresh.publishRetryTimer) {
+    window.clearTimeout(state.refresh.publishRetryTimer);
+    state.refresh.publishRetryTimer = null;
+  }
+  state.refresh.publishRetryAttempts = 0;
+}
+
 function toggleRefreshConfig(open) {
   const form = document.getElementById("refreshConfigForm");
   const urlInput = document.getElementById("refreshApiUrlInput");
@@ -352,6 +363,133 @@ function toggleRefreshConfig(open) {
   form.classList.toggle("hidden", !open);
   urlInput.value = state.refresh.settings?.apiBaseUrl || "";
   keyInput.value = state.refresh.settings?.adminKey || "";
+}
+
+function hasManualVideoViewsOverride(account) {
+  return account?.video_views_recent_window_source === "manual_override"
+    || Number.isFinite(Number(account?.manual_total_video_views_recent_window));
+}
+
+function isPlaceholderAccount(account) {
+  return account?.data_status === "placeholder_pending_collection";
+}
+
+function buildAccountBadges(account, className = "chip-badge") {
+  const badges = [];
+  if (hasManualVideoViewsOverride(account)) {
+    badges.push(`<span class="${className} ${className}--manual">manual views</span>`);
+  }
+  if (isPlaceholderAccount(account)) {
+    badges.push(`<span class="${className} ${className}--placeholder">pending scrape</span>`);
+  }
+  return badges.join("");
+}
+
+function getDataSignature(rawData) {
+  if (!rawData || typeof rawData !== "object") return "";
+  const accounts = Array.isArray(rawData.accounts) ? rawData.accounts.length : 0;
+  return [
+    rawData.generated_at || "",
+    rawData.run_started_at || "",
+    rawData.snapshot_date || rawData.date || "",
+    rawData.total_accounts || accounts,
+  ].join("|");
+}
+
+function selectAccountFromData(accounts, previousSelection) {
+  const previousAccountName = previousSelection?.account;
+  if (previousAccountName) {
+    const matching = accounts.find((account) => account.account === previousAccountName);
+    if (matching) return matching;
+  }
+  return accounts[0] || null;
+}
+
+async function renderDashboardData(rawData, errorsPayload) {
+  const data = normalizeDashboardData(rawData);
+  state.data = data;
+  state.errors = errorsPayload;
+
+  renderOverview(data);
+  renderStatusBanner(data, errorsPayload);
+  renderPortfolioCharts(data.accounts);
+
+  if (data.accounts.length) {
+    state.selectedAccount = selectAccountFromData(data.accounts, state.selectedAccount);
+    renderAccountList(data.accounts);
+    await renderAccountDetail(state.selectedAccount);
+  } else {
+    state.selectedAccount = null;
+    renderAccountList([]);
+    document.getElementById("detailMeta").innerHTML =
+      '<p class="empty-state">Run the collector to populate the dashboard.</p>';
+    document.getElementById("detailNotes").innerHTML = "";
+    document.getElementById("detailNotes").classList.add("hidden");
+    document.getElementById("recentPosts").innerHTML = "";
+    updateRecentPostsWindow(data.snapshot_date || data.date);
+  }
+
+  return data;
+}
+
+async function reloadDashboardData({ silent = false } = {}) {
+  const previousSignature = getDataSignature(state.data);
+  const [rawData, errorsPayload] = await Promise.all([
+    fetchJson("global.json"),
+    fetchJson("errors.json").catch(() => null),
+  ]);
+  await renderDashboardData(rawData, errorsPayload);
+  const nextSignature = getDataSignature(rawData);
+  const changed = previousSignature !== nextSignature;
+
+  if (!silent) {
+    renderRefreshStatus(
+      changed
+        ? "Published dashboard data reloaded."
+        : "Refresh finished, but GitHub Pages is still serving the previous snapshot.",
+      changed ? "success" : "warning",
+      state.refresh.activeRun?.html_url || ""
+    );
+  }
+
+  return changed;
+}
+
+function schedulePublishedDataReload() {
+  if (!state.refresh.awaitingPublishedData) return;
+
+  stopPublishedDataReload();
+
+  const poll = async () => {
+    state.refresh.publishRetryAttempts += 1;
+
+    try {
+      const changed = await reloadDashboardData({ silent: true });
+      if (changed) {
+        state.refresh.awaitingPublishedData = false;
+        stopPublishedDataReload();
+        renderRefreshStatus("Published dashboard data reloaded.", "success", state.refresh.activeRun?.html_url || "");
+        return;
+      }
+    } catch (_) {
+      /* keep retrying while GitHub Pages catches up */
+    }
+
+    if (state.refresh.publishRetryAttempts >= 6) {
+      state.refresh.awaitingPublishedData = false;
+      stopPublishedDataReload();
+      renderRefreshStatus(
+        "Collector finished, but the published dashboard JSON has not updated yet. Try again in a moment.",
+        "warning",
+        state.refresh.activeRun?.html_url || ""
+      );
+      return;
+    }
+
+    state.refresh.publishRetryTimer = window.setTimeout(poll, 10000);
+  };
+
+  state.refresh.publishRetryTimer = window.setTimeout(poll, 4000);
 }
 
 function applyRefreshStatusFromRun(run) {
@@ -388,6 +526,20 @@ function applyRefreshStatusFromRun(run) {
     : "";
   renderRefreshStatus(`${describeRunState(run)}.${suffix}`, tone, run.html_url || "");
   syncRefreshButtonState();
+
+  if (run && ACTIVE_RUN_STATUSES.has(run.status)) {
+    state.refresh.awaitingPublishedData = true;
+    stopPublishedDataReload();
+    return;
+  }
+
+  if (run && statusKey === "success" && state.refresh.awaitingPublishedData) {
+    schedulePublishedDataReload();
+    return;
+  }
+
+  state.refresh.awaitingPublishedData = false;
+  stopPublishedDataReload();
 }
 
 function stopRefreshPolling() {
@@ -506,6 +658,9 @@ function renderStatusBanner(data, errorsPayload) {
   const collectionFailures = Array.isArray(errorsPayload?.failures) ? errorsPayload.failures : [];
   const staleAccounts = Array.isArray(data?.stale_accounts_excluded) ? data.stale_accounts_excluded : [];
   const loadFailures = Array.isArray(data?.load_failures) ? data.load_failures : [];
+  const placeholderAccounts = Array.isArray(data?.accounts)
+    ? data.accounts.filter((account) => isPlaceholderAccount(account))
+    : [];
 
   if (collectionFailures.length) {
     const failedAccounts = collectionFailures
@@ -537,6 +692,14 @@ function renderStatusBanner(data, errorsPayload) {
       "warning",
       `${loadFailures.length} invalid data file${loadFailures.length === 1 ? "" : "s"} skipped`,
       `Aggregation ignored ${summarizeItems(invalidFiles, { limit: 3 })} until the JSON is fixed.`
+    ));
+  }
+
+  if (placeholderAccounts.length) {
+    items.push(buildStatusItem(
+      "warning",
+      `${placeholderAccounts.length} tracked account${placeholderAccounts.length === 1 ? "" : "s"} pending collection`,
+      `Dashboard placeholders are visible for ${summarizeItems(placeholderAccounts.map((account) => account?.account), { accountHandles: true })}. They are counted in the portfolio, but follower and post metrics stay at zero until the collector succeeds for them.`
     ));
   }
 
@@ -955,7 +1118,10 @@ function renderAccountList(accounts) {
         ${buildAvatarMarkup(account, "chip-avatar")}
         <div class="chip-header">
           <span class="chip-dot" style="background:${engColor}"></span>
-          <span class="account-name">@${escapeHtml(account.account)}</span>
+          <div class="chip-header-text">
+            <span class="account-name">@${escapeHtml(account.account)}</span>
+            ${buildAccountBadges(account) ? `<div class="chip-badges">${buildAccountBadges(account)}</div>` : ""}
+          </div>
         </div>
       </div>
       <span class="account-followers">${formatNumber(account.followers)} followers</span>
@@ -981,6 +1147,50 @@ function renderMetaMetric(label, value, highlight = false) {
       <strong>${value}</strong>
     </article>
   `;
+}
+
+function renderAccountNotes(account) {
+  const container = document.getElementById("detailNotes");
+  if (!container) return;
+
+  const notes = [];
+  const collectionWindowDays = getCollectionWindowDays(account);
+
+  if (hasManualVideoViewsOverride(account)) {
+    const manualTotal = Number(account?.manual_total_video_views_recent_window) || 0;
+    const collectorTotal = Number(account?.collector_total_video_views_recent_window);
+    const collectorComparison = Number.isFinite(collectorTotal) && collectorTotal >= 0
+      ? ` Collector value: ${formatNumber(collectorTotal)}.`
+      : "";
+    const updatedAt = account?.manual_metrics_updated_at
+      ? ` Updated ${formatDate(account.manual_metrics_updated_at)}.`
+      : "";
+
+    notes.push(`
+      <article class="detail-note">
+        <div class="detail-note-badges">
+          <span class="detail-note-badge detail-note-badge--manual">manual views</span>
+        </div>
+        <strong>${collectionWindowDays}d reel views are using a manual override</strong>
+        <p>Dashboard total: ${formatNumber(manualTotal)}.${collectorComparison}${updatedAt}</p>
+      </article>
+    `);
+  }
+
+  if (isPlaceholderAccount(account)) {
+    notes.push(`
+      <article class="detail-note">
+        <div class="detail-note-badges">
+          <span class="detail-note-badge detail-note-badge--placeholder">pending scrape</span>
+        </div>
+        <strong>Collector has not populated this account yet</strong>
+        <p>This handle is already tracked in <code>collector/accounts.json</code>, so the dashboard keeps it visible as a placeholder until a refresh publishes a successful dataset.</p>
+      </article>
+    `);
+  }
+
+  container.innerHTML = notes.join("");
+  container.classList.toggle("hidden", notes.length === 0);
 }
 
 /* ── Follower history line chart ─────────────────────────────── */
@@ -1145,6 +1355,7 @@ async function renderAccountDetail(account) {
     renderMetaMetric("Engagement", formatPercent(account.engagement_rate), true),
     renderMetaMetric("Verified", account.is_verified ? "✓ Yes" : "✗ No"),
   ].join("");
+  renderAccountNotes(account);
 
   renderRecentPosts(account);
   await renderHistory(account);
@@ -1216,6 +1427,7 @@ function setupRefreshControls() {
           source_url: window.location.href,
         }),
       });
+      state.refresh.awaitingPublishedData = true;
       applyRefreshStatusFromRun(payload?.run || null);
       scheduleRefreshStatusPoll();
     } catch (error) {
@@ -1248,31 +1460,10 @@ async function loadDashboard() {
   setupRefreshControls();
 
   try {
-    const [rawData, errorsPayload] = await Promise.all([
-      fetchJson("global.json"),
-      fetchJson("errors.json").catch(() => null),
-    ]);
-    const data = normalizeDashboardData(rawData);
-    state.data = data;
-    state.errors = errorsPayload;
-
-    renderOverview(data);
-    renderStatusBanner(data, errorsPayload);
-    renderPortfolioCharts(data.accounts);
-
-    if (data.accounts.length) {
-      state.selectedAccount = data.accounts[0];
-      renderAccountList(data.accounts);
-      await renderAccountDetail(state.selectedAccount);
-    } else {
-      renderAccountList([]);
-      document.getElementById("detailMeta").innerHTML =
-        '<p class="empty-state">Run the collector to populate the dashboard.</p>';
-      document.getElementById("recentPosts").innerHTML = "";
-      updateRecentPostsWindow(data.snapshot_date || data.date);
-    }
+    await reloadDashboardData({ silent: true });
     await refreshWorkflowStatus({ silent: true });
     if (state.refresh.activeRun && ACTIVE_RUN_STATUSES.has(state.refresh.activeRun.status)) {
+      state.refresh.awaitingPublishedData = true;
       scheduleRefreshStatusPoll();
     }
   } catch (error) {
@@ -1280,6 +1471,11 @@ async function loadDashboard() {
     renderSnapshotDate("Unavailable");
     renderRefreshStatus("Dashboard data could not be loaded.", "error");
     document.getElementById("detailMeta").innerHTML = `<p class="empty-state">${error.message}</p>`;
+    const detailNotes = document.getElementById("detailNotes");
+    if (detailNotes) {
+      detailNotes.innerHTML = "";
+      detailNotes.classList.add("hidden");
+    }
   }
 
   revealPanels();
