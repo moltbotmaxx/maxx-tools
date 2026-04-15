@@ -6,6 +6,7 @@ __pycache__/
 *.pyc
 .venv/
 .env
+.claude/worktrees/
 daily-tracker/extension/*.crx
 daily-tracker/extension/*.pem
 daily-tracker/extension/daily-tracker-clipper-v*.zip

@@ -139,11 +139,18 @@ def resolve_session_file(username: str | None = None) -> Path | None:
     return SESSION_DIR / f"session-{resolved_username}"
 
 
+def should_trust_unverified_session() -> bool:
+    load_local_env()
+    raw_value = str(os.getenv("INSTALOADER_TRUST_SESSION_FILE", "")).strip().lower()
+    return raw_value in {"1", "true", "yes", "on"}
+
+
 def load_persisted_session(
     loader: instaloader.Instaloader, username: str | None = None
 ) -> tuple[str | None, Path | None]:
     resolved_username = (username or get_instagram_username()).strip()
     session_file = resolve_session_file(resolved_username)
+    trust_unverified_session = should_trust_unverified_session()
     if not resolved_username or session_file is None or not session_file.exists():
         return None, session_file
 
@@ -151,6 +158,12 @@ def load_persisted_session(
     try:
         logged_in_as = loader.test_login()
     except InstaloaderException as exc:
+        if trust_unverified_session:
+            print(
+                f"Loaded session file from {session_file}, but Instagram blocked immediate "
+                f"verification: {exc}. Trusting the restored session file and continuing."
+            )
+            return resolved_username, session_file
         print(
             f"Loaded session file from {session_file}, but Instagram blocked immediate "
             f"verification: {exc}. Treating the session as stale so password login can refresh it."
@@ -160,6 +173,13 @@ def load_persisted_session(
     if logged_in_as:
         print(f"Loaded persisted Instaloader session for @{logged_in_as} from {session_file}")
         return logged_in_as, session_file
+
+    if trust_unverified_session:
+        print(
+            f"Loaded session file from {session_file}, but test_login() returned no username. "
+            "Trusting the restored session file and continuing."
+        )
+        return resolved_username, session_file
 
     print(
         f"Loaded session file from {session_file}, but test_login() returned no username. "

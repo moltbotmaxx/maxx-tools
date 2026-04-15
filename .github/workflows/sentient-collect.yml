@@ -81,6 +81,7 @@ jobs:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
           INSTALOADER_SESSION_FILE: ".instaloader/session-refresh"
+          INSTALOADER_TRUST_SESSION_FILE: "1"
           ENABLE_REEL_VIEW_SCRAPE: "1"
           RECENT_POST_LIMIT: "24"
           RECENT_POST_WINDOW_DAYS: "14"
