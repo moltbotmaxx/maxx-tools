@@ -14,6 +14,11 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent
 SESSION_DIR = REPO_ROOT / ".instaloader"
+SESSION_CHECK_RATE_LIMIT_MARKERS = (
+    "please wait a few minutes before you try again",
+    "401 unauthorized",
+    "when accessing https://www.instagram.com/graphql/query",
+)
 
 
 def load_local_env() -> None:
@@ -158,6 +163,13 @@ def should_trust_unverified_session() -> bool:
     return raw_value in {"1", "true", "yes", "on"}
 
 
+def is_session_check_rate_limited(exc: Exception) -> bool:
+    message = str(exc or "").strip().lower()
+    if not message:
+        return False
+    return all(marker in message for marker in SESSION_CHECK_RATE_LIMIT_MARKERS)
+
+
 def load_persisted_session(
     loader: instaloader.Instaloader, username: str | None = None
 ) -> tuple[str | None, Path | None]:
@@ -171,7 +183,7 @@ def load_persisted_session(
     try:
         logged_in_as = loader.test_login()
     except InstaloaderException as exc:
-        if trust_unverified_session:
+        if trust_unverified_session or is_session_check_rate_limited(exc):
             print(
                 f"Loaded session file from {session_file}, but Instagram blocked immediate "
                 f"verification: {exc}. Trusting the restored session file and continuing."
@@ -307,8 +319,19 @@ def import_session_from_browser(
 
     loader.context.update_cookies(cookies)
 
-    detected_username = loader.test_login()
     configured_username = get_instagram_username()
+    detected_username = None
+    try:
+        detected_username = loader.test_login()
+    except InstaloaderException as exc:
+        if is_session_check_rate_limited(exc):
+            print(
+                f"Imported browser cookies from {normalized_browser}, but Instagram blocked "
+                f"immediate verification: {exc}. Continuing with the configured username."
+            )
+        else:
+            raise
+
     resolved_username = detected_username or configured_username
     if not resolved_username:
         raise ValueError(
