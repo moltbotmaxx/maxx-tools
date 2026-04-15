@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-15T08:06:40.615Z",
+    "generated_at": "2026-04-15T09:51:46.197Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is there ANY legit way to use OpenClaw for free (or super cheap)?",
+        "link": "https://reddit.com/r/openclaw/comments/1sm17w0/is_there_any_legit_way_to_use_openclaw_for_free/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-15T09:38:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "how do i fix trim error im using termux",
+        "link": "https://reddit.com/r/openclaw/comments/1slzpxa/how_do_i_fix_trim_error_im_using_termux/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-15T08:08:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Best Free Model for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1slyul3/best_free_model_for_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-15T07:17:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
         "link": "https://reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed/",
@@ -379,16 +406,7 @@
         "published_at": "2026-04-15T06:28:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Best course to learn how to use agents",
-        "link": "https://reddit.com/r/openclaw/comments/1slxkjg/best_course_to_learn_how_to_use_agents/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T06:03:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Does anybody else find themselves using Gemini in place of Google search?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-15T03:36:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 87
       },
       {
         "headline": "What in the ever loving f",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-15T03:23:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "What in the ever loving f",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-15T03:16:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 85
       },
       {
         "headline": "Who is Elephant-Alpha??? Why has it suddenly become so popular?",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-15T02:46:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 84
       },
       {
         "headline": "What actually makes AI agents reliable on long projects? Mine keep getting stuck halfway through execution",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-15T02:42:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "You can't talk to ChatGPT like a normal human anymore.",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-15T02:23:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gpt 5.4 Working Really Well. Do this.",
-        "link": "https://reddit.com/r/openclaw/comments/1slrzr3/gpt_54_working_really_well_do_this/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T01:32:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "GPT-IMAGE-2 is back on LMarena",
-        "link": "https://reddit.com/r/singularity/comments/1slqwpy/gptimage2_is_back_on_lmarena/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-15T00:43:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-15T08:06:40.615Z",
+    "reddit_viral_generated_at": "2026-04-15T09:51:46.197Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
