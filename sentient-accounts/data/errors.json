@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-04-15T05:01:54+00:00",
+  "date": "2026-04-14",
+  "run_started_at": "2026-04-15T04:59:27+00:00",
+  "failures": [
+    {
+      "account": "traselveloreal",
+      "error_type": "ConnectionException",
+      "error": "JSON Query to graphql/query: 401 Unauthorized - \"fail\" status, message \"Please wait a few minutes before you try again.\" when accessing https://www.instagram.com/graphql/query?variables=%7B%22data%22%3A%7B%22count%22%3A12%2C%22include_relationship_info%22%3Atrue%2C%22latest_besties_reel_media%22%3Atrue%2C%22latest_reel_media%22%3Atrue%7D%2C%22username%22%3A%22traselveloreal%22%2C%22__relay_internal__pv__PolarisFeedShareMenurelayprovider%22%3Afalse%2C%22after%22%3A%223861566885657671647_58520803617%22%2C%22before%22%3Anull%2C%22first%22%3A12%2C%22last%22%3Anull%7D&doc_id=7898261790222653&server_timestamps=true"
+    },
+    {
+      "account": "costarica",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile costarica does not exist."
+    },
+    {
+      "account": "chatgptips",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile chatgptips does not exist."
+    },
+    {
+      "account": "em3rging",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile em3rging does not exist."
+    },
+    {
+      "account": "stoicreflections",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile stoicreflections does not exist."
+    },
+    {
+      "account": "estoicomorir",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile estoicomorir does not exist."
+    },
+    {
+      "account": "ainterestingupdate",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile ainterestingupdate does not exist."
+    },
+    {
+      "account": "planet.ai_",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile planet.ai_ does not exist."
+    },
+    {
+      "account": "aigleeson",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile aigleeson does not exist."
+    },
+    {
+      "account": "louisgson",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile louisgson does not exist."
+    },
+    {
+      "account": "sergioprompts",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile sergioprompts does not exist."
+    },
+    {
+      "account": "ai.tech.moments",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile ai.tech.moments does not exist."
+    },
+    {
+      "account": "tecnologia",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile tecnologia does not exist."
+    },
+    {
+      "account": "artificialmente.ia",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile artificialmente.ia does not exist."
+    },
+    {
+      "account": "ainterestingaf",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile ainterestingaf does not exist."
+    },
+    {
+      "account": "estoicovivir",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile estoicovivir does not exist."
+    },
+    {
+      "account": "sentientagency",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile sentientagency does not exist."
+    },
+    {
+      "account": "programming__india",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile programming__india does not exist."
+    },
+    {
+      "account": "beatprocrastinationnow",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile beatprocrastinationnow does not exist."
+    },
+    {
+      "account": "bballclan",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile bballclan does not exist."
+    },
+    {
+      "account": "trends",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile trends does not exist."
+    },
+    {
+      "account": "ai.excel",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile ai.excel does not exist."
+    },
+    {
+      "account": "ivanelgrande",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile ivanelgrande does not exist."
+    }
+  ]
+}
