@@ -376,9 +376,6 @@ function isPlaceholderAccount(account) {
 
 function buildAccountBadges(account, className = "chip-badge") {
   const badges = [];
-  if (hasManualVideoViewsOverride(account)) {
-    badges.push(`<span class="${className} ${className}--manual">manual impressions</span>`);
-  }
   if (isPlaceholderAccount(account)) {
     badges.push(`<span class="${className} ${className}--placeholder">pending scrape</span>`);
   }
