@@ -17,6 +17,7 @@ const IOS_INSTALL_PROMPT_DISMISSED_KEY = 'contentSchedulerIosInstallPromptDismis
 const DONE_ARTICLES_KEY = 'done_articles';
 const DISMISSED_TEAM_SELECTIONS_KEY = 'contentSchedulerDismissedTeamSelections';
 const MANAGED_SENTIENT_ACCOUNTS_KEY = 'contentSchedulerManagedSentientAccounts';
+const SENTIENT_ACCOUNTS_DATASET_CACHE_KEY = 'contentSchedulerSentientAccountsDatasetCache';
 const PENDING_EXTENSION_IDEAS_KEY = 'contentSchedulerPendingExtensionIdeas';
 const LEGACY_MIGRATION_OWNER_KEY = 'contentSchedulerLegacyOwnerUid';
 const EXTENSION_IMPORT_EVENT = 'DAILY_TRACKER_EXTENSION_IMPORT';
@@ -49,6 +50,8 @@ const SHORTCUT_INSTALL_SHARE_URL = '';
 const SCHEDULR_PUBLIC_DOMAIN_URL = 'https://schedulr.work/';
 const SCHEDULR_SHORTCUT_TARGET_URL = 'https://maxxbot.cloud/daily-tracker/';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
+const SENTIENT_ACCOUNTS_CACHE_MAX_AGE_MS = 10 * 60 * 1000;
+const RECENT_CHANGE_KEYWORD = 'sentient-sync';
 const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
 const MOBILE_SOURCING_SECTIONS = new Set(['news', 'instagram', 'reddit', 'x']);
@@ -659,6 +662,7 @@ const elements = {
     loginBtn: document.getElementById('loginBtn'),
     authUser: document.getElementById('authUser'),
     authActionBtn: document.getElementById('authActionBtn'),
+    liveBuildBadge: document.getElementById('liveBuildBadge'),
     exportBtn: document.getElementById('exportBtn'),
     mobileSettingsPanel: document.getElementById('mobileSettingsPanel'),
     iosInstallPrompt: document.getElementById('iosInstallPrompt'),
@@ -721,6 +725,12 @@ function escapeHtml(value) {
 
 function normalizeWhitespace(value) {
     return String(value ?? '').replace(/\s+/g, ' ').trim();
+}
+
+function syncLiveBuildBadge() {
+    if (!elements.liveBuildBadge) return;
+    elements.liveBuildBadge.textContent = `(${RECENT_CHANGE_KEYWORD})`;
+    elements.liveBuildBadge.title = `Recent change: ${RECENT_CHANGE_KEYWORD}`;
 }
 
 function getInitialMobileTheme() {
@@ -2705,7 +2715,51 @@ function resolveSentientAvatarUrl(account = {}, sourceUrl = '') {
     return safeHttpUrl(account.profile_pic_url || '', '');
 }
 
+function getSentientAccountsDatasetCacheSnapshot() {
+    const cached = readJsonFromLocalStorage(SENTIENT_ACCOUNTS_DATASET_CACHE_KEY, null);
+    if (!cached || typeof cached !== 'object') return null;
+
+    const fetchedAt = Number(cached.fetchedAt);
+    const payload = cached.payload;
+    if (!Number.isFinite(fetchedAt) || !payload || typeof payload !== 'object') return null;
+    if (!Array.isArray(payload.accounts)) return null;
+
+    return {
+        fetchedAt,
+        payload
+    };
+}
+
+function persistSentientAccountsDatasetCache(rawData = {}, sourceUrl = '') {
+    const payload = {
+        sourceUrl,
+        rawData
+    };
+    safeSetLocalStorageItem(
+        SENTIENT_ACCOUNTS_DATASET_CACHE_KEY,
+        JSON.stringify({
+            fetchedAt: Date.now(),
+            payload
+        })
+    );
+}
+
+function getCachedSentientAccountsDataset({ allowStale = true } = {}) {
+    const snapshot = getSentientAccountsDatasetCacheSnapshot();
+    if (!snapshot) return null;
+
+    const isFresh = (Date.now() - snapshot.fetchedAt) <= SENTIENT_ACCOUNTS_CACHE_MAX_AGE_MS;
+    if (!isFresh && !allowStale) return null;
+
+    const sourceUrl = normalizeWhitespace(snapshot.payload.sourceUrl || '');
+    return normalizeSentientDataset(snapshot.payload.rawData, sourceUrl);
+}
+
 function normalizeSentientDataset(rawData = {}, sourceUrl = '') {
+    if (!rawData || typeof rawData !== 'object' || !Array.isArray(rawData.accounts)) {
+        throw new Error('Sentient accounts dataset is missing a valid accounts array.');
+    }
+
     const accounts = Array.isArray(rawData.accounts)
         ? rawData.accounts
             .filter(account => account && typeof account === 'object' && account.account)
@@ -2738,12 +2792,22 @@ async function fetchSentientAccountsDataset(forceRefresh = false) {
         return sentientAccountsDatasetCache;
     }
 
+    if (!forceRefresh) {
+        const cachedDataset = getCachedSentientAccountsDataset({ allowStale: false });
+        if (cachedDataset) {
+            sentientAccountsDatasetCache = cachedDataset;
+            return sentientAccountsDatasetCache;
+        }
+    }
+
     if (sentientAccountsDatasetPromise && !forceRefresh) {
         return sentientAccountsDatasetPromise;
     }
 
     sentientAccountsDatasetPromise = (async () => {
         const attempts = [];
+        const staleFallback = getCachedSentientAccountsDataset({ allowStale: true });
+
         for (const candidateUrl of SENTIENT_ACCOUNTS_DATASET_CANDIDATES) {
             try {
                 const requestUrl = `${candidateUrl}${candidateUrl.includes('?') ? '&' : '?'}t=${Date.now()}`;
@@ -2757,11 +2821,18 @@ async function fetchSentientAccountsDataset(forceRefresh = false) {
                 }
 
                 const payload = await response.json();
+                persistSentientAccountsDatasetCache(payload, candidateUrl);
                 sentientAccountsDatasetCache = normalizeSentientDataset(payload, candidateUrl);
                 return sentientAccountsDatasetCache;
             } catch (e) {
                 attempts.push(`${candidateUrl} (${e.message})`);
             }
+        }
+
+        if (staleFallback) {
+            console.warn('Using cached Sentient accounts dataset after fetch failure.', attempts);
+            sentientAccountsDatasetCache = staleFallback;
+            return sentientAccountsDatasetCache;
         }
 
         throw new Error(`Unable to load Sentient accounts dataset. ${attempts.join(' · ')}`);
@@ -2909,19 +2980,22 @@ async function saveManagedAccountsSelection() {
     setManagedAccountsModalStatus('Saving managed accounts...', 'neutral');
 
     try {
+        const isOnboarding = managedAccountsModalMode === 'onboarding';
         managedSentientAccounts = selectedAccounts;
-        await saveData();
-        renderAccountView();
-        closeManagedAccountsModal(managedAccountsModalMode !== 'onboarding');
-        setManagedAccountsModalStatus('Managed accounts saved.', 'success');
+        persistUserLocalCache(currentUser);
 
-        if (managedAccountsModalMode === 'onboarding') {
-            closeManagedAccountsModal(true);
+        // Transition immediately so onboarding never feels blocked on Firestore.
+        closeManagedAccountsModal(true);
+        if (isOnboarding) {
             switchTab('account');
+        } else if (currentView === 'account') {
+            renderAccountView();
         }
+
+        await saveData();
     } catch (e) {
         console.error('Failed to save managed accounts', e);
-        setManagedAccountsModalStatus('Could not save managed accounts. Try again.', 'error');
+        setManagedAccountsModalStatus('Could not sync managed accounts. Local selection was kept.', 'error');
     } finally {
         isSavingManagedAccounts = false;
         updateManagedAccountsModalButtons();
@@ -6946,6 +7020,7 @@ async function init() {
     consumeShortcutShareFromUrl();
 
     // Apply persisted tab immediately so refresh doesn't flash/reset to first tab.
+    syncLiveBuildBadge();
     applyMobileVisualTheme();
     switchTab(currentView);
     syncShortcutSetupUi();
