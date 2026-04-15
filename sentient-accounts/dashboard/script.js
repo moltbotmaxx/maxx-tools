@@ -377,7 +377,7 @@ function isPlaceholderAccount(account) {
 function buildAccountBadges(account, className = "chip-badge") {
   const badges = [];
   if (hasManualVideoViewsOverride(account)) {
-    badges.push(`<span class="${className} ${className}--manual">manual views</span>`);
+    badges.push(`<span class="${className} ${className}--manual">manual impressions</span>`);
   }
   if (isPlaceholderAccount(account)) {
     badges.push(`<span class="${className} ${className}--placeholder">pending scrape</span>`);
@@ -928,7 +928,7 @@ function renderOverview(data) {
   const totalLikesLabel = document.getElementById("totalLikesLabel");
   const totalViewsLabel = document.getElementById("totalViewsLabel");
   if (totalLikesLabel) totalLikesLabel.textContent = `${recentWindowDays}d likes`;
-  if (totalViewsLabel) totalViewsLabel.textContent = `${recentWindowDays}d reel views`;
+  if (totalViewsLabel) totalViewsLabel.textContent = `${recentWindowDays}d impressions`;
 
   const coverageSuffix = data?.recent_window_covered === false ? "+" : "";
   document.getElementById("totalFollowers").textContent = formatNumber(data.total_followers);
@@ -1169,9 +1169,9 @@ function renderAccountNotes(account) {
     notes.push(`
       <article class="detail-note">
         <div class="detail-note-badges">
-          <span class="detail-note-badge detail-note-badge--manual">manual views</span>
+          <span class="detail-note-badge detail-note-badge--manual">manual impressions</span>
         </div>
-        <strong>${collectionWindowDays}d reel views are using a manual override</strong>
+        <strong>${collectionWindowDays}d impressions are using a manual override</strong>
         <p>Dashboard total: ${formatNumber(manualTotal)}.${collectorComparison}${updatedAt}</p>
       </article>
     `);
@@ -1351,7 +1351,7 @@ async function renderAccountDetail(account) {
     renderMetaMetric("Avg likes", formatNumber(account.avg_likes)),
     renderMetaMetric("Avg comments", formatNumber(account.avg_comments)),
     renderMetaMetric("Avg video views", formatVideoViewsMetric(account)),
-    renderMetaMetric(`${collectionWindowDays}d reel views`, formatRecentWindowVideoViewsMetric(account), true),
+    renderMetaMetric(`${collectionWindowDays}d impressions`, formatRecentWindowVideoViewsMetric(account), true),
     renderMetaMetric("Engagement", formatPercent(account.engagement_rate), true),
     renderMetaMetric("Verified", account.is_verified ? "✓ Yes" : "✗ No"),
   ].join("");
