@@ -3,14 +3,38 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any, NamedTuple
 from urllib.request import Request, urlopen
 
+BASE_DIR = Path(__file__).resolve().parent
+REPO_ROOT = BASE_DIR.parent
+PROJECT_VENV_PYTHON = REPO_ROOT / ".venv" / "bin" / "python"
+
+
+def ensure_project_venv_python() -> None:
+    if os.environ.get("SENTIENT_COLLECTOR_VENV_ACTIVE") == "1":
+        return
+
+    current_python = Path(sys.executable).resolve()
+    if not PROJECT_VENV_PYTHON.exists() or current_python == PROJECT_VENV_PYTHON.resolve():
+        return
+
+    env = dict(os.environ)
+    env["SENTIENT_COLLECTOR_VENV_ACTIVE"] = "1"
+    os.execve(
+        str(PROJECT_VENV_PYTHON),
+        [str(PROJECT_VENV_PYTHON), str(Path(__file__).resolve()), *sys.argv[1:]],
+        env,
+    )
+
+
+ensure_project_venv_python()
+
 import instaloader
 from instagram_auth import authenticate_loader, build_loader, load_local_env
 
-BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR.parent / "data"
 HISTORY_DIR = DATA_DIR / "history"
 AVATARS_DIR = BASE_DIR.parent / "avatars"
