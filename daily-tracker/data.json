@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-14T23:05:58.774Z",
+    "generated_at": "2026-04-15T00:01:32.782Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Switched to OpenAI. Man if I miss Anthropic",
+        "link": "https://reddit.com/r/openclaw/comments/1slomx5/switched_to_openai_man_if_i_miss_anthropic/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-14T23:05:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The Human Baseline for ARC-AGI-3 has been updated",
+        "link": "https://reddit.com/r/singularity/comments/1slnt5e/the_human_baseline_for_arcagi3_has_been_updated/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-14T22:31:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "If you feel like you're behind, remember that we live in a bubble. The vast majority of people view anything that AI touches as slop.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sln9ny/if_you_feel_like_youre_behind_remember_that_we/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-14T22:10:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testing, seeks to rival Claude Mythos",
+        "link": "https://reddit.com/r/OpenAI/comments/1slmujp/breaking_openai_rolls_out_gpt54cyber_to_limited/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-14T21:54:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "learning to work with openclaw's tendencies instead of trying to bend it to my will",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-14T20:56:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Anthropic Is About to Overtake OpenAI on Business Spending.",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-14T19:18:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "He was just following instructions 😭",
@@ -406,16 +433,7 @@
         "published_at": "2026-04-14T19:02:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Memory frameworks recommendations?",
-        "link": "https://reddit.com/r/openclaw/comments/1slhm49/memory_frameworks_recommendations/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-14T18:44:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "The Information: Anthropic Preps Opus 4.7 Model, could be released as soon as this week",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-14T18:43:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Gemini is crazy good",
@@ -433,31 +451,13 @@
         "published_at": "2026-04-14T18:31:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
         "link": "https://reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a/",
         "subreddit": "singularity",
         "published_at": "2026-04-14T18:30:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Sam Altman's attacker had a kill list of AI executives. Experts warn this is just the beginning",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1slfpp2/sam_altmans_attacker_had_a_kill_list_of_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-14T17:38:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Most of your AI requests don't need a frontier model. Here's how I cut my spend.",
-        "link": "https://reddit.com/r/openclaw/comments/1slf958/most_of_your_ai_requests_dont_need_a_frontier/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-14T17:22:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-14T23:05:58.774Z",
+    "reddit_viral_generated_at": "2026-04-15T00:01:32.782Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
