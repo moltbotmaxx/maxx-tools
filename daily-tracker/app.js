@@ -2871,6 +2871,15 @@ function setManagedAccountsModalStatus(message = '', tone = 'neutral') {
     elements.managedAccountsModalStatus.dataset.tone = tone;
 }
 
+function syncManagedAccountOptionState(scope = elements.managedAccountsList) {
+    if (!scope) return;
+
+    scope.querySelectorAll('.managed-account-option').forEach((option) => {
+        const checkbox = option.querySelector('.managed-account-option__checkbox');
+        option.classList.toggle('managed-account-option--selected', Boolean(checkbox?.checked));
+    });
+}
+
 function updateManagedAccountsModalButtons() {
     if (elements.managedAccountsSaveBtn) {
         elements.managedAccountsSaveBtn.disabled = isSavingManagedAccounts;
@@ -2893,7 +2902,7 @@ function renderManagedAccountsOptions(dataset) {
     const selected = new Set(managedSentientAccounts.map(account => account.toLowerCase()));
 
     elements.managedAccountsList.innerHTML = dataset.accounts.map(account => `
-        <label class="managed-account-option">
+        <label class="managed-account-option${selected.has(String(account.account).toLowerCase()) ? ' managed-account-option--selected' : ''}">
             <input
                 class="managed-account-option__checkbox"
                 type="checkbox"
@@ -2911,6 +2920,8 @@ function renderManagedAccountsOptions(dataset) {
             </div>
         </label>
     `).join('');
+
+    syncManagedAccountOptionState(elements.managedAccountsList);
 }
 
 async function openManagedAccountsModal(mode = 'edit') {
@@ -6894,6 +6905,13 @@ function setupEventListeners() {
 
     if (elements.managedAccountsSaveBtn) {
         elements.managedAccountsSaveBtn.addEventListener('click', saveManagedAccountsSelection);
+    }
+    if (elements.managedAccountsList) {
+        elements.managedAccountsList.addEventListener('change', (event) => {
+            const checkbox = event.target.closest('.managed-account-option__checkbox');
+            if (!checkbox) return;
+            syncManagedAccountOptionState(elements.managedAccountsList);
+        });
     }
     if (elements.managedAccountsCancelBtn) {
         elements.managedAccountsCancelBtn.addEventListener('click', () => closeManagedAccountsModal());

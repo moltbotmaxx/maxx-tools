@@ -3437,7 +3437,7 @@ canvas {
   border-color: rgba(0, 122, 255, 0.14);
 }
 
-.managed-account-option:has(.managed-account-option__checkbox:checked) {
+.managed-account-option.managed-account-option--selected {
   border-color: rgba(0, 122, 255, 0.24);
   background: rgba(0, 122, 255, 0.04);
   box-shadow: 0 10px 20px rgba(0, 122, 255, 0.08);
