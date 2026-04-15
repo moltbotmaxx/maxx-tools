@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-22T20:34:23+00:00",
+  "generated_at": "2026-04-15T01:43:03+00:00",
   "date": "2026-03-22",
   "snapshot_date": "2026-03-22",
   "run_started_at": "2026-03-22T20:15:00+00:00",
-  "total_accounts": 21,
+  "total_accounts": 26,
   "total_followers": 12010550,
   "total_posts": 18525,
   "recent_window_days": 30,
   "recent_window_covered": true,
   "total_likes_recent_window": 5931279,
-  "total_video_views_recent_window": 59417898,
+  "total_video_views_recent_window": 306274000,
   "avg_engagement_rate": 1.4515,
   "stale_accounts_excluded": [],
   "load_failures": [],
@@ -48,7 +48,7 @@
       "avg_video_views_per_video": 352150.0,
       "avg_video_views_per_post": 45932.61,
       "total_likes_recent_window": 478992,
-      "total_video_views_recent_window": 6338700,
+      "total_video_views_recent_window": 50000000,
       "engagement_rate": 0.1902,
       "recent_posts": [
         {
@@ -1449,7 +1449,13 @@
           "caption": "Gemini 3.1 Pro just dropped.\n\nGoogle announced Gemini 3.1 Pro on February 19, 2026. It\u2019s the newest model in the Gemini 3 series, built for harder jobs where you need multi step th",
           "url": "https://www.instagram.com/p/DU9ZZIQDeRT/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 6338700,
+      "manual_total_video_views_recent_window": 50000000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:19:10+00:00",
@@ -1485,7 +1491,7 @@
       "avg_video_views_per_video": 642572.73,
       "avg_video_views_per_post": 63678.38,
       "total_likes_recent_window": 3003422,
-      "total_video_views_recent_window": 7068300,
+      "total_video_views_recent_window": 126500000,
       "engagement_rate": 1.5618,
       "recent_posts": [
         {
@@ -2609,7 +2615,13 @@
           "caption": "Los fans est\u00e1n enloqueciendo despu\u00e9s de notar que Woody finalmente est\u00e1 mostrando signos de envejecimiento en el primer tr\u00e1iler de Toy Story 5.\n\nTres d\u00e9cadas, incontables aventuras",
           "url": "https://www.instagram.com/p/DU9zb3ODZ0X/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 7068300,
+      "manual_total_video_views_recent_window": 126500000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:17:51+00:00",
@@ -2645,7 +2657,7 @@
       "avg_video_views_per_video": 158153.33,
       "avg_video_views_per_post": 63261.33,
       "total_likes_recent_window": 202509,
-      "total_video_views_recent_window": 4744600,
+      "total_video_views_recent_window": 18900000,
       "engagement_rate": 0.1806,
       "recent_posts": [
         {
@@ -3428,7 +3440,13 @@
           "url": "https://www.instagram.com/p/DU_ada7j_K3/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 4744600,
+      "manual_total_video_views_recent_window": 18900000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:21:23+00:00",
@@ -3464,7 +3482,7 @@
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
       "total_likes_recent_window": 60473,
-      "total_video_views_recent_window": 0,
+      "total_video_views_recent_window": 3100000,
       "engagement_rate": 0.4961,
       "recent_posts": [
         {
@@ -3708,7 +3726,13 @@
           "caption": "Why does their opinion weigh more than your truth?\n_\n#MarcusAurelius \n#Wisdom #Philosophy \n#Philosopher #Stoicism",
           "url": "https://www.instagram.com/p/DL-SO6-AqZY/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 0,
+      "manual_total_video_views_recent_window": 3100000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:33:50+00:00",
@@ -3744,7 +3768,7 @@
       "avg_video_views_per_video": 0,
       "avg_video_views_per_post": 0.0,
       "total_likes_recent_window": 19443,
-      "total_video_views_recent_window": 0,
+      "total_video_views_recent_window": 1400000,
       "engagement_rate": 0.2152,
       "recent_posts": [
         {
@@ -3987,7 +4011,13 @@
           "caption": "Shortcuts key \ud83d\udd10\ud83d\udddd\ufe0f \n\n#excel #exceltricks #exceltraining #corporate",
           "url": "https://www.instagram.com/p/DUIqoD8iH1n/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 0,
+      "manual_total_video_views_recent_window": 1400000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:29:10+00:00",
@@ -4318,7 +4348,7 @@
       "avg_video_views_per_video": 38450.0,
       "avg_video_views_per_post": 15380.0,
       "total_likes_recent_window": 40845,
-      "total_video_views_recent_window": 692100,
+      "total_video_views_recent_window": 2300000,
       "engagement_rate": 0.3713,
       "recent_posts": [
         {
@@ -4789,7 +4819,13 @@
           "caption": "New image prompt just dropped. You can create iconic messages of your friends, celebrities or whatever you feel like with this prompt\n\nPROMPT\nHyperrealistic macro photography in a ",
           "url": "https://www.instagram.com/p/DVACai0jWRw/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 692100,
+      "manual_total_video_views_recent_window": 2300000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:30:42+00:00",
@@ -5108,7 +5144,7 @@
       "avg_video_views_per_video": 77736.27,
       "avg_video_views_per_post": 52210.93,
       "total_likes_recent_window": 77223,
-      "total_video_views_recent_window": 3498132,
+      "total_video_views_recent_window": 5300000,
       "engagement_rate": 0.2355,
       "recent_posts": [
         {
@@ -5826,7 +5862,13 @@
           "url": "https://www.instagram.com/p/DU9tMBHDssb/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 3498132,
+      "manual_total_video_views_recent_window": 5300000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:27:12+00:00",
@@ -5862,7 +5904,7 @@
       "avg_video_views_per_video": 129992.11,
       "avg_video_views_per_post": 64996.05,
       "total_likes_recent_window": 392464,
-      "total_video_views_recent_window": 4939700,
+      "total_video_views_recent_window": 20100000,
       "engagement_rate": 1.6943,
       "recent_posts": [
         {
@@ -6664,7 +6706,13 @@
           "url": "https://www.instagram.com/p/DU901DyjMBQ/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 4939700,
+      "manual_total_video_views_recent_window": 20100000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:20:48+00:00",
@@ -6700,7 +6748,7 @@
       "avg_video_views_per_video": 134991.85,
       "avg_video_views_per_post": 38569.1,
       "total_likes_recent_window": 148508,
-      "total_video_views_recent_window": 2699837,
+      "total_video_views_recent_window": 6000000,
       "engagement_rate": 0.9861,
       "recent_posts": [
         {
@@ -7423,7 +7471,13 @@
           "caption": "This AI model is ridiculous \ud83e\udd2f\n\nGive it a reference image - it rebuilds the composition, lighting, and mood with surprising precision.\n\nSOUL 2.0, @higgsfield.ai in-house image model",
           "url": "https://www.instagram.com/p/DU_eieGEW-V/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 2699837,
+      "manual_total_video_views_recent_window": 6000000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:22:38+00:00",
@@ -7459,7 +7513,7 @@
       "avg_video_views_per_video": 19989.67,
       "avg_video_views_per_post": 16102.79,
       "total_likes_recent_window": 23215,
-      "total_video_views_recent_window": 1159401,
+      "total_video_views_recent_window": 7000000,
       "engagement_rate": 0.1805,
       "recent_posts": [
         {
@@ -8240,7 +8294,13 @@
           "url": "https://www.instagram.com/p/DU90XUaDKoy/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 1159401,
+      "manual_total_video_views_recent_window": 7000000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:25:08+00:00",
@@ -8276,7 +8336,7 @@
       "avg_video_views_per_video": 20541.85,
       "avg_video_views_per_post": 6419.33,
       "total_likes_recent_window": 46524,
-      "total_video_views_recent_window": 410837,
+      "total_video_views_recent_window": 5100000,
       "engagement_rate": 0.5883,
       "recent_posts": [
         {
@@ -8940,7 +9000,13 @@
           "url": "https://www.instagram.com/p/DU_hjEOEr0A/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 410837,
+      "manual_total_video_views_recent_window": 5100000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:28:10+00:00",
@@ -8976,7 +9042,7 @@
       "avg_video_views_per_video": 276100.8,
       "avg_video_views_per_post": 57521.0,
       "total_likes_recent_window": 142696,
-      "total_video_views_recent_window": 1380504,
+      "total_video_views_recent_window": 313300,
       "engagement_rate": 15.1695,
       "recent_posts": [
         {
@@ -9232,7 +9298,13 @@
           "caption": "Tao of the Ring \n\nBy U/zaicab",
           "url": "https://www.instagram.com/p/DTlTX__keki/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 1380504,
+      "manual_total_video_views_recent_window": 313300,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:31:25+00:00",
@@ -9571,7 +9643,7 @@
       "avg_video_views_per_video": 336036.34,
       "avg_video_views_per_post": 300032.45,
       "total_likes_recent_window": 725255,
-      "total_video_views_recent_window": 16801817,
+      "total_video_views_recent_window": 31900000,
       "engagement_rate": 22.9464,
       "recent_posts": [
         {
@@ -10185,7 +10257,13 @@
           "caption": "Costa Rica abre oficina en Silicon Valley / Costa Rica opens Silicon Valley office\n\n\ud83c\udde8\ud83c\uddf7 Costa Rica abri\u00f3 una oficina de inversi\u00f3n en Silicon Valley, en Santa Clara, para atraer empr",
           "url": "https://www.instagram.com/p/DU9ot3FjYGa/"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 16801817,
+      "manual_total_video_views_recent_window": 31900000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:32:05+00:00",
@@ -10504,7 +10582,7 @@
       "avg_video_views_per_video": 15100.0,
       "avg_video_views_per_post": 629.17,
       "total_likes_recent_window": 167,
-      "total_video_views_recent_window": 15100,
+      "total_video_views_recent_window": 10000,
       "engagement_rate": 5.1153,
       "recent_posts": [
         {
@@ -10771,7 +10849,13 @@
           "url": "https://www.instagram.com/p/DHcHFaTTgCo/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 15100,
+      "manual_total_video_views_recent_window": 10000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:29:57+00:00",
@@ -10856,7 +10940,7 @@
       "avg_video_views_per_video": 32066.67,
       "avg_video_views_per_post": 4008.33,
       "total_likes_recent_window": 1324,
-      "total_video_views_recent_window": 96200,
+      "total_video_views_recent_window": 258000,
       "engagement_rate": 47.1289,
       "recent_posts": [
         {
@@ -11117,7 +11201,13 @@
           "url": "https://www.instagram.com/p/DIUwXS7ySOA/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 96200,
+      "manual_total_video_views_recent_window": 258000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
     },
     {
       "generated_at": "2026-03-22T20:33:01+00:00",
@@ -11153,7 +11243,7 @@
       "avg_video_views_per_video": 128234.85,
       "avg_video_views_per_post": 128234.85,
       "total_likes_recent_window": 516260,
-      "total_video_views_recent_window": 8719970,
+      "total_video_views_recent_window": 12100000,
       "engagement_rate": 39.3939,
       "recent_posts": [
         {
@@ -11904,7 +11994,211 @@
           "url": "https://www.instagram.com/p/DU_W75SiV8V/",
           "video_views_source": "selenium_reels_grid"
         }
-      ]
+      ],
+      "collector_total_video_views_recent_window": 8719970,
+      "manual_total_video_views_recent_window": 12100000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
+    },
+    {
+      "generated_at": "2026-03-22T20:16:45+00:00",
+      "date": "2026-03-22",
+      "run_started_at": "2026-03-22T20:15:00+00:00",
+      "account": "chatgptruco",
+      "profile_url": "https://www.instagram.com/chatgptruco/",
+      "full_name": "chatgptruco",
+      "biography": "",
+      "external_url": "",
+      "is_verified": false,
+      "followers": 0,
+      "following": 0,
+      "posts": 0,
+      "recent_post_count": 0,
+      "video_post_count": 0,
+      "video_posts_with_view_data": 0,
+      "video_posts_with_view_data_recent_window": 0,
+      "reel_view_enriched_posts": 0,
+      "recent_posts_window_days": 14,
+      "recent_posts_collection_window_days": 30,
+      "recent_posts_target_limit": 24,
+      "recent_posts_hard_limit": 0,
+      "recent_posts_collection_stop_reason": "manual_placeholder",
+      "recent_posts_window_covered": true,
+      "recent_posts_collection_window_covered": true,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_video_views": 0,
+      "avg_video_views_per_video": 0,
+      "avg_video_views_per_post": 0,
+      "total_likes_recent_window": 0,
+      "total_video_views_recent_window": 1500000,
+      "engagement_rate": 0,
+      "recent_posts": [],
+      "data_status": "placeholder_pending_collection",
+      "collector_total_video_views_recent_window": 0,
+      "manual_total_video_views_recent_window": 1500000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
+    },
+    {
+      "generated_at": "2026-03-22T20:16:45+00:00",
+      "date": "2026-03-22",
+      "run_started_at": "2026-03-22T20:15:00+00:00",
+      "account": "costarica",
+      "profile_url": "https://www.instagram.com/costarica/",
+      "full_name": "costarica",
+      "biography": "",
+      "external_url": "",
+      "is_verified": false,
+      "followers": 0,
+      "following": 0,
+      "posts": 0,
+      "recent_post_count": 0,
+      "video_post_count": 0,
+      "video_posts_with_view_data": 0,
+      "video_posts_with_view_data_recent_window": 0,
+      "reel_view_enriched_posts": 0,
+      "recent_posts_window_days": 14,
+      "recent_posts_collection_window_days": 30,
+      "recent_posts_target_limit": 24,
+      "recent_posts_hard_limit": 0,
+      "recent_posts_collection_stop_reason": "manual_placeholder",
+      "recent_posts_window_covered": true,
+      "recent_posts_collection_window_covered": true,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_video_views": 0,
+      "avg_video_views_per_video": 0,
+      "avg_video_views_per_post": 0,
+      "total_likes_recent_window": 0,
+      "total_video_views_recent_window": 12900000,
+      "engagement_rate": 0,
+      "recent_posts": [],
+      "data_status": "placeholder_pending_collection",
+      "collector_total_video_views_recent_window": 0,
+      "manual_total_video_views_recent_window": 12900000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
+    },
+    {
+      "generated_at": "2026-03-22T20:16:45+00:00",
+      "date": "2026-03-22",
+      "run_started_at": "2026-03-22T20:15:00+00:00",
+      "account": "estoicomorir",
+      "profile_url": "https://www.instagram.com/estoicomorir/",
+      "full_name": "estoicomorir",
+      "biography": "",
+      "external_url": "",
+      "is_verified": false,
+      "followers": 0,
+      "following": 0,
+      "posts": 0,
+      "recent_post_count": 0,
+      "video_post_count": 0,
+      "video_posts_with_view_data": 0,
+      "video_posts_with_view_data_recent_window": 0,
+      "reel_view_enriched_posts": 0,
+      "recent_posts_window_days": 14,
+      "recent_posts_collection_window_days": 30,
+      "recent_posts_target_limit": 24,
+      "recent_posts_hard_limit": 0,
+      "recent_posts_collection_stop_reason": "manual_placeholder",
+      "recent_posts_window_covered": true,
+      "recent_posts_collection_window_covered": true,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_video_views": 0,
+      "avg_video_views_per_video": 0,
+      "avg_video_views_per_post": 0,
+      "total_likes_recent_window": 0,
+      "total_video_views_recent_window": 0,
+      "engagement_rate": 0,
+      "recent_posts": [],
+      "data_status": "placeholder_pending_collection"
+    },
+    {
+      "generated_at": "2026-03-22T20:16:45+00:00",
+      "date": "2026-03-22",
+      "run_started_at": "2026-03-22T20:15:00+00:00",
+      "account": "louisgson",
+      "profile_url": "https://www.instagram.com/louisgson/",
+      "full_name": "louisgson",
+      "biography": "",
+      "external_url": "",
+      "is_verified": false,
+      "followers": 0,
+      "following": 0,
+      "posts": 0,
+      "recent_post_count": 0,
+      "video_post_count": 0,
+      "video_posts_with_view_data": 0,
+      "video_posts_with_view_data_recent_window": 0,
+      "reel_view_enriched_posts": 0,
+      "recent_posts_window_days": 14,
+      "recent_posts_collection_window_days": 30,
+      "recent_posts_target_limit": 24,
+      "recent_posts_hard_limit": 0,
+      "recent_posts_collection_stop_reason": "manual_placeholder",
+      "recent_posts_window_covered": true,
+      "recent_posts_collection_window_covered": true,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_video_views": 0,
+      "avg_video_views_per_video": 0,
+      "avg_video_views_per_post": 0,
+      "total_likes_recent_window": 0,
+      "total_video_views_recent_window": 740000,
+      "engagement_rate": 0,
+      "recent_posts": [],
+      "data_status": "placeholder_pending_collection",
+      "collector_total_video_views_recent_window": 0,
+      "manual_total_video_views_recent_window": 740000,
+      "video_views_recent_window_source": "manual_override",
+      "video_views_recent_window_days": 30,
+      "manual_metrics_updated_at": "2026-04-14",
+      "manual_metrics_note": "Manual 30d account view totals provided by the Sentient team."
+    },
+    {
+      "generated_at": "2026-03-22T20:16:45+00:00",
+      "date": "2026-03-22",
+      "run_started_at": "2026-03-22T20:15:00+00:00",
+      "account": "ai.tech.moments",
+      "profile_url": "https://www.instagram.com/ai.tech.moments/",
+      "full_name": "ai tech moments",
+      "biography": "",
+      "external_url": "",
+      "is_verified": false,
+      "followers": 0,
+      "following": 0,
+      "posts": 0,
+      "recent_post_count": 0,
+      "video_post_count": 0,
+      "video_posts_with_view_data": 0,
+      "video_posts_with_view_data_recent_window": 0,
+      "reel_view_enriched_posts": 0,
+      "recent_posts_window_days": 14,
+      "recent_posts_collection_window_days": 30,
+      "recent_posts_target_limit": 24,
+      "recent_posts_hard_limit": 0,
+      "recent_posts_collection_stop_reason": "manual_placeholder",
+      "recent_posts_window_covered": true,
+      "recent_posts_collection_window_covered": true,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_video_views": 0,
+      "avg_video_views_per_video": 0,
+      "avg_video_views_per_post": 0,
+      "total_likes_recent_window": 0,
+      "total_video_views_recent_window": 0,
+      "engagement_rate": 0,
+      "recent_posts": [],
+      "data_status": "placeholder_pending_collection"
     }
   ]
 }

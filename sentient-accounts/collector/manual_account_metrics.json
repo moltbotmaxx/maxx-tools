@@ -1,0 +1,64 @@
+{
+  "updated_at": "2026-04-14",
+  "view_window_days": 30,
+  "note": "Manual 30d account view totals provided by the Sentient team.",
+  "accounts": {
+    "aigleeson": {
+      "manual_total_video_views_recent_window": 10000
+    },
+    "ai.excel": {
+      "manual_total_video_views_recent_window": 1400000
+    },
+    "ainterestingaf": {
+      "manual_total_video_views_recent_window": 313300
+    },
+    "ainterestingupdate": {
+      "manual_total_video_views_recent_window": 7000000
+    },
+    "artificialmente.ia": {
+      "manual_total_video_views_recent_window": 20100000
+    },
+    "artificialntellligence": {
+      "manual_total_video_views_recent_window": 18900000
+    },
+    "chatgptips": {
+      "manual_total_video_views_recent_window": 2300000
+    },
+    "chatgptricks": {
+      "manual_total_video_views_recent_window": 50000000
+    },
+    "chatgptruco": {
+      "manual_total_video_views_recent_window": 1500000
+    },
+    "costarica": {
+      "manual_total_video_views_recent_window": 12900000
+    },
+    "em3rging": {
+      "manual_total_video_views_recent_window": 6000000
+    },
+    "ivanelgrande": {
+      "manual_total_video_views_recent_window": 258000
+    },
+    "louisgson": {
+      "manual_total_video_views_recent_window": 740000
+    },
+    "planet.ai_": {
+      "manual_total_video_views_recent_window": 5300000
+    },
+    "sergioprompts": {
+      "manual_total_video_views_recent_window": 5100000
+    },
+    "stoicreflections": {
+      "manual_total_video_views_recent_window": 3100000
+    },
+    "tecnologia": {
+      "manual_total_video_views_recent_window": 31900000
+    },
+    "trends": {
+      "manual_total_video_views_recent_window": 12100000
+    },
+    "traselveloreal": {
+      "manual_total_video_views_recent_window": 126500000
+    }
+  }
+}

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -10,8 +11,12 @@ DATA_DIR = BASE_DIR.parent / "data"
 HISTORY_DIR = DATA_DIR / "history"
 GLOBAL_DATA_PATH = DATA_DIR / "global.json"
 GLOBAL_HISTORY_PATH = HISTORY_DIR / "global.json"
+TRACKED_ACCOUNTS_PATH = BASE_DIR / "accounts.json"
+MANUAL_METRICS_PATH = BASE_DIR / "manual_account_metrics.json"
 SKIP_FILES = {"global.json", "errors.json"}
 HIDDEN_LIKES_SENTINEL = 3
+DEFAULT_RECENT_POSTS_WINDOW_DAYS = 14
+DEFAULT_COLLECTION_WINDOW_DAYS = 30
 
 
 def write_json(path: Path, payload: Any) -> None:
@@ -54,6 +59,152 @@ def extract_snapshot_marker(payload: dict[str, Any]) -> str | None:
     if snapshot_date is None:
         return None
     return dt.datetime.fromisoformat(f"{snapshot_date}T00:00:00+00:00").isoformat()
+
+
+def load_tracked_accounts() -> list[str]:
+    try:
+        payload = json.loads(TRACKED_ACCOUNTS_PATH.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+    if not isinstance(payload, list):
+        return []
+
+    return [
+        account.strip()
+        for account in payload
+        if isinstance(account, str) and account.strip()
+    ]
+
+
+def load_manual_metrics() -> dict[str, dict[str, Any]]:
+    try:
+        payload = json.loads(MANUAL_METRICS_PATH.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+    if not isinstance(payload, dict):
+        return {}
+
+    raw_accounts = payload.get("accounts")
+    if not isinstance(raw_accounts, dict):
+        return {}
+
+    default_window_days = payload.get("view_window_days")
+    default_updated_at = payload.get("updated_at")
+    default_note = payload.get("note")
+    normalized: dict[str, dict[str, Any]] = {}
+
+    for account, metrics in raw_accounts.items():
+        if not isinstance(account, str) or not account.strip() or not isinstance(metrics, dict):
+            continue
+
+        manual_total = metrics.get("manual_total_video_views_recent_window")
+        if not isinstance(manual_total, (int, float)) or manual_total < 0:
+            continue
+
+        normalized_metrics = dict(metrics)
+        normalized_metrics["manual_total_video_views_recent_window"] = int(manual_total)
+
+        window_days = normalized_metrics.get("view_window_days", default_window_days)
+        if isinstance(window_days, (int, float)) and window_days > 0:
+            normalized_metrics["view_window_days"] = int(window_days)
+        else:
+            normalized_metrics["view_window_days"] = DEFAULT_COLLECTION_WINDOW_DAYS
+
+        if "updated_at" not in normalized_metrics and isinstance(default_updated_at, str) and default_updated_at.strip():
+            normalized_metrics["updated_at"] = default_updated_at.strip()
+
+        if "note" not in normalized_metrics and isinstance(default_note, str) and default_note.strip():
+            normalized_metrics["note"] = default_note.strip()
+
+        normalized[account.strip()] = normalized_metrics
+
+    return normalized
+
+
+def build_profile_url(account: str) -> str:
+    return f"https://www.instagram.com/{account}/"
+
+
+def prettify_account_label(account: str) -> str:
+    cleaned = re.sub(r"[._]+", " ", account).strip()
+    return cleaned or account
+
+
+def build_placeholder_payload(
+    account: str,
+    snapshot_date: str,
+    generated_at: str,
+    run_started_at: str | None,
+) -> dict[str, Any]:
+    return {
+        "generated_at": generated_at,
+        "date": snapshot_date,
+        "run_started_at": run_started_at,
+        "account": account,
+        "profile_url": build_profile_url(account),
+        "full_name": prettify_account_label(account),
+        "biography": "",
+        "external_url": "",
+        "is_verified": False,
+        "followers": 0,
+        "following": 0,
+        "posts": 0,
+        "recent_post_count": 0,
+        "video_post_count": 0,
+        "video_posts_with_view_data": 0,
+        "video_posts_with_view_data_recent_window": 0,
+        "reel_view_enriched_posts": 0,
+        "recent_posts_window_days": DEFAULT_RECENT_POSTS_WINDOW_DAYS,
+        "recent_posts_collection_window_days": DEFAULT_COLLECTION_WINDOW_DAYS,
+        "recent_posts_target_limit": 24,
+        "recent_posts_hard_limit": 0,
+        "recent_posts_collection_stop_reason": "manual_placeholder",
+        "recent_posts_window_covered": True,
+        "recent_posts_collection_window_covered": True,
+        "avg_likes": 0,
+        "avg_comments": 0,
+        "avg_video_views": 0,
+        "avg_video_views_per_video": 0,
+        "avg_video_views_per_post": 0,
+        "total_likes_recent_window": 0,
+        "total_video_views_recent_window": 0,
+        "engagement_rate": 0,
+        "recent_posts": [],
+        "data_status": "placeholder_pending_collection",
+    }
+
+
+def apply_manual_metrics(account_payload: dict[str, Any], manual_metrics: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    account_name = account_payload.get("account")
+    if not isinstance(account_name, str):
+        return account_payload
+
+    metrics = manual_metrics.get(account_name)
+    if not metrics:
+        return account_payload
+
+    merged = dict(account_payload)
+    collector_total = merged.get("total_video_views_recent_window")
+    if isinstance(collector_total, (int, float)):
+        merged["collector_total_video_views_recent_window"] = int(collector_total)
+
+    manual_total = int(metrics["manual_total_video_views_recent_window"])
+    merged["manual_total_video_views_recent_window"] = manual_total
+    merged["total_video_views_recent_window"] = manual_total
+    merged["video_views_recent_window_source"] = "manual_override"
+    merged["video_views_recent_window_days"] = int(metrics.get("view_window_days") or DEFAULT_COLLECTION_WINDOW_DAYS)
+
+    updated_at = metrics.get("updated_at")
+    if isinstance(updated_at, str) and updated_at.strip():
+        merged["manual_metrics_updated_at"] = updated_at.strip()
+
+    note = metrics.get("note")
+    if isinstance(note, str) and note.strip():
+        merged["manual_metrics_note"] = note.strip()
+
+    return merged
 
 
 def load_account_records() -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
@@ -221,6 +372,10 @@ def total_likes_recent_window(account: dict[str, Any]) -> int:
 
 
 def total_video_views_recent_window(account: dict[str, Any]) -> int:
+    manual_total = account.get("manual_total_video_views_recent_window")
+    if isinstance(manual_total, (int, float)) and manual_total >= 0:
+        return int(manual_total)
+
     explicit_total = account.get("total_video_views_recent_window")
     if isinstance(explicit_total, (int, float)) and explicit_total > 0:
         return int(explicit_total)
@@ -237,7 +392,35 @@ def main() -> int:
 
     records, load_failures = load_account_records()
     snapshot_date, current_records, stale_accounts = split_current_snapshot(records)
-    accounts = [record["payload"] for record in current_records]
+    tracked_accounts = load_tracked_accounts()
+    manual_metrics = load_manual_metrics()
+
+    generated_at = (
+        current_records[0]["payload"].get("generated_at")
+        if current_records
+        else dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+    )
+    run_started_at = current_records[0]["payload"].get("run_started_at") if current_records else None
+
+    current_payloads = {
+        record["account"]: dict(record["payload"])
+        for record in current_records
+    }
+
+    account_names: list[str] = []
+    for source in (tracked_accounts, sorted(current_payloads), sorted(manual_metrics)):
+        for account in source:
+            if account not in account_names:
+                account_names.append(account)
+
+    accounts = []
+    for account_name in account_names:
+        payload = current_payloads.get(account_name)
+        if payload is None:
+            payload = build_placeholder_payload(account_name, snapshot_date, generated_at, run_started_at)
+        accounts.append(apply_manual_metrics(payload, manual_metrics))
+
+    accounts.sort(key=lambda item: int(item.get("followers", 0) or 0), reverse=True)
     total_followers = sum(int(account.get("followers", 0)) for account in accounts)
     total_posts = sum(int(account.get("posts", 0)) for account in accounts)
     total_avg_likes = sum(float(account.get("avg_likes", 0)) for account in accounts)

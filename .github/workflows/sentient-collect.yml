@@ -61,9 +61,8 @@ jobs:
 
       - name: Restore persisted Instaloader session
         env:
-          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTALOADER_SESSION_FILE_B64: ${{ secrets.INSTALOADER_SESSION_FILE_B64 }}
-        if: ${{ env.INSTALOADER_SESSION_FILE_B64 != '' && env.INSTAGRAM_USERNAME != '' }}
+        if: ${{ env.INSTALOADER_SESSION_FILE_B64 != '' }}
         run: |
           mkdir -p sentient-accounts/.instaloader
           python - <<'PY'
@@ -71,9 +70,8 @@ jobs:
           import os
           from pathlib import Path
 
-          username = os.environ["INSTAGRAM_USERNAME"]
           payload = os.environ["INSTALOADER_SESSION_FILE_B64"]
-          path = Path("sentient-accounts/.instaloader") / f"session-{username}"
+          path = Path("sentient-accounts/.instaloader/session-refresh")
           path.write_bytes(base64.b64decode(payload))
           print(f"Restored persisted session file to {path}")
           PY
@@ -82,6 +80,7 @@ jobs:
         env:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          INSTALOADER_SESSION_FILE: ".instaloader/session-refresh"
           ENABLE_REEL_VIEW_SCRAPE: "1"
           RECENT_POST_LIMIT: "24"
           RECENT_POST_WINDOW_DAYS: "14"

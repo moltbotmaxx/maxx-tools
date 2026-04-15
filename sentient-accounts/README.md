@@ -70,6 +70,8 @@ You can also point to a specific cookie database if needed:
 
 Supported browsers match Instaloader's official browser-cookie flow: Brave, Chrome, Chromium, Edge, Firefox, LibreWolf, Opera, Opera GX, Safari and Vivaldi.
 
+If the imported browser session belongs to a different Instagram account than `INSTAGRAM_USERNAME`, that is okay. The collector can now load an explicit session file path independently of the fallback login username.
+
 ## Local reel view prototype
 
 The main collector still does not reliably populate `video_view_count`, so there is now a separate local prototype that reads the visible view counts from the Instagram Reels grid in Chrome.
@@ -116,6 +118,26 @@ INSTALOADER_COOKIE_FILE="/path/to/browser/cookies.sqlite"
 - `.github/workflows/sentient-collect.yml` refreshes datasets on a schedule and commits changes to `sentient-accounts/data/`.
 - `.github/workflows/deploy-pages.yml` publishes a Pages artifact that contains both the dashboard and generated data.
 - `sentient-collect.yml` can optionally restore a persisted Instaloader session from a Base64-encoded secret named `INSTALOADER_SESSION_FILE_B64`.
+
+### Recommended setup for the dashboard Refresh button
+
+When Instagram password login starts returning checkpoint or rate-limit errors, use a browser-imported session for GitHub Actions too:
+
+1. Import fresh cookies locally:
+
+```bash
+.venv/bin/python collector/import_browser_session.py --browser chrome
+```
+
+2. Base64-encode the resulting session file:
+
+```bash
+base64 -i .instaloader/session-tbnalfaro | tr -d '\n'
+```
+
+3. Save that output into the GitHub Actions secret `INSTALOADER_SESSION_FILE_B64`.
+
+The workflow now restores that secret into a fixed path, `sentient-accounts/.instaloader/session-refresh`, and the collector loads it through `INSTALOADER_SESSION_FILE`. That makes the refresh flow independent of the original session filename.
 
 ## Manual refresh from the dashboard
 

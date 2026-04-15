@@ -684,10 +684,17 @@ function getAvatarUrl(account) {
   if (explicitPath) {
     return `${explicitPath}${suffix}`;
   }
-  if (accountName) {
+
+  const remoteProfilePicUrl = String(account?.profile_pic_url || "").trim();
+  if (remoteProfilePicUrl) {
+    return remoteProfilePicUrl;
+  }
+
+  if (account?.data_status !== "placeholder_pending_collection" && accountName) {
     return `../avatars/${encodeURIComponent(accountName)}.jpg${suffix}`;
   }
-  return String(account?.profile_pic_url || "").trim();
+
+  return "";
 }
 
 function buildAvatarMarkup(account, className) {

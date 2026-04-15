@@ -153,9 +153,9 @@ def load_persisted_session(
     except InstaloaderException as exc:
         print(
             f"Loaded session file from {session_file}, but Instagram blocked immediate "
-            f"verification: {exc}. Continuing with the persisted session."
+            f"verification: {exc}. Treating the session as stale so password login can refresh it."
         )
-        return resolved_username, session_file
+        return None, session_file
 
     if logged_in_as:
         print(f"Loaded persisted Instaloader session for @{logged_in_as} from {session_file}")
@@ -163,9 +163,9 @@ def load_persisted_session(
 
     print(
         f"Loaded session file from {session_file}, but test_login() returned no username. "
-        "Continuing with the persisted session."
+        "Treating the session as stale so password login can refresh it."
     )
-    return resolved_username, session_file
+    return None, session_file
 
 
 def login_and_persist_session(
@@ -289,7 +289,7 @@ def authenticate_loader(
             if logged_in_as:
                 return logged_in_as
             print(
-                f"Session file {session_file} was found but did not validate. "
+                f"Session file {session_file} was found but could not be validated. "
                 "Falling back to password login."
             )
         except (InstaloaderException, OSError, FileNotFoundError) as exc:

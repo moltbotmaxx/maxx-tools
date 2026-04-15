@@ -65,6 +65,12 @@ There are two connected systems:
   - `INSTAGRAM_USERNAME`
   - `INSTAGRAM_PASSWORD`
 - The current workflow can restore the persisted session and collect successfully.
+- As of 2026-04-14, `collector/instagram_auth.py` now treats sessions that fail `test_login()` as stale instead of silently trusting them.
+- `sentient-collect.yml` now restores `INSTALOADER_SESSION_FILE_B64` into a fixed path, `sentient-accounts/.instaloader/session-refresh`, and the collector reads it via `INSTALOADER_SESSION_FILE`.
+- A fresh Chrome-imported session for `@tbnalfaro` was validated locally for:
+  - profile fetch
+  - post collection
+  - Selenium reel scraper startup
 
 ### Reel views
 
