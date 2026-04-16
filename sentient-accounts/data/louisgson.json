@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-15T23:08:39+00:00",
+  "generated_at": "2026-04-15T23:51:38+00:00",
   "date": "2026-04-15",
-  "run_started_at": "2026-04-15T23:03:06+00:00",
+  "run_started_at": "2026-04-15T23:45:42+00:00",
   "account": "louisgson",
   "profile_url": "https://www.instagram.com/louisgson/",
   "avatar_path": "../avatars/louisgson.jpg",
-  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.82787-19/527133320_17848268052532406_482228582328557800_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gFnG8W9LAzM3c9ZY8Q9T-ve9Y-1qQf3JagUcs-RG_HqaiWLH5KX6Qi-71FAORq_wEE&_nc_ohc=LGrRZUpfmoAQ7kNvwETWWvO&_nc_gid=muKapcLQYRjxp-_kkIAL4Q&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GIhqax_2jCC952g-AOjgOzZXOLEGbmNDAQAB0j-ccb7-5&oh=00_Af1bV76R1A3GEKFuad1GlLjtuS8YTO8PbXhjPp5Av2f1SA&oe=69E5EC1B&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.82787-19/527133320_17848268052532406_482228582328557800_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gFuA9XLWywGzLFEt11QBfLCmFvVMcajRqQm3JRsij9VWztudL3oCxBogjNUlfLeJBA&_nc_ohc=LGrRZUpfmoAQ7kNvwETWWvO&_nc_gid=vDsPstAGE_WNFbUkOI5YhQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GIhqax_2jCC952g-AOjgOzZXOLEGbmNDAQAB0j-ccb7-5&oh=00_Af1LoNisoeSdxt9wuRoJrLvtlR8w2_9CyvMP7eSLI1SZxw&oe=69E5EC1B&_nc_sid=1e20d2",
   "full_name": "Louis Gleeson",
   "biography": "~ AI, theme pages & faceless marketing \n~ Building 100m follower media company (25m so far)\n@sentientagency",
   "external_url": "http://www.sentientagency.io",
@@ -26,14 +26,14 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2026-03-16",
-  "avg_likes": 2012.27,
-  "avg_comments": 82.2,
+  "avg_likes": 2012.57,
+  "avg_comments": 82.23,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
-  "total_likes_recent_window": 4355,
+  "total_likes_recent_window": 4363,
   "total_video_views_recent_window": 0,
-  "engagement_rate": 19.2136,
+  "engagement_rate": 19.2166,
   "recent_posts": [
     {
       "shortcode": "DSGR9EFk-Pn",
@@ -48,7 +48,7 @@
     {
       "shortcode": "DPtVSSBEtIh",
       "date": "2025-10-12",
-      "likes": 22475,
+      "likes": 22476,
       "comments": 367,
       "is_video": true,
       "video_views": 0,
@@ -68,7 +68,7 @@
     {
       "shortcode": "DXKLMD_Dt-W",
       "date": "2026-04-15",
-      "likes": 80,
+      "likes": 81,
       "comments": 2,
       "is_video": true,
       "video_views": 0,
@@ -78,7 +78,7 @@
     {
       "shortcode": "DXFSC6Ujm8q",
       "date": "2026-04-13",
-      "likes": 269,
+      "likes": 272,
       "comments": 46,
       "is_video": true,
       "video_views": 0,
@@ -88,7 +88,7 @@
     {
       "shortcode": "DXCrFnIjqdt",
       "date": "2026-04-12",
-      "likes": 112,
+      "likes": 113,
       "comments": 7,
       "is_video": true,
       "video_views": 0,
@@ -98,7 +98,7 @@
     {
       "shortcode": "DXACFoZD9ws",
       "date": "2026-04-11",
-      "likes": 87,
+      "likes": 88,
       "comments": 3,
       "is_video": true,
       "video_views": 0,
@@ -108,7 +108,7 @@
     {
       "shortcode": "DW9sX9QEix4",
       "date": "2026-04-10",
-      "likes": 95,
+      "likes": 96,
       "comments": 39,
       "is_video": true,
       "video_views": 0,
@@ -118,8 +118,8 @@
     {
       "shortcode": "DW62USKjp8e",
       "date": "2026-04-09",
-      "likes": 208,
-      "comments": 156,
+      "likes": 209,
+      "comments": 157,
       "is_video": true,
       "video_views": 0,
       "caption": "Comment \u201cClaude\u201d and I\u2019ll send you the prompt \n\nI built a system that writes viral carousels in under 60 seconds.\n\nNo templates. No Canva. Just one prompt inside Claude.\n\nHere\u2019s ex",
