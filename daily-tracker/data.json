@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-16T08:05:41.951Z",
+    "generated_at": "2026-04-16T09:51:07.243Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "More Openclaw questions",
-        "link": "https://reddit.com/r/openclaw/comments/1smvzi6/more_openclaw_questions/",
+        "headline": "How are you keeping OpenClaw costs down? Here's what's working for me.",
+        "link": "https://reddit.com/r/openclaw/comments/1smy4ig/how_are_you_keeping_openclaw_costs_down_heres/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-16T06:56:55+00:00",
+        "published_at": "2026-04-16T09:05:02+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "How do I get my open claw to be able to access my Google chrome? I switched agents from Claude as it was expensive. Now my agent can’t access the chrome browser. What is the best agent to use? Thank you",
+        "link": "https://reddit.com/r/openclaw/comments/1smxsy6/how_do_i_get_my_open_claw_to_be_able_to_access_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T08:45:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Opus 4.7 seems to rolled out to Claude Web",
+        "link": "https://reddit.com/r/singularity/comments/1smw74e/opus_47_seems_to_rolled_out_to_claude_web/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-16T07:08:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Gemini asked me to report back on a code interview I had been practicing for, and it decided to question my marriage",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-16T06:31:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Me, after a few weeks of solving my work problems with Claude and feeling terribly empty",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-16T06:14:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Claude had enough of this user",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-16T05:11:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "understand this about openclaw…",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-16T04:13:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Opus 4.7 spotted on Google Vertex",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-16T03:10:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Opus 4.7 has been spotted on Google Vertex",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-16T03:06:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Claude is about to begin its KYC verification process.",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-16T02:53:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Is OpenClaw too complex and crashing? The founder just exposed the most dangerous problem.",
-        "link": "https://reddit.com/r/openclaw/comments/1smr766/is_openclaw_too_complex_and_crashing_the_founder/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T02:50:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenClaw feels dead to me without Opus",
-        "link": "https://reddit.com/r/openclaw/comments/1smqka2/openclaw_feels_dead_to_me_without_opus/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T02:21:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-16T08:05:41.951Z",
+    "reddit_viral_generated_at": "2026-04-16T09:51:07.243Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
