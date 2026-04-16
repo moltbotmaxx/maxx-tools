@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-16T15:58:08.380Z",
+    "generated_at": "2026-04-16T17:46:17.627Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Opus 4.7 released, but it’s still behind pre-regression Opus 4.6 on my real world tasks",
+        "link": "https://reddit.com/r/openclaw/comments/1snah7q/opus_47_released_but_its_still_behind/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T17:34:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Mac Mini hype confusion",
+        "link": "https://reddit.com/r/openclaw/comments/1sn97rd/mac_mini_hype_confusion/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T16:51:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Onboarding new models",
+        "link": "https://reddit.com/r/openclaw/comments/1sn90my/onboarding_new_models/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T16:43:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Figure.AI new balance policy allows their 03 humanoid robot to keep its balance even if some low-body actuators are lost",
+        "link": "https://reddit.com/r/singularity/comments/1sn7pm3/figureai_new_balance_policy_allows_their_03/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-16T15:58:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Since I switch to the $100/month Codex plan, not hitting the weekly usage limit anymore!",
+        "link": "https://reddit.com/r/openclaw/comments/1sn7l8v/since_i_switch_to_the_100month_codex_plan_not/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T15:54:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "She-IT!!",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sn5k9d/sheit/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-16T14:43:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "the openclaw ecosystem now has 138 documented CVEs. here's which ones actually matter if you're self-hosting.",
         "link": "https://reddit.com/r/openclaw/comments/1sn592t/the_openclaw_ecosystem_now_has_138_documented/",
@@ -379,7 +433,7 @@
         "published_at": "2026-04-16T14:31:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Introducing Claude Opus 4.7, our most capable Opus model yet.",
@@ -388,16 +442,7 @@
         "published_at": "2026-04-16T14:29:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Opus 4.7 Benchmarks",
-        "link": "https://reddit.com/r/singularity/comments/1sn54vc/opus_47_benchmarks/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-16T14:27:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "4.14 just broke the entrypoint for a bunch of people. if your gateway won't start after updating, here's what happened",
@@ -406,7 +451,7 @@
         "published_at": "2026-04-16T14:27:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Claude Opus 4.7 benchmarks",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-16T14:25:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Should OpenAi release AI companion?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sn4n1g/should_openai_release_ai_companion/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-16T14:09:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Oauth on Codex is blocked by cloud flare",
-        "link": "https://reddit.com/r/openclaw/comments/1sn42pc/oauth_on_codex_is_blocked_by_cloud_flare/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T13:48:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Hosted claw and free models?",
-        "link": "https://reddit.com/r/openclaw/comments/1sn3nfv/hosted_claw_and_free_models/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T13:32:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "When to agent and when not to agent",
-        "link": "https://reddit.com/r/openclaw/comments/1sn2v1v/when_to_agent_and_when_not_to_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T13:01:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Sam Altman - “once we’ve built this general intelligence, we will just ask it how to generate an investment return”",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sn2hyf/sam_altman_once_weve_built_this_general/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-16T12:46:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-16T15:58:08.380Z",
+    "reddit_viral_generated_at": "2026-04-16T17:46:17.627Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
