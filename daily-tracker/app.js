@@ -28,6 +28,7 @@ const TEAM_SELECTIONS_COLLECTION = 'daily-tracker-team-selections';
 const TEAM_SELECTIONS_DISPLAY_LIMIT = 12;
 const TEAM_SELECTIONS_QUERY_LIMIT = 40;
 const TEAM_SELECTIONS_RESET_AT = '2026-03-30T00:00:00.000Z';
+const TEAM_SELECTIONS_TTL_MS = 48 * 60 * 60 * 1000;
 const TEAM_SELECTION_ENTRY_SOURCE = {
     MANUAL: 'manual',
     EXTENSION: 'extension',
@@ -1486,7 +1487,7 @@ function isMobileSourcingUiActive() {
 // Firebase Imports & Config
 // ===========================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getFirestore, collection, doc, getDoc, getDocs, limit, orderBy, query, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { getFirestore, collection, doc, getDoc, getDocs, deleteDoc, limit, orderBy, query, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import {
     GoogleAuthProvider,
     browserLocalPersistence,
@@ -1717,6 +1718,12 @@ function isTeamSelectionAfterReset(value = '') {
     const resetAt = getTeamSelectionTimestamp(TEAM_SELECTIONS_RESET_AT);
     if (selectedAt === null || resetAt === null) return false;
     return selectedAt >= resetAt;
+}
+
+function isTeamSelectionExpired(value = '') {
+    const selectedAt = getTeamSelectionTimestamp(value);
+    if (selectedAt === null) return true;
+    return Date.now() - selectedAt > TEAM_SELECTIONS_TTL_MS;
 }
 
 function isEligibleTeamSelectionIdea(idea = {}) {
@@ -2419,10 +2426,17 @@ async function loadTeamSelections() {
             )
         );
 
+        const expiredDocs = snapshot.docs.filter(docSnap => {
+            const data = docSnap.data();
+            return isTeamSelectionExpired(data?.selectedAt);
+        });
+        expiredDocs.forEach(docSnap => deleteDoc(doc(db, TEAM_SELECTIONS_COLLECTION, docSnap.id)).catch(() => {}));
+
         teamSelections = snapshot.docs
             .map(docSnap => normalizeTeamSelectionActivity(docSnap.data(), docSnap.id))
             .filter(Boolean)
             .filter(item => isTeamSelectionAfterReset(item.selectedAt))
+            .filter(item => !isTeamSelectionExpired(item.selectedAt))
             .filter(item => shouldAppearInTeamSelections(item))
             .filter(item => item.ownerUid !== currentUser.uid)
             .filter(item => !dismissedIds.has(item.id))
