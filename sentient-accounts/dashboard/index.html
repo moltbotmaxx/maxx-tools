@@ -28,32 +28,11 @@
           <h1>Sentient network</h1>
         </div>
         <div class="hero-meta">
-          <div class="hero-actions">
-            <button id="refreshButton" class="hero-action" type="button">Refresh data</button>
-            <button id="refreshConfigButton" class="hero-action hero-action--ghost" type="button">Configure</button>
-          </div>
-          <form id="refreshConfigForm" class="refresh-config hidden">
-            <label class="refresh-field">
-              <span>Refresh API URL</span>
-              <input id="refreshApiUrlInput" type="url" placeholder="https://your-service.onrender.com" autocomplete="url" />
-            </label>
-            <label class="refresh-field">
-              <span>Admin key</span>
-              <input id="refreshAdminKeyInput" type="password" placeholder="Stored only in this browser" autocomplete="off" />
-            </label>
-            <div class="refresh-config__actions">
-              <button class="hero-action hero-action--small" type="submit">Save</button>
-              <button id="refreshConfigCancel" class="hero-action hero-action--ghost hero-action--small" type="button">Close</button>
-            </div>
-          </form>
           <div class="snapshot-status">
-            <p id="lastUpdated" class="muted snapshot-meta">
-              <span class="snapshot-hover">
-                <span id="snapshotTrigger" class="snapshot-trigger" tabindex="0" aria-describedby="refreshStatus">Snapshot</span>
-                <span id="refreshStatus" class="muted snapshot-tooltip" role="status" aria-live="polite">Manual refresh unavailable.</span>
-              </span>
+            <p class="muted snapshot-meta">
+              <span>Data</span>
               <span class="snapshot-separator" aria-hidden="true">&middot;</span>
-              <span id="lastUpdatedDate">Loading...</span>
+              <span>March–April 2026</span>
             </p>
           </div>
         </div>
