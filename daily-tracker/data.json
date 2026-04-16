@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-16T14:16:40.505Z",
+    "generated_at": "2026-04-16T15:58:08.380Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "the openclaw ecosystem now has 138 documented CVEs. here's which ones actually matter if you're self-hosting.",
+        "link": "https://reddit.com/r/openclaw/comments/1sn592t/the_openclaw_ecosystem_now_has_138_documented/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T14:31:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Introducing Claude Opus 4.7, our most capable Opus model yet.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sn57af/introducing_claude_opus_47_our_most_capable_opus/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-16T14:29:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Opus 4.7 Benchmarks",
+        "link": "https://reddit.com/r/singularity/comments/1sn54vc/opus_47_benchmarks/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-16T14:27:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "4.14 just broke the entrypoint for a bunch of people. if your gateway won't start after updating, here's what happened",
+        "link": "https://reddit.com/r/openclaw/comments/1sn54fj/414_just_broke_the_entrypoint_for_a_bunch_of/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T14:27:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude Opus 4.7 benchmarks",
+        "link": "https://reddit.com/r/singularity/comments/1sn52vp/claude_opus_47_benchmarks/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-16T14:25:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Should OpenAi release AI companion?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sn4n1g/should_openai_release_ai_companion/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-16T14:09:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Oauth on Codex is blocked by cloud flare",
         "link": "https://reddit.com/r/openclaw/comments/1sn42pc/oauth_on_codex_is_blocked_by_cloud_flare/",
@@ -379,7 +433,16 @@
         "published_at": "2026-04-16T13:48:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Hosted claw and free models?",
+        "link": "https://reddit.com/r/openclaw/comments/1sn3nfv/hosted_claw_and_free_models/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T13:32:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "When to agent and when not to agent",
@@ -388,7 +451,7 @@
         "published_at": "2026-04-16T13:01:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Sam Altman - “once we’ve built this general intelligence, we will just ask it how to generate an investment return”",
@@ -397,77 +460,14 @@
         "published_at": "2026-04-16T12:46:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Claude Code workflow tips after 6 months of daily use (from a senior dev)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sn27yu/claude_code_workflow_tips_after_6_months_of_daily/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-16T12:34:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "huh???",
-        "link": "https://reddit.com/r/aimemes/comments/1sn244q/huh/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-16T12:29:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Gemini desktop app is coming! 🤩🤩",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sn0qtq/gemini_desktop_app_is_coming/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-16T11:28:09+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 94
-      },
-      {
-        "headline": "AI never sleeps",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sn08d7/ai_never_sleeps/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-16T11:02:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "GLM 5.1 overwrites pre existing files",
-        "link": "https://reddit.com/r/openclaw/comments/1sn04ho/glm_51_overwrites_pre_existing_files/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T10:57:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic unveils plans for major UK expansion after OpenAI announces first permanent London office",
-        "link": "https://reddit.com/r/singularity/comments/1smzu0i/anthropic_unveils_plans_for_major_uk_expansion/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-16T10:42:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Is this from OpenAI or Grok? The rankings climbing Sooooo fast, they finally figure out what people actually want",
-        "link": "https://reddit.com/r/OpenAI/comments/1smy4ne/is_this_from_openai_or_grok_the_rankings_climbing/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-16T09:05:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-16T14:16:40.505Z",
+    "reddit_viral_generated_at": "2026-04-16T15:58:08.380Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
