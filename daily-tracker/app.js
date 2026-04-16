@@ -692,6 +692,7 @@ const elements = {
     bufferStoriesGroup: document.getElementById('bufferStoriesGroup'),
     sourcingNewsMain: document.getElementById('sourcingNewsMain'),
     instagramSidebarSection: document.getElementById('instagramSidebarSection'),
+    instagramSidebarSection2: document.getElementById('instagramSidebarSection2'),
     redditSidebarSection: document.getElementById('redditSidebarSection'),
     xSidebarSection: document.getElementById('xSidebarSection'),
     featuredGrid: document.getElementById('featuredGrid'),
@@ -699,6 +700,7 @@ const elements = {
     poolListNews: document.getElementById('poolListNews'),
     xViralList: document.getElementById('xViralList'),
     instagramViralList: document.getElementById('instagramViralList'),
+    instagramViralList2: document.getElementById('instagramViralList2'),
     redditViralList: document.getElementById('redditViralList'),
     next6Count: document.getElementById('next6Count'),
     poolCountNews: document.getElementById('poolCountNews'),
@@ -5220,10 +5222,14 @@ async function renderSidebarFeeds(forceRefresh = false) {
     const xResult = results[2];
 
     if (instagramResult.status === 'fulfilled') {
-        renderSidebarList(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
+        const igItems = instagramResult.value;
+        const half = Math.ceil(igItems.length / 2);
+        renderSidebarList(elements.instagramViralList, igItems.slice(0, half), createInstagramPostItem, 'No Instagram feed available');
+        renderSidebarList(elements.instagramViralList2, igItems.slice(half), createInstagramPostItem, 'No Instagram feed available');
     } else {
         console.error('Failed to load Instagram feed:', instagramResult.reason);
         renderSidebarEmpty(elements.instagramViralList, 'Instagram feed unavailable');
+        renderSidebarEmpty(elements.instagramViralList2, 'Instagram feed unavailable');
     }
 
     if (redditResult.status === 'fulfilled') {
@@ -5680,6 +5686,7 @@ function getMobileSourcingSections() {
     return [
         { id: 'news', label: 'News', panel: elements.sourcingNewsMain, parent: elements.sourcingNewsMain },
         { id: 'instagram', label: 'Instagram', panel: elements.instagramSidebarSection, parent: elements.instagramSidebarSection },
+        { id: 'instagram2', label: 'Instagram 2', panel: elements.instagramSidebarSection2, parent: elements.instagramSidebarSection2 },
         { id: 'reddit', label: 'Reddit', panel: elements.redditSidebarSection, parent: elements.redditSidebarSection },
         { id: 'x', label: 'X', panel: elements.xSidebarSection, parent: elements.xSidebarSection }
     ];

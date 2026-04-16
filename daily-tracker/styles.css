@@ -6202,8 +6202,12 @@ canvas {
   flex-direction: column;
 }
 
-#sourcing-view .sidebar-section--instagram {
-  grid-column: 3 / span 2;
+#sourcing-view #instagramSidebarSection {
+  grid-column: 3 / span 1;
+}
+
+#sourcing-view #instagramSidebarSection2 {
+  grid-column: 4 / span 1;
 }
 
 #sourcing-view .sidebar-section--reddit {
