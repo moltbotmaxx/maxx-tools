@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-16T03:48:53.103Z",
+    "generated_at": "2026-04-16T06:14:27.459Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone separating agent + memory like this?",
+        "link": "https://reddit.com/r/openclaw/comments/1smuktf/anyone_separating_agent_memory_like_this/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T05:37:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude had enough of this user",
+        "link": "https://reddit.com/r/OpenAI/comments/1smu2rk/claude_had_enough_of_this_user/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-16T05:11:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "understand this about openclaw…",
+        "link": "https://reddit.com/r/openclaw/comments/1smsywg/understand_this_about_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T04:13:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Opus 4.7 has been spotted on Google Vertex",
+        "link": "https://reddit.com/r/singularity/comments/1smrk5p/opus_47_has_been_spotted_on_google_vertex/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-16T03:06:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Claude is about to begin its KYC verification process.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1smr9vs/claude_is_about_to_begin_its_kyc_verification/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-16T02:53:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Is OpenClaw too complex and crashing? The founder just exposed the most dangerous problem.",
+        "link": "https://reddit.com/r/openclaw/comments/1smr766/is_openclaw_too_complex_and_crashing_the_founder/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T02:50:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "OpenClaw feels dead to me without Opus",
         "link": "https://reddit.com/r/openclaw/comments/1smqka2/openclaw_feels_dead_to_me_without_opus/",
@@ -379,7 +433,7 @@
         "published_at": "2026-04-16T02:21:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Your agent isn't dumb — you're just missing the systems around it",
@@ -388,7 +442,7 @@
         "published_at": "2026-04-16T02:11:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "What is the best way from a success standpoint to search sites that require login and verification/nda/signature",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-16T01:55:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
         "headline": "These videos are hilarious, but why does this work?",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-16T01:43:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Type error: cannot read properties of undefined (reading 'trim')",
-        "link": "https://reddit.com/r/openclaw/comments/1smpmdo/type_error_cannot_read_properties_of_undefined/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T01:40:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Allbirds $127 Million Gain Proves AI is a Bubble",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1smohs9/allbirds_127_million_gain_proves_ai_is_a_bubble/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-16T00:50:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Speaking live with my agents",
-        "link": "https://reddit.com/r/openclaw/comments/1smlg0h/speaking_live_with_my_agents/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-15T22:40:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Vibe change",
-        "link": "https://reddit.com/r/OpenAI/comments/1smiol3/vibe_change/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-15T20:55:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Are we gonna look back on Mythos like this in a few years?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1smgz06/are_we_gonna_look_back_on_mythos_like_this_in_a/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-15T19:54:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Things are about to get crazy",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1smgvin/things_are_about_to_get_crazy/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-15T19:51:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-16T03:48:53.103Z",
+    "reddit_viral_generated_at": "2026-04-16T06:14:27.459Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
