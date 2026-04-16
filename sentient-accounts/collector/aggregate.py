@@ -269,9 +269,18 @@ def split_current_snapshot(
     if not records:
         return dt.date.today().isoformat(), [], []
 
-    latest_marker = max(record["snapshot_marker"] for record in records)
-    current_records = [record for record in records if record["snapshot_marker"] == latest_marker]
-    stale_records = [record for record in records if record["snapshot_marker"] != latest_marker]
+    latest_date = max(record["snapshot_date"] for record in records)
+    # Among records on the latest date, keep the most recent snapshot per account.
+    latest_date_records: dict[str, dict[str, Any]] = {}
+    for record in records:
+        if record["snapshot_date"] != latest_date:
+            continue
+        account = record["account"]
+        existing = latest_date_records.get(account)
+        if existing is None or record["snapshot_marker"] > existing["snapshot_marker"]:
+            latest_date_records[account] = record
+    current_records = list(latest_date_records.values())
+    stale_records = [record for record in records if record["snapshot_date"] != latest_date]
     current_records.sort(
         key=lambda item: int(item["payload"].get("followers", 0) or 0),
         reverse=True,
