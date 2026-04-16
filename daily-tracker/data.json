@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-16T19:38:36.586Z",
+    "generated_at": "2026-04-16T21:05:36.062Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Life after Claude: My journey finding the best model for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1snea40/life_after_claude_my_journey_finding_the_best/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-16T19:47:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Introducing GPT-Rosalind for life sciences research",
+        "link": "https://reddit.com/r/singularity/comments/1sne2e7/introducing_gptrosalind_for_life_sciences_research/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-16T19:39:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The Stanford AI Index Report of 2026 has some sobering and worrisome stats",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sncv1j/the_stanford_ai_index_report_of_2026_has_some/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-16T18:57:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "White House Moves to Give US Agencies Anthropic Mythos Access",
         "link": "https://reddit.com/r/singularity/comments/1snbv4m/white_house_moves_to_give_us_agencies_anthropic/",
@@ -379,16 +406,7 @@
         "published_at": "2026-04-16T18:22:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Openclaw setup with OpenAI Pro 5x and Openrouter credits (under 200USD)",
-        "link": "https://reddit.com/r/openclaw/comments/1snb0yv/openclaw_setup_with_openai_pro_5x_and_openrouter/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T17:53:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Opus 4.7 released, but it’s still behind pre-regression Opus 4.6 on my real world tasks",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-16T17:34:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Mac Mini hype confusion",
@@ -406,16 +424,7 @@
         "published_at": "2026-04-16T16:51:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Onboarding new models",
-        "link": "https://reddit.com/r/openclaw/comments/1sn90my/onboarding_new_models/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T16:43:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Claude Opus 4.7",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-16T16:33:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Figure.AI new balance policy allows their 03 humanoid robot to keep its balance even if some low-body actuators are lost",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-16T15:58:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "How is this even legal??",
@@ -442,32 +451,23 @@
         "published_at": "2026-04-16T15:44:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
-        "headline": "She-IT!!",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sn5k9d/sheit/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-16T14:43:07+00:00",
+        "headline": "Claude 4.7 just dropped and I'm already cooked",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sn6z9u/claude_47_just_dropped_and_im_already_cooked/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-16T15:32:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "the openclaw ecosystem now has 138 documented CVEs. here's which ones actually matter if you're self-hosting.",
-        "link": "https://reddit.com/r/openclaw/comments/1sn592t/the_openclaw_ecosystem_now_has_138_documented/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T14:31:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-16T19:38:36.586Z",
+    "reddit_viral_generated_at": "2026-04-16T21:05:36.062Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
