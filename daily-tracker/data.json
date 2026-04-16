@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-16T21:05:36.062Z",
+    "generated_at": "2026-04-16T22:01:12.210Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "my OpenClaw texted my ex",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sng426/my_openclaw_texted_my_ex/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-16T20:53:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "lol",
+        "link": "https://reddit.com/r/ChatGPT/comments/1snfyvx/lol/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-16T20:48:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Life after Claude: My journey finding the best model for OpenClaw",
         "link": "https://reddit.com/r/openclaw/comments/1snea40/life_after_claude_my_journey_finding_the_best/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-16T19:47:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Introducing GPT-Rosalind for life sciences research",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-16T19:39:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "The Stanford AI Index Report of 2026 has some sobering and worrisome stats",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-16T18:57:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "White House Moves to Give US Agencies Anthropic Mythos Access",
@@ -406,7 +424,16 @@
         "published_at": "2026-04-16T18:22:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
+      },
+      {
+        "headline": "I'm beefing with Gemini",
+        "link": "https://reddit.com/r/GeminiAI/comments/1snamwj/im_beefing_with_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-16T17:39:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Opus 4.7 released, but it’s still behind pre-regression Opus 4.6 on my real world tasks",
@@ -415,16 +442,7 @@
         "published_at": "2026-04-16T17:34:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Mac Mini hype confusion",
-        "link": "https://reddit.com/r/openclaw/comments/1sn97rd/mac_mini_hype_confusion/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T16:51:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Claude Opus 4.7",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-16T16:33:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Figure.AI new balance policy allows their 03 humanoid robot to keep its balance even if some low-body actuators are lost",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-16T15:58:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "How is this even legal??",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sn7bvb/how_is_this_even_legal/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-16T15:44:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Claude 4.7 just dropped and I'm already cooked",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sn6z9u/claude_47_just_dropped_and_im_already_cooked/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-16T15:32:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-16T21:05:36.062Z",
+    "reddit_viral_generated_at": "2026-04-16T22:01:12.210Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
