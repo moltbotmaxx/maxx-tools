@@ -5234,7 +5234,7 @@ async function renderSidebarFeeds(forceRefresh = false) {
     const xResult = results[2];
 
     if (instagramResult.status === 'fulfilled') {
-        renderSidebarList(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
+        renderSourcingGridSection(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
     } else {
         console.error('Failed to load Instagram feed:', instagramResult.reason);
         renderSidebarEmpty(elements.instagramViralList, 'Instagram feed unavailable');
@@ -5947,7 +5947,6 @@ function createXPostItem(item, index) {
 
 function createInstagramPostItem(item, index) {
     return createMagazineCard(item, index, {
-        variant: 'sidebar',
         sourceKind: 'instagram',
         sourceLabel: item.source || 'Instagram',
         reasonText: item.reason,

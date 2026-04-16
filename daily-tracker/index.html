@@ -55,7 +55,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Schedulr
                     <span id="liveBuildBadge"
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(hide-shortcuts)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(ig-news-style)</span>
                     <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Checking</span>
@@ -235,15 +235,21 @@
                         </div>
                     </div>
 
-                    <section class="sidebar-section sidebar-section--instagram bento-box" id="instagramSidebarSection">
-                        <div class="box-header">
-                            <h2>📸 Instagram</h2>
+                    <section class="news-main news-main--instagram" id="instagramSidebarSection">
+                        <div class="news-main__header box-header">
+                            <div class="news-main__header-main">
+                                <h2><span>📸 Instagram</span></h2>
+                            </div>
                         </div>
-                        <div class="sidebar-list sidebar-list--two-col" id="instagramViralList">
-                            <div class="skeleton-sidebar skeleton"></div>
-                            <div class="skeleton-sidebar skeleton"></div>
-                            <div class="skeleton-sidebar skeleton"></div>
-                            <div class="skeleton-sidebar skeleton"></div>
+                        <div class="news-main__scroll">
+                            <section class="news-group news-group--featured">
+                                <div class="featured-grid" id="instagramViralList">
+                                    <div class="skeleton-card skeleton"></div>
+                                    <div class="skeleton-card skeleton"></div>
+                                    <div class="skeleton-card skeleton"></div>
+                                    <div class="skeleton-card skeleton"></div>
+                                </div>
+                            </section>
                         </div>
                     </section>
                     <section class="sidebar-section sidebar-section--reddit bento-box" id="redditSidebarSection">

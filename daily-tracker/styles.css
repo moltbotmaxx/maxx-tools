@@ -6204,6 +6204,7 @@ canvas {
 
 #sourcing-view #instagramSidebarSection {
   grid-column: 3 / span 2;
+  grid-row: 1;
 }
 
 #sourcing-view .sidebar-section--reddit {
