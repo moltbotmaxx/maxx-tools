@@ -6306,12 +6306,6 @@ canvas {
   scrollbar-gutter: stable;
 }
 
-#sourcing-view .sidebar-section--instagram .sidebar-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-content: start;
-  flex: unset;
-}
 
 .sourcing-empty {
   padding: 14px 12px;
