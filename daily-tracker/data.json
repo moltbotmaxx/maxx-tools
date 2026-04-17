@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T23:03:18.706Z",
+    "generated_at": "2026-04-17T23:57:21.027Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "We're cooked",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sogx5p/were_cooked/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-17T23:17:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I almost quit OpenClaw 5 times in 2 weeks. Here's what kept breaking and how I fixed it.",
+        "link": "https://reddit.com/r/openclaw/comments/1sogwrv/i_almost_quit_openclaw_5_times_in_2_weeks_heres/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T23:17:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Want to set up an AI agent for auto reply customer on Instagram, openclaw or hermes is better?",
+        "link": "https://reddit.com/r/openclaw/comments/1sogobh/want_to_set_up_an_ai_agent_for_auto_reply/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T23:07:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What is going on?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sofogu/what_is_going_on/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-17T22:26:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Differences Between Opus 4.6 and Opus 4.7 on MineBench",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sofgno/differences_between_opus_46_and_opus_47_on/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-17T22:17:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Differences Between Opus 4.6 and Opus 4.7 on MineBench",
         "link": "https://reddit.com/r/singularity/comments/1sofehv/differences_between_opus_46_and_opus_47_on/",
@@ -379,7 +424,7 @@
         "published_at": "2026-04-17T22:15:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Are local ai’s good enough",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-17T21:19:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "OpenAI Executive Kevin Weil Is Leaving the Company As Science Division Dissolved",
@@ -397,7 +442,7 @@
         "published_at": "2026-04-17T20:24:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Chat: are we cooked?",
@@ -406,58 +451,13 @@
         "published_at": "2026-04-17T20:19:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Can anyone tell what the hell is going on with gemini? Is anyone else facing the similar problem with Google Gemini? I tried with 10 different account and devices but now the app working completely sh!t. It's not able to generate any image as I want or according to my reference. Any solution?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sobkvi/can_anyone_tell_what_the_hell_is_going_on_with/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-17T19:50:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "GPT image 2 is insane",
         "link": "https://reddit.com/r/ChatGPT/comments/1so8mjg/gpt_image_2_is_insane/",
         "subreddit": "ChatGPT",
         "published_at": "2026-04-17T18:03:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude Opus 4.7 Text Category Rankings",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1so814j/claude_opus_47_text_category_rankings/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-17T17:42:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "how they got us engaged",
-        "link": "https://reddit.com/r/aimemes/comments/1so7y4a/how_they_got_us_engaged/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-17T17:39:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Claude Design just launched and Figma dropped 4.26% in a single day, we are witnessing history in real time",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1so6z2t/claude_design_just_launched_and_figma_dropped_426/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-17T17:04:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Image generation bug",
-        "link": "https://reddit.com/r/GeminiAI/comments/1so6lpn/image_generation_bug/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-17T16:51:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T23:03:18.706Z",
+    "reddit_viral_generated_at": "2026-04-17T23:57:21.027Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
