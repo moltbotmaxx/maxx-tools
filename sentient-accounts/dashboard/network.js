@@ -88,18 +88,22 @@
 
     /* ── Node creation ──────────────────────────────────── */
     _placeNodes() {
+      const N      = this.accounts.length;
       const maxLog = Math.log(Math.max(...this.accounts.map(a => Number(a.followers) || 0), 1) + 1);
-      this.nodes.forEach((n, i) => {
-        const f      = Number(n.account.followers) || 0;
-        const ratio  = Math.log(f + 1) / maxLog;
-        n.r          = 28 + 48 * ratio;
 
-        const angle  = i * 2.3998;
-        const rawD   = 62 * Math.sqrt(i + 1);
-        const maxD   = Math.min(this.cx, this.cy) * 0.82;
-        const dist   = Math.min(rawD, maxD);
+      /* Scale spiral so the last node lands near the edge — no pileup */
+      const maxD = Math.min(this.cx * 0.88, this.cy * 0.88);
+      const k    = N > 1 ? maxD / Math.sqrt(N) : maxD;
+
+      this.nodes.forEach((n, i) => {
+        const f     = Number(n.account.followers) || 0;
+        const ratio = Math.log(f + 1) / maxLog;
+        n.r         = 22 + 40 * ratio;          /* smaller ceiling → less overlap */
+
+        const angle = i * 2.3998;               /* golden angle */
+        const dist  = i === 0 ? 0 : k * Math.sqrt(i);
         n.tx = this.cx + dist * Math.cos(angle);
-        n.ty = this.cy + dist * 0.74 * Math.sin(angle);
+        n.ty = this.cy + dist * Math.sin(angle);
         if (n.arrived) { n.x = n.tx; n.y = n.ty; }
       });
       this._links();
