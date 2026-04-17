@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T03:46:49.637Z",
+    "generated_at": "2026-04-17T06:14:47.502Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "After using Opus 4.7… yes, performance drop is real.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1snrwu3/after_using_opus_47_yes_performance_drop_is_real/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-17T05:36:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude Power Users Unanimously Agree That Opus 4.7 Is A Serious Regression",
+        "link": "https://reddit.com/r/singularity/comments/1snqqj5/claude_power_users_unanimously_agree_that_opus_47/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-17T04:34:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "All women. Are queens.",
         "link": "https://reddit.com/r/aimemes/comments/1snohe1/all_women_are_queens/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-17T02:46:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Trump officials negotiating access to Anthropic's Mythos despite blacklist",
@@ -388,7 +406,16 @@
         "published_at": "2026-04-17T02:35:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "I completely \"rebuilt\" the OpenClaw memory (it worked)",
+        "link": "https://reddit.com/r/openclaw/comments/1snns5a/i_completely_rebuilt_the_openclaw_memory_it_worked/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T02:14:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "What do you actually use OpenClaw for in real life?",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-17T01:01:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Is Sama firing at Anthropic",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-17T00:44:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "Claude Opus 4.7 (high) unexpectedly performs significantly worse than Opus 4.6 (high) on the Thematic Generalization Benchmark: 80.6 → 72.8.",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-17T00:40:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "Jensen Huang: \"Doomers are describing the end of work and killing of jobs.. same prediction ten years ago, some of the doomers were telling people not to become radiologists.\"",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-16T23:48:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "Claude Opus 4.7 is a serious regression, not an upgrade.",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-16T21:43:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "my OpenClaw texted my ex",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sng426/my_openclaw_texted_my_ex/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-16T20:53:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "lol",
-        "link": "https://reddit.com/r/ChatGPT/comments/1snfyvx/lol/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-16T20:48:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Life after Claude: My journey finding the best model for OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1snea40/life_after_claude_my_journey_finding_the_best/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-16T19:47:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T03:46:49.637Z",
+    "reddit_viral_generated_at": "2026-04-17T06:14:47.502Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
