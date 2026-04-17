@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T16:15:38.883Z",
+    "generated_at": "2026-04-17T17:09:42.256Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Nano Banana 2 creates an entirely new image rather than improving the quality of my image like I asked it to",
+        "link": "https://reddit.com/r/GeminiAI/comments/1so62gb/nano_banana_2_creates_an_entirely_new_image/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-17T16:32:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Claude CLI is available on openclaw",
         "link": "https://reddit.com/r/openclaw/comments/1so533m/claude_cli_is_available_on_openclaw/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-17T15:57:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "I asked chatgpt if I was your daughter what advise would you have for me as my dad? I can say it didn’t disappoint.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1so4m8m/i_asked_chatgpt_if_i_was_your_daughter_what/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-17T15:40:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Introducing Claude Design by Anthropic Labs",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-17T15:02:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "opus 4.7 (high) scores a 41.0% on the nyt connections extended benchmark. opus 4.6 scored 94.7%.",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-17T14:38:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "what's the cheapest way to reliably access GLM 5.1 right now?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-17T14:33:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "China has \"nearly erased\" America’s lead in AI—and the flow of tech experts moving to the U.S. is slowing to a trickle, Stanford report says",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-17T14:15:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "made a list of alternative token plans after Anthropic ban",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-17T14:12:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Just set it up!",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-17T14:12:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Printed a lobster for my desk… apparently it’s helping me “work better” 🦞",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-17T12:19:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Opus 4.7 Embarrassing much",
-        "link": "https://reddit.com/r/OpenAI/comments/1snynsw/opus_47_embarrassing_much/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-17T11:48:59+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Why is OpenClaw silently stopping with no feedback repeatedly?",
-        "link": "https://reddit.com/r/openclaw/comments/1snxxgj/why_is_openclaw_silently_stopping_with_no/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T11:13:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T16:15:38.883Z",
+    "reddit_viral_generated_at": "2026-04-17T17:09:42.256Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
