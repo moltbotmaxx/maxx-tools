@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" defer></script>
@@ -20,14 +20,24 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="backdrop"></div>
+    <div class="backdrop">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
     <div class="shell">
       <header class="hero reveal">
-        <div>
-          <p class="eyebrow">Analytics</p>
-          <h1>Sentient network</h1>
+        <div class="hero-title-group">
+          <p class="eyebrow">Analytics Dashboard</p>
+          <h1>Sentient<br><span class="title-gradient">network</span></h1>
+          <p class="hero-sub">Instagram analytics for the Sentient portfolio</p>
         </div>
         <div class="hero-meta">
+          <div class="hero-live-badge">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span>Live data</span>
+          </div>
           <div class="snapshot-status">
             <p class="muted snapshot-meta">
               <span>Data</span>
