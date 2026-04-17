@@ -105,7 +105,7 @@
       this.nodes = this.accounts.map((account, i) => {
         const f       = Number(account.followers) || 0;
         const ratio   = Math.log(f + 1) / maxLog;
-        const r       = 18 + 42 * ratio;
+        const r       = 26 + 46 * ratio;   // min 26px so small accounts are still visible
 
         // Phyllotaxis golden-angle spiral (largest near center)
         const angle  = i * 2.3998;                        // golden angle ≈ 137.5°
@@ -170,7 +170,6 @@
             : '');
         if (!url) { res(); return; }
         const img = new Image();
-        img.crossOrigin = 'anonymous';
         img.onload  = () => { this.images[acc.account] = img; res(); };
         img.onerror = () => res();
         img.src = url;
@@ -179,22 +178,26 @@
     }
 
     // ── Entrance animation ──────────────────────────────────
+    // Nodes are placed at their target positions immediately.
+    // Only `scale` animates from 0→1 so nothing has to fly across the canvas.
 
     _enter() {
       this.nodes.forEach((node, i) => {
+        // Put at resting position right away
+        node.x       = node.tx;
+        node.y       = node.ty;
+        node.arrived = true;
+        node.scale   = 0;
+
         if (typeof gsap !== 'undefined') {
           gsap.to(node, {
-            x: node.tx,
-            y: node.ty,
-            scale: 1,
-            duration: 1.0,
-            delay: i * 0.038 + 0.18,
-            ease: 'expo.out',
-            onComplete: () => { node.arrived = true; },
+            scale:    1,
+            duration: 0.55,
+            delay:    i * 0.028,
+            ease:     'back.out(1.4)',
           });
         } else {
-          node.x = node.tx; node.y = node.ty;
-          node.scale = 1; node.arrived = true;
+          node.scale = 1;
         }
       });
     }
@@ -204,10 +207,8 @@
     _update() {
       this.tick++;
       const t = this.tick * 0.01;
-
       this.nodes.forEach(n => {
-        if (!n.arrived) return;
-        n.x = n.tx + Math.sin(t * n.floatSpd + n.phase)           * n.floatAX;
+        n.x = n.tx + Math.sin(t * n.floatSpd + n.phase)            * n.floatAX;
         n.y = n.ty + Math.cos(t * n.floatSpd * 0.68 + n.phase + 1) * n.floatAY;
       });
     }
@@ -424,12 +425,12 @@
 
     // ── Lifecycle ───────────────────────────────────────────
 
-    async start() {
+    start() {
       this._setupNodes();
-      await this._loadAvatars();
       this.running = true;
-      this._enter();
 
+      // Start render loop + entrance immediately — don't block on avatar loads
+      this._enter();
       const loop = () => {
         if (!this.running) return;
         this._update();
@@ -437,6 +438,9 @@
         this.raf = requestAnimationFrame(loop);
       };
       loop();
+
+      // Avatars load in the background; they'll appear as they arrive
+      this._loadAvatars();
     }
 
     stop() {
