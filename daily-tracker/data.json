@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T15:18:13.285Z",
+    "generated_at": "2026-04-17T16:15:38.883Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Found what looks like a really aggressive deal on a managed OpenClaw setup. Am I missing something?",
-        "link": "https://reddit.com/r/openclaw/comments/1so3ko5/found_what_looks_like_a_really_aggressive_deal_on/",
+        "headline": "Claude CLI is available on openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1so533m/claude_cli_is_available_on_openclaw/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-17T15:03:22+00:00",
+        "published_at": "2026-04-17T15:57:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Introducing Claude Design by Anthropic Labs",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1so3k1y/introducing_claude_design_by_anthropic_labs/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-17T15:02:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "opus 4.7 (high) scores a 41.0% on the nyt connections extended benchmark. opus 4.6 scored 94.7%.",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-17T14:38:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "what's the cheapest way to reliably access GLM 5.1 right now?",
@@ -397,16 +406,43 @@
         "published_at": "2026-04-17T14:33:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
-        "headline": "Unitree H1 accelerating from jogging to running",
-        "link": "https://reddit.com/r/singularity/comments/1snzh84/unitree_h1_accelerating_from_jogging_to_running/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-17T12:25:34+00:00",
+        "headline": "China has \"nearly erased\" America’s lead in AI—and the flow of tech experts moving to the U.S. is slowing to a trickle, Stanford report says",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1so2933/china_has_nearly_erased_americas_lead_in_aiand/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-17T14:15:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 95
+      },
+      {
+        "headline": "made a list of alternative token plans after Anthropic ban",
+        "link": "https://reddit.com/r/openclaw/comments/1so26pp/made_a_list_of_alternative_token_plans_after/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T14:12:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Just set it up!",
+        "link": "https://reddit.com/r/openclaw/comments/1so25z4/just_set_it_up/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T14:12:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Printed a lobster for my desk… apparently it’s helping me “work better” 🦞",
+        "link": "https://reddit.com/r/openclaw/comments/1snzcni/printed_a_lobster_for_my_desk_apparently_its/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T12:19:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Opus 4.7 Embarrassing much",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-17T11:48:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Why is OpenClaw silently stopping with no feedback repeatedly?",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-17T11:13:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Opus 4.7 vs Gemini 3.1 Pro vs GPT 5.4",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1snxjy2/opus_47_vs_gemini_31_pro_vs_gpt_54/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-17T10:54:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Have you seen robots doing aerial yoga?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1snwg5l/have_you_seen_robots_doing_aerial_yoga/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-17T09:54:52+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "[ Removed by Reddit ]",
-        "link": "https://reddit.com/r/GeminiAI/comments/1snvj9y/removed_by_reddit/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-17T09:02:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Opus 4.7 with literally anything",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1snuu1o/opus_47_with_literally_anything/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-17T08:20:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T15:18:13.285Z",
+    "reddit_viral_generated_at": "2026-04-17T16:15:38.883Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
