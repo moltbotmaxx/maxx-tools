@@ -414,6 +414,22 @@ async function renderDashboardData(rawData, errorsPayload) {
   if (data.accounts.length) {
     state.selectedAccount = selectAccountFromData(data.accounts, state.selectedAccount);
     renderAccountList(data.accounts);
+
+    // Network visualization — only (re)create when data version changes
+    if (typeof NetworkGraph !== "undefined" && document.getElementById("networkContainer")) {
+      const version = data.snapshot_date || data.generated_at || String(data.accounts.length);
+      if (!window._networkGraph || window._networkGraph._dataVersion !== version) {
+        if (window._networkGraph) window._networkGraph.stop();
+        window._networkGraph = new NetworkGraph("networkContainer", data.accounts, (account) => {
+          state.selectedAccount = account;
+          renderAccountDetail(account);
+          if (window.sentientNav) window.sentientNav.navigateTo("detail");
+        });
+        window._networkGraph._dataVersion = version;
+        window._networkGraph.start();
+      }
+    }
+
     await renderAccountDetail(state.selectedAccount);
   } else {
     state.selectedAccount = null;

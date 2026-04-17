@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" defer></script>
     <script src="./config.js" defer></script>
+    <script src="./network.js" defer></script>
     <script src="./transitions.js" defer></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
@@ -130,14 +131,46 @@
         </div>
       </div>
 
-      <!-- Page 3: Accounts -->
+      <!-- Page 3: Accounts network -->
       <div class="page page--hidden" data-page="accounts" role="tabpanel">
-        <div class="page-inner">
-          <div class="page-heading">
-            <span class="eyebrow">Accounts</span>
-            <h2>Choose an<br><em>account</em></h2>
+        <div class="page-inner page-inner--network">
+
+          <div class="network-bar">
+            <div>
+              <span class="eyebrow">Network</span>
+              <p class="network-hint">Hover to inspect · click node to open profile</p>
+            </div>
+            <div class="network-legend">
+              <span class="legend-item">
+                <span class="legend-dot" style="background:#00e5ff;box-shadow:0 0 6px #00e5ff"></span>
+                &gt;3% eng
+              </span>
+              <span class="legend-item">
+                <span class="legend-dot" style="background:#cfff04;box-shadow:0 0 6px #cfff04"></span>
+                &gt;1.5%
+              </span>
+              <span class="legend-item">
+                <span class="legend-dot" style="background:#a855f7;box-shadow:0 0 6px #a855f7"></span>
+                &gt;0.5%
+              </span>
+            </div>
           </div>
-          <div id="accountList" class="account-list"></div>
+
+          <!-- Network canvas is injected here by network.js -->
+          <div id="networkContainer" class="network-container">
+            <!-- Tooltip -->
+            <div id="networkTooltip" class="net-tooltip" data-visible="false">
+              <p class="net-tt-name">—</p>
+              <p class="net-tt-followers">—</p>
+              <p class="net-tt-engagement">—</p>
+              <p class="net-tt-posts">—</p>
+              <p class="net-tt-hint">Click to view profile →</p>
+            </div>
+          </div>
+
+          <!-- Hidden chip list keeps JS state working -->
+          <div id="accountList" class="account-list" aria-hidden="true" style="display:none"></div>
+
         </div>
       </div>
 
