@@ -1,25 +1,20 @@
 /* ─────────────────────────────────────────────────────────
-   Sentient Network Graph · Canvas force visualization
+   Sentient Network Graph · Canvas visualization
    ───────────────────────────────────────────────────────── */
 
 (function () {
   'use strict';
 
-  // Engagement tier colors
-  const RIM = {
-    top:  { solid: '#00e5ff', a: 'rgba(0,229,255,'   },
-    good: { solid: '#cfff04', a: 'rgba(207,255,4,'   },
-    avg:  { solid: '#a855f7', a: 'rgba(168,85,247,'  },
-    low:  { solid: '#3a3a48', a: 'rgba(58,58,72,'    },
-  };
-
-  function tierFor(eng) {
+  /* ── Engagement colour tiers ──────────────────────────── */
+  function rimColor(eng) {
     const e = Number(eng) || 0;
-    if (e >= 3)   return RIM.top;
-    if (e >= 1.5) return RIM.good;
-    if (e >= 0.5) return RIM.avg;
-    return RIM.low;
+    if (e >= 3)   return { h: '#00e5ff', r: 0,   g: 229, b: 255 };
+    if (e >= 1.5) return { h: '#cfff04', r: 207, g: 255, b: 4   };
+    if (e >= 0.5) return { h: '#a855f7', r: 168, g: 85,  b: 247 };
+    return               { h: '#6366f1', r: 99,  g: 102, b: 241 };
   }
+
+  function rgba(c, a) { return `rgba(${c.r},${c.g},${c.b},${a})`; }
 
   function fmt(v) {
     const n = Number(v) || 0;
@@ -28,201 +23,180 @@
     return String(n);
   }
 
+  /* ── Easing ───────────────────────────────────────────── */
+  function easeOutBack(t) {
+    const c1 = 1.70158, c3 = c1 + 1;
+    return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+  }
+
+  /* ── NetworkGraph ─────────────────────────────────────── */
   class NetworkGraph {
     constructor(containerId, accounts, onSelect) {
-      this.container = document.getElementById(containerId);
-      if (!this.container) return;
+      this.el       = document.getElementById(containerId);
+      if (!this.el) return;
 
       this.accounts = accounts;
       this.onSelect = onSelect;
       this.nodes    = [];
       this.links    = [];
-      this.images   = {};
-      this.mouse    = { x: -9999, y: -9999 };
+      this.imgs     = {};
+      this.mx       = -9999;
+      this.my       = -9999;
       this.hovered  = null;
       this.running  = false;
       this.raf      = null;
       this.tick     = 0;
       this._dataVersion = null;
 
-      this.tooltip  = document.getElementById('networkTooltip');
+      this.tt = document.getElementById('networkTooltip');
 
-      // Build canvas
-      this.canvas = document.createElement('canvas');
-      this.canvas.className = 'network-canvas';
-      this.ctx = this.canvas.getContext('2d');
-      this.container.appendChild(this.canvas);
+      /* build canvas */
+      this.cv  = document.createElement('canvas');
+      this.cv.className = 'network-canvas';
+      this.ctx = this.cv.getContext('2d');
+      this.el.appendChild(this.cv);
 
-      // Bind event handlers
-      this._mm = this._onMove.bind(this);
-      this._ml = this._onLeave.bind(this);
-      this._mc = this._onClick.bind(this);
-      this.canvas.addEventListener('mousemove',  this._mm);
-      this.canvas.addEventListener('mouseleave', this._ml);
-      this.canvas.addEventListener('click',      this._mc);
+      this._mm  = e => this._move(e);
+      this._ml  = ()  => this._leave();
+      this._mc  = ()  => this._click();
+      this.cv.addEventListener('mousemove',  this._mm);
+      this.cv.addEventListener('mouseleave', this._ml);
+      this.cv.addEventListener('click',      this._mc);
 
+      this._ro = () => this.resize();
+      window.addEventListener('resize', this._ro);
       this.resize();
-      this._resizeObs = () => this.resize();
-      window.addEventListener('resize', this._resizeObs);
     }
 
+    /* ── Canvas sizing ──────────────────────────────────── */
     resize() {
       const dpr  = window.devicePixelRatio || 1;
-      const rect = this.container.getBoundingClientRect();
-      // Use container dimensions if visible, otherwise fall back to CSS-computed values
-      this.W = rect.width  > 10 ? rect.width  : this.container.offsetWidth  || 900;
-      this.H = rect.height > 10 ? rect.height : this.container.offsetHeight || 500;
-      this.canvas.width  = Math.floor(this.W * dpr);
-      this.canvas.height = Math.floor(this.H * dpr);
-      this.canvas.style.width  = `${this.W}px`;
-      this.canvas.style.height = `${this.H}px`;
+      const r    = this.el.getBoundingClientRect();
+      this.W     = r.width  > 10 ? r.width  : this.el.offsetWidth  || 960;
+      this.H     = r.height > 10 ? r.height : this.el.offsetHeight || 520;
+      this.cv.width  = Math.floor(this.W * dpr);
+      this.cv.height = Math.floor(this.H * dpr);
+      this.cv.style.width  = `${this.W}px`;
+      this.cv.style.height = `${this.H}px`;
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       this.cx = this.W / 2;
       this.cy = this.H / 2;
 
-      // Reposition nodes on resize if they already exist
-      if (this.nodes.length) {
-        this.nodes.forEach((node, i) => {
-          const angle = i * 2.3998;
-          const rawD  = 58 * Math.sqrt(i + 1);
-          const maxD  = Math.min(this.cx, this.cy) * 0.80;
-          const dist  = Math.min(rawD, maxD);
-          node.tx = this.cx + dist * Math.cos(angle);
-          node.ty = this.cy + dist * 0.72 * Math.sin(angle);
-          if (node.arrived) { node.x = node.tx; node.y = node.ty; }
-        });
-        this._buildLinks();
-      }
+      /* reposition nodes after resize */
+      if (this.nodes.length) this._placeNodes();
     }
 
-    // ── Node setup ─────────────────────────────────────────
+    /* ── Node creation ──────────────────────────────────── */
+    _placeNodes() {
+      const maxLog = Math.log(Math.max(...this.accounts.map(a => Number(a.followers) || 0), 1) + 1);
+      this.nodes.forEach((n, i) => {
+        const f      = Number(n.account.followers) || 0;
+        const ratio  = Math.log(f + 1) / maxLog;
+        n.r          = 28 + 48 * ratio;
+
+        const angle  = i * 2.3998;
+        const rawD   = 62 * Math.sqrt(i + 1);
+        const maxD   = Math.min(this.cx, this.cy) * 0.82;
+        const dist   = Math.min(rawD, maxD);
+        n.tx = this.cx + dist * Math.cos(angle);
+        n.ty = this.cy + dist * 0.74 * Math.sin(angle);
+        if (n.arrived) { n.x = n.tx; n.y = n.ty; }
+      });
+      this._links();
+    }
 
     _setupNodes() {
-      const maxF   = Math.max(...this.accounts.map(a => Number(a.followers) || 0), 1);
-      const maxLog = Math.log(maxF + 1);
-      const CX = this.cx, CY = this.cy;
-
-      this.nodes = this.accounts.map((account, i) => {
-        const f       = Number(account.followers) || 0;
-        const ratio   = Math.log(f + 1) / maxLog;
-        const r       = 26 + 46 * ratio;   // min 26px so small accounts are still visible
-
-        // Phyllotaxis golden-angle spiral (largest near center)
-        const angle  = i * 2.3998;                        // golden angle ≈ 137.5°
-        const rawD   = 58 * Math.sqrt(i + 1);
-        const maxD   = Math.min(CX, CY) * 0.80;
-        const dist   = Math.min(rawD, maxD);
-        const tx     = CX + dist * Math.cos(angle);
-        const ty     = CY + dist * 0.72 * Math.sin(angle);
-
-        return {
-          account,
-          x: CX, y: CY,          // start at center for entrance
-          tx, ty,                 // resting position
-          r,
-          rim: tierFor(account.engagement_rate),
-          scale: 0,
-          arrived: false,
-          phase:      Math.random() * Math.PI * 2,
-          floatSpd:   0.25 + Math.random() * 0.32,
-          floatAX:    2   + Math.random() * 3.5,
-          floatAY:    1.2 + Math.random() * 2.2,
-        };
-      });
-
-      this._buildLinks();
+      this.nodes = this.accounts.map((account, i) => ({
+        account,
+        x: this.cx, y: this.cy,
+        tx: 0, ty: 0,
+        r: 28,
+        col: rimColor(account.engagement_rate),
+        scale: 0,
+        arrived: false,
+        _enterAt: 0,
+        phase:    Math.random() * Math.PI * 2,
+        fspd:     0.22 + Math.random() * 0.28,
+        fax:      2.5  + Math.random() * 3.5,
+        fay:      1.5  + Math.random() * 2.5,
+      }));
+      this._placeNodes();
     }
 
-    _buildLinks() {
+    _links() {
       this.links = [];
       const seen = new Set();
-
       this.nodes.forEach((a, i) => {
-        // Connect each node to 2–3 nearest neighbours
         this.nodes
-          .map((b, j) => {
-            if (i === j) return null;
-            const dx = b.tx - a.tx, dy = b.ty - a.ty;
-            return { j, d: Math.sqrt(dx * dx + dy * dy) };
-          })
+          .map((b, j) => i === j ? null : { j, d: Math.hypot(b.tx - a.tx, b.ty - a.ty) })
           .filter(Boolean)
           .sort((x, y) => x.d - y.d)
           .slice(0, 3)
           .forEach(({ j }) => {
-            const key = `${Math.min(i, j)}-${Math.max(i, j)}`;
-            if (!seen.has(key)) {
-              seen.add(key);
-              this.links.push({ a: this.nodes[i], b: this.nodes[j] });
-            }
+            const k = `${Math.min(i, j)}-${Math.max(i, j)}`;
+            if (!seen.has(k)) { seen.add(k); this.links.push({ a: this.nodes[i], b: this.nodes[j] }); }
           });
       });
     }
 
-    // ── Avatar loading ──────────────────────────────────────
-
-    async _loadAvatars() {
-      const jobs = this.accounts.map(acc => new Promise(res => {
-        const url =
-          acc.avatar_path ||
-          acc.profile_pic_url ||
-          (acc.data_status !== 'placeholder_pending_collection' && acc.account
-            ? `../avatars/${encodeURIComponent(acc.account)}.jpg`
-            : '');
-        if (!url) { res(); return; }
+    /* ── Avatars (fire-and-forget) ──────────────────────── */
+    _loadImgs() {
+      this.accounts.forEach(acc => {
+        const url = acc.avatar_path || acc.profile_pic_url
+          || (acc.data_status !== 'placeholder_pending_collection' && acc.account
+              ? `../avatars/${encodeURIComponent(acc.account)}.jpg` : '');
+        if (!url) return;
         const img = new Image();
-        img.onload  = () => { this.images[acc.account] = img; res(); };
-        img.onerror = () => res();
+        img.onload = () => { this.imgs[acc.account] = img; };
         img.src = url;
-      }));
-      await Promise.allSettled(jobs);
-    }
-
-    // ── Entrance animation ──────────────────────────────────
-    // Nodes are placed at their target positions immediately.
-    // Only `scale` animates from 0→1 so nothing has to fly across the canvas.
-
-    _enter() {
-      this.nodes.forEach((node, i) => {
-        // Put at resting position right away
-        node.x       = node.tx;
-        node.y       = node.ty;
-        node.arrived = true;
-        node.scale   = 0;
-
-        if (typeof gsap !== 'undefined') {
-          gsap.to(node, {
-            scale:    1,
-            duration: 0.55,
-            delay:    i * 0.028,
-            ease:     'back.out(1.4)',
-          });
-        } else {
-          node.scale = 1;
-        }
       });
     }
 
-    // ── Physics update ──────────────────────────────────────
+    /* ── Entrance animation (manual timing — no GSAP) ───── */
+    _enter() {
+      const now = performance.now();
+      this.nodes.forEach((n, i) => {
+        n.x       = n.tx;
+        n.y       = n.ty;
+        n.scale   = 0;
+        n.arrived = true;
+        n._enterAt = now + i * 32;   /* 32 ms stagger */
+      });
+    }
 
+    /* ── Update loop ────────────────────────────────────── */
     _update() {
       this.tick++;
-      const t = this.tick * 0.01;
+      const now = performance.now();
+      const t   = this.tick * 0.01;
+
       this.nodes.forEach(n => {
-        n.x = n.tx + Math.sin(t * n.floatSpd + n.phase)            * n.floatAX;
-        n.y = n.ty + Math.cos(t * n.floatSpd * 0.68 + n.phase + 1) * n.floatAY;
+        /* scale-in */
+        if (n.scale < 1) {
+          const el = now - n._enterAt;
+          if (el > 0) n.scale = Math.min(1, easeOutBack(Math.min(el / 480, 1)));
+        }
+        /* float */
+        n.x = n.tx + Math.sin(t * n.fspd + n.phase)           * n.fax;
+        n.y = n.ty + Math.cos(t * n.fspd * 0.68 + n.phase + 1) * n.fay;
       });
     }
 
-    // ── Rendering ───────────────────────────────────────────
-
+    /* ── Draw ───────────────────────────────────────────── */
     _draw() {
       const ctx = this.ctx;
       ctx.clearRect(0, 0, this.W, this.H);
+
+      /* subtle radial vignette so nodes read against background */
+      const vg = ctx.createRadialGradient(this.cx, this.cy, 0, this.cx, this.cy, Math.max(this.W, this.H) * 0.62);
+      vg.addColorStop(0, 'rgba(16,16,26,0.55)');
+      vg.addColorStop(1, 'rgba(4,4,8,0)');
+      ctx.fillStyle = vg;
+      ctx.fillRect(0, 0, this.W, this.H);
+
       this._drawLinks();
-      // Largest nodes render first (go underneath smaller)
-      [...this.nodes]
-        .sort((a, b) => b.r - a.r)
-        .forEach(n => this._drawNode(n));
+      /* large nodes first (underneath smaller ones) */
+      [...this.nodes].sort((a, b) => b.r - a.r).forEach(n => this._drawNode(n));
     }
 
     _drawLinks() {
@@ -230,106 +204,92 @@
       const diag = Math.hypot(this.W, this.H);
 
       this.links.forEach(({ a, b }) => {
-        const dx = b.x - a.x, dy = b.y - a.y;
-        const d  = Math.hypot(dx, dy);
-        const base = Math.max(0, 0.13 - d / diag * 0.22);
-        if (base <= 0.004) return;
+        const d    = Math.hypot(b.x - a.x, b.y - a.y);
+        const base = Math.max(0, 0.18 - d / diag * 0.22);
+        if (base < 0.005) return;
 
         const hot   = this.hovered && (a === this.hovered || b === this.hovered);
-        const alpha = hot ? Math.min(base * 4, 0.5) : base;
-        const color = hot
-          ? `rgba(207,255,4,${alpha})`
-          : `rgba(207,255,4,${alpha})`;
-
-        // Gentle curve
-        const mx = (a.x + b.x) / 2 - dy * 0.1;
-        const my = (a.y + b.y) / 2 + dx * 0.1;
+        const alpha = hot ? Math.min(base * 5, 0.6) : base;
+        const mx    = (a.x + b.x) / 2 - (b.y - a.y) * 0.1;
+        const my    = (a.y + b.y) / 2 + (b.x - a.x) * 0.1;
 
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.quadraticCurveTo(mx, my, b.x, b.y);
-        ctx.strokeStyle = color;
+        ctx.strokeStyle = hot ? `rgba(207,255,4,${alpha})` : `rgba(180,180,255,${alpha})`;
         ctx.lineWidth   = hot ? 1.2 : 0.5;
         ctx.stroke();
       });
     }
 
-    _drawNode(node) {
+    _drawNode(n) {
       const ctx  = this.ctx;
-      const { x, y, r, scale, rim } = node;
-      const sr   = r * scale;
-      if (sr < 0.5) return;
+      const { x, y, r, scale, col } = n;
+      const sr   = r * Math.max(scale, 0);
+      if (sr < 1) return;
 
-      const isHov = node === this.hovered;
+      const isHov = n === this.hovered;
 
       ctx.save();
 
-      // ── Outer glow ────────────────────────────────────────
-      if (isHov) {
-        // Soft radial halo
-        const halo = ctx.createRadialGradient(x, y, sr * 0.6, x, y, sr * 2.2);
-        halo.addColorStop(0, `${rim.a}0.18)`);
-        halo.addColorStop(1, `${rim.a}0)`);
-        ctx.beginPath();
-        ctx.arc(x, y, sr * 2.2, 0, Math.PI * 2);
-        ctx.fillStyle = halo;
-        ctx.fill();
-      }
+      /* ── outer halo ──────────────────────────────────── */
+      const haloR = sr * (isHov ? 2.0 : 1.6);
+      const halo  = ctx.createRadialGradient(x, y, sr * 0.5, x, y, haloR);
+      halo.addColorStop(0, rgba(col, isHov ? 0.22 : 0.10));
+      halo.addColorStop(1, rgba(col, 0));
+      ctx.beginPath();
+      ctx.arc(x, y, haloR, 0, Math.PI * 2);
+      ctx.fillStyle = halo;
+      ctx.fill();
 
-      // ── Shadow glow ───────────────────────────────────────
-      ctx.shadowBlur  = isHov ? 28 : (scale < 0.98 ? 12 : 0);
-      ctx.shadowColor = rim.solid;
+      /* ── shadow glow ──────────────────────────────────── */
+      ctx.shadowBlur  = isHov ? 32 : 14;
+      ctx.shadowColor = col.h;
 
-      // ── Background disk ───────────────────────────────────
+      /* ── background disk ──────────────────────────────── */
+      const bg = ctx.createRadialGradient(x - sr * 0.3, y - sr * 0.35, 0, x, y, sr);
+      bg.addColorStop(0, '#22223a');
+      bg.addColorStop(1, '#0e0e1c');
       ctx.beginPath();
       ctx.arc(x, y, sr, 0, Math.PI * 2);
-      ctx.fillStyle = '#0b0b12';
+      ctx.fillStyle = bg;
       ctx.fill();
       ctx.shadowBlur = 0;
 
-      // ── Avatar or initial ─────────────────────────────────
-      const img = this.images[node.account.account];
+      /* ── avatar or initial ───────────────────────────── */
+      const img = this.imgs[n.account.account];
       if (img) {
         ctx.save();
         ctx.beginPath();
-        ctx.arc(x, y, sr - 1.5, 0, Math.PI * 2);
+        ctx.arc(x, y, sr - 2, 0, Math.PI * 2);
         ctx.clip();
-        const d = (sr - 1.5) * 2;
-        ctx.drawImage(img, x - sr + 1.5, y - sr + 1.5, d, d);
+        ctx.drawImage(img, x - sr + 2, y - sr + 2, (sr - 2) * 2, (sr - 2) * 2);
         ctx.restore();
       } else {
-        // Gradient fill + letter
-        const bg = ctx.createRadialGradient(x - sr * 0.28, y - sr * 0.28, 0, x, y, sr);
-        bg.addColorStop(0, '#1e1e2c');
-        bg.addColorStop(1, '#0b0b12');
-        ctx.beginPath();
-        ctx.arc(x, y, sr - 1.5, 0, Math.PI * 2);
-        ctx.fillStyle = bg;
-        ctx.fill();
-
-        const fs = Math.max(11, sr * 0.42);
-        ctx.font         = `600 ${fs}px "Space Grotesk", sans-serif`;
-        ctx.fillStyle    = rim.solid;
+        /* initial letter */
+        const fs = Math.max(12, sr * 0.44);
+        ctx.font         = `700 ${fs}px "Space Grotesk", sans-serif`;
+        ctx.fillStyle    = isHov ? '#ffffff' : rgba(col, 0.9);
         ctx.textAlign    = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(node.account.account.charAt(0).toUpperCase(), x, y);
+        ctx.fillText(n.account.account.charAt(0).toUpperCase(), x, y);
       }
 
-      // ── Rim ring ──────────────────────────────────────────
+      /* ── rim ─────────────────────────────────────────── */
       ctx.beginPath();
       ctx.arc(x, y, sr, 0, Math.PI * 2);
-      ctx.strokeStyle = isHov ? rim.solid : `${rim.a}0.5)`;
-      ctx.lineWidth   = isHov ? 2.5 : 1.2;
+      ctx.strokeStyle = isHov ? col.h : rgba(col, 0.65);
+      ctx.lineWidth   = isHov ? 2.5 : 1.5;
       ctx.stroke();
 
-      // ── Engagement arc (outer progress ring) ─────────────
-      const eng   = Math.min(Number(node.account.engagement_rate) || 0, 8);
+      /* ── engagement arc ──────────────────────────────── */
+      const eng   = Math.min(Number(n.account.engagement_rate) || 0, 8);
       const sweep = (eng / 8) * Math.PI * 2;
       if (sweep > 0.06) {
         ctx.beginPath();
-        ctx.arc(x, y, sr + 5.5, -Math.PI / 2, -Math.PI / 2 + sweep);
-        ctx.strokeStyle = isHov ? rim.solid : `${rim.a}0.6)`;
-        ctx.lineWidth   = isHov ? 2.5 : 1.5;
+        ctx.arc(x, y, sr + 5, -Math.PI / 2, -Math.PI / 2 + sweep);
+        ctx.strokeStyle = isHov ? col.h : rgba(col, 0.7);
+        ctx.lineWidth   = 2;
         ctx.lineCap     = 'round';
         ctx.stroke();
         ctx.lineCap = 'butt';
@@ -337,100 +297,81 @@
 
       ctx.restore();
 
-      // ── Label ─────────────────────────────────────────────
-      this._drawLabel(node, sr, isHov);
+      /* ── label ───────────────────────────────────────── */
+      if (sr > 18) this._label(n, sr, isHov);
     }
 
-    _drawLabel(node, sr, isHov) {
+    _label(n, sr, isHov) {
       const ctx = this.ctx;
-      const lY  = node.y + sr + 14;
-
+      const ly  = n.y + sr + 14;
       ctx.save();
       ctx.textAlign    = 'center';
       ctx.textBaseline = 'top';
-
       ctx.font      = `${isHov ? 600 : 500} ${isHov ? 12 : 11}px "Space Grotesk", sans-serif`;
-      ctx.fillStyle = isHov ? '#f0f0f0' : 'rgba(235,235,235,0.58)';
-      ctx.fillText(`@${node.account.account}`, node.x, lY);
-
-      ctx.font      = '400 9px "IBM Plex Mono", monospace';
-      ctx.fillStyle = 'rgba(90,90,108,0.85)';
-      ctx.fillText(fmt(node.account.followers), node.x, lY + 16);
-
+      ctx.fillStyle = isHov ? '#f0f0f0' : 'rgba(220,220,230,0.65)';
+      ctx.fillText(`@${n.account.account}`, n.x, ly);
+      ctx.font      = `400 9px "IBM Plex Mono", monospace`;
+      ctx.fillStyle = 'rgba(120,120,140,0.75)';
+      ctx.fillText(fmt(n.account.followers), n.x, ly + 16);
       ctx.restore();
     }
 
-    // ── Interaction ─────────────────────────────────────────
+    /* ── Mouse ──────────────────────────────────────────── */
+    _move(e) {
+      const r = this.cv.getBoundingClientRect();
+      this.mx = e.clientX - r.left;
+      this.my = e.clientY - r.top;
 
-    _onMove(e) {
-      const rect = this.canvas.getBoundingClientRect();
-      this.mouse.x = e.clientX - rect.left;
-      this.mouse.y = e.clientY - rect.top;
-
-      let best = null, minD = Infinity;
+      let best = null, md = Infinity;
       this.nodes.forEach(n => {
-        const dx = this.mouse.x - n.x, dy = this.mouse.y - n.y;
-        const d  = Math.hypot(dx, dy);
-        if (d < n.r * n.scale + 12 && d < minD) { best = n; minD = d; }
+        const d = Math.hypot(this.mx - n.x, this.my - n.y);
+        if (d < n.r * n.scale + 10 && d < md) { best = n; md = d; }
       });
-
       this.hovered = best;
-      this.canvas.style.cursor = best ? 'pointer' : 'default';
-
-      if (best) {
-        this._showTip(best);
-      } else if (this.tooltip) {
-        this.tooltip.dataset.visible = 'false';
-      }
+      this.cv.style.cursor = best ? 'pointer' : 'default';
+      best ? this._tip(best) : (this.tt && (this.tt.dataset.visible = 'false'));
     }
 
-    _onLeave() {
+    _leave() {
       this.hovered = null;
-      if (this.tooltip) this.tooltip.dataset.visible = 'false';
-      this.canvas.style.cursor = 'default';
+      this.cv.style.cursor = 'default';
+      if (this.tt) this.tt.dataset.visible = 'false';
     }
 
-    _onClick() {
-      if (this.hovered && this.onSelect) {
-        this.onSelect(this.hovered.account);
-      }
+    _click() {
+      if (this.hovered && this.onSelect) this.onSelect(this.hovered.account);
     }
 
-    _showTip(node) {
-      const tt = this.tooltip;
-      if (!tt) return;
-      const a   = node.account;
+    _tip(n) {
+      if (!this.tt) return;
+      const a   = n.account;
       const eng = (Number(a.engagement_rate) || 0).toFixed(2);
+      this.tt.querySelector('.net-tt-name').textContent       = `@${a.account}`;
+      this.tt.querySelector('.net-tt-followers').textContent  = `${fmt(a.followers)} followers`;
+      this.tt.querySelector('.net-tt-engagement').textContent = `${eng}% engagement`;
+      this.tt.querySelector('.net-tt-posts').textContent      = `${fmt(a.posts)} posts`;
 
-      tt.querySelector('.net-tt-name').textContent        = `@${a.account}`;
-      tt.querySelector('.net-tt-followers').textContent   = `${fmt(a.followers)} followers`;
-      tt.querySelector('.net-tt-engagement').textContent  = `${eng}% engagement`;
-      tt.querySelector('.net-tt-posts').textContent       = `${fmt(a.posts)} posts`;
-
-      // Position near node, keep within canvas bounds
-      const cRect   = this.canvas.getBoundingClientRect();
-      const pRect   = tt.parentElement.getBoundingClientRect();
-      const offX    = cRect.left - pRect.left;
-      const offY    = cRect.top  - pRect.top;
-      const TW      = 196, TH = 124;
-      let tx = offX + node.x + node.r * node.scale + 18;
-      let ty = offY + node.y - TH / 2;
-      if (tx + TW > this.W - 8) tx = offX + node.x - node.r * node.scale - TW - 18;
+      const cr = this.cv.getBoundingClientRect();
+      const pr = this.tt.parentElement.getBoundingClientRect();
+      const ox = cr.left - pr.left, oy = cr.top - pr.top;
+      const TW = 196, TH = 124;
+      let tx = ox + n.x + n.r * n.scale + 18;
+      let ty = oy + n.y - TH / 2;
+      if (tx + TW > this.W - 8) tx = ox + n.x - n.r * n.scale - TW - 18;
       if (ty < 8)                ty = 8;
       if (ty + TH > this.H - 8) ty = this.H - TH - 8;
 
-      tt.style.transform  = `translate(${tx}px, ${ty}px)`;
-      tt.dataset.visible  = 'true';
+      this.tt.style.transform = `translate(${tx}px,${ty}px)`;
+      this.tt.dataset.visible = 'true';
     }
 
-    // ── Lifecycle ───────────────────────────────────────────
-
+    /* ── Lifecycle ──────────────────────────────────────── */
     start() {
       this._setupNodes();
       this.running = true;
+      this._enter();        /* position nodes, start scale-in timer */
+      this._loadImgs();     /* avatars load async in background */
 
-      // Start render loop + entrance immediately — don't block on avatar loads
-      this._enter();
       const loop = () => {
         if (!this.running) return;
         this._update();
@@ -438,19 +379,16 @@
         this.raf = requestAnimationFrame(loop);
       };
       loop();
-
-      // Avatars load in the background; they'll appear as they arrive
-      this._loadAvatars();
     }
 
     stop() {
       this.running = false;
       if (this.raf) { cancelAnimationFrame(this.raf); this.raf = null; }
-      this.canvas.removeEventListener('mousemove',  this._mm);
-      this.canvas.removeEventListener('mouseleave', this._ml);
-      this.canvas.removeEventListener('click',      this._mc);
-      window.removeEventListener('resize', this._resizeObs);
-      if (this.canvas.parentElement) this.canvas.parentElement.removeChild(this.canvas);
+      this.cv.removeEventListener('mousemove',  this._mm);
+      this.cv.removeEventListener('mouseleave', this._ml);
+      this.cv.removeEventListener('click',      this._mc);
+      window.removeEventListener('resize',      this._ro);
+      if (this.cv.parentElement) this.cv.parentElement.removeChild(this.cv);
     }
   }
 
