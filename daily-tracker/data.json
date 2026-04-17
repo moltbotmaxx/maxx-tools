@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T21:05:04.484Z",
+    "generated_at": "2026-04-17T22:02:35.010Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "OpenClaw muutti elämäni – ja nyt naapurin kissa luulee minua jumalaksi (enkä edes kiistä)",
-        "link": "https://reddit.com/r/openclaw/comments/1sodb5p/openclaw_muutti_el%C3%A4m%C3%A4ni_ja_nyt_naapurin_kissa/",
+        "headline": "Are local ai’s good enough",
+        "link": "https://reddit.com/r/openclaw/comments/1sodzgk/are_local_ais_good_enough/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-17T20:54:37+00:00",
+        "published_at": "2026-04-17T21:19:44+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "OpenAI Executive Kevin Weil Is Leaving the Company As Science Division Dissolved",
+        "link": "https://reddit.com/r/singularity/comments/1soci91/openai_executive_kevin_weil_is_leaving_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-17T20:24:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "GPT image 2 is insane",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-17T18:03:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Claude Opus 4.7 Text Category Rankings",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-17T17:42:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "how they got us engaged",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-17T17:39:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Claude Design just launched and Figma dropped 4.26% in a single day, we are witnessing history in real time",
@@ -415,7 +424,16 @@
         "published_at": "2026-04-17T17:04:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
+      },
+      {
+        "headline": "Image generation bug",
+        "link": "https://reddit.com/r/GeminiAI/comments/1so6lpn/image_generation_bug/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-17T16:51:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "Thanks Gemini",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-17T16:46:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Nano Banana 2 creates an entirely new image rather than improving the quality of my image like I asked it to",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-17T16:32:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "Claude CLI is available on openclaw",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-17T15:57:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I asked chatgpt if I was your daughter what advise would you have for me as my dad? I can say it didn’t disappoint.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1so4m8m/i_asked_chatgpt_if_i_was_your_daughter_what/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-17T15:40:35+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "How setup right ollama cloud with vision and tools?",
-        "link": "https://reddit.com/r/openclaw/comments/1so3sqc/how_setup_right_ollama_cloud_with_vision_and_tools/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T15:11:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T21:05:04.484Z",
+    "reddit_viral_generated_at": "2026-04-17T22:02:35.010Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
