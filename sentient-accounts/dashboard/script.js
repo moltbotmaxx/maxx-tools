@@ -1129,6 +1129,7 @@ function renderAccountList(accounts) {
       state.selectedAccount = account;
       renderAccountList(accounts);
       renderAccountDetail(account);
+      if (window.sentientNav) window.sentientNav.navigateTo("detail");
     });
 
     container.appendChild(button);

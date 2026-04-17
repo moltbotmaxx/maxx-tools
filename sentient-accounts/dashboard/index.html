@@ -4,67 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sentient network</title>
-    <meta
-      name="description"
-      content="Instagram analytics dashboard for the Sentient network."
-    />
+    <meta name="description" content="Instagram analytics dashboard for the Sentient network." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- GSAP (loads first so transitions.js can use it) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" defer></script>
     <script src="./config.js" defer></script>
+    <script src="./transitions.js" defer></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+
+    <!-- ── Background ── -->
     <div class="backdrop">
       <div class="blob blob-1"></div>
       <div class="blob blob-2"></div>
       <div class="blob blob-3"></div>
       <div class="grid-overlay"></div>
     </div>
-    <div class="shell">
-      <header class="hero reveal">
-        <div class="hero-title-group">
-          <p class="eyebrow">Analytics Dashboard</p>
-          <h1>Sentient<br><span class="title-gradient">network</span></h1>
-          <p class="hero-sub">Instagram analytics for the Sentient portfolio</p>
-        </div>
-        <div class="hero-meta">
-          <div class="hero-live-badge">
-            <span class="live-dot" aria-hidden="true"></span>
-            <span>Live data</span>
-          </div>
-          <div class="snapshot-status">
-            <p class="muted snapshot-meta">
-              <span>Data</span>
-              <span class="snapshot-separator" aria-hidden="true">&middot;</span>
-              <span>March–April 2026</span>
-            </p>
-          </div>
-        </div>
-      </header>
 
-      <section id="statusBanner" class="status-banner hidden" role="status" aria-live="polite"></section>
+    <!-- ── Custom cursor ── -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
 
-      <main class="layout">
-        <section class="panel reveal">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Overview</p>
-              <h2>Portfolio snapshot</h2>
+    <!-- ── Top navigation ── -->
+    <nav class="site-nav" id="siteNav">
+      <button class="nav-logo" data-page="overview">
+        <span class="nav-logo-name">Sentient</span>
+        <span class="nav-logo-sub">network</span>
+      </button>
+
+      <div class="nav-links" role="tablist">
+        <button class="nav-link active" data-page="overview" role="tab">
+          <span class="nav-num">01</span>
+          <span class="nav-label">Overview</span>
+        </button>
+        <button class="nav-link" data-page="charts" role="tab">
+          <span class="nav-num">02</span>
+          <span class="nav-label">Charts</span>
+        </button>
+        <button class="nav-link" data-page="accounts" role="tab">
+          <span class="nav-num">03</span>
+          <span class="nav-label">Accounts</span>
+        </button>
+        <button class="nav-link" data-page="detail" role="tab">
+          <span class="nav-num">04</span>
+          <span class="nav-label">Profile</span>
+        </button>
+      </div>
+
+      <div class="nav-meta">
+        <span class="live-pip" aria-hidden="true"></span>
+        <span id="lastUpdatedDate" class="nav-date muted">—</span>
+      </div>
+    </nav>
+
+    <!-- ── App: four pages ── -->
+    <div id="app" class="app">
+
+      <!-- Page 1: Overview -->
+      <div class="page" data-page="overview" role="tabpanel">
+        <div class="page-inner">
+
+          <section id="statusBanner" class="status-banner hidden" role="status" aria-live="polite"></section>
+
+          <div class="overview-header">
+            <div class="overview-kicker">
+              <span class="eyebrow">Portfolio snapshot</span>
+              <span class="eyebrow-sep" aria-hidden="true">·</span>
+              <span class="eyebrow">March–April 2026</span>
             </div>
+            <h1 class="overview-title">Total<br><em>reach</em></h1>
           </div>
+
           <div class="stats-grid">
-            <article class="stat-card">
+            <article class="stat-card stat-hero">
               <span>Total followers</span>
               <strong id="totalFollowers">0</strong>
             </article>
+            <article class="stat-card stat-hero stat-accent">
+              <span id="totalViewsLabel">30d impressions</span>
+              <strong id="totalViews30d">0</strong>
+            </article>
             <article class="stat-card">
-              <span>Tracked accounts</span>
+              <span>Accounts</span>
               <strong id="totalAccounts">0</strong>
             </article>
             <article class="stat-card">
@@ -75,23 +101,21 @@
               <span id="totalLikesLabel">30d likes</span>
               <strong id="totalLikes30d">0</strong>
             </article>
-            <article class="stat-card accent">
-              <span id="totalViewsLabel">30d impressions</span>
-              <strong id="totalViews30d">0</strong>
-            </article>
-            <article class="stat-card accent">
+            <article class="stat-card stat-accent">
               <span>Avg engagement</span>
               <strong id="avgEngagement">0%</strong>
             </article>
           </div>
-        </section>
 
-        <section class="panel reveal">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Portfolio charts</p>
-              <h2>Ranked comparison</h2>
-            </div>
+        </div>
+      </div>
+
+      <!-- Page 2: Charts -->
+      <div class="page page--hidden" data-page="charts" role="tabpanel">
+        <div class="page-inner">
+          <div class="page-heading">
+            <span class="eyebrow">Portfolio charts</span>
+            <h2>Ranked<br><em>comparison</em></h2>
           </div>
           <div class="chart-grid">
             <article class="chart-card">
@@ -103,28 +127,33 @@
               <canvas id="interactionsChart"></canvas>
             </article>
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section class="panel reveal">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Accounts</p>
-              <h2>Choose an account</h2>
-            </div>
+      <!-- Page 3: Accounts -->
+      <div class="page page--hidden" data-page="accounts" role="tabpanel">
+        <div class="page-inner">
+          <div class="page-heading">
+            <span class="eyebrow">Accounts</span>
+            <h2>Choose an<br><em>account</em></h2>
           </div>
           <div id="accountList" class="account-list"></div>
-        </section>
+        </div>
+      </div>
 
-        <section class="panel detail-panel reveal">
-          <div class="section-heading">
+      <!-- Page 4: Account detail -->
+      <div class="page page--hidden" data-page="detail" role="tabpanel">
+        <div class="page-inner">
+
+          <div class="detail-header">
             <div class="detail-heading">
               <img id="detailAvatar" class="detail-avatar hidden" alt="" loading="lazy" referrerpolicy="no-referrer" />
               <div>
-                <p class="eyebrow">Account focus</p>
+                <span class="eyebrow">Account focus</span>
                 <h2 id="detailTitle">No account selected</h2>
               </div>
             </div>
-            <a id="detailLink" class="profile-link hidden" target="_blank" rel="noreferrer">Open profile</a>
+            <a id="detailLink" class="profile-link hidden" target="_blank" rel="noreferrer">Open profile ↗</a>
           </div>
 
           <div id="detailMeta" class="detail-meta"></div>
@@ -140,8 +169,10 @@
               <div id="recentPosts" class="posts-list"></div>
             </article>
           </div>
-        </section>
-      </main>
-    </div>
+
+        </div>
+      </div>
+
+    </div><!-- /app -->
   </body>
 </html>
