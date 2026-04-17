@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T08:05:28.004Z",
+    "generated_at": "2026-04-17T09:49:42.867Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OMG It’s real",
+        "link": "https://reddit.com/r/GeminiAI/comments/1snvj9y/omg_its_real/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-17T09:02:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Openclaw high CPU",
+        "link": "https://reddit.com/r/openclaw/comments/1snur5e/openclaw_high_cpu/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T08:16:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What's all this astroturf of Hermes?",
+        "link": "https://reddit.com/r/openclaw/comments/1snuip1/whats_all_this_astroturf_of_hermes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T08:02:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Anthropic is just getting petty now",
         "link": "https://reddit.com/r/openclaw/comments/1snt2kk/anthropic_is_just_getting_petty_now/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-17T06:41:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Hello Opus 4.7, you are are thinking way extra high!",
+        "link": "https://reddit.com/r/OpenAI/comments/1snswb9/hello_opus_47_you_are_are_thinking_way_extra_high/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-17T06:31:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "UK launches $675M \"Sovereign AI\" fund to break dependence on US tech giants",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-17T06:08:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "What’s your LLM routing strategy for personal agents?",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-17T05:58:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Maybe Mythos will get it",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-17T05:56:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "After using Opus 4.7… yes, performance drop is real.",
@@ -415,49 +451,13 @@
         "published_at": "2026-04-17T05:36:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Claude Power Users Unanimously Agree That Opus 4.7 Is A Serious Regression",
         "link": "https://reddit.com/r/singularity/comments/1snqqj5/claude_power_users_unanimously_agree_that_opus_47/",
         "subreddit": "singularity",
         "published_at": "2026-04-17T04:34:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "\"Map of Europe.\" by Gemini's Pro model.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1snppx0/map_of_europe_by_geminis_pro_model/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-17T03:44:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "All women. Are queens.",
-        "link": "https://reddit.com/r/aimemes/comments/1snohe1/all_women_are_queens/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-17T02:46:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Trump officials negotiating access to Anthropic's Mythos despite blacklist",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sno8hb/trump_officials_negotiating_access_to_anthropics/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-17T02:35:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I completely \"rebuilt\" the OpenClaw memory (it worked)",
-        "link": "https://reddit.com/r/openclaw/comments/1snns5a/i_completely_rebuilt_the_openclaw_memory_it_worked/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T02:14:48+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T08:05:28.004Z",
+    "reddit_viral_generated_at": "2026-04-17T09:49:42.867Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
