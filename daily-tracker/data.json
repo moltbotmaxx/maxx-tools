@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T22:02:35.010Z",
+    "generated_at": "2026-04-17T23:03:18.706Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Differences Between Opus 4.6 and Opus 4.7 on MineBench",
+        "link": "https://reddit.com/r/singularity/comments/1sofehv/differences_between_opus_46_and_opus_47_on/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-17T22:15:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Are local ai’s good enough",
         "link": "https://reddit.com/r/openclaw/comments/1sodzgk/are_local_ais_good_enough/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-17T21:19:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "OpenAI Executive Kevin Weil Is Leaving the Company As Science Division Dissolved",
@@ -388,7 +397,25 @@
         "published_at": "2026-04-17T20:24:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
+      },
+      {
+        "headline": "Chat: are we cooked?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1socdrs/chat_are_we_cooked/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-17T20:19:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Can anyone tell what the hell is going on with gemini? Is anyone else facing the similar problem with Google Gemini? I tried with 10 different account and devices but now the app working completely sh!t. It's not able to generate any image as I want or according to my reference. Any solution?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sobkvi/can_anyone_tell_what_the_hell_is_going_on_with/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-17T19:50:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "GPT image 2 is insane",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-17T18:03:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Claude Opus 4.7 Text Category Rankings",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-17T17:42:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "how they got us engaged",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-17T17:39:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "Claude Design just launched and Figma dropped 4.26% in a single day, we are witnessing history in real time",
@@ -424,40 +451,13 @@
         "published_at": "2026-04-17T17:04:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Image generation bug",
         "link": "https://reddit.com/r/GeminiAI/comments/1so6lpn/image_generation_bug/",
         "subreddit": "GeminiAI",
         "published_at": "2026-04-17T16:51:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Thanks Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1so6gux/thanks_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-17T16:46:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Nano Banana 2 creates an entirely new image rather than improving the quality of my image like I asked it to",
-        "link": "https://reddit.com/r/GeminiAI/comments/1so62gb/nano_banana_2_creates_an_entirely_new_image/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-17T16:32:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Claude CLI is available on openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1so533m/claude_cli_is_available_on_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T15:57:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T22:02:35.010Z",
+    "reddit_viral_generated_at": "2026-04-17T23:03:18.706Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
