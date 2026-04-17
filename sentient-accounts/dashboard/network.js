@@ -69,8 +69,9 @@
     resize() {
       const dpr  = window.devicePixelRatio || 1;
       const rect = this.container.getBoundingClientRect();
-      this.W = rect.width  || window.innerWidth;
-      this.H = Math.max(rect.height || 560, 480);
+      // Use container dimensions if visible, otherwise fall back to CSS-computed values
+      this.W = rect.width  > 10 ? rect.width  : this.container.offsetWidth  || 900;
+      this.H = rect.height > 10 ? rect.height : this.container.offsetHeight || 500;
       this.canvas.width  = Math.floor(this.W * dpr);
       this.canvas.height = Math.floor(this.H * dpr);
       this.canvas.style.width  = `${this.W}px`;
@@ -78,6 +79,20 @@
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       this.cx = this.W / 2;
       this.cy = this.H / 2;
+
+      // Reposition nodes on resize if they already exist
+      if (this.nodes.length) {
+        this.nodes.forEach((node, i) => {
+          const angle = i * 2.3998;
+          const rawD  = 58 * Math.sqrt(i + 1);
+          const maxD  = Math.min(this.cx, this.cy) * 0.80;
+          const dist  = Math.min(rawD, maxD);
+          node.tx = this.cx + dist * Math.cos(angle);
+          node.ty = this.cy + dist * 0.72 * Math.sin(angle);
+          if (node.arrived) { node.x = node.tx; node.y = node.ty; }
+        });
+        this._buildLinks();
+      }
     }
 
     // ── Node setup ─────────────────────────────────────────

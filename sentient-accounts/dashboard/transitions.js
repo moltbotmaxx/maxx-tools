@@ -72,6 +72,18 @@ function navigateTo(target, opts = {}) {
         onComplete() {
           isTransitioning = false;
 
+          // Lazy-init the network graph once the accounts container is visible
+          if (target === 'accounts') {
+            requestAnimationFrame(() => {
+              if (window._networkFactory) {
+                window._networkFactory();
+              } else if (window._networkGraph) {
+                window._networkGraph.resize();
+              }
+            });
+            return; // network draws itself, skip generic stagger
+          }
+
           // Stagger children in after page lands
           const staggerEls = toEl.querySelectorAll(
             '.stat-card, .chart-card, .account-chip, .mini-card, .post-row, .detail-notes'

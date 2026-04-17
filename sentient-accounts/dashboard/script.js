@@ -415,20 +415,21 @@ async function renderDashboardData(rawData, errorsPayload) {
     state.selectedAccount = selectAccountFromData(data.accounts, state.selectedAccount);
     renderAccountList(data.accounts);
 
-    // Network visualization — only (re)create when data version changes
-    if (typeof NetworkGraph !== "undefined" && document.getElementById("networkContainer")) {
-      const version = data.snapshot_date || data.generated_at || String(data.accounts.length);
-      if (!window._networkGraph || window._networkGraph._dataVersion !== version) {
-        if (window._networkGraph) window._networkGraph.stop();
-        window._networkGraph = new NetworkGraph("networkContainer", data.accounts, (account) => {
-          state.selectedAccount = account;
-          renderAccountDetail(account);
-          if (window.sentientNav) window.sentientNav.navigateTo("detail");
-        });
-        window._networkGraph._dataVersion = version;
-        window._networkGraph.start();
-      }
-    }
+    // Store a factory — network initialises lazily when accounts page is first shown
+    // (container must be visible so getBoundingClientRect() returns real dimensions)
+    const _version = data.snapshot_date || data.generated_at || String(data.accounts.length);
+    window._networkFactory = () => {
+      if (!document.getElementById("networkContainer")) return;
+      if (window._networkGraph && window._networkGraph._dataVersion === _version) return;
+      if (window._networkGraph) window._networkGraph.stop();
+      window._networkGraph = new NetworkGraph("networkContainer", data.accounts, (account) => {
+        state.selectedAccount = account;
+        renderAccountDetail(account);
+        if (window.sentientNav) window.sentientNav.navigateTo("detail");
+      });
+      window._networkGraph._dataVersion = _version;
+      window._networkGraph.start();
+    };
 
     await renderAccountDetail(state.selectedAccount);
   } else {
