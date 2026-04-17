@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T11:14:19.434Z",
+    "generated_at": "2026-04-17T12:06:02.153Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why is OpenClaw silently stopping with no feedback repeatedly?",
+        "link": "https://reddit.com/r/openclaw/comments/1snxxgj/why_is_openclaw_silently_stopping_with_no/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T11:13:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "1 in 3 Anthropic workers now think entry-level engineers and researchers are likely replaced by Mythos within 3 months",
+        "link": "https://reddit.com/r/OpenAI/comments/1snxqsg/1_in_3_anthropic_workers_now_think_entrylevel/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-17T11:03:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Opus 4.7 vs Gemini 3.1 Pro vs GPT 5.4",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1snxjy2/opus_47_vs_gemini_31_pro_vs_gpt_54/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-17T10:54:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "[ Removed by Reddit ]",
         "link": "https://reddit.com/r/GeminiAI/comments/1snvj9y/removed_by_reddit/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-17T09:02:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Opus 4.7 with literally anything",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1snuu1o/opus_47_with_literally_anything/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-17T08:20:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Openclaw high CPU",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-17T08:16:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "What's all this astroturf of Hermes?",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-17T08:02:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Anthropic is just getting petty now",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-17T06:41:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Hello Opus 4.7, you are are thinking way extra high!",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-17T06:31:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "UK launches $675M \"Sovereign AI\" fund to break dependence on US tech giants",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-17T06:08:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "What’s your LLM routing strategy for personal agents?",
-        "link": "https://reddit.com/r/openclaw/comments/1snsbac/whats_your_llm_routing_strategy_for_personal/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T05:58:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Maybe Mythos will get it",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sns9w9/maybe_mythos_will_get_it/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-17T05:56:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "After using Opus 4.7… yes, performance drop is real.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1snrwu3/after_using_opus_47_yes_performance_drop_is_real/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-17T05:36:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude Power Users Unanimously Agree That Opus 4.7 Is A Serious Regression",
-        "link": "https://reddit.com/r/singularity/comments/1snqqj5/claude_power_users_unanimously_agree_that_opus_47/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-17T04:34:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T11:14:19.434Z",
+    "reddit_viral_generated_at": "2026-04-17T12:06:02.153Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
