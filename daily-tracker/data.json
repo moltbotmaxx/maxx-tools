@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T13:59:42.831Z",
+    "generated_at": "2026-04-17T15:18:13.285Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Found what looks like a really aggressive deal on a managed OpenClaw setup. Am I missing something?",
+        "link": "https://reddit.com/r/openclaw/comments/1so3ko5/found_what_looks_like_a_really_aggressive_deal_on/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T15:03:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "opus 4.7 (high) scores a 41.0% on the nyt connections extended benchmark. opus 4.6 scored 94.7%.",
+        "link": "https://reddit.com/r/singularity/comments/1so2vmc/opus_47_high_scores_a_410_on_the_nyt_connections/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-17T14:38:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "what's the cheapest way to reliably access GLM 5.1 right now?",
+        "link": "https://reddit.com/r/openclaw/comments/1so2qwn/whats_the_cheapest_way_to_reliably_access_glm_51/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T14:33:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Unitree H1 accelerating from jogging to running",
         "link": "https://reddit.com/r/singularity/comments/1snzh84/unitree_h1_accelerating_from_jogging_to_running/",
@@ -379,25 +406,7 @@
         "published_at": "2026-04-17T12:25:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Printed a lobster for my desk… apparently it’s helping me “work better” 🦞",
-        "link": "https://reddit.com/r/openclaw/comments/1snzcni/printed_a_lobster_for_my_desk_apparently_its/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T12:19:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Fisher-Price Is Pivoting to AI-Powered Autonomous Weapons Manufacturing",
-        "link": "https://reddit.com/r/OpenAI/comments/1snzbhj/fisherprice_is_pivoting_to_aipowered_autonomous/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-17T12:18:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Opus 4.7 Embarrassing much",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-17T11:48:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Why is OpenClaw silently stopping with no feedback repeatedly?",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-17T11:13:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Opus 4.7 vs Gemini 3.1 Pro vs GPT 5.4",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-17T10:54:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Have you seen robots doing aerial yoga?",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-17T09:54:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "[ Removed by Reddit ]",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-17T09:02:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Opus 4.7 with literally anything",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-17T08:20:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "What's all this astroturf of Hermes?",
-        "link": "https://reddit.com/r/openclaw/comments/1snuip1/whats_all_this_astroturf_of_hermes/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T08:02:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T13:59:42.831Z",
+    "reddit_viral_generated_at": "2026-04-17T15:18:13.285Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
