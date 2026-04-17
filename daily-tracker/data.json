@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-17T19:33:50.673Z",
+    "generated_at": "2026-04-17T21:05:04.484Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenClaw muutti elämäni – ja nyt naapurin kissa luulee minua jumalaksi (enkä edes kiistä)",
+        "link": "https://reddit.com/r/openclaw/comments/1sodb5p/openclaw_muutti_el%C3%A4m%C3%A4ni_ja_nyt_naapurin_kissa/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-17T20:54:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "GPT image 2 is insane",
         "link": "https://reddit.com/r/ChatGPT/comments/1so8mjg/gpt_image_2_is_insane/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-17T18:03:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Claude Opus 4.7 Text Category Rankings",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1so814j/claude_opus_47_text_category_rankings/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-17T17:42:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "how they got us engaged",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-17T17:39:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Claude Design just launched and Figma dropped 4.26% in a single day, we are witnessing history in real time",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-17T17:04:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
+      },
+      {
+        "headline": "Thanks Gemini",
+        "link": "https://reddit.com/r/GeminiAI/comments/1so6gux/thanks_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-17T16:46:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Nano Banana 2 creates an entirely new image rather than improving the quality of my image like I asked it to",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-17T16:32:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Claude CLI is available on openclaw",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-17T15:57:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "I asked chatgpt if I was your daughter what advise would you have for me as my dad? I can say it didn’t disappoint.",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-17T15:40:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 87
       },
       {
         "headline": "How setup right ollama cloud with vision and tools?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-17T15:11:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Introducing Claude Design by Anthropic Labs",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1so3k1y/introducing_claude_design_by_anthropic_labs/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-17T15:02:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "opus 4.7 (high) scores a 41.0% on the nyt connections extended benchmark. opus 4.6 scored 94.7%.",
-        "link": "https://reddit.com/r/singularity/comments/1so2vmc/opus_47_high_scores_a_410_on_the_nyt_connections/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-17T14:38:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "what's the cheapest way to reliably access GLM 5.1 right now?",
-        "link": "https://reddit.com/r/openclaw/comments/1so2qwn/whats_the_cheapest_way_to_reliably_access_glm_51/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T14:33:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-17T19:33:50.673Z",
+    "reddit_viral_generated_at": "2026-04-17T21:05:04.484Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
