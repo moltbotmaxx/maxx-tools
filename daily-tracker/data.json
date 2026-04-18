@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T22:56:41.591Z",
+    "generated_at": "2026-04-18T23:53:20.659Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "If you're about to quit OpenClaw, read this first",
+        "link": "https://reddit.com/r/openclaw/comments/1spby6a/if_youre_about_to_quit_openclaw_read_this_first/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T22:51:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "that time Anthropic played 2.5 million ChatGPT users",
         "link": "https://reddit.com/r/ChatGPT/comments/1spax1v/that_time_anthropic_played_25_million_chatgpt/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-18T22:06:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Skill keeps failing silently — how do I make it actually shout when it breaks?",
+        "link": "https://reddit.com/r/openclaw/comments/1spav9x/skill_keeps_failing_silently_how_do_i_make_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T22:04:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Why is the image gen so crappy now?",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-18T20:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "When 90% of the population becomes \"economically irrelevant",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-18T19:57:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Chat gpt is straight out rude now",
@@ -406,7 +424,16 @@
         "published_at": "2026-04-18T19:44:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
+      },
+      {
+        "headline": "“Sir, another 22 year old has found a job”",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sp6xpg/sir_another_22_year_old_has_found_a_job/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T19:28:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Claude Design keeps drawing a turd",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-18T19:10:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "PSA: Regenerating a Response or Editing your Prompt erases all other messages.",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-18T19:02:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Anthropic’s hypocrisy: “we won’t remove safety guardrails for the US government, but we will grant access to our upcoming next-gen Mythos model only to the banks and corporations”",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-18T18:41:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Organic vs Non-Organic interaction (beluga whale vs spot)",
-        "link": "https://reddit.com/r/singularity/comments/1sp3gpd/organic_vs_nonorganic_interaction_beluga_whale_vs/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-18T17:15:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Gemini Live + Screen Share is the conversational AI feature nobody talks about enough.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sp2tty/gemini_live_screen_share_is_the_conversational_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-18T16:51:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Look how they massacred my boy",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-18T16:05:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T22:56:41.591Z",
+    "reddit_viral_generated_at": "2026-04-18T23:53:20.659Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
