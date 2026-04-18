@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T07:36:08.765Z",
+    "generated_at": "2026-04-18T09:06:30.182Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Fed up baby sitting Openclaw, found a better Alternative.",
+        "link": "https://reddit.com/r/openclaw/comments/1sor0cd/fed_up_baby_sitting_openclaw_found_a_better/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T07:32:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "An old designer’s perspective on claude design.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1soql9c/an_old_designers_perspective_on_claude_design/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T07:08:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "GLM-5.1 Now Live on NVIDIA API. Free to use.",
         "link": "https://reddit.com/r/openclaw/comments/1soq5l0/glm51_now_live_on_nvidia_api_free_to_use/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-18T06:44:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "AI datacenter spending has surpassed the Manhattan Project, Marshall Plan, ISS, and the Apollo Program - combined",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-18T06:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Hesai releases world's first full-color LiDAR chip, supporting up to 4,320 laser channels",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-18T03:52:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "What's the most unexpectedly useful thing you've done with AI tools so far?",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-18T03:02:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I don't want my AI to sound human.",
@@ -415,16 +433,7 @@
         "published_at": "2026-04-18T02:17:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Ya you are ugly bro",
-        "link": "https://reddit.com/r/ChatGPT/comments/1soik2q/ya_you_are_ugly_bro/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-18T00:29:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
       },
       {
         "headline": "It’s hilarious how quickly people get accustomed to revolutionary technology",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-17T23:44:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 82
       },
       {
         "headline": "How France’s Mistral Built A $14 Billion AI Empire By Not Being American",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-17T23:30:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 81
       },
       {
         "headline": "We're cooked",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-17T23:17:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "New image model slaps",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sogbxg/new_image_model_slaps/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-17T22:53:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T07:36:08.765Z",
+    "reddit_viral_generated_at": "2026-04-18T09:06:30.182Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
