@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T21:51:13.058Z",
+    "generated_at": "2026-04-18T22:56:41.591Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "that time Anthropic played 2.5 million ChatGPT users",
+        "link": "https://reddit.com/r/ChatGPT/comments/1spax1v/that_time_anthropic_played_25_million_chatgpt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-18T22:06:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Why is the image gen so crappy now?",
         "link": "https://reddit.com/r/GeminiAI/comments/1sp956f/why_is_the_image_gen_so_crappy_now/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-18T20:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "When 90% of the population becomes \"economically irrelevant",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-18T19:57:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Chat gpt is straight out rude now",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-18T19:44:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Claude Design keeps drawing a turd",
@@ -406,7 +415,16 @@
         "published_at": "2026-04-18T19:10:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
+      },
+      {
+        "headline": "PSA: Regenerating a Response or Editing your Prompt erases all other messages.",
+        "link": "https://reddit.com/r/OpenAI/comments/1sp6acy/psa_regenerating_a_response_or_editing_your/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-18T19:02:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Anthropic’s hypocrisy: “we won’t remove safety guardrails for the US government, but we will grant access to our upcoming next-gen Mythos model only to the banks and corporations”",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-18T18:41:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Organic vs Non-Organic interaction (beluga whale vs spot)",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-18T17:15:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Gemini Live + Screen Share is the conversational AI feature nobody talks about enough.",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-18T16:51:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Look how they massacred my boy",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-18T16:05:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Be honest: do you actually trust AI answers or do you double-check everything?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sp1jc4/be_honest_do_you_actually_trust_ai_answers_or_do/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-18T16:01:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Claude is on fire. Everything they’ve dropped in the last few days .",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sp17d3/claude_is_on_fire_everything_theyve_dropped_in/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-18T15:49:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T21:51:13.058Z",
+    "reddit_viral_generated_at": "2026-04-18T22:56:41.591Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
