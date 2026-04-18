@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T10:03:47.234Z",
+    "generated_at": "2026-04-18T11:02:59.449Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "White House and Anthropic CEO discuss working together amid rising fear about Mythos model",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sotsdm/white_house_and_anthropic_ceo_discuss_working/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T10:15:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "INSANELY ACCURATE New Image Model",
+        "link": "https://reddit.com/r/singularity/comments/1sotj83/insanely_accurate_new_image_model/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-18T10:01:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Openclaw or Hermes?",
+        "link": "https://reddit.com/r/openclaw/comments/1sor24y/openclaw_or_hermes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T07:35:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "10 Hours of Claude Design - My Thoughts",
         "link": "https://reddit.com/r/ClaudeAI/comments/1soqutr/10_hours_of_claude_design_my_thoughts/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-18T07:23:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "An old designer’s perspective on claude design.",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-18T07:08:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "GLM-5.1 Now Live on NVIDIA API. Free to use.",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-18T06:44:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "AI datacenter spending has surpassed the Manhattan Project, Marshall Plan, ISS, and the Apollo Program - combined",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-18T06:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Who did it best? Newest ChatGPT image model vs Gemini NB2 comparison",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-18T05:58:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Hesai releases world's first full-color LiDAR chip, supporting up to 4,320 laser channels",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-18T03:52:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       },
       {
         "headline": "What's the most unexpectedly useful thing you've done with AI tools so far?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-18T03:02:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I don't want my AI to sound human.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sokvjc/i_dont_want_my_ai_to_sound_human/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-18T02:17:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Ya you are ugly bro",
-        "link": "https://reddit.com/r/ChatGPT/comments/1soik2q/ya_you_are_ugly_bro/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-18T00:29:29+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 83
-      },
-      {
-        "headline": "How France’s Mistral Built A $14 Billion AI Empire By Not Being American",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1soh8as/how_frances_mistral_built_a_14_billion_ai_empire/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-17T23:30:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T10:03:47.234Z",
+    "reddit_viral_generated_at": "2026-04-18T11:02:59.449Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
