@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T19:10:46.254Z",
+    "generated_at": "2026-04-18T19:54:40.836Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude Design keeps drawing a turd",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sp6hns/claude_design_keeps_drawing_a_turd/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T19:10:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Anthropic’s hypocrisy: “we won’t remove safety guardrails for the US government, but we will grant access to our upcoming next-gen Mythos model only to the banks and corporations”",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp5qrl/anthropics_hypocrisy_we_wont_remove_safety/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-18T18:41:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Organic vs Non-Organic interaction (beluga whale vs spot)",
@@ -388,31 +397,22 @@
         "published_at": "2026-04-18T17:15:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
-        "headline": "For People that keep asking what OpenClaw actually does...",
-        "link": "https://reddit.com/r/openclaw/comments/1sp32ul/for_people_that_keep_asking_what_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-18T17:01:16+00:00",
+        "headline": "Gemini Live + Screen Share is the conversational AI feature nobody talks about enough.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sp2tty/gemini_live_screen_share_is_the_conversational_ai/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-18T16:51:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Two days since Opus 4.7, personally think and use GLM 5.1 as it could still provide great value when using both.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp2orb/two_days_since_opus_47_personally_think_and_use/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-04-18T16:46:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Why are mid level leaders leaving openai?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sp1o91/why_are_mid_level_leaders_leaving_openai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-18T16:06:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
@@ -424,7 +424,16 @@
         "published_at": "2026-04-18T16:05:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
+      },
+      {
+        "headline": "Be honest: do you actually trust AI answers or do you double-check everything?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sp1jc4/be_honest_do_you_actually_trust_ai_answers_or_do/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-18T16:01:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Claude is on fire. Everything they’ve dropped in the last few days .",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-18T15:49:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Does anyone else feel like \"AI Time\" moves fundamentally differently? 2023 feels like a decade ago.",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-18T15:29:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Developers in 2026!!",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-18T15:11:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Every time I open YouTube, someone is making $1M with “vibe coding\" but",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sozqo8/every_time_i_open_youtube_someone_is_making_1m/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-18T14:53:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T19:10:46.254Z",
+    "reddit_viral_generated_at": "2026-04-18T19:54:40.836Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
