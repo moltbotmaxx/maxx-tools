@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T20:55:25.120Z",
+    "generated_at": "2026-04-18T21:51:13.058Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why is the image gen so crappy now?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sp956f/why_is_the_image_gen_so_crappy_now/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-18T20:54:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "When 90% of the population becomes \"economically irrelevant",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp7opt/when_90_of_the_population_becomes_economically/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-18T19:57:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Chat gpt is straight out rude now",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-18T19:44:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Claude Design keeps drawing a turd",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-18T19:10:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Anthropic’s hypocrisy: “we won’t remove safety guardrails for the US government, but we will grant access to our upcoming next-gen Mythos model only to the banks and corporations”",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-18T18:41:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Organic vs Non-Organic interaction (beluga whale vs spot)",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-18T17:15:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Gemini Live + Screen Share is the conversational AI feature nobody talks about enough.",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-18T16:51:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Look how they massacred my boy",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-18T16:05:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "Be honest: do you actually trust AI answers or do you double-check everything?",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-18T16:01:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "Claude is on fire. Everything they’ve dropped in the last few days .",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-18T15:49:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Does anyone else feel like \"AI Time\" moves fundamentally differently? 2023 feels like a decade ago.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp0ot2/does_anyone_else_feel_like_ai_time_moves/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-18T15:29:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T20:55:25.120Z",
+    "reddit_viral_generated_at": "2026-04-18T21:51:13.058Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
