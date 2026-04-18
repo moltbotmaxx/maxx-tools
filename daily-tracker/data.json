@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T15:55:25.216Z",
+    "generated_at": "2026-04-18T16:59:12.288Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude is on fire. Everything they’ve dropped in the last few days .",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sp17d3/claude_is_on_fire_everything_theyve_dropped_in/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T15:49:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Does anyone else feel like \"AI Time\" moves fundamentally differently? 2023 feels like a decade ago.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp0ot2/does_anyone_else_feel_like_ai_time_moves/",
@@ -379,22 +388,22 @@
         "published_at": "2026-04-18T15:29:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "Openclaw doesn’t do the things it tells me it will do…",
+        "link": "https://reddit.com/r/openclaw/comments/1sp0icr/openclaw_doesnt_do_the_things_it_tells_me_it_will/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T15:22:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Developers in 2026!!",
         "link": "https://reddit.com/r/aimemes/comments/1sp07h5/developers_in_2026/",
         "subreddit": "aimemes",
         "published_at": "2026-04-18T15:11:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "The AI buildout is real. But Nvidia isn't the only one getting paid.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sozst9/the_ai_buildout_is_real_but_nvidia_isnt_the_only/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-18T14:55:56+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
@@ -406,7 +415,7 @@
         "published_at": "2026-04-18T14:53:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "grok 4.3 beta: musk's ($300/month) megaphone",
@@ -415,7 +424,16 @@
         "published_at": "2026-04-18T14:44:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
+      },
+      {
+        "headline": "Is it just me or... Gemini only allow 1 picture uploaded at a time?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sozgtr/is_it_just_me_or_gemini_only_allow_1_picture/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-18T14:42:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-18T13:48:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "The Opus 4.7 experience",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-18T13:36:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Claude 4.7 gaslighted me with a real commit hash and I'm not okay",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-18T13:26:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Why did Google Nuke Gemini's\"Walkie Talkie\" feature?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sowkw9/why_did_google_nuke_geminiswalkie_talkie_feature/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-18T12:40:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I wanted OpenClaw to work. After 3 months, I’m done.",
-        "link": "https://reddit.com/r/openclaw/comments/1souzrc/i_wanted_openclaw_to_work_after_3_months_im_done/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-18T11:22:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T15:55:25.216Z",
+    "reddit_viral_generated_at": "2026-04-18T16:59:12.288Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
