@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T15:00:13.083Z",
+    "generated_at": "2026-04-18T15:55:25.216Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Does anyone else feel like \"AI Time\" moves fundamentally differently? 2023 feels like a decade ago.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp0ot2/does_anyone_else_feel_like_ai_time_moves/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T15:29:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Developers in 2026!!",
+        "link": "https://reddit.com/r/aimemes/comments/1sp07h5/developers_in_2026/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-18T15:11:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The AI buildout is real. But Nvidia isn't the only one getting paid.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sozst9/the_ai_buildout_is_real_but_nvidia_isnt_the_only/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T14:55:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Every time I open YouTube, someone is making $1M with “vibe coding\" but",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sozqo8/every_time_i_open_youtube_someone_is_making_1m/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-18T14:53:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "grok 4.3 beta: musk's ($300/month) megaphone",
+        "link": "https://reddit.com/r/singularity/comments/1sozic7/grok_43_beta_musks_300month_megaphone/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-18T14:44:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
@@ -388,7 +424,16 @@
         "published_at": "2026-04-18T13:48:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
+      },
+      {
+        "headline": "The Opus 4.7 experience",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1soxumn/the_opus_47_experience/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T13:36:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Claude 4.7 gaslighted me with a real commit hash and I'm not okay",
@@ -397,7 +442,7 @@
         "published_at": "2026-04-18T13:26:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Why did Google Nuke Gemini's\"Walkie Talkie\" feature?",
@@ -406,7 +451,7 @@
         "published_at": "2026-04-18T12:40:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "I wanted OpenClaw to work. After 3 months, I’m done.",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-18T11:22:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Is this just me or chatGPT is trying to \"correct me\" on everything?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sou09i/is_this_just_me_or_chatgpt_is_trying_to_correct/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-18T10:28:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Google DeepMind's Senior Scientist Alexander Lerchner challenges the idea that large language models can ever achieve consciousness(not even in 100years), calling it the 'Abstraction Fallacy.'",
-        "link": "https://reddit.com/r/singularity/comments/1sotz9t/google_deepminds_senior_scientist_alexander/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-18T10:26:42+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "White House and Anthropic CEO discuss working together amid rising fear about Mythos model",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sotsdm/white_house_and_anthropic_ceo_discuss_working/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-18T10:15:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Meta targets May 20 for first wave of layoffs; additional cuts later in 2026",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sotok1/meta_targets_may_20_for_first_wave_of_layoffs/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-18T10:09:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "10 Hours of Claude Design - My Thoughts",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1soqutr/10_hours_of_claude_design_my_thoughts/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-18T07:23:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T15:00:13.083Z",
+    "reddit_viral_generated_at": "2026-04-18T15:55:25.216Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
