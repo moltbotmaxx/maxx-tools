@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T13:36:49.465Z",
+    "generated_at": "2026-04-18T15:00:13.083Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Every time I open YouTube, someone is making $1M with “vibe coding\" but",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sozqo8/every_time_i_open_youtube_someone_is_making_1m/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T14:53:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1soy53h/white_house_and_anthropic_hold_productive_meeting/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T13:48:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude 4.7 gaslighted me with a real commit hash and I'm not okay",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1soxmf0/claude_47_gaslighted_me_with_a_real_commit_hash/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T13:26:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Why did Google Nuke Gemini's\"Walkie Talkie\" feature?",
         "link": "https://reddit.com/r/GeminiAI/comments/1sowkw9/why_did_google_nuke_geminiswalkie_talkie_feature/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-18T12:40:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "I wanted OpenClaw to work. After 3 months, I’m done.",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-18T11:22:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Is this just me or chatGPT is trying to \"correct me\" on everything?",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-18T10:28:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Google DeepMind's Senior Scientist Alexander Lerchner challenges the idea that large language models can ever achieve consciousness(not even in 100years), calling it the 'Abstraction Fallacy.'",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-18T10:26:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "White House and Anthropic CEO discuss working together amid rising fear about Mythos model",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-18T10:15:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Meta targets May 20 for first wave of layoffs; additional cuts later in 2026",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-18T10:09:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "10 Hours of Claude Design - My Thoughts",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-18T07:23:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "An old designer’s perspective on claude design.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1soql9c/an_old_designers_perspective_on_claude_design/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-18T07:08:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "GLM-5.1 Now Live on NVIDIA API. Free to use.",
-        "link": "https://reddit.com/r/openclaw/comments/1soq5l0/glm51_now_live_on_nvidia_api_free_to_use/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-18T06:44:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "AI datacenter spending has surpassed the Manhattan Project, Marshall Plan, ISS, and the Apollo Program - combined",
-        "link": "https://reddit.com/r/OpenAI/comments/1sopu9o/ai_datacenter_spending_has_surpassed_the/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-18T06:27:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T13:36:49.465Z",
+    "reddit_viral_generated_at": "2026-04-18T15:00:13.083Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
