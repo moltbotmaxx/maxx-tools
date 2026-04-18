@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T03:31:09.817Z",
+    "generated_at": "2026-04-18T05:51:10.374Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "We built an open-source semantic firewall to protect agents from destructive commands (taking community requests for new rules) - All tested with openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1soo9rm/we_built_an_opensource_semantic_firewall_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T05:03:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What's the most unexpectedly useful thing you've done with AI tools so far?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1soltdi/whats_the_most_unexpectedly_useful_thing_youve/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T03:02:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Anyone Tried Openclaw on Android ? I tried it suprised by the benefits",
         "link": "https://reddit.com/r/openclaw/comments/1solso2/anyone_tried_openclaw_on_android_i_tried_it/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-18T03:01:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "I don't want my AI to sound human.",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-18T02:17:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "What is the smallest local model that produces intelligible english?",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-18T01:10:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Openclaw bloat?",
@@ -406,7 +424,16 @@
         "published_at": "2026-04-18T00:17:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
+      },
+      {
+        "headline": "It’s hilarious how quickly people get accustomed to revolutionary technology",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sohjjl/its_hilarious_how_quickly_people_get_accustomed/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-17T23:44:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "We're cooked",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-17T23:17:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "I almost quit OpenClaw 5 times in 2 weeks. Here's what kept breaking and how I fixed it.",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-17T23:17:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "What is going on?",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-17T22:26:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Differences Between Opus 4.6 and Opus 4.7 on MineBench",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sofgno/differences_between_opus_46_and_opus_47_on/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-17T22:17:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Differences Between Opus 4.6 and Opus 4.7 on MineBench",
-        "link": "https://reddit.com/r/singularity/comments/1sofehv/differences_between_opus_46_and_opus_47_on/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-17T22:15:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Are local ai’s good enough",
-        "link": "https://reddit.com/r/openclaw/comments/1sodzgk/are_local_ais_good_enough/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-17T21:19:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T03:31:09.817Z",
+    "reddit_viral_generated_at": "2026-04-18T05:51:10.374Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
