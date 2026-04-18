@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T16:59:12.288Z",
+    "generated_at": "2026-04-18T17:54:11.115Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Two days since Opus 4.7, personally think and use GLM 5.1 as it could still provide great value when using both.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sp2orb/two_days_since_opus_47_personally_think_and_use/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T16:46:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Look how they massacred my boy",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sp1mzs/look_how_they_massacred_my_boy/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-18T16:05:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Claude is on fire. Everything they’ve dropped in the last few days .",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sp17d3/claude_is_on_fire_everything_theyve_dropped_in/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-18T15:49:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Does anyone else feel like \"AI Time\" moves fundamentally differently? 2023 feels like a decade ago.",
@@ -388,16 +406,7 @@
         "published_at": "2026-04-18T15:29:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Openclaw doesn’t do the things it tells me it will do…",
-        "link": "https://reddit.com/r/openclaw/comments/1sp0icr/openclaw_doesnt_do_the_things_it_tells_me_it_will/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-18T15:22:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Developers in 2026!!",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-18T15:11:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Every time I open YouTube, someone is making $1M with “vibe coding\" but",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-18T14:53:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "grok 4.3 beta: musk's ($300/month) megaphone",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-18T14:44:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Is it just me or... Gemini only allow 1 picture uploaded at a time?",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-18T14:42:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-18T13:48:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "The Opus 4.7 experience",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-18T13:36:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude 4.7 gaslighted me with a real commit hash and I'm not okay",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1soxmf0/claude_47_gaslighted_me_with_a_real_commit_hash/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-18T13:26:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T16:59:12.288Z",
+    "reddit_viral_generated_at": "2026-04-18T17:54:11.115Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
