@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-18T11:02:59.449Z",
+    "generated_at": "2026-04-18T11:51:08.555Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I wanted OpenClaw to work. After 3 months, I’m done.",
+        "link": "https://reddit.com/r/openclaw/comments/1souzrc/i_wanted_openclaw_to_work_after_3_months_im_done/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-18T11:22:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Google DeepMind's Senior Scientist Alexander Lerchner challenges the idea that large language models can ever achieve consciousness(not even in 100years), calling it the 'Abstraction Fallacy.'",
+        "link": "https://reddit.com/r/singularity/comments/1sotz9t/google_deepminds_senior_scientist_alexander/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-18T10:26:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "White House and Anthropic CEO discuss working together amid rising fear about Mythos model",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sotsdm/white_house_and_anthropic_ceo_discuss_working/",
@@ -379,25 +397,16 @@
         "published_at": "2026-04-18T10:15:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
-        "headline": "INSANELY ACCURATE New Image Model",
-        "link": "https://reddit.com/r/singularity/comments/1sotj83/insanely_accurate_new_image_model/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-18T10:01:21+00:00",
+        "headline": "Meta targets May 20 for first wave of layoffs; additional cuts later in 2026",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sotok1/meta_targets_may_20_for_first_wave_of_layoffs/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-18T10:09:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Openclaw or Hermes?",
-        "link": "https://reddit.com/r/openclaw/comments/1sor24y/openclaw_or_hermes/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-18T07:35:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 97
       },
       {
         "headline": "10 Hours of Claude Design - My Thoughts",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-18T07:23:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "An old designer’s perspective on claude design.",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-18T07:08:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "GLM-5.1 Now Live on NVIDIA API. Free to use.",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-18T06:44:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "AI datacenter spending has surpassed the Manhattan Project, Marshall Plan, ISS, and the Apollo Program - combined",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-18T06:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Who did it best? Newest ChatGPT image model vs Gemini NB2 comparison",
@@ -442,16 +451,7 @@
         "published_at": "2026-04-18T05:58:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Hesai releases world's first full-color LiDAR chip, supporting up to 4,320 laser channels",
-        "link": "https://reddit.com/r/singularity/comments/1somugr/hesai_releases_worlds_first_fullcolor_lidar_chip/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-18T03:52:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 87
       },
       {
         "headline": "What's the most unexpectedly useful thing you've done with AI tools so far?",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-18T03:02:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-18T11:02:59.449Z",
+    "reddit_viral_generated_at": "2026-04-18T11:51:08.555Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
