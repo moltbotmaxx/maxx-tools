@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-19T15:55:35.790Z",
+    "generated_at": "2026-04-19T16:59:07.005Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "i compared my actual token usage on opus 4.6 vs 4.7 for the same agent doing the same tasks. the tokenizer increase is real",
+        "link": "https://reddit.com/r/openclaw/comments/1spxo7t/i_compared_my_actual_token_usage_on_opus_46_vs_47/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T16:29:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "i tracked my api costs across 6 models over 3 weeks. here's the real cost of running an openclaw agent per model.",
+        "link": "https://reddit.com/r/openclaw/comments/1spx8ey/i_tracked_my_api_costs_across_6_models_over_3/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T16:12:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Why is every AI getting so restricted these days?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1spx7x9/why_is_every_ai_getting_so_restricted_these_days/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-19T16:12:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "50m26s, the human half-marathon record (57m20s) was borken by a robot today",
+        "link": "https://reddit.com/r/singularity/comments/1spwegr/50m26s_the_human_halfmarathon_record_57m20s_was/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-19T15:41:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Plaidify: early open-source infra for AI assistants to access authenticated websites",
+        "link": "https://reddit.com/r/openclaw/comments/1spw063/plaidify_early_opensource_infra_for_ai_assistants/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T15:26:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Cheapest OpenClaw setup for general assistance + trading?",
         "link": "https://reddit.com/r/openclaw/comments/1spv1rg/cheapest_openclaw_setup_for_general_assistance/",
@@ -379,7 +424,16 @@
         "published_at": "2026-04-19T14:50:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "ChatGPT 5.4 really sucks. Anything all you can eat that works like Claude?",
+        "link": "https://reddit.com/r/openclaw/comments/1spuvs4/chatgpt_54_really_sucks_anything_all_you_can_eat/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T14:44:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Basically",
@@ -388,7 +442,7 @@
         "published_at": "2026-04-19T14:27:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "YSK: If you use Claude on your company's Enterprise plan, your employer can access every message you've ever sent, including \"incognito\" chats/",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-19T13:21:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Nice one 😂",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-19T12:24:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "What are you doing",
-        "link": "https://reddit.com/r/openclaw/comments/1spr8qu/what_are_you_doing/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-19T12:09:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Pit stop at Robot half marathon in Beijing. Ice to cool down the battery and lubricant for the joints",
-        "link": "https://reddit.com/r/singularity/comments/1spqd7z/pit_stop_at_robot_half_marathon_in_beijing_ice_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-19T11:26:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Unitree H1 fall and recovery",
-        "link": "https://reddit.com/r/singularity/comments/1spq4t9/unitree_h1_fall_and_recovery/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-19T11:13:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini is actually very capable when the guardrails are down.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1spntho/gemini_is_actually_very_capable_when_the/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-19T09:01:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "The gap between what technical and non-technical people get from AI is huge now",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1spnb80/the_gap_between_what_technical_and_nontechnical/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-19T08:30:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Doctor: \"Over the past few weeks, I am truly feeling that our days are numbered because of AI.\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1spnata/doctor_over_the_past_few_weeks_i_am_truly_feeling/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-19T08:29:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-19T15:55:35.790Z",
+    "reddit_viral_generated_at": "2026-04-19T16:59:07.005Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
