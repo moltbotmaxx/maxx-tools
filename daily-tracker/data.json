@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-19T09:08:09.394Z",
+    "generated_at": "2026-04-19T10:03:12.432Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini is actually very capable when the guardrails are down.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1spntho/gemini_is_actually_very_capable_when_the/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-19T09:01:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Doctor: \"Over the past few weeks, I am truly feeling that our days are numbered because of AI.\"",
         "link": "https://reddit.com/r/OpenAI/comments/1spnata/doctor_over_the_past_few_weeks_i_am_truly_feeling/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-19T08:29:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Claude Code | Design - Tweaks Useful",
@@ -388,7 +397,16 @@
         "published_at": "2026-04-19T08:00:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
+      },
+      {
+        "headline": "Beginner need some advice | tokens",
+        "link": "https://reddit.com/r/openclaw/comments/1spm5ux/beginner_need_some_advice_tokens/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T07:23:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Anthropic isn’t vibing with me today 😢",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-19T06:56:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
+      },
+      {
+        "headline": "Lots of truth here",
+        "link": "https://reddit.com/r/GeminiAI/comments/1spkvip/lots_of_truth_here/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-19T06:11:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "T.R.E.N F.R.I.E.N.D.S",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-19T05:46:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Ever since the new $100 Pro plan, they now claim there's a \"dynamic usage limits\" that can become restricted at anytime, and not reset for indefinitely as long as they deem it \"appropriate\"",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-19T03:47:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "Amazon's AI deleted their entire production environment fixing a minor bug. Their solution? Another AI to watch the first AI.",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-19T03:37:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "Huge shoutout to Google for the revolutionary \"Single-Image-Only\" innovation.",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-19T03:32:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Whats your weekly screen time with Ai",
-        "link": "https://reddit.com/r/OpenAI/comments/1sphjey/whats_your_weekly_screen_time_with_ai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-19T03:15:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Free LLM APIs (April 2026 Update)",
-        "link": "https://reddit.com/r/openclaw/comments/1spgr25/free_llm_apis_april_2026_update/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-19T02:37:28+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 86
-      },
-      {
-        "headline": "Beijing: First humanoid robot crossing the 20KM line (audio translated)",
-        "link": "https://reddit.com/r/singularity/comments/1spermq/beijing_first_humanoid_robot_crossing_the_20km/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-19T01:01:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-19T09:08:09.394Z",
+    "reddit_viral_generated_at": "2026-04-19T10:03:12.432Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
