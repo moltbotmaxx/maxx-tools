@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-19T22:57:05.547Z",
+    "generated_at": "2026-04-19T23:54:25.395Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Been building with OpenClaw for months. Am I the only one fighting it constantly?",
+        "link": "https://reddit.com/r/openclaw/comments/1sq7wbs/been_building_with_openclaw_for_months_am_i_the/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T22:59:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "she doesn't use em dashes either!",
         "link": "https://reddit.com/r/ChatGPT/comments/1sq5yvy/she_doesnt_use_em_dashes_either/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-19T21:39:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "she doesn't use em dashes either!",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-19T21:38:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "My Agent is drowning in its own planning files. Advice?",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-19T20:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "What is the difference between Hermes agent and openclaw",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-19T19:40:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Scoop: NSA using Anthropic's Mythos despite blacklist",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-19T19:33:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "You don't need a VPS or Mac Mini for most use cases",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-19T18:16:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Adding this skill changed my perspective on openclaw. (we need this added by default)",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-19T18:09:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "GPT 5.5 Spud incoming",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-19T17:11:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "Claude Design is Incredible...",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-19T16:22:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I asked Gemini to enhance the quality of a selfie, it added a reflection to the pupil and I was curious what's inside. These are the results. The selfie was taken indoors btw",
-        "link": "https://reddit.com/r/GeminiAI/comments/1spxhe6/i_asked_gemini_to_enhance_the_quality_of_a_selfie/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-19T16:22:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-19T22:57:05.547Z",
+    "reddit_viral_generated_at": "2026-04-19T23:54:25.395Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
