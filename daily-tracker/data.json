@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-19T21:52:31.244Z",
+    "generated_at": "2026-04-19T22:57:05.547Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "she doesn't use em dashes either!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sq5yvy/she_doesnt_use_em_dashes_either/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-19T21:39:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "she doesn't use em dashes either!",
+        "link": "https://reddit.com/r/OpenAI/comments/1sq5ypr/she_doesnt_use_em_dashes_either/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-19T21:38:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "My Agent is drowning in its own planning files. Advice?",
         "link": "https://reddit.com/r/openclaw/comments/1sq42dc/my_agent_is_drowning_in_its_own_planning_files/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-19T20:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "What is the difference between Hermes agent and openclaw",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-19T19:40:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Scoop: NSA using Anthropic's Mythos despite blacklist",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-19T19:33:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "You don't need a VPS or Mac Mini for most use cases",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-19T18:16:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Adding this skill changed my perspective on openclaw. (we need this added by default)",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-19T18:09:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "GPT 5.5 Spud incoming",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-19T17:11:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Claude Design is Incredible...",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-19T16:22:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "I asked Gemini to enhance the quality of a selfie, it added a reflection to the pupil and I was curious what's inside. These are the results. The selfie was taken indoors btw",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-19T16:22:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "i tracked my api costs across 6 models over 3 weeks. here's the real cost of running an openclaw agent per model.",
-        "link": "https://reddit.com/r/openclaw/comments/1spx8ey/i_tracked_my_api_costs_across_6_models_over_3/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-19T16:12:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Why is every AI getting so restricted these days?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1spx7x9/why_is_every_ai_getting_so_restricted_these_days/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-19T16:12:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-19T21:52:31.244Z",
+    "reddit_viral_generated_at": "2026-04-19T22:57:05.547Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
