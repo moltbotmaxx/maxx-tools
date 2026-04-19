@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-19T20:56:07.429Z",
+    "generated_at": "2026-04-19T21:52:31.244Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -380,6 +380,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "What is the difference between Hermes agent and openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1sq2vjp/what_is_the_difference_between_hermes_agent_and/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-19T19:40:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Scoop: NSA using Anthropic's Mythos despite blacklist",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-19T18:09:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "GPT 5.5 Spud incoming",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-19T16:12:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Why is every AI getting so restricted these days?",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "50m26s, the human half-marathon record (57m20s) was borken by a robot today",
-        "link": "https://reddit.com/r/singularity/comments/1spwegr/50m26s_the_human_halfmarathon_record_57m20s_was/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-19T15:41:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-19T20:56:07.429Z",
+    "reddit_viral_generated_at": "2026-04-19T21:52:31.244Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
