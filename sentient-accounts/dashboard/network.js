@@ -66,7 +66,7 @@
       this.nodeRadius = 2.95;
       this.bounds = { x: 16, y: 10, z: 0 };
 
-      this.timeScale = 1;
+      this.timeScale = 5.0;
       this.maxSpeed = 0.036;
       this.friction = 0.985;
       this.gridBlend = 1.0;
@@ -83,111 +83,6 @@
 
       this.repulsionRadius = this.nodeRadius * this.repulsionRadiusMultiplier;
 
-      this.el.insertAdjacentHTML('beforeend', `
-    <div id="debug-panel" class="debug-panel terminal-mode">
-      <div class="debug-header">
-        <span>MASTER CALIBRATION TERMINAL v1.0</span>
-        <button id="close-debug">×</button>
-      </div>
-      <div class="debug-body">
-        <div class="terminal-grid">
-          <!-- Col 1: Core Physics -->
-          <div class="terminal-col">
-            <div class="section-title">CORE PHYSICS</div>
-            <div class="control-item">
-              <label>Time Scale</label>
-              <input type="range" id="param-timescale" min="0" max="5.0" step="0.1" value="1.0">
-              <span id="val-timescale">1.0</span>
-            </div>
-            <div class="control-item">
-              <label>Max Speed</label>
-              <input type="range" id="param-speed" min="0" max="0.3" step="0.001">
-              <span id="val-speed"></span>
-            </div>
-            <div class="control-item">
-              <label>Friction</label>
-              <input type="range" id="param-friction" min="0.5" max="0.999" step="0.001">
-              <span id="val-friction"></span>
-            </div>
-            <div class="control-item">
-              <label>Gravity</label>
-              <input type="range" id="param-gravity" min="0" max="5.0" step="0.1">
-              <span id="val-gravity"></span>
-            </div>
-            <div class="control-item">
-              <label>Repulsion Str</label>
-              <input type="range" id="param-repulsion" min="0" max="0.2" step="0.001">
-              <span id="val-repulsion"></span>
-            </div>
-            <div class="control-item">
-              <label>Repulsion Rad</label>
-              <input type="range" id="param-repulsion-r" min="1" max="20" step="0.5">
-              <span id="val-repulsion-r"></span>
-            </div>
-          </div>
-
-          <!-- Col 2: Flow & Tethers -->
-          <div class="terminal-col">
-            <div class="section-title">FLOW & TETHERS</div>
-            <div class="control-item">
-              <label>Grid Force</label>
-              <input type="range" id="param-wander" min="0" max="0.2" step="0.001">
-              <span id="val-wander"></span>
-            </div>
-            <div class="control-item">
-              <label>Grid Blend</label>
-              <input type="range" id="param-grid-blend" min="0" max="1.0" step="0.01">
-              <span id="val-grid-blend"></span>
-            </div>
-            <div class="control-item">
-              <label>Tether Str</label>
-              <input type="range" id="param-tether-s" min="0" max="0.01" step="0.0001">
-              <span id="val-tether-s"></span>
-            </div>
-            <div class="control-item">
-              <label>Tether Dist</label>
-              <input type="range" id="param-tether-d" min="1" max="100" step="1">
-              <span id="val-tether-d"></span>
-            </div>
-            <div class="control-item">
-              <label>Chaos Str</label>
-              <input type="range" id="param-chaos-s" min="0" max="1.0" step="0.01">
-              <span id="val-chaos-s"></span>
-            </div>
-            <div class="control-item">
-              <label>Chaos Freq (s)</label>
-              <input type="range" id="param-chaos-f" min="1" max="60" step="1">
-              <span id="val-chaos-f"></span>
-            </div>
-          </div>
-
-          <!-- Col 3: Visuals & Data -->
-          <div class="terminal-col">
-            <div class="section-title">VISUALS</div>
-            <div class="control-item">
-              <label>Node Radius</label>
-              <input type="range" id="param-node-size" min="0.1" max="5.0" step="0.05">
-              <span id="val-node-size"></span>
-            </div>
-            <div class="control-item">
-              <label>Link Opacity</label>
-              <input type="range" id="param-link-op" min="0" max="1.0" step="0.01">
-              <span id="val-link-op"></span>
-            </div>
-            <div class="control-item">
-              <label>Link Limit</label>
-              <input type="range" id="param-link-l" min="10" max="300" step="1">
-              <span id="val-link-l"></span>
-            </div>
-            
-            <div class="terminal-actions">
-              <button id="export-config" class="hud-btn" style="width:100%; margin-top:20px;">EXPORT JSON</button>
-              <button id="import-config" class="hud-btn" style="width:100%; margin-top:10px; background:rgba(224,255,4,0.1);">IMPORT JSON</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>`);
 
       // Toast System State
       this.toast = {
