@@ -97,7 +97,12 @@
       this.THREE = window.THREE;
       this._setupRenderer();
       this._setupScene();
-      this.resize();
+      this._bindEvents();
+      this.resize(); // Get real bounds first
+      this._buildData(); // Now place nodes in those bounds
+      this._buildSceneObjects();
+
+      if (options.selectedAccount) this.setSelected(options.selectedAccount);
     }
 
     updateNodeGeometry() {
