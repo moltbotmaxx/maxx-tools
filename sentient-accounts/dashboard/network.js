@@ -246,6 +246,43 @@
         const border = new THREE.Mesh(borderGeo, borderMat);
         border.renderOrder = 5;
 
+        // Language Badge (ES)
+        const spanishAccounts = ['chatgptruco', 'artificialmente.ia', 'estoicomorir', 'estoicovivir', 'tecnologia', 'traselveloreal', 'costarica', 'ivanelgrande', 'sergioprompts'];
+        if (spanishAccounts.includes(node.account.account)) {
+          const badgeCanvas = document.createElement('canvas');
+          badgeCanvas.width = 64;
+          badgeCanvas.height = 32;
+          const ctx = badgeCanvas.getContext('2d');
+          
+          // Gray rounded rectangle
+          ctx.fillStyle = 'rgba(45, 48, 58, 0.98)';
+          const r = 8;
+          ctx.beginPath();
+          ctx.roundRect(0, 0, 64, 32, r);
+          ctx.fill();
+          
+          // White text
+          ctx.fillStyle = '#fff';
+          ctx.font = 'bold 24px Inter, sans-serif';
+          ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+          ctx.fillText('ES', 32, 17);
+          
+          const badgeTex = new THREE.CanvasTexture(badgeCanvas);
+          const badgeMat = new THREE.MeshBasicMaterial({ map: badgeTex, transparent: true });
+          
+          // Slightly larger than before
+          const aspect = 2;
+          const bW = this.nodeRadius * 0.65;
+          const bH = bW / aspect;
+          const badgeGeo = new THREE.PlaneGeometry(bW, bH);
+          const badge = new THREE.Mesh(badgeGeo, badgeMat);
+          
+          // Position at bottom-right
+          badge.position.set(this.nodeRadius * 0.65, -this.nodeRadius * 0.65, 0.2);
+          badge.renderOrder = 20;
+          disk.add(badge);
+        }
+
         this.group.add(border);
         this.group.add(disk);
 
