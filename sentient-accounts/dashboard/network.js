@@ -633,15 +633,23 @@
           if (!this.isSolid) {
             this._applyGridFlow(node, t);
 
-            // Center Gravity & Forced Rebound (6s state)
-            const distToCenter = node.currentPosition.length();
+            // 2. Center Gravity & Orbital Physics
+            const toCenter = node.currentPosition.clone().negate();
+            const dist = toCenter.length();
+            
             if (node.reboundTimer > 0) {
-              const force = node.currentPosition.clone().normalize().multiplyScalar(-0.01);
+              const force = toCenter.clone().normalize().multiplyScalar(0.01);
               node.velocity.add(force);
               node.reboundTimer -= 0.016;
             } else {
-              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0004 * (distToCenter / 20));
+              // Centripetal Attraction (Pulls to center)
+              const gravity = toCenter.clone().normalize().multiplyScalar(0.00045 * (dist / 20));
               node.velocity.add(gravity);
+
+              // Orbital Force (Perpendicular rotation)
+              const orbitDir = new this.THREE.Vector3(-node.currentPosition.y, node.currentPosition.x, 0).normalize();
+              const orbitalStrength = 0.00035; 
+              node.velocity.add(orbitDir.multiplyScalar(orbitalStrength));
             }
 
             // Decrement Timers
