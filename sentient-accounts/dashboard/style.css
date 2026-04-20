@@ -406,11 +406,21 @@ body.is-fullscreen {
 
 /* ── Mobile Optimizations ────────────────────────── */
 @media (max-width: 600px) {
-  .hud-top { padding: 12px 16px; height: auto; flex-direction: column; align-items: flex-start; gap: 8px; }
-  .hud-bottom { padding: 12px 16px; height: auto; flex-direction: column; align-items: flex-start; gap: 10px; }
-  .hud-logo { font-size: 16px; }
-  .hud-stats { gap: 12px; }
-  .hud-stat-item { font-size: 10px; }
+  .main-header { padding: 12px 16px; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .header-brand { gap: 10px; }
+  .brand-mark { width: 32px; height: 32px; font-size: 16px; border-radius: 8px; }
+  .brand-name { font-size: 14px; }
+  .brand-sub { font-size: 8px; }
+  
+  .header-metrics { 
+    width: 100%; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    gap: 15px;
+    border-radius: 12px;
+  }
+  .hud-stat-val { font-size: 14px; }
+  .hud-stat-lbl { font-size: 8px; }
 
   .side-panel {
     width: calc(100% - 24px);
