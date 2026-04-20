@@ -141,6 +141,50 @@
       </div>
     </aside>
 
+    <div id="debug-panel" class="debug-panel">
+      <div class="debug-header">
+        <span>SYSTEM CALIBRATION</span>
+        <button id="close-debug">×</button>
+      </div>
+      <div class="debug-body">
+        <div class="control-group">
+          <label>Flow Strength</label>
+          <input type="range" id="param-wander" min="0" max="0.05" step="0.001">
+          <span id="val-wander"></span>
+        </div>
+        <div class="control-group">
+          <label>Max Speed</label>
+          <input type="range" id="param-speed" min="0" max="0.1" step="0.005">
+          <span id="val-speed"></span>
+        </div>
+        <div class="control-group">
+          <label>Repulsion Strength</label>
+          <input type="range" id="param-repulsion" min="0" max="0.05" step="0.001">
+          <span id="val-repulsion"></span>
+        </div>
+        <div class="control-group">
+          <label>Tether Strength</label>
+          <input type="range" id="param-tether-s" min="0" max="0.002" step="0.0001">
+          <span id="val-tether-s"></span>
+        </div>
+        <div class="control-group">
+          <label>Tether Max Dist</label>
+          <input type="range" id="param-tether-d" min="5" max="50" step="1">
+          <span id="val-tether-d"></span>
+        </div>
+        <div class="control-group">
+          <label>Chaos Burst</label>
+          <input type="range" id="param-chaos" min="0" max="0.5" step="0.01">
+          <span id="val-chaos"></span>
+        </div>
+        <button id="export-config" class="hud-btn" style="width:100%; margin-top:20px; justify-content:center;">
+          EXPORT CONFIG
+        </button>
+      </div>
+    </div>
+
+    <button id="open-debug" class="debug-toggle-btn">⚙</button>
+
     <div id="appOverlay" class="app-overlay"></div>
   </body>
 </html>

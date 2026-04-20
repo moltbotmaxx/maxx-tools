@@ -425,7 +425,67 @@ body.is-fullscreen {
   color: #fff;
 }
 
-/* ── Mobile Optimizations ────────────────────────── */
+/* ── Debug Panel ────────────────────────────────── */
+.debug-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 320px;
+  background: rgba(10, 15, 20, 0.95);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  z-index: 10000;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8), 0 0 20px rgba(224, 255, 4, 0.1);
+  pointer-events: auto;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.debug-panel.is-open { display: flex; opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+.debug-header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+.debug-header button { background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; }
+
+.debug-body { padding: 20px; }
+
+.control-group { margin-bottom: 18px; }
+.control-group label { display: block; font-size: 9px; font-weight: 800; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.control-group input[type="range"] { width: 100%; cursor: pointer; accent-color: var(--accent); }
+.control-group span { display: block; font-size: 10px; font-family: var(--mono); color: #fff; margin-top: 4px; text-align: right; }
+
+.debug-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  pointer-events: auto;
+}
+.debug-toggle-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── Responsive ─────────────────────────────────── */
 @media (max-width: 600px) {
   .main-header { padding: 12px 16px; flex-direction: column; gap: 12px; align-items: flex-start; }
   .header-brand { gap: 10px; }

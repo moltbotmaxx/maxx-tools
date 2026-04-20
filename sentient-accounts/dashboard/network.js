@@ -1,8 +1,8 @@
 /* ─────────────────────────────────────────────────────────
    Sentient Network Graph · Pure 2D Refactor
-   ───────────────────────────────────────────────────────── */
-
-(function () {
+  pointer-events: auto;
+}
+.debug-toggle-btn:hover { border-color: var(--accent); color: var(--accent); }
   'use strict';
 
   function rimColor(eng) {
@@ -69,6 +69,12 @@
       this.repulsionStrength = 0.006; // Reduced from 0.012
       this.wanderStrength = 0.012; // Increased from 0.006
       this.maxSpeed = 0.025; // Increased from 0.015
+
+      // New Exposed Parameters for Live Tuning
+      this.tetherStrength = 0.00025;
+      this.tetherMaxDist = 18.0;
+      this.chaosBurstStrength = 0.08;
+      this.centerGravityMultiplier = 1.0;
 
       // Toast System State
       this.toast = {
@@ -689,8 +695,8 @@
     }
 
     _applyTethers() {
-      const maxDist = 18.0; // Tether limit
-      const strength = 0.00025;
+      const maxDist = this.tetherMaxDist;
+      const strength = this.tetherStrength;
       const n = this.nodes.length;
       
       for (let i = 0; i < n; i++) {

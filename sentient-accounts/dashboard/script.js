@@ -168,6 +168,61 @@ async function init() {
   // Click on background of dashboard should close panel
   // (Relying on NetworkGraph's internal selection callback for this)
 
+  // Debug Panel Logic
+  const debugPanel = document.getElementById("debug-panel");
+  const openDebug = document.getElementById("open-debug");
+  const closeDebug = document.getElementById("close-debug");
+
+  openDebug?.addEventListener("click", () => {
+    debugPanel.classList.add("is-open");
+    // Sync sliders with current graph state
+    if (state.graph) {
+      syncDebug(state.graph);
+    }
+  });
+  closeDebug?.addEventListener("click", () => debugPanel.classList.remove("is-open"));
+
+  function syncDebug(g) {
+    const params = [
+      { id: 'wander', key: 'wanderStrength', valId: 'val-wander' },
+      { id: 'speed', key: 'maxSpeed', valId: 'val-speed' },
+      { id: 'repulsion', key: 'repulsionStrength', valId: 'val-repulsion' },
+      { id: 'tether-s', key: 'tetherStrength', valId: 'val-tether-s' },
+      { id: 'tether-d', key: 'tetherMaxDist', valId: 'val-tether-d' },
+      { id: 'chaos', key: 'chaosBurstStrength', valId: 'val-chaos' }
+    ];
+
+    params.forEach(p => {
+      const input = document.getElementById(`param-${p.id}`);
+      const label = document.getElementById(p.valId);
+      if (input && label) {
+        input.value = g[p.key];
+        label.textContent = g[p.key];
+        input.oninput = (e) => {
+          const val = parseFloat(e.target.value);
+          g[p.key] = val;
+          label.textContent = val;
+        };
+      }
+    });
+  }
+
+  document.getElementById("export-config")?.addEventListener("click", () => {
+    if (!state.graph) return;
+    const g = state.graph;
+    const config = {
+      wanderStrength: g.wanderStrength,
+      maxSpeed: g.maxSpeed,
+      repulsionStrength: g.repulsionStrength,
+      tetherStrength: g.tetherStrength,
+      tetherMaxDist: g.tetherMaxDist,
+      chaosBurstStrength: g.chaosBurstStrength
+    };
+    const str = JSON.stringify(config, null, 2);
+    console.log("SENTIENT SYSTEM CONFIG:", str);
+    alert("CONFIG EXPORTED TO CONSOLE (F12)\n\n" + str);
+  });
+
   // Load Data
   try {
     const raw = window.__SENTIENT_DASHBOARD_DATA__ || await (await fetch("global.json")).json();
