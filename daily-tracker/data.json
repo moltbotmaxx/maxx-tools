@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-20T03:53:13.755Z",
+    "generated_at": "2026-04-20T06:28:03.182Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "StepFun Step-3.5-Flash (openrouter)",
+        "link": "https://reddit.com/r/openclaw/comments/1sqgld9/stepfun_step35flash_openrouter/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T05:50:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Hostinger Managed Open Claw Question?",
+        "link": "https://reddit.com/r/openclaw/comments/1sqeryp/hostinger_managed_open_claw_question/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T04:14:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Early OC Adopter. Now Managing Memory and Perceived OV Degradation",
         "link": "https://reddit.com/r/openclaw/comments/1sqdspz/early_oc_adopter_now_managing_memory_and/",
@@ -379,16 +397,7 @@
         "published_at": "2026-04-20T03:26:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Takes a long time for openclaw to reply on telegram",
-        "link": "https://reddit.com/r/openclaw/comments/1sqbnmw/takes_a_long_time_for_openclaw_to_reply_on/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T01:46:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "It appears I would could be much better off with n8n",
@@ -397,7 +406,16 @@
         "published_at": "2026-04-20T01:23:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
+      },
+      {
+        "headline": "ADORTPON",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sqaa7a/adortpon/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-20T00:45:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "George Washington if he lived today",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-19T23:58:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Thanks Gemini, that clears everything up!",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-19T23:30:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       },
       {
         "headline": "I asked Gemini to enhance the quality of a selfie, it added a reflection to the pupil and I was curious what's inside so I kept asking to ENHANCE. These are the results. The selfie was taken indoors btw.",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-19T23:25:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "Been building with OpenClaw for months. Am I the only one fighting it constantly?",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-19T22:59:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 84
       },
       {
         "headline": "Apparently Claude is lazy.",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-19T22:53:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "she doesn't use em dashes either!",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sq5yvy/she_doesnt_use_em_dashes_either/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-19T21:39:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "she doesn't use em dashes either!",
-        "link": "https://reddit.com/r/OpenAI/comments/1sq5ypr/she_doesnt_use_em_dashes_either/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-19T21:38:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-20T03:53:13.755Z",
+    "reddit_viral_generated_at": "2026-04-20T06:28:03.182Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
