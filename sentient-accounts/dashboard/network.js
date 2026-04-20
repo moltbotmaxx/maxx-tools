@@ -103,9 +103,15 @@
       this._setupRenderer();
       this._setupScene();
       this._bindEvents();
-      this.resize(); // Get real bounds first
-      this._buildData(); // Now place nodes in those bounds
+      this.resize(); 
+      this._buildData(); 
       this._buildSceneObjects();
+
+      console.log("SENTIENT SYSTEM INITIALIZED", {
+        nodes: this.nodes.length,
+        radius: this.nodeRadius,
+        bounds: this.bounds
+      });
 
       if (options.selectedAccount) this.setSelected(options.selectedAccount);
     }
