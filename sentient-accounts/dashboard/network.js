@@ -747,16 +747,20 @@
     _applyGridFlow(node, t) {
       const pos = node.currentPosition;
       
-      const xPart = (pos.x + this.bounds.x) / (this.bounds.x * 2);
-      const yPart = (pos.y + this.bounds.y) / (this.bounds.y * 2);
+      // Use absolute camera frustum for 100% accurate 24-sector mapping
+      const halfW = (this.camera.right - this.camera.left) / 2;
+      const halfH = (this.camera.top - this.camera.bottom) / 2;
+      
+      const xPart = (pos.x + halfW) / (halfW * 2);
+      const yPart = (pos.y + halfH) / (halfH * 2);
 
-      const col = Math.floor(clamp(xPart * this.gridCols, 0, this.gridCols - 0.01));
-      const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
+      const col = Math.floor(clamp(xPart * 6, 0, 5));
+      const row = Math.floor(clamp(yPart * 4, 0, 3));
 
       const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 11.0; // High energy as requested
+      const strength = this.wanderStrength * 12.0; // Increased power
 
-      // Exact 6x4 Matrix from Image (Row 3 = Top, Row 0 = Bottom)
+      // Matrix Lookup (0=Bottom, 3=Top)
       const matrix = [
         ['U', 'L', 'L', 'L', 'L', 'L'], // Row 0 (Bottom)
         ['U', 'U', 'R', 'R', 'R', 'D'], // Row 1
@@ -764,20 +768,17 @@
         ['R', 'R', 'R', 'R', 'R', 'D']  // Row 3 (Top)
       ];
 
-      // Handle mobile (3x8) vs desktop (6x4)
-      let dir = 'R';
-      if (this.gridCols === 6 && this.gridRows === 4) {
-        dir = matrix[row][col] || 'R';
-      } else {
-        // Fallback for mobile or other sizes: alternating lanes
-        dir = row % 2 === 0 ? 'R' : 'L';
-      }
+      const dir = matrix[row][col] || 'R';
+      
+      // Transition forces (U/D) need to be stronger to overcome inertia
+      const moveS = 1.2;
+      const transS = 2.2; 
 
       switch(dir) {
-        case 'R': force.set(1.5, 0, 0); break;
-        case 'L': force.set(-1.5, 0, 0); break;
-        case 'U': force.set(0, 1.5, 0); break;
-        case 'D': force.set(0, -1.5, 0); break;
+        case 'R': force.set(moveS, 0, 0); break;
+        case 'L': force.set(-moveS, 0, 0); break;
+        case 'U': force.set(0, transS, 0); break;
+        case 'D': force.set(0, -transS, 0); break;
       }
 
       // Add "Chaos" (Noise-based turbulence)
@@ -786,8 +787,8 @@
       const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
       const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
       
-      // Blend 85% Matrix Force, 15% Chaos
-      const blendedForce = force.multiplyScalar(0.85).add(chaos.multiplyScalar(0.15));
+      // Blend 90% Matrix, 10% Chaos (Increase structure dominance)
+      const blendedForce = force.multiplyScalar(0.9).add(chaos.multiplyScalar(0.1));
       node.velocity.add(blendedForce.multiplyScalar(strength));
     }
 
