@@ -26,7 +26,7 @@
 
   // Lightweight Noise Field (Perlin-like approximation)
   const NOISE_SCALE = 0.04;
-  const NOISE_SPEED = 0.05; // Much slower noise evolution
+  const NOISE_SPEED = 0.05; 
   const simpleNoise = (x, y, t) => {
     return (
       Math.sin(x * NOISE_SCALE + t * NOISE_SPEED) *
@@ -38,39 +38,33 @@
   class NetworkGraph {
     constructor(containerId, accounts, onSelect, options = {}) {
       this.el = document.getElementById(containerId);
-      if (!this.el) return;
+      if (!this.el) {
+        console.error("NetworkGraph: Container not found", containerId);
+        return;
+      }
 
-      this.accounts = accounts;
+      this.accounts = accounts || [];
       this.onSelect = onSelect;
       this.options = options;
       this.tooltip = this.el.querySelector('.net-tooltip');
-      this.detailPanel = options.detailPanelId ? document.getElementById(options.detailPanelId) : null;
       this.running = false;
       this.raf = null;
       this.nodes = [];
       this.meshes = [];
       this.hoveredNode = null;
       this.selectedNode = null;
-      this.pointerDownNode = null;
-      this.pointerDown = false;
-      this.pointerMoved = false;
-      this.downX = 0;
-      this.downY = 0;
+      this.dragNode = null;
       this.mx = 0;
       this.my = 0;
-      this.dragNode = null;
-      this.dragPlane = null;
-      this.dragOffset = null;
 
-      // 2D Bounds and Config
+      // Golden Physics Config
       this.nodeRadius = 2.95;
-      this.bounds = { x: 16, y: 10, z: 0 };
+      this.bounds = { x: 50, y: 30, z: 0 }; // Default bounds, will be updated by resize
 
       this.timeScale = 5.0;
       this.maxSpeed = 0.036;
       this.friction = 0.985;
       this.gridBlend = 1.0;
-
       this.repulsionStrength = 0.2;
       this.repulsionRadiusMultiplier = 20;
       this.centerGravityMultiplier = 5;
@@ -81,20 +75,17 @@
       this.linkOpacity = 0.46;
       this.linkDistLimit = 80.0;
 
-      this.repulsionRadius = this.nodeRadius * this.repulsionRadiusMultiplier;
-
-
-      // Toast System State
+      // Toast System
       this.toast = {
         activeNode: null,
         activePost: null,
         timer: 0,
-        history: [], // Keep track of recently shown nodes
-        isBreak: false,
+        history: [],
         el: this.el.querySelector('.network-toast')
       };
 
       if (!window.THREE) {
+        console.error("NetworkGraph: THREE.js not found");
         this.el.innerHTML = '<div class="network-fallback">Three.js no cargó.</div>';
         return;
       }
@@ -107,7 +98,7 @@
       this._buildData(); 
       this._buildSceneObjects();
 
-      console.log("SENTIENT SYSTEM INITIALIZED", {
+      console.log("SENTIENT SYSTEM V2 INITIALIZED", {
         nodes: this.nodes.length,
         radius: this.nodeRadius,
         bounds: this.bounds
@@ -116,42 +107,14 @@
       if (options.selectedAccount) this.setSelected(options.selectedAccount);
     }
 
-    updateNodeGeometry() {
-      if (!this.nodes) return;
-      const circleGeo = new this.THREE.CircleGeometry(this.nodeRadius, 64);
-      const borderGeo = new this.THREE.CircleGeometry(this.nodeRadius * 1.08, 64);
-      this.nodes.forEach(n => {
-        if (n.sphere) n.sphere.geometry.dispose();
-        if (n.halo) n.halo.geometry.dispose();
-        if (n.sphere) n.sphere.geometry = circleGeo;
-        if (n.halo) n.halo.geometry = borderGeo;
-      });
-    }
-
-    _setupLayout() {
-      const isMobile = window.innerWidth < 600;
-      const isPortrait = window.innerHeight > window.innerWidth;
-
-      this.nodeRadius = isMobile ? 0.45 : 0.62;
-
-      if (isPortrait) {
-        this.gridCols = 3;
-        this.gridRows = 8;
-      } else {
-        this.gridCols = 6;
-        this.gridRows = 4;
-      }
-    }
-
     _setupRenderer() {
       const THREE = this.THREE;
       this.renderer = new THREE.WebGLRenderer({
         antialias: true,
-        alpha: true, // Allow background to show through
+        alpha: true,
         powerPreference: "high-performance"
       });
       this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-      if (THREE.SRGBColorSpace) this.renderer.outputColorSpace = THREE.SRGBColorSpace;
       this.renderer.domElement.className = 'network-webgl';
       this.el.appendChild(this.renderer.domElement);
     }
@@ -159,13 +122,13 @@
     _setupScene() {
       const THREE = this.THREE;
       this.scene = new THREE.Scene();
-
-      this.frustumHeight = this.options.preview ? 34 : 64; // Increased for fullscreen spread
+      
+      this.frustumHeight = this.options.preview ? 34 : 64;
       this.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000);
       this.camera.position.set(0, 0, 100);
 
       this.scene.add(new THREE.AmbientLight(0xffffff, 1.0));
-
+      
       this.group = new THREE.Group();
       this.scene.add(this.group);
 
@@ -180,17 +143,16 @@
 
     _updateBoundsFromViewport() {
       const visibleHeight = this.frustumHeight;
-      const visibleWidth = this.camera.right - this.camera.left;
-      const margin = this.options.preview ? 0.02 : 0; // Edge to edge for fullscreen
-      this.bounds.x = visibleWidth * (0.5 - margin);
-      this.bounds.y = visibleHeight * (0.5 - margin);
+      const visibleWidth = visibleHeight * (this.camera.right - this.camera.left) / (this.camera.top - this.camera.bottom || 2);
+      this.bounds.x = (visibleWidth || 100) * 0.5;
+      this.bounds.y = (visibleHeight || 64) * 0.5;
     }
 
     _buildStars() {
       const THREE = this.THREE;
-      const count = this.options.preview ? 100 : 180;
+      const count = 180;
       const positions = new Float32Array(count * 3);
-      for (let i = 0; i < count; i += 1) {
+      for (let i = 0; i < count; i++) {
         positions[i * 3] = (Math.random() * 2 - 1) * 100;
         positions[i * 3 + 1] = (Math.random() * 2 - 1) * 100;
         positions[i * 3 + 2] = -50;
@@ -214,47 +176,38 @@
       const THREE = this.THREE;
       const n = this.accounts.length;
       const maxSegments = Math.ceil((n * (n - 1)) / 2) + 10;
+      
       this.linkGeometry = new THREE.BufferGeometry();
       this.linkGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(maxSegments * 2 * 3), 3));
       this.linkGeometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(maxSegments * 2 * 3), 3));
-      this.linkGeometry.setDrawRange(0, 0);
-
-      this.linkLines = new THREE.LineSegments(
+      
+      this.links = new THREE.LineSegments(
         this.linkGeometry,
         new THREE.LineBasicMaterial({
-          color: 0xffffff, // Base white to not tint vertex colors
-          transparent: true,
-          opacity: 0.35, // Increased overall visibility
           vertexColors: true,
-          blending: THREE.AdditiveBlending, // Makes it pop more
-        }),
+          transparent: true,
+          opacity: this.linkOpacity,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+        })
       );
-      this.group.add(this.linkLines);
-    }
-
-    _randomPoint() {
-      return new this.THREE.Vector3(
-        (Math.random() * 2 - 1) * (this.bounds.x - this.nodeRadius),
-        (Math.random() * 2 - 1) * (this.bounds.y - this.nodeRadius),
-        0
-      );
+      this.group.add(this.links);
     }
 
     _buildData() {
-      this.nodes = this.accounts.map((account, index) => {
-        const position = this._randomPoint();
+      const THREE = this.THREE;
+      this.nodes = this.accounts.map((account) => {
+        const pos = new THREE.Vector3(
+          (Math.random() * 2 - 1) * (this.bounds.x - this.nodeRadius),
+          (Math.random() * 2 - 1) * (this.bounds.y - this.nodeRadius),
+          0
+        );
         return {
           account,
-          index,
-          color: rimColor(account.engagement_rate),
-          currentPosition: position,
-          velocity: new this.THREE.Vector3((Math.random() * 2 - 1) * 0.02, (Math.random() * 2 - 1) * 0.02, 0),
-          driftSeed: new this.THREE.Vector2(Math.random() * 100, Math.random() * 100),
-          chaosClock: Math.random() * 10, // Random offset for 10s cycle
-          sphere: null,
-          halo: null,
+          currentPosition: pos,
+          velocity: new THREE.Vector3(),
           baseScale: 1.0,
-          stagnationTime: 0,
+          chaosClock: Math.random() * 60,
           collisionTimer: 0,
           reboundTimer: 0
         };
@@ -283,58 +236,18 @@
         }
 
         const disk = new THREE.Mesh(circleGeo, material);
-        disk.renderOrder = 10;
-
-        const borderGeo = new THREE.CircleGeometry(this.nodeRadius * 1.08, 64);
+        
         const borderMat = new THREE.MeshBasicMaterial({
-          color: node.color,
+          color: rimColor(node.account.engagement_rate),
           transparent: true,
-          opacity: 0.08,
+          opacity: 0.4,
         });
+        const borderGeo = new THREE.CircleGeometry(this.nodeRadius * 1.08, 64);
         const border = new THREE.Mesh(borderGeo, borderMat);
-        border.renderOrder = 5;
-
-        // Language Badge (ES)
-        const spanishAccounts = ['chatgptruco', 'artificialmente.ia', 'estoicomorir', 'estoicovivir', 'tecnologia', 'traselveloreal', 'costarica', 'ivanelgrande', 'sergioprompts'];
-        if (spanishAccounts.includes(node.account.account)) {
-          const badgeCanvas = document.createElement('canvas');
-          badgeCanvas.width = 64;
-          badgeCanvas.height = 32;
-          const ctx = badgeCanvas.getContext('2d');
-
-          // Gray rounded rectangle
-          ctx.fillStyle = 'rgba(45, 48, 58, 0.98)';
-          const r = 8;
-          ctx.beginPath();
-          ctx.roundRect(0, 0, 64, 32, r);
-          ctx.fill();
-
-          // White text
-          ctx.fillStyle = '#fff';
-          ctx.font = 'bold 24px Inter, sans-serif';
-          ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-          ctx.fillText('ES', 32, 17);
-
-          const badgeTex = new THREE.CanvasTexture(badgeCanvas);
-          const badgeMat = new THREE.MeshBasicMaterial({ map: badgeTex, transparent: true });
-
-          // Slightly larger than before
-          const aspect = 2;
-          const bW = this.nodeRadius * 0.65;
-          const bH = bW / aspect;
-          const badgeGeo = new THREE.PlaneGeometry(bW, bH);
-          const badge = new THREE.Mesh(badgeGeo, badgeMat);
-
-          // Position at bottom-right
-          badge.position.set(this.nodeRadius * 0.65, -this.nodeRadius * 0.65, 0.2);
-          badge.renderOrder = 20;
-          disk.add(badge);
-        }
 
         this.group.add(border);
         this.group.add(disk);
 
-        disk.userData.node = node;
         node.sphere = disk;
         node.halo = border;
         this.meshes.push(disk);
@@ -342,169 +255,9 @@
     }
 
     _bindEvents() {
-      this._pointerDown = e => this._onPointerDown(e);
-      this._pointerMove = e => this._onPointerMove(e);
-      this._pointerUp = () => this._onPointerUp();
-      this._pointerLeave = () => this._onPointerLeave();
-      this._click = e => this._onClick(e);
-      this._resize = () => this.resize();
-
-      // Bind events to container instead of canvas so they pass through to UI if needed
-      this.el.addEventListener('pointerdown', this._pointerDown);
-      this.el.addEventListener('pointermove', this._pointerMove);
-      this.el.addEventListener('pointerup', this._pointerUp);
-      this.el.addEventListener('pointerleave', this._pointerLeave);
-      this.el.addEventListener('click', this._click);
-      window.addEventListener('resize', this._resize);
-
-      if (window.ResizeObserver) {
-        this.resizeObserver = new ResizeObserver(() => this.resize());
-        this.resizeObserver.observe(this.el);
-      }
-    }
-
-    _updatePointer(event) {
-      const rect = this.renderer.domElement.getBoundingClientRect();
-      this.mx = event.clientX - rect.left;
-      this.my = event.clientY - rect.top;
-      this.pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-      this.pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-    }
-
-    _pickNode(event) {
-      this._updatePointer(event);
-      this.raycaster.setFromCamera(this.pointer, this.camera);
-      const hits = this.raycaster.intersectObjects(this.meshes, false);
-      return hits.length ? hits[0].object.userData.node : null;
-    }
-
-    _onPointerDown(event) {
-      this.pointerDown = true;
-      this.pointerMoved = false;
-      this.downX = event.clientX;
-      this.downY = event.clientY;
-      this.pointerDownNode = this._pickNode(event);
-
-      if (this.pointerDownNode) {
-        const THREE = this.THREE;
-        this.dragPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
-        this.raycaster.setFromCamera(this.pointer, this.camera);
-        const hit = new THREE.Vector3();
-        if (this.raycaster.ray.intersectPlane(this.dragPlane, hit)) {
-          this.dragNode = this.pointerDownNode;
-          this.dragOffset = this.dragNode.currentPosition.clone().sub(hit);
-        }
-      }
-    }
-
-    _onPointerMove(event) {
-      if (this.pointerDown && (Math.abs(event.clientX - this.downX) > 4 || Math.abs(event.clientY - this.downY) > 4)) {
-        this.pointerMoved = true;
-      }
-
-      if (this.dragNode) {
-        this._updatePointer(event);
-        this.raycaster.setFromCamera(this.pointer, this.camera);
-        const hit = new this.THREE.Vector3();
-        if (this.raycaster.ray.intersectPlane(this.dragPlane, hit)) {
-          const next = hit.add(this.dragOffset);
-          next.x = clamp(next.x, -this.bounds.x + this.nodeRadius, this.bounds.x - this.nodeRadius);
-          next.y = clamp(next.y, -this.bounds.y + this.nodeRadius, this.bounds.y - this.nodeRadius);
-          this.dragNode.currentPosition.copy(next);
-          this.dragNode.velocity.set(0, 0, 0);
-        }
-        this.hoveredNode = this.dragNode;
-        this.renderer.domElement.style.cursor = 'grabbing';
-        this._tip(this.dragNode);
-        return;
-      }
-
-      const node = this._pickNode(event);
-      this.hoveredNode = node;
-      this.renderer.domElement.style.cursor = node ? 'grab' : 'default';
-      if (node) this._tip(node);
-      else if (this.tooltip) this.tooltip.dataset.visible = 'false';
-    }
-
-    _onPointerUp() {
-      this.pointerDown = false;
-      this.dragNode = null;
-    }
-
-    _onPointerLeave() {
-      this._onPointerUp();
-      if (this.tooltip) this.tooltip.dataset.visible = 'false';
-    }
-
-    _onClick(event) {
-      // Small movement threshold to allow for slight jitter during clicks
-      const moveThreshold = 5;
-      const moved = Math.abs(event.clientX - this.downX) > moveThreshold ||
-        Math.abs(event.clientY - this.downY) > moveThreshold;
-
-      if (!moved) {
-        const clicked = this._pickNode(event);
-        if (clicked) {
-          this.setSelected(clicked.account);
-          if (this.onSelect) this.onSelect(clicked.account);
-        } else {
-          this.setSelected(null);
-          if (this.onSelect) this.onSelect(null);
-        }
-      }
-    }
-
-    _tip(node) {
-      if (!this.tooltip) return;
-      const a = node.account;
-      this.tooltip.querySelector('.net-tt-name').textContent = `@${a.account}`;
-      this.tooltip.querySelector('.net-tt-followers').textContent = `${fmt(a.followers)} followers`;
-      this.tooltip.querySelector('.net-tt-engagement').textContent = `${(Number(a.engagement_rate) || 0).toFixed(2)}% engagement`;
-      this.tooltip.querySelector('.net-tt-posts').textContent = `${fmt(a.posts || a.recent_post_count)} posts`;
-
-      const ttWidth = 196;
-      const ttHeight = 124;
-      const rect = this.el.getBoundingClientRect();
-      let tx = this.mx + 18;
-      let ty = this.my - ttHeight / 2;
-      if (tx + ttWidth > rect.width - 8) tx = this.mx - ttWidth - 18;
-      if (ty < 8) ty = 8;
-      if (ty + ttHeight > rect.height - 8) ty = rect.height - ttHeight - 8;
-      this.tooltip.style.transform = `translate(${tx}px,${ty}px)`;
-      this.tooltip.dataset.visible = 'true';
-    }
-
-    setSelected(account) {
-      if (!account) {
-        this.selectedNode = null;
-        if (this.detailPanel) {
-          const ph = this.detailPanel.querySelector('.nd-placeholder');
-          const ct = this.detailPanel.querySelector('.nd-content');
-          if (ph) ph.style.display = 'flex';
-          if (ct) ct.style.display = 'none';
-        }
-        return;
-      }
-      this.selectedNode = this.nodes.find(n => n.account.account === account.account) || null;
-      if (this.selectedNode && this.detailPanel) {
-        this._updateDetailPanel(this.selectedNode);
-        const ph = this.detailPanel.querySelector('.nd-placeholder');
-        const ct = this.detailPanel.querySelector('.nd-content');
-        if (ph) ph.style.display = 'none';
-        if (ct) ct.style.display = 'flex';
-      }
-    }
-
-    _updateDetailPanel(node) {
-      const a = node.account;
-      const dp = this.detailPanel;
-      dp.querySelector('.nd-name').textContent = a.full_name || a.account;
-      dp.querySelector('.nd-handle').textContent = `@${a.account}`;
-      dp.querySelector('.nd-avatar').src = a.avatar_path || a.profile_pic_url || '';
-      dp.querySelector('.nd-stat-val.followers').textContent = fmt(a.followers);
-      dp.querySelector('.nd-stat-val.engagement').textContent = `${(Number(a.engagement_rate) || 0).toFixed(2)}%`;
-      dp.querySelector('.nd-bio').textContent = a.biography || '';
-      dp.querySelector('.nd-link').href = `https://instagram.com/${a.account}`;
+      window.addEventListener('resize', () => this.resize());
+      this.el.addEventListener('pointermove', (e) => this._onPointerMove(e));
+      this.el.addEventListener('click', (e) => this._onClick(e));
     }
 
     resize() {
@@ -513,95 +266,109 @@
       const width = rect.width || 960;
       const height = rect.height || 520;
       const aspect = width / height;
+
       this.camera.left = -this.frustumHeight * aspect / 2;
       this.camera.right = this.frustumHeight * aspect / 2;
       this.camera.top = this.frustumHeight / 2;
       this.camera.bottom = -this.frustumHeight / 2;
       this.camera.updateProjectionMatrix();
+
       this._updateBoundsFromViewport();
       this.renderer.setSize(width, height);
-      this.renderer.setClearColor(0x000000, 0); // Fully transparent
     }
 
-    _applyRepulsion() {
+    _updateNodePositions(t) {
+      const THREE = this.THREE;
+      
+      // 1. Repulsion & Physics
       const n = this.nodes.length;
-      for (let i = 0; i < n; i += 1) {
-        let furthestNode = null;
-        let maxDist = -1;
+      for (let i = 0; i < n; i++) {
         const a = this.nodes[i];
-
-        for (let j = 0; j < n; j += 1) {
-          if (i === j) continue;
+        for (let j = i + 1; j < n; j++) {
           const b = this.nodes[j];
-          if (this.dragNode === a || this.dragNode === b) continue;
-
           const delta = a.currentPosition.clone().sub(b.currentPosition);
-          const dist = delta.length();
-
-          // 1. Furthest Node Tracking
-          if (dist > maxDist) {
-            maxDist = dist;
-            furthestNode = b;
-          }
-
-          // 2. Passive Repulsion (Always active, prevents clumping)
-          const minDist = (this.nodeRadius * a.baseScale) + (this.nodeRadius * b.baseScale);
-          const repulsionRadius = minDist * 2.2; // Reduced from 4.5
-
-          if (dist < repulsionRadius) {
-            const force = (repulsionRadius - dist) * this.repulsionStrength;
-            const push = delta.clone().normalize().multiplyScalar(force);
-            if (this.selectedNode !== a) a.currentPosition.add(push);
-            if (this.selectedNode !== b) b.currentPosition.sub(push);
-          }
-
-          // 3. Collision Timer (Timed high-strength repulsion)
+          const dist = delta.length() || 0.1;
+          const minDist = this.nodeRadius * 2.2;
+          
           if (dist < minDist) {
-            a.collisionTimer = 5.0;
-            b.collisionTimer = 5.0;
+            const force = (minDist - dist) * this.repulsionStrength;
+            const push = delta.normalize().multiplyScalar(force);
+            a.currentPosition.add(push);
+            b.currentPosition.sub(push);
           }
-
-          if ((a.collisionTimer > 0 || b.collisionTimer > 0) && dist < minDist * 2.2) {
-            const force = (minDist * 2.2 - dist) * this.repulsionStrength * 2.5;
-            const push = delta.clone().normalize().multiplyScalar(force);
-            if (this.selectedNode !== a) a.currentPosition.add(push);
-            if (this.selectedNode !== b) b.currentPosition.sub(push);
-          }
-        }
-
-        // 4. Furthest Attraction (Pulls nodes towards their most distant peer)
-        if (furthestNode && this.selectedNode !== a) {
-          const attractionDelta = furthestNode.currentPosition.clone().sub(a.currentPosition);
-          const attractionForce = attractionDelta.normalize().multiplyScalar(0.00015);
-          a.velocity.add(attractionForce);
         }
       }
+
+      // 2. Main Loop
+      this.nodes.forEach(node => {
+        const isSelected = this.selectedNode === node;
+        const targetScale = isSelected ? 1.8 : 1.0;
+        node.baseScale += (targetScale - node.baseScale) * 0.1;
+
+        // Apply Flow
+        this._applyGridFlow(node, t);
+        
+        // Gravity
+        const distToCenter = node.currentPosition.length();
+        const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15) * this.centerGravityMultiplier * this.timeScale);
+        node.velocity.add(gravity);
+
+        // Apply Velocity
+        if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
+        node.velocity.multiplyScalar(this.friction);
+        node.currentPosition.add(node.velocity.clone().multiplyScalar(this.timeScale));
+
+        this._applyHardBounds(node);
+
+        // Sync Meshes
+        if (node.sphere) {
+          node.sphere.position.copy(node.currentPosition);
+          node.sphere.position.z = isSelected ? 5 : 0;
+          node.sphere.scale.set(node.baseScale, node.baseScale, 1);
+        }
+        if (node.halo) {
+          node.halo.position.copy(node.sphere.position);
+          node.halo.position.z = node.sphere.position.z - 0.1;
+          node.halo.scale.set(node.baseScale, node.baseScale, 1);
+        }
+      });
+
+      this._updateLinks();
+    }
+
+    _applyGridFlow(node, t) {
+      const noise = simpleNoise(node.currentPosition.x, node.currentPosition.y, t);
+      const flow = new this.THREE.Vector3(Math.cos(noise * Math.PI), Math.sin(noise * Math.PI), 0).multiplyScalar(0.001 * this.timeScale);
+      node.velocity.add(flow);
+    }
+
+    _applyHardBounds(node) {
+      const bx = this.bounds.x - this.nodeRadius;
+      const by = this.bounds.y - this.nodeRadius;
+      node.currentPosition.x = clamp(node.currentPosition.x, -bx, bx);
+      node.currentPosition.y = clamp(node.currentPosition.y, -by, by);
     }
 
     _updateLinks() {
-      if (!this.linkGeometry) return;
       const pos = this.linkGeometry.getAttribute('position');
       const col = this.linkGeometry.getAttribute('color');
       let idx = 0;
-
       const n = this.nodes.length;
+
       for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
           const na = this.nodes[i];
           const nb = this.nodes[j];
           const d = na.currentPosition.distanceTo(nb.currentPosition);
+          if (d > this.linkDistLimit) continue;
 
-          const alpha = Math.max(0.01, 1 - d / this.linkDistLimit) * this.linkOpacity;
-
-          const r = 0.81 * alpha;
-          const g = 1.0 * alpha;
-          const b = 0.015 * alpha;
+          const alpha = Math.max(0, 1 - d / this.linkDistLimit) * this.linkOpacity;
+          const r = 0.8 * alpha, g = 1.0 * alpha, b = 0.1 * alpha;
 
           pos.setXYZ(idx * 2, na.currentPosition.x, na.currentPosition.y, 0);
           pos.setXYZ(idx * 2 + 1, nb.currentPosition.x, nb.currentPosition.y, 0);
           col.setXYZ(idx * 2, r, g, b);
           col.setXYZ(idx * 2 + 1, r, g, b);
-
           idx++;
         }
       }
@@ -610,303 +377,38 @@
       col.needsUpdate = true;
     }
 
-    _updateNodePositions(t) {
-      if (!this.isSolid) {
-        this._applyRepulsion();
-        this._applyTethers();
-      }
-      this._updateLinks();
-
-      this.nodes.forEach(node => {
-        const isDragged = this.dragNode === node;
-        const isSelected = this.selectedNode === node;
-        const isToast = this.toast.activeNode === node;
-
-        const targetScale = isSelected ? 2.5 : (isDragged ? 1.2 : 1.0);
-        node.baseScale += (targetScale - node.baseScale) * 0.15;
-
-        if (isSelected && !isDragged) {
-          // Selected node stays on top and moves to center
-          const targetPos = new this.THREE.Vector3(0, 0, 3.0);
-          node.sphere.position.lerp(targetPos, 0.14);
-          node.currentPosition.copy(node.sphere.position);
-          node.halo.position.copy(node.sphere.position);
-          node.halo.position.z -= 0.1;
-          node.velocity.set(0, 0, 0);
-        } else if (isDragged) {
-          // Dragged node stays on top of connections (z = 2.0)
-          node.sphere.position.copy(node.currentPosition);
-          node.sphere.position.z = 2.0;
-          node.halo.position.copy(node.sphere.position);
-          node.halo.position.z -= 0.1;
-          node.velocity.set(0, 0, 0);
-        } else if (isToast) {
-          // Freeze node in place while toast is active
-          node.velocity.set(0, 0, 0);
-          node.sphere.position.copy(node.currentPosition);
-          node.sphere.position.z = 1.5;
-          node.halo.position.copy(node.sphere.position);
-          node.halo.position.z -= 0.1;
-        } else {
-          // Grid-based Flow logic (24-piece grid) + Chaos
-          if (!this.isSolid) {
-            this._applyGridFlow(node, t);
-
-            // Center Gravity & Forced Rebound (6s state)
-            const distToCenter = node.currentPosition.length();
-            if (node.reboundTimer > 0) {
-              const force = node.currentPosition.clone().normalize().multiplyScalar(-0.01 * this.timeScale);
-              node.velocity.add(force);
-              node.reboundTimer -= 0.016 * this.timeScale;
-            } else {
-              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15) * this.centerGravityMultiplier * this.timeScale);
-              node.velocity.add(gravity);
-            }
-
-            // Decrement Timers
-            if (node.collisionTimer > 0) node.collisionTimer -= 0.016 * this.timeScale;
-
-            // 3. Stagnation & Physics Update
-            if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
-            node.velocity.multiplyScalar(Math.pow(this.friction, this.timeScale));
-            node.currentPosition.add(node.velocity.clone().multiplyScalar(this.timeScale));
-
-            // Chaos Burst (1s every Ns)
-            node.chaosClock += 0.016 * this.timeScale;
-            if (node.chaosClock >= this.chaosFreq) node.chaosClock = 0;
-
-            if (node.chaosClock < 1.0) {
-              const burstStrength = this.chaosBurstStrength * this.timeScale;
-              node.velocity.x += (Math.random() - 0.5) * burstStrength;
-              node.velocity.y += (Math.random() - 0.5) * burstStrength;
-            }
-
-            this._applyHardBounds(node);
-          } else if (node.solidTarget) {
-            // Lerp to target position
-            node.currentPosition.lerp(node.solidTarget, 0.08);
-            node.velocity.set(0, 0, 0);
-          }
-
-          node.sphere.position.copy(node.currentPosition);
-          node.sphere.position.z = 0;
-        }
-        node.halo.position.copy(node.sphere.position);
-        node.halo.position.z -= 0.05;
-        node.sphere.scale.set(node.baseScale, node.baseScale, 1);
-        node.halo.scale.set(node.baseScale, node.baseScale, 1);
-      });
+    _onPointerMove(e) {
+      const rect = this.el.getBoundingClientRect();
+      this.pointer.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      this.pointer.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+      
+      this.raycaster.setFromCamera(this.pointer, this.camera);
+      const hits = this.raycaster.intersectObjects(this.meshes);
+      this.hoveredNode = hits.length ? hits[0].object : null;
+      this.el.style.cursor = this.hoveredNode ? 'pointer' : 'default';
     }
 
-    setSolidMode(active) {
-      this.isSolid = active;
-      if (active) {
-        // Define target positions for 7-6-7-6 layout
-        const rowPattern = [7, 6, 7, 6];
-        const rowSpacing = this.bounds.y * 0.45;
-        const colSpacing = this.bounds.x * 0.24;
-
-        let nodeIdx = 0;
-        rowPattern.forEach((count, rowIndex) => {
-          const y = (rowIndex - 1.5) * -rowSpacing;
-          const rowWidth = (count - 1) * colSpacing;
-          for (let i = 0; i < count; i++) {
-            if (nodeIdx >= this.nodes.length) break;
-            const x = (i * colSpacing) - (rowWidth / 2);
-            this.nodes[nodeIdx].solidTarget = new this.THREE.Vector3(x, y, 0);
-            nodeIdx++;
-          }
-        });
+    _onClick(e) {
+      this._onPointerMove(e);
+      if (this.hoveredNode) {
+        const node = this.nodes.find(n => n.sphere === this.hoveredNode);
+        this.setSelected(node.account);
+        if (this.onSelect) this.onSelect(node.account);
+      } else {
+        this.setSelected(null);
+        if (this.onSelect) this.onSelect(null);
       }
     }
 
-    _applyTethers() {
-      const maxDist = this.tetherMaxDist;
-      const strength = this.tetherStrength;
-      const n = this.nodes.length;
-
-      for (let i = 0; i < n; i++) {
-        const a = this.nodes[i];
-        for (let j = i + 1; j < n; j++) {
-          const b = this.nodes[j];
-          const delta = b.currentPosition.clone().sub(a.currentPosition);
-          const dist = delta.length();
-
-          if (dist > maxDist) {
-            // "Elastic" pull when stretched beyond maxDist
-            const pull = (dist - maxDist) * strength;
-            const force = delta.normalize().multiplyScalar(pull);
-            if (this.selectedNode !== a) a.velocity.add(force);
-            if (this.selectedNode !== b) b.velocity.sub(force);
-          }
-        }
-      }
-    }
-
-    _applyHardBounds(node) {
-      const limitX = this.bounds.x - this.nodeRadius;
-      const limitY = this.bounds.y - this.nodeRadius;
-
-      // Header exclusion (Approx top 15% of screen)
-      const headerHeight = this.frustumHeight * 0.15;
-      const limitYTop = limitY - headerHeight;
-
-      const bounce = 0.05;
-      let hit = false;
-
-      // X Bounds
-      if (node.currentPosition.x >= limitX) { node.currentPosition.x = limitX; node.velocity.x = -bounce; hit = true; }
-      else if (node.currentPosition.x <= -limitX) { node.currentPosition.x = -limitX; node.velocity.x = bounce; hit = true; }
-
-      // Y Bounds (Special handling for Top/Header)
-      if (node.currentPosition.y >= limitYTop) {
-        node.currentPosition.y = limitYTop;
-        node.velocity.y = -bounce;
-        hit = true;
-      }
-      else if (node.currentPosition.y <= -limitY) {
-        node.currentPosition.y = -limitY;
-        node.velocity.y = bounce;
-        hit = true;
-      }
-
-      if (hit) node.reboundTimer = 6.0;
-    }
-
-    _applyGridFlow(node, t) {
-      if (this.isSolid) return;
-
-      const pos = node.currentPosition;
-      const xPart = (pos.x + this.bounds.x) / (this.bounds.x * 2);
-      const yPart = (pos.y + this.bounds.y) / (this.bounds.y * 2);
-
-      const col = Math.floor(clamp(xPart * 6, 0, 5.99));
-      const row = Math.floor(clamp(yPart * 4, 0, 3.99)); // 0: Bottom, 3: Top
-
-      const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 10.0;
-
-      // Exact Mapping from User Image
-      if (row === 3) { // USER ROW 0 (TOP)
-        if (col < 5) force.set(1.2, 0, 0); // Right
-        else force.set(0, -1.2, 0); // Down
-      }
-      else if (row === 2) { // USER ROW 1
-        if (col === 0) force.set(0, 1.2, 0); // Up
-        else if (col >= 1 && col <= 3) force.set(-1.2, 0, 0); // Left
-        else force.set(0, -1.2, 0); // Down (Cols 4,5)
-      }
-      else if (row === 1) { // USER ROW 2
-        if (col <= 1) force.set(0, 1.2, 0); // Up (Cols 0,1)
-        else if (col >= 2 && col <= 4) force.set(1.2, 0, 0); // Right
-        else force.set(0, -1.2, 0); // Down (Col 5)
-      }
-      else { // USER ROW 0 (BOTTOM)
-        if (col === 0) force.set(0, 1.2, 0); // Up
-        else force.set(-1.2, 0, 0); // Left (Cols 1-5)
-      }
-
-      // Add "Chaos" (Noise-based turbulence)
-      const nx = pos.x + node.driftSeed.x;
-      const ny = pos.y + node.driftSeed.y;
-      const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
-      const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
-
-      // Blend 85% Grid, 15% Chaos
-      const blendedForce = force.multiplyScalar(0.85).add(chaos.multiplyScalar(0.15));
-      node.velocity.add(blendedForce.multiplyScalar(strength));
-    }
-
-    _updateToast(dt, t) {
-      if (!this.toast.el) return;
-
-      // Stop all toast activity if a node is manually selected
-      if (this.selectedNode) {
-        if (this.toast.activeNode) {
-          this.toast.activeNode = null;
-          this.toast.activePost = null;
-          this.toast.el.classList.remove('is-active');
-          this.toast.timer = 10.0; // Reset for when panel closes
-        }
-        return;
-      }
-
-      this.toast.timer -= dt;
-
-      if (this.toast.timer <= 0) {
-        if (!this.toast.isBreak) {
-          this.toast.isBreak = true;
-          this.toast.timer = 6.0;
-          this.toast.activeNode = null;
-          this.toast.activePost = null;
-          this.toast.el.classList.remove('is-active');
-        } else {
-          // End break, pick new node
-          this.toast.isBreak = false;
-          this.toast.timer = 10.0;
-          const candidates = this.nodes.filter(n => n.account.recent_posts && n.account.recent_posts.length > 0);
-          if (candidates.length === 0) {
-            this.toast.timer = 2.0; // Try again soon
-            return;
-          }
-
-          // Pick a random node not in history
-          const availableCandidates = candidates.filter(n => !this.toast.history.includes(n.account.account));
-          const nodePool = availableCandidates.length > 0 ? availableCandidates : candidates;
-
-          const randomNode = nodePool[Math.floor(Math.random() * nodePool.length)];
-          const screenPos = randomNode.sphere.position.clone().project(this.camera);
-          const sx = (screenPos.x + 1) * this.el.clientWidth / 2;
-          const sy = (-screenPos.y + 1) * this.el.clientHeight / 2;
-
-          // Toast size is approx 320x180. Center is at (sx-50, sy-50).
-          const margin = 40;
-          const isSafeX = sx > (50 + margin) && sx < (this.el.clientWidth - 270 - margin);
-          const isSafeY = sy > (50 + margin) && sy < (this.el.clientHeight - 130 - margin);
-
-          if (!isSafeX || !isSafeY) {
-            this.toast.timer = 0.5; // Quick retry for another node
-            return;
-          }
-
-          // Use ALL available posts for more variety
-          const allPosts = randomNode.account.recent_posts;
-          this.toast.activeNode = randomNode;
-          this.toast.activePost = allPosts[Math.floor(Math.random() * allPosts.length)];
-
-          // Update history (prevent repeats)
-          this.toast.history.push(randomNode.account.account);
-          if (this.toast.history.length > 15) this.toast.history.shift();
-
-          // Fill Toast
-          this.toast.el.querySelector('.nt-account').textContent = `@${randomNode.account.account}`;
-          this.toast.el.querySelector('.nt-caption').textContent = this.toast.activePost.caption || "Intelligence transmission...";
-          this.toast.el.querySelector('.nt-likes').textContent = fmt(this.toast.activePost.likes);
-          this.toast.el.querySelector('.nt-comments').textContent = fmt(this.toast.activePost.comments);
-          this.toast.el.classList.add('is-active');
-        }
-      }
-
-      // If active, follow the node (align sprite exactly over placeholder)
-      if (this.toast.activeNode) {
-        const screenPos = this.toast.activeNode.sphere.position.clone().project(this.camera);
-        const x = (screenPos.x + 1) * this.el.clientWidth / 2;
-        const y = (-screenPos.y + 1) * this.el.clientHeight / 2;
-
-        // Position toast statically relative to node
-        this.toast.el.style.left = `${x - 50}px`;
-        this.toast.el.style.top = `${y - 50}px`;
-      }
+    setSelected(account) {
+      this.selectedNode = account ? this.nodes.find(n => n.account.account === account.account) : null;
     }
 
     start() {
       this.running = true;
       const loop = () => {
         if (!this.running) return;
-        const dt = 0.016; // Approx 60fps
-        const t = this.clock.getElapsedTime();
-        this._updateNodePositions(t);
-        this._updateToast(dt, t);
+        this._updateNodePositions(this.clock.getElapsedTime());
         this.renderer.render(this.scene, this.camera);
         this.raf = requestAnimationFrame(loop);
       };
@@ -916,11 +418,6 @@
     stop() {
       this.running = false;
       if (this.raf) cancelAnimationFrame(this.raf);
-      if (this.resizeObserver) this.resizeObserver.disconnect();
-      if (this.renderer) {
-        this.renderer.dispose();
-        if (this.renderer.domElement.parentElement) this.renderer.domElement.parentElement.removeChild(this.renderer.domElement);
-      }
     }
   }
 
