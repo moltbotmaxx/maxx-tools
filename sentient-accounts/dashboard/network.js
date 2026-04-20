@@ -493,6 +493,20 @@
 
     _applyRepulsion() {
       const n = this.nodes.length;
+      
+      // 1. Calculate local density for each node to detect clusters
+      for (let i = 0; i < n; i++) {
+        let density = 0;
+        const a = this.nodes[i];
+        for (let j = 0; j < n; j++) {
+          if (i === j) continue;
+          if (a.currentPosition.distanceTo(this.nodes[j].currentPosition) < this.nodeRadius * 6.0) {
+            density++;
+          }
+        }
+        a.localDensity = density;
+      }
+
       for (let i = 0; i < n; i += 1) {
         let furthestNode = null;
         let maxDist = -1;
@@ -506,24 +520,26 @@
           const delta = a.currentPosition.clone().sub(b.currentPosition);
           const dist = delta.length();
 
-          // 1. Furthest Node Tracking
+          // Furthest Node Tracking
           if (dist > maxDist) {
             maxDist = dist;
             furthestNode = b;
           }
 
-          // 2. Passive Repulsion (Always active, prevents clumping)
+          // 2. Passive Repulsion with Cluster Boost
           const minDist = (this.nodeRadius * a.baseScale) + (this.nodeRadius * b.baseScale);
-          const repulsionRadius = minDist * 2.2; // Reduced from 4.5
+          const repulsionRadius = minDist * 2.2;
 
           if (dist < repulsionRadius) {
-            const force = (repulsionRadius - dist) * this.repulsionStrength;
+            // Repulsion increases if nodes are in a high-density cluster
+            const clusterBoost = Math.max(1.0, (a.localDensity + b.localDensity) * 0.12);
+            const force = (repulsionRadius - dist) * this.repulsionStrength * clusterBoost;
             const push = delta.clone().normalize().multiplyScalar(force);
             if (this.selectedNode !== a) a.currentPosition.add(push);
             if (this.selectedNode !== b) b.currentPosition.sub(push);
           }
 
-          // 3. Collision Timer (Timed high-strength repulsion)
+          // 3. Collision Timer
           if (dist < minDist) {
             a.collisionTimer = 5.0;
             b.collisionTimer = 5.0;
@@ -537,7 +553,7 @@
           }
         }
 
-        // 4. Furthest Attraction (Pulls nodes towards their most distant peer)
+        // 4. Furthest Attraction
         if (furthestNode && this.selectedNode !== a) {
           const attractionDelta = furthestNode.currentPosition.clone().sub(a.currentPosition);
           const attractionForce = attractionDelta.normalize().multiplyScalar(0.00015);
