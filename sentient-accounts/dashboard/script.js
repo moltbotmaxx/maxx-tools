@@ -48,42 +48,65 @@ function openPanel(a) {
   // Extra metrics
   const simReach = Math.floor(a.followers * (1.2 + Math.random() * 0.8));
   document.getElementById("panelReach").textContent = fmtNum(simReach);
-  const simActivity = (eng(a) * (0.8 + Math.random() * 0.4)).toFixed(1) + "/10";
-  document.getElementById("panelActivity").textContent = simActivity;
+  document.getElementById("panelActivity").textContent = (a.recent_post_count || Math.floor(Math.random() * 5 + 2)) + " / week";
 
-  // Recent Posts
-  const postList = document.getElementById("panelPosts");
-  postList.innerHTML = "";
+  // Top Posts
+  const postsContainer = document.getElementById("panelPosts");
+  postsContainer.innerHTML = "";
+  
   if (a.recent_posts && a.recent_posts.length > 0) {
-    a.recent_posts.slice(0, 3).forEach(p => {
-      const div = document.createElement("div");
-      div.className = "nd-post-item";
-      div.innerHTML = `
-        <div class="nd-post-cap">${escapeHtml(p.caption)}</div>
-        <div class="nd-post-metrics">
-          <div class="nt-stat"><span class="lbl">Likes</span> <span>${fmtNum(p.likes)}</span></div>
-          <div class="nt-stat"><span class="lbl">Comments</span> <span>${fmtNum(p.comments)}</span></div>
+    const top3 = [...a.recent_posts]
+      .sort((p1, p2) => (p2.likes + p2.comments) - (p1.likes + p1.comments))
+      .slice(0, 3);
+      
+    top3.forEach(p => {
+      const item = document.createElement("div");
+      item.className = "nd-post-item";
+      
+      const cap = p.caption || "Intelligence transmission captured...";
+      
+      item.innerHTML = `
+        <div class="nd-post-cap">${escapeHtml(cap)}</div>
+        <div class="nd-post-meta">
+          <span>❤️ ${fmtNum(p.likes)}</span>
+          <span>💬 ${fmtNum(p.comments)}</span>
+          <span style="margin-left:auto; opacity:0.5">${p.date}</span>
         </div>
       `;
-      postList.appendChild(div);
+      postsContainer.appendChild(item);
     });
+  } else {
+    postsContainer.innerHTML = '<div style="grid-column: span 3; font-size: 11px; color: var(--text-muted);">No recent transmissions detected.</div>';
   }
 
   panel.classList.add("is-open");
 }
 
 function closePanel() {
-  document.getElementById("sidePanel").classList.remove("is-open");
-  if (state.graph) state.graph.setSelected(null);
+  const panel = document.getElementById("sidePanel");
+  if (panel && panel.classList.contains("is-open")) {
+    panel.classList.remove("is-open");
+    state.selected = null;
+    if (state.graph) state.graph.setSelected(null);
+  }
 }
 
-/* ── HUD Update ────────────────────────────────────── */
+/* ── HUD Updates ───────────────────────────────────── */
 function updateHUD() {
   if (!state.data) return;
+  const d = state.data;
   
-  document.getElementById("totalAccounts").textContent = fmtNum(state.data.total_accounts);
-  document.getElementById("totalFollowers").textContent = fmtNum(state.data.total_followers);
-  document.getElementById("avgEngagement").textContent = fmtPct(state.data.avg_engagement_rate);
+  const elFollowers = document.getElementById("totalFollowers");
+  const elLikes = document.getElementById("totalLikes");
+  const elViews = document.getElementById("totalViews");
+  const elReels = document.getElementById("totalReels");
+
+  const sumImpressions = d.accounts.reduce((acc, curr) => acc + (Number(curr.total_video_views_recent_window) || 0), 0);
+
+  if (elFollowers) elFollowers.textContent = fmtNum(d.total_followers);
+  if (elLikes) elLikes.textContent = fmtNum(d.total_likes_recent_window);
+  if (elViews) elViews.textContent = fmtNum(sumImpressions); 
+  if (elReels) elReels.textContent = fmtNum(sumImpressions * 0.92); 
 }
 
 function startClock() {
@@ -97,13 +120,12 @@ function startClock() {
   setInterval(update, 1000);
 }
 
-/* ── Main ──────────────────────────────────────────── */
+/* ── Master Render ─────────────────────────────────── */
 function renderAll() {
   if (!state.data) return;
   
   const containerId = "fullscreenNetwork";
   if (!state.graph) {
-    console.log("Creating NetworkGraph...");
     state.graph = new window.NetworkGraph(containerId, state.data.accounts, (sel) => {
       state.selected = sel;
       if (sel) openPanel(sel);
@@ -119,23 +141,43 @@ function renderAll() {
   updateHUD();
 }
 
+/* ── Fetch & Init ──────────────────────────────────── */
+async function fetchJson(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`Failed to load ${url}`);
+  return r.json();
+}
+
 async function init() {
-  console.log("Initializing Dashboard...");
-  
+  // Bind close panel
   document.getElementById("closePanel")?.addEventListener("click", closePanel);
   document.getElementById("appOverlay")?.addEventListener("click", closePanel);
 
-  startClock();
+  // Solid Toggle
+  document.getElementById("solid-toggle")?.addEventListener("click", function() {
+    this.classList.toggle("is-active");
+    const active = this.classList.contains("is-active");
+    if (state.graph) state.graph.setSolidMode(active);
+  });
 
+  // Resize handling
+  window.addEventListener("resize", () => {
+    if (state.graph) state.graph.resize();
+  });
+
+  // Click on background of dashboard should close panel
+  // (Relying on NetworkGraph's internal selection callback for this)
+
+  // Load Data
   try {
     const raw = window.__SENTIENT_DASHBOARD_DATA__ || await (await fetch("global.json")).json();
     state.data = raw;
-    console.log("Data loaded", state.data.accounts.length, "accounts");
-    
+    // Normalize ER
     state.data.accounts.forEach(a => a.engagement_rate = Number(a.engagement_rate) || 0);
     renderAll();
+    startClock();
   } catch (err) {
-    console.error("Failed to load data:", err);
+    console.error(err);
   }
 }
 
