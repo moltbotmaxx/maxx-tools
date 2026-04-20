@@ -67,14 +67,17 @@
       this.bounds = { x: 16, y: 10, z: 0 };
       this.repulsionRadius = this.nodeRadius * 5.8;
       this.repulsionStrength = 0.006; // Reduced from 0.012
-      this.wanderStrength = 0.012; // Increased from 0.006
-      this.maxSpeed = 0.025; // Increased from 0.015
+      this.wanderStrength = 0.012; 
+      this.maxSpeed = 0.025; 
+      this.friction = 0.985;
+      this.gridBlend = 0.85;
 
-      // New Exposed Parameters for Live Tuning
+      this.repulsionStrength = 0.006;
+      this.centerGravityMultiplier = 1.0;
       this.tetherStrength = 0.00025;
       this.tetherMaxDist = 18.0;
       this.chaosBurstStrength = 0.08;
-      this.centerGravityMultiplier = 1.0;
+      this.linkOpacity = 0.35;
 
       // Toast System State
       this.toast = {
@@ -94,12 +97,19 @@
       this.THREE = window.THREE;
       this._setupRenderer();
       this._setupScene();
-      this._bindEvents();
-      this.resize(); // Get real bounds first
-      this._buildData(); // Now place nodes in those bounds
-      this._buildSceneObjects();
+      this.resize();
+    }
 
-      if (options.selectedAccount) this.setSelected(options.selectedAccount);
+    updateNodeGeometry() {
+      if (!this.nodes) return;
+      const geo = new this.THREE.SphereGeometry(this.nodeRadius, 32, 32);
+      const haloGeo = new this.THREE.CircleGeometry(this.nodeRadius * 1.5, 32);
+      this.nodes.forEach(n => {
+        if (n.sphere) n.sphere.geometry.dispose();
+        if (n.halo) n.halo.geometry.dispose();
+        if (n.sphere) n.sphere.geometry = geo;
+        if (n.halo) n.halo.geometry = haloGeo;
+      });
     }
 
     _setupLayout() {
@@ -565,7 +575,7 @@
           const nb = this.nodes[j];
           const d = na.currentPosition.distanceTo(nb.currentPosition);
 
-          const alpha = Math.max(0.01, 1 - d / 80) * 0.45;
+          const alpha = Math.max(0.01, 1 - d / 80) * this.linkOpacity;
 
           const r = 0.81 * alpha;
           const g = 1.0 * alpha;
@@ -633,7 +643,7 @@
               node.velocity.add(force);
               node.reboundTimer -= 0.016;
             } else {
-              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15));
+              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15) * this.centerGravityMultiplier);
               node.velocity.add(gravity);
             }
 
@@ -642,7 +652,7 @@
 
             // 3. Stagnation & Physics Update
             if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
-            node.velocity.multiplyScalar(0.985);
+            node.velocity.multiplyScalar(this.friction);
             node.currentPosition.add(node.velocity);
 
             // Chaos Burst (1s every 10s)

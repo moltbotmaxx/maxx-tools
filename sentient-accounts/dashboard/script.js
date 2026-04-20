@@ -185,11 +185,15 @@ async function init() {
   function syncDebug(g) {
     const params = [
       { id: 'wander', key: 'wanderStrength', valId: 'val-wander' },
+      { id: 'grid-blend', key: 'gridBlend', valId: 'val-grid-blend' },
       { id: 'speed', key: 'maxSpeed', valId: 'val-speed' },
+      { id: 'friction', key: 'friction', valId: 'val-friction' },
       { id: 'repulsion', key: 'repulsionStrength', valId: 'val-repulsion' },
+      { id: 'gravity', key: 'centerGravityMultiplier', valId: 'val-gravity' },
       { id: 'tether-s', key: 'tetherStrength', valId: 'val-tether-s' },
       { id: 'tether-d', key: 'tetherMaxDist', valId: 'val-tether-d' },
-      { id: 'chaos', key: 'chaosBurstStrength', valId: 'val-chaos' }
+      { id: 'node-size', key: 'nodeRadius', valId: 'val-node-size' },
+      { id: 'link-op', key: 'linkOpacity', valId: 'val-link-op' }
     ];
 
     params.forEach(p => {
@@ -202,6 +206,8 @@ async function init() {
           const val = parseFloat(e.target.value);
           g[p.key] = val;
           label.textContent = val;
+          // Specialized updates for non-physics params
+          if (p.key === 'nodeRadius' && g.updateNodeGeometry) g.updateNodeGeometry();
         };
       }
     });
@@ -212,15 +218,19 @@ async function init() {
     const g = state.graph;
     const config = {
       wanderStrength: g.wanderStrength,
+      gridBlend: g.gridBlend,
       maxSpeed: g.maxSpeed,
+      friction: g.friction,
       repulsionStrength: g.repulsionStrength,
+      centerGravityMultiplier: g.centerGravityMultiplier,
       tetherStrength: g.tetherStrength,
       tetherMaxDist: g.tetherMaxDist,
-      chaosBurstStrength: g.chaosBurstStrength
+      nodeRadius: g.nodeRadius,
+      linkOpacity: g.linkOpacity
     };
     const str = JSON.stringify(config, null, 2);
     console.log("SENTIENT SYSTEM CONFIG:", str);
-    alert("CONFIG EXPORTED TO CONSOLE (F12)\n\n" + str);
+    alert("ADVANCED CONFIG EXPORTED TO CONSOLE (F12)\n\n" + str);
   });
 
   // Load Data
