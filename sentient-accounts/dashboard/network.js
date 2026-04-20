@@ -644,7 +644,8 @@
             node.velocity.x += (Math.random() - 0.5) * burstStrength;
             node.velocity.y += (Math.random() - 0.5) * burstStrength;
           }
-
+          
+          this._applyEdgeRepulsion(node);
           this._applyHardBounds(node);
 
           node.sphere.position.copy(node.currentPosition);
@@ -655,6 +656,34 @@
         node.sphere.scale.set(node.baseScale, node.baseScale, 1);
         node.halo.scale.set(node.baseScale, node.baseScale, 1);
       });
+    }
+
+    _applyEdgeRepulsion(node) {
+      const margin = 10.0; 
+      const strength = 0.0015;
+      
+      const limitX = this.bounds.x - this.nodeRadius;
+      const limitY = this.bounds.y - this.nodeRadius;
+      const headerHeight = this.frustumHeight * 0.15;
+      const limitYTop = limitY - headerHeight;
+
+      // X Repulsion
+      if (node.currentPosition.x > limitX - margin) {
+        const dist = (node.currentPosition.x - (limitX - margin)) / margin;
+        node.velocity.x -= dist * strength;
+      } else if (node.currentPosition.x < -limitX + margin) {
+        const dist = (-limitX + margin - node.currentPosition.x) / margin;
+        node.velocity.x += dist * strength;
+      }
+
+      // Y Repulsion
+      if (node.currentPosition.y > limitYTop - margin) {
+        const dist = (node.currentPosition.y - (limitYTop - margin)) / margin;
+        node.velocity.y -= dist * strength;
+      } else if (node.currentPosition.y < -limitY + margin) {
+        const dist = (-limitY + margin - node.currentPosition.y) / margin;
+        node.velocity.y += dist * strength;
+      }
     }
 
     _applyHardBounds(node) {
