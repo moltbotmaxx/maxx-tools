@@ -367,19 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-20T10:59:19.503Z",
+    "generated_at": "2026-04-20T12:14:42.699Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Morgan Stanley sees agentic AI widening chip spending beyond graphics processors to CPUs",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sql4kn/morgan_stanley_sees_agentic_ai_widening_chip/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-20T10:14:46+00:00",
+        "headline": "Which AI should I use?",
+        "link": "https://reddit.com/r/openclaw/comments/1sqn3js/which_ai_should_i_use/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T11:54:41+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "why pay for ChatGPT when McDonald's support bot is free?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sqm4fx/why_pay_for_chatgpt_when_mcdonalds_support_bot_is/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-20T11:07:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "why pay for ChatGPT when McDonald's support bot is free?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sqm4f6/why_pay_for_chatgpt_when_mcdonalds_support_bot_is/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-20T11:07:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Gemini 3.1 Pro massive performance degradation",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sql9d7/gemini_31_pro_massive_performance_degradation/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-20T10:22:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "AI agents are easy to build, but hard to monitor. How are you tracking cost and traces?",
+        "link": "https://reddit.com/r/openclaw/comments/1sqkm5c/ai_agents_are_easy_to_build_but_hard_to_monitor/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T09:45:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Question about persistent background execution",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-20T09:32:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Wow Claude...just wow...",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-20T09:15:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "How are you guys using Claude for sales?",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-20T09:05:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "What happens when you build social media that forensically rejects AI content? I tried it.",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-20T07:49:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Friends outside of tech: lol copilot is dumb - Friends in tech: I just bought iodine tablets",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-20T07:40:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "\"Claude just helped me build a wetlab and sequence my whole genome at home. I have zero lab experience!\" --- Dudes out here sequencing their own DNA at home!",
-        "link": "https://reddit.com/r/singularity/comments/1sqiaug/claude_just_helped_me_build_a_wetlab_and_sequence/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-20T07:26:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Okay, Claude Design is fun to use",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sqi5tr/okay_claude_design_is_fun_to_use/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-20T07:18:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Has anyone tried the new Gemma family from Google? 'Frontier models running locally'.",
-        "link": "https://reddit.com/r/openclaw/comments/1sqgxyh/has_anyone_tried_the_new_gemma_family_from_google/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T06:08:53+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Claude told me to stop tweaking",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sqf59r/claude_told_me_to_stop_tweaking/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-20T04:33:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-20T10:59:19.503Z",
+    "reddit_viral_generated_at": "2026-04-20T12:14:42.699Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
