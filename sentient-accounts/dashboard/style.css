@@ -425,72 +425,112 @@ body.is-fullscreen {
   color: #fff;
 }
 
-/* ── Debug Panel ────────────────────────────────── */
-.debug-panel {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  width: 480px;
-  background: rgba(8, 12, 16, 0.98);
-  border: 1px solid rgba(224, 255, 4, 0.3);
-  border-radius: 12px;
-  z-index: 10000;
-  display: none;
-  flex-direction: column;
-  box-shadow: 0 0 100px rgba(0,0,0,0.9);
-  pointer-events: auto;
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+/* ── Master Calibration Terminal ─────────────────── */
+.debug-panel.terminal-mode {
+  width: 960px;
+  max-width: 95vw;
+  background: rgba(5, 7, 10, 0.99);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  box-shadow: 0 0 150px rgba(0,0,0,1);
 }
-.debug-panel.is-open { display: flex; opacity: 1; transform: translate(-50%, -50%) scale(1); }
 
 .debug-header {
-  padding: 14px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 8px 16px;
+  background: rgba(224, 255, 4, 0.1);
+  border-bottom: 1px solid var(--accent);
   font-family: var(--mono);
   font-size: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--accent);
-  background: rgba(255,255,255,0.02);
 }
-.debug-header button { background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; opacity: 0.5; }
-.debug-header button:hover { opacity: 1; color: var(--accent); }
 
-.debug-body { padding: 24px; overflow-y: auto; max-height: 80vh; }
+.debug-body {
+  padding: 20px;
+  overflow-y: auto;
+}
 
-.debug-section { margin-bottom: 24px; }
-.section-title { font-size: 9px; font-weight: 900; color: var(--accent); opacity: 0.6; margin-bottom: 12px; letter-spacing: 2px; }
+.terminal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
 
-.control-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.terminal-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-.control-item { background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; }
-.control-item label { display: block; font-size: 9px; color: #aaa; margin-bottom: 8px; text-transform: uppercase; }
-.control-item input[type="range"] { width: 100%; height: 4px; accent-color: var(--accent); }
-.control-item span { display: block; font-size: 10px; font-family: var(--mono); color: var(--accent); margin-top: 6px; }
+.section-title {
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--accent);
+  opacity: 0.6;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 4px;
+}
+
+.control-item {
+  background: rgba(255,255,255,0.03);
+  padding: 8px 12px;
+  border-radius: 2px;
+  border-left: 2px solid transparent;
+  transition: all 0.1s;
+}
+.control-item:hover {
+  background: rgba(255,255,255,0.06);
+  border-left-color: var(--accent);
+}
+.control-item label {
+  display: block;
+  font-size: 8px;
+  color: #888;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.control-item input[type="range"] {
+  width: 100%;
+  height: 4px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.control-item span {
+  display: block;
+  font-size: 9px;
+  font-family: var(--mono);
+  color: var(--accent);
+  margin-top: 4px;
+  text-align: right;
+}
+
+.terminal-actions {
+  margin-top: auto;
+  padding-top: 10px;
+}
 
 .debug-toggle-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
-  background: rgba(0,0,0,0.5);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  color: #fff;
+  width: 44px;
+  height: 44px;
+  background: #000;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
   cursor: pointer;
   z-index: 9000;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
+  font-size: 20px;
   pointer-events: auto;
+  box-shadow: 0 0 20px rgba(224,255,4,0.2);
 }
-.debug-toggle-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 600px) {

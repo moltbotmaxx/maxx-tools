@@ -65,19 +65,130 @@
       // 2D Bounds and Config
       this.nodeRadius = options.preview ? 1.8 : 2.2;
       this.bounds = { x: 16, y: 10, z: 0 };
+      
+      this.el.insertAdjacentHTML('beforeend', `
+    <div id="debug-panel" class="debug-panel terminal-mode">
+      <div class="debug-header">
+        <span>MASTER CALIBRATION TERMINAL v1.0</span>
+        <button id="close-debug">×</button>
+      </div>
+      <div class="debug-body">
+        <div class="terminal-grid">
+          <!-- Col 1: Core Physics -->
+          <div class="terminal-col">
+            <div class="section-title">CORE PHYSICS</div>
+            <div class="control-item">
+              <label>Time Scale</label>
+              <input type="range" id="param-timescale" min="0" max="5.0" step="0.1" value="1.0">
+              <span id="val-timescale">1.0</span>
+            </div>
+            <div class="control-item">
+              <label>Max Speed</label>
+              <input type="range" id="param-speed" min="0" max="0.3" step="0.001">
+              <span id="val-speed"></span>
+            </div>
+            <div class="control-item">
+              <label>Friction</label>
+              <input type="range" id="param-friction" min="0.5" max="0.999" step="0.001">
+              <span id="val-friction"></span>
+            </div>
+            <div class="control-item">
+              <label>Gravity</label>
+              <input type="range" id="param-gravity" min="0" max="5.0" step="0.1">
+              <span id="val-gravity"></span>
+            </div>
+            <div class="control-item">
+              <label>Repulsion Str</label>
+              <input type="range" id="param-repulsion" min="0" max="0.2" step="0.001">
+              <span id="val-repulsion"></span>
+            </div>
+            <div class="control-item">
+              <label>Repulsion Rad</label>
+              <input type="range" id="param-repulsion-r" min="1" max="20" step="0.5">
+              <span id="val-repulsion-r"></span>
+            </div>
+          </div>
+
+          <!-- Col 2: Flow & Tethers -->
+          <div class="terminal-col">
+            <div class="section-title">FLOW & TETHERS</div>
+            <div class="control-item">
+              <label>Grid Force</label>
+              <input type="range" id="param-wander" min="0" max="0.2" step="0.001">
+              <span id="val-wander"></span>
+            </div>
+            <div class="control-item">
+              <label>Grid Blend</label>
+              <input type="range" id="param-grid-blend" min="0" max="1.0" step="0.01">
+              <span id="val-grid-blend"></span>
+            </div>
+            <div class="control-item">
+              <label>Tether Str</label>
+              <input type="range" id="param-tether-s" min="0" max="0.01" step="0.0001">
+              <span id="val-tether-s"></span>
+            </div>
+            <div class="control-item">
+              <label>Tether Dist</label>
+              <input type="range" id="param-tether-d" min="1" max="100" step="1">
+              <span id="val-tether-d"></span>
+            </div>
+            <div class="control-item">
+              <label>Chaos Str</label>
+              <input type="range" id="param-chaos-s" min="0" max="1.0" step="0.01">
+              <span id="val-chaos-s"></span>
+            </div>
+            <div class="control-item">
+              <label>Chaos Freq (s)</label>
+              <input type="range" id="param-chaos-f" min="1" max="60" step="1">
+              <span id="val-chaos-f"></span>
+            </div>
+          </div>
+
+          <!-- Col 3: Visuals & Data -->
+          <div class="terminal-col">
+            <div class="section-title">VISUALS</div>
+            <div class="control-item">
+              <label>Node Radius</label>
+              <input type="range" id="param-node-size" min="0.1" max="5.0" step="0.05">
+              <span id="val-node-size"></span>
+            </div>
+            <div class="control-item">
+              <label>Link Opacity</label>
+              <input type="range" id="param-link-op" min="0" max="1.0" step="0.01">
+              <span id="val-link-op"></span>
+            </div>
+            <div class="control-item">
+              <label>Link Limit</label>
+              <input type="range" id="param-link-l" min="10" max="300" step="1">
+              <span id="val-link-l"></span>
+            </div>
+            
+            <div class="terminal-actions">
+              <button id="export-config" class="hud-btn" style="width:100%; margin-top:20px;">EXPORT JSON</button>
+              <button id="import-config" class="hud-btn" style="width:100%; margin-top:10px; background:rgba(224,255,4,0.1);">IMPORT JSON</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`);
+      
       this.repulsionRadius = this.nodeRadius * 5.8;
       this.repulsionStrength = 0.006; // Reduced from 0.012
+      this.timeScale = 1.0;
       this.wanderStrength = 0.012; 
       this.maxSpeed = 0.025; 
       this.friction = 0.985;
       this.gridBlend = 0.85;
 
       this.repulsionStrength = 0.006;
+      this.repulsionRadiusMultiplier = 5.8;
       this.centerGravityMultiplier = 1.0;
       this.tetherStrength = 0.00025;
       this.tetherMaxDist = 18.0;
       this.chaosBurstStrength = 0.08;
+      this.chaosFreq = 10.0;
       this.linkOpacity = 0.35;
+      this.linkDistLimit = 80.0;
 
       // Toast System State
       this.toast = {
@@ -580,7 +691,7 @@
           const nb = this.nodes[j];
           const d = na.currentPosition.distanceTo(nb.currentPosition);
 
-          const alpha = Math.max(0.01, 1 - d / 80) * this.linkOpacity;
+          const alpha = Math.max(0.01, 1 - d / this.linkDistLimit) * this.linkOpacity;
 
           const r = 0.81 * alpha;
           const g = 1.0 * alpha;
@@ -644,28 +755,28 @@
             // Center Gravity & Forced Rebound (6s state)
             const distToCenter = node.currentPosition.length();
             if (node.reboundTimer > 0) {
-              const force = node.currentPosition.clone().normalize().multiplyScalar(-0.01);
+              const force = node.currentPosition.clone().normalize().multiplyScalar(-0.01 * this.timeScale);
               node.velocity.add(force);
-              node.reboundTimer -= 0.016;
+              node.reboundTimer -= 0.016 * this.timeScale;
             } else {
-              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15) * this.centerGravityMultiplier);
+              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15) * this.centerGravityMultiplier * this.timeScale);
               node.velocity.add(gravity);
             }
 
             // Decrement Timers
-            if (node.collisionTimer > 0) node.collisionTimer -= 0.016;
+            if (node.collisionTimer > 0) node.collisionTimer -= 0.016 * this.timeScale;
 
             // 3. Stagnation & Physics Update
             if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
-            node.velocity.multiplyScalar(this.friction);
-            node.currentPosition.add(node.velocity);
+            node.velocity.multiplyScalar(Math.pow(this.friction, this.timeScale));
+            node.currentPosition.add(node.velocity.clone().multiplyScalar(this.timeScale));
 
-            // Chaos Burst (1s every 10s)
-            node.chaosClock += 0.016;
-            if (node.chaosClock >= 10) node.chaosClock = 0;
+            // Chaos Burst (1s every Ns)
+            node.chaosClock += 0.016 * this.timeScale;
+            if (node.chaosClock >= this.chaosFreq) node.chaosClock = 0;
             
             if (node.chaosClock < 1.0) {
-              const burstStrength = 0.08;
+              const burstStrength = this.chaosBurstStrength * this.timeScale;
               node.velocity.x += (Math.random() - 0.5) * burstStrength;
               node.velocity.y += (Math.random() - 0.5) * burstStrength;
             }
