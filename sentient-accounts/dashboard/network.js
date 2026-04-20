@@ -96,6 +96,21 @@
       if (options.selectedAccount) this.setSelected(options.selectedAccount);
     }
 
+    _setupLayout() {
+      const isMobile = window.innerWidth < 600;
+      const isPortrait = window.innerHeight > window.innerWidth;
+      
+      this.nodeRadius = isMobile ? 0.35 : 0.45;
+      
+      if (isPortrait) {
+        this.gridCols = 3;
+        this.gridRows = 8;
+      } else {
+        this.gridCols = 6;
+        this.gridRows = 4;
+      }
+    }
+
     _setupRenderer() {
       const THREE = this.THREE;
       this.renderer = new THREE.WebGLRenderer({ 
@@ -663,33 +678,25 @@
 
     _applyGridFlow(node, t) {
       const pos = node.currentPosition;
-      // Grid 6x4 over the available bounds (24 pieces)
+      
       const xPart = (pos.x + this.bounds.x) / (this.bounds.x * 2);
       const yPart = (pos.y + this.bounds.y) / (this.bounds.y * 2);
 
-      const col = Math.floor(clamp(xPart * 6, 0, 5.99));
-      const row = Math.floor(clamp(yPart * 4, 0, 3.99));
+      const col = Math.floor(clamp(xPart * this.gridCols, 0, this.gridCols - 0.01));
+      const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
 
       const force = new this.THREE.Vector3();
       const strength = this.wanderStrength * 2.8;
 
-      if (row === 3) {
-        if (col < 5) force.set(1, 0, 0);
-        else force.set(0, -1, 0);
-      } 
-      else if (row === 2) {
+      // Generic snake flow based on row parity
+      if (row % 2 === 0) {
         if (col === 0) force.set(0, 1, 0);
-        else if (col === 5) force.set(0, -1, 0);
+        else if (col === this.gridCols - 1) force.set(0, -1, 0);
         else force.set(-1, 0, 0);
-      }
-      else if (row === 1) {
+      } else {
         if (col === 0) force.set(0, 1, 0);
-        else if (col === 5) force.set(0, -1, 0);
+        else if (col === this.gridCols - 1) force.set(0, -1, 0);
         else force.set(1, 0, 0);
-      }
-      else {
-        if (col === 0) force.set(0, 1, 0);
-        else force.set(-1, 0, 0);
       }
 
       // Add "Chaos" (Noise-based turbulence) to break straight lines

@@ -402,3 +402,56 @@ body.is-fullscreen {
   font-weight: 700;
   color: #fff;
 }
+
+/* ── Mobile Optimizations ────────────────────────── */
+@media (max-width: 600px) {
+  .hud-top { padding: 12px 16px; height: auto; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .hud-bottom { padding: 12px 16px; height: auto; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hud-logo { font-size: 16px; }
+  .hud-stats { gap: 12px; }
+  .hud-stat-item { font-size: 10px; }
+
+  .side-panel {
+    width: calc(100% - 24px);
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    top: auto;
+    height: 75vh;
+    transform: translateY(120%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .side-panel.is-open { transform: translateY(0); }
+  .side-panel__inner { 
+    border-radius: 24px 24px 12px 12px; 
+    border-top: 4px solid var(--accent); /* Visual handle */
+  }
+  .side-panel__body { padding: 20px; }
+  
+  .nd-header { margin-bottom: 12px; }
+  .nd-avatar { width: 48px; height: 48px; }
+  .nd-name { font-size: 16px; }
+  .nd-handle { font-size: 12px; }
+  
+  .nd-stats { margin-bottom: 12px; gap: 8px; }
+  .nd-stat { padding: 8px; }
+  .nd-stat-val { font-size: 16px; }
+  
+  .nd-posts { gap: 6px; }
+  .nd-post-item { padding: 8px; }
+  .nd-post-cap { -webkit-line-clamp: 1; margin-bottom: 4px; font-size: 10px; }
+  .nd-link { padding: 12px; font-size: 12px; }
+
+  .net-toast {
+    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+    bottom: 80px;
+    padding: 12px;
+  }
+  .net-toast__avatar { width: 40px; height: 40px; }
+  .net-toast__title { font-size: 12px; }
+  .net-toast__cap { font-size: 10px; -webkit-line-clamp: 2; }
+
+  .net-tooltip { display: none !important; } /* Tooltips don't work well on touch */
+}
