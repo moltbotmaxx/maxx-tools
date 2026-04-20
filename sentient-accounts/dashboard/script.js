@@ -134,11 +134,87 @@ function renderAll() {
       selectedAccount: state.selected
     });
     state.graph.start();
+
+    // Bind Master Calibration Terminal (injected by NetworkGraph)
+    const debugPanel = document.getElementById("debug-panel");
+    const openDebug = document.getElementById("open-debug");
+    const closeDebug = document.getElementById("close-debug");
+
+    openDebug?.addEventListener("click", () => {
+      debugPanel.classList.add("is-open");
+      syncDebug(state.graph);
+    });
+    closeDebug?.addEventListener("click", () => debugPanel.classList.remove("is-open"));
+
+    document.getElementById("export-config")?.addEventListener("click", () => {
+      const g = state.graph;
+      const config = {};
+      [
+        'timeScale', 'maxSpeed', 'friction', 'centerGravityMultiplier', 
+        'repulsionStrength', 'repulsionRadiusMultiplier', 'wanderStrength', 
+        'gridBlend', 'tetherStrength', 'tetherMaxDist', 'chaosBurstStrength', 
+        'chaosFreq', 'nodeRadius', 'linkOpacity', 'linkDistLimit'
+      ].forEach(k => config[k] = g[k]);
+
+      const str = JSON.stringify(config, null, 2);
+      console.log("SENTIENT MASTER CONFIG:", str);
+      prompt("MASTER CONFIG EXPORTED (Copy to clipboard):", str);
+    });
+
+    document.getElementById("import-config")?.addEventListener("click", () => {
+      const raw = prompt("PASTE MASTER CONFIG JSON:");
+      if (!raw) return;
+      try {
+        const cfg = JSON.parse(raw);
+        Object.assign(state.graph, cfg);
+        syncDebug(state.graph);
+        if (state.graph.updateNodeGeometry) state.graph.updateNodeGeometry();
+        alert("SYSTEM RECALIBRATED SUCCESSFULLY");
+      } catch (e) {
+        alert("INVALID CONFIG JSON");
+      }
+    });
   } else {
     state.graph.setSelected(state.selected);
   }
 
   updateHUD();
+}
+
+function syncDebug(g) {
+  const params = [
+    { id: 'timescale', key: 'timeScale', valId: 'val-timescale' },
+    { id: 'speed', key: 'maxSpeed', valId: 'val-speed' },
+    { id: 'friction', key: 'friction', valId: 'val-friction' },
+    { id: 'gravity', key: 'centerGravityMultiplier', valId: 'val-gravity' },
+    { id: 'repulsion', key: 'repulsionStrength', valId: 'val-repulsion' },
+    { id: 'repulsion-r', key: 'repulsionRadiusMultiplier', valId: 'val-repulsion-r' },
+    { id: 'wander', key: 'wanderStrength', valId: 'val-wander' },
+    { id: 'grid-blend', key: 'gridBlend', valId: 'val-grid-blend' },
+    { id: 'tether-s', key: 'tetherStrength', valId: 'val-tether-s' },
+    { id: 'tether-d', key: 'tetherMaxDist', valId: 'val-tether-d' },
+    { id: 'chaos-s', key: 'chaosBurstStrength', valId: 'val-chaos-s' },
+    { id: 'chaos-f', key: 'chaosFreq', valId: 'val-chaos-f' },
+    { id: 'node-size', key: 'nodeRadius', valId: 'val-node-size' },
+    { id: 'link-op', key: 'linkOpacity', valId: 'val-link-op' },
+    { id: 'link-l', key: 'linkDistLimit', valId: 'val-link-l' }
+  ];
+
+  params.forEach(p => {
+    const input = document.getElementById(`param-${p.id}`);
+    const label = document.getElementById(p.valId);
+    if (input && label) {
+      input.value = g[p.key];
+      label.textContent = g[p.key];
+      input.oninput = (e) => {
+        const val = parseFloat(e.target.value);
+        g[p.key] = val;
+        label.textContent = val;
+        if (p.key === 'nodeRadius' && g.updateNodeGeometry) g.updateNodeGeometry();
+        if (p.key === 'repulsionRadiusMultiplier') g.repulsionRadius = g.nodeRadius * val;
+      };
+    }
+  });
 }
 
 /* ── Fetch & Init ──────────────────────────────────── */
@@ -168,86 +244,6 @@ async function init() {
   // Click on background of dashboard should close panel
   // (Relying on NetworkGraph's internal selection callback for this)
 
-  // Debug Panel Logic
-  const debugPanel = document.getElementById("debug-panel");
-  const openDebug = document.getElementById("open-debug");
-  const closeDebug = document.getElementById("close-debug");
-
-  openDebug?.addEventListener("click", () => {
-    debugPanel.classList.add("is-open");
-    // Sync sliders with current graph state
-    if (state.graph) {
-      syncDebug(state.graph);
-    }
-  });
-  closeDebug?.addEventListener("click", () => debugPanel.classList.remove("is-open"));
-
-  function syncDebug(g) {
-    const params = [
-      { id: 'timescale', key: 'timeScale', valId: 'val-timescale' },
-      { id: 'speed', key: 'maxSpeed', valId: 'val-speed' },
-      { id: 'friction', key: 'friction', valId: 'val-friction' },
-      { id: 'gravity', key: 'centerGravityMultiplier', valId: 'val-gravity' },
-      { id: 'repulsion', key: 'repulsionStrength', valId: 'val-repulsion' },
-      { id: 'repulsion-r', key: 'repulsionRadiusMultiplier', valId: 'val-repulsion-r' },
-      { id: 'wander', key: 'wanderStrength', valId: 'val-wander' },
-      { id: 'grid-blend', key: 'gridBlend', valId: 'val-grid-blend' },
-      { id: 'tether-s', key: 'tetherStrength', valId: 'val-tether-s' },
-      { id: 'tether-d', key: 'tetherMaxDist', valId: 'val-tether-d' },
-      { id: 'chaos-s', key: 'chaosBurstStrength', valId: 'val-chaos-s' },
-      { id: 'chaos-f', key: 'chaosFreq', valId: 'val-chaos-f' },
-      { id: 'node-size', key: 'nodeRadius', valId: 'val-node-size' },
-      { id: 'link-op', key: 'linkOpacity', valId: 'val-link-op' },
-      { id: 'link-l', key: 'linkDistLimit', valId: 'val-link-l' }
-    ];
-
-    params.forEach(p => {
-      const input = document.getElementById(`param-${p.id}`);
-      const label = document.getElementById(p.valId);
-      if (input && label) {
-        input.value = g[p.key];
-        label.textContent = g[p.key];
-        input.oninput = (e) => {
-          const val = parseFloat(e.target.value);
-          g[p.key] = val;
-          label.textContent = val;
-          if (p.key === 'nodeRadius' && g.updateNodeGeometry) g.updateNodeGeometry();
-          if (p.key === 'repulsionRadiusMultiplier') g.repulsionRadius = g.nodeRadius * val;
-        };
-      }
-    });
-  }
-
-  document.getElementById("export-config")?.addEventListener("click", () => {
-    if (!state.graph) return;
-    const g = state.graph;
-    const config = {};
-    [
-      'timeScale', 'maxSpeed', 'friction', 'centerGravityMultiplier', 
-      'repulsionStrength', 'repulsionRadiusMultiplier', 'wanderStrength', 
-      'gridBlend', 'tetherStrength', 'tetherMaxDist', 'chaosBurstStrength', 
-      'chaosFreq', 'nodeRadius', 'linkOpacity', 'linkDistLimit'
-    ].forEach(k => config[k] = g[k]);
-
-    const str = JSON.stringify(config, null, 2);
-    console.log("SENTIENT MASTER CONFIG:", str);
-    prompt("MASTER CONFIG EXPORTED (Copy to clipboard):", str);
-  });
-
-  document.getElementById("import-config")?.addEventListener("click", () => {
-    if (!state.graph) return;
-    const raw = prompt("PASTE MASTER CONFIG JSON:");
-    if (!raw) return;
-    try {
-      const cfg = JSON.parse(raw);
-      Object.assign(state.graph, cfg);
-      syncDebug(state.graph);
-      if (state.graph.updateNodeGeometry) state.graph.updateNodeGeometry();
-      alert("SYSTEM RECALIBRATED SUCCESSFULLY");
-    } catch (e) {
-      alert("INVALID CONFIG JSON");
-    }
-  });
 
   // Load Data
   try {
