@@ -754,24 +754,13 @@
       const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
 
       const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 9.5;
+      const strength = this.wanderStrength * 10.0;
 
-      // Proper 6x4 Zig-Zag Snake Loop
-      if (row === 0) {
-        if (col < this.gridCols - 1) force.set(1.2, 0, 0); // Right
-        else force.set(0, 1.2, 0); // Up
-      } 
-      else if (row === 1) {
-        if (col > 0) force.set(-1.2, 0, 0); // Left
-        else force.set(0, 1.2, 0); // Up
-      }
-      else if (row === 2) {
-        if (col < this.gridCols - 1) force.set(1.2, 0, 0); // Right
-        else force.set(0, 1.2, 0); // Up
-      }
-      else { // row === 3 (Top)
-        if (col > 0) force.set(-1.2, 0, 0); // Left
-        else force.set(0, -1.2, 0); // Down to Row 2
+      // Balanced Alternating Lanes (Stable 6x4 Grid)
+      if (row % 2 === 0) {
+        force.set(1.5, 0, 0); // Row 0 & 2: Flow Right
+      } else {
+        force.set(-1.5, 0, 0); // Row 1 & 3: Flow Left
       }
 
       // Add "Chaos" (Noise-based turbulence)
