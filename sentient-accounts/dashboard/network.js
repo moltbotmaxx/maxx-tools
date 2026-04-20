@@ -756,16 +756,22 @@
       const force = new this.THREE.Vector3();
       const strength = this.wanderStrength * 9.5;
 
-      // 6x4 Grid Snake Logic
-      const isEvenRow = row % 2 === 0;
-      if (isEvenRow) {
-        // Flow Left
-        if (col === 0) force.set(0, 1.2, 0); // Corner: Push Up
-        else force.set(-1.2, 0, 0);
-      } else {
-        // Flow Right
-        if (col === this.gridCols - 1) force.set(0, 1.2, 0); // Corner: Push Up
-        else force.set(1.2, 0, 0);
+      // Proper 6x4 Zig-Zag Snake Loop
+      if (row === 0) {
+        if (col < this.gridCols - 1) force.set(1.2, 0, 0); // Right
+        else force.set(0, 1.2, 0); // Up
+      } 
+      else if (row === 1) {
+        if (col > 0) force.set(-1.2, 0, 0); // Left
+        else force.set(0, 1.2, 0); // Up
+      }
+      else if (row === 2) {
+        if (col < this.gridCols - 1) force.set(1.2, 0, 0); // Right
+        else force.set(0, 1.2, 0); // Up
+      }
+      else { // row === 3 (Top)
+        if (col > 0) force.set(-1.2, 0, 0); // Left
+        else force.set(0, -1.2, 0); // Down to Row 2
       }
 
       // Add "Chaos" (Noise-based turbulence)
