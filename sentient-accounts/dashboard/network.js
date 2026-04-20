@@ -100,7 +100,7 @@
       const isMobile = window.innerWidth < 600;
       const isPortrait = window.innerHeight > window.innerWidth;
       
-      this.nodeRadius = isMobile ? 0.35 : 0.45;
+      this.nodeRadius = isMobile ? 0.45 : 0.62;
       
       if (isPortrait) {
         this.gridCols = 3;
@@ -218,6 +218,7 @@
           currentPosition: position,
           velocity: new this.THREE.Vector3((Math.random() * 2 - 1) * 0.02, (Math.random() * 2 - 1) * 0.02, 0),
           driftSeed: new this.THREE.Vector2(Math.random() * 100, Math.random() * 100),
+          chaosClock: Math.random() * 10, // Random offset for 10s cycle
           sphere: null,
           halo: null,
           baseScale: 1.0,
@@ -633,6 +634,16 @@
           if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
           node.velocity.multiplyScalar(0.985);
           node.currentPosition.add(node.velocity);
+
+          // Chaos Burst (1s every 10s)
+          node.chaosClock += 0.016;
+          if (node.chaosClock >= 10) node.chaosClock = 0;
+          
+          if (node.chaosClock < 1.0) {
+            const burstStrength = 0.08;
+            node.velocity.x += (Math.random() - 0.5) * burstStrength;
+            node.velocity.y += (Math.random() - 0.5) * burstStrength;
+          }
 
           this._applyHardBounds(node);
 
