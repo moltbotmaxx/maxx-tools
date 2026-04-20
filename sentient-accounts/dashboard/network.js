@@ -66,7 +66,7 @@
       this.nodeRadius = options.preview ? 1.8 : 2.2;
       this.bounds = { x: 16, y: 10, z: 0 };
       this.repulsionRadius = this.nodeRadius * 5.8;
-      this.repulsionStrength = 0.012; // Increased from 0.005
+      this.repulsionStrength = 0.006; // Reduced from 0.012
       this.wanderStrength = 0.012; // Increased from 0.006
       this.maxSpeed = 0.025; // Increased from 0.015
 
@@ -513,12 +513,10 @@
 
           // 2. Passive Repulsion (Always active, prevents clumping)
           const minDist = (this.nodeRadius * a.baseScale) + (this.nodeRadius * b.baseScale);
-          const repulsionRadius = minDist * 4.5; // Increased from 3.0
+          const repulsionRadius = minDist * 2.2; // Reduced from 4.5
 
           if (dist < repulsionRadius) {
-            // Stronger force as they get closer
-            const strengthFactor = dist < minDist * 1.5 ? 2.5 : 1.0;
-            const force = (repulsionRadius - dist) * this.repulsionStrength * strengthFactor;
+            const force = (repulsionRadius - dist) * this.repulsionStrength;
             const push = delta.clone().normalize().multiplyScalar(force);
             if (this.selectedNode !== a) a.currentPosition.add(push);
             if (this.selectedNode !== b) b.currentPosition.sub(push);
