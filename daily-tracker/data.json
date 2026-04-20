@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-20T14:14:50.825Z",
+    "generated_at": "2026-04-20T15:46:08.481Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "z.ai content policy change",
+        "link": "https://reddit.com/r/openclaw/comments/1sqro0u/zai_content_policy_change/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T14:53:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "If OpenRouter doesn't work in your OpenClaw installation, read this:",
+        "link": "https://reddit.com/r/openclaw/comments/1sqr7gd/if_openrouter_doesnt_work_in_your_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T14:36:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Is Chat GPT serves down?!",
+        "link": "https://reddit.com/r/OpenAI/comments/1sqqzlu/is_chat_gpt_serves_down/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-20T14:28:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "AI chatbot on Gemini feels good but loses context sometimes",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sqquun/ai_chatbot_on_gemini_feels_good_but_loses_context/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-20T14:23:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I asked Claude Design to create a map of Middle East (quick \"dirty\" prompt, I have to admit). All the questions it asked right after were very interesting - I was like wow that's promising. Then I got the result.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sqqhjo/i_asked_claude_design_to_create_a_map_of_middle/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-20T14:10:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Managing multiple client conversations with OpenClaw , how do you handle context?",
+        "link": "https://reddit.com/r/openclaw/comments/1sqq8dd/managing_multiple_client_conversations_with/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T14:01:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "What are people using/ building/ looking for in a personal finance tool",
         "link": "https://reddit.com/r/openclaw/comments/1sqq76x/what_are_people_using_building_looking_for_in_a/",
@@ -379,7 +433,16 @@
         "published_at": "2026-04-20T14:00:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "This cannot be real. I cannot believe my eyes",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sqpb2f/this_cannot_be_real_i_cannot_believe_my_eyes/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-20T13:26:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Does AI really make everyone 'good' at design, or just faster at being mediocre?",
@@ -388,7 +451,7 @@
         "published_at": "2026-04-20T12:32:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "we're so cooked",
@@ -397,77 +460,14 @@
         "published_at": "2026-04-20T12:03:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "why pay for ChatGPT when McDonald's support bot is free?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sqm4fx/why_pay_for_chatgpt_when_mcdonalds_support_bot_is/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-20T11:07:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "why pay for ChatGPT when McDonald's support bot is free?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sqm4f6/why_pay_for_chatgpt_when_mcdonalds_support_bot_is/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-20T11:07:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Opus 4.6 with 4.7 as an advisor mind be the best option for many of us!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sqm2uf/opus_46_with_47_as_an_advisor_mind_be_the_best/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-20T11:05:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Gemini 3.1 Pro massive performance degradation",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sql9d7/gemini_31_pro_massive_performance_degradation/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-20T10:22:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Opus 4.7 in OpenClaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1sqkuxc/opus_47_in_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T09:59:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "AI agents are easy to build, but hard to monitor. How are you tracking cost and traces?",
-        "link": "https://reddit.com/r/openclaw/comments/1sqkm5c/ai_agents_are_easy_to_build_but_hard_to_monitor/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T09:45:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Question about persistent background execution",
-        "link": "https://reddit.com/r/openclaw/comments/1sqke9e/question_about_persistent_background_execution/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T09:32:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-20T14:14:50.825Z",
+    "reddit_viral_generated_at": "2026-04-20T15:46:08.481Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
