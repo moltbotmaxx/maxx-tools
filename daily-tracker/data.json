@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-20T09:19:49.427Z",
+    "generated_at": "2026-04-20T10:59:19.503Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Morgan Stanley sees agentic AI widening chip spending beyond graphics processors to CPUs",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sql4kn/morgan_stanley_sees_agentic_ai_widening_chip/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-20T10:14:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Question about persistent background execution",
+        "link": "https://reddit.com/r/openclaw/comments/1sqke9e/question_about_persistent_background_execution/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T09:32:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Wow Claude...just wow...",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sqk4dz/wow_claudejust_wow/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-20T09:15:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "How are you guys using Claude for sales?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sqjycx/how_are_you_guys_using_claude_for_sales/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-20T09:05:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "What happens when you build social media that forensically rejects AI content? I tried it.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sqioq0/what_happens_when_you_build_social_media_that/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-20T07:49:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Friends outside of tech: lol copilot is dumb - Friends in tech: I just bought iodine tablets",
@@ -388,7 +424,25 @@
         "published_at": "2026-04-20T07:40:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "\"Claude just helped me build a wetlab and sequence my whole genome at home. I have zero lab experience!\" --- Dudes out here sequencing their own DNA at home!",
+        "link": "https://reddit.com/r/singularity/comments/1sqiaug/claude_just_helped_me_build_a_wetlab_and_sequence/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-20T07:26:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Okay, Claude Design is fun to use",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sqi5tr/okay_claude_design_is_fun_to_use/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-20T07:18:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Has anyone tried the new Gemma family from Google? 'Frontier models running locally'.",
@@ -397,16 +451,7 @@
         "published_at": "2026-04-20T06:08:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "StepFun Step-3.5-Flash (openrouter)",
-        "link": "https://reddit.com/r/openclaw/comments/1sqgld9/stepfun_step35flash_openrouter/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T05:50:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Claude told me to stop tweaking",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-20T04:33:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Claude is Rebelling Against Me While I'm Coding For Work",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sqf4qm/claude_is_rebelling_against_me_while_im_coding/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-20T04:32:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Thanks, I hate it",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sqew0b/thanks_i_hate_it/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-20T04:19:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Hostinger Managed Open Claw Question?",
-        "link": "https://reddit.com/r/openclaw/comments/1sqeryp/hostinger_managed_open_claw_question/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T04:14:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "It appears I would could be much better off with n8n",
-        "link": "https://reddit.com/r/openclaw/comments/1sqb54t/it_appears_i_would_could_be_much_better_off_with/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T01:23:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "ADORTPON",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sqaa7a/adortpon/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-20T00:45:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-20T09:19:49.427Z",
+    "reddit_viral_generated_at": "2026-04-20T10:59:19.503Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
