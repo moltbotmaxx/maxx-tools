@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-20T21:03:11.406Z",
+    "generated_at": "2026-04-20T22:04:44.591Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "self-improving-agent skill - looking for user testimony.",
+        "link": "https://reddit.com/r/openclaw/comments/1sr46bu/selfimprovingagent_skill_looking_for_user/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-20T21:48:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Have LLMs reached a silent plateau?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sr04kk/have_llms_reached_a_silent_plateau/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-20T19:31:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "The hardest part of running OpenClaw was not making it work",
         "link": "https://reddit.com/r/openclaw/comments/1sqywbx/the_hardest_part_of_running_openclaw_was_not/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-20T18:54:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Openclaw and Openrouter Opus burned $22 on one run!! Wtf!!",
@@ -388,7 +406,16 @@
         "published_at": "2026-04-20T18:40:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "Kimi K2.6 vs. GPT-5.4 (xhigh) - When will the new OpenAI model be released? This Thursday?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sqwp3t/kimi_k26_vs_gpt54_xhigh_when_will_the_new_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-20T17:47:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "AGI 🚀",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-20T17:20:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Openclaw for Personal Use and WFH",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-20T17:15:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Am I the only one WebUI sucks for? Are there alternatives?",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-20T17:03:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "What two decades of data loss trauma does to a woman. (Claude Code)",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-20T16:54:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Claude Design is Amazing! We're cooked!",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-20T16:47:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Thousands of CEOs admit AI had no impact on employment or productivity—and it has economists resurrecting a paradox from 40 years ago",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sqsmid/thousands_of_ceos_admit_ai_had_no_impact_on/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-20T15:28:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "z.ai content policy change",
-        "link": "https://reddit.com/r/openclaw/comments/1sqro0u/zai_content_policy_change/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T14:53:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "If OpenRouter doesn't work in your OpenClaw installation, read this:",
-        "link": "https://reddit.com/r/openclaw/comments/1sqr7gd/if_openrouter_doesnt_work_in_your_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T14:36:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-20T21:03:11.406Z",
+    "reddit_viral_generated_at": "2026-04-20T22:04:44.591Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
