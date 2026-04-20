@@ -164,6 +164,27 @@ body.is-fullscreen {
   100% { transform: scale(1); opacity: 1; }
 }
 
+/* ── HUD Buttons ────────────────────────────────── */
+.hud-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  pointer-events: auto;
+  margin-right: 15px;
+}
+.hud-btn:hover { background: rgba(255,255,255,0.1); border-color: var(--accent); }
+.hud-btn.is-active { background: var(--accent); color: #000; border-color: var(--accent); }
+.hud-btn.is-active .btn-lbl, .hud-btn.is-active .btn-icon { color: #000; }
+
+.btn-icon { font-size: 14px; color: var(--accent); }
+.btn-lbl { font-size: 10px; font-weight: 800; color: #fff; letter-spacing: 0.1em; font-family: var(--mono); }
+
 /* ── Side Panel ─────────────────────────────────── */
 .side-panel {
   position: fixed;

@@ -579,7 +579,7 @@
     }
 
     _updateNodePositions(t) {
-      this._applyRepulsion();
+      if (!this.isSolid) this._applyRepulsion();
       this._updateLinks();
 
       this.nodes.forEach(node => {
@@ -614,39 +614,45 @@
           node.halo.position.z -= 0.1;
         } else {
           // Grid-based Flow logic (24-piece grid) + Chaos
-          this._applyGridFlow(node, t);
+          if (!this.isSolid) {
+            this._applyGridFlow(node, t);
 
-          // Center Gravity & Forced Rebound (6s state)
-          const distToCenter = node.currentPosition.length();
-          if (node.reboundTimer > 0) {
-            const force = node.currentPosition.clone().normalize().multiplyScalar(-0.01);
-            node.velocity.add(force);
-            node.reboundTimer -= 0.016;
-          } else {
-            const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0004 * (distToCenter / 20));
-            node.velocity.add(gravity);
+            // Center Gravity & Forced Rebound (6s state)
+            const distToCenter = node.currentPosition.length();
+            if (node.reboundTimer > 0) {
+              const force = node.currentPosition.clone().normalize().multiplyScalar(-0.01);
+              node.velocity.add(force);
+              node.reboundTimer -= 0.016;
+            } else {
+              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0004 * (distToCenter / 20));
+              node.velocity.add(gravity);
+            }
+
+            // Decrement Timers
+            if (node.collisionTimer > 0) node.collisionTimer -= 0.016;
+
+            // 3. Stagnation & Physics Update
+            if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
+            node.velocity.multiplyScalar(0.985);
+            node.currentPosition.add(node.velocity);
+
+            // Chaos Burst (1s every 10s)
+            node.chaosClock += 0.016;
+            if (node.chaosClock >= 10) node.chaosClock = 0;
+            
+            if (node.chaosClock < 1.0) {
+              const burstStrength = 0.08;
+              node.velocity.x += (Math.random() - 0.5) * burstStrength;
+              node.velocity.y += (Math.random() - 0.5) * burstStrength;
+            }
+            
+            this._applyEdgeRepulsion(node);
+            this._applyHardBounds(node);
+          } else if (node.solidTarget) {
+            // Lerp to target position
+            node.currentPosition.lerp(node.solidTarget, 0.08);
+            node.velocity.set(0, 0, 0);
           }
-
-          // Decrement Timers
-          if (node.collisionTimer > 0) node.collisionTimer -= 0.016;
-
-          // 3. Stagnation & Physics Update
-          if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
-          node.velocity.multiplyScalar(0.985);
-          node.currentPosition.add(node.velocity);
-
-          // Chaos Burst (1s every 10s)
-          node.chaosClock += 0.016;
-          if (node.chaosClock >= 10) node.chaosClock = 0;
-          
-          if (node.chaosClock < 1.0) {
-            const burstStrength = 0.08;
-            node.velocity.x += (Math.random() - 0.5) * burstStrength;
-            node.velocity.y += (Math.random() - 0.5) * burstStrength;
-          }
-          
-          this._applyEdgeRepulsion(node);
-          this._applyHardBounds(node);
 
           node.sphere.position.copy(node.currentPosition);
           node.sphere.position.z = 0;
@@ -656,6 +662,28 @@
         node.sphere.scale.set(node.baseScale, node.baseScale, 1);
         node.halo.scale.set(node.baseScale, node.baseScale, 1);
       });
+    }
+
+    setSolidMode(active) {
+      this.isSolid = active;
+      if (active) {
+        // Define target positions for 7-6-7-6 layout
+        const rowPattern = [7, 6, 7, 6];
+        const rowSpacing = this.bounds.y * 0.45;
+        const colSpacing = this.bounds.x * 0.24;
+        
+        let nodeIdx = 0;
+        rowPattern.forEach((count, rowIndex) => {
+          const y = (rowIndex - 1.5) * -rowSpacing;
+          const rowWidth = (count - 1) * colSpacing;
+          for (let i = 0; i < count; i++) {
+            if (nodeIdx >= this.nodes.length) break;
+            const x = (i * colSpacing) - (rowWidth / 2);
+            this.nodes[nodeIdx].solidTarget = new this.THREE.Vector3(x, y, 0);
+            nodeIdx++;
+          }
+        });
+      }
     }
 
     _applyEdgeRepulsion(node) {

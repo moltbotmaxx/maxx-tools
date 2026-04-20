@@ -153,6 +153,13 @@ async function init() {
   document.getElementById("closePanel")?.addEventListener("click", closePanel);
   document.getElementById("appOverlay")?.addEventListener("click", closePanel);
 
+  // Solid Toggle
+  document.getElementById("solid-toggle")?.addEventListener("click", function() {
+    this.classList.toggle("is-active");
+    const active = this.classList.contains("is-active");
+    if (state.graph) state.graph.setSolidMode(active);
+  });
+
   // Resize handling
   window.addEventListener("resize", () => {
     if (state.graph) state.graph.resize();
