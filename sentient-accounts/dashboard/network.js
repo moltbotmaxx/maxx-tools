@@ -718,17 +718,27 @@
 
     _applyGridFlow(node, t) {
       const pos = node.currentPosition;
-      const strength = this.wanderStrength * 8.5; // Increased multiplier from 5.5
+      
+      const xPart = (pos.x + this.bounds.x) / (this.bounds.x * 2);
+      const yPart = (pos.y + this.bounds.y) / (this.bounds.y * 2);
 
-      // Continuous Sinuous Vector Field (Replaces discrete grid cells)
-      // This creates natural alternating lanes of movement (Left/Right)
-      const yFreq = (Math.PI * 2) / (this.bounds.y * 1.5); 
-      const xFreq = (Math.PI * 2) / (this.bounds.x * 1.5);
-      
-      const forceX = Math.sin(pos.y * yFreq) * 1.5;
-      const forceY = Math.cos(pos.x * xFreq) * 0.4; // Subtle vertical snaking
-      
-      const force = new this.THREE.Vector3(forceX, forceY, 0);
+      const col = Math.floor(clamp(xPart * this.gridCols, 0, this.gridCols - 0.01));
+      const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
+
+      const force = new this.THREE.Vector3();
+      const strength = this.wanderStrength * 9.5;
+
+      // 6x4 Grid Snake Logic
+      const isEvenRow = row % 2 === 0;
+      if (isEvenRow) {
+        // Flow Left
+        if (col === 0) force.set(0, 1.2, 0); // Corner: Push Up
+        else force.set(-1.2, 0, 0);
+      } else {
+        // Flow Right
+        if (col === this.gridCols - 1) force.set(0, 1.2, 0); // Corner: Push Up
+        else force.set(1.2, 0, 0);
+      }
 
       // Add "Chaos" (Noise-based turbulence)
       const nx = pos.x + node.driftSeed.x;
@@ -736,8 +746,8 @@
       const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
       const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
       
-      // Blend 80% Field, 20% Chaos
-      const blendedForce = force.multiplyScalar(0.8).add(chaos.multiplyScalar(0.2));
+      // Blend 85% Grid, 15% Chaos
+      const blendedForce = force.multiplyScalar(0.85).add(chaos.multiplyScalar(0.15));
       node.velocity.add(blendedForce.multiplyScalar(strength));
     }
 
