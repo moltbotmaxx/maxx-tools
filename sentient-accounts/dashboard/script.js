@@ -60,10 +60,8 @@ function openPanel(a) {
       .slice(0, 3);
       
     top3.forEach(p => {
-      const item = document.createElement("a");
+      const item = document.createElement("div");
       item.className = "nd-post-item";
-      item.href = p.url || "#";
-      item.target = "_blank";
       
       const cap = p.caption || "Intelligence transmission captured...";
       

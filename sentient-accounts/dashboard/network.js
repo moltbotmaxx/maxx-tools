@@ -579,10 +579,7 @@
     }
 
     _updateNodePositions(t) {
-      if (!this.isSolid) {
-        this._applyRepulsion();
-        this._applyTethers();
-      }
+      if (!this.isSolid) this._applyRepulsion();
       this._updateLinks();
 
       this.nodes.forEach(node => {
@@ -627,7 +624,7 @@
               node.velocity.add(force);
               node.reboundTimer -= 0.016;
             } else {
-              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15));
+              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0004 * (distToCenter / 20));
               node.velocity.add(gravity);
             }
 
@@ -686,29 +683,6 @@
             nodeIdx++;
           }
         });
-      }
-    }
-
-    _applyTethers() {
-      const maxDist = 18.0; // Tether limit
-      const strength = 0.00025;
-      const n = this.nodes.length;
-      
-      for (let i = 0; i < n; i++) {
-        const a = this.nodes[i];
-        for (let j = i + 1; j < n; j++) {
-          const b = this.nodes[j];
-          const delta = b.currentPosition.clone().sub(a.currentPosition);
-          const dist = delta.length();
-          
-          if (dist > maxDist) {
-            // "Elastic" pull when stretched beyond maxDist
-            const pull = (dist - maxDist) * strength;
-            const force = delta.normalize().multiplyScalar(pull);
-            if (this.selectedNode !== a) a.velocity.add(force);
-            if (this.selectedNode !== b) b.velocity.sub(force);
-          }
-        }
       }
     }
 
@@ -771,36 +745,27 @@
     }
 
     _applyGridFlow(node, t) {
-      if (this.isSolid) return;
-
       const pos = node.currentPosition;
+      
       const xPart = (pos.x + this.bounds.x) / (this.bounds.x * 2);
       const yPart = (pos.y + this.bounds.y) / (this.bounds.y * 2);
 
-      const col = Math.floor(clamp(xPart * 6, 0, 5.99));
-      const row = Math.floor(clamp(yPart * 4, 0, 3.99)); // 0: Bottom, 3: Top
+      const col = Math.floor(clamp(xPart * this.gridCols, 0, this.gridCols - 0.01));
+      const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
 
       const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 10.0;
+      const strength = this.wanderStrength * 9.5;
 
-      // Exact Mapping from User Image
-      if (row === 3) { // USER ROW 0 (TOP)
-        if (col < 5) force.set(1.2, 0, 0); // Right
-        else force.set(0, -1.2, 0); // Down
-      } 
-      else if (row === 2) { // USER ROW 1
-        if (col === 0) force.set(0, 1.2, 0); // Up
-        else if (col >= 1 && col <= 3) force.set(-1.2, 0, 0); // Left
-        else force.set(0, -1.2, 0); // Down (Cols 4,5)
-      }
-      else if (row === 1) { // USER ROW 2
-        if (col <= 1) force.set(0, 1.2, 0); // Up (Cols 0,1)
-        else if (col >= 2 && col <= 4) force.set(1.2, 0, 0); // Right
-        else force.set(0, -1.2, 0); // Down (Col 5)
-      }
-      else { // USER ROW 0 (BOTTOM)
-        if (col === 0) force.set(0, 1.2, 0); // Up
-        else force.set(-1.2, 0, 0); // Left (Cols 1-5)
+      // 6x4 Grid Snake Logic
+      const isEvenRow = row % 2 === 0;
+      if (isEvenRow) {
+        // Flow Left
+        if (col === 0) force.set(0, 1.2, 0); // Corner: Push Up
+        else force.set(-1.2, 0, 0);
+      } else {
+        // Flow Right
+        if (col === this.gridCols - 1) force.set(0, 1.2, 0); // Corner: Push Up
+        else force.set(1.2, 0, 0);
       }
 
       // Add "Chaos" (Noise-based turbulence)
