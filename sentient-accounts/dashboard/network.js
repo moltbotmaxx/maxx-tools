@@ -66,7 +66,7 @@
       this.nodeRadius = 2.95;
       this.bounds = { x: 16, y: 10, z: 0 };
 
-      this.timeScale = 5;
+      this.timeScale = 1;
       this.maxSpeed = 0.036;
       this.friction = 0.985;
       this.gridBlend = 1.0;
