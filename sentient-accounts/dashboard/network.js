@@ -63,9 +63,26 @@
       this.dragOffset = null;
 
       // 2D Bounds and Config
-      this.nodeRadius = options.preview ? 1.8 : 2.2;
+      this.nodeRadius = 2.95;
       this.bounds = { x: 16, y: 10, z: 0 };
-      
+
+      this.timeScale = 5;
+      this.maxSpeed = 0.036;
+      this.friction = 0.985;
+      this.gridBlend = 1.0;
+
+      this.repulsionStrength = 0.2;
+      this.repulsionRadiusMultiplier = 20;
+      this.centerGravityMultiplier = 5;
+      this.tetherStrength = 0.002;
+      this.tetherMaxDist = 63;
+      this.chaosBurstStrength = 1.0;
+      this.chaosFreq = 60.0;
+      this.linkOpacity = 0.46;
+      this.linkDistLimit = 80.0;
+
+      this.repulsionRadius = this.nodeRadius * this.repulsionRadiusMultiplier;
+
       this.el.insertAdjacentHTML('beforeend', `
     <div id="debug-panel" class="debug-panel terminal-mode">
       <div class="debug-header">
@@ -171,24 +188,6 @@
         </div>
       </div>
     </div>`);
-      
-      this.repulsionRadius = this.nodeRadius * 5.8;
-      this.repulsionStrength = 0.006; // Reduced from 0.012
-      this.timeScale = 1.0;
-      this.wanderStrength = 0.012; 
-      this.maxSpeed = 0.025; 
-      this.friction = 0.985;
-      this.gridBlend = 0.85;
-
-      this.repulsionStrength = 0.006;
-      this.repulsionRadiusMultiplier = 5.8;
-      this.centerGravityMultiplier = 1.0;
-      this.tetherStrength = 0.00025;
-      this.tetherMaxDist = 18.0;
-      this.chaosBurstStrength = 0.08;
-      this.chaosFreq = 10.0;
-      this.linkOpacity = 0.35;
-      this.linkDistLimit = 80.0;
 
       // Toast System State
       this.toast = {
@@ -218,22 +217,22 @@
 
     updateNodeGeometry() {
       if (!this.nodes) return;
-      const geo = new this.THREE.SphereGeometry(this.nodeRadius, 32, 32);
-      const haloGeo = new this.THREE.CircleGeometry(this.nodeRadius * 1.5, 32);
+      const circleGeo = new this.THREE.CircleGeometry(this.nodeRadius, 64);
+      const borderGeo = new this.THREE.CircleGeometry(this.nodeRadius * 1.08, 64);
       this.nodes.forEach(n => {
         if (n.sphere) n.sphere.geometry.dispose();
         if (n.halo) n.halo.geometry.dispose();
-        if (n.sphere) n.sphere.geometry = geo;
-        if (n.halo) n.halo.geometry = haloGeo;
+        if (n.sphere) n.sphere.geometry = circleGeo;
+        if (n.halo) n.halo.geometry = borderGeo;
       });
     }
 
     _setupLayout() {
       const isMobile = window.innerWidth < 600;
       const isPortrait = window.innerHeight > window.innerWidth;
-      
+
       this.nodeRadius = isMobile ? 0.45 : 0.62;
-      
+
       if (isPortrait) {
         this.gridCols = 3;
         this.gridRows = 8;
@@ -245,10 +244,10 @@
 
     _setupRenderer() {
       const THREE = this.THREE;
-      this.renderer = new THREE.WebGLRenderer({ 
-        antialias: true, 
+      this.renderer = new THREE.WebGLRenderer({
+        antialias: true,
         alpha: true, // Allow background to show through
-        powerPreference: "high-performance" 
+        powerPreference: "high-performance"
       });
       this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       if (THREE.SRGBColorSpace) this.renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -364,7 +363,7 @@
     _buildSceneObjects() {
       const THREE = this.THREE;
       const loader = new THREE.TextureLoader();
-      const circleGeo = new THREE.CircleGeometry(this.nodeRadius, 42);
+      const circleGeo = new THREE.CircleGeometry(this.nodeRadius, 64);
 
       this.nodes.forEach(node => {
         const material = new THREE.MeshBasicMaterial({
@@ -385,11 +384,11 @@
         const disk = new THREE.Mesh(circleGeo, material);
         disk.renderOrder = 10;
 
-        const borderGeo = new THREE.CircleGeometry(this.nodeRadius * 1.12, 42);
+        const borderGeo = new THREE.CircleGeometry(this.nodeRadius * 1.08, 64);
         const borderMat = new THREE.MeshBasicMaterial({
           color: node.color,
           transparent: true,
-          opacity: 0.12,
+          opacity: 0.08,
         });
         const border = new THREE.Mesh(borderGeo, borderMat);
         border.renderOrder = 5;
@@ -401,30 +400,30 @@
           badgeCanvas.width = 64;
           badgeCanvas.height = 32;
           const ctx = badgeCanvas.getContext('2d');
-          
+
           // Gray rounded rectangle
           ctx.fillStyle = 'rgba(45, 48, 58, 0.98)';
           const r = 8;
           ctx.beginPath();
           ctx.roundRect(0, 0, 64, 32, r);
           ctx.fill();
-          
+
           // White text
           ctx.fillStyle = '#fff';
           ctx.font = 'bold 24px Inter, sans-serif';
           ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
           ctx.fillText('ES', 32, 17);
-          
+
           const badgeTex = new THREE.CanvasTexture(badgeCanvas);
           const badgeMat = new THREE.MeshBasicMaterial({ map: badgeTex, transparent: true });
-          
+
           // Slightly larger than before
           const aspect = 2;
           const bW = this.nodeRadius * 0.65;
           const bH = bW / aspect;
           const badgeGeo = new THREE.PlaneGeometry(bW, bH);
           const badge = new THREE.Mesh(badgeGeo, badgeMat);
-          
+
           // Position at bottom-right
           badge.position.set(this.nodeRadius * 0.65, -this.nodeRadius * 0.65, 0.2);
           badge.renderOrder = 20;
@@ -539,8 +538,8 @@
     _onClick(event) {
       // Small movement threshold to allow for slight jitter during clicks
       const moveThreshold = 5;
-      const moved = Math.abs(event.clientX - this.downX) > moveThreshold || 
-                    Math.abs(event.clientY - this.downY) > moveThreshold;
+      const moved = Math.abs(event.clientX - this.downX) > moveThreshold ||
+        Math.abs(event.clientY - this.downY) > moveThreshold;
 
       if (!moved) {
         const clicked = this._pickNode(event);
@@ -774,13 +773,13 @@
             // Chaos Burst (1s every Ns)
             node.chaosClock += 0.016 * this.timeScale;
             if (node.chaosClock >= this.chaosFreq) node.chaosClock = 0;
-            
+
             if (node.chaosClock < 1.0) {
               const burstStrength = this.chaosBurstStrength * this.timeScale;
               node.velocity.x += (Math.random() - 0.5) * burstStrength;
               node.velocity.y += (Math.random() - 0.5) * burstStrength;
             }
-            
+
             this._applyHardBounds(node);
           } else if (node.solidTarget) {
             // Lerp to target position
@@ -805,7 +804,7 @@
         const rowPattern = [7, 6, 7, 6];
         const rowSpacing = this.bounds.y * 0.45;
         const colSpacing = this.bounds.x * 0.24;
-        
+
         let nodeIdx = 0;
         rowPattern.forEach((count, rowIndex) => {
           const y = (rowIndex - 1.5) * -rowSpacing;
@@ -824,14 +823,14 @@
       const maxDist = this.tetherMaxDist;
       const strength = this.tetherStrength;
       const n = this.nodes.length;
-      
+
       for (let i = 0; i < n; i++) {
         const a = this.nodes[i];
         for (let j = i + 1; j < n; j++) {
           const b = this.nodes[j];
           const delta = b.currentPosition.clone().sub(a.currentPosition);
           const dist = delta.length();
-          
+
           if (dist > maxDist) {
             // "Elastic" pull when stretched beyond maxDist
             const pull = (dist - maxDist) * strength;
@@ -890,7 +889,7 @@
       if (row === 3) { // USER ROW 0 (TOP)
         if (col < 5) force.set(1.2, 0, 0); // Right
         else force.set(0, -1.2, 0); // Down
-      } 
+      }
       else if (row === 2) { // USER ROW 1
         if (col === 0) force.set(0, 1.2, 0); // Up
         else if (col >= 1 && col <= 3) force.set(-1.2, 0, 0); // Left
@@ -911,7 +910,7 @@
       const ny = pos.y + node.driftSeed.y;
       const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
       const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
-      
+
       // Blend 85% Grid, 15% Chaos
       const blendedForce = force.multiplyScalar(0.85).add(chaos.multiplyScalar(0.15));
       node.velocity.add(blendedForce.multiplyScalar(strength));
@@ -953,7 +952,7 @@
           // Pick a random node not in history
           const availableCandidates = candidates.filter(n => !this.toast.history.includes(n.account.account));
           const nodePool = availableCandidates.length > 0 ? availableCandidates : candidates;
-          
+
           const randomNode = nodePool[Math.floor(Math.random() * nodePool.length)];
           const screenPos = randomNode.sphere.position.clone().project(this.camera);
           const sx = (screenPos.x + 1) * this.el.clientWidth / 2;
