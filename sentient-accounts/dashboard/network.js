@@ -67,8 +67,8 @@
       this.bounds = { x: 16, y: 10, z: 0 };
       this.repulsionRadius = this.nodeRadius * 5.8;
       this.repulsionStrength = 0.005;
-      this.wanderStrength = 0.002; // Much slower base flow
-      this.maxSpeed = 0.006; // Significantly lower speed cap
+      this.wanderStrength = 0.006; // Increased from 0.002
+      this.maxSpeed = 0.015; // Increased from 0.006
 
       // Toast System State
       this.toast = {
@@ -685,28 +685,27 @@
       const col = Math.floor(clamp(xPart * this.gridCols, 0, this.gridCols - 0.01));
       const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
 
-      const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 2.8;
+      const strength = this.wanderStrength * 4.5; // Increased multiplier
 
       // Generic snake flow based on row parity
       if (row % 2 === 0) {
-        if (col === 0) force.set(0, 1, 0);
-        else if (col === this.gridCols - 1) force.set(0, -1, 0);
-        else force.set(-1, 0, 0);
+        if (col === 0) force.set(0, 1.2, 0);
+        else if (col === this.gridCols - 1) force.set(0, -1.2, 0);
+        else force.set(-1.2, 0, 0);
       } else {
-        if (col === 0) force.set(0, 1, 0);
-        else if (col === this.gridCols - 1) force.set(0, -1, 0);
-        else force.set(1, 0, 0);
+        if (col === 0) force.set(0, 1.2, 0);
+        else if (col === this.gridCols - 1) force.set(0, -1.2, 0);
+        else force.set(1.2, 0, 0);
       }
 
-      // Add "Chaos" (Noise-based turbulence) to break straight lines
+      // Add "Chaos" (Noise-based turbulence)
       const nx = pos.x + node.driftSeed.x;
       const ny = pos.y + node.driftSeed.y;
       const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
       const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
       
-      // Blend 70% grid force, 30% chaos
-      const blendedForce = force.multiplyScalar(0.7).add(chaos.multiplyScalar(0.3));
+      // Blend 85% grid force, 15% chaos (More grid dominance)
+      const blendedForce = force.multiplyScalar(0.85).add(chaos.multiplyScalar(0.15));
       node.velocity.add(blendedForce.multiplyScalar(strength));
     }
 
