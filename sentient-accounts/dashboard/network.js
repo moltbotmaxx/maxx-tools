@@ -685,6 +685,7 @@
       const col = Math.floor(clamp(xPart * this.gridCols, 0, this.gridCols - 0.01));
       const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
 
+      const force = new this.THREE.Vector3();
       const strength = this.wanderStrength * 4.5; // Increased multiplier
 
       // Generic snake flow based on row parity
