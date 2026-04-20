@@ -579,7 +579,10 @@
     }
 
     _updateNodePositions(t) {
-      if (!this.isSolid) this._applyRepulsion();
+      if (!this.isSolid) {
+        this._applyRepulsion();
+        this._applyTethers();
+      }
       this._updateLinks();
 
       this.nodes.forEach(node => {
@@ -624,7 +627,7 @@
               node.velocity.add(force);
               node.reboundTimer -= 0.016;
             } else {
-              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0004 * (distToCenter / 20));
+              const gravity = node.currentPosition.clone().normalize().multiplyScalar(-0.0008 * (distToCenter / 15));
               node.velocity.add(gravity);
             }
 
@@ -683,6 +686,29 @@
             nodeIdx++;
           }
         });
+      }
+    }
+
+    _applyTethers() {
+      const maxDist = 18.0; // Tether limit
+      const strength = 0.00025;
+      const n = this.nodes.length;
+      
+      for (let i = 0; i < n; i++) {
+        const a = this.nodes[i];
+        for (let j = i + 1; j < n; j++) {
+          const b = this.nodes[j];
+          const delta = b.currentPosition.clone().sub(a.currentPosition);
+          const dist = delta.length();
+          
+          if (dist > maxDist) {
+            // "Elastic" pull when stretched beyond maxDist
+            const pull = (dist - maxDist) * strength;
+            const force = delta.normalize().multiplyScalar(pull);
+            if (this.selectedNode !== a) a.velocity.add(force);
+            if (this.selectedNode !== b) b.velocity.sub(force);
+          }
+        }
       }
     }
 
