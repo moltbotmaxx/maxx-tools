@@ -754,13 +754,30 @@
       const row = Math.floor(clamp(yPart * this.gridRows, 0, this.gridRows - 0.01));
 
       const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 10.0;
+      const strength = this.wanderStrength * 11.0; // High energy as requested
 
-      // Balanced Alternating Lanes (Stable 6x4 Grid)
-      if (row % 2 === 0) {
-        force.set(1.5, 0, 0); // Row 0 & 2: Flow Right
+      // Exact 6x4 Matrix from Image (Row 3 = Top, Row 0 = Bottom)
+      const matrix = [
+        ['U', 'L', 'L', 'L', 'L', 'L'], // Row 0 (Bottom)
+        ['U', 'U', 'R', 'R', 'R', 'D'], // Row 1
+        ['U', 'L', 'L', 'L', 'D', 'D'], // Row 2
+        ['R', 'R', 'R', 'R', 'R', 'D']  // Row 3 (Top)
+      ];
+
+      // Handle mobile (3x8) vs desktop (6x4)
+      let dir = 'R';
+      if (this.gridCols === 6 && this.gridRows === 4) {
+        dir = matrix[row][col] || 'R';
       } else {
-        force.set(-1.5, 0, 0); // Row 1 & 3: Flow Left
+        // Fallback for mobile or other sizes: alternating lanes
+        dir = row % 2 === 0 ? 'R' : 'L';
+      }
+
+      switch(dir) {
+        case 'R': force.set(1.5, 0, 0); break;
+        case 'L': force.set(-1.5, 0, 0); break;
+        case 'U': force.set(0, 1.5, 0); break;
+        case 'D': force.set(0, -1.5, 0); break;
       }
 
       // Add "Chaos" (Noise-based turbulence)
@@ -769,7 +786,7 @@
       const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
       const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
       
-      // Blend 85% Grid, 15% Chaos
+      // Blend 85% Matrix Force, 15% Chaos
       const blendedForce = force.multiplyScalar(0.85).add(chaos.multiplyScalar(0.15));
       node.velocity.add(blendedForce.multiplyScalar(strength));
     }
