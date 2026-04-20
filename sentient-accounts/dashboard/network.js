@@ -1,8 +1,8 @@
 /* ─────────────────────────────────────────────────────────
    Sentient Network Graph · Pure 2D Refactor
-  pointer-events: auto;
-}
-.debug-toggle-btn:hover { border-color: var(--accent); color: var(--accent); }
+   ───────────────────────────────────────────────────────── */
+
+(function () {
   'use strict';
 
   function rimColor(eng) {
