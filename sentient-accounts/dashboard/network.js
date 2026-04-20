@@ -67,8 +67,8 @@
       this.bounds = { x: 16, y: 10, z: 0 };
       this.repulsionRadius = this.nodeRadius * 5.8;
       this.repulsionStrength = 0.012; // Increased from 0.005
-      this.wanderStrength = 0.006; // Increased from 0.002
-      this.maxSpeed = 0.015; // Increased from 0.006
+      this.wanderStrength = 0.012; // Increased from 0.006
+      this.maxSpeed = 0.025; // Increased from 0.015
 
       // Toast System State
       this.toast = {
@@ -680,7 +680,7 @@
 
     _applyGridFlow(node, t) {
       const pos = node.currentPosition;
-      const strength = this.wanderStrength * 5.5;
+      const strength = this.wanderStrength * 8.5; // Increased multiplier from 5.5
 
       // Continuous Sinuous Vector Field (Replaces discrete grid cells)
       // This creates natural alternating lanes of movement (Left/Right)
