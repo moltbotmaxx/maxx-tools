@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-21T03:47:15.466Z",
+    "generated_at": "2026-04-21T06:14:21.417Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I switched my AI agent to semantic memory search. Here’s what actually changed.",
+        "link": "https://reddit.com/r/openclaw/comments/1srd1xo/i_switched_my_ai_agent_to_semantic_memory_search/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-21T04:13:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Manus vs. Openclaw experiences",
+        "link": "https://reddit.com/r/openclaw/comments/1srciza/manus_vs_openclaw_experiences/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-21T03:48:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Hey guys, I've just [chat.history omitted: message too large]",
+        "link": "https://reddit.com/r/openclaw/comments/1srbsxy/hey_guys_ive_just_chathistory_omitted_message_too/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-21T03:13:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Anyone use the \"self-improving-agent\" or the \"Self-Improving + Proactive Agent\" clawhub.ai plugins and actually find them useful without gobbling up context window?",
+        "link": "https://reddit.com/r/openclaw/comments/1srbaa5/anyone_use_the_selfimprovingagent_or_the/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-21T02:49:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Image 2.0 is now online on ChatGPT and it's incredible! Just a few days ago even 3x3 grids would often struggle, now we can 10x the complexity, and it's near perfect!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sraucf/image_20_is_now_online_on_chatgpt_and_its/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-21T02:29:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Image 2.0 is now online on ChatGPT and it's incredible! Just a few days ago even 3x3 grids would often struggle, now we can 10x the complexity, and it's near perfect!",
+        "link": "https://reddit.com/r/OpenAI/comments/1srat00/image_20_is_now_online_on_chatgpt_and_its/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-21T02:28:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "I used Google Gemini for my claim",
         "link": "https://reddit.com/r/GeminiAI/comments/1sr9e8t/i_used_google_gemini_for_my_claim/",
@@ -379,7 +433,7 @@
         "published_at": "2026-04-21T01:25:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Why has ChatGPT been so contrarian as of late?",
@@ -388,7 +442,7 @@
         "published_at": "2026-04-21T01:06:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Amazon to invest up to $25 billion in Anthropic as part of $100 billion cloud deal",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-21T00:55:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Title: OpenClaw Users: Anyone go from $20 ChatGPT Plus to $200 Pro? What was the real difference?",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-20T23:58:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Will Smith fighting spaghetti",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sr5do0/will_smith_fighting_spaghetti/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-20T22:35:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Passed the carwash test",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sr4m5p/passed_the_carwash_test/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-20T22:05:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "The Opus 4.6 vs 4.7 Controversy in one image",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sr4gq2/the_opus_46_vs_47_controversy_in_one_image/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-20T21:59:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I just wanted to study math, not witness an AI having an existential crisis.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sr43j9/i_just_wanted_to_study_math_not_witness_an_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-20T21:45:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I was deleting memories and found this",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sr2yex/i_was_deleting_memories_and_found_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-20T21:03:39+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Have LLMs reached a silent plateau?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sr04kk/have_llms_reached_a_silent_plateau/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-20T19:31:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-21T03:47:15.466Z",
+    "reddit_viral_generated_at": "2026-04-21T06:14:21.417Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
