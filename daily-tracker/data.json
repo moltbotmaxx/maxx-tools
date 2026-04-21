@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-21T22:01:16.915Z",
+    "generated_at": "2026-04-21T23:00:17.622Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Cannot believe how far we have come",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ss1v1p/cannot_believe_how_far_we_have_come/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-21T21:45:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "PSA: Claude Pro no longer lists Claude Code as an included feature",
         "link": "https://reddit.com/r/ClaudeAI/comments/1srzhd7/psa_claude_pro_no_longer_lists_claude_code_as_an/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-21T20:19:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Meta to use their employees to replace them with AI agents",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sryvkz/meta_to_use_their_employees_to_replace_them_with/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-21T19:58:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "GPT IMAGE 2 is superb",
@@ -388,7 +406,16 @@
         "published_at": "2026-04-21T19:58:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
+      },
+      {
+        "headline": "GPT-Image-2 claims the #1 spot by a wide margin",
+        "link": "https://reddit.com/r/OpenAI/comments/1sryqfu/gptimage2_claims_the_1_spot_by_a_wide_margin/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-21T19:52:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Gpt image 2 has the biggest jump in quality ever recorded",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-21T19:33:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "After 3 months, I’m done. OpenClaw has officially become a money pit",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-21T19:31:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Introducing ChatGPT Images 2.0",
@@ -415,16 +442,7 @@
         "published_at": "2026-04-21T19:27:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Trying Image Gen 2",
-        "link": "https://reddit.com/r/OpenAI/comments/1srxuyh/trying_image_gen_2/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-21T19:21:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Trying Image Gen 2",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-21T19:20:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Mythos and monopoly of AI",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-21T19:17:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Sergey Brin Joins Special Strike Team at Google to Take on Anthropic /Claude",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srwye6/sergey_brin_joins_special_strike_team_at_google/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-21T18:49:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Made a quick search, got junk code as an answer.",
-        "link": "https://reddit.com/r/aimemes/comments/1srwlur/made_a_quick_search_got_junk_code_as_an_answer/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-21T18:37:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-21T22:01:16.915Z",
+    "reddit_viral_generated_at": "2026-04-21T23:00:17.622Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
