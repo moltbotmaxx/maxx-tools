@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-21T15:44:39.351Z",
+    "generated_at": "2026-04-21T17:18:07.557Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Introducing Deep Research and Deep Research Max",
+        "link": "https://reddit.com/r/singularity/comments/1srsxvs/introducing_deep_research_and_deep_research_max/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-21T16:32:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Differences Between Kimi K2.5 and Kimi K2.6 on MineBench",
+        "link": "https://reddit.com/r/singularity/comments/1srs29t/differences_between_kimi_k25_and_kimi_k26_on/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-21T16:02:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "New image gen 2 is incredible at coloring",
+        "link": "https://reddit.com/r/OpenAI/comments/1srry3f/new_image_gen_2_is_incredible_at_coloring/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-21T15:59:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What's OpenAI got up their sleeve?",
+        "link": "https://reddit.com/r/OpenAI/comments/1srrbsi/whats_openai_got_up_their_sleeve/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-21T15:37:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "openclaw crossed 500k downloads a day this week. here are the 5 things nobody tells you when you're one of them",
         "link": "https://reddit.com/r/openclaw/comments/1srpodd/openclaw_crossed_500k_downloads_a_day_this_week/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-21T14:42:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "OpenAI teases livestream with this AI-generated image (not a screenshot)",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-21T14:27:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "OpenAI hadn’t done a live stream in a long time. I guess , the new image generation model is good enough to deserve a live stream.(today at 12pm PT.)",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-21T14:16:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "OpenAI is teasing the Image V2 model.",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-21T14:10:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "OpenAI teases gpt-image 2? Livestream at 12pm PT",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-21T14:03:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Deezer says 44% of new music uploads are AI-generated, most streams are fraudulent",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-21T11:55:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "What the actual hell?!",
-        "link": "https://reddit.com/r/GeminiAI/comments/1srlft8/what_the_actual_hell/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-21T11:54:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Asked ChatGPT for an Image of the Most Average Daily Life of Humans",
-        "link": "https://reddit.com/r/ChatGPT/comments/1srkm3c/asked_chatgpt_for_an_image_of_the_most_average/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-21T11:16:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Sonic and mario and friends (meme)",
-        "link": "https://reddit.com/r/aimemes/comments/1srkc8l/sonic_and_mario_and_friends_meme/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-21T11:02:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Naruto memes",
-        "link": "https://reddit.com/r/aimemes/comments/1srk4hx/naruto_memes/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-21T10:51:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-21T15:44:39.351Z",
+    "reddit_viral_generated_at": "2026-04-21T17:18:07.557Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
