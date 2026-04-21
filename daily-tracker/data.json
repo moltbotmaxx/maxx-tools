@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-21T23:00:17.622Z",
+    "generated_at": "2026-04-21T23:53:25.206Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude Code no longer listed as a feature for Claude Pro",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ss3zad/claude_code_no_longer_listed_as_a_feature_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-21T23:09:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Cannot believe how far we have come",
         "link": "https://reddit.com/r/GeminiAI/comments/1ss1v1p/cannot_believe_how_far_we_have_come/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-21T21:45:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "GPT Image 2 is really good...",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ss0ldg/gpt_image_2_is_really_good/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-21T20:59:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "PSA: Claude Pro no longer lists Claude Code as an included feature",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-21T20:19:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Meta to use their employees to replace them with AI agents",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-21T19:58:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "GPT IMAGE 2 is superb",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-21T19:58:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "GPT-Image-2 claims the #1 spot by a wide margin",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-21T19:52:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Gpt image 2 has the biggest jump in quality ever recorded",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-21T19:33:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "After 3 months, I’m done. OpenClaw has officially become a money pit",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-21T19:31:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Introducing ChatGPT Images 2.0",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-21T19:27:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Trying Image Gen 2",
-        "link": "https://reddit.com/r/ChatGPT/comments/1srxtv2/trying_image_gen_2/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-21T19:20:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Mythos and monopoly of AI",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srxqse/mythos_and_monopoly_of_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-21T19:17:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-21T23:00:17.622Z",
+    "reddit_viral_generated_at": "2026-04-21T23:53:25.206Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
