@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-20T23:05:02.384Z",
+    "generated_at": "2026-04-21T00:00:26.170Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -380,15 +380,6 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
-      },
-      {
-        "headline": "self-improving-agent skill - looking for user testimony.",
-        "link": "https://reddit.com/r/openclaw/comments/1sr46bu/selfimprovingagent_skill_looking_for_user/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-20T21:48:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
       },
       {
         "headline": "I just wanted to study math, not witness an AI having an existential crisis.",
@@ -433,7 +424,7 @@
         "published_at": "2026-04-20T18:40:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 91
       },
       {
         "headline": "Kimi K2.6 vs. GPT-5.4 (xhigh) - When will the new OpenAI model be released? This Thursday?",
@@ -461,13 +452,22 @@
         "score": 0,
         "comments": 0,
         "viral_score": 87
+      },
+      {
+        "headline": "What two decades of data loss trauma does to a woman. (Claude Code)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sqv4g9/what_two_decades_of_data_loss_trauma_does_to_a/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-20T16:54:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-20T23:05:02.384Z",
+    "reddit_viral_generated_at": "2026-04-21T00:00:26.170Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
