@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-21T08:10:37.819Z",
+    "generated_at": "2026-04-21T09:53:20.404Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Ok, woah",
+        "link": "https://reddit.com/r/ChatGPT/comments/1srgqcn/ok_woah/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-21T07:34:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Is AI just dopamine?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srfks5/is_ai_just_dopamine/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-21T06:27:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Self hosted or managed OpenClaw, which one actually makes more sense?",
         "link": "https://reddit.com/r/openclaw/comments/1srfk3h/self_hosted_or_managed_openclaw_which_one/",
@@ -379,7 +397,25 @@
         "published_at": "2026-04-21T06:26:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Google joins the Enshittification train started by Anthrophic",
+        "link": "https://reddit.com/r/GeminiAI/comments/1srepel/google_joins_the_enshittification_train_started/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-21T05:39:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "GPT-Image-2 now reviews its own output and iterates until it is satisfied with the correctness of its output.",
+        "link": "https://reddit.com/r/singularity/comments/1srehi7/gptimage2_now_reviews_its_own_output_and_iterates/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-21T05:27:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Make no mistakes!",
@@ -388,7 +424,16 @@
         "published_at": "2026-04-21T05:13:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
+      },
+      {
+        "headline": "modern LLMs all resemble either GPT and Claude in some way, cheaper alternatives accelerate adoption",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srdgeb/modern_llms_all_resemble_either_gpt_and_claude_in/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-21T04:34:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "I switched my AI agent to semantic memory search. Here’s what actually changed.",
@@ -397,7 +442,7 @@
         "published_at": "2026-04-21T04:13:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "“Gently push back”",
@@ -406,7 +451,7 @@
         "published_at": "2026-04-21T04:03:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Manus vs. Openclaw experiences",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-21T03:48:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Image 2.0 is now online on ChatGPT and it's incredible! Just a few days ago even 3x3 grids would often struggle, now we can 10x the complexity, and it's near perfect!",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sraucf/image_20_is_now_online_on_chatgpt_and_its/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-21T02:29:37+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "Image 2.0 is now online on ChatGPT and it's incredible! Just a few days ago even 3x3 grids would often struggle, now we can 10x the complexity, and it's near perfect!",
-        "link": "https://reddit.com/r/OpenAI/comments/1srat00/image_20_is_now_online_on_chatgpt_and_its/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-21T02:28:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I used Google Gemini for my claim",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sr9e8t/i_used_google_gemini_for_my_claim/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-21T01:25:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Why has ChatGPT been so contrarian as of late?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sr8yc5/why_has_chatgpt_been_so_contrarian_as_of_late/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-21T01:06:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Amazon to invest up to $25 billion in Anthropic as part of $100 billion cloud deal",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sr8q0k/amazon_to_invest_up_to_25_billion_in_anthropic_as/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-21T00:55:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-21T08:10:37.819Z",
+    "reddit_viral_generated_at": "2026-04-21T09:53:20.404Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
