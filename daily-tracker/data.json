@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-21T09:53:20.404Z",
+    "generated_at": "2026-04-21T11:33:57.548Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sonic and mario and friends (meme)",
+        "link": "https://reddit.com/r/aimemes/comments/1srkc8l/sonic_and_mario_and_friends_meme/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-21T11:02:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Title: Using Hermes Agent as a Hall Monitor for My OpenClaw Setup — Smart Move or Overkill?",
+        "link": "https://reddit.com/r/openclaw/comments/1srk70b/title_using_hermes_agent_as_a_hall_monitor_for_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-21T10:55:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Naruto memes",
+        "link": "https://reddit.com/r/aimemes/comments/1srk4hx/naruto_memes/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-21T10:51:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Notebooks arrive in Gemini app!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1srjv44/notebooks_arrive_in_gemini_app/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-21T10:37:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What people thought AI would do vs what it’s actually doing",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srj198/what_people_thought_ai_would_do_vs_what_its/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-21T09:52:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Trying a multi agent setup, need help.",
+        "link": "https://reddit.com/r/openclaw/comments/1sri4rc/trying_a_multi_agent_setup_need_help/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-21T08:59:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Another CyberNani face spotted",
+        "link": "https://reddit.com/r/singularity/comments/1srhkn0/another_cybernani_face_spotted/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-21T08:26:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Ok, woah",
         "link": "https://reddit.com/r/ChatGPT/comments/1srgqcn/ok_woah/",
@@ -379,16 +442,7 @@
         "published_at": "2026-04-21T07:34:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Is AI just dopamine?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srfks5/is_ai_just_dopamine/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-21T06:27:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Self hosted or managed OpenClaw, which one actually makes more sense?",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-21T06:26:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
         "headline": "Google joins the Enshittification train started by Anthrophic",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-21T05:39:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "GPT-Image-2 now reviews its own output and iterates until it is satisfied with the correctness of its output.",
-        "link": "https://reddit.com/r/singularity/comments/1srehi7/gptimage2_now_reviews_its_own_output_and_iterates/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-21T05:27:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Make no mistakes!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sre84i/make_no_mistakes/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-21T05:13:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "modern LLMs all resemble either GPT and Claude in some way, cheaper alternatives accelerate adoption",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1srdgeb/modern_llms_all_resemble_either_gpt_and_claude_in/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-21T04:34:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I switched my AI agent to semantic memory search. Here’s what actually changed.",
-        "link": "https://reddit.com/r/openclaw/comments/1srd1xo/i_switched_my_ai_agent_to_semantic_memory_search/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-21T04:13:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "“Gently push back”",
-        "link": "https://reddit.com/r/ChatGPT/comments/1srcud7/gently_push_back/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-21T04:03:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Manus vs. Openclaw experiences",
-        "link": "https://reddit.com/r/openclaw/comments/1srciza/manus_vs_openclaw_experiences/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-21T03:48:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-21T09:53:20.404Z",
+    "reddit_viral_generated_at": "2026-04-21T11:33:57.548Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
