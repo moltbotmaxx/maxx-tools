@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-22T09:54:05.784Z",
+    "generated_at": "2026-04-22T11:33:15.586Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "A Chinese startup sells a $3 companion AI device that generates interactive holograms of deceased loved by uploading their photos, voice recordings, and chat histories.",
+        "link": "https://reddit.com/r/singularity/comments/1sshu40/a_chinese_startup_sells_a_3_companion_ai_device/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-22T10:45:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Send nudes. It's safe",
+        "link": "https://reddit.com/r/aimemes/comments/1sshk97/send_nudes_its_safe/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-22T10:30:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Did I downloaded the wrong claude why is it talking like that lol 🤣🤣",
         "link": "https://reddit.com/r/aimemes/comments/1ssfz3e/did_i_downloaded_the_wrong_claude_why_is_it/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-22T09:00:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "WTF",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-22T08:52:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Anthropic allows OpenClaw again — but I'm keeping model routing anyway",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-22T07:59:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Using Gemma 4 locally (using Ollama) with OpenClaw (running via BlueStacks AI) on my PC… Chat works fine but tools calls do not…How to fix?",
@@ -406,7 +424,16 @@
         "published_at": "2026-04-22T07:56:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
+      },
+      {
+        "headline": "5 years",
+        "link": "https://reddit.com/r/OpenAI/comments/1sse61w/5_years/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-22T07:14:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Imagen v2",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-22T06:12:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Meta is reportedly forcing U.S. employees to train their own AI replacements via \"Keylogger\" surveillance",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-22T05:26:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Mozilla Used Anthropic’s Mythos to Find and Fix 271 Bugs in Firefox",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-22T05:17:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "2008 Myspace profile",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ssbsfj/2008_myspace_profile/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-22T05:02:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gemini is the best doc. 🏥",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ssbpwa/gemini_is_the_best_doc/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-22T04:59:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "An open letter to Anthropic",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ss8h1x/an_open_letter_to_anthropic/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-22T02:24:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-22T09:54:05.784Z",
+    "reddit_viral_generated_at": "2026-04-22T11:33:15.586Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
