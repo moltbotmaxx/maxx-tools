@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-22T08:08:06.065Z",
+    "generated_at": "2026-04-22T09:54:05.784Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Did I downloaded the wrong claude why is it talking like that lol 🤣🤣",
+        "link": "https://reddit.com/r/aimemes/comments/1ssfz3e/did_i_downloaded_the_wrong_claude_why_is_it/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-22T09:00:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "WTF",
+        "link": "https://reddit.com/r/aimemes/comments/1ssftv2/wtf/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-22T08:52:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic allows OpenClaw again — but I'm keeping model routing anyway",
+        "link": "https://reddit.com/r/openclaw/comments/1ssex0h/anthropic_allows_openclaw_again_but_im_keeping/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-22T07:59:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Using Gemma 4 locally (using Ollama) with OpenClaw (running via BlueStacks AI) on my PC… Chat works fine but tools calls do not…How to fix?",
         "link": "https://reddit.com/r/openclaw/comments/1ssevlw/using_gemma_4_locally_using_ollama_with_openclaw/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-22T07:56:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Imagen v2",
+        "link": "https://reddit.com/r/OpenAI/comments/1ssd2ks/imagen_v2/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-22T06:12:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Meta is reportedly forcing U.S. employees to train their own AI replacements via \"Keylogger\" surveillance",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-22T05:26:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Mozilla Used Anthropic’s Mythos to Find and Fix 271 Bugs in Firefox",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-22T05:17:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "2008 Myspace profile",
@@ -406,16 +442,16 @@
         "published_at": "2026-04-22T05:02:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
-        "headline": "Am I winning yet, son?",
-        "link": "https://reddit.com/r/aimemes/comments/1ss9bdc/am_i_winning_yet_son/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-22T03:02:57+00:00",
+        "headline": "Gemini is the best doc. 🏥",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ssbpwa/gemini_is_the_best_doc/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-22T04:59:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 90
       },
       {
         "headline": "An open letter to Anthropic",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-22T02:24:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Recommendations",
-        "link": "https://reddit.com/r/openclaw/comments/1ss8cu7/recommendations/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-22T02:19:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "AheadForm Origin F1 returns with new look",
-        "link": "https://reddit.com/r/singularity/comments/1ss836q/aheadform_origin_f1_returns_with_new_look/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-22T02:07:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Prepare for horde of switchers to OpenAI as Anthropic removes claude code from $20 . Minimum $100 to access it soon",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ss5slk/prepare_for_horde_of_switchers_to_openai_as/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-22T00:27:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Anthropic response to Claude Code change",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ss5fi4/anthropic_response_to_claude_code_change/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-22T00:10:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-22T08:08:06.065Z",
+    "reddit_viral_generated_at": "2026-04-22T09:54:05.784Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
