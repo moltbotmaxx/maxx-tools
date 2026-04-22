@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-22T22:06:28.828Z",
+    "generated_at": "2026-04-22T23:08:18.635Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -418,6 +418,15 @@
         "viral_score": 97
       },
       {
+        "headline": "Apparently the new image model is good in morphing images",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sstxgi/apparently_the_new_image_model_is_good_in/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-22T18:27:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
         "headline": "Feel like people here are sprinting to plug themselves in lol",
         "link": "https://reddit.com/r/singularity/comments/1ssqma5/feel_like_people_here_are_sprinting_to_plug/",
         "subreddit": "singularity",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-22T15:39:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "Uber blows through its IT budget for AI for 2026 and it's only April citing rising costs of Claude Code",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "GPT Image 2 is the first image ai that’s blown my mind (prompted for a screenshot from a combined GTA 6-Cyberpunk 2077 game)",
-        "link": "https://reddit.com/r/singularity/comments/1ssommj/gpt_image_2_is_the_first_image_ai_thats_blown_my/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-22T15:21:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-22T22:06:28.828Z",
+    "reddit_viral_generated_at": "2026-04-22T23:08:18.635Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
