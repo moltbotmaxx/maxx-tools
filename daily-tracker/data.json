@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-22T15:42:19.356Z",
+    "generated_at": "2026-04-22T17:16:11.342Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "PSA: Anthropic bans organizations without warning",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sspwz2/psa_anthropic_bans_organizations_without_warning/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-22T16:07:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "This sucks from Openclaw founder but read this if you want to update to 4.20",
+        "link": "https://reddit.com/r/openclaw/comments/1sspuos/this_sucks_from_openclaw_founder_but_read_this_if/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-22T16:05:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Nvidia CEO Jensen Huang: ‘Most people will lose their job to somebody who uses AI’—not to AI itself",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1ssnv0f/nvidia_ceo_jensen_huang_most_people_will_lose/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-22T14:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "techradar ran the securityscorecard piece today... 40k exposed again",
+        "link": "https://reddit.com/r/openclaw/comments/1sslv3b/techradar_ran_the_securityscorecard_piece_today/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-22T13:40:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "A tweet which changed the world !",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-22T13:27:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Opus 4.7 scores lower than 4.6 and 4.5 on SimpleBench",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-22T13:03:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Alternate GTA universes",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-22T12:51:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "I asked ChatGPT to generate an image of \"Typical Reddit User\"",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-22T12:48:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Google introduces TPU 8t and TPU 8i",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-22T12:09:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Meme contest for Rezona AI - creating games with no code",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-22T11:45:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "A Chinese startup sells a $3 companion AI device that generates interactive holograms of deceased loved by uploading their photos, voice recordings, and chat histories.",
-        "link": "https://reddit.com/r/singularity/comments/1sshu40/a_chinese_startup_sells_a_3_companion_ai_device/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-22T10:45:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Send nudes. It's safe",
-        "link": "https://reddit.com/r/aimemes/comments/1sshk97/send_nudes_its_safe/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-22T10:30:48+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "AI datacenter spending has surpassed the Manhattan Project, Marshall Plan, ISS, and the Apollo Program - combined",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ssfb9z/ai_datacenter_spending_has_surpassed_the/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-22T08:22:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-22T15:42:19.356Z",
+    "reddit_viral_generated_at": "2026-04-22T17:16:11.342Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
