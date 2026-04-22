@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-22T21:11:08.364Z",
+    "generated_at": "2026-04-22T22:06:28.828Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,6 +391,24 @@
         "viral_score": 99
       },
       {
+        "headline": "GPT-Image 2 \"White Smoke Attack\"",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ssw3zi/gptimage_2_white_smoke_attack/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-22T19:45:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The artifacting present in the new GPT Image generation model appear to be leftovers from images generated previously within the same chat.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ssvd9v/the_artifacting_present_in_the_new_gpt_image/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-22T19:18:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
         "headline": "Trying OpenClaw for the first time? Here's the Dos and Don'ts",
         "link": "https://reddit.com/r/openclaw/comments/1ssuze9/trying_openclaw_for_the_first_time_heres_the_dos/",
         "subreddit": "openclaw",
@@ -400,13 +418,13 @@
         "viral_score": 97
       },
       {
-        "headline": "GPT Image 2 is amazing for a lot of things, but for nature it is not...",
-        "link": "https://reddit.com/r/OpenAI/comments/1ssrr2w/gpt_image_2_is_amazing_for_a_lot_of_things_but/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-22T17:12:17+00:00",
+        "headline": "Feel like people here are sprinting to plug themselves in lol",
+        "link": "https://reddit.com/r/singularity/comments/1ssqma5/feel_like_people_here_are_sprinting_to_plug/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-22T16:32:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "PSA: Anthropic bans organizations without warning",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-22T16:07:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "SpaceX secured the right to buy Cursor for $60B. For context, Twitter sold for $44B and had 250M users.",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-22T15:39:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Uber blows through its IT budget for AI for 2026 and it's only April citing rising costs of Claude Code",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-22T15:38:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "GPT Image 2 is the first image ai that’s blown my mind (prompted for a screenshot from a combined GTA 6-Cyberpunk 2077 game)",
@@ -443,31 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Nvidia CEO Jensen Huang: ‘Most people will lose their job to somebody who uses AI’—not to AI itself",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ssnv0f/nvidia_ceo_jensen_huang_most_people_will_lose/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-22T14:54:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "GPT Image 2 did this...",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ssnaos/gpt_image_2_did_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-22T14:33:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-22T21:11:08.364Z",
+    "reddit_viral_generated_at": "2026-04-22T22:06:28.828Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
