@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-22T03:43:46.028Z",
+    "generated_at": "2026-04-22T06:12:15.723Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "2008 Myspace profile",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ssbsfj/2008_myspace_profile/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-22T05:02:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Am I winning yet, son?",
         "link": "https://reddit.com/r/aimemes/comments/1ss9bdc/am_i_winning_yet_son/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-22T03:02:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "An open letter to Anthropic",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ss8h1x/an_open_letter_to_anthropic/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-22T02:24:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Recommendations",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-22T02:19:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "AheadForm Origin F1 returns with new look",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-22T02:07:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
+      },
+      {
+        "headline": "GPT image 2 is insane",
+        "link": "https://reddit.com/r/singularity/comments/1ss7lkh/gpt_image_2_is_insane/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-22T01:45:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Prepare for horde of switchers to OpenAI as Anthropic removes claude code from $20 . Minimum $100 to access it soon",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-22T00:27:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Anthropic response to Claude Code change",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-22T00:10:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "The 'President Test' with GPT-Image-2",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-22T00:03:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "I made some 'end of the world' survival posters using GPT Image 2",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-21T23:58:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic has appeared to begin testing removing Claude Code from their $20 plan for new users signing up. OpenAI employees have already begun to make fun of them for this.",
-        "link": "https://reddit.com/r/singularity/comments/1ss4qsb/anthropic_has_appeared_to_begin_testing_removing/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-21T23:41:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "An inexpensive setup that been working (Oh‑My‑OpenAgent‑style)",
-        "link": "https://reddit.com/r/openclaw/comments/1ss4fa4/an_inexpensive_setup_that_been_working/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-21T23:27:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I can foresee the guardrails and OpenAI patching this image model.",
-        "link": "https://reddit.com/r/OpenAI/comments/1ss42ou/i_can_foresee_the_guardrails_and_openai_patching/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-21T23:12:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-22T03:43:46.028Z",
+    "reddit_viral_generated_at": "2026-04-22T06:12:15.723Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
