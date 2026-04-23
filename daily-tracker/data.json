@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-23T19:42:40.055Z",
+    "generated_at": "2026-04-23T21:09:16.593Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT-5.5 Released — seems to handle multi-step prompts better",
+        "link": "https://reddit.com/r/openclaw/comments/1stuhd6/gpt55_released_seems_to_handle_multistep_prompts/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T20:29:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Image Generation using openAI Pro and oAuth",
+        "link": "https://reddit.com/r/openclaw/comments/1stu9nc/image_generation_using_openai_pro_and_oauth/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T20:21:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "OpenClaw sem permissões após atualizações",
+        "link": "https://reddit.com/r/openclaw/comments/1stu3yr/openclaw_sem_permiss%C3%B5es_ap%C3%B3s_atualiza%C3%A7%C3%B5es/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T20:16:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "New Ubuntu 26.04 LTS",
+        "link": "https://reddit.com/r/openclaw/comments/1sttw17/new_ubuntu_2604_lts/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T20:08:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Quick, before it's nerfed!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sttgxl/quick_before_its_nerfed/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-23T19:52:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Chat GPT 5.5 got launched and we got some really bold words by Sam Altman. Thoughts?",
         "link": "https://reddit.com/r/singularity/comments/1str6al/chat_gpt_55_got_launched_and_we_got_some_really/",
@@ -379,7 +424,16 @@
         "published_at": "2026-04-23T18:29:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "GPT-5.5 is out 🔥",
+        "link": "https://reddit.com/r/OpenAI/comments/1str2pj/gpt55_is_out/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-23T18:25:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Introducing GPT-5.5 | OpenAI",
@@ -388,7 +442,7 @@
         "published_at": "2026-04-23T18:09:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "GPT-5.5 benchmark results have been released",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-23T18:07:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Introducing GPT-5.5",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-23T18:02:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Claude reset limits for everyone",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1stozsr/claude_reset_limits_for_everyone/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-23T17:13:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic Mythos shaping up as nothingburger",
-        "link": "https://reddit.com/r/singularity/comments/1stofgg/anthropic_mythos_shaping_up_as_nothingburger/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-23T16:53:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anthropic Mythos shaping up as nothingburger",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sto9sj/anthropic_mythos_shaping_up_as_nothingburger/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-23T16:48:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "GPT 5.5 is coming",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1stndhv/gpt_55_is_coming/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-23T16:15:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "A group of users leaked Anthropic's AI model Mythos by reportedly guessing where it was located",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1stmup2/a_group_of_users_leaked_anthropics_ai_model/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-23T15:57:22+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "Apparently, humans are reading our conversations. In Europe, you are warned about this",
-        "link": "https://reddit.com/r/GeminiAI/comments/1stlec6/apparently_humans_are_reading_our_conversations/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-23T15:05:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-23T19:42:40.055Z",
+    "reddit_viral_generated_at": "2026-04-23T21:09:16.593Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
