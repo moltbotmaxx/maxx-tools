@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-23T22:03:14.002Z",
+    "generated_at": "2026-04-23T23:08:50.875Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Mac Mini Setup Question",
+        "link": "https://reddit.com/r/openclaw/comments/1sty8f1/mac_mini_setup_question/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T22:57:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "LMAO why OpenAI is hiding the ones where they lose to Opus 4.7?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1stxjdp/lmao_why_openai_is_hiding_the_ones_where_they/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-23T22:28:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "GPT-5.5 Released — seems to handle multi-step prompts better",
         "link": "https://reddit.com/r/openclaw/comments/1stuhd6/gpt55_released_seems_to_handle_multistep_prompts/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-23T20:29:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Image Generation using openAI Pro and oAuth",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-23T20:21:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "OpenClaw sem permissões após atualizações",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-23T20:16:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "New Ubuntu 26.04 LTS",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-23T20:08:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Mac Studio for OpenClaw vs. cheaper M4 Mini — what makes sense for a real estate brokerage?",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-23T20:07:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Multi computer multi local models",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-23T20:05:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Quick, before it's nerfed!",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-23T19:52:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Chat GPT 5.5 got launched and we got some really bold words by Sam Altman. Thoughts?",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-23T18:29:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "GPT-5.5 is out 🔥",
-        "link": "https://reddit.com/r/OpenAI/comments/1str2pj/gpt55_is_out/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-23T18:25:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Introducing GPT-5.5 | OpenAI",
-        "link": "https://reddit.com/r/OpenAI/comments/1stqlnh/introducing_gpt55_openai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-23T18:09:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-23T22:03:14.002Z",
+    "reddit_viral_generated_at": "2026-04-23T23:08:50.875Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
