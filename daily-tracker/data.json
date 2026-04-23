@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-23T03:48:40.345Z",
+    "generated_at": "2026-04-23T06:18:09.177Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Openclaw to Claude Code to Openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1st827k/openclaw_to_claude_code_to_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T04:07:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Yup. Image gen 2.0 is amazing. Even knows this!!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1st7s2f/yup_image_gen_20_is_amazing_even_knows_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-23T03:54:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "GPT-Image-2 vs Nano Banana 2, nb2 tried its best...",
+        "link": "https://reddit.com/r/OpenAI/comments/1st73fd/gptimage2_vs_nano_banana_2_nb2_tried_its_best/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-23T03:21:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "If true, might explain what many of you are experiencing",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1st6w0y/if_true_might_explain_what_many_of_you_are/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-23T03:11:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Where's Wally 3D crazy detail New Img Gen",
@@ -388,16 +415,25 @@
         "published_at": "2026-04-23T02:19:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
-        "headline": "AI companies have a new filter and it's not your tech stack or YOE",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1st4ha7/ai_companies_have_a_new_filter_and_its_not_your/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-23T01:23:05+00:00",
+        "headline": "I made a Manga for my daughters while experimenting with Images2, wow am I impressed.",
+        "link": "https://reddit.com/r/OpenAI/comments/1st5ksf/i_made_a_manga_for_my_daughters_while/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-23T02:12:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
+      },
+      {
+        "headline": "GPT-2 cooked this “photo of a screen” prompt - MacBook + Photo Booth + late-night vibes",
+        "link": "https://reddit.com/r/OpenAI/comments/1st5kcd/gpt2_cooked_this_photo_of_a_screen_prompt_macbook/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-23T02:11:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "OpenAI appears to be gearing up for a major strategic move",
@@ -406,68 +442,32 @@
         "published_at": "2026-04-23T00:58:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
-        "headline": "OpenAI preparing for a big launch",
-        "link": "https://reddit.com/r/singularity/comments/1st3i4q/openai_preparing_for_a_big_launch/",
+        "headline": "SONY AI | Project Ace, for the first time AI/robotics is competitive against pro table tennis players.",
+        "link": "https://reddit.com/r/singularity/comments/1st3uoq/sony_ai_project_ace_for_the_first_time_airobotics/",
         "subreddit": "singularity",
-        "published_at": "2026-04-23T00:38:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Honestly crazy how well the new image model can do stuff like this",
-        "link": "https://reddit.com/r/ChatGPT/comments/1st22vt/honestly_crazy_how_well_the_new_image_model_can/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-22T23:36:36+00:00",
+        "published_at": "2026-04-23T00:54:50+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "based on a true story. im the developer",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1st1kj9/based_on_a_true_story_im_the_developer/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-22T23:14:45+00:00",
+        "headline": "17 y/o with 2 years in AI automation — is it realistic to start freelancing?",
+        "link": "https://reddit.com/r/openclaw/comments/1st3slf/17_yo_with_2_years_in_ai_automation_is_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T00:52:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "AI arms race now",
-        "link": "https://reddit.com/r/OpenAI/comments/1sswmw8/ai_arms_race_now/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-22T20:05:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Is this true?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sswfye/is_this_true/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-22T19:58:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "GPT-Image 2 \"White Smoke Attack\"",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ssw3zi/gptimage_2_white_smoke_attack/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-22T19:45:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-23T03:48:40.345Z",
+    "reddit_viral_generated_at": "2026-04-23T06:18:09.177Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
