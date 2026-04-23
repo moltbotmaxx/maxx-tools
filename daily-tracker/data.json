@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-23T09:58:24.861Z",
+    "generated_at": "2026-04-23T11:33:42.532Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Dario Amodei says open-source will match Mythos in 6-12 months. Is the 'frontier model' business model dead?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1stfnq9/dario_amodei_says_opensource_will_match_mythos_in/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-23T11:11:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "[ Removed by Reddit ]",
+        "link": "https://reddit.com/r/openclaw/comments/1stf3n2/removed_by_reddit/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T10:42:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Image Gen 2s content filter seems to be more relaxed",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ste5a3/image_gen_2s_content_filter_seems_to_be_more/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-23T09:49:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Here is why your OpenClaw isn't Reliable and Powerful!",
         "link": "https://reddit.com/r/openclaw/comments/1stdu86/here_is_why_your_openclaw_isnt_reliable_and/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-23T09:31:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Tesla has officially confirmed that this will be the new Optimus factory at Giga Texas. Long term, this new factory will have an annual production capacity of 10 million robots.",
+        "link": "https://reddit.com/r/singularity/comments/1stc359/tesla_has_officially_confirmed_that_this_will_be/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-23T07:46:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Chris Rock carving the Rock out of rock at Rockefeller Center",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-23T06:37:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Asked GPT Image 2 for a New Yorker cartoon, and pretty much got one.",
@@ -397,34 +433,16 @@
         "published_at": "2026-04-23T06:32:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Can agents safe call claude (ClaudeCode) locally with my max sub? Does this actually work or straight to a ban?",
-        "link": "https://reddit.com/r/openclaw/comments/1staeqc/can_agents_safe_call_claude_claudecode_locally/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-23T06:09:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "What do you think people misunderstand about AI?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1st8kle/what_do_you_think_people_misunderstand_about_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-23T04:33:04+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
       },
       {
-        "headline": "Openclaw to Claude Code to Openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1st827k/openclaw_to_claude_code_to_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-23T04:07:41+00:00",
+        "headline": "Yahu by gpt",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sta1ru/yahu_by_gpt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-23T05:50:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       },
       {
         "headline": "Yup. Image gen 2.0 is amazing. Even knows this!!",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-23T03:54:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 83
       },
       {
         "headline": "GPT-Image-2 vs Nano Banana 2, nb2 tried its best...",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-23T03:21:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Where's Wally 3D crazy detail New Img Gen",
-        "link": "https://reddit.com/r/ChatGPT/comments/1st5qnx/wheres_wally_3d_crazy_detail_new_img_gen/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-23T02:19:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "I made a Manga for my daughters while experimenting with Images2, wow am I impressed.",
-        "link": "https://reddit.com/r/OpenAI/comments/1st5ksf/i_made_a_manga_for_my_daughters_while/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-23T02:12:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-23T09:58:24.861Z",
+    "reddit_viral_generated_at": "2026-04-23T11:33:42.532Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
