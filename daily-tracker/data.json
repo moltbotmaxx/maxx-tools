@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-23T21:09:16.593Z",
+    "generated_at": "2026-04-23T22:03:14.002Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -409,13 +409,31 @@
         "viral_score": 98
       },
       {
+        "headline": "Mac Studio for OpenClaw vs. cheaper M4 Mini — what makes sense for a real estate brokerage?",
+        "link": "https://reddit.com/r/openclaw/comments/1sttv7h/mac_studio_for_openclaw_vs_cheaper_m4_mini_what/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T20:07:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Multi computer multi local models",
+        "link": "https://reddit.com/r/openclaw/comments/1stttmk/multi_computer_multi_local_models/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-23T20:05:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
         "headline": "Quick, before it's nerfed!",
         "link": "https://reddit.com/r/ChatGPT/comments/1sttgxl/quick_before_its_nerfed/",
         "subreddit": "ChatGPT",
         "published_at": "2026-04-23T19:52:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Chat GPT 5.5 got launched and we got some really bold words by Sam Altman. Thoughts?",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-23T18:29:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "GPT-5.5 is out 🔥",
@@ -443,31 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "GPT-5.5 benchmark results have been released",
-        "link": "https://reddit.com/r/singularity/comments/1stqk81/gpt55_benchmark_results_have_been_released/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-23T18:07:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Introducing GPT-5.5",
-        "link": "https://reddit.com/r/singularity/comments/1stqev3/introducing_gpt55/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-23T18:02:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-23T21:09:16.593Z",
+    "reddit_viral_generated_at": "2026-04-23T22:03:14.002Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
