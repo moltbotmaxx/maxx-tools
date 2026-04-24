@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T03:53:02.709Z",
+    "generated_at": "2026-04-24T06:21:23.631Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "9 Months Ago in Gemini 2.5 Pro Era vs Now In Gemini 3.1 Pro Era (not even in top 10 anymore)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1su60hu/9_months_ago_in_gemini_25_pro_era_vs_now_in/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-24T04:57:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Simple, but impressive. Love Google's AI.",
         "link": "https://reddit.com/r/GeminiAI/comments/1su4dom/simple_but_impressive_love_googles_ai/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-24T03:37:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "German vs American vs Japanese Cars",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-24T03:23:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "DeepSeek V4 has released",
@@ -397,7 +406,16 @@
         "published_at": "2026-04-24T03:00:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
+      },
+      {
+        "headline": "\"I need my car washed..\" Turns out there was a 3rd answer.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1su38s2/i_need_my_car_washed_turns_out_there_was_a_3rd/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-24T02:44:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "I vibe-coded GTA: Google Earth over the weekend",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-24T02:18:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "How you can use Obsidian as the long-term memory backbone for your AI assistant",
@@ -415,16 +433,7 @@
         "published_at": "2026-04-24T02:15:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Celebrity look alike?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1su2ixm/celebrity_look_alike/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-24T02:10:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "I spent 24 hours benchmarking GPT-5.5 against Opus4.7 in OpenClaw. Here is what I found.",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-24T01:53:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Anyone actually got GPT-5.5 working through Codex OAuth in OpenClaw?",
@@ -442,22 +451,13 @@
         "published_at": "2026-04-24T01:31:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "thoughts on GPT 5.5",
         "link": "https://reddit.com/r/OpenAI/comments/1su1ikc/thoughts_on_gpt_55/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-24T01:23:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "ChatGPT 5.5 🔥🔥🔥",
-        "link": "https://reddit.com/r/OpenAI/comments/1stzivt/chatgpt_55/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-23T23:53:16+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T03:53:02.709Z",
+    "reddit_viral_generated_at": "2026-04-24T06:21:23.631Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
