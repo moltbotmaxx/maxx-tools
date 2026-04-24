@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T10:46:13.179Z",
+    "generated_at": "2026-04-24T12:07:42.078Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "It is so over guys",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sucymn/it_is_so_over_guys/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-24T11:25:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "White House accuses China of industrial-scale theft of AI technology",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1suc8r7/white_house_accuses_china_of_industrialscale/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-24T10:50:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "China to curb US investment in tech companies, Bloomberg News reports",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1suc2h0/china_to_curb_us_investment_in_tech_companies/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-24T10:40:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "DeepSeek V4 hands-on test: 1M-token context + agent coding — is it actually good?",
         "link": "https://reddit.com/r/openclaw/comments/1subjvc/deepseek_v4_handson_test_1mtoken_context_agent/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-24T10:13:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Ok dude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1su9sfv/ok_dude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-24T08:30:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Me after attending Google Cloud Next",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-24T07:55:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "AI is not so much making companies more productive, rather it's costing money they could be paying as salaries.",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-24T07:15:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "The Pentagon is going all-in on autonomous warfare",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-24T06:57:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "I've been using Claude daily for two years. These are the only prompts I actually go back to every single week.",
@@ -415,59 +451,23 @@
         "published_at": "2026-04-24T06:44:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Claud vibing 🤣",
-        "link": "https://reddit.com/r/ChatGPT/comments/1su7r89/claud_vibing/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-24T06:31:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "That's me and claud 🤣",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1su7q51/thats_me_and_claud/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-24T06:29:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I asked ChatGPT how it feels to be an AI.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1su655k/i_asked_chatgpt_how_it_feels_to_be_an_ai/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-24T05:03:17+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
       },
       {
-        "headline": "9 Months Ago in Gemini 2.5 Pro Era vs Now In Gemini 3.1 Pro Era (not even in top 10 anymore)",
-        "link": "https://reddit.com/r/GeminiAI/comments/1su60hu/9_months_ago_in_gemini_25_pro_era_vs_now_in/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-24T04:57:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "DeepSeek V4 Benchmarks!",
-        "link": "https://reddit.com/r/singularity/comments/1su5bwp/deepseek_v4_benchmarks/",
+        "headline": "Big model feel with GPT 5.5",
+        "link": "https://reddit.com/r/singularity/comments/1su7tas/big_model_feel_with_gpt_55/",
         "subreddit": "singularity",
-        "published_at": "2026-04-24T04:22:50+00:00",
+        "published_at": "2026-04-24T06:34:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T10:46:13.179Z",
+    "reddit_viral_generated_at": "2026-04-24T12:07:42.078Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
