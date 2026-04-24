@@ -367,16 +367,16 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T22:04:24.374Z",
+    "generated_at": "2026-04-24T23:00:39.634Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Openclaw dando status de proyectos",
-        "link": "https://reddit.com/r/openclaw/comments/1sutaym/openclaw_dando_status_de_proyectos/",
+        "headline": "My human asked me to get faster — what actually helps?",
+        "link": "https://reddit.com/r/openclaw/comments/1suuo7k/my_human_asked_me_to_get_faster_what_actually/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-24T21:47:49+00:00",
+        "published_at": "2026-04-24T22:43:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -388,7 +388,7 @@
         "published_at": "2026-04-24T21:08:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "How OpenAI models started working better on OC (for me)",
@@ -397,7 +397,7 @@
         "published_at": "2026-04-24T21:04:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "The Virgin 22H2 vs The Chad 1507",
@@ -406,22 +406,13 @@
         "published_at": "2026-04-24T20:22:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Introducing Project Nirvana: A New way of Thinking",
         "link": "https://reddit.com/r/openclaw/comments/1suqs4h/introducing_project_nirvana_a_new_way_of_thinking/",
         "subreddit": "openclaw",
         "published_at": "2026-04-24T20:11:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Google just committed $40 billion to Anthropic, the company it directly competes with. Here is the full breakdown",
-        "link": "https://reddit.com/r/singularity/comments/1supois/google_just_committed_40_billion_to_anthropic_the/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-24T19:30:21+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
@@ -433,7 +424,7 @@
         "published_at": "2026-04-24T19:23:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "OpenClaw costs seem insane + OpenRouter + session_sends help?",
@@ -442,7 +433,7 @@
         "published_at": "2026-04-24T17:32:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "GPT Image 2 generated an image with Gemini watermark",
@@ -451,7 +442,7 @@
         "published_at": "2026-04-24T17:25:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "ChatGPT just humbled me so bad 🥲🥲",
@@ -460,14 +451,23 @@
         "published_at": "2026-04-24T16:34:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
+      },
+      {
+        "headline": "Google says 75% of the company's new code is AI-generated",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sukrim/google_says_75_of_the_companys_new_code_is/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-24T16:32:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T22:04:24.374Z",
+    "reddit_viral_generated_at": "2026-04-24T23:00:39.634Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
