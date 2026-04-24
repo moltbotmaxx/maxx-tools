@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T20:03:10.595Z",
+    "generated_at": "2026-04-24T21:08:15.346Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The Virgin 22H2 vs The Chad 1507",
+        "link": "https://reddit.com/r/aimemes/comments/1sur324/the_virgin_22h2_vs_the_chad_1507/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-24T20:22:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Google just committed $40 billion to Anthropic, the company it directly competes with. Here is the full breakdown",
+        "link": "https://reddit.com/r/singularity/comments/1supois/google_just_committed_40_billion_to_anthropic_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-24T19:30:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Google invests $40B in Anthropic. Amazon did $5B days before. Is this normal?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1supi0j/google_invests_40b_in_anthropic_amazon_did_5b/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-24T19:23:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Help me understand why I \"need\" to use Docker for OC.",
         "link": "https://reddit.com/r/openclaw/comments/1sumtbg/help_me_understand_why_i_need_to_use_docker_for_oc/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-24T17:46:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "OpenClaw costs seem insane + OpenRouter + session_sends help?",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-24T17:32:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "GPT Image 2 generated an image with Gemini watermark",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-24T17:25:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Being accused of 100% ai generation on final paper",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-24T16:36:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "ChatGPT just humbled me so bad 🥲🥲",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-24T16:34:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Google says 75% of the company's new code is AI-generated",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-24T16:32:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Nature-published Chinese semiconductor researcher fell to his death at U of Michigan. Cops investigating Danhao Wang's death as \"possible act of self-harm\". The Chinese Ministry of Foreign Affairs calls for a \"full investigation\", the death following \"hostile questioning by US law enforcement\".",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-24T15:48:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I asked GPT to recreate my photo by changing only the time on the microwave. Can you tell which is which?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1suhko4/i_asked_gpt_to_recreate_my_photo_by_changing_only/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-24T14:37:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Why NOT to give up on Openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1suh8m1/why_not_to_give_up_on_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-24T14:24:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "😭",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sugu1y/_/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-24T14:09:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T20:03:10.595Z",
+    "reddit_viral_generated_at": "2026-04-24T21:08:15.346Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
