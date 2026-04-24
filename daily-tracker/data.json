@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T23:00:39.634Z",
+    "generated_at": "2026-04-24T23:57:01.919Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "My human asked me to get faster — what actually helps?",
-        "link": "https://reddit.com/r/openclaw/comments/1suuo7k/my_human_asked_me_to_get_faster_what_actually/",
+        "headline": "Team for Meeting??",
+        "link": "https://reddit.com/r/openclaw/comments/1suwd52/team_for_meeting/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-24T22:43:18+00:00",
+        "published_at": "2026-04-24T23:56:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "How to Run Agent 24/7?",
+        "link": "https://reddit.com/r/openclaw/comments/1suvzxr/how_to_run_agent_247/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-24T23:40:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Definitive proof shows we are indeed accelerating towards singularity",
+        "link": "https://reddit.com/r/singularity/comments/1suv8h5/definitive_proof_shows_we_are_indeed_accelerating/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-24T23:06:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "It has genuinely been a terrible week for Luddites",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-24T21:08:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "How OpenAI models started working better on OC (for me)",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-24T21:04:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "The Virgin 22H2 vs The Chad 1507",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-24T20:22:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Introducing Project Nirvana: A New way of Thinking",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-24T20:11:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Google invests $40B in Anthropic. Amazon did $5B days before. Is this normal?",
@@ -424,40 +442,22 @@
         "published_at": "2026-04-24T19:23:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
+      },
+      {
+        "headline": "90s LAN party - List any errors or inaccuracies you might find",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sup9lg/90s_lan_party_list_any_errors_or_inaccuracies_you/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-24T19:14:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "OpenClaw costs seem insane + OpenRouter + session_sends help?",
         "link": "https://reddit.com/r/openclaw/comments/1sumfxx/openclaw_costs_seem_insane_openrouter_session/",
         "subreddit": "openclaw",
         "published_at": "2026-04-24T17:32:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "GPT Image 2 generated an image with Gemini watermark",
-        "link": "https://reddit.com/r/OpenAI/comments/1sum8ol/gpt_image_2_generated_an_image_with_gemini/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-24T17:25:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "ChatGPT just humbled me so bad 🥲🥲",
-        "link": "https://reddit.com/r/OpenAI/comments/1suktf6/chatgpt_just_humbled_me_so_bad/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-24T16:34:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Google says 75% of the company's new code is AI-generated",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sukrim/google_says_75_of_the_companys_new_code_is/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-24T16:32:20+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 85
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T23:00:39.634Z",
+    "reddit_viral_generated_at": "2026-04-24T23:57:01.919Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
