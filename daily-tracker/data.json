@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T14:09:19.726Z",
+    "generated_at": "2026-04-24T15:39:23.812Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Is my boss using ChatGPT to email me?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sufxvz/is_my_boss_using_chatgpt_to_email_me/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-24T13:34:25+00:00",
+        "headline": "Why NOT to give up on Openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1suh8m1/why_not_to_give_up_on_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-24T14:24:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Asked it to create the average Redditor meetup, how’s the accuracy?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sugaoq/asked_it_to_create_the_average_redditor_meetup/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-24T13:48:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Is my boss using Gemini to email me?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sufzsi/is_my_boss_using_gemini_to_email_me/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-24T13:36:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Exactly 1 year ago, Anthropic said fully AI employees were just 1 year away",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-24T11:54:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "It is so over guys",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-24T11:25:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "I'm somewhat of a coder myself",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-24T11:24:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Screenshots from 2D Games Reimagined in 3D",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-24T11:22:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "I asked ChatGPT to share its \"experience\" through an image using its own \"voice\" and \"perspective\". It gave me a rather technical image that I think is pretty interesting as it actually shows the internal of how models work.",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-24T11:19:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "White House accuses China of industrial-scale theft of AI technology",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-24T10:50:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "China to curb US investment in tech companies, Bloomberg News reports",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-24T10:40:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "DeepSeek V4 hands-on test: 1M-token context + agent coding — is it actually good?",
-        "link": "https://reddit.com/r/openclaw/comments/1subjvc/deepseek_v4_handson_test_1mtoken_context_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-24T10:13:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "AI is not so much making companies more productive, rather it's costing money they could be paying as salaries.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1su8irj/ai_is_not_so_much_making_companies_more/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-24T07:15:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T14:09:19.726Z",
+    "reddit_viral_generated_at": "2026-04-24T15:39:23.812Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
