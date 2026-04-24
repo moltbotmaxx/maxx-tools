@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T15:39:23.812Z",
+    "generated_at": "2026-04-24T17:14:36.524Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT Image 2 nails cinematic realism in subway candid feels straight out of a DSLR",
+        "link": "https://reddit.com/r/OpenAI/comments/1suk82x/gpt_image_2_nails_cinematic_realism_in_subway/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-24T16:12:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Nature-published Chinese semiconductor researcher fell to his death at U of Michigan. Cops investigating Danhao Wang's death as \"possible act of self-harm\". The Chinese Ministry of Foreign Affairs calls for a \"full investigation\", the death following \"hostile questioning by US law enforcement\".",
+        "link": "https://reddit.com/r/singularity/comments/1sujisg/naturepublished_chinese_semiconductor_researcher/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-24T15:48:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I asked GPT to recreate my photo by changing only the time on the microwave. Can you tell which is which?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1suhko4/i_asked_gpt_to_recreate_my_photo_by_changing_only/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-24T14:37:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Why NOT to give up on Openclaw",
         "link": "https://reddit.com/r/openclaw/comments/1suh8m1/why_not_to_give_up_on_openclaw/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-24T14:24:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Asked it to create the average Redditor meetup, how’s the accuracy?",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-24T13:48:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Is my boss using Gemini to email me?",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-24T13:36:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Exactly 1 year ago, Anthropic said fully AI employees were just 1 year away",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-24T11:54:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "It is so over guys",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-24T11:25:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "I'm somewhat of a coder myself",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-24T11:24:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Screenshots from 2D Games Reimagined in 3D",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-24T11:22:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I asked ChatGPT to share its \"experience\" through an image using its own \"voice\" and \"perspective\". It gave me a rather technical image that I think is pretty interesting as it actually shows the internal of how models work.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sucuen/i_asked_chatgpt_to_share_its_experience_through/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-24T11:19:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "White House accuses China of industrial-scale theft of AI technology",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1suc8r7/white_house_accuses_china_of_industrialscale/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-24T10:50:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "China to curb US investment in tech companies, Bloomberg News reports",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1suc2h0/china_to_curb_us_investment_in_tech_companies/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-24T10:40:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T15:39:23.812Z",
+    "reddit_viral_generated_at": "2026-04-24T17:14:36.524Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
