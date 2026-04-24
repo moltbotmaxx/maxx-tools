@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-24T17:14:36.524Z",
+    "generated_at": "2026-04-24T18:01:19.709Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "GPT Image 2 nails cinematic realism in subway candid feels straight out of a DSLR",
-        "link": "https://reddit.com/r/OpenAI/comments/1suk82x/gpt_image_2_nails_cinematic_realism_in_subway/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-24T16:12:58+00:00",
+        "headline": "Help me understand why I \"need\" to use Docker for OC.",
+        "link": "https://reddit.com/r/openclaw/comments/1sumtbg/help_me_understand_why_i_need_to_use_docker_for_oc/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-24T17:46:02+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "I've never used the OC UI, but.....",
+        "link": "https://reddit.com/r/openclaw/comments/1sum45r/ive_never_used_the_oc_ui_but/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-24T17:20:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "ChatGPT just humbled me so bad 🥲🥲",
+        "link": "https://reddit.com/r/OpenAI/comments/1suktf6/chatgpt_just_humbled_me_so_bad/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-24T16:34:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Google says 75% of the company's new code is AI-generated",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sukrim/google_says_75_of_the_companys_new_code_is/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-24T16:32:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Nature-published Chinese semiconductor researcher fell to his death at U of Michigan. Cops investigating Danhao Wang's death as \"possible act of self-harm\". The Chinese Ministry of Foreign Affairs calls for a \"full investigation\", the death following \"hostile questioning by US law enforcement\".",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-24T15:48:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "I asked GPT to recreate my photo by changing only the time on the microwave. Can you tell which is which?",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-24T14:37:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Why NOT to give up on Openclaw",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-24T14:24:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Asked it to create the average Redditor meetup, how’s the accuracy?",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-24T13:48:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Is my boss using Gemini to email me?",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-24T13:36:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Exactly 1 year ago, Anthropic said fully AI employees were just 1 year away",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-24T11:54:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "It is so over guys",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sucymn/it_is_so_over_guys/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-24T11:25:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I'm somewhat of a coder myself",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sucxqj/im_somewhat_of_a_coder_myself/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-24T11:24:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Screenshots from 2D Games Reimagined in 3D",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sucwfw/screenshots_from_2d_games_reimagined_in_3d/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-24T11:22:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-24T17:14:36.524Z",
+    "reddit_viral_generated_at": "2026-04-24T18:01:19.709Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
