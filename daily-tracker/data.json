@@ -367,16 +367,16 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T19:12:32.001Z",
+    "generated_at": "2026-04-25T19:56:01.226Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Production ready alternative?",
-        "link": "https://reddit.com/r/openclaw/comments/1svhla6/production_ready_alternative/",
+        "headline": "the ai agent market is split between free but dangerous and $200/month. where's the middle?",
+        "link": "https://reddit.com/r/openclaw/comments/1svl6vk/the_ai_agent_market_is_split_between_free_but/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-25T17:01:23+00:00",
+        "published_at": "2026-04-25T19:18:45+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -388,7 +388,16 @@
         "published_at": "2026-04-25T16:01:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
+      },
+      {
+        "headline": "Gas power projects for just 11 US data center 'campuses' could emit more greenhouse gases than entire countries, according to report",
+        "link": "https://reddit.com/r/singularity/comments/1svfi6u/gas_power_projects_for_just_11_us_data_center/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T15:40:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Happy to Be Part of the OpenClaw Community",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-25T15:26:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "[Demo] Real-time EEG analysis-driven guided-meditation system",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-25T14:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "PSA: The string \"HERMES.md\" in your git commit history silently routes Claude Code billing to extra usage — cost me $200",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-25T14:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Serious question: why OC over Codex",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-25T14:24:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-25T13:56:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Palantir employees are talking about company's \"descent into fascism\"",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-25T13:25:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Picked a random person from a generated image and followed their day in 1 hour increments.",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-25T13:11:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Babe?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1svaucq/babe/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-25T12:27:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T19:12:32.001Z",
+    "reddit_viral_generated_at": "2026-04-25T19:56:01.226Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
