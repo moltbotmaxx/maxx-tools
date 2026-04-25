@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T10:07:24.038Z",
+    "generated_at": "2026-04-25T11:06:40.156Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "This Opus 4.7 + GPT-5.5 'handoff' for coding is getting hype. Is it a real hack or just more complexity?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv8z2u/this_opus_47_gpt55_handoff_for_coding_is_getting/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T10:53:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Chinese Workers Horrified as Bosses Direct Them to Train Their AI Replacements",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv81xr/chinese_workers_horrified_as_bosses_direct_them/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T10:00:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Anti AI Principles",
         "link": "https://reddit.com/r/aimemes/comments/1sv81ip/anti_ai_principles/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-25T10:00:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "I’m a nursing student who built a 660K-page pharmaceutical database using Claude Haiku — solo, on the side",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sv7fvc/im_a_nursing_student_who_built_a_660kpage/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-25T09:24:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Claude Code/CLI is allowed again and nobody is talking about it?",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-25T09:22:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "when you trust the process too much",
@@ -397,16 +424,16 @@
         "published_at": "2026-04-25T09:21:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
-        "headline": "Why do LLMs feel “smart” in one message but fall apart over a long conversation?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv78cp/why_do_llms_feel_smart_in_one_message_but_fall/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T09:12:28+00:00",
+        "headline": "Stop pretending it's a democracy",
+        "link": "https://reddit.com/r/OpenAI/comments/1sv77wj/stop_pretending_its_a_democracy/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-25T09:11:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Wtf Claude",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-25T08:28:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "AI: Engineered to be overconfident",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-25T08:06:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Malicious skill in github.com/openclaw/skills — base64-encoded shell payload disguised as Google Workspace setup",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-25T07:30:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "How Anthropic can save Opus 4.7 with one change.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sv4qnh/how_anthropic_can_save_opus_47_with_one_change/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-25T06:47:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "FarmersOnly.cum",
-        "link": "https://reddit.com/r/aimemes/comments/1sv3t74/farmersonlycum/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-25T05:55:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "The recent news just feels like this.",
-        "link": "https://reddit.com/r/singularity/comments/1sv3r7p/the_recent_news_just_feels_like_this/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-25T05:52:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T10:07:24.038Z",
+    "reddit_viral_generated_at": "2026-04-25T11:06:40.156Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
