@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T07:46:49.967Z",
+    "generated_at": "2026-04-25T09:12:30.528Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Wtf Claude",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv6hx5/wtf_claude/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T08:28:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Malicious skill in github.com/openclaw/skills — base64-encoded shell payload disguised as Google Workspace setup",
         "link": "https://reddit.com/r/openclaw/comments/1sv5hlg/malicious_skill_in_githubcomopenclawskills/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-25T07:30:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "How Anthropic can save Opus 4.7 with one change.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sv4qnh/how_anthropic_can_save_opus_47_with_one_change/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-25T06:47:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Browser login credentials",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-25T06:11:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "FarmersOnly.cum",
@@ -397,7 +415,16 @@
         "published_at": "2026-04-25T05:55:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
+      },
+      {
+        "headline": "The recent news just feels like this.",
+        "link": "https://reddit.com/r/singularity/comments/1sv3r7p/the_recent_news_just_feels_like_this/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T05:52:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Showcase Weekend! — Week 16, 2026",
@@ -406,7 +433,16 @@
         "published_at": "2026-04-25T05:00:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
+      },
+      {
+        "headline": "OpenAI scores on artificial analysis over time",
+        "link": "https://reddit.com/r/singularity/comments/1sv25m7/openai_scores_on_artificial_analysis_over_time/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T04:28:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "When you trust the process too much",
@@ -415,59 +451,23 @@
         "published_at": "2026-04-25T04:25:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Having problems with chatgpt code ? Switched from ChatGPT to DeepSeek on Ollama Pro - finally stable",
-        "link": "https://reddit.com/r/openclaw/comments/1sv1zmx/having_problems_with_chatgpt_code_switched_from/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T04:20:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "How do you know when something is actually worth automating?",
-        "link": "https://reddit.com/r/openclaw/comments/1sv0q0d/how_do_you_know_when_something_is_actually_worth/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T03:18:52+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "Image 2.0 cooked here",
-        "link": "https://reddit.com/r/OpenAI/comments/1sv0mc5/image_20_cooked_here/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-25T03:14:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Is anyone actually getting real work done with OpenClaw? What should I be learning?",
-        "link": "https://reddit.com/r/openclaw/comments/1suzz92/is_anyone_actually_getting_real_work_done_with/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T02:44:02+00:00",
+        "headline": "Can we stop making definitive statements about consciousness?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv1j7k/can_we_stop_making_definitive_statements_about/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T03:58:01+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Did everyone suddenly forget how much white-collar work used to be described as bullshit?",
-        "link": "https://reddit.com/r/singularity/comments/1suys3t/did_everyone_suddenly_forget_how_much_whitecollar/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-25T01:47:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T07:46:49.967Z",
+    "reddit_viral_generated_at": "2026-04-25T09:12:30.528Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
