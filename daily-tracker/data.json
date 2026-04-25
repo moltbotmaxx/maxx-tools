@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T13:40:07.352Z",
+    "generated_at": "2026-04-25T15:03:02.509Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Serious question: why OC over Codex",
+        "link": "https://reddit.com/r/openclaw/comments/1svdkq4/serious_question_why_oc_over_codex/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T14:24:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Palantir employees are talking about company's \"descent into fascism\"",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1svc5e7/palantir_employees_are_talking_about_companys/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T13:25:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "The mysterious smile... of your replacement.",
         "link": "https://reddit.com/r/singularity/comments/1sv9cym/the_mysterious_smile_of_your_replacement/",
@@ -379,16 +397,7 @@
         "published_at": "2026-04-25T11:14:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "This Opus 4.7 + GPT-5.5 'handoff' for coding is getting hype. Is it a real hack or just more complexity?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv8z2u/this_opus_47_gpt55_handoff_for_coding_is_getting/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T10:53:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Google appears to be preparing a major shift in how consumers interact with the Gemini app, with new strings referencing usage limits surfacing in the latest build",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-25T10:46:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Successfully updated from 2.1.120 to version 2.1.119",
@@ -406,7 +415,16 @@
         "published_at": "2026-04-25T10:41:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
+      },
+      {
+        "headline": "Introducing Clawcenter",
+        "link": "https://reddit.com/r/openclaw/comments/1sv8i79/introducing_clawcenter/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T10:27:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Claude Code cheat sheet after 6 months of daily use",
@@ -415,16 +433,7 @@
         "published_at": "2026-04-25T10:05:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Chinese Workers Horrified as Bosses Direct Them to Train Their AI Replacements",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv81xr/chinese_workers_horrified_as_bosses_direct_them/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T10:00:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Anti AI Principles",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-25T10:00:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "I’m a nursing student who built a 660K-page pharmaceutical database using Claude Haiku — solo, on the side",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-25T09:24:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "when you trust the process too much",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-25T09:21:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Stop pretending it's a democracy",
-        "link": "https://reddit.com/r/OpenAI/comments/1sv77wj/stop_pretending_its_a_democracy/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-25T09:11:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T13:40:07.352Z",
+    "reddit_viral_generated_at": "2026-04-25T15:03:02.509Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
