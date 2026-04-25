@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T20:58:26.755Z",
+    "generated_at": "2026-04-25T21:54:12.545Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Don’t tell me that we have to wait until google i/o for a new gemini/nano banana model?",
+        "link": "https://reddit.com/r/singularity/comments/1svnk01/dont_tell_me_that_we_have_to_wait_until_google_io/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T20:49:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "PSA: Anthropic clarified the OpenClaw ban. You can still use your $20/mo sub (and avoid $1,500+ API bills). Here is the official CLI workaround",
         "link": "https://reddit.com/r/openclaw/comments/1svmq20/psa_anthropic_clarified_the_openclaw_ban_you_can/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-25T20:17:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "the ai agent market is split between free but dangerous and $200/month. where's the middle?",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-25T19:18:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "OpenAI model releases over time",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-25T18:58:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "How it feels this month",
@@ -406,7 +415,16 @@
         "published_at": "2026-04-25T18:50:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
+      },
+      {
+        "headline": "Nano Banana Pro/Gemini absolutely refuses to make images",
+        "link": "https://reddit.com/r/GeminiAI/comments/1svgte8/nano_banana_progemini_absolutely_refuses_to_make/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-25T16:31:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Joining the crowd: moving from Claude to OpenAI Pro after testing GPT-5.5 in OpenClaw",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-25T16:01:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "Gas power projects for just 11 US data center 'campuses' could emit more greenhouse gases than entire countries, according to report",
@@ -424,16 +442,7 @@
         "published_at": "2026-04-25T15:40:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Happy to Be Part of the OpenClaw Community",
-        "link": "https://reddit.com/r/openclaw/comments/1svf5ds/happy_to_be_part_of_the_openclaw_community/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T15:26:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       },
       {
         "headline": "[Demo] Real-time EEG analysis-driven guided-meditation system",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-25T14:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       },
       {
         "headline": "PSA: The string \"HERMES.md\" in your git commit history silently routes Claude Code billing to extra usage — cost me $200",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-25T14:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police",
-        "link": "https://reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-25T13:56:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T20:58:26.755Z",
+    "reddit_viral_generated_at": "2026-04-25T21:54:12.545Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
