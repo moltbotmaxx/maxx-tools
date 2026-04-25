@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T15:57:45.469Z",
+    "generated_at": "2026-04-25T17:02:39.109Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenClaw SimpleX – E2E-encrypted agent messaging over SimpleX Chat",
+        "link": "https://reddit.com/r/openclaw/comments/1svh145/openclaw_simplex_e2eencrypted_agent_messaging/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T16:39:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Joining the crowd: moving from Claude to OpenAI Pro after testing GPT-5.5 in OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1svg22a/joining_the_crowd_moving_from_claude_to_openai/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T16:01:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Happy to Be Part of the OpenClaw Community",
         "link": "https://reddit.com/r/openclaw/comments/1svf5ds/happy_to_be_part_of_the_openclaw_community/",
@@ -379,16 +397,7 @@
         "published_at": "2026-04-25T15:26:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "My AI agent kept asking me the same questions every week. So I built a memory system that forgets on purpose.",
-        "link": "https://reddit.com/r/openclaw/comments/1svejqb/my_ai_agent_kept_asking_me_the_same_questions/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T15:02:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "[Demo] Real-time EEG analysis-driven guided-meditation system",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-25T14:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "PSA: The string \"HERMES.md\" in your git commit history silently routes Claude Code billing to extra usage — cost me $200",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-25T14:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Serious question: why OC over Codex",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-25T14:24:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Palantir employees are talking about company's \"descent into fascism\"",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-25T13:25:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "The mysterious smile... of your replacement.",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-25T11:14:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Google appears to be preparing a major shift in how consumers interact with the Gemini app, with new strings referencing usage limits surfacing in the latest build",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-25T10:46:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "Successfully updated from 2.1.120 to version 2.1.119",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-25T10:41:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Claude Code cheat sheet after 6 months of daily use",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sv852q/claude_code_cheat_sheet_after_6_months_of_daily/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-25T10:05:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T15:57:45.469Z",
+    "reddit_viral_generated_at": "2026-04-25T17:02:39.109Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
