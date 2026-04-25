@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T03:33:41.009Z",
+    "generated_at": "2026-04-25T05:59:56.319Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "FarmersOnly.cum",
+        "link": "https://reddit.com/r/aimemes/comments/1sv3t74/farmersonlycum/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-25T05:55:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Showcase Weekend! — Week 16, 2026",
+        "link": "https://reddit.com/r/openclaw/comments/1sv2s22/showcase_weekend_week_16_2026/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T05:00:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "When you trust the process too much",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sv23b9/when_you_trust_the_process_too_much/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-25T04:25:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Having problems with chatgpt code ? Switched from ChatGPT to DeepSeek on Ollama Pro - finally stable",
+        "link": "https://reddit.com/r/openclaw/comments/1sv1zmx/having_problems_with_chatgpt_code_switched_from/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T04:20:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "How do you know when something is actually worth automating?",
+        "link": "https://reddit.com/r/openclaw/comments/1sv0q0d/how_do_you_know_when_something_is_actually_worth/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T03:18:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Image 2.0 cooked here",
         "link": "https://reddit.com/r/OpenAI/comments/1sv0mc5/image_20_cooked_here/",
@@ -379,7 +424,25 @@
         "published_at": "2026-04-25T03:14:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Is anyone actually getting real work done with OpenClaw? What should I be learning?",
+        "link": "https://reddit.com/r/openclaw/comments/1suzz92/is_anyone_actually_getting_real_work_done_with/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T02:44:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Did everyone suddenly forget how much white-collar work used to be described as bullshit?",
+        "link": "https://reddit.com/r/singularity/comments/1suys3t/did_everyone_suddenly_forget_how_much_whitecollar/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T01:47:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "## Prompt-based guardrails don't actually stop agents, so I'm building a permissions layer outside OpenClaw. Does this idea hold up?",
@@ -388,16 +451,7 @@
         "published_at": "2026-04-25T01:03:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Ligmatron: you have blueballed me for the last time, Starscream",
-        "link": "https://reddit.com/r/aimemes/comments/1suwrom/ligmatron_you_have_blueballed_me_for_the_last/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-25T00:14:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Openclaw in IT field",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-24T23:58:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Anyone successfully using openai/gpt-image-2 in OpenClaw via OpenAI Codex OAuth only",
-        "link": "https://reddit.com/r/openclaw/comments/1suvp78/anyone_successfully_using_openaigptimage2_in/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-24T23:26:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude discovering modern SSD prices, lol.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1suvgy1/claude_discovering_modern_ssd_prices_lol/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-24T23:16:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Definitive proof shows we are indeed accelerating towards singularity",
-        "link": "https://reddit.com/r/singularity/comments/1suv8h5/definitive_proof_shows_we_are_indeed_accelerating/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-24T23:06:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "How OpenAI models started working better on OC (for me)",
-        "link": "https://reddit.com/r/openclaw/comments/1sus79n/how_openai_models_started_working_better_on_oc/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-24T21:04:30+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 86
-      },
-      {
-        "headline": "The Virgin 22H2 vs The Chad 1507",
-        "link": "https://reddit.com/r/aimemes/comments/1sur324/the_virgin_22h2_vs_the_chad_1507/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-24T20:22:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Introducing Project Nirvana: A New way of Thinking",
-        "link": "https://reddit.com/r/openclaw/comments/1suqs4h/introducing_project_nirvana_a_new_way_of_thinking/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-24T20:11:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T03:33:41.009Z",
+    "reddit_viral_generated_at": "2026-04-25T05:59:56.319Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
