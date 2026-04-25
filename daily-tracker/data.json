@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T22:57:36.257Z",
+    "generated_at": "2026-04-25T23:56:12.430Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Weird textures = watermarks",
+        "link": "https://reddit.com/r/ChatGPT/comments/1svq2pe/weird_textures_watermarks/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-25T22:34:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "GPT 5.5 vs Opus 4.6/7 vs Gemini 3.1 Pro",
+        "link": "https://reddit.com/r/singularity/comments/1svplbs/gpt_55_vs_opus_467_vs_gemini_31_pro/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T22:13:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "two years ago this sub had 12k members asking \"is claude better than chatgpt for writing\" and now the company is worth a trillion dollars",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1svoyyd/two_years_ago_this_sub_had_12k_members_asking_is/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-25T21:47:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Don’t tell me that we have to wait until google i/o for a new gemini/nano banana model?",
         "link": "https://reddit.com/r/singularity/comments/1svnk01/dont_tell_me_that_we_have_to_wait_until_google_io/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-25T20:49:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "PSA: Anthropic clarified the OpenClaw ban. You can still use your $20/mo sub (and avoid $1,500+ API bills). Here is the official CLI workaround",
@@ -388,7 +415,16 @@
         "published_at": "2026-04-25T20:17:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "I open sourced a project tracker for Claude Code that lives in .story/: tickets, issues, and session handovers as files",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1svkyby/i_open_sourced_a_project_tracker_for_claude_code/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-25T19:09:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "OpenAI model releases over time",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-25T18:58:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "How it feels this month",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-25T18:50:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Nano Banana Pro/Gemini absolutely refuses to make images",
@@ -415,49 +451,13 @@
         "published_at": "2026-04-25T16:31:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Joining the crowd: moving from Claude to OpenAI Pro after testing GPT-5.5 in OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1svg22a/joining_the_crowd_moving_from_claude_to_openai/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T16:01:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "Gas power projects for just 11 US data center 'campuses' could emit more greenhouse gases than entire countries, according to report",
         "link": "https://reddit.com/r/singularity/comments/1svfi6u/gas_power_projects_for_just_11_us_data_center/",
         "subreddit": "singularity",
         "published_at": "2026-04-25T15:40:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "[Demo] Real-time EEG analysis-driven guided-meditation system",
-        "link": "https://reddit.com/r/singularity/comments/1sve74q/demo_realtime_eeg_analysisdriven_guidedmeditation/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-25T14:49:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "PSA: The string \"HERMES.md\" in your git commit history silently routes Claude Code billing to extra usage — cost me $200",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1svdm1w/psa_the_string_hermesmd_in_your_git_commit/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-25T14:25:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police",
-        "link": "https://reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-25T13:56:06+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 83
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T22:57:36.257Z",
+    "reddit_viral_generated_at": "2026-04-25T23:56:12.430Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
