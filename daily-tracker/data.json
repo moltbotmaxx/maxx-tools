@@ -367,16 +367,25 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T11:06:40.156Z",
+    "generated_at": "2026-04-25T11:56:19.020Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "This Opus 4.7 + GPT-5.5 'handoff' for coding is getting hype. Is it a real hack or just more complexity?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv8z2u/this_opus_47_gpt55_handoff_for_coding_is_getting/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T10:53:34+00:00",
+        "headline": "Google appears to be preparing a major shift in how consumers interact with the Gemini app, with new strings referencing usage limits surfacing in the latest build",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sv8u7e/google_appears_to_be_preparing_a_major_shift_in/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-25T10:46:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Successfully updated from 2.1.120 to version 2.1.119",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sv8rce/successfully_updated_from_21120_to_version_21119/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-25T10:41:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -445,15 +454,6 @@
         "viral_score": 93
       },
       {
-        "headline": "AI: Engineered to be overconfident",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv644t/ai_engineered_to_be_overconfident/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T08:06:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
         "headline": "Malicious skill in github.com/openclaw/skills — base64-encoded shell payload disguised as Google Workspace setup",
         "link": "https://reddit.com/r/openclaw/comments/1sv5hlg/malicious_skill_in_githubcomopenclawskills/",
         "subreddit": "openclaw",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T11:06:40.156Z",
+    "reddit_viral_generated_at": "2026-04-25T11:56:19.020Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
