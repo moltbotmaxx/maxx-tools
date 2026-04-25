@@ -134,6 +134,11 @@ function renderAll() {
       selectedAccount: state.selected
     });
     state.graph.start();
+    window.__sentientGraph = state.graph;
+    window.__sentientRebuild = function () {
+      if (state.graph) { state.graph.stop(); state.graph = null; }
+      renderAll();
+    };
   } else {
     state.graph.setSelected(state.selected);
   }
@@ -153,12 +158,20 @@ async function init() {
   document.getElementById("closePanel")?.addEventListener("click", closePanel);
   document.getElementById("appOverlay")?.addEventListener("click", closePanel);
 
-  // Solid Toggle
-  document.getElementById("solid-toggle")?.addEventListener("click", function() {
-    this.classList.toggle("is-active");
-    const active = this.classList.contains("is-active");
-    if (state.graph) state.graph.setSolidMode(active);
+  // Mode Selector
+  const modeBtns = document.querySelectorAll(".mode-btn");
+  modeBtns.forEach(btn => {
+    btn.addEventListener("click", function() {
+      const mode = this.dataset.mode;
+      modeBtns.forEach(b => b.classList.remove("is-active"));
+      this.classList.add("is-active");
+      if (state.graph) state.graph.setMode(mode);
+    });
   });
+
+  // Set initial active mode button
+  const defaultMode = "solar";
+  document.querySelector(`.mode-btn[data-mode="${defaultMode}"]`)?.classList.add("is-active");
 
   // Resize handling
   window.addEventListener("resize", () => {

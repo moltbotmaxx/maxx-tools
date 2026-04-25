@@ -15,6 +15,7 @@
     <script src="./vendor/OrbitControls.js" defer></script>
     <script src="./network.js?v=5" defer></script>
     <script src="./script.js?v=5" defer></script>
+    <script src="./settings-panel.js" defer></script>
   </head>
   <body class="is-fullscreen">
 
@@ -48,10 +49,20 @@
       </div>
 
       <div class="header-status">
-        <button id="solid-toggle" class="hud-btn">
-          <span class="btn-icon">▣</span>
-          <span class="btn-lbl">SOLID</span>
-        </button>
+        <div class="mode-selector">
+          <button class="mode-btn" data-mode="network">
+            <span class="btn-icon">🕸️</span>
+            <span class="btn-lbl">NETWORK</span>
+          </button>
+          <button class="mode-btn" data-mode="solar">
+            <span class="btn-icon">🪐</span>
+            <span class="btn-lbl">SOLAR</span>
+          </button>
+          <button class="mode-btn" data-mode="solid">
+            <span class="btn-icon">▣</span>
+            <span class="btn-lbl">SOLID</span>
+          </button>
+        </div>
         <div class="status-dot"></div>
         <div class="status-info">
           <span class="status-text">CORE ACTIVE</span>
@@ -67,25 +78,23 @@
         <div class="net-tt-posts"></div>
       </div>
 
-      <!-- Intelligence Feed Toast (Integrated Tweet) -->
+      <!-- Intelligence Feed Toast -->
       <div class="network-toast">
         <div class="nt-inner">
-          <div class="nt-avatar-placeholder"></div>
           <div class="nt-content">
-            <div class="nt-header">
+            <div class="nt-profile-row">
+              <img class="nt-avatar" src="" alt="" />
               <span class="nt-account">@account</span>
             </div>
-            <div class="nt-body">
-              <p class="nt-caption"></p>
-            </div>
+            <p class="nt-caption"></p>
             <div class="nt-footer">
               <div class="nt-stat">
-                <span class="lbl">Likes</span>
                 <span class="nt-likes">0</span>
+                <span class="lbl">likes</span>
               </div>
-              <div class="nt-stat">
-                <span class="lbl">Comments</span>
+              <div class="nt-stat nt-stat--comments">
                 <span class="nt-comments">0</span>
+                <span class="lbl">comments</span>
               </div>
             </div>
           </div>

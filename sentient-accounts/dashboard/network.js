@@ -62,13 +62,12 @@
       this.dragPlane = null;
       this.dragOffset = null;
 
-      // 2D Bounds and Config
-      this.nodeRadius = options.preview ? 1.8 : 2.2;
-      this.bounds = { x: 16, y: 10, z: 0 };
-      this.repulsionRadius = this.nodeRadius * 5.8;
-      this.repulsionStrength = 0.006; // Reduced from 0.012
-      this.wanderStrength = 0.012; // Increased from 0.006
-      this.maxSpeed = 0.025; // Increased from 0.015
+      // Config — falls back to SOLAR_CONFIG if present
+      const _cfg = window.SOLAR_CONFIG || {};
+      this.nodeRadius = options.preview ? 1.8 : (_cfg.nodeRadius || 2.2);
+      this.bounds = { x: 45, y: 25 }; // Default bounds, updated by resize
+      this.repulsionStrength = 0.005;
+      this.mode = options.mode || 'solar'; // Default mode
 
       // Toast System State
       this.toast = {
@@ -94,14 +93,17 @@
       this._buildSceneObjects();
 
       if (options.selectedAccount) this.setSelected(options.selectedAccount);
+      
+      // Initialize mode
+      this.setMode(this.mode);
     }
 
     _setupLayout() {
       const isMobile = window.innerWidth < 600;
       const isPortrait = window.innerHeight > window.innerWidth;
-      
+
       this.nodeRadius = isMobile ? 0.45 : 0.62;
-      
+
       if (isPortrait) {
         this.gridCols = 3;
         this.gridRows = 8;
@@ -113,14 +115,15 @@
 
     _setupRenderer() {
       const THREE = this.THREE;
-      this.renderer = new THREE.WebGLRenderer({ 
-        antialias: true, 
+      this.renderer = new THREE.WebGLRenderer({
+        antialias: true,
         alpha: true, // Allow background to show through
-        powerPreference: "high-performance" 
+        powerPreference: "high-performance"
       });
       this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       if (THREE.SRGBColorSpace) this.renderer.outputColorSpace = THREE.SRGBColorSpace;
       this.renderer.domElement.className = 'network-webgl';
+      this.renderer.domElement.style.cursor = 'default';
       this.el.appendChild(this.renderer.domElement);
     }
 
@@ -128,10 +131,22 @@
       const THREE = this.THREE;
       this.scene = new THREE.Scene();
 
-      this.frustumHeight = this.options.preview ? 34 : 64; // Increased for fullscreen spread
-      this.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000);
-      this.camera.position.set(0, 0, 100);
+      // Orthographic camera — no edge distortion, preserves orrery tilt
+      const _camCfg = window.SOLAR_CONFIG || {};
+      this._orthoHeight = _camCfg.orthoHeight || 54;
+      const initAspect = (this.el.clientWidth / this.el.clientHeight) || 1.8;
+      const initW = this._orthoHeight * initAspect;
+      this.camera = new THREE.OrthographicCamera(
+        -initW / 2, initW / 2,
+        this._orthoHeight / 2, -this._orthoHeight / 2,
+        0.1, 2000
+      );
+      const _camY = _camCfg.cameraY !== undefined ? _camCfg.cameraY : -22;
+      const _camZ = _camCfg.cameraZ || 75;
+      this.camera.position.set(0, _camY, _camZ);
+      this.camera.lookAt(0, 0, 0);
 
+      // Neutral white light only — no color tinting
       this.scene.add(new THREE.AmbientLight(0xffffff, 1.0));
 
       this.group = new THREE.Group();
@@ -141,18 +156,19 @@
       this.pointer = new THREE.Vector2();
       this.clock = new THREE.Clock();
 
+
       this._updateBoundsFromViewport();
       this._buildStars();
-      this._buildLinks();
     }
 
     _updateBoundsFromViewport() {
-      const visibleHeight = this.frustumHeight;
-      const visibleWidth = this.camera.right - this.camera.left;
-      const margin = this.options.preview ? 0.02 : 0; // Edge to edge for fullscreen
-      this.bounds.x = visibleWidth * (0.5 - margin);
-      this.bounds.y = visibleHeight * (0.5 - margin);
+      const margin = this.options.preview ? 0.05 : 0.04;
+      const halfW = this.camera.right || (this._orthoHeight * ((this.el.clientWidth / this.el.clientHeight) || 1.8) / 2);
+      const halfH = this._orthoHeight / 2;
+      this.bounds.x = halfW * (1 - margin * 2);
+      this.bounds.y = halfH * (1 - margin * 2);
     }
+
 
     _buildStars() {
       const THREE = this.THREE;
@@ -180,24 +196,23 @@
 
     _buildLinks() {
       const THREE = this.THREE;
-      const n = this.accounts.length;
-      const maxSegments = Math.ceil((n * (n - 1)) / 2) + 10;
-      this.linkGeometry = new THREE.BufferGeometry();
-      this.linkGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(maxSegments * 2 * 3), 3));
-      this.linkGeometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(maxSegments * 2 * 3), 3));
-      this.linkGeometry.setDrawRange(0, 0);
-
-      this.linkLines = new THREE.LineSegments(
-        this.linkGeometry,
+      const maxLinks = this.nodes.length * 6; // Max expected links
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(maxLinks * 2 * 3), 3));
+      geometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(maxLinks * 2 * 3), 3));
+      
+      this.linksMesh = new THREE.LineSegments(
+        geometry,
         new THREE.LineBasicMaterial({
-          color: 0xffffff, // Base white to not tint vertex colors
-          transparent: true,
-          opacity: 0.35, // Increased overall visibility
           vertexColors: true,
-          blending: THREE.AdditiveBlending, // Makes it pop more
-        }),
+          transparent: true,
+          opacity: 0.25,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false
+        })
       );
-      this.group.add(this.linkLines);
+      this.linksMesh.renderOrder = 2;
+      this.group.add(this.linksMesh);
     }
 
     _randomPoint() {
@@ -209,42 +224,268 @@
     }
 
     _buildData() {
-      this.nodes = this.accounts.map((account, index) => {
-        const position = this._randomPoint();
+      const _dc = window.SOLAR_CONFIG || {};
+      const sorted = [...this.accounts].sort((a, b) => (Number(b.followers) || 0) - (Number(a.followers) || 0));
+      const n = sorted.length;
+      const emptyOrbits = _dc.emptyOrbits !== undefined ? _dc.emptyOrbits : 4;
+      const orbitMinRatio = _dc.orbitMinRatio || 0.08;
+      const orbitMaxRatio = _dc.orbitMaxRatio || 0.92;
+      const totalSlots = n + emptyOrbits;
+
+      // Shuffle orbit slots so planets start in random orbits
+      const slots = Array.from({ length: n }, (_, i) => i);
+      for (let i = slots.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [slots[i], slots[j]] = [slots[j], slots[i]];
+      }
+
+      const minA = this.bounds.x * orbitMinRatio;
+      const maxA = this.bounds.x * orbitMaxRatio;
+      const minB = this.bounds.y * orbitMinRatio;
+      const maxB = this.bounds.y * orbitMaxRatio;
+      const maxSpeed = _dc.speedMax || 0.0022;
+      const minSpeed = _dc.speedMin || 0.0005;
+
+      this.nodes = sorted.map((account, index) => {
+        // Random orbit slot → ratio (speed follows actual orbit, not follower rank)
+        const slot = slots[index];
+        const orbitRatio = (slot + emptyOrbits) / Math.max(1, totalSlots - 1);
+        const baseA = minA + orbitRatio * (maxA - minA);
+        const baseB = minB + orbitRatio * (maxB - minB);
+
+        // Speed tied directly to orbit size: inner = faster, outer = slower
+        const baseSpeed = -(maxSpeed - orbitRatio * (maxSpeed - minSpeed));
+
+        // 3-tier planet size based on follower ranking
+        let planetRadius;
+        if (index < n / 3) {
+          planetRadius = this.nodeRadius * (_dc.sizeLarge || 1.35);
+        } else if (index < (n * 2) / 3) {
+          planetRadius = this.nodeRadius * (_dc.sizeMedium || 1.0);
+        } else {
+          planetRadius = this.nodeRadius * (_dc.sizeSmall || 0.7);
+        }
+
+        const initAngle = Math.random() * Math.PI * 2;
+        const initPos = new this.THREE.Vector3(
+          (Math.random() * 2 - 1) * this.bounds.x,
+          (Math.random() * 2 - 1) * this.bounds.y,
+          0
+        );
+
         return {
           account,
           index,
           color: rimColor(account.engagement_rate),
-          currentPosition: position,
-          velocity: new this.THREE.Vector3((Math.random() * 2 - 1) * 0.02, (Math.random() * 2 - 1) * 0.02, 0),
-          driftSeed: new this.THREE.Vector2(Math.random() * 100, Math.random() * 100),
-          chaosClock: Math.random() * 10, // Random offset for 10s cycle
+          currentPosition: initPos,
+          velocity: new this.THREE.Vector3(),
+          orbit: {
+            a: baseA,
+            b: baseB,
+            angle: initAngle,
+            speed: baseSpeed,
+            tilt: 0
+          },
+          planetRadius,
           sphere: null,
           halo: null,
           baseScale: 1.0,
-          stagnationTime: 0,
-          collisionTimer: 0,
-          reboundTimer: 0
+          collisionTimer: 0
         };
       });
+
+      // Link moon nodes to their parent planets
+      const moonRelations = _dc.moonRelations || {};
+      const byAccount = {};
+      this.nodes.forEach(n => { byAccount[n.account.account] = n; });
+      this.nodes.forEach(node => {
+        const parentName = moonRelations[node.account.account];
+        if (parentName && byAccount[parentName]) {
+          node.isMoon = true;
+          node.parentNode = byAccount[parentName];
+          node.planetRadius *= 0.55; // moons are smaller regardless of followers
+          const ma = node.parentNode.planetRadius * 2.0;
+          const mb = ma * (this.bounds.y / this.bounds.x); // same aspect as solar orbits
+          const initAngle = Math.random() * Math.PI * 2;
+          node.moonOrbit = {
+            a: ma, b: mb,
+            angle: initAngle,
+            speed: -0.004,
+          };
+          // Start moon at its initial orbital position around parent
+          const p = node.parentNode.currentPosition;
+          node.currentPosition.set(
+            p.x + ma * Math.cos(initAngle),
+            p.y + mb * Math.sin(initAngle),
+            0
+          );
+        }
+      });
+
+      this._maxPlanetRadius = Math.max(...this.nodes.map(n => n.planetRadius));
     }
 
     _buildSceneObjects() {
       const THREE = this.THREE;
       const loader = new THREE.TextureLoader();
-      const circleGeo = new THREE.CircleGeometry(this.nodeRadius, 42);
 
+      this.solarGroup = new THREE.Group();
+      this.group.add(this.solarGroup);
+
+      this._buildLinks(); // For network mode
+
+      // ── Central Sun ──────────────────────────────────────────────
+      const _sc = window.SOLAR_CONFIG || {};
+      const coreRadius = this.nodeRadius * (_sc.sunSize || 1.3);
+
+      // Canvas-based radial glow (outer halo)
+      const glowSz = 256;
+      const glowCv = document.createElement('canvas');
+      glowCv.width = glowSz; glowCv.height = glowSz;
+      const glowCtx = glowCv.getContext('2d');
+      const gc = glowSz / 2;
+      const gGrad = glowCtx.createRadialGradient(gc, gc, 0, gc, gc, gc);
+      gGrad.addColorStop(0.0, 'rgba(220,255,50,0.95)');
+      gGrad.addColorStop(0.2, 'rgba(207,255,4,0.6)');
+      gGrad.addColorStop(0.5, 'rgba(180,230,0,0.15)');
+      gGrad.addColorStop(1.0, 'rgba(0,0,0,0)');
+      glowCtx.fillStyle = gGrad;
+      glowCtx.fillRect(0, 0, glowSz, glowSz);
+      const glowTex = new THREE.CanvasTexture(glowCv);
+      const outerGlow = new THREE.Mesh(
+        new THREE.PlaneGeometry(coreRadius * (_sc.sunGlowRadius || 10), coreRadius * (_sc.sunGlowRadius || 10)),
+        new THREE.MeshBasicMaterial({
+          map: glowTex,
+          transparent: true,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+        })
+      );
+      outerGlow.position.z = -0.3;
+      this.solarGroup.add(outerGlow);
+
+      // Neon yellow border ring
+      const ringGeo = new THREE.RingGeometry(coreRadius, coreRadius + 0.12, 64);
+      const ringMat = new THREE.MeshBasicMaterial({
+        color: 0xcfff04,
+        transparent: true,
+        opacity: 0.85,
+      });
+      this.solarGroup.add(new THREE.Mesh(ringGeo, ringMat));
+
+      // Core solid circle
+      const coreGeo = new THREE.CircleGeometry(coreRadius, 64);
+      const coreMat = new THREE.MeshBasicMaterial({ color: 0xcfff04 });
+      const core = new THREE.Mesh(coreGeo, coreMat);
+      core.position.z = 0.1;
+      this.solarGroup.add(core);
+
+      // s.png logo on top
+      const logoGeo = new THREE.CircleGeometry(coreRadius * 0.85, 64);
+      const logoMat = new THREE.MeshBasicMaterial({ transparent: true, opacity: 1.0 });
+      loader.load('../s.png', (tex) => {
+        tex.colorSpace = THREE.SRGBColorSpace;
+        logoMat.map = tex;
+        logoMat.needsUpdate = true;
+      });
+      const logoMesh = new THREE.Mesh(logoGeo, logoMat);
+      logoMesh.position.z = 0.2;
+      logoMesh.renderOrder = 15;
+      this.solarGroup.add(logoMesh);
+
+      // ── Empty Orbit Rings before first planet ────────────────────
+      const _oc = window.SOLAR_CONFIG || {};
+      const _emptyOrbits = _oc.emptyOrbits !== undefined ? _oc.emptyOrbits : 4;
+      const _orbitMinRatio = _oc.orbitMinRatio || 0.08;
+      const _orbitMaxRatio = _oc.orbitMaxRatio || 0.92;
+      const _orbitOpacity = _oc.orbitOpacity || 0.08;
+      const totalSlots = this.nodes.length + _emptyOrbits;
+      const minA = this.bounds.x * _orbitMinRatio;
+      const maxA = this.bounds.x * _orbitMaxRatio;
+      const minB = this.bounds.y * _orbitMinRatio;
+      const maxB = this.bounds.y * _orbitMaxRatio;
+
+      for (let slot = 0; slot < _emptyOrbits; slot++) {
+        const orbitRatio = slot / Math.max(1, totalSlots - 1);
+        const eA = minA + orbitRatio * (maxA - minA);
+        const eB = minB + orbitRatio * (maxB - minB);
+        const pts = [];
+        for (let i = 0; i <= 128; i++) {
+          const theta = (i / 128) * Math.PI * 2;
+          pts.push(new THREE.Vector3(eA * Math.cos(theta), eB * Math.sin(theta), -0.5));
+        }
+        this.solarGroup.add(new THREE.Line(
+          new THREE.BufferGeometry().setFromPoints(pts),
+          new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: _orbitOpacity })
+        ));
+      }
+
+      // ── Draw Planet Orbit Trails (skip moons) ─────────────────────
       this.nodes.forEach(node => {
+        if (node.isMoon) return;
+        const pts = [];
+        for (let i = 0; i <= 128; i++) {
+          const theta = (i / 128) * Math.PI * 2;
+          pts.push(new THREE.Vector3(
+            node.orbit.a * Math.cos(theta),
+            node.orbit.b * Math.sin(theta),
+            -0.5
+          ));
+        }
+        const trail = new THREE.Line(
+          new THREE.BufferGeometry().setFromPoints(pts),
+          new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: _orbitOpacity })
+        );
+        this.solarGroup.add(trail);
+        node.orbitLine = trail;
+      });
+
+      // ── Moon orbit rings (dynamic — updated each frame) ───────────
+      this.nodes.forEach(node => {
+        if (!node.isMoon) return;
+        const { a: ma, b: mb } = node.moonOrbit;
+        const pts = [];
+        for (let i = 0; i <= 64; i++) {
+          const theta = (i / 64) * Math.PI * 2;
+          pts.push(new THREE.Vector3(ma * Math.cos(theta), mb * Math.sin(theta), -0.1));
+        }
+        const line = new THREE.Line(
+          new THREE.BufferGeometry().setFromPoints(pts),
+          new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: _orbitOpacity })
+        );
+        this.solarGroup.add(line);
+        node.moonOrbitLine = line;
+      });
+
+      // ── Create Account Planets (per-node size) ────────────────────
+      this.nodes.forEach(node => {
+        const r = node.planetRadius;
+        const circleGeo = new THREE.CircleGeometry(r, 42);
         const material = new THREE.MeshBasicMaterial({
           color: 0xffffff,
           transparent: true,
-          opacity: 0.98,
+          opacity: 1.0,
+          depthWrite: false,
+          side: THREE.DoubleSide,
         });
 
         const avatarUrl = node.account.avatar_path || node.account.profile_pic_url;
         if (avatarUrl) {
           loader.load(avatarUrl, (tex) => {
             tex.colorSpace = THREE.SRGBColorSpace;
+            // Center-crop non-square images to prevent distortion
+            const img = tex.image;
+            if (img && img.width && img.height && img.width !== img.height) {
+              if (img.width > img.height) {
+                const ratio = img.height / img.width;
+                tex.repeat.set(ratio, 1);
+                tex.offset.set((1 - ratio) / 2, 0);
+              } else {
+                const ratio = img.width / img.height;
+                tex.repeat.set(1, ratio);
+                tex.offset.set(0, (1 - ratio) / 2);
+              }
+            }
             material.map = tex;
             material.needsUpdate = true;
           });
@@ -253,11 +494,16 @@
         const disk = new THREE.Mesh(circleGeo, material);
         disk.renderOrder = 10;
 
-        const borderGeo = new THREE.CircleGeometry(this.nodeRadius * 1.12, 42);
+        // Engagement-colored ring border
+        const borderOpacity = _sc.borderOpacity !== undefined ? _sc.borderOpacity : 0.6;
+        const borderGeo = new THREE.RingGeometry(r * 1.02, r * 1.15, 42);
         const borderMat = new THREE.MeshBasicMaterial({
           color: node.color,
           transparent: true,
-          opacity: 0.12,
+          opacity: borderOpacity,
+          depthWrite: false,
+          side: THREE.DoubleSide,
+          visible: borderOpacity > 0,
         });
         const border = new THREE.Mesh(borderGeo, borderMat);
         border.renderOrder = 5;
@@ -269,32 +515,21 @@
           badgeCanvas.width = 64;
           badgeCanvas.height = 32;
           const ctx = badgeCanvas.getContext('2d');
-          
-          // Gray rounded rectangle
           ctx.fillStyle = 'rgba(45, 48, 58, 0.98)';
-          const r = 8;
           ctx.beginPath();
-          ctx.roundRect(0, 0, 64, 32, r);
+          ctx.roundRect(0, 0, 64, 32, 8);
           ctx.fill();
-          
-          // White text
           ctx.fillStyle = '#fff';
           ctx.font = 'bold 24px Inter, sans-serif';
           ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
           ctx.fillText('ES', 32, 17);
-          
+
           const badgeTex = new THREE.CanvasTexture(badgeCanvas);
-          const badgeMat = new THREE.MeshBasicMaterial({ map: badgeTex, transparent: true });
-          
-          // Slightly larger than before
-          const aspect = 2;
-          const bW = this.nodeRadius * 0.65;
-          const bH = bW / aspect;
-          const badgeGeo = new THREE.PlaneGeometry(bW, bH);
+          const badgeMat = new THREE.MeshBasicMaterial({ map: badgeTex, transparent: true, side: THREE.DoubleSide });
+          const bW = r * 0.65;
+          const badgeGeo = new THREE.PlaneGeometry(bW, bW / 2);
           const badge = new THREE.Mesh(badgeGeo, badgeMat);
-          
-          // Position at bottom-right
-          badge.position.set(this.nodeRadius * 0.65, -this.nodeRadius * 0.65, 0.2);
+          badge.position.set(r * 0.65, -r * 0.65, 0.2);
           badge.renderOrder = 20;
           disk.add(badge);
         }
@@ -306,6 +541,37 @@
         node.sphere = disk;
         node.halo = border;
         this.meshes.push(disk);
+      });
+
+      // ── Planet glow sprites (animated when toast is active) ───────
+      const planetGlowCv = document.createElement('canvas');
+      planetGlowCv.width = 128; planetGlowCv.height = 128;
+      const planetGlowCtx = planetGlowCv.getContext('2d');
+      const pgc = 64;
+      const pgGrad = planetGlowCtx.createRadialGradient(pgc, pgc, 0, pgc, pgc, pgc);
+      pgGrad.addColorStop(0.0, 'rgba(255,255,255,1.0)');
+      pgGrad.addColorStop(0.35, 'rgba(207,255,4,0.5)');
+      pgGrad.addColorStop(1.0, 'rgba(0,0,0,0)');
+      planetGlowCtx.fillStyle = pgGrad;
+      planetGlowCtx.fillRect(0, 0, 128, 128);
+      const glowTex2 = new THREE.CanvasTexture(planetGlowCv);
+
+      this.nodes.forEach(node => {
+        const r = node.planetRadius;
+        const gm = new THREE.Mesh(
+          new THREE.PlaneGeometry(r * 6, r * 6),
+          new THREE.MeshBasicMaterial({
+            map: glowTex2,
+            transparent: true,
+            opacity: 0,
+            blending: THREE.AdditiveBlending,
+            depthWrite: false,
+          })
+        );
+        gm.renderOrder = 8;
+        this.group.add(gm);
+        node.glowMesh = gm;
+        node.glowOpacity = 0;
       });
     }
 
@@ -370,6 +636,7 @@
         this.pointerMoved = true;
       }
 
+      // Planet drag
       if (this.dragNode) {
         this._updatePointer(event);
         this.raycaster.setFromCamera(this.pointer, this.camera);
@@ -387,6 +654,7 @@
         return;
       }
 
+      // Hover
       const node = this._pickNode(event);
       this.hoveredNode = node;
       this.renderer.domElement.style.cursor = node ? 'grab' : 'default';
@@ -407,8 +675,8 @@
     _onClick(event) {
       // Small movement threshold to allow for slight jitter during clicks
       const moveThreshold = 5;
-      const moved = Math.abs(event.clientX - this.downX) > moveThreshold || 
-                    Math.abs(event.clientY - this.downY) > moveThreshold;
+      const moved = Math.abs(event.clientX - this.downX) > moveThreshold ||
+        Math.abs(event.clientY - this.downY) > moveThreshold;
 
       if (!moved) {
         const clicked = this._pickNode(event);
@@ -481,310 +749,216 @@
       const width = rect.width || 960;
       const height = rect.height || 520;
       const aspect = width / height;
-      this.camera.left = -this.frustumHeight * aspect / 2;
-      this.camera.right = this.frustumHeight * aspect / 2;
-      this.camera.top = this.frustumHeight / 2;
-      this.camera.bottom = -this.frustumHeight / 2;
+      const halfW = (this._orthoHeight * aspect) / 2;
+      const halfH = this._orthoHeight / 2;
+      this.camera.left = -halfW;
+      this.camera.right = halfW;
+      this.camera.top = halfH;
+      this.camera.bottom = -halfH;
       this.camera.updateProjectionMatrix();
       this._updateBoundsFromViewport();
       this.renderer.setSize(width, height);
-      this.renderer.setClearColor(0x000000, 0); // Fully transparent
+      this.renderer.setClearColor(0x000000, 0);
+      
+      if (this.mode === 'solid') this._calculateSolidTargets();
     }
 
     _applyRepulsion() {
       const n = this.nodes.length;
-      
-      // 1. Calculate local density for each node to detect clusters
       for (let i = 0; i < n; i++) {
-        let density = 0;
         const a = this.nodes[i];
-        for (let j = 0; j < n; j++) {
-          if (i === j) continue;
-          if (a.currentPosition.distanceTo(this.nodes[j].currentPosition) < this.nodeRadius * 6.0) {
-            density++;
-          }
-        }
-        a.localDensity = density;
-      }
-
-      for (let i = 0; i < n; i += 1) {
-        let furthestNode = null;
-        let maxDist = -1;
-        const a = this.nodes[i];
-
-        for (let j = 0; j < n; j += 1) {
-          if (i === j) continue;
+        for (let j = i + 1; j < n; j++) {
           const b = this.nodes[j];
-          if (this.dragNode === a || this.dragNode === b) continue;
-
           const delta = a.currentPosition.clone().sub(b.currentPosition);
           const dist = delta.length();
+          const repulsionRadius = (a.planetRadius + b.planetRadius) * 2.5;
 
-          // Furthest Node Tracking
-          if (dist > maxDist) {
-            maxDist = dist;
-            furthestNode = b;
-          }
-
-          // 2. Passive Repulsion with Cluster Boost
-          const minDist = (this.nodeRadius * a.baseScale) + (this.nodeRadius * b.baseScale);
-          const repulsionRadius = minDist * 2.2;
-
-          if (dist < repulsionRadius) {
-            // Repulsion increases if nodes are in a high-density cluster
-            const clusterBoost = Math.max(1.0, (a.localDensity + b.localDensity) * 0.12);
-            const force = (repulsionRadius - dist) * this.repulsionStrength * clusterBoost;
-            const push = delta.clone().normalize().multiplyScalar(force);
+          if (dist < repulsionRadius && dist > 0.1) {
+            const force = (repulsionRadius - dist) * 0.02;
+            const push = delta.normalize().multiplyScalar(force);
             if (this.selectedNode !== a) a.currentPosition.add(push);
             if (this.selectedNode !== b) b.currentPosition.sub(push);
           }
-
-          // 3. Collision Timer
-          if (dist < minDist) {
-            a.collisionTimer = 5.0;
-            b.collisionTimer = 5.0;
-          }
-
-          if ((a.collisionTimer > 0 || b.collisionTimer > 0) && dist < minDist * 2.2) {
-            const force = (minDist * 2.2 - dist) * this.repulsionStrength * 2.5;
-            const push = delta.clone().normalize().multiplyScalar(force);
-            if (this.selectedNode !== a) a.currentPosition.add(push);
-            if (this.selectedNode !== b) b.currentPosition.sub(push);
-          }
-        }
-
-        // 4. Furthest Attraction
-        if (furthestNode && this.selectedNode !== a) {
-          const attractionDelta = furthestNode.currentPosition.clone().sub(a.currentPosition);
-          const attractionForce = attractionDelta.normalize().multiplyScalar(0.00015);
-          a.velocity.add(attractionForce);
         }
       }
     }
 
     _updateLinks() {
-      if (!this.linkGeometry) return;
-      const pos = this.linkGeometry.getAttribute('position');
-      const col = this.linkGeometry.getAttribute('color');
-      let idx = 0;
+      if (!this.linksMesh) return;
+      const THREE = this.THREE;
+      const positions = this.linksMesh.geometry.attributes.position.array;
+      const colors = this.linksMesh.geometry.attributes.color.array;
+      let count = 0;
+      const maxLinks = (positions.length / 6);
 
-      const n = this.nodes.length;
-      for (let i = 0; i < n; i++) {
-        for (let j = i + 1; j < n; j++) {
-          const na = this.nodes[i];
-          const nb = this.nodes[j];
-          const d = na.currentPosition.distanceTo(nb.currentPosition);
+      const threshold = 18.0;
+      const c1 = new THREE.Color(0xcfff04); // Accent
+      const c2 = new THREE.Color(0x4a5568); // Muted
 
-          const alpha = Math.max(0.01, 1 - d / 80) * 0.45;
+      for (let i = 0; i < this.nodes.length; i++) {
+        const a = this.nodes[i];
+        for (let j = i + 1; j < this.nodes.length; j++) {
+          const b = this.nodes[j];
+          const dist = a.currentPosition.distanceTo(b.currentPosition);
+          if (dist < threshold) {
+            if (count >= maxLinks) break;
+            const opacity = 1.0 - (dist / threshold);
+            const idx = count * 6;
+            
+            positions[idx] = a.currentPosition.x;
+            positions[idx + 1] = a.currentPosition.y;
+            positions[idx + 2] = a.currentPosition.z - 0.5;
+            positions[idx + 3] = b.currentPosition.x;
+            positions[idx + 4] = b.currentPosition.y;
+            positions[idx + 5] = b.currentPosition.z - 0.5;
 
-          const r = 0.81 * alpha;
-          const g = 1.0 * alpha;
-          const b = 0.015 * alpha;
+            const color = c1.clone().lerp(c2, 1.0 - opacity);
+            colors[idx] = color.r;
+            colors[idx + 1] = color.g;
+            colors[idx + 2] = color.b;
+            colors[idx + 3] = color.r;
+            colors[idx + 4] = color.g;
+            colors[idx + 5] = color.b;
 
-          pos.setXYZ(idx * 2, na.currentPosition.x, na.currentPosition.y, 0);
-          pos.setXYZ(idx * 2 + 1, nb.currentPosition.x, nb.currentPosition.y, 0);
-          col.setXYZ(idx * 2, r, g, b);
-          col.setXYZ(idx * 2 + 1, r, g, b);
-
-          idx++;
+            count++;
+          }
         }
       }
-      this.linkGeometry.setDrawRange(0, idx * 2);
-      pos.needsUpdate = true;
-      col.needsUpdate = true;
+      this.linksMesh.geometry.attributes.position.needsUpdate = true;
+      this.linksMesh.geometry.attributes.color.needsUpdate = true;
+      this.linksMesh.geometry.setDrawRange(0, count * 2);
     }
 
     _updateNodePositions(t) {
-      if (!this.isSolid) this._applyRepulsion();
-      this._updateLinks();
+      if (this.mode === 'network') {
+        this._applyRepulsion();
+        this.nodes.forEach(node => {
+          if (this.selectedNode === node || this.dragNode === node) return;
+          // Noise drift
+          const nx = simpleNoise(node.currentPosition.x, node.currentPosition.y, t) * 0.005;
+          const ny = simpleNoise(node.currentPosition.y, node.currentPosition.x, t + 100) * 0.005;
+          node.velocity.x += nx;
+          node.velocity.y += ny;
+          
+          // Slight pull to center
+          node.velocity.x -= node.currentPosition.x * 0.0001;
+          node.velocity.y -= node.currentPosition.y * 0.0001;
+          
+          node.velocity.multiplyScalar(0.92);
+          node.currentPosition.add(node.velocity);
+          
+          // Hard bounds
+          const bx = this.bounds.x * 1.1;
+          const by = this.bounds.y * 1.1;
+          if (node.currentPosition.x > bx) { node.currentPosition.x = bx; node.velocity.x *= -0.5; }
+          if (node.currentPosition.x < -bx) { node.currentPosition.x = -bx; node.velocity.x *= -0.5; }
+          if (node.currentPosition.y > by) { node.currentPosition.y = by; node.velocity.y *= -0.5; }
+          if (node.currentPosition.y < -by) { node.currentPosition.y = -by; node.velocity.y *= -0.5; }
+        });
+        this._updateLinks();
+      } else if (this.mode === 'solar') {
+        this._applyRepulsion();
+        this.nodes.forEach(node => {
+          if (node.isMoon || this.selectedNode === node || this.dragNode === node) return;
+          node.orbit.angle += node.orbit.speed;
+          const x0 = node.orbit.a * Math.cos(node.orbit.angle);
+          const y0 = node.orbit.b * Math.sin(node.orbit.angle);
+          const targetPos = new this.THREE.Vector3(x0, y0, 0);
+          node.currentPosition.lerp(targetPos, 0.04);
+        });
+      } else if (this.mode === 'solid') {
+        this.nodes.forEach(node => {
+          if (this.selectedNode === node || this.dragNode === node) return;
+          if (node.solidTarget) {
+            node.currentPosition.lerp(node.solidTarget, 0.08);
+          }
+        });
+      }
 
       this.nodes.forEach(node => {
         const isDragged = this.dragNode === node;
         const isSelected = this.selectedNode === node;
-        const isToast = this.toast.activeNode === node;
 
-        const targetScale = isSelected ? 2.5 : (isDragged ? 1.2 : 1.0);
+        const selectedScale = (this._maxPlanetRadius * 2.5) / node.planetRadius;
+        const targetScale = isSelected ? selectedScale : (isDragged ? 1.2 : 1.0);
         node.baseScale += (targetScale - node.baseScale) * 0.15;
+        node.sphere.renderOrder = isSelected ? 100 : 10;
 
         if (isSelected && !isDragged) {
-          // Selected node stays on top and moves to center
-          const targetPos = new this.THREE.Vector3(0, 0, 3.0);
+          const targetPos = new this.THREE.Vector3(0, 0, 20.0);
           node.sphere.position.lerp(targetPos, 0.14);
           node.currentPosition.copy(node.sphere.position);
           node.halo.position.copy(node.sphere.position);
           node.halo.position.z -= 0.1;
           node.velocity.set(0, 0, 0);
         } else if (isDragged) {
-          // Dragged node stays on top of connections (z = 2.0)
           node.sphere.position.copy(node.currentPosition);
           node.sphere.position.z = 2.0;
           node.halo.position.copy(node.sphere.position);
           node.halo.position.z -= 0.1;
           node.velocity.set(0, 0, 0);
-        } else if (isToast) {
-          // Freeze node in place while toast is active
-          node.velocity.set(0, 0, 0);
+        } else if (node.isMoon && node.parentNode && this.mode === 'solar') {
+          node.moonOrbit.angle += node.moonOrbit.speed;
+          const p = node.parentNode.currentPosition;
+          const { a: ma, b: mb } = node.moonOrbit;
+          node.currentPosition.set(
+            p.x + ma * Math.cos(node.moonOrbit.angle),
+            p.y + mb * Math.sin(node.moonOrbit.angle),
+            0
+          );
           node.sphere.position.copy(node.currentPosition);
-          node.sphere.position.z = 1.5;
-          node.halo.position.copy(node.sphere.position);
-          node.halo.position.z -= 0.1;
+          node.sphere.position.z = 0.1;
+          if (node.moonOrbitLine) node.moonOrbitLine.position.set(p.x, p.y, 0);
         } else {
-          // Grid-based Flow logic (24-piece grid) + Chaos
-          if (!this.isSolid) {
-            this._applyGridFlow(node, t);
-
-            // 2. Center Gravity & Orbital Physics
-            const toCenter = node.currentPosition.clone().negate();
-            const dist = toCenter.length();
-            
-            if (node.reboundTimer > 0) {
-              const force = toCenter.clone().normalize().multiplyScalar(0.01);
-              node.velocity.add(force);
-              node.reboundTimer -= 0.016;
-            } else {
-              // Centripetal Attraction (Pulls to center)
-              const gravity = toCenter.clone().normalize().multiplyScalar(0.00045 * (dist / 20));
-              node.velocity.add(gravity);
-
-              // Orbital Force (Perpendicular rotation)
-              const orbitDir = new this.THREE.Vector3(-node.currentPosition.y, node.currentPosition.x, 0).normalize();
-              const orbitalStrength = 0.00035; 
-              node.velocity.add(orbitDir.multiplyScalar(orbitalStrength));
-            }
-
-            // Decrement Timers
-            if (node.collisionTimer > 0) node.collisionTimer -= 0.016;
-
-            // 3. Stagnation & Physics Update
-            if (node.velocity.length() > this.maxSpeed) node.velocity.setLength(this.maxSpeed);
-            node.velocity.multiplyScalar(0.985);
-            node.currentPosition.add(node.velocity);
-
-            // Chaos Burst (1s every 10s)
-            node.chaosClock += 0.016;
-            if (node.chaosClock >= 10) node.chaosClock = 0;
-            
-            if (node.chaosClock < 1.0) {
-              const burstStrength = 0.08;
-              node.velocity.x += (Math.random() - 0.5) * burstStrength;
-              node.velocity.y += (Math.random() - 0.5) * burstStrength;
-            }
-            
-            this._applyHardBounds(node);
-          } else if (node.solidTarget) {
-            // Lerp to target position
-            node.currentPosition.lerp(node.solidTarget, 0.08);
-            node.velocity.set(0, 0, 0);
-          }
-
           node.sphere.position.copy(node.currentPosition);
           node.sphere.position.z = 0;
         }
+
         node.halo.position.copy(node.sphere.position);
         node.halo.position.z -= 0.05;
-        node.sphere.scale.set(node.baseScale, node.baseScale, 1);
+        node.sphere.scale.set(node.baseScale, node.baseScale, node.baseScale);
         node.halo.scale.set(node.baseScale, node.baseScale, 1);
+        node.sphere.quaternion.copy(this.camera.quaternion);
+        node.halo.quaternion.copy(this.camera.quaternion);
+      });
+    }
+
+    _calculateSolidTargets() {
+      const n = this.nodes.length;
+      const aspect = this.bounds.x / this.bounds.y;
+      const cols = Math.ceil(Math.sqrt(n * aspect));
+      const rows = Math.ceil(n / cols);
+      
+      const spacingX = (this.bounds.x * 1.8) / Math.max(cols - 1, 1);
+      const spacingY = (this.bounds.y * 1.6) / Math.max(rows - 1, 1);
+      
+      this.nodes.forEach((node, i) => {
+        const r = Math.floor(i / cols);
+        const c = i % cols;
+        const x = (c - (cols - 1) / 2) * spacingX;
+        const y = (r - (rows - 1) / 2) * -spacingY;
+        node.solidTarget = new this.THREE.Vector3(x, y, 0);
+      });
+    }
+
+    setMode(mode) {
+      this.mode = mode;
+      
+      if (this.solarGroup) this.solarGroup.visible = (mode === 'solar');
+      if (this.linksMesh) this.linksMesh.visible = (mode === 'network');
+      
+      if (mode === 'solid') {
+        this._calculateSolidTargets();
+      }
+      
+      // Update nodes
+      this.nodes.forEach(n => {
+        if (n.moonOrbitLine) n.moonOrbitLine.visible = (mode === 'solar');
       });
     }
 
     setSolidMode(active) {
-      this.isSolid = active;
-      if (active) {
-        // Define target positions for 7-6-7-6 layout
-        const rowPattern = [7, 6, 7, 6];
-        const rowSpacing = this.bounds.y * 0.45;
-        const colSpacing = this.bounds.x * 0.24;
-        
-        let nodeIdx = 0;
-        rowPattern.forEach((count, rowIndex) => {
-          const y = (rowIndex - 1.5) * -rowSpacing;
-          const rowWidth = (count - 1) * colSpacing;
-          for (let i = 0; i < count; i++) {
-            if (nodeIdx >= this.nodes.length) break;
-            const x = (i * colSpacing) - (rowWidth / 2);
-            this.nodes[nodeIdx].solidTarget = new this.THREE.Vector3(x, y, 0);
-            nodeIdx++;
-          }
-        });
-      }
-    }
-
-    _applyHardBounds(node) {
-      const limitX = this.bounds.x - this.nodeRadius;
-      const limitY = this.bounds.y - this.nodeRadius;
-
-      // Header exclusion (Approx top 15% of screen)
-      const headerHeight = this.frustumHeight * 0.15;
-      const limitYTop = limitY - headerHeight;
-
-      const bounce = 0.05;
-      let hit = false;
-
-      // X Bounds
-      if (node.currentPosition.x >= limitX) { node.currentPosition.x = limitX; node.velocity.x = -bounce; hit = true; }
-      else if (node.currentPosition.x <= -limitX) { node.currentPosition.x = -limitX; node.velocity.x = bounce; hit = true; }
-
-      // Y Bounds (Special handling for Top/Header)
-      if (node.currentPosition.y >= limitYTop) {
-        node.currentPosition.y = limitYTop;
-        node.velocity.y = -bounce;
-        hit = true;
-      }
-      else if (node.currentPosition.y <= -limitY) {
-        node.currentPosition.y = -limitY;
-        node.velocity.y = bounce;
-        hit = true;
-      }
-
-      if (hit) node.reboundTimer = 6.0;
-    }
-
-    _applyGridFlow(node, t) {
-      const pos = node.currentPosition;
-      
-      // Use absolute camera frustum for 100% accurate 24-sector mapping
-      const halfW = (this.camera.right - this.camera.left) / 2;
-      const halfH = (this.camera.top - this.camera.bottom) / 2;
-      
-      const xPart = (pos.x + halfW) / (halfW * 2);
-      const yPart = (pos.y + halfH) / (halfH * 2);
-
-      const col = Math.floor(clamp(xPart * 6, 0, 5));
-      const row = Math.floor(clamp(yPart * 4, 0, 3));
-
-      const force = new this.THREE.Vector3();
-      const strength = this.wanderStrength * 12.0; // Increased power
-
-      // Matrix Lookup (0=Bottom, 3=Top)
-      const matrix = [
-        ['U', 'L', 'L', 'L', 'L', 'L'], // Row 0 (Bottom)
-        ['U', 'U', 'R', 'R', 'R', 'D'], // Row 1
-        ['U', 'L', 'L', 'L', 'D', 'D'], // Row 2
-        ['R', 'R', 'R', 'R', 'R', 'D']  // Row 3 (Top)
-      ];
-
-      const dir = matrix[row][col] || 'R';
-      
-      // Transition forces (U/D) need to be stronger to overcome inertia
-      const moveS = 1.2;
-      const transS = 2.2; 
-
-      switch(dir) {
-        case 'R': force.set(moveS, 0, 0); break;
-        case 'L': force.set(-moveS, 0, 0); break;
-        case 'U': force.set(0, transS, 0); break;
-        case 'D': force.set(0, -transS, 0); break;
-      }
-
-      // Add "Chaos" (Noise-based turbulence)
-      const nx = pos.x + node.driftSeed.x;
-      const ny = pos.y + node.driftSeed.y;
-      const noiseAngle = simpleNoise(nx, ny, t) * Math.PI * 2;
-      const chaos = new this.THREE.Vector3(Math.cos(noiseAngle), Math.sin(noiseAngle), 0);
-      
-      // Blend 90% Matrix, 10% Chaos (Increase structure dominance)
-      const blendedForce = force.multiplyScalar(0.9).add(chaos.multiplyScalar(0.1));
-      node.velocity.add(blendedForce.multiplyScalar(strength));
+      this.setMode(active ? 'solid' : 'solar');
     }
 
     _updateToast(dt, t) {
@@ -823,33 +997,19 @@
           // Pick a random node not in history
           const availableCandidates = candidates.filter(n => !this.toast.history.includes(n.account.account));
           const nodePool = availableCandidates.length > 0 ? availableCandidates : candidates;
-          
+
           const randomNode = nodePool[Math.floor(Math.random() * nodePool.length)];
-          const screenPos = randomNode.sphere.position.clone().project(this.camera);
-          const sx = (screenPos.x + 1) * this.el.clientWidth / 2;
-          const sy = (-screenPos.y + 1) * this.el.clientHeight / 2;
 
-          // Toast size is approx 320x180. Center is at (sx-50, sy-50).
-          const margin = 40;
-          const isSafeX = sx > (50 + margin) && sx < (this.el.clientWidth - 270 - margin);
-          const isSafeY = sy > (50 + margin) && sy < (this.el.clientHeight - 130 - margin);
-
-          if (!isSafeX || !isSafeY) {
-            this.toast.timer = 0.5; // Quick retry for another node
-            return;
-          }
-
-          // Use ALL available posts for more variety
           const allPosts = randomNode.account.recent_posts;
           this.toast.activeNode = randomNode;
           this.toast.activePost = allPosts[Math.floor(Math.random() * allPosts.length)];
 
-          // Update history (prevent repeats)
           this.toast.history.push(randomNode.account.account);
           if (this.toast.history.length > 15) this.toast.history.shift();
 
-          // Fill Toast
-          this.toast.el.querySelector('.nt-account').textContent = `@${randomNode.account.account}`;
+          const acc = randomNode.account;
+          this.toast.el.querySelector('.nt-account').textContent = `@${acc.account}`;
+          this.toast.el.querySelector('.nt-avatar').src = acc.avatar_path || acc.profile_pic_url || '';
           this.toast.el.querySelector('.nt-caption').textContent = this.toast.activePost.caption || "Intelligence transmission...";
           this.toast.el.querySelector('.nt-likes').textContent = fmt(this.toast.activePost.likes);
           this.toast.el.querySelector('.nt-comments').textContent = fmt(this.toast.activePost.comments);
@@ -857,24 +1017,27 @@
         }
       }
 
-      // If active, follow the node (align sprite exactly over placeholder)
-      if (this.toast.activeNode) {
-        const screenPos = this.toast.activeNode.sphere.position.clone().project(this.camera);
-        const x = (screenPos.x + 1) * this.el.clientWidth / 2;
-        const y = (-screenPos.y + 1) * this.el.clientHeight / 2;
-
-        // Position toast statically relative to node
-        this.toast.el.style.left = `${x - 50}px`;
-        this.toast.el.style.top = `${y - 50}px`;
-      }
+      // Animate planet glows
+      const activeNode = this.toast.activeNode;
+      this.nodes.forEach(node => {
+        if (!node.glowMesh) return;
+        const isActive = node === activeNode;
+        const target = isActive ? 0.55 : 0;
+        node.glowOpacity += (target - node.glowOpacity) * 0.06;
+        const pulse = isActive ? 1 + 0.12 * Math.sin(t * 5) : 1;
+        node.glowMesh.material.opacity = node.glowOpacity * pulse;
+        node.glowMesh.position.copy(node.sphere.position);
+        node.glowMesh.quaternion.copy(this.camera.quaternion);
+      });
     }
 
     start() {
       this.running = true;
       const loop = () => {
         if (!this.running) return;
-        const dt = 0.016; // Approx 60fps
+        const dt = 0.016;
         const t = this.clock.getElapsedTime();
+
         this._updateNodePositions(t);
         this._updateToast(dt, t);
         this.renderer.render(this.scene, this.camera);
