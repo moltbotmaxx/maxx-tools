@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T21:54:12.545Z",
+    "generated_at": "2026-04-25T22:57:36.257Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,22 +391,13 @@
         "viral_score": 99
       },
       {
-        "headline": "the ai agent market is split between free but dangerous and $200/month. where's the middle?",
-        "link": "https://reddit.com/r/openclaw/comments/1svl6vk/the_ai_agent_market_is_split_between_free_but/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T19:18:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
         "headline": "OpenAI model releases over time",
         "link": "https://reddit.com/r/OpenAI/comments/1svknex/openai_model_releases_over_time/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-25T18:58:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 96
       },
       {
         "headline": "How it feels this month",
@@ -461,13 +452,22 @@
         "score": 0,
         "comments": 0,
         "viral_score": 84
+      },
+      {
+        "headline": "OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police",
+        "link": "https://reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-25T13:56:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T21:54:12.545Z",
+    "reddit_viral_generated_at": "2026-04-25T22:57:36.257Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
