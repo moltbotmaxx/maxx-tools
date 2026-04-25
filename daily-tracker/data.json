@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T19:56:01.226Z",
+    "generated_at": "2026-04-25T20:58:26.755Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "PSA: Anthropic clarified the OpenClaw ban. You can still use your $20/mo sub (and avoid $1,500+ API bills). Here is the official CLI workaround",
+        "link": "https://reddit.com/r/openclaw/comments/1svmq20/psa_anthropic_clarified_the_openclaw_ban_you_can/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T20:17:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "the ai agent market is split between free but dangerous and $200/month. where's the middle?",
         "link": "https://reddit.com/r/openclaw/comments/1svl6vk/the_ai_agent_market_is_split_between_free_but/",
@@ -379,7 +388,25 @@
         "published_at": "2026-04-25T19:18:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "OpenAI model releases over time",
+        "link": "https://reddit.com/r/OpenAI/comments/1svknex/openai_model_releases_over_time/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-25T18:58:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "How it feels this month",
+        "link": "https://reddit.com/r/singularity/comments/1svkfu9/how_it_feels_this_month/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-25T18:50:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Joining the crowd: moving from Claude to OpenAI Pro after testing GPT-5.5 in OpenClaw",
@@ -388,7 +415,7 @@
         "published_at": "2026-04-25T16:01:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Gas power projects for just 11 US data center 'campuses' could emit more greenhouse gases than entire countries, according to report",
@@ -397,7 +424,7 @@
         "published_at": "2026-04-25T15:40:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Happy to Be Part of the OpenClaw Community",
@@ -406,7 +433,7 @@
         "published_at": "2026-04-25T15:26:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "[Demo] Real-time EEG analysis-driven guided-meditation system",
@@ -415,7 +442,7 @@
         "published_at": "2026-04-25T14:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "PSA: The string \"HERMES.md\" in your git commit history silently routes Claude Code billing to extra usage — cost me $200",
@@ -424,40 +451,13 @@
         "published_at": "2026-04-25T14:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Serious question: why OC over Codex",
-        "link": "https://reddit.com/r/openclaw/comments/1svdkq4/serious_question_why_oc_over_codex/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T14:24:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       },
       {
         "headline": "OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police",
         "link": "https://reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-25T13:56:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Palantir employees are talking about company's \"descent into fascism\"",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1svc5e7/palantir_employees_are_talking_about_companys/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T13:25:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Picked a random person from a generated image and followed their day in 1 hour increments.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1svbu2z/picked_a_random_person_from_a_generated_image_and/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-25T13:11:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 85
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T19:56:01.226Z",
+    "reddit_viral_generated_at": "2026-04-25T20:58:26.755Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
