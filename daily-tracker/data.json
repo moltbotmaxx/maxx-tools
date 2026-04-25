@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T09:12:30.528Z",
+    "generated_at": "2026-04-25T10:07:24.038Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anti AI Principles",
+        "link": "https://reddit.com/r/aimemes/comments/1sv81ip/anti_ai_principles/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-25T10:00:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude Code/CLI is allowed again and nobody is talking about it?",
+        "link": "https://reddit.com/r/openclaw/comments/1sv7eud/claude_codecli_is_allowed_again_and_nobody_is/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T09:22:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "when you trust the process too much",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sv7e5y/when_you_trust_the_process_too_much/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-25T09:21:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Why do LLMs feel “smart” in one message but fall apart over a long conversation?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv78cp/why_do_llms_feel_smart_in_one_message_but_fall/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T09:12:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Wtf Claude",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv6hx5/wtf_claude/",
@@ -379,7 +415,16 @@
         "published_at": "2026-04-25T08:28:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "AI: Engineered to be overconfident",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv644t/ai_engineered_to_be_overconfident/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-25T08:06:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Malicious skill in github.com/openclaw/skills — base64-encoded shell payload disguised as Google Workspace setup",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-25T07:30:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "How Anthropic can save Opus 4.7 with one change.",
@@ -397,16 +442,7 @@
         "published_at": "2026-04-25T06:47:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Browser login credentials",
-        "link": "https://reddit.com/r/openclaw/comments/1sv4352/browser_login_credentials/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T06:11:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "FarmersOnly.cum",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-25T05:55:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "The recent news just feels like this.",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-25T05:52:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Showcase Weekend! — Week 16, 2026",
-        "link": "https://reddit.com/r/openclaw/comments/1sv2s22/showcase_weekend_week_16_2026/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-25T05:00:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "OpenAI scores on artificial analysis over time",
-        "link": "https://reddit.com/r/singularity/comments/1sv25m7/openai_scores_on_artificial_analysis_over_time/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-25T04:28:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "When you trust the process too much",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sv23b9/when_you_trust_the_process_too_much/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-25T04:25:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Can we stop making definitive statements about consciousness?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sv1j7k/can_we_stop_making_definitive_statements_about/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-25T03:58:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T09:12:30.528Z",
+    "reddit_viral_generated_at": "2026-04-25T10:07:24.038Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
