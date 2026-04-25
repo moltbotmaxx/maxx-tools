@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-25T17:02:39.109Z",
+    "generated_at": "2026-04-25T17:57:44.248Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Production ready alternative?",
+        "link": "https://reddit.com/r/openclaw/comments/1svhla6/production_ready_alternative/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-25T17:01:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "OpenClaw SimpleX – E2E-encrypted agent messaging over SimpleX Chat",
         "link": "https://reddit.com/r/openclaw/comments/1svh145/openclaw_simplex_e2eencrypted_agent_messaging/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-25T16:39:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Joining the crowd: moving from Claude to OpenAI Pro after testing GPT-5.5 in OpenClaw",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-25T16:01:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Happy to Be Part of the OpenClaw Community",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-25T15:26:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "[Demo] Real-time EEG analysis-driven guided-meditation system",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-25T14:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "PSA: The string \"HERMES.md\" in your git commit history silently routes Claude Code billing to extra usage — cost me $200",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-25T14:25:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Serious question: why OC over Codex",
@@ -424,7 +433,16 @@
         "published_at": "2026-04-25T14:24:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
+      },
+      {
+        "headline": "OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police",
+        "link": "https://reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-25T13:56:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Palantir employees are talking about company's \"descent into fascism\"",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-25T13:25:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "The mysterious smile... of your replacement.",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-25T11:14:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Google appears to be preparing a major shift in how consumers interact with the Gemini app, with new strings referencing usage limits surfacing in the latest build",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sv8u7e/google_appears_to_be_preparing_a_major_shift_in/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-25T10:46:02+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 86
-      },
-      {
-        "headline": "Successfully updated from 2.1.120 to version 2.1.119",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sv8rce/successfully_updated_from_21120_to_version_21119/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-25T10:41:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-25T17:02:39.109Z",
+    "reddit_viral_generated_at": "2026-04-25T17:57:44.248Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
