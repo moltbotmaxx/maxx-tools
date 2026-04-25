@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-15T23:52:14+00:00",
-  "date": "2026-04-15",
-  "run_started_at": "2026-04-15T23:45:42+00:00",
+  "generated_at": "2026-04-25T20:34:22+00:00",
+  "date": "2026-04-25",
+  "run_started_at": "2026-04-25T20:29:08+00:00",
   "account": "ai.tech.moments",
   "profile_url": "https://www.instagram.com/ai.tech.moments/",
   "avatar_path": "../avatars/ai.tech.moments.jpg",
-  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.82787-19/641773918_17983292627954279_7172782271756187774_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2gGx_TKj1OQWUh887ybi74wJdr1HD7WPkuYOzt5oASXvh2FK9a-8yCEFTrMZWOzJ2ug&_nc_ohc=1OlCstWScP4Q7kNvwHCO5Eq&_nc_gid=tNkf3Gw_FbaGR66ps8tviQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GF6xQCZnKvuYteM-AH44Px9514pjbmNDAQAB0j-ccb7-5&oh=00_Af1wsxNiaw9FoayuQ7OJwuWWWxHT2oiXAXM-4aztRToYiA&oe=69E5EB84&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq6-1.fna.fbcdn.net/v/t51.82787-19/641773918_17983292627954279_7172782271756187774_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fsyq6-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2gEBzHkQnHviYsABwplhYNbGJ2Ug0UDYATHr2WhNGuEMIGcUXFGFNViQaAqnOMDsflQ&_nc_ohc=hGa0UVZiHuoQ7kNvwH7cdT1&_nc_gid=r6wz25wxrjyCsTu7q9Bqow&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GF6xQCZnKvuYteM-AH44Px9514pjbmNDAQAB0j-ccb7-5&oh=00_Af0YQfFzBfSUVhoCvsJsZfDNp9rjwbZ__SV30_zHlIKb0w&oe=69F2E244&_nc_sid=1e20d2",
   "full_name": "Ai Tech Moments",
   "biography": "your daily dose of ai and technology.",
   "external_url": "",
   "is_verified": false,
-  "followers": 117066,
+  "followers": 116917,
   "following": 13,
   "posts": 48,
   "recent_post_count": 24,
@@ -26,14 +26,14 @@
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
   "oldest_recent_post_date": "2024-05-14",
-  "avg_likes": 5673.58,
+  "avg_likes": 5671.42,
   "avg_comments": 40.08,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
   "total_likes_recent_window": 0,
   "total_video_views_recent_window": 0,
-  "engagement_rate": 4.8807,
+  "engagement_rate": 4.8851,
   "recent_posts": [
     {
       "shortcode": "DLNJ-_miyHO",
@@ -48,7 +48,7 @@
     {
       "shortcode": "DKF3np9zNku",
       "date": "2025-05-25",
-      "likes": 8284,
+      "likes": 8275,
       "comments": 5,
       "is_video": true,
       "video_views": 0,
@@ -58,7 +58,7 @@
     {
       "shortcode": "DF5tpjBTstd",
       "date": "2025-02-10",
-      "likes": 35186,
+      "likes": 35170,
       "comments": 135,
       "is_video": true,
       "video_views": 0,
@@ -68,7 +68,7 @@
     {
       "shortcode": "DFZ4XVozQtM",
       "date": "2025-01-29",
-      "likes": 1094,
+      "likes": 1095,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -78,7 +78,7 @@
     {
       "shortcode": "DE5NZdZTlP1",
       "date": "2025-01-16",
-      "likes": 717,
+      "likes": 715,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -98,7 +98,7 @@
     {
       "shortcode": "DD2nPcbzyMv",
       "date": "2024-12-21",
-      "likes": 655,
+      "likes": 653,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -118,7 +118,7 @@
     {
       "shortcode": "DDmY0IRu7m_",
       "date": "2024-12-15",
-      "likes": 893,
+      "likes": 892,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -138,7 +138,7 @@
     {
       "shortcode": "DBaxUg9pr9h",
       "date": "2024-10-22",
-      "likes": 38252,
+      "likes": 38244,
       "comments": 657,
       "is_video": true,
       "video_views": 0,
@@ -148,7 +148,7 @@
     {
       "shortcode": "DA5gevXscmI",
       "date": "2024-10-09",
-      "likes": 4394,
+      "likes": 4384,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -188,7 +188,7 @@
     {
       "shortcode": "C_Fhq8ZxmNm",
       "date": "2024-08-25",
-      "likes": 694,
+      "likes": 693,
       "comments": 5,
       "is_video": true,
       "video_views": 0,
@@ -198,7 +198,7 @@
     {
       "shortcode": "C_FhMf3swei",
       "date": "2024-08-25",
-      "likes": 1547,
+      "likes": 1544,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -218,7 +218,7 @@
     {
       "shortcode": "C96pP2fsnRy",
       "date": "2024-07-27",
-      "likes": 541,
+      "likes": 542,
       "comments": 0,
       "is_video": true,
       "video_views": 0,
@@ -238,7 +238,7 @@
     {
       "shortcode": "C82DflrhRyU",
       "date": "2024-06-30",
-      "likes": 634,
+      "likes": 633,
       "comments": 2,
       "is_video": true,
       "video_views": 0,
@@ -248,7 +248,7 @@
     {
       "shortcode": "C68nPDiJ_OJ",
       "date": "2024-05-14",
-      "likes": 2168,
+      "likes": 2167,
       "comments": 2,
       "is_video": true,
       "video_views": 0,

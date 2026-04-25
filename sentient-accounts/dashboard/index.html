@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css?v=5" />
+    <link rel="stylesheet" href="./style.css?v=6" />
     <script src="./data.js?v=4" defer></script>
+    <script src="./config.js" defer></script>
     <script src="./vendor/three.min.js" defer></script>
     <script src="./vendor/OrbitControls.js" defer></script>
-    <script src="./network.js?v=5" defer></script>
-    <script src="./script.js?v=5" defer></script>
-    <script src="./settings-panel.js" defer></script>
+    <script src="./network.js?v=6" defer></script>
+    <script src="./script.js?v=6" defer></script>
   </head>
   <body class="is-fullscreen">
 
@@ -35,15 +35,15 @@
           <span id="totalFollowers" class="hud-stat-val">0</span>
         </div>
         <div class="hud-stat">
-          <span class="hud-stat-lbl">Total Likes</span>
+          <span class="hud-stat-lbl">Likes 30d</span>
           <span id="totalLikes" class="hud-stat-val">0</span>
         </div>
         <div class="hud-stat">
-          <span class="hud-stat-lbl">Total Impressions</span>
+          <span class="hud-stat-lbl">Reel Views 30d</span>
           <span id="totalViews" class="hud-stat-val">0</span>
         </div>
         <div class="hud-stat">
-          <span class="hud-stat-lbl">Reel Plays</span>
+          <span class="hud-stat-lbl">Avg ER</span>
           <span id="totalReels" class="hud-stat-val">0</span>
         </div>
       </div>
@@ -65,12 +65,15 @@
         </div>
         <div class="status-dot"></div>
         <div class="status-info">
-          <span class="status-text">CORE ACTIVE</span>
+          <span class="status-text" id="dataFreshness">DATA LOADING</span>
           <span class="status-timestamp" id="currentTimestamp"></span>
         </div>
+        <button id="refreshDataBtn" class="refresh-btn" type="button">Refresh</button>
+        <button id="configureRefreshBtn" class="refresh-btn refresh-btn--ghost" type="button">Config</button>
       </div>
     </header>
     <div id="fullscreenNetwork" class="network-container">
+      <div id="networkFallback" class="network-fallback" hidden></div>
       <div id="networkTooltip" class="net-tooltip" data-visible="false">
         <div class="net-tt-name"></div>
         <div class="net-tt-followers"></div>
@@ -100,7 +103,69 @@
           </div>
         </div>
       </div>
+
+      <section id="networkInsights" class="network-insights" aria-label="Portfolio signals">
+        <div class="insights-head">
+          <div>
+            <div class="insights-title">Portfolio Signals</div>
+            <div id="snapshotMeta" class="insights-sub">Loading snapshot...</div>
+          </div>
+          <div id="dataQualityBadge" class="quality-badge">checking</div>
+          <button id="refreshDataBtnCompact" class="quality-badge refresh-compact" type="button">Refresh</button>
+        </div>
+        <div class="insight-grid">
+          <div class="insight-card">
+            <span class="insight-label">Top Views</span>
+            <strong id="topViewsAccount">--</strong>
+            <small id="topViewsValue">--</small>
+          </div>
+          <div class="insight-card">
+            <span class="insight-label">Top ER</span>
+            <strong id="topEngagementAccount">--</strong>
+            <small id="topEngagementValue">--</small>
+          </div>
+        </div>
+        <div class="leaderboard">
+          <div class="leaderboard-title">30d View Leaders</div>
+          <div id="viewLeaderboard" class="leaderboard-list"></div>
+        </div>
+      </section>
+
+      <div class="network-legend" aria-label="Network legend">
+        <span><i class="legend-dot legend-dot--followers"></i>size = followers</span>
+        <span><i class="legend-dot legend-dot--er-high"></i>high ER</span>
+        <span><i class="legend-dot legend-dot--er-mid"></i>mid ER</span>
+        <span><i class="legend-line"></i>shared segment</span>
+      </div>
     </div>
+
+    <main id="mobileSimpleView" class="mobile-simple-view" aria-label="Sentient mobile summary">
+      <section class="mobile-summary-card">
+        <div class="mobile-brand-row">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">Sentient</div>
+            <div class="brand-sub">Account Portfolio</div>
+          </div>
+        </div>
+        <div id="mobileSnapshot" class="mobile-snapshot">Loading snapshot...</div>
+        <div class="mobile-metric-grid">
+          <div><span>Followers</span><strong id="mobileFollowers">0</strong></div>
+          <div><span>Likes 30d</span><strong id="mobileLikes">0</strong></div>
+          <div><span>Reel Views 30d</span><strong id="mobileViews">0</strong></div>
+          <div><span>Avg ER</span><strong id="mobileEngagement">0%</strong></div>
+        </div>
+        <button id="mobileRefreshBtn" class="mobile-refresh-btn" type="button">Refresh Data</button>
+      </section>
+
+      <section class="mobile-summary-card">
+        <div class="mobile-section-head">
+          <h2>Top Accounts</h2>
+          <span id="mobileDataState">Checking</span>
+        </div>
+        <div id="mobileAccountList" class="mobile-account-list"></div>
+      </section>
+    </main>
 
     <!-- ═══ SIDE PANEL MODAL ═══ -->
     <aside id="sidePanel" class="side-panel">
@@ -137,10 +202,12 @@
             </div>
 
             <div class="panel-section">
-              <h3 class="section-lbl">NETWORK STATUS</h3>
+              <h3 class="section-lbl">ACCOUNT SIGNALS</h3>
               <div class="status-grid">
-                <div class="status-item"><span class="lbl">Reach</span><span id="panelReach" class="val"></span></div>
-                <div class="status-item"><span class="lbl">Activity</span><span id="panelActivity" class="val"></span></div>
+                <div class="status-item"><span class="lbl">Views 30d</span><span id="panelViews" class="val"></span></div>
+                <div class="status-item"><span class="lbl">Likes 30d</span><span id="panelLikes" class="val"></span></div>
+                <div class="status-item"><span class="lbl">Posts 30d</span><span id="panelActivity" class="val"></span></div>
+                <div class="status-item"><span class="lbl">View Source</span><span id="panelSource" class="val"></span></div>
               </div>
             </div>
 

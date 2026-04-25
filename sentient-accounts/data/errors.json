@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-04-25T20:37:53+00:00",
+  "date": "2026-04-25",
+  "run_started_at": "2026-04-25T20:29:08+00:00",
+  "failures": [
+    {
+      "account": "chatgptips",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile chatgptips does not exist."
+    },
+    {
+      "account": "estoicomorir",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile estoicomorir does not exist."
+    }
+  ]
+}

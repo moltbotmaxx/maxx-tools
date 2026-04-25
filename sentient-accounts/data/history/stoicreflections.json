@@ -12,5 +12,12 @@
     "avg_likes": 5655.5,
     "avg_comments": 62.46,
     "engagement_rate": 0.517
+  },
+  {
+    "date": "2026-04-25",
+    "followers": 1105410,
+    "avg_likes": 5721.04,
+    "avg_comments": 64.67,
+    "engagement_rate": 0.5234
   }
 ]

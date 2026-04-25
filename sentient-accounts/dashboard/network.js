@@ -7,10 +7,10 @@
 
   function rimColor(eng) {
     const e = Number(eng) || 0;
-    if (e >= 3) return '#00e5ff';
-    if (e >= 1.5) return '#cfff04';
-    if (e >= 0.5) return '#a855f7';
-    return '#6366f1';
+    if (e >= 8) return '#00e5ff';
+    if (e >= 3) return '#cfff04';
+    if (e >= 1) return '#a855f7';
+    return '#64748b';
   }
 
   function fmt(v) {
@@ -22,6 +22,12 @@
 
   function clamp(v, lo, hi) {
     return Math.max(lo, Math.min(hi, v));
+  }
+
+  function normalizeMetric(value, min, max) {
+    const n = Number(value) || 0;
+    if (max <= min) return 0.5;
+    return clamp((Math.log10(n + 1) - Math.log10(min + 1)) / (Math.log10(max + 1) - Math.log10(min + 1)), 0, 1);
   }
 
   // Lightweight Noise Field (Perlin-like approximation)
@@ -80,12 +86,13 @@
       };
 
       if (!window.THREE) {
-        this.el.innerHTML = '<div class="network-fallback">Three.js no cargó.</div>';
+        this._showFallback('Three.js did not load.');
         return;
       }
 
       this.THREE = window.THREE;
       this._setupRenderer();
+      if (!this.renderer) return;
       this._setupScene();
       this._bindEvents();
       this.resize(); // Get real bounds first
@@ -115,16 +122,52 @@
 
     _setupRenderer() {
       const THREE = this.THREE;
-      this.renderer = new THREE.WebGLRenderer({
-        antialias: true,
-        alpha: true, // Allow background to show through
-        powerPreference: "high-performance"
-      });
+      try {
+        this.renderer = new THREE.WebGLRenderer({
+          antialias: true,
+          alpha: true, // Allow background to show through
+          powerPreference: "high-performance"
+        });
+      } catch (err) {
+        console.error(err);
+        this._showFallback('WebGL is unavailable on this device.');
+        return;
+      }
       this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       if (THREE.SRGBColorSpace) this.renderer.outputColorSpace = THREE.SRGBColorSpace;
       this.renderer.domElement.className = 'network-webgl';
       this.renderer.domElement.style.cursor = 'default';
       this.el.appendChild(this.renderer.domElement);
+    }
+
+    _showFallback(message) {
+      const fallback = this.el.querySelector('#networkFallback');
+      if (!fallback) return;
+      const accounts = [...this.accounts].sort((a, b) => (Number(b.followers) || 0) - (Number(a.followers) || 0));
+      fallback.hidden = false;
+      fallback.innerHTML = `
+        <div class="fallback-shell">
+          <div class="fallback-copy">
+            <strong>${message}</strong>
+            <span>Showing a static portfolio grid instead.</span>
+          </div>
+          <div class="fallback-grid">
+            ${accounts.map(a => `
+              <button class="fallback-account" type="button" data-account="${a.account}">
+                <img src="${a.avatar_path || a.profile_pic_url || ''}" alt="" />
+                <span>@${a.account}</span>
+                <small>${fmt(a.followers)} followers · ${(Number(a.engagement_rate) || 0).toFixed(2)}% ER</small>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+      fallback.querySelectorAll('.fallback-account').forEach(row => {
+        row.addEventListener('click', () => {
+          const account = accounts.find(a => a.account === row.dataset.account);
+          if (account && this.onSelect) this.onSelect(account);
+        });
+      });
     }
 
     _setupScene() {
@@ -196,7 +239,7 @@
 
     _buildLinks() {
       const THREE = this.THREE;
-      const maxLinks = this.nodes.length * 6; // Max expected links
+      const maxLinks = Math.max(1, (this.linkPairs || []).length);
       const geometry = new THREE.BufferGeometry();
       geometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(maxLinks * 2 * 3), 3));
       geometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(maxLinks * 2 * 3), 3));
@@ -245,6 +288,9 @@
       const maxB = this.bounds.y * orbitMaxRatio;
       const maxSpeed = _dc.speedMax || 0.0022;
       const minSpeed = _dc.speedMin || 0.0005;
+      const followerValues = sorted.map(a => Number(a.followers) || 0).filter(Boolean);
+      const minFollowers = followerValues.length ? Math.min(...followerValues) : 0;
+      const maxFollowers = followerValues.length ? Math.max(...followerValues) : 1;
 
       this.nodes = sorted.map((account, index) => {
         // Random orbit slot → ratio (speed follows actual orbit, not follower rank)
@@ -256,15 +302,8 @@
         // Speed tied directly to orbit size: inner = faster, outer = slower
         const baseSpeed = -(maxSpeed - orbitRatio * (maxSpeed - minSpeed));
 
-        // 3-tier planet size based on follower ranking
-        let planetRadius;
-        if (index < n / 3) {
-          planetRadius = this.nodeRadius * (_dc.sizeLarge || 1.35);
-        } else if (index < (n * 2) / 3) {
-          planetRadius = this.nodeRadius * (_dc.sizeMedium || 1.0);
-        } else {
-          planetRadius = this.nodeRadius * (_dc.sizeSmall || 0.7);
-        }
+        const followerWeight = normalizeMetric(account.followers, minFollowers, maxFollowers);
+        const planetRadius = this.nodeRadius * (0.62 + followerWeight * 0.9);
 
         const initAngle = Math.random() * Math.PI * 2;
         const initPos = new this.THREE.Vector3(
@@ -276,6 +315,8 @@
         return {
           account,
           index,
+          segment: account.segment || (this.options.accountSegment ? this.options.accountSegment(account) : 'account'),
+          isSpanish: Boolean(account.is_spanish || (this.options.hasSpanishSignal && this.options.hasSpanishSignal(account))),
           color: rimColor(account.engagement_rate),
           currentPosition: initPos,
           velocity: new this.THREE.Vector3(),
@@ -293,6 +334,8 @@
           collisionTimer: 0
         };
       });
+
+      this._buildSemanticLinks();
 
       // Link moon nodes to their parent planets
       const moonRelations = _dc.moonRelations || {};
@@ -323,6 +366,32 @@
       });
 
       this._maxPlanetRadius = Math.max(...this.nodes.map(n => n.planetRadius));
+    }
+
+    _buildSemanticLinks() {
+      const pairs = [];
+      for (let i = 0; i < this.nodes.length; i += 1) {
+        for (let j = i + 1; j < this.nodes.length; j += 1) {
+          const a = this.nodes[i];
+          const b = this.nodes[j];
+          let score = 0;
+          if (a.segment === b.segment) score += 0.5;
+          if (a.isSpanish && b.isSpanish) score += 0.25;
+
+          const erDelta = Math.abs((Number(a.account.engagement_rate) || 0) - (Number(b.account.engagement_rate) || 0));
+          if (erDelta <= 2) score += 0.15;
+
+          const followerRatio = Math.min(Number(a.account.followers) || 0, Number(b.account.followers) || 0) /
+            Math.max(1, Math.max(Number(a.account.followers) || 0, Number(b.account.followers) || 0));
+          if (followerRatio > 0.18) score += 0.1;
+
+          if (score >= 0.5) pairs.push({ a, b, score: clamp(score, 0.25, 1) });
+        }
+      }
+
+      this.linkPairs = pairs
+        .sort((p1, p2) => p2.score - p1.score)
+        .slice(0, Math.max(28, this.nodes.length * 2));
     }
 
     _buildSceneObjects() {
@@ -789,41 +858,29 @@
       const positions = this.linksMesh.geometry.attributes.position.array;
       const colors = this.linksMesh.geometry.attributes.color.array;
       let count = 0;
-      const maxLinks = (positions.length / 6);
-
-      const threshold = 18.0;
       const c1 = new THREE.Color(0xcfff04); // Accent
-      const c2 = new THREE.Color(0x4a5568); // Muted
+      const c2 = new THREE.Color(0x22d3ee); // Stronger shared segment
 
-      for (let i = 0; i < this.nodes.length; i++) {
-        const a = this.nodes[i];
-        for (let j = i + 1; j < this.nodes.length; j++) {
-          const b = this.nodes[j];
-          const dist = a.currentPosition.distanceTo(b.currentPosition);
-          if (dist < threshold) {
-            if (count >= maxLinks) break;
-            const opacity = 1.0 - (dist / threshold);
-            const idx = count * 6;
-            
-            positions[idx] = a.currentPosition.x;
-            positions[idx + 1] = a.currentPosition.y;
-            positions[idx + 2] = a.currentPosition.z - 0.5;
-            positions[idx + 3] = b.currentPosition.x;
-            positions[idx + 4] = b.currentPosition.y;
-            positions[idx + 5] = b.currentPosition.z - 0.5;
+      (this.linkPairs || []).forEach(pair => {
+        const idx = count * 6;
+        const color = c1.clone().lerp(c2, pair.score);
 
-            const color = c1.clone().lerp(c2, 1.0 - opacity);
-            colors[idx] = color.r;
-            colors[idx + 1] = color.g;
-            colors[idx + 2] = color.b;
-            colors[idx + 3] = color.r;
-            colors[idx + 4] = color.g;
-            colors[idx + 5] = color.b;
+        positions[idx] = pair.a.currentPosition.x;
+        positions[idx + 1] = pair.a.currentPosition.y;
+        positions[idx + 2] = pair.a.currentPosition.z - 0.5;
+        positions[idx + 3] = pair.b.currentPosition.x;
+        positions[idx + 4] = pair.b.currentPosition.y;
+        positions[idx + 5] = pair.b.currentPosition.z - 0.5;
 
-            count++;
-          }
-        }
-      }
+        colors[idx] = color.r;
+        colors[idx + 1] = color.g;
+        colors[idx + 2] = color.b;
+        colors[idx + 3] = color.r;
+        colors[idx + 4] = color.g;
+        colors[idx + 5] = color.b;
+
+        count += 1;
+      });
       this.linksMesh.geometry.attributes.position.needsUpdate = true;
       this.linksMesh.geometry.attributes.color.needsUpdate = true;
       this.linksMesh.geometry.setDrawRange(0, count * 2);
@@ -1032,6 +1089,7 @@
     }
 
     start() {
+      if (!this.renderer || !this.scene || !this.camera || !this.clock) return;
       this.running = true;
       const loop = () => {
         if (!this.running) return;
