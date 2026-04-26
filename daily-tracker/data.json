@@ -367,19 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-26T15:59:16.439Z",
+    "generated_at": "2026-04-26T17:04:10.580Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Anyone else notice that the most capable models aren't actually available to us anymore?",
-        "link": "https://reddit.com/r/OpenAI/comments/1sw8x66/anyone_else_notice_that_the_most_capable_models/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-26T14:24:52+00:00",
+        "headline": "geoguessr time travel clone with gpt-image-2",
+        "link": "https://reddit.com/r/singularity/comments/1swci1d/geoguessr_time_travel_clone_with_gptimage2/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-26T16:40:28+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "We have our first misinformation campaign using GPT Image 2",
+        "link": "https://reddit.com/r/ChatGPT/comments/1swc455/we_have_our_first_misinformation_campaign_using/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-26T16:26:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Showed 4 AI models some abstract Kandinsky-style Pokémon art with no hints, the results are kind of insane",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1swbxhc/showed_4_ai_models_some_abstract_kandinskystyle/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-26T16:19:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Showed 4 AI models some abstract Kandinsky-style Pokémon art with no hints, the results are kind of insane",
+        "link": "https://reddit.com/r/GeminiAI/comments/1swbvap/showed_4_ai_models_some_abstract_kandinskystyle/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-26T16:17:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Why does Gemini keep ignoring clear instructions?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1swa4hs/why_does_gemini_keep_ignoring_clear_instructions/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-26T15:11:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Thank you for 150 stars! OpenClaw Client just got a massive update 🎉",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-26T14:05:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "I asked GPT Image 2.0 for a funny meme.",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-26T13:32:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Apple's new ceo built the neural engine in every mac and iphone. his ai bet is \"compress intelligence into the chip\" not \"build a bigger model\"",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-26T13:10:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "The Comeback Chatgpt Did with Image 2 Is Insane",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-26T12:51:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Kinetix AI teases a human like humanoid robot with a \"superinteligence model\" that blends vision, touch, language, action, emotions",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-26T12:43:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "NVIDIA Beats Everyone To DeepSeek V4 With Day-0 Blackwell Support, Pushing 3,500 Tokens Per Second On 1.6T Models",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sw6dbi/nvidia_beats_everyone_to_deepseek_v4_with_day0/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-26T12:34:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "OpenAI caught astroturfing - they created a fake news site, with stories by fake reporters, to attack AI safety advocates",
-        "link": "https://reddit.com/r/OpenAI/comments/1sw6d1q/openai_caught_astroturfing_they_created_a_fake/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-26T12:34:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Commands are cooked",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sw5cqr/commands_are_cooked/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-26T11:44:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "An amateur just solved a 60-year-old math problem—by asking AI",
-        "link": "https://reddit.com/r/singularity/comments/1sw53vb/an_amateur_just_solved_a_60yearold_math_problemby/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-26T11:31:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-26T15:59:16.439Z",
+    "reddit_viral_generated_at": "2026-04-26T17:04:10.580Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
