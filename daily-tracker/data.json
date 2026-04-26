@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-26T15:03:56.393Z",
+    "generated_at": "2026-04-26T15:59:16.439Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone else notice that the most capable models aren't actually available to us anymore?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sw8x66/anyone_else_notice_that_the_most_capable_models/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-26T14:24:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Thank you for 150 stars! OpenClaw Client just got a massive update 🎉",
         "link": "https://reddit.com/r/openclaw/comments/1sw8fpx/thank_you_for_150_stars_openclaw_client_just_got/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-26T14:05:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "I asked GPT Image 2.0 for a funny meme.",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-26T13:32:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Apple's new ceo built the neural engine in every mac and iphone. his ai bet is \"compress intelligence into the chip\" not \"build a bigger model\"",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-26T13:10:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "The Comeback Chatgpt Did with Image 2 Is Insane",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-26T12:51:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Kinetix AI teases a human like humanoid robot with a \"superinteligence model\" that blends vision, touch, language, action, emotions",
@@ -415,7 +424,16 @@
         "published_at": "2026-04-26T12:43:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
+      },
+      {
+        "headline": "NVIDIA Beats Everyone To DeepSeek V4 With Day-0 Blackwell Support, Pushing 3,500 Tokens Per Second On 1.6T Models",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sw6dbi/nvidia_beats_everyone_to_deepseek_v4_with_day0/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-26T12:34:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "OpenAI caught astroturfing - they created a fake news site, with stories by fake reporters, to attack AI safety advocates",
@@ -424,16 +442,7 @@
         "published_at": "2026-04-26T12:34:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Mobile Openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1sw5zs2/mobile_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-26T12:16:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Commands are cooked",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-26T11:44:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "An amateur just solved a 60-year-old math problem—by asking AI",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-26T11:31:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "War propaganda about to be crazy thanks to GPT Image 2",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sw3f97/war_propaganda_about_to_be_crazy_thanks_to_gpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-26T09:59:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-26T15:03:56.393Z",
+    "reddit_viral_generated_at": "2026-04-26T15:59:16.439Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
