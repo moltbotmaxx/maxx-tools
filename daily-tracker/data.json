@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-26T07:56:25.593Z",
+    "generated_at": "2026-04-26T09:15:38.198Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,22 @@
         "viral_score": 100
       },
       {
-        "headline": "Anthropic's support system is broken by design — there is literally no path to a human for billing issues",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1svzspd/anthropics_support_system_is_broken_by_design/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-26T06:29:41+00:00",
+        "headline": "Met investigates hundreds of officers after using Palantir AI tool | Metropolitan police | The Guardian",
+        "link": "https://reddit.com/r/singularity/comments/1sw0vy7/met_investigates_hundreds_of_officers_after_using/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-26T07:30:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 100
+      },
+      {
+        "headline": "Stanford researchers fed a language model a DNA sequence and asked it to create a new virus. It wrote hundreds of them, and 16 worked. One used a protein that doesn't exist in any known organism on Earth.",
+        "link": "https://reddit.com/r/OpenAI/comments/1sw0vcf/stanford_researchers_fed_a_language_model_a_dna/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-26T07:29:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Why use Claude or GPT when you can use cheaper models?",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-26T03:58:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "I Pushed Gemini Too Hard and it Snapped",
@@ -415,16 +424,7 @@
         "published_at": "2026-04-26T03:02:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude in excel is the best thing AI has brought to my life",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1svv1at/claude_in_excel_is_the_best_thing_ai_has_brought/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-26T02:23:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 89
       },
       {
         "headline": "OpenAI needs to fix this",
@@ -433,7 +433,7 @@
         "published_at": "2026-04-26T01:48:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "GPT-Image 2.0 is lowkey blowing my mind",
@@ -442,7 +442,7 @@
         "published_at": "2026-04-26T00:59:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       },
       {
         "headline": "Did I just get PUNKED by AI?!?!",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-26T07:56:25.593Z",
+    "reddit_viral_generated_at": "2026-04-26T09:15:38.198Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
