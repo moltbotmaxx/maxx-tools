@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-26T19:14:44.524Z",
+    "generated_at": "2026-04-26T19:57:37.960Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -454,10 +454,10 @@
         "viral_score": 90
       },
       {
-        "headline": "Thank you for 150 stars! OpenClaw Client just got a massive update 🎉",
-        "link": "https://reddit.com/r/openclaw/comments/1sw8fpx/thank_you_for_150_stars_openclaw_client_just_got/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-26T14:05:09+00:00",
+        "headline": "Claude 4.7 named a journalist from 125 words of unpublished writing",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sw8npc/claude_47_named_a_journalist_from_125_words_of/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-26T14:14:23+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-26T19:14:44.524Z",
+    "reddit_viral_generated_at": "2026-04-26T19:57:37.960Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
