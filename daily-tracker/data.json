@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-26T09:15:38.198Z",
+    "generated_at": "2026-04-26T10:09:17.574Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT5.5 but why is there so much waffle still?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sw2xu1/gpt55_but_why_is_there_so_much_waffle_still/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-26T09:30:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Try it yourself",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sw2k1d/try_it_yourself/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-26T09:07:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "OpenAI almost banned me bacuse i tried to automate \"youtube download\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1sw2dbo/openai_almost_banned_me_bacuse_i_tried_to/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-26T08:56:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Do not upgrade to 2026.4.24",
+        "link": "https://reddit.com/r/openclaw/comments/1sw1s30/do_not_upgrade_to_2026424/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-26T08:21:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "You're right to push back.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1sw0xbo/youre_right_to_push_back/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-26T07:32:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Met investigates hundreds of officers after using Palantir AI tool | Metropolitan police | The Guardian",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-26T07:30:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Stanford researchers fed a language model a DNA sequence and asked it to create a new virus. It wrote hundreds of them, and 16 worked. One used a protein that doesn't exist in any known organism on Earth.",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-26T07:29:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Why use Claude or GPT when you can use cheaper models?",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-26T06:23:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Lol",
@@ -415,7 +451,7 @@
         "published_at": "2026-04-26T03:58:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "I Pushed Gemini Too Hard and it Snapped",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-26T03:02:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenAI needs to fix this",
-        "link": "https://reddit.com/r/ChatGPT/comments/1svubsp/openai_needs_to_fix_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-26T01:48:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "GPT-Image 2.0 is lowkey blowing my mind",
-        "link": "https://reddit.com/r/OpenAI/comments/1svtacf/gptimage_20_is_lowkey_blowing_my_mind/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-26T00:59:05+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 84
-      },
-      {
-        "headline": "Did I just get PUNKED by AI?!?!",
-        "link": "https://reddit.com/r/OpenAI/comments/1svrbr0/did_i_just_get_punked_by_ai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-25T23:28:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "Weird textures = watermarks",
-        "link": "https://reddit.com/r/ChatGPT/comments/1svq2pe/weird_textures_watermarks/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-25T22:34:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-26T09:15:38.198Z",
+    "reddit_viral_generated_at": "2026-04-26T10:09:17.574Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
