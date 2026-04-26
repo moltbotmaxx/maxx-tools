@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-26T19:57:37.960Z",
+    "generated_at": "2026-04-26T20:58:41.869Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "new gpt 5.5 + openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1swhjoe/new_gpt_55_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-26T19:47:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "just shut up and trust us",
         "link": "https://reddit.com/r/OpenAI/comments/1swfq30/just_shut_up_and_trust_us/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-26T18:39:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Surprised I was allowed to create this.",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-26T18:35:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "How Rose and Jack will end up in a different timeline.",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-26T18:26:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Anyone here switch from Claude to GPT $100/$200 for OpenClaw?",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-26T18:13:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "geoguessr time travel clone with gpt-image-2",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-26T16:40:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "OpenClaw vs Hermes",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-26T16:28:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Showed 4 AI models some abstract Kandinsky-style Pokémon art with no hints, the results are kind of insane",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-26T16:19:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Showed 4 AI models some abstract Kandinsky-style Pokémon art with no hints, the results are kind of insane",
@@ -442,22 +451,13 @@
         "published_at": "2026-04-26T16:17:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Made by new ChatGPT image generation, Jesus",
         "link": "https://reddit.com/r/OpenAI/comments/1sw9v6x/made_by_new_chatgpt_image_generation_jesus/",
         "subreddit": "OpenAI",
         "published_at": "2026-04-26T15:01:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude 4.7 named a journalist from 125 words of unpublished writing",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sw8npc/claude_47_named_a_journalist_from_125_words_of/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-26T14:14:23+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-26T19:57:37.960Z",
+    "reddit_viral_generated_at": "2026-04-26T20:58:41.869Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
