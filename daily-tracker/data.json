@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-27T20:19:28.742Z",
+    "generated_at": "2026-04-27T21:30:40.910Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "If Elon Musk wins the OpenAI lawsuit… Sam Altman & others become multi-billionaires?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sxeiiy/if_elon_musk_wins_the_openai_lawsuit_sam_altman/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-27T19:48:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "GPT-5.5 improves over GPT-5.4 and overtakes Opus 4.6 to take the 2nd place behind Gemini 3.1 Pro on the Extended NYT Connections Benchmark",
         "link": "https://reddit.com/r/singularity/comments/1sxe3bs/gpt55_improves_over_gpt54_and_overtakes_opus_46/",
@@ -379,7 +388,16 @@
         "published_at": "2026-04-27T19:32:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "I'm still in awe that I can generate this with a 14 word prompt",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sxcu59/im_still_in_awe_that_i_can_generate_this_with_a/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-27T18:49:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Ai is getting too realistic",
@@ -388,16 +406,16 @@
         "published_at": "2026-04-27T18:01:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
-        "headline": "Has anyone seen an AI agent designed to be a DnD DM?",
-        "link": "https://reddit.com/r/openclaw/comments/1sxbcyg/has_anyone_seen_an_ai_agent_designed_to_be_a_dnd/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T17:57:51+00:00",
+        "headline": "I used ChatGPT for a real life decision (whether to break up with my girlfriend) and it asked me a question i'd been avoiding for a year",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sxb7iw/i_used_chatgpt_for_a_real_life_decision_whether/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-27T17:52:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Differences Between GPT 5.4 and GPT 5.5 on MineBench",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-27T17:35:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Don't quit OpenClaw Setup, try these 4 things. Takes 5 minutes.",
@@ -415,16 +433,7 @@
         "published_at": "2026-04-27T17:14:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Meta’s acquisition of the AI startup Manus was blocked by China government!",
-        "link": "https://reddit.com/r/openclaw/comments/1sx86p4/metas_acquisition_of_the_ai_startup_manus_was/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T16:08:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 93
       },
       {
         "headline": "Senator Josh Hawley asks former OpenAI employee Helen Toner to explain why AI companies are building technology that will \"displace many millions of workers and potentially pose existential risks\"",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-27T15:54:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Anyone here running a self hosted LLM with OpenClaw (no OpenAI/Anthropic bill)?",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-27T15:33:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Is the subreddit logo off-center?",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-27T14:55:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "if 4.24 killed your gateway heres the actual fix. tested on 3 machines. takes 5 minutes",
-        "link": "https://reddit.com/r/openclaw/comments/1sx60f4/if_424_killed_your_gateway_heres_the_actual_fix/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T14:52:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-27T20:19:28.742Z",
+    "reddit_viral_generated_at": "2026-04-27T21:30:40.910Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
