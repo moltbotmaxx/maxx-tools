@@ -367,28 +367,73 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-27T14:28:29.957Z",
+    "generated_at": "2026-04-27T16:57:12.613Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Anyone automating Facebook community management with Claude + OpenClaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1sx5atg/anyone_automating_facebook_community_management/",
+        "headline": "Meta’s acquisition of the AI startup Manus was blocked by China government!",
+        "link": "https://reddit.com/r/openclaw/comments/1sx86p4/metas_acquisition_of_the_ai_startup_manus_was/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-27T14:26:48+00:00",
+        "published_at": "2026-04-27T16:08:13+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Can't see delegated wotk",
-        "link": "https://reddit.com/r/openclaw/comments/1sx4sa1/cant_see_delegated_wotk/",
+        "headline": "Anyone here running a self hosted LLM with OpenClaw (no OpenAI/Anthropic bill)?",
+        "link": "https://reddit.com/r/openclaw/comments/1sx77bc/anyone_here_running_a_self_hosted_llm_with/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-27T14:08:27+00:00",
+        "published_at": "2026-04-27T15:33:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
+      },
+      {
+        "headline": "Meta energy investments: \"Overview Energy\" laser beams energy from a satellite to solar panels 24/7 (reduced heat burden compared to space compute); Noon Energy can store energy longer than lithium-ion batteries -- 100 hours using \"modular, reversible solid oxide fuel cells and carbon-based storage\"",
+        "link": "https://reddit.com/r/singularity/comments/1sx763v/meta_energy_investments_overview_energy_laser/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-27T15:32:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "\"We're open-sourcing Asimov v1, a humanoid robot\"",
+        "link": "https://reddit.com/r/singularity/comments/1sx6nzi/were_opensourcing_asimov_v1_a_humanoid_robot/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-27T15:14:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I open‑sourced a free, MIT‑licensed library of Claude prompts and I’ll send $100 as a thanks for accepted community prompt packs",
+        "link": "https://reddit.com/r/openclaw/comments/1sx6imz/i_opensourced_a_free_mitlicensed_library_of/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T15:09:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Is the subreddit logo off-center?",
+        "link": "https://reddit.com/r/OpenAI/comments/1sx6421/is_the_subreddit_logo_offcenter/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-27T14:55:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "if 4.24 killed your gateway heres the actual fix. tested on 3 machines. takes 5 minutes",
+        "link": "https://reddit.com/r/openclaw/comments/1sx60f4/if_424_killed_your_gateway_heres_the_actual_fix/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T14:52:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "When your data is so bad...",
@@ -397,7 +442,16 @@
         "published_at": "2026-04-27T13:57:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "Discovered the weirdest corner of the internet last weekend, sharing in case anyone else wants to lose a Saturday",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sx40li/discovered_the_weirdest_corner_of_the_internet/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-27T13:40:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Communication issues",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-27T13:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "The next phase of the Microsoft-OpenAI partnership: Microsoft’s license for OpenAI IP for models and products will now be non-exclusive.",
-        "link": "https://reddit.com/r/OpenAI/comments/1sx3l9i/the_next_phase_of_the_microsoftopenai_partnership/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-27T13:24:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "How long does an Ollama Cloud Pro Subscription with OpenClaw last?",
-        "link": "https://reddit.com/r/openclaw/comments/1sx3edz/how_long_does_an_ollama_cloud_pro_subscription/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T13:16:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Kept asking my agent to find a product on Amazon and getting Google Shopping results instead. Built a skill for it.",
-        "link": "https://reddit.com/r/openclaw/comments/1sx3dxc/kept_asking_my_agent_to_find_a_product_on_amazon/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T13:16:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "The companies building the most powerful AI in history are also the ones deciding what counts as 'safe.' Nobody seems to think that's a problem. It should be.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sx3dlk/the_companies_building_the_most_powerful_ai_in/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-27T13:15:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Has AI killed the “execution moat”? If anyone can generate 40 versions of a deliverable in a minute, what are clients actually paying us for?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sx1dqd/has_ai_killed_the_execution_moat_if_anyone_can/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-27T11:53:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "AI has destroyed me.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sx0lim/ai_has_destroyed_me/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-27T11:15:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-27T14:28:29.957Z",
+    "reddit_viral_generated_at": "2026-04-27T16:57:12.613Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
