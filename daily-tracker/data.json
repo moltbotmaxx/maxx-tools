@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-27T04:01:45.679Z",
+    "generated_at": "2026-04-27T06:42:14.927Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The fall of chegg........",
+        "link": "https://reddit.com/r/ChatGPT/comments/1swuiw5/the_fall_of_chegg/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-27T05:29:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Email triage setup",
+        "link": "https://reddit.com/r/openclaw/comments/1swu3ck/email_triage_setup/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T05:06:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "DeepSeek V4 just dropped — and OpenClaw already made it the default model. I tested 3 real-world scenarios",
         "link": "https://reddit.com/r/openclaw/comments/1swqvz6/deepseek_v4_just_dropped_and_openclaw_already/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-27T02:28:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Claude helped me create a survivable diet and I've lost 15 lbs in 7 weeks",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-27T01:23:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Suddenly my app was upside down. Has this happened to anyone?",
@@ -397,16 +415,7 @@
         "published_at": "2026-04-27T00:53:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I open‑sourced a free, MIT‑licensed library of Claude prompts and I’ll send $100 as a thanks for accepted community prompt packs",
-        "link": "https://reddit.com/r/openclaw/comments/1swosie/i_opensourced_a_free_mitlicensed_library_of/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T00:49:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Kinetix AI teases KAI its humanoid robot, featuring more DoF along its body than any humanoid robot to date, plus a hybrid dexterous hand, and 18,000 sensors distributed throughout its soft, flexible body, making it the most human-like clone so far.",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-27T00:18:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "ChatGPT 5.4 Solved a 64-Year-Old Math Problem",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-26T23:29:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 86
       },
       {
         "headline": "\"Personal Intelligence\" is ruining your outputs",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-26T22:24:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 83
       },
       {
         "headline": "White collar employment is sharply declining: The number of the S&P 500 employees fell -400,000 in 2025, to 28.1 million, posting its first annual decline since 2016.",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-26T22:09:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 83
       },
       {
         "headline": "GPT-5.4 compared to GPT-5.5 on MineBench",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-26T20:54:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "just shut up and trust us",
-        "link": "https://reddit.com/r/OpenAI/comments/1swfq30/just_shut_up_and_trust_us/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-26T18:39:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-27T04:01:45.679Z",
+    "reddit_viral_generated_at": "2026-04-27T06:42:14.927Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
