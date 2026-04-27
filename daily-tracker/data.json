@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-27T09:30:53.916Z",
+    "generated_at": "2026-04-27T12:00:42.229Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI has destroyed me.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sx0lim/ai_has_destroyed_me/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-27T11:15:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "It ain't funny anymore",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sx08y3/it_aint_funny_anymore/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-27T10:58:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Pick one AI subscription",
+        "link": "https://reddit.com/r/openclaw/comments/1sx08fg/pick_one_ai_subscription/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T10:57:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Noetix, the humanoid robot maker, joins the race for stunning biomimetic robot faces",
+        "link": "https://reddit.com/r/singularity/comments/1sx02w2/noetix_the_humanoid_robot_maker_joins_the_race/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-27T10:49:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Updated to 2026.4.26, it's now taking 5 whole minutes to boot up",
+        "link": "https://reddit.com/r/openclaw/comments/1sx01j4/updated_to_2026426_its_now_taking_5_whole_minutes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T10:47:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I let OpenClaw pick out the hardware of its choice *g*",
+        "link": "https://reddit.com/r/openclaw/comments/1swzsvo/i_let_openclaw_pick_out_the_hardware_of_its/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T10:34:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "AI is exhausting your brain more than helping you",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1swyxg0/ai_is_exhausting_your_brain_more_than_helping_you/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-27T09:46:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Meta’s $2 billion Manus acquisition blocked by China.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1swy7zq/metas_2_billion_manus_acquisition_blocked_by_china/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-27T09:03:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Taught my 60-year-old dad (zero coding exp) Claude and Git in Feb. Today he built a RAG solution. I finally get \"vibe coding.\"",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1swy5r6/taught_my_60yearold_dad_zero_coding_exp_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-27T09:00:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "GPT-5.5 is lowkey blowing my mind",
         "link": "https://reddit.com/r/OpenAI/comments/1swx222/gpt55_is_lowkey_blowing_my_mind/",
@@ -379,95 +460,14 @@
         "published_at": "2026-04-27T07:53:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Nuance is possible",
-        "link": "https://reddit.com/r/OpenAI/comments/1swwd0f/nuance_is_possible/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-27T07:12:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "The fall of chegg........",
-        "link": "https://reddit.com/r/ChatGPT/comments/1swuiw5/the_fall_of_chegg/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-27T05:29:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Need ideas for AI assistant functions in real estate or finance – what are the best use cases for AI agents?",
-        "link": "https://reddit.com/r/openclaw/comments/1swsfdr/need_ideas_for_ai_assistant_functions_in_real/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T03:41:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "DeepSeek V4 just dropped — and OpenClaw already made it the default model. I tested 3 real-world scenarios",
-        "link": "https://reddit.com/r/openclaw/comments/1swqvz6/deepseek_v4_just_dropped_and_openclaw_already/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T02:28:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Claude helped me create a survivable diet and I've lost 15 lbs in 7 weeks",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1swpik6/claude_helped_me_create_a_survivable_diet_and_ive/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-27T01:23:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Suddenly my app was upside down. Has this happened to anyone?",
-        "link": "https://reddit.com/r/OpenAI/comments/1swovei/suddenly_my_app_was_upside_down_has_this_happened/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-27T00:53:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Kinetix AI teases KAI its humanoid robot, featuring more DoF along its body than any humanoid robot to date, plus a hybrid dexterous hand, and 18,000 sensors distributed throughout its soft, flexible body, making it the most human-like clone so far.",
-        "link": "https://reddit.com/r/singularity/comments/1swo47m/kinetix_ai_teases_kai_its_humanoid_robot/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-27T00:18:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "ChatGPT 5.4 Solved a 64-Year-Old Math Problem",
-        "link": "https://reddit.com/r/ChatGPT/comments/1swn1bs/chatgpt_54_solved_a_64yearold_math_problem/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-26T23:29:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
-      },
-      {
-        "headline": "Is Claude Design actually useful or just hype?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1swlkp2/is_claude_design_actually_useful_or_just_hype/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-26T22:26:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-27T09:30:53.916Z",
+    "reddit_viral_generated_at": "2026-04-27T12:00:42.229Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
