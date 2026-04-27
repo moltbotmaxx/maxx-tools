@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-27T16:57:12.613Z",
+    "generated_at": "2026-04-27T18:42:34.101Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Has anyone seen an AI agent designed to be a DnD DM?",
+        "link": "https://reddit.com/r/openclaw/comments/1sxbcyg/has_anyone_seen_an_ai_agent_designed_to_be_a_dnd/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T17:57:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Differences Between GPT 5.4 and GPT 5.5 on MineBench",
+        "link": "https://reddit.com/r/singularity/comments/1sxapqb/differences_between_gpt_54_and_gpt_55_on_minebench/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-27T17:35:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Don't quit OpenClaw Setup, try these 4 things. Takes 5 minutes.",
+        "link": "https://reddit.com/r/openclaw/comments/1sxa2ws/dont_quit_openclaw_setup_try_these_4_things_takes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T17:14:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Meta’s acquisition of the AI startup Manus was blocked by China government!",
         "link": "https://reddit.com/r/openclaw/comments/1sx86p4/metas_acquisition_of_the_ai_startup_manus_was/",
@@ -379,7 +406,7 @@
         "published_at": "2026-04-27T16:08:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Anyone here running a self hosted LLM with OpenClaw (no OpenAI/Anthropic bill)?",
@@ -388,16 +415,7 @@
         "published_at": "2026-04-27T15:33:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Meta energy investments: \"Overview Energy\" laser beams energy from a satellite to solar panels 24/7 (reduced heat burden compared to space compute); Noon Energy can store energy longer than lithium-ion batteries -- 100 hours using \"modular, reversible solid oxide fuel cells and carbon-based storage\"",
-        "link": "https://reddit.com/r/singularity/comments/1sx763v/meta_energy_investments_overview_energy_laser/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-27T15:32:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "\"We're open-sourcing Asimov v1, a humanoid robot\"",
@@ -406,16 +424,7 @@
         "published_at": "2026-04-27T15:14:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "I open‑sourced a free, MIT‑licensed library of Claude prompts and I’ll send $100 as a thanks for accepted community prompt packs",
-        "link": "https://reddit.com/r/openclaw/comments/1sx6imz/i_opensourced_a_free_mitlicensed_library_of/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-27T15:09:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Is the subreddit logo off-center?",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-27T14:55:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "if 4.24 killed your gateway heres the actual fix. tested on 3 machines. takes 5 minutes",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-27T14:52:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "When your data is so bad...",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-27T13:57:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Discovered the weirdest corner of the internet last weekend, sharing in case anyone else wants to lose a Saturday",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-27T13:40:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Communication issues",
-        "link": "https://reddit.com/r/aimemes/comments/1sx3nzk/communication_issues/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-27T13:27:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-27T16:57:12.613Z",
+    "reddit_viral_generated_at": "2026-04-27T18:42:34.101Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
