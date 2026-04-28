@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-28T17:03:08.211Z",
+    "generated_at": "2026-04-28T18:53:42.268Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude Status Update : Claude.ai unavailable and elevated errors on the API on 2026-04-28T17:51:36.000Z",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sy8wmx/claude_status_update_claudeai_unavailable_and/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T17:55:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude Status Update : Claude.ai unavailable on 2026-04-28T17:41:55.000Z",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sy8k22/claude_status_update_claudeai_unavailable_on/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T17:43:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Finally Gemini can now make direct downloadable files!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sy89xe/finally_gemini_can_now_make_direct_downloadable/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-28T17:33:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Talkie: a 13B LLM trained only on pre-1931 text used Claude Sonnet to help test the model and judge its output",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sy7rry/talkie_a_13b_llm_trained_only_on_pre1931_text/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T17:16:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Nuance is possible",
         "link": "https://reddit.com/r/aimemes/comments/1sy6i9u/nuance_is_possible/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-28T16:32:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Claude + Cursor Distaster!",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-28T16:14:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "I compared Openclaw setups on a few patterns, Here is what stood out",
@@ -397,25 +433,16 @@
         "published_at": "2026-04-28T15:55:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
-        "headline": "China’s decision to block the $2 billion Meta-Manus deal shows how far Washington and Beijing are drifting apart over AI",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sy4q1w/chinas_decision_to_block_the_2_billion_metamanus/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-28T15:29:19+00:00",
+        "headline": "Claude now connects to Blender",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sy49oi/claude_now_connects_to_blender/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T15:13:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Does the AI industry know AI?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sy4ov7/does_the_ai_industry_know_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-28T15:28:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "I’m loving the resets ❤️❤️",
@@ -424,40 +451,13 @@
         "published_at": "2026-04-28T14:48:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Thousands of RobotEra L7 humanoid robots to enter service across 10+ logistics centers performing sorting tasks",
         "link": "https://reddit.com/r/singularity/comments/1sy3bne/thousands_of_robotera_l7_humanoid_robots_to_enter/",
         "subreddit": "singularity",
         "published_at": "2026-04-28T14:39:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "GPT 5.6 Coming",
-        "link": "https://reddit.com/r/OpenAI/comments/1sy2odf/gpt_56_coming/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-28T14:14:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Vibe coding a google earth flight/car simulator",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sy26k5/vibe_coding_a_google_earth_flightcar_simulator/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-28T13:56:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude has made me excited to work",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sy1hyb/claude_has_made_me_excited_to_work/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T13:29:31+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-28T17:03:08.211Z",
+    "reddit_viral_generated_at": "2026-04-28T18:53:42.268Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
