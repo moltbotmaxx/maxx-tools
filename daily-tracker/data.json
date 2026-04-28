@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-27T23:12:50.304Z",
+    "generated_at": "2026-04-28T00:08:08.435Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -380,6 +380,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Anthropic just quietly locked Opus behind a paywall-within-a-paywall for Pro users in Claude Code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sxi9mo/anthropic_just_quietly_locked_opus_behind_a/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-27T22:02:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Anthropic states Pro users can only access Opus models in Claude Code after enabling and purchasing extra usage",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-27T21:35:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "I’ll let you know if it works",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-27T19:33:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "GPT-5.5 improves over GPT-5.4 and overtakes Opus 4.6 to take the 2nd place behind Gemini 3.1 Pro on the Extended NYT Connections Benchmark",
@@ -442,32 +451,23 @@
         "published_at": "2026-04-27T18:49:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
-        "headline": "Ai is getting too realistic",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sxbgmf/ai_is_getting_too_realistic/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-27T18:01:13+00:00",
+        "headline": "Deepseek slashes API prices by up 90%, including 75% drop on v4",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sxc5pq/deepseek_slashes_api_prices_by_up_90_including_75/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-27T18:25:21+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "I used ChatGPT for a real life decision (whether to break up with my girlfriend) and it asked me a question i'd been avoiding for a year",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sxb7iw/i_used_chatgpt_for_a_real_life_decision_whether/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-27T17:52:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-27T23:12:50.304Z",
+    "reddit_viral_generated_at": "2026-04-28T00:08:08.435Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
