@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-28T12:03:15.383Z",
+    "generated_at": "2026-04-28T17:03:08.211Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "I'm tired of censorship in Nano Banana 2",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sxxo5b/im_tired_of_censorship_in_nano_banana_2/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-28T10:40:17+00:00",
+        "headline": "Nuance is possible",
+        "link": "https://reddit.com/r/aimemes/comments/1sy6i9u/nuance_is_possible/",
+        "subreddit": "aimemes",
+        "published_at": "2026-04-28T16:32:10+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "[ Removed by Reddit ]",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sxx8mc/removed_by_reddit/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T10:16:40+00:00",
+        "headline": "Claude + Cursor Distaster!",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sy601a/claude_cursor_distaster/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-28T16:14:23+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "why does GPT 5.5 have a restraining order against \"Raccoons,\" \"Goblins,\" and \"Pigeons\"?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sxwmis/why_does_gpt_55_have_a_restraining_order_against/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-28T09:43:25+00:00",
+        "headline": "I compared Openclaw setups on a few patterns, Here is what stood out",
+        "link": "https://reddit.com/r/openclaw/comments/1sy5gqm/i_compared_openclaw_setups_on_a_few_patterns_here/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-28T15:55:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "China’s decision to block the $2 billion Meta-Manus deal shows how far Washington and Beijing are drifting apart over AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sy4q1w/chinas_decision_to_block_the_2_billion_metamanus/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-28T15:29:19+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
       },
       {
-        "headline": "A hard pill to swallow about OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1sxw6cx/a_hard_pill_to_swallow_about_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T09:16:59+00:00",
+        "headline": "Does the AI industry know AI?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sy4ov7/does_the_ai_industry_know_ai/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-28T15:28:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 97
       },
       {
-        "headline": "ChatGPT image 2 is crazyy",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sxvt6y/chatgpt_image_2_is_crazyy/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-28T08:55:31+00:00",
+        "headline": "I’m loving the resets ❤️❤️",
+        "link": "https://reddit.com/r/OpenAI/comments/1sy3kq0/im_loving_the_resets/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-28T14:48:39+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
       },
       {
-        "headline": "Are we betting on the wrong kind of AI? (LLMs vs superlearners)",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sxukn4/are_we_betting_on_the_wrong_kind_of_ai_llms_vs/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-28T07:41:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "my GPT Image 2 generations",
-        "link": "https://reddit.com/r/OpenAI/comments/1sxufo0/my_gpt_image_2_generations/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-28T07:33:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "How are people using so many tokens ???",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sxq24c/how_are_people_using_so_many_tokens/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T03:39:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Talkie, a 13B LM trained exclusively on pre-1931 data",
-        "link": "https://reddit.com/r/singularity/comments/1sxp4ha/talkie_a_13b_lm_trained_exclusively_on_pre1931/",
+        "headline": "Thousands of RobotEra L7 humanoid robots to enter service across 10+ logistics centers performing sorting tasks",
+        "link": "https://reddit.com/r/singularity/comments/1sy3bne/thousands_of_robotera_l7_humanoid_robots_to_enter/",
         "subreddit": "singularity",
-        "published_at": "2026-04-28T02:56:35+00:00",
+        "published_at": "2026-04-28T14:39:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 82
+        "viral_score": 95
       },
       {
-        "headline": "Uh-Oh! PocketOS founder Jer Crane reported that a Cursor AI coding agent (powered by Anthropic’s Claude Opus 4.6) deleted their entire production database + all volume-level backups on Railway in one API call, in just 9 seconds",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sxnnzf/uhoh_pocketos_founder_jer_crane_reported_that_a/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-28T01:52:12+00:00",
+        "headline": "GPT 5.6 Coming",
+        "link": "https://reddit.com/r/OpenAI/comments/1sy2odf/gpt_56_coming/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-28T14:14:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 79
+        "viral_score": 94
+      },
+      {
+        "headline": "Vibe coding a google earth flight/car simulator",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sy26k5/vibe_coding_a_google_earth_flightcar_simulator/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-28T13:56:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Claude has made me excited to work",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sy1hyb/claude_has_made_me_excited_to_work/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T13:29:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-28T12:03:15.383Z",
+    "reddit_viral_generated_at": "2026-04-28T17:03:08.211Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
