@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-28T04:08:35.654Z",
+    "generated_at": "2026-04-28T06:46:02.255Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Grok",
+        "link": "https://reddit.com/r/OpenAI/comments/1sxrb0m/grok/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-28T04:41:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "How are people using so many tokens ???",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sxq24c/how_are_people_using_so_many_tokens/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T03:39:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Talkie, a 13B LM trained exclusively on pre-1931 data",
         "link": "https://reddit.com/r/singularity/comments/1sxp4ha/talkie_a_13b_lm_trained_exclusively_on_pre1931/",
@@ -379,7 +397,7 @@
         "published_at": "2026-04-28T02:56:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Should I make a clawdbot using OpenClaw or keep the bot I created using Claude code",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-28T02:41:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Uh-Oh! PocketOS founder Jer Crane reported that a Cursor AI coding agent (powered by Anthropic’s Claude Opus 4.6) deleted their entire production database + all volume-level backups on Railway in one API call, in just 9 seconds",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-28T01:52:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "In case you missed it, ChatGPT add-on in Excel is crazy good. One-shotted an entire 3-year cash flow model for small business plan",
@@ -406,7 +424,16 @@
         "published_at": "2026-04-28T01:03:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
+      },
+      {
+        "headline": "Opus is NOT being removed from Pro plans",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sxmjcj/opus_is_not_being_removed_from_pro_plans/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T01:02:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Guardrails derailed",
@@ -415,7 +442,16 @@
         "published_at": "2026-04-27T23:38:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
+      },
+      {
+        "headline": "Get all the Pokémon!",
+        "link": "https://reddit.com/r/openclaw/comments/1sxjaf0/get_all_the_pok%C3%A9mon/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-27T22:43:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 85
       },
       {
         "headline": "Chat GPT 5.4 solved a 60+ years unsolved erdos problems in a single shot",
@@ -424,50 +460,14 @@
         "published_at": "2026-04-27T22:29:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anthropic just quietly locked Opus behind a paywall-within-a-paywall for Pro users in Claude Code",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sxi9mo/anthropic_just_quietly_locked_opus_behind_a/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-27T22:02:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Gemini 4 supposedly coming soon?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sxhkae/gemini_4_supposedly_coming_soon/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-27T21:35:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I’ll let you know if it works",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sxexf0/ill_let_you_know_if_it_works/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-27T20:01:55+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 84
-      },
-      {
-        "headline": "If Elon Musk wins the OpenAI lawsuit… Sam Altman & others become multi-billionaires?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sxeiiy/if_elon_musk_wins_the_openai_lawsuit_sam_altman/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-27T19:48:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-28T04:08:35.654Z",
+    "reddit_viral_generated_at": "2026-04-28T06:46:02.255Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
