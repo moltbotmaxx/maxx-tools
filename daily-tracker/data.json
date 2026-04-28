@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-28T09:35:42.046Z",
+    "generated_at": "2026-04-28T12:03:15.383Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I'm tired of censorship in Nano Banana 2",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sxxo5b/im_tired_of_censorship_in_nano_banana_2/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-28T10:40:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "[ Removed by Reddit ]",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1sxx8mc/removed_by_reddit/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-28T10:16:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "why does GPT 5.5 have a restraining order against \"Raccoons,\" \"Goblins,\" and \"Pigeons\"?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sxwmis/why_does_gpt_55_have_a_restraining_order_against/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-28T09:43:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "A hard pill to swallow about OpenClaw",
         "link": "https://reddit.com/r/openclaw/comments/1sxw6cx/a_hard_pill_to_swallow_about_openclaw/",
@@ -379,7 +406,16 @@
         "published_at": "2026-04-28T09:16:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "ChatGPT image 2 is crazyy",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sxvt6y/chatgpt_image_2_is_crazyy/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-28T08:55:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Are we betting on the wrong kind of AI? (LLMs vs superlearners)",
@@ -388,34 +424,16 @@
         "published_at": "2026-04-28T07:41:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
-        "headline": "Openclaw + Ollama local",
-        "link": "https://reddit.com/r/openclaw/comments/1sxu4rw/openclaw_ollama_local/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T07:16:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "How a Rogue Agent Wiped a Startup in 9 Seconds.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sxrtvy/how_a_rogue_agent_wiped_a_startup_in_9_seconds/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-28T05:08:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Grok",
-        "link": "https://reddit.com/r/OpenAI/comments/1sxrb0m/grok/",
+        "headline": "my GPT Image 2 generations",
+        "link": "https://reddit.com/r/OpenAI/comments/1sxufo0/my_gpt_image_2_generations/",
         "subreddit": "OpenAI",
-        "published_at": "2026-04-28T04:41:00+00:00",
+        "published_at": "2026-04-28T07:33:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 92
       },
       {
         "headline": "How are people using so many tokens ???",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-28T03:39:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "Talkie, a 13B LM trained exclusively on pre-1931 data",
@@ -433,16 +451,7 @@
         "published_at": "2026-04-28T02:56:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Should I make a clawdbot using OpenClaw or keep the bot I created using Claude code",
-        "link": "https://reddit.com/r/openclaw/comments/1sxoslr/should_i_make_a_clawdbot_using_openclaw_or_keep/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T02:41:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 82
       },
       {
         "headline": "Uh-Oh! PocketOS founder Jer Crane reported that a Cursor AI coding agent (powered by Anthropic’s Claude Opus 4.6) deleted their entire production database + all volume-level backups on Railway in one API call, in just 9 seconds",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-28T01:52:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Opus is NOT being removed from Pro plans",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sxmjcj/opus_is_not_being_removed_from_pro_plans/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T01:02:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-28T09:35:42.046Z",
+    "reddit_viral_generated_at": "2026-04-28T12:03:15.383Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
