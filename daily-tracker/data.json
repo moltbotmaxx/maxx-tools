@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-29T04:04:51.591Z",
+    "generated_at": "2026-04-29T06:39:15.833Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "‘The cost of compute is far beyond the costs of the employees’: Nvidia exec says right now AI is more expensive than paying human workers",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1syp1ui/the_cost_of_compute_is_far_beyond_the_costs_of/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-29T05:01:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Has ChatGPT become more relaxed on its filters?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1syo53x/has_chatgpt_become_more_relaxed_on_its_filters/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-29T04:15:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Sketch to HTML works now",
+        "link": "https://reddit.com/r/singularity/comments/1syngeg/sketch_to_html_works_now/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-29T03:42:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Your Claude Code project dashboard is now on the Mac App Store",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1symv0c/your_claude_code_project_dashboard_is_now_on_the/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-04-29T03:13:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "OpenClaw Insider Builds the Enterprise Safety Layer the Project Never Shipped",
         "link": "https://reddit.com/r/openclaw/comments/1symfhp/openclaw_insider_builds_the_enterprise_safety/",
@@ -379,7 +415,7 @@
         "published_at": "2026-04-29T02:53:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "What’s the actual use case for OpenClaw vs Claude Code or Codex?",
@@ -388,7 +424,25 @@
         "published_at": "2026-04-29T01:55:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
+      },
+      {
+        "headline": "Can anyone guess which is Nano Banana and which is GPT Image 2, and which is better?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1syktnf/can_anyone_guess_which_is_nano_banana_and_which/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-29T01:41:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "Choose your Ai girl.😋",
+        "link": "https://reddit.com/r/GeminiAI/comments/1syjwwo/choose_your_ai_girl/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-29T01:00:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Opus 4.7 is just 4.6 with a stick up its butt. Give me my tokens back!",
@@ -397,7 +451,7 @@
         "published_at": "2026-04-29T00:06:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Dall E 3 vs Image 2.0",
@@ -406,68 +460,14 @@
         "published_at": "2026-04-28T23:57:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "How are you handling tool-calling degradation at 50+ skills?",
-        "link": "https://reddit.com/r/openclaw/comments/1syhsja/how_are_you_handling_toolcalling_degradation_at/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T23:26:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "An IBM training manual from 1979.",
-        "link": "https://reddit.com/r/singularity/comments/1syh22p/an_ibm_training_manual_from_1979/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-28T22:55:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I spent 3 weeks trying to replace Open-Claw. The better setup was Open-Claw + Hermes.",
-        "link": "https://reddit.com/r/openclaw/comments/1syfmgf/i_spent_3_weeks_trying_to_replace_openclaw_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T21:57:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Image Gen guardrails loose today!",
-        "link": "https://reddit.com/r/ChatGPT/comments/1syfb3f/image_gen_guardrails_loose_today/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-28T21:44:58+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "How do you connect to your OpenClaw Agent?",
-        "link": "https://reddit.com/r/openclaw/comments/1syf0du/how_do_you_connect_to_your_openclaw_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T21:33:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Is ham safe? (Can perfectly normal image requests trigger protections?)",
-        "link": "https://reddit.com/r/ChatGPT/comments/1sydudz/is_ham_safe_can_perfectly_normal_image_requests/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-28T20:50:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-29T04:04:51.591Z",
+    "reddit_viral_generated_at": "2026-04-29T06:39:15.833Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
