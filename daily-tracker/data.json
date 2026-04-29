@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-29T22:12:33.295Z",
+    "generated_at": "2026-04-29T23:12:24.390Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "OpenAI GPT5.4-mini - OAuth",
-        "link": "https://reddit.com/r/openclaw/comments/1szd0ea/openai_gpt54mini_oauth/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-29T21:58:15+00:00",
+        "headline": "Is it just me who feels that Gemini has been acting very dumb lately?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1szd66g/is_it_just_me_who_feels_that_gemini_has_been/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-29T22:04:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "OpenAI really really really wants GPT 5.5 to stop randomly talking about gremlins and goblins",
+        "link": "https://reddit.com/r/OpenAI/comments/1szc8h1/openai_really_really_really_wants_gpt_55_to_stop/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-29T21:27:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "You can now easily generate files in Gemini.",
@@ -400,24 +409,6 @@
         "viral_score": 96
       },
       {
-        "headline": "Just looking into …",
-        "link": "https://reddit.com/r/openclaw/comments/1sz9e2z/just_looking_into/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-29T19:43:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "How to keep Gemini chats totally secure when talking about app or company ideas",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sz98xr/how_to_keep_gemini_chats_totally_secure_when/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-29T19:37:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
         "headline": "Nvidia VP Says AI Costs ‘Far’ More Than Human Employees",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1sz956j/nvidia_vp_says_ai_costs_far_more_than_human/",
         "subreddit": "ArtificialInteligence",
@@ -427,19 +418,37 @@
         "viral_score": 94
       },
       {
-        "headline": "Is gemini right about originality?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sz7kkj/is_gemini_right_about_originality/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-29T18:38:55+00:00",
+        "headline": "AIs are weird lil alien minds",
+        "link": "https://reddit.com/r/OpenAI/comments/1sz93kf/ais_are_weird_lil_alien_minds/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-29T19:32:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Parameter Estimate",
+        "link": "https://reddit.com/r/OpenAI/comments/1sz8f5v/parameter_estimate/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-04-29T19:08:17+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
       },
       {
-        "headline": "Need help to set an agent",
-        "link": "https://reddit.com/r/openclaw/comments/1sz7eow/need_help_to_set_an_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-29T18:33:16+00:00",
+        "headline": "Jeremy Clarkson ruins all your favourite band photos",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sz8565/jeremy_clarkson_ruins_all_your_favourite_band/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-29T18:58:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Is gemini right about originality?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sz7kkj/is_gemini_right_about_originality/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-29T18:38:55+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -451,23 +460,14 @@
         "published_at": "2026-04-29T17:52:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Seeking real experience: OpenClaw limits on $200/mo ChatGPT Pro account",
-        "link": "https://reddit.com/r/openclaw/comments/1sz4tgx/seeking_real_experience_openclaw_limits_on_200mo/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-29T17:03:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-29T22:12:33.295Z",
+    "reddit_viral_generated_at": "2026-04-29T23:12:24.390Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
