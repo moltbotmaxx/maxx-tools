@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-29T20:36:10.446Z",
+    "generated_at": "2026-04-29T22:12:33.295Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenAI GPT5.4-mini - OAuth",
+        "link": "https://reddit.com/r/openclaw/comments/1szd0ea/openai_gpt54mini_oauth/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-29T21:58:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "You can now easily generate files in Gemini.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1szc24d/you_can_now_easily_generate_files_in_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-29T21:21:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Why are Americans so afraid of AI?",
         "link": "https://reddit.com/r/openclaw/comments/1szaiic/why_are_americans_so_afraid_of_ai/",
@@ -379,7 +397,25 @@
         "published_at": "2026-04-29T20:23:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Just looking into …",
+        "link": "https://reddit.com/r/openclaw/comments/1sz9e2z/just_looking_into/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-29T19:43:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "How to keep Gemini chats totally secure when talking about app or company ideas",
+        "link": "https://reddit.com/r/GeminiAI/comments/1sz98xr/how_to_keep_gemini_chats_totally_secure_when/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-04-29T19:37:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Nvidia VP Says AI Costs ‘Far’ More Than Human Employees",
@@ -388,7 +424,7 @@
         "published_at": "2026-04-29T19:34:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Is gemini right about originality?",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-29T18:38:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Need help to set an agent",
@@ -406,7 +442,7 @@
         "published_at": "2026-04-29T18:33:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Thanks for the advice Claude",
@@ -415,25 +451,7 @@
         "published_at": "2026-04-29T17:52:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Claude picked the moral high ground in the red button/blue button vote",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sz5md9/claude_picked_the_moral_high_ground_in_the_red/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-29T17:31:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude kicked me out",
-        "link": "https://reddit.com/r/openclaw/comments/1sz5m0m/claude_kicked_me_out/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-29T17:31:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Seeking real experience: OpenClaw limits on $200/mo ChatGPT Pro account",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-29T17:03:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Rumor: DeepSeek and Kimi are merging. While the US AI sector sues itself, China is consolidating.",
-        "link": "https://reddit.com/r/OpenAI/comments/1sz4jea/rumor_deepseek_and_kimi_are_merging_while_the_us/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-04-29T16:54:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Figure AI hits 24x production scale, producing 1 robot per hour, teases its fleet",
-        "link": "https://reddit.com/r/singularity/comments/1sz3sdg/figure_ai_hits_24x_production_scale_producing_1/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-29T16:26:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-29T20:36:10.446Z",
+    "reddit_viral_generated_at": "2026-04-29T22:12:33.295Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
