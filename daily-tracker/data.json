@@ -367,19 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-28T23:11:59.003Z",
+    "generated_at": "2026-04-29T00:09:20.314Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Your Claude Code project dashboard is now on the Mac App Store",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1syfl97/your_claude_code_project_dashboard_is_now_on_the/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T21:56:14+00:00",
+        "headline": "How are you handling tool-calling degradation at 50+ skills?",
+        "link": "https://reddit.com/r/openclaw/comments/1syhsja/how_are_you_handling_toolcalling_degradation_at/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-28T23:26:24+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Buyer Beware minimax.",
+        "link": "https://reddit.com/r/openclaw/comments/1syhq3w/buyer_beware_minimax/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-28T23:23:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "An IBM training manual from 1979.",
+        "link": "https://reddit.com/r/singularity/comments/1syh22p/an_ibm_training_manual_from_1979/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-28T22:55:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "ai employees are dumber than they should be",
+        "link": "https://reddit.com/r/openclaw/comments/1sygujk/ai_employees_are_dumber_than_they_should_be/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-28T22:46:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I spent 3 weeks trying to replace Open-Claw. The better setup was Open-Claw + Hermes.",
+        "link": "https://reddit.com/r/openclaw/comments/1syfmgf/i_spent_3_weeks_trying_to_replace_openclaw_the/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-28T21:57:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Image Gen guardrails loose today!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1syfb3f/image_gen_guardrails_loose_today/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-28T21:44:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "How do you connect to your OpenClaw Agent?",
@@ -388,7 +433,7 @@
         "published_at": "2026-04-28T21:33:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Is ham safe? (Can perfectly normal image requests trigger protections?)",
@@ -397,16 +442,7 @@
         "published_at": "2026-04-28T20:50:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Mac mini M4 Pro 64GB (1TB) vs +$600 for Mac Studio M4 Max 64GB (1TB)",
-        "link": "https://reddit.com/r/openclaw/comments/1sydehg/mac_mini_m4_pro_64gb_1tb_vs_600_for_mac_studio_m4/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-28T20:34:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "The sweetness of AI",
@@ -415,49 +451,13 @@
         "published_at": "2026-04-28T19:07:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude Status Update : Claude.ai unavailable on 2026-04-28T17:41:55.000Z",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sy8k22/claude_status_update_claudeai_unavailable_on/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T17:43:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Finally Gemini can now make direct downloadable files!",
         "link": "https://reddit.com/r/GeminiAI/comments/1sy89xe/finally_gemini_can_now_make_direct_downloadable/",
         "subreddit": "GeminiAI",
         "published_at": "2026-04-28T17:33:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Talkie: a 13B LLM trained only on pre-1931 text used Claude Sonnet to help test the model and judge its output",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sy7rry/talkie_a_13b_llm_trained_only_on_pre1931_text/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-28T17:16:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Nuance is possible",
-        "link": "https://reddit.com/r/aimemes/comments/1sy6i9u/nuance_is_possible/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-28T16:32:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Claude + Cursor Distaster!",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1sy601a/claude_cursor_distaster/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-28T16:14:23+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 86
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-28T23:11:59.003Z",
+    "reddit_viral_generated_at": "2026-04-29T00:09:20.314Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
