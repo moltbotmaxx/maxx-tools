@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-29T23:12:24.390Z",
+    "generated_at": "2026-04-30T00:09:03.293Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Asked chat to draw a photo of my cat and me",
+        "link": "https://reddit.com/r/ChatGPT/comments/1sze3ds/asked_chat_to_draw_a_photo_of_my_cat_and_me/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-29T22:41:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Is it just me who feels that Gemini has been acting very dumb lately?",
         "link": "https://reddit.com/r/GeminiAI/comments/1szd66g/is_it_just_me_who_feels_that_gemini_has_been/",
@@ -379,7 +388,7 @@
         "published_at": "2026-04-29T22:04:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "OpenAI really really really wants GPT 5.5 to stop randomly talking about gremlins and goblins",
@@ -388,7 +397,7 @@
         "published_at": "2026-04-29T21:27:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "You can now easily generate files in Gemini.",
@@ -397,7 +406,7 @@
         "published_at": "2026-04-29T21:21:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Why are Americans so afraid of AI?",
@@ -406,7 +415,7 @@
         "published_at": "2026-04-29T20:23:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Nvidia VP Says AI Costs ‘Far’ More Than Human Employees",
@@ -415,7 +424,7 @@
         "published_at": "2026-04-29T19:34:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "AIs are weird lil alien minds",
@@ -424,7 +433,7 @@
         "published_at": "2026-04-29T19:32:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Parameter Estimate",
@@ -433,7 +442,7 @@
         "published_at": "2026-04-29T19:08:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Jeremy Clarkson ruins all your favourite band photos",
@@ -442,16 +451,7 @@
         "published_at": "2026-04-29T18:58:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Is gemini right about originality?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1sz7kkj/is_gemini_right_about_originality/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-29T18:38:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Thanks for the advice Claude",
@@ -460,14 +460,14 @@
         "published_at": "2026-04-29T17:52:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-29T23:12:24.390Z",
+    "reddit_viral_generated_at": "2026-04-30T00:09:03.293Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
