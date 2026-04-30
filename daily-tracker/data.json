@@ -367,28 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-30T14:25:35.332Z",
+    "generated_at": "2026-04-30T16:49:21.481Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Why my telegram chat (any chat) is not smooth? slow?",
-        "link": "https://reddit.com/r/openclaw/comments/1szwji7/why_my_telegram_chat_any_chat_is_not_smooth_slow/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T13:45:30+00:00",
+        "headline": "Is the 'AI Phone' the most expensive delusion in tech history?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t01g1n/is_the_ai_phone_the_most_expensive_delusion_in/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-30T16:32:59+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Triggering Openclaw Job by Email",
-        "link": "https://reddit.com/r/openclaw/comments/1szw5eb/triggering_openclaw_job_by_email/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T13:30:14+00:00",
+        "headline": "Claude Mythos supports Image outputs - Anthropic's first image gen model",
+        "link": "https://reddit.com/r/singularity/comments/1szzz9e/claude_mythos_supports_image_outputs_anthropics/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-30T15:42:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "Spent months deep in OpenClaw configuration hell. Then I switched to Perplexity Computer. Just writing down my experience below.",
+        "link": "https://reddit.com/r/openclaw/comments/1szy0ll/spent_months_deep_in_openclaw_configuration_hell/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T14:40:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Tried an Android GUI agent project that feels a bit like OpenClaw for phones",
+        "link": "https://reddit.com/r/openclaw/comments/1szxr89/tried_an_android_gui_agent_project_that_feels_a/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T14:31:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "ChatGPT: “Stop trying to skirt my guidelines”",
+        "link": "https://reddit.com/r/ChatGPT/comments/1szwtvq/chatgpt_stop_trying_to_skirt_my_guidelines/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-30T13:56:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Welcome to the future",
@@ -397,7 +424,25 @@
         "published_at": "2026-04-30T13:19:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
+      },
+      {
+        "headline": "\"Generate a website screenshot from the year 1000\"",
+        "link": "https://reddit.com/r/ChatGPT/comments/1szvtvz/generate_a_website_screenshot_from_the_year_1000/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-30T13:17:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "A short story. I'm liking the new image generation.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1szvl0j/a_short_story_im_liking_the_new_image_generation/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-30T13:07:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Me clicking \"accept all\" on 22,469 Claude Code changes without reading a single one",
@@ -406,7 +451,7 @@
         "published_at": "2026-04-30T13:05:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "this is actually sad",
@@ -415,59 +460,14 @@
         "published_at": "2026-04-30T13:03:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Open opportunities to contribute in openclaw right now - two bugs biting people in production, two features the community's been asking for",
-        "link": "https://reddit.com/r/openclaw/comments/1szv7it/open_opportunities_to_contribute_in_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T12:51:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Justice for the Goblins #SaveTheGoblins",
-        "link": "https://reddit.com/r/singularity/comments/1szuh87/justice_for_the_goblins_savethegoblins/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-30T12:20:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "the 4.26 coding-agent bug breaks agents that dont use openai. the 4.24 postinstall deleted 1617 files. 4.14 broke lossless claw. when does the update cycle stop being a gamble",
-        "link": "https://reddit.com/r/openclaw/comments/1sztqiv/the_426_codingagent_bug_breaks_agents_that_dont/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T11:46:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Claude said it needs to rest.. What?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1sztk86/claude_said_it_needs_to_rest_what/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-30T11:38:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "And every time you think this one will go unnoticed...",
-        "link": "https://reddit.com/r/aimemes/comments/1szt53q/and_every_time_you_think_this_one_will_go/",
-        "subreddit": "aimemes",
-        "published_at": "2026-04-30T11:18:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-30T14:25:35.332Z",
+    "reddit_viral_generated_at": "2026-04-30T16:49:21.481Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
