@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-30T16:49:21.481Z",
+    "generated_at": "2026-04-30T18:47:01.781Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT5.5 slightly outperformed Mythos on a multi-step cyber-attack simulation. One challenge that took a human expert 12 hrs took GPT-5.5 only 11 min at a $1.73 cost",
+        "link": "https://reddit.com/r/singularity/comments/1t02oxw/gpt55_slightly_outperformed_mythos_on_a_multistep/",
+        "subreddit": "singularity",
+        "published_at": "2026-04-30T17:17:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Reality check about using qwen3:8b running locally as my main model",
+        "link": "https://reddit.com/r/openclaw/comments/1t01ut0/reality_check_about_using_qwen38b_running_locally/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T16:47:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Is the 'AI Phone' the most expensive delusion in tech history?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1t01g1n/is_the_ai_phone_the_most_expensive_delusion_in/",
@@ -379,7 +397,16 @@
         "published_at": "2026-04-30T16:32:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Best cloud providor for deepseek v4 flash (compute based)?",
+        "link": "https://reddit.com/r/openclaw/comments/1t00fha/best_cloud_providor_for_deepseek_v4_flash_compute/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T15:57:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Claude Mythos supports Image outputs - Anthropic's first image gen model",
@@ -388,7 +415,16 @@
         "published_at": "2026-04-30T15:42:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
+      },
+      {
+        "headline": "Imagine a real photographer taking a photo when Columbus meets the natives.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1szyf91/imagine_a_real_photographer_taking_a_photo_when/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-04-30T14:55:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Spent months deep in OpenClaw configuration hell. Then I switched to Perplexity Computer. Just writing down my experience below.",
@@ -397,7 +433,7 @@
         "published_at": "2026-04-30T14:40:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Tried an Android GUI agent project that feels a bit like OpenClaw for phones",
@@ -406,16 +442,7 @@
         "published_at": "2026-04-30T14:31:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "ChatGPT: “Stop trying to skirt my guidelines”",
-        "link": "https://reddit.com/r/ChatGPT/comments/1szwtvq/chatgpt_stop_trying_to_skirt_my_guidelines/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-30T13:56:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Welcome to the future",
@@ -424,7 +451,7 @@
         "published_at": "2026-04-30T13:19:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "\"Generate a website screenshot from the year 1000\"",
@@ -433,41 +460,14 @@
         "published_at": "2026-04-30T13:17:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "A short story. I'm liking the new image generation.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1szvl0j/a_short_story_im_liking_the_new_image_generation/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-30T13:07:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Me clicking \"accept all\" on 22,469 Claude Code changes without reading a single one",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1szvjde/me_clicking_accept_all_on_22469_claude_code/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-30T13:05:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "this is actually sad",
-        "link": "https://reddit.com/r/GeminiAI/comments/1szvhfj/this_is_actually_sad/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-04-30T13:03:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-30T16:49:21.481Z",
+    "reddit_viral_generated_at": "2026-04-30T18:47:01.781Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
