@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-30T20:35:25.165Z",
+    "generated_at": "2026-04-30T22:11:20.117Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Looking for local model recommendations for Mac Mini M1 16GB — using LM Studio or Ollama",
-        "link": "https://reddit.com/r/openclaw/comments/1t086a3/looking_for_local_model_recommendations_for_mac/",
+        "headline": "The OpenClaw Survey: Does your country of origin affect your perspective on OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1t0akk4/the_openclaw_survey_does_your_country_of_origin/",
         "subreddit": "openclaw",
-        "published_at": "2026-04-30T20:33:52+00:00",
+        "published_at": "2026-04-30T22:06:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "AI Is The Greatest Resource In Human History, And Most People Are Choosing To Ignore It.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t09rsh/ai_is_the_greatest_resource_in_human_history_and/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-30T21:34:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "GPT-5.5 achieves superior CyberSecurity performance to Mythos",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t07mwz/gpt55_achieves_superior_cybersecurity_performance/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-04-30T20:14:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "The AI gold rush is benefitting the company that makes literal picks and shovels",
@@ -388,7 +406,7 @@
         "published_at": "2026-04-30T20:08:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Meu openclaw parou não consigo nem reniciar",
@@ -397,7 +415,7 @@
         "published_at": "2026-04-30T18:55:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "GPT5.5 slightly outperformed Mythos on a multi-step cyber-attack simulation. One challenge that took a human expert 12 hrs took GPT-5.5 only 11 min at a $1.73 cost",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-30T17:17:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Reality check about using qwen3:8b running locally as my main model",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-30T16:47:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Is the 'AI Phone' the most expensive delusion in tech history?",
@@ -424,16 +442,7 @@
         "published_at": "2026-04-30T16:32:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude Mythos supports Image outputs - Anthropic's first image gen model",
-        "link": "https://reddit.com/r/singularity/comments/1szzz9e/claude_mythos_supports_image_outputs_anthropics/",
-        "subreddit": "singularity",
-        "published_at": "2026-04-30T15:42:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "Dear Claude",
@@ -442,7 +451,7 @@
         "published_at": "2026-04-30T15:17:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       },
       {
         "headline": "Imagine a real photographer taking a photo when Columbus meets the natives.",
@@ -451,23 +460,14 @@
         "published_at": "2026-04-30T14:55:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Spent months deep in OpenClaw configuration hell. Then I switched to Perplexity Computer. Just writing down my experience below.",
-        "link": "https://reddit.com/r/openclaw/comments/1szy0ll/spent_months_deep_in_openclaw_configuration_hell/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T14:40:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-30T20:35:25.165Z",
+    "reddit_viral_generated_at": "2026-04-30T22:11:20.117Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
