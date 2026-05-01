@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T13:56:12.155Z",
+    "generated_at": "2026-05-01T15:17:29.016Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Copilot D:",
+        "link": "https://reddit.com/r/aimemes/comments/1t0w6qd/copilot_d/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-01T15:11:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "the bungers :D",
+        "link": "https://reddit.com/r/aimemes/comments/1t0vt5m/the_bungers_d/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-01T14:58:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "My dream of a fully generative game is getting pretty close to possible now. I made a demo where you can prompt any spell and fight online.",
+        "link": "https://reddit.com/r/singularity/comments/1t0ull1/my_dream_of_a_fully_generative_game_is_getting/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-01T14:13:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "At the trial, Elon wouldn't shut up about AI killing us all, so the judge banned the topic of extinction",
         "link": "https://reddit.com/r/OpenAI/comments/1t0t6wl/at_the_trial_elon_wouldnt_shut_up_about_ai/",
@@ -379,7 +406,16 @@
         "published_at": "2026-05-01T13:17:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Opus 4.7",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t0t47t/opus_47/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-01T13:14:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Crazy that we’re still so early… and this is what “early” looks like",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-01T12:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "It took 3 minutes to say hi with v2026.4.29",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-01T12:00:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "When will there be a new Gemini Version?",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-01T11:00:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "GPT Image 2 prompt that is viral right now: \"Redraw the attached image in the most clumsy, scribbly, and utterly pathetic way possible. Use a white background, and make it look like it was drawn in MS Paint with a mouse.\"",
@@ -415,16 +451,7 @@
         "published_at": "2026-05-01T10:50:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Best AI for documents",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t0pxxr/best_ai_for_documents/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-01T10:49:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "I need to run OpenClaw locally for a law office, I can spend as much money as needed. What model(s) are best?",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-01T09:54:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "AI Outperforms ER Doctors in Diagnostic Cases, Study Points to Collaborative Care",
-        "link": "https://reddit.com/r/singularity/comments/1t0o0pr/ai_outperforms_er_doctors_in_diagnostic_cases/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-01T09:02:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "fr tho, they think we dumb?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t0nt8r/fr_tho_they_think_we_dumb/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-01T08:50:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Chinese court rules it illegal to replace human workers with AI",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t0njp9/chinese_court_rules_it_illegal_to_replace_human/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-01T08:34:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T13:56:12.155Z",
+    "reddit_viral_generated_at": "2026-05-01T15:17:29.016Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
