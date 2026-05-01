@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T19:41:25.059Z",
+    "generated_at": "2026-05-01T21:09:13.466Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam Altman No Longer Believes In Universal Basic Income",
+        "link": "https://reddit.com/r/singularity/comments/1t14fpg/sam_altman_no_longer_believes_in_universal_basic/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-01T20:08:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Cyberpunk 1950. A fun thing to do, imagining games with different settings.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t13jky/cyberpunk_1950_a_fun_thing_to_do_imagining_games/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-01T19:35:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": ".4.29 Claw taking 3 minutes to answer. - Temporary FIX",
         "link": "https://reddit.com/r/openclaw/comments/1t12ltg/429_claw_taking_3_minutes_to_answer_temporary_fix/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-01T19:01:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I accidentally burned ~$6,000 of Claude usage overnight with one command.",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-01T18:26:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Gemini after Google invested massively in Claude",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-01T17:42:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "The idiot developers at openclaw blew another release!",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-01T17:05:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "OK Google. (there was no image attached)",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-01T16:12:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "claude.md files in apple’s support app.",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-01T15:17:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Copilot D:",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-01T15:11:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "There was no image attached",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-01T15:08:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "the bungers :D",
-        "link": "https://reddit.com/r/aimemes/comments/1t0vt5m/the_bungers_d/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-01T14:58:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "My dream of a fully generative game is getting pretty close to possible now. I made a demo where you can prompt any spell and fight online.",
-        "link": "https://reddit.com/r/singularity/comments/1t0ull1/my_dream_of_a_fully_generative_game_is_getting/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-01T14:13:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T19:41:25.059Z",
+    "reddit_viral_generated_at": "2026-05-01T21:09:13.466Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
