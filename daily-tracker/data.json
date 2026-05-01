@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T16:13:55.315Z",
+    "generated_at": "2026-05-01T17:15:51.179Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OK Google. (there was no image attached)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t0xw1v/ok_google_there_was_no_image_attached/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-01T16:12:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "claude.md files in apple’s support app.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1t0wch0/claudemd_files_in_apples_support_app/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-01T15:17:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Copilot D:",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-01T15:11:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "There was no image attached",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-01T15:08:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "the bungers :D",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-01T14:58:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "What used to be my learning buddy is gone",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-01T14:19:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "My dream of a fully generative game is getting pretty close to possible now. I made a demo where you can prompt any spell and fight online.",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-01T14:13:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "At the trial, Elon wouldn't shut up about AI killing us all, so the judge banned the topic of extinction",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-01T13:17:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Opus 4.7",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-01T13:14:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Crazy that we’re still so early… and this is what “early” looks like",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-01T12:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "It took 3 minutes to say hi with v2026.4.29",
-        "link": "https://reddit.com/r/openclaw/comments/1t0ree0/it_took_3_minutes_to_say_hi_with_v2026429/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T12:00:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T16:13:55.315Z",
+    "reddit_viral_generated_at": "2026-05-01T17:15:51.179Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
