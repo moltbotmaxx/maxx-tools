@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T04:31:20.385Z",
+    "generated_at": "2026-05-01T07:38:40.503Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Major Bug in 2026.4.29",
+        "link": "https://reddit.com/r/openclaw/comments/1t0kf9q/major_bug_in_2026429/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-01T05:38:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini 3.1 is getting worse, they keep silently quantizing these models I'm sure of it by now. 3.0 was excellent at launch, then grew very dumb, 3.1 was kind of better, now it's a disaster.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t0jio6/gemini_31_is_getting_worse_they_keep_silently/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-01T04:52:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "At what point do we consider OpenClaw's \"regression\" problem intentional?",
+        "link": "https://reddit.com/r/openclaw/comments/1t0jdud/at_what_point_do_we_consider_openclaws_regression/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-01T04:45:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Elon Musk confirms xAI \"partly\" distilled OpenAI’s models to train Grok",
         "link": "https://reddit.com/r/singularity/comments/1t0i9ve/elon_musk_confirms_xai_partly_distilled_openais/",
@@ -379,16 +406,16 @@
         "published_at": "2026-05-01T03:50:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
-        "headline": "Screenshot from OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1t0h4yh/screenshot_from_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T02:54:50+00:00",
+        "headline": "Gemini \"personal intelligence\" idiocy",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t0i82n/gemini_personal_intelligence_idiocy/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-01T03:47:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Asked ChatGPT to visualize a horizontal integral. It gave me a dog.",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-01T02:33:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Asked ChatGPT to visualize a horizontal integral. It gave me a dog. [LINK IN POST]",
@@ -406,25 +433,25 @@
         "published_at": "2026-05-01T02:29:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
-        "headline": "Sick of workarounds for AI agents that lie about being alive",
-        "link": "https://reddit.com/r/openclaw/comments/1t0g2m1/sick_of_workarounds_for_ai_agents_that_lie_about/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T02:06:26+00:00",
+        "headline": "Generated a complete photo from two photos we took",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t0g4od/generated_a_complete_photo_from_two_photos_we_took/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-01T02:09:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
-        "headline": "Running OpenClaw on a Raspberry Pi Model B (Free APIs, Surprisingly Stable)",
-        "link": "https://reddit.com/r/openclaw/comments/1t0g1bm/running_openclaw_on_a_raspberry_pi_model_b_free/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T02:04:51+00:00",
+        "headline": "Opus 4.7 is a genuine regression and I'm tired of pretending it isn't",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t0ffze/opus_47_is_a_genuine_regression_and_im_tired_of/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-01T01:37:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Single User vLLM vs Ollama vs …",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-01T00:48:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic's Head of Product: Anthropic's Head of Product (summary here), she is stating that \"The timelines for a lot of our product features have gone down from six month to one month and sometimes to even one day\"",
-        "link": "https://reddit.com/r/singularity/comments/1t0e97a/anthropics_head_of_product_anthropics_head_of/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-01T00:43:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Openclaw 4.29 broke my system today!",
-        "link": "https://reddit.com/r/openclaw/comments/1t0d6jz/openclaw_429_broke_my_system_today/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T23:56:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Which AI provider and model should a complete beginner start with (to keep costs low)?",
-        "link": "https://reddit.com/r/openclaw/comments/1t0cot3/which_ai_provider_and_model_should_a_complete/",
-        "subreddit": "openclaw",
-        "published_at": "2026-04-30T23:34:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T04:31:20.385Z",
+    "reddit_viral_generated_at": "2026-05-01T07:38:40.503Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
