@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T22:07:32.395Z",
+    "generated_at": "2026-05-01T23:09:45.638Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,6 +391,15 @@
         "viral_score": 100
       },
       {
+        "headline": "I didn’t attach an image",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t156qo/i_didnt_attach_an_image/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-01T20:36:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "Sam Altman No Longer Believes In Universal Basic Income",
         "link": "https://reddit.com/r/singularity/comments/1t14fpg/sam_altman_no_longer_believes_in_universal_basic/",
         "subreddit": "singularity",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-01T19:35:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": ".4.29 Claw taking 3 minutes to answer. - Temporary FIX",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-01T18:26:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Gemini after Google invested massively in Claude",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 86
-      },
-      {
-        "headline": "claude.md files in apple’s support app.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t0wch0/claudemd_files_in_apples_support_app/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-01T15:17:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T22:07:32.395Z",
+    "reddit_viral_generated_at": "2026-05-01T23:09:45.638Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
