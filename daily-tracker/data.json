@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T15:17:29.016Z",
+    "generated_at": "2026-05-01T16:13:55.315Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "claude.md files in apple’s support app.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t0wch0/claudemd_files_in_apples_support_app/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-01T15:17:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Copilot D:",
         "link": "https://reddit.com/r/aimemes/comments/1t0w6qd/copilot_d/",
@@ -380,6 +389,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "There was no image attached",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t0w348/there_was_no_image_attached/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-01T15:08:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "the bungers :D",
@@ -391,13 +409,22 @@
         "viral_score": 99
       },
       {
+        "headline": "What used to be my learning buddy is gone",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t0urs3/what_used_to_be_my_learning_buddy_is_gone/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-01T14:19:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "My dream of a fully generative game is getting pretty close to possible now. I made a demo where you can prompt any spell and fight online.",
         "link": "https://reddit.com/r/singularity/comments/1t0ull1/my_dream_of_a_fully_generative_game_is_getting/",
         "subreddit": "singularity",
         "published_at": "2026-05-01T14:13:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "At the trial, Elon wouldn't shut up about AI killing us all, so the judge banned the topic of extinction",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-01T13:17:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Opus 4.7",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-01T13:14:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Crazy that we’re still so early… and this is what “early” looks like",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-01T12:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "It took 3 minutes to say hi with v2026.4.29",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-01T12:00:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "When will there be a new Gemini Version?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t0q5ak/when_will_there_be_a_new_gemini_version/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-01T11:00:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "GPT Image 2 prompt that is viral right now: \"Redraw the attached image in the most clumsy, scribbly, and utterly pathetic way possible. Use a white background, and make it look like it was drawn in MS Paint with a mouse.\"",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t0pyb4/gpt_image_2_prompt_that_is_viral_right_now_redraw/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-01T10:50:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I need to run OpenClaw locally for a law office, I can spend as much money as needed. What model(s) are best?",
-        "link": "https://reddit.com/r/openclaw/comments/1t0owx1/i_need_to_run_openclaw_locally_for_a_law_office_i/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T09:54:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T15:17:29.016Z",
+    "reddit_viral_generated_at": "2026-05-01T16:13:55.315Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
