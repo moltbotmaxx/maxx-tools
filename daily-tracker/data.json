@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-04-30T23:12:10.240Z",
+    "generated_at": "2026-05-01T00:08:07.451Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Openclaw 4.29 broke my system today!",
+        "link": "https://reddit.com/r/openclaw/comments/1t0d6jz/openclaw_429_broke_my_system_today/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T23:56:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "How OpenClaw Got Safer in Public — OpenClaw Blog",
         "link": "https://reddit.com/r/openclaw/comments/1t0b3i5/how_openclaw_got_safer_in_public_openclaw_blog/",
@@ -379,13 +388,22 @@
         "published_at": "2026-04-30T22:27:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
-        "headline": "GPT-5.5 achieves superior CyberSecurity performance to Mythos",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t07mwz/gpt55_achieves_superior_cybersecurity_performance/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-04-30T20:14:50+00:00",
+        "headline": "Is NemoClaw actually a game-changer for local agents, or just more Nvidia hype?",
+        "link": "https://reddit.com/r/openclaw/comments/1t0aevp/is_nemoclaw_actually_a_gamechanger_for_local/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T22:00:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "ACP Agents in discord always re-use the same session",
+        "link": "https://reddit.com/r/openclaw/comments/1t0a8aw/acp_agents_in_discord_always_reuse_the_same/",
+        "subreddit": "openclaw",
+        "published_at": "2026-04-30T21:52:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
@@ -397,7 +415,7 @@
         "published_at": "2026-04-30T20:08:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Anthropic: World is not ready for Mythos. Systems will break, Cybersecurity will be compromised. Its too dangerous to release. OpenAI:",
@@ -406,7 +424,7 @@
         "published_at": "2026-04-30T19:55:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Meu openclaw parou não consigo nem reniciar",
@@ -415,7 +433,7 @@
         "published_at": "2026-04-30T18:55:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "GPT5.5 slightly outperformed Mythos on a multi-step cyber-attack simulation. One challenge that took a human expert 12 hrs took GPT-5.5 only 11 min at a $1.73 cost",
@@ -424,7 +442,7 @@
         "published_at": "2026-04-30T17:17:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "Reality check about using qwen3:8b running locally as my main model",
@@ -433,7 +451,7 @@
         "published_at": "2026-04-30T16:47:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 83
       },
       {
         "headline": "Is the 'AI Phone' the most expensive delusion in tech history?",
@@ -442,32 +460,14 @@
         "published_at": "2026-04-30T16:32:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Dear Claude",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1szz3ea/dear_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-04-30T15:17:39+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 83
-      },
-      {
-        "headline": "Imagine a real photographer taking a photo when Columbus meets the natives.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1szyf91/imagine_a_real_photographer_taking_a_photo_when/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-04-30T14:55:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-04-30T23:12:10.240Z",
+    "reddit_viral_generated_at": "2026-05-01T00:08:07.451Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
