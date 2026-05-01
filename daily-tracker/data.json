@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T09:58:36.637Z",
+    "generated_at": "2026-05-01T11:33:54.758Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT Image 2 prompt that is viral right now: \"Redraw the attached image in the most clumsy, scribbly, and utterly pathetic way possible. Use a white background, and make it look like it was drawn in MS Paint with a mouse.\"",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t0pyb4/gpt_image_2_prompt_that_is_viral_right_now_redraw/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-01T10:50:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I need to run OpenClaw locally for a law office, I can spend as much money as needed. What model(s) are best?",
+        "link": "https://reddit.com/r/openclaw/comments/1t0owx1/i_need_to_run_openclaw_locally_for_a_law_office_i/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-01T09:54:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "AI Outperforms ER Doctors in Diagnostic Cases, Study Points to Collaborative Care",
+        "link": "https://reddit.com/r/singularity/comments/1t0o0pr/ai_outperforms_er_doctors_in_diagnostic_cases/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-01T09:02:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "fr tho, they think we dumb?",
         "link": "https://reddit.com/r/ChatGPT/comments/1t0nt8r/fr_tho_they_think_we_dumb/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-01T08:50:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Chinese court rules it illegal to replace human workers with AI",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-01T08:34:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Claude is hilariously petty",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-01T08:30:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Grok 4.3 achieves higher overall intelligence over 4.20 with less of a cost, at the price of slightly higher hallucination rate.",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-01T07:21:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Major Bug in 2026.4.29",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-01T05:38:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Asked GPT to generate possible GTA 6 Gameplay",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-01T05:01:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Gemini 3.1 is getting worse, they keep silently quantizing these models I'm sure of it by now. 3.0 was excellent at launch, then grew very dumb, 3.1 was kind of better, now it's a disaster.",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-01T04:52:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "At what point do we consider OpenClaw's \"regression\" problem intentional?",
-        "link": "https://reddit.com/r/openclaw/comments/1t0jdud/at_what_point_do_we_consider_openclaws_regression/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T04:45:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Local vllm hosting",
-        "link": "https://reddit.com/r/openclaw/comments/1t0j45y/local_vllm_hosting/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T04:32:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Gemini \"personal intelligence\" idiocy",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t0i82n/gemini_personal_intelligence_idiocy/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-01T03:47:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T09:58:36.637Z",
+    "reddit_viral_generated_at": "2026-05-01T11:33:54.758Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
