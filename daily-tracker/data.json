@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-02T03:53:47.847Z",
+    "generated_at": "2026-05-02T06:21:05.480Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How it feels to do biotech in 2026",
+        "link": "https://reddit.com/r/OpenAI/comments/1t1h0yq/how_it_feels_to_do_biotech_in_2026/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-02T05:34:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "what is this emoji 🫪",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t1dy31/what_is_this_emoji/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-02T02:57:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Claude Mythos loading… 🩸",
         "link": "https://reddit.com/r/aimemes/comments/1t1ddct/claude_mythos_loading/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-02T02:29:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "OOOOOOOOOOOO",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-02T01:20:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Oscars bans AI actors, writing from awards",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-02T01:15:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Create random surreal old photos from nothing!",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-02T00:16:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "I dont even have a funny title for this one, I'm just confused",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-02T00:12:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 87
       },
       {
         "headline": "What must have happened somewhere recently",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-01T23:43:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "I built /graphify, 26 days, 450k+ downloads, ~40k stars. Here’s what I didn’t expect.",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-01T22:44:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 84
       },
       {
         "headline": "A lost era of gaming",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-01T22:33:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Open message to Openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1t16z29/open_message_to_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T21:45:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I didn’t attach an image",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t156qo/i_didnt_attach_an_image/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-01T20:36:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-02T03:53:47.847Z",
+    "reddit_viral_generated_at": "2026-05-02T06:21:05.480Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
