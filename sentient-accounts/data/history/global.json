@@ -16,5 +16,14 @@
     "total_likes_recent_window": 7873420,
     "total_video_views_recent_window": 305421300,
     "avg_engagement_rate": 1.6744
+  },
+  {
+    "date": "2026-05-02",
+    "total_accounts": 26,
+    "total_followers": 11386269,
+    "recent_window_days": 30,
+    "total_likes_recent_window": 8390370,
+    "total_video_views_recent_window": 305421300,
+    "avg_engagement_rate": 1.7805
   }
 ]

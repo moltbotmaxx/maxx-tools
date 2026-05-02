@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-25T20:37:53+00:00",
-  "date": "2026-04-25",
-  "run_started_at": "2026-04-25T20:29:08+00:00",
+  "generated_at": "2026-05-02T19:04:27+00:00",
+  "date": "2026-05-02",
+  "run_started_at": "2026-05-02T18:55:16+00:00",
   "failures": [
     {
       "account": "chatgptips",
@@ -12,6 +12,11 @@
       "account": "estoicomorir",
       "error_type": "ProfileNotExistsException",
       "error": "Profile estoicomorir does not exist."
+    },
+    {
+      "account": "programming__india",
+      "error_type": "ProfileNotExistsException",
+      "error": "Profile programming__india does not exist."
     }
   ]
 }

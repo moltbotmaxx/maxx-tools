@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-25T20:34:07+00:00",
-  "date": "2026-04-25",
-  "run_started_at": "2026-04-25T20:29:08+00:00",
+  "generated_at": "2026-05-02T19:01:20+00:00",
+  "date": "2026-05-02",
+  "run_started_at": "2026-05-02T18:55:16+00:00",
   "account": "sergioprompts",
   "profile_url": "https://www.instagram.com/sergioprompts/",
   "avatar_path": "../avatars/sergioprompts.jpg",
-  "profile_pic_url": "https://instagram.fsyq2-1.fna.fbcdn.net/v/t51.82787-19/517338180_17879349849356321_6720889983526730786_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NTMuYzIifQ&_nc_ht=instagram.fsyq2-1.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gEt_sXLVFoTe-rN-3L_mvpEZg4qXNU4SGLqVgwbpOtnKMSVMZCP2fq36jugCnhwYQg&_nc_ohc=wvU_5iWnFKkQ7kNvwEUK8sB&_nc_gid=EVqofbiyWGoi5THXgVs_5A&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GET01R4h_JWILIU-ACJ8l8rUZUVdbmNDAQAB0j-ccb7-5&oh=00_Af0ceJoMVCqEbcmPgRZD_mRGWrrQM99Ma2np5oTCBgrJSg&oe=69F2EA0A&_nc_sid=1e20d2",
+  "profile_pic_url": "https://instagram.fsyq2-1.fna.fbcdn.net/v/t51.82787-19/517338180_17879349849356321_6720889983526730786_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NTMuYzIifQ&_nc_ht=instagram.fsyq2-1.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gEHU7RIwLeRZhJadmrYWcwVqeLhTkQPPVd3qk0yffB6dfTsESz7KchKb_gzMKI0nWs&_nc_ohc=1R5logm_IZsQ7kNvwHqOxbZ&_nc_gid=xtQSqtQADggpQeG2ZwotnQ&edm=AEF8tYYBAAAA&ccb=7-5&ig_cache_key=GET01R4h_JWILIU-ACJ8l8rUZUVdbmNDAQAB0j-ccb7-5&oh=00_Af59IUpfx6GDd1999liyNxNy81bxGE89L5zSxVwtOpv9IQ&oe=69FC248A&_nc_sid=1e20d2",
   "full_name": "Sergio Fabeidi \u2022 Inteligencia Artificial",
   "biography": "\ud83e\udde0 Dominamos el lenguaje de los prompts\n\ud83d\udea8 Si no usas la IA, te vas a quedar atr\u00e1s\n\ud83c\udf10 Parte de @sentientagency\n\ud83d\ude80 Cuenta de @sergiofabeidi",
   "external_url": "",
   "is_verified": true,
-  "followers": 186516,
-  "following": 86,
-  "posts": 864,
-  "recent_post_count": 70,
-  "video_post_count": 20,
+  "followers": 186905,
+  "following": 85,
+  "posts": 878,
+  "recent_post_count": 69,
+  "video_post_count": 21,
   "video_posts_with_view_data": 0,
   "video_posts_with_view_data_recent_window": 0,
   "reel_view_enriched_posts": 0,
@@ -25,31 +25,31 @@
   "recent_posts_collection_stop_reason": "window_reached",
   "recent_posts_window_covered": true,
   "recent_posts_collection_window_covered": true,
-  "oldest_recent_post_date": "2026-03-26",
-  "avg_likes": 579.03,
-  "avg_comments": 193.36,
+  "oldest_recent_post_date": "2026-04-02",
+  "avg_likes": 548.88,
+  "avg_comments": 218.28,
   "avg_video_views": 0,
   "avg_video_views_per_video": 0,
   "avg_video_views_per_post": 0.0,
-  "total_likes_recent_window": 35930,
+  "total_likes_recent_window": 33265,
   "total_video_views_recent_window": 0,
-  "engagement_rate": 0.4141,
+  "engagement_rate": 0.4105,
   "recent_posts": [
     {
-      "shortcode": "DXM0Dv2EaLX",
-      "date": "2026-04-16",
-      "likes": 3,
-      "comments": 72,
+      "shortcode": "DXH83qNkZ69",
+      "date": "2026-04-14",
+      "likes": 1081,
+      "comments": 2943,
       "is_video": true,
       "video_views": 0,
-      "caption": "Tener un equipo entero trabajando para ti desde el m\u00f3vil ya es real.\ud83e\udd2f\n\nCon MiniMax puedes crear apps y agentes de IA con un solo prompt\u2026 y dejarlos trabajando mientras t\u00fa haces otr",
-      "url": "https://www.instagram.com/p/DXM0Dv2EaLX/"
+      "caption": "Puedes copiar cualquier imagen o v\u00eddeo\u2026 con un solo prompt.\n\nLiteralmente: subes una referencia, la conviertes a JSON\ny puedes recrearla, modificarla o adaptarla a tu marca en segu",
+      "url": "https://www.instagram.com/p/DXH83qNkZ69/"
     },
     {
       "shortcode": "DVMSzHXEWd5",
       "date": "2026-02-25",
-      "likes": 2673,
-      "comments": 2756,
+      "likes": 2678,
+      "comments": 2775,
       "is_video": true,
       "video_views": 0,
       "caption": "Claude acaba de subir el nivel\u2026 y casi matar la ingenier\u00eda de prompts \ud83e\udd2f\ud83d\udd25\n\nLos que usan IA de forma profesional ya no est\u00e1n escribiendo prompts infinitos.\nEst\u00e1n usando Claude Skills",
@@ -58,12 +58,152 @@
     {
       "shortcode": "DTgFyrRkcGt",
       "date": "2026-01-14",
-      "likes": 1890,
-      "comments": 4276,
+      "likes": 1894,
+      "comments": 4288,
       "is_video": true,
       "video_views": 0,
       "caption": "Deja de perder tiempo buscando prompts \ud83d\ude2e\u200d\ud83d\udca8\n\nExiste una web con cientos de prompts listos para copiar de imagen y v\u00eddeo: UGC, producto, cine, realismo\u2026 eliges, copias y generas. As\u00ed",
       "url": "https://www.instagram.com/p/DTgFyrRkcGt/"
+    },
+    {
+      "shortcode": "DXz_KU_kW5s",
+      "date": "2026-05-01",
+      "likes": 3,
+      "comments": 1,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Claude ahora tambi\u00e9n es tu auditor de seguridad.\n\nAnthropic lanza Claude Security.\nUna herramienta que escanea tu c\u00f3digo, detecta vulnerabilidades y propone soluciones autom\u00e1ticame",
+      "url": "https://www.instagram.com/p/DXz_KU_kW5s/"
+    },
+    {
+      "shortcode": "DXzjo8AEaBx",
+      "date": "2026-05-01",
+      "likes": 259,
+      "comments": 194,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "R\u00f3bate estos mega prompts de editorial \ud83e\udd2f\n\nPrompts que convierten cualquier idea\nen im\u00e1genes tipo portada de revista.\n\nCinematogr\u00e1ficas, realistas y listas para usar.\nSolo copia, pe",
+      "url": "https://www.instagram.com/p/DXzjo8AEaBx/"
+    },
+    {
+      "shortcode": "DXw6UOYRsuH",
+      "date": "2026-04-30",
+      "likes": 3,
+      "comments": 58,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Esto es como tener una agencia de IA trabajando para ti.\n\nCon Skywork puedes pedirle cualquier cosa\u2026 \ny el agente lo hace todo: investiga, estructura y crea el contenido.\n\nDesde ca",
+      "url": "https://www.instagram.com/p/DXw6UOYRsuH/"
+    },
+    {
+      "shortcode": "DXwmevwDdA1",
+      "date": "2026-04-30",
+      "likes": 3,
+      "comments": 3,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "OpenAI pide perd\u00f3n tras un caso que cambia las reglas.\n\nSam Altman reconoci\u00f3 que no avisaron a las autoridades sobre una cuenta de ChatGPT que luego se vincul\u00f3 a un tiroteo en Cana",
+      "url": "https://www.instagram.com/p/DXwmevwDdA1/"
+    },
+    {
+      "shortcode": "DXu2f14kZqW",
+      "date": "2026-04-29",
+      "likes": 398,
+      "comments": 215,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "ESTOS PROMPTS PARA CLAUDE ACTIVAN EL \u201cMODO ABUNDANCIA\u201d\n\nNo son prompts normales.\nSon un sistema para dejar de cambiar tiempo por dinero\ny empezar a construir ingresos escalables.\n\n",
+      "url": "https://www.instagram.com/p/DXu2f14kZqW/"
+    },
+    {
+      "shortcode": "DXuc_eNEaff",
+      "date": "2026-04-29",
+      "likes": 399,
+      "comments": 1031,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Estas son las mejores librer\u00edas de prompts para GPT Imagen 2.\n\nDos repositorios con prompts listos para generar im\u00e1genes brutales:\ndesde e-commerce hasta casos m\u00e1s avanzados.\n\nSolo",
+      "url": "https://www.instagram.com/p/DXuc_eNEaff/"
+    },
+    {
+      "shortcode": "DXuDXTMjbkP",
+      "date": "2026-04-29",
+      "likes": 235,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "ChatGPT 5.5 cambia c\u00f3mo se crean productos.\n\nOpenAI no solo mejora el modelo.\nCambia el punto de partida: de pantalla en blanco\u2026 a conversaci\u00f3n.\n\nDescribes una idea y la IA la conv",
+      "url": "https://www.instagram.com/p/DXuDXTMjbkP/"
+    },
+    {
+      "shortcode": "DXs0ghFDbJv",
+      "date": "2026-04-29",
+      "likes": 3219,
+      "comments": 42,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Esto no es solo nostalgia\u2026 es otra cosa.\n\nTodos los que jugaron San Andreas ten\u00edan esta pel\u00edcula en la cabeza:\nlas persecuciones, los atardeceres, CJ en Grove Street\u2026\n\nY alguien ac",
+      "url": "https://www.instagram.com/p/DXs0ghFDbJv/"
+    },
+    {
+      "shortcode": "DXsQgw0kX7k",
+      "date": "2026-04-28",
+      "likes": 317,
+      "comments": 2,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Claude entra directo a tus herramientas creativas.\n\nAnthropic lanza \u201cconnectors\u201d: integraci\u00f3n nativa con apps como Blender, Autodesk Fusion, Adobe Creative Cloud, Ableton Live y Sp",
+      "url": "https://www.instagram.com/p/DXsQgw0kX7k/"
+    },
+    {
+      "shortcode": "DXr2jTUkf98",
+      "date": "2026-04-28",
+      "likes": 161,
+      "comments": 183,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Usa TODAS las IA sin pagar 20 suscripciones \ud83e\udd2f\n\nM\u00e1s de 90 herramientas en un solo lugar para crear im\u00e1genes, v\u00eddeos y optimizar todo tu trabajo con IA.\n\nIMAGEN:\nNano Banana, Midjour",
+      "url": "https://www.instagram.com/p/DXr2jTUkf98/"
+    },
+    {
+      "shortcode": "DXrmgskkRdW",
+      "date": "2026-04-28",
+      "likes": 5629,
+      "comments": 50,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Un chico de 23 a\u00f1os resuelve un problema de hace 60 a\u00f1os\u2026 con ChatGPT.\n\nLiam Price prob\u00f3 por curiosidad un problema de conjuntos primitivos sin saber su historia.\nLo meti\u00f3 en ChatG",
+      "url": "https://www.instagram.com/p/DXrmgskkRdW/"
+    },
+    {
+      "shortcode": "DXprAKqEXLU",
+      "date": "2026-04-27",
+      "likes": 421,
+      "comments": 7,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "Un gato gigante que te obliga a dejar el m\u00f3vil.\n\nAs\u00ed funciona Cat Gatekeeper, una extensi\u00f3n de Chrome creada por un desarrollador japon\u00e9s.\n\nCuando llevas demasiado tiempo haciendo ",
+      "url": "https://www.instagram.com/p/DXprAKqEXLU/"
+    },
+    {
+      "shortcode": "DXpMlWAkcId",
+      "date": "2026-04-27",
+      "likes": 126,
+      "comments": 0,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "La IA no frena: estas son las 10 bombas de la semana.\n\n1. OpenAI lanza ChatGPT Images 2.0\n2. Tim Cook deja su puesto en Apple\n3. SpaceX x Cursor\n4. ChatGPT ya ejecuta workflows com",
+      "url": "https://www.instagram.com/p/DXpMlWAkcId/"
+    },
+    {
+      "shortcode": "DXkfWfTkS2F",
+      "date": "2026-04-25",
+      "likes": 746,
+      "comments": 34,
+      "is_video": false,
+      "video_views": 0,
+      "caption": "ChatGPT ahora puede ser tu estilista personal.\n\nLa gente est\u00e1 usando el nuevo modelo de im\u00e1genes para analizar pelo, color y maquillaje\u2026 a partir de una sola foto.\nY los resultados",
+      "url": "https://www.instagram.com/p/DXkfWfTkS2F/"
     },
     {
       "shortcode": "DXhqkdokXtR",
@@ -79,7 +219,7 @@
       "shortcode": "DXhZV4ikVNb",
       "date": "2026-04-24",
       "likes": 3,
-      "comments": 1,
+      "comments": 2,
       "is_video": false,
       "video_views": 0,
       "caption": "GPT-5.5 sube el nivel\u2026 sin ir m\u00e1s lento.\n\nOpenAI presenta GPT-5.5, un modelo m\u00e1s potente pero igual de r\u00e1pido.\nPuede programar, investigar, analizar datos y usar herramientas\u2026 todo",
@@ -98,7 +238,7 @@
     {
       "shortcode": "DXfc1qTDTEb",
       "date": "2026-04-23",
-      "likes": 125,
+      "likes": 157,
       "comments": 4,
       "is_video": false,
       "video_views": 0,
@@ -109,7 +249,7 @@
       "shortcode": "DXe6kdPkQQl",
       "date": "2026-04-23",
       "likes": 3,
-      "comments": 57,
+      "comments": 67,
       "is_video": true,
       "video_views": 0,
       "caption": "Los influencers con IA ya son un negocio\u2026 y esto lo hace rid\u00edculamente f\u00e1cil.\n\nCon APOB AI puedes crear avatares hiperrealistas\ny usarlos para generar v\u00eddeos UGC en minutos.\n\nSubes",
@@ -118,7 +258,7 @@
     {
       "shortcode": "DXerURRkcbf",
       "date": "2026-04-23",
-      "likes": 156,
+      "likes": 189,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -128,7 +268,7 @@
     {
       "shortcode": "DXcyUl0kXnO",
       "date": "2026-04-22",
-      "likes": 128,
+      "likes": 151,
       "comments": 3,
       "is_video": false,
       "video_views": 0,
@@ -138,7 +278,7 @@
     {
       "shortcode": "DXchcXbkWF8",
       "date": "2026-04-22",
-      "likes": 99,
+      "likes": 114,
       "comments": 3,
       "is_video": true,
       "video_views": 0,
@@ -148,7 +288,7 @@
     {
       "shortcode": "DXcKVCfEfvB",
       "date": "2026-04-22",
-      "likes": 274,
+      "likes": 311,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -158,7 +298,7 @@
     {
       "shortcode": "DXaMxSTkW1z",
       "date": "2026-04-21",
-      "likes": 123,
+      "likes": 137,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -168,8 +308,8 @@
     {
       "shortcode": "DXZrbcdERAe",
       "date": "2026-04-21",
-      "likes": 3,
-      "comments": 198,
+      "likes": 163,
+      "comments": 257,
       "is_video": false,
       "video_views": 0,
       "caption": "Usa TODAS las IA sin pagar 20 suscripciones \ud83e\udd2f\n\nM\u00e1s de 90 herramientas en un solo lugar para crear im\u00e1genes, v\u00eddeos y optimizar todo tu trabajo con IA.\n\nIMAGEN:\nNano Banana, Midjour",
@@ -178,8 +318,8 @@
     {
       "shortcode": "DXZbF8hDZDT",
       "date": "2026-04-21",
-      "likes": 1525,
-      "comments": 14,
+      "likes": 1734,
+      "comments": 17,
       "is_video": false,
       "video_views": 0,
       "caption": "Claude Design cambia el juego: dise\u00f1as sin dise\u00f1ar.\n\nAnthropic acaba de lanzar una herramienta donde no hay lienzo en blanco.\nDescribes lo que quieres\u2026 y obtienes prototipos, slide",
@@ -188,7 +328,7 @@
     {
       "shortcode": "DXXjXpBEUvN",
       "date": "2026-04-20",
-      "likes": 200,
+      "likes": 211,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -198,7 +338,7 @@
     {
       "shortcode": "DXXDFGvkZmY",
       "date": "2026-04-20",
-      "likes": 3,
+      "likes": 132,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -208,8 +348,8 @@
     {
       "shortcode": "DXVfLXMDODG",
       "date": "2026-04-20",
-      "likes": 227,
-      "comments": 11,
+      "likes": 241,
+      "comments": 13,
       "is_video": true,
       "video_views": 0,
       "caption": "Los robots ya pueden hacerlo casi todo\u2026\nmenos pasar desapercibidos.\n\nCuando intentan moverse \u201cen silencio\u201d\u2026\nacaban siendo lo m\u00e1s llamativo de la escena.\n\nLa tecnolog\u00eda avanza r\u00e1pid",
@@ -218,7 +358,7 @@
     {
       "shortcode": "DXP68xhkcQ2",
       "date": "2026-04-17",
-      "likes": 3,
+      "likes": 133,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -228,7 +368,7 @@
     {
       "shortcode": "DXPnB7BEeDo",
       "date": "2026-04-17",
-      "likes": 426,
+      "likes": 430,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -238,7 +378,7 @@
     {
       "shortcode": "DXPRK9HERtn",
       "date": "2026-04-17",
-      "likes": 3,
+      "likes": 127,
       "comments": 8,
       "is_video": false,
       "video_views": 0,
@@ -248,7 +388,7 @@
     {
       "shortcode": "DXNbQPoDVDd",
       "date": "2026-04-16",
-      "likes": 164,
+      "likes": 172,
       "comments": 4,
       "is_video": false,
       "video_views": 0,
@@ -256,9 +396,19 @@
       "url": "https://www.instagram.com/p/DXNbQPoDVDd/"
     },
     {
+      "shortcode": "DXM0Dv2EaLX",
+      "date": "2026-04-16",
+      "likes": 3,
+      "comments": 82,
+      "is_video": true,
+      "video_views": 0,
+      "caption": "Tener un equipo entero trabajando para ti desde el m\u00f3vil ya es real.\ud83e\udd2f\n\nCon MiniMax puedes crear apps y agentes de IA con un solo prompt\u2026 y dejarlos trabajando mientras t\u00fa haces otr",
+      "url": "https://www.instagram.com/p/DXM0Dv2EaLX/"
+    },
+    {
       "shortcode": "DXMsyKJDbtn",
       "date": "2026-04-16",
-      "likes": 981,
+      "likes": 983,
       "comments": 14,
       "is_video": false,
       "video_views": 0,
@@ -268,7 +418,7 @@
     {
       "shortcode": "DXKt-0VkRn1",
       "date": "2026-04-15",
-      "likes": 245,
+      "likes": 262,
       "comments": 46,
       "is_video": false,
       "video_views": 0,
@@ -278,7 +428,7 @@
     {
       "shortcode": "DXKg9DrkcDc",
       "date": "2026-04-15",
-      "likes": 334,
+      "likes": 354,
       "comments": 5,
       "is_video": false,
       "video_views": 0,
@@ -288,8 +438,8 @@
     {
       "shortcode": "DXKH5FLEXWs",
       "date": "2026-04-15",
-      "likes": 338,
-      "comments": 1,
+      "likes": 356,
+      "comments": 3,
       "is_video": false,
       "video_views": 0,
       "caption": "NVIDIA acaba de lanzar un modelo que apunta al futuro de la computaci\u00f3n.\n\nSe llama \u201cIsing\u201d y es open source, dise\u00f1ado para mejorar los sistemas de computaci\u00f3n cu\u00e1ntica.\n\nSu enfoque",
@@ -308,8 +458,8 @@
     {
       "shortcode": "DXItHLpDD-l",
       "date": "2026-04-15",
-      "likes": 782,
-      "comments": 34,
+      "likes": 818,
+      "comments": 38,
       "is_video": false,
       "video_views": 0,
       "caption": "Google DeepMind ha contratado al fil\u00f3sofo Henry Shevlin para abordar las cuestiones \u00e9ticas de la IA avanzada.\n\nSe centrar\u00e1 en temas como la consciencia de las m\u00e1quinas, la interacc",
@@ -318,7 +468,7 @@
     {
       "shortcode": "DXIdv_whHdN",
       "date": "2026-04-15",
-      "likes": 356,
+      "likes": 367,
       "comments": 4,
       "is_video": true,
       "video_views": 0,
@@ -328,7 +478,7 @@
     {
       "shortcode": "DXIFmU0EUlb",
       "date": "2026-04-14",
-      "likes": 308,
+      "likes": 324,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -336,20 +486,10 @@
       "url": "https://www.instagram.com/p/DXIFmU0EUlb/"
     },
     {
-      "shortcode": "DXH83qNkZ69",
-      "date": "2026-04-14",
-      "likes": 884,
-      "comments": 2475,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Puedes copiar cualquier imagen o v\u00eddeo\u2026 con un solo prompt.\n\nLiteralmente: subes una referencia, la conviertes a JSON\ny puedes recrearla, modificarla o adaptarla a tu marca en segu",
-      "url": "https://www.instagram.com/p/DXH83qNkZ69/"
-    },
-    {
       "shortcode": "DXHmE0BkXT5",
       "date": "2026-04-14",
-      "likes": 819,
-      "comments": 10,
+      "likes": 860,
+      "comments": 13,
       "is_video": false,
       "video_views": 0,
       "caption": "Anthropic no solo quiere competir.\nQuiere quedarse con todo.\n\nSe ha filtrado que Claude ya puede crear apps completas estilo \u201cLovable\u201d: frontend, backend, base de datos, auth\u2026 todo",
@@ -358,7 +498,7 @@
     {
       "shortcode": "DXHH8tpxZX8",
       "date": "2026-04-14",
-      "likes": 641,
+      "likes": 643,
       "comments": 46,
       "is_video": true,
       "video_views": 0,
@@ -368,7 +508,7 @@
     {
       "shortcode": "DXGFxd1jCBL",
       "date": "2026-04-14",
-      "likes": 854,
+      "likes": 905,
       "comments": 13,
       "is_video": false,
       "video_views": 0,
@@ -378,7 +518,7 @@
     {
       "shortcode": "DXFBg91EV5-",
       "date": "2026-04-13",
-      "likes": 166,
+      "likes": 167,
       "comments": 4,
       "is_video": false,
       "video_views": 0,
@@ -388,8 +528,8 @@
     {
       "shortcode": "DXAHsQZEQOy",
       "date": "2026-04-11",
-      "likes": 387,
-      "comments": 895,
+      "likes": 392,
+      "comments": 902,
       "is_video": true,
       "video_views": 0,
       "caption": "Claude ya te hace carruseles virales\u2026 en autom\u00e1tico.\n\nLe pegas un prompt \u2192 eliges tema \u2192 y tienes un carrusel listo para publicar.\n\nY lo mejor:\npuedes copiar el estilo de cualquier",
@@ -428,7 +568,7 @@
     {
       "shortcode": "DW6wiGcka0U",
       "date": "2026-04-09",
-      "likes": 1792,
+      "likes": 1890,
       "comments": 11,
       "is_video": false,
       "video_views": 0,
@@ -458,7 +598,7 @@
     {
       "shortcode": "DW4ZjKgEfG5",
       "date": "2026-04-08",
-      "likes": 297,
+      "likes": 298,
       "comments": 86,
       "is_video": true,
       "video_views": 0,
@@ -468,8 +608,8 @@
     {
       "shortcode": "DW33ymKjfXt",
       "date": "2026-04-08",
-      "likes": 1364,
-      "comments": 1066,
+      "likes": 1414,
+      "comments": 1113,
       "is_video": false,
       "video_views": 0,
       "caption": "Tu marca personal no crece por contenido.\nCrece por ideas que la gente no puede ignorar.\n\nEstos 5 prompts convierten a Claude en tu estratega de marca al estilo Seth Godin:\n\n\u2022 Un s",
@@ -488,7 +628,7 @@
     {
       "shortcode": "DW1GY0vRH9q",
       "date": "2026-04-07",
-      "likes": 295,
+      "likes": 297,
       "comments": 16,
       "is_video": true,
       "video_views": 0,
@@ -498,7 +638,7 @@
     {
       "shortcode": "DW0JjW8DczI",
       "date": "2026-04-07",
-      "likes": 183,
+      "likes": 184,
       "comments": 1,
       "is_video": false,
       "video_views": 0,
@@ -508,7 +648,7 @@
     {
       "shortcode": "DWzasVJETxL",
       "date": "2026-04-06",
-      "likes": 557,
+      "likes": 559,
       "comments": 9,
       "is_video": false,
       "video_views": 0,
@@ -518,7 +658,7 @@
     {
       "shortcode": "DWzRjdhEc1R",
       "date": "2026-04-06",
-      "likes": 245,
+      "likes": 246,
       "comments": 0,
       "is_video": false,
       "video_views": 0,
@@ -529,7 +669,7 @@
       "shortcode": "DWrZ_o0kSyF",
       "date": "2026-04-03",
       "likes": 157,
-      "comments": 100,
+      "comments": 102,
       "is_video": true,
       "video_views": 0,
       "caption": "Hacer presentaciones profesionales ya es cuesti\u00f3n de segundos. \ud83e\udd2f\n\nCon AiPPT puedes crear slides desde texto, PDFs o prompts\u2026 todo autom\u00e1tico y editable.\n\nY lo mejor, al crear tu cu",
@@ -538,7 +678,7 @@
     {
       "shortcode": "DWrKoTZkSBW",
       "date": "2026-04-03",
-      "likes": 716,
+      "likes": 717,
       "comments": 5,
       "is_video": true,
       "video_views": 0,
@@ -548,7 +688,7 @@
     {
       "shortcode": "DWpBDbvkbkd",
       "date": "2026-04-02",
-      "likes": 200,
+      "likes": 202,
       "comments": 11,
       "is_video": false,
       "video_views": 0,
@@ -558,7 +698,7 @@
     {
       "shortcode": "DWof5tLgs8J",
       "date": "2026-04-02",
-      "likes": 390,
+      "likes": 394,
       "comments": 276,
       "is_video": false,
       "video_views": 0,
@@ -568,7 +708,7 @@
     {
       "shortcode": "DWn_VCKAs0U",
       "date": "2026-04-02",
-      "likes": 1888,
+      "likes": 1907,
       "comments": 2,
       "is_video": false,
       "video_views": 0,
@@ -578,162 +718,12 @@
     {
       "shortcode": "DWnNGUujOhs",
       "date": "2026-04-02",
-      "likes": 439,
+      "likes": 440,
       "comments": 13,
       "is_video": true,
       "video_views": 0,
       "caption": "La guerra ya no es solo humana\u2026 es coordinada con m\u00e1quinas.\n\nEn estas pruebas, infanter\u00eda, drones a\u00e9reos y robots terrestres trabajan juntos como un solo sistema.\n\nLos drones aport",
       "url": "https://www.instagram.com/p/DWnNGUujOhs/"
-    },
-    {
-      "shortcode": "DWm0W7EjTht",
-      "date": "2026-04-01",
-      "likes": 1899,
-      "comments": 24,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Gmail por fin arregla uno de sus mayores problemas.\n\nAhora podr\u00e1s cambiar tu direcci\u00f3n de correo sin crear una cuenta nueva\u2026 y sin perder nada.\n\nGoogle permitir\u00e1 editar tu username",
-      "url": "https://www.instagram.com/p/DWm0W7EjTht/"
-    },
-    {
-      "shortcode": "DWmTxN3kR7Q",
-      "date": "2026-04-01",
-      "likes": 1537,
-      "comments": 32,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Oracle no solo est\u00e1 despidiendo\u2026 est\u00e1 cambiando c\u00f3mo operan las grandes empresas.\n\nUn email a las 6 AM, acceso cortado al instante, sin transici\u00f3n.\nNo es nuevo en tech, pero cada v",
-      "url": "https://www.instagram.com/p/DWmTxN3kR7Q/"
-    },
-    {
-      "shortcode": "DWkJoibkffP",
-      "date": "2026-03-31",
-      "likes": 1538,
-      "comments": 15,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "El genio detr\u00e1s de la IA que casi nadie conoce.\n\nAlec Radford es una de las figuras m\u00e1s importantes en la historia reciente de la inteligencia artificial\u2026 y casi nadie sabe qui\u00e9n e",
-      "url": "https://www.instagram.com/p/DWkJoibkffP/"
-    },
-    {
-      "shortcode": "DWjwsRnkRl4",
-      "date": "2026-03-31",
-      "likes": 277,
-      "comments": 9,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Anthropic filtra sin querer c\u00f3mo funciona Claude por dentro.\n\nUn simple error al publicar un paquete en npm expuso ~500.000 l\u00edneas de c\u00f3digo del CLI de Claude, repartidas en casi 2",
-      "url": "https://www.instagram.com/p/DWjwsRnkRl4/"
-    },
-    {
-      "shortcode": "DWjNET4gqhe",
-      "date": "2026-03-31",
-      "likes": 288,
-      "comments": 340,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Seedance 2.0 es una locura \ud83e\udd2f\n\nYo lo uso en @syntx_ai que tiene m\u00e1s de 90 herramientas en un solo lugar para crear im\u00e1genes, v\u00eddeos y optimizar todo tu trabajo con IA.\n\nIMAGEN:\nNano",
-      "url": "https://www.instagram.com/p/DWjNET4gqhe/"
-    },
-    {
-      "shortcode": "DWhYF7gkawc",
-      "date": "2026-03-30",
-      "likes": 2539,
-      "comments": 75,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Vivi\u00f3 25 a\u00f1os sin diagn\u00f3stico\u2026 hasta que una IA conect\u00f3 las piezas.\n\nTras pasar por m\u00faltiples especialistas sin respuestas claras, hab\u00eda un s\u00edntoma clave que no encajaba:\nfuertes d",
-      "url": "https://www.instagram.com/p/DWhYF7gkawc/"
-    },
-    {
-      "shortcode": "DWg_fI5Amtq",
-      "date": "2026-03-30",
-      "likes": 243,
-      "comments": 2,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Otra semana en IA\u2026 y cada vez m\u00e1s loca.\n\nEsto fue lo m\u00e1s importante \ud83d\udc47\n\n1\ufe0f\u20e3 Anthropic filtra por error su nuevo modelo \u201cClaude Mythos\u201d\n2\ufe0f\u20e3 Claude ya puede usar tu ordenador y trabaj",
-      "url": "https://www.instagram.com/p/DWg_fI5Amtq/"
-    },
-    {
-      "shortcode": "DWeLthSAuyd",
-      "date": "2026-03-29",
-      "likes": 138,
-      "comments": 114,
-      "is_video": true,
-      "video_views": 0,
-      "caption": "Dreamina Seedance 2.0 en acceso anticipado en Dreamina. Pru\u00e9balo ahora!\n\nComenta \u201cLINK\u201d y te env\u00edo el enlace.\n\n\ud83e\udd16 S\u00edgueme en @sergioprompts para m\u00e1s contenido de IA y tecnolog\u00eda.\n\n#",
-      "url": "https://www.instagram.com/p/DWeLthSAuyd/"
-    },
-    {
-      "shortcode": "DWdwT1DghR5",
-      "date": "2026-03-29",
-      "likes": 131,
-      "comments": 3,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "La IA ya puede \u201cleer\u201d tu cerebro.\n\nMeta acaba de presentar TRIBE v2, un modelo capaz de predecir c\u00f3mo reacciona tu cerebro ante im\u00e1genes y sonidos. Est\u00e1 entrenado con m\u00e1s de 500 ho",
-      "url": "https://www.instagram.com/p/DWdwT1DghR5/"
-    },
-    {
-      "shortcode": "DWZXZrkkX7U",
-      "date": "2026-03-27",
-      "likes": 442,
-      "comments": 4,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Anthropic filtra por error su IA m\u00e1s potente\u2026 y asusta.\n\nUn fallo en su sistema dej\u00f3 casi 3.000 archivos internos accesibles p\u00fablicamente.\nDentro: detalles de Claude Mythos, descri",
-      "url": "https://www.instagram.com/p/DWZXZrkkX7U/"
-    },
-    {
-      "shortcode": "DWYnKxAgsH1",
-      "date": "2026-03-27",
-      "likes": 424,
-      "comments": 12,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Esto ya no es ciencia ficci\u00f3n\u2026 es tecnolog\u00eda real cambiando vidas \ud83e\udd2f\n\nNeuralink est\u00e1 avanzando en la restauraci\u00f3n del habla con ensayos cl\u00ednicos en personas con enfermedades como AL",
-      "url": "https://www.instagram.com/p/DWYnKxAgsH1/"
-    },
-    {
-      "shortcode": "DWXs9zfjZNq",
-      "date": "2026-03-27",
-      "likes": 147,
-      "comments": 1,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "AGI ya existe\u2026 pero en Irlanda \ud83c\udf7a\n\nSe llama Artificial Guinness Intelligence.\n\nUn ingeniero cre\u00f3 un agente de voz con acento norirland\u00e9s y lo puso a llamar a m\u00e1s de 3.000 pubs para ",
-      "url": "https://www.instagram.com/p/DWXs9zfjZNq/"
-    },
-    {
-      "shortcode": "DWXZZF9Da6E",
-      "date": "2026-03-26",
-      "likes": 6162,
-      "comments": 113,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Las casas ya no se ven\u2026 se exploran.\n\nAlguien acaba de usar IA para convertir hogares reales en gemelos digitales totalmente navegables desde el navegador.\n\nOlv\u00eddate de fotos o tou",
-      "url": "https://www.instagram.com/p/DWXZZF9Da6E/"
-    },
-    {
-      "shortcode": "DWW3xMnggEH",
-      "date": "2026-03-26",
-      "likes": 158,
-      "comments": 188,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "Usa TODAS las IA sin pagar 20 suscripciones \ud83e\udd2f\n\nM\u00e1s de 90 herramientas en un solo lugar para crear im\u00e1genes, v\u00eddeos y optimizar todo tu trabajo con IA.\n\nIMAGEN:\nNano Banana, Midjour",
-      "url": "https://www.instagram.com/p/DWW3xMnggEH/"
-    },
-    {
-      "shortcode": "DWWBg3dAkX5",
-      "date": "2026-03-26",
-      "likes": 206,
-      "comments": 11,
-      "is_video": false,
-      "video_views": 0,
-      "caption": "\ud83d\udea8 Un robot humanoide ya est\u00e1 en la Casa Blanca.\n\nMelania Trump apareci\u00f3 en la alfombra roja junto a un robot que no solo caminaba\u2026 tambi\u00e9n hablaba con l\u00edderes de 45 pa\u00edses en vario",
-      "url": "https://www.instagram.com/p/DWWBg3dAkX5/"
     }
   ]
 }
