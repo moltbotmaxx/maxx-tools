@@ -367,16 +367,16 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-01T23:09:45.638Z",
+    "generated_at": "2026-05-02T00:07:51.577Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Agent performing drag and drop GoHighLevel building?",
-        "link": "https://reddit.com/r/openclaw/comments/1t173ty/agent_performing_drag_and_drop_gohighlevel/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-01T21:50:48+00:00",
+        "headline": "I built /graphify, 26 days, 450k+ downloads, ~40k stars. Here’s what I didn’t expect.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t18eeh/i_built_graphify_26_days_450k_downloads_40k_stars/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-01T22:44:06+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -388,7 +388,7 @@
         "published_at": "2026-05-01T21:45:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "I didn’t attach an image",
@@ -397,7 +397,7 @@
         "published_at": "2026-05-01T20:36:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Sam Altman No Longer Believes In Universal Basic Income",
@@ -406,7 +406,7 @@
         "published_at": "2026-05-01T20:08:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Cyberpunk 1950. A fun thing to do, imagining games with different settings.",
@@ -415,7 +415,7 @@
         "published_at": "2026-05-01T19:35:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": ".4.29 Claw taking 3 minutes to answer. - Temporary FIX",
@@ -424,7 +424,7 @@
         "published_at": "2026-05-01T19:01:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "I accidentally burned ~$6,000 of Claude usage overnight with one command.",
@@ -433,7 +433,7 @@
         "published_at": "2026-05-01T18:26:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "Gemini after Google invested massively in Claude",
@@ -442,7 +442,7 @@
         "published_at": "2026-05-01T17:42:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "The idiot developers at openclaw blew another release!",
@@ -451,7 +451,7 @@
         "published_at": "2026-05-01T17:05:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       },
       {
         "headline": "OK Google. (there was no image attached)",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-01T16:12:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-01T23:09:45.638Z",
+    "reddit_viral_generated_at": "2026-05-02T00:07:51.577Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
