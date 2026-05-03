@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T11:09:21.121Z",
+    "generated_at": "2026-05-03T11:58:51.521Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gugugaga not that shit",
+        "link": "https://reddit.com/r/aimemes/comments/1t2j5b2/gugugaga_not_that_shit/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-03T11:40:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Anyone else frustrated with agent memory solutions like mem0, Zep, etc?",
         "link": "https://reddit.com/r/openclaw/comments/1t2hljg/anyone_else_frustrated_with_agent_memory/",
@@ -379,7 +388,25 @@
         "published_at": "2026-05-03T10:16:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Wikipedia goes for-profit",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t2hjoq/wikipedia_goes_forprofit/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-03T10:14:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Sitting on 10k in unused openai api credits that will expire, what would you build?",
+        "link": "https://reddit.com/r/OpenAI/comments/1t2h5c9/sitting_on_10k_in_unused_openai_api_credits_that/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-03T09:50:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "New version 2026.5.2",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-03T08:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Why do AI models improve rapidly in benchmarks but still fail basic real-world reliability tests?",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-03T08:46:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Spent $850 on OpenClaw in a month ($350 in one day) → cut 70–90% cost after fixing this",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-03T08:05:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Some AI images i generated in 2021",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-03T07:39:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Let's not rename powershell.exe",
@@ -424,50 +451,23 @@
         "published_at": "2026-05-03T07:37:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I asked ChatGPT to show me its parents. This is what it made.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t2d7bj/i_asked_chatgpt_to_show_me_its_parents_this_is/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-03T06:03:56+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "[d] i think my scm + llm agent architecture is fundamentally broken (identifiability issues)",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2cokr/d_i_think_my_scm_llm_agent_architecture_is/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-03T05:35:29+00:00",
+        "headline": "I asked Gemini about Monitors and somehow it though my car was relevant to the conversation",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t2eh3y/i_asked_gemini_about_monitors_and_somehow_it/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-03T07:15:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I left my Agent OS running overnight and it built 4 new tools I didn't even ask for",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t29fq6/i_left_my_agent_os_running_overnight_and_it_built/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-03T02:47:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Found the seahorse emoji for Claude",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t27vyw/found_the_seahorse_emoji_for_claude/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-03T01:34:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T11:09:21.121Z",
+    "reddit_viral_generated_at": "2026-05-03T11:58:51.521Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
