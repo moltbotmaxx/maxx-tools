@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T04:13:10.578Z",
+    "generated_at": "2026-05-03T06:41:47.769Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I asked ChatGPT to show me its parents. This is what it made.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t2d7bj/i_asked_chatgpt_to_show_me_its_parents_this_is/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-03T06:03:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "[d] i think my scm + llm agent architecture is fundamentally broken (identifiability issues)",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2cokr/d_i_think_my_scm_llm_agent_architecture_is/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-03T05:35:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Idiot Developers Update Post",
+        "link": "https://reddit.com/r/openclaw/comments/1t2c0i6/idiot_developers_update_post/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-03T04:59:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Captain scene - GPT 2 image getting the environment + character sheets has been perfect",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t2amm7/captain_scene_gpt_2_image_getting_the_environment/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-03T03:47:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Found the seahorse emoji for Claude",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t27vyw/found_the_seahorse_emoji_for_claude/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-03T01:34:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "I don’t have any friends so I made AI bros that play with you",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1t26ada/i_dont_have_any_friends_so_i_made_ai_bros_that/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-03T00:19:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 87
       },
       {
         "headline": "Software engineering jobs hit their highest posting since november 2023",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-03T00:09:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 86
       },
       {
         "headline": "New iOS design?!",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-02T22:52:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 83
       },
       {
         "headline": "Sam Altman just announced ChatGPT subscriptions now work in OpenClaw. Are you switching?",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-02T22:18:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 82
       },
       {
         "headline": "Courtroom sketch of Sam Altman",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-02T21:54:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Non-business uses for Claude Cowork",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t22v8r/nonbusiness_uses_for_claude_cowork/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-02T21:49:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Prompt: generate a image of jeffery epstein, george washington, mbappe (in dictator uniform, soviet style) and benjamin netanyahu outside the effile tower",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t22tb5/prompt_generate_a_image_of_jeffery_epstein_george/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-02T21:47:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Breaking: Sama has a new dangerous family name 🤣",
-        "link": "https://reddit.com/r/OpenAI/comments/1t21o3j/breaking_sama_has_a_new_dangerous_family_name/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-02T21:00:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Well, one...",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t1yoo4/well_one/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-02T19:05:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "In the U.S., CEO pay grew 20 times faster than workers' wages in 2025, says Oxfam",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t1yhma/in_the_us_ceo_pay_grew_20_times_faster_than/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-02T18:57:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T04:13:10.578Z",
+    "reddit_viral_generated_at": "2026-05-03T06:41:47.769Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
