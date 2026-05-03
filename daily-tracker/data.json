@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T17:09:56.348Z",
+    "generated_at": "2026-05-03T18:05:19.327Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Professor’s bold prediction: AI could help cure all diseases within a decade",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2qtrv/professors_bold_prediction_ai_could_help_cure_all/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-03T16:55:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Apple says Mac Mini and Mac Studio will be supply-constrained for months due to AI demand",
         "link": "https://reddit.com/r/openclaw/comments/1t2qjze/apple_says_mac_mini_and_mac_studio_will_be/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-03T16:45:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "What if Claude launched in 1998?",
@@ -388,7 +397,16 @@
         "published_at": "2026-05-03T16:27:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "Skyrim cities if they were actually city size",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t2p0cy/skyrim_cities_if_they_were_actually_city_size/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-03T15:46:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Me at 2am",
@@ -397,16 +415,7 @@
         "published_at": "2026-05-03T15:36:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Influencers Paid to Promote US AI and Warn of Chinese Threat",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2om21/influencers_paid_to_promote_us_ai_and_warn_of/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-03T15:31:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Welcome to LinkedIn Park (im sorry for this)",
@@ -424,22 +433,13 @@
         "published_at": "2026-05-03T15:26:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Ollama $20/month",
         "link": "https://reddit.com/r/openclaw/comments/1t2ngdg/ollama_20month/",
         "subreddit": "openclaw",
         "published_at": "2026-05-03T14:48:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Powerful AI finds 100+ hidden planets in NASA data including rare and extreme worlds",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2ncaw/powerful_ai_finds_100_hidden_planets_in_nasa_data/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-03T14:43:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
@@ -460,14 +460,14 @@
         "published_at": "2026-05-03T14:24:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T17:09:56.348Z",
+    "reddit_viral_generated_at": "2026-05-03T18:05:19.327Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
