@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T13:50:32.595Z",
+    "generated_at": "2026-05-03T15:07:26.283Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Time Series Foundation Models: A Deep Dive into Strengths and Limitations",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2lmr3/time_series_foundation_models_a_deep_dive_into/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-03T13:34:22+00:00",
+        "headline": "Google I/O leaks: Gemini’s \"Omni\" and Gemini 3.2/3.5",
+        "link": "https://reddit.com/r/singularity/comments/1t2n0kv/google_io_leaks_geminis_omni_and_gemini_3235/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-03T14:30:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Google I/O leaks: Gemini’s \"Omni\" push and Gemini 3.2/3.5.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t2mury/google_io_leaks_geminis_omni_push_and_gemini_3235/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-03T14:24:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "coming may 2026",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2md8o/coming_may_2026/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-03T14:04:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Yet Another Openclaw vs Hermes experience sharing",
+        "link": "https://reddit.com/r/openclaw/comments/1t2m2uu/yet_another_openclaw_vs_hermes_experience_sharing/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-03T13:53:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "What if ChatGPT launched in 1998",
@@ -388,7 +415,16 @@
         "published_at": "2026-05-03T13:16:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "What the hell is this gemini, is he unal!!!!g someone",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t2kpyf/what_the_hell_is_this_gemini_is_he_unalg_someone/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-03T12:55:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Upgrade Safely - How to setup a canary instance",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-03T12:28:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Gugugaga not that shit",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-03T11:40:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Anyone else frustrated with agent memory solutions like mem0, Zep, etc?",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-03T10:16:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Wikipedia goes for-profit",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-03T10:14:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Sitting on 10k in unused openai api credits that will expire, what would you build?",
-        "link": "https://reddit.com/r/OpenAI/comments/1t2h5c9/sitting_on_10k_in_unused_openai_api_credits_that/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-03T09:50:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "New version 2026.5.2",
-        "link": "https://reddit.com/r/openclaw/comments/1t2g3i1/new_version_202652/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-03T08:49:06+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Why do AI models improve rapidly in benchmarks but still fail basic real-world reliability tests?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2g1ok/why_do_ai_models_improve_rapidly_in_benchmarks/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-03T08:46:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Some AI images i generated in 2021",
-        "link": "https://reddit.com/r/OpenAI/comments/1t2ewrk/some_ai_images_i_generated_in_2021/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-03T07:39:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T13:50:32.595Z",
+    "reddit_viral_generated_at": "2026-05-03T15:07:26.283Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
