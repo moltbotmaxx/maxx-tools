@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T10:16:48.672Z",
+    "generated_at": "2026-05-03T11:09:21.121Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone else frustrated with agent memory solutions like mem0, Zep, etc?",
+        "link": "https://reddit.com/r/openclaw/comments/1t2hljg/anyone_else_frustrated_with_agent_memory/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-03T10:16:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "New version 2026.5.2",
         "link": "https://reddit.com/r/openclaw/comments/1t2g3i1/new_version_202652/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-03T08:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Why do AI models improve rapidly in benchmarks but still fail basic real-world reliability tests?",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-03T08:46:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Spent $850 on OpenClaw in a month ($350 in one day) → cut 70–90% cost after fixing this",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-03T08:05:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Some AI images i generated in 2021",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-03T07:39:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Let's not rename powershell.exe",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-03T07:37:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "I asked ChatGPT to show me its parents. This is what it made.",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-03T06:03:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "[d] i think my scm + llm agent architecture is fundamentally broken (identifiability issues)",
@@ -433,16 +442,7 @@
         "published_at": "2026-05-03T05:35:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Idiot Developers Update Post",
-        "link": "https://reddit.com/r/openclaw/comments/1t2c0i6/idiot_developers_update_post/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-03T04:59:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "I left my Agent OS running overnight and it built 4 new tools I didn't even ask for",
@@ -451,7 +451,7 @@
         "published_at": "2026-05-03T02:47:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 82
       },
       {
         "headline": "Found the seahorse emoji for Claude",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-03T01:34:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 82
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T10:16:48.672Z",
+    "reddit_viral_generated_at": "2026-05-03T11:09:21.121Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
