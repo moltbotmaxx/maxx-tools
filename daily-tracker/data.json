@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T15:07:26.283Z",
+    "generated_at": "2026-05-03T16:02:24.237Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Me at 2am",
+        "link": "https://reddit.com/r/aimemes/comments/1t2opyh/me_at_2am/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-03T15:36:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Ollama $20/month",
+        "link": "https://reddit.com/r/openclaw/comments/1t2ngdg/ollama_20month/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-03T14:48:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Google I/O leaks: Gemini’s \"Omni\" and Gemini 3.2/3.5",
         "link": "https://reddit.com/r/singularity/comments/1t2n0kv/google_io_leaks_geminis_omni_and_gemini_3235/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-03T14:30:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Google I/O leaks: Gemini’s \"Omni\" push and Gemini 3.2/3.5.",
@@ -388,7 +406,16 @@
         "published_at": "2026-05-03T14:24:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "IKEA forgets Gemini logo on generated promotional video",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t2mez5/ikea_forgets_gemini_logo_on_generated_promotional/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-03T14:06:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "coming may 2026",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-03T14:04:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Yet Another Openclaw vs Hermes experience sharing",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-03T13:53:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "What if ChatGPT launched in 1998",
@@ -415,16 +442,16 @@
         "published_at": "2026-05-03T13:16:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
-        "headline": "What the hell is this gemini, is he unal!!!!g someone",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t2kpyf/what_the_hell_is_this_gemini_is_he_unalg_someone/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-03T12:55:23+00:00",
+        "headline": "Claude design is saving me",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t2kxiv/claude_design_is_saving_me/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-03T13:03:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Upgrade Safely - How to setup a canary instance",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-03T12:28:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gugugaga not that shit",
-        "link": "https://reddit.com/r/aimemes/comments/1t2j5b2/gugugaga_not_that_shit/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-03T11:40:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anyone else frustrated with agent memory solutions like mem0, Zep, etc?",
-        "link": "https://reddit.com/r/openclaw/comments/1t2hljg/anyone_else_frustrated_with_agent_memory/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-03T10:16:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Wikipedia goes for-profit",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t2hjoq/wikipedia_goes_forprofit/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-03T10:14:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T15:07:26.283Z",
+    "reddit_viral_generated_at": "2026-05-03T16:02:24.237Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
