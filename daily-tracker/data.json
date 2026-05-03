@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T22:02:37.434Z",
+    "generated_at": "2026-05-03T23:05:39.257Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Your claw is going to negotiate against my claw and we're all going to lose",
+        "link": "https://reddit.com/r/openclaw/comments/1t2yk62/your_claw_is_going_to_negotiate_against_my_claw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-03T21:45:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude got access to a clock and immediately lost its mind",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t2ydlt/claude_got_access_to_a_clock_and_immediately_lost/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-03T21:38:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Chat saved the life of this turtle.",
         "link": "https://reddit.com/r/ChatGPT/comments/1t2xst0/chat_saved_the_life_of_this_turtle/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-03T21:15:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "When can we use thinking mode with Gemma4 or gwen3.6 in openclaw?",
@@ -388,22 +406,13 @@
         "published_at": "2026-05-03T20:37:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Inception",
         "link": "https://reddit.com/r/OpenAI/comments/1t2w8zd/inception/",
         "subreddit": "OpenAI",
         "published_at": "2026-05-03T20:15:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Ye Olde Memes",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t2vkql/ye_olde_memes/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-03T19:50:39+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
@@ -415,7 +424,7 @@
         "published_at": "2026-05-03T17:55:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Found a consistent micro-noise pattern in AI-generated flat images",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-03T17:46:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Professor’s bold prediction: AI could help cure all diseases within a decade",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-03T16:55:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "Apple says Mac Mini and Mac Studio will be supply-constrained for months due to AI demand",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-03T16:45:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "What if Claude launched in 1998?",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-03T16:27:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Skyrim cities if they were actually city size",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t2p0cy/skyrim_cities_if_they_were_actually_city_size/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-03T15:46:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T22:02:37.434Z",
+    "reddit_viral_generated_at": "2026-05-03T23:05:39.257Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
