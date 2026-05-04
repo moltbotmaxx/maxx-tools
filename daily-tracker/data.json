@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-04T10:26:13.367Z",
+    "generated_at": "2026-05-04T12:57:18.388Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "What happened to Friends of the Crustacean?",
-        "link": "https://reddit.com/r/openclaw/comments/1t3d9c3/what_happened_to_friends_of_the_crustacean/",
+        "headline": "I just got rick rolled by my own agent",
+        "link": "https://reddit.com/r/openclaw/comments/1t3gsws/i_just_got_rick_rolled_by_my_own_agent/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-04T10:02:25+00:00",
+        "published_at": "2026-05-04T12:51:44+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "I upgraded to Pro. ChatGPT won’t admit it.",
-        "link": "https://reddit.com/r/OpenAI/comments/1t3bsay/i_upgraded_to_pro_chatgpt_wont_admit_it/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-04T08:37:28+00:00",
+        "headline": "How to force Claude Code to use Opus 4.5 and not 4.7 via Oauth?",
+        "link": "https://reddit.com/r/openclaw/comments/1t3g0ee/how_to_force_claude_code_to_use_opus_45_and_not/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T12:17:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Helped a friend migrate his Wix site to WordPress using OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1t3fd87/helped_a_friend_migrate_his_wix_site_to_wordpress/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T11:49:45+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
       },
       {
-        "headline": "Vibe Coding vs. Production reality",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t3bk3x/vibe_coding_vs_production_reality/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-04T08:23:13+00:00",
+        "headline": "Official Discord Outage",
+        "link": "https://reddit.com/r/openclaw/comments/1t3ev3v/official_discord_outage/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T11:25:31+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "Xiaomi mimo coding plan is a absolute scam/misleading marketing",
-        "link": "https://reddit.com/r/openclaw/comments/1t39zba/xiaomi_mimo_coding_plan_is_a_absolute/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-04T06:48:57+00:00",
+        "headline": "The biggest bottleneck to AI adoption right now isn't the models. It's the fact that corporate data is a complete mess.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3ef9e/the_biggest_bottleneck_to_ai_adoption_right_now/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-04T11:03:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 95
       },
       {
-        "headline": "Why doesn't anyone use Claude to configure OpenClaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1t39k4r/why_doesnt_anyone_use_claude_to_configure_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-04T06:24:06+00:00",
+        "headline": "Chinese Court Rules That a Worker Cannot Be Replaced by AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3edjb/chinese_court_rules_that_a_worker_cannot_be/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-04T11:01:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Gemini AI's Android App Gets a Bold Redesign",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t3ec1e/gemini_ais_android_app_gets_a_bold_redesign/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-04T10:59:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Unpopular Opinion: If you think Gemini 3.1 Pro is \"lazy,\" you’re using it like it’s ChatGPT.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t3ebxv/unpopular_opinion_if_you_think_gemini_31_pro_is/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-04T10:59:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "IBM Research introduces MAMMAL, a multi-modal model that combines proteins, molecules, gene data achieving SOTA on 9 out 11 biological benchmarks (beating AlphaFold 3 in some)",
+        "link": "https://reddit.com/r/singularity/comments/1t3e91i/ibm_research_introduces_mammal_a_multimodal_model/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-04T10:55:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "The internet if it remained a public utility instead of being commercialized",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t3djkv/the_internet_if_it_remained_a_public_utility/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-04T10:17:54+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "When AI hits security there will be signs",
-        "link": "https://reddit.com/r/OpenAI/comments/1t38k4z/when_ai_hits_security_there_will_be_signs/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-04T05:28:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Got this SVG from A/B test window inside AI Studio. Still can't believe this is an SVG. Most likely the new flash/pro model.",
-        "link": "https://reddit.com/r/singularity/comments/1t378wg/got_this_svg_from_ab_test_window_inside_ai_studio/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-04T04:18:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "AI Fluency Is Expected in Interviews, But 67% of Hiring Managers Say AI Applications Are Slowing Hiring",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t36wij/ai_fluency_is_expected_in_interviews_but_67_of/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-04T04:01:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "ChatGPT’s fixation on my past conversations has made it borderline unusable",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t35tbg/chatgpts_fixation_on_my_past_conversations_has/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-04T03:07:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Openclaw sucks - I said it.",
-        "link": "https://reddit.com/r/openclaw/comments/1t34z7p/openclaw_sucks_i_said_it/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-04T02:28:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-04T10:26:13.367Z",
+    "reddit_viral_generated_at": "2026-05-04T12:57:18.388Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
