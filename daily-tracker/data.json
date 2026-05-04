@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-03T23:05:39.257Z",
+    "generated_at": "2026-05-04T00:05:50.463Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -400,6 +400,15 @@
         "viral_score": 98
       },
       {
+        "headline": "$700 billion in AI capex + 92,000 layoffs at the same companies - is the \"AI employment paradox\" here earlier than expected?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t2xnj9/700_billion_in_ai_capex_92000_layoffs_at_the_same/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-03T21:09:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
         "headline": "When can we use thinking mode with Gemma4 or gwen3.6 in openclaw?",
         "link": "https://reddit.com/r/openclaw/comments/1t2wtfl/when_can_we_use_thinking_mode_with_gemma4_or/",
         "subreddit": "openclaw",
@@ -409,28 +418,28 @@
         "viral_score": 97
       },
       {
+        "headline": "Someone needs to let him know that AI stands for Artificial \"Intelligence\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1t2wpq3/someone_needs_to_let_him_know_that_ai_stands_for/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-03T20:33:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
         "headline": "Inception",
         "link": "https://reddit.com/r/OpenAI/comments/1t2w8zd/inception/",
         "subreddit": "OpenAI",
         "published_at": "2026-05-03T20:15:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "What if Gemini launched in 1998?",
         "link": "https://reddit.com/r/GeminiAI/comments/1t2sgbs/what_if_gemini_launched_in_1998/",
         "subreddit": "GeminiAI",
         "published_at": "2026-05-03T17:55:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Found a consistent micro-noise pattern in AI-generated flat images",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t2s6zv/found_a_consistent_micronoise_pattern_in/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-03T17:46:01+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "What if Claude launched in 1998?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t2q2kn/what_if_claude_launched_in_1998/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-03T16:27:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-03T23:05:39.257Z",
+    "reddit_viral_generated_at": "2026-05-04T00:05:50.463Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
