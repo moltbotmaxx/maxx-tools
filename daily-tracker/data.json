@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-04T04:11:44.740Z",
+    "generated_at": "2026-05-04T07:26:18.974Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Xiaomi mimo coding plan is a absolute scam/misleading marketing",
+        "link": "https://reddit.com/r/openclaw/comments/1t39zba/xiaomi_mimo_coding_plan_is_a_absolute/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T06:48:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Best Free LLM APIs for Openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1t39sfg/best_free_llm_apis_for_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T06:37:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Why doesn't anyone use Claude to configure OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1t39k4r/why_doesnt_anyone_use_claude_to_configure_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T06:24:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "When AI hits security there will be signs",
+        "link": "https://reddit.com/r/OpenAI/comments/1t38k4z/when_ai_hits_security_there_will_be_signs/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-04T05:28:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "AI Fluency Is Expected in Interviews, But 67% of Hiring Managers Say AI Applications Are Slowing Hiring",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1t36wij/ai_fluency_is_expected_in_interviews_but_67_of/",
@@ -379,7 +415,16 @@
         "published_at": "2026-05-04T04:01:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Openclaw sucks - I said it.",
+        "link": "https://reddit.com/r/openclaw/comments/1t34z7p/openclaw_sucks_i_said_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T02:28:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Anyone using Deepseek V4 Flash",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-04T02:04:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Why’s it so sensitive wtf",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-04T01:53:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "I think gemini had enough",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-04T01:52:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "Ilya Sutskever: Accurately predicting the next word leads to real understanding",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-04T01:29:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Richard Dawkins gets on UnHerd and Documents his AI Hallucination",
-        "link": "https://reddit.com/r/aimemes/comments/1t31ym7/richard_dawkins_gets_on_unherd_and_documents_his/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-04T00:11:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Even Sama himself doesn’t believe GPT-5.5 matches Opus 4.7 design capabilities. AI race will humble you",
-        "link": "https://reddit.com/r/OpenAI/comments/1t31h0q/even_sama_himself_doesnt_believe_gpt55_matches/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-03T23:50:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Your claw is going to negotiate against my claw and we're all going to lose",
-        "link": "https://reddit.com/r/openclaw/comments/1t2yk62/your_claw_is_going_to_negotiate_against_my_claw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-03T21:45:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Claude got access to a clock and immediately lost its mind",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t2ydlt/claude_got_access_to_a_clock_and_immediately_lost/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-03T21:38:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Pissed with Google.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t2y4rg/pissed_with_google/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-03T21:28:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-04T04:11:44.740Z",
+    "reddit_viral_generated_at": "2026-05-04T07:26:18.974Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
