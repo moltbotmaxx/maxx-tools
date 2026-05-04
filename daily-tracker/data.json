@@ -367,97 +367,97 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-04T15:24:08.852Z",
+    "generated_at": "2026-05-04T17:53:18.731Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Musk sought settlement with OpenAI before Oakland trial.",
-        "link": "https://reddit.com/r/OpenAI/comments/1t3j48u/musk_sought_settlement_with_openai_before_oakland/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-04T14:20:27+00:00",
+        "headline": "It bothers me how much people don’t use this combination",
+        "link": "https://reddit.com/r/openclaw/comments/1t3nwnn/it_bothers_me_how_much_people_dont_use_this/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T17:08:15+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "The overusage of “It’s not A, it’s B” or “It’s not about A, but it’s about B” is driving me crazy.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3nlm1/the_overusage_of_its_not_a_its_b_or_its_not_about/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-04T16:57:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Built a free browser tool that turns SVGs and pixel art into 3D",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t3lrel/built_a_free_browser_tool_that_turns_svgs_and/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-04T15:54:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "What model are you running your agent on?",
+        "link": "https://reddit.com/r/openclaw/comments/1t3lpim/what_model_are_you_running_your_agent_on/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-04T15:52:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "This tweet from JAX/Flax @ Google DeepMind",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t3l4so/this_tweet_from_jaxflax_google_deepmind/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-04T15:32:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "my AI agent ran for 6 hours scraping garbage data and i didn't notice until i got the AWS bill",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3l3ro/my_ai_agent_ran_for_6_hours_scraping_garbage_data/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-04T15:31:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Sam Altman says the quiet part out loud, confirming some companies are \"AI washing\" by blaming unrelated layoffs on the technology",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3ktrr/sam_altman_says_the_quiet_part_out_loud/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-04T15:21:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Elon Musk threatened to make OpenAI leaders \"the most hated men in America\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1t3kp3m/elon_musk_threatened_to_make_openai_leaders_the/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-04T15:16:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Musk messaged Brockman to gauge interest in a settlement, per a new legal filing Sunday night",
+        "link": "https://reddit.com/r/singularity/comments/1t3kc9i/musk_messaged_brockman_to_gauge_interest_in_a/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-04T15:04:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "AI-generated actors and scripts are now ineligible for Oscars",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3ivxv/aigenerated_actors_and_scripts_are_now_ineligible/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-05-04T14:12:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Chat GPT got that guy in trouble and he doesn’t even know it yet…lol",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t3ii1l/chat_gpt_got_that_guy_in_trouble_and_he_doesnt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-04T13:58:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "I asked Gemini how to speedrun life (any %) and it took it way too literally",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t3iejj/i_asked_gemini_how_to_speedrun_life_any_and_it/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-04T13:54:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "A Twitter user tricked Grok to send 200k USD to him and it worked",
-        "link": "https://reddit.com/r/singularity/comments/1t3hw53/a_twitter_user_tricked_grok_to_send_200k_usd_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-04T13:34:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "gemini really needs a \"projects\" feature to fix context management",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t3hcg3/gemini_really_needs_a_projects_feature_to_fix/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-04T13:12:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "If only this was a real game",
-        "link": "https://reddit.com/r/singularity/comments/1t3gzwe/if_only_this_was_a_real_game/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-04T12:59:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I just got rick rolled by my own agent",
-        "link": "https://reddit.com/r/openclaw/comments/1t3gsws/i_just_got_rick_rolled_by_my_own_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-04T12:51:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "chatgpt down?",
-        "link": "https://reddit.com/r/OpenAI/comments/1t3fpra/chatgpt_down/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-04T12:05:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Official Discord Outage",
-        "link": "https://reddit.com/r/openclaw/comments/1t3ev3v/official_discord_outage/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-04T11:25:31+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-04T15:24:08.852Z",
+    "reddit_viral_generated_at": "2026-05-04T17:53:18.731Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
