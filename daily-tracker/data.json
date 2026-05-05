@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T14:29:15.350Z",
+    "generated_at": "2026-05-05T16:56:12.172Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Ghibli Style Game 2.0",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t4htaj/ghibli_style_game_20/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-05T14:53:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "New Boston Dynamics Atlas trick",
+        "link": "https://reddit.com/r/singularity/comments/1t4hqyn/new_boston_dynamics_atlas_trick/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-05T14:51:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Google’s AI architect, Demis Hassabis, lived rent-free in Elon Musk’s head",
+        "link": "https://reddit.com/r/singularity/comments/1t4hnfl/googles_ai_architect_demis_hassabis_lived/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-05T14:48:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "OpenAI is working on a new \"Personal Wiki\" (\"lore\") in ChatGPT.",
+        "link": "https://reddit.com/r/OpenAI/comments/1t4h4yw/openai_is_working_on_a_new_personal_wiki_lore_in/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T14:29:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "No one is safe",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t4gt9i/no_one_is_safe/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-05T14:17:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Turned a desk lamp into a Claude Code status indicator",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t4gfc7/turned_a_desk_lamp_into_a_claude_code_status/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-05T14:03:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I asked Claude to investigate its own token burn. The receipts go back six months.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t4gchn/i_asked_claude_to_investigate_its_own_token_burn/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-05T14:00:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "OpenAI Revenue",
+        "link": "https://reddit.com/r/OpenAI/comments/1t4fy1m/openai_revenue/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T13:45:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Gemini is unusable!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t4fxi6/gemini_is_unusable/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-05T13:44:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Gemini technically saved my life",
         "link": "https://reddit.com/r/GeminiAI/comments/1t4fwcs/gemini_technically_saved_my_life/",
@@ -379,95 +460,14 @@
         "published_at": "2026-05-05T13:43:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "OpenAI expected to produce as many as 30 million 'AI agent' phones early next year, says industry analyst",
-        "link": "https://reddit.com/r/OpenAI/comments/1t4ffmo/openai_expected_to_produce_as_many_as_30_million/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-05T13:25:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "\"Generate an in-game screenshot from Heroes 3\"",
-        "link": "https://reddit.com/r/singularity/comments/1t4f66m/generate_an_ingame_screenshot_from_heroes_3/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-05T13:15:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "2026.5.4 Hallelujah!",
-        "link": "https://reddit.com/r/openclaw/comments/1t4eiaz/202654_hallelujah/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-05T12:49:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Gemini was broken for 3 hours this morning and AI Studio status page shows nothing",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4cpvn/gemini_was_broken_for_3_hours_this_morning_and_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-05T11:31:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Is MiMo lowkey slept on?",
-        "link": "https://reddit.com/r/singularity/comments/1t4chgr/is_mimo_lowkey_slept_on/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-05T11:20:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Anyone having problem with Gemini? Lagging or not responding?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4bbqj/anyone_having_problem_with_gemini_lagging_or_not/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-05T10:22:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Warning: Anthropic's \"Gift Max\" exploit drained €800+, ruined my credit, and got me banned.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t4atbx/warning_anthropics_gift_max_exploit_drained_800/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-05T09:55:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Yesterday I asked which model you use with your agent. Any guess who came on top?",
-        "link": "https://reddit.com/r/openclaw/comments/1t4am23/yesterday_i_asked_which_model_you_use_with_your/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-05T09:43:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "AGI corps be like",
-        "link": "https://reddit.com/r/aimemes/comments/1t49pg2/agi_corps_be_like/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-05T08:50:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 95
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T14:29:15.350Z",
+    "reddit_viral_generated_at": "2026-05-05T16:56:12.172Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
