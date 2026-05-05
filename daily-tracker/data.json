@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T20:18:44.067Z",
+    "generated_at": "2026-05-05T21:17:44.004Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Stop asking \"which model should I use.\" The answer is different for every task and you should be using at least 3",
+        "link": "https://reddit.com/r/openclaw/comments/1t4s8cp/stop_asking_which_model_should_i_use_the_answer/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-05T20:57:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I asked ChatGPT to redraw iconic NBA photos as horribly as possible",
         "link": "https://reddit.com/r/ChatGPT/comments/1t4oo24/i_asked_chatgpt_to_redraw_iconic_nba_photos_as/",
@@ -379,16 +388,7 @@
         "published_at": "2026-05-05T18:50:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "NOT WORKING",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4nq6p/not_working/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-05T18:18:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "gemini not working",
@@ -397,7 +397,7 @@
         "published_at": "2026-05-05T18:14:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "GPT-5.5 Instant is starting to roll out in ChatGPT.",
@@ -406,7 +406,16 @@
         "published_at": "2026-05-05T17:32:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
+      },
+      {
+        "headline": "Andrej Karpathy said he's never felt more behind as a programmer. Let that sink in for a second.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t4lt8j/andrej_karpathy_said_hes_never_felt_more_behind/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-05T17:13:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Ghibli Style Game 2.0",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-05T16:18:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Ghibli Style Game 2.0",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-05T14:53:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "New Boston Dynamics Atlas trick",
@@ -433,16 +442,7 @@
         "published_at": "2026-05-05T14:51:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Google’s AI architect, Demis Hassabis, lived rent-free in Elon Musk’s head",
-        "link": "https://reddit.com/r/singularity/comments/1t4hnfl/googles_ai_architect_demis_hassabis_lived/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-05T14:48:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "No one is safe",
@@ -451,7 +451,7 @@
         "published_at": "2026-05-05T14:17:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       },
       {
         "headline": "Turned a desk lamp into a Claude Code status indicator",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-05T14:03:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T20:18:44.067Z",
+    "reddit_viral_generated_at": "2026-05-05T21:17:44.004Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
