@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T16:56:12.172Z",
+    "generated_at": "2026-05-05T18:48:50.710Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT-5.5 Instant is starting to roll out in ChatGPT.",
+        "link": "https://reddit.com/r/OpenAI/comments/1t4mdyd/gpt55_instant_is_starting_to_roll_out_in_chatgpt/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T17:32:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Ghibli Style Game 2.0",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t4k85n/ghibli_style_game_20/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-05T16:18:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Ghibli Style Game 2.0",
         "link": "https://reddit.com/r/ChatGPT/comments/1t4htaj/ghibli_style_game_20/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-05T14:53:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "New Boston Dynamics Atlas trick",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-05T14:51:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Google’s AI architect, Demis Hassabis, lived rent-free in Elon Musk’s head",
@@ -397,16 +415,7 @@
         "published_at": "2026-05-05T14:48:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "OpenAI is working on a new \"Personal Wiki\" (\"lore\") in ChatGPT.",
-        "link": "https://reddit.com/r/OpenAI/comments/1t4h4yw/openai_is_working_on_a_new_personal_wiki_lore_in/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-05T14:29:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "No one is safe",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-05T14:17:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Turned a desk lamp into a Claude Code status indicator",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-05T14:03:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "I asked Claude to investigate its own token burn. The receipts go back six months.",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-05T14:00:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "OpenAI Revenue",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-05T13:45:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Gemini is unusable!",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-05T13:44:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini technically saved my life",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4fwcs/gemini_technically_saved_my_life/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-05T13:43:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T16:56:12.172Z",
+    "reddit_viral_generated_at": "2026-05-05T18:48:50.710Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
