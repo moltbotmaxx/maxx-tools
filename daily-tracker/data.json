@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T21:17:44.004Z",
+    "generated_at": "2026-05-05T22:15:27.370Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Never understood why people would use Gemini instead of ChatGPT, until I tried it out for myself today...",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t4sr45/never_understood_why_people_would_use_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-05T21:16:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Stop asking \"which model should I use.\" The answer is different for every task and you should be using at least 3",
         "link": "https://reddit.com/r/openclaw/comments/1t4s8cp/stop_asking_which_model_should_i_use_the_answer/",
@@ -379,7 +388,16 @@
         "published_at": "2026-05-05T20:57:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "Reddit's CEO calls his company 'the fuel' for artificial intelligence",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t4r2ff/reddits_ceo_calls_his_company_the_fuel_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-05T20:15:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "I asked ChatGPT to redraw iconic NBA photos as horribly as possible",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-05T18:50:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "gemini not working",
@@ -397,7 +415,16 @@
         "published_at": "2026-05-05T18:14:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
+      },
+      {
+        "headline": "GPT-5.5 Instant: Smarter, Clearer, and More Personalized",
+        "link": "https://reddit.com/r/OpenAI/comments/1t4n2kf/gpt55_instant_smarter_clearer_and_more/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T17:55:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "GPT-5.5 Instant is starting to roll out in ChatGPT.",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-05T17:32:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Andrej Karpathy said he's never felt more behind as a programmer. Let that sink in for a second.",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-05T17:13:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Ghibli Style Game 2.0",
@@ -424,40 +451,13 @@
         "published_at": "2026-05-05T16:18:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "Ghibli Style Game 2.0",
         "link": "https://reddit.com/r/ChatGPT/comments/1t4htaj/ghibli_style_game_20/",
         "subreddit": "ChatGPT",
         "published_at": "2026-05-05T14:53:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "New Boston Dynamics Atlas trick",
-        "link": "https://reddit.com/r/singularity/comments/1t4hqyn/new_boston_dynamics_atlas_trick/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-05T14:51:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "No one is safe",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t4gt9i/no_one_is_safe/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-05T14:17:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Turned a desk lamp into a Claude Code status indicator",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t4gfc7/turned_a_desk_lamp_into_a_claude_code_status/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-05T14:03:16+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 84
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T21:17:44.004Z",
+    "reddit_viral_generated_at": "2026-05-05T22:15:27.370Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
