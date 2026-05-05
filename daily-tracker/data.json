@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T03:52:08.093Z",
+    "generated_at": "2026-05-05T06:29:42.313Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "This is what non-tech bros are using AI for!",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t45otc/this_is_what_nontech_bros_are_using_ai_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-05T04:59:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I like using Gemini to imagine what different workstations might have looked like through the ages. In this example battle stations",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t43yui/i_like_using_gemini_to_imagine_what_different/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-05T03:34:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I asked ChatGPT and Gemini to do this weird perspective portrait with my face. I gave it a front face picture and a profile, including the example artwork. That was the result.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t435ig/i_asked_chatgpt_and_gemini_to_do_this_weird/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-05T02:56:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "When Claude tells you to \"stop spiraling and go to bed\"",
         "link": "https://reddit.com/r/ClaudeAI/comments/1t42p01/when_claude_tells_you_to_stop_spiraling_and_go_to/",
@@ -379,7 +406,25 @@
         "published_at": "2026-05-05T02:36:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Thx @sama … never been so happy with a consolation prize",
+        "link": "https://reddit.com/r/OpenAI/comments/1t42975/thx_sama_never_been_so_happy_with_a_consolation/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T02:16:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Get ChatGPT to create a game based on your interests",
+        "link": "https://reddit.com/r/OpenAI/comments/1t41nkt/get_chatgpt_to_create_a_game_based_on_your/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T01:50:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "AI parenting has a lot of room to grow",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-05T00:00:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Anyone else seeing the “Flash 3.2” label in their Gemini app on iOS",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-04T23:13:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 86
       },
       {
         "headline": "I cancelled my $200 Max plan after routing cut my actual need to about $30/month",
@@ -406,16 +451,7 @@
         "published_at": "2026-05-04T22:53:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "White House Considers Vetting A.I. Models Before They Are Released",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3w1l7/white_house_considers_vetting_ai_models_before/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-04T21:55:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 85
       },
       {
         "headline": "A good solution will be appreciated",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-04T21:01:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "OpenAI is 'exploring' an IPO, Greg Brockman says at Elon Musk trial",
-        "link": "https://reddit.com/r/OpenAI/comments/1t3tom3/openai_is_exploring_an_ipo_greg_brockman_says_at/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-04T20:28:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "White House Considers Vetting A.I. Models Before They Are Released",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t3s3lk/white_house_considers_vetting_ai_models_before/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-04T19:33:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Anthropic co-founder Jack Clark says AI is nearing the point where it can automate AI research",
-        "link": "https://reddit.com/r/singularity/comments/1t3russ/anthropic_cofounder_jack_clark_says_ai_is_nearing/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-04T19:24:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "The em dashes ( — ) | The unsaid AI SLOP Tax",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t3rrfr/the_em_dashes_the_unsaid_ai_slop_tax/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-04T19:21:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T03:52:08.093Z",
+    "reddit_viral_generated_at": "2026-05-05T06:29:42.313Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
