@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T22:15:27.370Z",
+    "generated_at": "2026-05-05T23:13:18.557Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -377,6 +377,15 @@
         "link": "https://reddit.com/r/GeminiAI/comments/1t4sr45/never_understood_why_people_would_use_gemini/",
         "subreddit": "GeminiAI",
         "published_at": "2026-05-05T21:16:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "This is getting dangerous…",
+        "link": "https://reddit.com/r/OpenAI/comments/1t4sory/this_is_getting_dangerous/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T21:14:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -415,7 +424,16 @@
         "published_at": "2026-05-05T18:14:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
+      },
+      {
+        "headline": "10 things about Claude that took me way too long to figure out",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t4ncbj/10_things_about_claude_that_took_me_way_too_long/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-05T18:04:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "GPT-5.5 Instant: Smarter, Clearer, and More Personalized",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-05T17:55:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "GPT-5.5 Instant is starting to roll out in ChatGPT.",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-05T17:32:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Andrej Karpathy said he's never felt more behind as a programmer. Let that sink in for a second.",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-05T17:13:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Ghibli Style Game 2.0",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4k85n/ghibli_style_game_20/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-05T16:18:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Ghibli Style Game 2.0",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t4htaj/ghibli_style_game_20/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-05T14:53:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T22:15:27.370Z",
+    "reddit_viral_generated_at": "2026-05-05T23:13:18.557Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
