@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T09:22:59.208Z",
+    "generated_at": "2026-05-05T11:40:18.282Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone having problem with Gemini? Lagging or not responding?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t4bbqj/anyone_having_problem_with_gemini_lagging_or_not/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-05T10:22:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Warning: Anthropic's \"Gift Max\" exploit drained €800+, ruined my credit, and got me banned.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t4atbx/warning_anthropics_gift_max_exploit_drained_800/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-05T09:55:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Yesterday I asked which model you use with your agent. Any guess who came on top?",
+        "link": "https://reddit.com/r/openclaw/comments/1t4am23/yesterday_i_asked_which_model_you_use_with_your/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-05T09:43:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "AGI corps be like",
         "link": "https://reddit.com/r/aimemes/comments/1t49pg2/agi_corps_be_like/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-05T08:50:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Warning: Anthropic \"Gift Max\" Exploit cost me €800, tanked my SCHUFA score, and got me banned.",
@@ -388,34 +415,25 @@
         "published_at": "2026-05-05T08:49:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
-        "headline": "Clawbot Antiscalp",
-        "link": "https://reddit.com/r/openclaw/comments/1t49b5l/clawbot_antiscalp/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-05T08:26:42+00:00",
+        "headline": "POV: when chat gpt starts giving me wrong answers",
+        "link": "https://reddit.com/r/OpenAI/comments/1t49547/pov_when_chat_gpt_starts_giving_me_wrong_answers/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-05T08:16:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
-        "headline": "Openclaw vs. Hermes and following Agents.md file….",
-        "link": "https://reddit.com/r/openclaw/comments/1t46rpg/openclaw_vs_hermes_and_following_agentsmd_file/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-05T05:57:18+00:00",
+        "headline": "Gemini has reached Roblox level censorship",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t48hm4/gemini_has_reached_roblox_level_censorship/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-05T07:36:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "This is what non-tech bros are using AI for!",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t45otc/this_is_what_nontech_bros_are_using_ai_for/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-05T04:59:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       },
       {
         "headline": "I like using Gemini to imagine what different workstations might have looked like through the ages. In this example battle stations",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-05T03:34:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       },
       {
         "headline": "I asked ChatGPT and Gemini to do this weird perspective portrait with my face. I gave it a front face picture and a profile, including the example artwork. That was the result.",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-05T02:56:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 82
       },
       {
         "headline": "When Claude tells you to \"stop spiraling and go to bed\"",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-05T02:36:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Thx @sama … never been so happy with a consolation prize",
-        "link": "https://reddit.com/r/OpenAI/comments/1t42975/thx_sama_never_been_so_happy_with_a_consolation/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-05T02:16:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Get ChatGPT to create a game based on your interests",
-        "link": "https://reddit.com/r/OpenAI/comments/1t41nkt/get_chatgpt_to_create_a_game_based_on_your/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-05T01:50:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T09:22:59.208Z",
+    "reddit_viral_generated_at": "2026-05-05T11:40:18.282Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
