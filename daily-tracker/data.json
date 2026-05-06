@@ -367,28 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-06T06:46:39.318Z",
+    "generated_at": "2026-05-06T09:36:56.566Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Getting nemoclaw to allow for GOG intergration",
-        "link": "https://reddit.com/r/openclaw/comments/1t533u0/getting_nemoclaw_to_allow_for_gog_intergration/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T04:56:27+00:00",
+        "headline": "Prompt Injection experience - my first time ever",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t56zqw/prompt_injection_experience_my_first_time_ever/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-06T08:39:35+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Make your AI agents subscribe to events instead of polling",
-        "link": "https://reddit.com/r/openclaw/comments/1t52py2/make_your_ai_agents_subscribe_to_events_instead/",
+        "headline": "Is there anyone else here besides me who thinks this isn't the r/Hermes topic?",
+        "link": "https://reddit.com/r/openclaw/comments/1t55tgs/is_there_anyone_else_here_besides_me_who_thinks/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-06T04:36:21+00:00",
+        "published_at": "2026-05-06T07:27:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
+      },
+      {
+        "headline": "Me and ChatGPT everyday😅",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t55h0i/me_and_chatgpt_everyday/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T07:07:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I asked ChatGPT for a 'Perfectly Normal Family Picnic', but told it to hide a few subtle details that get more terrifying the longer you look.",
+        "link": "https://reddit.com/r/OpenAI/comments/1t549d9/i_asked_chatgpt_for_a_perfectly_normal_family/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-06T05:58:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Feeling like Gemini response quality regressing everyday.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t53wlr/feeling_like_gemini_response_quality_regressing/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-06T05:38:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "If you want a proactive model, switch to Hermes.",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-06T04:07:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
       },
       {
         "headline": "it's time we get ready for the AI apocalypse?",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-06T03:32:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 88
       },
       {
         "headline": "acknowledged the mistake without admitting guilt",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-06T03:16:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "State of the art LLMs",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-06T03:02:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 86
       },
       {
         "headline": "State of the art LLMs",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-06T01:46:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Fun Side project with SwiftUI app and talking to Skippy!",
-        "link": "https://reddit.com/r/openclaw/comments/1t4xseo/fun_side_project_with_swiftui_app_and_talking_to/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T00:46:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Why no one is talking about Google Colab which is almost free for basic work in daily life?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t4wqqt/why_no_one_is_talking_about_google_colab_which_is/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-05T23:59:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Never understood why people would use Gemini instead of ChatGPT, until I tried it out for myself today...",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4sr45/never_understood_why_people_would_use_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-05T21:16:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-06T06:46:39.318Z",
+    "reddit_viral_generated_at": "2026-05-06T09:36:56.566Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
