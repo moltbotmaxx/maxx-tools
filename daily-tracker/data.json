@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-05T23:13:18.557Z",
+    "generated_at": "2026-05-06T00:05:43.569Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,15 +382,6 @@
         "viral_score": 100
       },
       {
-        "headline": "This is getting dangerous…",
-        "link": "https://reddit.com/r/OpenAI/comments/1t4sory/this_is_getting_dangerous/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-05T21:14:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
         "headline": "Stop asking \"which model should I use.\" The answer is different for every task and you should be using at least 3",
         "link": "https://reddit.com/r/openclaw/comments/1t4s8cp/stop_asking_which_model_should_i_use_the_answer/",
         "subreddit": "openclaw",
@@ -398,6 +389,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 99
+      },
+      {
+        "headline": "What do you think?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t4rkki/what_do_you_think/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-05T20:33:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Reddit's CEO calls his company 'the fuel' for artificial intelligence",
@@ -409,13 +409,22 @@
         "viral_score": 97
       },
       {
+        "headline": "My guy was hallucinating HARD today.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t4pv0o/my_guy_was_hallucinating_hard_today/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-05T19:32:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
         "headline": "I asked ChatGPT to redraw iconic NBA photos as horribly as possible",
         "link": "https://reddit.com/r/ChatGPT/comments/1t4oo24/i_asked_chatgpt_to_redraw_iconic_nba_photos_as/",
         "subreddit": "ChatGPT",
         "published_at": "2026-05-05T18:50:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "gemini not working",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-05T18:04:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "GPT-5.5 Instant: Smarter, Clearer, and More Personalized",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "Andrej Karpathy said he's never felt more behind as a programmer. Let that sink in for a second.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t4lt8j/andrej_karpathy_said_hes_never_felt_more_behind/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-05T17:13:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-05T23:13:18.557Z",
+    "reddit_viral_generated_at": "2026-05-06T00:05:43.569Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
