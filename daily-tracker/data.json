@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-06T09:36:56.566Z",
+    "generated_at": "2026-05-06T12:11:23.820Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "If you give a openclaw full access to a 3D printer and a robotic arm, could it eventually build a robot?",
+        "link": "https://reddit.com/r/openclaw/comments/1t59q2e/if_you_give_a_openclaw_full_access_to_a_3d/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T11:11:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Which Ollama LLMs do you use?",
+        "link": "https://reddit.com/r/openclaw/comments/1t589oh/which_ollama_llms_do_you_use/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T09:55:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "OpenClaw Had a Rough Week",
+        "link": "https://reddit.com/r/openclaw/comments/1t57fr3/openclaw_had_a_rough_week/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T09:05:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Dario Amodei spent last year warning of an AI white-collar bloodbath. Now he's changing the narrative",
+        "link": "https://reddit.com/r/singularity/comments/1t57bri/dario_amodei_spent_last_year_warning_of_an_ai/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-06T08:59:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Prompt Injection experience - my first time ever",
         "link": "https://reddit.com/r/ClaudeAI/comments/1t56zqw/prompt_injection_experience_my_first_time_ever/",
@@ -379,7 +415,25 @@
         "published_at": "2026-05-06T08:39:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "what do you use openclaw for specifically? how much does it cost?",
+        "link": "https://reddit.com/r/openclaw/comments/1t56tz4/what_do_you_use_openclaw_for_specifically_how/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T08:29:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Monthly releases of e-books on Amazon since ChatGPT",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t566q9/monthly_releases_of_ebooks_on_amazon_since_chatgpt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T07:50:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Is there anyone else here besides me who thinks this isn't the r/Hermes topic?",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-06T07:27:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Me and ChatGPT everyday😅",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-06T07:07:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "I asked ChatGPT for a 'Perfectly Normal Family Picnic', but told it to hide a few subtle details that get more terrifying the longer you look.",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-06T05:58:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Feeling like Gemini response quality regressing everyday.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t53wlr/feeling_like_gemini_response_quality_regressing/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-06T05:38:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "If you want a proactive model, switch to Hermes.",
-        "link": "https://reddit.com/r/openclaw/comments/1t525jt/if_you_want_a_proactive_model_switch_to_hermes/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T04:07:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "it's time we get ready for the AI apocalypse?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t51fcm/its_time_we_get_ready_for_the_ai_apocalypse/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T03:32:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "acknowledged the mistake without admitting guilt",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t513wj/acknowledged_the_mistake_without_admitting_guilt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T03:16:53+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "State of the art LLMs",
-        "link": "https://reddit.com/r/OpenAI/comments/1t50sf4/state_of_the_art_llms/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-06T03:02:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "State of the art LLMs",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t4z4bh/state_of_the_art_llms/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-06T01:46:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-06T09:36:56.566Z",
+    "reddit_viral_generated_at": "2026-05-06T12:11:23.820Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
