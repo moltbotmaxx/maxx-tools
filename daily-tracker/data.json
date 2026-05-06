@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-06T04:07:59.317Z",
+    "generated_at": "2026-05-06T06:46:39.318Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Getting nemoclaw to allow for GOG intergration",
+        "link": "https://reddit.com/r/openclaw/comments/1t533u0/getting_nemoclaw_to_allow_for_gog_intergration/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T04:56:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Make your AI agents subscribe to events instead of polling",
+        "link": "https://reddit.com/r/openclaw/comments/1t52py2/make_your_ai_agents_subscribe_to_events_instead/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T04:36:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "If you want a proactive model, switch to Hermes.",
+        "link": "https://reddit.com/r/openclaw/comments/1t525jt/if_you_want_a_proactive_model_switch_to_hermes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T04:07:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "it's time we get ready for the AI apocalypse?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t51fcm/its_time_we_get_ready_for_the_ai_apocalypse/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T03:32:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "acknowledged the mistake without admitting guilt",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t513wj/acknowledged_the_mistake_without_admitting_guilt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T03:16:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "State of the art LLMs",
         "link": "https://reddit.com/r/OpenAI/comments/1t50sf4/state_of_the_art_llms/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-06T03:02:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "State of the art LLMs",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-06T01:46:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Fun Side project with SwiftUI app and talking to Skippy!",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-06T00:46:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Why no one is talking about Google Colab which is almost free for basic work in daily life?",
@@ -406,58 +451,13 @@
         "published_at": "2026-05-05T23:59:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 87
       },
       {
         "headline": "Never understood why people would use Gemini instead of ChatGPT, until I tried it out for myself today...",
         "link": "https://reddit.com/r/GeminiAI/comments/1t4sr45/never_understood_why_people_would_use_gemini/",
         "subreddit": "GeminiAI",
         "published_at": "2026-05-05T21:16:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "This is getting dangerous…",
-        "link": "https://reddit.com/r/OpenAI/comments/1t4sory/this_is_getting_dangerous/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-05T21:14:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Stop asking \"which model should I use.\" The answer is different for every task and you should be using at least 3",
-        "link": "https://reddit.com/r/openclaw/comments/1t4s8cp/stop_asking_which_model_should_i_use_the_answer/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-05T20:57:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "What do you think?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t4rkki/what_do_you_think/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-05T20:33:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "My guy was hallucinating HARD today.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t4pv0o/my_guy_was_hallucinating_hard_today/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-05T19:32:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "I asked ChatGPT to redraw iconic NBA photos as horribly as possible",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t4oo24/i_asked_chatgpt_to_redraw_iconic_nba_photos_as/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-05T18:50:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 81
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-06T04:07:59.317Z",
+    "reddit_viral_generated_at": "2026-05-06T06:46:39.318Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
