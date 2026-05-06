@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-06T14:49:09.541Z",
+    "generated_at": "2026-05-06T16:55:38.162Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anthropic partnered with SpaceX to use colossus 1 to increase their rate limits",
+        "link": "https://reddit.com/r/singularity/comments/1t5hy2p/anthropic_partnered_with_spacex_to_use_colossus_1/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-06T16:28:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A Michigan farm town voted down plans for a giant OpenAI-Oracle data center. Weeks later, construction began",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t5hjiv/a_michigan_farm_town_voted_down_plans_for_a_giant/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-06T16:14:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What the fuck? This prompt is so cursed, use with caution",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t5gnsd/what_the_fuck_this_prompt_is_so_cursed_use_with/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T15:43:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "theory abt why everyone’s switching to hermes",
+        "link": "https://reddit.com/r/openclaw/comments/1t5g9ne/theory_abt_why_everyones_switching_to_hermes/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T15:29:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Heads Up if you are using a ChatGPT subscription and OpenAI API",
+        "link": "https://reddit.com/r/openclaw/comments/1t5fkat/heads_up_if_you_are_using_a_chatgpt_subscription/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T15:04:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I think “staying inside the box” is becoming an underrated frontier capability",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t5emcq/i_think_staying_inside_the_box_is_becoming_an/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-06T14:30:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Religious robots are coming: South Korea's first autonomous humanoid robot converts to Buddhism",
+        "link": "https://reddit.com/r/singularity/comments/1t5dur1/religious_robots_are_coming_south_koreas_first/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-06T14:02:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Why is Claude telling to do anything besides what was asked??",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t5d2qs/why_is_claude_telling_to_do_anything_besides_what/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T13:33:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
       {
         "headline": "The Blue Collar Delusion: Why the machines don’t have to climb up to where we are, because the work will descend to meet them",
         "link": "https://reddit.com/r/singularity/comments/1t5cx3y/the_blue_collar_delusion_why_the_machines_dont/",
@@ -379,16 +451,7 @@
         "published_at": "2026-05-06T13:27:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "codex vs openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1t5bp5d/codex_vs_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T12:39:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Is anyone using OpenClaw at work?",
@@ -397,77 +460,14 @@
         "published_at": "2026-05-06T12:28:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "We've been watching for a god like AI super-brain. Research says that was never how intelligence scaled ...",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t5b7uv/weve_been_watching_for_a_god_like_ai_superbrain/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-06T12:19:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "“Tiny chemistry goblin” Tf does that even mean?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t5ary9/tiny_chemistry_goblin_tf_does_that_even_mean/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T12:00:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "If you give a openclaw full access to a 3D printer and a robotic arm, could it eventually build a robot?",
-        "link": "https://reddit.com/r/openclaw/comments/1t59q2e/if_you_give_a_openclaw_full_access_to_a_3d/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T11:11:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Dario Amodei spent last year warning of an AI white-collar bloodbath. Now he's changing the narrative",
-        "link": "https://reddit.com/r/singularity/comments/1t57bri/dario_amodei_spent_last_year_warning_of_an_ai/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-06T08:59:40+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Prompt Injection experience - my first time ever",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t56zqw/prompt_injection_experience_my_first_time_ever/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-06T08:39:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Monthly releases of e-books on Amazon since ChatGPT",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t566q9/monthly_releases_of_ebooks_on_amazon_since_chatgpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T07:50:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Is there anyone else here besides me who thinks this isn't the r/Hermes topic?",
-        "link": "https://reddit.com/r/openclaw/comments/1t55tgs/is_there_anyone_else_here_besides_me_who_thinks/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T07:27:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-06T14:49:09.541Z",
+    "reddit_viral_generated_at": "2026-05-06T16:55:38.162Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
