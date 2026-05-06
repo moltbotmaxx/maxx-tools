@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-06T22:10:08.111Z",
+    "generated_at": "2026-05-06T23:07:58.629Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,22 @@
         "viral_score": 100
       },
       {
+        "headline": "Wait, what...?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t5pyea/wait_what/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-06T21:08:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
         "headline": "Do you think Gemini is getting worse?",
         "link": "https://reddit.com/r/GeminiAI/comments/1t5njtf/do_you_think_gemini_is_getting_worse/",
         "subreddit": "GeminiAI",
         "published_at": "2026-05-06T19:42:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Be cool",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-06T18:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "It wasn’t easy, but I just broke an AI scam bot",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-06T17:47:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Google Chrome 'silently' downloads 4GB AI model to your device without permission, report claims — researcher says practice may violate EU law, waste thousands of kilowatts of energy",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-06T17:11:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Great, go use hermes if you want, but stfu in this subreddit",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "In recent news of \"South Korea's first autonomous humanoid robot converts to Buddhism\"",
-        "link": "https://reddit.com/r/singularity/comments/1t5iv3k/in_recent_news_of_south_koreas_first_autonomous/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-06T17:00:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-06T22:10:08.111Z",
+    "reddit_viral_generated_at": "2026-05-06T23:07:58.629Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
