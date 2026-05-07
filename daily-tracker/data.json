@@ -367,19 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-07T15:05:35.207Z",
+    "generated_at": "2026-05-07T17:05:54.903Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Running OpenClaw 24/7 \"Always Free\" (Non-Oracle VPS options?)",
-        "link": "https://reddit.com/r/openclaw/comments/1t6cvrm/running_openclaw_247_always_free_nonoracle_vps/",
+        "headline": "Best local models for OpenClaw on Android (4GB + 4GB RAM) - Workflow: Video Transcription & Writing",
+        "link": "https://reddit.com/r/openclaw/comments/1t6etuo/best_local_models_for_openclaw_on_android_4gb_4gb/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-07T14:53:05+00:00",
+        "published_at": "2026-05-07T16:01:19+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Network Disconnecting is Breaking Sessions",
+        "link": "https://reddit.com/r/openclaw/comments/1t6eh17/network_disconnecting_is_breaking_sessions/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-07T15:48:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "RAG & Obsidian Best Practices: Optimizing Vector Search",
+        "link": "https://reddit.com/r/openclaw/comments/1t6e81q/rag_obsidian_best_practices_optimizing_vector/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-07T15:40:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Google Health Coach is becoming globally available",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t6e4n2/google_health_coach_is_becoming_globally_available/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-07T15:36:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields",
+        "link": "https://reddit.com/r/singularity/comments/1t6dve3/alphaevolve_how_our_geminipowered_coding_agent_is/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-07T15:27:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "I got Openclaw to configure an ESP32+CC1101 on a Raspberry Pi 5 for home automation.",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-07T14:34:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Openclaw as sys admin",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-07T14:31:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "If the EU had built Claude",
@@ -406,16 +442,16 @@
         "published_at": "2026-05-07T14:24:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
-        "headline": "--runtime <runtime> to switch harnesses",
-        "link": "https://reddit.com/r/openclaw/comments/1t6auh5/runtime_runtime_to_switch_harnesses/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-07T13:38:47+00:00",
+        "headline": "Gemini got this. Worry not!!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t6bo3z/gemini_got_this_worry_not/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-07T14:09:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Playing with Openclaw Canvas",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-07T13:16:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anthropic partnered with SpaceX for compute",
-        "link": "https://reddit.com/r/singularity/comments/1t6a394/anthropic_partnered_with_spacex_for_compute/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-07T13:09:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "AI Is Starting To View Tumors As Organized Ecosystems Instead of Just Mutated Cells",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t69mos/ai_is_starting_to_view_tumors_as_organized/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-07T12:51:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Is it normal for OpenClaw to make API requests while idle?",
-        "link": "https://reddit.com/r/openclaw/comments/1t68nz9/is_it_normal_for_openclaw_to_make_api_requests/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-07T12:10:36+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Genesis AI playing piano",
-        "link": "https://reddit.com/r/singularity/comments/1t65z81/genesis_ai_playing_piano/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-07T10:01:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-07T15:05:35.207Z",
+    "reddit_viral_generated_at": "2026-05-07T17:05:54.903Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
