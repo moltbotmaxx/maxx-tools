@@ -367,37 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-07T17:05:54.903Z",
+    "generated_at": "2026-05-07T19:01:33.862Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Best local models for OpenClaw on Android (4GB + 4GB RAM) - Workflow: Video Transcription & Writing",
-        "link": "https://reddit.com/r/openclaw/comments/1t6etuo/best_local_models_for_openclaw_on_android_4gb_4gb/",
+        "headline": "USPS/FedEx/UPS have beaucoup free APIs",
+        "link": "https://reddit.com/r/openclaw/comments/1t6iy35/uspsfedexups_have_beaucoup_free_apis/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-07T16:01:19+00:00",
+        "published_at": "2026-05-07T18:24:01+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Network Disconnecting is Breaking Sessions",
-        "link": "https://reddit.com/r/openclaw/comments/1t6eh17/network_disconnecting_is_breaking_sessions/",
+        "headline": "Audio messages via telegram",
+        "link": "https://reddit.com/r/openclaw/comments/1t6it0y/audio_messages_via_telegram/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-07T15:48:54+00:00",
+        "published_at": "2026-05-07T18:19:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 100
       },
       {
-        "headline": "RAG & Obsidian Best Practices: Optimizing Vector Search",
-        "link": "https://reddit.com/r/openclaw/comments/1t6e81q/rag_obsidian_best_practices_optimizing_vector/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-07T15:40:20+00:00",
+        "headline": "i got banned for asking help about AI stealing my photos... because my english is not good?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t6hntj/i_got_banned_for_asking_help_about_ai_stealing_my/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-07T17:39:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "Oh",
+        "link": "https://reddit.com/r/aimemes/comments/1t6hnc0/oh/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-07T17:39:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Google Health Coach is becoming globally available",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-07T15:36:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields",
@@ -415,7 +424,34 @@
         "published_at": "2026-05-07T15:27:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
+      },
+      {
+        "headline": "Running OpenClaw 24/7 \"Always Free\" (Non-Oracle VPS options?)",
+        "link": "https://reddit.com/r/openclaw/comments/1t6cvrm/running_openclaw_247_always_free_nonoracle_vps/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-07T14:53:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "Salesforce says it will hire 1,000 ‘AI-native’ new grads",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t6cl6o/salesforce_says_it_will_hire_1000_ainative_new/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-07T14:42:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "Tarot Cards of My wife",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t6cgik/tarot_cards_of_my_wife/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-07T14:38:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "I got Openclaw to configure an ESP32+CC1101 on a Raspberry Pi 5 for home automation.",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-07T14:34:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Openclaw as sys admin",
-        "link": "https://reddit.com/r/openclaw/comments/1t6c9oq/openclaw_as_sys_admin/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-07T14:31:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "If the EU had built Claude",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t6c26a/if_the_eu_had_built_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-07T14:24:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini got this. Worry not!!",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t6bo3z/gemini_got_this_worry_not/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-07T14:09:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Playing with Openclaw Canvas",
-        "link": "https://reddit.com/r/openclaw/comments/1t6a9jb/playing_with_openclaw_canvas/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-07T13:16:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-07T17:05:54.903Z",
+    "reddit_viral_generated_at": "2026-05-07T19:01:33.862Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
