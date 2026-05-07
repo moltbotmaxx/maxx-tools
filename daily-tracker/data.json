@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-07T09:46:55.974Z",
+    "generated_at": "2026-05-07T12:12:48.427Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is it normal for OpenClaw to make API requests while idle?",
+        "link": "https://reddit.com/r/openclaw/comments/1t68nz9/is_it_normal_for_openclaw_to_make_api_requests/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-07T12:10:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Genesis AI playing piano",
+        "link": "https://reddit.com/r/singularity/comments/1t65z81/genesis_ai_playing_piano/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-07T10:01:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Subquadratic claims to break LLM scaling limits! 1000x less costs",
         "link": "https://reddit.com/r/singularity/comments/1t64dhj/subquadratic_claims_to_break_llm_scaling_limits/",
@@ -379,7 +397,16 @@
         "published_at": "2026-05-07T08:28:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
+      },
+      {
+        "headline": "Openclaw Mail Attachments",
+        "link": "https://reddit.com/r/openclaw/comments/1t644m1/openclaw_mail_attachments/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-07T08:12:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Has anyone tried OpenClaw 2026.5.6 yet?",
@@ -388,7 +415,16 @@
         "published_at": "2026-05-07T07:58:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
+      },
+      {
+        "headline": "How to send SMS via anrdoid node?",
+        "link": "https://reddit.com/r/openclaw/comments/1t63rlj/how_to_send_sms_via_anrdoid_node/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-07T07:51:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "everybody calm down. i got this.",
@@ -397,7 +433,16 @@
         "published_at": "2026-05-07T06:43:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 87
+      },
+      {
+        "headline": "everybody calm down. i got this.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t62lui/everybody_calm_down_i_got_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-07T06:42:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "Anthropic launched Claude Security into public beta: it scans your code, finds vulnerabilities, and proposes patches.",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-07T06:37:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "Ollama Cloud Models Unreachable",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-07T06:01:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gemini gen-ai seem to keep getting worse",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t619ly/gemini_genai_seem_to_keep_getting_worse/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-07T05:29:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Like dis if you cry everytim",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t617ki/like_dis_if_you_cry_everytim/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-07T05:26:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Has anyone figured out browser + captcha + 2FA + password management (e.g. 1pass)",
-        "link": "https://reddit.com/r/openclaw/comments/1t60l89/has_anyone_figured_out_browser_captcha_2fa/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-07T04:53:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "A fun idea: give Gemini a nonsensical prompt and see how it answers",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t5zga2/a_fun_idea_give_gemini_a_nonsensical_prompt_and/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-07T03:55:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "The answer came from nowhere.",
-        "link": "https://reddit.com/r/OpenAI/comments/1t5vta2/the_answer_came_from_nowhere/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-07T01:07:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-07T09:46:55.974Z",
+    "reddit_viral_generated_at": "2026-05-07T12:12:48.427Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
