@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-07T04:07:26.930Z",
+    "generated_at": "2026-05-07T07:19:49.141Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini gen-ai seem to keep getting worse",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t619ly/gemini_genai_seem_to_keep_getting_worse/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-07T05:29:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Like dis if you cry everytim",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t617ki/like_dis_if_you_cry_everytim/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-07T05:26:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Yeah uh what just happened",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t607lb/yeah_uh_what_just_happened/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-07T04:33:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "A fun idea: give Gemini a nonsensical prompt and see how it answers",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t5zga2/a_fun_idea_give_gemini_a_nonsensical_prompt_and/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-07T03:55:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "The answer came from nowhere.",
+        "link": "https://reddit.com/r/OpenAI/comments/1t5vta2/the_answer_came_from_nowhere/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-07T01:07:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "the part nobody warns you about",
         "link": "https://reddit.com/r/ClaudeAI/comments/1t5vs8t/the_part_nobody_warns_you_about/",
@@ -379,16 +424,7 @@
         "published_at": "2026-05-07T01:05:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "When strange becomes risqué, with some convincing",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t5tq7u/when_strange_becomes_risqu%C3%A9_with_some_convincing/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T23:35:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Sam Altman texts Mira Murati. November 19, 2023. [This document is from Musk v. Altman (2026).]",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-06T23:31:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 86
       },
       {
         "headline": "i feel bad for her",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-06T22:49:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 84
       },
       {
         "headline": "Which version are you on?",
@@ -415,16 +451,7 @@
         "published_at": "2026-05-06T22:28:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "This prompt oh my god",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t5qsgu/this_prompt_oh_my_god/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T21:38:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 83
       },
       {
         "headline": "xAI will be dissolved as a separate entity.",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-06T21:15:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Wait, what...?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t5pyea/wait_what/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-06T21:08:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Wtf 😳",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t5os61/wtf/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-06T20:25:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "i tracked every dollar my openclaw agent spent for 2 weeks. heres exactly where the money goes",
-        "link": "https://reddit.com/r/openclaw/comments/1t5ojmr/i_tracked_every_dollar_my_openclaw_agent_spent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T20:17:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-07T04:07:26.930Z",
+    "reddit_viral_generated_at": "2026-05-07T07:19:49.141Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
