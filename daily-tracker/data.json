@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-06T23:07:58.629Z",
+    "generated_at": "2026-05-07T00:07:33.789Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam Altman texts Mira Murati. November 19, 2023. [This document is from Musk v. Altman (2026).]",
+        "link": "https://reddit.com/r/OpenAI/comments/1t5tn1n/sam_altman_texts_mira_murati_november_19_2023/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-06T23:31:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "i feel bad for her",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t5slta/i_feel_bad_for_her/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-06T22:49:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Which version are you on?",
+        "link": "https://reddit.com/r/openclaw/comments/1t5s3g7/which_version_are_you_on/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-06T22:28:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "xAI will be dissolved as a separate entity.",
         "link": "https://reddit.com/r/singularity/comments/1t5q5jm/xai_will_be_dissolved_as_a_separate_entity/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-06T21:15:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Wait, what...?",
@@ -388,7 +415,16 @@
         "published_at": "2026-05-06T21:08:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "A 23-year-old UCLA graduate, identified as Andre Mai, went viral in June 2025 after displaying his use of ChatGPT during the commencement ceremony at Pauley Pavilion",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t5o9al/a_23yearold_ucla_graduate_identified_as_andre_mai/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-06T20:06:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Do you think Gemini is getting worse?",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-06T19:42:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Be cool",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-06T19:35:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "What it means that Elon just rented out all his GPUs to Anthropic",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-06T18:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "It wasn’t easy, but I just broke an AI scam bot",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-06T17:47:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Google Chrome 'silently' downloads 4GB AI model to your device without permission, report claims — researcher says practice may violate EU law, waste thousands of kilowatts of energy",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t5k7ng/google_chrome_silently_downloads_4gb_ai_model_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-06T17:45:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Thank you Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t5jil2/thank_you_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-06T17:22:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "This semantic word game made me realize how differently AI understands language",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t5j6x7/this_semantic_word_game_made_me_realize_how/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-06T17:11:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Great, go use hermes if you want, but stfu in this subreddit",
-        "link": "https://reddit.com/r/openclaw/comments/1t5j69y/great_go_use_hermes_if_you_want_but_stfu_in_this/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-06T17:10:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-06T23:07:58.629Z",
+    "reddit_viral_generated_at": "2026-05-07T00:07:33.789Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
