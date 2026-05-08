@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T09:56:22.024Z",
+    "generated_at": "2026-05-08T11:46:54.902Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "\"I told you I can make mistakes!\"",
+        "link": "https://reddit.com/r/aimemes/comments/1t74p6v/i_told_you_i_can_make_mistakes/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-08T11:06:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Naruto comics with ai",
+        "link": "https://reddit.com/r/aimemes/comments/1t742hp/naruto_comics_with_ai/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-08T10:34:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Slow downs, Google is rolling over to their new model",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t73w92/slow_downs_google_is_rolling_over_to_their_new/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T10:25:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Anthropic to reach 100% global GDP in 21 months",
+        "link": "https://reddit.com/r/singularity/comments/1t73lym/anthropic_to_reach_100_global_gdp_in_21_months/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-08T10:09:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I was once an AI true believer. Now I think the whole thing is rotting from the inside.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t73hxx/i_was_once_an_ai_true_believer_now_i_think_the/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-08T10:03:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Ego bruised.",
         "link": "https://reddit.com/r/GeminiAI/comments/1t71p8z/ego_bruised/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-08T08:21:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "I built an A2A Context Bus, which helps you to make sure every agent uses the same optimized context.",
@@ -388,7 +433,16 @@
         "published_at": "2026-05-08T07:44:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
+      },
+      {
+        "headline": "What happened to Gemini image generation?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t70yfo/what_happened_to_gemini_image_generation/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T07:38:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Help needed to position Openclaw in an MSP",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-08T07:07:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Wait to see her final form! 😂",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-08T06:50:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "A little bit worried about this",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t6zjyo/a_little_bit_worried_about_this/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-08T06:20:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini is confusing sometimes",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t6yom6/gemini_is_confusing_sometimes/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T05:34:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Hallmark Dump",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t6xpbz/hallmark_dump/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-08T04:41:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "100 step plan to open a jar of peanut butter",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t6wfgk/100_step_plan_to_open_a_jar_of_peanut_butter/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-08T03:37:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Any Reason to Switch to Hermes after Stable Releases Update?!!",
-        "link": "https://reddit.com/r/openclaw/comments/1t6vda6/any_reason_to_switch_to_hermes_after_stable/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-08T02:46:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Any way to run openclaw for free 24/7 without a credit card?",
-        "link": "https://reddit.com/r/openclaw/comments/1t6tfzc/any_way_to_run_openclaw_for_free_247_without_a/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-08T01:16:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T09:56:22.024Z",
+    "reddit_viral_generated_at": "2026-05-08T11:46:54.902Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
