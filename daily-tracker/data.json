@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T07:59:44.709Z",
+    "generated_at": "2026-05-08T09:56:22.024Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Ego bruised.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t71p8z/ego_bruised/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T08:21:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I built an A2A Context Bus, which helps you to make sure every agent uses the same optimized context.",
+        "link": "https://reddit.com/r/openclaw/comments/1t7122l/i_built_an_a2a_context_bus_which_helps_you_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-08T07:44:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Help needed to position Openclaw in an MSP",
         "link": "https://reddit.com/r/openclaw/comments/1t70ez2/help_needed_to_position_openclaw_in_an_msp/",
@@ -379,16 +397,7 @@
         "published_at": "2026-05-08T07:07:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Gemini Ai Pro 4 Month Free",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t70cus/gemini_ai_pro_4_month_free/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T07:04:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Wait to see her final form! 😂",
@@ -397,7 +406,16 @@
         "published_at": "2026-05-08T06:50:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "A little bit worried about this",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t6zjyo/a_little_bit_worried_about_this/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-08T06:20:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Gemini is confusing sometimes",
@@ -406,7 +424,16 @@
         "published_at": "2026-05-08T05:34:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
+      },
+      {
+        "headline": "Hallmark Dump",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t6xpbz/hallmark_dump/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-08T04:41:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "100 step plan to open a jar of peanut butter",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-08T03:37:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Any Reason to Switch to Hermes after Stable Releases Update?!!",
@@ -424,40 +451,13 @@
         "published_at": "2026-05-08T02:46:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gemeni Hallucinating on the next level",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t6ujzc/gemeni_hallucinating_on_the_next_level/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T02:07:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       },
       {
         "headline": "Any way to run openclaw for free 24/7 without a credit card?",
         "link": "https://reddit.com/r/openclaw/comments/1t6tfzc/any_way_to_run_openclaw_for_free_247_without_a/",
         "subreddit": "openclaw",
         "published_at": "2026-05-08T01:16:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "OpenAI has announced they will be winding down fine tuning.",
-        "link": "https://reddit.com/r/OpenAI/comments/1t6sisf/openai_has_announced_they_will_be_winding_down/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-08T00:33:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Is ilya’s SSI company still a thing? It’s been 2 years ago with no product.",
-        "link": "https://reddit.com/r/singularity/comments/1t6ryg6/is_ilyas_ssi_company_still_a_thing_its_been_2/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-08T00:08:11+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 83
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T07:59:44.709Z",
+    "reddit_viral_generated_at": "2026-05-08T09:56:22.024Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
