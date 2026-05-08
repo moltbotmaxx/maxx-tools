@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T03:55:23.377Z",
+    "generated_at": "2026-05-08T06:10:59.441Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini is confusing sometimes",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t6yom6/gemini_is_confusing_sometimes/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T05:34:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "5.7 - trouble is back.....",
         "link": "https://reddit.com/r/openclaw/comments/1t6wf50/57_trouble_is_back/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-08T03:36:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Any Reason to Switch to Hermes after Stable Releases Update?!!",
@@ -388,7 +397,16 @@
         "published_at": "2026-05-08T02:46:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
+      },
+      {
+        "headline": "Gemeni Hallucinating on the next level",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t6ujzc/gemeni_hallucinating_on_the_next_level/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T02:07:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Any way to run openclaw for free 24/7 without a credit card?",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-08T01:16:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "OpenAI has announced they will be winding down fine tuning.",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-08T00:33:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Is ilya’s SSI company still a thing? It’s been 2 years ago with no product.",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-08T00:08:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Firefox reports a massive April spike in security fixes after using Claude Mythos for bug hunting",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-07T23:54:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Ok I’m a noob to AI so don’t thrash me too hard. But I had ah-hah moment.",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-07T22:01:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 82
       },
       {
         "headline": "Coming this summer to a theater somewhere!",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-07T21:33:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "I was not expecting this",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t6nokd/i_was_not_expecting_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-07T21:12:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "The Gemini 3.1 Flash Lite GA version has just been released.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t6jz94/the_gemini_31_flash_lite_ga_version_has_just_been/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-07T19:00:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T03:55:23.377Z",
+    "reddit_viral_generated_at": "2026-05-08T06:10:59.441Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
