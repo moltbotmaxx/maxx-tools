@@ -367,28 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T19:46:06.461Z",
+    "generated_at": "2026-05-08T21:17:06.833Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "OpenClaw inside Ollama Docker: simpler networking, brutal RAM usage",
-        "link": "https://reddit.com/r/openclaw/comments/1t7gcyf/openclaw_inside_ollama_docker_simpler_networking/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-08T18:27:10+00:00",
+        "headline": "Codex saw a wild install spike in early May",
+        "link": "https://reddit.com/r/OpenAI/comments/1t7jvj4/codex_saw_a_wild_install_spike_in_early_may/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-08T20:35:38+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Welp, that escalated quickly! 😂",
-        "link": "https://reddit.com/r/OpenAI/comments/1t7f4z7/welp_that_escalated_quickly/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-08T17:44:49+00:00",
+        "headline": "‘The beaver thing’",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t7jsra/the_beaver_thing/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-08T20:32:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Fields Medal winning mathematician Timothy Gowers used GPT5.5 Pro to solve open problems, believes mathematical research will face a ‘crisis’ very soon with current rate of progress",
+        "link": "https://reddit.com/r/singularity/comments/1t7iyis/fields_medal_winning_mathematician_timothy_gowers/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-08T20:02:16+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
+      },
+      {
+        "headline": "\"it's gonna be really bad, really good or anywhere inbetween\"",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t7hqop/its_gonna_be_really_bad_really_good_or_anywhere/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-08T19:17:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "All memes from 2008-2026",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t7g60y/all_memes_from_20082026/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-08T18:20:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+        "link": "https://reddit.com/r/OpenAI/comments/1t7f1ef/scaling_trusted_access_for_cyber_with_gpt55_and/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-08T17:41:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Opus tryna be TOO human",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-08T17:10:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Popular dating app Bumble is killing off the ‘swipe’ in favor of AI matchmaking",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-08T16:47:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Asked ChatGPT to come up with the wildest scenario it could imagine",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-08T16:41:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Hamburger Menu Missing Today",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-08T15:47:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Gemini Enterprise 2026: It’s officially the \"Agentic Era\"",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t7bfgy/gemini_enterprise_2026_its_officially_the_agentic/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T15:33:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "What free web search tool to use?",
-        "link": "https://reddit.com/r/openclaw/comments/1t7avfr/what_free_web_search_tool_to_use/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-08T15:13:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Cancer Puncher 2: Electric Boogaloo",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t7abxl/cancer_puncher_2_electric_boogaloo/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-08T14:55:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Elon Musk called Anthropic \"evil\" 3 months ago. Now he’s taking $4 billion to become its landlord",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t7a08k/elon_musk_called_anthropic_evil_3_months_ago_now/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-08T14:43:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T19:46:06.461Z",
+    "reddit_viral_generated_at": "2026-05-08T21:17:06.833Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
