@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T15:54:45.196Z",
+    "generated_at": "2026-05-08T17:45:41.463Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "seriously?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t7b6ep/seriously/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T15:25:00+00:00",
+        "headline": "does anyone else hate the new dark mode?",
+        "link": "https://reddit.com/r/OpenAI/comments/1t7cuwe/does_anyone_else_hate_the_new_dark_mode/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-08T16:25:10+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Gemini Enterprise 2026: It’s officially the \"Agentic Era\"",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t7bfgy/gemini_enterprise_2026_its_officially_the_agentic/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T15:33:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Elon Musk called Anthropic \"evil\" 3 months ago. Now he’s taking $4 billion to become its landlord",
@@ -388,7 +397,25 @@
         "published_at": "2026-05-08T14:43:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
+      },
+      {
+        "headline": "ChatGPT Images 2.0: Degradation in text rendering ability (examples in post) compared to 2 weeks ago - weird visual noise around letters",
+        "link": "https://reddit.com/r/OpenAI/comments/1t79bjv/chatgpt_images_20_degradation_in_text_rendering/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-08T14:18:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "What are some features you guys would like to see in Gemini?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t7958a/what_are_some_features_you_guys_would_like_to_see/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-08T14:12:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Just upgraded to 2026.05.07",
@@ -397,16 +424,7 @@
         "published_at": "2026-05-08T13:51:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "This possible with Openclaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1t785d4/this_possible_with_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-08T13:34:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "The hidden meanings behind Claude model names (Haiku, Sonnet, Opus, Mythos)",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-08T13:16:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "GPT-5.5 correcting obvious typos really kills the vibe",
@@ -424,40 +442,22 @@
         "published_at": "2026-05-08T13:10:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
+      },
+      {
+        "headline": "POV: Anthropic releases their new model",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t77iid/pov_anthropic_releases_their_new_model/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-08T13:10:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "The most female-led product org in tech right now.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1t74zc4/the_most_femaleled_product_org_in_tech_right_now/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-05-08T11:20:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Die laughing",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t746mq/die_laughing/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-08T10:40:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Naruto comics with ai",
-        "link": "https://reddit.com/r/aimemes/comments/1t742hp/naruto_comics_with_ai/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-08T10:34:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Slow downs, Google is rolling over to their new model",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t73w92/slow_downs_google_is_rolling_over_to_their_new/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T10:25:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T15:54:45.196Z",
+    "reddit_viral_generated_at": "2026-05-08T17:45:41.463Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
