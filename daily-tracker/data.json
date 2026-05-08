@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T21:17:06.833Z",
+    "generated_at": "2026-05-08T22:13:47.958Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Maintaining a Secure OpenClaw System",
+        "link": "https://reddit.com/r/openclaw/comments/1t7l0in/maintaining_a_secure_openclaw_system/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-08T21:17:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "UMichigan had an early $20M OpenAI stake that could yield billions",
+        "link": "https://reddit.com/r/OpenAI/comments/1t7ko33/umichigan_had_an_early_20m_openai_stake_that/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-08T21:05:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Codex saw a wild install spike in early May",
         "link": "https://reddit.com/r/OpenAI/comments/1t7jvj4/codex_saw_a_wild_install_spike_in_early_may/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-08T20:35:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "‘The beaver thing’",
@@ -388,7 +406,16 @@
         "published_at": "2026-05-08T20:32:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Which OpenClaw version are you all using?",
+        "link": "https://reddit.com/r/openclaw/comments/1t7j6ds/which_openclaw_version_are_you_all_using/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-08T20:10:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Fields Medal winning mathematician Timothy Gowers used GPT5.5 Pro to solve open problems, believes mathematical research will face a ‘crisis’ very soon with current rate of progress",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-08T20:02:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "\"it's gonna be really bad, really good or anywhere inbetween\"",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-08T19:17:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "All memes from 2008-2026",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-08T18:20:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-08T17:41:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Opus tryna be TOO human",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-08T17:10:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Popular dating app Bumble is killing off the ‘swipe’ in favor of AI matchmaking",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t7dgwg/popular_dating_app_bumble_is_killing_off_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-08T16:47:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Asked ChatGPT to come up with the wildest scenario it could imagine",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t7db5b/asked_chatgpt_to_come_up_with_the_wildest/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-08T16:41:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Hamburger Menu Missing Today",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t7bsoc/hamburger_menu_missing_today/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T15:47:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T21:17:06.833Z",
+    "reddit_viral_generated_at": "2026-05-08T22:13:47.958Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
