@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T11:13:22.276Z",
+    "generated_at": "2026-05-09T12:03:15.119Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -400,6 +400,15 @@
         "viral_score": 98
       },
       {
+        "headline": "What is the future of AutoML in machine learning workflows?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t80eue/what_is_the_future_of_automl_in_machine_learning/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-09T09:45:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "ChatGPT in 2026, looking for that person who called it a ‘Dumbass’",
         "link": "https://reddit.com/r/OpenAI/comments/1t80b4r/chatgpt_in_2026_looking_for_that_person_who/",
         "subreddit": "OpenAI",
@@ -418,13 +427,13 @@
         "viral_score": 96
       },
       {
-        "headline": "Is “prompt debt” becoming a real problem in AI apps?",
-        "link": "https://reddit.com/r/OpenAI/comments/1t7yqne/is_prompt_debt_becoming_a_real_problem_in_ai_apps/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-09T08:08:09+00:00",
+        "headline": "Claude Desktop App Now Shows Context Usage (MacOS)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t7zpdz/claude_desktop_app_now_shows_context_usage_macos/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-09T09:04:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 95
       },
       {
         "headline": "is gemini down for everyone ?",
@@ -436,38 +445,29 @@
         "viral_score": 91
       },
       {
-        "headline": "I asked ChatGPT to generate a picture of itself taken on a phone",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t7x1x0/i_asked_chatgpt_to_generate_a_picture_of_itself/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-09T06:34:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
         "headline": "Sonnet 4.5 is being retired.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1t7vf0g/sonnet_45_is_being_retired/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-05-09T05:06:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
-        "headline": "Evolution of AI annoyances",
-        "link": "https://reddit.com/r/aimemes/comments/1t7s8q0/evolution_of_ai_annoyances/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-09T02:30:54+00:00",
+        "headline": "OpenClaw calling without paying",
+        "link": "https://reddit.com/r/openclaw/comments/1t7uayc/openclaw_calling_without_paying/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-09T04:10:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 81
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T11:13:22.276Z",
+    "reddit_viral_generated_at": "2026-05-09T12:03:15.119Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
