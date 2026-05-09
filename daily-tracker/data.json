@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T17:14:51.539Z",
+    "generated_at": "2026-05-09T18:06:49.007Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Gemini was broken again, 5th day straight. No acknowledgement, no update on official status page.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t8a5ug/gemini_was_broken_again_5th_day_straight_no/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-09T16:49:26+00:00",
+        "headline": "Made a cinematic futuristic car trailer using only a text prompt",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t8bovk/made_a_cinematic_futuristic_car_trailer_using/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-09T17:45:49+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Slow or no responding problem",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t8b4t3/slow_or_no_responding_problem/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-09T17:25:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Ai plankton",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-09T16:17:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Why is Gemini down again?",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-09T15:49:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Deepseek v4 Flash is pretty amazing, about to buy a $25k computer",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-09T15:30:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Why is gemini acting weird lately??",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-09T15:23:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Unitree G1 and EngineAI PM01 fight",
@@ -424,25 +433,16 @@
         "published_at": "2026-05-09T15:22:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
-        "headline": "Post-human choreographic studies on Seedance 2.0",
-        "link": "https://reddit.com/r/singularity/comments/1t86bbg/posthuman_choreographic_studies_on_seedance_20/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-09T14:20:44+00:00",
+        "headline": "Humanoid Robots Are the Next Phase of the AI Hype Cycle",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t854h8/humanoid_robots_are_the_next_phase_of_the_ai_hype/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-09T13:31:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "We wanted everyone on our team to run their own Hermes / OpenClaw — not share one. So we wrote a tiny router.",
-        "link": "https://reddit.com/r/openclaw/comments/1t852tn/we_wanted_everyone_on_our_team_to_run_their_own/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-09T13:29:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Yale ethicist Wendell Wallach on why AGI is the wrong goal and the accountability gap that already exists in current systems.",
@@ -451,23 +451,23 @@
         "published_at": "2026-05-09T13:09:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
-        "headline": "I think AI's are going to become more socially normal much faster than people expect",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t83yq1/i_think_ais_are_going_to_become_more_socially/",
+        "headline": "Why most legal-AI demos fail in production",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t8492o/why_most_legalai_demos_fail_in_production/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-09T12:42:11+00:00",
+        "published_at": "2026-05-09T12:54:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T17:14:51.539Z",
+    "reddit_viral_generated_at": "2026-05-09T18:06:49.007Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
