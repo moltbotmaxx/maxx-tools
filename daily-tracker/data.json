@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T13:54:49.214Z",
+    "generated_at": "2026-05-09T15:14:49.585Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Post-human choreographic studies on Seedance 2.0",
+        "link": "https://reddit.com/r/singularity/comments/1t86bbg/posthuman_choreographic_studies_on_seedance_20/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-09T14:20:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "We wanted everyone on our team to run their own Hermes / OpenClaw — not share one. So we wrote a tiny router.",
         "link": "https://reddit.com/r/openclaw/comments/1t852tn/we_wanted_everyone_on_our_team_to_run_their_own/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-09T13:29:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "gbarin - is it really good?",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-09T13:25:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Yale ethicist Wendell Wallach on why AGI is the wrong goal and the accountability gap that already exists in current systems.",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-09T13:09:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "I think AI's are going to become more socially normal much faster than people expect",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-09T12:42:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Not a good day for team \"Claude Mythos is Just Marketing Hype\"",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-09T12:23:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Cloudflare’s AI usage increased by 600% in the last 3 months, leading to the elimination of 1,100 jobs as part of an Agentic AI restructuring",
@@ -424,7 +433,16 @@
         "published_at": "2026-05-09T12:07:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
+      },
+      {
+        "headline": "Gemini has a massive 2 Million token memory, but it still gets lazy on hard tasks. So I built an open-source tool that forces 4 Gemini agents to secretly debate each other before giving me an answer.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t82it0/gemini_has_a_massive_2_million_token_memory_but/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-09T11:34:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Anthropic signs $1.8 billion AI cloud deal with Akamai",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-09T10:42:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "My experience with OpenClaw = I'd rather die",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-09T10:41:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Two F.03 robots clean a room and make a bed in 2 minutes - fully autonomous",
-        "link": "https://reddit.com/r/OpenAI/comments/1t80yw5/two_f03_robots_clean_a_room_and_make_a_bed_in_2/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-09T10:11:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude Knew It Was Being Tested. It Just Didn't Say So. Anthropic Built a Tool to Find Out.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t80rk1/claude_knew_it_was_being_tested_it_just_didnt_say/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-09T10:05:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T13:54:49.214Z",
+    "reddit_viral_generated_at": "2026-05-09T15:14:49.585Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
