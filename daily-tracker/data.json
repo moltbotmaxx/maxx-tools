@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T16:09:38.789Z",
+    "generated_at": "2026-05-09T17:14:51.539Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini was broken again, 5th day straight. No acknowledgement, no update on official status page.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t8a5ug/gemini_was_broken_again_5th_day_straight_no/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-09T16:49:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Ai plankton",
+        "link": "https://reddit.com/r/aimemes/comments/1t89bxb/ai_plankton/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-09T16:17:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Why is Gemini down again?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t88l2p/why_is_gemini_down_again/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-09T15:49:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Deepseek v4 Flash is pretty amazing, about to buy a $25k computer",
         "link": "https://reddit.com/r/openclaw/comments/1t883qs/deepseek_v4_flash_is_pretty_amazing_about_to_buy/",
@@ -379,7 +406,16 @@
         "published_at": "2026-05-09T15:30:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Why is gemini acting weird lately??",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t87wwo/why_is_gemini_acting_weird_lately/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-09T15:23:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Unitree G1 and EngineAI PM01 fight",
@@ -388,16 +424,7 @@
         "published_at": "2026-05-09T15:22:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Gemini is down again. 5th time in 5 days. Seems google has stopped updating the official status page.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t87ubu/gemini_is_down_again_5th_time_in_5_days_seems/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-09T15:20:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Post-human choreographic studies on Seedance 2.0",
@@ -406,16 +433,7 @@
         "published_at": "2026-05-09T14:20:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Humanoid Robots Are the Next Phase of the AI Hype Cycle",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t854h8/humanoid_robots_are_the_next_phase_of_the_ai_hype/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-09T13:31:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "We wanted everyone on our team to run their own Hermes / OpenClaw — not share one. So we wrote a tiny router.",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-09T13:29:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Yale ethicist Wendell Wallach on why AGI is the wrong goal and the accountability gap that already exists in current systems.",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-09T13:09:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "I think AI's are going to become more socially normal much faster than people expect",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-09T12:42:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Not a good day for team \"Claude Mythos is Just Marketing Hype\"",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t83k85/not_a_good_day_for_team_claude_mythos_is_just/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-09T12:23:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Cloudflare’s AI usage increased by 600% in the last 3 months, leading to the elimination of 1,100 jobs as part of an Agentic AI restructuring",
-        "link": "https://reddit.com/r/singularity/comments/1t837hp/cloudflares_ai_usage_increased_by_600_in_the_last/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-09T12:07:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T16:09:38.789Z",
+    "reddit_viral_generated_at": "2026-05-09T17:14:51.539Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
