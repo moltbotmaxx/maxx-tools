@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T10:17:36.422Z",
+    "generated_at": "2026-05-09T11:13:22.276Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "My experience with OpenClaw = I'd rather die",
+        "link": "https://reddit.com/r/openclaw/comments/1t81i62/my_experience_with_openclaw_id_rather_die/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-09T10:41:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Two F.03 robots clean a room and make a bed in 2 minutes - fully autonomous",
+        "link": "https://reddit.com/r/OpenAI/comments/1t80yw5/two_f03_robots_clean_a_room_and_make_a_bed_in_2/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-09T10:11:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What's next?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t80jhp/whats_next/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-09T09:52:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "ChatGPT in 2026, looking for that person who called it a ‘Dumbass’",
         "link": "https://reddit.com/r/OpenAI/comments/1t80b4r/chatgpt_in_2026_looking_for_that_person_who/",
@@ -379,7 +406,16 @@
         "published_at": "2026-05-09T09:38:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "soooo claude just deleted my entire project. how's your day going?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t7zyjd/soooo_claude_just_deleted_my_entire_project_hows/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-09T09:18:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Is “prompt debt” becoming a real problem in AI apps?",
@@ -388,16 +424,7 @@
         "published_at": "2026-05-09T08:08:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "What Claude says vs What Claude thinks",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t7y09y/what_claude_says_vs_what_claude_thinks/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-09T07:26:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "is gemini down for everyone ?",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-09T07:01:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "I asked ChatGPT to generate a picture of itself taken on a phone",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-09T06:34:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Sonnet 4.5 is being retired.",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-09T05:06:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "Evolution of AI annoyances",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-09T02:30:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "The ChatGPT Android app should soon allow users to remotely control Codex coding sessions on their PCs",
-        "link": "https://reddit.com/r/OpenAI/comments/1t7r83b/the_chatgpt_android_app_should_soon_allow_users/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-09T01:43:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Family dinner",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t7qtt4/family_dinner/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-09T01:24:46+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 81
-      },
-      {
-        "headline": "METR evaluated an early version of Claude Mythos",
-        "link": "https://reddit.com/r/singularity/comments/1t7pqpr/metr_evaluated_an_early_version_of_claude_mythos/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-09T00:35:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T10:17:36.422Z",
+    "reddit_viral_generated_at": "2026-05-09T11:13:22.276Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
