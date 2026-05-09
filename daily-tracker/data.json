@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T22:03:23.920Z",
+    "generated_at": "2026-05-09T23:07:33.757Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -409,22 +409,22 @@
         "viral_score": 94
       },
       {
+        "headline": "Using OpenClaw I automated my daily briefing into personal podcasts on Spotify",
+        "link": "https://reddit.com/r/openclaw/comments/1t8e6ul/using_openclaw_i_automated_my_daily_briefing_into/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-09T19:03:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
         "headline": "who agrees?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1t8d4u5/who_agrees/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-05-09T18:39:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "What other robots from popular media do you want in real life?",
-        "link": "https://reddit.com/r/singularity/comments/1t8d24m/what_other_robots_from_popular_media_do_you_want/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-09T18:36:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Seeing as all the tech organisations happily claim their ai system is going to make all the humans redundant, I wonder which ai system will come out on top and happily make all the other ai systems redundant.",
@@ -433,7 +433,7 @@
         "published_at": "2026-05-09T18:13:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "OpenClaw has outgrown chat, hear me out",
@@ -451,7 +451,7 @@
         "published_at": "2026-05-09T17:35:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Slow or no responding problem",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T22:03:23.920Z",
+    "reddit_viral_generated_at": "2026-05-09T23:07:33.757Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
