@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-08T23:11:35.465Z",
+    "generated_at": "2026-05-09T00:11:14.516Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Codex now works directly in Chrome on macOS and Windows.",
+        "link": "https://reddit.com/r/OpenAI/comments/1t7p2nk/codex_now_works_directly_in_chrome_on_macos_and/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-09T00:04:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "AI gives us the 80s TV show we should have had",
+        "link": "https://reddit.com/r/singularity/comments/1t7nmbd/ai_gives_us_the_80s_tv_show_we_should_have_had/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-08T23:02:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Have the guidelines changes recently? I did not used to be able to make images like this...",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t7ncll/have_the_guidelines_changes_recently_i_did_not/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-08T22:51:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I gave my AI agents shared memory. Now one of them is writing a performance review of the others.",
+        "link": "https://reddit.com/r/openclaw/comments/1t7n05q/i_gave_my_ai_agents_shared_memory_now_one_of_them/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-08T22:36:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Don't worry guys. I got this",
         "link": "https://reddit.com/r/GeminiAI/comments/1t7lomh/dont_worry_guys_i_got_this/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-08T21:44:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Maintaining a Secure OpenClaw System",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-08T21:17:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "UMichigan had an early $20M OpenAI stake that could yield billions",
@@ -397,16 +433,7 @@
         "published_at": "2026-05-08T21:05:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Codex saw a wild install spike in early May",
-        "link": "https://reddit.com/r/OpenAI/comments/1t7jvj4/codex_saw_a_wild_install_spike_in_early_may/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-08T20:35:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "‘The beaver thing’",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-08T20:32:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Which OpenClaw version are you all using?",
@@ -424,40 +451,13 @@
         "published_at": "2026-05-08T20:10:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Fields Medal winning mathematician Timothy Gowers used GPT5.5 Pro to solve open problems, believes mathematical research will face a ‘crisis’ very soon with current rate of progress",
         "link": "https://reddit.com/r/singularity/comments/1t7iyis/fields_medal_winning_mathematician_timothy_gowers/",
         "subreddit": "singularity",
         "published_at": "2026-05-08T20:02:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "\"it's gonna be really bad, really good or anywhere inbetween\"",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t7hqop/its_gonna_be_really_bad_really_good_or_anywhere/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-08T19:17:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "High hopes for Google I/O?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t7fjj4/high_hopes_for_google_io/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-08T17:58:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
-        "link": "https://reddit.com/r/OpenAI/comments/1t7f1ef/scaling_trusted_access_for_cyber_with_gpt55_and/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-08T17:41:16+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-08T23:11:35.465Z",
+    "reddit_viral_generated_at": "2026-05-09T00:11:14.516Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
