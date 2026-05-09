@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-09T03:58:42.512Z",
+    "generated_at": "2026-05-09T06:28:44.801Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,6 +391,15 @@
         "viral_score": 98
       },
       {
+        "headline": "Family dinner",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t7qtt4/family_dinner/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-09T01:24:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "What’s the most useless skill you have made?",
         "link": "https://reddit.com/r/openclaw/comments/1t7qse8/whats_the_most_useless_skill_you_have_made/",
         "subreddit": "openclaw",
@@ -398,15 +407,6 @@
         "score": 0,
         "comments": 0,
         "viral_score": 97
-      },
-      {
-        "headline": "How are you connecting to claude code subscription?",
-        "link": "https://reddit.com/r/openclaw/comments/1t7qjae/how_are_you_connecting_to_claude_code_subscription/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-09T01:11:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
       },
       {
         "headline": "The levels of realism in the image generation are getting ridiculous",
@@ -418,13 +418,22 @@
         "viral_score": 96
       },
       {
+        "headline": "Those of you who use both ChatGPT and Claude — what’s each one actually better at?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t7q1dw/those_of_you_who_use_both_chatgpt_and_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-09T00:48:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
         "headline": "METR evaluated an early version of Claude Mythos",
         "link": "https://reddit.com/r/singularity/comments/1t7pqpr/metr_evaluated_an_early_version_of_claude_mythos/",
         "subreddit": "singularity",
         "published_at": "2026-05-09T00:35:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Codex now works directly in Chrome on macOS and Windows.",
@@ -442,22 +451,13 @@
         "published_at": "2026-05-08T23:53:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "AI gives us the 80s TV show we should have had",
         "link": "https://reddit.com/r/singularity/comments/1t7nmbd/ai_gives_us_the_80s_tv_show_we_should_have_had/",
         "subreddit": "singularity",
         "published_at": "2026-05-08T23:02:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Have the guidelines changes recently? I did not used to be able to make images like this...",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t7ncll/have_the_guidelines_changes_recently_i_did_not/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-08T22:51:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-09T03:58:42.512Z",
+    "reddit_viral_generated_at": "2026-05-09T06:28:44.801Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
