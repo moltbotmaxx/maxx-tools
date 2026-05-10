@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T09:03:37.750Z",
+    "generated_at": "2026-05-10T10:39:36.637Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude Mythos Preview (early) 50% time horizon: 17 hr",
+        "link": "https://reddit.com/r/singularity/comments/1t92jf5/claude_mythos_preview_early_50_time_horizon_17_hr/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-10T09:46:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Baidu’s ERNIE 5.1 Is Rivaling Gemini 3.1 Pro at AI Search",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t92204/baidus_ernie_51_is_rivaling_gemini_31_pro_at_ai/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-10T09:18:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "RecGen 1 & 2: New, possibly open source SOTA image to 3Dmodel AI released.",
+        "link": "https://reddit.com/r/singularity/comments/1t91ut9/recgen_1_2_new_possibly_open_source_sota_image_to/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-10T09:06:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Asia is excited about AI, the U.S. not so much",
+        "link": "https://reddit.com/r/singularity/comments/1t91bo9/asia_is_excited_about_ai_the_us_not_so_much/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-10T08:35:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Just upgraded to 2026.5.7 and holy wow",
         "link": "https://reddit.com/r/openclaw/comments/1t90j7a/just_upgraded_to_202657_and_holy_wow/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-10T07:49:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "OpenClaw is so agentic it successfully turned me into its sysadmin",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-10T07:17:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "New UI, looking cool",
@@ -397,16 +433,7 @@
         "published_at": "2026-05-10T06:40:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "A good guide to running on DGX?",
-        "link": "https://reddit.com/r/openclaw/comments/1t8z60b/a_good_guide_to_running_on_dgx/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-10T06:32:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "The new interface damnnnn",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-10T05:43:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "ChatGPT casually making the darkest jokes 😭",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-10T05:30:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "ChatGPT cooked too hard here 💀",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-10T05:30:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "searched up line from bang bang and Google AI did not disappoint",
-        "link": "https://reddit.com/r/aimemes/comments/1t8xdf8/searched_up_line_from_bang_bang_and_google_ai_did/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-10T04:58:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I love doing this in Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t8vnz9/i_love_doing_this_in_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-10T03:32:53+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Hugging Face co-founder says Qwen 3.6 27B running on airplane mode is close to latest Opus in Claude Code",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t8v7z0/hugging_face_cofounder_says_qwen_36_27b_running/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-10T03:10:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T09:03:37.750Z",
+    "reddit_viral_generated_at": "2026-05-10T10:39:36.637Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
