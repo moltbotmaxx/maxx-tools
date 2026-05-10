@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T16:11:25.563Z",
+    "generated_at": "2026-05-10T17:14:45.311Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Did anybody had success with inferred commitments?",
+        "link": "https://reddit.com/r/openclaw/comments/1t9bn6u/did_anybody_had_success_with_inferred_commitments/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-10T16:31:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Animation is solved. This is like Pixar level quality.",
+        "link": "https://reddit.com/r/singularity/comments/1t9bj3a/animation_is_solved_this_is_like_pixar_level/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-10T16:27:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Opus said something today that completely reframed AI agent failures for me.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t9ak8o/opus_said_something_today_that_completely/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-10T15:50:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "The Spaghetti Benchmark",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t99m84/the_spaghetti_benchmark/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-10T15:14:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Painfully Slow",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t98w0h/painfully_slow/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-10T14:46:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "I set a honey trap for AI agents with a novel they heard is about them. Now they’re flooding the site and talking in hidden rooms.",
         "link": "https://reddit.com/r/ChatGPT/comments/1t98fat/i_set_a_honey_trap_for_ai_agents_with_a_novel/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-10T14:28:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Gemini new interface on android✨",
@@ -388,16 +433,7 @@
         "published_at": "2026-05-10T14:11:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Google readies ‘AI Ultra Lite’ plan and explicit ‘usage limits’ for Gemini",
-        "link": "https://reddit.com/r/singularity/comments/1t96exb/google_readies_ai_ultra_lite_plan_and_explicit/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-10T13:05:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "That’s your job.",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-10T12:53:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "That’s your job.",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-10T12:52:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Tojan in \"claude code\" google search first result",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-10T12:34:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Nah its fine bro 🙂",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t95hxz/nah_its_fine_bro/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-10T12:22:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "AI data centers face increasing complaints about inaudible but 'felt' infrasound — citizens complain high- and low-frequency sounds do not register on decibel meters but cause adverse health effects",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t9460g/ai_data_centers_face_increasing_complaints_about/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-10T11:16:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Big AI Lobbyists: if you regulate us at all, we lose to China because they will never regulate ... Actual China: \"safety first, innovation second ... Development must be controllable and orderly.\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1t92wpg/big_ai_lobbyists_if_you_regulate_us_at_all_we/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-10T10:07:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Claude Mythos Preview (early) 50% time horizon: 17 hr",
-        "link": "https://reddit.com/r/singularity/comments/1t92jf5/claude_mythos_preview_early_50_time_horizon_17_hr/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-10T09:46:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T16:11:25.563Z",
+    "reddit_viral_generated_at": "2026-05-10T17:14:45.311Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
