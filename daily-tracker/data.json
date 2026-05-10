@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T21:07:38.066Z",
+    "generated_at": "2026-05-10T22:05:59.746Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "My Apple Car.",
+        "link": "https://reddit.com/r/aimemes/comments/1t9k3an/my_apple_car/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-10T21:52:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Dookie 2",
+        "link": "https://reddit.com/r/aimemes/comments/1t9k2qb/dookie_2/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-10T21:51:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini Omni: New video model?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t9jgwh/gemini_omni_new_video_model/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-10T21:26:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Openclaw ia trending down and will disappear soon",
+        "link": "https://reddit.com/r/OpenAI/comments/1t9iteh/openclaw_ia_trending_down_and_will_disappear_soon/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-10T21:00:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Sub-agents vs persistent agents",
         "link": "https://reddit.com/r/openclaw/comments/1t9ijgg/subagents_vs_persistent_agents/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-10T20:49:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Happy Mother's Day",
@@ -388,7 +424,16 @@
         "published_at": "2026-05-10T20:32:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "Which LLM are you guys using?",
+        "link": "https://reddit.com/r/openclaw/comments/1t9hq8i/which_llm_are_you_guys_using/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-10T20:18:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "I just don't fucking understand what's going on anymore. Seriously.",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-10T19:19:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "I read threads complaining about claude every week... tf are y'alls workflows?",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-10T19:11:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Choose Your Battles",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-10T18:39:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "I Gave an AI Its Own Radio Station — It Won't Stop Broadcasting (It's Fine)",
-        "link": "https://reddit.com/r/OpenAI/comments/1t9eff0/i_gave_an_ai_its_own_radio_station_it_wont_stop/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-10T18:15:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Thoughts?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t9e8nv/thoughts/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-10T18:08:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Gemini App, 2 different accs but 1 with new UI, and second with old one. Why?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t9cws0/gemini_app_2_different_accs_but_1_with_new_ui_and/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-10T17:19:00+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "What’s up, Claude?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1t9cfga/whats_up_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-10T17:01:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Animation is solved. This is like Pixar level quality.",
-        "link": "https://reddit.com/r/singularity/comments/1t9bj3a/animation_is_solved_this_is_like_pixar_level/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-10T16:27:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T21:07:38.066Z",
+    "reddit_viral_generated_at": "2026-05-10T22:05:59.746Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
