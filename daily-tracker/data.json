@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T04:17:41.847Z",
+    "generated_at": "2026-05-10T06:47:15.412Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The new interface damnnnn",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t8y8cm/the_new_interface_damnnnn/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-10T05:43:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT casually making the darkest jokes 😭",
+        "link": "https://reddit.com/r/OpenAI/comments/1t8xzv7/chatgpt_casually_making_the_darkest_jokes/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-10T05:30:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "ChatGPT cooked too hard here 💀",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t8xzbv/chatgpt_cooked_too_hard_here/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-10T05:30:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "searched up line from bang bang and Google AI did not disappoint",
+        "link": "https://reddit.com/r/aimemes/comments/1t8xdf8/searched_up_line_from_bang_bang_and_google_ai_did/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-10T04:58:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "I love doing this in Gemini",
         "link": "https://reddit.com/r/GeminiAI/comments/1t8vnz9/i_love_doing_this_in_gemini/",
@@ -379,7 +415,25 @@
         "published_at": "2026-05-10T03:32:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Hugging Face co-founder says Qwen 3.6 27B running on airplane mode is close to latest Opus in Claude Code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1t8v7z0/hugging_face_cofounder_says_qwen_36_27b_running/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-10T03:10:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "I asked for a game I'd like",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t8u1fj/i_asked_for_a_game_id_like/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-10T02:13:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "What if Pilgrims experienced a modern Music Festival?",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-10T02:02:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Real OpenClaw use case: greenhouse planner with bounded tunables and ESP32 enforcement",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-10T01:53:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Sesame x Gemini: low latency, extremely realist, and they started spontaneously collaborating",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-10T01:49:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Don’t worry guys i got this",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t8r3v8/dont_worry_guys_i_got_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-09T23:57:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anyone else having issues with gemini outright refusing to make images?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t8qnsv/anyone_else_having_issues_with_gemini_outright/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-09T23:37:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Fixed my grandfather’s picture",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t8pdhr/fixed_my_grandfathers_picture/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-09T22:40:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I couldn't think of a movie to watch so I asked ChatGPT to make an image as if I just walked into Blockbuster in 1999",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t8n8ls/i_couldnt_think_of_a_movie_to_watch_so_i_asked/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-09T21:12:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "I asked 5 LLMs and 422 humans what the very first rule about guns is.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t8jgjy/i_asked_5_llms_and_422_humans_what_the_very_first/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-09T20:11:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Not a good day for team \"Claude Mythos is Just Marketing Hype\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1t8hngi/not_a_good_day_for_team_claude_mythos_is_just/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-09T19:48:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T04:17:41.847Z",
+    "reddit_viral_generated_at": "2026-05-10T06:47:15.412Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
