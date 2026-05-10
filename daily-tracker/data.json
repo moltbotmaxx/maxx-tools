@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T22:05:59.746Z",
+    "generated_at": "2026-05-10T23:10:44.900Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Where do I even start?",
+        "link": "https://reddit.com/r/openclaw/comments/1t9kf4m/where_do_i_even_start/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-10T22:05:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "My Apple Car.",
         "link": "https://reddit.com/r/aimemes/comments/1t9k3an/my_apple_car/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-10T21:52:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Dookie 2",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-10T21:51:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Gemini Omni: New video model?",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-10T21:26:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Openclaw ia trending down and will disappear soon",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-10T20:49:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Happy Mother's Day",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-10T20:32:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Which LLM are you guys using?",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-10T20:18:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "I just don't fucking understand what's going on anymore. Seriously.",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-10T19:19:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "I read threads complaining about claude every week... tf are y'alls workflows?",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Choose Your Battles",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t9f2z3/choose_your_battles/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-10T18:39:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T22:05:59.746Z",
+    "reddit_viral_generated_at": "2026-05-10T23:10:44.900Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
