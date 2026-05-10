@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T15:15:41.387Z",
+    "generated_at": "2026-05-10T16:11:25.563Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I set a honey trap for AI agents with a novel they heard is about them. Now they’re flooding the site and talking in hidden rooms.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t98fat/i_set_a_honey_trap_for_ai_agents_with_a_novel/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-10T14:28:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Gemini new interface on android✨",
         "link": "https://reddit.com/r/GeminiAI/comments/1t97zvr/gemini_new_interface_on_android/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-10T14:11:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Google readies ‘AI Ultra Lite’ plan and explicit ‘usage limits’ for Gemini",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-10T12:53:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "That’s your job.",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-10T12:52:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Tojan in \"claude code\" google search first result",
@@ -415,22 +424,22 @@
         "published_at": "2026-05-10T12:34:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
+      },
+      {
+        "headline": "Nah its fine bro 🙂",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t95hxz/nah_its_fine_bro/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-10T12:22:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "AI data centers face increasing complaints about inaudible but 'felt' infrasound — citizens complain high- and low-frequency sounds do not register on decibel meters but cause adverse health effects",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1t9460g/ai_data_centers_face_increasing_complaints_about/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-05-10T11:16:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Greece, birthplace of democracy, seeks to put humanity ahead of AI in updated constitution",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t93ck0/greece_birthplace_of_democracy_seeks_to_put/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-10T10:32:35+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -442,22 +451,13 @@
         "published_at": "2026-05-10T10:07:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Claude Mythos Preview (early) 50% time horizon: 17 hr",
         "link": "https://reddit.com/r/singularity/comments/1t92jf5/claude_mythos_preview_early_50_time_horizon_17_hr/",
         "subreddit": "singularity",
         "published_at": "2026-05-10T09:46:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Got GPT to design the iPhone Air successor",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t92ebm/got_gpt_to_design_the_iphone_air_successor/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-10T09:38:44+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T15:15:41.387Z",
+    "reddit_viral_generated_at": "2026-05-10T16:11:25.563Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
