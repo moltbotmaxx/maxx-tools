@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-10T10:39:36.637Z",
+    "generated_at": "2026-05-10T12:04:46.082Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI data centers face increasing complaints about inaudible but 'felt' infrasound — citizens complain high- and low-frequency sounds do not register on decibel meters but cause adverse health effects",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t9460g/ai_data_centers_face_increasing_complaints_about/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-10T11:16:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Greece, birthplace of democracy, seeks to put humanity ahead of AI in updated constitution",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t93ck0/greece_birthplace_of_democracy_seeks_to_put/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-10T10:32:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Claude Mythos Preview (early) 50% time horizon: 17 hr",
         "link": "https://reddit.com/r/singularity/comments/1t92jf5/claude_mythos_preview_early_50_time_horizon_17_hr/",
@@ -379,7 +397,16 @@
         "published_at": "2026-05-10T09:46:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Got GPT to design the iPhone Air successor",
+        "link": "https://reddit.com/r/ChatGPT/comments/1t92ebm/got_gpt_to_design_the_iphone_air_successor/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-10T09:38:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Baidu’s ERNIE 5.1 Is Rivaling Gemini 3.1 Pro at AI Search",
@@ -388,16 +415,7 @@
         "published_at": "2026-05-10T09:18:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "RecGen 1 & 2: New, possibly open source SOTA image to 3Dmodel AI released.",
-        "link": "https://reddit.com/r/singularity/comments/1t91ut9/recgen_1_2_new_possibly_open_source_sota_image_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-10T09:06:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Asia is excited about AI, the U.S. not so much",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-10T08:35:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Just upgraded to 2026.5.7 and holy wow",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-10T07:49:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "OpenClaw is so agentic it successfully turned me into its sysadmin",
@@ -424,7 +442,16 @@
         "published_at": "2026-05-10T07:17:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
+      },
+      {
+        "headline": "I've been using Claude for the decisions I keep avoiding. It's the use case nobody talks about and it's the one that's changed how I work the most.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t8zjej/ive_been_using_claude_for_the_decisions_i_keep/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-10T06:53:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "New UI, looking cool",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-10T06:40:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "The new interface damnnnn",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t8y8cm/the_new_interface_damnnnn/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-10T05:43:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "ChatGPT casually making the darkest jokes 😭",
-        "link": "https://reddit.com/r/OpenAI/comments/1t8xzv7/chatgpt_casually_making_the_darkest_jokes/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-10T05:30:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "ChatGPT cooked too hard here 💀",
-        "link": "https://reddit.com/r/ChatGPT/comments/1t8xzbv/chatgpt_cooked_too_hard_here/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-10T05:30:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-10T10:39:36.637Z",
+    "reddit_viral_generated_at": "2026-05-10T12:04:46.082Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
