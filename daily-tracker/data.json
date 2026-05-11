@@ -367,19 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-11T16:12:11.771Z",
+    "generated_at": "2026-05-11T18:06:53.888Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "what are you actually using OpenClaw for that genuinely works?",
-        "link": "https://reddit.com/r/openclaw/comments/1ta7294/what_are_you_actually_using_openclaw_for_that/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-11T15:41:50+00:00",
+        "headline": "Claude finds out there are fanfics about him",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1taa7dl/claude_finds_out_there_are_fanfics_about_him/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-11T17:29:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Newbie Question - can OpenClaw scan my GarageBand files and identify songs I've recorded?",
+        "link": "https://reddit.com/r/openclaw/comments/1ta9ndr/newbie_question_can_openclaw_scan_my_garageband/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-11T17:11:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "i knew it",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ta8xwe/i_knew_it/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-11T16:47:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Unpopular Opinion: Gemini has quietly become my #1 daily driver in 2026",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ta8o24/unpopular_opinion_gemini_has_quietly_become_my_1/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-11T16:37:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "The Claude Platform on AWS is now generally available.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ta7p4n/the_claude_platform_on_aws_is_now_generally/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-11T16:03:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "GTA: History of Japan",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ta6ba6/gta_history_of_japan/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-11T15:15:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Alternative Harness Discussions Going Forward",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-11T15:02:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "I told Claude to create a PS5 controller in blender",
@@ -397,16 +442,7 @@
         "published_at": "2026-05-11T14:43:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "One thing of OpenClaw...",
-        "link": "https://reddit.com/r/openclaw/comments/1ta57pn/one_thing_of_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-11T14:37:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "A new video model \"Omni\" from Google is leaked, user notes text coherence",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-11T14:29:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Have you met anyone?",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-11T14:20:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Gemini 3.2 coming to destroy everyone",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ta4llh/gemini_32_coming_to_destroy_everyone/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-11T14:15:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Some people got fired so I guess they work less now",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ta3oop/some_people_got_fired_so_i_guess_they_work_less/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-11T13:42:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "if youre setting up whatsapp on openclaw for the first time save yourself 2 hours and read this",
-        "link": "https://reddit.com/r/openclaw/comments/1ta3nvc/if_youre_setting_up_whatsapp_on_openclaw_for_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-11T13:41:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gemini is actually good",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ta330o/gemini_is_actually_good/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-11T13:19:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-11T16:12:11.771Z",
+    "reddit_viral_generated_at": "2026-05-11T18:06:53.888Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
