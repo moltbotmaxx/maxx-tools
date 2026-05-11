@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-11T04:38:20.153Z",
+    "generated_at": "2026-05-11T08:37:40.987Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sub agent to main agent communication is very unreliable! How are you working around this?",
+        "link": "https://reddit.com/r/openclaw/comments/1t9wi5x/sub_agent_to_main_agent_communication_is_very/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-11T07:52:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What is the heartbeat for?",
+        "link": "https://reddit.com/r/openclaw/comments/1t9vqsm/what_is_the_heartbeat_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-11T07:08:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Apple just announced that iPhone users will be able to replace Siri with Claude or Gemini and choose their own AI",
+        "link": "https://reddit.com/r/GeminiAI/comments/1t9vq1o/apple_just_announced_that_iphone_users_will_be/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-11T07:07:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Sam Altman Floats 'Goblin' Name for OpenAI's Next AI Model",
+        "link": "https://reddit.com/r/OpenAI/comments/1t9ulv2/sam_altman_floats_goblin_name_for_openais_next_ai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-11T06:05:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Openclaw token overuse with GPT codex 5.5",
+        "link": "https://reddit.com/r/openclaw/comments/1t9ti12/openclaw_token_overuse_with_gpt_codex_55/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-11T05:07:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Google’s $9.99 AI Health Coach Launches May 19 With Gemini",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t9sitc/googles_999_ai_health_coach_launches_may_19_with/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-11T04:16:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
       {
         "headline": "Built Skill Factory, a meta-skill for creating OpenClaw skills",
         "link": "https://reddit.com/r/openclaw/comments/1t9r0fj/built_skill_factory_a_metaskill_for_creating/",
@@ -379,7 +433,7 @@
         "published_at": "2026-05-11T03:02:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 88
       },
       {
         "headline": "GPT5.5s CoT keeps leaking in the new codex update. Looks like we know how they got token efficency, they cavemanmaxxed",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-11T01:45:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 86
       },
       {
         "headline": "New Gemini Video model comparison. What do you think? (by u/Zacatac_391)",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-11T01:43:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 85
       },
       {
         "headline": "New to OpenClaw? What are you guys using it for?",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-11T00:58:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Why is the limit so low even on Pro?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t9ob3d/why_is_the_limit_so_low_even_on_pro/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-11T00:57:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Tiny company steals AMD's thunder and challenges Nvidia with old-tech PCIe AI accelerator that runs 700B LLMs locally, sipping just 240W thanks to decade-old DDR4 and 28nm chips",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1t9kr42/tiny_company_steals_amds_thunder_and_challenges/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-10T22:19:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Where do I even start?",
-        "link": "https://reddit.com/r/openclaw/comments/1t9kf4m/where_do_i_even_start/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-10T22:05:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "My Apple Car.",
-        "link": "https://reddit.com/r/aimemes/comments/1t9k3an/my_apple_car/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-10T21:52:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Dookie 2",
-        "link": "https://reddit.com/r/aimemes/comments/1t9k2qb/dookie_2/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-10T21:51:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Gemini Omni: New video model?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1t9jgwh/gemini_omni_new_video_model/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-10T21:26:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-11T04:38:20.153Z",
+    "reddit_viral_generated_at": "2026-05-11T08:37:40.987Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
