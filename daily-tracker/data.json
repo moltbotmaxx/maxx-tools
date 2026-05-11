@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-11T20:05:05.208Z",
+    "generated_at": "2026-05-11T21:42:41.230Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The best answer to this question I've seen yet.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tagmoe/the_best_answer_to_this_question_ive_seen_yet/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-11T21:10:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "New in Claude Code: agent view.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tag1i9/new_in_claude_code_agent_view/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-11T20:49:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "This guy build a drone that tracks targets with a laser using claude",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tacr3c/this_guy_build_a_drone_that_tracks_targets_with_a/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-11T18:55:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "POV: you gave the AI villain a crown and now he’s your boss",
         "link": "https://reddit.com/r/aimemes/comments/1tackun/pov_you_gave_the_ai_villain_a_crown_and_now_hes/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-11T18:50:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Dude solved problems in the movie Titanic",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-11T18:18:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Claude finds out there are fanfics about him",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-11T17:29:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Newbie Question - can OpenClaw scan my GarageBand files and identify songs I've recorded?",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-11T17:11:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "i knew it",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-11T16:47:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Unpopular Opinion: Gemini has quietly become my #1 daily driver in 2026",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-11T16:37:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "The Claude Platform on AWS is now generally available.",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-11T16:03:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "what are you actually using OpenClaw for that genuinely works?",
-        "link": "https://reddit.com/r/openclaw/comments/1ta7294/what_are_you_actually_using_openclaw_for_that/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-11T15:41:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GTA: History of Japan",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ta6ba6/gta_history_of_japan/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-11T15:15:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Alternative Harness Discussions Going Forward",
-        "link": "https://reddit.com/r/openclaw/comments/1ta5xbz/alternative_harness_discussions_going_forward/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-11T15:02:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-11T20:05:05.208Z",
+    "reddit_viral_generated_at": "2026-05-11T21:42:41.230Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
