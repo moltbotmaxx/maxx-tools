@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-11T21:42:41.230Z",
+    "generated_at": "2026-05-11T23:13:04.499Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude FM",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tahkhu/claude_fm/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-11T21:45:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Asked ChatGPT to restore my non existing image of my non existing girlfriend.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tagwrw/asked_chatgpt_to_restore_my_non_existing_image_of/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-11T21:20:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "The best answer to this question I've seen yet.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1tagmoe/the_best_answer_to_this_question_ive_seen_yet/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-11T21:10:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "New in Claude Code: agent view.",
@@ -388,7 +406,16 @@
         "published_at": "2026-05-11T20:49:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
+      },
+      {
+        "headline": "Mark Zuckerberg ‘Personally Authorized and Actively Encouraged’ Meta’s Massive Copyright Infringement to Train AI Systems, Publishers and Scott Turow Allege in Lawsuit",
+        "link": "https://reddit.com/r/singularity/comments/1tafo58/mark_zuckerberg_personally_authorized_and/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-11T20:36:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "This guy build a drone that tracks targets with a laser using claude",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-11T18:55:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "POV: you gave the AI villain a crown and now he’s your boss",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-11T18:50:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Dude solved problems in the movie Titanic",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-11T18:18:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Claude finds out there are fanfics about him",
@@ -424,40 +451,13 @@
         "published_at": "2026-05-11T17:29:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Newbie Question - can OpenClaw scan my GarageBand files and identify songs I've recorded?",
-        "link": "https://reddit.com/r/openclaw/comments/1ta9ndr/newbie_question_can_openclaw_scan_my_garageband/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-11T17:11:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "i knew it",
         "link": "https://reddit.com/r/ClaudeAI/comments/1ta8xwe/i_knew_it/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-05-11T16:47:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Unpopular Opinion: Gemini has quietly become my #1 daily driver in 2026",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ta8o24/unpopular_opinion_gemini_has_quietly_become_my_1/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-11T16:37:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "The Claude Platform on AWS is now generally available.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ta7p4n/the_claude_platform_on_aws_is_now_generally/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-11T16:03:57+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-11T21:42:41.230Z",
+    "reddit_viral_generated_at": "2026-05-11T23:13:04.499Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
