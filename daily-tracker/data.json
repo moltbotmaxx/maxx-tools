@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-11T23:13:04.499Z",
+    "generated_at": "2026-05-12T00:12:16.531Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Built a custom command center app for my OpenClaw setup — live agent dashboard, trading desk, and push notifications replacing WhatsApp",
+        "link": "https://reddit.com/r/openclaw/comments/1takps7/built_a_custom_command_center_app_for_my_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-11T23:52:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The lack of communication with how ass Gemini has been lately is inexcusable",
+        "link": "https://reddit.com/r/GeminiAI/comments/1taj0qt/the_lack_of_communication_with_how_ass_gemini_has/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-11T22:42:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Claude FM",
         "link": "https://reddit.com/r/ClaudeAI/comments/1tahkhu/claude_fm/",
@@ -379,16 +397,7 @@
         "published_at": "2026-05-11T21:45:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Asked ChatGPT to restore my non existing image of my non existing girlfriend.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tagwrw/asked_chatgpt_to_restore_my_non_existing_image_of/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-11T21:20:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "The best answer to this question I've seen yet.",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-11T21:10:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "New in Claude Code: agent view.",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-11T20:49:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Mark Zuckerberg ‘Personally Authorized and Actively Encouraged’ Meta’s Massive Copyright Infringement to Train AI Systems, Publishers and Scott Turow Allege in Lawsuit",
@@ -415,7 +424,7 @@
         "published_at": "2026-05-11T20:36:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "This guy build a drone that tracks targets with a laser using claude",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-11T18:55:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "POV: you gave the AI villain a crown and now he’s your boss",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-11T18:50:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Dude solved problems in the movie Titanic",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-11T18:18:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Claude finds out there are fanfics about him",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-11T17:29:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "i knew it",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ta8xwe/i_knew_it/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-11T16:47:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-11T23:13:04.499Z",
+    "reddit_viral_generated_at": "2026-05-12T00:12:16.531Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
