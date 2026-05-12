@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-12T20:10:56.687Z",
+    "generated_at": "2026-05-12T21:41:03.360Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Does anyone still use openclaw today?",
-        "link": "https://reddit.com/r/openclaw/comments/1tbd7gx/does_anyone_still_use_openclaw_today/",
+        "headline": "Tokens Burned at Impressive Rate",
+        "link": "https://reddit.com/r/openclaw/comments/1tbfi8x/tokens_burned_at_impressive_rate/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-12T20:10:09+00:00",
+        "published_at": "2026-05-12T21:33:52+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Do you ever just",
+        "link": "https://reddit.com/r/aimemes/comments/1tbfguh/do_you_ever_just/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-12T21:32:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Well.. 😅",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tbcfg6/well/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-12T19:43:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "This guy used AI to put himself in Game of Thrones.",
@@ -388,7 +406,16 @@
         "published_at": "2026-05-12T18:59:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
+      },
+      {
+        "headline": "PSA: If your project has an ANTHROPIC_API_KEY in any .env file, Claude Code will silently bill your API account instead of your Max plan — Anthropic calls it \"intentional functionality\"",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tbaq2d/psa_if_your_project_has_an_anthropic_api_key_in/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-12T18:44:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "please help a newbie out",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-12T18:15:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Getting bored with the assistants",
@@ -406,16 +433,7 @@
         "published_at": "2026-05-12T17:44:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Has anyone solved self-improvement?",
-        "link": "https://reddit.com/r/openclaw/comments/1tb7xcu/has_anyone_solved_selfimprovement/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T17:09:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Sam Altman testimony: Musk wanted 'total control' of OpenAI to pass to his children",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-12T17:03:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I asked ChatGPT to imagine itself in retirement",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-12T16:48:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "On a difficult new SWE benchmark, ProgramBench, GPT5.5 high/xhigh solves a task for first time, significantly outperforms Opus 4.7",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-12T16:22:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Did GPT5.5 get dumber/lazier yesterday for anyone else?",
-        "link": "https://reddit.com/r/openclaw/comments/1tb58r8/did_gpt55_get_dumberlazier_yesterday_for_anyone/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T15:36:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "What’s the most useful openclaw agent you’ve actually used?",
-        "link": "https://reddit.com/r/openclaw/comments/1tb4xxf/whats_the_most_useful_openclaw_agent_youve/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T15:26:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-12T20:10:56.687Z",
+    "reddit_viral_generated_at": "2026-05-12T21:41:03.360Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
