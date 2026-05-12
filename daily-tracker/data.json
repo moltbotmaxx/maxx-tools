@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-12T15:13:57.188Z",
+    "generated_at": "2026-05-12T17:24:52.631Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "On a difficult new SWE benchmark, ProgramBench, GPT5.5 high/xhigh solves a task for first time, significantly outperforms Opus 4.7",
+        "link": "https://reddit.com/r/singularity/comments/1tb6kum/on_a_difficult_new_swe_benchmark_programbench/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-12T16:22:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What if the future of robotics isn't combat humanoids but a tiny open-source robot whose personality is crowdsourced?",
+        "link": "https://reddit.com/r/singularity/comments/1tb6h9i/what_if_the_future_of_robotics_isnt_combat/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-12T16:19:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Did GPT5.5 get dumber/lazier yesterday for anyone else?",
+        "link": "https://reddit.com/r/openclaw/comments/1tb58r8/did_gpt55_get_dumberlazier_yesterday_for_anyone/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-12T15:36:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What’s the most useful openclaw agent you’ve actually used?",
+        "link": "https://reddit.com/r/openclaw/comments/1tb4xxf/whats_the_most_useful_openclaw_agent_youve/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-12T15:26:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Discovered today that Gemini has been completely making up data in my daily briefings.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tb4vny/discovered_today_that_gemini_has_been_completely/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-12T15:24:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "shipped my first openclaw skill: zillow-full. built it because manual property research was eating my weekends.",
         "link": "https://reddit.com/r/openclaw/comments/1tb4jck/shipped_my_first_openclaw_skill_zillowfull_built/",
@@ -379,95 +424,50 @@
         "published_at": "2026-05-12T15:12:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Transfering OpenClaw workspaces between computers? How about between Windows and Linux(Fedora ofc)",
-        "link": "https://reddit.com/r/openclaw/comments/1tb1r56/transfering_openclaw_workspaces_between_computers/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T13:31:33+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "Basically 99,9 % of this subreddit",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tb043e/basically_999_of_this_subreddit/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-12T12:27:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "New web UI looks too good and clean imo",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tayxja/new_web_ui_looks_too_good_and_clean_imo/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-12T11:36:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Taught Claude to talk like a caveman to use 75% less tokens.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tayl61/taught_claude_to_talk_like_a_caveman_to_use_75/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-12T11:21:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini Won’t Stop Bringing Up My Dead Cat",
-        "link": "https://reddit.com/r/GeminiAI/comments/1taxxqg/gemini_wont_stop_bringing_up_my_dead_cat/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-12T10:50:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Do they not even read this?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1taxk6n/do_they_not_even_read_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-12T10:30:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenClaw and Zulip",
-        "link": "https://reddit.com/r/openclaw/comments/1tawtu9/openclaw_and_zulip/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T09:52:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "What a weird way to wish someone a happy birthday…",
-        "link": "https://reddit.com/r/ChatGPT/comments/1taw47z/what_a_weird_way_to_wish_someone_a_happy_birthday/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-12T09:12:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "GPT-5.5 was used to flag fatal errors in FrontierMath problems",
-        "link": "https://reddit.com/r/singularity/comments/1taue3z/gpt55_was_used_to_flag_fatal_errors_in/",
+        "headline": "Demis Hassabis's Isomorphic Labs announces Series B investment round with $2.1B in new funding",
+        "link": "https://reddit.com/r/singularity/comments/1tb3wtl/demis_hassabiss_isomorphic_labs_announces_series/",
         "subreddit": "singularity",
-        "published_at": "2026-05-12T07:34:17+00:00",
+        "published_at": "2026-05-12T14:50:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 82
+        "viral_score": 95
+      },
+      {
+        "headline": "Plumbers, electricians, and HVAC techs watching AI replace everyone except them.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tb3td8/plumbers_electricians_and_hvac_techs_watching_ai/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-12T14:47:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Plumbers, electricians, and HVAC techs watching AI replace everyone except them.",
+        "link": "https://reddit.com/r/OpenAI/comments/1tb3r2h/plumbers_electricians_and_hvac_techs_watching_ai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-12T14:44:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Git push ftw",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tb327h/git_push_ftw/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-12T14:19:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-12T15:13:57.188Z",
+    "reddit_viral_generated_at": "2026-05-12T17:24:52.631Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
