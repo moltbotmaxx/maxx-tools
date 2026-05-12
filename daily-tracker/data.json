@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-12T04:07:58.131Z",
+    "generated_at": "2026-05-12T07:18:22.402Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Post-Mortem] Claude Max + OpenClaw: Agent breaking randomly with billing errors despite usage well under quota",
+        "link": "https://reddit.com/r/openclaw/comments/1tasmg9/postmortem_claude_max_openclaw_agent_breaking/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-12T05:58:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Sits",
+        "link": "https://reddit.com/r/aimemes/comments/1tarqtr/sits/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-12T05:12:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Unitree Launches World’s First Mass-Produced Manned Mecha GD01",
+        "link": "https://reddit.com/r/singularity/comments/1tar54x/unitree_launches_worlds_first_massproduced_manned/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-12T04:41:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Ex OpenAI CTO Mira Murati is giving them a serious fight for the bucks. Her new “Interaction Model” makes “GPT-Realtime-2” look like caveman, current capabilities level wise",
+        "link": "https://reddit.com/r/OpenAI/comments/1taqgfd/ex_openai_cto_mira_murati_is_giving_them_a/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-12T04:08:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "How to keep Mac Mini awake and headless",
         "link": "https://reddit.com/r/openclaw/comments/1tapihb/how_to_keep_mac_mini_awake_and_headless/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-12T03:23:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "How to STOP burning tokens?",
@@ -388,25 +424,16 @@
         "published_at": "2026-05-12T02:53:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
-        "headline": "How is OpenClaw now? I stopped using 2 months ago…",
-        "link": "https://reddit.com/r/openclaw/comments/1taotla/how_is_openclaw_now_i_stopped_using_2_months_ago/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T02:51:38+00:00",
+        "headline": "Ex-OpenAI exec Sutskever says he spent a year gathering proof of alleged Altman dishonesty",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tantvm/exopenai_exec_sutskever_says_he_spent_a_year/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-12T02:07:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Cannot receive responses or replies in WhatsApp groups after updating to OpenClaw Version 5.7",
-        "link": "https://reddit.com/r/openclaw/comments/1tant4e/cannot_receive_responses_or_replies_in_whatsapp/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-12T02:06:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Curl maintainer utilized Anthropic's Mythos scan: 1 confirmed vulnerability and ~20 bugs",
@@ -415,7 +442,16 @@
         "published_at": "2026-05-12T01:01:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
+      },
+      {
+        "headline": "I asked Gemini to make this photo I took of our backyard chipmunk into a monk eating a potato chip. I love the result!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1talvzr/i_asked_gemini_to_make_this_photo_i_took_of_our/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-12T00:42:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "Claude FM",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-11T21:45:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "The best answer to this question I've seen yet.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tagmoe/the_best_answer_to_this_question_ive_seen_yet/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-11T21:10:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "New in Claude Code: agent view.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tag1i9/new_in_claude_code_agent_view/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-11T20:49:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Mark Zuckerberg ‘Personally Authorized and Actively Encouraged’ Meta’s Massive Copyright Infringement to Train AI Systems, Publishers and Scott Turow Allege in Lawsuit",
-        "link": "https://reddit.com/r/singularity/comments/1tafo58/mark_zuckerberg_personally_authorized_and/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-11T20:36:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "i cannot go back to claude now",
-        "link": "https://reddit.com/r/OpenAI/comments/1tae896/i_cannot_go_back_to_claude_now/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-11T19:46:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-12T04:07:58.131Z",
+    "reddit_viral_generated_at": "2026-05-12T07:18:22.402Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
