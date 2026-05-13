@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-12T23:19:08.126Z",
+    "generated_at": "2026-05-13T00:15:42.917Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -409,13 +409,22 @@
         "viral_score": 98
       },
       {
+        "headline": "Coders in 2030 be like:",
+        "link": "https://reddit.com/r/OpenAI/comments/1tbgklg/coders_in_2030_be_like/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-12T22:14:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
         "headline": "Best Cheapest Way To Run an Agent Long Term",
         "link": "https://reddit.com/r/openclaw/comments/1tbfw94/best_cheapest_way_to_run_an_agent_long_term/",
         "subreddit": "openclaw",
         "published_at": "2026-05-12T21:48:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Do you ever just",
@@ -442,22 +451,13 @@
         "published_at": "2026-05-12T19:43:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "If only tech companies were brutally honest",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1tbax4x/if_only_tech_companies_were_brutally_honest/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-05-12T18:51:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "PSA: If your project has an ANTHROPIC_API_KEY in any .env file, Claude Code will silently bill your API account instead of your Max plan — Anthropic calls it \"intentional functionality\"",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tbaq2d/psa_if_your_project_has_an_anthropic_api_key_in/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-12T18:44:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-12T23:19:08.126Z",
+    "reddit_viral_generated_at": "2026-05-13T00:15:42.917Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
