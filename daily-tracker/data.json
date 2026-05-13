@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-13T10:44:22.271Z",
+    "generated_at": "2026-05-13T13:31:17.486Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Bro solved the problems from Game of Thrones",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tbuoyg/bro_solved_the_problems_from_game_of_thrones/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-13T09:37:43+00:00",
+        "headline": "The architecture of \"Agentic Twins\": How Avatar.inc is using OpenClaw to build verifiable AI agents.",
+        "link": "https://reddit.com/r/openclaw/comments/1tbzq06/the_architecture_of_agentic_twins_how_avatarinc/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-13T13:29:51+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Not a coincidence",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tbu23j/not_a_coincidence/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-13T09:02:35+00:00",
+        "headline": "Voice chat with OpenClaw like Claude / GPT",
+        "link": "https://reddit.com/r/openclaw/comments/1tbzb67/voice_chat_with_openclaw_like_claude_gpt/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-13T13:14:02+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "content is what will make you rich, but NOT SLOP!",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tbt32g/content_is_what_will_make_you_rich_but_not_slop/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-13T08:06:23+00:00",
+        "headline": "OpenClaw on OCI",
+        "link": "https://reddit.com/r/openclaw/comments/1tbzafh/openclaw_on_oci/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-13T13:13:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Figure AI's humanoid robot will run at human speeds today, totally on its own in a 8-hour (!) livestream.",
+        "link": "https://reddit.com/r/singularity/comments/1tbxm71/figure_ais_humanoid_robot_will_run_at_human/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-13T12:04:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "I called Gemini by its name. It stopped and corrected me: \"You referred to me as Gemini, but my name is ChatGPT.\" I'm on Gemini Pro. In the official Gemini app. 💀",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tbr4qw/i_called_gemini_by_its_name_it_stopped_and/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-13T06:15:20+00:00",
+        "headline": "What Claude says vs What Claude thinks",
+        "link": "https://reddit.com/r/aimemes/comments/1tbxkaz/what_claude_says_vs_what_claude_thinks/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-13T12:02:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 96
       },
       {
-        "headline": "This dude literally heals our Game of Thrones traumas using Al to put himself in the scenes (GOT Spoilers)",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tbqp6y/this_dude_literally_heals_our_game_of_thrones/",
+        "headline": "Animators are cooked",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tbx4yu/animators_are_cooked/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-05-13T05:51:54+00:00",
+        "published_at": "2026-05-13T11:43:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 95
       },
       {
-        "headline": "Love the new app UI!",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tbq90v/love_the_new_app_ui/",
+        "headline": "Bruh…",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tbx1bp/bruh/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-05-13T05:28:21+00:00",
+        "published_at": "2026-05-13T11:38:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 95
       },
       {
-        "headline": "Bot health check. this made a big difference",
-        "link": "https://reddit.com/r/openclaw/comments/1tboknh/bot_health_check_this_made_a_big_difference/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-13T04:03:25+00:00",
+        "headline": "Claude Code tips for terminal users (from a senior dev)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tbwwel/claude_code_tips_for_terminal_users_from_a_senior/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-13T11:32:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 94
       },
       {
-        "headline": "You ever ask AI to write you an essay?",
-        "link": "https://reddit.com/r/aimemes/comments/1tbo30a/you_ever_ask_ai_to_write_you_an_essay/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-13T03:40:19+00:00",
+        "headline": "AI has officially made us unemployed",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tbwhq2/ai_has_officially_made_us_unemployed/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-13T11:13:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 93
       },
       {
-        "headline": "RLFH just can't help it.",
-        "link": "https://reddit.com/r/aimemes/comments/1tbo1l0/rlfh_just_cant_help_it/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-13T03:38:27+00:00",
+        "headline": "AI has officially made us unemployed",
+        "link": "https://reddit.com/r/OpenAI/comments/1tbwgby/ai_has_officially_made_us_unemployed/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-13T11:11:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Why do people spend so much time fixing OpenClaw errors?",
-        "link": "https://reddit.com/r/openclaw/comments/1tblqen/why_do_people_spend_so_much_time_fixing_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-13T01:54:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-13T10:44:22.271Z",
+    "reddit_viral_generated_at": "2026-05-13T13:31:17.486Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
