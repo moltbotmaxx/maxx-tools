@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-13T04:14:44.498Z",
+    "generated_at": "2026-05-13T07:29:05.388Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I called Gemini by its name. It stopped and corrected me: \"You referred to me as Gemini, but my name is ChatGPT.\" I'm on Gemini Pro. In the official Gemini app. 💀",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tbr4qw/i_called_gemini_by_its_name_it_stopped_and/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-13T06:15:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Bot health check. this made a big difference",
+        "link": "https://reddit.com/r/openclaw/comments/1tboknh/bot_health_check_this_made_a_big_difference/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-13T04:03:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "You ever ask AI to write you an essay?",
         "link": "https://reddit.com/r/aimemes/comments/1tbo30a/you_ever_ask_ai_to_write_you_an_essay/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-13T03:40:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "RLFH just can't help it.",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-13T03:38:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Does this AI avatar look realistic enough?",
@@ -397,7 +415,16 @@
         "published_at": "2026-05-13T02:18:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
+      },
+      {
+        "headline": "Teenager Wants To Learn Openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1tbm33w/teenager_wants_to_learn_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-13T02:09:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Why do people spend so much time fixing OpenClaw errors?",
@@ -406,7 +433,16 @@
         "published_at": "2026-05-13T01:54:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
+      },
+      {
+        "headline": "Gemini’s isn’t privacy friendly. Beware!!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tbkn12/geminis_isnt_privacy_friendly_beware/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-13T01:06:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "Claude has finally begun to understand how lazy I truly am.",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-13T00:41:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "Claude roasting r/ClaudeAI",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-13T00:26:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "China’s ‘dark factory’ more than doubles production efficiency for J-20 jets",
-        "link": "https://reddit.com/r/singularity/comments/1tbidrb/chinas_dark_factory_more_than_doubles_production/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-12T23:28:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "This can only end badly",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tbhxpt/this_can_only_end_badly/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-12T23:10:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "AI adoption curve by company size",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tbh4q6/ai_adoption_curve_by_company_size/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-12T22:36:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Seems like an eternity away",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tbgqzm/seems_like_an_eternity_away/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-12T22:21:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-13T04:14:44.498Z",
+    "reddit_viral_generated_at": "2026-05-13T07:29:05.388Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
