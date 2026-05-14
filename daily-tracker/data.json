@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-14T04:15:16.485Z",
+    "generated_at": "2026-05-14T07:23:31.413Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "SVG tests Gemini 3.2 Pro from X",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tcnohg/svg_tests_gemini_32_pro_from_x/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-14T04:41:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT still creating extremely disturbing images with this prompt",
+        "link": "https://reddit.com/r/OpenAI/comments/1tcn5on/chatgpt_still_creating_extremely_disturbing/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-14T04:15:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I spent $200 in Claude credits training an AI tank through 1,000 battles",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tclwz1/i_spent_200_in_claude_credits_training_an_ai_tank/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-14T03:16:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I made it violate policy on nudity by accident >_<",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tckg69/i_made_it_violate_policy_on_nudity_by_accident/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-14T02:11:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "In Time (2011) was a documentary about Claude Pro users and nobody told us",
         "link": "https://reddit.com/r/ClaudeAI/comments/1tckar7/in_time_2011_was_a_documentary_about_claude_pro/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-14T02:05:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Opinion: There is nothing wrong with using AI to learn",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-14T00:42:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "OpenAI says Windows lacked the sandboxing tools Linux already had",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-13T23:23:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 87
       },
       {
         "headline": "I asked ChatGPT to create a picture of a restaurant menu for a place that only serves foods nobody actually likes.",
@@ -406,16 +442,7 @@
         "published_at": "2026-05-13T23:15:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I'm cooked. Anthropic just split \"--print\" mode to $/mo credits",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tcetsd/im_cooked_anthropic_just_split_print_mode_to_mo/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-13T22:16:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Letting my OpenClaw buy groceries went fine for 3 months. But yesterday it ordered 40 heads of garlic.",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-13T21:58:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 83
       },
       {
         "headline": "Asking Gemini: I just realized that my parents didn't invite me to their wedding.",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-13T21:40:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Chatgpt is crazy",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tcccsn/chatgpt_is_crazy/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-13T20:47:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "ALWAYS SO DAMN ACCURATE 😭",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tcah2v/always_so_damn_accurate/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-13T19:40:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Another day of Solved Coding",
-        "link": "https://reddit.com/r/OpenAI/comments/1tcaayf/another_day_of_solved_coding/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-13T19:34:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-14T04:15:16.485Z",
+    "reddit_viral_generated_at": "2026-05-14T07:23:31.413Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
