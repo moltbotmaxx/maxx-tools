@@ -367,19 +367,73 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-14T10:36:00.875Z",
+    "generated_at": "2026-05-14T13:06:09.409Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Adobe ??",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tcth1f/adobe/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-14T09:56:00+00:00",
+        "headline": "When he says go talk to your other boys",
+        "link": "https://reddit.com/r/aimemes/comments/1tcxd4k/when_he_says_go_talk_to_your_other_boys/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-14T12:55:54+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Told Gemini to draw Nicole and Gabriel having a date",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tcx4k7/told_gemini_to_draw_nicole_and_gabriel_having_a/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-14T12:46:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic just Annouced they are Allowing Subscription Claude Usage?!",
+        "link": "https://reddit.com/r/openclaw/comments/1tcwz4j/anthropic_just_annouced_they_are_allowing/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-14T12:40:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "We survived nukes... barely",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tcwi2m/we_survived_nukes_barely/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-14T12:20:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "AI PRODUCT PHOTOGRAPHY",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tcw7os/ai_product_photography/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-14T12:08:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Personal context in UK!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tcufod/personal_context_in_uk/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-14T10:46:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "OpenAI Sued Over Data Sharing With Google & Meta in 2026",
+        "link": "https://reddit.com/r/OpenAI/comments/1tcucv2/openai_sued_over_data_sharing_with_google_meta_in/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-14T10:42:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Is my M4 MacBook Pro 48GB enough to run OpenClaw for 4 real-life use cases? Looking for advice",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-14T09:26:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "State of the art LLMs",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-14T09:24:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Life before this tweet",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-14T08:11:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I couldn’t find a simple 432 Hz tone app without ads or IAP, so I built it myself",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tcnuki/i_couldnt_find_a_simple_432_hz_tone_app_without/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-14T04:50:02+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "SVG tests Gemini 3.2 Pro from X",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tcnohg/svg_tests_gemini_32_pro_from_x/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-14T04:41:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "ChatGPT still creating extremely disturbing images with this prompt",
-        "link": "https://reddit.com/r/OpenAI/comments/1tcn5on/chatgpt_still_creating_extremely_disturbing/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-14T04:15:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "FDA Shortens Clinical Trial Timelines for Drugs and Medical Devices with AI",
-        "link": "https://reddit.com/r/singularity/comments/1tcl5bh/fda_shortens_clinical_trial_timelines_for_drugs/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-14T02:42:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "In Time (2011) was a documentary about Claude Pro users and nobody told us",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tckar7/in_time_2011_was_a_documentary_about_claude_pro/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-14T02:05:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Opinion: There is nothing wrong with using AI to learn",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tcicta/opinion_there_is_nothing_wrong_with_using_ai_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-14T00:42:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-14T10:36:00.875Z",
+    "reddit_viral_generated_at": "2026-05-14T13:06:09.409Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
