@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-14T15:35:20.835Z",
+    "generated_at": "2026-05-14T18:10:54.263Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Meta's $10 billion Louisiana data center is getting $3.3 billion in tax breaks—more than seven years of the state's entire police budget",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1td5oqe/metas_10_billion_louisiana_data_center_is_getting/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-14T17:49:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Extended Thinking being deprecated for supported models (Opus 4.6, Sonnet 4.6); Adaptive Thinking will be enforced by default",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1td4dl1/extended_thinking_being_deprecated_for_supported/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-14T17:03:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "2 months free",
+        "link": "https://reddit.com/r/OpenAI/comments/1td3nw0/2_months_free/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-14T16:39:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Saw these in front of the courthouse where the Altman Musk trial is this morning",
+        "link": "https://reddit.com/r/OpenAI/comments/1td35r3/saw_these_in_front_of_the_courthouse_where_the/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-14T16:21:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "THERE.... I gave up on OC.... It is too fragile for any real work...",
+        "link": "https://reddit.com/r/openclaw/comments/1td2ze4/there_i_gave_up_on_oc_it_is_too_fragile_for_any/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-14T16:15:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "What happens when you post a real Monet and say it’s AI? Art Social Experiment.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1td2419/what_happens_when_you_post_a_real_monet_and_say/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-14T15:45:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Revenge of the Sith if anakin killed palpatine",
+        "link": "https://reddit.com/r/aimemes/comments/1td1zcv/revenge_of_the_sith_if_anakin_killed_palpatine/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-14T15:40:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Five Horses, according to ChatGPT",
         "link": "https://reddit.com/r/OpenAI/comments/1td19q5/five_horses_according_to_chatgpt/",
@@ -379,7 +442,16 @@
         "published_at": "2026-05-14T15:16:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Do you feel bad not responding to the follow up questions.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1td0uy6/do_you_feel_bad_not_responding_to_the_follow_up/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-14T15:02:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Twitter user posts a real Monet and says it's AI",
@@ -388,86 +460,14 @@
         "published_at": "2026-05-14T14:36:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "GPT-5.5 feels like it got discernment, not just better reasoning — did anyone else notice?",
-        "link": "https://reddit.com/r/OpenAI/comments/1tcymn2/gpt55_feels_like_it_got_discernment_not_just/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-14T13:43:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "👻 Now AI is afraid of ghosts too!? 👻",
-        "link": "https://reddit.com/r/OpenAI/comments/1tcyknz/now_ai_is_afraid_of_ghosts_too/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-14T13:41:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "is it down for anyone else?",
-        "link": "https://reddit.com/r/OpenAI/comments/1tcxwnm/is_it_down_for_anyone_else/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-14T13:16:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "chat will it actually be good? or will it be benchmaxxed slop like 3.1?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tcxwdc/chat_will_it_actually_be_good_or_will_it_be/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-14T13:16:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "When he says go talk to your other boys",
-        "link": "https://reddit.com/r/aimemes/comments/1tcxd4k/when_he_says_go_talk_to_your_other_boys/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-14T12:55:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Average day in the life of ChatGPT user",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tcxbgb/average_day_in_the_life_of_chatgpt_user/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-14T12:54:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Anthropic just Annouced they are Allowing Subscription Claude Usage?!",
-        "link": "https://reddit.com/r/openclaw/comments/1tcwz4j/anthropic_just_annouced_they_are_allowing/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-14T12:40:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude Certified Architect",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tcwna3/claude_certified_architect/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-14T12:26:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-14T15:35:20.835Z",
+    "reddit_viral_generated_at": "2026-05-14T18:10:54.263Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
