@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-14T21:37:32.675Z",
+    "generated_at": "2026-05-14T23:13:12.568Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Data scraping and collection",
+        "link": "https://reddit.com/r/openclaw/comments/1tde2rc/data_scraping_and_collection/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-14T22:54:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Which model should I use? I'm using the Anthropic API and it's way too expensive. I have a ChatGPT subscription, and a computer fast enough to run a local model.",
+        "link": "https://reddit.com/r/openclaw/comments/1tdbuag/which_model_should_i_use_im_using_the_anthropic/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-14T21:26:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Google’s Gemini Omni Can Generate Videos With Shockingly Accurate Text 😳",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tdaidh/googles_gemini_omni_can_generate_videos_with/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-14T20:36:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Work with Codex from anywhere | OpenAI",
         "link": "https://reddit.com/r/OpenAI/comments/1td9wvq/work_with_codex_from_anywhere_openai/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-14T20:15:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Anyone else trauma bonded to the claw and feels like you can't quit it?",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-14T19:37:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "How do you give a credit card to Claw?",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-14T19:17:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "People are claiming teleop, but I really don't think a human would be this insistent to get a package they clearly can't reach.",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-14T18:43:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Meta's $10 billion Louisiana data center is getting $3.3 billion in tax breaks—more than seven years of the state's entire police budget",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-14T17:49:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Extended Thinking being deprecated for supported models (Opus 4.6, Sonnet 4.6); Adaptive Thinking will be enforced by default",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-14T17:03:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 86
       },
       {
         "headline": "Saw these in front of the courthouse where the Altman Musk trial is this morning",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-14T16:21:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "THERE.... I gave up on OC.... It is too fragile for any real work...",
-        "link": "https://reddit.com/r/openclaw/comments/1td2ze4/there_i_gave_up_on_oc_it_is_too_fragile_for_any/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-14T16:15:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "What happens when you post a real Monet and say it’s AI? Art Social Experiment.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1td2419/what_happens_when_you_post_a_real_monet_and_say/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-14T15:45:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Revenge of the Sith if anakin killed palpatine",
-        "link": "https://reddit.com/r/aimemes/comments/1td1zcv/revenge_of_the_sith_if_anakin_killed_palpatine/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-14T15:40:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-14T21:37:32.675Z",
+    "reddit_viral_generated_at": "2026-05-14T23:13:12.568Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
