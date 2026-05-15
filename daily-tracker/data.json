@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-14T23:13:12.568Z",
+    "generated_at": "2026-05-15T00:12:11.025Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Figure AI 03 keeps working for over 30 hours straight (no bathroom breaks - a peek into our future replacements)",
+        "link": "https://reddit.com/r/singularity/comments/1tdeiwm/figure_ai_03_keeps_working_for_over_30_hours/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-14T23:12:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Data scraping and collection",
         "link": "https://reddit.com/r/openclaw/comments/1tde2rc/data_scraping_and_collection/",
@@ -379,16 +388,16 @@
         "published_at": "2026-05-14T22:54:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
-        "headline": "Which model should I use? I'm using the Anthropic API and it's way too expensive. I have a ChatGPT subscription, and a computer fast enough to run a local model.",
-        "link": "https://reddit.com/r/openclaw/comments/1tdbuag/which_model_should_i_use_im_using_the_anthropic/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-14T21:26:01+00:00",
+        "headline": "My bad, I'm never generating images of copyrighted characters again",
+        "link": "https://reddit.com/r/OpenAI/comments/1tdbjdu/my_bad_im_never_generating_images_of_copyrighted/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-14T21:14:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Google’s Gemini Omni Can Generate Videos With Shockingly Accurate Text 😳",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-14T20:36:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Work with Codex from anywhere | OpenAI",
@@ -406,7 +415,7 @@
         "published_at": "2026-05-14T20:15:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Anyone else trauma bonded to the claw and feels like you can't quit it?",
@@ -415,22 +424,13 @@
         "published_at": "2026-05-14T19:37:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "How do you give a credit card to Claw?",
         "link": "https://reddit.com/r/openclaw/comments/1td89ip/how_do_you_give_a_credit_card_to_claw/",
         "subreddit": "openclaw",
         "published_at": "2026-05-14T19:17:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "People are claiming teleop, but I really don't think a human would be this insistent to get a package they clearly can't reach.",
-        "link": "https://reddit.com/r/singularity/comments/1td7ae5/people_are_claiming_teleop_but_i_really_dont/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-14T18:43:17+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -442,7 +442,7 @@
         "published_at": "2026-05-14T17:49:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       },
       {
         "headline": "Extended Thinking being deprecated for supported models (Opus 4.6, Sonnet 4.6); Adaptive Thinking will be enforced by default",
@@ -451,7 +451,7 @@
         "published_at": "2026-05-14T17:03:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       },
       {
         "headline": "Saw these in front of the courthouse where the Altman Musk trial is this morning",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-14T16:21:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-14T23:13:12.568Z",
+    "reddit_viral_generated_at": "2026-05-15T00:12:11.025Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
