@@ -367,19 +367,73 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-15T15:31:32.672Z",
+    "generated_at": "2026-05-15T17:53:55.504Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Did Gemini just Rick rolled me lol",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tdyw0n/did_gemini_just_rick_rolled_me_lol/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-15T15:00:13+00:00",
+        "headline": "iMessages not sending",
+        "link": "https://reddit.com/r/openclaw/comments/1te2sko/imessages_not_sending/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-15T17:17:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shakeup",
+        "link": "https://reddit.com/r/OpenAI/comments/1te2pwo/greg_brockman_officially_takes_control_of_openais/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-15T17:14:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini 3.5 Pro to scale",
+        "link": "https://reddit.com/r/GeminiAI/comments/1te1mmo/gemini_35_pro_to_scale/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-15T16:36:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1te0mhh/claude_is_telling_users_to_go_to_sleep_midsession/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-15T16:01:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Figure AI 03 swapping turns",
+        "link": "https://reddit.com/r/singularity/comments/1tdzrv2/figure_ai_03_swapping_turns/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-15T15:31:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "If AI Causes a Mass Unemployment Crisis, Will the Public Explode Into Violence?",
+        "link": "https://reddit.com/r/singularity/comments/1tdzd0v/if_ai_causes_a_mass_unemployment_crisis_will_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-15T15:16:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Claude's first day at Dunder Mifflin",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tdyrdv/claudes_first_day_at_dunder_mifflin/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-15T14:55:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Is openclaw/security enough?",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-15T14:35:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "INFRINGED - You Can't Escape Censorship. Bypassing copyright is getting harder.",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-15T14:14:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Letting OpenClaw help Sales Employees",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-15T13:32:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "This is funny",
-        "link": "https://reddit.com/r/OpenAI/comments/1tdw9qh/this_is_funny/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-15T13:23:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "OpenAI reportedly considered legal action over Apple ChatGPT deal",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tdvvjw/openai_reportedly_considered_legal_action_over/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-15T13:08:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "OpenClaw mini PC setup for 24/7 use — Linux or Windows?",
-        "link": "https://reddit.com/r/openclaw/comments/1tdvt61/openclaw_mini_pc_setup_for_247_use_linux_or/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-15T13:05:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "FLOW. WHAT THE HECK IS THIS!",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tdvp78/flow_what_the_heck_is_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-15T13:01:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Genuine question. Is the whole \"AI guzzles gallons of water\" thing totally true, or do people get it wrong? Does AI consume a lot of water for every single prompt, or is the majority of water consumed during data farming? Don't non-AI data centers use up a lot of water on cooling too?",
-        "link": "https://reddit.com/r/singularity/comments/1tdvi2f/genuine_question_is_the_whole_ai_guzzles_gallons/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-15T12:53:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "\"Just 3 credible people\" they said",
-        "link": "https://reddit.com/r/aimemes/comments/1tdvh4n/just_3_credible_people_they_said/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-15T12:52:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-15T15:31:32.672Z",
+    "reddit_viral_generated_at": "2026-05-15T17:53:55.504Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
