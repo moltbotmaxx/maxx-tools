@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-15T04:29:32.747Z",
+    "generated_at": "2026-05-15T08:17:39.351Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AGENTS.md: under workspace or agents?",
+        "link": "https://reddit.com/r/openclaw/comments/1tdpbrr/agentsmd_under_workspace_or_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-15T07:46:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Huh?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tdoj0q/huh/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-15T07:01:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "\"Whatever makes you happy\" ahh AI✌️🥀",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tdo4m6/whatever_makes_you_happy_ahh_ai/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-15T06:39:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "No more Claude subscription usage? What’s next…",
+        "link": "https://reddit.com/r/openclaw/comments/1tdnuus/no_more_claude_subscription_usage_whats_next/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-15T06:24:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Possible to send multiple telegram messages in cronjob?",
+        "link": "https://reddit.com/r/openclaw/comments/1tdnhj1/possible_to_send_multiple_telegram_messages_in/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-15T06:04:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Prompt: Screenshot from a 1950’s film but add something that is difficult to see but also terrifying.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tdk52v/prompt_screenshot_from_a_1950s_film_but_add/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-15T03:18:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "Can you explain to me the hatred of AI and its water usage?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1tdfx2p/can_you_explain_to_me_the_hatred_of_ai_and_its/",
@@ -379,7 +433,7 @@
         "published_at": "2026-05-15T00:10:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 83
       },
       {
         "headline": "Now in preview: Codex mobile",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-14T23:24:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 81
       },
       {
         "headline": "Figure AI 03 keeps working for over 30 hours straight (no bathroom breaks - a peek into our future replacements)",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-14T23:12:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 80
       },
       {
         "headline": "OpenAI Hit with Class-Action Privacy Lawsuit for Sharing ChatGPT Data with Google and Meta",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-14T23:10:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "My bad, I'm never generating images of copyrighted characters again",
-        "link": "https://reddit.com/r/OpenAI/comments/1tdbjdu/my_bad_im_never_generating_images_of_copyrighted/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-14T21:14:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Google’s Gemini Omni Can Generate Videos With Shockingly Accurate Text 😳",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tdaidh/googles_gemini_omni_can_generate_videos_with/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-14T20:36:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Work with Codex from anywhere | OpenAI",
-        "link": "https://reddit.com/r/OpenAI/comments/1td9wvq/work_with_codex_from_anywhere_openai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-14T20:15:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "(Phil) Anthropic forms $200 million partnership with the Gates Foundation",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1td99ol/phil_anthropic_forms_200_million_partnership_with/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-14T19:53:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anyone else trauma bonded to the claw and feels like you can't quit it?",
-        "link": "https://reddit.com/r/openclaw/comments/1td8uai/anyone_else_trauma_bonded_to_the_claw_and_feels/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-14T19:37:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Meta's $10 billion Louisiana data center is getting $3.3 billion in tax breaks—more than seven years of the state's entire police budget",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1td5oqe/metas_10_billion_louisiana_data_center_is_getting/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-14T17:49:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-15T04:29:32.747Z",
+    "reddit_viral_generated_at": "2026-05-15T08:17:39.351Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
