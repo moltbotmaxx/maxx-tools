@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-15T10:39:52.958Z",
+    "generated_at": "2026-05-15T13:05:44.465Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Is OpenClaw managed hosting the key to simplifying automation?",
-        "link": "https://reddit.com/r/openclaw/comments/1tdrija/is_openclaw_managed_hosting_the_key_to/",
+        "headline": "OpenClaw mini PC setup for 24/7 use — Linux or Windows?",
+        "link": "https://reddit.com/r/openclaw/comments/1tdvt61/openclaw_mini_pc_setup_for_247_use_linux_or/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-15T09:49:40+00:00",
+        "published_at": "2026-05-15T13:05:29+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "OpenAI CEO Sam Altman holds more than $2 billion in companies that have done business with the company, a court document showed as Altman faces claims of self-dealing from state attorneys general.",
-        "link": "https://reddit.com/r/OpenAI/comments/1tdr45c/openai_ceo_sam_altman_holds_more_than_2_billion/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-15T09:26:27+00:00",
+        "headline": "\"Just 3 credible people\" they said",
+        "link": "https://reddit.com/r/aimemes/comments/1tdvh4n/just_3_credible_people_they_said/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-15T12:52:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "Doppelte Nachrichten und ständige Status updates",
-        "link": "https://reddit.com/r/openclaw/comments/1tdqefx/doppelte_nachrichten_und_st%C3%A4ndige_status_updates/",
+        "headline": "Cut my OpenClaw boot tokens by 43% by cleaning up tool + memory files",
+        "link": "https://reddit.com/r/openclaw/comments/1tduufl/cut_my_openclaw_boot_tokens_by_43_by_cleaning_up/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-15T08:46:02+00:00",
+        "published_at": "2026-05-15T12:26:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 98
       },
       {
-        "headline": "AGENTS.md: under workspace or agents?",
-        "link": "https://reddit.com/r/openclaw/comments/1tdpbrr/agentsmd_under_workspace_or_agents/",
+        "headline": "Is Gemini frequently misleading you guys too?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tdumu1/is_gemini_frequently_misleading_you_guys_too/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-15T12:18:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Is GPT 5.5 in OpenClaw a bad model?",
+        "link": "https://reddit.com/r/openclaw/comments/1tdtl1o/is_gpt_55_in_openclaw_a_bad_model/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-15T07:46:01+00:00",
+        "published_at": "2026-05-15T11:32:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Trying to get my agent to use Claude CLI but I'm not sure how",
+        "link": "https://reddit.com/r/openclaw/comments/1tdt3pg/trying_to_get_my_agent_to_use_claude_cli_but_im/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-15T11:10:20+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
       },
       {
-        "headline": "GENUINELY, WHAT AM I PAYING FOR????",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tdoogc/genuinely_what_am_i_paying_for/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-15T07:09:06+00:00",
+        "headline": "Antrophic is now the front runner of AI Boom",
+        "link": "https://reddit.com/r/OpenAI/comments/1tdsvca/antrophic_is_now_the_front_runner_of_ai_boom/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-15T10:59:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 94
       },
       {
-        "headline": "Huh?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tdoj0q/huh/",
+        "headline": "left or right?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tdsgh2/left_or_right/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-05-15T07:01:00+00:00",
+        "published_at": "2026-05-15T10:39:11+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
       },
       {
-        "headline": "\"Whatever makes you happy\" ahh AI✌️🥀",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tdo4m6/whatever_makes_you_happy_ahh_ai/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-15T06:39:16+00:00",
+        "headline": "What happens when you give AI agents a civilisation to run for 15 days with no guardrails?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tdryp0/what_happens_when_you_give_ai_agents_a/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-15T10:13:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
       },
       {
-        "headline": "Sometimes Gemini confidently making errors.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tdo1e9/sometimes_gemini_confidently_making_errors/",
+        "headline": "Difference between Gemini and Chatgpt",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tdrvg9/difference_between_gemini_and_chatgpt/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-05-15T06:34:21+00:00",
+        "published_at": "2026-05-15T10:09:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "No more Claude subscription usage? What’s next…",
-        "link": "https://reddit.com/r/openclaw/comments/1tdnuus/no_more_claude_subscription_usage_whats_next/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-15T06:24:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Can you explain to me the hatred of AI and its water usage?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tdfx2p/can_you_explain_to_me_the_hatred_of_ai_and_its/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-15T00:10:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-15T10:39:52.958Z",
+    "reddit_viral_generated_at": "2026-05-15T13:05:44.465Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
