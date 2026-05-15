@@ -367,37 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-15T19:55:48.325Z",
+    "generated_at": "2026-05-15T21:29:29.797Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Leveraging Imsg without disabling SIP",
-        "link": "https://reddit.com/r/openclaw/comments/1te6n6s/leveraging_imsg_without_disabling_sip/",
+        "headline": "My agent forgot things, recovered badly, posted to the wrong place, then fixed my security backlog anyway",
+        "link": "https://reddit.com/r/openclaw/comments/1te9ga0/my_agent_forgot_things_recovered_badly_posted_to/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-15T19:32:35+00:00",
+        "published_at": "2026-05-15T21:15:45+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Suggest me some api for openclaw to run in laptop",
-        "link": "https://reddit.com/r/openclaw/comments/1te66vq/suggest_me_some_api_for_openclaw_to_run_in_laptop/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-15T19:16:13+00:00",
+        "headline": "This little girl used AI to generate an image and create a virtual avatar, garnering 16 million views on X. But I want to talk about AI education for children.",
+        "link": "https://reddit.com/r/OpenAI/comments/1te91ab/this_little_girl_used_ai_to_generate_an_image_and/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-15T21:00:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "ChatGPT Plus vs Business plan for Codex?",
-        "link": "https://reddit.com/r/openclaw/comments/1te5j03/chatgpt_plus_vs_business_plan_for_codex/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-15T18:52:51+00:00",
+        "headline": "More evidence of Mythos's strength in Cybersecurity/Hacking - compared to 5.5, it got 18/41 n-day exploits, vs 1/41. Open Source/Weights models get nothing",
+        "link": "https://reddit.com/r/singularity/comments/1te51wg/more_evidence_of_mythoss_strength_in/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-15T18:35:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Has any OpenClaw upgrade ever not broken something?",
@@ -406,16 +406,16 @@
         "published_at": "2026-05-15T18:26:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
-        "headline": "iMessages not sending",
-        "link": "https://reddit.com/r/openclaw/comments/1te2sko/imessages_not_sending/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-15T17:17:05+00:00",
+        "headline": "!!!THEY JUST RESET OUR USAGE!!! Mine was supposed to be tonight",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1te40i2/they_just_reset_our_usage_mine_was_supposed_to_be/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-15T17:59:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shakeup",
@@ -424,7 +424,7 @@
         "published_at": "2026-05-15T17:14:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Gemini 3.5 Pro to scale",
@@ -433,7 +433,7 @@
         "published_at": "2026-05-15T16:36:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it",
@@ -442,7 +442,7 @@
         "published_at": "2026-05-15T16:01:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Figure AI 03 swapping turns",
@@ -451,7 +451,7 @@
         "published_at": "2026-05-15T15:31:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Claude's first day at Dunder Mifflin",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-15T14:55:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-15T19:55:48.325Z",
+    "reddit_viral_generated_at": "2026-05-15T21:29:29.797Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
