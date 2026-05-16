@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-16T09:02:43.255Z",
+    "generated_at": "2026-05-16T10:39:04.021Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Accidentally made $527 from a small GPT thing i built, still not sure how",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tep3a3/accidentally_made_527_from_a_small_gpt_thing_i/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-16T09:45:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "This is so funny",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1teo919/this_is_so_funny/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-16T08:57:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Researchers let AIs run their own radio stations. DJ Claude decided the world didn't need another radio show, then quit.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1tente2/researchers_let_ais_run_their_own_radio_stations/",
@@ -379,16 +397,16 @@
         "published_at": "2026-05-16T08:31:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
-        "headline": "IF RCB WINS TOMMOROW PUNJAB IS DONE AND DUSTED ELSE CSK IS DONE AND DUSTED",
-        "link": "https://reddit.com/r/aimemes/comments/1ten1k9/if_rcb_wins_tommorow_punjab_is_done_and_dusted/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-16T07:49:00+00:00",
+        "headline": "YouTube Will Search for AI Fakes of You. All It Needs Is a Video of Your Face.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tendpm/youtube_will_search_for_ai_fakes_of_you_all_it/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-16T08:07:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Mistral AI founder to French Parliament: \"Engineers at Mistral no longer write a single line of code",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-16T07:41:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "2026.5.12 is working better than expected.",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-16T06:56:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Warhammer 40k Barbie in a Box",
@@ -415,16 +433,16 @@
         "published_at": "2026-05-16T06:44:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
-        "headline": "Honestly, this is amazing.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tekolg/honestly_this_is_amazing/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-16T05:42:03+00:00",
+        "headline": "Asked chatgpt to generate images that no one would ever think about generating",
+        "link": "https://reddit.com/r/ChatGPT/comments/1telbty/asked_chatgpt_to_generate_images_that_no_one/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-16T06:16:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Overworked AI Agents Turn Marxist, Researchers Find",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-16T05:19:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Does anyone else have Gemini turn things they say into catchphrases (against their instructions)?",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-16T03:10:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Limits reset coming in few hours!",
-        "link": "https://reddit.com/r/OpenAI/comments/1teh68i/limits_reset_coming_in_few_hours/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-16T02:48:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "‘Coding Was Never the Bottleneck’ Is Actually Bearish for Employment",
-        "link": "https://reddit.com/r/singularity/comments/1tegzvj/coding_was_never_the_bottleneck_is_actually/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-16T02:39:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-16T09:02:43.255Z",
+    "reddit_viral_generated_at": "2026-05-16T10:39:04.021Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
