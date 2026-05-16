@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-16T04:04:58.459Z",
+    "generated_at": "2026-05-16T06:37:01.043Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Clawdrop - agentic AI playbooks for SMB operators",
+        "link": "https://reddit.com/r/openclaw/comments/1tekdkb/clawdrop_agentic_ai_playbooks_for_smb_operators/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T05:25:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Overworked AI Agents Turn Marxist, Researchers Find",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tek8xd/overworked_ai_agents_turn_marxist_researchers_find/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-16T05:19:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Does anyone else have Gemini turn things they say into catchphrases (against their instructions)?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tehnfq/does_anyone_else_have_gemini_turn_things_they_say/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-16T03:10:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Limits reset coming in few hours!",
+        "link": "https://reddit.com/r/OpenAI/comments/1teh68i/limits_reset_coming_in_few_hours/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-16T02:48:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "‘Coding Was Never the Bottleneck’ Is Actually Bearish for Employment",
+        "link": "https://reddit.com/r/singularity/comments/1tegzvj/coding_was_never_the_bottleneck_is_actually/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-16T02:39:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "I had Chat decide which watermelon to buy…",
         "link": "https://reddit.com/r/OpenAI/comments/1tegc17/i_had_chat_decide_which_watermelon_to_buy/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-16T02:09:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Elite researchers teamed up with Anthropic’s Mythos AI to smash Apple’s multi-billion dollar M5 security and build a kernel exploit in just 5 days.",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-16T00:54:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
         "headline": "Replaced (Made with ChatGPT Image 2.0 & Seedance 2.0)",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-15T23:00:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 85
       },
       {
         "headline": "Prompt: Make a picture of a famous event in the history of humanity before smartphones existed, but in this picture people have smartphones and are all heads down obsessed with them",
@@ -406,16 +451,7 @@
         "published_at": "2026-05-15T22:54:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Personal finance is here!",
-        "link": "https://reddit.com/r/OpenAI/comments/1tebfe8/personal_finance_is_here/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-15T22:33:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 84
       },
       {
         "headline": "Wanted to know how much we had on our tipjar. Took a pic of all the coins laid out and asked how much to all the AIs on my phone.",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-15T21:49:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "TIFU by giving openclaw my email",
-        "link": "https://reddit.com/r/openclaw/comments/1tea1pf/tifu_by_giving_openclaw_my_email/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-15T21:38:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "DeepSeek R2 just went open-source and it's matching GPT-4o on 9 of 12 benchmarks — for literally $0 in API costs",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1te9jv1/deepseek_r2_just_went_opensource_and_its_matching/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-15T21:19:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "This little girl used AI to generate an image and create a virtual avatar, garnering 16 million views on X. But I want to talk about AI education for children.",
-        "link": "https://reddit.com/r/OpenAI/comments/1te91ab/this_little_girl_used_ai_to_generate_an_image_and/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-15T21:00:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "OpenAI feels “burned” by Apple’s crappy ChatGPT integration, insiders say",
-        "link": "https://reddit.com/r/OpenAI/comments/1te8ohj/openai_feels_burned_by_apples_crappy_chatgpt/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-15T20:46:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-16T04:04:58.459Z",
+    "reddit_viral_generated_at": "2026-05-16T06:37:01.043Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
