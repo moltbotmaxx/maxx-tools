@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-16T14:01:07.401Z",
+    "generated_at": "2026-05-16T15:17:58.202Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why I added a governance layer to my OpenClaw agents",
+        "link": "https://reddit.com/r/openclaw/comments/1tewe85/why_i_added_a_governance_layer_to_my_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T15:13:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A visual dashboard to track Hantavirus updates",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tew3qv/a_visual_dashboard_to_track_hantavirus_updates/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-16T15:02:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Vibecoder final boss",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tevksd/vibecoder_final_boss/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-16T14:42:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "I simply say generate a Japanese anime girl poster and look what ChatGPT did 😭😭",
         "link": "https://reddit.com/r/ChatGPT/comments/1tetdrb/i_simply_say_generate_a_japanese_anime_girl/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-16T13:14:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Claude asking users to sleep during sessions and nobody knows why!",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-16T13:06:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Whats your update strategy?",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-16T12:38:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "10/10 no notes",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-16T12:07:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "10/10 no notes",
@@ -415,16 +442,7 @@
         "published_at": "2026-05-16T11:22:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Overworked AI Turns 'Marxist'? Study Reveals Surprising Behavior in Repetitive Tasks",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1teqiay/overworked_ai_turns_marxist_study_reveals/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-16T11:02:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Gemini know what the inside of my house looks like?",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-16T10:20:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Me thinking I cooked",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-16T09:18:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "3D-printed stretchable artery implant lowers blood pressure by 15% in early trials",
-        "link": "https://reddit.com/r/singularity/comments/1teogs8/3dprinted_stretchable_artery_implant_lowers_blood/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-16T09:08:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "This is so funny",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1teo919/this_is_so_funny/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-16T08:57:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-16T14:01:07.401Z",
+    "reddit_viral_generated_at": "2026-05-16T15:17:58.202Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
