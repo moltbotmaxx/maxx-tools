@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-16T19:34:48.529Z",
+    "generated_at": "2026-05-16T21:06:09.685Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Migrated my OpenClaw setup to Claude Code. Looking 2-3 beta testers for Nolty",
+        "link": "https://reddit.com/r/openclaw/comments/1tf57j6/migrated_my_openclaw_setup_to_claude_code_looking/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T20:51:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Best llama.cpp launch config for Qwen3.6 27B on RX 7800 XT (16 GB VRAM) for OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1tf50ck/best_llamacpp_launch_config_for_qwen36_27b_on_rx/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T20:42:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "anyone else seen behavior of receiving multiple responses to the same prompt? 2026.5.12",
+        "link": "https://reddit.com/r/openclaw/comments/1tf4okx/anyone_else_seen_behavior_of_receiving_multiple/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T20:29:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Got this for Flash and Pro.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tf3le3/got_this_for_flash_and_pro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-16T19:46:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Help. Can’t set OC to GPT oauth",
         "link": "https://reddit.com/r/openclaw/comments/1tf2d6b/help_cant_set_oc_to_gpt_oauth/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-16T18:58:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Just getting into openclaw. I bought a M4 Mac Mini base. Return/Keep/Sell?",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-16T18:29:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Codex Computer Use has a HUGE Advantage over Openclaw!!!",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-16T18:26:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "What on earth is going on with Gemini these days? I feel like I'm having to clarify whether it's making things up after every response it gives me.",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-16T18:24:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "I ported obra/superpowers to OpenClaw — no Claude Code dependency",
@@ -415,49 +451,13 @@
         "published_at": "2026-05-16T18:23:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Thank you ChatGPT, this is very helpful.",
         "link": "https://reddit.com/r/OpenAI/comments/1tf0ovg/thank_you_chatgpt_this_is_very_helpful/",
         "subreddit": "OpenAI",
         "published_at": "2026-05-16T17:55:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Self-driving motorcycles are being spotted on China's streets without a driver",
-        "link": "https://reddit.com/r/singularity/comments/1tf017l/selfdriving_motorcycles_are_being_spotted_on/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-16T17:30:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Claude usage loophole?",
-        "link": "https://reddit.com/r/openclaw/comments/1tezwua/claude_usage_loophole/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-16T17:25:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "What use cases does Gemini beat the others?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1texwl8/what_use_cases_does_gemini_beat_the_others/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-16T16:10:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic's Mythos Just Helped Find macOS vulnerability That Could Break Apple's Security Protections",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1texrat/anthropics_mythos_just_helped_find_macos/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-16T16:04:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-16T19:34:48.529Z",
+    "reddit_viral_generated_at": "2026-05-16T21:06:09.685Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
