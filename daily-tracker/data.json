@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-16T21:06:09.685Z",
+    "generated_at": "2026-05-16T22:06:30.391Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Amazon degli agenti",
+        "link": "https://reddit.com/r/openclaw/comments/1tf6ow6/amazon_degli_agenti/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T21:53:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Will I get banned if I add a WhatsApp number to a group and monitor it via whatsapp-js or Baileys?",
+        "link": "https://reddit.com/r/openclaw/comments/1tf6nm6/will_i_get_banned_if_i_add_a_whatsapp_number_to_a/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T21:51:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude API for 3rd party",
+        "link": "https://reddit.com/r/openclaw/comments/1tf6edj/claude_api_for_3rd_party/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-16T21:40:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Migrated my OpenClaw setup to Claude Code. Looking 2-3 beta testers for Nolty",
         "link": "https://reddit.com/r/openclaw/comments/1tf57j6/migrated_my_openclaw_setup_to_claude_code_looking/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-16T20:51:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Best llama.cpp launch config for Qwen3.6 27B on RX 7800 XT (16 GB VRAM) for OpenClaw?",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-16T20:42:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "anyone else seen behavior of receiving multiple responses to the same prompt? 2026.5.12",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-16T20:29:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Got this for Flash and Pro.",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-16T19:46:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Help. Can’t set OC to GPT oauth",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-16T18:58:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Just getting into openclaw. I bought a M4 Mac Mini base. Return/Keep/Sell?",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-16T18:29:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Codex Computer Use has a HUGE Advantage over Openclaw!!!",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-16T18:26:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "What on earth is going on with Gemini these days? I feel like I'm having to clarify whether it's making things up after every response it gives me.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tf1hfj/what_on_earth_is_going_on_with_gemini_these_days/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-16T18:24:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I ported obra/superpowers to OpenClaw — no Claude Code dependency",
-        "link": "https://reddit.com/r/openclaw/comments/1tf1fpo/i_ported_obrasuperpowers_to_openclaw_no_claude/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-16T18:23:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Thank you ChatGPT, this is very helpful.",
-        "link": "https://reddit.com/r/OpenAI/comments/1tf0ovg/thank_you_chatgpt_this_is_very_helpful/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-16T17:55:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-16T21:06:09.685Z",
+    "reddit_viral_generated_at": "2026-05-16T22:06:30.391Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
