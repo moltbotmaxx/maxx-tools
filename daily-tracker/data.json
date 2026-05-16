@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-16T10:39:04.021Z",
+    "generated_at": "2026-05-16T12:07:53.888Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Accidentally made $527 from a small GPT thing i built, still not sure how",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tep3a3/accidentally_made_527_from_a_small_gpt_thing_i/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-16T09:45:03+00:00",
+        "headline": "Overworked AI Turns 'Marxist'? Study Reveals Surprising Behavior in Repetitive Tasks",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1teqiay/overworked_ai_turns_marxist_study_reveals/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-16T11:02:11+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Gemini know what the inside of my house looks like?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tepqfd/gemini_know_what_the_inside_of_my_house_looks_like/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-16T10:20:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Me thinking I cooked",
+        "link": "https://reddit.com/r/ChatGPT/comments/1teon1u/me_thinking_i_cooked/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-16T09:18:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "This is so funny",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-16T08:57:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Researchers let AIs run their own radio stations. DJ Claude decided the world didn't need another radio show, then quit.",
@@ -397,16 +415,16 @@
         "published_at": "2026-05-16T08:31:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
-        "headline": "YouTube Will Search for AI Fakes of You. All It Needs Is a Video of Your Face.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tendpm/youtube_will_search_for_ai_fakes_of_you_all_it/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-16T08:07:50+00:00",
+        "headline": "Totally wrong information?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tengbw/totally_wrong_information/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-16T08:11:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Mistral AI founder to French Parliament: \"Engineers at Mistral no longer write a single line of code",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-16T07:41:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "2026.5.12 is working better than expected.",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-16T06:56:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Warhammer 40k Barbie in a Box",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-16T06:44:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Asked chatgpt to generate images that no one would ever think about generating",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-16T06:16:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Overworked AI Agents Turn Marxist, Researchers Find",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tek8xd/overworked_ai_agents_turn_marxist_researchers_find/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-16T05:19:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Does anyone else have Gemini turn things they say into catchphrases (against their instructions)?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tehnfq/does_anyone_else_have_gemini_turn_things_they_say/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-16T03:10:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-16T10:39:04.021Z",
+    "reddit_viral_generated_at": "2026-05-16T12:07:53.888Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
