@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-17T10:00:21.587Z",
+    "generated_at": "2026-05-17T11:33:49.999Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Configured OpenClaw with third party api for my workflow",
-        "link": "https://reddit.com/r/openclaw/comments/1tfjnuw/configured_openclaw_with_third_party_api_for_my/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-17T08:31:21+00:00",
+        "headline": "spotted at graduation today",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tfmbxy/spotted_at_graduation_today/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-17T11:00:45+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Designers V/s Programmers in gpt...",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tfkxhq/designers_vs_programmers_in_gpt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-17T09:44:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "OpenAI to give all Malta residents free ChatGPT Plus access",
+        "link": "https://reddit.com/r/OpenAI/comments/1tfk57g/openai_to_give_all_malta_residents_free_chatgpt/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-17T08:59:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Anthropic shipped 4 context tools between /clear and /compact. Here's when each one wins",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tfjja8/anthropic_shipped_4_context_tools_between_clear/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-17T08:24:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Yesterday I saw a new research paper about δ-mem and integrated with openclaw",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-17T08:14:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "\"Malta just became the first country to offer ChatGPT Plus to every citizen - free for a year. The only requirement: complete an AI literacy course first. The course was built by the University of Malta, not by OpenAI. So it's not a vendor training citizens to use vendor\"",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-17T07:41:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "I spent 45 minutes driving to work every day unable to talk to my AI agent, so I built an iOS app where I can handsfree talk to my AI agent - with full TTS and STT built-in",
@@ -406,25 +433,7 @@
         "published_at": "2026-05-17T07:38:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Downgrading OpenClaw Advice",
-        "link": "https://reddit.com/r/openclaw/comments/1tfhawb/downgrading_openclaw_advice/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-17T06:20:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gemini new extended thinking featured",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tfhavo/gemini_new_extended_thinking_featured/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-17T06:20:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "The prompt was \"Create a 1970s grainy family photo, but put very subtle unsettled details that'll take very long to detect.\"",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-17T06:20:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "My molty has its own phone number now",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-17T05:56:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Opus is ridiculous for frontend cleanup",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-17T05:50:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Brutal",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tffztu/brutal/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-17T05:11:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-17T10:00:21.587Z",
+    "reddit_viral_generated_at": "2026-05-17T11:33:49.999Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
