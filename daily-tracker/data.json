@@ -367,28 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-17T04:34:19.413Z",
+    "generated_at": "2026-05-17T07:44:49.923Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "I was chatting in Gemini voice call mode (read body text PLEASE)",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tfdfed/i_was_chatting_in_gemini_voice_call_mode_read/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-17T03:02:00+00:00",
+        "headline": "For people who don't want to set up or manage Openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1tfirme/for_people_who_dont_want_to_set_up_or_manage/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T07:40:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Damn guys google really outdid themselves with the new ui",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tfd2np/damn_guys_google_really_outdid_themselves_with/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-17T02:45:08+00:00",
+        "headline": "I spent 45 minutes driving to work every day unable to talk to my AI agent, so I built an iOS app where I can handsfree talk to my AI agent - with full TTS and STT built-in",
+        "link": "https://reddit.com/r/openclaw/comments/1tfiqd7/i_spent_45_minutes_driving_to_work_every_day/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T07:38:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 100
+      },
+      {
+        "headline": "Downgrading OpenClaw Advice",
+        "link": "https://reddit.com/r/openclaw/comments/1tfhawb/downgrading_openclaw_advice/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T06:20:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "My molty has its own phone number now",
+        "link": "https://reddit.com/r/openclaw/comments/1tfgum2/my_molty_has_its_own_phone_number_now/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T05:56:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Brutal",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tffztu/brutal/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-17T05:11:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "DEEPSEEK... WHAT THE F-💀🙏🥀",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tffzoj/deepseek_what_the_f/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-17T05:11:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "You know the drills.",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-17T02:30:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 88
       },
       {
         "headline": "Microsoft AI chief gives it 18 months—for all white-collar work to be automated by AI",
@@ -406,16 +442,7 @@
         "published_at": "2026-05-17T01:04:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Opus 4.7 refuses to use /end_conversation, instead has existential crisis",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tf8k45/opus_47_refuses_to_use_end_conversation_instead/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-16T23:14:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       },
       {
         "headline": "Still funny",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-16T22:55:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 80
       },
       {
         "headline": "Turned my OC morning briefing into a podcast feed in apple podcasts and listen on the drive to work. Kinda addictive",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-16T22:27:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Claude Mythos has been spotted in Google Vertex",
-        "link": "https://reddit.com/r/singularity/comments/1tf6ukh/claude_mythos_has_been_spotted_in_google_vertex/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-16T22:00:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "what's this bheaviour??",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tf5bco/whats_this_bheaviour/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-16T20:55:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Got this for Flash and Pro.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tf3le3/got_this_for_flash_and_pro/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-16T19:46:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-17T04:34:19.413Z",
+    "reddit_viral_generated_at": "2026-05-17T07:44:49.923Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
