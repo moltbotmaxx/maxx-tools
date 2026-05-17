@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-17T16:15:37.613Z",
+    "generated_at": "2026-05-17T17:17:06.397Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,13 +391,40 @@
         "viral_score": 100
       },
       {
+        "headline": "Claude just hit me with the ‘W’Allah’ 😭 AI speaking in French banlieue slang now",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tft5az/claude_just_hit_me_with_the_wallah_ai_speaking_in/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-17T15:46:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Nano Banana 2 has been nerfed badly. Are they planning to announce Pro soon?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tft539/nano_banana_2_has_been_nerfed_badly_are_they/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-17T15:45:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What happened to the issue of companies running out of training data for LLMs?",
+        "link": "https://reddit.com/r/singularity/comments/1tfs8ho/what_happened_to_the_issue_of_companies_running/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-17T15:12:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
         "headline": "In memory of Sora",
         "link": "https://reddit.com/r/OpenAI/comments/1tfrj4r/in_memory_of_sora/",
         "subreddit": "OpenAI",
         "published_at": "2026-05-17T14:45:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "spotted at graduation today",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-17T11:00:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "Step by step tutorial on how to bypass image generation of third party content",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-17T10:15:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "Designers V/s Programmers in gpt...",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-17T09:44:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       },
       {
         "headline": "OpenAI to give all Malta residents free ChatGPT Plus access",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-17T08:59:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Anthropic shipped 4 context tools between /clear and /compact. Here's when each one wins",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tfjja8/anthropic_shipped_4_context_tools_between_clear/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-17T08:24:12+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 83
-      },
-      {
-        "headline": "\"Malta just became the first country to offer ChatGPT Plus to every citizen - free for a year. The only requirement: complete an AI literacy course first. The course was built by the University of Malta, not by OpenAI. So it's not a vendor training citizens to use vendor\"",
-        "link": "https://reddit.com/r/singularity/comments/1tfisbw/malta_just_became_the_first_country_to_offer/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-17T07:41:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "I spent 45 minutes driving to work every day unable to talk to my AI agent, so I built an iOS app where I can handsfree talk to my AI agent - with full TTS and STT built-in",
-        "link": "https://reddit.com/r/openclaw/comments/1tfiqd7/i_spent_45_minutes_driving_to_work_every_day/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-17T07:38:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-17T16:15:37.613Z",
+    "reddit_viral_generated_at": "2026-05-17T17:17:06.397Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
