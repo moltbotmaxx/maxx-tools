@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-17T19:38:28.400Z",
+    "generated_at": "2026-05-17T21:09:13.711Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "“Create a 4chan greentext anno 2010, but it’s about current geopolitics and with genZ terminology ”",
+        "link": "https://reddit.com/r/aimemes/comments/1tg1bgd/create_a_4chan_greentext_anno_2010_but_its_about/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-17T20:46:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "New model is coming",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tg16e9/new_model_is_coming/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-17T20:40:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I made an character and aesthetics first UI for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1tg11ro/i_made_an_character_and_aesthetics_first_ui_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T20:35:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Openclaw falling on it's sword",
+        "link": "https://reddit.com/r/openclaw/comments/1tfzgk5/openclaw_falling_on_its_sword/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T19:36:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Figure AI running a human vs machine contest [live]",
         "link": "https://reddit.com/r/singularity/comments/1tfxal6/figure_ai_running_a_human_vs_machine_contest_live/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-17T18:18:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Y'all know you're guilty!",
@@ -388,16 +424,7 @@
         "published_at": "2026-05-17T17:47:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Rant: Stop saying LLMs are just “next token predictors.”",
-        "link": "https://reddit.com/r/singularity/comments/1tfvn3m/rant_stop_saying_llms_are_just_next_token/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-17T17:18:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Researchers left AIs alone in a virtual town for 15 days to see what would happen. Claude's agents built a democracy. Gemini's agents fell in love, burned the town down, then one voted to delete itself and its partner. Grok's agents created anarchy, then died.",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-17T17:09:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "If you know, you know 👀",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-17T16:50:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Claude spent 719h 50m (roughly 30 days) thinking about my prompt, it proudly reports finding 0 sources",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-17T16:37:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Honest comparison after 4 months running Claude Pro + ChatGPT Plus side by side",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-17T16:03:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Back in my day",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tfti3b/back_in_my_day/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-17T15:59:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Cerebras CFO says they are currently running GPT5.4 and GPT5.5 internally on their chips, will release to the public soon. (Imagine that intelligence at that speed)",
-        "link": "https://reddit.com/r/singularity/comments/1tftg9h/cerebras_cfo_says_they_are_currently_running/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-17T15:57:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Who can help me with this?",
-        "link": "https://reddit.com/r/openclaw/comments/1tftbbm/who_can_help_me_with_this/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-17T15:52:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-17T19:38:28.400Z",
+    "reddit_viral_generated_at": "2026-05-17T21:09:13.711Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
