@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-17T15:19:00.113Z",
+    "generated_at": "2026-05-17T16:15:37.613Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Cerebras CFO says they are currently running GPT5.4 and GPT5.5 internally on their chips, will release to the public soon. (Imagine that intelligence at that speed)",
+        "link": "https://reddit.com/r/singularity/comments/1tftg9h/cerebras_cfo_says_they_are_currently_running/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-17T15:57:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Who can help me with this?",
+        "link": "https://reddit.com/r/openclaw/comments/1tftbbm/who_can_help_me_with_this/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-17T15:52:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "In memory of Sora",
         "link": "https://reddit.com/r/OpenAI/comments/1tfrj4r/in_memory_of_sora/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-17T14:45:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "spotted at graduation today",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-17T11:00:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Step by step tutorial on how to bypass image generation of third party content",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-17T10:15:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Designers V/s Programmers in gpt...",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-17T09:44:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "OpenAI to give all Malta residents free ChatGPT Plus access",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-17T08:59:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "Anthropic shipped 4 context tools between /clear and /compact. Here's when each one wins",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-17T08:24:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       },
       {
         "headline": "\"Malta just became the first country to offer ChatGPT Plus to every citizen - free for a year. The only requirement: complete an AI literacy course first. The course was built by the University of Malta, not by OpenAI. So it's not a vendor training citizens to use vendor\"",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-17T07:41:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 81
       },
       {
         "headline": "I spent 45 minutes driving to work every day unable to talk to my AI agent, so I built an iOS app where I can handsfree talk to my AI agent - with full TTS and STT built-in",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-17T07:38:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Gemini new extended thinking featured",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tfhavo/gemini_new_extended_thinking_featured/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-17T06:20:48+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 81
-      },
-      {
-        "headline": "The prompt was \"Create a 1970s grainy family photo, but put very subtle unsettled details that'll take very long to detect.\"",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tfhabk/the_prompt_was_create_a_1970s_grainy_family_photo/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-17T06:20:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-17T15:19:00.113Z",
+    "reddit_viral_generated_at": "2026-05-17T16:15:37.613Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
