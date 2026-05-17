@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-17T17:17:06.397Z",
+    "generated_at": "2026-05-17T18:12:46.801Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Y'all know you're guilty!",
+        "link": "https://reddit.com/r/aimemes/comments/1tfwg1i/yall_know_youre_guilty/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-17T17:47:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "If you know, you know 👀",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tfuvgu/if_you_know_you_know/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-17T16:50:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude spent 719h 50m (roughly 30 days) thinking about my prompt, it proudly reports finding 0 sources",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tfujin/claude_spent_719h_50m_roughly_30_days_thinking/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-17T16:37:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Honest comparison after 4 months running Claude Pro + ChatGPT Plus side by side",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tftmt6/honest_comparison_after_4_months_running_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-17T16:03:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Back in my day",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tfti3b/back_in_my_day/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-17T15:59:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Cerebras CFO says they are currently running GPT5.4 and GPT5.5 internally on their chips, will release to the public soon. (Imagine that intelligence at that speed)",
         "link": "https://reddit.com/r/singularity/comments/1tftg9h/cerebras_cfo_says_they_are_currently_running/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-17T15:57:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Who can help me with this?",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-17T15:52:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Claude just hit me with the ‘W’Allah’ 😭 AI speaking in French banlieue slang now",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-17T15:46:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Nano Banana 2 has been nerfed badly. Are they planning to announce Pro soon?",
@@ -406,16 +451,7 @@
         "published_at": "2026-05-17T15:45:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "What happened to the issue of companies running out of training data for LLMs?",
-        "link": "https://reddit.com/r/singularity/comments/1tfs8ho/what_happened_to_the_issue_of_companies_running/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-17T15:12:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "In memory of Sora",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-17T14:45:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "spotted at graduation today",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tfmbxy/spotted_at_graduation_today/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-17T11:00:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Step by step tutorial on how to bypass image generation of third party content",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tflhgu/step_by_step_tutorial_on_how_to_bypass_image/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-17T10:15:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Designers V/s Programmers in gpt...",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tfkxhq/designers_vs_programmers_in_gpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-17T09:44:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "OpenAI to give all Malta residents free ChatGPT Plus access",
-        "link": "https://reddit.com/r/OpenAI/comments/1tfk57g/openai_to_give_all_malta_residents_free_chatgpt/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-17T08:59:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-17T17:17:06.397Z",
+    "reddit_viral_generated_at": "2026-05-17T18:12:46.801Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
