@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-18T20:47:39.897Z",
+    "generated_at": "2026-05-18T22:14:50.581Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Can I safely build an OpenClaw-based bot that auto‑replies to all comments, DMs, and WhatsApp messages without getting banned?",
+        "link": "https://reddit.com/r/openclaw/comments/1th15qf/can_i_safely_build_an_openclawbased_bot_that/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-18T21:02:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Conversation with OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1th0qwx/conversation_with_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-18T20:47:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Privacy clarification",
         "link": "https://reddit.com/r/openclaw/comments/1tgz0na/privacy_clarification/",
@@ -379,7 +397,16 @@
         "published_at": "2026-05-18T19:49:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Dario Amodei: AI Will Lead To Very High GDP Growth And Very High Unemployment, A Combination Never Seen Before, 10%+ Unemployment Rate Is Possible",
+        "link": "https://reddit.com/r/singularity/comments/1tgyv3s/dario_amodei_ai_will_lead_to_very_high_gdp_growth/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-18T19:44:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Boston Dynamics Atlas transporting a refrigerator (Atlas carries a fridge)",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-18T18:36:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Declassified",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-18T18:23:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Elon Musk lost his lawsuit against Sam Altman and OpenAI",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-18T18:05:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "what happened??",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-18T18:01:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Jury tosses Elon Musk's lawsuit against OpenAI and its boss Sam Altman",
@@ -424,40 +451,13 @@
         "published_at": "2026-05-18T17:53:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
         "link": "https://reddit.com/r/singularity/comments/1tgung8/elon_musk_loses_court_battle_against_sam_altman/",
         "subreddit": "singularity",
         "published_at": "2026-05-18T17:50:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Elon Musk Loses Landmark Lawsuit Against OpenAI",
-        "link": "https://reddit.com/r/OpenAI/comments/1tgub2o/elon_musk_loses_landmark_lawsuit_against_openai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-18T17:42:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Claude and ChatGPT Usage Monitors with Analytics",
-        "link": "https://reddit.com/r/openclaw/comments/1tgs4i9/claude_and_chatgpt_usage_monitors_with_analytics/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-18T16:38:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "What if your OpenClaw could just… sit in on your meetings and remember?",
-        "link": "https://reddit.com/r/openclaw/comments/1tgrx6m/what_if_your_openclaw_could_just_sit_in_on_your/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-18T16:32:01+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-18T20:47:39.897Z",
+    "reddit_viral_generated_at": "2026-05-18T22:14:50.581Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
