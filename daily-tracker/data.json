@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-18T22:14:50.581Z",
+    "generated_at": "2026-05-18T23:31:28.849Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Can I safely build an OpenClaw-based bot that auto‑replies to all comments, DMs, and WhatsApp messages without getting banned?",
-        "link": "https://reddit.com/r/openclaw/comments/1th15qf/can_i_safely_build_an_openclawbased_bot_that/",
+        "headline": "CLI is cheaper than Tokens, but it makes more mistakes. (Duh, but real world usecase)",
+        "link": "https://reddit.com/r/openclaw/comments/1th4fuh/cli_is_cheaper_than_tokens_but_it_makes_more/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-18T21:02:12+00:00",
+        "published_at": "2026-05-18T22:58:45+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT is now creating content for textbooks.",
+        "link": "https://reddit.com/r/aimemes/comments/1th3x3f/chatgpt_is_now_creating_content_for_textbooks/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-18T22:38:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Conversation with OpenClaw",
@@ -388,7 +397,16 @@
         "published_at": "2026-05-18T20:47:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
+      },
+      {
+        "headline": "Now watch this drive.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tgzap0/now_watch_this_drive/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-18T19:59:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Privacy clarification",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-18T19:49:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Dario Amodei: AI Will Lead To Very High GDP Growth And Very High Unemployment, A Combination Never Seen Before, 10%+ Unemployment Rate Is Possible",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-18T19:44:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Boston Dynamics Atlas transporting a refrigerator (Atlas carries a fridge)",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-18T18:36:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Declassified",
@@ -424,16 +442,7 @@
         "published_at": "2026-05-18T18:23:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Elon Musk lost his lawsuit against Sam Altman and OpenAI",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tgv9go/elon_musk_lost_his_lawsuit_against_sam_altman_and/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-18T18:05:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "what happened??",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-18T18:01:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Jury tosses Elon Musk's lawsuit against OpenAI and its boss Sam Altman",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-18T17:53:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
-        "link": "https://reddit.com/r/singularity/comments/1tgung8/elon_musk_loses_court_battle_against_sam_altman/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-18T17:50:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-18T22:14:50.581Z",
+    "reddit_viral_generated_at": "2026-05-18T23:31:28.849Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
