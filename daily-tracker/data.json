@@ -367,19 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-18T16:33:49.823Z",
+    "generated_at": "2026-05-18T19:03:42.525Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "What if your OpenClaw could just… sit in on your meetings and remember?",
-        "link": "https://reddit.com/r/openclaw/comments/1tgrx6m/what_if_your_openclaw_could_just_sit_in_on_your/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-18T16:32:01+00:00",
+        "headline": "Declassified",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tgvy1f/declassified/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-18T18:23:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Elon Musk lost his lawsuit against Sam Altman and OpenAI",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tgv9go/elon_musk_lost_his_lawsuit_against_sam_altman_and/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-18T18:05:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Jury tosses Elon Musk's lawsuit against OpenAI and its boss Sam Altman",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tgur9u/jury_tosses_elon_musks_lawsuit_against_openai_and/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-18T17:53:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
+        "link": "https://reddit.com/r/singularity/comments/1tgung8/elon_musk_loses_court_battle_against_sam_altman/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-18T17:50:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Elon Musk Loses Landmark Lawsuit Against OpenAI",
+        "link": "https://reddit.com/r/OpenAI/comments/1tgub2o/elon_musk_loses_landmark_lawsuit_against_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-18T17:42:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude and ChatGPT Usage Monitors with Analytics",
+        "link": "https://reddit.com/r/openclaw/comments/1tgs4i9/claude_and_chatgpt_usage_monitors_with_analytics/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-18T16:38:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "OC Dream diaries are weird...",
@@ -388,7 +433,25 @@
         "published_at": "2026-05-18T16:26:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Well THAT is crazy",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tgr7me/well_that_is_crazy/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-18T16:08:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "11 Claude things I wish someone had told me 12 months ago",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tgqnsl/11_claude_things_i_wish_someone_had_told_me_12/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-18T15:49:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Meme generation using ChatGPT vs Gemini. Which one do you think did better?",
@@ -397,77 +460,14 @@
         "published_at": "2026-05-18T15:37:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Claude Code helped me bring my dead passion project back to life",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tgpip8/claude_code_helped_me_bring_my_dead_passion/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-18T15:10:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Welp, what do i have to do",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tgpigu/welp_what_do_i_have_to_do/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-18T15:10:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "OpenClaw with Ollama (Qwen3.6)",
-        "link": "https://reddit.com/r/openclaw/comments/1tgotpy/openclaw_with_ollama_qwen36/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-18T14:45:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini 4 is tested in Google",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tgolth/gemini_4_is_tested_in_google/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-18T14:38:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini Pro New Limit is Messed Up",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tgndzn/gemini_pro_new_limit_is_messed_up/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-18T13:54:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Gemini 3.2 Flash is capable of solving IMO 2025 P6. Only GPT-5.5-Pro can solve it currently without any scaffolding / harness engineering.",
-        "link": "https://reddit.com/r/singularity/comments/1tgn8qt/gemini_32_flash_is_capable_of_solving_imo_2025_p6/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-18T13:49:26+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Jokes aside this just looks and sounds way too well done",
-        "link": "https://reddit.com/r/singularity/comments/1tgl9fl/jokes_aside_this_just_looks_and_sounds_way_too/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-18T12:33:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-18T16:33:49.823Z",
+    "reddit_viral_generated_at": "2026-05-18T19:03:42.525Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
