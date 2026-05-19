@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-19T20:54:19.623Z",
+    "generated_at": "2026-05-19T22:39:47.070Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Google is launching its own version of OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1ti2bkp/google_is_launching_its_own_version_of_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-19T22:18:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Canceled my Pro sub today; The new \"5-hour compute limit\" is completely unusable",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ti0coz/canceled_my_pro_sub_today_the_new_5hour_compute/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-19T21:05:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "[ Removed by Reddit ]",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1thybns/removed_by_reddit/",
@@ -379,7 +397,16 @@
         "published_at": "2026-05-19T19:54:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Demis Hassabis at Google I/O: \"Artificial General Intelligence is just a few years away\"",
+        "link": "https://reddit.com/r/singularity/comments/1thxmx8/demis_hassabis_at_google_io_artificial_general/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-19T19:30:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Cheapest API setup for email/admin agent running 8 hrs/day?",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-19T18:32:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Don’t ride this bicycle!",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-19T18:14:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Google's Antigravity 2.0 creates an operating system from scratch using 96 agents in 12 hours for under $1K in token costs - and it runs Doom",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-19T17:46:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Gemini 3.5 flash costs 3 times more than the previous version and 30x more than gemini 1.5 flash.",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-19T17:43:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Behold, Gemini 3.5 Flash!",
@@ -424,7 +451,7 @@
         "published_at": "2026-05-19T17:29:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "« Today, we’re introducing the Gemini 3.5 model series. »",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-19T17:26:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "60 years 7 batmobiles",
-        "link": "https://reddit.com/r/ChatGPT/comments/1thtm59/60_years_7_batmobiles/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-19T17:18:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Andrej Karpathy Joins Anthropic !",
-        "link": "https://reddit.com/r/singularity/comments/1tht4s0/andrej_karpathy_joins_anthropic/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-19T17:02:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Schiff Proposes Bill Requiring Data Centers to Pay for Own Power",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1thqq2c/schiff_proposes_bill_requiring_data_centers_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-19T15:40:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-19T20:54:19.623Z",
+    "reddit_viral_generated_at": "2026-05-19T22:39:47.070Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
