@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-19T04:34:59.151Z",
+    "generated_at": "2026-05-19T08:39:29.002Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Pizza Hut's AI system caused 'cascading' problems and $100M in damages, franchisee alleges in new suit",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1th94gg/pizza_huts_ai_system_caused_cascading_problems/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-19T02:14:52+00:00",
+        "headline": "Smoother browser automation?",
+        "link": "https://reddit.com/r/openclaw/comments/1thgcct/smoother_browser_automation/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-19T08:15:49+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "ChatGPA: students spent years getting told not to use AI for schoolwork, then their Arizona graduation ceremony used AI to read names and it immediately started skipping people 💀",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1th83ce/chatgpa_students_spent_years_getting_told_not_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-19T01:30:46+00:00",
+        "headline": "TurboQuant with 16 GB VRAM?",
+        "link": "https://reddit.com/r/openclaw/comments/1thgc87/turboquant_with_16_gb_vram/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-19T08:15:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini 3.5 confirmed by google deepmind employee",
+        "link": "https://reddit.com/r/singularity/comments/1thg4n1/gemini_35_confirmed_by_google_deepmind_employee/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-19T08:03:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Gemini's New \"Update\" is a Total Disappointment: The \"Lite\" Downgrade Fiasco",
+        "link": "https://reddit.com/r/GeminiAI/comments/1thfslv/geminis_new_update_is_a_total_disappointment_the/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-19T07:44:59+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
       },
       {
-        "headline": "Geminis performance over the past 3 days has been unbelievable terrible",
-        "link": "https://reddit.com/r/GeminiAI/comments/1th5s01/geminis_performance_over_the_past_3_days_has_been/",
+        "headline": "Specification gaming",
+        "link": "https://reddit.com/r/GeminiAI/comments/1thf326/specification_gaming/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-05-18T23:52:35+00:00",
+        "published_at": "2026-05-19T07:04:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 97
       },
       {
-        "headline": "Usage example",
-        "link": "https://reddit.com/r/GeminiAI/comments/1th5oz7/usage_example/",
+        "headline": "Sarah Connor judging your AI addiction",
+        "link": "https://reddit.com/r/ChatGPT/comments/1thex49/sarah_connor_judging_your_ai_addiction/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-19T06:55:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Crazy Limits (Pro)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1thevg5/crazy_limits_pro/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-05-18T23:49:05+00:00",
+        "published_at": "2026-05-19T06:53:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 96
       },
       {
-        "headline": "People who use ai image gen like this make us all look bad.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1th4lf9/people_who_use_ai_image_gen_like_this_make_us_all/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-18T23:04:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anyone else excited for these to drop?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1th42hc/anyone_else_excited_for_these_to_drop/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-18T22:43:52+00:00",
+        "headline": "Who approved this design 😭",
+        "link": "https://reddit.com/r/GeminiAI/comments/1thch7a/who_approved_this_design/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-19T04:48:21+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "Creator of C++: \"AI-generated code isn't ready - it generates more bugs, more bloat, more security holes, and is nearly impossible to validate\"",
-        "link": "https://reddit.com/r/singularity/comments/1th3ype/creator_of_c_aigenerated_code_isnt_ready_it/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-18T22:40:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "ChatGPT is now creating content for textbooks.",
-        "link": "https://reddit.com/r/aimemes/comments/1th3x3f/chatgpt_is_now_creating_content_for_textbooks/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-18T22:38:22+00:00",
+        "headline": "Something changed",
+        "link": "https://reddit.com/r/GeminiAI/comments/1thc67w/something_changed/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-19T04:33:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "So, the thinking mode has been removed?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1th2e6d/so_the_thinking_mode_has_been_removed/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-18T21:45:20+00:00",
+        "headline": "I gave Claude access to my M365 account using Power Automate + a small MCP server",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1thabze/i_gave_claude_access_to_my_m365_account_using/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-19T03:07:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Conversation with OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1th0qwx/conversation_with_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-18T20:47:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-19T04:34:59.151Z",
+    "reddit_viral_generated_at": "2026-05-19T08:39:29.002Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
