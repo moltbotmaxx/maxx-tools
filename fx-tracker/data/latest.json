@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-20T12:32:43.124Z",
+  "updatedAt": "2026-05-20T16:27:24.082Z",
   "source": "BCCR WebService + BCCR APIM + BCCR comunicaciones",
   "usd": {
     "buy": 449.66,
@@ -8,10 +8,10 @@
     "sellChange": -1.0199999999999818
   },
   "eur": {
-    "buy": 521.8927199999999,
-    "sell": 528.53364,
-    "buyChange": -1.569998000000055,
-    "sellChange": -2.43425400000001,
+    "buy": 521.290838,
+    "sell": 526.5772460000001,
+    "buyChange": -0.6018819999999323,
+    "sellChange": -1.956393999999932,
     "note": "derivado de USDCRC * USDAEUR (BCCR)"
   },
   "history": [
@@ -135,7 +135,8 @@
     },
     {
       "date": "2026-05-20",
-      "usdSell": 454.22
+      "usdSell": 454.22,
+      "eurSell": 526.5772460000001
     }
   ],
   "news": []
