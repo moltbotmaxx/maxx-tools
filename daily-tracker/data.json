@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-19T22:39:47.070Z",
+    "generated_at": "2026-05-20T00:19:24.512Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,13 +391,22 @@
         "viral_score": 97
       },
       {
+        "headline": "What do you think Steve jobs would think about the current state of AI?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1thzrg6/what_do_you_think_steve_jobs_would_think_about/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-19T20:44:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
         "headline": "[ Removed by Reddit ]",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1thybns/removed_by_reddit/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-05-19T19:54:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Demis Hassabis at Google I/O: \"Artificial General Intelligence is just a few years away\"",
@@ -406,13 +415,13 @@
         "published_at": "2026-05-19T19:30:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
-        "headline": "Cheapest API setup for email/admin agent running 8 hrs/day?",
-        "link": "https://reddit.com/r/openclaw/comments/1thvuqt/cheapest_api_setup_for_emailadmin_agent_running_8/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-19T18:32:14+00:00",
+        "headline": "OpenAI cofounder Andrej karpathy just joined anthropic and the talent war is officially over",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1thw3bu/openai_cofounder_andrej_karpathy_just_joined/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-19T18:40:02+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
@@ -427,37 +436,28 @@
         "viral_score": 90
       },
       {
+        "headline": "Gemini 3.5 flash, the new benchmaxxed fraud from Google, costs 3 times more than the previous version and 30x more than gemini 1.5 flash.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1thujow/gemini_35_flash_the_new_benchmaxxed_fraud_from/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-19T17:49:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
+      },
+      {
         "headline": "Google's Antigravity 2.0 creates an operating system from scratch using 96 agents in 12 hours for under $1K in token costs - and it runs Doom",
         "link": "https://reddit.com/r/singularity/comments/1thug7n/googles_antigravity_20_creates_an_operating/",
         "subreddit": "singularity",
         "published_at": "2026-05-19T17:46:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "Gemini 3.5 flash costs 3 times more than the previous version and 30x more than gemini 1.5 flash.",
         "link": "https://reddit.com/r/singularity/comments/1thuct8/gemini_35_flash_costs_3_times_more_than_the/",
         "subreddit": "singularity",
         "published_at": "2026-05-19T17:43:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Behold, Gemini 3.5 Flash!",
-        "link": "https://reddit.com/r/singularity/comments/1thtxs8/behold_gemini_35_flash/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-19T17:29:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "« Today, we’re introducing the Gemini 3.5 model series. »",
-        "link": "https://reddit.com/r/GeminiAI/comments/1thtuv4/today_were_introducing_the_gemini_35_model_series/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-19T17:26:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-19T22:39:47.070Z",
+    "reddit_viral_generated_at": "2026-05-20T00:19:24.512Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
