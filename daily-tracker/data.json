@@ -367,19 +367,82 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-20T04:40:42.866Z",
+    "generated_at": "2026-05-20T08:36:25.955Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "4 Hours. One character. Why do I do this to myself?",
-        "link": "https://reddit.com/r/aimemes/comments/1ti88ds/4_hours_one_character_why_do_i_do_this_to_myself/",
+        "headline": "Crazy Claude update",
+        "link": "https://reddit.com/r/aimemes/comments/1tif664/crazy_claude_update/",
         "subreddit": "aimemes",
-        "published_at": "2026-05-20T02:26:19+00:00",
+        "published_at": "2026-05-20T08:15:28+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "It's 2026, and we are yet to see an anti-almond farm protest.",
+        "link": "https://reddit.com/r/singularity/comments/1tidqkv/its_2026_and_we_are_yet_to_see_an_antialmond_farm/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-20T06:55:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "This new Gemini update is ass",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tid25s/this_new_gemini_update_is_ass/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-20T06:18:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Boycott Gemini For New Ridiculous Limits",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ticm9c/boycott_gemini_for_new_ridiculous_limits/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-20T05:55:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Guys can you tell if this is AI generated?",
+        "link": "https://reddit.com/r/aimemes/comments/1tibatg/guys_can_you_tell_if_this_is_ai_generated/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-20T04:47:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it",
+        "link": "https://reddit.com/r/singularity/comments/1tib9so/claude_is_telling_users_to_go_to_sleep_midsession/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-20T04:45:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Cyberpunk 1950 gameplay image ChatGPT made, animated by latest Gemini",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tib3wj/cyberpunk_1950_gameplay_image_chatgpt_made/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-20T04:37:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "I AM CANCELLING MY PRO SUBSCRIPTION (and you should too)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tiaxax/i_am_cancelling_my_pro_subscription_and_you/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-20T04:28:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Gen Z's AI backlash is getting louder",
@@ -388,86 +451,23 @@
         "published_at": "2026-05-20T02:15:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "“AI vs Creativity” from a pro-AI CEO",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ti5ha4/ai_vs_creativity_from_a_proai_ceo/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-20T00:27:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "“AI vs Creativity” from ‘GTA’ (TakeTwo) CEO",
-        "link": "https://reddit.com/r/OpenAI/comments/1ti5gpx/ai_vs_creativity_from_gta_taketwo_ceo/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-20T00:26:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Google is launching its own version of OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1ti2bkp/google_is_launching_its_own_version_of_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-19T22:18:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Boomers when you copy and paste what ChatGPT output",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ti1gcw/boomers_when_you_copy_and_paste_what_chatgpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-19T21:45:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Gemini new limit is a joke",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ti0rjc/gemini_new_limit_is_a_joke/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-19T21:20:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Canceled my Pro sub today; The new \"5-hour compute limit\" is completely unusable",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ti0coz/canceled_my_pro_sub_today_the_new_5hour_compute/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-19T21:05:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "What do you think Steve jobs would think about the current state of AI?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1thzrg6/what_do_you_think_steve_jobs_would_think_about/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-19T20:44:21+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 86
       },
       {
-        "headline": "Google I/O: Dramatic usage limit reduction; sidequests; and mediocre model.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1thxv3z/google_io_dramatic_usage_limit_reduction/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-19T19:38:51+00:00",
+        "headline": "Fool of a Took! 🤦",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ti5rbl/fool_of_a_took/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-20T00:39:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-20T04:40:42.866Z",
+    "reddit_viral_generated_at": "2026-05-20T08:36:25.955Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
