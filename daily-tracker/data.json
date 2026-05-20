@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-20T21:15:11.833Z",
+    "generated_at": "2026-05-20T22:44:57.079Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Suddenly, the macOS native app (kind of) stopped working",
+        "link": "https://reddit.com/r/openclaw/comments/1tj1loc/suddenly_the_macos_native_app_kind_of_stopped/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-20T22:40:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ClawBench: Can AI agents complete everyday online tasks?",
+        "link": "https://reddit.com/r/openclaw/comments/1tj1i2e/clawbench_can_ai_agents_complete_everyday_online/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-20T22:37:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Does ChatGPT Pro actually do anything for OpenClaw, or just Plus-level with higher limits?",
+        "link": "https://reddit.com/r/openclaw/comments/1tj1dq3/does_chatgpt_pro_actually_do_anything_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-20T22:32:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "DeepSeek Through OpenRouter on OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1tj0lka/deepseek_through_openrouter_on_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-20T22:02:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Kuzco's M365 Agent",
+        "link": "https://reddit.com/r/aimemes/comments/1tj0anj/kuzcos_m365_agent/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-20T21:51:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I searched for agentic frameworks and here is what I found. What do you recommend?",
+        "link": "https://reddit.com/r/openclaw/comments/1tj06ub/i_searched_for_agentic_frameworks_and_here_is/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-20T21:47:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "OpenAI general purpose model had a breakthrough on famous 80 year old Erdos problem. “This marks the first time AI has autonomously solved a prominent open problem central to a field of mathematics”",
         "link": "https://reddit.com/r/singularity/comments/1tiwa59/openai_general_purpose_model_had_a_breakthrough/",
@@ -379,7 +433,7 @@
         "published_at": "2026-05-20T19:31:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "How do you keep long sessions from eating the whole context window?",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-20T19:30:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Google Ruined Gemini With These New Limits",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-20T19:21:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "2 days ago I could code with Gemini for 5-6 hours. Today I got limited after 5 prompts, all of which didn't work.",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-20T18:52:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Midjourney says their research was set back by a year by using TPU, regrets not sticking purely with nvidia",
-        "link": "https://reddit.com/r/singularity/comments/1tiut2d/midjourney_says_their_research_was_set_back_by_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-20T18:41:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Looking for early users to try our OpenClaw model plans and tell us what's broken (15–30 min)",
-        "link": "https://reddit.com/r/openclaw/comments/1tiusla/looking_for_early_users_to_try_our_openclaw_model/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-20T18:41:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Asked GPT to create the wave of Kanagawa as an photograph",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tiubz9/asked_gpt_to_create_the_wave_of_kanagawa_as_an/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-20T18:25:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "If you're wondering why Gemini limits have plummeted dramatically, the answer is simple, they are selling compute to other companies, google realized they can make MUCH more money per token selling it to anthropic than using their own models",
-        "link": "https://reddit.com/r/GeminiAI/comments/1titici/if_youre_wondering_why_gemini_limits_have/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-20T17:58:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "$300M on Anthropic tokens, zero new engineers hired - Salesforce is the clearest case study of where this is going",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tismyo/300m_on_anthropic_tokens_zero_new_engineers_hired/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-20T17:28:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Claude is a real g",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tip9h6/claude_is_a_real_g/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-20T15:33:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-20T21:15:11.833Z",
+    "reddit_viral_generated_at": "2026-05-20T22:44:57.079Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
