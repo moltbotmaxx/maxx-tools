@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-21T04:49:24.712Z",
+    "generated_at": "2026-05-21T08:43:33.447Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Is it better to use n8n agents or OpenClaw for lead qualification?",
-        "link": "https://reddit.com/r/openclaw/comments/1tj8gi1/is_it_better_to_use_n8n_agents_or_openclaw_for/",
+        "headline": "Building a local Financial Data + Personal AI rig on Mac Studio (OpenClaw)",
+        "link": "https://reddit.com/r/openclaw/comments/1tjdv69/building_a_local_financial_data_personal_ai_rig/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-21T03:32:31+00:00",
+        "published_at": "2026-05-21T08:12:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Protests by the end of the year?",
-        "link": "https://reddit.com/r/singularity/comments/1tj87da/protests_by_the_end_of_the_year/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-21T03:21:08+00:00",
+        "headline": "Why does every OpenClaw tutorial on YouTube end up pushing Hostinger",
+        "link": "https://reddit.com/r/openclaw/comments/1tjdbbx/why_does_every_openclaw_tutorial_on_youtube_end/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-21T07:40:36+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "OAI researcher on Erdos problem: “This is the biggest deal in the history of AI so far. And it will look like a small deal at the end of the year.” (Buckle up)",
-        "link": "https://reddit.com/r/singularity/comments/1tj6tua/oai_researcher_on_erdos_problem_this_is_the/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-21T02:20:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Looking for AI projects for my newsletter",
-        "link": "https://reddit.com/r/openclaw/comments/1tj6r9a/looking_for_ai_projects_for_my_newsletter/",
+        "headline": "Having massive issues with isolated cron jobs and session locking in OpenClaw 2026.5.18",
+        "link": "https://reddit.com/r/openclaw/comments/1tjd9bh/having_massive_issues_with_isolated_cron_jobs_and/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-21T02:17:11+00:00",
+        "published_at": "2026-05-21T07:37:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "So I just started using Super Grok - through X/AI Outh.. ( Literally now)",
+        "link": "https://reddit.com/r/openclaw/comments/1tjd4oq/so_i_just_started_using_super_grok_through_xai/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-21T07:30:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Meta just fired 7,800 employees and used their daily work to train AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tjcl0t/meta_just_fired_7800_employees_and_used_their/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-21T07:00:49+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
       },
       {
-        "headline": "Former Google CEO Eric Schmidt, Big Machine Records CEO Scott Borchetta & Tavistock VP Gloria Caulfield were all booed at commencement speeches, as AI backlash is now hitting campus stages🇺🇸",
-        "link": "https://reddit.com/r/OpenAI/comments/1tj4qqw/former_google_ceo_eric_schmidt_big_machine/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-21T00:49:46+00:00",
+        "headline": "Paperclip energy: casual vs. doomer edition",
+        "link": "https://reddit.com/r/aimemes/comments/1tjbzex/paperclip_energy_casual_vs_doomer_edition/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-21T06:28:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Watch out",
+        "link": "https://reddit.com/r/aimemes/comments/1tjbaij/watch_out/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-21T05:52:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "from claude code to unicorn in 7 days",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tjb8x9/from_claude_code_to_unicorn_in_7_days/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-21T05:50:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
       },
       {
-        "headline": "An OpenAI model has disproved a central conjecture in discrete geometry",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tj3ig7/an_openai_model_has_disproved_a_central/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-20T23:57:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Anthropic is paying SpaceX $15 billion per year",
-        "link": "https://reddit.com/r/singularity/comments/1tj3csv/anthropic_is_paying_spacex_15_billion_per_year/",
+        "headline": "Gemini 3.5 Flash ranks #1 on Automation Bench (from Zapier), beating every other frontier model at a much lower cost",
+        "link": "https://reddit.com/r/singularity/comments/1tj9sqp/gemini_35_flash_ranks_1_on_automation_bench_from/",
         "subreddit": "singularity",
-        "published_at": "2026-05-20T23:51:10+00:00",
+        "published_at": "2026-05-21T04:35:28+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "I'm a software engineer with a decade of experience. I vibe code all of my side projects from my phone using Claude Code and don't read any of the code. It's so fun. Here are the rules I follow:",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tj2i90/im_a_software_engineer_with_a_decade_of/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-20T23:15:56+00:00",
+        "headline": "About new update",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tj97jp/about_new_update/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-21T04:07:24+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Yesterday was a very confusing day.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tj1uiu/yesterday_was_a_very_confusing_day/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-20T22:49:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Kuzco's M365 Agent",
-        "link": "https://reddit.com/r/aimemes/comments/1tj0anj/kuzcos_m365_agent/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-20T21:51:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-21T04:49:24.712Z",
+    "reddit_viral_generated_at": "2026-05-21T08:43:33.447Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
