@@ -367,28 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-20T22:44:57.079Z",
+    "generated_at": "2026-05-21T00:19:13.657Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Suddenly, the macOS native app (kind of) stopped working",
-        "link": "https://reddit.com/r/openclaw/comments/1tj1loc/suddenly_the_macos_native_app_kind_of_stopped/",
+        "headline": "Agent followup and verification issues",
+        "link": "https://reddit.com/r/openclaw/comments/1tj3x2x/agent_followup_and_verification_issues/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-20T22:40:52+00:00",
+        "published_at": "2026-05-21T00:14:24+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "ClawBench: Can AI agents complete everyday online tasks?",
-        "link": "https://reddit.com/r/openclaw/comments/1tj1i2e/clawbench_can_ai_agents_complete_everyday_online/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-20T22:37:06+00:00",
+        "headline": "I'm a software engineer with a decade of experience. I vibe code all of my side projects from my phone using Claude Code and don't read any of the code. It's so fun. Here are the rules I follow:",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tj2i90/im_a_software_engineer_with_a_decade_of/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-20T23:15:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Does ChatGPT Pro actually do anything for OpenClaw, or just Plus-level with higher limits?",
@@ -397,16 +397,16 @@
         "published_at": "2026-05-20T22:32:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
-        "headline": "DeepSeek Through OpenRouter on OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1tj0lka/deepseek_through_openrouter_on_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-20T22:02:32+00:00",
+        "headline": "Took my Claude on a hike",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tj15oa/took_my_claude_on_a_hike/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-20T22:23:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Kuzco's M365 Agent",
@@ -415,7 +415,16 @@
         "published_at": "2026-05-20T21:51:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
+      },
+      {
+        "headline": "Anthropic is officially set to be profitable as of Q2 2026",
+        "link": "https://reddit.com/r/singularity/comments/1tj072c/anthropic_is_officially_set_to_be_profitable_as/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-20T21:47:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "I searched for agentic frameworks and here is what I found. What do you recommend?",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-20T21:47:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "OpenAI general purpose model had a breakthrough on famous 80 year old Erdos problem. “This marks the first time AI has autonomously solved a prominent open problem central to a field of mathematics”",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-20T19:31:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "How do you keep long sessions from eating the whole context window?",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-20T19:30:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Google Ruined Gemini With These New Limits",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-20T19:21:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "2 days ago I could code with Gemini for 5-6 hours. Today I got limited after 5 prompts, all of which didn't work.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tiv487/2_days_ago_i_could_code_with_gemini_for_56_hours/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-20T18:52:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-20T22:44:57.079Z",
+    "reddit_viral_generated_at": "2026-05-21T00:19:13.657Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
