@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-21T16:23:38.655Z",
+    "generated_at": "2026-05-21T19:18:46.053Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI Agent Orchestration",
+        "link": "https://reddit.com/r/openclaw/comments/1tjrx1n/ai_agent_orchestration/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-21T17:38:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Google's latest creation: Gemini 3.5 Flash vs all",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tjrvyx/googles_latest_creation_gemini_35_flash_vs_all/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-21T17:37:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini 3.5 Flash is nowhere near Gemini 3.1 pro for coding",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tjr86g/gemini_35_flash_is_nowhere_near_gemini_31_pro_for/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-21T17:17:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tjpfh8/anthropic_officially_launched_13_free_ai_courses/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-21T16:16:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "OpenAI cofounder Karpathy joins Anthropic to teach Claude to improve itself without humans",
+        "link": "https://reddit.com/r/OpenAI/comments/1tjotur/openai_cofounder_karpathy_joins_anthropic_to/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-21T15:56:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Google's latest creation: Gemini 3.5 Flash vs all",
         "link": "https://reddit.com/r/singularity/comments/1tjoarz/googles_latest_creation_gemini_35_flash_vs_all/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-21T15:38:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Folks please share the rules you use for saving tokens",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-21T15:13:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "The new DEEP Robotics LynxS10 is very light, with only 20 kg you can even lift it with one hand. It can keep moving even after turning over, do side flips to recover and other advanced stunts.",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-21T15:08:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "this tweet aged in the funniest possible way",
@@ -406,58 +451,13 @@
         "published_at": "2026-05-21T14:10:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I got an IT position thanks to Claude",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tjln1d/i_got_an_it_position_thanks_to_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-21T14:07:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Elon Musk's pay package reveals what SpaceX actually is: a $1 trillion monster built to colonize Mars",
         "link": "https://reddit.com/r/singularity/comments/1tjllk7/elon_musks_pay_package_reveals_what_spacex/",
         "subreddit": "singularity",
         "published_at": "2026-05-21T14:06:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "The double pill dilemma",
-        "link": "https://reddit.com/r/OpenAI/comments/1tjli67/the_double_pill_dilemma/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-21T14:03:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "OpenClaw too expensive.. WHAT??",
-        "link": "https://reddit.com/r/openclaw/comments/1tjl597/openclaw_too_expensive_what/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-21T13:50:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "This is how I exhaust the chatGPT Freemium 🥲",
-        "link": "https://reddit.com/r/aimemes/comments/1tjkbkr/this_is_how_i_exhaust_the_chatgpt_freemium/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-21T13:20:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Coders in 2030",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tjihlc/coders_in_2030/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-21T12:07:15+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-21T16:23:38.655Z",
+    "reddit_viral_generated_at": "2026-05-21T19:18:46.053Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
