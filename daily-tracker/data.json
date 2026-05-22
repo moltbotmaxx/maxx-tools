@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-22T15:25:36.510Z",
+    "generated_at": "2026-05-22T18:07:20.169Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Genuine question regarding OpenClaw ?",
+        "link": "https://reddit.com/r/openclaw/comments/1tkp3ug/genuine_question_regarding_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-22T17:05:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini is the biggest ragebait right now",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tkmjv9/gemini_is_the_biggest_ragebait_right_now/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-22T15:35:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Closest thing to time travel",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tkldvi/closest_thing_to_time_travel/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-22T14:55:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "3hr limit should be a standard",
         "link": "https://reddit.com/r/GeminiAI/comments/1tkl1vz/3hr_limit_should_be_a_standard/",
@@ -379,25 +406,7 @@
         "published_at": "2026-05-22T14:43:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Practical criticism of: Long-running-sessions, Life-companions, \"LLM-wiki\", Memory. Solutions: Immutable reflections, Issue-bound task-bound ephemeral-session chains, Prompt-templates, Independent criticism, Prototypes",
-        "link": "https://reddit.com/r/openclaw/comments/1tkl0xn/practical_criticism_of_longrunningsessions/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-22T14:42:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "‘And billionaires only have our best interests at heart’",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tkkapu/and_billionaires_only_have_our_best_interests_at/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-22T14:16:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Why do the mods forbid to mention better alternatives to OpenClaw?",
@@ -406,16 +415,16 @@
         "published_at": "2026-05-22T13:50:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
-        "headline": "Robot girlfriend logic 101",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tkja0y/robot_girlfriend_logic_101/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-22T13:38:06+00:00",
+        "headline": "If your job requires zero intelligence",
+        "link": "https://reddit.com/r/OpenAI/comments/1tkjf8w/if_your_job_requires_zero_intelligence/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-22T13:43:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "DeepSeek Announces Permanent Price Cut of 75% after Promotion Period",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-22T13:36:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Congress's AI awakening: doubling every 5.5 months",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-22T13:32:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Aged like fine WINE",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-22T12:43:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Gemini lost 99% of it's value for me",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-22T12:26:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "AI-generated stories secretly won 3 of 5 fiction awards",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tkh1o4/aigenerated_stories_secretly_won_3_of_5_fiction/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-22T12:07:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-22T15:25:36.510Z",
+    "reddit_viral_generated_at": "2026-05-22T18:07:20.169Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
