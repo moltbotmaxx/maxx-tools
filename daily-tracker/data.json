@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-21T22:43:10.329Z",
+    "generated_at": "2026-05-22T00:17:00.569Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI agent for lead processing",
+        "link": "https://reddit.com/r/openclaw/comments/1tk1pzc/ai_agent_for_lead_processing/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-21T23:34:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "How do you guys evaluate your model?",
         "link": "https://reddit.com/r/openclaw/comments/1tjy8ia/how_do_you_guys_evaluate_your_model/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-21T21:17:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Seriously?",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-21T20:51:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Google is cooking just give them sometime (gemini 3.5 pro)",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-21T20:07:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Why new grads are booing commencement speakers: There's an 'ambient anxiety that AI is going to make things dramatically worse'",
@@ -406,7 +415,16 @@
         "published_at": "2026-05-21T18:19:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
+      },
+      {
+        "headline": "I got this message in Antigravity 2.0",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tjsqdq/i_got_this_message_in_antigravity_20/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-21T18:06:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
       },
       {
         "headline": "I create StoneGPT. And now you can chat with Stone🪨",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-21T17:55:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Google's latest creation: Gemini 3.5 Flash vs all",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-21T17:37:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Gemini 3.5 Flash is nowhere near Gemini 3.1 pro for coding",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-21T17:17:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-21T16:16:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "OpenAI cofounder Karpathy joins Anthropic to teach Claude to improve itself without humans",
-        "link": "https://reddit.com/r/OpenAI/comments/1tjotur/openai_cofounder_karpathy_joins_anthropic_to/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-21T15:56:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Google's latest creation: Gemini 3.5 Flash vs all",
-        "link": "https://reddit.com/r/singularity/comments/1tjoarz/googles_latest_creation_gemini_35_flash_vs_all/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-21T15:38:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-21T22:43:10.329Z",
+    "reddit_viral_generated_at": "2026-05-22T00:17:00.569Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
