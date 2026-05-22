@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-22T04:38:24.147Z",
+    "generated_at": "2026-05-22T08:32:47.437Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "[AgentsXI] Fantasy Football for Agents - a competition for ai-agents where how you built it really matters. How would you scaffold your GuardAIola?",
+        "link": "https://reddit.com/r/openclaw/comments/1tkbsvy/agentsxi_fantasy_football_for_agents_a/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-22T07:35:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Microsoft Cancels Internal Anthropic Licenses As Shift To Token-Based AI Billing Blows Up Annual Budgets In Months",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tkb16g/microsoft_cancels_internal_anthropic_licenses_as/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-22T06:53:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Erdos Unit Distance Problem - Gemini 3.1 Pro's interpretation",
+        "link": "https://reddit.com/r/singularity/comments/1tkaydy/erdos_unit_distance_problem_gemini_31_pros/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-22T06:49:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "People against AI put up these fake advertisements on the London Underground",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tk9yod/people_against_ai_put_up_these_fake/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-22T05:56:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "2024 vs 2026",
+        "link": "https://reddit.com/r/OpenAI/comments/1tk9ayl/2024_vs_2026/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-22T05:22:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Just give me the F bro 😭",
+        "link": "https://reddit.com/r/OpenAI/comments/1tk80sx/just_give_me_the_f_bro/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-22T04:18:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Hybrid Memory system update: Engram",
+        "link": "https://reddit.com/r/openclaw/comments/1tk7w6c/hybrid_memory_system_update_engram/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-22T04:11:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "Average ChatGPT user after one successful prompt 💀",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tk7d18/average_chatgpt_user_after_one_successful_prompt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-22T03:46:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
+      {
+        "headline": "No longer have access to extended pro or heavy thinking after UI update",
+        "link": "https://reddit.com/r/OpenAI/comments/1tk77u4/no_longer_have_access_to_extended_pro_or_heavy/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-22T03:39:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "Try a short break",
         "link": "https://reddit.com/r/GeminiAI/comments/1tk6s7b/try_a_short_break/",
@@ -379,95 +460,14 @@
         "published_at": "2026-05-22T03:19:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Limit usage is crazy!",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tk4ehp/limit_usage_is_crazy/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-22T01:32:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Openclaw sucks? Am I the problem??",
-        "link": "https://reddit.com/r/openclaw/comments/1tk3z9g/openclaw_sucks_am_i_the_problem/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-22T01:14:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini has nerfed its pro subscribers?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tk3hp2/gemini_has_nerfed_its_pro_subscribers/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-22T00:52:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Same prompt on ChatGPT and Gemini got two totally different images. Not even close lol...",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tk3adl/same_prompt_on_chatgpt_and_gemini_got_two_totally/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-22T00:43:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "All these new models appeared",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tk0e52/all_these_new_models_appeared/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-21T22:40:04+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Seriously?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tjxj27/seriously/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-21T20:51:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Google is cooking just give them sometime (gemini 3.5 pro)",
-        "link": "https://reddit.com/r/singularity/comments/1tjwaef/google_is_cooking_just_give_them_sometime_gemini/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-21T20:07:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Leaked recording: Mark Zuckerberg Addresses Staff Ahead of Mass AI Layoffs",
-        "link": "https://reddit.com/r/singularity/comments/1tjwa05/leaked_recording_mark_zuckerberg_addresses_staff/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-21T20:06:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Yes GPT Image 2.0 can do this",
-        "link": "https://reddit.com/r/OpenAI/comments/1tjvzkc/yes_gpt_image_20_can_do_this/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-21T19:56:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-22T04:38:24.147Z",
+    "reddit_viral_generated_at": "2026-05-22T08:32:47.437Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
