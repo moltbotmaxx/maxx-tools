@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-23T22:10:01.706Z",
+    "generated_at": "2026-05-23T23:12:40.683Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Openclaw agents for Amazon sourcing, setup advice?",
-        "link": "https://reddit.com/r/openclaw/comments/1tlt8b2/openclaw_agents_for_amazon_sourcing_setup_advice/",
+        "headline": "Autonomous Company Operating System for openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1tlul3n/autonomous_company_operating_system_for_openclaw/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-23T21:48:28+00:00",
+        "published_at": "2026-05-23T22:47:00+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Generative AI (Kling) is now used in actual tv shows and movies.",
+        "link": "https://reddit.com/r/singularity/comments/1tlu4gv/generative_ai_kling_is_now_used_in_actual_tv/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-23T22:26:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I had Chat combine my banana bread and coffee cake recipe together…",
+        "link": "https://reddit.com/r/OpenAI/comments/1tltbhx/i_had_chat_combine_my_banana_bread_and_coffee/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-23T21:52:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "More and more workers in India are collecting video data to train humanoid robots using head-mounted cameras",
+        "link": "https://reddit.com/r/singularity/comments/1tlt8ql/more_and_more_workers_in_india_are_collecting/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-23T21:48:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Fall of Constantinople 1453 - A 15min Cinematic Movie About the Last Day of Rome",
@@ -388,7 +415,16 @@
         "published_at": "2026-05-23T21:33:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "Checkmate",
+        "link": "https://reddit.com/r/singularity/comments/1tlsu2t/checkmate/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-23T21:32:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "giving real phone numbers to claws",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-23T21:08:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Gemini just leaked its system prompt by mistake 🥀",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-23T19:45:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Anthropic says Mythos has already found more than 10,000 vulnerabilities",
@@ -415,16 +451,7 @@
         "published_at": "2026-05-23T19:23:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Job application bots – any success with third-party sites?",
-        "link": "https://reddit.com/r/openclaw/comments/1tlowii/job_application_bots_any_success_with_thirdparty/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-23T18:55:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Claude is not having a good morning",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-23T18:13:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "High cost of Openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1tln46w/high_cost_of_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-23T17:46:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "OpenAI's Codex is now smart enough to control your Mac even when it's locked",
-        "link": "https://reddit.com/r/OpenAI/comments/1tlm4w4/openais_codex_is_now_smart_enough_to_control_your/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-23T17:09:06+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Sometimes people outside AI say things like 'it can't be that bad, there must be experts on top of it. As 'an expert', I would like to be clear we are *not* on top of it ... We are on track for human extinction/permanent disempowerment, possibly within the next few years.",
-        "link": "https://reddit.com/r/OpenAI/comments/1tllfn3/sometimes_people_outside_ai_say_things_like_it/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-23T16:41:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-23T22:10:01.706Z",
+    "reddit_viral_generated_at": "2026-05-23T23:12:40.683Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
