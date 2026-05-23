@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-23T09:14:46.809Z",
+    "generated_at": "2026-05-23T10:44:49.601Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Ideas for teaching Artificial Intelligence in high school",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tlcl7r/ideas_for_teaching_artificial_intelligence_in/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-23T10:17:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I built Fully Managed Openclaw Setup on VPS that truly stays online and works for you 24*7!",
+        "link": "https://reddit.com/r/openclaw/comments/1tlbrmf/i_built_fully_managed_openclaw_setup_on_vps_that/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-23T09:30:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Impressive! Openclaw solved complex raven like problems.",
         "link": "https://reddit.com/r/openclaw/comments/1tlaox7/impressive_openclaw_solved_complex_raven_like/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-23T08:28:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Claude Mythos Preview Finds 10,000+ Critical Software Flaws With 50 Partners: Anthropic",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-23T08:04:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Google has officially gone insane",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-23T07:15:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "My dream cast for The Oddysey",
@@ -406,16 +424,7 @@
         "published_at": "2026-05-23T06:31:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "This is the most useful thing I've found for getting ChatGPT to actually think instead of just respond",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tl7i3y/this_is_the_most_useful_thing_ive_found_for/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-23T05:34:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Is AI viewed as “evil” in non-tech communities?",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-23T04:30:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Video Game Character Sheets",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-23T03:47:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 85
       },
       {
         "headline": "I need to find real friends to tell jokes!!",
@@ -442,22 +451,13 @@
         "published_at": "2026-05-23T02:59:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 83
       },
       {
         "headline": "The Code of The West; Agent Alignment Through Philosophy and Memory (Or How I Made A Cowboy AI)",
         "link": "https://reddit.com/r/openclaw/comments/1tl4agw/the_code_of_the_west_agent_alignment_through/",
         "subreddit": "openclaw",
         "published_at": "2026-05-23T02:58:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Every Time",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tl295f/every_time/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-23T01:26:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 83
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-23T09:14:46.809Z",
+    "reddit_viral_generated_at": "2026-05-23T10:44:49.601Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
