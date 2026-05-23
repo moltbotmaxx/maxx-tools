@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-23T15:32:54.047Z",
+    "generated_at": "2026-05-23T17:19:00.683Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Use case: OpenClaw for Dating Support - DatingClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1tlltnu/use_case_openclaw_for_dating_support_datingclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-23T16:57:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "[Show] memora — version-controlled typed memory for AI agents (single binary, SQLite, ~5k LOC)",
+        "link": "https://reddit.com/r/openclaw/comments/1tllaiy/show_memora_versioncontrolled_typed_memory_for_ai/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-23T16:36:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude saved my money today",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tlla7m/claude_saved_my_money_today/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-23T16:36:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Grand Theft Auto: Every Era in Human History",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tlkpy1/grand_theft_auto_every_era_in_human_history/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-23T16:14:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "AI companies are just mocking the world now",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tlk0il/ai_companies_are_just_mocking_the_world_now/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-23T15:47:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Do you use openclaw for vibecoding?",
+        "link": "https://reddit.com/r/openclaw/comments/1tljrh4/do_you_use_openclaw_for_vibecoding/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-23T15:37:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "People who are complaining about Gemini should just stop using it and save the compute for the rest of us",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tljdpf/people_who_are_complaining_about_gemini_should/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-23T15:22:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "coding is basically solved for the boring 90% of tasks",
+        "link": "https://reddit.com/r/singularity/comments/1tlj7ou/coding_is_basically_solved_for_the_boring_90_of/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-23T15:16:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Anyone tried tencent db memory plugin?",
         "link": "https://reddit.com/r/openclaw/comments/1tlj34z/anyone_tried_tencent_db_memory_plugin/",
@@ -379,95 +451,23 @@
         "published_at": "2026-05-23T15:11:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "I solved the 3 biggest pain points I kept hitting with multi-agent setups",
-        "link": "https://reddit.com/r/openclaw/comments/1tlikez/i_solved_the_3_biggest_pain_points_i_kept_hitting/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-23T14:51:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "\"Talk\" [ft. Sara Silkin] - Multi-Character AI Motion Capture Experiment",
-        "link": "https://reddit.com/r/OpenAI/comments/1tli0pr/talk_ft_sara_silkin_multicharacter_ai_motion/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-23T14:29:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "I finally bypassed the ChatGPT moderation filter",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tlhugr/i_finally_bypassed_the_chatgpt_moderation_filter/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-23T14:22:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "my teacher vs chatgpt when i ask a dumb question",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tlgwr0/my_teacher_vs_chatgpt_when_i_ask_a_dumb_question/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-23T13:44:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "‘F*** this guy’: Graduation speakers keep getting booed for talking about artificial intelligence",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tlga7r/f_this_guy_graduation_speakers_keep_getting_booed/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-23T13:18:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Gemini fell OFF",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tlg2mz/gemini_fell_off/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-23T13:09:10+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 94
       },
       {
-        "headline": "Thats it man , Gemini's newest update completely nuked itself (Pro user)",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tlfy5u/thats_it_man_geminis_newest_update_completely/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-23T13:03:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "As someone in manufacturing, here's what I don't understand",
-        "link": "https://reddit.com/r/singularity/comments/1tlfm7h/as_someone_in_manufacturing_heres_what_i_dont/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-23T12:49:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "When is Chat, Cowork and Code merging?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tldsrl/when_is_chat_cowork_and_code_merging/",
+        "headline": "My experience using Claude code with Local Llm, and full guide on how to set it up",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tlir65/my_experience_using_claude_code_with_local_llm/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-05-23T11:22:34+00:00",
+        "published_at": "2026-05-23T14:58:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 94
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-23T15:32:54.047Z",
+    "reddit_viral_generated_at": "2026-05-23T17:19:00.683Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
