@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-23T04:09:46.182Z",
+    "generated_at": "2026-05-23T06:47:01.950Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is AI viewed as “evil” in non-tech communities?",
+        "link": "https://reddit.com/r/singularity/comments/1tl68ne/is_ai_viewed_as_evil_in_nontech_communities/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-23T04:30:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Video Game Character Sheets",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tl5btd/video_game_character_sheets/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-23T03:47:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "I need to find real friends to tell jokes!!",
         "link": "https://reddit.com/r/OpenAI/comments/1tl4axc/i_need_to_find_real_friends_to_tell_jokes/",
@@ -379,7 +397,34 @@
         "published_at": "2026-05-23T02:59:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "The Code of The West; Agent Alignment Through Philosophy and Memory (Or How I Made A Cowboy AI)",
+        "link": "https://reddit.com/r/openclaw/comments/1tl4agw/the_code_of_the_west_agent_alignment_through/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-23T02:58:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Exclusive: Departing Meta Staffer Posts Biting Anti-AI Video Internally Amid Mass Layoffs",
+        "link": "https://reddit.com/r/singularity/comments/1tl47n6/exclusive_departing_meta_staffer_posts_biting/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-23T02:55:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Worst feature ever imo",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tl23g7/worst_feature_ever_imo/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-23T01:19:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Google Broke Gemini",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-23T00:56:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Is it weird that I'm compelled to be polite to AI?",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-23T00:43:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "When you are doing a radical reinterpretation of an ancient epic, you don't just stir the pot. You go for broke.",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-23T00:34:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Anthropic likely to release Mythos in the \"near future\"",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-22T22:56:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Finally getting some value out of my Claw",
-        "link": "https://reddit.com/r/openclaw/comments/1tkyp6h/finally_getting_some_value_out_of_my_claw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-22T22:53:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "lets get 1 thing straight",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tkvd31/lets_get_1_thing_straight/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-22T20:44:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Anthropic Co-founder Jack Clark’s recent predictions: AI will help make a Nobel Prize-winning discovery within the next year, bipedal robots doing useful work in 2 years, RSI by end of 2028",
-        "link": "https://reddit.com/r/singularity/comments/1tkstc0/anthropic_cofounder_jack_clarks_recent/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-22T19:12:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "what claud waffling about bro",
-        "link": "https://reddit.com/r/aimemes/comments/1tkrq8r/what_claud_waffling_about_bro/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-22T18:34:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
-      },
-      {
-        "headline": "Gemini in EU is trash now",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tkrnp0/gemini_in_eu_is_trash_now/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-22T18:32:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-23T04:09:46.182Z",
+    "reddit_viral_generated_at": "2026-05-23T06:47:01.950Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
