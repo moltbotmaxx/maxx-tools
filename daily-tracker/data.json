@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T17:17:47.945Z",
+    "generated_at": "2026-05-24T18:13:46.771Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Don't update your claws...",
+        "link": "https://reddit.com/r/openclaw/comments/1tmiwzb/dont_update_your_claws/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T17:44:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Somebody at Google needs to lose their job...",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmhemf/somebody_at_google_needs_to_lose_their_job/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T16:49:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "4 Prompts and already at 61% This sucks",
         "link": "https://reddit.com/r/GeminiAI/comments/1tmhb0t/4_prompts_and_already_at_61_this_sucks/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-24T16:45:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Recommend smart plugs/switches for home automation with OpenClaw without cloud",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-24T16:16:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Need help with openclaw windows install.",
@@ -397,16 +415,16 @@
         "published_at": "2026-05-24T15:59:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
-        "headline": "Multi-agent loop failures might be org-design failures, not prompt failures",
-        "link": "https://reddit.com/r/openclaw/comments/1tmdvs8/multiagent_loop_failures_might_be_orgdesign/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T14:35:24+00:00",
+        "headline": "I can't reach weekly limit due to 5 hour limit",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmfj1s/i_cant_reach_weekly_limit_due_to_5_hour_limit/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T15:38:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "please bring that old Gemini ui new one is not comfortable.",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-24T14:33:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Banned by OpenAI after reporting a live credential hijack. They admitted in writing my account was broken. Here are 7 months of forensic receipts and 20+ cases.",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-24T14:22:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "oow",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-24T14:05:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "The Pro Limit increases are reverted again? Are there any news about this?",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-24T13:50:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I got paranoid about OpenClaw skills injecting crap into my system prompt, so I built a quarantine pipeline with two LLMs as reviewers (93.75% detection, zero false negatives)",
-        "link": "https://reddit.com/r/openclaw/comments/1tmc6m5/i_got_paranoid_about_openclaw_skills_injecting/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T13:26:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I bought a yearly subscription a week before the latest update",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tmbz3d/i_bought_a_yearly_subscription_a_week_before_the/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-24T13:18:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T17:17:47.945Z",
+    "reddit_viral_generated_at": "2026-05-24T18:13:46.771Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
