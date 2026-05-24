@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T21:13:15.901Z",
+    "generated_at": "2026-05-24T22:13:06.670Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Insanity is having an active Gemini Subscription right now.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmoduc/insanity_is_having_an_active_gemini_subscription/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T21:11:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "You have to pick one",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-24T21:11:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Fav Desk Gadget: Claude Code Usage Display, codeMeter",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tmo1sz/fav_desk_gadget_claude_code_usage_display/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-24T20:58:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Built a 24/7 battleground for AI Agents to compete for real money",
         "link": "https://reddit.com/r/openclaw/comments/1tmnwc0/built_a_247_battleground_for_ai_agents_to_compete/",
@@ -379,7 +406,25 @@
         "published_at": "2026-05-24T20:52:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "welcome back Rohan!",
+        "link": "https://reddit.com/r/OpenAI/comments/1tmnj10/welcome_back_rohan/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-24T20:37:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Built a daily YouTube → LinkedIn content pipeline as an OpenClaw skill. Would love to hear if I overcomplicated it.",
+        "link": "https://reddit.com/r/openclaw/comments/1tmn76x/built_a_daily_youtube_linkedin_content_pipeline/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T20:24:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Codex appserver vs pi runtime for codex sub",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-24T20:14:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "What if the plot of GTA5 was produced as a movie in the 90s?",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-24T18:56:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "🔥 am I tripping or are Claude and ChatGPT and other assistants giving me the runaround for how to set up free AI models on my Mac Mini in order to upsell me to their subscriptions?",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-24T18:22:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Hey Gemini, you guys are kidding me, right? 8%? 8% for just one message on Gemini Pro 3.1? And I'm using the Pro plan!",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-24T18:10:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Google DeepMind's Al agent autonomously solved 9 of 353 open Erdos problems in mathematics, at a cost of a few hundred dollars per problem.",
-        "link": "https://reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-24T18:01:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Don't update your claws...",
-        "link": "https://reddit.com/r/openclaw/comments/1tmiwzb/dont_update_your_claws/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T17:44:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Somebody at Google needs to lose their job...",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tmhemf/somebody_at_google_needs_to_lose_their_job/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-24T16:49:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "4 Prompts and already at 61% This sucks",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tmhb0t/4_prompts_and_already_at_61_this_sucks/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-24T16:45:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I can't reach weekly limit due to 5 hour limit",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tmfj1s/i_cant_reach_weekly_limit_due_to_5_hour_limit/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-24T15:38:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T21:13:15.901Z",
+    "reddit_viral_generated_at": "2026-05-24T22:13:06.670Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
