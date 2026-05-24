@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T14:02:39.436Z",
+    "generated_at": "2026-05-24T15:35:42.122Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "please bring that old Gemini ui new one is not comfortable.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmdub3/please_bring_that_old_gemini_ui_new_one_is_not/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T14:33:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Banned by OpenAI after reporting a live credential hijack. They admitted in writing my account was broken. Here are 7 months of forensic receipts and 20+ cases.",
+        "link": "https://reddit.com/r/OpenAI/comments/1tmdjvh/banned_by_openai_after_reporting_a_live/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-24T14:22:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "oow",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tmd4uq/oow/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-24T14:05:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The Pro Limit increases are reverted again? Are there any news about this?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmcqpu/the_pro_limit_increases_are_reverted_again_are/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T13:50:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "I got paranoid about OpenClaw skills injecting crap into my system prompt, so I built a quarantine pipeline with two LLMs as reviewers (93.75% detection, zero false negatives)",
         "link": "https://reddit.com/r/openclaw/comments/1tmc6m5/i_got_paranoid_about_openclaw_skills_injecting/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-24T13:26:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Inaudible sounds to humans can be hidden in YouTube videos, podcasts, or music and used to secretly trigger AI voice assistants into carrying out unauthorized commands without the user noticing, exposing a new class of “auditory prompt injection” attacks against popular tools",
@@ -388,16 +424,16 @@
         "published_at": "2026-05-24T12:44:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
-        "headline": "what OpenClaw workflow did you swear you’d use every day… then never touched again?",
-        "link": "https://reddit.com/r/openclaw/comments/1tmaru9/what_openclaw_workflow_did_you_swear_youd_use/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T12:24:49+00:00",
+        "headline": "Oh thank you ChatGPT this position does help 😅",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tmabiw/oh_thank_you_chatgpt_this_position_does_help/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-24T12:03:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "🚀 Skills for small businesses, officially released by Anthropic",
@@ -406,34 +442,16 @@
         "published_at": "2026-05-24T11:03:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
-        "headline": "Multi Agent Team with",
-        "link": "https://reddit.com/r/openclaw/comments/1tm93f6/multi_agent_team_with/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T11:02:13+00:00",
+        "headline": "This is the pretty much the sleep paralysis dream I had years ago",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tm864l/this_is_the_pretty_much_the_sleep_paralysis_dream/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-24T10:12:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Multi Agents Team out of the box",
-        "link": "https://reddit.com/r/openclaw/comments/1tm8z4g/multi_agents_team_out_of_the_box/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T10:56:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "This is how AI is moving recently",
-        "link": "https://reddit.com/r/singularity/comments/1tm8j0p/this_is_how_ai_is_moving_recently/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-24T10:31:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Didn't realise how good ChatGPT is at enhancing photos until I tried it today here is a side by side of a 10x photo zoomed in on my phone vs ChatGPT fix of it",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-24T10:03:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Are (Chinese) models degenerating after a while?",
-        "link": "https://reddit.com/r/openclaw/comments/1tm6bsy/are_chinese_models_degenerating_after_a_while/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T08:27:12+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "It by Michael bay would love to see a horror plus action plus explosions",
-        "link": "https://reddit.com/r/aimemes/comments/1tm4uof/it_by_michael_bay_would_love_to_see_a_horror_plus/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-24T07:05:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T14:02:39.436Z",
+    "reddit_viral_generated_at": "2026-05-24T15:35:42.122Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
