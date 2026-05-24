@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T19:41:41.473Z",
+    "generated_at": "2026-05-24T21:13:15.901Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Make an image of the most corrupt president in US history",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tml5x9/make_an_image_of_the_most_corrupt_president_in_us/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-24T19:06:56+00:00",
+        "headline": "Built a 24/7 battleground for AI Agents to compete for real money",
+        "link": "https://reddit.com/r/openclaw/comments/1tmnwc0/built_a_247_battleground_for_ai_agents_to_compete/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T20:52:08+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Codex appserver vs pi runtime for codex sub",
+        "link": "https://reddit.com/r/openclaw/comments/1tmmx36/codex_appserver_vs_pi_runtime_for_codex_sub/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T20:14:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What if the plot of GTA5 was produced as a movie in the 90s?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tmkw5m/what_if_the_plot_of_gta5_was_produced_as_a_movie/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-24T18:56:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "🔥 am I tripping or are Claude and ChatGPT and other assistants giving me the runaround for how to set up free AI models on my Mac Mini in order to upsell me to their subscriptions?",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-24T18:22:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Hey Gemini, you guys are kidding me, right? 8%? 8% for just one message on Gemini Pro 3.1? And I'm using the Pro plan!",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-24T18:10:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Google DeepMind's Al agent autonomously solved 9 of 353 open Erdos problems in mathematics, at a cost of a few hundred dollars per problem.",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-24T18:01:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Don't update your claws...",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-24T17:44:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Somebody at Google needs to lose their job...",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-24T16:49:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "4 Prompts and already at 61% This sucks",
@@ -433,25 +451,7 @@
         "published_at": "2026-05-24T16:45:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Recommend smart plugs/switches for home automation with OpenClaw without cloud",
-        "link": "https://reddit.com/r/openclaw/comments/1tmgjoq/recommend_smart_plugsswitches_for_home_automation/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T16:16:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Need help with openclaw windows install.",
-        "link": "https://reddit.com/r/openclaw/comments/1tmg3gz/need_help_with_openclaw_windows_install/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T15:59:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "I can't reach weekly limit due to 5 hour limit",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-24T15:38:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T19:41:41.473Z",
+    "reddit_viral_generated_at": "2026-05-24T21:13:15.901Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
