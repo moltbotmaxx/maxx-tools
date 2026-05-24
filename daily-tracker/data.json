@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T04:40:46.672Z",
+    "generated_at": "2026-05-24T08:00:47.966Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Any one setting up openclaw for family assistant? HMW do it?",
-        "link": "https://reddit.com/r/openclaw/comments/1tm0wh2/any_one_setting_up_openclaw_for_family_assistant/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T03:38:05+00:00",
+        "headline": "It by Michael bay would love to see a horror plus action plus explosions",
+        "link": "https://reddit.com/r/aimemes/comments/1tm4uof/it_by_michael_bay_would_love_to_see_a_horror_plus/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-24T07:05:03+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "DeepSeek just popped the American AI bubble.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tm49zw/deepseek_just_popped_the_american_ai_bubble/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-24T06:33:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I packaged our multi-model code review workflow as a reusable skill",
+        "link": "https://reddit.com/r/openclaw/comments/1tm412d/i_packaged_our_multimodel_code_review_workflow_as/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T06:19:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "$2,500/mo AI Budget: My friend just burned through 62M Opus 4.7 tokens in 24 hours.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tm36z1/2500mo_ai_budget_my_friend_just_burned_through/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-24T05:34:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Should we follow this advice?",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-24T02:03:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Vincent and Jules from Pulp Fiction getting progressively happier.",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-24T01:23:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "Anyone else using Gemini 3.5 Flash with OpenClaw?",
@@ -406,7 +433,16 @@
         "published_at": "2026-05-24T00:33:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 85
+      },
+      {
+        "headline": "Thank you ChatGPT ❤️",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tlv6qh/thank_you_chatgpt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-23T23:13:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 82
       },
       {
         "headline": "Mythos 1 has been spotted in Claude Code",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-23T23:04:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 81
       },
       {
         "headline": "Autonomous Company Operating System for openclaw",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-23T22:47:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Generative AI (Kling) is now used in actual tv shows and movies.",
-        "link": "https://reddit.com/r/singularity/comments/1tlu4gv/generative_ai_kling_is_now_used_in_actual_tv/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-23T22:26:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "100% Limit gone by a SINGLE MESSAGE",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tltyov/100_limit_gone_by_a_single_message/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-23T22:19:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "More and more workers in India are collecting video data to train humanoid robots using head-mounted cameras",
-        "link": "https://reddit.com/r/singularity/comments/1tlt8ql/more_and_more_workers_in_india_are_collecting/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-23T21:48:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Openclaw agents for Amazon sourcing, setup advice?",
-        "link": "https://reddit.com/r/openclaw/comments/1tlt8b2/openclaw_agents_for_amazon_sourcing_setup_advice/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-23T21:48:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T04:40:46.672Z",
+    "reddit_viral_generated_at": "2026-05-24T08:00:47.966Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
