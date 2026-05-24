@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T15:35:42.122Z",
+    "generated_at": "2026-05-24T17:17:47.945Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "4 Prompts and already at 61% This sucks",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmhb0t/4_prompts_and_already_at_61_this_sucks/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T16:45:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Recommend smart plugs/switches for home automation with OpenClaw without cloud",
+        "link": "https://reddit.com/r/openclaw/comments/1tmgjoq/recommend_smart_plugsswitches_for_home_automation/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T16:16:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Need help with openclaw windows install.",
+        "link": "https://reddit.com/r/openclaw/comments/1tmg3gz/need_help_with_openclaw_windows_install/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T15:59:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Multi-agent loop failures might be org-design failures, not prompt failures",
+        "link": "https://reddit.com/r/openclaw/comments/1tmdvs8/multiagent_loop_failures_might_be_orgdesign/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T14:35:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "please bring that old Gemini ui new one is not comfortable.",
         "link": "https://reddit.com/r/GeminiAI/comments/1tmdub3/please_bring_that_old_gemini_ui_new_one_is_not/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-24T14:33:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Banned by OpenAI after reporting a live credential hijack. They admitted in writing my account was broken. Here are 7 months of forensic receipts and 20+ cases.",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-24T14:22:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "oow",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-24T14:05:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "The Pro Limit increases are reverted again? Are there any news about this?",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-24T13:50:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "I got paranoid about OpenClaw skills injecting crap into my system prompt, so I built a quarantine pipeline with two LLMs as reviewers (93.75% detection, zero false negatives)",
@@ -415,59 +451,23 @@
         "published_at": "2026-05-24T13:26:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Inaudible sounds to humans can be hidden in YouTube videos, podcasts, or music and used to secretly trigger AI voice assistants into carrying out unauthorized commands without the user noticing, exposing a new class of “auditory prompt injection” attacks against popular tools",
-        "link": "https://reddit.com/r/singularity/comments/1tmb7mz/inaudible_sounds_to_humans_can_be_hidden_in/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-24T12:44:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Oh thank you ChatGPT this position does help 😅",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tmabiw/oh_thank_you_chatgpt_this_position_does_help/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-24T12:03:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "🚀 Skills for small businesses, officially released by Anthropic",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tm94ai/skills_for_small_businesses_officially_released/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-24T11:03:28+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "This is the pretty much the sleep paralysis dream I had years ago",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tm864l/this_is_the_pretty_much_the_sleep_paralysis_dream/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-24T10:12:02+00:00",
+        "headline": "I bought a yearly subscription a week before the latest update",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmbz3d/i_bought_a_yearly_subscription_a_week_before_the/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T13:18:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Didn't realise how good ChatGPT is at enhancing photos until I tried it today here is a side by side of a 10x photo zoomed in on my phone vs ChatGPT fix of it",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tm80o6/didnt_realise_how_good_chatgpt_is_at_enhancing/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-24T10:03:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T15:35:42.122Z",
+    "reddit_viral_generated_at": "2026-05-24T17:17:47.945Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
