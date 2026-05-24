@@ -367,19 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T10:12:39.229Z",
+    "generated_at": "2026-05-24T11:43:45.842Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Proper security and maintenance for agentic environments",
-        "link": "https://reddit.com/r/openclaw/comments/1tm6jeg/proper_security_and_maintenance_for_agentic/",
+        "headline": "Does anyone know how to resell his api?",
+        "link": "https://reddit.com/r/openclaw/comments/1tm9qfu/does_anyone_know_how_to_resell_his_api/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-24T08:39:12+00:00",
+        "published_at": "2026-05-24T11:35:00+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "🚀 Skills for small businesses, officially released by Anthropic",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tm94ai/skills_for_small_businesses_officially_released/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-24T11:03:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Multi Agent Team with",
+        "link": "https://reddit.com/r/openclaw/comments/1tm93f6/multi_agent_team_with/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T11:02:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Multi Agents Team out of the box",
+        "link": "https://reddit.com/r/openclaw/comments/1tm8z4g/multi_agents_team_out_of_the_box/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-24T10:56:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "This is how AI is moving recently",
+        "link": "https://reddit.com/r/singularity/comments/1tm8j0p/this_is_how_ai_is_moving_recently/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-24T10:31:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Didn't realise how good ChatGPT is at enhancing photos until I tried it today here is a side by side of a 10x photo zoomed in on my phone vs ChatGPT fix of it",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tm80o6/didnt_realise_how_good_chatgpt_is_at_enhancing/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-24T10:03:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Are (Chinese) models degenerating after a while?",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-24T08:27:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "It by Michael bay would love to see a horror plus action plus explosions",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-24T07:05:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "DeepSeek just popped the American AI bubble.",
@@ -406,68 +451,23 @@
         "published_at": "2026-05-24T06:33:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
-        "headline": "I packaged our multi-model code review workflow as a reusable skill",
-        "link": "https://reddit.com/r/openclaw/comments/1tm412d/i_packaged_our_multimodel_code_review_workflow_as/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T06:19:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "How I feel like responding every time someone says AI is just a next token predictor (as if they aren't)",
-        "link": "https://reddit.com/r/singularity/comments/1tm3zis/how_i_feel_like_responding_every_time_someone/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-24T06:17:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "$2,500/mo AI Budget: My friend just burned through 62M Opus 4.7 tokens in 24 hours.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tm36z1/2500mo_ai_budget_my_friend_just_burned_through/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-24T05:34:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "OpenClaw Roadmap",
-        "link": "https://reddit.com/r/openclaw/comments/1tm087p/openclaw_roadmap/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T03:05:48+00:00",
+        "headline": "DeepSeek just popped the American AI bubble.",
+        "link": "https://reddit.com/r/OpenAI/comments/1tm49d0/deepseek_just_popped_the_american_ai_bubble/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-24T06:32:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "Should we follow this advice?",
-        "link": "https://reddit.com/r/OpenAI/comments/1tlywuh/should_we_follow_this_advice/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-24T02:03:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Vincent and Jules from Pulp Fiction getting progressively happier.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tly210/vincent_and_jules_from_pulp_fiction_getting/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-24T01:23:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T10:12:39.229Z",
+    "reddit_viral_generated_at": "2026-05-24T11:43:45.842Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
