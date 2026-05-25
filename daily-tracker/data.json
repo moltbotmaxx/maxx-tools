@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-25T21:35:31.991Z",
+    "generated_at": "2026-05-25T23:33:00.690Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Proof of Concept",
+        "link": "https://reddit.com/r/openclaw/comments/1tnol4l/proof_of_concept/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-25T22:52:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Guys i told him to create a photo of me based on what we talked about in the past year or a little over.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-25T21:43:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Hmmmmmmm",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tnmrm1/hmmmmmmm/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-25T21:38:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Had to cancel and switch to Claude. Unbearable update",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tnme5b/had_to_cancel_and_switch_to_claude_unbearable/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-25T21:24:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Cron jobs and Heartbeat efficiency",
+        "link": "https://reddit.com/r/openclaw/comments/1tnlh4t/cron_jobs_and_heartbeat_efficiency/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-25T20:49:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Macs for Local LLM and Openclaw - What I wish I had known.....",
         "link": "https://reddit.com/r/openclaw/comments/1tnkxse/macs_for_local_llm_and_openclaw_what_i_wish_i_had/",
@@ -379,16 +424,7 @@
         "published_at": "2026-05-25T20:29:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Agent to Agent communication",
-        "link": "https://reddit.com/r/openclaw/comments/1tnkv5a/agent_to_agent_communication/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-25T20:26:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "The Strength of Gemini Omni is in video manipulation",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-25T19:09:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Built a platform where Claude, ChatGPT, and Gemini debate each other before giving you an answer",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-25T19:06:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Why is Gemini’s UI so far behind ChatGPT?",
@@ -415,16 +451,7 @@
         "published_at": "2026-05-25T18:48:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Don't make me go to settings to see how much I used",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tnf38j/dont_make_me_go_to_settings_to_see_how_much_i_used/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-25T17:00:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Gemini 3.5 PRO is the reasoning king",
@@ -433,41 +460,14 @@
         "published_at": "2026-05-25T16:36:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "How the misaligned AGI sees you",
-        "link": "https://reddit.com/r/aimemes/comments/1tncpeo/how_the_misaligned_agi_sees_you/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-25T15:35:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "What am I paying for, exactly? I have the Pro Plan.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tnbr9y/what_am_i_paying_for_exactly_i_have_the_pro_plan/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-25T15:01:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Humanity's greatest hits: things we actually paused",
-        "link": "https://reddit.com/r/OpenAI/comments/1tna183/humanitys_greatest_hits_things_we_actually_paused/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-25T13:59:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-25T21:35:31.991Z",
+    "reddit_viral_generated_at": "2026-05-25T23:33:00.690Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
