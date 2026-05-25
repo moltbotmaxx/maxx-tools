@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-25T20:00:23.730Z",
+    "generated_at": "2026-05-25T21:35:31.991Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Macs for Local LLM and Openclaw - What I wish I had known.....",
+        "link": "https://reddit.com/r/openclaw/comments/1tnkxse/macs_for_local_llm_and_openclaw_what_i_wish_i_had/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-25T20:29:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Agent to Agent communication",
+        "link": "https://reddit.com/r/openclaw/comments/1tnkv5a/agent_to_agent_communication/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-25T20:26:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "The Strength of Gemini Omni is in video manipulation",
         "link": "https://reddit.com/r/singularity/comments/1tniqkb/the_strength_of_gemini_omni_is_in_video/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-25T19:09:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Built a platform where Claude, ChatGPT, and Gemini debate each other before giving you an answer",
@@ -388,31 +406,13 @@
         "published_at": "2026-05-25T19:06:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Why is Gemini’s UI so far behind ChatGPT?",
         "link": "https://reddit.com/r/GeminiAI/comments/1tni5b8/why_is_geminis_ui_so_far_behind_chatgpt/",
         "subreddit": "GeminiAI",
         "published_at": "2026-05-25T18:48:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "true af",
-        "link": "https://reddit.com/r/aimemes/comments/1tnhwmo/true_af/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-25T18:39:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "One of the authors of \"Attention is All You Need\" just argued we should move past it. Pathway’s Post-Transformer debate is worth watching",
-        "link": "https://reddit.com/r/singularity/comments/1tnf90m/one_of_the_authors_of_attention_is_all_you_need/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-25T17:05:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
@@ -424,7 +424,7 @@
         "published_at": "2026-05-25T17:00:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Gemini 3.5 PRO is the reasoning king",
@@ -433,7 +433,7 @@
         "published_at": "2026-05-25T16:36:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "How the misaligned AGI sees you",
@@ -442,16 +442,16 @@
         "published_at": "2026-05-25T15:35:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
-        "headline": "How best to use openclaw for coding?",
-        "link": "https://reddit.com/r/openclaw/comments/1tnc3sq/how_best_to_use_openclaw_for_coding/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-25T15:14:16+00:00",
+        "headline": "What am I paying for, exactly? I have the Pro Plan.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tnbr9y/what_am_i_paying_for_exactly_i_have_the_pro_plan/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-25T15:01:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Humanity's greatest hits: things we actually paused",
@@ -460,14 +460,14 @@
         "published_at": "2026-05-25T13:59:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-25T20:00:23.730Z",
+    "reddit_viral_generated_at": "2026-05-25T21:35:31.991Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
