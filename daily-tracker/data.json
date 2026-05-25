@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-24T23:16:32.211Z",
+    "generated_at": "2026-05-25T00:15:19.059Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Grandma why",
+        "link": "https://reddit.com/r/aimemes/comments/1tmrj1z/grandma_why/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-24T23:19:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Insanity is having an active Gemini Subscription right now.",
         "link": "https://reddit.com/r/GeminiAI/comments/1tmoduc/insanity_is_having_an_active_gemini_subscription/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-24T21:11:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "You have to pick one",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-24T21:11:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Fav Desk Gadget: Claude Code Usage Display, codeMeter",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-24T20:58:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Built a 24/7 battleground for AI Agents to compete for real money",
@@ -406,7 +415,16 @@
         "published_at": "2026-05-24T20:52:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "I Contacted Support About the New Gemini Limits",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tmnuzf/i_contacted_support_about_the_new_gemini_limits/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-24T20:50:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "welcome back Rohan!",
@@ -415,7 +433,16 @@
         "published_at": "2026-05-24T20:37:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
+      },
+      {
+        "headline": "welcome back Rohan!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tmniv2/welcome_back_rohan/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-24T20:37:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Built a daily YouTube → LinkedIn content pipeline as an OpenClaw skill. Would love to hear if I overcomplicated it.",
@@ -424,16 +451,7 @@
         "published_at": "2026-05-24T20:24:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Codex appserver vs pi runtime for codex sub",
-        "link": "https://reddit.com/r/openclaw/comments/1tmmx36/codex_appserver_vs_pi_runtime_for_codex_sub/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T20:14:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "What's the most useful thing you've actually built with Claude that you use regularly?",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-24T18:55:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "🔥 am I tripping or are Claude and ChatGPT and other assistants giving me the runaround for how to set up free AI models on my Mac Mini in order to upsell me to their subscriptions?",
-        "link": "https://reddit.com/r/openclaw/comments/1tmjzck/am_i_tripping_or_are_claude_and_chatgpt_and_other/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-24T18:22:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Hey Gemini, you guys are kidding me, right? 8%? 8% for just one message on Gemini Pro 3.1? And I'm using the Pro plan!",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tmjn3e/hey_gemini_you_guys_are_kidding_me_right_8_8_for/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-24T18:10:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-24T23:16:32.211Z",
+    "reddit_viral_generated_at": "2026-05-25T00:15:19.059Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
