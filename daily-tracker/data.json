@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-25T16:03:46.676Z",
+    "generated_at": "2026-05-25T17:59:54.793Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "One of the authors of \"Attention is All You Need\" just argued we should move past it. Pathway’s Post-Transformer debate is worth watching",
+        "link": "https://reddit.com/r/singularity/comments/1tnf90m/one_of_the_authors_of_attention_is_all_you_need/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-25T17:05:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Hyundai/Boston Dynamics is going to train Atlas the humanoid robot by watching football videos, and they'll document its progress in an online series called 'School of Football'",
+        "link": "https://reddit.com/r/singularity/comments/1tnevy7/hyundaiboston_dynamics_is_going_to_train_atlas/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-25T16:52:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Gemini 3.5 PRO is the reasoning king",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tnefp7/gemini_35_pro_is_the_reasoning_king/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-25T16:36:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "How the misaligned AGI sees you",
         "link": "https://reddit.com/r/aimemes/comments/1tncpeo/how_the_misaligned_agi_sees_you/",
@@ -379,7 +406,16 @@
         "published_at": "2026-05-25T15:35:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "How best to use openclaw for coding?",
+        "link": "https://reddit.com/r/openclaw/comments/1tnc3sq/how_best_to_use_openclaw_for_coding/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-25T15:14:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Humanity's greatest hits: things we actually paused",
@@ -388,16 +424,7 @@
         "published_at": "2026-05-25T13:59:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I've been using Claude Code as a motion graphics engine for my YouTube videos. It writes the JSX, I render. Edit time roughly halved.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tn9tyy/ive_been_using_claude_code_as_a_motion_graphics/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-25T13:52:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Demis: Solving erdos problems are far from true invention",
@@ -406,16 +433,7 @@
         "published_at": "2026-05-25T13:50:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Are we nearly there?",
-        "link": "https://reddit.com/r/OpenAI/comments/1tn9ewm/are_we_nearly_there/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-25T13:36:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Are we nearly there?",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-25T13:36:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Are we nearly there?",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-25T13:35:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "LimX Dynamics launches Luna, its fluid, full-size humanoid robot",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-25T12:13:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I have the impression that he's getting dumber.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tn74yd/i_have_the_impression_that_hes_getting_dumber/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-25T12:04:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren't staged demos anymore.",
-        "link": "https://reddit.com/r/OpenAI/comments/1tn6qib/figure_ai_had_a_livestream_of_their_robots/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-25T11:46:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-25T16:03:46.676Z",
+    "reddit_viral_generated_at": "2026-05-25T17:59:54.793Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
