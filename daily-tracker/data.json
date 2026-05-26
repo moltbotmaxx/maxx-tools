@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-26T21:58:34.221Z",
+    "generated_at": "2026-05-26T23:34:20.758Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Improving Kimi 2.6 LinkedIn Automation",
-        "link": "https://reddit.com/r/openclaw/comments/1tokbgs/improving_kimi_26_linkedin_automation/",
+        "headline": "Issues with Discord",
+        "link": "https://reddit.com/r/openclaw/comments/1tollka/issues_with_discord/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-26T21:08:11+00:00",
+        "published_at": "2026-05-26T21:55:13+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Asked ChatGPT to create a 2000s poorly drawn overly edgy OC",
+        "link": "https://reddit.com/r/ChatGPT/comments/1toknzj/asked_chatgpt_to_create_a_2000s_poorly_drawn/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-26T21:20:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Bruh",
@@ -388,7 +397,34 @@
         "published_at": "2026-05-26T21:06:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Team work , we should be all friends",
+        "link": "https://reddit.com/r/openclaw/comments/1tojwfw/team_work_we_should_be_all_friends/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-26T20:53:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "My openclaw goes down like every 10 min or so",
+        "link": "https://reddit.com/r/openclaw/comments/1tohg0r/my_openclaw_goes_down_like_every_10_min_or_so/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-26T19:28:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "US Law Enforcement Warns of ‘Anti-Tech Extremism’ as AI Hatred Grows",
+        "link": "https://reddit.com/r/singularity/comments/1tohbhk/us_law_enforcement_warns_of_antitech_extremism_as/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-26T19:23:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Given all the uproar over the Johnny Ive designed Ferrari: “Visualise a modern electric vehicle from Ferrari styled on the classic Ferrari Dino”",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-26T18:25:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Mythos (using Claude code) also solves the unit distance problem recently handled by GPT 5.5, with a \"cute, simple proof\".",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-26T17:49:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Price wars begin. MiMo 2.5 Pro now costs the same as DeepSeek V4 Pro",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-26T17:47:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I clustered every Sam Altman interview from 2024-2026 and 73% of his answers come from the same 12 scripted talking points",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-26T17:44:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Does anyone use OpenClaw for a family dashboard?",
-        "link": "https://reddit.com/r/openclaw/comments/1todajf/does_anyone_use_openclaw_for_a_family_dashboard/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-26T17:08:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Company gave us all unlimited Claude Code Sonnet 4.6 — and now posts a weekly leaderboard of who burns the most tokens. Any tips to top it?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tob45x/company_gave_us_all_unlimited_claude_code_sonnet/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-26T15:54:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Pope Leo called AI an \"instrument of domination, exclusion and death.\" Anthropic was in the room",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1toaq7t/pope_leo_called_ai_an_instrument_of_domination/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-26T15:41:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Best bang for buck compute and local model combo?",
-        "link": "https://reddit.com/r/openclaw/comments/1toaabt/best_bang_for_buck_compute_and_local_model_combo/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-26T15:26:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-26T21:58:34.221Z",
+    "reddit_viral_generated_at": "2026-05-26T23:34:20.758Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
