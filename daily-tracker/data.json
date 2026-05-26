@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-26T04:36:16.989Z",
+    "generated_at": "2026-05-26T08:44:19.751Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Pope Leo XIV just dropped a massive 42,300-word encyclical on AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tnyomo/pope_leo_xiv_just_dropped_a_massive_42300word/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-26T06:36:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "AI doomsday: Hollywood vs. The real threat",
+        "link": "https://reddit.com/r/OpenAI/comments/1tnynry/ai_doomsday_hollywood_vs_the_real_threat/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-26T06:35:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The circle of AI life",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tnyk8l/the_circle_of_ai_life/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-26T06:29:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The 'Ferrari Elettrica' - Today I was disappointed by the new 'Ferrari Luce', so I asked ChatGPT for an electric Ferrari that actually looked good",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tnw8yj/the_ferrari_elettrica_today_i_was_disappointed_by/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-26T04:31:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Gemini (especially 3.5) has a specific style of hallucination that I hate",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tnw202/gemini_especially_35_has_a_specific_style_of/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-26T04:21:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "😢😢",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tnufv3/_/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-26T03:07:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "No problems with my usage.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tnu7n1/no_problems_with_my_usage/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-26T02:57:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
       {
         "headline": "gemini pro went from 100 prompts a day to 20 and they call it improved",
         "link": "https://reddit.com/r/GeminiAI/comments/1tnteqm/gemini_pro_went_from_100_prompts_a_day_to_20_and/",
@@ -379,85 +442,22 @@
         "published_at": "2026-05-26T02:21:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 89
       },
       {
-        "headline": "Fascinating research on ai adoption in businesses.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tnshxt/fascinating_research_on_ai_adoption_in_businesses/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-26T01:41:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Weird Injection Prompt In Chat??",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tnr5oe/weird_injection_prompt_in_chat/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-26T00:42:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Pope calls for robust regulation of AI in manifesto that ponders the future of humanity",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tnp8lm/pope_calls_for_robust_regulation_of_ai_in/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-25T23:19:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "What do you expect for the Gemini 3.5 Pro update? Will they fix everything that's getting in our way now? Are they listening to us? A lot of people are complaining, a lot of people",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tnowt9/what_do_you_expect_for_the_gemini_35_pro_update/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-25T23:06:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I asked ChatGPT to fix seasons 7 and 8 of Game of Thrones",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tnoaf8/i_asked_chatgpt_to_fix_seasons_7_and_8_of_game_of/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-25T22:40:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Note: AI mode is 3.5 Flash and does not affect your Gemini usage quota",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tnnho3/note_ai_mode_is_35_flash_and_does_not_affect_your/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-25T22:07:25+00:00",
+        "headline": "Users who rage quit my software",
+        "link": "https://reddit.com/r/singularity/comments/1tntdui/users_who_rage_quit_my_software/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-26T02:20:15+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
       },
       {
-        "headline": "Gemini became dumber???",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tnmxku/gemini_became_dumber/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-25T21:45:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Guys i told him to create a photo of me based on what we talked about in the past year or a little over.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-25T21:43:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Hmmmmmmm",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tnmrm1/hmmmmmmm/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-25T21:38:50+00:00",
+        "headline": "Using OpenClaw daily but haven't moved off v2026.5.3",
+        "link": "https://reddit.com/r/openclaw/comments/1tnsugg/using_openclaw_daily_but_havent_moved_off_v202653/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-26T01:56:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-26T04:36:16.989Z",
+    "reddit_viral_generated_at": "2026-05-26T08:44:19.751Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
