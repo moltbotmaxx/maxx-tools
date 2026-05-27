@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-27T22:12:54.021Z",
+    "generated_at": "2026-05-27T23:38:38.729Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "ChatGPT 5.5 (2026) talks to Cleverbot (2006)",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tphxz5/chatgpt_55_2026_talks_to_cleverbot_2006/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-27T20:40:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Pope Leo Warns AI Must Be 'Disarmed' For The Future Of Humanity In Powerful Letter About The Dangers It Poses",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tphl86/pope_leo_warns_ai_must_be_disarmed_for_the_future/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-27T20:27:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "iScream",
         "link": "https://reddit.com/r/aimemes/comments/1tphhzf/iscream/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-27T20:23:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Anthropic just confirmed why 90% of non-coding AI agents fail in production",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-27T20:11:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Atlas doing a perfect rabona kick",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-27T19:56:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "I called this a few months ago - enterprises are burning unsustainable amounts on Claude, and now it's showing up in the news",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-27T19:50:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "I can haz ai Batman cat meme",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-27T19:28:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Genesis AI | Genesis World 1.0",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-27T19:09:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Just got this email from openAI",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-27T18:21:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "2 years ago Golden Gate Claude was the newest frontier model #bringbackgoldengateclaude",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-27T17:42:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic researcher: \"We keep finding things [inside AI models] that are unsettling\" ... \"We find structures that mirror results from human neuroscience. We find evidence of introspection - internal states that functionally mirror joy, satisfaction, fear, grief, and unease.\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1tpc2b5/anthropic_researcher_we_keep_finding_things/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-27T17:15:44+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "So, Uber CTO said that Uber burned their total 2026 AI budget within the first four months",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tp7ips/so_uber_cto_said_that_uber_burned_their_total/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T14:37:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-27T22:12:54.021Z",
+    "reddit_viral_generated_at": "2026-05-27T23:38:38.729Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
