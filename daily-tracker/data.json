@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-27T04:50:44.094Z",
+    "generated_at": "2026-05-27T08:49:02.350Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I gave OpenClaw ADHD.. its 2x better at thinking now",
+        "link": "https://reddit.com/r/openclaw/comments/1toxyxb/i_gave_openclaw_adhd_its_2x_better_at_thinking_now/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-27T07:09:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I gave my agent my actual iphone..",
+        "link": "https://reddit.com/r/openclaw/comments/1towv70/i_gave_my_agent_my_actual_iphone/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-27T06:10:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "From China, I tested GPT Image 2.0 — and I’m genuinely shocked",
+        "link": "https://reddit.com/r/OpenAI/comments/1tow7z5/from_china_i_tested_gpt_image_20_and_im_genuinely/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-27T05:37:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "MIT report basically confirms AI isn't the real reason for all these recent tech layoffs",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tovwzx/mit_report_basically_confirms_ai_isnt_the_real/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-27T05:21:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Watch me burn 40% quota in 30 seconds",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tovqnf/watch_me_burn_40_quota_in_30_seconds/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-27T05:13:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "The Pope just dropped a massive 150-page manifesto on AI, and he's not holding back",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tovqgo/the_pope_just_dropped_a_massive_150page_manifesto/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-27T05:13:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "We got fired guys",
+        "link": "https://reddit.com/r/ChatGPT/comments/1touw6a/we_got_fired_guys/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-27T04:31:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Only 3 years",
         "link": "https://reddit.com/r/singularity/comments/1tot8qm/only_3_years/",
@@ -379,7 +442,7 @@
         "published_at": "2026-05-27T03:14:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 90
       },
       {
         "headline": "How much is the average person actually using AI?",
@@ -388,86 +451,23 @@
         "published_at": "2026-05-27T03:04:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "I tried to generate malO the scp, but I accidentally wrote mao...",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tophpt/i_tried_to_generate_malo_the_scp_but_i/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T00:29:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I'm a software engineer with a decade of experience. This is how I'd approach learning to build apps using Claude Code if I were starting from scratch today:",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tonzj9/im_a_software_engineer_with_a_decade_of/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-26T23:27:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Boston Dynamics | Agile footwork (School of Football)",
-        "link": "https://reddit.com/r/singularity/comments/1tomhw7/boston_dynamics_agile_footwork_school_of_football/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-26T22:29:12+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
       },
       {
-        "headline": "RAI Institute | Juggling",
-        "link": "https://reddit.com/r/singularity/comments/1tomg90/rai_institute_juggling/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-26T22:27:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Asked ChatGPT to create a 2000s poorly drawn overly edgy OC",
-        "link": "https://reddit.com/r/ChatGPT/comments/1toknzj/asked_chatgpt_to_create_a_2000s_poorly_drawn/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-26T21:20:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Bruh",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tok9q6/bruh/",
+        "headline": "15 prompts in 14 hours. used to be 100. cancelling.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tot09j/15_prompts_in_14_hours_used_to_be_100_cancelling/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-05-26T21:06:26+00:00",
+        "published_at": "2026-05-27T03:04:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "‘Anti-tech extremism’: The government is monitoring AI criticism nationwide, says report",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tojihv/antitech_extremism_the_government_is_monitoring/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-26T20:39:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "US Law Enforcement Warns of ‘Anti-Tech Extremism’ as AI Hatred Grows",
-        "link": "https://reddit.com/r/singularity/comments/1tohbhk/us_law_enforcement_warns_of_antitech_extremism_as/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-26T19:23:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-27T04:50:44.094Z",
+    "reddit_viral_generated_at": "2026-05-27T08:49:02.350Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
