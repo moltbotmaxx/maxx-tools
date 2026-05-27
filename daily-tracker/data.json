@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-27T16:46:51.268Z",
+    "generated_at": "2026-05-27T19:33:46.535Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I can haz ai Batman cat meme",
+        "link": "https://reddit.com/r/aimemes/comments/1tpfxz7/i_can_haz_ai_batman_cat_meme/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-27T19:28:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "2 years ago Golden Gate Claude was the newest frontier model #bringbackgoldengateclaude",
+        "link": "https://reddit.com/r/singularity/comments/1tpcutx/2_years_ago_golden_gate_claude_was_the_newest/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-27T17:42:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Anthropic researcher: \"We keep finding things [inside AI models] that are unsettling\" ... \"We find structures that mirror results from human neuroscience. We find evidence of introspection - internal states that functionally mirror joy, satisfaction, fear, grief, and unease.\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1tpc2b5/anthropic_researcher_we_keep_finding_things/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-27T17:15:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Farewell to 5.3-Codex",
+        "link": "https://reddit.com/r/OpenAI/comments/1tpazn1/farewell_to_53codex/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-27T16:38:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "I cant wait for the day....",
         "link": "https://reddit.com/r/aimemes/comments/1tp7ohv/i_cant_wait_for_the_day/",
@@ -379,7 +415,16 @@
         "published_at": "2026-05-27T14:43:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 89
+      },
+      {
+        "headline": "So, Uber CTO said that Uber burned their total 2026 AI budget within the first four months",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tp7ips/so_uber_cto_said_that_uber_burned_their_total/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-27T14:37:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "Guys, even after all the changes, Gemini is still dumb and hallucinating.",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-27T14:36:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 89
       },
       {
         "headline": "When AI takes over your job",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-27T14:12:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 88
       },
       {
         "headline": "A research group appears to have made a significant step towards programmable atomically precise manufacturing AKA Drexlerian nanotechnology",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-27T14:06:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 87
       },
       {
         "headline": "everybody suddenly technical",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-27T13:17:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I might get a lot of hate for this but if you hit the ceiling please post your prompts.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tp4t0z/i_might_get_a_lot_of_hate_for_this_but_if_you_hit/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-27T12:57:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "\"The book of Genesis, 84% created by AI!\" - Gary Marcus",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tp4p2r/the_book_of_genesis_84_created_by_ai_gary_marcus/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T12:53:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Does anyone else use Claude as a \"thinking partner\" rather than just for answers?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tp4gn8/does_anyone_else_use_claude_as_a_thinking_partner/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-27T12:43:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "We are so back???",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tp3tj8/we_are_so_back/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T12:16:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "The thing you built with Claude is useless to me... and that's the point",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tp3en9/the_thing_you_built_with_claude_is_useless_to_me/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-27T11:59:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-27T16:46:51.268Z",
+    "reddit_viral_generated_at": "2026-05-27T19:33:46.535Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
