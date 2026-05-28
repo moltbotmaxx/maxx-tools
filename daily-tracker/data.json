@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-28T22:12:24.900Z",
+    "generated_at": "2026-05-28T23:44:14.499Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "First time set up getting codex error. Please help.",
+        "link": "https://reddit.com/r/openclaw/comments/1tqjy5a/first_time_set_up_getting_codex_error_please_help/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-28T23:19:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "A fully AI generated film just screened at Cannes Market and cost $500,000 to make",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1tqhanv/a_fully_ai_generated_film_just_screened_at_cannes/",
@@ -379,7 +388,7 @@
         "published_at": "2026-05-28T21:35:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Get rid of sandboxes?",
@@ -388,7 +397,7 @@
         "published_at": "2026-05-28T20:02:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "What Happened to Switching to Stable Updates!? Its still Breaking",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-28T19:26:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "[ Removed by Reddit ]",
@@ -406,16 +415,16 @@
         "published_at": "2026-05-28T19:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
-        "headline": "I made an Epstein Files RAG",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tqdd26/i_made_an_epstein_files_rag/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-28T19:15:40+00:00",
+        "headline": "Extended Benchmarks for Opus 4.8",
+        "link": "https://reddit.com/r/singularity/comments/1tqdaem/extended_benchmarks_for_opus_48/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-28T19:13:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Opus 4.8 in caveman talking about the difference from 4.7 is hilarious",
@@ -424,7 +433,7 @@
         "published_at": "2026-05-28T19:05:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Breaking News: Anthropic surpassed OpenAI as the world’s most valuable A.I. start-up, with a valuation of $900 billion.",
@@ -433,7 +442,7 @@
         "published_at": "2026-05-28T18:57:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Adding AI \"employees\" is backfiring by creating new office scapegoats and making human workers sloppier and lazier",
@@ -442,7 +451,7 @@
         "published_at": "2026-05-28T18:34:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Opus 4.8 (max) told me to Drive to the car wash 🥳",
@@ -451,23 +460,14 @@
         "published_at": "2026-05-28T17:09:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Well anthropic released opus 4.8",
-        "link": "https://reddit.com/r/singularity/comments/1tq9ml0/well_anthropic_released_opus_48/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-28T17:05:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-28T22:12:24.900Z",
+    "reddit_viral_generated_at": "2026-05-28T23:44:14.499Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
