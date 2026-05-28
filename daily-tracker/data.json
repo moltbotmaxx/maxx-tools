@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-28T04:42:34.938Z",
+    "generated_at": "2026-05-28T08:53:49.878Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Jira AI with Scrum Prompts templates",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tpwt7m/jira_ai_with_scrum_prompts_templates/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-28T07:52:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "HTTP 500 on gemini.google.com/app",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tpwp1s/http_500_on_geminigooglecomapp/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-28T07:45:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Months and the safety filters still aren't fixed",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tpw6yr/months_and_the_safety_filters_still_arent_fixed/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-28T07:16:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "The Party is cancelled, pack it up",
+        "link": "https://reddit.com/r/OpenAI/comments/1tpvhup/the_party_is_cancelled_pack_it_up/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-28T06:38:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Why is my open claw so stupid?",
+        "link": "https://reddit.com/r/openclaw/comments/1tpuw96/why_is_my_open_claw_so_stupid/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-28T06:05:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "How do I extract the image generaion style of the following images?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tpuepf/how_do_i_extract_the_image_generaion_style_of_the/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-28T05:39:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "what models are y’all using to power Openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1tpudyf/what_models_are_yall_using_to_power_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-28T05:37:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Claude Is Starting to Feel “Tired”, Trying to Avoid Work",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tpts8g/claude_is_starting_to_feel_tired_trying_to_avoid/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-28T05:06:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "it never says “sorry, just saw this",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tpsvg1/it_never_says_sorry_just_saw_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-28T04:21:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
       {
         "headline": "Google omni is underrated",
         "link": "https://reddit.com/r/singularity/comments/1tpsse7/google_omni_is_underrated/",
@@ -379,95 +460,14 @@
         "published_at": "2026-05-28T04:17:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "DeepSWE Benchmark Ranking",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tpqoex/deepswe_benchmark_ranking/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-28T02:39:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "DeepSWE finally a proper coding benchmark",
-        "link": "https://reddit.com/r/singularity/comments/1tpo9lu/deepswe_finally_a_proper_coding_benchmark/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-28T00:51:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "This guy built an offline survival AI",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tpnpz8/this_guy_built_an_offline_survival_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-28T00:28:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Thoughts on this perspective?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tplxn6/thoughts_on_this_perspective/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T23:13:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Need help with Home Assistant API",
-        "link": "https://reddit.com/r/openclaw/comments/1tplnm9/need_help_with_home_assistant_api/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-27T23:01:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Antropic has now integrated Claude Design usage into the existing Claude usage.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tpl9t9/antropic_has_now_integrated_claude_design_usage/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-27T22:46:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Nipples hihihi",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tpkiaq/nipples_hihihi/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T22:16:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "ChatGPT 5.5 (2026) talks to Cleverbot (2006)",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tphxz5/chatgpt_55_2026_talks_to_cleverbot_2006/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-27T20:40:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "iScream",
-        "link": "https://reddit.com/r/aimemes/comments/1tphhzf/iscream/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-27T20:23:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-28T04:42:34.938Z",
+    "reddit_viral_generated_at": "2026-05-28T08:53:49.878Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
