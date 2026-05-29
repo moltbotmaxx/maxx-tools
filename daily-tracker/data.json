@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-29T16:54:14.691Z",
+    "generated_at": "2026-05-29T19:42:03.771Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Moving to open source models, have quantizations ever broken your tool calls?",
+        "link": "https://reddit.com/r/openclaw/comments/1trau06/moving_to_open_source_models_have_quantizations/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-29T18:22:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "securing my spot as a trusted biological pet for later",
+        "link": "https://reddit.com/r/aimemes/comments/1tr9vta/securing_my_spot_as_a_trusted_biological_pet_for/",
+        "subreddit": "aimemes",
+        "published_at": "2026-05-29T17:53:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Vision analysis not working.",
+        "link": "https://reddit.com/r/openclaw/comments/1tr9e4b/vision_analysis_not_working/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-29T17:37:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Can someone buy Claude a clock? (Discussion in post)",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tr94mu/can_someone_buy_claude_a_clock_discussion_in_post/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-29T17:28:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Heavy OpenClaw users: would you use a managed service instead of a VPS — and would you pay for it? (honest gut-check)",
         "link": "https://reddit.com/r/openclaw/comments/1tr7gj2/heavy_openclaw_users_would_you_use_a_managed/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-29T16:33:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Mesa optimizer doesn't consent",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-29T15:49:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "My openclaw would not work without Claude code.",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-29T15:42:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Booster Robotics from Beijing came out to show off their humanoid robots can play as well",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-29T15:08:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "OpenClaw Agent Checkout Struggles in 2026 — What’s Actually Working?",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-29T15:08:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Sweeping Silicon Valley layoffs are proof that tech CEOs are suffering from \"AI psychosis,\" Box CEO says",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-29T14:15:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "hey buddy",
-        "link": "https://reddit.com/r/OpenAI/comments/1tr34qe/hey_buddy/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-29T14:12:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "For the past few hours, Gemini has only been telling me that I violated its guidelines.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tr2znh/for_the_past_few_hours_gemini_has_only_been/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-29T14:07:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I asked ChatGPT to generate an image of a meetup for average redditors. How accurate is this?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tr2trf/i_asked_chatgpt_to_generate_an_image_of_a_meetup/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-29T14:01:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "GPT-5.6 spotted in Codex",
-        "link": "https://reddit.com/r/OpenAI/comments/1tr2ny5/gpt56_spotted_in_codex/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-29T13:56:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-29T16:54:14.691Z",
+    "reddit_viral_generated_at": "2026-05-29T19:42:03.771Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
