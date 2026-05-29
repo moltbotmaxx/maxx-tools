@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-29T04:44:58.892Z",
+    "generated_at": "2026-05-29T08:52:26.287Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "The current state of the market",
-        "link": "https://reddit.com/r/aimemes/comments/1tqqg6r/the_current_state_of_the_market/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-29T04:07:04+00:00",
+        "headline": "One of many ways to use open claw",
+        "link": "https://reddit.com/r/openclaw/comments/1tqvr9p/one_of_many_ways_to_use_open_claw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-29T08:48:35+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "chatgpt down?",
-        "link": "https://reddit.com/r/OpenAI/comments/1tqp6tq/chatgpt_down/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-29T03:08:29+00:00",
+        "headline": "Anyone heard anything about the OpenClaw LTS release? It's almost June.",
+        "link": "https://reddit.com/r/openclaw/comments/1tqvdo2/anyone_heard_anything_about_the_openclaw_lts/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-29T08:26:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 99
       },
       {
-        "headline": "I asked Chat GPT to create a Japanese style scroll with the original 151 Pokemon",
-        "link": "https://reddit.com/r/OpenAI/comments/1tqofbs/i_asked_chat_gpt_to_create_a_japanese_style/",
+        "headline": "Building quickest workflow for turning MCP sources into a podcast or slide deck",
+        "link": "https://reddit.com/r/OpenAI/comments/1tqugje/building_quickest_workflow_for_turning_mcp/",
         "subreddit": "OpenAI",
-        "published_at": "2026-05-29T02:34:27+00:00",
+        "published_at": "2026-05-29T07:35:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "What it's like talking to Opus 4.8...",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tqu934/what_its_like_talking_to_opus_48/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-29T07:24:35+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "Most of reddit badmouths AI, but my experience in medicine:",
-        "link": "https://reddit.com/r/singularity/comments/1tqn8ov/most_of_reddit_badmouths_ai_but_my_experience_in/",
+        "headline": "What it's like talking to Opus 4.8...",
+        "link": "https://reddit.com/r/singularity/comments/1tqu7sw/what_its_like_talking_to_opus_48/",
         "subreddit": "singularity",
-        "published_at": "2026-05-29T01:41:44+00:00",
+        "published_at": "2026-05-29T07:22:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "OPUS 4.8 craps himself in SimpleBench",
+        "link": "https://reddit.com/r/OpenAI/comments/1tqtmo8/opus_48_craps_himself_in_simplebench/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-29T06:51:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Opus 4.8's new highest effort setting",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tqt8pl/opus_48s_new_highest_effort_setting/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-29T06:29:46+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
       },
       {
-        "headline": "Hybrid Memory Design: Using OpenClaw + Honcho (User Modeling) + External LanceDB (Multi-project RAG) through Tool Calling. Am I overengineering or is this the way?",
-        "link": "https://reddit.com/r/openclaw/comments/1tqm7t1/hybrid_memory_design_using_openclaw_honcho_user/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-29T00:56:35+00:00",
+        "headline": "Seems they’ve hard the new quota feedback",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tqsluh/seems_theyve_hard_the_new_quota_feedback/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-29T05:55:47+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
       },
       {
-        "headline": "I asked chatgpt to make an alphabet of countries and it gave me this:",
-        "link": "https://reddit.com/r/OpenAI/comments/1tql15p/i_asked_chatgpt_to_make_an_alphabet_of_countries/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-29T00:04:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "A fully AI generated film just screened at Cannes Market and cost $500,000 to make",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tqhanv/a_fully_ai_generated_film_just_screened_at_cannes/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-28T21:35:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "What Happened to Switching to Stable Updates!? Its still Breaking",
-        "link": "https://reddit.com/r/openclaw/comments/1tqdnwb/what_happened_to_switching_to_stable_updates_its/",
+        "headline": "for heavy openclaw users - what would actually make a flat-rate service worth switching to",
+        "link": "https://reddit.com/r/openclaw/comments/1tqshsq/for_heavy_openclaw_users_what_would_actually_make/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-28T19:26:31+00:00",
+        "published_at": "2026-05-29T05:49:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 80
+        "viral_score": 92
       },
       {
-        "headline": "Opus 4.8 in caveman talking about the difference from 4.7 is hilarious",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tqd246/opus_48_in_caveman_talking_about_the_difference/",
+        "headline": "Anthropic's Claude will soon be vibecoding human DNA",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tqrzv0/anthropics_claude_will_soon_be_vibecoding_human/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-05-28T19:05:06+00:00",
+        "published_at": "2026-05-29T05:24:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 79
-      },
-      {
-        "headline": "Breaking News: Anthropic surpassed OpenAI as the world’s most valuable A.I. start-up, with a valuation of $900 billion.",
-        "link": "https://reddit.com/r/singularity/comments/1tqcukx/breaking_news_anthropic_surpassed_openai_as_the/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-28T18:57:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-29T04:44:58.892Z",
+    "reddit_viral_generated_at": "2026-05-29T08:52:26.287Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
