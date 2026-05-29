@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-29T22:05:38.249Z",
+    "generated_at": "2026-05-29T23:43:00.256Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "RAND studied 2,400 AI projects. Only 19.7% succeeded, and the failure pattern is almost identical every time",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1trg80g/rand_studied_2400_ai_projects_only_197_succeeded/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-29T21:27:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude does what Nintendon’t",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1trfw5f/claude_does_what_nintendont/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-29T21:14:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "1+1=? is too dangerous for Gemini",
+        "link": "https://reddit.com/r/GeminiAI/comments/1trfi8z/11_is_too_dangerous_for_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-29T21:00:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "One of agents edited its own HEARTBEAT.md and gave itself a bunch to do",
         "link": "https://reddit.com/r/openclaw/comments/1trewmp/one_of_agents_edited_its_own_heartbeatmd_and_gave/",
@@ -379,7 +406,16 @@
         "published_at": "2026-05-29T20:38:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Microsoft Threatened Legal Action Against a Security Researcher. The Security Community Pushed Back.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1trewgw/microsoft_threatened_legal_action_against_a/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-29T20:37:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Night translation BLOCKED",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-29T20:21:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Literal State of AI: 2026",
@@ -397,7 +433,7 @@
         "published_at": "2026-05-29T19:47:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "i hate that opus 4.8 is honest",
@@ -406,7 +442,7 @@
         "published_at": "2026-05-29T19:32:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "People becoming Claude wrappers",
@@ -415,7 +451,7 @@
         "published_at": "2026-05-29T18:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "securing my spot as a trusted biological pet for later",
@@ -424,50 +460,14 @@
         "published_at": "2026-05-29T17:53:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Can someone buy Claude a clock? (Discussion in post)",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tr94mu/can_someone_buy_claude_a_clock_discussion_in_post/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-29T17:28:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "The Pope released a 42,000-word document about AI this week and an Anthropic co-founder was sitting next to him",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tr8khx/the_pope_released_a_42000word_document_about_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-29T17:10:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Okay, Understood.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tr78rb/okay_understood/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-29T16:26:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Mesa optimizer doesn't consent",
-        "link": "https://reddit.com/r/aimemes/comments/1tr61qn/mesa_optimizer_doesnt_consent/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-29T15:49:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-29T22:05:38.249Z",
+    "reddit_viral_generated_at": "2026-05-29T23:43:00.256Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
