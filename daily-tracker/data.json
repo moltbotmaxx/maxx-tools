@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-30T19:42:09.740Z",
+    "generated_at": "2026-05-30T21:15:57.071Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Why use OpenClaw vs Claude Remote Control?",
-        "link": "https://reddit.com/r/openclaw/comments/1ts8vk5/why_use_openclaw_vs_claude_remote_control/",
+        "headline": "Title: I ripped out OpenClaw's default markdown memory and built a strict Node.js/Postgres API layer instead. The hallucination drop is insane.",
+        "link": "https://reddit.com/r/openclaw/comments/1ts927a/title_i_ripped_out_openclaws_default_markdown/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-30T19:21:11+00:00",
+        "published_at": "2026-05-30T19:28:32+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "I made a minimal Chrome extension that displays your remaining Gemini usage and reset countdown directly on the interface",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ts8sdz/i_made_a_minimal_chrome_extension_that_displays/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-30T19:17:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Openclaw 5.27 short report (change from 4.23)",
@@ -397,7 +406,7 @@
         "published_at": "2026-05-30T18:04:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "And you're gonna like it!",
@@ -418,56 +427,47 @@
         "viral_score": 95
       },
       {
+        "headline": "We're almost there guys. AGI Soon",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ts5gai/were_almost_there_guys_agi_soon/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-30T17:06:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "1.5 month old chat rendered useless, thanks to error codes 1076 in web app, and 13 in mobile app.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ts58ek/15_month_old_chat_rendered_useless_thanks_to/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-30T16:58:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
         "headline": "Is it just me",
         "link": "https://reddit.com/r/GeminiAI/comments/1ts4yol/is_it_just_me/",
         "subreddit": "GeminiAI",
         "published_at": "2026-05-30T16:48:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Honest feedback to Google Gemini if you're listening.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ts49rv/honest_feedback_to_google_gemini_if_youre/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-30T16:20:31+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
       },
       {
-        "headline": "Gemini can send a formatting gif now??",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ts40na/gemini_can_send_a_formatting_gif_now/",
+        "headline": "In years of using AI and 6 months of using Gemini, it is in by far the most broken state I have seen from any LLM so far",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ts4x4l/in_years_of_using_ai_and_6_months_of_using_gemini/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-05-30T16:10:26+00:00",
+        "published_at": "2026-05-30T16:46:31+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Google’s AI search is making up false information about me. How is this acceptable?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ts2vm6/googles_ai_search_is_making_up_false_information/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-30T15:24:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Is this really like this?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ts1zw5/is_this_really_like_this/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-30T14:50:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-30T19:42:09.740Z",
+    "reddit_viral_generated_at": "2026-05-30T21:15:57.071Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
