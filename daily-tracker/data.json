@@ -367,19 +367,73 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-30T04:19:02.182Z",
+    "generated_at": "2026-05-30T07:22:53.050Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "What's the best local model as of today, for openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1trovbr/whats_the_best_local_model_as_of_today_for/",
+        "headline": "Hijacking the memory core poetry and solve a trajectory problem",
+        "link": "https://reddit.com/r/openclaw/comments/1trrmqz/hijacking_the_memory_core_poetry_and_solve_a/",
         "subreddit": "openclaw",
-        "published_at": "2026-05-30T03:47:32+00:00",
+        "published_at": "2026-05-30T06:07:39+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "The Lack of Curiosity is Super Annoying",
+        "link": "https://reddit.com/r/singularity/comments/1trqt5u/the_lack_of_curiosity_is_super_annoying/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-30T05:25:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "So what was it all for in the end?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1trq2aj/so_what_was_it_all_for_in_the_end/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-30T04:47:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I thought agent memory was a storage problem. I don't think that anymore.",
+        "link": "https://reddit.com/r/openclaw/comments/1trpz1g/i_thought_agent_memory_was_a_storage_problem_i/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-30T04:42:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Careful with the new UltraCode, it's a mega token eater, and it's buggy. ~1.7 million tokens used with no output. There are no refunds for this.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1trpxfl/careful_with_the_new_ultracode_its_a_mega_token/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-30T04:40:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Out of boredom I put claude code into ultracode mode and told it to make whatever it wanted.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1troe8z/out_of_boredom_i_put_claude_code_into_ultracode/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-30T03:24:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Half a billion gone",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1trob4h/half_a_billion_gone/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-30T03:19:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "SOULS FOR AGENTS",
@@ -388,7 +442,7 @@
         "published_at": "2026-05-30T03:18:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Mystery company accidentally blew $500 million on Claude AI in a single month — failed to put usage limit on licenses for employees",
@@ -397,7 +451,7 @@
         "published_at": "2026-05-30T02:11:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "A fully AI generated film just screened at Cannes Market and cost $500,000 to make",
@@ -406,68 +460,14 @@
         "published_at": "2026-05-30T01:45:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Claude in 2036",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1trkg7k/claude_in_2036/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-30T00:20:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Sluts",
-        "link": "https://reddit.com/r/aimemes/comments/1trkbq7/sluts/",
-        "subreddit": "aimemes",
-        "published_at": "2026-05-30T00:15:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini 3.1 Pro just got EVEN Dumber, started a new session because my old one filled up and it can't comprehend basic stuff about my youtube channel...this is sad",
-        "link": "https://reddit.com/r/GeminiAI/comments/1trjt47/gemini_31_pro_just_got_even_dumber_started_a_new/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-29T23:52:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude does what Nintendon’t",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1trfw5f/claude_does_what_nintendont/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-29T21:14:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "1+1=? is too dangerous for Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1trfi8z/11_is_too_dangerous_for_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-29T21:00:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "One of agents edited its own HEARTBEAT.md and gave itself a bunch to do",
-        "link": "https://reddit.com/r/openclaw/comments/1trewmp/one_of_agents_edited_its_own_heartbeatmd_and_gave/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-29T20:38:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-30T04:19:02.182Z",
+    "reddit_viral_generated_at": "2026-05-30T07:22:53.050Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
