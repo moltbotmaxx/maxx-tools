@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-31T14:56:54.816Z",
+    "generated_at": "2026-05-31T16:36:50.519Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "This is where we‘re heading or already are",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tszajl/this_is_where_were_heading_or_already_are/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-05-31T16:01:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Asian woman beating up UFC fighter",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tsymk0/asian_woman_beating_up_ufc_fighter/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-31T15:36:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "That’s how coding feels these days.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tsxz2g/thats_how_coding_feels_these_days/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-31T15:11:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I made a plugin that turns your projects into clickable dock apps",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tsx85s/i_made_a_plugin_that_turns_your_projects_into/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-05-31T14:43:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "*multi-billion company btw",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tsw8f9/multibillion_company_btw/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-31T14:03:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "slap an ai watermark on the repo and call it plausible deniability lol",
         "link": "https://reddit.com/r/ChatGPT/comments/1tstjfk/slap_an_ai_watermark_on_the_repo_and_call_it/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-31T12:06:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "Openclaws, an accessory for openclaw agents",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-31T11:35:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 89
       },
       {
         "headline": "What non-AI or non-intelligence enhancement technologies are you most excited about?",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-31T11:30:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
       },
       {
         "headline": "Can AI help reconstruct history without turning it into slop?",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-31T11:23:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 88
       },
       {
         "headline": "Hmmmmmm",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-31T09:48:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "this one hurt a little",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tsqq8u/this_one_hurt_a_little/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T09:38:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Number 1 hype man❤️😭",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tsonw7/number_1_hype_man/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T07:38:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "What’s the most impressive thing you’ve automated with OpenClaw so far?",
-        "link": "https://reddit.com/r/openclaw/comments/1tsonqu/whats_the_most_impressive_thing_youve_automated/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-31T07:38:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "You can share your subscription with 5 people and no one is talking about it",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tso2sr/you_can_share_your_subscription_with_5_people_and/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-31T07:05:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Open-weights VLA hits 80%+ task progress on 4 of 17 real-robot tasks with zero fine-tuning. Demo reel attached",
-        "link": "https://reddit.com/r/singularity/comments/1tsnrkh/openweights_vla_hits_80_task_progress_on_4_of_17/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-31T06:48:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-31T14:56:54.816Z",
+    "reddit_viral_generated_at": "2026-05-31T16:36:50.519Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
