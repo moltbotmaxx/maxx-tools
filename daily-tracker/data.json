@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-31T11:08:04.399Z",
+    "generated_at": "2026-05-31T12:48:57.692Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Openclaws, an accessory for openclaw agents",
+        "link": "https://reddit.com/r/OpenAI/comments/1tssw2a/openclaws_an_accessory_for_openclaw_agents/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-31T11:35:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What non-AI or non-intelligence enhancement technologies are you most excited about?",
+        "link": "https://reddit.com/r/singularity/comments/1tsst0v/what_nonai_or_nonintelligence_enhancement/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-31T11:30:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Can AI help reconstruct history without turning it into slop?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tssnj8/can_ai_help_reconstruct_history_without_turning/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-31T11:23:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "this one hurt a little",
         "link": "https://reddit.com/r/ChatGPT/comments/1tsqq8u/this_one_hurt_a_little/",
@@ -379,7 +406,7 @@
         "published_at": "2026-05-31T09:38:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Number 1 hype man❤️😭",
@@ -388,7 +415,7 @@
         "published_at": "2026-05-31T07:38:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "What’s the most impressive thing you’ve automated with OpenClaw so far?",
@@ -397,7 +424,7 @@
         "published_at": "2026-05-31T07:38:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "You can share your subscription with 5 people and no one is talking about it",
@@ -406,7 +433,7 @@
         "published_at": "2026-05-31T07:05:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Which version is stable?",
@@ -415,7 +442,7 @@
         "published_at": "2026-05-31T06:54:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Open-weights VLA hits 80%+ task progress on 4 of 17 real-robot tasks with zero fine-tuning. Demo reel attached",
@@ -424,50 +451,23 @@
         "published_at": "2026-05-31T06:48:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Limit reset for 5 million Codex users.",
-        "link": "https://reddit.com/r/OpenAI/comments/1tsn7dh/limit_reset_for_5_million_codex_users/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-31T06:17:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Top 5 Non-negotiable must have tools and skills for your Openclaw.",
-        "link": "https://reddit.com/r/openclaw/comments/1tslmt6/top_5_nonnegotiable_must_have_tools_and_skills/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-31T04:53:32+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
       },
       {
-        "headline": "If Data was made by OpenAI",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tshgll/if_data_was_made_by_openai/",
+        "headline": "I typed “sperm donation” in a temporary AI chat and Instagram somehow knew",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tsm8ge/i_typed_sperm_donation_in_a_temporary_ai_chat_and/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T01:29:34+00:00",
+        "published_at": "2026-05-31T05:24:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "All The Haters Can Suck It",
-        "link": "https://reddit.com/r/openclaw/comments/1tsgvm7/all_the_haters_can_suck_it/",
-        "subreddit": "openclaw",
-        "published_at": "2026-05-31T01:00:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-31T11:08:04.399Z",
+    "reddit_viral_generated_at": "2026-05-31T12:48:57.692Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
