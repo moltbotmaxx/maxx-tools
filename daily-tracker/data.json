@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-31T16:36:50.519Z",
+    "generated_at": "2026-05-31T18:17:38.371Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "PSA: OpenClaw 5.28 Codex plugin broken after upgrade — fix inside",
+        "link": "https://reddit.com/r/openclaw/comments/1tt1epr/psa_openclaw_528_codex_plugin_broken_after/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-31T17:21:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Real post from /antiai",
+        "link": "https://reddit.com/r/singularity/comments/1tt17zp/real_post_from_antiai/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-31T17:14:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "My dream Odyssey fancast",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tszweo/my_dream_odyssey_fancast/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-31T16:24:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "People have asked to share prompts when complaining about usage limits, so here is one that used 5% of usage with a single, simple question in a new chat.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tszkqt/people_have_asked_to_share_prompts_when/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-31T16:12:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "This is where we‘re heading or already are",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1tszajl/this_is_where_were_heading_or_already_are/",
@@ -379,7 +415,7 @@
         "published_at": "2026-05-31T16:01:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Asian woman beating up UFC fighter",
@@ -388,7 +424,7 @@
         "published_at": "2026-05-31T15:36:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "That’s how coding feels these days.",
@@ -397,7 +433,16 @@
         "published_at": "2026-05-31T15:11:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
+      },
+      {
+        "headline": "That’s how programming feels nowadays.",
+        "link": "https://reddit.com/r/OpenAI/comments/1tsxyfv/thats_how_programming_feels_nowadays/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-31T15:11:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "I made a plugin that turns your projects into clickable dock apps",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-31T14:43:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "*multi-billion company btw",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-31T14:03:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "slap an ai watermark on the repo and call it plausible deniability lol",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tstjfk/slap_an_ai_watermark_on_the_repo_and_call_it/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T12:06:27+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "Openclaws, an accessory for openclaw agents",
-        "link": "https://reddit.com/r/OpenAI/comments/1tssw2a/openclaws_an_accessory_for_openclaw_agents/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-05-31T11:35:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "What non-AI or non-intelligence enhancement technologies are you most excited about?",
-        "link": "https://reddit.com/r/singularity/comments/1tsst0v/what_nonai_or_nonintelligence_enhancement/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-31T11:30:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Can AI help reconstruct history without turning it into slop?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tssnj8/can_ai_help_reconstruct_history_without_turning/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T11:23:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Hmmmmmm",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tsqwb8/hmmmmmm/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T09:48:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-31T16:36:50.519Z",
+    "reddit_viral_generated_at": "2026-05-31T18:17:38.371Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
