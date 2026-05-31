@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-31T22:16:20.367Z",
+    "generated_at": "2026-05-31T23:31:43.050Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "My Dream Odyssey Fancast",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tt8m07/my_dream_odyssey_fancast/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-05-31T21:51:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Google AI Ultra Usage Limits",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tt78za/google_ai_ultra_usage_limits/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-05-31T20:57:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "A loyal Gemini subscriber for a year, completely blocked by a game-breaking Project/Notebook bug",
         "link": "https://reddit.com/r/GeminiAI/comments/1tt6n4p/a_loyal_gemini_subscriber_for_a_year_completely/",
@@ -379,7 +397,7 @@
         "published_at": "2026-05-31T20:34:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I've figured out how to generate with nano banana at infinite resolution",
@@ -388,7 +406,7 @@
         "published_at": "2026-05-31T19:58:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "My Dream Odyssey Fancast",
@@ -397,7 +415,7 @@
         "published_at": "2026-05-31T19:56:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Differences Between Opus 4.7 and Opus 4.8 on MineBench",
@@ -406,7 +424,7 @@
         "published_at": "2026-05-31T18:34:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Differences Between Opus 4.7 and Opus 4.8 on MineBench",
@@ -415,7 +433,7 @@
         "published_at": "2026-05-31T18:29:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "PSA: OpenClaw 5.28 Codex plugin broken after upgrade — fix inside",
@@ -424,7 +442,7 @@
         "published_at": "2026-05-31T17:21:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Real post from /antiai",
@@ -433,7 +451,7 @@
         "published_at": "2026-05-31T17:14:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "My dream Odyssey fancast",
@@ -442,32 +460,14 @@
         "published_at": "2026-05-31T16:24:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "People have asked to share prompts when complaining about usage limits, so here is one that used 5% of usage with a single, simple question in a new chat.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tszkqt/people_have_asked_to_share_prompts_when/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-31T16:12:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "This is where we‘re heading or already are",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tszajl/this_is_where_were_heading_or_already_are/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-05-31T16:01:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-31T22:16:20.367Z",
+    "reddit_viral_generated_at": "2026-05-31T23:31:43.050Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
