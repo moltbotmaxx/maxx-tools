@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-05-31T04:54:39.219Z",
+    "generated_at": "2026-05-31T08:23:13.156Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Which version is stable?",
+        "link": "https://reddit.com/r/openclaw/comments/1tsnvbz/which_version_is_stable/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-31T06:54:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Open-weights VLA hits 80%+ task progress on 4 of 17 real-robot tasks with zero fine-tuning. Demo reel attached",
+        "link": "https://reddit.com/r/singularity/comments/1tsnrkh/openweights_vla_hits_80_task_progress_on_4_of_17/",
+        "subreddit": "singularity",
+        "published_at": "2026-05-31T06:48:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Limit reset for 5 million Codex users.",
+        "link": "https://reddit.com/r/OpenAI/comments/1tsn7dh/limit_reset_for_5_million_codex_users/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-31T06:17:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Top 5 Non-negotiable must have tools and skills for your Openclaw.",
+        "link": "https://reddit.com/r/openclaw/comments/1tslmt6/top_5_nonnegotiable_must_have_tools_and_skills/",
+        "subreddit": "openclaw",
+        "published_at": "2026-05-31T04:53:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Is there any way I can fix this? Chatgpt has been pretty decent for research and today its doing this bs. 25 words are we serious",
+        "link": "https://reddit.com/r/OpenAI/comments/1tsl7vv/is_there_any_way_i_can_fix_this_chatgpt_has_been/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-05-31T04:31:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "If Data was made by OpenAI",
         "link": "https://reddit.com/r/ChatGPT/comments/1tshgll/if_data_was_made_by_openai/",
@@ -379,7 +424,7 @@
         "published_at": "2026-05-31T01:29:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 87
       },
       {
         "headline": "All The Haters Can Suck It",
@@ -388,7 +433,7 @@
         "published_at": "2026-05-31T01:00:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 86
       },
       {
         "headline": "'The Intelligent Age Is Replacing Our Cognitive Capabilities With AI': WEF Founder Klaus Schwab",
@@ -397,7 +442,7 @@
         "published_at": "2026-05-31T00:13:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 84
       },
       {
         "headline": "Any hope for things to get back to normal?",
@@ -406,7 +451,7 @@
         "published_at": "2026-05-30T23:59:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 83
       },
       {
         "headline": "Y2K",
@@ -415,59 +460,14 @@
         "published_at": "2026-05-30T23:10:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "alright bro 🥀️ chatgpt would've been glazing me",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tse5x4/alright_bro_chatgpt_wouldve_been_glazing_me/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-05-30T22:57:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I asked ChatGPT to create a projected image of what it thinks I look like as an adult based on this childhood photo. Why does AI me look more like me than real me does? 😭",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tsddyz/i_asked_chatgpt_to_create_a_projected_image_of/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-30T22:23:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Most unhinged glitch I found in AI",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tsd5wg/most_unhinged_glitch_i_found_in_ai/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-30T22:13:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Rivian Software Chief Says Apple CarPlay and Android Auto Are Redundant in the World of AI",
-        "link": "https://reddit.com/r/singularity/comments/1tsbviv/rivian_software_chief_says_apple_carplay_and/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-30T21:20:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Peek technology evolution",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tsbrtr/peek_technology_evolution/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-30T21:16:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-05-31T04:54:39.219Z",
+    "reddit_viral_generated_at": "2026-05-31T08:23:13.156Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
