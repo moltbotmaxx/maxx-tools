@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-01T05:18:11.834Z",
+    "generated_at": "2026-06-01T10:33:22.172Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Enough is enough",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ttl99c/enough_is_enough/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-01T07:52:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The takeover was already complete",
+        "link": "https://reddit.com/r/aimemes/comments/1ttl2f2/the_takeover_was_already_complete/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-01T07:41:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Give me the most random Ai pictures and videos",
+        "link": "https://reddit.com/r/OpenAI/comments/1ttks1z/give_me_the_most_random_ai_pictures_and_videos/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-01T07:24:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "chatgpt is officially on my daily gratitude list...",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ttklwb/chatgpt_is_officially_on_my_daily_gratitude_list/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-01T07:15:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Is OpenClaw suitable for my workflow development workflow",
+        "link": "https://reddit.com/r/openclaw/comments/1ttk259/is_openclaw_suitable_for_my_workflow_development/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-01T06:45:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "WTF HAPPENING TO GEMINI?!!!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tthchq/wtf_happening_to_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-01T04:23:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "Why Does It Spit Out Chinese Out Of Nowhere",
+        "link": "https://reddit.com/r/OpenAI/comments/1tthauj/why_does_it_spit_out_chinese_out_of_nowhere/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-01T04:21:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "this chart felt shady, so I fixed it (what I found will shock you!)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ttguup/this_chart_felt_shady_so_i_fixed_it_what_i_found/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-01T04:00:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "break the damn cycle",
         "link": "https://reddit.com/r/ChatGPT/comments/1ttgb7j/break_the_damn_cycle/",
@@ -379,95 +451,23 @@
         "published_at": "2026-06-01T03:33:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 89
       },
       {
-        "headline": "Is OpenClaw the right choice if I want an agent that DOESNT modify my existing skills?",
-        "link": "https://reddit.com/r/openclaw/comments/1ttf2af/is_openclaw_the_right_choice_if_i_want_an_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-01T02:35:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Another kick in the sack for Gemini Pro Subscribers",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tte2di/another_kick_in_the_sack_for_gemini_pro/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-01T01:49:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "A SF house just went on sale priced in Anthropic stocks",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ttdcnn/a_sf_house_just_went_on_sale_priced_in_anthropic/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-01T01:16:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Back in 2002 I was crazy about yu gi oh but my mother didn't had the money to buy the cards, me and my brothers decided to make our own deck, here are some of the cards that I used in chat gpt to make it look like real published cards",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ttc8k5/back_in_2002_i_was_crazy_about_yu_gi_oh_but_my/",
+        "headline": "My Greek gods fan casting",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ttfjds/my_greek_gods_fan_casting/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-06-01T00:25:38+00:00",
+        "published_at": "2026-06-01T02:57:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "What if modern tech giants made Daleks?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ttau1y/what_if_modern_tech_giants_made_daleks/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T23:24:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "My Dream Odyssey Fancast",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tt8m07/my_dream_odyssey_fancast/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T21:51:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "I've figured out how to generate with nano banana at infinite resolution",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tt5p1o/ive_figured_out_how_to_generate_with_nano_banana/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-05-31T19:58:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "My Dream Odyssey Fancast",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tt5mxy/my_dream_odyssey_fancast/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-05-31T19:56:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Differences Between Opus 4.7 and Opus 4.8 on MineBench",
-        "link": "https://reddit.com/r/singularity/comments/1tt3f2m/differences_between_opus_47_and_opus_48_on/",
-        "subreddit": "singularity",
-        "published_at": "2026-05-31T18:34:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-01T05:18:11.834Z",
+    "reddit_viral_generated_at": "2026-06-01T10:33:22.172Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
