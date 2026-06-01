@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-01T21:05:17.123Z",
+    "generated_at": "2026-06-01T23:11:30.116Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Are agentic systems cost effective?",
+        "link": "https://reddit.com/r/openclaw/comments/1tu7fhf/are_agentic_systems_cost_effective/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-01T22:05:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "It's 2026...where are all the AI NPCs?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tu79m4/its_2026where_are_all_the_ai_npcs/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-01T21:59:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OC Problems.. Im freaking out..",
+        "link": "https://reddit.com/r/openclaw/comments/1tu70hj/oc_problems_im_freaking_out/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-01T21:50:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "what is happening to ai",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tu6273/what_is_happening_to_ai/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-01T21:15:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Security robots ready to patrol AT&T Stadium during the FIFA World Cup 2026 in Arlington, Texas",
+        "link": "https://reddit.com/r/singularity/comments/1tu5wse/security_robots_ready_to_patrol_att_stadium/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-01T21:10:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "How the hell do you keep Imsg running when fast user switching accounts on macOS? Wasn't an issue with BlueBubbles.",
+        "link": "https://reddit.com/r/openclaw/comments/1tu5si8/how_the_hell_do_you_keep_imsg_running_when_fast/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-01T21:05:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Error: Codex stopped before confirming the turn was complete.",
         "link": "https://reddit.com/r/openclaw/comments/1tu5kv2/error_codex_stopped_before_confirming_the_turn/",
@@ -379,16 +433,16 @@
         "published_at": "2026-06-01T20:58:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
-        "headline": "Switching from Openclaw to Claude Code, what's the best method?",
-        "link": "https://reddit.com/r/openclaw/comments/1tu53xv/switching_from_openclaw_to_claude_code_whats_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-01T20:41:22+00:00",
+        "headline": "Sam Altman is quietly backing a stealth startup that's building software for robots and cars",
+        "link": "https://reddit.com/r/OpenAI/comments/1tu4su8/sam_altman_is_quietly_backing_a_stealth_startup/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-01T20:30:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "How the gang be hearing you (I made the image by ChatGPT)",
@@ -397,77 +451,23 @@
         "published_at": "2026-06-01T20:24:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
-        "headline": "Shared OC For Business partners",
-        "link": "https://reddit.com/r/openclaw/comments/1tu3v9z/shared_oc_for_business_partners/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-01T19:59:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Claude Opus 4.8 scores over 1% on ARC-AGI 3 !!",
-        "link": "https://reddit.com/r/singularity/comments/1tu2l1n/claude_opus_48_scores_over_1_on_arcagi_3/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-01T19:14:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Qwen 3.7 Plus is out",
-        "link": "https://reddit.com/r/singularity/comments/1tu0dnt/qwen_37_plus_is_out/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-01T18:03:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Why Your Repository Shouldn't Be Your Memory",
-        "link": "https://reddit.com/r/openclaw/comments/1ttzt5i/why_your_repository_shouldnt_be_your_memory/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-01T17:44:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GeminiAI is not following my instructions.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ttzsal/geminiai_is_not_following_my_instructions/",
+        "headline": "Video generation request",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tu1i3l/video_generation_request/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-06-01T17:44:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Thesis: selling LLMs as general knowledge bases is literally corporate fraud and we should not be tolerating this.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ttzmak/thesis_selling_llms_as_general_knowledge_bases_is/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-01T17:38:40+00:00",
+        "published_at": "2026-06-01T18:38:43+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "I dont feel so good guys",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tty482/i_dont_feel_so_good_guys/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-01T16:49:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-01T21:05:17.123Z",
+    "reddit_viral_generated_at": "2026-06-01T23:11:30.116Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
