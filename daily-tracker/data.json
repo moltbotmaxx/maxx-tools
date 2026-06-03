@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-03T17:19:35.748Z",
+    "generated_at": "2026-06-03T20:31:18.705Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What does this update mean? is AI video back ?",
+        "link": "https://reddit.com/r/OpenAI/comments/1tvzlgf/what_does_this_update_mean_is_ai_video_back/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-03T19:15:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "In 2007, one episode of Backyardigans was banned for minors. Generate a screenshot of that scene showing why it was banned",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tvxj2e/in_2007_one_episode_of_backyardigans_was_banned/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-03T18:07:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Discord Meetup",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tvwrg5/discord_meetup/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-03T17:41:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Gemini went from my backup AI to my daily driver - here's the 3 things that finally flipped me",
         "link": "https://reddit.com/r/GeminiAI/comments/1tvveve/gemini_went_from_my_backup_ai_to_my_daily_driver/",
@@ -379,25 +406,34 @@
         "published_at": "2026-06-03T16:56:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
-        "headline": "Cause for Concern? Mac Storage",
-        "link": "https://reddit.com/r/openclaw/comments/1tvvdrh/cause_for_concern_mac_storage/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-03T16:55:27+00:00",
+        "headline": "Top AI conference uses AI detector to reject papers for allegedly being written by AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tvve4q/top_ai_conference_uses_ai_detector_to_reject/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-03T16:55:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
-        "headline": "I made a small skill for turning OpenClaw outputs into links",
-        "link": "https://reddit.com/r/openclaw/comments/1tvv51b/i_made_a_small_skill_for_turning_openclaw_outputs/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-03T16:47:23+00:00",
+        "headline": "“Create a pic of the average Reddit mod”",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tvvck2/create_a_pic_of_the_average_reddit_mod/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-03T16:54:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "Cant stop the TTS leak to Microsoft",
+        "link": "https://reddit.com/r/openclaw/comments/1tvv343/cant_stop_the_tts_leak_to_microsoft/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-03T16:45:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Should knowledge live in docs/ referenced by AGENTS.md, or be set up as skills?",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-03T16:11:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "AI Beat Law Professors At Answering Questions, Study Finds—And It Wasn’t Close",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-03T15:58:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Alphabet to raise $84.75 billion in upsized equity offering to fund AI ambitions",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-03T15:57:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "GUYS WHAT IS THIS ????",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tvsriv/guys_what_is_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-03T15:27:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Regulating the trivial while ignoring the existential",
-        "link": "https://reddit.com/r/aimemes/comments/1tvspuy/regulating_the_trivial_while_ignoring_the/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-03T15:25:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "I can't edit images",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tvple0/i_cant_edit_images/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-03T13:36:28+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "The Meta Instagram chatbot hack is a textbook example of why LLM-wrapper agent architectures are structurally unsafe.",
-        "link": "https://reddit.com/r/openclaw/comments/1tvosz9/the_meta_instagram_chatbot_hack_is_a_textbook/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-03T13:06:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-03T17:19:35.748Z",
+    "reddit_viral_generated_at": "2026-06-03T20:31:18.705Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
