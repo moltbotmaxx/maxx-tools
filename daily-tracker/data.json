@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-02T23:10:11.179Z",
+    "generated_at": "2026-06-03T01:48:48.454Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "imagine if we had LLMs in the 80s...",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tv9z1l/imagine_if_we_had_llms_in_the_80s/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-03T00:58:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "should I update?",
+        "link": "https://reddit.com/r/openclaw/comments/1tv8ejp/should_i_update/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-02T23:50:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "AI is becoming the opium of the people.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tv84op/ai_is_becoming_the_opium_of_the_people/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-02T23:38:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "YOLO mode is dead. Auto mode is here. Here's the difference. #openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1tv7qeq/yolo_mode_is_dead_auto_mode_is_here_heres_the/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-02T23:22:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I asked ChatGPT to generate an image of the afterlife -",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tv6hch/i_asked_chatgpt_to_generate_an_image_of_the/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-02T22:31:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Swapped ChatGPT for Claude while studying for exams, the difference is crazy",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tv5yje/swapped_chatgpt_for_claude_while_studying_for/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-02T22:12:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "i asked chatgpt to generate an image of average 4chan users meetup and umm.....",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tv5tqv/i_asked_chatgpt_to_generate_an_image_of_average/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-02T22:07:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "So he learned AI governance from AI?",
         "link": "https://reddit.com/r/openclaw/comments/1tv54ql/so_he_learned_ai_governance_from_ai/",
@@ -379,7 +442,7 @@
         "published_at": "2026-06-02T21:41:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "It might definitely feel that way, but it has to be tightened, reframed, or rephrased because the logic collapsed when tested. As an AI, I don't have feelings, and I'm always right, but you have feelings and are always wrong.",
@@ -388,7 +451,7 @@
         "published_at": "2026-06-02T21:26:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "DeepRobotics unveils DR02, with significant improvements in load‑carrying ability and mobility across complex terrain",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-02T20:08:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Another 1263635 startup’s destroyed!",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tv1yj0/another_1263635_startups_destroyed/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-02T19:46:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "We need new controls on government surveillance",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tv055p/we_need_new_controls_on_government_surveillance/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-02T18:43:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Gemini Spark is the most impressive and terrifying AI experience I’ve had yet",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tv03wo/gemini_spark_is_the_most_impressive_and/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-02T18:42:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "5 Minutes left in the Current Claude Session",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tuza8q/5_minutes_left_in_the_current_claude_session/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-02T18:14:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Is Claude Mr. Meeseeks?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tux5id/is_claude_mr_meeseeks/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-02T17:03:02+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Sama quoting the Bible. 2026 is weird",
-        "link": "https://reddit.com/r/OpenAI/comments/1tuwycb/sama_quoting_the_bible_2026_is_weird/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-02T16:56:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Amazon Shuts Down Internal AI Leaderboard After Employees Cheated",
-        "link": "https://reddit.com/r/OpenAI/comments/1tuwous/amazon_shuts_down_internal_ai_leaderboard_after/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-02T16:47:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-02T23:10:11.179Z",
+    "reddit_viral_generated_at": "2026-06-03T01:48:48.454Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
