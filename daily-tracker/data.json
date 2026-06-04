@@ -367,37 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-04T20:25:54.639Z",
+    "generated_at": "2026-06-04T22:47:28.757Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "OpenClaw Triangle Meetup #4 - June 25 in Cary",
-        "link": "https://reddit.com/r/openclaw/comments/1twz59l/openclaw_triangle_meetup_4_june_25_in_cary/",
+        "headline": "Agent Takes 1+ Minute to Respond Even to a Simple Greeting (GPT-4o via MS Foundry)",
+        "link": "https://reddit.com/r/openclaw/comments/1tx2ql3/agent_takes_1_minute_to_respond_even_to_a_simple/",
         "subreddit": "openclaw",
-        "published_at": "2026-06-04T20:13:46+00:00",
+        "published_at": "2026-06-04T22:30:32+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Openclaw 5.28 request always times out",
-        "link": "https://reddit.com/r/openclaw/comments/1twyvuz/openclaw_528_request_always_times_out/",
+        "headline": "Designing a team of agents",
+        "link": "https://reddit.com/r/openclaw/comments/1tx1ida/designing_a_team_of_agents/",
         "subreddit": "openclaw",
-        "published_at": "2026-06-04T20:04:00+00:00",
+        "published_at": "2026-06-04T21:41:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
-        "headline": "Please extend this image of me to a full body shot as I struggle to change my oil",
-        "link": "https://reddit.com/r/ChatGPT/comments/1twyeyt/please_extend_this_image_of_me_to_a_full_body/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-04T19:47:13+00:00",
+        "headline": "Anyone tried Gemma 4 12B for OpenClaw yet?",
+        "link": "https://reddit.com/r/openclaw/comments/1tx0ad3/anyone_tried_gemma_4_12b_for_openclaw_yet/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-04T20:56:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "When AI builds itself",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tx09dv/when_ai_builds_itself/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-04T20:55:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Mythos can improve speed of training code 52x (compared to human 4x at 4-8hrs)",
@@ -406,7 +415,7 @@
         "published_at": "2026-06-04T19:37:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "OpenAI gives ChatGPT a new dreaming memory system to retain preferences across conversations",
@@ -415,16 +424,7 @@
         "published_at": "2026-06-04T18:40:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Social Media Agent help?",
-        "link": "https://reddit.com/r/openclaw/comments/1twvrya/social_media_agent_help/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-04T18:14:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "$2.5T in AI spending this year. 95% produces zero P&L impact.",
@@ -433,7 +433,16 @@
         "published_at": "2026-06-04T17:42:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
+      },
+      {
+        "headline": "Canada's Prime Minister Mark Carney launches AI for All: Canada’s national artificial intelligence strategy.",
+        "link": "https://reddit.com/r/singularity/comments/1twubff/canadas_prime_minister_mark_carney_launches_ai/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-04T17:23:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "Leaked Mythos SVG",
@@ -442,7 +451,7 @@
         "published_at": "2026-06-04T17:23:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Anthropic - Our internal data shows Claude is accelerating AI development—a possible path to recursive self-improvement, or AI autonomously building a more capable successor.",
@@ -451,23 +460,14 @@
         "published_at": "2026-06-04T16:24:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Thank you Gemini you are the best AI assistant ever created by Google",
-        "link": "https://reddit.com/r/GeminiAI/comments/1twslf1/thank_you_gemini_you_are_the_best_ai_assistant/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-04T16:23:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-04T20:25:54.639Z",
+    "reddit_viral_generated_at": "2026-06-04T22:47:28.757Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
