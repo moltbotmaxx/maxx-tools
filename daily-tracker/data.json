@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-04T10:45:03.056Z",
+    "generated_at": "2026-06-04T14:10:27.464Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam Altman, Dario Amodei, and Demis Hassabis have signed a joint open letter calling on Congress to mandate screening of synthetic nucleic acid orders",
+        "link": "https://reddit.com/r/singularity/comments/1two85g/sam_altman_dario_amodei_and_demis_hassabis_have/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-04T13:48:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "My Claw just involved itself in a random group chat 😅",
+        "link": "https://reddit.com/r/openclaw/comments/1twml9y/my_claw_just_involved_itself_in_a_random_group/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-04T12:44:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Generate a screenshot of a Windows 7 desktop in the early 2010s",
+        "link": "https://reddit.com/r/ChatGPT/comments/1twlqa1/generate_a_screenshot_of_a_windows_7_desktop_in/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-04T12:07:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Newly released Wuji Hand 2 at ICRA2026",
+        "link": "https://reddit.com/r/singularity/comments/1twljkg/newly_released_wuji_hand_2_at_icra2026/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-04T12:00:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Some tips to avoid hitting the limits",
         "link": "https://reddit.com/r/GeminiAI/comments/1twj4pe/some_tips_to_avoid_hitting_the_limits/",
@@ -379,7 +415,7 @@
         "published_at": "2026-06-04T10:00:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "Robot girlfriend logic 101",
@@ -388,7 +424,7 @@
         "published_at": "2026-06-04T07:54:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "Sam Altman: Now, AI costs are \"a huge issue\"",
@@ -397,34 +433,7 @@
         "published_at": "2026-06-04T07:29:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Qwen3.5 4b not working with openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1twgg2q/qwen35_4b_not_working_with_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-04T07:27:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Lost a chat.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1twg1yu/lost_a_chat/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-04T07:05:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "UK MP Sues Elon Musk's xAI Over Deepfakes, Setting Up Landmark Test of AI Accountability",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1twfttm/uk_mp_sues_elon_musks_xai_over_deepfakes_setting/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-04T06:52:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 86
       },
       {
         "headline": "Codex just reset its usage limit for paid plan users",
@@ -433,7 +442,7 @@
         "published_at": "2026-06-04T06:28:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 83
       },
       {
         "headline": "AI data centres may use as much electricity as 1.3 billion people by 2030.",
@@ -442,7 +451,7 @@
         "published_at": "2026-06-04T06:09:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 82
       },
       {
         "headline": "This is what new coders do now a days",
@@ -451,23 +460,14 @@
         "published_at": "2026-06-04T05:51:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "How can we reduce costs?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1twdx8k/how_can_we_reduce_costs/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-04T05:10:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-04T10:45:03.056Z",
+    "reddit_viral_generated_at": "2026-06-04T14:10:27.464Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
