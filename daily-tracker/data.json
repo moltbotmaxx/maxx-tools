@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-05T16:43:11.281Z",
+    "generated_at": "2026-06-05T19:11:12.161Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "We cooked",
+        "link": "https://reddit.com/r/aimemes/comments/1txqzts/we_cooked/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-05T17:08:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Hi Reddit, I posted my Build Your Own LLM workshop which encourages Claude use for coding exercises",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1txqc8g/hi_reddit_i_posted_my_build_your_own_llm_workshop/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-05T16:44:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Hi Reddit, I posted my Build Your Own LLM workshop to Youtube teaching how to rebuild OpenAI's GPT2-style Transformer",
+        "link": "https://reddit.com/r/OpenAI/comments/1txq17e/hi_reddit_i_posted_my_build_your_own_llm_workshop/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-05T16:33:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Google's quantization aware trained Gemma checkpoints enabling mobile device inference just dropped on HF",
+        "link": "https://reddit.com/r/singularity/comments/1txq0o2/googles_quantization_aware_trained_gemma/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-05T16:33:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Which AI Models are cheap and worth it?",
         "link": "https://reddit.com/r/openclaw/comments/1txo5cu/which_ai_models_are_cheap_and_worth_it/",
@@ -379,7 +415,7 @@
         "published_at": "2026-06-05T15:26:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "I asked ChatGPT to create me a prompt to replicate Friends but if they were recording it in 2026. This is the result. En....joy?",
@@ -388,7 +424,7 @@
         "published_at": "2026-06-05T14:13:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "do you hate it too ?",
@@ -397,7 +433,7 @@
         "published_at": "2026-06-05T14:11:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Let me in... but make it SFW",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-05T14:01:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Is the 1 Million token context window a lie?",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-05T13:53:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "The Pope’s new AI manifesto is a massive pitch for Open Source and Local Models",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-05T13:47:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Google has released a new app.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txksbg/google_has_released_a_new_app/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T13:19:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Unitree G1 carrying a load while climbing",
-        "link": "https://reddit.com/r/singularity/comments/1txkrob/unitree_g1_carrying_a_load_while_climbing/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-05T13:18:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I’ve built 4 iOS apps with Claude. 5 more in progress. Zero users. Zero revenue. Let me save you some time.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1txkn86/ive_built_4_ios_apps_with_claude_5_more_in/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-05T13:13:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Qwen 3.5 122B MoE OC on a single 3090 at 35 t/s — full local stack breakdown",
-        "link": "https://reddit.com/r/openclaw/comments/1txkfdv/qwen_35_122b_moe_oc_on_a_single_3090_at_35_ts/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-05T13:04:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-05T16:43:11.281Z",
+    "reddit_viral_generated_at": "2026-06-05T19:11:12.161Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
