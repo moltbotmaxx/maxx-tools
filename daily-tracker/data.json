@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-05T20:57:10.929Z",
+    "generated_at": "2026-06-05T22:36:14.358Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Why shouldn't we run thinking mode?",
+        "link": "https://reddit.com/r/openclaw/comments/1txz4sz/why_shouldnt_we_run_thinking_mode/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-05T22:11:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Cookin",
+        "link": "https://reddit.com/r/aimemes/comments/1txxwax/cookin/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-05T21:21:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Mythos Minecraft Clone with functional multiplayer:",
         "link": "https://reddit.com/r/singularity/comments/1txw95k/mythos_minecraft_clone_with_functional_multiplayer/",
@@ -379,7 +397,7 @@
         "published_at": "2026-06-05T20:19:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Google has entered a $920 million monthly cloud compute deal with SpaceX",
@@ -388,7 +406,7 @@
         "published_at": "2026-06-05T19:47:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "How come there's absolutely ZERO leaks from Gemini .5 Pro?",
@@ -397,7 +415,7 @@
         "published_at": "2026-06-05T18:50:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "AI Voice Cloning Scams Are Now Draining As Much As $635,000 From Their Victims After Just A 5-Second Audio Sample From A Loved One",
@@ -406,7 +424,7 @@
         "published_at": "2026-06-05T18:50:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "wtf is going on with image generation??",
@@ -415,7 +433,7 @@
         "published_at": "2026-06-05T18:30:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "What will you do? Pending June 15 Claude Subscription Changes.",
@@ -424,7 +442,7 @@
         "published_at": "2026-06-05T18:18:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "I asked it to draw the Mona Lisa as a pokemon. Was not disapointed",
@@ -433,7 +451,7 @@
         "published_at": "2026-06-05T18:17:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "ThiS CoNveRsaTioN iS beComINg unSAfe",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-05T17:32:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic employees are fucking depressed",
-        "link": "https://reddit.com/r/OpenAI/comments/1txrh7z/anthropic_employees_are_fucking_depressed/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-05T17:24:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "We cooked",
-        "link": "https://reddit.com/r/aimemes/comments/1txqzts/we_cooked/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-05T17:08:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-05T20:57:10.929Z",
+    "reddit_viral_generated_at": "2026-06-05T22:36:14.358Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
