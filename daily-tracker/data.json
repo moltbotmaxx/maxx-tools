@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-05T10:55:12.673Z",
+    "generated_at": "2026-06-05T14:03:33.648Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Let me in... but make it SFW",
+        "link": "https://reddit.com/r/aimemes/comments/1txltu5/let_me_in_but_make_it_sfw/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-05T14:01:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The Pope’s new AI manifesto is a massive pitch for Open Source and Local Models",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1txlh2j/the_popes_new_ai_manifesto_is_a_massive_pitch_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-05T13:47:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Qwen 3.5 122B MoE OC on a single 3090 at 35 t/s — full local stack breakdown",
+        "link": "https://reddit.com/r/openclaw/comments/1txkfdv/qwen_35_122b_moe_oc_on_a_single_3090_at_35_ts/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-05T13:04:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude now writes 80% of the code at Anthropic",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1txisil/claude_now_writes_80_of_the_code_at_anthropic/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-05T11:55:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Zero-Shot and Low Effort Output of Mythos",
+        "link": "https://reddit.com/r/singularity/comments/1txibw4/zeroshot_and_low_effort_output_of_mythos/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-05T11:33:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "You’ll meet many people like Raj in life. Just ignore them and move on.",
+        "link": "https://reddit.com/r/OpenAI/comments/1txi7zj/youll_meet_many_people_like_raj_in_life_just/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-05T11:28:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "You’ll meet many people like Raj in life. Just ignore them and move on.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1txi7q9/youll_meet_many_people_like_raj_in_life_just/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-05T11:27:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "A Chinese startup just launched smart glasses that run Claude Code and Codex for hands-free \"vibe coding\"",
+        "link": "https://reddit.com/r/singularity/comments/1txhxtf/a_chinese_startup_just_launched_smart_glasses/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-05T11:14:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Hands-free voice interface to OC",
         "link": "https://reddit.com/r/openclaw/comments/1txhcor/handsfree_voice_interface_to_oc/",
@@ -379,95 +451,23 @@
         "published_at": "2026-06-05T10:45:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "What a time to be alive",
-        "link": "https://reddit.com/r/singularity/comments/1txgc6x/what_a_time_to_be_alive/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-05T09:51:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Claude Design is amazing",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1txessz/claude_design_is_amazing/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-05T08:22:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Bruhhhh💀💀",
-        "link": "https://reddit.com/r/ChatGPT/comments/1txekdr/bruhhhh/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-05T08:08:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "any way to solve this issue?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txe2po/any_way_to_solve_this_issue/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T07:39:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Encyclopaedia Wankerum",
-        "link": "https://reddit.com/r/aimemes/comments/1txdqra/encyclopaedia_wankerum/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-05T07:19:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Everything you can do AI can do better. AI can do anything better than you!",
-        "link": "https://reddit.com/r/aimemes/comments/1txdo35/everything_you_can_do_ai_can_do_better_ai_can_do/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-05T07:15:15+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "Social media/reliable web scraper skills",
-        "link": "https://reddit.com/r/openclaw/comments/1txc8um/social_mediareliable_web_scraper_skills/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-05T05:55:45+00:00",
+        "headline": "AI-designed vaccine goes to human trial in world first",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1txh7km/aidesigned_vaccine_goes_to_human_trial_in_world/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-05T10:37:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Disabling gemini web search is absolutely incomprehensible. It has become unusable",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txc5x5/disabling_gemini_web_search_is_absolutely/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T05:51:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Is openclaw managed setup worth it for smaller projects?",
-        "link": "https://reddit.com/r/openclaw/comments/1txak0b/is_openclaw_managed_setup_worth_it_for_smaller/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-05T04:26:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-05T10:55:12.673Z",
+    "reddit_viral_generated_at": "2026-06-05T14:03:33.648Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
