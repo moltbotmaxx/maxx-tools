@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-05T22:36:14.358Z",
+    "generated_at": "2026-06-06T01:24:08.757Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How to get started with Open Claw.",
+        "link": "https://reddit.com/r/openclaw/comments/1ty0hfm/how_to_get_started_with_open_claw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-05T23:07:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Why shouldn't we run thinking mode?",
         "link": "https://reddit.com/r/openclaw/comments/1txz4sz/why_shouldnt_we_run_thinking_mode/",
@@ -379,7 +388,52 @@
         "published_at": "2026-06-05T22:11:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Advancements in AI have made 4th amendment restoration more urgent than ever",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1txyw7b/advancements_in_ai_have_made_4th_amendment/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-05T22:01:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I told Gemini to make a cursed car and this was the end result",
+        "link": "https://reddit.com/r/GeminiAI/comments/1txym8f/i_told_gemini_to_make_a_cursed_car_and_this_was/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-05T21:50:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "RESOLVED: OpenAI restored my account — r/ChatGPT helped an AI engineer from Pakistan get his life back. Thank you",
+        "link": "https://reddit.com/r/ChatGPT/comments/1txyhpe/resolved_openai_restored_my_account_rchatgpt/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-05T21:45:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I asked ChatGPT for a real-life version of the Mona Lisa",
+        "link": "https://reddit.com/r/ChatGPT/comments/1txy8f5/i_asked_chatgpt_for_a_reallife_version_of_the/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-05T21:35:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Claude Called Me A \"Sweet Girl\"",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1txy1m9/claude_called_me_a_sweet_girl/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-05T21:27:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Cookin",
@@ -388,16 +442,7 @@
         "published_at": "2026-06-05T21:21:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Mythos Minecraft Clone with functional multiplayer:",
-        "link": "https://reddit.com/r/singularity/comments/1txw95k/mythos_minecraft_clone_with_functional_multiplayer/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-05T20:19:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Google has entered a $920 million monthly cloud compute deal with SpaceX",
@@ -406,68 +451,23 @@
         "published_at": "2026-06-05T19:47:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "How come there's absolutely ZERO leaks from Gemini .5 Pro?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txtudg/how_come_theres_absolutely_zero_leaks_from_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T18:50:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "AI Voice Cloning Scams Are Now Draining As Much As $635,000 From Their Victims After Just A 5-Second Audio Sample From A Loved One",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1txtud8/ai_voice_cloning_scams_are_now_draining_as_much/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-05T18:50:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "wtf is going on with image generation??",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txtakd/wtf_is_going_on_with_image_generation/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T18:30:31+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "What will you do? Pending June 15 Claude Subscription Changes.",
-        "link": "https://reddit.com/r/openclaw/comments/1txsynf/what_will_you_do_pending_june_15_claude/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-05T18:18:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I asked it to draw the Mona Lisa as a pokemon. Was not disapointed",
-        "link": "https://reddit.com/r/ChatGPT/comments/1txsx68/i_asked_it_to_draw_the_mona_lisa_as_a_pokemon_was/",
+        "headline": "\"Those things are trash.\"",
+        "link": "https://reddit.com/r/ChatGPT/comments/1txv9ls/those_things_are_trash/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-06-05T18:17:04+00:00",
+        "published_at": "2026-06-05T19:42:44+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "ThiS CoNveRsaTioN iS beComINg unSAfe",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txror5/this_conversation_is_becoming_unsafe/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T17:32:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-05T22:36:14.358Z",
+    "reddit_viral_generated_at": "2026-06-06T01:24:08.757Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
