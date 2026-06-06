@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-06T08:47:06.344Z",
+    "generated_at": "2026-06-06T11:00:09.646Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anthropic is not a normal company",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tybrpv/anthropic_is_not_a_normal_company/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-06T08:36:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)",
         "link": "https://reddit.com/r/ClaudeAI/comments/1ty8f47/anthropic_just_published_a_major_update_on/",
@@ -379,7 +388,7 @@
         "published_at": "2026-06-06T05:26:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Benefits and Risks of AI at Harvard Class Day 2026",
@@ -388,7 +397,7 @@
         "published_at": "2026-06-06T04:48:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "This is for real for me and many of us",
@@ -397,7 +406,7 @@
         "published_at": "2026-06-06T04:34:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Google is an absolute joke",
@@ -406,7 +415,7 @@
         "published_at": "2026-06-06T04:22:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "RIP Gemini",
@@ -415,7 +424,7 @@
         "published_at": "2026-06-06T03:03:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 87
       },
       {
         "headline": "Killer use case",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-06T02:54:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "Republicans Claim Anti-Data Center Movement Is a Chinese Psy-Op",
@@ -433,7 +442,16 @@
         "published_at": "2026-06-06T00:26:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 81
+      },
+      {
+        "headline": "How to get started with Open Claw.",
+        "link": "https://reddit.com/r/openclaw/comments/1ty0hfm/how_to_get_started_with_open_claw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-05T23:07:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 78
       },
       {
         "headline": "I built a local PDF-to-Markdown converter so you don't have to burn LLM tokens.",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-05T22:37:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Advancements in AI have made 4th amendment restoration more urgent than ever",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1txyw7b/advancements_in_ai_have_made_4th_amendment/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-05T22:01:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "I told Gemini to make a cursed car and this was the end result",
-        "link": "https://reddit.com/r/GeminiAI/comments/1txym8f/i_told_gemini_to_make_a_cursed_car_and_this_was/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-05T21:50:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 76
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-06T08:47:06.344Z",
+    "reddit_viral_generated_at": "2026-06-06T11:00:09.646Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
