@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-06T11:00:09.646Z",
+    "generated_at": "2026-06-06T12:44:48.743Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "New limits. Again?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tydx7p/new_limits_again/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-06T10:43:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT memory leak consumed 163GB of RAM before crashing",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tycw46/chatgpt_memory_leak_consumed_163gb_of_ram_before/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-06T09:43:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Anthropic is not a normal company",
         "link": "https://reddit.com/r/ClaudeAI/comments/1tybrpv/anthropic_is_not_a_normal_company/",
@@ -379,16 +397,34 @@
         "published_at": "2026-06-06T08:36:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
-        "headline": "Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ty8f47/anthropic_just_published_a_major_update_on/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-06T05:26:20+00:00",
+        "headline": "ChatGPT still need more updates",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tyayyh/chatgpt_still_need_more_updates/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-06T07:48:54+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
+      },
+      {
+        "headline": "What does OpenAI do with our data?",
+        "link": "https://reddit.com/r/OpenAI/comments/1ty8wor/what_does_openai_do_with_our_data/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-06T05:52:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
+      },
+      {
+        "headline": "Guys, do you think Google will leave Gemini the way it is now?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ty8o7a/guys_do_you_think_google_will_leave_gemini_the/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-06T05:39:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "Benefits and Risks of AI at Harvard Class Day 2026",
@@ -397,7 +433,7 @@
         "published_at": "2026-06-06T04:48:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "This is for real for me and many of us",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-06T04:34:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       },
       {
         "headline": "Google is an absolute joke",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-06T04:22:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "RIP Gemini",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-06T03:03:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Killer use case",
-        "link": "https://reddit.com/r/openclaw/comments/1ty5f4l/killer_use_case/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-06T02:54:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Republicans Claim Anti-Data Center Movement Is a Chinese Psy-Op",
-        "link": "https://reddit.com/r/singularity/comments/1ty2azf/republicans_claim_antidata_center_movement_is_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-06T00:26:45+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 81
-      },
-      {
-        "headline": "How to get started with Open Claw.",
-        "link": "https://reddit.com/r/openclaw/comments/1ty0hfm/how_to_get_started_with_open_claw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-05T23:07:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
-      },
-      {
-        "headline": "I built a local PDF-to-Markdown converter so you don't have to burn LLM tokens.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1txzrc6/i_built_a_local_pdftomarkdown_converter_so_you/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-05T22:37:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 76
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-06T11:00:09.646Z",
+    "reddit_viral_generated_at": "2026-06-06T12:44:48.743Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
