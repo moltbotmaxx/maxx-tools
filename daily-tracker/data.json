@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-06T22:18:36.499Z",
+    "generated_at": "2026-06-06T23:31:18.837Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Local semantic memory search for OpenClaw agents using Harrier embeddings",
+        "link": "https://reddit.com/r/openclaw/comments/1tyv4qk/local_semantic_memory_search_for_openclaw_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-06T22:44:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenAI Hardware hire joins Anthropic",
+        "link": "https://reddit.com/r/OpenAI/comments/1tyv1p3/openai_hardware_hire_joins_anthropic/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-06T22:40:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "AI in action",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1tytqia/ai_in_action/",
@@ -379,7 +397,7 @@
         "published_at": "2026-06-06T21:44:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "[Weekend Showcase] Book-librarian: Track your reading, get recommendations.",
@@ -388,7 +406,7 @@
         "published_at": "2026-06-06T21:23:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Openclaw + whisper + vapi.ai",
@@ -397,7 +415,7 @@
         "published_at": "2026-06-06T21:13:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "WhatsApp stops responding for hours — messages visible in logs but no reply (Pi 5 / Bookworm / 2026.6.1)",
@@ -406,7 +424,7 @@
         "published_at": "2026-06-06T21:02:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Me writing great code..",
@@ -415,7 +433,7 @@
         "published_at": "2026-06-06T20:03:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Newsflash to those late to the party and complaining about Nano moderation, Disney and Disney-owned IP’s are banned on Nano and have been for months! Celebrities and live action characters have been banned worldwide for nearly a month now!",
@@ -424,40 +442,22 @@
         "published_at": "2026-06-06T19:26:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
+      },
+      {
+        "headline": "AI CEOs from OpenAI, Anthropic, and Microsoft set aside their rivalry to warn Congress AI is making it too easy to design and create bioweapons",
+        "link": "https://reddit.com/r/OpenAI/comments/1typovl/ai_ceos_from_openai_anthropic_and_microsoft_set/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-06T18:59:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Is openeouter the easiest way to manage models and decide which is best for each query?",
         "link": "https://reddit.com/r/openclaw/comments/1typ3p5/is_openeouter_the_easiest_way_to_manage_models/",
         "subreddit": "openclaw",
         "published_at": "2026-06-06T18:35:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "You want to replace us heres your reward",
-        "link": "https://reddit.com/r/singularity/comments/1tyo3ca/you_want_to_replace_us_heres_your_reward/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-06T17:57:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "You want to replace us heres your reward",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tyo2bq/you_want_to_replace_us_heres_your_reward/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-06T17:56:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gemini’s \"quota cap\" for Gemini 3.1 Pro lasted exactly a week. Now we're back to 30%+ drain for a single prompt",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tynkdc/geminis_quota_cap_for_gemini_31_pro_lasted/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-06T17:37:00+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-06T22:18:36.499Z",
+    "reddit_viral_generated_at": "2026-06-06T23:31:18.837Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
