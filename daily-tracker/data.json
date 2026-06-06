@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-06T14:54:04.849Z",
+    "generated_at": "2026-06-06T16:35:25.990Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "conversation with my ugig bot",
+        "link": "https://reddit.com/r/aimemes/comments/1tyl19l/conversation_with_my_ugig_bot/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-06T15:59:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Token maxxing",
+        "link": "https://reddit.com/r/singularity/comments/1tyketd/token_maxxing/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-06T15:34:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Brand new install problems with Ollama Cloud Models",
+        "link": "https://reddit.com/r/openclaw/comments/1tykb8a/brand_new_install_problems_with_ollama_cloud/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-06T15:30:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Zinc oxide-tellurium semiconductor reduces chip complexity by 75%",
+        "link": "https://reddit.com/r/singularity/comments/1tyjx6j/zinc_oxidetellurium_semiconductor_reduces_chip/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-06T15:15:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Mythos 5 slug briefly appeared before removal",
+        "link": "https://reddit.com/r/singularity/comments/1tyjgxm/mythos_5_slug_briefly_appeared_before_removal/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-06T14:57:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Gemini's compute limits mean I can no longer trust it as my assistant",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tyjfv4/geminis_compute_limits_mean_i_can_no_longer_trust/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-06T14:56:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Open AI sign-in = security risk?",
+        "link": "https://reddit.com/r/openclaw/comments/1tyjebc/open_ai_signin_security_risk/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-06T14:55:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "HolaClaw, OpenClaw in your macOS",
         "link": "https://reddit.com/r/openclaw/comments/1tyjaoj/holaclaw_openclaw_in_your_macos/",
@@ -379,25 +442,7 @@
         "published_at": "2026-06-06T14:50:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Easiest way to get openclaw to do this stupid thing I thought of?",
-        "link": "https://reddit.com/r/openclaw/comments/1tyjafc/easiest_way_to_get_openclaw_to_do_this_stupid/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-06T14:50:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "A company just sent me the most detailed rejection email I’ve ever received",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tyioyy/a_company_just_sent_me_the_most_detailed/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-06T14:26:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Didn’t expect that response",
@@ -406,16 +451,7 @@
         "published_at": "2026-06-06T13:36:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Best local Ollama model for OpenClaw tool use with ~12GB RAM? OmniCoder2 is the only reliable one so far",
-        "link": "https://reddit.com/r/openclaw/comments/1tyhge7/best_local_ollama_model_for_openclaw_tool_use/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-06T13:35:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Didn’t see that coming",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-06T13:34:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Help my claude wont say uwu",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tyhfso/help_my_claude_wont_say_uwu/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-06T13:34:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Citing ‘severe’ math deficits, UC faculty demand a return to SAT tests for STEM applicants",
-        "link": "https://reddit.com/r/singularity/comments/1tyglxf/citing_severe_math_deficits_uc_faculty_demand_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-06T12:57:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Create an image of DaVinci's Last Supper except that everyone is morbidly obese",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tygd4f/create_an_image_of_davincis_last_supper_except/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-06T12:46:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "New limits. Again?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tydx7p/new_limits_again/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-06T10:43:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-06T14:54:04.849Z",
+    "reddit_viral_generated_at": "2026-06-06T16:35:25.990Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
