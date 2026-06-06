@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-06T16:35:25.990Z",
+    "generated_at": "2026-06-06T18:41:55.104Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is openeouter the easiest way to manage models and decide which is best for each query?",
+        "link": "https://reddit.com/r/openclaw/comments/1typ3p5/is_openeouter_the_easiest_way_to_manage_models/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-06T18:35:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A robot wearing a clown wig in China is going viral after it kicked a child in the stomach.",
+        "link": "https://reddit.com/r/singularity/comments/1tymvkf/a_robot_wearing_a_clown_wig_in_china_is_going/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-06T17:10:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "UBTech teases the faces of their 'emotional' humanoid robot couple, ahead of their June 30 debut",
+        "link": "https://reddit.com/r/singularity/comments/1tym7i2/ubtech_teases_the_faces_of_their_emotional/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-06T16:44:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "What's the FBI doing in Gemini?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tyle87/whats_the_fbi_doing_in_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-06T16:12:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "conversation with my ugig bot",
         "link": "https://reddit.com/r/aimemes/comments/1tyl19l/conversation_with_my_ugig_bot/",
@@ -379,7 +415,7 @@
         "published_at": "2026-06-06T15:59:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Token maxxing",
@@ -388,7 +424,7 @@
         "published_at": "2026-06-06T15:34:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Brand new install problems with Ollama Cloud Models",
@@ -397,16 +433,7 @@
         "published_at": "2026-06-06T15:30:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Zinc oxide-tellurium semiconductor reduces chip complexity by 75%",
-        "link": "https://reddit.com/r/singularity/comments/1tyjx6j/zinc_oxidetellurium_semiconductor_reduces_chip/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-06T15:15:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Mythos 5 slug briefly appeared before removal",
@@ -415,7 +442,7 @@
         "published_at": "2026-06-06T14:57:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Gemini's compute limits mean I can no longer trust it as my assistant",
@@ -424,7 +451,7 @@
         "published_at": "2026-06-06T14:56:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Open AI sign-in = security risk?",
@@ -433,41 +460,14 @@
         "published_at": "2026-06-06T14:55:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "HolaClaw, OpenClaw in your macOS",
-        "link": "https://reddit.com/r/openclaw/comments/1tyjaoj/holaclaw_openclaw_in_your_macos/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-06T14:50:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Didn’t expect that response",
-        "link": "https://reddit.com/r/OpenAI/comments/1tyhhnm/didnt_expect_that_response/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-06T13:36:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Didn’t see that coming",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tyhftl/didnt_see_that_coming/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-06T13:34:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-06T16:35:25.990Z",
+    "reddit_viral_generated_at": "2026-06-06T18:41:55.104Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
