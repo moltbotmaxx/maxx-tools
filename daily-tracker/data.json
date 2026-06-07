@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-07T11:16:48.793Z",
+    "generated_at": "2026-06-07T12:52:03.321Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Artificial Analysis | Google's Go To Website for Benchmaxxing | Gemini 3.1 Pro is nowhere near Opus 4.7 in real life use",
+        "link": "https://reddit.com/r/singularity/comments/1tz9ug9/artificial_analysis_googles_go_to_website_for/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-07T11:39:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Localix - The open-source AI agent workspace that gets smarter every session — fast and live, costs less to run, remembers your work, and uses any model you want",
         "link": "https://reddit.com/r/openclaw/comments/1tz8e5i/localix_the_opensource_ai_agent_workspace_that/",
@@ -379,16 +388,7 @@
         "published_at": "2026-06-07T10:20:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "There is always a Solution for the costly model problem.",
-        "link": "https://reddit.com/r/openclaw/comments/1tz7ndt/there_is_always_a_solution_for_the_costly_model/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-07T09:37:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Water, please.",
@@ -397,7 +397,7 @@
         "published_at": "2026-06-07T09:08:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "DeepSeek \"improved\" the code and said nothing happened in Tiananmen Square",
@@ -406,7 +406,7 @@
         "published_at": "2026-06-07T06:38:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Asked gpt to make a meme about the American economy",
@@ -415,7 +415,7 @@
         "published_at": "2026-06-07T06:32:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Every college student rn 💀",
@@ -424,7 +424,7 @@
         "published_at": "2026-06-07T05:40:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "AI be like:)",
@@ -433,7 +433,7 @@
         "published_at": "2026-06-07T05:24:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "Once robots achieve true autonomy and human-level reasoning, what is the first major societal shift we should expect?",
@@ -442,7 +442,7 @@
         "published_at": "2026-06-07T04:50:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "I started responding to messages from coworkers like Claude",
@@ -451,7 +451,7 @@
         "published_at": "2026-06-07T04:06:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 82
       },
       {
         "headline": "WHAT?",
@@ -460,14 +460,14 @@
         "published_at": "2026-06-07T03:01:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-07T11:16:48.793Z",
+    "reddit_viral_generated_at": "2026-06-07T12:52:03.321Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
