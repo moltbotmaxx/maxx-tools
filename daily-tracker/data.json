@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-07T20:39:08.209Z",
+    "generated_at": "2026-06-07T22:18:46.923Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "generated a female version of myself, then made a photo together using my real selfie",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tznz91/generated_a_female_version_of_myself_then_made_a/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-07T21:02:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "OC is frustrating me, its been 15 days still could not finish sokving the problems to run oc properly!",
         "link": "https://reddit.com/r/openclaw/comments/1tzlyvd/oc_is_frustrating_me_its_been_15_days_still_could/",
@@ -379,7 +388,7 @@
         "published_at": "2026-06-07T19:44:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Lore: The MCP that lets your AI agents share session history. Any chat, any agent, anytime.",
@@ -388,7 +397,7 @@
         "published_at": "2026-06-07T19:33:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Quality has declined , WA stops working",
@@ -397,7 +406,7 @@
         "published_at": "2026-06-07T18:56:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "The future isn’t free anymore.",
@@ -406,7 +415,7 @@
         "published_at": "2026-06-07T18:40:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "T-800 fighters",
@@ -415,7 +424,7 @@
         "published_at": "2026-06-07T17:47:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Ai is getting a bit too realistic",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-07T17:37:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "The \"restore the attached photo\" trend when you adjust the prompt to imply that there was a party going on.",
@@ -433,7 +442,16 @@
         "published_at": "2026-06-07T16:32:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
+      },
+      {
+        "headline": "Growing number of AI hallucinations that are appearing in academic papers and articles",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tzgtrh/growing_number_of_ai_hallucinations_that_are/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-07T16:32:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "stuck in thinking, openclaw broken after months.",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-07T16:17:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Mythos 5: We're Not Ready",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tzg6dk/mythos_5_were_not_ready/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-07T16:07:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Suggestions on using Openclaw for turning therapy notes into action plan.",
-        "link": "https://reddit.com/r/openclaw/comments/1tzfmzq/suggestions_on_using_openclaw_for_turning_therapy/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-07T15:47:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-07T20:39:08.209Z",
+    "reddit_viral_generated_at": "2026-06-07T22:18:46.923Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
