@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-07T04:57:30.892Z",
+    "generated_at": "2026-06-07T08:30:31.480Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "DeepSeek \"improved\" the code and said nothing happened in Tiananmen Square",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tz4mfn/deepseek_improved_the_code_and_said_nothing/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-07T06:38:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Asked gpt to make a meme about the American economy",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tz4ik1/asked_gpt_to_make_a_meme_about_the_american/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-07T06:32:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Every college student rn 💀",
+        "link": "https://reddit.com/r/aimemes/comments/1tz3m1x/every_college_student_rn/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-07T05:40:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "AI be like:)",
+        "link": "https://reddit.com/r/aimemes/comments/1tz3bhf/ai_be_like/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-07T05:24:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I started responding to messages from coworkers like Claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tz1tzv/i_started_responding_to_messages_from_coworkers/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-07T04:06:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "WHAT?",
         "link": "https://reddit.com/r/GeminiAI/comments/1tz0iyb/what/",
@@ -379,7 +424,7 @@
         "published_at": "2026-06-07T03:01:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "More Fanta",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-07T02:43:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
         "headline": "What are you guys going to do June 15 when OpenClaw Claude use can't go through the subscription anymore?",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-07T01:52:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 88
       },
       {
         "headline": "How to stop an insane model from openclaw",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-07T01:51:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 88
       },
       {
         "headline": "we're never getting a singularity bro🤦‍♂️",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-07T00:45:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "The new LEGO Corrupt Utah Police set",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tyx6ju/the_new_lego_corrupt_utah_police_set/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T00:17:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Gemini v GPT - make an image impossible to forget that will live rent free in my head for life",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tywqfa/gemini_v_gpt_make_an_image_impossible_to_forget/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-06T23:57:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Chat, are you OK? Dude literally sent this reply…",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tyw249/chat_are_you_ok_dude_literally_sent_this_reply/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-06T23:25:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Local semantic memory search for OpenClaw agents using Harrier embeddings",
-        "link": "https://reddit.com/r/openclaw/comments/1tyv4qk/local_semantic_memory_search_for_openclaw_agents/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-06T22:44:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenAI Hardware hire joins Anthropic",
-        "link": "https://reddit.com/r/OpenAI/comments/1tyv1p3/openai_hardware_hire_joins_anthropic/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-06T22:40:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-07T04:57:30.892Z",
+    "reddit_viral_generated_at": "2026-06-07T08:30:31.480Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
