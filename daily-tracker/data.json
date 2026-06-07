@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-07T15:02:10.866Z",
+    "generated_at": "2026-06-07T16:45:50.072Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "stuck in thinking, openclaw broken after months.",
+        "link": "https://reddit.com/r/openclaw/comments/1tzgfik/stuck_in_thinking_openclaw_broken_after_months/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-07T16:17:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A study on synthetic [AI] choreographies",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tzfw0n/a_study_on_synthetic_ai_choreographies/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-07T15:57:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Suggestions on using Openclaw for turning therapy notes into action plan.",
+        "link": "https://reddit.com/r/openclaw/comments/1tzfmzq/suggestions_on_using_openclaw_for_turning_therapy/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-07T15:47:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Openclaw 2026.6.1 + gpt-5.5 ----- Big talk, little action",
+        "link": "https://reddit.com/r/openclaw/comments/1tzei26/openclaw_202661_gpt55_big_talk_little_action/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-07T15:03:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "finally got openclaw to stop mixing my business and personal finances",
         "link": "https://reddit.com/r/openclaw/comments/1tzd81p/finally_got_openclaw_to_stop_mixing_my_business/",
@@ -379,7 +415,7 @@
         "published_at": "2026-06-07T14:12:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Which lab do you think will have the most intelligent/capable model by the end of June?",
@@ -388,7 +424,7 @@
         "published_at": "2026-06-07T14:00:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Damn. I wish I could laugh.",
@@ -397,7 +433,7 @@
         "published_at": "2026-06-07T13:32:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Very loyal customers",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-07T13:08:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "when i ask ChatGPT a medical question and it tells me to consult a doctor but l am the DOCTOR",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-07T12:53:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "it is just a way to Bully Artists.",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-07T12:10:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Artificial Analysis | Google's Go To Website for Benchmaxxing | Gemini 3.1 Pro is nowhere near Opus 4.7 in real life use",
-        "link": "https://reddit.com/r/singularity/comments/1tz9ug9/artificial_analysis_googles_go_to_website_for/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-07T11:39:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Water, please.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tz7539/water_please/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-07T09:08:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "DeepSeek \"improved\" the code and said nothing happened in Tiananmen Square",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tz4mfn/deepseek_improved_the_code_and_said_nothing/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T06:38:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Asked gpt to make a meme about the American economy",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tz4ik1/asked_gpt_to_make_a_meme_about_the_american/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T06:32:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-07T15:02:10.866Z",
+    "reddit_viral_generated_at": "2026-06-07T16:45:50.072Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
