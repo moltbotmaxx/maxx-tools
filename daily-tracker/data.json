@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-07T22:18:46.923Z",
+    "generated_at": "2026-06-07T23:32:27.486Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The Illusion of Finished Work in Claude Code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1tzo0q6/the_illusion_of_finished_work_in_claude_code/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-07T21:04:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "generated a female version of myself, then made a photo together using my real selfie",
         "link": "https://reddit.com/r/ChatGPT/comments/1tznz91/generated_a_female_version_of_myself_then_made_a/",
@@ -391,6 +400,15 @@
         "viral_score": 97
       },
       {
+        "headline": "Does anyone just use the search engine ai on google, its free and doesn't seem to get distracted so much by the user conversation context",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tzlwdq/does_anyone_just_use_the_search_engine_ai_on/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-07T19:41:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
         "headline": "Lore: The MCP that lets your AI agents share session history. Any chat, any agent, anytime.",
         "link": "https://reddit.com/r/openclaw/comments/1tzlogp/lore_the_mcp_that_lets_your_ai_agents_share/",
         "subreddit": "openclaw",
@@ -398,15 +416,6 @@
         "score": 0,
         "comments": 0,
         "viral_score": 96
-      },
-      {
-        "headline": "Quality has declined , WA stops working",
-        "link": "https://reddit.com/r/openclaw/comments/1tzkpbs/quality_has_declined_wa_stops_working/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-07T18:56:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
       },
       {
         "headline": "The future isn’t free anymore.",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-07T17:47:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Ai is getting a bit too realistic",
@@ -436,28 +445,19 @@
         "viral_score": 91
       },
       {
+        "headline": "Gemma 4 12B Q4 vs QAT Q4 on an AMD Radeon RX 7800 XT using llama.cpp + ROCm.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1tzhrdj/gemma_4_12b_q4_vs_qat_q4_on_an_amd_radeon_rx_7800/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-07T17:08:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
+      },
+      {
         "headline": "The \"restore the attached photo\" trend when you adjust the prompt to imply that there was a party going on.",
         "link": "https://reddit.com/r/ChatGPT/comments/1tzgu2k/the_restore_the_attached_photo_trend_when_you/",
         "subreddit": "ChatGPT",
         "published_at": "2026-06-07T16:32:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Growing number of AI hallucinations that are appearing in academic papers and articles",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tzgtrh/growing_number_of_ai_hallucinations_that_are/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-07T16:32:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "stuck in thinking, openclaw broken after months.",
-        "link": "https://reddit.com/r/openclaw/comments/1tzgfik/stuck_in_thinking_openclaw_broken_after_months/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-07T16:17:28+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-07T22:18:46.923Z",
+    "reddit_viral_generated_at": "2026-06-07T23:32:27.486Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
