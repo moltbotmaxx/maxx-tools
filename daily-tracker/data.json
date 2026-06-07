@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-07T16:45:50.072Z",
+    "generated_at": "2026-06-07T18:40:35.380Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "T-800 fighters",
+        "link": "https://reddit.com/r/singularity/comments/1tzis6k/t800_fighters/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-07T17:47:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Ai is getting a bit too realistic",
+        "link": "https://reddit.com/r/OpenAI/comments/1tzijgg/ai_is_getting_a_bit_too_realistic/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-07T17:37:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The \"restore the attached photo\" trend when you adjust the prompt to imply that there was a party going on.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tzgu2k/the_restore_the_attached_photo_trend_when_you/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-07T16:32:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "stuck in thinking, openclaw broken after months.",
         "link": "https://reddit.com/r/openclaw/comments/1tzgfik/stuck_in_thinking_openclaw_broken_after_months/",
@@ -379,16 +406,16 @@
         "published_at": "2026-06-07T16:17:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
-        "headline": "A study on synthetic [AI] choreographies",
-        "link": "https://reddit.com/r/GeminiAI/comments/1tzfw0n/a_study_on_synthetic_ai_choreographies/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-07T15:57:08+00:00",
+        "headline": "Edgar Allan Poe with an Edgar haircut.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tzg1ck/edgar_allan_poe_with_an_edgar_haircut/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-07T16:02:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Suggestions on using Openclaw for turning therapy notes into action plan.",
@@ -397,7 +424,7 @@
         "published_at": "2026-06-07T15:47:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Openclaw 2026.6.1 + gpt-5.5 ----- Big talk, little action",
@@ -406,7 +433,7 @@
         "published_at": "2026-06-07T15:03:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "finally got openclaw to stop mixing my business and personal finances",
@@ -415,7 +442,7 @@
         "published_at": "2026-06-07T14:12:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Which lab do you think will have the most intelligent/capable model by the end of June?",
@@ -424,40 +451,13 @@
         "published_at": "2026-06-07T14:00:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
-        "headline": "Damn. I wish I could laugh.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tzc9zm/damn_i_wish_i_could_laugh/",
+        "headline": "I need 12 12 packs of this",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tzcjrq/i_need_12_12_packs_of_this/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T13:32:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Very loyal customers",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tzbp0j/very_loyal_customers/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T13:08:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "when i ask ChatGPT a medical question and it tells me to consult a doctor but l am the DOCTOR",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tzbctv/when_i_ask_chatgpt_a_medical_question_and_it/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T12:53:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "it is just a way to Bully Artists.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tzag9l/it_is_just_a_way_to_bully_artists/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-07T12:10:12+00:00",
+        "published_at": "2026-06-07T13:44:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-07T16:45:50.072Z",
+    "reddit_viral_generated_at": "2026-06-07T18:40:35.380Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
