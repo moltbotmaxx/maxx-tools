@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-08T05:03:02.209Z",
+    "generated_at": "2026-06-08T09:56:52.292Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Brain.exe has stopped working. Redirecting to Claude...[OC]",
+        "link": "https://reddit.com/r/aimemes/comments/1u02kvt/brainexe_has_stopped_working_redirecting_to/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-08T09:07:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "My brain ever since GPT-4 dropped",
+        "link": "https://reddit.com/r/aimemes/comments/1u026nu/my_brain_ever_since_gpt4_dropped/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-08T08:44:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Early test and leaks show disappointing result of 3.5 pro",
+        "link": "https://reddit.com/r/singularity/comments/1u024gd/early_test_and_leaks_show_disappointing_result_of/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-08T08:40:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Safer than the other guys™",
+        "link": "https://reddit.com/r/aimemes/comments/1u00xib/safer_than_the_other_guys/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-08T07:29:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "🚀 Google DeepMind has introduced the new Gemma 4 12B, which runs on a standard laptop.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u00icw/google_deepmind_has_introduced_the_new_gemma_4/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-08T07:05:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "The Bubble Keeps Getting Bigger",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tzy6xd/the_bubble_keeps_getting_bigger/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-08T04:56:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "Claude made me realize that coding was never the bottleneck.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1tzx6uq/claude_made_me_realize_that_coding_was_never_the/",
@@ -379,7 +433,7 @@
         "published_at": "2026-06-08T04:03:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 88
       },
       {
         "headline": "Claude's new usage limits are insane.",
@@ -388,7 +442,16 @@
         "published_at": "2026-06-08T03:42:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 87
+      },
+      {
+        "headline": "I asked for the best selfie I could take",
+        "link": "https://reddit.com/r/ChatGPT/comments/1tzwa1t/i_asked_for_the_best_selfie_i_could_take/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-08T03:17:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       },
       {
         "headline": "According to the leaks",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-08T02:18:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "ELI5: why is google paying so much more for spacex compute than anthropic?",
-        "link": "https://reddit.com/r/singularity/comments/1tzv0pd/eli5_why_is_google_paying_so_much_more_for_spacex/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-08T02:15:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Free Top Tier Models for OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1tzuti6/free_top_tier_models_for_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-08T02:06:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "last programmer who still codes normally",
-        "link": "https://reddit.com/r/ChatGPT/comments/1tzurj3/last_programmer_who_still_codes_normally/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-08T02:03:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Has anyone managed to make GPT-5.5 more creative in OpenClaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1tzuaqh/has_anyone_managed_to_make_gpt55_more_creative_in/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-08T01:41:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "With the amount of people using Claude for work with sensitive data, how likely is it for Claude to leak info or hacked",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1tzua1h/with_the_amount_of_people_using_claude_for_work/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-08T01:40:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Google to pay SpaceX $920m per month for cloud computing",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tzszy5/google_to_pay_spacex_920m_per_month_for_cloud/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-08T00:39:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Nvidia's VP says compute now costs more than employees. Uber just proved it by burning its entire AI budget in 4 months.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1tzsw30/nvidias_vp_says_compute_now_costs_more_than/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-08T00:34:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-08T05:03:02.209Z",
+    "reddit_viral_generated_at": "2026-06-08T09:56:52.292Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
