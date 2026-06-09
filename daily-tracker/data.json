@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-09T04:38:18.689Z",
+    "generated_at": "2026-06-09T08:42:10.028Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Feels unreal.",
-        "link": "https://reddit.com/r/OpenAI/comments/1u0rmfk/feels_unreal/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-09T01:53:15+00:00",
+        "headline": "Claude repeatedly implied that I was suicidal after I explicitly denied it around 30 times in one conversation",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u0yds8/claude_repeatedly_implied_that_i_was_suicidal/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-09T07:45:40+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Let that sink in.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u0rlff/let_that_sink_in/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-09T01:51:56+00:00",
+        "headline": "ASI: Intelligence beyond imagination",
+        "link": "https://reddit.com/r/aimemes/comments/1u0y55e/asi_intelligence_beyond_imagination/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-09T07:30:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
-        "headline": "SpaceX has just revealed it's first AI satellite design",
-        "link": "https://reddit.com/r/singularity/comments/1u0qc5r/spacex_has_just_revealed_its_first_ai_satellite/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-09T00:54:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Changes to your Google AI Plus subscription",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u0q3jm/changes_to_your_google_ai_plus_subscription/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-09T00:43:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Claude Fable 5 spotted on Azure and the backend, likely the public-facing version of Claude Mythos 5",
-        "link": "https://reddit.com/r/singularity/comments/1u0pvvr/claude_fable_5_spotted_on_azure_and_the_backend/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-09T00:33:33+00:00",
+        "headline": "AI Vs. WW1",
+        "link": "https://reddit.com/r/aimemes/comments/1u0wt8h/ai_vs_ww1/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-09T06:14:23+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "I built an app with Gemini that converts any text into high-quality audio. It works with PDFs, blog posts, Substack and Medium links, and even photos of text.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u0nlac/i_built_an_app_with_gemini_that_converts_any_text/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-08T22:55:07+00:00",
+        "headline": "OpenClaw for bookkeeping: Is this a use case for anyone?",
+        "link": "https://reddit.com/r/openclaw/comments/1u0wsbb/openclaw_for_bookkeeping_is_this_a_use_case_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-09T06:12:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 96
       },
       {
-        "headline": "Automating job search with OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1u0mp95/automating_job_search_with_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-08T22:18:38+00:00",
+        "headline": "AI vs WW1",
+        "link": "https://reddit.com/r/aimemes/comments/1u0ws1u/ai_vs_ww1/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-09T06:12:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "92% Chance Mythos Drops Tomorrow",
+        "link": "https://reddit.com/r/singularity/comments/1u0wevk/92_chance_mythos_drops_tomorrow/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-09T05:51:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "I mean… that’s not wrong",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u0w1mt/i_mean_thats_not_wrong/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-09T05:31:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "I mean… that’s not wrong",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u0vvy8/i_mean_thats_not_wrong/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-09T05:23:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Anthropic may release mythos as early as tomorrow",
+        "link": "https://reddit.com/r/singularity/comments/1u0uz92/anthropic_may_release_mythos_as_early_as_tomorrow/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-09T04:35:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "And big shock, Google lies again.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u0l9qj/and_big_shock_google_lies_again/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-08T21:22:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Anthropic changed their privacy policy today and there's a specific clause that every Claude user needs to know about",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u0kq84/anthropic_changed_their_privacy_policy_today_and/",
+        "headline": "Thanks for the help Claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u0uvfz/thanks_for_the_help_claude/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-06-08T21:02:34+00:00",
+        "published_at": "2026-06-09T04:30:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Do you think Gemini has become lobotomized since the update?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u0j11r/do_you_think_gemini_has_become_lobotomized_since/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-08T20:00:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-09T04:38:18.689Z",
+    "reddit_viral_generated_at": "2026-06-09T08:42:10.028Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
