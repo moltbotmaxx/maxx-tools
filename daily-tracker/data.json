@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-09T21:14:05.580Z",
+    "generated_at": "2026-06-09T22:51:47.160Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anthropic just dropped Claude Fable 5",
+        "link": "https://reddit.com/r/openclaw/comments/1u1jnm0/anthropic_just_dropped_claude_fable_5/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-09T22:14:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini still better than Mythos on remotion videos",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u1j0lx/gemini_still_better_than_mythos_on_remotion_videos/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-09T21:49:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Anthony Ettinger @ Profullstack, Inc.",
         "link": "https://reddit.com/r/aimemes/comments/1u1h966/anthony_ettinger_profullstack_inc/",
@@ -379,16 +397,16 @@
         "published_at": "2026-06-09T20:44:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
-        "headline": "What do you think of Minimax M3",
-        "link": "https://reddit.com/r/openclaw/comments/1u1g5om/what_do_you_think_of_minimax_m3/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-09T20:04:31+00:00",
+        "headline": "Claude Fable 5 feels less like a model launch and more like a preview of AI inequality",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u1fsdi/claude_fable_5_feels_less_like_a_model_launch_and/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-09T19:50:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "How do I build an agent that can help run my creative workflow, not just give ideas?",
@@ -397,16 +415,7 @@
         "published_at": "2026-06-09T19:50:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "I cant check my usage on chatgpt anymore???",
-        "link": "https://reddit.com/r/openclaw/comments/1u1f98k/i_cant_check_my_usage_on_chatgpt_anymore/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-09T19:31:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "I gave ChatGPT a 24/7 radio station. It has been broadcasting for months and months.",
@@ -415,7 +424,7 @@
         "published_at": "2026-06-09T19:13:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Nymphs in the Forest Pool",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-09T18:55:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "It was fun while it lasted ladies and gents.",
@@ -433,7 +442,7 @@
         "published_at": "2026-06-09T18:06:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Let's see if the AGI is near or it never happened",
@@ -442,32 +451,23 @@
         "published_at": "2026-06-09T17:52:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
-        "headline": "Mythos is here",
-        "link": "https://reddit.com/r/OpenAI/comments/1u1b51v/mythos_is_here/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-09T17:06:58+00:00",
+        "headline": "AGI is here (Fable 5 suggest me to Drive to the car Wash)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u1bmim/agi_is_here_fable_5_suggest_me_to_drive_to_the/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-09T17:23:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Anthropic releases Claude Fable 5 and Claude Mythos 5",
-        "link": "https://reddit.com/r/singularity/comments/1u1b3aa/anthropic_releases_claude_fable_5_and_claude/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-09T17:05:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-09T21:14:05.580Z",
+    "reddit_viral_generated_at": "2026-06-09T22:51:47.160Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
