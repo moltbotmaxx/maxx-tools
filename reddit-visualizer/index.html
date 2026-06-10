@@ -1030,6 +1030,26 @@
       return chain;
     }
 
+    function buildSelectedThread(path, selected) {
+      const thread = path.slice(0, -1);
+      const stack = [selected];
+
+      while (stack.length > 0) {
+        const node = stack.pop();
+        thread.push(node);
+        const replies = node.replies || [];
+        for (let i = replies.length - 1; i >= 0; i--) {
+          stack.push(replies[i]);
+        }
+      }
+
+      const baseDepth = path[0]?.depth || 0;
+      return thread.map(comment => ({
+        ...comment,
+        depth: Math.max(0, comment.depth - baseDepth),
+      }));
+    }
+
     // ── Fetch Thread ──────────────────────────────────────────────────────────
     async function loadThread() {
       const raw = el.urlInput.value.trim();
@@ -1127,14 +1147,14 @@
       const flat = [];
       const stack = [];
       for (let i = Math.min(chains.length, 25) - 1; i >= 0; i--) {
-        stack.push({ node: chains[i], root: chains[i] });
+        stack.push({ node: chains[i], path: [chains[i]] });
       }
       while (stack.length > 0 && flat.length < 150) {
-        const { node, root } = stack.pop();
-        flat.push({ node, root });
+        const { node, path } = stack.pop();
+        flat.push({ node, path });
         const replies = node.replies || [];
         for (let i = replies.length - 1; i >= 0; i--) {
-          stack.push({ node: replies[i], root });
+          stack.push({ node: replies[i], path: [...path, replies[i]] });
         }
       }
 
@@ -1149,7 +1169,7 @@
         return;
       }
 
-      flat.forEach(({ node, root }) => {
+      flat.forEach(({ node, path }) => {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         const bg   = isDark ? '#1c1c2e' : '#ffffff';
         const border = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
@@ -1203,8 +1223,8 @@
         }
 
         item.addEventListener('click', () => {
-          const best = buildBestChain(root);
-          importChain(best, true);
+          const selectedThread = buildSelectedThread(path, node);
+          importChain(selectedThread, true);
         });
 
         el.commentBrowser.appendChild(item);
