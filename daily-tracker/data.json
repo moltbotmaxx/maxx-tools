@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-09T22:51:47.160Z",
+    "generated_at": "2026-06-10T01:32:12.100Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenClaw for free users",
+        "link": "https://reddit.com/r/openclaw/comments/1u1o1gj/openclaw_for_free_users/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-10T01:24:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Five Days Ago, I Had Never Built a Reddit App",
+        "link": "https://reddit.com/r/openclaw/comments/1u1nctl/five_days_ago_i_had_never_built_a_reddit_app/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-10T00:52:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I asked ChatGPT to show me a screenshot from a banned episode of Star Trek the 60s and it delivered.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u1m9vt/i_asked_chatgpt_to_show_me_a_screenshot_from_a/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-10T00:03:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Not quite exponential, but progress is progress",
+        "link": "https://reddit.com/r/singularity/comments/1u1l49n/not_quite_exponential_but_progress_is_progress/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-09T23:14:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "What stack are people using to keep OpenClaw costs down?",
+        "link": "https://reddit.com/r/openclaw/comments/1u1kjhc/what_stack_are_people_using_to_keep_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-09T22:50:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Anthropic just dropped Claude Fable 5",
         "link": "https://reddit.com/r/openclaw/comments/1u1jnm0/anthropic_just_dropped_claude_fable_5/",
@@ -379,16 +424,25 @@
         "published_at": "2026-06-09T22:14:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
-        "headline": "Gemini still better than Mythos on remotion videos",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u1j0lx/gemini_still_better_than_mythos_on_remotion_videos/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-09T21:49:25+00:00",
+        "headline": "No response from Ollama and Qwen3.5:2b",
+        "link": "https://reddit.com/r/openclaw/comments/1u1ipun/no_response_from_ollama_and_qwen352b/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-09T21:38:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
+      },
+      {
+        "headline": "Matt Shumer: \"Fable has solved 3D worldbuilding... utterly insane. This is all completely custom-built ThreeJs, running in the browser.\"",
+        "link": "https://reddit.com/r/singularity/comments/1u1hmk6/matt_shumer_fable_has_solved_3d_worldbuilding/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-09T20:57:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "Anthony Ettinger @ Profullstack, Inc.",
@@ -397,67 +451,13 @@
         "published_at": "2026-06-09T20:44:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 88
       },
       {
-        "headline": "Claude Fable 5 feels less like a model launch and more like a preview of AI inequality",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u1fsdi/claude_fable_5_feels_less_like_a_model_launch_and/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-09T19:50:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "How do I build an agent that can help run my creative workflow, not just give ideas?",
-        "link": "https://reddit.com/r/openclaw/comments/1u1fs98/how_do_i_build_an_agent_that_can_help_run_my/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-09T19:50:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I gave ChatGPT a 24/7 radio station. It has been broadcasting for months and months.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u1eqvu/i_gave_chatgpt_a_247_radio_station_it_has_been/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-09T19:13:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Nymphs in the Forest Pool",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u1e8na/nymphs_in_the_forest_pool/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-09T18:55:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "It was fun while it lasted ladies and gents.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u1cu3k/it_was_fun_while_it_lasted_ladies_and_gents/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-09T18:06:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Let's see if the AGI is near or it never happened",
-        "link": "https://reddit.com/r/singularity/comments/1u1cg2z/lets_see_if_the_agi_is_near_or_it_never_happened/",
+        "headline": "It's over. Claude Fable 5 one-shots horror game live",
+        "link": "https://reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/",
         "subreddit": "singularity",
-        "published_at": "2026-06-09T17:52:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "AGI is here (Fable 5 suggest me to Drive to the car Wash)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u1bmim/agi_is_here_fable_5_suggest_me_to_drive_to_the/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-09T17:23:34+00:00",
+        "published_at": "2026-06-09T20:42:11+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-09T22:51:47.160Z",
+    "reddit_viral_generated_at": "2026-06-10T01:32:12.100Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
