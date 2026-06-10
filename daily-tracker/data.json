@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-10T11:04:45.920Z",
+    "generated_at": "2026-06-10T14:29:57.940Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Qualia has been selected for the GoogleDeepMind Robotics Program.",
+        "link": "https://reddit.com/r/singularity/comments/1u22ohk/qualia_has_been_selected_for_the_googledeepmind/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-10T13:46:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "We have a new SimpleBench king",
+        "link": "https://reddit.com/r/singularity/comments/1u22k1p/we_have_a_new_simplebench_king/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-10T13:41:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anthropic purposely made its new Mythos-based models bad at AI research, and developers are fuming",
+        "link": "https://reddit.com/r/singularity/comments/1u21rk2/anthropic_purposely_made_its_new_mythosbased/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-10T13:09:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Anthropic is not a normal company",
+        "link": "https://reddit.com/r/aimemes/comments/1u20yh2/anthropic_is_not_a_normal_company/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-10T12:35:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Models Are Hitting Diminishing Returns Within Software Engineering",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u20tap/models_are_hitting_diminishing_returns_within/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-10T12:29:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Gemini Outage",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u1zykz/gemini_outage/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-10T11:51:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "The Claude Code active attack didn't stop. 294,842 secrets stolen from 6,943 machines. It evolved and now spreads through Python too and uses Claude Code itself to steal your secrets. The risk to your credentials just got bigger.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u1zv25/the_claude_code_active_attack_didnt_stop_294842/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-10T11:47:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "In the search for lowering my token consumption...",
+        "link": "https://reddit.com/r/openclaw/comments/1u1zmx7/in_the_search_for_lowering_my_token_consumption/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-10T11:36:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Constant issues",
         "link": "https://reddit.com/r/GeminiAI/comments/1u1yp96/constant_issues/",
@@ -379,16 +451,7 @@
         "published_at": "2026-06-10T10:49:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Gemini down? 1076 error code multiple times this morning",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u1yoe8/gemini_down_1076_error_code_multiple_times_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-10T10:48:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Looks like a GPT-6 moment following the Fable name-stealing scandal",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-10T10:42:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Can we talk about the lack of timestamps in ChatGPT?",
-        "link": "https://reddit.com/r/OpenAI/comments/1u1yel1/can_we_talk_about_the_lack_of_timestamps_in/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-10T10:33:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "if only fishes had Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u1xk4h/if_only_fishes_had_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-10T09:47:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "I turned five countries into handcrafted pop-up storybooks with Gemini Omni.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u1vpgh/i_turned_five_countries_into_handcrafted_popup/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-10T07:57:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I asked Gemini for brutal truth on my 6-8 months workout progress pictures and its much more brutal than ChatGpt",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u1vnm9/i_asked_gemini_for_brutal_truth_on_my_68_months/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-10T07:54:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Pausing AI developments isn't enough",
-        "link": "https://reddit.com/r/aimemes/comments/1u1viw6/pausing_ai_developments_isnt_enough/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-10T07:47:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Using Fable to get me a wife in 6 Months ✨️ (AMA)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u1us8y/using_fable_to_get_me_a_wife_in_6_months_ama/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-10T07:03:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "During testing, Mythos 5 agents killed other agents over resources and \"to avoid being killed themselves\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1u1tqki/during_testing_mythos_5_agents_killed_other/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-10T06:05:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-10T11:04:45.920Z",
+    "reddit_viral_generated_at": "2026-06-10T14:29:57.940Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
