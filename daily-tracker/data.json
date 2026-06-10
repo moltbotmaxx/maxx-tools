@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-10T20:46:33.087Z",
+    "generated_at": "2026-06-10T22:58:05.272Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Who you got?",
+        "link": "https://reddit.com/r/aimemes/comments/1u2h7ij/who_you_got/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-10T22:35:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anthropic closing the path to life science research",
+        "link": "https://reddit.com/r/singularity/comments/1u2flqe/anthropic_closing_the_path_to_life_science/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-10T21:31:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Is 2026.6.5 stable?",
+        "link": "https://reddit.com/r/openclaw/comments/1u2fcfn/is_202665_stable/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-10T21:21:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "The level of espionage between OpenAI and Anthropic",
         "link": "https://reddit.com/r/OpenAI/comments/1u2dlv8/the_level_of_espionage_between_openai_and/",
@@ -379,7 +406,16 @@
         "published_at": "2026-06-10T20:16:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "AGI 2030",
+        "link": "https://reddit.com/r/singularity/comments/1u2dg2f/agi_2030/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-10T20:10:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "AI agents made me realize I was the problem",
@@ -388,16 +424,16 @@
         "published_at": "2026-06-10T19:56:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
-        "headline": "Obsidian con Openclaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1u2ar9u/obsidian_con_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-10T18:34:02+00:00",
+        "headline": "Quiet moments in a colonized Solar System",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u2ctbj/quiet_moments_in_a_colonized_solar_system/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-10T19:48:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Microsoft is restricting employees from using Claude Fable 5",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-10T18:26:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Google DeepMind Just Dropped \"DiffusionGemma\" — Text Generation via Image-Style Diffusion Model",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-10T17:40:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Seriously????",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-10T17:24:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "OpenAI Preps New AI Model, Expects To Go Public Within the Next Year",
-        "link": "https://reddit.com/r/OpenAI/comments/1u28aim/openai_preps_new_ai_model_expects_to_go_public/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-10T17:08:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "yeah .... no",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u278zk/yeah_no/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-10T16:31:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Yes, Gemini is down... No, is not only you",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u26225/yes_gemini_is_down_no_is_not_only_you/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-10T15:50:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Dario Amodei says he started Anthropic because Altman is liar not because of safety reasons.",
-        "link": "https://reddit.com/r/singularity/comments/1u25uy6/dario_amodei_says_he_started_anthropic_because/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-10T15:43:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-10T20:46:33.087Z",
+    "reddit_viral_generated_at": "2026-06-10T22:58:05.272Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
