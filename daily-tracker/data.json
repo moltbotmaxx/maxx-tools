@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-11T16:30:44.580Z",
+    "generated_at": "2026-06-11T19:46:52.774Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "was asking gemini about fleetwood macs drama",
+        "link": "https://reddit.com/r/aimemes/comments/1u37g1x/was_asking_gemini_about_fleetwood_macs_drama/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-11T18:36:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench",
+        "link": "https://reddit.com/r/singularity/comments/1u35fjw/differences_between_claude_opus_48_and_claude/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-11T17:23:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u35cgu/differences_between_claude_opus_48_and_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-11T17:20:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Gemini is out here SAVING LIVES.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u3539h/gemini_is_out_here_saving_lives/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-11T17:11:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "True",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u34phg/true/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-11T16:57:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Fable 5 decoded an entire 1989 DOS game executable in one day — six months of work with earlier models, done overnight",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u34370/fable_5_decoded_an_entire_1989_dos_game/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-11T16:34:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "anyone else using openclaw to wrangle family calendar chaos?",
         "link": "https://reddit.com/r/openclaw/comments/1u33i1r/anyone_else_using_openclaw_to_wrangle_family/",
@@ -379,7 +433,16 @@
         "published_at": "2026-06-11T16:13:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Jeff Bezos Reveals His New Startup Prometheus Is Building an “Artificial General Engineer”",
+        "link": "https://reddit.com/r/singularity/comments/1u33h6v/jeff_bezos_reveals_his_new_startup_prometheus_is/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-11T16:12:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "The 7th mass extinction",
@@ -388,7 +451,7 @@
         "published_at": "2026-06-11T15:53:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "I built a plugin that makes OpenClaw ask my phone before doing anything risky",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-11T15:45:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Indian woman earns $2.60/hr recording household chores to train AI robots.",
-        "link": "https://reddit.com/r/singularity/comments/1u32njc/indian_woman_earns_260hr_recording_household/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-11T15:42:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Openclaw 2026.6.5",
-        "link": "https://reddit.com/r/openclaw/comments/1u2zlw0/openclaw_202665/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-11T13:48:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gpt being brutal",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u2yt3r/gpt_being_brutal/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-11T13:16:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Miss When Google used to drop bangers",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u2xeha/miss_when_google_used_to_drop_bangers/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-11T12:16:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Best 20USD/month subscription for OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1u2wdo4/best_20usdmonth_subscription_for_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-11T11:28:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Bruh",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u2w8xo/bruh/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-11T11:21:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "The market is currently being flooded with software that nobody wants",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u2v6bn/the_market_is_currently_being_flooded_with/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-11T10:24:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-11T16:30:44.580Z",
+    "reddit_viral_generated_at": "2026-06-11T19:46:52.774Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
