@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-11T22:17:32.478Z",
+    "generated_at": "2026-06-11T23:55:57.402Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Meet the OpenAI Engineer Leading ChatGPT's Biggest Transformation Yet",
+        "link": "https://reddit.com/r/OpenAI/comments/1u3c1fe/meet_the_openai_engineer_leading_chatgpts_biggest/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-11T21:27:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Subscription plans are massively subsidized",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u39y1c/subscription_plans_are_massively_subsidized/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-11T20:07:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "was asking gemini about fleetwood macs drama",
         "link": "https://reddit.com/r/aimemes/comments/1u37g1x/was_asking_gemini_about_fleetwood_macs_drama/",
@@ -379,7 +397,7 @@
         "published_at": "2026-06-11T18:36:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "slack integration (code?)",
@@ -388,7 +406,7 @@
         "published_at": "2026-06-11T18:25:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "NPR: The theory taking the rich by storm: China funds data center haters",
@@ -397,16 +415,7 @@
         "published_at": "2026-06-11T18:00:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Can you realistically start an automation business without a lot of money?",
-        "link": "https://reddit.com/r/openclaw/comments/1u36ar4/can_you_realistically_start_an_automation/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-11T17:55:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench",
@@ -415,7 +424,7 @@
         "published_at": "2026-06-11T17:23:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Differences Between Claude Opus 4.8 and Claude Fable 5 on MineBench",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-11T17:20:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Gemini is out here SAVING LIVES.",
@@ -433,7 +442,16 @@
         "published_at": "2026-06-11T17:11:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
+      },
+      {
+        "headline": "True",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u34pup/true/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-11T16:58:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "True",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-11T16:57:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Fable 5 decoded an entire 1989 DOS game executable in one day — six months of work with earlier models, done overnight",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u34370/fable_5_decoded_an_entire_1989_dos_game/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-11T16:34:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "anyone else using openclaw to wrangle family calendar chaos?",
-        "link": "https://reddit.com/r/openclaw/comments/1u33i1r/anyone_else_using_openclaw_to_wrangle_family/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-11T16:13:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-11T22:17:32.478Z",
+    "reddit_viral_generated_at": "2026-06-11T23:55:57.402Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
