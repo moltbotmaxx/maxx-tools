@@ -154,7 +154,7 @@
       width: 28px; height: 28px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-size: 11px; font-weight: 700; color: #fff;
-      flex-shrink: 0;
+      flex-shrink: 0; overflow: hidden;
     }
 
     .browser-item__info { flex: 1; min-width: 0; }
@@ -318,7 +318,12 @@
       width: 22px; height: 22px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-size: 10px; font-weight: 700; color: #fff;
-      flex-shrink: 0; margin-top: 1px;
+      flex-shrink: 0; margin-top: 1px; overflow: hidden;
+    }
+
+    .browser-item__avatar img,
+    .comment-item__avatar img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
 
     .comment-item__info { flex: 1; min-width: 0; }
@@ -456,6 +461,11 @@
     .reddit-comment__avatar {
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-weight: 700; color: #ffffff; flex-shrink: 0; line-height: 1;
+      overflow: hidden;
+    }
+
+    .reddit-comment__avatar img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
 
     .reddit-comment__username { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -838,6 +848,27 @@
         .trim();
     }
 
+    function getExportableAvatarUrl(url) {
+      if (!url) return '';
+      return `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=256&h=256&fit=cover`;
+    }
+
+    function renderAvatar(container, comment) {
+      container.textContent = getAvatarLetter(comment.username);
+      if (!comment.avatarUrl) return;
+
+      const image = document.createElement('img');
+      image.src = getExportableAvatarUrl(comment.avatarUrl);
+      image.alt = '';
+      image.crossOrigin = 'anonymous';
+      image.referrerPolicy = 'no-referrer';
+      image.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+      image.addEventListener('load', () => {
+        container.textContent = '';
+        container.appendChild(image);
+      });
+    }
+
     // ── Reddit URL Parsing ────────────────────────────────────────────────────
     function parseRedditUrl(input) {
       const url = input.trim().replace(/\/$/, '');
@@ -902,6 +933,7 @@
             author: node.author,
             body: node.body,
             score: Number(node.score) || 0,
+            profile_img: node.profile_img || '',
             replies: node.children.length
               ? { data: { children: node.children.map(toRedditNode) } }
               : '',
@@ -1000,6 +1032,7 @@
         score: d.score || 0,
         depth,
         avatarColor: colorFromUsername(d.author),
+        avatarUrl: d.profile_img || '',
         replies,
       };
     }
@@ -1195,9 +1228,9 @@
           width:28px; height:28px; border-radius:50%;
           background:${node.avatarColor}; color:#fff;
           display:flex; align-items:center; justify-content:center;
-          font-size:11px; font-weight:700; flex-shrink:0;
+          font-size:11px; font-weight:700; flex-shrink:0; overflow:hidden;
         `;
-        avatar.textContent = getAvatarLetter(node.username);
+        renderAvatar(avatar, node);
 
         const info = document.createElement('div');
         info.style.cssText = 'flex:1; min-width:0;';
@@ -1237,6 +1270,7 @@
         username: c.username,
         text: c.text,
         avatarColor: c.avatarColor,
+        avatarUrl: c.avatarUrl || '',
         depth: c.depth,
       }));
       cancelEdit();
@@ -1257,6 +1291,7 @@
         username: `u/${author}`,
         text,
         avatarColor: colorFromUsername(author),
+        avatarUrl: postData?.profile_img || '',
         depth: 0,
       }];
       cancelEdit();
@@ -1329,7 +1364,7 @@
         const avatarEl = document.createElement('div');
         avatarEl.className = 'comment-item__avatar';
         avatarEl.style.background = comment.avatarColor;
-        avatarEl.textContent = getAvatarLetter(comment.username);
+        renderAvatar(avatarEl, comment);
 
         const info = document.createElement('div');
         info.className = 'comment-item__info';
@@ -1511,7 +1546,7 @@
       const avatar = document.createElement('div');
       avatar.className = 'reddit-comment__avatar';
       avatar.style.cssText = `width:${state.avatarSize}px;height:${state.avatarSize}px;min-width:${state.avatarSize}px;background:${comment.avatarColor};font-size:${Math.round(state.avatarSize * 0.42)}px`;
-      avatar.textContent = getAvatarLetter(comment.username);
+      renderAvatar(avatar, comment);
 
       const username = document.createElement('span');
       username.className = 'reddit-comment__username';
