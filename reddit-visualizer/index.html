@@ -827,6 +827,41 @@
       if (document.fonts?.ready) await document.fonts.ready;
     }
 
+    async function waitForCardImages() {
+      const images = [...el.cardShell.querySelectorAll('img')];
+      await Promise.all(images.map(image => {
+        if (image.complete && image.naturalWidth > 0) return Promise.resolve();
+        return new Promise(resolve => {
+          image.addEventListener('load', resolve, { once: true });
+          image.addEventListener('error', resolve, { once: true });
+        });
+      }));
+    }
+
+    function blobToDataUrl(blob) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => resolve(reader.result), { once: true });
+        reader.addEventListener('error', reject, { once: true });
+        reader.readAsDataURL(blob);
+      });
+    }
+
+    async function inlineCardImages() {
+      const images = [...el.cardShell.querySelectorAll('img')];
+      await Promise.all(images.map(async image => {
+        if (image.src.startsWith('data:')) return;
+        try {
+          const response = await fetch(image.src, { mode: 'cors', cache: 'force-cache' });
+          if (!response.ok) throw new Error(`Image request failed: ${response.status}`);
+          image.src = await blobToDataUrl(await response.blob());
+        } catch (error) {
+          console.warn('Could not embed avatar for export:', error);
+        }
+      }));
+      await waitForCardImages();
+    }
+
     function colorFromUsername(username) {
       let hash = 0;
       for (let i = 0; i < username.length; i++) {
@@ -1001,12 +1036,12 @@
         }
       };
 
-      const direct = await attempt(url, { headers: { Accept: 'application/json' } });
-      if (Array.isArray(direct)) return direct;
-
-      setStatus('Reddit bloqueó la solicitud. Cargando copia pública…', 'loading');
+      setStatus('Cargando datos públicos de Reddit…', 'loading');
       const archived = await fetchArchivedThread(url, attempt);
       if (archived) return archived;
+
+      const direct = await attempt(url, { headers: { Accept: 'application/json' } });
+      if (Array.isArray(direct)) return direct;
 
       throw new Error('Reddit bloqueó la solicitud y no hay una copia pública disponible para este hilo.');
     }
@@ -1140,6 +1175,7 @@
 
         state.fetchedChains = chains;
         if (chains.length > 0) {
+          refreshSavedAvatars(chains);
           renderCommentBrowser(chains);
           el.browserWrap.style.display = '';
         }
@@ -1277,6 +1313,29 @@
       saveSettings();
       renderAll();
       if (showStatus) setStatus(`Imported chain of ${chain.length} comments.`, 'success');
+    }
+
+    function refreshSavedAvatars(chains) {
+      const avatars = new Map();
+      const stack = [...chains];
+      while (stack.length > 0) {
+        const comment = stack.pop();
+        if (comment.avatarUrl) avatars.set(comment.username, comment.avatarUrl);
+        stack.push(...(comment.replies || []));
+      }
+
+      let changed = false;
+      state.comments.forEach(comment => {
+        const avatarUrl = avatars.get(comment.username);
+        if (avatarUrl && comment.avatarUrl !== avatarUrl) {
+          comment.avatarUrl = avatarUrl;
+          changed = true;
+        }
+      });
+      if (changed) {
+        saveSettings();
+        renderAll();
+      }
     }
 
     function importPost(postData, showStatus = true) {
@@ -1600,6 +1659,8 @@
 
       try {
         await waitForFonts();
+        await waitForCardImages();
+        await inlineCardImages();
         await nextFrame();
 
         const pngUrl = await window.htmlToImage.toPng(cardNode, {
