@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-12T16:28:08.125Z",
+    "generated_at": "2026-06-12T19:23:08.041Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I built an autonomous civilization game where the LLM agent plays the game for you. You just drop a few of those onto the grid and watch. They figure out how to farm, reproduce, build temples, generate beliefs, assign roles and die of old age, inventing their own history entirely from scratch.",
+        "link": "https://reddit.com/r/OpenAI/comments/1u435u3/i_built_an_autonomous_civilization_game_where_the/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-12T18:14:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Happy 9th Birthday to the Paper That Set All This Off",
+        "link": "https://reddit.com/r/singularity/comments/1u42n1y/happy_9th_birthday_to_the_paper_that_set_all_this/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-12T17:56:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Forbes Declares Elon Musk As The World’s First Trillionaire",
+        "link": "https://reddit.com/r/singularity/comments/1u4018a/forbes_declares_elon_musk_as_the_worlds_first/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-12T16:22:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "\"Talk Show Host\" [ft. Jibaro's Sara Silkin ] - Is this the future of motion capture? + Breakdown",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u3zkxx/talk_show_host_ft_jibaros_sara_silkin_is_this_the/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-12T16:06:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Are there any AI agents that work 24/7 without babysitting?",
         "link": "https://reddit.com/r/openclaw/comments/1u3xx8b/are_there_any_ai_agents_that_work_247_without/",
@@ -379,7 +415,7 @@
         "published_at": "2026-06-12T15:07:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Gemini called the New York City government while I was watching Disclosure Day in a movie theater",
@@ -388,7 +424,25 @@
         "published_at": "2026-06-12T14:29:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
+      },
+      {
+        "headline": "Employee of the Month: June 1st – June 22nd, 2026 (RIP)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u3wflg/employee_of_the_month_june_1st_june_22nd_2026_rip/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-12T14:12:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
+      {
+        "headline": "\"What is this? An AI for ANTS!?\"",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u3w19v/what_is_this_an_ai_for_ants/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-12T13:57:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "It is genuinely frustrating. How does every single version update always break something?",
@@ -397,67 +451,13 @@
         "published_at": "2026-06-12T13:50:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
         "headline": "Ignore the tentacles, blame the firefighters",
         "link": "https://reddit.com/r/aimemes/comments/1u3ujmz/ignore_the_tentacles_blame_the_firefighters/",
         "subreddit": "aimemes",
         "published_at": "2026-06-12T12:57:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "When is this going to stop?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u3uhhs/when_is_this_going_to_stop/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-12T12:55:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "My favorite thing right now is to use Claude Fable to mash game genres. Here's Tetris as a Racing game!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u3u8t7/my_favorite_thing_right_now_is_to_use_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-12T12:44:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "This Is What My Cat Looks Like as a Human, According to AI",
-        "link": "https://reddit.com/r/OpenAI/comments/1u3smxj/this_is_what_my_cat_looks_like_as_a_human/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-12T11:29:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "'If They Can Replace You With AI, They Will': Developer Blindsided by Layoff After 8 Years Says 'CEOs Do Not Care'",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u3rt5c/if_they_can_replace_you_with_ai_they_will/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-12T10:45:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Kimi 2.7 code is released & open-sourced, latest coding model by Kimi",
-        "link": "https://reddit.com/r/singularity/comments/1u3rdvs/kimi_27_code_is_released_opensourced_latest/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-12T10:22:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Engineer used Claude to build a “coworker stress leaderboard” showing who caused him the most stress by syncing his WHOOP & calendar data",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u3r2d9/engineer_used_claude_to_build_a_coworker_stress/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-12T10:04:54+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-12T16:28:08.125Z",
+    "reddit_viral_generated_at": "2026-06-12T19:23:08.041Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
