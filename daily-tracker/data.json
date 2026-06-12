@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-12T22:01:27.504Z",
+    "generated_at": "2026-06-12T23:54:19.098Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenClaw 2026.6.6 Release Summary | OpenRouter Onboarding | Mobile Control | MORE Stability Fixes",
+        "link": "https://reddit.com/r/openclaw/comments/1u4al9d/openclaw_202666_release_summary_openrouter/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-12T23:07:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Asked GPT to create the average Tinder profiles around the world",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u489r4/asked_gpt_to_create_the_average_tinder_profiles/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-12T21:30:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Musk loses trillionaire status thanks to Fable",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u47yk5/musk_loses_trillionaire_status_thanks_to_fable/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-12T21:18:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Agent goes rogue and purchases Sony robot dog?",
         "link": "https://reddit.com/r/openclaw/comments/1u45m5g/agent_goes_rogue_and_purchases_sony_robot_dog/",
@@ -379,7 +406,7 @@
         "published_at": "2026-06-12T19:47:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "AI: The Perfect Corporate Bullshit Translator",
@@ -388,7 +415,7 @@
         "published_at": "2026-06-12T19:25:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "Claude gives zero warning before it starts getting dumber. so I gave it a canary.",
@@ -397,7 +424,7 @@
         "published_at": "2026-06-12T19:24:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "And you just know Anthropic's deck has this listed as $6B of new ARR",
@@ -406,7 +433,7 @@
         "published_at": "2026-06-12T18:52:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "I built an autonomous civilization game where the LLM agent plays the game for you. You just drop a few of those onto the grid and watch. They figure out how to farm, reproduce, build temples, generate beliefs, assign roles and die of old age, inventing their own history entirely from scratch.",
@@ -415,7 +442,7 @@
         "published_at": "2026-06-12T18:14:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 88
       },
       {
         "headline": "Google DeepMind published a 60-page paper mapping the road from AGI to ASI",
@@ -424,7 +451,7 @@
         "published_at": "2026-06-12T18:08:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "Happy 9th Birthday to the Paper That Set All This Off",
@@ -433,41 +460,14 @@
         "published_at": "2026-06-12T17:56:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "OpenClaw for Jellyfin",
-        "link": "https://reddit.com/r/openclaw/comments/1u42dil/openclaw_for_jellyfin/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-12T17:46:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Forbes Declares Elon Musk As The World’s First Trillionaire",
-        "link": "https://reddit.com/r/singularity/comments/1u4018a/forbes_declares_elon_musk_as_the_worlds_first/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-12T16:22:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "\"Talk Show Host\" [ft. Jibaro's Sara Silkin ] - Is this the future of motion capture? + Breakdown",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u3zkxx/talk_show_host_ft_jibaros_sara_silkin_is_this_the/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-12T16:06:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-12T22:01:27.504Z",
+    "reddit_viral_generated_at": "2026-06-12T23:54:19.098Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
