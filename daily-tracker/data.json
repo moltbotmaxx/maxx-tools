@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-13T14:28:58.997Z",
+    "generated_at": "2026-06-13T16:49:41.918Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Oh AI",
+        "link": "https://reddit.com/r/aimemes/comments/1u4vb7t/oh_ai/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-13T16:27:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What timeline are we on man",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u4v941/what_timeline_are_we_on_man/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-13T16:25:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Any USA citizen wanna marry me? I’m tryna access Fable 5 in claude code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u4tjef/any_usa_citizen_wanna_marry_me_im_tryna_access/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-13T15:15:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Updated Mythos benchmarks",
+        "link": "https://reddit.com/r/OpenAI/comments/1u4tfgm/updated_mythos_benchmarks/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-13T15:11:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Marketplace to resell your OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1u4tes6/marketplace_to_resell_your_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-13T15:10:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "New benchmark dropped",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u4sljo/new_benchmark_dropped/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-13T14:36:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Anyone tried openclaw with mythos/fable?",
+        "link": "https://reddit.com/r/openclaw/comments/1u4slcy/anyone_tried_openclaw_with_mythosfable/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-13T14:36:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "How the Open Knowledge Format can improve data sharing | Google Cloud Blog",
         "link": "https://reddit.com/r/openclaw/comments/1u4sa76/how_the_open_knowledge_format_can_improve_data/",
@@ -379,7 +442,7 @@
         "published_at": "2026-06-13T14:23:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Baldi is eating kebap(Turkish ai video)",
@@ -388,7 +451,7 @@
         "published_at": "2026-06-13T14:06:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "A new way to think about agent MEMORY a \"chef's palate\" — every day's work gets a fingerprint that can be un-mixed back into its projects, and it detects projects nobody has named yet [open source]",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-13T14:04:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Dario Amodei got what he asked for",
-        "link": "https://reddit.com/r/singularity/comments/1u4qic1/dario_amodei_got_what_he_asked_for/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-13T13:06:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "google is way too quiet right now, and Gemini 3.5 Pro has to hit different",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u4pbiz/google_is_way_too_quiet_right_now_and_gemini_35/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-13T12:09:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Zuckerberg says Meta made 'mistakes' in AI workforce shift",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u4odlq/zuckerberg_says_meta_made_mistakes_in_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-13T11:21:49+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "The Fable/Mythos shutdown is basically the Proclamation of 1763 all over again.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u4ns4p/the_fablemythos_shutdown_is_basically_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-13T10:49:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "AI needs to calm down with the gender swap prompt",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u4nlmw/ai_needs_to_calm_down_with_the_gender_swap_prompt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-13T10:38:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "If a 'huge %' of Anthropic staff are foreign nationals, how do they continue?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u4n434/if_a_huge_of_anthropic_staff_are_foreign/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-13T10:10:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "If buying isn't owning, pirating isn't stealing. Have fun everyone!",
-        "link": "https://reddit.com/r/singularity/comments/1u4m7if/if_buying_isnt_owning_pirating_isnt_stealing_have/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-13T09:14:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-13T14:28:58.997Z",
+    "reddit_viral_generated_at": "2026-06-13T16:49:41.918Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
