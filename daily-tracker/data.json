@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-13T20:41:20.917Z",
+    "generated_at": "2026-06-13T22:31:03.845Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "It's over",
+        "link": "https://reddit.com/r/aimemes/comments/1u53qvh/its_over/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-13T22:14:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Need Help! I like to automate my article writing using AI by utilizing / implementing Agentic AI workflows as possible",
+        "link": "https://reddit.com/r/openclaw/comments/1u52r00/need_help_i_like_to_automate_my_article_writing/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-13T21:30:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I built an A2A plugin for OpenClaw that lets it delegate work to remote agents and replay continuation state",
+        "link": "https://reddit.com/r/openclaw/comments/1u521ss/i_built_an_a2a_plugin_for_openclaw_that_lets_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-13T21:00:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I connected openclaw to my outreach stack for 30 days and it surprisingly handled most of the boring operational work",
+        "link": "https://reddit.com/r/openclaw/comments/1u51qsv/i_connected_openclaw_to_my_outreach_stack_for_30/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-13T20:47:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I am such a bad boy",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u50yyr/i_am_such_a_bad_boy/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-13T20:15:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "The Fable 5 benchmarks have just been updated",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u50p76/the_fable_5_benchmarks_have_just_been_updated/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-13T20:04:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "OpenClaw browser automation - can ride off the MCP consent popup everytime",
         "link": "https://reddit.com/r/openclaw/comments/1u4y69k/openclaw_browser_automation_can_ride_off_the_mcp/",
@@ -379,16 +433,7 @@
         "published_at": "2026-06-13T18:20:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Great bell curve of AI",
-        "link": "https://reddit.com/r/aimemes/comments/1u4xy8d/great_bell_curve_of_ai/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-13T18:12:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "One weird trick",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-13T18:09:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
         "headline": "Getting OC to make good when it tells you it’ll follow up on something",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-13T18:08:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
         "headline": "Anthropic or ChatGPT will never trust Amazon again. They did not go to Anthropic first, they went to Trump",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-13T17:55:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Oh AI",
-        "link": "https://reddit.com/r/aimemes/comments/1u4vb7t/oh_ai/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-13T16:27:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "What timeline are we on man",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u4v941/what_timeline_are_we_on_man/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-13T16:25:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Any USA citizen wanna marry me? I’m tryna access Fable 5 in claude code",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u4tjef/any_usa_citizen_wanna_marry_me_im_tryna_access/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-13T15:15:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Updated Mythos benchmarks",
-        "link": "https://reddit.com/r/OpenAI/comments/1u4tfgm/updated_mythos_benchmarks/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-13T15:11:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "New benchmark dropped",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u4sljo/new_benchmark_dropped/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-13T14:36:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-13T20:41:20.917Z",
+    "reddit_viral_generated_at": "2026-06-13T22:31:03.845Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
