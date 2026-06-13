@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-13T04:53:29.295Z",
+    "generated_at": "2026-06-13T08:32:29.129Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I hope the next OpenAI model isn't this much of an advance",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u4iopb/i_hope_the_next_openai_model_isnt_this_much_of_an/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-13T05:46:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anyone getting This country isn't supported error all of a sudden?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u4h8xg/anyone_getting_this_country_isnt_supported_error/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-13T04:29:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "US Government Just Killed Fable 5 and Mythos: Here's What Happened",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u4grhj/us_government_just_killed_fable_5_and_mythos/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-13T04:04:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "The state of things: Claude Fable",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u4gh16/the_state_of_things_claude_fable/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-13T03:49:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Gemini's extinction advice for dinosaurs",
         "link": "https://reddit.com/r/GeminiAI/comments/1u4g12r/geminis_extinction_advice_for_dinosaurs/",
@@ -379,16 +415,16 @@
         "published_at": "2026-06-13T03:26:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
-        "headline": "Getting error code 1099 this time",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u4flpw/getting_error_code_1099_this_time/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-13T03:05:01+00:00",
+        "headline": "Perfect name for a model?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u4f9ob/perfect_name_for_a_model/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-13T02:48:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Anthropic is suspending access to Fabel/Mythos for ALL users, not just non-Americans",
@@ -397,16 +433,7 @@
         "published_at": "2026-06-13T02:41:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Anthopic just hit reset for us!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u4e8pp/anthopic_just_hit_reset_for_us/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-13T01:58:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Megathread for US government suspension of Fable and Mythos",
@@ -415,7 +442,7 @@
         "published_at": "2026-06-13T01:22:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
@@ -424,7 +451,7 @@
         "published_at": "2026-06-13T01:14:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Anthropic says it’s complying with US government order to suspend Fable 5 and Mythos 5 access over jailbreak concerns",
@@ -433,41 +460,14 @@
         "published_at": "2026-06-13T01:11:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Companies are learning that trying to force non-deterministic math into a zero-error business environment creates more work, not less.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u4d0tp/companies_are_learning_that_trying_to_force/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-13T00:58:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Fable 5 indefinitely suspended due to national security concerns",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u4cyvh/fable_5_indefinitely_suspended_due_to_national/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-13T00:55:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "US government directive to suspend access to Fable 5 and Mythos 5",
-        "link": "https://reddit.com/r/singularity/comments/1u4cxr8/us_government_directive_to_suspend_access_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-13T00:53:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-13T04:53:29.295Z",
+    "reddit_viral_generated_at": "2026-06-13T08:32:29.129Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
