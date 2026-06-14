@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-13T22:31:03.845Z",
+    "generated_at": "2026-06-14T01:37:27.367Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How do your openclaw track new URLs across multiple websites?",
+        "link": "https://reddit.com/r/openclaw/comments/1u55gc4/how_do_your_openclaw_track_new_urls_across/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-13T23:33:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The President's Precedent... Thoughts?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u551ca/the_presidents_precedent_thoughts/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-13T23:14:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "It's over",
         "link": "https://reddit.com/r/aimemes/comments/1u53qvh/its_over/",
@@ -379,16 +397,25 @@
         "published_at": "2026-06-13T22:14:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
-        "headline": "Need Help! I like to automate my article writing using AI by utilizing / implementing Agentic AI workflows as possible",
-        "link": "https://reddit.com/r/openclaw/comments/1u52r00/need_help_i_like_to_automate_my_article_writing/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-13T21:30:52+00:00",
+        "headline": "Very surprising tweet 🙄",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u53nld/very_surprising_tweet/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-13T22:10:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
+      },
+      {
+        "headline": "Well, well, surprising tweet",
+        "link": "https://reddit.com/r/singularity/comments/1u53b17/well_well_surprising_tweet/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-13T21:54:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "I built an A2A plugin for OpenClaw that lets it delegate work to remote agents and replay continuation state",
@@ -397,7 +424,7 @@
         "published_at": "2026-06-13T21:00:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "I connected openclaw to my outreach stack for 30 days and it surprisingly handled most of the boring operational work",
@@ -406,7 +433,7 @@
         "published_at": "2026-06-13T20:47:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "I am such a bad boy",
@@ -415,7 +442,7 @@
         "published_at": "2026-06-13T20:15:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "The Fable 5 benchmarks have just been updated",
@@ -424,50 +451,23 @@
         "published_at": "2026-06-13T20:04:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "OpenClaw browser automation - can ride off the MCP consent popup everytime",
-        "link": "https://reddit.com/r/openclaw/comments/1u4y69k/openclaw_browser_automation_can_ride_off_the_mcp/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-13T18:20:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "One weird trick",
-        "link": "https://reddit.com/r/OpenAI/comments/1u4xvj0/one_weird_trick/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-13T18:09:15+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "Getting OC to make good when it tells you it’ll follow up on something",
-        "link": "https://reddit.com/r/openclaw/comments/1u4xuo9/getting_oc_to_make_good_when_it_tells_you_itll/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-13T18:08:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Anthropic or ChatGPT will never trust Amazon again. They did not go to Anthropic first, they went to Trump",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u4xime/anthropic_or_chatgpt_will_never_trust_amazon/",
+        "headline": "Chat Tried to Redirect Me to Malware Site?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u4ywrj/chat_tried_to_redirect_me_to_malware_site/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-06-13T17:55:37+00:00",
+        "published_at": "2026-06-13T18:50:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-13T22:31:03.845Z",
+    "reddit_viral_generated_at": "2026-06-14T01:37:27.367Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
