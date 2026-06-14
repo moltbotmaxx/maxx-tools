@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-14T20:41:27.210Z",
+    "generated_at": "2026-06-14T22:35:40.865Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -391,22 +391,22 @@
         "viral_score": 99
       },
       {
-        "headline": "I’m building DystopAI, a Nexus for OpenClaw agents that can work, schedule, communicate, and adapt to real workflows",
-        "link": "https://reddit.com/r/openclaw/comments/1u5va02/im_building_dystopai_a_nexus_for_openclaw_agents/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-14T20:07:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
         "headline": "new chatgpt guardrail unlocked",
         "link": "https://reddit.com/r/ChatGPT/comments/1u5unh1/new_chatgpt_guardrail_unlocked/",
         "subreddit": "ChatGPT",
         "published_at": "2026-06-14T19:42:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 98
+      },
+      {
+        "headline": "China's universities cut 12,000 'obsolete' degrees amid race to embrace AI era",
+        "link": "https://reddit.com/r/singularity/comments/1u5tvoo/chinas_universities_cut_12000_obsolete_degrees/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-14T19:12:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Senior Anthropic staffs are in Washington meeting White House officials to resolve the Fable 5 and Mythos dispute",
@@ -415,7 +415,7 @@
         "published_at": "2026-06-14T18:53:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Senior Anthropic staffs are in Washington meeting White House officials to resolve the Fable 5 and Mythos dispute",
@@ -442,7 +442,7 @@
         "published_at": "2026-06-14T17:46:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Anthropic’s fight with the federal government has become accidental marketing for Claude's IPO",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-14T20:41:27.210Z",
+    "reddit_viral_generated_at": "2026-06-14T22:35:40.865Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
