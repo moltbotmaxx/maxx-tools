@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-14T15:19:32.355Z",
+    "generated_at": "2026-06-14T16:50:06.121Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Looking for US Citizen to Marry",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u5p0go/looking_for_us_citizen_to_marry/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-14T16:03:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Such a hypocrite",
+        "link": "https://reddit.com/r/OpenAI/comments/1u5oc64/such_a_hypocrite/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-14T15:37:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Just found this meme",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u5o7nu/just_found_this_meme/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-14T15:32:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Fable 5 ban explained",
+        "link": "https://reddit.com/r/OpenAI/comments/1u5ny9f/fable_5_ban_explained/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-14T15:21:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Sony AI’s Ace robot defeats pro player Miyu under official ITTF rules (Nature paper)",
+        "link": "https://reddit.com/r/singularity/comments/1u5nc8t/sony_ais_ace_robot_defeats_pro_player_miyu_under/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-14T14:58:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "You can't even use ChatGPT for Battlefield 6 loadouts anymore",
         "link": "https://reddit.com/r/ChatGPT/comments/1u5n7wa/you_cant_even_use_chatgpt_for_battlefield_6/",
@@ -379,7 +424,7 @@
         "published_at": "2026-06-14T14:53:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Is anyone else not using Gemini for weeks after the last update?",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-14T13:33:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Lossless-claw plugin injecting previous Discord messages into prompt",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-14T12:51:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "I DONT WANT YOUR IMAGES, STOP IT",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-14T12:48:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Giddy Up",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-14T11:29:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "How to setup openclaw in portainer?",
-        "link": "https://reddit.com/r/openclaw/comments/1u5grvc/how_to_setup_openclaw_in_portainer/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-14T09:39:27+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "How will the whole only US citizens even work out?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u5g7fd/how_will_the_whole_only_us_citizens_even_work_out/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-14T09:04:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Anthropic CEO Floats Tax on AI Firms to Fund Universal Income",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u5g0lg/anthropic_ceo_floats_tax_on_ai_firms_to_fund/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-14T08:52:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "The Last of SpongeBob",
-        "link": "https://reddit.com/r/aimemes/comments/1u5fc59/the_last_of_spongebob/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-14T08:09:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Setting up PayRam with OpenClaw — a no-signup payment gateway in minutes, plus WooCommerce integration",
-        "link": "https://reddit.com/r/openclaw/comments/1u5eqft/setting_up_payram_with_openclaw_a_nosignup/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-14T07:33:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-14T15:19:32.355Z",
+    "reddit_viral_generated_at": "2026-06-14T16:50:06.121Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
