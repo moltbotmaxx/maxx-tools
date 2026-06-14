@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-14T10:32:27.105Z",
+    "generated_at": "2026-06-14T13:04:22.856Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Lossless-claw plugin injecting previous Discord messages into prompt",
+        "link": "https://reddit.com/r/openclaw/comments/1u5kcvi/losslessclaw_plugin_injecting_previous_discord/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-14T12:51:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I DONT WANT YOUR IMAGES, STOP IT",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u5kanw/i_dont_want_your_images_stop_it/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-14T12:48:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Saw this on IG, tried it myself. Why is this a thing?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u5jfm8/saw_this_on_ig_tried_it_myself_why_is_this_a_thing/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-14T12:06:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Should I switch to gemini pro? I'd appreciate your opinions.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u5ht3r/should_i_switch_to_gemini_pro_id_appreciate_your/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-14T10:40:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "How to setup openclaw in portainer?",
         "link": "https://reddit.com/r/openclaw/comments/1u5grvc/how_to_setup_openclaw_in_portainer/",
@@ -379,16 +415,7 @@
         "published_at": "2026-06-14T09:39:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Who is we?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u5ggcv/who_is_we/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-14T09:19:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Anthropic CEO Floats Tax on AI Firms to Fund Universal Income",
@@ -397,7 +424,7 @@
         "published_at": "2026-06-14T08:52:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "The Last of SpongeBob",
@@ -406,7 +433,7 @@
         "published_at": "2026-06-14T08:09:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "I can't be the only one who thinks this whole anthropic thing is actually brilliant?",
@@ -415,7 +442,7 @@
         "published_at": "2026-06-14T08:09:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Setup Huggingface to openclaw",
@@ -424,7 +451,7 @@
         "published_at": "2026-06-14T07:34:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 87
       },
       {
         "headline": "Setting up PayRam with OpenClaw — a no-signup payment gateway in minutes, plus WooCommerce integration",
@@ -433,41 +460,14 @@
         "published_at": "2026-06-14T07:33:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Our AI bills are subsidised, and I don't think many people have priced in what happens next",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u5ee9v/our_ai_bills_are_subsidised_and_i_dont_think_many/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-14T07:13:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Anthropic",
-        "link": "https://reddit.com/r/singularity/comments/1u5czqy/anthropic/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-14T05:54:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "One weird trick",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u5cawb/one_weird_trick/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-14T05:16:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-14T10:32:27.105Z",
+    "reddit_viral_generated_at": "2026-06-14T13:04:22.856Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
