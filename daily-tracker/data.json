@@ -367,28 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-14T22:35:40.865Z",
+    "generated_at": "2026-06-15T01:41:31.394Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "How to Split Trust Boundaries Properly in OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1u5vz1r/how_to_split_trust_boundaries_properly_in_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-14T20:34:45+00:00",
+        "headline": "Found these in a box in ChatGPT's basement.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u60njo/found_these_in_a_box_in_chatgpts_basement/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-14T23:53:26+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "A new way to think about agent MEMORY a \"chef's palate\" — every day's work gets a fingerprint that can be un-mixed back into its projects, and it detects projects nobody has named yet [open source]",
-        "link": "https://reddit.com/r/openclaw/comments/1u5vjhb/a_new_way_to_think_about_agent_memory_a_chefs/",
+        "headline": "You are not the author",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u60mxs/you_are_not_the_author/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-14T23:52:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Openclaw (and others) default Installs are silently routing web traffic to Parallel.ai discussion",
+        "link": "https://reddit.com/r/openclaw/comments/1u60k07/openclaw_and_others_default_installs_are_silently/",
         "subreddit": "openclaw",
-        "published_at": "2026-06-14T20:17:30+00:00",
+        "published_at": "2026-06-14T23:48:51+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
+      },
+      {
+        "headline": "I was channel surfing when I picked up a broadcast from 40,000 A.D.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u5wgiy/i_was_channel_surfing_when_i_picked_up_a/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-14T20:54:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "new chatgpt guardrail unlocked",
@@ -397,16 +415,16 @@
         "published_at": "2026-06-14T19:42:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 90
       },
       {
-        "headline": "China's universities cut 12,000 'obsolete' degrees amid race to embrace AI era",
-        "link": "https://reddit.com/r/singularity/comments/1u5tvoo/chinas_universities_cut_12000_obsolete_degrees/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-14T19:12:27+00:00",
+        "headline": "chatgpt makes tool call when i’m depressed",
+        "link": "https://reddit.com/r/OpenAI/comments/1u5u1u3/chatgpt_makes_tool_call_when_im_depressed/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-14T19:18:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Senior Anthropic staffs are in Washington meeting White House officials to resolve the Fable 5 and Mythos dispute",
@@ -415,7 +433,7 @@
         "published_at": "2026-06-14T18:53:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "Senior Anthropic staffs are in Washington meeting White House officials to resolve the Fable 5 and Mythos dispute",
@@ -424,7 +442,7 @@
         "published_at": "2026-06-14T18:50:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "Life before this tweet",
@@ -433,41 +451,23 @@
         "published_at": "2026-06-14T18:47:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
-        "headline": "Indian workers are being paid $3/hour to train the AI robots that will eventually replace them",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u5rndy/indian_workers_are_being_paid_3hour_to_train_the/",
+        "headline": "Yes!",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u5s1b8/yes/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-14T17:46:50+00:00",
+        "published_at": "2026-06-14T18:01:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic’s fight with the federal government has become accidental marketing for Claude's IPO",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u5rmue/anthropics_fight_with_the_federal_government_has/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-14T17:46:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Built a Fable 5 availability tracker in 30 minutes",
-        "link": "https://reddit.com/r/OpenAI/comments/1u5r84p/built_a_fable_5_availability_tracker_in_30_minutes/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-14T17:30:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-14T22:35:40.865Z",
+    "reddit_viral_generated_at": "2026-06-15T01:41:31.394Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
