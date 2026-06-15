@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-15T14:35:26.700Z",
+    "generated_at": "2026-06-15T19:09:10.322Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Chatgpt made a funny.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u6nd0d/chatgpt_made_a_funny/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-15T17:33:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anthropic has been sued for allegedly misleading customers on usage limits.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u6kzsr/anthropic_has_been_sued_for_allegedly_misleading/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-15T16:09:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I want gemini to be the best so bad but it isn't good at all",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u6jzlf/i_want_gemini_to_be_the_best_so_bad_but_it_isnt/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-15T15:34:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Coming soon gemini 3.5pro",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u6jw7c/coming_soon_gemini_35pro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-15T15:30:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Write me ten single sentences no one, I mean NO ONE, has ever said before",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u6jai2/write_me_ten_single_sentences_no_one_i_mean_no/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-15T15:08:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Anthropic Sued Over Limits on Its $200-a-Month AI Plans",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u6j6v2/anthropic_sued_over_limits_on_its_200amonth_ai/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-15T15:05:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
+        "link": "https://reddit.com/r/singularity/comments/1u6i9pu/they_screwed_us_personality_clashes_sent/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-15T14:30:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
       {
         "headline": "So I blocked my brother instead. Honestly, less effort.",
         "link": "https://reddit.com/r/aimemes/comments/1u6i8e2/so_i_blocked_my_brother_instead_honestly_less/",
@@ -379,85 +442,22 @@
         "published_at": "2026-06-15T14:29:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
+      },
+      {
+        "headline": "Back to the Stone Age? Our company slashed our AI budget and we're back to manual coding.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u6hyki/back_to_the_stone_age_our_company_slashed_our_ai/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-15T14:19:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Top cybersecurity leaders urge US government to unban Mythos.",
         "link": "https://reddit.com/r/singularity/comments/1u6hoim/top_cybersecurity_leaders_urge_us_government_to/",
         "subreddit": "singularity",
         "published_at": "2026-06-15T14:08:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "The rare alignment",
-        "link": "https://reddit.com/r/aimemes/comments/1u6ho32/the_rare_alignment/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-15T14:08:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "I asked ChatGPT to make a New Yorker style cartoon that's absolutely not funny.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u6gbv3/i_asked_chatgpt_to_make_a_new_yorker_style/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-15T13:16:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "\"Elon Musk predicts that our current global economy will be comparable to cavemen throwing sticks into a fire given what the future holds and its current trajectory\"",
-        "link": "https://reddit.com/r/singularity/comments/1u6g1hr/elon_musk_predicts_that_our_current_global/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-15T13:04:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Your thoughts on this?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u6ei5x/your_thoughts_on_this/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-15T11:58:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "A $200 ChatGPT subscription could cost OpenAI $14,000 if you actually used it to its full potential",
-        "link": "https://reddit.com/r/singularity/comments/1u6e1yt/a_200_chatgpt_subscription_could_cost_openai/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-15T11:37:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Stop burning your Opus 4.8 Max limits. Use this prompt to slash token costs.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u6cwvn/stop_burning_your_opus_48_max_limits_use_this/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-15T10:39:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Why is text output from Fable so much easier to read than Opus?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u6cv2y/why_is_text_output_from_fable_so_much_easier_to/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-15T10:36:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Probably just a few hundred kilobytes?",
-        "link": "https://reddit.com/r/singularity/comments/1u6cts8/probably_just_a_few_hundred_kilobytes/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-15T10:34:49+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-15T14:35:26.700Z",
+    "reddit_viral_generated_at": "2026-06-15T19:09:10.322Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
