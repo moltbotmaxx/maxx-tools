@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-15T21:49:50.594Z",
+    "generated_at": "2026-06-16T00:02:51.272Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The White House Is Ratcheting Up Its War Against Anthropic",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u6w0l7/the_white_house_is_ratcheting_up_its_war_against/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-15T22:47:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The marketing around skills is so funny",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u6uqd6/the_marketing_around_skills_is_so_funny/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-15T21:56:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Tensordyne announces Logarithmic AI compute chips. 17x more tokens per watt and 13x higher throughput than NVIDIA Blackwell.",
+        "link": "https://reddit.com/r/singularity/comments/1u6u17i/tensordyne_announces_logarithmic_ai_compute_chips/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-15T21:30:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Langfuse monitoring openclaw interactions",
         "link": "https://reddit.com/r/openclaw/comments/1u6tuqp/langfuse_monitoring_openclaw_interactions/",
@@ -379,7 +406,25 @@
         "published_at": "2026-06-15T21:23:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Feds freaked over Fable 5 after simple 'fix this code' prompt, not jailbreak, says researcher",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u6tm7g/feds_freaked_over_fable_5_after_simple_fix_this/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-15T21:14:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Isn't it absurd that Google's own AI (Gemini) refuses to Google things, while Claude does it seamlessly?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u6sxx5/isnt_it_absurd_that_googles_own_ai_gemini_refuses/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-15T20:49:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "What's the best \"intelligence/agency per token/dollar\" LLM for Open Claw?",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-15T20:26:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "OpenClaw - the hype train has moved on",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-15T20:08:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Is anyone else noticing that every post here is just... written by AI?",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-15T20:07:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Claude Code isn't gone quite yet!",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-15T19:47:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "AGIBOT A3 is now autonomously playing table tennis against humans at the BAAI 2026 conference",
-        "link": "https://reddit.com/r/singularity/comments/1u6nlk7/agibot_a3_is_now_autonomously_playing_table/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-15T17:41:53+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "Anthropic employees be like...",
-        "link": "https://reddit.com/r/singularity/comments/1u6nl9f/anthropic_employees_be_like/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-15T17:41:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Chatgpt made a funny.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u6nd0d/chatgpt_made_a_funny/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-15T17:33:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Anthropic has been sued for allegedly misleading customers on usage limits.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u6kzsr/anthropic_has_been_sued_for_allegedly_misleading/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-15T16:09:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I want gemini to be the best so bad but it isn't good at all",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u6jzlf/i_want_gemini_to_be_the_best_so_bad_but_it_isnt/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-15T15:34:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-15T21:49:50.594Z",
+    "reddit_viral_generated_at": "2026-06-16T00:02:51.272Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
