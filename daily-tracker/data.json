@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-16T21:20:19.819Z",
+    "generated_at": "2026-06-16T23:49:25.607Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "How do context sizes compare between OC and H4s",
-        "link": "https://reddit.com/r/openclaw/comments/1u7ovmp/how_do_context_sizes_compare_between_oc_and_h4s/",
+        "headline": "What’s a cool non-coding project/task that you used OC to finally accomplish?",
+        "link": "https://reddit.com/r/openclaw/comments/1u7s75l/whats_a_cool_noncoding_projecttask_that_you_used/",
         "subreddit": "openclaw",
-        "published_at": "2026-06-16T20:17:04+00:00",
+        "published_at": "2026-06-16T22:24:29+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "I'm trying to build Skyrim with AI - here's my progress so far [WIP]",
+        "link": "https://reddit.com/r/OpenAI/comments/1u7ndan/im_trying_to_build_skyrim_with_ai_heres_my/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-16T19:22:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "HSBC say OpenAI needs to turn $13bn revenue into $200bn AND raise another 200bn to stay afloat by 2030",
@@ -388,16 +397,7 @@
         "published_at": "2026-06-16T18:56:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "openclaw handled a fintrack auth error way better than i expected — actually pieced together my account info from transaction history",
-        "link": "https://reddit.com/r/openclaw/comments/1u7mewe/openclaw_handled_a_fintrack_auth_error_way_better/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-16T18:48:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "ChatGPT is about to get a voice mode upgrade as a new “gpt-bidi-1” model has been spotted along with announcement updates.",
@@ -406,7 +406,7 @@
         "published_at": "2026-06-16T18:30:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Z.ai releases GLM 5.2 model: Long Horizon tasks and open weights",
@@ -415,7 +415,7 @@
         "published_at": "2026-06-16T18:08:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Anthropic's best Fable 5 ad is the banner telling me I can't use it.",
@@ -424,7 +424,7 @@
         "published_at": "2026-06-16T18:06:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "ChatGPT's market share slips below 50% for first time",
@@ -433,7 +433,7 @@
         "published_at": "2026-06-16T17:52:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Good morning",
@@ -442,16 +442,7 @@
         "published_at": "2026-06-16T17:47:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Q&A on basic problem",
-        "link": "https://reddit.com/r/openclaw/comments/1u7kltw/qa_on_basic_problem/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-16T17:45:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Run OpenClaw with a Local LLM - tested for macOS 16GB-24GB",
@@ -460,14 +451,23 @@
         "published_at": "2026-06-16T17:21:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
+      },
+      {
+        "headline": "Competition is about to get real. OpenAI better raise their game",
+        "link": "https://reddit.com/r/OpenAI/comments/1u7iuf4/competition_is_about_to_get_real_openai_better/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-16T16:43:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-16T21:20:19.819Z",
+    "reddit_viral_generated_at": "2026-06-16T23:49:25.607Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
