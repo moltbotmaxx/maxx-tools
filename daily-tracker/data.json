@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-17T05:18:26.367Z",
+    "generated_at": "2026-06-17T10:09:30.676Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "First signs of AGI in Amsterdam",
+        "link": "https://reddit.com/r/aimemes/comments/1u83tsg/first_signs_of_agi_in_amsterdam/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-17T07:56:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "If you haven't already, switch to GLM-5.2",
+        "link": "https://reddit.com/r/openclaw/comments/1u83jfb/if_you_havent_already_switch_to_glm52/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-17T07:38:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "You’re funny, I laughed",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u820et/youre_funny_i_laughed/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-17T06:10:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Pentagon used Elon Musk’s Grok AI to fire 2,000 missiles at Iran, official says",
+        "link": "https://reddit.com/r/OpenAI/comments/1u80x1z/pentagon_used_elon_musks_grok_ai_to_fire_2000/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-17T05:09:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "You cannot be serious",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u80p0q/you_cannot_be_serious/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-17T04:58:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Good morning",
+        "link": "https://reddit.com/r/singularity/comments/1u80n29/good_morning/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-17T04:55:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
       {
         "headline": "OpenAI plans to release GPT-Bidi-1, its next-generation voice model",
         "link": "https://reddit.com/r/singularity/comments/1u7z681/openai_plans_to_release_gptbidi1_its/",
@@ -379,7 +433,16 @@
         "published_at": "2026-06-17T03:39:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 89
+      },
+      {
+        "headline": "I asked ChatGPT to generate an image based on what I like to generate or talk about. I feel attacked.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u7xa8n/i_asked_chatgpt_to_generate_an_image_based_on/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-17T02:10:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       },
       {
         "headline": "The Crystal Cove High Vanishing is a case that still haunts me to this day",
@@ -388,7 +451,7 @@
         "published_at": "2026-06-17T01:19:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 84
       },
       {
         "headline": "Claude Opus caught malware hidden in my repo, then reverse engineered the whole thing",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-17T00:58:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "OpenAI's market share falls below 50%",
-        "link": "https://reddit.com/r/OpenAI/comments/1u7vjkv/openais_market_share_falls_below_50/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-17T00:48:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "How to make AI profitable (Business PLAN)",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u7ur9y/how_to_make_ai_profitable_business_plan/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-17T00:13:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I used ChatGPT to update the president's chart lol",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u7uom9/i_used_chatgpt_to_update_the_presidents_chart_lol/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-17T00:10:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "\"Anthropic Amendments\" Proposed Regarding Export Control Directives",
-        "link": "https://reddit.com/r/singularity/comments/1u7s7xu/anthropic_amendments_proposed_regarding_export/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-16T22:25:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "What’s a cool non-coding project/task that you used OC to finally accomplish?",
-        "link": "https://reddit.com/r/openclaw/comments/1u7s75l/whats_a_cool_noncoding_projecttask_that_you_used/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-16T22:24:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Z.ai releases GLM 5.2 model: Long Horizon tasks and open weights",
-        "link": "https://reddit.com/r/singularity/comments/1u7l9yu/zai_releases_glm_52_model_long_horizon_tasks_and/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-16T18:08:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
-      },
-      {
-        "headline": "Anthropic's best Fable 5 ad is the banner telling me I can't use it.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u7l7w4/anthropics_best_fable_5_ad_is_the_banner_telling/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-16T18:06:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-17T05:18:26.367Z",
+    "reddit_viral_generated_at": "2026-06-17T10:09:30.676Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
