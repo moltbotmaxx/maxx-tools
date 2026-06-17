@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-17T20:30:41.800Z",
+    "generated_at": "2026-06-17T22:53:31.671Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How do you automatically make openclaw identifies his mistakes and prevent them from happening again",
+        "link": "https://reddit.com/r/openclaw/comments/1u8o82s/how_do_you_automatically_make_openclaw_identifies/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-17T22:07:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "excuse me",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u8o7wn/excuse_me/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-17T22:07:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "They're demanding Fable to somehow be 100% jailbreak-proof. It's so fucking over.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u8nalg/theyre_demanding_fable_to_somehow_be_100/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-17T21:31:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "For many use cases, You can simply train agents with expensive model, And then use cheaper model for same results!",
+        "link": "https://reddit.com/r/openclaw/comments/1u8mwi5/for_many_use_cases_you_can_simply_train_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-17T21:16:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Anthropologists estimate the sole male inhabitant is living his best and worst life simultaneously.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u8mdbk/anthropologists_estimate_the_sole_male_inhabitant/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-17T20:56:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Dario Amodei on why he left Sam Altman and OpenAI: 'Why argue with someone' when you 'don't trust them'",
+        "link": "https://reddit.com/r/OpenAI/comments/1u8lcht/dario_amodei_on_why_he_left_sam_altman_and_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-17T20:17:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Gemini is dying",
+        "link": "https://reddit.com/r/GeminiAI/comments/1u8l3pu/gemini_is_dying/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-17T20:08:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "\"Gemini is smart\" they say",
         "link": "https://reddit.com/r/GeminiAI/comments/1u8jzdm/gemini_is_smart_they_say/",
@@ -379,7 +442,7 @@
         "published_at": "2026-06-17T19:27:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Using ChatGPT to visualise alcoholism",
@@ -388,16 +451,7 @@
         "published_at": "2026-06-17T19:25:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Free models free apo providers",
-        "link": "https://reddit.com/r/openclaw/comments/1u8hv03/free_models_free_apo_providers/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-17T18:11:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Demis Hassabis and Dario Amodei called for a U.S.-led AI coalition at a closed-door meeting at the G7 summit",
@@ -406,68 +460,14 @@
         "published_at": "2026-06-17T18:03:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "OpenAI CEO Sam Altman joins top AI CEOs meeting with world leaders at G7 summit",
-        "link": "https://reddit.com/r/OpenAI/comments/1u8g9tv/openai_ceo_sam_altman_joins_top_ai_ceos_meeting/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-17T17:13:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Anthropic CEO Dario Amodei joins top AI CEOs meeting with world leaders at G7 summit",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u8g4rn/anthropic_ceo_dario_amodei_joins_top_ai_ceos/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-17T17:08:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "World leaders meet with top AI CEOs at G7 summit in France",
-        "link": "https://reddit.com/r/singularity/comments/1u8fyg6/world_leaders_meet_with_top_ai_ceos_at_g7_summit/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-17T17:01:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "How do you share your openclaw setups?",
-        "link": "https://reddit.com/r/openclaw/comments/1u8fj7q/how_do_you_share_your_openclaw_setups/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-17T16:46:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "The double pill dilemma",
-        "link": "https://reddit.com/r/aimemes/comments/1u8fbl7/the_double_pill_dilemma/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-17T16:38:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Interesting one word answers",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u8f1pm/interesting_one_word_answers/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-17T16:28:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-17T20:30:41.800Z",
+    "reddit_viral_generated_at": "2026-06-17T22:53:31.671Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
