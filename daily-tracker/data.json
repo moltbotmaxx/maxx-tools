@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-18T11:18:19.457Z",
+    "generated_at": "2026-06-18T14:25:26.674Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Yes︎︎ ︎︎ ︎ ⁠⁠⁠ ︎ ︎ ︎ ︎ ︎ ︎ ︎ ︎ ︎ ︎︎ ︎︎ ︎ ⁠⁠⁠ ︎ ︎ ︎ ︎ ︎ ︎ ︎ ︎ ︎ ︎︎",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u96zae/yes/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-18T13:56:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Fable 5 will be available again in the coming days - Anthropic",
+        "link": "https://reddit.com/r/singularity/comments/1u96in0/fable_5_will_be_available_again_in_the_coming/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-18T13:37:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic is \"confident that in the coming days [Fable 5] will become available again\" - Anthropic's International Managing Director",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u95x3l/anthropic_is_confident_that_in_the_coming_days/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-18T13:12:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I asked ChatGPT how the US flag would have been designed in different decades.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1u959s1/i_asked_chatgpt_how_the_us_flag_would_have_been/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-18T12:45:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Is OpenClaw still worth it now that I have Codex + Computer Use + Chrome Bridge?",
+        "link": "https://reddit.com/r/openclaw/comments/1u93to2/is_openclaw_still_worth_it_now_that_i_have_codex/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-18T11:35:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Only 16 percent of Americans think AI will have a positive impact on society, a new study shows | TechCrunch",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u93qm9/only_16_percent_of_americans_think_ai_will_have_a/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-18T11:31:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Vapi vs Elevenlabs comparison cheatsheet",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u93dut/vapi_vs_elevenlabs_comparison_cheatsheet/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-18T11:12:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "8 things about Claude Projects that took me too long to figure out",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1u92t33/8_things_about_claude_projects_that_took_me_too/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-18T10:40:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "OpenAI's Losses Swelled to $38.5B in 2025 Despite $13B Revenue Surge",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u916io/openais_losses_swelled_to_385b_in_2025_despite/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-18T09:04:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
+      },
       {
         "headline": "Day 23 of building GTA 6 using claude",
         "link": "https://reddit.com/r/ClaudeAI/comments/1u90nmg/day_23_of_building_gta_6_using_claude/",
@@ -379,95 +460,14 @@
         "published_at": "2026-06-18T08:32:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Leopold predicted everything back in 2024",
-        "link": "https://reddit.com/r/singularity/comments/1u90gsu/leopold_predicted_everything_back_in_2024/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-18T08:20:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Is anyone else facing this issue with Claude?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u8zd7c/is_anyone_else_facing_this_issue_with_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-18T07:13:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Slavery again",
-        "link": "https://reddit.com/r/aimemes/comments/1u8zcdu/slavery_again/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-18T07:12:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Same running-physics test through Seedance 2.0, Gemini Omni Flash and Kling 3.0, no clean winner",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u8y5or/same_runningphysics_test_through_seedance_20/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-18T06:02:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Anthropic CEO Dario Amodei scared everyone about AI. Now he’s paying the price with a US government ban on Fable",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1u8xfbl/anthropic_ceo_dario_amodei_scared_everyone_about/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-18T05:21:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "most likely the real reason why Noam Shazeer left Google for OpenAI. Google management censored his transphobic and Gaza conflict related comments last year",
-        "link": "https://reddit.com/r/singularity/comments/1u8xc9m/most_likely_the_real_reason_why_noam_shazeer_left/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-18T05:16:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Noam Shaheer leaves google",
-        "link": "https://reddit.com/r/GeminiAI/comments/1u8wsbd/noam_shaheer_leaves_google/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-18T04:46:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I know its an openAI sub, but midjourney just unveiled a fucking full body scanner thats meant to replace MRIs, straight from science fiction - holy shit",
-        "link": "https://reddit.com/r/OpenAI/comments/1u8uttm/i_know_its_an_openai_sub_but_midjourney_just/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-18T03:05:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Wow... Opus 4.8 feels... DIFFERENT tonight :D",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1u8u3qg/wow_opus_48_feels_different_tonight_d/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-18T02:30:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-18T11:18:19.457Z",
+    "reddit_viral_generated_at": "2026-06-18T14:25:26.674Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
