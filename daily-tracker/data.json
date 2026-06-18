@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-17T22:53:31.671Z",
+    "generated_at": "2026-06-18T01:44:28.086Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "How do you automatically make openclaw identifies his mistakes and prevent them from happening again",
-        "link": "https://reddit.com/r/openclaw/comments/1u8o82s/how_do_you_automatically_make_openclaw_identifies/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-17T22:07:56+00:00",
+        "headline": "Huge Loss For GDM",
+        "link": "https://reddit.com/r/singularity/comments/1u8s2pc/huge_loss_for_gdm/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-18T00:55:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Trump administration wants Fable 5 to have unbreakable guardrails | AKA they are asking for the impossible",
+        "link": "https://reddit.com/r/singularity/comments/1u8rpf4/trump_administration_wants_fable_5_to_have/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-18T00:38:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Mac mini M4 24 GB Openclaw local llm options",
+        "link": "https://reddit.com/r/openclaw/comments/1u8pdn3/mac_mini_m4_24_gb_openclaw_local_llm_options/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-17T22:55:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "excuse me",
@@ -388,7 +406,7 @@
         "published_at": "2026-06-17T22:07:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "They're demanding Fable to somehow be 100% jailbreak-proof. It's so fucking over.",
@@ -397,7 +415,7 @@
         "published_at": "2026-06-17T21:31:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "For many use cases, You can simply train agents with expensive model, And then use cheaper model for same results!",
@@ -406,7 +424,7 @@
         "published_at": "2026-06-17T21:16:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Anthropologists estimate the sole male inhabitant is living his best and worst life simultaneously.",
@@ -415,7 +433,7 @@
         "published_at": "2026-06-17T20:56:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Dario Amodei on why he left Sam Altman and OpenAI: 'Why argue with someone' when you 'don't trust them'",
@@ -424,7 +442,7 @@
         "published_at": "2026-06-17T20:17:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Gemini is dying",
@@ -433,7 +451,7 @@
         "published_at": "2026-06-17T20:08:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "\"Gemini is smart\" they say",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-17T19:27:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Using ChatGPT to visualise alcoholism",
-        "link": "https://reddit.com/r/ChatGPT/comments/1u8jxak/using_chatgpt_to_visualise_alcoholism/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-17T19:25:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Demis Hassabis and Dario Amodei called for a U.S.-led AI coalition at a closed-door meeting at the G7 summit",
-        "link": "https://reddit.com/r/singularity/comments/1u8hnak/demis_hassabis_and_dario_amodei_called_for_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-17T18:03:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-17T22:53:31.671Z",
+    "reddit_viral_generated_at": "2026-06-18T01:44:28.086Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
