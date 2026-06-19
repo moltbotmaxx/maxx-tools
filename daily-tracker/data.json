@@ -367,19 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-19T21:36:27.504Z",
+    "generated_at": "2026-06-19T23:16:21.616Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "I whipped up a landing page that shows AI news in chronological order - LMTimeline.com",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uabjar/i_whipped_up_a_landing_page_that_shows_ai_news_in/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-19T19:36:44+00:00",
+        "headline": "Would they belive this on facebook",
+        "link": "https://reddit.com/r/aimemes/comments/1uag7if/would_they_belive_this_on_facebook/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-19T22:50:24+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "life is boring mfers when they find a shopping cart",
+        "link": "https://reddit.com/r/aimemes/comments/1uag5sx/life_is_boring_mfers_when_they_find_a_shopping/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-19T22:48:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "It is all about the loop",
+        "link": "https://reddit.com/r/openclaw/comments/1uafv7g/it_is_all_about_the_loop/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-19T22:35:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anyone prefer Claude over Gaming",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uaeizw/anyone_prefer_claude_over_gaming/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-19T21:38:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Nobel Winner John Jumper to Leave Google DeepMind for Anthropic",
+        "link": "https://reddit.com/r/singularity/comments/1uadqbb/nobel_winner_john_jumper_to_leave_google_deepmind/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-19T21:05:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Discussion: Standard Usage (Tokens per day) for your Usecase?",
+        "link": "https://reddit.com/r/openclaw/comments/1uadgi3/discussion_standard_usage_tokens_per_day_for_your/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-19T20:53:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "OG ChatGPT & Beta with Pics",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-19T19:21:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "Anyone here actually deployed an agent into a real business? Want the war stories before I start.",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-19T17:44:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "DeepMind is now reportedly struggling to compete with Anthropic and OpenAI while 3.5 Pro is not the step change they'd need to be competitive",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-19T16:49:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "An agent built for file retrieval spawned 829 Claude instances and spent $40K worth of usage in hours",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-19T16:48:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I’m 100% convinced ChatGPT subscription models are running heavier quantization than API models",
-        "link": "https://reddit.com/r/OpenAI/comments/1ua73h7/im_100_convinced_chatgpt_subscription_models_are/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-19T16:47:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Low-skilled attacker used Claude Code and Codex to breach 14 companies",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ua6sfe/lowskilled_attacker_used_claude_code_and_codex_to/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-19T16:35:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "In the span of 3 days: Noam Shazeer (Transformer co-author) leaves Google for OpenAI, and John Jumper (Nobel laureate, AlphaFold lead) leaves Google DeepMind for Anthropic",
-        "link": "https://reddit.com/r/singularity/comments/1ua6gv6/in_the_span_of_3_days_noam_shazeer_transformer/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-19T16:23:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "AlphaFold team lead left Google Deepmind to join anthropic",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ua6ejv/alphafold_team_lead_left_google_deepmind_to_join/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-19T16:20:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Five Chinese AI labs cut token prices up to 99%",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ua5lnh/five_chinese_ai_labs_cut_token_prices_up_to_99/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-19T15:50:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-19T21:36:27.504Z",
+    "reddit_viral_generated_at": "2026-06-19T23:16:21.616Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
