@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-20T10:14:01.722Z",
+    "generated_at": "2026-06-20T12:11:04.096Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "It's official. Open source is better than Gemini Pro.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uaubea/its_official_open_source_is_better_than_gemini_pro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-20T11:31:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Someone just ran a 744B parameter model at 30 tok/s across 6 consumer GPUs in 6 different US states over the open internet",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uathl8/someone_just_ran_a_744b_parameter_model_at_30/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-20T10:45:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Trump on Anthropic, CEO Dario and AI National Security",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uat4bc/trump_on_anthropic_ceo_dario_and_ai_national/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-20T10:24:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Will there ever be a fixed monthly price for unlimited use?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uasrut/will_there_ever_be_a_fixed_monthly_price_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-20T10:03:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Chat GPT memory question",
+        "link": "https://reddit.com/r/OpenAI/comments/1uasp5n/chat_gpt_memory_question/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-20T09:59:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Damn whoever started this thing... I just can't stop now xD (generating images of school plays performing R-rated movies)",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uarn39/damn_whoever_started_this_thing_i_just_cant_stop/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-20T08:52:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "AI has revealed that most people have the reading ability at a third-grade level",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uaqyni/ai_has_revealed_that_most_people_have_the_reading/",
@@ -379,25 +433,7 @@
         "published_at": "2026-06-20T08:09:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Well. Guess we shouldn’t drink water anymore",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uaqpxp/well_guess_we_shouldnt_drink_water_anymore/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T07:54:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Is there any freelance AI agent developers in this sub?",
-        "link": "https://reddit.com/r/openclaw/comments/1uaq3fo/is_there_any_freelance_ai_agent_developers_in/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-20T07:17:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Google Gemini co-lead Noam Shazeer leaves for OpenAI",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-20T06:33:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 88
       },
       {
         "headline": "Hyundai takes full control of Boston Dynamics as SoftBank exits for $325 million",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-20T06:12:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "Yeah, he's cooking Gemini Alone with Most of the Lead AI engineers leaving Deepmind 😂",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-20T05:24:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "How the f*ck did I travel back to 2024?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uan38g/how_the_fck_did_i_travel_back_to_2024/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-20T04:28:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Nobel Winner John Jumper to Leave Google DeepMind for Anthropic",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uan2ow/nobel_winner_john_jumper_to_leave_google_deepmind/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-20T04:28:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Why are you still here? I'll go first",
-        "link": "https://reddit.com/r/openclaw/comments/1uakvf5/why_are_you_still_here_ill_go_first/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-20T02:33:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Okay this Robot Face actually is a real robot, unlike the recent face post",
-        "link": "https://reddit.com/r/singularity/comments/1uakt50/okay_this_robot_face_actually_is_a_real_robot/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-20T02:30:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-20T10:14:01.722Z",
+    "reddit_viral_generated_at": "2026-06-20T12:11:04.096Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
