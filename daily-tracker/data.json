@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-19T23:16:21.616Z",
+    "generated_at": "2026-06-20T01:32:02.128Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uahx8i/update_weve_gone_ahead_and_reset_5hour_and_weekly/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-20T00:08:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT fixed my 9 year chronic pain",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uahhpq/chatgpt_fixed_my_9_year_chronic_pain/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-19T23:48:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude gave me the number to a phone sex line instead of AMEX",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uagwhk/claude_gave_me_the_number_to_a_phone_sex_line/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-19T23:20:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Would they belive this on facebook",
         "link": "https://reddit.com/r/aimemes/comments/1uag7if/would_they_belive_this_on_facebook/",
@@ -379,25 +406,16 @@
         "published_at": "2026-06-19T22:50:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
-        "headline": "life is boring mfers when they find a shopping cart",
-        "link": "https://reddit.com/r/aimemes/comments/1uag5sx/life_is_boring_mfers_when_they_find_a_shopping/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-19T22:48:15+00:00",
+        "headline": "Oh yes, the SOTA model 2.0 pro experimental",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uag4xt/oh_yes_the_sota_model_20_pro_experimental/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-19T22:47:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "It is all about the loop",
-        "link": "https://reddit.com/r/openclaw/comments/1uafv7g/it_is_all_about_the_loop/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-19T22:35:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Anyone prefer Claude over Gaming",
@@ -406,7 +424,7 @@
         "published_at": "2026-06-19T21:38:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Nobel Winner John Jumper to Leave Google DeepMind for Anthropic",
@@ -415,7 +433,7 @@
         "published_at": "2026-06-19T21:05:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Discussion: Standard Usage (Tokens per day) for your Usecase?",
@@ -424,7 +442,7 @@
         "published_at": "2026-06-19T20:53:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "OG ChatGPT & Beta with Pics",
@@ -433,7 +451,7 @@
         "published_at": "2026-06-19T19:21:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Anyone here actually deployed an agent into a real business? Want the war stories before I start.",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-19T17:44:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "DeepMind is now reportedly struggling to compete with Anthropic and OpenAI while 3.5 Pro is not the step change they'd need to be competitive",
-        "link": "https://reddit.com/r/singularity/comments/1ua75fz/deepmind_is_now_reportedly_struggling_to_compete/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-19T16:49:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "An agent built for file retrieval spawned 829 Claude instances and spent $40K worth of usage in hours",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ua754p/an_agent_built_for_file_retrieval_spawned_829/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-19T16:48:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-19T23:16:21.616Z",
+    "reddit_viral_generated_at": "2026-06-20T01:32:02.128Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
