@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-20T14:33:14.322Z",
+    "generated_at": "2026-06-20T16:52:55.752Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Five Chinese AI Labs Cut Token Prices Up to 99%",
+        "link": "https://reddit.com/r/singularity/comments/1ub06rj/five_chinese_ai_labs_cut_token_prices_up_to_99/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-20T16:00:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anybody else missing the old \"diffusion\" days?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uazueo/anybody_else_missing_the_old_diffusion_days/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-20T15:46:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Senate's acting real weird",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uaz9wt/senates_acting_real_weird/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-20T15:22:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "built a project that visualizes your OC as a live lobster 🦞 (terminal pixel-art, open-source)",
+        "link": "https://reddit.com/r/openclaw/comments/1uaz0hr/built_a_project_that_visualizes_your_oc_as_a_live/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-20T15:12:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Anthropic built its name on AI safety. Can those commitments survive a trillion-dollar IPO?",
+        "link": "https://reddit.com/r/OpenAI/comments/1uayf30/anthropic_built_its_name_on_ai_safety_can_those/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-20T14:46:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Software Engineers - Have you stopped reading docs people write?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uaxtj5/software_engineers_have_you_stopped_reading_docs/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-20T14:20:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Locally installed LLM?",
         "link": "https://reddit.com/r/openclaw/comments/1uawqgk/locally_installed_llm/",
@@ -379,7 +433,16 @@
         "published_at": "2026-06-20T13:31:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Reuters: Google to challenge German ruling saying it is liable for AI-generated false claims",
+        "link": "https://reddit.com/r/singularity/comments/1uav88e/reuters_google_to_challenge_german_ruling_saying/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-20T12:19:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "It's official. Open source is better than Gemini Pro.",
@@ -388,7 +451,7 @@
         "published_at": "2026-06-20T11:31:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "MIT Technology Review: A startup claims it broke through a bottleneck that’s holding back LLMs",
@@ -397,77 +460,14 @@
         "published_at": "2026-06-20T10:47:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Someone just ran a 744B parameter model at 30 tok/s across 6 consumer GPUs in 6 different US states over the open internet",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uathl8/someone_just_ran_a_744b_parameter_model_at_30/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T10:45:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Trump on Anthropic, CEO Dario and AI National Security",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uat4bc/trump_on_anthropic_ceo_dario_and_ai_national/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-20T10:24:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Will there ever be a fixed monthly price for unlimited use?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uasrut/will_there_ever_be_a_fixed_monthly_price_for/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T10:03:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Chat GPT memory question",
-        "link": "https://reddit.com/r/OpenAI/comments/1uasp5n/chat_gpt_memory_question/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-20T09:59:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Damn whoever started this thing... I just can't stop now xD (generating images of school plays performing R-rated movies)",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uarn39/damn_whoever_started_this_thing_i_just_cant_stop/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-20T08:52:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "AI has revealed that most people have the reading ability at a third-grade level",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uaqyni/ai_has_revealed_that_most_people_have_the_reading/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-20T08:09:47+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "Well. Guess we shouldn’t drink water anymore",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uaqpxp/well_guess_we_shouldnt_drink_water_anymore/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T07:54:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-20T14:33:14.322Z",
+    "reddit_viral_generated_at": "2026-06-20T16:52:55.752Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
