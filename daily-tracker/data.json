@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-20T16:52:55.752Z",
+    "generated_at": "2026-06-20T18:48:25.157Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Nag Ol's: \"Nissan: Ass In\" Slogan",
+        "link": "https://reddit.com/r/aimemes/comments/1ub403j/nag_ols_nissan_ass_in_slogan/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-20T18:38:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "life is boring mfers when they find a shopping cart that they can go in",
+        "link": "https://reddit.com/r/aimemes/comments/1ub33tj/life_is_boring_mfers_when_they_find_a_shopping/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-20T18:01:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "A study on synthetic [AI] choreographies",
+        "link": "https://reddit.com/r/singularity/comments/1ub2ssu/a_study_on_synthetic_ai_choreographies/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-20T17:49:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Can you use OpenClaw with Google Vertex (Enterprise Agent AI) using the quick integration API key?",
+        "link": "https://reddit.com/r/openclaw/comments/1ub1z6z/can_you_use_openclaw_with_google_vertex/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-20T17:15:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Singularity Tech Bro Battle Rap",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ub0tg0/singularity_tech_bro_battle_rap/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-20T16:27:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Five Chinese AI Labs Cut Token Prices Up to 99%",
         "link": "https://reddit.com/r/singularity/comments/1ub06rj/five_chinese_ai_labs_cut_token_prices_up_to_99/",
@@ -379,16 +424,7 @@
         "published_at": "2026-06-20T16:00:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Anybody else missing the old \"diffusion\" days?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uazueo/anybody_else_missing_the_old_diffusion_days/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T15:46:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Senate's acting real weird",
@@ -397,7 +433,16 @@
         "published_at": "2026-06-20T15:22:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
+      },
+      {
+        "headline": "\"ChatGPT fixed my 9 year chronic pain\" --- Redditors in the comments share all the ways AI helped them with medical issues, diagnoses, and medication issues, etc., that human doctors had been unable to resolve",
+        "link": "https://reddit.com/r/singularity/comments/1uaz1jj/chatgpt_fixed_my_9_year_chronic_pain_redditors_in/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-20T15:13:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "built a project that visualizes your OC as a live lobster 🦞 (terminal pixel-art, open-source)",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-20T15:12:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Anthropic built its name on AI safety. Can those commitments survive a trillion-dollar IPO?",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-20T14:46:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Software Engineers - Have you stopped reading docs people write?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uaxtj5/software_engineers_have_you_stopped_reading_docs/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T14:20:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Locally installed LLM?",
-        "link": "https://reddit.com/r/openclaw/comments/1uawqgk/locally_installed_llm/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-20T13:31:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Reuters: Google to challenge German ruling saying it is liable for AI-generated false claims",
-        "link": "https://reddit.com/r/singularity/comments/1uav88e/reuters_google_to_challenge_german_ruling_saying/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-20T12:19:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "It's official. Open source is better than Gemini Pro.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uaubea/its_official_open_source_is_better_than_gemini_pro/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-20T11:31:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "MIT Technology Review: A startup claims it broke through a bottleneck that’s holding back LLMs",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uatio1/mit_technology_review_a_startup_claims_it_broke/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T10:47:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-20T16:52:55.752Z",
+    "reddit_viral_generated_at": "2026-06-20T18:48:25.157Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
