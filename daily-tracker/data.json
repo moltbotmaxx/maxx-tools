@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-20T20:42:23.470Z",
+    "generated_at": "2026-06-20T22:36:08.051Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Im trieing to find a peter griffin ai meme.",
+        "link": "https://reddit.com/r/aimemes/comments/1ub7qg1/im_trieing_to_find_a_peter_griffin_ai_meme/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-20T21:14:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What’s your most-used Claude prompt that you can’t live without?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ub7lxv/whats_your_mostused_claude_prompt_that_you_cant/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-20T21:09:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Non-technical person setting up OpenClaw. Is my security plan actually solid or am I missing something obvious?",
+        "link": "https://reddit.com/r/openclaw/comments/1ub7eyw/nontechnical_person_setting_up_openclaw_is_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-20T21:00:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Is credential isolation an issue worth solving?",
         "link": "https://reddit.com/r/openclaw/comments/1ub658l/is_credential_isolation_an_issue_worth_solving/",
@@ -379,7 +406,7 @@
         "published_at": "2026-06-20T20:06:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Chat, can my pc run gta6?",
@@ -388,7 +415,16 @@
         "published_at": "2026-06-20T19:16:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
+      },
+      {
+        "headline": "CCSwitch",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ub4fxx/ccswitch/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-20T18:56:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Nag Ol's: \"Nissan: Ass In\" Slogan",
@@ -397,7 +433,7 @@
         "published_at": "2026-06-20T18:38:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "life is boring mfers when they find a shopping cart that they can go in",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-20T18:01:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "A study on synthetic [AI] choreographies",
@@ -415,49 +451,13 @@
         "published_at": "2026-06-20T17:49:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Can you use OpenClaw with Google Vertex (Enterprise Agent AI) using the quick integration API key?",
-        "link": "https://reddit.com/r/openclaw/comments/1ub1z6z/can_you_use_openclaw_with_google_vertex/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-20T17:15:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Singularity Tech Bro Battle Rap",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1ub0tg0/singularity_tech_bro_battle_rap/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-06-20T16:27:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Five Chinese AI Labs Cut Token Prices Up to 99%",
-        "link": "https://reddit.com/r/singularity/comments/1ub06rj/five_chinese_ai_labs_cut_token_prices_up_to_99/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-20T16:00:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "ChatGPT mixes context from different branches and treats regeneration as repeating the previous message",
-        "link": "https://reddit.com/r/OpenAI/comments/1uazee0/chatgpt_mixes_context_from_different_branches_and/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-20T15:28:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Senate's acting real weird",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uaz9wt/senates_acting_real_weird/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-20T15:22:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-20T20:42:23.470Z",
+    "reddit_viral_generated_at": "2026-06-20T22:36:08.051Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
