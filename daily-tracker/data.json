@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-20T22:36:08.051Z",
+    "generated_at": "2026-06-21T01:40:51.188Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "gpt-5.5 via codex runtime silently drops tool calls on conversational turns — anyone else seeing this?",
+        "link": "https://reddit.com/r/openclaw/comments/1ubd3fc/gpt55_via_codex_runtime_silently_drops_tool_calls/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-21T01:25:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Dedicated Gmail for OpenClaw disabled?",
+        "link": "https://reddit.com/r/openclaw/comments/1ubco6d/dedicated_gmail_for_openclaw_disabled/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-21T01:03:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "PSA: It could always be worse",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ubbjhx/psa_it_could_always_be_worse/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-21T00:08:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "FlowBoard v5: the project workspace your AI agents actually run",
+        "link": "https://reddit.com/r/openclaw/comments/1ubbdqo/flowboard_v5_the_project_workspace_your_ai_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-21T00:01:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Dot com bubble Nasdaq graph overlaid with current Nasdaq graph",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ub9je1/dot_com_bubble_nasdaq_graph_overlaid_with_current/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-20T22:34:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Im trieing to find a peter griffin ai meme.",
         "link": "https://reddit.com/r/aimemes/comments/1ub7qg1/im_trieing_to_find_a_peter_griffin_ai_meme/",
@@ -379,7 +424,7 @@
         "published_at": "2026-06-20T21:14:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 90
       },
       {
         "headline": "What’s your most-used Claude prompt that you can’t live without?",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-20T21:09:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 90
       },
       {
         "headline": "Non-technical person setting up OpenClaw. Is my security plan actually solid or am I missing something obvious?",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-20T21:00:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 89
       },
       {
         "headline": "Is credential isolation an issue worth solving?",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-20T20:06:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 87
       },
       {
         "headline": "Chat, can my pc run gta6?",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-20T19:16:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "CCSwitch",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ub4fxx/ccswitch/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-20T18:56:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Nag Ol's: \"Nissan: Ass In\" Slogan",
-        "link": "https://reddit.com/r/aimemes/comments/1ub403j/nag_ols_nissan_ass_in_slogan/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-20T18:38:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "life is boring mfers when they find a shopping cart that they can go in",
-        "link": "https://reddit.com/r/aimemes/comments/1ub33tj/life_is_boring_mfers_when_they_find_a_shopping/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-20T18:01:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "A study on synthetic [AI] choreographies",
-        "link": "https://reddit.com/r/singularity/comments/1ub2ssu/a_study_on_synthetic_ai_choreographies/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-20T17:49:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Singularity Tech Bro Battle Rap",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ub0tg0/singularity_tech_bro_battle_rap/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-20T16:27:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-20T22:36:08.051Z",
+    "reddit_viral_generated_at": "2026-06-21T01:40:51.188Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
