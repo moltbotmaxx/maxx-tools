@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-21T16:55:58.274Z",
+    "generated_at": "2026-06-21T18:54:06.615Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anthropic’s Internal Mythos Successor Emerges",
+        "link": "https://reddit.com/r/singularity/comments/1ubwtut/anthropics_internal_mythos_successor_emerges/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-21T18:06:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A Fable 5 checker without the nonsense, no noise/junk. IsFable5Up.com",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ubwajx/a_fable_5_checker_without_the_nonsense_no/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-21T17:45:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude Sonnet 5 Spotted, Release Expected Next Week",
+        "link": "https://reddit.com/r/singularity/comments/1ubvt62/claude_sonnet_5_spotted_release_expected_next_week/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-21T17:25:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Gemini after the release of flash 3.5 on May 19",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ubvndp/gemini_after_the_release_of_flash_35_on_may_19/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-21T17:19:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude Sonnet 5 Spotted, Release Expected Next Week",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ubuobh/claude_sonnet_5_spotted_release_expected_next_week/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-21T16:40:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "MEME, MYSELF AND A.I. ‐ at only 6k views on yt... this is a historical & incredible watch.. 1 yr old video",
         "link": "https://reddit.com/r/aimemes/comments/1ubthkh/meme_myself_and_ai_at_only_6k_views_on_yt_this_is/",
@@ -379,7 +424,7 @@
         "published_at": "2026-06-21T15:52:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Yann LeCun says xAI is \"kind of a failure\" and the whole AI industry might be headed for a reset",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-21T15:28:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Who else remembers the old \"diffusion\" days?",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-21T15:05:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "NSA",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-21T14:38:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Mythos hacking 'almost all of' NSA .. absolutely no way this is true.",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-21T14:38:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Truly elegant, Gemini",
-        "link": "https://reddit.com/r/aimemes/comments/1ubqjqs/truly_elegant_gemini/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-21T13:48:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "kinda proud when office teammates understand this",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ubp7mw/kinda_proud_when_office_teammates_understand_this/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-21T12:48:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic is rolling out identity verification. Updated just yesterday.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uboasr/anthropic_is_rolling_out_identity_verification/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-21T12:01:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Mythos was not trained on 'hacking'. Other Ai labs also will reach Mythos-level capabilities in the future",
-        "link": "https://reddit.com/r/singularity/comments/1ubnlre/mythos_was_not_trained_on_hacking_other_ai_labs/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-21T11:23:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "most successful group project in history",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ubmrig/most_successful_group_project_in_history/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-21T10:35:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-21T16:55:58.274Z",
+    "reddit_viral_generated_at": "2026-06-21T18:54:06.615Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
