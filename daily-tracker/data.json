@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-21T15:18:23.678Z",
+    "generated_at": "2026-06-21T16:55:58.274Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "MEME, MYSELF AND A.I. ‐ at only 6k views on yt... this is a historical & incredible watch.. 1 yr old video",
+        "link": "https://reddit.com/r/aimemes/comments/1ubthkh/meme_myself_and_ai_at_only_6k_views_on_yt_this_is/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-21T15:52:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Yann LeCun says xAI is \"kind of a failure\" and the whole AI industry might be headed for a reset",
+        "link": "https://reddit.com/r/singularity/comments/1ubswog/yann_lecun_says_xai_is_kind_of_a_failure_and_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-21T15:28:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Who else remembers the old \"diffusion\" days?",
         "link": "https://reddit.com/r/OpenAI/comments/1ubscy1/who_else_remembers_the_old_diffusion_days/",
@@ -379,16 +397,25 @@
         "published_at": "2026-06-21T15:05:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
-        "headline": "In just three years, the number of AI-generated books released skyrocketed",
-        "link": "https://reddit.com/r/singularity/comments/1ubqlym/in_just_three_years_the_number_of_aigenerated/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-21T13:51:47+00:00",
+        "headline": "NSA",
+        "link": "https://reddit.com/r/OpenAI/comments/1ubrpm6/nsa/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-21T14:38:50+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
+      },
+      {
+        "headline": "Mythos hacking 'almost all of' NSA .. absolutely no way this is true.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ubroy1/mythos_hacking_almost_all_of_nsa_absolutely_no/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-21T14:38:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Truly elegant, Gemini",
@@ -397,7 +424,7 @@
         "published_at": "2026-06-21T13:48:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "kinda proud when office teammates understand this",
@@ -406,25 +433,7 @@
         "published_at": "2026-06-21T12:48:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Amazon MGM Drops Luca Guadagnino's 'Artificial' — Sam Altman Biopic Shelved After $50B OpenAI Investment",
-        "link": "https://reddit.com/r/OpenAI/comments/1ubp37s/amazon_mgm_drops_luca_guadagninos_artificial_sam/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-21T12:42:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "De GLM 5.1 a GLM 5.2",
-        "link": "https://reddit.com/r/openclaw/comments/1ubow3i/de_glm_51_a_glm_52/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-21T12:31:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Anthropic is rolling out identity verification. Updated just yesterday.",
@@ -433,7 +442,7 @@
         "published_at": "2026-06-21T12:01:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Mythos was not trained on 'hacking'. Other Ai labs also will reach Mythos-level capabilities in the future",
@@ -442,22 +451,13 @@
         "published_at": "2026-06-21T11:23:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "most successful group project in history",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1ubmrig/most_successful_group_project_in_history/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-06-21T10:35:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Official: Anthropic to Require Identity Verification for Certain Capabilities Starting July 8, 2026",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ubm53n/official_anthropic_to_require_identity/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-21T09:58:14+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-21T15:18:23.678Z",
+    "reddit_viral_generated_at": "2026-06-21T16:55:58.274Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
