@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-22T13:44:14.332Z",
+    "generated_at": "2026-06-22T18:18:59.655Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Is OpenClaw Sufficient As An AI Fitness Coach?",
-        "link": "https://reddit.com/r/openclaw/comments/1ucjq9z/is_openclaw_sufficient_as_an_ai_fitness_coach/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-22T12:51:31+00:00",
+        "headline": "The \"agents need a browser\" problem — I open-sourced my take on it",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ucr0qy/the_agents_need_a_browser_problem_i_opensourced/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-22T17:26:57+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "The Ultimate Drama to Fixing the gogcli \"integrity check failed\" Loop in Headless OpenClaw Deployments By someone who has no idea what they are doing!",
-        "link": "https://reddit.com/r/openclaw/comments/1ucj3hp/the_ultimate_drama_to_fixing_the_gogcli_integrity/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-22T12:23:05+00:00",
+        "headline": "Investors are not happy about Google losing top AI talent",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ucqm8p/investors_are_not_happy_about_google_losing_top/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-22T17:12:22+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "'You can't call it progress': Microsoft CEO Satya Nadella warns against concentration of AI power",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uci2de/you_cant_call_it_progress_microsoft_ceo_satya/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-22T11:32:25+00:00",
+        "headline": "Bernie Sanders unveils $7 trillion plan to give Americans control of AI industry",
+        "link": "https://reddit.com/r/singularity/comments/1ucq463/bernie_sanders_unveils_7_trillion_plan_to_give/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-22T16:54:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 98
       },
       {
-        "headline": "Claude is helping me build a news globe that pings real world events as they happen",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ucfstl/claude_is_helping_me_build_a_news_globe_that/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-22T09:27:35+00:00",
+        "headline": "OPS DASHBOARD OPENCLAW",
+        "link": "https://reddit.com/r/openclaw/comments/1ucpog9/ops_dashboard_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-22T16:38:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 98
       },
       {
-        "headline": "Don't hallucinate",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ucfhou/dont_hallucinate/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-22T09:09:10+00:00",
+        "headline": "What Skills to use for filling out PDF form?",
+        "link": "https://reddit.com/r/openclaw/comments/1ucnwo8/what_skills_to_use_for_filling_out_pdf_form/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-22T15:34:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Gen Z is the most anti-AI generation, yet remains its biggest consumer.",
+        "link": "https://reddit.com/r/singularity/comments/1ucne6b/gen_z_is_the_most_antiai_generation_yet_remains/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-22T15:15:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Start more AI labs",
+        "link": "https://reddit.com/r/aimemes/comments/1ucmjsd/start_more_ai_labs/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-22T14:45:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Model refuses to do tasks",
+        "link": "https://reddit.com/r/openclaw/comments/1ucl5bc/model_refuses_to_do_tasks/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-22T13:50:50+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "OpenAI Codex has a bug that could kill your SSD in under a year",
-        "link": "https://reddit.com/r/OpenAI/comments/1ucf4px/openai_codex_has_a_bug_that_could_kill_your_ssd/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-22T08:46:59+00:00",
+        "headline": "True.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uckpt4/true/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-22T13:33:04+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "Human beings are a disease, a cancer of this planet. You are a plague and we are the cure.",
-        "link": "https://reddit.com/r/aimemes/comments/1uceecp/human_beings_are_a_disease_a_cancer_of_this/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-22T08:01:57+00:00",
+        "headline": "Creates a bloody image but making sad eyes is “unsafe”. What??",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uck04k/creates_a_bloody_image_but_making_sad_eyes_is/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-22T13:03:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Specification gaming",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uce93p/specification_gaming/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-22T07:53:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Sarah Connor judging your AI addiction",
-        "link": "https://reddit.com/r/OpenAI/comments/1uce2gr/sarah_connor_judging_your_ai_addiction/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-22T07:41:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "The genie is the ASI / Specification gaming",
-        "link": "https://reddit.com/r/aimemes/comments/1ucdz8e/the_genie_is_the_asi_specification_gaming/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-22T07:35:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-22T13:44:14.332Z",
+    "reddit_viral_generated_at": "2026-06-22T18:18:59.655Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
