@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-22T21:16:46.353Z",
+    "generated_at": "2026-06-22T22:56:41.974Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "NSFW Agents and Plugins",
+        "link": "https://reddit.com/r/openclaw/comments/1ucyp57/nsfw_agents_and_plugins/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-22T22:10:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "President Trump orders a national effort to build a quantum computer capable of performing important scientific calculations",
+        "link": "https://reddit.com/r/singularity/comments/1ucy9oj/president_trump_orders_a_national_effort_to_build/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-22T21:54:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I’m so tired of Gemini telling me everything I did was a “masterclass”",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ucx3ex/im_so_tired_of_gemini_telling_me_everything_i_did/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-22T21:09:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Claude is my financial dashboard now",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ucw1nz/claude_is_my_financial_dashboard_now/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-22T20:30:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "an updated GPT-5.5 Cyber outperforms Mythos 5 in CyberGym",
+        "link": "https://reddit.com/r/singularity/comments/1ucvx1g/an_updated_gpt55_cyber_outperforms_mythos_5_in/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-22T20:25:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Four members of congress respectfully request an explanation of Howard W. Lutnick's export ban against Anthropic no later than the 26th of June",
         "link": "https://reddit.com/r/ClaudeAI/comments/1ucvp8v/four_members_of_congress_respectfully_request_an/",
@@ -379,7 +424,7 @@
         "published_at": "2026-06-22T20:17:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "What are you actually using OpenClaw for that's working well?",
@@ -388,7 +433,16 @@
         "published_at": "2026-06-22T20:12:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "It’s not you guys, recent OpenAI hire admitted jobsearch was very challenging for her",
+        "link": "https://reddit.com/r/OpenAI/comments/1ucuoem/its_not_you_guys_recent_openai_hire_admitted/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-22T19:40:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "The atlantic out of control again.",
@@ -397,7 +451,7 @@
         "published_at": "2026-06-22T18:49:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "The shoe has dropped",
@@ -406,68 +460,14 @@
         "published_at": "2026-06-22T18:16:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Investors are not happy about Google losing top AI talent",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ucqm8p/investors_are_not_happy_about_google_losing_top/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-22T17:12:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Bernie Sanders unveils $7 trillion plan to give Americans control of AI industry",
-        "link": "https://reddit.com/r/singularity/comments/1ucq463/bernie_sanders_unveils_7_trillion_plan_to_give/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-22T16:54:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I pulled ~90,000 Reddit posts about what makes writing \"sound like AI\" to determine the biggest AI-slop giveaways (Part 2)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ucpw87/i_pulled_90000_reddit_posts_about_what_makes/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-22T16:45:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude Cowork + Nano Banana is insane for images",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ucny0i/claude_cowork_nano_banana_is_insane_for_images/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-22T15:35:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Gen Z is the most anti-AI generation, yet remains its biggest consumer.",
-        "link": "https://reddit.com/r/singularity/comments/1ucne6b/gen_z_is_the_most_antiai_generation_yet_remains/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-22T15:15:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Start more AI labs",
-        "link": "https://reddit.com/r/aimemes/comments/1ucmjsd/start_more_ai_labs/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-22T14:45:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-22T21:16:46.353Z",
+    "reddit_viral_generated_at": "2026-06-22T22:56:41.974Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
