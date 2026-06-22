@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-21T22:36:28.247Z",
+    "generated_at": "2026-06-22T01:41:58.006Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What if OpenClaw was not your assistant, but your party member?",
+        "link": "https://reddit.com/r/openclaw/comments/1uc5y3o/what_if_openclaw_was_not_your_assistant_but_your/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-22T00:35:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Microsoft paper shows GitHub Copilot increases productivity 40%",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uc3mpk/microsoft_paper_shows_github_copilot_increases/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-21T22:48:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Web design you say ? Bro just lets the AI fly…",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uc3gq9/web_design_you_say_bro_just_lets_the_ai_fly/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-21T22:41:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "it's always funny to see people on Chinese social media genuinely don't understand the AI hate on western social media.",
+        "link": "https://reddit.com/r/singularity/comments/1uc2gd0/its_always_funny_to_see_people_on_chinese_social/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-21T21:57:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "MINIMAX blocked, why offered?",
         "link": "https://reddit.com/r/openclaw/comments/1uc258g/minimax_blocked_why_offered/",
@@ -379,7 +415,7 @@
         "published_at": "2026-06-21T21:43:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "GPT-Image lending me a hand",
@@ -388,7 +424,7 @@
         "published_at": "2026-06-21T21:01:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Claw is being so, so stupid",
@@ -397,7 +433,7 @@
         "published_at": "2026-06-21T20:59:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "Anthropic clarifies the ID verification update, nothing new or related to restricting access",
@@ -406,7 +442,7 @@
         "published_at": "2026-06-21T20:45:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "POV its 2003 and you bought those bangers at radioshack",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-21T19:58:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "How to make a sub agent have the mindset of his parent agent",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-21T19:19:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Persona’s biometric ID verification: what’s happening / why it matters",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ubwu90/personas_biometric_id_verification_whats/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-21T18:06:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Anthropic’s Internal Mythos Successor Emerges",
-        "link": "https://reddit.com/r/singularity/comments/1ubwtut/anthropics_internal_mythos_successor_emerges/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-21T18:06:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "A Fable 5 checker without the nonsense, no noise/junk. IsFable5Up.com",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ubwajx/a_fable_5_checker_without_the_nonsense_no/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-21T17:45:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude Sonnet 5 Spotted, Release Expected Next Week",
-        "link": "https://reddit.com/r/singularity/comments/1ubvt62/claude_sonnet_5_spotted_release_expected_next_week/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-21T17:25:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-21T22:36:28.247Z",
+    "reddit_viral_generated_at": "2026-06-22T01:41:58.006Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
