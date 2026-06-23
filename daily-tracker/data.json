@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-23T21:09:03.002Z",
+    "generated_at": "2026-06-23T22:39:12.775Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam Altman reportedly holds $2B+ in companies that have done deals with OpenAI but holds no direct OpenAI equity — six AGs and the House Oversight Committee are now asking questions ahead of the IPO",
+        "link": "https://reddit.com/r/OpenAI/comments/1udsz5q/sam_altman_reportedly_holds_2b_in_companies_that/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-23T20:44:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "This speaks for itself",
         "link": "https://reddit.com/r/aimemes/comments/1udsg4f/this_speaks_for_itself/",
@@ -379,7 +388,7 @@
         "published_at": "2026-06-23T20:24:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Mythos or Govt",
@@ -388,7 +397,16 @@
         "published_at": "2026-06-23T20:17:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "I just fired my first openclaw employee because it refused to work on a problem",
+        "link": "https://reddit.com/r/openclaw/comments/1udruwk/i_just_fired_my_first_openclaw_employee_because/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-23T20:02:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "New benchmark just dropped",
@@ -397,7 +415,7 @@
         "published_at": "2026-06-23T20:00:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Companies should use skills leaderboards instead of token leaderboards",
@@ -406,7 +424,7 @@
         "published_at": "2026-06-23T19:43:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "thats a lot of grunting",
@@ -415,7 +433,7 @@
         "published_at": "2026-06-23T19:39:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Agent almost never spawns subagents",
@@ -424,7 +442,7 @@
         "published_at": "2026-06-23T18:13:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Diffusion Model that can turn any Image into a Playable Hallucination! BUT LOCALLY, NOT ON DATACENTER",
@@ -433,7 +451,7 @@
         "published_at": "2026-06-23T17:42:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "ChatGPT is so good at restoring old photos! It may have added a few small details, but you can clearly see what my great-great-grandfather would have looked like",
@@ -442,32 +460,14 @@
         "published_at": "2026-06-23T17:26:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "From the Quran: And the sky, He raised; and He set up the balance. 8. So do not transgress in the balance. 9. But maintain the weights with justice, and do not violate the balance.",
-        "link": "https://reddit.com/r/aimemes/comments/1udn5hj/from_the_quran_and_the_sky_he_raised_and_he_set/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-23T17:11:21+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "ok gemini",
-        "link": "https://reddit.com/r/aimemes/comments/1udmio8/ok_gemini/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-23T16:48:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-23T21:09:03.002Z",
+    "reddit_viral_generated_at": "2026-06-23T22:39:12.775Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
