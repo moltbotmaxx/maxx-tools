@@ -367,19 +367,64 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-23T16:43:31.395Z",
+    "generated_at": "2026-06-23T19:19:57.521Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "gpt-bidi in testing?",
-        "link": "https://reddit.com/r/OpenAI/comments/1udl7xn/gptbidi_in_testing/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-23T16:01:27+00:00",
+        "headline": "Agent almost never spawns subagents",
+        "link": "https://reddit.com/r/openclaw/comments/1udov2w/agent_almost_never_spawns_subagents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-23T18:13:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Diffusion Model that can turn any Image into a Playable Hallucination! BUT LOCALLY, NOT ON DATACENTER",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1udnzlp/diffusion_model_that_can_turn_any_image_into_a/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-23T17:42:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Introducing a new way for teams to work with Claude: tag Claude in.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1udn7zy/introducing_a_new_way_for_teams_to_work_with/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-23T17:13:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "From the Quran: And the sky, He raised; and He set up the balance. 8. So do not transgress in the balance. 9. But maintain the weights with justice, and do not violate the balance.",
+        "link": "https://reddit.com/r/aimemes/comments/1udn5hj/from_the_quran_and_the_sky_he_raised_and_he_set/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-23T17:11:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "ok gemini",
+        "link": "https://reddit.com/r/aimemes/comments/1udmio8/ok_gemini/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-23T16:48:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Day 2 of Vibecoding",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1udm8c7/day_2_of_vibecoding/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-23T16:38:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "June delays 5.6",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-23T14:55:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "The End of Singularity",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-23T14:55:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "This human time is shit because of tech bilionares narrative",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-23T14:38:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Some Claude models are down, and I hope you aren’t too",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-23T14:37:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "VibeThinker is a 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
-        "link": "https://reddit.com/r/singularity/comments/1udifm6/vibethinker_is_a_3b_param_model_that_beats_opus/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-23T14:18:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "YouTube's first two results for \"AGI 2029\"",
-        "link": "https://reddit.com/r/singularity/comments/1udhxng/youtubes_first_two_results_for_agi_2029/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-23T13:59:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Anthropic cofounder predicts singularity in 2028",
-        "link": "https://reddit.com/r/singularity/comments/1udhdw6/anthropic_cofounder_predicts_singularity_in_2028/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-23T13:37:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "sometimes life just throws you a swerve-ball! by meta ai",
-        "link": "https://reddit.com/r/aimemes/comments/1udh6u1/sometimes_life_just_throws_you_a_swerveball_by/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-23T13:29:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Skynet's greatest disappointment",
-        "link": "https://reddit.com/r/OpenAI/comments/1udg4yq/skynets_greatest_disappointment/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-23T12:44:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-23T16:43:31.395Z",
+    "reddit_viral_generated_at": "2026-06-23T19:19:57.521Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
