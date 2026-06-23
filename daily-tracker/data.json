@@ -367,19 +367,82 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-23T10:44:16.001Z",
+    "generated_at": "2026-06-23T13:47:20.207Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Tried using OpenClaw to build my own news assistant. Burned ~100 on just sports + tech news.",
-        "link": "https://reddit.com/r/openclaw/comments/1uddnwv/tried_using_openclaw_to_build_my_own_news/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-23T10:43:29+00:00",
+        "headline": "sometimes life just throws you a swerve-ball! by meta ai",
+        "link": "https://reddit.com/r/aimemes/comments/1udh6u1/sometimes_life_just_throws_you_a_swerveball_by/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-23T13:29:28+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Are you advanced on openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1udftun/are_you_advanced_on_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-23T12:30:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Is there anyone here who has tried openclaw with Opera Neon?",
+        "link": "https://reddit.com/r/openclaw/comments/1udfi9q/is_there_anyone_here_who_has_tried_openclaw_with/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-23T12:15:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Will They?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1udeswu/will_they/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-23T11:42:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Mug Rhymes with Grug",
+        "link": "https://reddit.com/r/aimemes/comments/1ude7yt/mug_rhymes_with_grug/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-23T11:13:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Google is betting on local models",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uddj5a/google_is_betting_on_local_models/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-23T10:36:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Seedance 2.5 Promotional Video",
+        "link": "https://reddit.com/r/singularity/comments/1uddi20/seedance_25_promotional_video/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-23T10:34:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "The next update",
+        "link": "https://reddit.com/r/GeminiAI/comments/1udcs28/the_next_update/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-23T09:53:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Specifically designed AI / fire",
@@ -388,86 +451,23 @@
         "published_at": "2026-06-23T09:13:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
-        "headline": "Claude is brutally honest at times",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1udalrb/claude_is_brutally_honest_at_times/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-23T07:45:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Using Claude Code to reverse engineer car data",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uda0l6/using_claude_code_to_reverse_engineer_car_data/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-23T07:10:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Seedance 2.5",
-        "link": "https://reddit.com/r/singularity/comments/1ud96qo/seedance_25/",
+        "headline": "AI models capable of devastating attacks on governments and business months away, rare Five Eyes statement warns",
+        "link": "https://reddit.com/r/singularity/comments/1udao3h/ai_models_capable_of_devastating_attacks_on/",
         "subreddit": "singularity",
-        "published_at": "2026-06-23T06:21:42+00:00",
+        "published_at": "2026-06-23T07:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "When you ask AI to plan a coding task and they give you that 'Phase 1 (1-2 weeks)'",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ud80bd/when_you_ask_ai_to_plan_a_coding_task_and_they/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-23T05:16:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "AI is accelerating, singularity is out of control",
-        "link": "https://reddit.com/r/OpenAI/comments/1ud6gd2/ai_is_accelerating_singularity_is_out_of_control/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-23T03:56:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Why am I even in the middle of this?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ud67qu/why_am_i_even_in_the_middle_of_this/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-23T03:44:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "ChatGPT can’t believe RAM prices",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ud51ey/chatgpt_cant_believe_ram_prices/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-23T02:47:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Satya Nadella’s blunt AI warning: Don’t hand the world’s curiosity to a few companies",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ud4vvv/satya_nadellas_blunt_ai_warning_dont_hand_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-23T02:40:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-23T10:44:16.001Z",
+    "reddit_viral_generated_at": "2026-06-23T13:47:20.207Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
