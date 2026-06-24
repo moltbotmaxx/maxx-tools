@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-24T21:48:04.980Z",
+    "generated_at": "2026-06-24T23:35:14.235Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Unlimted image gen?",
+        "link": "https://reddit.com/r/openclaw/comments/1uesxki/unlimted_image_gen/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-24T23:02:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Browser integration and control ?",
         "link": "https://reddit.com/r/openclaw/comments/1ueqfi1/browser_integration_and_control/",
@@ -379,7 +388,7 @@
         "published_at": "2026-06-24T21:22:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "ai chatbots politically biased? here’s what the washington post found from testing:",
@@ -388,7 +397,7 @@
         "published_at": "2026-06-24T20:11:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "ChatGPT misunderstood “fatass dragon” in the worst possible way.",
@@ -397,7 +406,7 @@
         "published_at": "2026-06-24T20:04:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Markdown files for ToDo list?",
@@ -406,7 +415,7 @@
         "published_at": "2026-06-24T19:56:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "GPT-5.5 Instant now rolling out",
@@ -415,7 +424,7 @@
         "published_at": "2026-06-24T19:17:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "What $100k buys you in tokens",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-24T19:00:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Gemini is very smart!",
@@ -433,7 +442,7 @@
         "published_at": "2026-06-24T18:43:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "AI is writing bills now - Rep. Anna Paulina Luna's Amendment to Defense Bill",
@@ -442,7 +451,7 @@
         "published_at": "2026-06-24T18:27:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Nothing can go wrong when you share a Claude subscription with friends... right?",
@@ -451,23 +460,14 @@
         "published_at": "2026-06-24T17:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Asking Claude to roleplay as GPT-4o is pretty fun",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uej7ow/asking_claude_to_roleplay_as_gpt4o_is_pretty_fun/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-24T16:59:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-24T21:48:04.980Z",
+    "reddit_viral_generated_at": "2026-06-24T23:35:14.235Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
