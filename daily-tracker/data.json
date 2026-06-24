@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-24T15:14:18.110Z",
+    "generated_at": "2026-06-24T17:20:38.702Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude -P as root?",
+        "link": "https://reddit.com/r/openclaw/comments/1ueirre/claude_p_as_root/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-24T16:43:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "3.5 pro Coming this week",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uei7js/35_pro_coming_this_week/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-24T16:23:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Fable 5 return RUMORED with some hints in CC",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uehr3a/fable_5_return_rumored_with_some_hints_in_cc/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-24T16:06:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Weird notification from agent",
         "link": "https://reddit.com/r/openclaw/comments/1uefpcu/weird_notification_from_agent/",
@@ -379,7 +406,25 @@
         "published_at": "2026-06-24T14:52:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "OpenAI, Anthropic, Stripe and Bill Gates are putting $500 million in funding into a new organization called Intercept whose goal is to eliminate all respiratory viruses",
+        "link": "https://reddit.com/r/singularity/comments/1uefo1j/openai_anthropic_stripe_and_bill_gates_are/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-24T14:50:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "It's not android 10, it's android 10",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uef633/its_not_android_10_its_android_10/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-24T14:31:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "I burnt so many tokens they sent me merch",
@@ -388,7 +433,16 @@
         "published_at": "2026-06-24T14:20:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+        "link": "https://reddit.com/r/singularity/comments/1ueej55/openai_and_broadcom_unveil_llmoptimized_inference/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-24T14:07:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "AI Companies Wondering Why Users Keep Getting Angry",
@@ -397,7 +451,7 @@
         "published_at": "2026-06-24T14:06:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "OpenAI is building the AI fullstack, likely to match Google. And American made will receive lots of support. Great long term strategy",
@@ -406,68 +460,14 @@
         "published_at": "2026-06-24T13:45:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Dangerous Ducks; “Safety Filter” is a Quack",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uedhmc/dangerous_ducks_safety_filter_is_a_quack/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-24T13:26:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic AI CEO Dario Amodei Warns $1 Trillion Compute Era Could Push AI Firms Toward Bankruptcy Risk by 2027",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uedgkt/anthropic_ai_ceo_dario_amodei_warns_1_trillion/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-24T13:25:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "openclaw pulled together my health data from 3 different sources for a doctor appointment i almost forgot about - pretty impressed",
-        "link": "https://reddit.com/r/openclaw/comments/1uec85y/openclaw_pulled_together_my_health_data_from_3/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-24T12:32:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Honda's new robotic hand is so precise, it can drive a tiny screw",
-        "link": "https://reddit.com/r/singularity/comments/1uebgap/hondas_new_robotic_hand_is_so_precise_it_can/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-24T11:57:25+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Classic",
-        "link": "https://reddit.com/r/aimemes/comments/1ueb95n/classic/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-24T11:47:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "the EU is funding its own open-source 400B+ frontier model, built on European supercomputers",
-        "link": "https://reddit.com/r/singularity/comments/1ue8yy5/the_eu_is_funding_its_own_opensource_400b/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-24T09:45:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-24T15:14:18.110Z",
+    "reddit_viral_generated_at": "2026-06-24T17:20:38.702Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
