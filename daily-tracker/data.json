@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-24T20:11:40.135Z",
+    "generated_at": "2026-06-24T21:48:04.980Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Browser integration and control ?",
+        "link": "https://reddit.com/r/openclaw/comments/1ueqfi1/browser_integration_and_control/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-24T21:22:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ai chatbots politically biased? here’s what the washington post found from testing:",
+        "link": "https://reddit.com/r/singularity/comments/1ueojey/ai_chatbots_politically_biased_heres_what_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-24T20:11:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "ChatGPT misunderstood “fatass dragon” in the worst possible way.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ueoc8g/chatgpt_misunderstood_fatass_dragon_in_the_worst/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-24T20:04:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Markdown files for ToDo list?",
         "link": "https://reddit.com/r/openclaw/comments/1ueo4mm/markdown_files_for_todo_list/",
@@ -379,7 +406,7 @@
         "published_at": "2026-06-24T19:56:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "GPT-5.5 Instant now rolling out",
@@ -388,7 +415,7 @@
         "published_at": "2026-06-24T19:17:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "What $100k buys you in tokens",
@@ -397,7 +424,7 @@
         "published_at": "2026-06-24T19:00:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Gemini is very smart!",
@@ -406,7 +433,7 @@
         "published_at": "2026-06-24T18:43:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "AI is writing bills now - Rep. Anna Paulina Luna's Amendment to Defense Bill",
@@ -415,16 +442,16 @@
         "published_at": "2026-06-24T18:27:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
-        "headline": "I love being able to SEE the characters I’ve written stories about",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uel4jb/i_love_being_able_to_see_the_characters_ive/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-24T18:08:41+00:00",
+        "headline": "Nothing can go wrong when you share a Claude subscription with friends... right?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uejjg6/nothing_can_go_wrong_when_you_share_a_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-24T17:11:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Asking Claude to roleplay as GPT-4o is pretty fun",
@@ -433,41 +460,14 @@
         "published_at": "2026-06-24T16:59:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "The CEO of a $20B AI company just said the model is no longer the product",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ueizal/the_ceo_of_a_20b_ai_company_just_said_the_model/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-24T16:51:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "3.5 pro Coming this week",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uei7js/35_pro_coming_this_week/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-24T16:23:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Fable 5 return RUMORED with some hints in CC",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uehr3a/fable_5_return_rumored_with_some_hints_in_cc/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-24T16:06:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-24T20:11:40.135Z",
+    "reddit_viral_generated_at": "2026-06-24T21:48:04.980Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
