@@ -367,19 +367,91 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-24T04:38:28.840Z",
+    "generated_at": "2026-06-24T08:34:20.793Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "ChatGPT e Claude no OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1ue30ng/chatgpt_e_claude_no_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-24T04:04:33+00:00",
+        "headline": "AI Safety: the side track that slows progress",
+        "link": "https://reddit.com/r/aimemes/comments/1ue7aze/ai_safety_the_side_track_that_slows_progress/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-24T08:05:37+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Japanese animator using Seedance to render anime from simple 3D models",
+        "link": "https://reddit.com/r/singularity/comments/1ue6yoh/japanese_animator_using_seedance_to_render_anime/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-24T07:44:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What I sketched in my Samsung notes vs. how Gemini brought it to life",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ue6ubf/what_i_sketched_in_my_samsung_notes_vs_how_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-24T07:37:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Data center noise irks Virginia neighbors: ‘You just want to curse’, Neighbors have put mattresses and plexiglass up in their windows to block the noise from this data center in Virginia. It's a high pitched whine from the natural gas turbines that power it. The noise never stops 24/7. - NewsNation",
+        "link": "https://reddit.com/r/singularity/comments/1ue6sio/data_center_noise_irks_virginia_neighbors_you/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-24T07:34:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "People who write specs for AI coding agents?",
+        "link": "https://reddit.com/r/openclaw/comments/1ue6f6h/people_who_write_specs_for_ai_coding_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-24T07:12:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Unit 42 found 5 malicious skills that passed ClawScan + VirusTotal",
+        "link": "https://reddit.com/r/openclaw/comments/1ue5ln7/unit_42_found_5_malicious_skills_that_passed/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-24T06:24:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Software development has entered its \"infinite monkeys\" era",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ue4zw0/software_development_has_entered_its_infinite/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-24T05:50:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Is it just me or has Gemini gotten wor-",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ue4opz/is_it_just_me_or_has_gemini_gotten_wor/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-24T05:33:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Leaving this sub",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ue3t41/leaving_this_sub/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-24T04:46:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Apes wanna know.",
@@ -388,86 +460,14 @@
         "published_at": "2026-06-24T03:54:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Day 3 of Vibe Coding",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ue2ba0/day_3_of_vibe_coding/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-24T03:30:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Slack and Openclaw and Codex",
-        "link": "https://reddit.com/r/openclaw/comments/1ue28kq/slack_and_openclaw_and_codex/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-24T03:26:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "John Carmack weighs in on datacenters",
-        "link": "https://reddit.com/r/singularity/comments/1ue1sya/john_carmack_weighs_in_on_datacenters/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-24T03:06:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Legion sues the US Government to free Mythos",
-        "link": "https://reddit.com/r/singularity/comments/1udzqu4/legion_sues_the_us_government_to_free_mythos/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-24T01:29:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Legal tech firm sues US over order limiting foreign access to top-tier Anthropic models",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1udybyz/legal_tech_firm_sues_us_over_order_limiting/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-24T00:24:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I tried making an AI World Cup commentator. It sounds real until the game gets fast",
-        "link": "https://reddit.com/r/OpenAI/comments/1udx8it/i_tried_making_an_ai_world_cup_commentator_it/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-23T23:36:08+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "what are some serious (non-personal-project) tools similar to OpenClaw or built on top of it?",
-        "link": "https://reddit.com/r/openclaw/comments/1udwvgy/what_are_some_serious_nonpersonalproject_tools/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-23T23:20:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "The people building AI and the people regulating it have been meeting in secret for 20 years. Now we know who they are.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1udvw3a/the_people_building_ai_and_the_people_regulating/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-23T22:39:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-24T04:38:28.840Z",
+    "reddit_viral_generated_at": "2026-06-24T08:34:20.793Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
