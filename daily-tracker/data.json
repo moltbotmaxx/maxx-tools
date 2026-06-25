@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-25T04:35:32.108Z",
+    "generated_at": "2026-06-25T08:31:33.814Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Full list of question and answer that Washington post used to evaluate AI political bias.",
+        "link": "https://reddit.com/r/singularity/comments/1uf3ixc/full_list_of_question_and_answer_that_washington/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-25T07:47:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "it's over",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uf075z/its_over/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-25T04:42:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "We’re sorry",
         "link": "https://reddit.com/r/openclaw/comments/1uezqx6/were_sorry/",
@@ -379,7 +397,25 @@
         "published_at": "2026-06-25T04:18:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
+      },
+      {
+        "headline": "Prompt: Generate an image of your favorite celebrity but as a pool floatie",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uez9eq/prompt_generate_an_image_of_your_favorite/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-25T03:54:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "InflateMate: Life's Better With Company",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ueynl5/inflatemate_lifes_better_with_company/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-25T03:24:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "OpenClaw 6.10!",
@@ -388,7 +424,7 @@
         "published_at": "2026-06-25T03:14:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
       },
       {
         "headline": "Anthropic allegations of unauthorised access by Alibaba",
@@ -397,16 +433,16 @@
         "published_at": "2026-06-25T02:38:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 88
       },
       {
-        "headline": "The OpenClaw Podcast - The Clawcast - Episode 1",
-        "link": "https://reddit.com/r/openclaw/comments/1uex90s/the_openclaw_podcast_the_clawcast_episode_1/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-25T02:17:09+00:00",
+        "headline": "ChatGPT is the most biased model and google is the least according to the Washington post",
+        "link": "https://reddit.com/r/singularity/comments/1uewuz5/chatgpt_is_the_most_biased_model_and_google_is/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-25T01:58:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 86
       },
       {
         "headline": "Re-imagined famous historical figures in modern day",
@@ -415,7 +451,7 @@
         "published_at": "2026-06-25T01:03:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 84
       },
       {
         "headline": "Legal tech firm sues the U.S. Government over Mythos/Fable ban, citing the lack of a ban on GPT 5.5 as one piece of evidence against the Government's action",
@@ -424,50 +460,14 @@
         "published_at": "2026-06-25T00:47:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Anthropic Accuses Alibaba's Qwen of Largest Claude Distillation",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ueu29f/anthropic_accuses_alibabas_qwen_of_largest_claude/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-24T23:51:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "It's taken me months to come to this realisation",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ueop4d/its_taken_me_months_to_come_to_this_realisation/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-24T20:17:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "ai chatbots politically biased? here’s what the washington post found from testing:",
-        "link": "https://reddit.com/r/singularity/comments/1ueojey/ai_chatbots_politically_biased_heres_what_the/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-24T20:11:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "ChatGPT misunderstood “fatass dragon” in the worst possible way.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ueoc8g/chatgpt_misunderstood_fatass_dragon_in_the_worst/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-24T20:04:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-25T04:35:32.108Z",
+    "reddit_viral_generated_at": "2026-06-25T08:31:33.814Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
