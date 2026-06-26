@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-26T16:29:00.487Z",
+    "generated_at": "2026-06-26T19:06:13.233Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "claude quietly replaced gaming as my evening thing and im not sure how to feel about it",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ug9zf2/claude_quietly_replaced_gaming_as_my_evening/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-26T15:27:30+00:00",
+        "headline": "GSDF/TGIF",
+        "link": "https://reddit.com/r/aimemes/comments/1ugfde8/gsdftgif/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-26T18:46:19+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "The shift from tokenmaxxing to efficiency is going to break a lot of AI pricing models",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ug8rmz/the_shift_from_tokenmaxxing_to_efficiency_is/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-26T14:42:27+00:00",
+        "headline": "used openclaw to build the calendar invite for my wife's surprise party - it figured out the real plan from my messages instead of the fake one on my calendar",
+        "link": "https://reddit.com/r/openclaw/comments/1ugecca/used_openclaw_to_build_the_calendar_invite_for_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-26T18:08:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
       },
       {
-        "headline": "Superintelligence is the greatest threat",
-        "link": "https://reddit.com/r/aimemes/comments/1ug8hy1/superintelligence_is_the_greatest_threat/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-26T14:32:06+00:00",
+        "headline": "i can't read anything anymore without checking if claude wrote it",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ugdzhq/i_cant_read_anything_anymore_without_checking_if/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-26T17:54:56+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
       },
       {
-        "headline": "OpenAI gets to release 5.6 slowly to partners. Anthropic can't release it at all. Seems like the USG is playing favorites. There is no transparency here.",
-        "link": "https://reddit.com/r/singularity/comments/1ug7917/openai_gets_to_release_56_slowly_to_partners/",
+        "headline": "OpenAI is officially unveiling a preview of the GPT-5.6 series: Sol, Earth, and Luna.",
+        "link": "https://reddit.com/r/singularity/comments/1ugdy62/openai_is_officially_unveiling_a_preview_of_the/",
         "subreddit": "singularity",
-        "published_at": "2026-06-26T13:43:05+00:00",
+        "published_at": "2026-06-26T17:53:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Gpt 5.6 better than Mythos 5 that's really good",
+        "link": "https://reddit.com/r/singularity/comments/1ugd2cb/gpt_56_better_than_mythos_5_thats_really_good/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-26T17:20:33+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "Current state of Ai",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ug6qss/current_state_of_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-26T13:22:53+00:00",
+        "headline": "Gpt 5.6 is here but for limited preview (Bc of government again)",
+        "link": "https://reddit.com/r/OpenAI/comments/1ugczb0/gpt_56_is_here_but_for_limited_preview_bc_of/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-26T17:17:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Hot take: if you have to come to this sub and ask how to get started, openclaw probably isnt for you.",
+        "link": "https://reddit.com/r/openclaw/comments/1ugcsb1/hot_take_if_you_have_to_come_to_this_sub_and_ask/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-26T17:10:01+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
       },
       {
-        "headline": "US gov forces OpenAI to stagger 5.6 rollout",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ug6qe7/us_gov_forces_openai_to_stagger_56_rollout/",
+        "headline": "Previewing GPT-5.6 Sol: a next-generation model",
+        "link": "https://reddit.com/r/singularity/comments/1ugcoic/previewing_gpt56_sol_a_nextgeneration_model/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-26T17:06:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Non-coder doctor here — rebuilt my department's website (dead for 2 years) with Claude + Claude Design over a weekend. ~14x the traffic 3 months on.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ugcnkd/noncoder_doctor_here_rebuilt_my_departments/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-06-26T13:22:26+00:00",
+        "published_at": "2026-06-26T17:05:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 95
       },
       {
-        "headline": "Self-Host OpenClaw AI Agent on VPS: Full Setup Guide",
-        "link": "https://reddit.com/r/openclaw/comments/1ug6gyh/selfhost_openclaw_ai_agent_on_vps_full_setup_guide/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-26T13:11:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "A large majority of voters - Democrat and Republican - support an AI data center moratorium",
-        "link": "https://reddit.com/r/OpenAI/comments/1ug62mo/a_large_majority_of_voters_democrat_and/",
+        "headline": "Dario has been doing this for years",
+        "link": "https://reddit.com/r/OpenAI/comments/1ugbi6w/dario_has_been_doing_this_for_years/",
         "subreddit": "OpenAI",
-        "published_at": "2026-06-26T12:55:32+00:00",
+        "published_at": "2026-06-26T16:23:12+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "Aleph Neuro and its partner, Butterfly Network claims it has produced the highest-resolution 3D images of the human brain ever obtained from outside the skull using ultrasound-on-a-chip",
-        "link": "https://reddit.com/r/singularity/comments/1ug5jpt/aleph_neuro_and_its_partner_butterfly_network/",
-        "subreddit": "singularity",
-        "published_at": "2026-06-26T12:32:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "You could've phrased this a bit better, Claude...",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ug4cdk/you_couldve_phrased_this_a_bit_better_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-26T11:37:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-26T16:29:00.487Z",
+    "reddit_viral_generated_at": "2026-06-26T19:06:13.233Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
