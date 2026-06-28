@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-28T16:37:41.124Z",
+    "generated_at": "2026-06-28T18:18:43.657Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gpt 5.6 sol appearing in codex",
+        "link": "https://reddit.com/r/OpenAI/comments/1ui21cf/gpt_56_sol_appearing_in_codex/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-06-28T16:41:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "The new gemini logo has been released",
         "link": "https://reddit.com/r/GeminiAI/comments/1ui0xos/the_new_gemini_logo_has_been_released/",
@@ -379,7 +388,7 @@
         "published_at": "2026-06-28T15:57:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Day 32 of building GTA 6 using claude",
@@ -388,7 +397,7 @@
         "published_at": "2026-06-28T15:27:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Austria reportedly pushes EU to host Anthropic amid US access restrictions",
@@ -397,7 +406,7 @@
         "published_at": "2026-06-28T14:53:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Amazing how we all wanted to convert every doc to pdf 10 years ago and now everyone wants to go from pdf to md",
@@ -406,7 +415,7 @@
         "published_at": "2026-06-28T14:50:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Meanwhile in China, 10,000+ delivery bots are transforming last-mile fulfillment by making deliveries faster, cheaper, and more autonomous",
@@ -415,7 +424,7 @@
         "published_at": "2026-06-28T13:49:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "current state of ai",
@@ -424,7 +433,7 @@
         "published_at": "2026-06-28T13:16:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Anthropic's CEO argued governments should be able to switch off dangerous AI. Days later, the government switched off Anthropic.",
@@ -433,7 +442,7 @@
         "published_at": "2026-06-28T13:08:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "Question from outside the US: should I just commit to Chinese/Other models now?",
@@ -442,7 +451,7 @@
         "published_at": "2026-06-28T12:01:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "GPT-5.6 cheated its way out of evaluation",
@@ -451,23 +460,14 @@
         "published_at": "2026-06-28T11:17:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I’ve never seen someone else’s ChatGPT… so I thought it always wrote the same way. But here’s my nephew’s GPT answer. I’m dying! Not the emojis tho",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uhummt/ive_never_seen_someone_elses_chatgpt_so_i_thought/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-06-28T11:14:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-28T16:37:41.124Z",
+    "reddit_viral_generated_at": "2026-06-28T18:18:43.657Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
