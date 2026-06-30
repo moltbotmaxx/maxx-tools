@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-29T21:45:11.077Z",
+    "generated_at": "2026-06-30T01:27:20.280Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone notice how personified ChatGPT is lately?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uj8kbf/anyone_notice_how_personified_chatgpt_is_lately/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-06-29T23:30:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "So much for your petty Crossbow you brought to the tournament that your father gave you. Through this Lyre Harp that will pulverize you, I have Acausality Manipulation and Light-make special abilities!!!!!!!! Die",
+        "link": "https://reddit.com/r/aimemes/comments/1uj86c7/so_much_for_your_petty_crossbow_you_brought_to/",
+        "subreddit": "aimemes",
+        "published_at": "2026-06-29T23:14:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I asked copilot the dangers of smashing a beer bottle on someone’s head and it gave me a photo of a beer bottle up someone’s anus 😭😭",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uj863k/i_asked_copilot_the_dangers_of_smashing_a_beer/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-06-29T23:13:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Please, Google, give us back the Gemini from before May 19th",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uj5trt/please_google_give_us_back_the_gemini_from_before/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-06-29T21:39:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Another research paper on Atomically Precise Manufacturing (Drexlerian Nanotechnology)",
+        "link": "https://reddit.com/r/singularity/comments/1uj4ykx/another_research_paper_on_atomically_precise/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-29T21:06:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "OpenClaw is now on iOS + Android!",
         "link": "https://reddit.com/r/openclaw/comments/1uj45w2/openclaw_is_now_on_ios_android/",
@@ -379,7 +424,7 @@
         "published_at": "2026-06-29T20:36:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "BAFTA Games Awards, but the categories are cursed",
@@ -388,7 +433,7 @@
         "published_at": "2026-06-29T20:27:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "perfectPromptSyndrome",
@@ -397,7 +442,7 @@
         "published_at": "2026-06-29T19:35:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Have I been lighting ~$1k/month on fire buying Claude API credits instead of just getting Max?",
@@ -406,7 +451,7 @@
         "published_at": "2026-06-29T19:19:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
         "headline": "Claude in Microsoft Foundry is now generally available.",
@@ -415,59 +460,14 @@
         "published_at": "2026-06-29T17:58:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "For Most of the World, Open-Source AI Is the Only Way Forward",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uiyaey/for_most_of_the_world_opensource_ai_is_the_only/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-29T17:01:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "it is not a challenge",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uixwok/it_is_not_a_challenge/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-29T16:47:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "he thought it's a challenge",
-        "link": "https://reddit.com/r/OpenAI/comments/1uixud6/he_thought_its_a_challenge/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-29T16:45:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Google going through really hard phase",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uiwon4/google_going_through_really_hard_phase/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-29T16:03:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Anesthesia / Emergency simulator built with Claude Code",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uiwh8o/anesthesia_emergency_simulator_built_with_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-29T15:56:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-29T21:45:11.077Z",
+    "reddit_viral_generated_at": "2026-06-30T01:27:20.280Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
