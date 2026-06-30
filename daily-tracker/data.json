@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-06-30T15:43:07.432Z",
+    "generated_at": "2026-06-30T18:15:44.633Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Codex-harness OpenClaw: sandboxed agents only get the skill catalog, never the SKILL.md body. How are you delivering skills to locked-down Codex agents?",
-        "link": "https://reddit.com/r/openclaw/comments/1ujrwtb/codexharness_openclaw_sandboxed_agents_only_get/",
-        "subreddit": "openclaw",
-        "published_at": "2026-06-30T15:10:19+00:00",
+        "headline": "Introducing Claude Sonnet 5",
+        "link": "https://reddit.com/r/singularity/comments/1ujwh9i/introducing_claude_sonnet_5/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-30T17:58:17+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Meituan unveils LongCat-2.0, China’s first trillion‑parameter AI model built on domestic chips",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ujqju6/meituan_unveils_longcat20_chinas_first/",
+        "headline": "Introducing Claude Sonnet 5, our most agentic Sonnet yet.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ujwggp/introducing_claude_sonnet_5_our_most_agentic/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-30T17:57:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "So what does it mean when a foreign competitor offers a good enough model for 90% less?",
+        "link": "https://reddit.com/r/singularity/comments/1ujvvu2/so_what_does_it_mean_when_a_foreign_competitor/",
+        "subreddit": "singularity",
+        "published_at": "2026-06-30T17:36:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The future of building is changing",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ujvc7i/the_future_of_building_is_changing/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-06-30T14:19:08+00:00",
+        "published_at": "2026-06-30T17:16:48+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
       },
       {
-        "headline": "AGI might develop superior morals",
-        "link": "https://reddit.com/r/aimemes/comments/1ujq7nk/agi_might_develop_superior_morals/",
-        "subreddit": "aimemes",
-        "published_at": "2026-06-30T14:06:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "P.D.E / Experiment Nº3 - [Updated Open-Source Project Files]",
-        "link": "https://reddit.com/r/OpenAI/comments/1ujq454/pde_experiment_n%C2%BA3_updated_opensource_project/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-06-30T14:02:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Claude Code 2.1.197 has Sonnet 5 in /model list",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ujpq1d/claude_code_21197_has_sonnet_5_in_model_list/",
+        "headline": "Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ujtlbb/claude_desktop_is_now_available_on_linux_ubuntu/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-06-30T13:46:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Fable 5 Strings",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ujp9sl/fable_5_strings/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-30T13:28:43+00:00",
+        "published_at": "2026-06-30T16:13:16+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
       },
       {
-        "headline": "When you just happen to report any conceivable threat to your business to the US government.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ujoxnb/when_you_just_happen_to_report_any_conceivable/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-06-30T13:15:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Worldview of AI models compared to 88 countries",
-        "link": "https://reddit.com/r/singularity/comments/1ujom1v/worldview_of_ai_models_compared_to_88_countries/",
+        "headline": "Claude Sonnet 5 Could Be Released Later Today, But May Not Be Better Than Opus 4.8",
+        "link": "https://reddit.com/r/singularity/comments/1ujt3ui/claude_sonnet_5_could_be_released_later_today_but/",
         "subreddit": "singularity",
-        "published_at": "2026-06-30T13:01:37+00:00",
+        "published_at": "2026-06-30T15:55:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Any suggestions for OpenClaw development in Android 🦞?",
+        "link": "https://reddit.com/r/openclaw/comments/1ujswhk/any_suggestions_for_openclaw_development_in/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-30T15:47:57+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
       },
       {
-        "headline": "Please tell me I’m not the only one",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ujo0e8/please_tell_me_im_not_the_only_one/",
+        "headline": "3.5 pro coming this year for sure",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ujsuu0/35_pro_coming_this_year_for_sure/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-06-30T12:36:10+00:00",
+        "published_at": "2026-06-30T15:46:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "update on politician lie detector",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ujsdaz/update_on_politician_lie_detector/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-06-30T15:27:33+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
       },
       {
-        "headline": "oh ok",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ujnisr/oh_ok/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-06-30T12:14:31+00:00",
+        "headline": "How-To: Setting up a local fail-closed proxy to prevent OpenClaw bill shocks / loops",
+        "link": "https://reddit.com/r/openclaw/comments/1ujscvo/howto_setting_up_a_local_failclosed_proxy_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-06-30T15:27:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-06-30T15:43:07.432Z",
+    "reddit_viral_generated_at": "2026-06-30T18:15:44.633Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
