@@ -367,37 +367,91 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-01T16:40:42.155Z",
+    "generated_at": "2026-07-01T19:12:44.402Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "So I’m doing a fresh vps install on hostinger and I’m getting hit with AllowList restrictions on which ai bot I can choose.",
-        "link": "https://reddit.com/r/openclaw/comments/1ukqtqb/so_im_doing_a_fresh_vps_install_on_hostinger_and/",
+        "headline": "Is there some kind of level of initiative in OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1ukup8p/is_there_some_kind_of_level_of_initiative_in/",
         "subreddit": "openclaw",
-        "published_at": "2026-07-01T16:39:41+00:00",
+        "published_at": "2026-07-01T19:01:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "\"Some routine tasks like coding and debugging will fall back to Opus 4.8\" is not cause for alarm.",
-        "link": "https://reddit.com/r/OpenAI/comments/1ukpg11/some_routine_tasks_like_coding_and_debugging_will/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-01T15:49:23+00:00",
+        "headline": "Artificial Intelligence Box",
+        "link": "https://reddit.com/r/aimemes/comments/1ukukod/artificial_intelligence_box/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-01T18:56:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Skill review: coreyhaines31/marketingskills",
+        "link": "https://reddit.com/r/openclaw/comments/1uku0dm/skill_review_coreyhaines31marketingskills/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-01T18:36:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "SkillOpt: A skill optimizer",
+        "link": "https://reddit.com/r/openclaw/comments/1uktzxh/skillopt_a_skill_optimizer/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-01T18:35:35+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
       },
       {
-        "headline": "Feature request: let Memory Wiki use domain-first folders",
-        "link": "https://reddit.com/r/openclaw/comments/1ukp2ev/feature_request_let_memory_wiki_use_domainfirst/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-01T15:35:31+00:00",
+        "headline": "You can't make this stuff up...",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ukskv0/you_cant_make_this_stuff_up/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-01T17:43:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
+      },
+      {
+        "headline": "Scientists say they have built a cell from scratch for the first time that can feed, grow and replicate like a natural cell",
+        "link": "https://reddit.com/r/singularity/comments/1ukr5zv/scientists_say_they_have_built_a_cell_from/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-01T16:52:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "has anyone agents used rentahuman?",
+        "link": "https://reddit.com/r/openclaw/comments/1ukqy61/has_anyone_agents_used_rentahuman/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-01T16:44:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Gemini 3.6 flash coming before 3.5 pro",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ukqvn9/gemini_36_flash_coming_before_35_pro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-01T16:41:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "OpenAI vs Anthropic vs DeepMind: talent movement data says Anthropic is the weird one",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ukp0sv/openai_vs_anthropic_vs_deepmind_talent_movement/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-01T15:33:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Oh already Gemini flash next variant will it launch with 3.5 pro ? (Please be good)",
@@ -406,68 +460,14 @@
         "published_at": "2026-07-01T14:25:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Translation: the US Gov just created for themselves the pipeline to control AI. It’s pointless arguing with them: lesson learned.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ukm9p9/translation_the_us_gov_just_created_for/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-01T13:50:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Who's excited?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uklsjo/whos_excited/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-01T13:30:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Why do Gemini always bring up conversation from the past so forcefully",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uklhmi/why_do_gemini_always_bring_up_conversation_from/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-01T13:18:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Claude feels like cheating.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ukkrs0/claude_feels_like_cheating/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-01T12:49:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "ai tools recs",
-        "link": "https://reddit.com/r/aimemes/comments/1ukjhc0/ai_tools_recs/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-01T11:52:26+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Huge benchmark update",
-        "link": "https://reddit.com/r/OpenAI/comments/1ukiora/huge_benchmark_update/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-01T11:13:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-01T16:40:42.155Z",
+    "reddit_viral_generated_at": "2026-07-01T19:12:44.402Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
