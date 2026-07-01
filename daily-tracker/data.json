@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-01T20:55:33.415Z",
+    "generated_at": "2026-07-01T22:41:50.449Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Difficulties in AI debugging for Lua game secondary development, with a monthly token consumption of 2.4 billion. Seeking advice from experienced developers.",
+        "link": "https://reddit.com/r/openclaw/comments/1ukzrc5/difficulties_in_ai_debugging_for_lua_game/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-01T22:11:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I wanted a war torn Disney castle for a Playlist icon. Had to get creative for it to play along.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ukyzsj/i_wanted_a_war_torn_disney_castle_for_a_playlist/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-01T21:40:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "The OpenClaw Podcast - The Clawcast - Episode 2",
+        "link": "https://reddit.com/r/openclaw/comments/1ukyie1/the_openclaw_podcast_the_clawcast_episode_2/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-01T21:22:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "used openclaw to untangle my finances before my wife started asking questions - it caught a sketchy script i almost ran",
+        "link": "https://reddit.com/r/openclaw/comments/1uky47d/used_openclaw_to_untangle_my_finances_before_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-01T21:07:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Real conversation, but looks like meme",
         "link": "https://reddit.com/r/aimemes/comments/1ukxj3u/real_conversation_but_looks_like_meme/",
@@ -379,7 +415,25 @@
         "published_at": "2026-07-01T20:45:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "The AI Adoption gap is way more real than people think",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ukxhbi/the_ai_adoption_gap_is_way_more_real_than_people/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-01T20:43:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "It's time!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ukwleb/its_time/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-01T20:10:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Every. Other. Prompt.",
@@ -388,7 +442,7 @@
         "published_at": "2026-07-01T20:01:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "I built/sell a small edge AI box that can run OpenClaw-style agent workloads locally looking for feedback",
@@ -397,67 +451,13 @@
         "published_at": "2026-07-01T19:59:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
-        "headline": "Fable 5 is back.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ukvjyn/fable_5_is_back/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-01T19:31:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Fable 5 is officially back! Here's the rundown.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ukvjbk/fable_5_is_officially_back_heres_the_rundown/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-01T19:31:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic is on a mission rn to make AGI team",
-        "link": "https://reddit.com/r/singularity/comments/1ukuahd/anthropic_is_on_a_mission_rn_to_make_agi_team/",
+        "headline": "Claude Fable 5 officially available worldwide.",
+        "link": "https://reddit.com/r/singularity/comments/1ukvqq0/claude_fable_5_officially_available_worldwide/",
         "subreddit": "singularity",
-        "published_at": "2026-07-01T18:46:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Skill review: coreyhaines31/marketingskills",
-        "link": "https://reddit.com/r/openclaw/comments/1uku0dm/skill_review_coreyhaines31marketingskills/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-01T18:36:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "SkillOpt: A skill optimizer",
-        "link": "https://reddit.com/r/openclaw/comments/1uktzxh/skillopt_a_skill_optimizer/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-01T18:35:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Openclaw on Mac Mini connection issues to LAN Ollama server",
-        "link": "https://reddit.com/r/openclaw/comments/1uksn53/openclaw_on_mac_mini_connection_issues_to_lan/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-01T17:46:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "You can't make this stuff up...",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ukskv0/you_cant_make_this_stuff_up/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-01T17:43:40+00:00",
+        "published_at": "2026-07-01T19:38:42+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 92
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-01T20:55:33.415Z",
+    "reddit_viral_generated_at": "2026-07-01T22:41:50.449Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
