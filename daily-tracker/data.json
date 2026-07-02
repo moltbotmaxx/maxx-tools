@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-02T09:34:02.758Z",
+    "generated_at": "2026-07-02T12:21:48.061Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What kind of software is OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1ulfj68/what_kind_of_software_is_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-02T11:25:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Testing Fable : interview with - Norbert Wiener, the man who warned about AI in 1948",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ulee8a/testing_fable_interview_with_norbert_wiener_the/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-02T10:25:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "When the tokens runs out / usage is hit using Fable",
+        "link": "https://reddit.com/r/aimemes/comments/1ule3we/when_the_tokens_runs_out_usage_is_hit_using_fable/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-02T10:09:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Fable 5 just dropped. Are you actually using it?",
+        "link": "https://reddit.com/r/openclaw/comments/1uld14z/fable_5_just_dropped_are_you_actually_using_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-02T09:07:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Bad AI alignment solutions",
         "link": "https://reddit.com/r/aimemes/comments/1ulbi88/bad_ai_alignment_solutions/",
@@ -379,7 +415,16 @@
         "published_at": "2026-07-02T07:37:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
+      },
+      {
+        "headline": "Where are the recent improvements in AI coming from mostly?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ulb59i/where_are_the_recent_improvements_in_ai_coming/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-02T07:15:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "OpenAI proposes 5% stake to Trump administration to ease Washington pressure: report",
@@ -388,7 +433,16 @@
         "published_at": "2026-07-02T06:41:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
+      },
+      {
+        "headline": "What if?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ul95np/what_if/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-02T05:23:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       },
       {
         "headline": "Judge not!",
@@ -397,7 +451,7 @@
         "published_at": "2026-07-02T04:56:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 84
       },
       {
         "headline": "Claude Fable scores 16.10% on the Remote Labor Automation index, double the next best contender (Opus)",
@@ -406,68 +460,14 @@
         "published_at": "2026-07-02T04:43:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "OpenAI reportedly proposed giving the Trump administration 5% stake in the company",
-        "link": "https://reddit.com/r/singularity/comments/1ul8a4p/openai_reportedly_proposed_giving_the_trump/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-02T04:38:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "POV: your average Arch Linux user:",
-        "link": "https://reddit.com/r/aimemes/comments/1ul64c9/pov_your_average_arch_linux_user/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-02T02:52:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anyone?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ul62wl/anyone/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-02T02:50:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Seedance 2.0 on OpenArt AI",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ul5dsv/seedance_20_on_openart_ai/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-02T02:18:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Feel the AGI",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ul51xm/feel_the_agi/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-02T02:03:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "my google ai overview is a tad tarded",
-        "link": "https://reddit.com/r/aimemes/comments/1ul4ofr/my_google_ai_overview_is_a_tad_tarded/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-02T01:44:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-02T09:34:02.758Z",
+    "reddit_viral_generated_at": "2026-07-02T12:21:48.061Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
