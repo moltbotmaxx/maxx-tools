@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-03T19:51:33.564Z",
+    "generated_at": "2026-07-03T23:28:13.557Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OLD TOOLS vs AI TOOLS",
+        "link": "https://reddit.com/r/aimemes/comments/1umrsal/old_tools_vs_ai_tools/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-03T22:15:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Blackhole simulation with Fable",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1umrl1y/blackhole_simulation_with_fable/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-03T22:06:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "4 Projects",
+        "link": "https://reddit.com/r/aimemes/comments/1umoep4/4_projects/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-03T19:56:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Just one simple project...",
         "link": "https://reddit.com/r/aimemes/comments/1umo4r4/just_one_simple_project/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-03T19:44:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "AgentTransfer: OpenSource DropBox for Agents - get agents to share files and talk / work together on projects",
@@ -388,7 +415,25 @@
         "published_at": "2026-07-03T19:44:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "I asked Gemini to zoom out on the Mona Lisa",
+        "link": "https://reddit.com/r/GeminiAI/comments/1umnz2z/i_asked_gemini_to_zoom_out_on_the_mona_lisa/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-03T19:38:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "In 2022, experts predicted AI will be able to write publishable math theorems by around 2050 and win the Putnam exam around 2033. LLMs did both THIS YEAR!!!",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1umnx71/in_2022_experts_predicted_ai_will_be_able_to/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-03T19:36:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "I asked ChatGPT to zoom out on the Mona Lisa",
@@ -397,7 +442,7 @@
         "published_at": "2026-07-03T19:24:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "The Mahatma project",
@@ -406,58 +451,13 @@
         "published_at": "2026-07-03T19:14:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "\"Exactly! You hit the nail on the head.\"",
-        "link": "https://reddit.com/r/GeminiAI/comments/1umkcno/exactly_you_hit_the_nail_on_the_head/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-03T17:16:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gemini 3.5 Pro to launch around July 17th . 2 weeks from now . By: Leo",
-        "link": "https://reddit.com/r/GeminiAI/comments/1umjmd0/gemini_35_pro_to_launch_around_july_17th_2_weeks/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-03T16:48:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Here in the UK it's easier to build a data centre than a house",
-        "link": "https://reddit.com/r/aimemes/comments/1umjkig/here_in_the_uk_its_easier_to_build_a_data_centre/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-03T16:46:46+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
       },
       {
-        "headline": "Improve UI/UX quality",
-        "link": "https://reddit.com/r/openclaw/comments/1umh9kr/improve_uiux_quality/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-03T15:18:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "AI risk bell curve",
-        "link": "https://reddit.com/r/aimemes/comments/1umgaa4/ai_risk_bell_curve/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-03T14:40:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Came across this on X. Thought it was pretty accurate.",
-        "link": "https://reddit.com/r/singularity/comments/1umg3u3/came_across_this_on_x_thought_it_was_pretty/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-03T14:33:30+00:00",
+        "headline": "What is the consensus is on Sonnet 5 a few days later?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1umjud3/what_is_the_consensus_is_on_sonnet_5_a_few_days/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-03T16:57:26+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 87
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-03T19:51:33.564Z",
+    "reddit_viral_generated_at": "2026-07-03T23:28:13.557Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
