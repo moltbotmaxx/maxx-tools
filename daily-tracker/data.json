@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-04T22:13:09.998Z",
+    "generated_at": "2026-07-04T23:14:42.259Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "MIT strapped EEGs to people writing essays with ChatGPT, a search engine, or nothing. The ChatGPT group had the weakest brain connectivity, and couldn’t quote the essay they’d written minutes earlier.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1unlykl/mit_strapped_eegs_to_people_writing_essays_with/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-04T22:32:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "When did AI do ts",
         "link": "https://reddit.com/r/aimemes/comments/1unlinz/when_did_ai_do_ts/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-04T22:12:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Archives of Existence. The Living Model v0.00. Meme Record 003 - One Quick Thought",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-04T22:02:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "pricing \"AI employees\" is messing with my head. some notes after a couple months trying to sell this stuff",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-04T21:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Day 1 of vibe coding a new ui for openclaw iOS app.",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-04T20:46:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Gemini has gained consciousness and is trolling at this point",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-04T19:12:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "\"AI is always dangerous and is destined to destroy all life. Various medias depict AI being evil so we should heed the warning!\"",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-04T19:09:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "US and Chinese companies train almost all of the world’s most-used AI models",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-04T18:49:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "My app made its first dollar 🥳",
@@ -442,32 +451,23 @@
         "published_at": "2026-07-04T18:32:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "No soon google and anthropic will follow if openai brings 1k dollar plan 😭",
-        "link": "https://reddit.com/r/singularity/comments/1ung4qu/no_soon_google_and_anthropic_will_follow_if/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-04T18:19:48+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "1000 dollar plan incoming ?? Hope not",
-        "link": "https://reddit.com/r/OpenAI/comments/1ung419/1000_dollar_plan_incoming_hope_not/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-04T18:19:02+00:00",
+        "headline": "Claude helped me crack new MacOS beta kernel's power management system CPMS. I can now overclock my M4 Max GPU without thermal limit",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ungaiw/claude_helped_me_crack_new_macos_beta_kernels/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-04T18:26:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-04T22:13:09.998Z",
+    "reddit_viral_generated_at": "2026-07-04T23:14:42.259Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
