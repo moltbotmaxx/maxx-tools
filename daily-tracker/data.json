@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-04T09:32:02.421Z",
+    "generated_at": "2026-07-04T11:47:17.695Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "A philosophical question for you guys.",
+        "link": "https://reddit.com/r/OpenAI/comments/1un6lsp/a_philosophical_question_for_you_guys/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-04T11:24:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "LLMs are the new advertising channel and not our bro anymore",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1un6kl9/llms_are_the_new_advertising_channel_and_not_our/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-04T11:22:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "You're paying $20/month for the smartest model ever built to ask if it's going to rain tomorrow",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1un6gt6/youre_paying_20month_for_the_smartest_model_ever/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-04T11:17:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Day 37 of building GTA 6 using claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1un5xjf/day_37_of_building_gta_6_using_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-04T10:46:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Openclaw skill that summarises my youtube subs every morning keeps dying on my vps",
+        "link": "https://reddit.com/r/openclaw/comments/1un5s4m/openclaw_skill_that_summarises_my_youtube_subs/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-04T10:37:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I built over 81 design skills for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1un595x/i_built_over_81_design_skills_for_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-04T10:06:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "How’s this still a thing in a 2026 frontier model??",
+        "link": "https://reddit.com/r/GeminiAI/comments/1un54fu/hows_this_still_a_thing_in_a_2026_frontier_model/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-04T09:58:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "SemiAnalysis expects Meta to sign compute deal with Anthropic worth $10B",
+        "link": "https://reddit.com/r/singularity/comments/1un3prq/semianalysis_expects_meta_to_sign_compute_deal/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-04T08:31:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Life far beyond the Solar System",
+        "link": "https://reddit.com/r/ChatGPT/comments/1un3jrt/life_far_beyond_the_solar_system/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-04T08:21:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
       {
         "headline": "Tower of Hanoi iykyk",
         "link": "https://reddit.com/r/aimemes/comments/1un37u4/tower_of_hanoi_iykyk/",
@@ -379,95 +460,14 @@
         "published_at": "2026-07-04T08:01:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "The experience of working with Fable - \"Sorry I can't access that Youtube tutorial you just linked... So I'm going to research all guides available, any materials associated, the content creator's articles... and I'll just experiment on your PC while I'm at it...\"",
-        "link": "https://reddit.com/r/singularity/comments/1un1669/the_experience_of_working_with_fable_sorry_i_cant/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-04T06:03:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I cut my Fable token usage by 99.99%. I rewrote my entire codebase on a single grain of rice",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1un0byt/i_cut_my_fable_token_usage_by_9999_i_rewrote_my/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-04T05:16:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Create an image of chatgpt creating an image of a provocative image of chatgpt creating images",
-        "link": "https://reddit.com/r/ChatGPT/comments/1umz7g0/create_an_image_of_chatgpt_creating_an_image_of_a/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-04T04:16:46+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "AgentTeam Email: OpenSource Email for Agents - built on CF Email Routing",
-        "link": "https://reddit.com/r/openclaw/comments/1umyzys/agentteam_email_opensource_email_for_agents_built/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-04T04:05:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Extreme outlier who generated thousands of fanfics about Doki Doki Literature Club! characters giving birth what the actual",
-        "link": "https://reddit.com/r/ChatGPT/comments/1umykn4/extreme_outlier_who_generated_thousands_of/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-04T03:43:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "The Watermark Is Pointless",
-        "link": "https://reddit.com/r/GeminiAI/comments/1umwcu6/the_watermark_is_pointless/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-04T01:51:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "One day AI will be aligned enough to handle blind spots like this smoothly, and this guy is helping push us in that direction.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1umsyaw/one_day_ai_will_be_aligned_enough_to_handle_blind/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-03T23:07:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
-      },
-      {
-        "headline": "🦞 Peter Just Torched the “OpenAI Owns OpenClaw” Conspiracy on Clawcast… Can We Finally Cut the BS",
-        "link": "https://reddit.com/r/openclaw/comments/1umr8mc/peter_just_torched_the_openai_owns_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-03T21:52:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 77
-      },
-      {
-        "headline": "People Actually Using AI in Workflows at Large Corporations - Please Chime In.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1umprgh/people_actually_using_ai_in_workflows_at_large/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-03T20:51:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 74
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-04T09:32:02.421Z",
+    "reddit_viral_generated_at": "2026-07-04T11:47:17.695Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
