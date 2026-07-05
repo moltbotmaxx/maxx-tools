@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-05T19:45:50.845Z",
+    "generated_at": "2026-07-05T21:28:40.451Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Indonesian office staff members hit by a Unitree G1",
+        "link": "https://reddit.com/r/singularity/comments/1uobwz0/indonesian_office_staff_members_hit_by_a_unitree/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-05T20:00:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude meets Government Oversight 🫡🇺🇸",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uobmts/claude_meets_government_oversight/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-05T19:49:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Congressional 🇺🇸 Oversight ⚡️Powered 🔋By 🤖Claude",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uobe9d/congressional_oversight_powered_by_claude/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-05T19:39:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Why U.S. Companies Are Quietly Being Run On Chinese AI",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1uob0zm/why_us_companies_are_quietly_being_run_on_chinese/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-05T19:25:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Help with open claw",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-05T18:57:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Tri-Node Memory — Open source persistent agent memory with human/agent vault separation",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-05T18:52:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Do you agree with Palantir CEO Alex Karp that the enterprise \"tokenmaxxing\" business model has \"gone completely wrong\" with minimal ROI? Will open-weight models inevitably win?",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-05T18:32:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Wanted to see what Fable could one shot, and this is what it created for me in about 20 mins; used about 40% in the initial creation",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-05T18:02:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "I think we're repeating the early microservices mistake with AI agents",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-05T18:01:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Gpt 5.6 discovered new math according to Sam Altman",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-05T17:05:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Beginner-friendly live build: your first OpenClaw agent",
-        "link": "https://reddit.com/r/openclaw/comments/1uo7aa7/beginnerfriendly_live_build_your_first_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-05T16:58:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "You matter, you were warm and alive, and someone noticed you",
-        "link": "https://reddit.com/r/singularity/comments/1uo683d/you_matter_you_were_warm_and_alive_and_someone/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-05T16:16:16+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Get in the hype wagon",
-        "link": "https://reddit.com/r/OpenAI/comments/1uo5974/get_in_the_hype_wagon/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-05T15:37:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-05T19:45:50.845Z",
+    "reddit_viral_generated_at": "2026-07-05T21:28:40.451Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
