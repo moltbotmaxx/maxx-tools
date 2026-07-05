@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-04T23:14:42.259Z",
+    "generated_at": "2026-07-05T00:14:13.865Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What if The Minions served The Republic of Gilead?",
+        "link": "https://reddit.com/r/aimemes/comments/1unmzgk/what_if_the_minions_served_the_republic_of_gilead/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-04T23:21:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "MIT strapped EEGs to people writing essays with ChatGPT, a search engine, or nothing. The ChatGPT group had the weakest brain connectivity, and couldn’t quote the essay they’d written minutes earlier.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1unlykl/mit_strapped_eegs_to_people_writing_essays_with/",
@@ -379,7 +388,16 @@
         "published_at": "2026-07-04T22:32:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "if you had asked me five years ago, i would've bet everything that this wouldn't be possible in our lifetime.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1unlkmc/if_you_had_asked_me_five_years_ago_i_wouldve_bet/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-04T22:15:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "When did AI do ts",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-04T22:12:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "Archives of Existence. The Living Model v0.00. Meme Record 003 - One Quick Thought",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-04T22:02:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "pricing \"AI employees\" is messing with my head. some notes after a couple months trying to sell this stuff",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-04T21:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Day 1 of vibe coding a new ui for openclaw iOS app.",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-04T20:46:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Gemini has gained consciousness and is trolling at this point",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-04T19:12:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "\"AI is always dangerous and is destined to destroy all life. Various medias depict AI being evil so we should heed the warning!\"",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-04T19:09:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       },
       {
         "headline": "US and Chinese companies train almost all of the world’s most-used AI models",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-04T18:49:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "My app made its first dollar 🥳",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ungfuc/my_app_made_its_first_dollar/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-04T18:32:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude helped me crack new MacOS beta kernel's power management system CPMS. I can now overclock my M4 Max GPU without thermal limit",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ungaiw/claude_helped_me_crack_new_macos_beta_kernels/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-04T18:26:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-04T23:14:42.259Z",
+    "reddit_viral_generated_at": "2026-07-05T00:14:13.865Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
