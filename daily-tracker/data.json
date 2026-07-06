@@ -367,19 +367,82 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-06T04:41:22.592Z",
+    "generated_at": "2026-07-06T09:11:04.069Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "So I recently got another chatgpt premium account and my openclaw states that both are at the same percentage",
-        "link": "https://reddit.com/r/openclaw/comments/1uon57l/so_i_recently_got_another_chatgpt_premium_account/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-06T04:27:46+00:00",
+        "headline": "Useful and useless tool at the same time",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uordbx/useful_and_useless_tool_at_the_same_time/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-06T08:28:54+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Accelerate!",
+        "link": "https://reddit.com/r/singularity/comments/1uora3h/accelerate/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-06T08:23:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "DeepMind's page with \"3.5 pro coming soon\"",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uoq7vd/deepminds_page_with_35_pro_coming_soon/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-06T07:19:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Hypothetical: what would happen if China released a model that was equal to or better than fable 5?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uoq4dq/hypothetical_what_would_happen_if_china_released/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-06T07:14:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "AI and AGI pull in opposite directions. We must not kill progress - and also btw - Progress must not kill us. Both are true.",
+        "link": "https://reddit.com/r/aimemes/comments/1uopowy/ai_and_agi_pull_in_opposite_directions_we_must/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-06T06:49:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "I feel like we're rapidly heading to a place where people have all sorts of local bespoke tools that are amazing and only for them",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uopekl/i_feel_like_were_rapidly_heading_to_a_place_where/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-06T06:33:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Claw Voice Video",
+        "link": "https://reddit.com/r/openclaw/comments/1uoo1r3/claw_voice_video/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-06T05:16:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Retired Disabled Army combat vet, no coding background. 250 iterations with Claude turned a 17KB prototype into a shipped tank game",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uomrr8/retired_disabled_army_combat_vet_no_coding/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-06T04:08:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "Automnia AI, a local-first AI operations command center!",
@@ -388,7 +451,7 @@
         "published_at": "2026-07-06T02:54:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 86
       },
       {
         "headline": "Gemma4 is realy a frontier level and its Open weight.. able to answer accurately..",
@@ -397,77 +460,14 @@
         "published_at": "2026-07-06T02:46:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Claude's self invented technical jargon, complex metaphors and imaginary composite words is driving me insane. How to stop it?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uok58g/claudes_self_invented_technical_jargon_complex/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-06T01:58:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I already figured this out 6 months ago.. You are gullible if you still do not see what is coming . Nobody messes with China in price war. AI crash in the US happening by August, and economic depression follows .",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uoi0f2/i_already_figured_this_out_6_months_ago_you_are/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-06T00:17:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude fixed my computer (disabled problematic dimming issue)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uogor9/claude_fixed_my_computer_disabled_problematic/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-05T23:18:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Gemini Omni Flash",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uog4i8/gemini_omni_flash/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-05T22:55:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Ongoing Fable-High included in plan would be enough",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uofpmj/ongoing_fablehigh_included_in_plan_would_be_enough/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-05T22:37:48+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 86
-      },
-      {
-        "headline": "storybloq's approach to using fable efficiently: it plans and reviews, opus implements in parallel",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uofi2s/storybloqs_approach_to_using_fable_efficiently_it/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-05T22:29:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Gemini Omni Flash",
-        "link": "https://reddit.com/r/singularity/comments/1uoe6we/gemini_omni_flash/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-05T21:33:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-06T04:41:22.592Z",
+    "reddit_viral_generated_at": "2026-07-06T09:11:04.069Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
