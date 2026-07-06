@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-06T21:02:00.739Z",
+    "generated_at": "2026-07-06T22:39:50.353Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Tips for Building Projects on an OpenClaw Node",
+        "link": "https://reddit.com/r/openclaw/comments/1upcctl/tips_for_building_projects_on_an_openclaw_node/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-06T22:26:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I think my Gemini has brain damage",
+        "link": "https://reddit.com/r/GeminiAI/comments/1upbgl4/i_think_my_gemini_has_brain_damage/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-06T21:52:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I used Claude to make me a game...then I asked Claude to make me a designer so I could the game myself.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1upa07k/i_used_claude_to_make_me_a_gamethen_i_asked/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-06T20:58:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I accidentally became the Subagents Grandmaster - 16+ hours, ~110 agents, 6 migrations, 11 commits, zero fixture residue",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1up9mo4/i_accidentally_became_the_subagents_grandmaster/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-06T20:44:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Anyone else getting a problem loading Projects or chat list?",
         "link": "https://reddit.com/r/ClaudeAI/comments/1up7fv9/anyone_else_getting_a_problem_loading_projects_or/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-06T19:24:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Are people in general (not people on this sub) aware of how much AI hallucinates ..?",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-06T19:20:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Projects/usage in settings and other issues",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-06T19:18:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "I hope someone from OpenAI sees this post to fix the writing style of chatGPT, because it’s annoying.",
@@ -406,16 +442,16 @@
         "published_at": "2026-07-06T18:46:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
-        "headline": "What is this new interface? [Android]",
-        "link": "https://reddit.com/r/GeminiAI/comments/1up54wr/what_is_this_new_interface_android/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-06T18:04:48+00:00",
+        "headline": "Me using my remaining Fable quota to summarise articles before it's gone",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1up54xw/me_using_my_remaining_fable_quota_to_summarise/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-06T18:04:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Experimenting with different art styles. You can do more than the basic “slop” style",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-06T17:42:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "FREE MODEL alert | Hy3 from Tencent Hy | Use it in OpenClaw now FREE through OpenRouter for 2 weeks! MAKE IT BURN!!",
-        "link": "https://reddit.com/r/openclaw/comments/1up4776/free_model_alert_hy3_from_tencent_hy_use_it_in/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-06T17:32:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "It's either \"Sorry, I can't help you with that.\" guidelines stuff or this",
-        "link": "https://reddit.com/r/GeminiAI/comments/1up3ufr/its_either_sorry_i_cant_help_you_with_that/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-06T17:20:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "AI crawling reddit be like",
-        "link": "https://reddit.com/r/aimemes/comments/1up1vca/ai_crawling_reddit_be_like/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-06T16:11:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "i feel ashamed of how much i love using ai",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1up1fcy/i_feel_ashamed_of_how_much_i_love_using_ai/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-06T15:56:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-06T21:02:00.739Z",
+    "reddit_viral_generated_at": "2026-07-06T22:39:50.353Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
