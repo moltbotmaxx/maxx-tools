@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-06T16:30:34.150Z",
+    "generated_at": "2026-07-06T19:07:24.261Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I hope someone from OpenAI sees this post to fix the writing style of chatGPT, because it’s annoying.",
+        "link": "https://reddit.com/r/OpenAI/comments/1up6crk/i_hope_someone_from_openai_sees_this_post_to_fix/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-06T18:46:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Experimenting with different art styles. You can do more than the basic “slop” style",
+        "link": "https://reddit.com/r/ChatGPT/comments/1up4hgj/experimenting_with_different_art_styles_you_can/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-06T17:42:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "FREE MODEL alert | Hy3 from Tencent Hy | Use it in OpenClaw now FREE through OpenRouter for 2 weeks! MAKE IT BURN!!",
+        "link": "https://reddit.com/r/openclaw/comments/1up4776/free_model_alert_hy3_from_tencent_hy_use_it_in/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-06T17:32:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "It's either \"Sorry, I can't help you with that.\" guidelines stuff or this",
+        "link": "https://reddit.com/r/GeminiAI/comments/1up3ufr/its_either_sorry_i_cant_help_you_with_that/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-06T17:20:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "AI crawling reddit be like",
         "link": "https://reddit.com/r/aimemes/comments/1up1vca/ai_crawling_reddit_be_like/",
@@ -379,25 +415,16 @@
         "published_at": "2026-07-06T16:11:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
-        "headline": "And how to trust to that company?",
-        "link": "https://reddit.com/r/OpenAI/comments/1up1hkn/and_how_to_trust_to_that_company/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-06T15:59:02+00:00",
+        "headline": "i feel ashamed of how much i love using ai",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1up1fcy/i_feel_ashamed_of_how_much_i_love_using_ai/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-06T15:56:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "hi im Claude 😀👋",
-        "link": "https://reddit.com/r/aimemes/comments/1up1g9n/hi_im_claude/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-06T15:57:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "What Emily Bender Really Meant by \"Stochastic Parrots\"",
@@ -406,16 +433,7 @@
         "published_at": "2026-07-06T15:44:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "I tried making an AI World Cup commentator. It sounds real until the game gets fast",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1up0o98/i_tried_making_an_ai_world_cup_commentator_it/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-06T15:30:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Open AI has more users and the most token efficient reasoning models. Why are they less profitable than Anthropic?",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-06T15:23:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Godfather of AI blasts Musk’s xAI as ‘failure,’ says labs are risking a ‘big bubble explosion’",
@@ -433,16 +451,7 @@
         "published_at": "2026-07-06T15:12:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "open source desktop alternative to codex app and claude code with better features and control",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uozzvt/open_source_desktop_alternative_to_codex_app_and/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-06T15:06:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Claude randomly admitted it was calling me by the wrong name internally…. lmao",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-06T14:43:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "We’re Only Starting to Grasp the Pitfalls of Using A.I. at Work",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uoydqc/were_only_starting_to_grasp_the_pitfalls_of_using/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-06T14:06:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-06T16:30:34.150Z",
+    "reddit_viral_generated_at": "2026-07-06T19:07:24.261Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
