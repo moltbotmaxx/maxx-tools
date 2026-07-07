@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-06T22:39:50.353Z",
+    "generated_at": "2026-07-07T01:09:07.991Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gay dating app Goose accused of using AI-generated men to lure users",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1upfhp4/gay_dating_app_goose_accused_of_using_aigenerated/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-07T00:32:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Every single time",
+        "link": "https://reddit.com/r/GeminiAI/comments/1updf0r/every_single_time/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-06T23:06:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Are We Betting the Economy on a Doomed Technology?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1upcqn9/are_we_betting_the_economy_on_a_doomed_technology/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-06T22:41:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Tips for Building Projects on an OpenClaw Node",
         "link": "https://reddit.com/r/openclaw/comments/1upcctl/tips_for_building_projects_on_an_openclaw_node/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-06T22:26:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "I think my Gemini has brain damage",
@@ -388,7 +415,16 @@
         "published_at": "2026-07-06T21:52:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
+      },
+      {
+        "headline": "Last hours with Claude Fable 5: I feel like I’m using it wrong. What should I do?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1upacw3/last_hours_with_claude_fable_5_i_feel_like_im/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-06T21:11:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "I used Claude to make me a game...then I asked Claude to make me a designer so I could the game myself.",
@@ -397,16 +433,16 @@
         "published_at": "2026-07-06T20:58:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
-        "headline": "I accidentally became the Subagents Grandmaster - 16+ hours, ~110 agents, 6 migrations, 11 commits, zero fixture residue",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1up9mo4/i_accidentally_became_the_subagents_grandmaster/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-06T20:44:20+00:00",
+        "headline": "Quote of the day by OpenAI CEO Sam Altman: 'One of the tech industry’s worst mistakes in a long time was that everybody could go full remote forever' — closing the doors to pandemic-era flexibility",
+        "link": "https://reddit.com/r/ChatGPT/comments/1up8uyp/quote_of_the_day_by_openai_ceo_sam_altman_one_of/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-06T20:15:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "Anyone else getting a problem loading Projects or chat list?",
@@ -415,7 +451,7 @@
         "published_at": "2026-07-06T19:24:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 87
       },
       {
         "headline": "Are people in general (not people on this sub) aware of how much AI hallucinates ..?",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-06T19:20:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Projects/usage in settings and other issues",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1up79ph/projectsusage_in_settings_and_other_issues/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-06T19:18:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I hope someone from OpenAI sees this post to fix the writing style of chatGPT, because it’s annoying.",
-        "link": "https://reddit.com/r/OpenAI/comments/1up6crk/i_hope_someone_from_openai_sees_this_post_to_fix/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-06T18:46:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Me using my remaining Fable quota to summarise articles before it's gone",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1up54xw/me_using_my_remaining_fable_quota_to_summarise/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-06T18:04:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Experimenting with different art styles. You can do more than the basic “slop” style",
-        "link": "https://reddit.com/r/ChatGPT/comments/1up4hgj/experimenting_with_different_art_styles_you_can/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-06T17:42:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-06T22:39:50.353Z",
+    "reddit_viral_generated_at": "2026-07-07T01:09:07.991Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
