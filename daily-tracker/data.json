@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-07T20:16:19.151Z",
+    "generated_at": "2026-07-07T21:43:50.493Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
+        "link": "https://reddit.com/r/OpenAI/comments/1uq8qhs/openais_chief_futurist_is_leaving_the_company/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-07T21:30:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Omni Flash",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uq7vc5/omni_flash/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-07T20:58:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "YouTube Transcript Getter Extension - For Obsidian Karpathy Wiki",
+        "link": "https://reddit.com/r/OpenAI/comments/1uq73nr/youtube_transcript_getter_extension_for_obsidian/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-07T20:30:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "A race to techno-feudalism while most people aren't paying attention?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uq5wbb/a_race_to_technofeudalism_while_most_people_arent/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-07T19:48:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Air Force Engineer Accused of Cutting Down Flock AI Surveillance Cameras, Says U.S. is Becoming Police State",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1uq5t92/air_force_engineer_accused_of_cutting_down_flock/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-07T19:45:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "They really thought AI and CyberSecurity wouldn't change anything... Look at us now 💀",
@@ -388,7 +424,16 @@
         "published_at": "2026-07-07T19:41:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Deployed an enterprise version of Openclaw for internal use. average total monthly spend 50k",
+        "link": "https://reddit.com/r/openclaw/comments/1uq47fj/deployed_an_enterprise_version_of_openclaw_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-07T18:50:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "My Reddit account has comments I don't remember posting and they're eerily similar to private AI conversations. Has anyone experienced this?",
@@ -397,7 +442,7 @@
         "published_at": "2026-07-07T18:46:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Advanced Voice is the elephant in the room",
@@ -406,16 +451,7 @@
         "published_at": "2026-07-07T18:26:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Maybe Amercians Don't Care if the US Beats China?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uq3f8g/maybe_amercians_dont_care_if_the_us_beats_china/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-07T18:23:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "me with Claude after anthropic gave us 5 more days together",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-07T18:10:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anthropic extending Fable 5 for paid users till 12 july",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uq2aq5/anthropic_extending_fable_5_for_paid_users_till/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-07T17:44:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Anthropic extending Fable 5 for paid users till 12 july",
-        "link": "https://reddit.com/r/singularity/comments/1uq27uy/anthropic_extending_fable_5_for_paid_users_till/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-07T17:41:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Fable access extended through July 12",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uq25gr/fable_access_extended_through_july_12/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-07T17:39:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "the J-space paper quietly settled a chunk of the “do LLMs actually think” argument. i built a live viewer so you can watch for yourself instead of arguing",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uq0m5j/the_jspace_paper_quietly_settled_a_chunk_of_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-07T16:45:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-07T20:16:19.151Z",
+    "reddit_viral_generated_at": "2026-07-07T21:43:50.493Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
