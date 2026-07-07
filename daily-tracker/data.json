@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-07T15:17:14.957Z",
+    "generated_at": "2026-07-07T17:27:24.141Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Are AI agents reintroducing problems software engineering already solved?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uq0tn8/are_ai_agents_reintroducing_problems_software/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-07T16:52:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "the J-space paper quietly settled a chunk of the “do LLMs actually think” argument. i built a live viewer so you can watch for yourself instead of arguing",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uq0m5j/the_jspace_paper_quietly_settled_a_chunk_of_the/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-07T16:45:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "How do you write tools for openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1upz9yr/how_do_you_write_tools_for_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-07T15:57:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Which way do you interact and use openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1upz1o8/which_way_do_you_interact_and_use_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-07T15:49:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "The circle of AI life",
         "link": "https://reddit.com/r/aimemes/comments/1upxelh/the_circle_of_ai_life/",
@@ -379,16 +415,34 @@
         "published_at": "2026-07-07T14:52:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
-        "headline": "The future of AI is getting clear day by day",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1upwh9g/the_future_of_ai_is_getting_clear_day_by_day/",
+        "headline": "New study: citizen science projects are already using AI to cut training barriers — but legal/ethical guidance is \"urgently required\"",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1upwtzh/new_study_citizen_science_projects_are_already/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-07T14:18:40+00:00",
+        "published_at": "2026-07-07T14:31:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "ChatGPT free tier is beating Grok payed tier",
+        "link": "https://reddit.com/r/ChatGPT/comments/1upwib2/chatgpt_free_tier_is_beating_grok_payed_tier/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-07T14:19:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "\"Platonic Space\"",
+        "link": "https://reddit.com/r/GeminiAI/comments/1upwchf/platonic_space/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-07T14:13:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Fable 5 found actual malware on my PC, and then its own safety filters flagged the warning.",
@@ -397,67 +451,13 @@
         "published_at": "2026-07-07T12:48:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "DHS, FBI Bulletins Label AI Backlash 'Anti-Tech Extremism'",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1uptvv8/dhs_fbi_bulletins_label_ai_backlash_antitech/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-07-07T12:39:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anthropic just reported that LLMs have hidden thoughts they hold without saying. An internal ”J-Space”",
-        "link": "https://reddit.com/r/singularity/comments/1uptvgb/anthropic_just_reported_that_llms_have_hidden/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-07T12:38:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "China is considering restricting overseas access to its top AI models, including open-weight ones",
-        "link": "https://reddit.com/r/singularity/comments/1upt58s/china_is_considering_restricting_overseas_access/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-07T12:07:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Microsoft To Lay Off 4,800 Workers In Latest Wave Of AI-Led Job Cuts - Microsoft announced the cuts on Monday following a rough stretch, with its shares falling nearly 23 per cent in the first six months of 2026, their worst first-half performance since 2022",
-        "link": "https://reddit.com/r/OpenAI/comments/1upspa1/microsoft_to_lay_off_4800_workers_in_latest_wave/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-07T11:48:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Experimenting with AI in Minecraft",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uprxny/experimenting_with_ai_in_minecraft/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-07T11:11:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "What's the most unexpectedly useful thing ChatGPT has done for you?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uprwq2/whats_the_most_unexpectedly_useful_thing_chatgpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-07T11:10:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "What should I choose? Nothing, or fail?",
-        "link": "https://reddit.com/r/OpenAI/comments/1upr8yx/what_should_i_choose_nothing_or_fail/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-07T10:36:35+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-07T15:17:14.957Z",
+    "reddit_viral_generated_at": "2026-07-07T17:27:24.141Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
