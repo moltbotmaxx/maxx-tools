@@ -367,19 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-08T20:38:07.952Z",
+    "generated_at": "2026-07-08T22:17:36.567Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Icarus - The OpenClaw agent I always needed.",
-        "link": "https://reddit.com/r/openclaw/comments/1ur1e8v/icarus_the_openclaw_agent_i_always_needed/",
+        "headline": "Grok 4.5 from xAI is live on OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1ur77sa/grok_45_from_xai_is_live_on_openclaw/",
         "subreddit": "openclaw",
-        "published_at": "2026-07-08T18:34:41+00:00",
+        "published_at": "2026-07-08T22:04:29+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "The OpenClaw Podcast - The ClawCast - Episode 3",
+        "link": "https://reddit.com/r/openclaw/comments/1ur5lfk/the_openclaw_podcast_the_clawcast_episode_3/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-08T21:03:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Maybe Anthropic and OpenAI Are Not the Future of Artificial Intelligence",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ur2qv7/maybe_anthropic_and_openai_are_not_the_future_of/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-08T19:22:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Anthropic just benchmarked \"Fable 5 orchestrates, cheap models execute\": 96% of the performance at 46% of the cost. You can run this pattern in Claude Code today",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ur2ml9/anthropic_just_benchmarked_fable_5_orchestrates/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-08T19:17:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Introducing GPT‑Live",
+        "link": "https://reddit.com/r/singularity/comments/1ur2apg/introducing_gptlive/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T19:06:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Introducing Grok 4.5",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-08T18:19:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 91
       },
       {
         "headline": "Grok 4.5 is live",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-08T17:53:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 90
       },
       {
         "headline": "We Are Living in a ‘ChatGPT Flyer Pandemic’",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-08T17:42:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
         "headline": "Introducing GPT-Live, a new generation of voice models",
@@ -415,16 +451,7 @@
         "published_at": "2026-07-08T17:41:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "My Agents are looping and wasting my money",
-        "link": "https://reddit.com/r/openclaw/comments/1uqztv6/my_agents_are_looping_and_wasting_my_money/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-08T17:41:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 89
       },
       {
         "headline": "Introducing GPT‑Live",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-08T17:30:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Gemini account permanently bricked by \"Storage Full\" bug. Google One Support admitted they can't fix it, told me to \"take it to court,\" and deleted my forum posts.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uqy88y/gemini_account_permanently_bricked_by_storage/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-08T16:46:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Decently reliable leaker says GPT-6 will be a larger pretrain and is slated to launch in a month, possibly end of this month",
-        "link": "https://reddit.com/r/singularity/comments/1uqxs8g/decently_reliable_leaker_says_gpt6_will_be_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T16:31:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "New Claude Certifications Introduced Today",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uqvxxm/new_claude_certifications_introduced_today/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-08T15:27:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-08T20:38:07.952Z",
+    "reddit_viral_generated_at": "2026-07-08T22:17:36.567Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
