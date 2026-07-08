@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-08T16:51:05.800Z",
+    "generated_at": "2026-07-08T18:48:39.743Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Grok 4.5 is live",
+        "link": "https://reddit.com/r/singularity/comments/1ur06sj/grok_45_is_live/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T17:53:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "My Agents are looping and wasting my money",
+        "link": "https://reddit.com/r/openclaw/comments/1uqztv6/my_agents_are_looping_and_wasting_my_money/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-08T17:41:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Introducing GPT‑Live",
+        "link": "https://reddit.com/r/OpenAI/comments/1uqzj4g/introducing_gptlive/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-08T17:30:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Gemini account permanently bricked by \"Storage Full\" bug. Google One Support admitted they can't fix it, told me to \"take it to court,\" and deleted my forum posts.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uqy88y/gemini_account_permanently_bricked_by_storage/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-08T16:46:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Decently reliable leaker says GPT-6 will be a larger pretrain and is slated to launch in a month, possibly end of this month",
+        "link": "https://reddit.com/r/singularity/comments/1uqxs8g/decently_reliable_leaker_says_gpt6_will_be_a/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T16:31:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Was GPT-5’s 4T size public knowledge before now?",
+        "link": "https://reddit.com/r/singularity/comments/1uqxoyi/was_gpt5s_4t_size_public_knowledge_before_now/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T16:27:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "New Claude Certifications Introduced Today",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uqvxxm/new_claude_certifications_introduced_today/",
@@ -379,7 +433,7 @@
         "published_at": "2026-07-08T15:27:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "A New Voice Model!",
@@ -388,7 +442,7 @@
         "published_at": "2026-07-08T15:09:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "Your agent wakes up 48 times a day. what is it actually pursuing? I built a plugin that turns the wake-ups into follow-through",
@@ -397,25 +451,7 @@
         "published_at": "2026-07-08T15:00:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Rilla CEO Offers Housing Stipend to Reduce Commute",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uqv5h3/rilla_ceo_offers_housing_stipend_to_reduce_commute/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-08T14:59:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "\"Go Slowly\" - [ft. Sara Silkin | motion_ctrl / experiment nº1]",
-        "link": "https://reddit.com/r/OpenAI/comments/1uqv1f5/go_slowly_ft_sara_silkin_motion_ctrl_experiment/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-08T14:55:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Worse AI take temptation",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-08T14:48:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "\"Go Slowly\" - [ft. Sara Silkin | motion_ctrl / experiment nº1]",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uqurjc/go_slowly_ft_sara_silkin_motion_ctrl_experiment/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-08T14:45:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Minimax plans to release a 2.7-trillion parameter model.",
-        "link": "https://reddit.com/r/singularity/comments/1uqueil/minimax_plans_to_release_a_27trillion_parameter/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T14:32:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "BREAKING: ByteDance have announced Seedream 5.0 Pro",
-        "link": "https://reddit.com/r/singularity/comments/1uqudc6/breaking_bytedance_have_announced_seedream_50_pro/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T14:31:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "What do you actually use browser agents for?",
-        "link": "https://reddit.com/r/openclaw/comments/1uqtfkd/what_do_you_actually_use_browser_agents_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-08T13:56:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-08T16:51:05.800Z",
+    "reddit_viral_generated_at": "2026-07-08T18:48:39.743Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
