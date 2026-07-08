@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-07T23:15:32.428Z",
+    "generated_at": "2026-07-08T00:13:18.593Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "SpaceXAI planning to launch 1.5 Trillion parameter Grok 4.5 on Wednesday",
+        "link": "https://reddit.com/r/singularity/comments/1uq9qjq/spacexai_planning_to_launch_15_trillion_parameter/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-07T22:08:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
         "link": "https://reddit.com/r/OpenAI/comments/1uq8qhs/openais_chief_futurist_is_leaving_the_company/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-07T21:30:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "One AI policy running 20 different robot bodies, from single arms to full humanoids, all fully autonomous",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-07T21:24:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Omni Flash",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-07T20:58:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "A race to techno-feudalism while most people aren't paying attention?",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-07T19:48:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Air Force Engineer Accused of Cutting Down Flock AI Surveillance Cameras, Says U.S. is Becoming Police State",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-07T19:45:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "They really thought AI and CyberSecurity wouldn't change anything... Look at us now 💀",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-07T19:41:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Anthropic out here acting like a drug dealer giving us a free extra week of the good stuff just to make sure we're completely hooked before pulling the rug. 💀",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-07T19:12:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Deployed an enterprise version of Openclaw for internal use. average total monthly spend 50k",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-07T18:50:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "My Reddit account has comments I don't remember posting and they're eerily similar to private AI conversations. Has anyone experienced this?",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-07T18:46:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "me with Claude after anthropic gave us 5 more days together",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uq30lo/me_with_claude_after_anthropic_gave_us_5_more/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-07T18:10:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-07T23:15:32.428Z",
+    "reddit_viral_generated_at": "2026-07-08T00:13:18.593Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
