@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-08T14:41:56.209Z",
+    "generated_at": "2026-07-08T16:51:05.800Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "New Claude Certifications Introduced Today",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uqvxxm/new_claude_certifications_introduced_today/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-08T15:27:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A New Voice Model!",
+        "link": "https://reddit.com/r/OpenAI/comments/1uqvftv/a_new_voice_model/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-08T15:09:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Your agent wakes up 48 times a day. what is it actually pursuing? I built a plugin that turns the wake-ups into follow-through",
+        "link": "https://reddit.com/r/openclaw/comments/1uqv6ge/your_agent_wakes_up_48_times_a_day_what_is_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-08T15:00:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Rilla CEO Offers Housing Stipend to Reduce Commute",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uqv5h3/rilla_ceo_offers_housing_stipend_to_reduce_commute/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-08T14:59:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "\"Go Slowly\" - [ft. Sara Silkin | motion_ctrl / experiment nº1]",
+        "link": "https://reddit.com/r/OpenAI/comments/1uqv1f5/go_slowly_ft_sara_silkin_motion_ctrl_experiment/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-08T14:55:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Worse AI take temptation",
+        "link": "https://reddit.com/r/aimemes/comments/1uquu97/worse_ai_take_temptation/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-08T14:48:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "\"Go Slowly\" - [ft. Sara Silkin | motion_ctrl / experiment nº1]",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uqurjc/go_slowly_ft_sara_silkin_motion_ctrl_experiment/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-08T14:45:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Minimax plans to release a 2.7-trillion parameter model.",
+        "link": "https://reddit.com/r/singularity/comments/1uqueil/minimax_plans_to_release_a_27trillion_parameter/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T14:32:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "BREAKING: ByteDance have announced Seedream 5.0 Pro",
+        "link": "https://reddit.com/r/singularity/comments/1uqudc6/breaking_bytedance_have_announced_seedream_50_pro/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T14:31:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "What do you actually use browser agents for?",
         "link": "https://reddit.com/r/openclaw/comments/1uqtfkd/what_do_you_actually_use_browser_agents_for/",
@@ -379,95 +460,14 @@
         "published_at": "2026-07-08T13:56:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "An LLM saved my ass while standing in the queue of a roller coaster at Europa Park",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uqt53j/an_llm_saved_my_ass_while_standing_in_the_queue/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-08T13:45:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "ChatGPT’s face when I try explaining that weird pain in my side",
-        "link": "https://reddit.com/r/aimemes/comments/1uqrs87/chatgpts_face_when_i_try_explaining_that_weird/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-08T12:51:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Centuries From Now, It's Still Just a Wednesday",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uqrqk7/centuries_from_now_its_still_just_a_wednesday/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-08T12:49:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Humanity has not prevailed at the AWTF heuristics.",
-        "link": "https://reddit.com/r/singularity/comments/1uqrbql/humanity_has_not_prevailed_at_the_awtf_heuristics/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T12:31:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "How long after sex is it appropriate to open Claude code?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uqr3vi/how_long_after_sex_is_it_appropriate_to_open/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-08T12:22:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Why doesn't this sub like talking about ARC AGI as much anymore?",
-        "link": "https://reddit.com/r/singularity/comments/1uqqjd3/why_doesnt_this_sub_like_talking_about_arc_agi_as/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T11:57:30+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 94
-      },
-      {
-        "headline": "A way to escape AI surveillance",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uqqcyr/a_way_to_escape_ai_surveillance/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-08T11:49:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Bloomberg: Microsoft has started replacing OpenAI and Anthropic models with its own MAI models in Excel and Outlook. Tens of thousands of prompts a week already moved",
-        "link": "https://reddit.com/r/OpenAI/comments/1uqq3ne/bloomberg_microsoft_has_started_replacing_openai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-08T11:36:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Anthropic in 2028 be like...",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uqp70p/anthropic_in_2028_be_like/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-08T10:52:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-08T14:41:56.209Z",
+    "reddit_viral_generated_at": "2026-07-08T16:51:05.800Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
