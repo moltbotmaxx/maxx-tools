@@ -1,143 +1,19 @@
 {
-  "updatedAt": "2026-07-08T19:26:01.666Z",
+  "updatedAt": "2026-07-08T20:43:40.197Z",
   "source": "BCCR WebService + BCCR APIM + BCCR comunicaciones",
   "usd": {
-    "buy": 449.85,
-    "sell": 454.15,
-    "buyChange": 0.36000000000001364,
-    "sellChange": -1.6200000000000045
+    "buy": null,
+    "sell": null,
+    "buyChange": null,
+    "sellChange": null
   },
   "eur": {
-    "buy": 513.413805,
-    "sell": 518.3213949999999,
-    "buyChange": -0.7578059999999596,
-    "sellChange": -3.0339079999999967,
+    "buy": null,
+    "sell": null,
+    "buyChange": null,
+    "sellChange": null,
     "note": "derivado de USDCRC * USDAEUR (BCCR)"
   },
-  "history": [
-    {
-      "date": "2026-06-09",
-      "usdSell": 460.7
-    },
-    {
-      "date": "2026-06-10",
-      "usdSell": 458.71
-    },
-    {
-      "date": "2026-06-11",
-      "usdSell": 456.62
-    },
-    {
-      "date": "2026-06-12",
-      "usdSell": 457.2
-    },
-    {
-      "date": "2026-06-13",
-      "usdSell": 458.68
-    },
-    {
-      "date": "2026-06-14",
-      "usdSell": 458.68
-    },
-    {
-      "date": "2026-06-15",
-      "usdSell": 458.68
-    },
-    {
-      "date": "2026-06-16",
-      "usdSell": 457.24
-    },
-    {
-      "date": "2026-06-17",
-      "usdSell": 455.9
-    },
-    {
-      "date": "2026-06-18",
-      "usdSell": 455.2
-    },
-    {
-      "date": "2026-06-19",
-      "usdSell": 455.14
-    },
-    {
-      "date": "2026-06-20",
-      "usdSell": 456.01
-    },
-    {
-      "date": "2026-06-21",
-      "usdSell": 456.01
-    },
-    {
-      "date": "2026-06-22",
-      "usdSell": 456.01
-    },
-    {
-      "date": "2026-06-23",
-      "usdSell": 456.5
-    },
-    {
-      "date": "2026-06-24",
-      "usdSell": 455.73
-    },
-    {
-      "date": "2026-06-25",
-      "usdSell": 454.64
-    },
-    {
-      "date": "2026-06-26",
-      "usdSell": 455.33
-    },
-    {
-      "date": "2026-06-27",
-      "usdSell": 456.01
-    },
-    {
-      "date": "2026-06-28",
-      "usdSell": 456.01
-    },
-    {
-      "date": "2026-06-29",
-      "usdSell": 456.01
-    },
-    {
-      "date": "2026-06-30",
-      "usdSell": 457.17
-    },
-    {
-      "date": "2026-07-01",
-      "usdSell": 456.94
-    },
-    {
-      "date": "2026-07-02",
-      "usdSell": 455.42
-    },
-    {
-      "date": "2026-07-03",
-      "usdSell": 456.09
-    },
-    {
-      "date": "2026-07-04",
-      "usdSell": 456.42
-    },
-    {
-      "date": "2026-07-05",
-      "usdSell": 456.42
-    },
-    {
-      "date": "2026-07-06",
-      "usdSell": 456.42,
-      "eurSell": 521.094714
-    },
-    {
-      "date": "2026-07-07",
-      "usdSell": 455.77,
-      "eurSell": 521.3553029999999
-    },
-    {
-      "date": "2026-07-08",
-      "usdSell": 454.15,
-      "eurSell": 518.3213949999999
-    }
-  ],
+  "history": [],
   "news": []
 }
