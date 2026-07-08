@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-08T03:47:18.296Z",
+    "generated_at": "2026-07-08T06:39:40.078Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Thieves Are Now Targeting AI Data Center Construction Sites for Copper and Expensive Equipment",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uqjsq4/thieves_are_now_targeting_ai_data_center/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-08T05:45:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Give your agent a phone - open source non-sass edition",
+        "link": "https://reddit.com/r/openclaw/comments/1uqie8e/give_your_agent_a_phone_open_source_nonsass/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-08T04:31:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday.",
+        "link": "https://reddit.com/r/OpenAI/comments/1uqhviv/gpt56_sol_along_with_terra_and_luna_will_launch/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-08T04:05:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday. We’re expanding preview access globally now.",
+        "link": "https://reddit.com/r/singularity/comments/1uqhthi/gpt56_sol_along_with_terra_and_luna_will_launch/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T04:02:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Scoop: Trump administration lifts restrictions on OpenAI's GPT 5.6",
         "link": "https://reddit.com/r/OpenAI/comments/1uqh41a/scoop_trump_administration_lifts_restrictions_on/",
@@ -379,7 +415,16 @@
         "published_at": "2026-07-08T03:28:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "ChatGPT remaking my work for the thousandth time after I said it’s still missing info",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uqh1gc/chatgpt_remaking_my_work_for_the_thousandth_time/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-08T03:24:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Can't generate copyright images. Then explain this one nerds?",
@@ -388,16 +433,7 @@
         "published_at": "2026-07-08T02:59:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Oops",
-        "link": "https://reddit.com/r/singularity/comments/1uqfwig/oops/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T02:31:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Using fable to audit openclaw",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-08T01:48:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Radio Free Gemma",
@@ -415,59 +451,23 @@
         "published_at": "2026-07-08T01:29:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
-        "headline": "SpaceXAI planning to launch 1.5 Trillion parameter Grok 4.5 on Wednesday",
-        "link": "https://reddit.com/r/singularity/comments/1uq9qjq/spacexai_planning_to_launch_15_trillion_parameter/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-07T22:08:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
-        "link": "https://reddit.com/r/OpenAI/comments/1uq8qhs/openais_chief_futurist_is_leaving_the_company/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-07T21:30:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "One AI policy running 20 different robot bodies, from single arms to full humanoids, all fully autonomous",
-        "link": "https://reddit.com/r/singularity/comments/1uq8l0y/one_ai_policy_running_20_different_robot_bodies/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-07T21:24:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Omni Flash",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uq7vc5/omni_flash/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-07T20:58:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "A race to techno-feudalism while most people aren't paying attention?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uq5wbb/a_race_to_technofeudalism_while_most_people_arent/",
+        "headline": "Not into hyping this model but I do trust Paul Hudson",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uqci3e/not_into_hyping_this_model_but_i_do_trust_paul/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-07-07T19:48:26+00:00",
+        "published_at": "2026-07-07T23:59:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 82
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-08T03:47:18.296Z",
+    "reddit_viral_generated_at": "2026-07-08T06:39:40.078Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
