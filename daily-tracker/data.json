@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-08T09:38:42.141Z",
+    "generated_at": "2026-07-08T11:58:12.560Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anthropic in 2028 be like...",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uqp70p/anthropic_in_2028_be_like/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-08T10:52:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anthropic silently enrolled my Claude Code install in an A/B experiment, overrode my settings, and updated the CLI even with auto-updates disabled",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uqov49/anthropic_silently_enrolled_my_claude_code/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-08T10:35:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Built my entire portfolio with Claude Fable 5. You scroll through space and crash into the sun",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uqoaqv/built_my_entire_portfolio_with_claude_fable_5_you/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-08T10:04:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Tokens were eating my wallets, so i tried GLM5.2 and compare it to Fable 5 and Opus 4.8",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uqnq71/tokens_were_eating_my_wallets_so_i_tried_glm52/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-08T09:33:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Another day of Solved Coding",
         "link": "https://reddit.com/r/aimemes/comments/1uqlxal/another_day_of_solved_coding/",
@@ -379,7 +415,16 @@
         "published_at": "2026-07-08T07:45:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "Seems like 5.6 isn't on level of fable 5 yet (still it will be much better in other aspects)",
+        "link": "https://reddit.com/r/OpenAI/comments/1uqkofm/seems_like_56_isnt_on_level_of_fable_5_yet_still/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-08T06:34:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Thieves Are Now Targeting AI Data Center Construction Sites for Copper and Expensive Equipment",
@@ -388,7 +433,7 @@
         "published_at": "2026-07-08T05:45:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "It's happening!",
@@ -397,7 +442,7 @@
         "published_at": "2026-07-08T04:40:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 85
       },
       {
         "headline": "Give your agent a phone - open source non-sass edition",
@@ -406,58 +451,13 @@
         "published_at": "2026-07-08T04:31:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 85
       },
       {
         "headline": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday.",
         "link": "https://reddit.com/r/OpenAI/comments/1uqhviv/gpt56_sol_along_with_terra_and_luna_will_launch/",
         "subreddit": "OpenAI",
         "published_at": "2026-07-08T04:05:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday. We’re expanding preview access globally now.",
-        "link": "https://reddit.com/r/singularity/comments/1uqhthi/gpt56_sol_along_with_terra_and_luna_will_launch/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T04:02:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Scoop: Trump administration lifts restrictions on OpenAI's GPT 5.6",
-        "link": "https://reddit.com/r/OpenAI/comments/1uqh41a/scoop_trump_administration_lifts_restrictions_on/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-08T03:28:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "ChatGPT remaking my work for the thousandth time after I said it’s still missing info",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uqh1gc/chatgpt_remaking_my_work_for_the_thousandth_time/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-08T03:24:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Can't generate copyright images. Then explain this one nerds?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uqgi2p/cant_generate_copyright_images_then_explain_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-08T02:59:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Radio Free Gemma",
-        "link": "https://reddit.com/r/openclaw/comments/1uqekb4/radio_free_gemma/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-08T01:29:12+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 84
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-08T09:38:42.141Z",
+    "reddit_viral_generated_at": "2026-07-08T11:58:12.560Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
