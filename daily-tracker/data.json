@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-08T22:17:36.567Z",
+    "generated_at": "2026-07-08T23:34:07.593Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,31 @@
         "viral_score": 100
       },
       {
+        "headline": "Grok-4.5 on par with gpt-5.5-xhigh in coding at half the cost",
+        "link": "https://reddit.com/r/singularity/comments/1ur6bie/grok45_on_par_with_gpt55xhigh_in_coding_at_half/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-08T21:30:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
         "headline": "The OpenClaw Podcast - The ClawCast - Episode 3",
         "link": "https://reddit.com/r/openclaw/comments/1ur5lfk/the_openclaw_podcast_the_clawcast_episode_3/",
         "subreddit": "openclaw",
         "published_at": "2026-07-08T21:03:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
+      },
+      {
+        "headline": "My Agent is a little... different from the others...",
+        "link": "https://reddit.com/r/openclaw/comments/1ur4zjp/my_agent_is_a_little_different_from_the_others/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-08T20:42:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Maybe Anthropic and OpenAI Are Not the Future of Artificial Intelligence",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-08T19:22:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Anthropic just benchmarked \"Fable 5 orchestrates, cheap models execute\": 96% of the performance at 46% of the cost. You can run this pattern in Claude Code today",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-08T19:17:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Introducing GPT‑Live",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-08T19:06:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Introducing Grok 4.5",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-08T18:19:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Grok 4.5 is live",
@@ -433,41 +451,23 @@
         "published_at": "2026-07-08T17:53:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "We Are Living in a ‘ChatGPT Flyer Pandemic’",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uqzuzn/we_are_living_in_a_chatgpt_flyer_pandemic/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-08T17:42:17+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
       },
       {
-        "headline": "Introducing GPT-Live, a new generation of voice models",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uqztym/introducing_gptlive_a_new_generation_of_voice/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-08T17:41:17+00:00",
+        "headline": "When your boss asks if you or Claude built it",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ur0484/when_your_boss_asks_if_you_or_claude_built_it/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-08T17:51:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Introducing GPT‑Live",
-        "link": "https://reddit.com/r/OpenAI/comments/1uqzj4g/introducing_gptlive/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-08T17:30:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-08T22:17:36.567Z",
+    "reddit_viral_generated_at": "2026-07-08T23:34:07.593Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
