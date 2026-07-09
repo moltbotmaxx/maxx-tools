@@ -367,107 +367,107 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-09T16:43:39.072Z",
+    "generated_at": "2026-07-09T19:00:59.807Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "I updated and it worked!",
-        "link": "https://reddit.com/r/openclaw/comments/1uruju0/i_updated_and_it_worked/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-09T16:03:12+00:00",
+        "headline": "Got access to GPT 5.6 Sol Ultra, compared to Fable 5",
+        "link": "https://reddit.com/r/OpenAI/comments/1urybsk/got_access_to_gpt_56_sol_ultra_compared_to_fable_5/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-09T18:15:17+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Damn muse 1.1 now better than fable 5 for medical and legal use ??",
-        "link": "https://reddit.com/r/singularity/comments/1urtqyt/damn_muse_11_now_better_than_fable_5_for_medical/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-09T15:34:50+00:00",
+        "headline": "GPT 5.6 Sol missing in plus plan ?",
+        "link": "https://reddit.com/r/OpenAI/comments/1urxr5x/gpt_56_sol_missing_in_plus_plan/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-09T17:55:41+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "Even meta is so much better than gemini now with this update",
-        "link": "https://reddit.com/r/GeminiAI/comments/1urs9y9/even_meta_is_so_much_better_than_gemini_now_with/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-09T14:42:09+00:00",
+        "headline": "ChatGPT 5.6 - ARC-AGI 3 score",
+        "link": "https://reddit.com/r/singularity/comments/1urx8hy/chatgpt_56_arcagi_3_score/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-09T17:37:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Soooo what does this one say about me?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1urx2pu/soooo_what_does_this_one_say_about_me/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-09T17:31:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "GPT 5.6 Sol benchmarks",
+        "link": "https://reddit.com/r/singularity/comments/1urx260/gpt_56_sol_benchmarks/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-09T17:31:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
       },
       {
-        "headline": "Meta is going head to head against 5.5",
-        "link": "https://reddit.com/r/OpenAI/comments/1urs8py/meta_is_going_head_to_head_against_55/",
+        "headline": "5.6 is being rolled out right now",
+        "link": "https://reddit.com/r/OpenAI/comments/1urwz2l/56_is_being_rolled_out_right_now/",
         "subreddit": "OpenAI",
-        "published_at": "2026-07-09T14:41:00+00:00",
+        "published_at": "2026-07-09T17:28:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Looking for something like monitor function in claude code in openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1urwi1t/looking_for_something_like_monitor_function_in/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-09T17:12:05+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "OpenAI’s newest AI model, GPT 5.6 is 54% more token efficient on agentic coding.",
-        "link": "https://reddit.com/r/OpenAI/comments/1urs686/openais_newest_ai_model_gpt_56_is_54_more_token/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-09T14:38:28+00:00",
+        "headline": "New in Archestra OSS: Migration from Claude/OpenClaw/Hermes into a governed production environment.",
+        "link": "https://reddit.com/r/openclaw/comments/1urwe04/new_in_archestra_oss_migration_from/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-09T17:08:19+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 96
       },
       {
-        "headline": "Muse spark 1.1 has been released with the lowest cost.",
-        "link": "https://reddit.com/r/singularity/comments/1urrd6o/muse_spark_11_has_been_released_with_the_lowest/",
+        "headline": "GPT-5.6",
+        "link": "https://reddit.com/r/singularity/comments/1urwctc/gpt56/",
         "subreddit": "singularity",
-        "published_at": "2026-07-09T14:09:03+00:00",
+        "published_at": "2026-07-09T17:07:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "tokenmaxxers as soon as ChatGPT launches GTP 5.6 Sol",
+        "link": "https://reddit.com/r/ChatGPT/comments/1urwbtf/tokenmaxxers_as_soon_as_chatgpt_launches_gtp_56/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-09T17:06:09+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
-      },
-      {
-        "headline": "Day 1 of giving Feble 5 a 80$ crypto account with instructions to turn it into 5k before the Sol 5.6 release",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1urr49k/day_1_of_giving_feble_5_a_80_crypto_account_with/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-09T13:59:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Opus 4.8 is a pain in the a** to read, and to work with",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1urq8fv/opus_48_is_a_pain_in_the_a_to_read_and_to_work/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-09T13:25:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Execs Confused and Horrified by the Huge AI Bills After Thinking They Could Replace Workers for Free",
-        "link": "https://reddit.com/r/ChatGPT/comments/1urovnd/execs_confused_and_horrified_by_the_huge_ai_bills/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-09T12:29:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "OpenClaw + Google Workspace (Gmail) Trigger",
-        "link": "https://reddit.com/r/openclaw/comments/1urokbg/openclaw_google_workspace_gmail_trigger/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-09T12:15:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-09T16:43:39.072Z",
+    "reddit_viral_generated_at": "2026-07-09T19:00:59.807Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
