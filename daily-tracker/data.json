@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-09T04:15:07.641Z",
+    "generated_at": "2026-07-09T07:54:03.215Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini is even worse than grok now🥀🥀🥀",
+        "link": "https://reddit.com/r/GeminiAI/comments/1urj9sq/gemini_is_even_worse_than_grok_now/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-09T07:33:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The cost of a given X level of AI intelligence is cut in half every 2-4 months.",
+        "link": "https://reddit.com/r/singularity/comments/1uri6cs/the_cost_of_a_given_x_level_of_ai_intelligence_is/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-09T06:32:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Cabinet Elevator using Omni Flash",
+        "link": "https://reddit.com/r/GeminiAI/comments/1urhm4c/cabinet_elevator_using_omni_flash/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-09T06:01:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "GPT is getting close to singularity",
+        "link": "https://reddit.com/r/OpenAI/comments/1urh6uz/gpt_is_getting_close_to_singularity/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-09T05:38:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "This is a rather groundbreaking development",
+        "link": "https://reddit.com/r/singularity/comments/1urglpm/this_is_a_rather_groundbreaking_development/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-09T05:07:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Biggest scam humanity accepted as normal according to Claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1urgbug/biggest_scam_humanity_accepted_as_normal/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-09T04:53:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Today is the day of GPT-5.6!!!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1urfd4p/today_is_the_day_of_gpt56/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-09T04:04:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
       {
         "headline": "Meta’s AI Data Center Caught Leaking Deadly Bacteria Into Water Town Uses for Irrigation",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1ureg0r/metas_ai_data_center_caught_leaking_deadly/",
@@ -379,7 +442,7 @@
         "published_at": "2026-07-09T03:19:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 90
       },
       {
         "headline": "Somewhere in the multi-memeverse: Jerimiah no Eleven",
@@ -388,7 +451,7 @@
         "published_at": "2026-07-09T02:36:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 88
       },
       {
         "headline": "Let's Kaiju battle",
@@ -397,77 +460,14 @@
         "published_at": "2026-07-09T01:20:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Claude Sci just dropped, and it's got me thinking about what Anthropic is actually becoming",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uradyh/claude_sci_just_dropped_and_its_got_me_thinking/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-09T00:13:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Introducing the OpenClaw Foundation",
-        "link": "https://reddit.com/r/openclaw/comments/1ur9n49/introducing_the_openclaw_foundation/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-08T23:41:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Zero mistakes, zero dollars",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ur8k94/zero_mistakes_zero_dollars/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-08T22:57:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Wow a new GPT audio is incredible",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ur848w/wow_a_new_gpt_audio_is_incredible/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-08T22:39:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Offensive Barbie playsets was a great idea",
-        "link": "https://reddit.com/r/ChatGPT/comments/1ur7gpt/offensive_barbie_playsets_was_a_great_idea/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-08T22:14:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Grok-4.5 on par with gpt-5.5-xhigh in coding at half the cost",
-        "link": "https://reddit.com/r/singularity/comments/1ur6bie/grok45_on_par_with_gpt55xhigh_in_coding_at_half/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-08T21:30:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Maybe Anthropic and OpenAI Are Not the Future of Artificial Intelligence",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ur2qv7/maybe_anthropic_and_openai_are_not_the_future_of/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-08T19:22:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-09T04:15:07.641Z",
+    "reddit_viral_generated_at": "2026-07-09T07:54:03.215Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
