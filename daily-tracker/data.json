@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-09T20:57:06.151Z",
+    "generated_at": "2026-07-09T22:44:11.063Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I'm confused.... the new menu just shows Work or Codex... there's no regular ChatGPT in the new desktop app",
+        "link": "https://reddit.com/r/OpenAI/comments/1us3nhf/im_confused_the_new_menu_just_shows_work_or_codex/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-09T21:28:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Do you have to use model’s API?",
+        "link": "https://reddit.com/r/openclaw/comments/1us33h8/do_you_have_to_use_models_api/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-09T21:07:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Fomos muito longe?",
         "link": "https://reddit.com/r/aimemes/comments/1us23v1/fomos_muito_longe/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-09T20:30:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Sol available for Plus users in the next 24 hours",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-09T19:47:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "1X unveils NEO's new robotics hands",
@@ -397,7 +415,16 @@
         "published_at": "2026-07-09T19:24:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
+      },
+      {
+        "headline": "I just made $25K USD with my capybara game built entirely with Claude Code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1urzr1q/i_just_made_25k_usd_with_my_capybara_game_built/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-09T19:04:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "5 hour and weekly limits have been reset. Thanks Anthropic!",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-09T19:00:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Sol 5 Ultra burned through the 5-hour limit in 15 minutes.",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-09T18:42:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Anthropic setting the bar.",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-09T18:41:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Now let's see Google's model.",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-09T18:29:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Got access to GPT 5.6 Sol Ultra, compared to Fable 5",
-        "link": "https://reddit.com/r/OpenAI/comments/1urybsk/got_access_to_gpt_56_sol_ultra_compared_to_fable_5/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-09T18:15:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "GPT 5.6 Sol missing in plus plan ?",
-        "link": "https://reddit.com/r/OpenAI/comments/1urxr5x/gpt_56_sol_missing_in_plus_plan/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-09T17:55:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "ChatGPT 5.6 - ARC-AGI 3 score",
-        "link": "https://reddit.com/r/singularity/comments/1urx8hy/chatgpt_56_arcagi_3_score/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-09T17:37:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-09T20:57:06.151Z",
+    "reddit_viral_generated_at": "2026-07-09T22:44:11.063Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
