@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-10T17:10:45.973Z",
+    "generated_at": "2026-07-10T18:47:09.566Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "GPT-5.6 Solves Yet Another Unsolved Problem",
+        "link": "https://reddit.com/r/singularity/comments/1usvzqw/gpt56_solves_yet_another_unsolved_problem/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-10T18:30:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Does anyone use OpenTelemetry to debug your OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1usvkso/does_anyone_use_opentelemetry_to_debug_your/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-10T18:15:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Using 3 voice bots to count to 100",
+        "link": "https://reddit.com/r/ChatGPT/comments/1usv6ei/using_3_voice_bots_to_count_to_100/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-10T18:01:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Gpt 5.6 Sol connect to Openclaw via Oath",
+        "link": "https://reddit.com/r/openclaw/comments/1usud9p/gpt_56_sol_connect_to_openclaw_via_oath/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-10T17:32:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Talking to the new ChatGPT Live Voice mode in Russian is INSANE",
         "link": "https://reddit.com/r/OpenAI/comments/1usrsk6/talking_to_the_new_chatgpt_live_voice_mode_in/",
@@ -379,25 +415,7 @@
         "published_at": "2026-07-10T16:00:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "GPT-5.6 Sol solved a problem that made Fable 5 go into incoherent rambles earlier!",
-        "link": "https://reddit.com/r/OpenAI/comments/1usq806/gpt56_sol_solved_a_problem_that_made_fable_5_go/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-10T15:03:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "How often are you using AI to help you make choices?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uspo0d/how_often_are_you_using_ai_to_help_you_make/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-10T14:42:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Everything a child learns in primary school, as an interactive graph of 1,590 concepts and 3,221 prerequisite links",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-10T13:56:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "GPT-5.6 Sol is the real deal.",
@@ -415,7 +433,16 @@
         "published_at": "2026-07-10T13:54:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
+      },
+      {
+        "headline": "Where is OpenClaw heading? Curious how people are using it in real projects",
+        "link": "https://reddit.com/r/openclaw/comments/1usnren/where_is_openclaw_heading_curious_how_people_are/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-10T13:29:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "I made a Pirate MMO with Fable, and the entire game is only 5MB.",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-10T13:26:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "How is the user interface worse 3 months later?",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-10T13:25:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "ChatGPT made better World Cup logo than the actual World Cup 2026 logo we have.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uslham/chatgpt_made_better_world_cup_logo_than_the/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-10T11:53:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Wow",
-        "link": "https://reddit.com/r/GeminiAI/comments/1usld47/wow/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-10T11:48:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I built three life‑oriented web apps for the OpenClaw agent — would you take a look?",
-        "link": "https://reddit.com/r/openclaw/comments/1uslbul/i_built_three_lifeoriented_web_apps_for_the/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-10T11:46:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-10T17:10:45.973Z",
+    "reddit_viral_generated_at": "2026-07-10T18:47:09.566Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
