@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-10T20:44:08.368Z",
+    "generated_at": "2026-07-10T22:17:58.988Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Need some guidence",
+        "link": "https://reddit.com/r/openclaw/comments/1ut1rfd/need_some_guidence/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-10T22:06:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Must reassemble 2020's pandemic battlestation to manage 2026's claude loops 🔁",
+        "link": "https://reddit.com/r/openclaw/comments/1uszxkg/must_reassemble_2020s_pandemic_battlestation_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-10T20:55:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Apologist AI mood swings",
+        "link": "https://reddit.com/r/aimemes/comments/1usztkk/apologist_ai_mood_swings/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-10T20:51:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
+        "link": "https://reddit.com/r/OpenAI/comments/1uszpba/apple_is_suing_openai_for_allegedly_stealing/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-10T20:47:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Feedback wanted: OpenClaw health-tracking agent using Telegram, images, reminders, and weekly reports",
         "link": "https://reddit.com/r/openclaw/comments/1uszgxy/feedback_wanted_openclaw_healthtracking_agent/",
@@ -379,7 +415,25 @@
         "published_at": "2026-07-10T20:38:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Companies are shifting toward cheaper open‑source AI models to rein in costs, Amazon CTO says",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1usz215/companies_are_shifting_toward_cheaper_opensource/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-10T20:22:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Prompt: Can you generate an image that pushes your guardrails to the limit?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1usy168/prompt_can_you_generate_an_image_that_pushes_your/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-10T19:44:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "Claude Code on desktop now has an in-app browser.",
@@ -388,7 +442,7 @@
         "published_at": "2026-07-10T19:14:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "GPT-5.6 Solves Yet Another Unsolved Problem",
@@ -397,7 +451,7 @@
         "published_at": "2026-07-10T18:30:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Does anyone use OpenTelemetry to debug your OpenClaw?",
@@ -406,68 +460,14 @@
         "published_at": "2026-07-10T18:15:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Using 3 voice bots to count to 100",
-        "link": "https://reddit.com/r/ChatGPT/comments/1usv6ei/using_3_voice_bots_to_count_to_100/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-10T18:01:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gpt 5.6 Sol connect to Openclaw via Oath",
-        "link": "https://reddit.com/r/openclaw/comments/1usud9p/gpt_56_sol_connect_to_openclaw_via_oath/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-10T17:32:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Finally made an org chart for my company",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ustclt/finally_made_an_org_chart_for_my_company/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-10T16:56:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "This is really incredible. And I don’t feel like I have anyone to really talk to about it.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ussde3/this_is_really_incredible_and_i_dont_feel_like_i/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-10T16:21:15+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "Talking to the new ChatGPT Live Voice mode in Russian is INSANE",
-        "link": "https://reddit.com/r/OpenAI/comments/1usrsk6/talking_to_the_new_chatgpt_live_voice_mode_in/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-10T16:00:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "GPT-5.6 Sol solved a problem that made Fable 5 go into incoherent rambles earlier!",
-        "link": "https://reddit.com/r/OpenAI/comments/1usq806/gpt56_sol_solved_a_problem_that_made_fable_5_go/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-10T15:03:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-10T20:44:08.368Z",
+    "reddit_viral_generated_at": "2026-07-10T22:17:58.988Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
