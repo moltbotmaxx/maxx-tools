@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-10T15:03:30.099Z",
+    "generated_at": "2026-07-10T17:10:45.973Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Talking to the new ChatGPT Live Voice mode in Russian is INSANE",
+        "link": "https://reddit.com/r/OpenAI/comments/1usrsk6/talking_to_the_new_chatgpt_live_voice_mode_in/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-10T16:00:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "GPT-5.6 Sol solved a problem that made Fable 5 go into incoherent rambles earlier!",
+        "link": "https://reddit.com/r/OpenAI/comments/1usq806/gpt56_sol_solved_a_problem_that_made_fable_5_go/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-10T15:03:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "How often are you using AI to help you make choices?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uspo0d/how_often_are_you_using_ai_to_help_you_make/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-10T14:42:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Everything a child learns in primary school, as an interactive graph of 1,590 concepts and 3,221 prerequisite links",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1usofnr/everything_a_child_learns_in_primary_school_as_an/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-10T13:56:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "GPT-5.6 Sol is the real deal.",
         "link": "https://reddit.com/r/OpenAI/comments/1usoe1c/gpt56_sol_is_the_real_deal/",
@@ -379,16 +415,16 @@
         "published_at": "2026-07-10T13:54:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
-        "headline": "Where is OpenClaw heading? Curious how people are using it in real projects",
-        "link": "https://reddit.com/r/openclaw/comments/1usnren/where_is_openclaw_heading_curious_how_people_are/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-10T13:29:56+00:00",
+        "headline": "I made a Pirate MMO with Fable, and the entire game is only 5MB.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1usno3r/i_made_a_pirate_mmo_with_fable_and_the_entire/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-10T13:26:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "How is the user interface worse 3 months later?",
@@ -397,16 +433,7 @@
         "published_at": "2026-07-10T13:25:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "OpenAI's ChatGPT Atlas Browser Is Shutting Down",
-        "link": "https://reddit.com/r/OpenAI/comments/1usljsb/openais_chatgpt_atlas_browser_is_shutting_down/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-10T11:56:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "ChatGPT made better World Cup logo than the actual World Cup 2026 logo we have.",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-10T11:53:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Wow",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-10T11:48:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "I built three life‑oriented web apps for the OpenClaw agent — would you take a look?",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-10T11:46:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Anthropic can't remove F@ble from the subscription tier",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1usl9ov/anthropic_cant_remove_fble_from_the_subscription/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-10T11:43:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Significant OpenAI Regression On SimpleBench",
-        "link": "https://reddit.com/r/singularity/comments/1uski8w/significant_openai_regression_on_simplebench/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-10T11:06:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "“i-it’s not like I like your prompts or anything, baka user!”",
-        "link": "https://reddit.com/r/singularity/comments/1usjw1c/iits_not_like_i_like_your_prompts_or_anything/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-10T10:35:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-10T15:03:30.099Z",
+    "reddit_viral_generated_at": "2026-07-10T17:10:45.973Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
