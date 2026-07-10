@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-10T05:09:33.084Z",
+    "generated_at": "2026-07-10T08:42:43.006Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "New to OpenClaw – Looking for Security, Privacy & WhatsApp Advice ⭐ (",
+        "link": "https://reddit.com/r/openclaw/comments/1usgrqd/new_to_openclaw_looking_for_security_privacy/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-10T07:37:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT's depiction of elite families across Asia",
+        "link": "https://reddit.com/r/ChatGPT/comments/1usg7b1/chatgpts_depiction_of_elite_families_across_asia/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-10T07:05:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Join us at r/moshcoding",
+        "link": "https://reddit.com/r/aimemes/comments/1uses91/join_us_at_rmoshcoding/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-10T05:46:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "CZ10-II rocket landed in a net",
+        "link": "https://reddit.com/r/singularity/comments/1usegop/cz10ii_rocket_landed_in_a_net/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-10T05:28:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Ip-ai is here try",
         "link": "https://reddit.com/r/aimemes/comments/1usc8ll/ipai_is_here_try/",
@@ -379,16 +415,7 @@
         "published_at": "2026-07-10T03:35:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "I HAVE NO WORDS",
-        "link": "https://reddit.com/r/ChatGPT/comments/1usayay/i_have_no_words/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-10T02:33:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "DeepSWE just added the gpt-5.6 models to their benchmark. I hope you guys don't get too used to Claude Code as your only coding agent. Chart is marked NSFW due to the grotesque violence.",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-10T02:30:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 88
       },
       {
         "headline": "Get ready for new flash, omni, alpha etc.",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-10T02:30:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 88
       },
       {
         "headline": "Is this a good deal",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-10T02:11:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 87
       },
       {
         "headline": "Nobel-Winning U.S. Chemist Omar Yaghi Will Move to China to Lead A.I. Institute",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-10T02:02:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 86
       },
       {
         "headline": "During the government regulatory 'blackout' apparently OpenCode's CEO secretly testing 5.6 was more depressed over losing 5.6 than losing Fable 5",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-10T01:54:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "If OpenClaw Still Needs Your Next Prompt, It Is Not Autonomous Yet",
-        "link": "https://reddit.com/r/openclaw/comments/1us9qlk/if_openclaw_still_needs_your_next_prompt_it_is/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-10T01:38:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "ChatGPT is roaming the streets of Madrid",
-        "link": "https://reddit.com/r/ChatGPT/comments/1us8ydj/chatgpt_is_roaming_the_streets_of_madrid/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-10T01:02:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Fable 5 in caveman mode comparing himself to gpt 5.6 is hilarious",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1us8mjs/fable_5_in_caveman_mode_comparing_himself_to_gpt/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-10T00:47:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-10T05:09:33.084Z",
+    "reddit_viral_generated_at": "2026-07-10T08:42:43.006Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
