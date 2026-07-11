@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-11T22:09:16.134Z",
+    "generated_at": "2026-07-11T23:12:17.377Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Chatgpt 5.6 Sol have clearly higher IQ based on my test questions.",
+        "link": "https://reddit.com/r/OpenAI/comments/1utxzlv/chatgpt_56_sol_have_clearly_higher_iq_based_on_my/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-11T22:44:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "GPT 5.6: I don't see Max thinking as an effort option?",
+        "link": "https://reddit.com/r/OpenAI/comments/1utwqhd/gpt_56_i_dont_see_max_thinking_as_an_effort_option/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-11T21:49:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "wow, seems like chatgpt 5.6 have much higher emotional intelligence",
         "link": "https://reddit.com/r/OpenAI/comments/1utw2hm/wow_seems_like_chatgpt_56_have_much_higher/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-11T21:21:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I asked ChatGPT to imagine the daily life of the Amazons",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-11T21:10:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Just WHY? Google has the biggest and best computing networks, why didn't Gemini overtake them all?",
@@ -397,7 +415,16 @@
         "published_at": "2026-07-11T21:07:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "The new 5.6 models are great, but the pricing policy is not",
+        "link": "https://reddit.com/r/OpenAI/comments/1utvic5/the_new_56_models_are_great_but_the_pricing/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-11T20:57:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Elon and Sam are fighting again",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-11T20:03:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "I made OpenClaw voice - dedicated hardware for your openclaw.",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-11T19:42:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "I asked ChatGPT to imagine the daily life of the Amazons",
@@ -424,40 +451,13 @@
         "published_at": "2026-07-11T19:20:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "New from Sam👀",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1utsbht/new_from_sam/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-07-11T18:50:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude Code turned off my WiFi to “test something”",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uts1ra/claude_code_turned_off_my_wifi_to_test_something/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-11T18:40:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "The thing is they're both right",
-        "link": "https://reddit.com/r/singularity/comments/1utqiej/the_thing_is_theyre_both_right/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-11T17:41:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Why GPT-5.6 Sol is the best model",
-        "link": "https://reddit.com/r/ChatGPT/comments/1utqhi4/why_gpt56_sol_is_the_best_model/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-11T17:40:39+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-11T22:09:16.134Z",
+    "reddit_viral_generated_at": "2026-07-11T23:12:17.377Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
