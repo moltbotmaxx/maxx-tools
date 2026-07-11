@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-11T08:59:51.788Z",
+    "generated_at": "2026-07-11T10:34:57.234Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Wake up external pc on network to power my OpenClaw via telegram",
+        "link": "https://reddit.com/r/openclaw/comments/1utg37s/wake_up_external_pc_on_network_to_power_my/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-11T10:06:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Couldnt resist",
+        "link": "https://reddit.com/r/aimemes/comments/1utfv26/couldnt_resist/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-11T09:53:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Real reason why Gemini 3.5 Pro Delayed",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uteemo/real_reason_why_gemini_35_pro_delayed/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-11T08:27:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Now we slack because session limit ran out",
         "link": "https://reddit.com/r/aimemes/comments/1utdrfi/now_we_slack_because_session_limit_ran_out/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-11T07:49:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Trump anti science stance has many top scientists moving to China",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-11T07:13:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "People these days",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-11T07:12:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Replacing a shared .env file with scoped MCP tokens",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-11T06:41:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "I built my ultimate assistant - Custom firmware / backend for Voice PE to enable real-time interaction / openclaw integration",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-11T06:15:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "10 secret shortcut codes that make Gemini instantly better. Paste this once, then just type the code before anything.",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-11T05:10:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 88
       },
       {
         "headline": "Why can't claude read reddit?",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-11T04:39:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Can openclaw read instagam pages etc?",
-        "link": "https://reddit.com/r/openclaw/comments/1ut9876/can_openclaw_read_instagam_pages_etc/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-11T03:44:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "GPT-2 Fully Decoded Internally Black Box Fully Open With Demo",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ut84xg/gpt2_fully_decoded_internally_black_box_fully/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-11T02:50:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "\"As we keep pushing\" the deadline",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ut6gze/as_we_keep_pushing_the_deadline/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-11T01:29:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-11T08:59:51.788Z",
+    "reddit_viral_generated_at": "2026-07-11T10:34:57.234Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
