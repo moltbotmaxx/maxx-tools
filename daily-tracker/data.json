@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-11T03:44:32.222Z",
+    "generated_at": "2026-07-11T06:27:45.325Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I built my ultimate assistant - Custom firmware / backend for Voice PE to enable real-time interaction / openclaw integration",
+        "link": "https://reddit.com/r/openclaw/comments/1utc3j4/i_built_my_ultimate_assistant_custom_firmware/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-11T06:15:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "New to openclaw, need to level up my security. Can I use this tool inside docker without fear?",
+        "link": "https://reddit.com/r/openclaw/comments/1ut9aqv/new_to_openclaw_need_to_level_up_my_security_can/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-11T03:47:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Can openclaw read instagam pages etc?",
         "link": "https://reddit.com/r/openclaw/comments/1ut9876/can_openclaw_read_instagam_pages_etc/",
@@ -379,16 +397,16 @@
         "published_at": "2026-07-11T03:44:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
-        "headline": "Best cost to usage provider ?",
-        "link": "https://reddit.com/r/openclaw/comments/1ut7was/best_cost_to_usage_provider/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-11T02:38:47+00:00",
+        "headline": "GPT-2 Fully Decoded Internally Black Box Fully Open With Demo",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ut84xg/gpt2_fully_decoded_internally_black_box_fully/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-11T02:50:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "No Tokens for a Day, I’m Cooked",
@@ -397,16 +415,43 @@
         "published_at": "2026-07-11T02:12:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
-        "headline": "My Openclaw Setup - AMA",
-        "link": "https://reddit.com/r/openclaw/comments/1ut5bki/my_openclaw_setup_ama/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-11T00:35:42+00:00",
+        "headline": "\"As we keep pushing\" the deadline",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ut6gze/as_we_keep_pushing_the_deadline/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-11T01:29:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
+      },
+      {
+        "headline": "Close Enough",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ut5wvq/close_enough/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-11T01:02:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
+      },
+      {
+        "headline": "The Sauce Party Incident",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ut5bau/the_sauce_party_incident/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-11T00:35:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 87
+      },
+      {
+        "headline": "Claude did a task for me at work that made me feel like it’s getting too good",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ut4jv0/claude_did_a_task_for_me_at_work_that_made_me/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-11T00:01:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 85
       },
       {
         "headline": "lol",
@@ -415,59 +460,14 @@
         "published_at": "2026-07-10T23:37:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "OPENCLAW ON THE R1 VIA RABBIT AGENT",
-        "link": "https://reddit.com/r/openclaw/comments/1ut3byz/openclaw_on_the_r1_via_rabbit_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-10T23:10:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Apple Sues OpenAI, Accusing It of Stealing Company Secrets",
-        "link": "https://reddit.com/r/singularity/comments/1ut0nha/apple_sues_openai_accusing_it_of_stealing_company/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-10T21:23:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
-        "link": "https://reddit.com/r/OpenAI/comments/1uszpba/apple_is_suing_openai_for_allegedly_stealing/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-10T20:47:05+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 84
-      },
-      {
-        "headline": "How Claude does my 40 hour a week job by itself - for 15 Cents",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uszlay/how_claude_does_my_40_hour_a_week_job_by_itself/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-10T20:42:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Feedback wanted: OpenClaw health-tracking agent using Telegram, images, reminders, and weekly reports",
-        "link": "https://reddit.com/r/openclaw/comments/1uszgxy/feedback_wanted_openclaw_healthtracking_agent/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-10T20:38:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-11T03:44:32.222Z",
+    "reddit_viral_generated_at": "2026-07-11T06:27:45.325Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
