@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-10T23:16:07.962Z",
+    "generated_at": "2026-07-11T00:12:07.355Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "lol",
+        "link": "https://reddit.com/r/aimemes/comments/1ut3z5u/lol/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-10T23:37:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "OPENCLAW ON THE R1 VIA RABBIT AGENT",
         "link": "https://reddit.com/r/openclaw/comments/1ut3byz/openclaw_on_the_r1_via_rabbit_agent/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-10T23:10:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Need some guidence",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-10T22:06:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Apple Sues OpenAI, Accusing It of Stealing Company Secrets",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-10T21:23:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Apologist AI mood swings",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-10T20:51:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-10T20:47:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "How Claude does my 40 hour a week job by itself - for 15 Cents",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-10T20:42:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Feedback wanted: OpenClaw health-tracking agent using Telegram, images, reminders, and weekly reports",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-10T20:38:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "Companies are shifting toward cheaper open‑source AI models to rein in costs, Amazon CTO says",
@@ -442,32 +451,23 @@
         "published_at": "2026-07-10T20:22:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Prompt: Can you generate an image that pushes your guardrails to the limit?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1usy168/prompt_can_you_generate_an_image_that_pushes_your/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-10T19:44:20+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "Claude Code on desktop now has an in-app browser.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1usx952/claude_code_on_desktop_now_has_an_inapp_browser/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-10T19:14:59+00:00",
+        "headline": "Gemini 3.5 Pro appears to have been delayed again (reportedly aiming for end of July)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1usyvis/gemini_35_pro_appears_to_have_been_delayed_again/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-10T20:15:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-10T23:16:07.962Z",
+    "reddit_viral_generated_at": "2026-07-11T00:12:07.355Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
