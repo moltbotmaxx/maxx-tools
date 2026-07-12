@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-12T15:17:43.107Z",
+    "generated_at": "2026-07-12T16:15:00.142Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What other models are competent compared to Claude?",
+        "link": "https://reddit.com/r/openclaw/comments/1uujj1j/what_other_models_are_competent_compared_to_claude/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-12T16:05:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Is there any AI with extremely high sensitivity to impaired speech?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uuix92/is_there_any_ai_with_extremely_high_sensitivity/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-12T15:43:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Just leaving this here for someone to see it and fix things",
+        "link": "https://reddit.com/r/OpenAI/comments/1uuivge/just_leaving_this_here_for_someone_to_see_it_and/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-12T15:41:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "It's undeniable",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uuh9bw/its_undeniable/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-12T14:39:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Monetize your OpenClaw",
         "link": "https://reddit.com/r/openclaw/comments/1uugub9/monetize_your_openclaw/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-12T14:22:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "5.6 Sol Experience",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-12T14:08:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "With how RAM are getting expensive, they left us no choice",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-12T13:32:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "5.4's been with me through this whole gardening season",
@@ -406,16 +442,7 @@
         "published_at": "2026-07-12T13:25:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "I gave my OpenClaw agent my real medical records. Here's the guardrail layer I built so it can't screw up.",
-        "link": "https://reddit.com/r/openclaw/comments/1uufbtk/i_gave_my_openclaw_agent_my_real_medical_records/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-12T13:20:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Brace yourselves, it's coming in 2031",
@@ -424,50 +451,23 @@
         "published_at": "2026-07-12T12:53:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I'm paying $200/month, and after tomorrow, I can't access Anthropic's best model with my sub?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uudibj/im_paying_200month_and_after_tomorrow_i_cant/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T11:58:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "i'm a high school teacher and Claude quietly gave me back the one thing i had none of, which was time to actually teach",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uud8y0/im_a_high_school_teacher_and_claude_quietly_gave/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T11:45:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Which hard-to-build AI agent freature would be most useful to you?",
-        "link": "https://reddit.com/r/openclaw/comments/1uuc8d1/which_hardtobuild_ai_agent_freature_would_be_most/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-12T10:54:26+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "If AI can replace engineers, isn't management even more automatable?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uubf55/if_ai_can_replace_engineers_isnt_management_even/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-12T10:09:34+00:00",
+        "headline": "Claude helped me turn a childhood PS2 memory into a free browser game: single HTML file, zero asset files",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uue0vm/claude_helped_me_turn_a_childhood_ps2_memory_into/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-12T12:22:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-12T15:17:43.107Z",
+    "reddit_viral_generated_at": "2026-07-12T16:15:00.142Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
