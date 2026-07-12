@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-12T04:00:02.801Z",
+    "generated_at": "2026-07-12T06:47:18.314Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Difficult rendering from a sketch",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uu66lt/difficult_rendering_from_a_sketch/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-12T05:13:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "New from Elon 👀",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1uu33g5/new_from_elon/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-12T02:37:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "This is the month that it all changes!",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-12T02:21:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "One Codex task used over 70% of my 5-hour limit in about 20 minutes — is this normal?",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-12T02:06:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "I cloned Venmo but it's your City budget",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-12T01:37:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Why the majority of vibe coded projects fail",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-12T01:06:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Surprised this came out of a one shot prompt",
@@ -424,16 +433,7 @@
         "published_at": "2026-07-12T01:02:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Made this video of the openclaw codebase and how many files the maintainers have contributed.",
-        "link": "https://reddit.com/r/openclaw/comments/1utygov/made_this_video_of_the_openclaw_codebase_and_how/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-11T23:05:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Main GPT 5.6 Terra or Sol??",
@@ -442,7 +442,7 @@
         "published_at": "2026-07-11T23:03:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       },
       {
         "headline": "Prompt: Can you generate an image that pushes your guardrails to the limit.",
@@ -451,7 +451,7 @@
         "published_at": "2026-07-11T23:00:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "Chatgpt 5.6 Sol have clearly higher IQ based on my test questions.",
@@ -460,14 +460,14 @@
         "published_at": "2026-07-11T22:44:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-12T04:00:02.801Z",
+    "reddit_viral_generated_at": "2026-07-12T06:47:18.314Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
