@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-12T19:32:52.786Z",
+    "generated_at": "2026-07-12T21:07:50.115Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "usage limit reset and massively, 5H limits removed entirely. Your move Anthropic",
+        "link": "https://reddit.com/r/singularity/comments/1uuprtu/usage_limit_reset_and_massively_5h_limits_removed/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-12T19:57:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Usage reset, and 5-hour limits removed",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uup4tc/usage_reset_and_5hour_limits_removed/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-12T19:32:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Sparsify: run MoE models bigger than your RAM — Mixtral 26GB in 3.3GB RSS on a MacBook Air, byte-identical output",
         "link": "https://reddit.com/r/aimemes/comments/1uup2lr/sparsify_run_moe_models_bigger_than_your_ram/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-12T19:30:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "What’s the most useful OpenClaw automation you’ve built so far?",
@@ -388,7 +406,25 @@
         "published_at": "2026-07-12T19:02:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
+      },
+      {
+        "headline": "gemini 3.5 pro is probably on aistudio and its incredibly scary",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uunyhz/gemini_35_pro_is_probably_on_aistudio_and_its/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-12T18:49:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "No 5hr usage limit anymore?",
+        "link": "https://reddit.com/r/OpenAI/comments/1uunonz/no_5hr_usage_limit_anymore/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-12T18:39:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Anyone else using OpenClaw for long-term AI automation projects?",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-12T18:33:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "One weird trick to getting government money",
@@ -406,16 +442,7 @@
         "published_at": "2026-07-12T18:12:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "SpaceXAI created a memecoin to parody Sam Altman",
-        "link": "https://reddit.com/r/singularity/comments/1uumgyo/spacexai_created_a_memecoin_to_parody_sam_altman/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-12T17:54:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Rise of the 'slop zombies'",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-12T17:43:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "This Professor Caught The Majority Of His Students Cheating With ChatGPT",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-12T17:35:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Access has been extended!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uul693/access_has_been_extended/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T17:07:26+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 93
-      },
-      {
-        "headline": "GPT 5.6 Sol XHigh is REALLY Good",
-        "link": "https://reddit.com/r/OpenAI/comments/1uuk0ut/gpt_56_sol_xhigh_is_really_good/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-12T16:24:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "What other models are competent compared to Claude?",
-        "link": "https://reddit.com/r/openclaw/comments/1uujj1j/what_other_models_are_competent_compared_to_claude/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-12T16:05:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-12T19:32:52.786Z",
+    "reddit_viral_generated_at": "2026-07-12T21:07:50.115Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
