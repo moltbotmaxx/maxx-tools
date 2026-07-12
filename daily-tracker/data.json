@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-12T13:57:43.942Z",
+    "generated_at": "2026-07-12T15:17:43.107Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Monetize your OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1uugub9/monetize_your_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-12T14:22:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "5.6 Sol Experience",
+        "link": "https://reddit.com/r/OpenAI/comments/1uugi48/56_sol_experience/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-12T14:08:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "With how RAM are getting expensive, they left us no choice",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uuflmm/with_how_ram_are_getting_expensive_they_left_us/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-12T13:32:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "5.4's been with me through this whole gardening season",
         "link": "https://reddit.com/r/OpenAI/comments/1uufg9u/54s_been_with_me_through_this_whole_gardening/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-12T13:25:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I gave my OpenClaw agent my real medical records. Here's the guardrail layer I built so it can't screw up.",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-12T13:20:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Brace yourselves, it's coming in 2031",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-12T12:53:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "I'm paying $200/month, and after tomorrow, I can't access Anthropic's best model with my sub?",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-12T11:58:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "i'm a high school teacher and Claude quietly gave me back the one thing i had none of, which was time to actually teach",
@@ -415,16 +442,7 @@
         "published_at": "2026-07-12T11:45:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "New mode tomorrow from Anthropic(parody)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uud8rd/new_mode_tomorrow_from_anthropicparody/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T11:45:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Which hard-to-build AI agent freature would be most useful to you?",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-12T10:54:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "If AI can replace engineers, isn't management even more automatable?",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-12T10:09:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Anyone else having issues?",
-        "link": "https://reddit.com/r/OpenAI/comments/1uub1xf/anyone_else_having_issues/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-12T09:48:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Day 43 of building GTA 6 using claude",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uub12j/day_43_of_building_gta_6_using_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T09:47:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-12T13:57:43.942Z",
+    "reddit_viral_generated_at": "2026-07-12T15:17:43.107Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
