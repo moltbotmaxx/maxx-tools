@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-12T09:17:31.395Z",
+    "generated_at": "2026-07-12T10:45:55.545Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone use OpenClaw to manage email",
+        "link": "https://reddit.com/r/openclaw/comments/1uubb1k/anyone_use_openclaw_to_manage_email/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-12T10:03:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Anyone else having issues?",
+        "link": "https://reddit.com/r/OpenAI/comments/1uub1xf/anyone_else_having_issues/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-12T09:48:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Day 43 of building GTA 6 using claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uub12j/day_43_of_building_gta_6_using_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-12T09:47:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Is Anthropic shooting themselves in the foot by pulling Fab 5 from subscriptions tonight?",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uu9egf/is_anthropic_shooting_themselves_in_the_foot_by/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-12T08:11:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "The worst people are fighting",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-12T07:41:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Difficult rendering from a sketch",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-12T05:13:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "This is the month that it all changes!",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-12T02:21:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 83
       },
       {
         "headline": "One Codex task used over 70% of my 5-hour limit in about 20 minutes — is this normal?",
@@ -415,16 +442,7 @@
         "published_at": "2026-07-12T02:06:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "I cloned Venmo but it's your City budget",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uu1v0i/i_cloned_venmo_but_its_your_city_budget/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T01:37:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 82
       },
       {
         "headline": "Why the majority of vibe coded projects fail",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-12T01:06:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 80
       },
       {
         "headline": "Surprised this came out of a one shot prompt",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-12T01:02:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "Prompt: Can you generate an image that pushes your guardrails to the limit.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1utycba/prompt_can_you_generate_an_image_that_pushes_your/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-11T23:00:26+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 79
-      },
-      {
-        "headline": "Chatgpt 5.6 Sol have clearly higher IQ based on my test questions.",
-        "link": "https://reddit.com/r/OpenAI/comments/1utxzlv/chatgpt_56_sol_have_clearly_higher_iq_based_on_my/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-11T22:44:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-12T09:17:31.395Z",
+    "reddit_viral_generated_at": "2026-07-12T10:45:55.545Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
