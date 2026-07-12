@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-12T16:15:00.142Z",
+    "generated_at": "2026-07-12T17:26:38.195Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Access has been extended!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uul693/access_has_been_extended/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-12T17:07:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "GPT 5.6 Sol XHigh is REALLY Good",
+        "link": "https://reddit.com/r/OpenAI/comments/1uuk0ut/gpt_56_sol_xhigh_is_really_good/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-12T16:24:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "What other models are competent compared to Claude?",
         "link": "https://reddit.com/r/openclaw/comments/1uujj1j/what_other_models_are_competent_compared_to_claude/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-12T16:05:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Is there any AI with extremely high sensitivity to impaired speech?",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-12T15:43:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Just leaving this here for someone to see it and fix things",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-12T15:41:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "It's undeniable",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-12T14:39:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Monetize your OpenClaw",
@@ -415,16 +433,7 @@
         "published_at": "2026-07-12T14:22:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "5.6 Sol Experience",
-        "link": "https://reddit.com/r/OpenAI/comments/1uugi48/56_sol_experience/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-12T14:08:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "With how RAM are getting expensive, they left us no choice",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-12T13:32:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "5.4's been with me through this whole gardening season",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-12T13:25:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Brace yourselves, it's coming in 2031",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-12T12:53:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude helped me turn a childhood PS2 memory into a free browser game: single HTML file, zero asset files",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uue0vm/claude_helped_me_turn_a_childhood_ps2_memory_into/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-12T12:22:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-12T16:15:00.142Z",
+    "reddit_viral_generated_at": "2026-07-12T17:26:38.195Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
