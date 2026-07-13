@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-13T19:51:25.431Z",
+    "generated_at": "2026-07-13T21:13:30.068Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone moved from Claude CLI OAuth to the Codex runtime and found it much slower?",
+        "link": "https://reddit.com/r/openclaw/comments/1uvn8e3/anyone_moved_from_claude_cli_oauth_to_the_codex/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T20:28:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Apple vs OpenAI",
+        "link": "https://reddit.com/r/OpenAI/comments/1uvlzj8/apple_vs_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-13T19:44:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "My AI agent made this 😂",
         "link": "https://reddit.com/r/openclaw/comments/1uvlw0v/my_ai_agent_made_this/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-13T19:40:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Built a WhatsApp-Controlled OpenClaw Agent for Farm Irrigation. What Am I Missing?",
@@ -388,13 +406,13 @@
         "published_at": "2026-07-13T19:26:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
-        "headline": "the way i use it to read papers has completely changed what i'm able to keep up with, and the trick is refusing the summary",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvk74x/the_way_i_use_it_to_read_papers_has_completely/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T18:40:57+00:00",
+        "headline": "grok CLI silently uploaded users data to... google cloud",
+        "link": "https://reddit.com/r/OpenAI/comments/1uvlcvt/grok_cli_silently_uploaded_users_data_to_google/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-13T19:21:48+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 97
@@ -406,7 +424,7 @@
         "published_at": "2026-07-13T17:39:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "I built a free browser strategy game with Fable: a love letter to SSI’s Fantasy Empires (1993)",
@@ -415,16 +433,7 @@
         "published_at": "2026-07-13T17:16:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "🚀 New release of Android Remote Control MCP is out — the MCP server that runs on your phone and gives your AI agent the ability to use any app you want!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvhrn0/new_release_of_android_remote_control_mcp_is_out/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T17:15:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "I asked ChatGPT to imagine what modern brands would look like in 1970s ads",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-13T16:38:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "Best LLM for Local 2x 5090s",
@@ -442,32 +451,23 @@
         "published_at": "2026-07-13T16:28:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "No one structures answers better than Gemini.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uvfz9u/no_one_structures_answers_better_than_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-13T16:11:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Richard Sutton launches Oak Lab - \"Our holy grail: A trillion-parameter agent that learns and plans in real-time with 20 watts of energy\"",
-        "link": "https://reddit.com/r/singularity/comments/1uvfrjg/richard_sutton_launches_oak_lab_our_holy_grail_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-13T16:03:56+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
+      },
+      {
+        "headline": "Task Manager Memory Layer with Embedded CLI for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1uvg04a/task_manager_memory_layer_with_embedded_cli_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T16:12:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-13T19:51:25.431Z",
+    "reddit_viral_generated_at": "2026-07-13T21:13:30.068Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
