@@ -911,7 +911,13 @@
 
     <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
     <script src="x-feed-config.js?v=mobile-settings-global-12"></script>
-    <script type="module" src="app.js?v=metrics-day-history-1"></script>
+    <script>
+        const isAiSafetyRoute = window.location.hash.replace(/\/+$/, '') === '#/ai-safety';
+        const entryScript = document.createElement('script');
+        entryScript.type = 'module';
+        entryScript.src = isAiSafetyRoute ? 'ai-safety.js' : 'app.js?v=metrics-day-history-1';
+        document.body.appendChild(entryScript);
+    </script>
 </body>
 
 </html>

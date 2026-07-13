@@ -343,6 +343,14 @@
       <p>🦞 Maxx Tools · 2026</p>
     </footer>
   </div>
+  <script>
+    if (window.location.hash.replace(/\/+$/, '') === '#/ai-safety') {
+      const entryScript = document.createElement('script');
+      entryScript.type = 'module';
+      entryScript.src = './daily-tracker/ai-safety.js';
+      document.body.appendChild(entryScript);
+    }
+  </script>
 </body>
 
 </html>
