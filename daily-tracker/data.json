@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-13T21:13:30.068Z",
+    "generated_at": "2026-07-13T22:12:28.834Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Skill Workshop is unusable and dangerous. What am I missing?",
+        "link": "https://reddit.com/r/openclaw/comments/1uvoz14/skill_workshop_is_unusable_and_dangerous_what_am/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T21:32:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I built Navi so It yells \"Hey! Listen!\" when Claude Code needs me, hope you like it :D",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uvoj4d/i_built_navi_so_it_yells_hey_listen_when_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-13T21:15:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Anyone moved from Claude CLI OAuth to the Codex runtime and found it much slower?",
         "link": "https://reddit.com/r/openclaw/comments/1uvn8e3/anyone_moved_from_claude_cli_oauth_to_the_codex/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-13T20:28:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Apple vs OpenAI",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-13T19:44:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "My AI agent made this 😂",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-13T19:40:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Built a WhatsApp-Controlled OpenClaw Agent for Farm Irrigation. What Am I Missing?",
@@ -406,16 +424,7 @@
         "published_at": "2026-07-13T19:26:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "grok CLI silently uploaded users data to... google cloud",
-        "link": "https://reddit.com/r/OpenAI/comments/1uvlcvt/grok_cli_silently_uploaded_users_data_to_google/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-13T19:21:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Me hoping my boss does not find out about Claude metrics",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-13T17:39:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "I built a free browser strategy game with Fable: a love letter to SSI’s Fantasy Empires (1993)",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-13T17:16:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "I asked ChatGPT to imagine what modern brands would look like in 1970s ads",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-13T16:38:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "Best LLM for Local 2x 5090s",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-13T16:28:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Task Manager Memory Layer with Embedded CLI for OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1uvg04a/task_manager_memory_layer_with_embedded_cli_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T16:12:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-13T21:13:30.068Z",
+    "reddit_viral_generated_at": "2026-07-13T22:12:28.834Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
