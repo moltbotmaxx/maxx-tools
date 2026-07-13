@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-13T22:12:28.834Z",
+    "generated_at": "2026-07-13T23:14:42.511Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude Pretending to Search",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uvp69s/claude_pretending_to_search/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-13T21:40:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Skill Workshop is unusable and dangerous. What am I missing?",
         "link": "https://reddit.com/r/openclaw/comments/1uvoz14/skill_workshop_is_unusable_and_dangerous_what_am/",
@@ -379,7 +388,16 @@
         "published_at": "2026-07-13T21:32:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "I was using Claude Cowork's cloud VMs (free, included in plan) completely wrong. It replaced most of my local workflow once I set them up properly.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uvosli/i_was_using_claude_coworks_cloud_vms_free/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-13T21:25:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "I built Navi so It yells \"Hey! Listen!\" when Claude Code needs me, hope you like it :D",
@@ -388,7 +406,25 @@
         "published_at": "2026-07-13T21:15:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
+      },
+      {
+        "headline": "It says „Hello Human“ 🫩✌️",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uvnso6/it_says_hello_human/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-13T20:48:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Now any video can fill a 70mm IMAX screen",
+        "link": "https://reddit.com/r/singularity/comments/1uvnj9k/now_any_video_can_fill_a_70mm_imax_screen/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-13T20:39:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Anyone moved from Claude CLI OAuth to the Codex runtime and found it much slower?",
@@ -397,7 +433,16 @@
         "published_at": "2026-07-13T20:28:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
+      },
+      {
+        "headline": "It finally happened: Account Restricted",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uvmbm3/it_finally_happened_account_restricted/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-13T19:55:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Apple vs OpenAI",
@@ -406,16 +451,7 @@
         "published_at": "2026-07-13T19:44:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "My AI agent made this 😂",
-        "link": "https://reddit.com/r/openclaw/comments/1uvlw0v/my_ai_agent_made_this/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T19:40:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Built a WhatsApp-Controlled OpenClaw Agent for Farm Irrigation. What Am I Missing?",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-13T19:26:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Me hoping my boss does not find out about Claude metrics",
-        "link": "https://reddit.com/r/aimemes/comments/1uvige2/me_hoping_my_boss_does_not_find_out_about_claude/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-13T17:39:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I built a free browser strategy game with Fable: a love letter to SSI’s Fantasy Empires (1993)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvhsu0/i_built_a_free_browser_strategy_game_with_fable_a/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T17:16:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I asked ChatGPT to imagine what modern brands would look like in 1970s ads",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uvgq69/i_asked_chatgpt_to_imagine_what_modern_brands/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-13T16:38:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Best LLM for Local 2x 5090s",
-        "link": "https://reddit.com/r/openclaw/comments/1uvgg1m/best_llm_for_local_2x_5090s/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T16:28:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-13T22:12:28.834Z",
+    "reddit_viral_generated_at": "2026-07-13T23:14:42.511Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
