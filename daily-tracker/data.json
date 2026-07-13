@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-13T04:02:14.073Z",
+    "generated_at": "2026-07-13T07:41:44.005Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Mac Studio 64GB",
+        "link": "https://reddit.com/r/openclaw/comments/1uv3p6y/mac_studio_64gb/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T06:36:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Built a proactive monitoring agent on OpenClaw — here's what the wiki pattern looks like in production",
+        "link": "https://reddit.com/r/openclaw/comments/1uv3l62/built_a_proactive_monitoring_agent_on_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T06:30:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The girls are fighting again",
+        "link": "https://reddit.com/r/OpenAI/comments/1uv3i21/the_girls_are_fighting_again/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-13T06:25:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "China’s optical chip breakthrough boosts AI speed 100-fold using fraction of compute power",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uv3blo/chinas_optical_chip_breakthrough_boosts_ai_speed/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-13T06:15:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Yuji Tachikawa, one of the world’s leading theoretical physicists, reports Claude Fable solved a problem that he and his collaborators had gotten stuck on for the past 6 months",
+        "link": "https://reddit.com/r/singularity/comments/1uv399n/yuji_tachikawa_one_of_the_worlds_leading/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-13T06:12:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Issues after upgrading to latest stable version.",
+        "link": "https://reddit.com/r/openclaw/comments/1uv1cvz/issues_after_upgrading_to_latest_stable_version/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T04:29:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Kinda proud of chatgpt right now.",
         "link": "https://reddit.com/r/ChatGPT/comments/1uuyi2k/kinda_proud_of_chatgpt_right_now/",
@@ -379,25 +433,7 @@
         "published_at": "2026-07-13T02:09:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "weird PNG session corruption",
-        "link": "https://reddit.com/r/openclaw/comments/1uuya07/weird_png_session_corruption/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T01:58:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Schrodinger's Fable",
-        "link": "https://reddit.com/r/singularity/comments/1uuy50w/schrodingers_fable/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-13T01:52:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 89
       },
       {
         "headline": "Even with the messy apps (I did not like that at all) I will never cancel ChatGPT",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-13T01:02:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 87
       },
       {
         "headline": "My employer is using AI to send emails as “Me”, from my email address, with my name attached. Am I cooked or is there anything I can do to stop this?",
@@ -415,7 +451,7 @@
         "published_at": "2026-07-13T00:54:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 86
       },
       {
         "headline": "Bye Claude..it was nice while it lasted, until it wasn’t.",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-13T00:32:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Ireland's data centers consumed nearly as much electricity as every home in the country combined in 2025 - server farms gulped 23% of national power despite years of grid restrictions",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uuwao2/irelands_data_centers_consumed_nearly_as_much/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-13T00:26:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Worst fumble in the history of Ai",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uuvotw/worst_fumble_in_the_history_of_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-12T23:59:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I think the safeguards are too strict. They’re flagging basically anything",
-        "link": "https://reddit.com/r/singularity/comments/1uuuia3/i_think_the_safeguards_are_too_strict_theyre/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-12T23:08:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GPT-5.6 IS THE HOLY GRAIL. I SAID WHAT I SAID!!!",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uuskk6/gpt56_is_the_holy_grail_i_said_what_i_said/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-12T21:47:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-13T04:02:14.073Z",
+    "reddit_viral_generated_at": "2026-07-13T07:41:44.005Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
