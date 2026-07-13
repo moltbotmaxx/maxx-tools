@@ -1,5 +1,12 @@
-const FEED_URL = 'https://rss.app/feeds/_WLxGXSKpJ6rpFx3G.xml';
+const FEED_URLS = [
+    'https://rss.app/feeds/1FY0ugZC3knghvvL.xml',
+    'https://rss.app/feeds/JMbNxa8xGDcmpSTc.xml',
+    'https://rss.app/feeds/Zyy4J7XWhoLMzBmL.xml'
+];
 const REFRESH_INTERVAL_MS = 2 * 60 * 1000;
+const DECISIONS_STORAGE_KEY = 'aiSafetySourcingDecisionsV1';
+let loadedArticles = [];
+let sourcingDecisions = loadSourcingDecisions();
 
 function addStylesheet() {
     const stylesheetUrl = new URL('ai-safety.css', import.meta.url).href;
@@ -32,18 +39,81 @@ function renderShell() {
                 </div>
             </header>
 
-            <section id="aiSafetyGallery" class="ai-safety-gallery" aria-live="polite" aria-busy="true">
-                ${Array.from({ length: 9 }, () => `
-                    <article class="ai-safety-card ai-safety-card--skeleton" aria-hidden="true">
-                        <div class="ai-safety-card__image"></div>
-                        <div class="ai-safety-card__body">
-                            <span></span><strong></strong><p></p>
+            <div class="ai-safety-workspace">
+                <section id="aiSafetyGallery" class="ai-safety-gallery" aria-live="polite" aria-busy="true">
+                    ${Array.from({ length: 9 }, () => `
+                        <article class="ai-safety-card ai-safety-card--skeleton" aria-hidden="true">
+                            <div class="ai-safety-card__image"></div>
+                            <div class="ai-safety-card__body">
+                                <span></span><strong></strong><p></p>
+                            </div>
+                        </article>
+                    `).join('')}
+                </section>
+
+                <aside class="accepted-column" aria-labelledby="acceptedColumnTitle">
+                    <div class="accepted-column__header">
+                        <div>
+                            <span class="accepted-column__eyebrow">Selection</span>
+                            <h2 id="acceptedColumnTitle">Accepted</h2>
                         </div>
-                    </article>
-                `).join('')}
-            </section>
+                        <span id="acceptedCount" class="accepted-column__count">0</span>
+                    </div>
+                    <div id="acceptedList" class="accepted-list" aria-live="polite"></div>
+                </aside>
+            </div>
         </main>
     `;
+}
+
+function normalizeStoredArticle(article) {
+    if (!article || typeof article !== 'object') return null;
+    const link = getSafeUrl(article.link);
+    if (!link) return null;
+
+    return {
+        id: String(article.id || link),
+        title: String(article.title || 'Untitled story'),
+        description: String(article.description || ''),
+        link,
+        image: getSafeUrl(article.image),
+        source: String(article.source || getSourceName(link)),
+        publishedAt: String(article.publishedAt || ''),
+        acceptedAt: String(article.acceptedAt || '')
+    };
+}
+
+function loadSourcingDecisions() {
+    try {
+        const saved = JSON.parse(localStorage.getItem(DECISIONS_STORAGE_KEY) || '{}');
+        const acceptedByLink = new Map();
+        const accepted = Array.isArray(saved.accepted) ? saved.accepted : [];
+        accepted.map(normalizeStoredArticle).filter(Boolean).forEach(article => {
+            if (!acceptedByLink.has(article.link)) acceptedByLink.set(article.link, article);
+        });
+
+        const rejected = new Set(
+            (Array.isArray(saved.rejected) ? saved.rejected : [])
+                .map(link => getSafeUrl(link))
+                .filter(Boolean)
+        );
+
+        return { accepted: Array.from(acceptedByLink.values()), rejected };
+    } catch (error) {
+        console.warn('Unable to restore AI Safety sourcing decisions:', error);
+        return { accepted: [], rejected: new Set() };
+    }
+}
+
+function persistSourcingDecisions() {
+    try {
+        localStorage.setItem(DECISIONS_STORAGE_KEY, JSON.stringify({
+            accepted: sourcingDecisions.accepted,
+            rejected: Array.from(sourcingDecisions.rejected)
+        }));
+    } catch (error) {
+        console.warn('Unable to save AI Safety sourcing decisions:', error);
+    }
 }
 
 function getText(parent, selector) {
@@ -100,6 +170,22 @@ function parseFeed(xmlText) {
     }).filter(article => article.link);
 }
 
+function mergeArticles(feedArticles) {
+    const uniqueArticles = new Map();
+
+    feedArticles.flat().forEach(article => {
+        if (!uniqueArticles.has(article.link)) {
+            uniqueArticles.set(article.link, article);
+        }
+    });
+
+    return Array.from(uniqueArticles.values()).sort((first, second) => {
+        const firstDate = new Date(first.publishedAt).getTime() || 0;
+        const secondDate = new Date(second.publishedAt).getTime() || 0;
+        return secondDate - firstDate;
+    });
+}
+
 function formatDate(value) {
     const date = new Date(value);
     if (!Number.isFinite(date.getTime())) return '';
@@ -112,12 +198,38 @@ function formatDate(value) {
 }
 
 function createCard(article) {
+    const card = document.createElement('article');
+    card.className = 'ai-safety-card';
+
     const link = document.createElement('a');
-    link.className = 'ai-safety-card';
+    link.className = 'ai-safety-card__link';
     link.href = article.link;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.setAttribute('aria-label', `${article.title} — ${article.source}`);
+
+    const decisions = document.createElement('div');
+    decisions.className = 'ai-safety-card__decisions';
+
+    const rejectButton = document.createElement('button');
+    rejectButton.type = 'button';
+    rejectButton.className = 'decision-button decision-button--reject';
+    rejectButton.dataset.action = 'reject';
+    rejectButton.setAttribute('aria-label', `Reject: ${article.title}`);
+    rejectButton.title = 'Reject';
+    rejectButton.textContent = '×';
+    rejectButton.addEventListener('click', () => rejectArticle(article));
+
+    const acceptButton = document.createElement('button');
+    acceptButton.type = 'button';
+    acceptButton.className = 'decision-button decision-button--accept';
+    acceptButton.dataset.action = 'accept';
+    acceptButton.setAttribute('aria-label', `Accept: ${article.title}`);
+    acceptButton.title = 'Accept';
+    acceptButton.textContent = '✓';
+    acceptButton.addEventListener('click', () => acceptArticle(article));
+
+    decisions.append(rejectButton, acceptButton);
 
     const imageWrap = document.createElement('div');
     imageWrap.className = article.image
@@ -172,15 +284,142 @@ function createCard(article) {
     footer.append(date, arrow);
     body.appendChild(footer);
     link.append(imageWrap, body);
-    return link;
+    card.append(link, decisions);
+    return card;
+}
+
+function createAcceptedCard(article) {
+    const card = document.createElement('article');
+    card.className = 'accepted-card';
+
+    const link = document.createElement('a');
+    link.className = 'accepted-card__link';
+    link.href = article.link;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.setAttribute('aria-label', `${article.title} — ${article.source}`);
+
+    const imageWrap = document.createElement('div');
+    imageWrap.className = article.image
+        ? 'accepted-card__image'
+        : 'accepted-card__image accepted-card__image--fallback';
+
+    if (article.image) {
+        const image = document.createElement('img');
+        image.src = article.image;
+        image.alt = '';
+        image.loading = 'lazy';
+        image.referrerPolicy = 'no-referrer';
+        image.addEventListener('error', () => {
+            image.remove();
+            imageWrap.classList.add('accepted-card__image--fallback');
+        }, { once: true });
+        imageWrap.appendChild(image);
+    }
+
+    const content = document.createElement('div');
+    content.className = 'accepted-card__content';
+
+    const source = document.createElement('span');
+    source.className = 'accepted-card__source';
+    source.textContent = article.source;
+
+    const title = document.createElement('h3');
+    title.className = 'accepted-card__title';
+    title.textContent = article.title;
+
+    const date = document.createElement('time');
+    date.className = 'accepted-card__date';
+    date.dateTime = article.publishedAt;
+    date.textContent = formatDate(article.publishedAt);
+
+    content.append(source, title, date);
+    link.append(imageWrap, content);
+
+    const restoreButton = document.createElement('button');
+    restoreButton.type = 'button';
+    restoreButton.className = 'accepted-card__restore';
+    restoreButton.setAttribute('aria-label', `Return to sourcing: ${article.title}`);
+    restoreButton.title = 'Return to sourcing';
+    restoreButton.textContent = '↩';
+    restoreButton.addEventListener('click', () => restoreAcceptedArticle(article.link));
+
+    card.append(link, restoreButton);
+    return card;
+}
+
+function acceptArticle(article) {
+    sourcingDecisions.rejected.delete(article.link);
+    sourcingDecisions.accepted = [
+        { ...article, acceptedAt: new Date().toISOString() },
+        ...sourcingDecisions.accepted.filter(item => item.link !== article.link)
+    ];
+    persistSourcingDecisions();
+    renderWorkspace();
+}
+
+function rejectArticle(article) {
+    sourcingDecisions.rejected.add(article.link);
+    sourcingDecisions.accepted = sourcingDecisions.accepted.filter(item => item.link !== article.link);
+    persistSourcingDecisions();
+    renderWorkspace();
+}
+
+function restoreAcceptedArticle(articleLink) {
+    sourcingDecisions.accepted = sourcingDecisions.accepted.filter(item => item.link !== articleLink);
+    sourcingDecisions.rejected.delete(articleLink);
+    persistSourcingDecisions();
+    renderWorkspace();
+}
+
+function renderAcceptedArticles() {
+    const acceptedList = document.getElementById('acceptedList');
+    const acceptedCount = document.getElementById('acceptedCount');
+    if (!acceptedList || !acceptedCount) return;
+
+    const currentArticles = new Map(loadedArticles.map(article => [article.link, article]));
+    const acceptedArticles = sourcingDecisions.accepted.map(savedArticle => ({
+        ...savedArticle,
+        ...(currentArticles.get(savedArticle.link) || {}),
+        acceptedAt: savedArticle.acceptedAt
+    }));
+
+    acceptedCount.textContent = String(acceptedArticles.length);
+
+    if (!acceptedArticles.length) {
+        const emptyState = document.createElement('p');
+        emptyState.className = 'accepted-list__empty';
+        emptyState.textContent = 'Accepted stories will appear here.';
+        acceptedList.replaceChildren(emptyState);
+        return;
+    }
+
+    acceptedList.replaceChildren(...acceptedArticles.map(createAcceptedCard));
 }
 
 function renderArticles(articles) {
     const gallery = document.getElementById('aiSafetyGallery');
     if (!gallery) return;
 
-    gallery.replaceChildren(...articles.map(createCard));
+    if (!articles.length) {
+        const emptyState = document.createElement('p');
+        emptyState.className = 'ai-safety-error';
+        emptyState.textContent = 'No pending stories.';
+        gallery.replaceChildren(emptyState);
+    } else {
+        gallery.replaceChildren(...articles.map(createCard));
+    }
     gallery.setAttribute('aria-busy', 'false');
+}
+
+function renderWorkspace() {
+    const acceptedLinks = new Set(sourcingDecisions.accepted.map(article => article.link));
+    const pendingArticles = loadedArticles.filter(article => (
+        !acceptedLinks.has(article.link) && !sourcingDecisions.rejected.has(article.link)
+    ));
+
+    renderArticles(pendingArticles);
+    renderAcceptedArticles();
 }
 
 function renderError() {
@@ -196,11 +435,20 @@ function renderError() {
 
 async function loadFeed({ preserveOnError = false } = {}) {
     try {
-        const response = await fetch(FEED_URL, { cache: 'no-store' });
-        if (!response.ok) throw new Error(`Feed request failed with ${response.status}.`);
-        const articles = parseFeed(await response.text());
-        if (!articles.length) throw new Error('The feed did not return any stories.');
-        renderArticles(articles);
+        const results = await Promise.allSettled(FEED_URLS.map(async feedUrl => {
+            const response = await fetch(feedUrl, { cache: 'no-store' });
+            if (!response.ok) throw new Error(`Feed request failed with ${response.status}.`);
+            return parseFeed(await response.text());
+        }));
+        const successfulFeeds = results
+            .filter(result => result.status === 'fulfilled')
+            .map(result => result.value);
+
+        if (!successfulFeeds.length) throw new Error('All AI Safety feeds failed to load.');
+
+        loadedArticles = mergeArticles(successfulFeeds);
+        if (!loadedArticles.length) throw new Error('The feed did not return any stories.');
+        renderWorkspace();
     } catch (error) {
         console.error('Unable to load AI Safety feed:', error);
         if (!preserveOnError) renderError();
@@ -209,5 +457,6 @@ async function loadFeed({ preserveOnError = false } = {}) {
 
 addStylesheet();
 renderShell();
+renderAcceptedArticles();
 loadFeed();
 window.setInterval(() => loadFeed({ preserveOnError: true }), REFRESH_INTERVAL_MS);
