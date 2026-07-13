@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-13T15:12:59.439Z",
+    "generated_at": "2026-07-13T17:23:29.285Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I asked ChatGPT to imagine what modern brands would look like in 1970s ads",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uvgq69/i_asked_chatgpt_to_imagine_what_modern_brands/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-13T16:38:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Best LLM for Local 2x 5090s",
+        "link": "https://reddit.com/r/openclaw/comments/1uvgg1m/best_llm_for_local_2x_5090s/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T16:28:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Task Manager Memory Layer with Embedded CLI for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1uvg04a/task_manager_memory_layer_with_embedded_cli_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T16:12:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Richard Sutton launches Oak Lab - \"Our holy grail: A trillion-parameter agent that learns and plans in real-time with 20 watts of energy\"",
+        "link": "https://reddit.com/r/singularity/comments/1uvfrjg/richard_sutton_launches_oak_lab_our_holy_grail_a/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-13T16:03:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Added intro music to my OC briefing podcast and now it feels like a real show",
+        "link": "https://reddit.com/r/openclaw/comments/1uvf79v/added_intro_music_to_my_oc_briefing_podcast_and/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-13T15:43:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "State of AI right now.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uvcixv/state_of_ai_right_now/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-13T14:04:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Majority of U.S. workers support an AI wealth fund as tech layoffs surge, survey finds | Sixty-nine percent of Americans now support “forcing” AI firms to transfer 50% of their stock to a public sovereign wealth fund",
         "link": "https://reddit.com/r/singularity/comments/1uvboti/majority_of_us_workers_support_an_ai_wealth_fund/",
@@ -379,7 +433,7 @@
         "published_at": "2026-07-13T13:32:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "The terrifying rise of schoolboys making AI girlfriends - Boys as young as 12 are now in romantic ‘relationships’ with chatbots, and it’s affecting how they treat girls in the real world",
@@ -388,7 +442,7 @@
         "published_at": "2026-07-13T12:41:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 90
       },
       {
         "headline": "AI Meme that will make you Cry",
@@ -397,67 +451,13 @@
         "published_at": "2026-07-13T12:32:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Honest question: What are you building that you need fable 5 so badly?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uv70kq/honest_question_what_are_you_building_that_you/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T09:50:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Visually appealing infographics",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uv6xjy/visually_appealing_infographics/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T09:45:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I built a default-deny firewall for local AI agents (OpenClaw/Hermes) — it gates every tool call and asks me before anything risky",
-        "link": "https://reddit.com/r/openclaw/comments/1uv6cpj/i_built_a_defaultdeny_firewall_for_local_ai/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T09:11:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "My openclaw agents now email each other files (and me) - open source single-binary server, works with the claw's MCP config",
-        "link": "https://reddit.com/r/openclaw/comments/1uv606h/my_openclaw_agents_now_email_each_other_files_and/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T08:52:21+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
       },
       {
-        "headline": "What are the practical uses of openclaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1uv5zps/what_are_the_practical_uses_of_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T08:51:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Sad what happened to Gemini",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uv4yw6/sad_what_happened_to_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-13T07:50:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Changing the narrative like",
-        "link": "https://reddit.com/r/OpenAI/comments/1uv4f15/changing_the_narrative_like/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-13T07:17:53+00:00",
+        "headline": "What Ever Happened To This?",
+        "link": "https://reddit.com/r/singularity/comments/1uv7jzs/what_ever_happened_to_this/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-13T10:19:38+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 85
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-13T15:12:59.439Z",
+    "reddit_viral_generated_at": "2026-07-13T17:23:29.285Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
