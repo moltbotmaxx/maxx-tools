@@ -262,6 +262,18 @@
 
     <div class="tools-grid">
 
+      <a class="tool-card" href="#/ai-safety" style="--card-accent: #171717;">
+        <div class="tool-card__top">
+          <div class="tool-card__icon" style="background: rgba(23, 23, 23, 0.1);">🛡️</div>
+          <span class="tool-card__badge tool-card__badge--active">Live</span>
+        </div>
+        <div class="tool-card__name">AI Safety</div>
+        <div class="tool-card__desc">Sourcing y selección de noticias sobre seguridad, riesgos y gobernanza de inteligencia artificial.</div>
+        <div class="tool-card__footer">
+          <span class="tool-card__link">Abrir <span class="tool-card__arrow">→</span></span>
+        </div>
+      </a>
+
       <a class="tool-card" href="./reddit-visualizer/" style="--card-accent: #FF4500;">
         <div class="tool-card__top">
           <div class="tool-card__icon" style="background: rgba(255, 69, 0, 0.1);">👽</div>
@@ -344,12 +356,23 @@
     </footer>
   </div>
   <script>
-    if (window.location.hash.replace(/\/+$/, '') === '#/ai-safety') {
-      const entryScript = document.createElement('script');
-      entryScript.type = 'module';
-      entryScript.src = './daily-tracker/ai-safety.js';
-      document.body.appendChild(entryScript);
+    function syncHubRoute() {
+      const isAiSafetyRoute = window.location.hash.replace(/\/+$/, '') === '#/ai-safety';
+      const isAiSafetyLoaded = document.documentElement.dataset.aiSafetyRouteLoaded === 'true';
+
+      if (isAiSafetyRoute && !isAiSafetyLoaded) {
+        document.documentElement.dataset.aiSafetyRouteLoaded = 'true';
+        const entryScript = document.createElement('script');
+        entryScript.type = 'module';
+        entryScript.src = './daily-tracker/ai-safety.js';
+        document.body.appendChild(entryScript);
+      } else if (!isAiSafetyRoute && isAiSafetyLoaded) {
+        window.location.reload();
+      }
     }
+
+    window.addEventListener('hashchange', syncHubRoute);
+    syncHubRoute();
   </script>
 </body>
 
