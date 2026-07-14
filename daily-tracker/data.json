@@ -367,19 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T15:03:30.793Z",
+    "generated_at": "2026-07-14T16:39:29.369Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "this Detroit Become Human clip makes a lot of sense nowadays... \"you can trust me\" Kamski says lmao",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uw9z6g/this_detroit_become_human_clip_makes_a_lot_of/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T14:16:40+00:00",
+        "headline": "Kimi k3 launching soon (probably more than 2 trillion para acc to leaks)",
+        "link": "https://reddit.com/r/singularity/comments/1uwctrz/kimi_k3_launching_soon_probably_more_than_2/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T16:00:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Keio University made these soft, helium-filled flying robots; they can follow you, wake you up, remind you of stuff, and even be your study buddy",
+        "link": "https://reddit.com/r/singularity/comments/1uwc0oi/keio_university_made_these_soft_heliumfilled/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T15:31:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Anthropic just told the US Senate that Alibaba ran 25,000 fake accounts and had 28.8 million conversations with Claude — not to use it, but to copy it",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwaxdx/anthropic_just_told_the_us_senate_that_alibaba/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-14T14:51:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Anthropic just told the US Senate that Alibaba ran 25,000 fake accounts and had 28.8 million conversations with Claude — not to use it, but to copy it",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uwavzo/anthropic_just_told_the_us_senate_that_alibaba/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-14T14:50:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Well it finally happened: we’re not using models because of cost",
+        "link": "https://reddit.com/r/singularity/comments/1uwa1mv/well_it_finally_happened_were_not_using_models/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T14:19:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "It's happening already 🫠",
@@ -388,25 +424,16 @@
         "published_at": "2026-07-14T14:12:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
-        "headline": "Chat GPT has superseded Google",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uw8vq7/chat_gpt_has_superseded_google/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-14T13:34:46+00:00",
+        "headline": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+        "link": "https://reddit.com/r/OpenAI/comments/1uw82pf/xai_fired_an_engineer_who_raised_alarms_about/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-14T13:02:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Startup Lays Off Engineers Hired to Watch AI, Recruits Engineers to Watch AI Watch AI",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uw8pki/startup_lays_off_engineers_hired_to_watch_ai/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T13:27:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "GPT‑5.6 Sol Ultra in a nutsheel: 129 subagents in an 10 hour fanout",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-14T12:10:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "When your toxic situationship tweets “available until July 19”",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-14T11:52:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "“We Must Act Now”: Sixteen Nobel Laureates Join Leading Economists and AI Researchers in Call to Prepare for AI’s Economic Transformation - Stanford Digital Economy Lab",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-14T11:18:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Demis Hassabis shared a rare essay on X: AGI is few years away, we're in the singularity foothills, proposes US-led Frontier AI Standards Body with eventual mandatory safety testing",
-        "link": "https://reddit.com/r/singularity/comments/1uw40fb/demis_hassabis_shared_a_rare_essay_on_x_agi_is/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-14T09:44:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Why can I only buy $1,000,000 worth of tokens?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uw37yg/why_can_i_only_buy_1000000_worth_of_tokens/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-14T08:57:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Claude spent +15 EUR of a 2 EUR limit.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uw24bp/claude_spent_15_eur_of_a_2_eur_limit/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-14T07:53:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T15:03:30.793Z",
+    "reddit_viral_generated_at": "2026-07-14T16:39:29.369Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
