@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T16:39:29.369Z",
+    "generated_at": "2026-07-14T18:17:26.743Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Kimi k3 launching soon (probably more than 2 trillion para acc to leaks)",
-        "link": "https://reddit.com/r/singularity/comments/1uwctrz/kimi_k3_launching_soon_probably_more_than_2/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-14T16:00:53+00:00",
+        "headline": "How to Stop Burning Your GPT-5.6 Usage Limits",
+        "link": "https://reddit.com/r/OpenAI/comments/1uwerdr/how_to_stop_burning_your_gpt56_usage_limits/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-14T17:09:22+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "In yet another surprise, 2026.7.1 broke my install.",
+        "link": "https://reddit.com/r/openclaw/comments/1uwdr2z/in_yet_another_surprise_202671_broke_my_install/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-14T16:33:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "DeepMind's founder Demis Hassabis just wrote the most important thing you'll read about AGI this year. Here's the breakdown.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwd7rx/deepminds_founder_demis_hassabis_just_wrote_the/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-14T16:14:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "Keio University made these soft, helium-filled flying robots; they can follow you, wake you up, remind you of stuff, and even be your study buddy",
@@ -388,7 +406,16 @@
         "published_at": "2026-07-14T15:31:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
+      },
+      {
+        "headline": "[WSL2 / Browser Automation] Can't access Windows Chrome from WSL — what's the recommended approach for OpenClaw browser tools?",
+        "link": "https://reddit.com/r/openclaw/comments/1uwbj75/wsl2_browser_automation_cant_access_windows/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-14T15:13:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Anthropic just told the US Senate that Alibaba ran 25,000 fake accounts and had 28.8 million conversations with Claude — not to use it, but to copy it",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-14T14:51:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Anthropic just told the US Senate that Alibaba ran 25,000 fake accounts and had 28.8 million conversations with Claude — not to use it, but to copy it",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-14T14:50:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Well it finally happened: we’re not using models because of cost",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-14T14:19:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "It's happening already 🫠",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-14T14:12:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-14T13:02:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GPT‑5.6 Sol Ultra in a nutsheel: 129 subagents in an 10 hour fanout",
-        "link": "https://reddit.com/r/OpenAI/comments/1uw6vjj/gpt56_sol_ultra_in_a_nutsheel_129_subagents_in_an/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-14T12:10:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "When your toxic situationship tweets “available until July 19”",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uw6gwj/when_your_toxic_situationship_tweets_available/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-14T11:52:13+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "“We Must Act Now”: Sixteen Nobel Laureates Join Leading Economists and AI Researchers in Call to Prepare for AI’s Economic Transformation - Stanford Digital Economy Lab",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uw5s79/we_must_act_now_sixteen_nobel_laureates_join/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T11:18:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T16:39:29.369Z",
+    "reddit_viral_generated_at": "2026-07-14T18:17:26.743Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
