@@ -915,7 +915,7 @@
         const isAiSafetyRoute = window.location.hash.replace(/\/+$/, '') === '#/ai-safety';
         const entryScript = document.createElement('script');
         entryScript.type = 'module';
-        entryScript.src = isAiSafetyRoute ? 'ai-safety.js' : 'app.js?v=metrics-day-history-1';
+        entryScript.src = isAiSafetyRoute ? 'ai-safety.js' : 'app.js?v=init-ready-state-1';
         document.body.appendChild(entryScript);
     </script>
 </body>
