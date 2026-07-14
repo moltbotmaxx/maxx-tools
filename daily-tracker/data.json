@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T21:16:22.057Z",
+    "generated_at": "2026-07-14T22:15:39.097Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Inspired by caveman and co, I'm open-sourcing a Claude Code plugin that reduces token output by 99.9%",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uwl7xi/inspired_by_caveman_and_co_im_opensourcing_a/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-14T21:03:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "NEW LEAK: OpenAI’s First Device Will Be Moveable, Screenless Speaker Built as AI Companion",
+        "link": "https://reddit.com/r/OpenAI/comments/1uwkxbc/new_leak_openais_first_device_will_be_moveable/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-14T20:52:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Anthropic can duplicate your business models overnight",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwjeho/anthropic_can_duplicate_your_business_models/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-14T19:54:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "2014 vs 2026",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-14T19:31:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Deepmind Internally Delays Gemini 3.5 Pro Again According To Renowned Leaker",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-14T19:29:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Is this true?",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-14T19:19:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Differences Between GPT-5.5 Pro and GPT-5.6 Sol on MineBench",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-14T18:58:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Opus 5 coming soon?",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-14T18:24:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Opus 5 Could Be Out As Soon As This Week Per Reliable Leaker On Twitter",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-14T17:47:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "In yet another surprise, 2026.7.1 broke my install.",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-14T16:33:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "DeepMind's founder Demis Hassabis just wrote the most important thing you'll read about AGI this year. Here's the breakdown.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwd7rx/deepminds_founder_demis_hassabis_just_wrote_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T16:14:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Kimi k3 launching soon (probably more than 2 trillion para acc to leaks)",
-        "link": "https://reddit.com/r/singularity/comments/1uwctrz/kimi_k3_launching_soon_probably_more_than_2/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-14T16:00:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T21:16:22.057Z",
+    "reddit_viral_generated_at": "2026-07-14T22:15:39.097Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
