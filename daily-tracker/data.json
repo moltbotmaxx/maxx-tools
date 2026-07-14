@@ -367,19 +367,55 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T03:37:53.567Z",
+    "generated_at": "2026-07-14T06:26:54.357Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "fair at the very least",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uvvsgv/fair_at_the_very_least/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-14T02:22:13+00:00",
+        "headline": "OpenClaw v2026.7.1 | Major Control UI, onboarding, mobile app, and model updates",
+        "link": "https://reddit.com/r/openclaw/comments/1uvza23/openclaw_v202671_major_control_ui_onboarding/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-14T05:13:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Current state of Ai",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uvyxaj/current_state_of_ai/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-14T04:55:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "GPT-5.6 Sol on minebench soon",
+        "link": "https://reddit.com/r/singularity/comments/1uvyi2j/gpt56_sol_on_minebench_soon/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T04:33:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Update to Claude Code running natively on Windows XP (WIP - No SSH/RDP)",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uvy96g/update_to_claude_code_running_natively_on_windows/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-14T04:20:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Claude is getting judgemental about IP. Opus 4.8 is steering me away due to license/rights.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uvx2lg/claude_is_getting_judgemental_about_ip_opus_48_is/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-14T03:22:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Claude Code agents vs Open Claw - which ones are better for fully autonomous work?",
@@ -388,7 +424,16 @@
         "published_at": "2026-07-14T00:47:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
+      },
+      {
+        "headline": "Is ChatGPT starting to say things like it had those real-life experiences?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uvtdtx/is_chatgpt_starting_to_say_things_like_it_had/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-14T00:33:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "I don’t get the Fable coding craze at all",
@@ -397,7 +442,7 @@
         "published_at": "2026-07-14T00:01:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "Another 50+ year-old Erdős problem falls to GPT-5.6",
@@ -406,7 +451,7 @@
         "published_at": "2026-07-13T23:26:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "I tasked Claude Code with generating an infinite world, filled with cities, explorable building interiors, NPCs with lives and routines, mass transit, local transport, a day/night cycle and a tonne more. By golly has it been delivering.",
@@ -415,59 +460,14 @@
         "published_at": "2026-07-13T22:27:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Best pitch?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uvqdsc/best_pitch/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-13T22:26:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "They don't even know that Gemini is behind in programming",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uvq67i/they_dont_even_know_that_gemini_is_behind_in/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-13T22:18:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude Pretending to Search",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvp69s/claude_pretending_to_search/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T21:40:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I was using Claude Cowork's cloud VMs (free, included in plan) completely wrong. It replaced most of my local workflow once I set them up properly.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvosli/i_was_using_claude_coworks_cloud_vms_free/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T21:25:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I built Navi so It yells \"Hey! Listen!\" when Claude Code needs me, hope you like it :D",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvoj4d/i_built_navi_so_it_yells_hey_listen_when_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-13T21:15:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T03:37:53.567Z",
+    "reddit_viral_generated_at": "2026-07-14T06:26:54.357Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
