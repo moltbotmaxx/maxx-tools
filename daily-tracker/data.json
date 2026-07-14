@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T19:47:00.261Z",
+    "generated_at": "2026-07-14T21:16:22.057Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anthropic can duplicate your business models overnight",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwjeho/anthropic_can_duplicate_your_business_models/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-14T19:54:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "2014 vs 2026",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uwis5p/2014_vs_2026/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-14T19:31:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Deepmind Internally Delays Gemini 3.5 Pro Again According To Renowned Leaker",
+        "link": "https://reddit.com/r/singularity/comments/1uwiq9q/deepmind_internally_delays_gemini_35_pro_again/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T19:29:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Is this true?",
         "link": "https://reddit.com/r/OpenAI/comments/1uwigmi/is_this_true/",
@@ -379,7 +406,16 @@
         "published_at": "2026-07-14T19:19:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "Differences Between GPT-5.5 Pro and GPT-5.6 Sol on MineBench",
+        "link": "https://reddit.com/r/singularity/comments/1uwhvws/differences_between_gpt55_pro_and_gpt56_sol_on/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T18:58:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Opus 5 coming soon?",
@@ -388,31 +424,13 @@
         "published_at": "2026-07-14T18:24:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
-        "headline": "How to Stop Burning Your GPT-5.6 Usage Limits",
-        "link": "https://reddit.com/r/OpenAI/comments/1uwerdr/how_to_stop_burning_your_gpt56_usage_limits/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-14T17:09:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Testing Fable 5, Opus 4.8, GPT-5.6, and more through playable 3D games",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uwe2id/testing_fable_5_opus_48_gpt56_and_more_through/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-14T16:44:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I built an open-source canvas where GPT-5.6 can respond beside handwritten math",
-        "link": "https://reddit.com/r/OpenAI/comments/1uwdy77/i_built_an_opensource_canvas_where_gpt56_can/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-14T16:40:18+00:00",
+        "headline": "Opus 5 Could Be Out As Soon As This Week Per Reliable Leaker On Twitter",
+        "link": "https://reddit.com/r/singularity/comments/1uwftum/opus_5_could_be_out_as_soon_as_this_week_per/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T17:47:04+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
@@ -424,7 +442,7 @@
         "published_at": "2026-07-14T16:33:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "DeepMind's founder Demis Hassabis just wrote the most important thing you'll read about AGI this year. Here's the breakdown.",
@@ -433,41 +451,23 @@
         "published_at": "2026-07-14T16:14:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Keio University made these soft, helium-filled flying robots; they can follow you, wake you up, remind you of stuff, and even be your study buddy",
-        "link": "https://reddit.com/r/singularity/comments/1uwc0oi/keio_university_made_these_soft_heliumfilled/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-14T15:31:43+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "Anthropic just told the US Senate that Alibaba ran 25,000 fake accounts and had 28.8 million conversations with Claude — not to use it, but to copy it",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwaxdx/anthropic_just_told_the_us_senate_that_alibaba/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T14:51:58+00:00",
+        "headline": "Kimi k3 launching soon (probably more than 2 trillion para acc to leaks)",
+        "link": "https://reddit.com/r/singularity/comments/1uwctrz/kimi_k3_launching_soon_probably_more_than_2/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T16:00:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anthropic just told the US Senate that Alibaba ran 25,000 fake accounts and had 28.8 million conversations with Claude — not to use it, but to copy it",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uwavzo/anthropic_just_told_the_us_senate_that_alibaba/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-14T14:50:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T19:47:00.261Z",
+    "reddit_viral_generated_at": "2026-07-14T21:16:22.057Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
