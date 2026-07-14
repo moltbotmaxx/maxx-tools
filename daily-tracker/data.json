@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T10:57:51.423Z",
+    "generated_at": "2026-07-14T12:40:58.891Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "“We Must Act Now”: Sixteen Nobel Laureates Join Leading Economists and AI Researchers in Call to Prepare for AI’s Economic Transformation - Stanford Digital Economy Lab",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uw5s79/we_must_act_now_sixteen_nobel_laureates_join/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-14T11:18:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Demis Hassabis shared a rare essay on X: AGI is few years away, we're in the singularity foothills, proposes US-led Frontier AI Standards Body with eventual mandatory safety testing",
         "link": "https://reddit.com/r/singularity/comments/1uw40fb/demis_hassabis_shared_a_rare_essay_on_x_agi_is/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-14T09:44:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Why can I only buy $1,000,000 worth of tokens?",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-14T08:57:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "GPT-5.6 takes first place on eq-bench's Creative Writing benchmark",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-14T08:56:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "An open-weight, MIT trillion-param model (Ant's Ring-2.6) reportedly matches the closed frontier on reasoning + agent benchmarks. Does \"open\" catching up actually change the trajectory?",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-14T08:51:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Claude spent +15 EUR of a 2 EUR limit.",
@@ -415,16 +424,7 @@
         "published_at": "2026-07-14T07:53:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "FOSS NotebookLM connected to Reddit,YT,Google,IG,Tiktok",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uw1z9a/foss_notebooklm_connected_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T07:44:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "AI gets the whole filesystem because autocomplete is nice",
@@ -433,7 +433,16 @@
         "published_at": "2026-07-14T07:07:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
+      },
+      {
+        "headline": "Palo Alto CEO Arora says AI pricing needs to fall 90% as token costs skyrocket",
+        "link": "https://reddit.com/r/OpenAI/comments/1uw1822/palo_alto_ceo_arora_says_ai_pricing_needs_to_fall/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-14T07:00:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
       },
       {
         "headline": "I turned an old TP-Link router into an autonomous AI Agent using Go. RouterClaw 🦀",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-14T06:35:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Sam Altman spends the day roasting Anthropic on X",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-14T05:24:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenClaw v2026.7.1 | Major Control UI, onboarding, mobile app, and model updates",
-        "link": "https://reddit.com/r/openclaw/comments/1uvza23/openclaw_v202671_major_control_ui_onboarding/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-14T05:13:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T10:57:51.423Z",
+    "reddit_viral_generated_at": "2026-07-14T12:40:58.891Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
