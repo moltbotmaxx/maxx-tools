@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-14T09:18:18.146Z",
+    "generated_at": "2026-07-14T10:57:51.423Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Demis Hassabis shared a rare essay on X: AGI is few years away, we're in the singularity foothills, proposes US-led Frontier AI Standards Body with eventual mandatory safety testing",
+        "link": "https://reddit.com/r/singularity/comments/1uw40fb/demis_hassabis_shared_a_rare_essay_on_x_agi_is/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T09:44:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Why can I only buy $1,000,000 worth of tokens?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uw37yg/why_can_i_only_buy_1000000_worth_of_tokens/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-14T08:57:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "GPT-5.6 takes first place on eq-bench's Creative Writing benchmark",
+        "link": "https://reddit.com/r/singularity/comments/1uw3788/gpt56_takes_first_place_on_eqbenchs_creative/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T08:56:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "An open-weight, MIT trillion-param model (Ant's Ring-2.6) reportedly matches the closed frontier on reasoning + agent benchmarks. Does \"open\" catching up actually change the trajectory?",
+        "link": "https://reddit.com/r/singularity/comments/1uw34a4/an_openweight_mit_trillionparam_model_ants_ring26/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-14T08:51:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Claude spent +15 EUR of a 2 EUR limit.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uw24bp/claude_spent_15_eur_of_a_2_eur_limit/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-14T07:53:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "FOSS NotebookLM connected to Reddit,YT,Google,IG,Tiktok",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-14T07:44:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "AI gets the whole filesystem because autocomplete is nice",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-14T07:07:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "I turned an old TP-Link router into an autonomous AI Agent using Go. RouterClaw 🦀",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-14T06:35:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Sam Altman spends the day roasting Anthropic on X",
@@ -415,7 +451,7 @@
         "published_at": "2026-07-14T05:24:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "OpenClaw v2026.7.1 | Major Control UI, onboarding, mobile app, and model updates",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-14T05:13:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Current state of Ai",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uvyxaj/current_state_of_ai/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-14T04:55:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "GPT-5.6 Sol on minebench soon",
-        "link": "https://reddit.com/r/singularity/comments/1uvyi2j/gpt56_sol_on_minebench_soon/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-14T04:33:41+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Update to Claude Code running natively on Windows XP (WIP - No SSH/RDP)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uvy96g/update_to_claude_code_running_natively_on_windows/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-14T04:20:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Still waiting for this update: a proper Chat mode",
-        "link": "https://reddit.com/r/OpenAI/comments/1uvwciz/still_waiting_for_this_update_a_proper_chat_mode/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-14T02:48:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-14T09:18:18.146Z",
+    "reddit_viral_generated_at": "2026-07-14T10:57:51.423Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
