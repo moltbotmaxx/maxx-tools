@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-13T23:14:42.511Z",
+    "generated_at": "2026-07-14T00:08:53.687Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Another 50+ year-old Erdős problem falls to GPT-5.6",
+        "link": "https://reddit.com/r/singularity/comments/1uvrtl0/another_50_yearold_erd%C5%91s_problem_falls_to_gpt56/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-13T23:26:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Claude Pretending to Search",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uvp69s/claude_pretending_to_search/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-13T21:40:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Skill Workshop is unusable and dangerous. What am I missing?",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-13T21:32:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "I was using Claude Cowork's cloud VMs (free, included in plan) completely wrong. It replaced most of my local workflow once I set them up properly.",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-13T21:25:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "I built Navi so It yells \"Hey! Listen!\" when Claude Code needs me, hope you like it :D",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-13T21:15:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "It says „Hello Human“ 🫩✌️",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-13T20:48:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Now any video can fill a 70mm IMAX screen",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-13T20:39:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Anyone moved from Claude CLI OAuth to the Codex runtime and found it much slower?",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-13T20:28:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "It finally happened: Account Restricted",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-13T19:55:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Apple vs OpenAI",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-13T19:44:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Built a WhatsApp-Controlled OpenClaw Agent for Farm Irrigation. What Am I Missing?",
-        "link": "https://reddit.com/r/openclaw/comments/1uvlhdb/built_a_whatsappcontrolled_openclaw_agent_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-13T19:26:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-13T23:14:42.511Z",
+    "reddit_viral_generated_at": "2026-07-14T00:08:53.687Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
