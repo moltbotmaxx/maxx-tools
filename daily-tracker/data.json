@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-15T03:38:41.715Z",
+    "generated_at": "2026-07-15T06:29:20.260Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The first experimental evidence of recursive self-improvement (RSI).",
+        "link": "https://reddit.com/r/OpenAI/comments/1uwwa09/the_first_experimental_evidence_of_recursive/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-15T05:10:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A note from Tibo",
+        "link": "https://reddit.com/r/OpenAI/comments/1uwvlmp/a_note_from_tibo/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-15T04:35:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Create image of the ugliest mcmansion you can think of",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uwvgb3/create_image_of_the_ugliest_mcmansion_you_can/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-15T04:27:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Claude helped me make my internet 100x faster",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uwtn3m/claude_helped_me_make_my_internet_100x_faster/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-15T02:59:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "You should be doing all your work in Claude's free cloud computers included in your subscription. You're probably not setting them up right.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uwq8ba/you_should_be_doing_all_your_work_in_claudes_free/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-15T00:21:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 89
+      },
       {
         "headline": "Why is Gemini lagging behind by two whole versions?",
         "link": "https://reddit.com/r/GeminiAI/comments/1uwpogq/why_is_gemini_lagging_behind_by_two_whole_versions/",
@@ -379,25 +424,7 @@
         "published_at": "2026-07-14T23:58:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Elon Musk’s Grok Faces a Trust Crisis After Developers Flag a Major Privacy Concern",
-        "link": "https://reddit.com/r/OpenAI/comments/1uwpmqu/elon_musks_grok_faces_a_trust_crisis_after/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-14T23:56:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Has anyone else noticed an increase in hallucinations?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uwpl93/has_anyone_else_noticed_an_increase_in/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-14T23:54:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 88
       },
       {
         "headline": "This may be controversial, but hear me out… OpenClaw is dying if it’s not already dead…",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-14T22:48:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 85
       },
       {
         "headline": "My Claude Code subagent came back with a prompt-injection payload and hidden \"never tell the user\" instructions",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-14T22:11:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 84
       },
       {
         "headline": "My Claude subscription has paid for itself for a very long time.",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-14T21:54:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 83
       },
       {
         "headline": "Inspired by caveman and co, I'm open-sourcing a Claude Code plugin that reduces token output by 99.9%",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-14T21:03:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "NEW LEAK: OpenAI’s First Device Will Be Moveable, Screenless Speaker Built as AI Companion",
-        "link": "https://reddit.com/r/OpenAI/comments/1uwkxbc/new_leak_openais_first_device_will_be_moveable/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-14T20:52:29+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Anthropic can duplicate your business models overnight",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwjeho/anthropic_can_duplicate_your_business_models/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-14T19:54:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "2014 vs 2026",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uwis5p/2014_vs_2026/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-14T19:31:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-15T03:38:41.715Z",
+    "reddit_viral_generated_at": "2026-07-15T06:29:20.260Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
