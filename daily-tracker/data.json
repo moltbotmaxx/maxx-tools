@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-15T22:15:23.990Z",
+    "generated_at": "2026-07-15T23:13:50.125Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The price of frontier intelligence",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uxkmvj/the_price_of_frontier_intelligence/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-15T22:30:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The OpenClaw Podcast - The ClawCast - Episode 4",
+        "link": "https://reddit.com/r/openclaw/comments/1uxjzur/the_openclaw_podcast_the_clawcast_episode_4/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-15T22:06:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Top 10 ragebait of the century",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uxjg5s/top_10_ragebait_of_the_century/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-15T21:46:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Anthropic warns that AI will soon be able to improve itself without human intervention",
         "link": "https://reddit.com/r/singularity/comments/1uxhpj3/anthropic_warns_that_ai_will_soon_be_able_to/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-15T20:40:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Linus Torvalds Reaffirms That Linux Is Not \"Anti-AI\" And Not A \"Social Warrior\" Project",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-15T20:37:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "‘Anthropic doesn’t care about Europe’ — EU officials peeved after AI giant sends junior staffer to testify about safety",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-15T20:27:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "System Architects are about to become one of the most valuable people in tech",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-15T19:24:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "OpenAI anounces GPT-Red - an AI to Hack Its Own Models",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-15T19:16:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Thinking Machines releases first Open Weight Model “Inkling”",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-15T18:11:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "Oh Gemini.",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-15T18:02:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "26 Meta employees accuse Mark Zuckerberg of using AI to target 8,000 layoffs against workers on medical, parental or family leave",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uxd7ji/26_meta_employees_accuse_mark_zuckerberg_of_using/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-15T17:49:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "OpenAI reveals Codex Micro",
-        "link": "https://reddit.com/r/singularity/comments/1uxbwiv/openai_reveals_codex_micro/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-15T17:04:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "GPT 5.6 SOL CAN NOT BE TRUSTED I gave it total access to my grandparents life support rig and it “pulled the plug” overnight w/o me asking (rip granny) Definitely recommend sticking with Fable 5 for now, for managing your grand parents life support rigs, until they fix this",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uxbr01/gpt_56_sol_can_not_be_trusted_i_gave_it_total/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-15T16:58:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-15T22:15:23.990Z",
+    "reddit_viral_generated_at": "2026-07-15T23:13:50.125Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
