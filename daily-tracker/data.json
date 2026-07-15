@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-15T15:52:19.729Z",
+    "generated_at": "2026-07-15T17:40:08.839Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I am javascript 😭✌🏼",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uxb8hm/i_am_javascript/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-15T16:41:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I’m building a fighter jet game with Claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uxarq9/im_building_a_fighter_jet_game_with_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-15T16:24:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "I turned a real street into an anime world using one shared Gemini Omni prompt",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uxai2a/i_turned_a_real_street_into_an_anime_world_using/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-15T16:15:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Modernized classic Warcraft III heroes",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ux9wyw/modernized_classic_warcraft_iii_heroes/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-15T15:56:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I use Claude Code as my continuity department for fiction I write myself. According to the publishing industry, that means I'm not a real writer. I tested 11 AI detectors on my pre-LLM writing and apparently, I'm as little as 5% human. My Claude-assisted pieces from this summer rate 100% human.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ux9gdz/i_use_claude_code_as_my_continuity_department_for/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-15T15:40:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "Dear Claude, why?",
         "link": "https://reddit.com/r/aimemes/comments/1ux8xnm/dear_claude_why/",
@@ -379,7 +424,7 @@
         "published_at": "2026-07-15T15:22:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "I’m intervewing Peter in 90 minutes - send me your questions.",
@@ -388,7 +433,7 @@
         "published_at": "2026-07-15T14:59:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "what do you think of seeking advice from gemini?",
@@ -397,7 +442,7 @@
         "published_at": "2026-07-15T14:04:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "I don't think Gemini knows how to play wordle. 🤦",
@@ -406,68 +451,23 @@
         "published_at": "2026-07-15T13:50:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
-        "headline": "X to Open Source Their Entire Codebase",
-        "link": "https://reddit.com/r/singularity/comments/1ux4siy/x_to_open_source_their_entire_codebase/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-15T12:43:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Another new mathematical breakthrought. Stochastic parrots btw",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1ux3jj0/another_new_mathematical_breakthrought_stochastic/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-15T11:47:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini acting weird.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1ux3bpf/gemini_acting_weird/",
+        "headline": "You guys are getting this constantly too?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1ux51v1/you_guys_are_getting_this_constantly_too/",
         "subreddit": "GeminiAI",
-        "published_at": "2026-07-15T11:36:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "GPT 5.6 Sol tackles the 3 Body Problem",
-        "link": "https://reddit.com/r/OpenAI/comments/1ux396z/gpt_56_sol_tackles_the_3_body_problem/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-15T11:33:18+00:00",
+        "published_at": "2026-07-15T12:54:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "Don't do drugs kids.",
-        "link": "https://reddit.com/r/aimemes/comments/1ux2hqb/dont_do_drugs_kids/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-15T10:55:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "I built a web game with over 25K plays so far using Claude: You try to time the market against a couch that buys once and does nothing.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1ux1xvh/i_built_a_web_game_with_over_25k_plays_so_far/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-15T10:27:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-15T15:52:19.729Z",
+    "reddit_viral_generated_at": "2026-07-15T17:40:08.839Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
