@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-15T09:22:39.288Z",
+    "generated_at": "2026-07-15T11:50:36.348Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Don't do drugs kids.",
+        "link": "https://reddit.com/r/aimemes/comments/1ux2hqb/dont_do_drugs_kids/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-15T10:55:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I built a web game with over 25K plays so far using Claude: You try to time the market against a couch that buys once and does nothing.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1ux1xvh/i_built_a_web_game_with_over_25k_plays_so_far/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-15T10:27:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "6 AI models picked France to win the World Cup. Claude alone said Spain. Spain just knocked France out 2-0.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1ux140w/6_ai_models_picked_france_to_win_the_world_cup/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-15T09:41:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "OpenAI has 9M Users now",
         "link": "https://reddit.com/r/OpenAI/comments/1uwyfmo/openai_has_9m_users_now/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-15T07:07:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "Anthropic warns that AI will soon be able to improve itself without human intervention",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-15T07:02:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "Here comes 9M and another reset! I could get used to this",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-15T06:14:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
       },
       {
         "headline": "The first experimental evidence of recursive self-improvement (RSI).",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-15T05:10:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 87
       },
       {
         "headline": "A note from Tibo",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-15T04:35:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 85
       },
       {
         "headline": "Create image of the ugliest mcmansion you can think of",
@@ -424,50 +451,23 @@
         "published_at": "2026-07-15T04:27:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 85
       },
       {
-        "headline": "Claude helped me make my internet 100x faster",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uwtn3m/claude_helped_me_make_my_internet_100x_faster/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-15T02:59:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "You should be doing all your work in Claude's free cloud computers included in your subscription. You're probably not setting them up right.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uwq8ba/you_should_be_doing_all_your_work_in_claudes_free/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-15T00:21:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Why is Gemini lagging behind by two whole versions?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uwpogq/why_is_gemini_lagging_behind_by_two_whole_versions/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-14T23:58:37+00:00",
+        "headline": "For those with 12GB GPUs, you can now run QWEN 3.6 27B wth little loss via the new Ternary version.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uwulhn/for_those_with_12gb_gpus_you_can_now_run_qwen_36/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-15T03:45:28+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 83
-      },
-      {
-        "headline": "This may be controversial, but hear me out… OpenClaw is dying if it’s not already dead…",
-        "link": "https://reddit.com/r/openclaw/comments/1uwnz95/this_may_be_controversial_but_hear_me_out/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-14T22:48:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-15T09:22:39.288Z",
+    "reddit_viral_generated_at": "2026-07-15T11:50:36.348Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
