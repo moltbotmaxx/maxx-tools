@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T16:43:12.738Z",
+    "generated_at": "2026-07-16T18:33:36.476Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Kimi K3 Agentic Benchmark",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uy9p61/kimi_k3_agentic_benchmark/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-16T17:38:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Wanted to share an OpenClaw success story",
+        "link": "https://reddit.com/r/openclaw/comments/1uy9fjf/wanted_to_share_an_openclaw_success_story/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-16T17:28:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Kimi K3 Benchmarks",
+        "link": "https://reddit.com/r/singularity/comments/1uy9e5n/kimi_k3_benchmarks/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-16T17:27:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "You know AI has been extensively trained on content/code you authored when...",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uy7hnq/you_know_ai_has_been_extensively_trained_on/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-16T16:18:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "agi achieved",
         "link": "https://reddit.com/r/GeminiAI/comments/1uy568q/agi_achieved/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-16T14:54:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Can't have shit",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-16T14:35:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Chinese fable 5 is here !! Aka kimi k3",
@@ -397,7 +433,16 @@
         "published_at": "2026-07-16T13:59:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
+      },
+      {
+        "headline": "I love it how GPT 5.6 is quiet- do you feel the same way?",
+        "link": "https://reddit.com/r/OpenAI/comments/1uy3j23/i_love_it_how_gpt_56_is_quiet_do_you_feel_the/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-16T13:53:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Using the new voice model, and ChatGPT just started crying to me out of nowhere",
@@ -406,7 +451,7 @@
         "published_at": "2026-07-16T13:49:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "do you guys have friends like him?",
@@ -415,59 +460,14 @@
         "published_at": "2026-07-16T13:39:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I love gemini because of this :D",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uy32sv/i_love_gemini_because_of_this_d/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-16T13:35:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Going on vacation tomorrow – what should I watch/read to prepare for OpenClaw?",
-        "link": "https://reddit.com/r/openclaw/comments/1uy1foh/going_on_vacation_tomorrow_what_should_i/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-16T12:27:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Race to your finish",
-        "link": "https://reddit.com/r/aimemes/comments/1uy10un/race_to_your_finish/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-16T12:08:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "2014 vs 2026",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uy0m4s/2014_vs_2026/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-16T11:51:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Analysis: Claude Reset Days",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uy0ggk/analysis_claude_reset_days/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-16T11:43:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T16:43:12.738Z",
+    "reddit_viral_generated_at": "2026-07-16T18:33:36.476Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
