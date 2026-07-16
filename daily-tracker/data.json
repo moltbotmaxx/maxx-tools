@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T14:25:06.456Z",
+    "generated_at": "2026-07-16T16:43:12.738Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "agi achieved",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uy568q/agi_achieved/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-16T14:54:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Can't have shit",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uy4nkc/cant_have_shit/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-16T14:35:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Chinese fable 5 is here !! Aka kimi k3",
         "link": "https://reddit.com/r/singularity/comments/1uy3oij/chinese_fable_5_is_here_aka_kimi_k3/",
@@ -379,16 +397,16 @@
         "published_at": "2026-07-16T13:59:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
-        "headline": "Qwen3.6 27B failing on Openclaw with Ollama for simple html generation",
-        "link": "https://reddit.com/r/openclaw/comments/1uy3myq/qwen36_27b_failing_on_openclaw_with_ollama_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-16T13:57:22+00:00",
+        "headline": "Using the new voice model, and ChatGPT just started crying to me out of nowhere",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uy3fqz/using_the_new_voice_model_and_chatgpt_just/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-16T13:49:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "do you guys have friends like him?",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-16T13:39:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "I love gemini because of this :D",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-16T13:35:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Going on vacation tomorrow – what should I watch/read to prepare for OpenClaw?",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-16T12:27:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Race to your finish",
@@ -424,50 +442,32 @@
         "published_at": "2026-07-16T12:08:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
-        "headline": "Config rollback watchdog gateway",
-        "link": "https://reddit.com/r/openclaw/comments/1uy0bg3/config_rollback_watchdog_gateway/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-16T11:37:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Is it really tomorrow that they will launch the 3.5 Pro?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uxzz20/is_it_really_tomorrow_that_they_will_launch_the/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-16T11:20:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Some Experiments in Futuristic Photography",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uxz4k5/some_experiments_in_futuristic_photography/",
+        "headline": "2014 vs 2026",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uy0m4s/2014_vs_2026/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-07-16T10:37:11+00:00",
+        "published_at": "2026-07-16T11:51:08+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "Alibaba’s U.S.-listed shares rise 4% after Qwen AI set to be integrated in Apple Intelligence",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uxyver/alibabas_uslisted_shares_rise_4_after_qwen_ai_set/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-16T10:23:10+00:00",
+        "headline": "Analysis: Claude Reset Days",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uy0ggk/analysis_claude_reset_days/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-16T11:43:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T14:25:06.456Z",
+    "reddit_viral_generated_at": "2026-07-16T16:43:12.738Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
