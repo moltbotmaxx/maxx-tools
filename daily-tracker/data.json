@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T22:17:29.844Z",
+    "generated_at": "2026-07-16T23:13:11.931Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Prompt injection works in production 😂",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uyee2d/prompt_injection_works_in_production/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-16T20:30:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I built a neat tool that turns years of my LLM chat history into one 3D context map!",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uydi55/i_built_a_neat_tool_that_turns_years_of_my_llm/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-16T19:57:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "Linus Torvalds tells AI haters to fork off",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-16T19:55:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Gemini 3.5 pro is delayed and expected not to be soon",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-16T19:52:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 98
       },
       {
         "headline": "Kimi-K3 arrived: The era of the Chinese labs being far behind is over",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-16T19:45:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "I used 5.6 Sol Ultra to Close a 30-Year Open Gap in Mathematical Optimization Theory, following OpenAI's CDC Proof Prompt Methodology",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-16T19:34:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Kimi K3 achieves 3rd Place on ArtificalAnalysis, beating out Claude Opus 4.8",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-16T19:08:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Kimi K3 tops Frontend Code Arena",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-16T18:46:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "I gave GPT-5.6 Sol, Claude Opus 4.8, and Grok 4.5 the same 100 frontend briefs—here are all 300 results",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-16T18:26:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Someone pointed Groks live camera at their GTA V screen, and the AI fully believed it was watch",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-16T18:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "We have Real Steel now (Alpha Version)",
-        "link": "https://reddit.com/r/singularity/comments/1uyas13/we_have_real_steel_now_alpha_version/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-16T18:16:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T22:17:29.844Z",
+    "reddit_viral_generated_at": "2026-07-16T23:13:11.931Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
