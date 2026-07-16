@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T03:40:32.822Z",
+    "generated_at": "2026-07-16T06:32:56.970Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Codex got another usage reset. Tibo, please let me rest.",
+        "link": "https://reddit.com/r/OpenAI/comments/1uxsfa0/codex_got_another_usage_reset_tibo_please_let_me/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-16T04:23:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Usage Limit was just Reset",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uxs0qt/usage_limit_was_just_reset/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-16T04:02:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "I think Gemini knows Ive been sneaking Chatgpt at night",
         "link": "https://reddit.com/r/GeminiAI/comments/1uxq4h7/i_think_gemini_knows_ive_been_sneaking_chatgpt_at/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-16T02:29:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "🫩",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-16T00:56:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Dear mr Dario",
@@ -397,16 +415,7 @@
         "published_at": "2026-07-15T23:01:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Show us what you've created with Claude!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uxlehk/show_us_what_youve_created_with_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-15T23:01:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "The OpenClaw Podcast - The ClawCast - Episode 4",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-15T22:06:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       },
       {
         "headline": "Top 10 ragebait of the century",
@@ -424,16 +433,7 @@
         "published_at": "2026-07-15T21:46:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenAI loses trademark dispute at EU court",
-        "link": "https://reddit.com/r/OpenAI/comments/1uxi6ae/openai_loses_trademark_dispute_at_eu_court/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-15T21:00:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "Anthropic warns that AI will soon be able to improve itself without human intervention",
@@ -442,7 +442,7 @@
         "published_at": "2026-07-15T20:40:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 82
       },
       {
         "headline": "Linus Torvalds Reaffirms That Linux Is Not \"Anti-AI\" And Not A \"Social Warrior\" Project",
@@ -451,7 +451,7 @@
         "published_at": "2026-07-15T20:37:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 81
       },
       {
         "headline": "‘Anthropic doesn’t care about Europe’ — EU officials peeved after AI giant sends junior staffer to testify about safety",
@@ -460,14 +460,14 @@
         "published_at": "2026-07-15T20:27:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 81
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T03:40:32.822Z",
+    "reddit_viral_generated_at": "2026-07-16T06:32:56.970Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
