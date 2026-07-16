@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T20:12:42.850Z",
+    "generated_at": "2026-07-16T21:17:59.367Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Linus Torvalds tells AI haters to fork off",
+        "link": "https://reddit.com/r/singularity/comments/1uydghu/linus_torvalds_tells_ai_haters_to_fork_off/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-16T19:55:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini 3.5 pro is delayed and expected not to be soon",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uyddoa/gemini_35_pro_is_delayed_and_expected_not_to_be/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-16T19:52:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Kimi-K3 arrived: The era of the Chinese labs being far behind is over",
         "link": "https://reddit.com/r/OpenAI/comments/1uyd77a/kimik3_arrived_the_era_of_the_chinese_labs_being/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-16T19:45:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "I used 5.6 Sol Ultra to Close a 30-Year Open Gap in Mathematical Optimization Theory, following OpenAI's CDC Proof Prompt Methodology",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-16T19:08:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Kimi K3 tops Frontend Code Arena",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-16T18:46:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "I gave GPT-5.6 Sol, Claude Opus 4.8, and Grok 4.5 the same 100 frontend briefs—here are all 300 results",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-16T18:26:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Someone pointed Groks live camera at their GTA V screen, and the AI fully believed it was watch",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-16T18:20:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "We have Real Steel now (Alpha Version)",
@@ -433,31 +451,13 @@
         "published_at": "2026-07-16T18:16:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Kimi K3 Agentic Benchmark",
         "link": "https://reddit.com/r/GeminiAI/comments/1uy9p61/kimi_k3_agentic_benchmark/",
         "subreddit": "GeminiAI",
         "published_at": "2026-07-16T17:38:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Wanted to share an OpenClaw success story",
-        "link": "https://reddit.com/r/openclaw/comments/1uy9fjf/wanted_to_share_an_openclaw_success_story/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-16T17:28:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Kimi K3 Benchmarks",
-        "link": "https://reddit.com/r/singularity/comments/1uy9e5n/kimi_k3_benchmarks/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-16T17:27:23+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T20:12:42.850Z",
+    "reddit_viral_generated_at": "2026-07-16T21:17:59.367Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
