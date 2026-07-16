@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T09:30:47.921Z",
+    "generated_at": "2026-07-16T11:54:38.939Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Config rollback watchdog gateway",
+        "link": "https://reddit.com/r/openclaw/comments/1uy0bg3/config_rollback_watchdog_gateway/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-16T11:37:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Some Experiments in Futuristic Photography",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uxz4k5/some_experiments_in_futuristic_photography/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-16T10:37:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Alibaba’s U.S.-listed shares rise 4% after Qwen AI set to be integrated in Apple Intelligence",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uxyver/alibabas_uslisted_shares_rise_4_after_qwen_ai_set/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-16T10:23:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I built a true-scale atlas of the universe (8.4M real stars) in about a week with Fable",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uxy5s8/i_built_a_truescale_atlas_of_the_universe_84m/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-16T09:43:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Fun with Openclaw",
         "link": "https://reddit.com/r/openclaw/comments/1uxxvkr/fun_with_openclaw/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-16T09:27:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "George Lucas says rejecting AI is like rejecting cars in favour of horses: 'There's nothing you can do about it… it's the future'",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-16T08:36:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Multi user Quickbooks login via slack using OpenClaw browser use",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-16T08:34:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Woke up to this. Yay!",
@@ -406,25 +442,7 @@
         "published_at": "2026-07-16T08:00:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "South Korea wants to offer free, unlimited AI to every one of its citizens",
-        "link": "https://reddit.com/r/singularity/comments/1uxvwlm/south_korea_wants_to_offer_free_unlimited_ai_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-16T07:32:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "FYP student survey",
-        "link": "https://reddit.com/r/openclaw/comments/1uxvswu/fyp_student_survey/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-16T07:26:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Will the new AI roadmap keep the tech giants in line?",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-16T07:15:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "A DeepMind researcher resigned over its AI military deal: 'I couldn't stay at Google in good conscience'",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-16T05:14:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Codex got another usage reset. Tibo, please let me rest.",
-        "link": "https://reddit.com/r/OpenAI/comments/1uxsfa0/codex_got_another_usage_reset_tibo_please_let_me/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-16T04:23:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Usage Limit was just Reset",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uxs0qt/usage_limit_was_just_reset/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-16T04:02:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T09:30:47.921Z",
+    "reddit_viral_generated_at": "2026-07-16T11:54:38.939Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
