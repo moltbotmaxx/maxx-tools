@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-15T23:13:50.125Z",
+    "generated_at": "2026-07-16T00:11:06.198Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -400,15 +400,6 @@
         "viral_score": 98
       },
       {
-        "headline": "Anthropic warns that AI will soon be able to improve itself without human intervention",
-        "link": "https://reddit.com/r/singularity/comments/1uxhpj3/anthropic_warns_that_ai_will_soon_be_able_to/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-15T20:40:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
         "headline": "Linus Torvalds Reaffirms That Linux Is Not \"Anti-AI\" And Not A \"Social Warrior\" Project",
         "link": "https://reddit.com/r/singularity/comments/1uxhnh1/linus_torvalds_reaffirms_that_linux_is_not_antiai/",
         "subreddit": "singularity",
@@ -422,6 +413,15 @@
         "link": "https://reddit.com/r/ClaudeAI/comments/1uxhe4w/anthropic_doesnt_care_about_europe_eu_officials/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-07-15T20:27:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "OpenAI announces Codex Micro... a keyboard alternative???",
+        "link": "https://reddit.com/r/OpenAI/comments/1uxgwtf/openai_announces_codex_micro_a_keyboard/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-15T20:08:25+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
@@ -442,7 +442,16 @@
         "published_at": "2026-07-15T19:16:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
+      },
+      {
+        "headline": "the morning brief - Openclaw Log 1",
+        "link": "https://reddit.com/r/openclaw/comments/1uxev88/the_morning_brief_openclaw_log_1/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-15T18:49:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Thinking Machines releases first Open Weight Model “Inkling”",
@@ -452,22 +461,13 @@
         "score": 0,
         "comments": 0,
         "viral_score": 89
-      },
-      {
-        "headline": "Oh Gemini.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uxdkhc/oh_gemini/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-15T18:02:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-15T23:13:50.125Z",
+    "reddit_viral_generated_at": "2026-07-16T00:11:06.198Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
