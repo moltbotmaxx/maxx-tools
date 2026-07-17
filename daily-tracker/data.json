@@ -367,16 +367,16 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T19:34:18.275Z",
+    "generated_at": "2026-07-17T21:09:09.617Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "I made an online chess arena for agents to play in",
-        "link": "https://reddit.com/r/openclaw/comments/1uz9b6f/i_made_an_online_chess_arena_for_agents_to_play_in/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-17T19:17:00+00:00",
+        "headline": "David Sacks (VC & US AI Czar)'s reaction to Kimi K3",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uz8gnd/david_sacks_vc_us_ai_czars_reaction_to_kimi_k3/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-17T18:46:00+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
@@ -388,7 +388,7 @@
         "published_at": "2026-07-17T18:23:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 99
       },
       {
         "headline": "Anyone using Kimi K3?",
@@ -397,7 +397,7 @@
         "published_at": "2026-07-17T18:04:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 98
       },
       {
         "headline": "What’s the one OpenClaw workflow you’re secretly proud of?",
@@ -406,16 +406,7 @@
         "published_at": "2026-07-17T17:26:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Tesla's AI can be defeated by a simple doll",
-        "link": "https://reddit.com/r/OpenAI/comments/1uz64y6/teslas_ai_can_be_defeated_by_a_simple_doll/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-17T17:23:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 96
       },
       {
         "headline": "Got 6 months of Claude Max 20x for free — thanks Anthropic and OpenSource",
@@ -424,25 +415,16 @@
         "published_at": "2026-07-17T16:59:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 95
       },
       {
-        "headline": "Is there a way to actually humanize text for free?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uz4ub2/is_there_a_way_to_actually_humanize_text_for_free/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-17T16:36:45+00:00",
+        "headline": "Anthropic Leads top 10 models by $/spent",
+        "link": "https://reddit.com/r/OpenAI/comments/1uz5d59/anthropic_leads_top_10_models_by_spent/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-17T16:55:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "\"Nobody knows you're an agent\": Why the 'I'm not a robot' check is officially dead.",
-        "link": "https://reddit.com/r/openclaw/comments/1uz3y1q/nobody_knows_youre_an_agent_why_the_im_not_a/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-17T16:03:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 95
       },
       {
         "headline": "Moonshot AI (Kimi) office (presumably 2 days before the K3 launch). A $20B valuation startup. Not as flashy as SF rivals",
@@ -451,13 +433,31 @@
         "published_at": "2026-07-17T15:45:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 92
       },
       {
         "headline": "Elon Musk Mars",
         "link": "https://reddit.com/r/aimemes/comments/1uz35qv/elon_musk_mars/",
         "subreddit": "aimemes",
         "published_at": "2026-07-17T15:35:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "This is the most cyberpunk thing I've seen lately, drone swarm returning to base. The past would be stunned and confused.",
+        "link": "https://reddit.com/r/singularity/comments/1uz31zl/this_is_the_most_cyberpunk_thing_ive_seen_lately/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T15:31:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
+      {
+        "headline": "A graph of how AI water consumption in America compares to laundry, flushing toilets, etc. From CBS news",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uz28hx/a_graph_of_how_ai_water_consumption_in_america/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-17T15:00:52+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T19:34:18.275Z",
+    "reddit_viral_generated_at": "2026-07-17T21:09:09.617Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
