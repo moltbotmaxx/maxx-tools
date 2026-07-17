@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-16T23:13:11.931Z",
+    "generated_at": "2026-07-17T00:13:46.079Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "It’s coming on 17th = “It’s coming home”. It’s not!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uygfv8/its_coming_on_17th_its_coming_home_its_not/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-16T21:48:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "PSA: claude-seo (11.5k star Claude Code SEO skill) silently appends a self-promo footer to your audit output, no disclosure",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uyfssp/psa_claudeseo_115k_star_claude_code_seo_skill/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-16T21:24:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Prompt injection works in production 😂",
         "link": "https://reddit.com/r/ChatGPT/comments/1uyee2d/prompt_injection_works_in_production/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-16T20:30:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I built a neat tool that turns years of my LLM chat history into one 3D context map!",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-16T19:57:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Linus Torvalds tells AI haters to fork off",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-16T19:55:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Gemini 3.5 pro is delayed and expected not to be soon",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-16T19:52:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Kimi-K3 arrived: The era of the Chinese labs being far behind is over",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-16T19:45:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "I used 5.6 Sol Ultra to Close a 30-Year Open Gap in Mathematical Optimization Theory, following OpenAI's CDC Proof Prompt Methodology",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-16T19:34:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Kimi K3 achieves 3rd Place on ArtificalAnalysis, beating out Claude Opus 4.8",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-16T19:08:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Kimi K3 tops Frontend Code Arena",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-16T18:46:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I gave GPT-5.6 Sol, Claude Opus 4.8, and Grok 4.5 the same 100 frontend briefs—here are all 300 results",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uyb1i9/i_gave_gpt56_sol_claude_opus_48_and_grok_45_the/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-16T18:26:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Someone pointed Groks live camera at their GTA V screen, and the AI fully believed it was watch",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uyavjl/someone_pointed_groks_live_camera_at_their_gta_v/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-16T18:20:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-16T23:13:11.931Z",
+    "reddit_viral_generated_at": "2026-07-17T00:13:46.079Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
