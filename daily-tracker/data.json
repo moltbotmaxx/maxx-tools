@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T22:08:05.906Z",
+    "generated_at": "2026-07-17T23:10:05.875Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Another breaking update",
+        "link": "https://reddit.com/r/openclaw/comments/1uzbszx/another_breaking_update/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-17T20:50:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "GPT-Image just made many architects jobs a lot easier",
         "link": "https://reddit.com/r/OpenAI/comments/1uzbf2v/gptimage_just_made_many_architects_jobs_a_lot/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-17T20:35:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
       },
       {
         "headline": "David Sacks (VC & US AI Czar)'s reaction to Kimi K3",
@@ -388,22 +397,13 @@
         "published_at": "2026-07-17T18:46:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "Claude Code not allowing me to use Fable 5",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uz7u1g/claude_code_not_allowing_me_to_use_fable_5/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-07-17T18:23:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anyone using Kimi K3?",
-        "link": "https://reddit.com/r/openclaw/comments/1uz7arn/anyone_using_kimi_k3/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-17T18:04:30+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 94
@@ -424,7 +424,7 @@
         "published_at": "2026-07-17T16:59:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Anthropic Leads top 10 models by $/spent",
@@ -433,7 +433,7 @@
         "published_at": "2026-07-17T16:55:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       },
       {
         "headline": "Moonshot AI (Kimi) office (presumably 2 days before the K3 launch). A $20B valuation startup. Not as flashy as SF rivals",
@@ -442,7 +442,7 @@
         "published_at": "2026-07-17T15:45:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       },
       {
         "headline": "Elon Musk Mars",
@@ -460,14 +460,14 @@
         "published_at": "2026-07-17T15:31:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T22:08:05.906Z",
+    "reddit_viral_generated_at": "2026-07-17T23:10:05.875Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
