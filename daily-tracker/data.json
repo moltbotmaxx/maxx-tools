@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T15:43:20.299Z",
+    "generated_at": "2026-07-17T17:32:24.179Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Tesla's AI can be defeated by a simple doll",
+        "link": "https://reddit.com/r/OpenAI/comments/1uz64y6/teslas_ai_can_be_defeated_by_a_simple_doll/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-17T17:23:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Is there a way to actually humanize text for free?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uz4ub2/is_there_a_way_to_actually_humanize_text_for_free/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-17T16:36:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Moonshot AI (Kimi) office (presumably 2 days before the K3 launch). A $20B valuation startup. Not as flashy as SF rivals",
+        "link": "https://reddit.com/r/singularity/comments/1uz3ff6/moonshot_ai_kimi_office_presumably_2_days_before/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T15:45:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Elon Musk Mars",
         "link": "https://reddit.com/r/aimemes/comments/1uz35qv/elon_musk_mars/",
@@ -379,7 +406,16 @@
         "published_at": "2026-07-17T15:35:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "This is the most cyberpunk thing I've seen lately, drone swarm returning to base. The past would be stunned and confused.",
+        "link": "https://reddit.com/r/singularity/comments/1uz31zl/this_is_the_most_cyberpunk_thing_ive_seen_lately/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T15:31:25+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "A graph of how AI water consumption in America compares to laundry, flushing toilets, etc. From CBS news",
@@ -388,7 +424,16 @@
         "published_at": "2026-07-17T15:00:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "I built a tool that hides messages in innocent-looking LLM chat text Project",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uz204h/i_built_a_tool_that_hides_messages_in/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-17T14:52:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "A somewhat simple thank you",
@@ -397,7 +442,16 @@
         "published_at": "2026-07-17T14:43:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
+      },
+      {
+        "headline": "\"Humans\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1uz0gs9/humans/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-17T13:55:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "I built an open-source canvas where Claude responds beside your handwritings",
@@ -406,68 +460,14 @@
         "published_at": "2026-07-17T13:48:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "My priorities are perfectly reasonable",
-        "link": "https://reddit.com/r/aimemes/comments/1uyz9mj/my_priorities_are_perfectly_reasonable/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-17T13:08:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "That one IT guy:",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uyxm0t/that_one_it_guy/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-17T11:57:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "China wants to end AI romances | They are having too much impact on young people’s lives",
-        "link": "https://reddit.com/r/singularity/comments/1uyx7iu/china_wants_to_end_ai_romances_they_are_having/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-17T11:38:18+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "China just erased America's AI lead | Axios",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uyx2pb/china_just_erased_americas_ai_lead_axios/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-17T11:31:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "OpenClaw is my paralegal helping me through a divorce and custody case in Japan",
-        "link": "https://reddit.com/r/openclaw/comments/1uywxw0/openclaw_is_my_paralegal_helping_me_through_a/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-17T11:25:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Gemini 3.5 PRO",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uyumnb/gemini_35_pro/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-17T09:18:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T15:43:20.299Z",
+    "reddit_viral_generated_at": "2026-07-17T17:32:24.179Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
