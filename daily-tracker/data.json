@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T14:04:55.021Z",
+    "generated_at": "2026-07-17T15:43:20.299Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Elon Musk Mars",
+        "link": "https://reddit.com/r/aimemes/comments/1uz35qv/elon_musk_mars/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-17T15:35:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A graph of how AI water consumption in America compares to laundry, flushing toilets, etc. From CBS news",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uz28hx/a_graph_of_how_ai_water_consumption_in_america/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-17T15:00:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "A somewhat simple thank you",
+        "link": "https://reddit.com/r/openclaw/comments/1uz1qx6/a_somewhat_simple_thank_you/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-17T14:43:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I built an open-source canvas where Claude responds beside your handwritings",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uz0ajn/i_built_an_opensource_canvas_where_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-17T13:48:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "My priorities are perfectly reasonable",
         "link": "https://reddit.com/r/aimemes/comments/1uyz9mj/my_priorities_are_perfectly_reasonable/",
@@ -379,16 +415,7 @@
         "published_at": "2026-07-17T13:08:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "I built an app with Claude Code that converts any text into high-quality audio. It works with PDFs, blog posts, Substack and Medium links, and even photos of text.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uyydpy/i_built_an_app_with_claude_code_that_converts_any/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-17T12:31:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "That one IT guy:",
@@ -397,7 +424,16 @@
         "published_at": "2026-07-17T11:57:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
+      },
+      {
+        "headline": "China wants to end AI romances | They are having too much impact on young people’s lives",
+        "link": "https://reddit.com/r/singularity/comments/1uyx7iu/china_wants_to_end_ai_romances_they_are_having/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T11:38:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "China just erased America's AI lead | Axios",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-17T11:31:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "OpenClaw is my paralegal helping me through a divorce and custody case in Japan",
@@ -415,16 +451,7 @@
         "published_at": "2026-07-17T11:25:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Anyone else generating MIDI with Claude? Here’s what it produced when asked to compose a track for its own funeral",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uywrg1/anyone_else_generating_midi_with_claude_heres/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-17T11:16:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Gemini 3.5 PRO",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-17T09:18:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Insane new humanoid battle tournament in Shenzhen",
-        "link": "https://reddit.com/r/singularity/comments/1uyu4x8/insane_new_humanoid_battle_tournament_in_shenzhen/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-17T08:50:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Can we stop with the \"reset my limits\" posts?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uytz1n/can_we_stop_with_the_reset_my_limits_posts/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-17T08:40:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "When the open-weights hit way harder than expected",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uyt5pr/when_the_openweights_hit_way_harder_than_expected/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-17T07:53:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T14:04:55.021Z",
+    "reddit_viral_generated_at": "2026-07-17T15:43:20.299Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
