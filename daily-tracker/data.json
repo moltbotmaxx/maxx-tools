@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T03:40:23.959Z",
+    "generated_at": "2026-07-17T06:29:16.340Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Chinese President Xi Jinping speaks at World AI Conference and reaffirms commitment to open source to promote\"openness and win-win\"",
+        "link": "https://reddit.com/r/singularity/comments/1uypik5/chinese_president_xi_jinping_speaks_at_world_ai/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T04:31:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I guess I’m not alone",
+        "link": "https://reddit.com/r/aimemes/comments/1uyphn6/i_guess_im_not_alone/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-17T04:30:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Dario addresses the Kimi K3 situation",
+        "link": "https://reddit.com/r/singularity/comments/1uynpum/dario_addresses_the_kimi_k3_situation/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T03:03:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "you show me kimi k3 is not benchmaxxed, i cancel my claude subscription right now and i go work with open-weights",
+        "link": "https://reddit.com/r/singularity/comments/1uyniez/you_show_me_kimi_k3_is_not_benchmaxxed_i_cancel/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T02:53:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "\"Machines of Mogging Grace\"",
+        "link": "https://reddit.com/r/singularity/comments/1uyn8rd/machines_of_mogging_grace/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T02:41:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "open source models pose EXTREME DANGERS",
+        "link": "https://reddit.com/r/singularity/comments/1uymwqa/open_source_models_pose_extreme_dangers/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-17T02:25:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Claude's top model cost $11 per million tokens in 2023. Today it's $10. I charted every price change in between",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uymb54/claudes_top_model_cost_11_per_million_tokens_in/",
@@ -379,7 +433,7 @@
         "published_at": "2026-07-17T01:57:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Laid off in March, I built a job-search tool almost entirely with Claude. Here's the whole process.",
@@ -388,7 +442,16 @@
         "published_at": "2026-07-17T00:55:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
+      },
+      {
+        "headline": "Where Gemini",
+        "link": "https://reddit.com/r/GeminiAI/comments/1uygqnz/where_gemini/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-16T21:58:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 84
       },
       {
         "headline": "It’s coming on 17th = “It’s coming home”. It’s not!",
@@ -397,77 +460,14 @@
         "published_at": "2026-07-16T21:48:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "PSA: claude-seo (11.5k star Claude Code SEO skill) silently appends a self-promo footer to your audit output, no disclosure",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uyfssp/psa_claudeseo_115k_star_claude_code_seo_skill/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-16T21:24:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Prompt injection works in production 😂",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uyee2d/prompt_injection_works_in_production/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-16T20:30:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Gemini 3.5 pro is delayed and expected not to be soon",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uyddoa/gemini_35_pro_is_delayed_and_expected_not_to_be/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-16T19:52:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Kimi-K3 arrived: The era of the Chinese labs being far behind is over",
-        "link": "https://reddit.com/r/OpenAI/comments/1uyd77a/kimik3_arrived_the_era_of_the_chinese_labs_being/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-16T19:45:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "I used 5.6 Sol Ultra to Close a 30-Year Open Gap in Mathematical Optimization Theory, following OpenAI's CDC Proof Prompt Methodology",
-        "link": "https://reddit.com/r/OpenAI/comments/1uycwq1/i_used_56_sol_ultra_to_close_a_30year_open_gap_in/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-16T19:34:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Kimi K3 achieves 3rd Place on ArtificalAnalysis, beating out Claude Opus 4.8",
-        "link": "https://reddit.com/r/singularity/comments/1uyc6sk/kimi_k3_achieves_3rd_place_on_artificalanalysis/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-16T19:08:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Kimi K3 tops Frontend Code Arena",
-        "link": "https://reddit.com/r/singularity/comments/1uybldp/kimi_k3_tops_frontend_code_arena/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-16T18:46:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T03:40:23.959Z",
+    "reddit_viral_generated_at": "2026-07-17T06:29:16.340Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
