@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T09:22:09.480Z",
+    "generated_at": "2026-07-17T11:42:11.589Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "China just erased America's AI lead | Axios",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uyx2pb/china_just_erased_americas_ai_lead_axios/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-17T11:31:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenClaw is my paralegal helping me through a divorce and custody case in Japan",
+        "link": "https://reddit.com/r/openclaw/comments/1uywxw0/openclaw_is_my_paralegal_helping_me_through_a/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-17T11:25:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Can we stop with the \"reset my limits\" posts?",
         "link": "https://reddit.com/r/ClaudeAI/comments/1uytz1n/can_we_stop_with_the_reset_my_limits_posts/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-17T08:40:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "When the open-weights hit way harder than expected",
@@ -388,7 +406,16 @@
         "published_at": "2026-07-17T07:53:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
+      },
+      {
+        "headline": "I asked ChatGPT what it would do if it were God",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uysq26/i_asked_chatgpt_what_it_would_do_if_it_were_god/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-17T07:26:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Gemini 3.5 Pro coming today?",
@@ -397,16 +424,7 @@
         "published_at": "2026-07-17T06:50:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Kimi K3 is 4.5x the price of GPT 5.6 Sol Medium",
-        "link": "https://reddit.com/r/OpenAI/comments/1uyrea7/kimi_k3_is_45x_the_price_of_gpt_56_sol_medium/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-17T06:12:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "Chinese President Xi Jinping speaks at World AI Conference and reaffirms commitment to open source to promote\"openness and win-win\"",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-17T04:31:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "I guess I’m not alone",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-17T04:30:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "Dario addresses the Kimi K3 situation",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-17T03:03:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 81
       },
       {
         "headline": "When the Claude reset hits unexpectedly, you have 48 hours to use it, and the family still expects food",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-17T03:03:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "open source models pose EXTREME DANGERS",
-        "link": "https://reddit.com/r/singularity/comments/1uymwqa/open_source_models_pose_extreme_dangers/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-17T02:25:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Claude's top model cost $11 per million tokens in 2023. Today it's $10. I charted every price change in between",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uymb54/claudes_top_model_cost_11_per_million_tokens_in/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-17T01:57:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T09:22:09.480Z",
+    "reddit_viral_generated_at": "2026-07-17T11:42:11.589Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
