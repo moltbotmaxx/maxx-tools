@@ -367,28 +367,19 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-17T23:10:05.875Z",
+    "generated_at": "2026-07-18T00:10:58.008Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Another breaking update",
-        "link": "https://reddit.com/r/openclaw/comments/1uzbszx/another_breaking_update/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-17T20:50:23+00:00",
+        "headline": "Potentially the hardest notification chatGPT has ever sent me",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uzck20/potentially_the_hardest_notification_chatgpt_has/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-17T21:19:16+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
-      },
-      {
-        "headline": "GPT-Image just made many architects jobs a lot easier",
-        "link": "https://reddit.com/r/OpenAI/comments/1uzbf2v/gptimage_just_made_many_architects_jobs_a_lot/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-17T20:35:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
       },
       {
         "headline": "David Sacks (VC & US AI Czar)'s reaction to Kimi K3",
@@ -397,7 +388,7 @@
         "published_at": "2026-07-17T18:46:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
         "headline": "Claude Code not allowing me to use Fable 5",
@@ -406,7 +397,7 @@
         "published_at": "2026-07-17T18:23:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "What’s the one OpenClaw workflow you’re secretly proud of?",
@@ -415,7 +406,7 @@
         "published_at": "2026-07-17T17:26:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Got 6 months of Claude Max 20x for free — thanks Anthropic and OpenSource",
@@ -433,7 +424,7 @@
         "published_at": "2026-07-17T16:55:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       },
       {
         "headline": "Moonshot AI (Kimi) office (presumably 2 days before the K3 launch). A $20B valuation startup. Not as flashy as SF rivals",
@@ -442,7 +433,7 @@
         "published_at": "2026-07-17T15:45:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "Elon Musk Mars",
@@ -451,7 +442,7 @@
         "published_at": "2026-07-17T15:35:20+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "This is the most cyberpunk thing I've seen lately, drone swarm returning to base. The past would be stunned and confused.",
@@ -460,14 +451,23 @@
         "published_at": "2026-07-17T15:31:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
+      },
+      {
+        "headline": "A graph of how AI water consumption in America compares to laundry, flushing toilets, etc. From CBS news",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uz28hx/a_graph_of_how_ai_water_consumption_in_america/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-17T15:00:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-17T23:10:05.875Z",
+    "reddit_viral_generated_at": "2026-07-18T00:10:58.008Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
