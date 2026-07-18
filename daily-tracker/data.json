@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T03:34:43.899Z",
+    "generated_at": "2026-07-18T06:20:30.680Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I accidentally started a new chat",
+        "link": "https://reddit.com/r/ChatGPT/comments/1uzmb7g/i_accidentally_started_a_new_chat/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-18T04:47:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Tibo Strikes Back.",
         "link": "https://reddit.com/r/OpenAI/comments/1uzkcln/tibo_strikes_back/",
@@ -379,7 +388,16 @@
         "published_at": "2026-07-18T03:07:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "Claude on X: \"Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits. Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit. Demand for Fable has been challenging to\" / X",
+        "link": "https://reddit.com/r/singularity/comments/1uzji34/claude_on_x_beginning_july_20_claude_fable_5_will/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-18T02:26:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Fable staying on Max",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-18T02:18:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "I made my OpenClaw a Dungeon Master!",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-18T00:02:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 89
       },
       {
         "headline": "White House launches “Gold Eagle,” moving to control frontier AI releases and decide who can access new models",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-17T23:29:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Almonds consume 30x more water than AI Data Centers",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-17T22:51:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Guys what do you think about this?",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-17T22:33:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 85
       },
       {
         "headline": "Potentially the hardest notification chatGPT has ever sent me",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-17T21:19:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 82
       },
       {
         "headline": "David Sacks (VC & US AI Czar)'s reaction to Kimi K3",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-17T18:46:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "Anyone using Kimi K3?",
-        "link": "https://reddit.com/r/openclaw/comments/1uz7arn/anyone_using_kimi_k3/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-17T18:04:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
-      },
-      {
-        "headline": "All this hysteria about datacenter water use. Check out this graph of how Al water consumption in America compares to laundry, flushing toilets, etc. From CBS news. Also AI is only 10% of datacenter use.",
-        "link": "https://reddit.com/r/singularity/comments/1uz74vn/all_this_hysteria_about_datacenter_water_use/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-17T17:58:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
+        "viral_score": 77
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T03:34:43.899Z",
+    "reddit_viral_generated_at": "2026-07-18T06:20:30.680Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
