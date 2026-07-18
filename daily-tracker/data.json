@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T09:00:06.175Z",
+    "generated_at": "2026-07-18T10:41:55.579Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "You like memes?",
+        "link": "https://reddit.com/r/aimemes/comments/1uzqv8b/you_like_memes/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-18T09:01:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Kimi K3 One Shots Super Mario 64",
+        "link": "https://reddit.com/r/singularity/comments/1uzp39g/kimi_k3_one_shots_super_mario_64/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-18T07:17:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "10 secret shortcut codes that make Gemini instantly better. Paste this once, then just type the code before anything.",
         "link": "https://reddit.com/r/GeminiAI/comments/1uzp1xv/10_secret_shortcut_codes_that_make_gemini/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-18T07:15:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Can Anyone Confirm about Gemini on LMArena?",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-18T06:58:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic.",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-18T05:54:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "I accidentally started a new chat",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-18T04:47:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "WHY",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-18T03:33:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       },
       {
         "headline": "Tibo Strikes Back.",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-18T03:07:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Claude on X: \"Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits. Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit. Demand for Fable has been challenging to\" / X",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-18T02:26:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 84
       },
       {
         "headline": "Fable staying on Max",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-18T02:18:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I made my OpenClaw a Dungeon Master!",
-        "link": "https://reddit.com/r/openclaw/comments/1uzgfq1/i_made_my_openclaw_a_dungeon_master/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-18T00:02:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
-      },
-      {
-        "headline": "White House launches “Gold Eagle,” moving to control frontier AI releases and decide who can access new models",
-        "link": "https://reddit.com/r/singularity/comments/1uzfor4/white_house_launches_gold_eagle_moving_to_control/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-17T23:29:26+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T09:00:06.175Z",
+    "reddit_viral_generated_at": "2026-07-18T10:41:55.579Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
