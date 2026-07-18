@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T13:52:07.174Z",
+    "generated_at": "2026-07-18T15:16:26.399Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Scientist's view - the BS of F@ble \"too dangerous for science\" now that Sol and Kimi K3 available",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1uzxcyt/scientists_view_the_bs_of_fble_too_dangerous_for/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-18T14:28:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "After OpenAI’s CDC proof announcement, GPT-5.6 used a similar prompt to close a 30-year gap in convex optimization, verified in Lean",
+        "link": "https://reddit.com/r/singularity/comments/1uzwy9q/after_openais_cdc_proof_announcement_gpt56_used_a/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-18T14:11:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Does anyone know or understand how much usage you get from the “supergrok heavy” plan and if it provides api keys or can work with 0auth on openclaw?",
         "link": "https://reddit.com/r/openclaw/comments/1uzwenx/does_anyone_know_or_understand_how_much_usage_you/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-18T13:48:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "China's Xi Jinping Wants AI to Be Open to the World—and Out of America’s Control",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-18T12:39:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Over context immediately after reset",
@@ -397,16 +415,16 @@
         "published_at": "2026-07-18T11:47:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
-        "headline": "Unexpected",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uzspo1/unexpected/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-18T10:50:32+00:00",
+        "headline": "ChatGPT Voice mode is insane",
+        "link": "https://reddit.com/r/OpenAI/comments/1uzs4gu/chatgpt_voice_mode_is_insane/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-18T10:16:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "You like memes?",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-18T09:01:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "LLMs show hidden bias in favor of their creators (e.g. Claude favors Anthropic)",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-18T07:32:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 84
       },
       {
         "headline": "Kimi K3 One Shots Super Mario 64",
@@ -433,31 +451,13 @@
         "published_at": "2026-07-18T07:17:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 83
       },
       {
         "headline": "Can Anyone Confirm about Gemini on LMArena?",
         "link": "https://reddit.com/r/GeminiAI/comments/1uzor18/can_anyone_confirm_about_gemini_on_lmarena/",
         "subreddit": "GeminiAI",
         "published_at": "2026-07-18T06:58:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Days after Demis Hassabis proposed a FINRA-style AI standards body, the Trump administration is considering a remarkably similar plan",
-        "link": "https://reddit.com/r/singularity/comments/1uznozy/days_after_demis_hassabis_proposed_a_finrastyle/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-18T06:00:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uznldv/chinas_moonshot_ai_claims_kimi_k3_can_rival/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-18T05:54:51+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 82
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T13:52:07.174Z",
+    "reddit_viral_generated_at": "2026-07-18T15:16:26.399Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
