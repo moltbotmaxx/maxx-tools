@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T10:41:55.579Z",
+    "generated_at": "2026-07-18T12:06:19.465Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Over context immediately after reset",
+        "link": "https://reddit.com/r/openclaw/comments/1uztr7q/over_context_immediately_after_reset/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T11:47:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "You like memes?",
         "link": "https://reddit.com/r/aimemes/comments/1uzqv8b/you_like_memes/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-18T09:01:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Kimi K3 One Shots Super Mario 64",
@@ -388,7 +397,7 @@
         "published_at": "2026-07-18T07:17:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "10 secret shortcut codes that make Gemini instantly better. Paste this once, then just type the code before anything.",
@@ -397,7 +406,7 @@
         "published_at": "2026-07-18T07:15:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Can Anyone Confirm about Gemini on LMArena?",
@@ -406,7 +415,7 @@
         "published_at": "2026-07-18T06:58:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic.",
@@ -415,7 +424,7 @@
         "published_at": "2026-07-18T05:54:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "I accidentally started a new chat",
@@ -424,7 +433,7 @@
         "published_at": "2026-07-18T04:47:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "WHY",
@@ -433,7 +442,7 @@
         "published_at": "2026-07-18T03:33:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 81
       },
       {
         "headline": "Tibo Strikes Back.",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-18T03:07:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 80
       },
       {
         "headline": "Claude on X: \"Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits. Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit. Demand for Fable has been challenging to\" / X",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-18T02:26:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Fable staying on Max",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1uzjcop/fable_staying_on_max/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-18T02:18:58+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T10:41:55.579Z",
+    "reddit_viral_generated_at": "2026-07-18T12:06:19.465Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
