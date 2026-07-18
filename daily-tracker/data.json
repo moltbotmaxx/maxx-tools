@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T17:16:14.247Z",
+    "generated_at": "2026-07-18T18:09:40.963Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Think this could happen to OpenAI ?",
+        "link": "https://reddit.com/r/OpenAI/comments/1v02622/think_this_could_happen_to_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-18T17:38:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "3.5 Pro Doesn't have to be more intelligent/more capable than Fable or 5.6 Sol to take back the crown from Anthropic/OpenAI",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v01zgb/35_pro_doesnt_have_to_be_more_intelligentmore/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-18T17:31:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Kimi k3 is now nightmare of Fable 5",
+        "link": "https://reddit.com/r/openclaw/comments/1v01sx5/kimi_k3_is_now_nightmare_of_fable_5/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T17:24:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude Code 50% extra weekly usage extended to Aug 19",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v01o7q/claude_code_50_extra_weekly_usage_extended_to_aug/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-18T17:19:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Think this could happen to OpenAI / Anthropic?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v01bed/think_this_could_happen_to_openai_anthropic/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-18T17:05:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "High token usage (41.5K/msg) on simple tasks — context optimization tips?",
         "link": "https://reddit.com/r/openclaw/comments/1v00uf6/high_token_usage_415kmsg_on_simple_tasks_context/",
@@ -379,7 +424,16 @@
         "published_at": "2026-07-18T16:47:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Ai has gotten WAY too good and now *I* am the bottleneck! Has anybody else felt this?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v00i68/ai_has_gotten_way_too_good_and_now_i_am_the/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-18T16:33:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Generate a frame from a nonexistent movie that I would be embarrassed to be watching if my parents walked in and saw me. Keep it SFW. Do not include any nudity or gore.",
@@ -388,7 +442,7 @@
         "published_at": "2026-07-18T16:22:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Bad vibes from the \"Head of Strategic Futures at OpenAI\"(X: @deanwball)",
@@ -397,16 +451,7 @@
         "published_at": "2026-07-18T16:15:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Benchmarked OpenAI GPT Models in Doom",
-        "link": "https://reddit.com/r/OpenAI/comments/1uzzm6l/benchmarked_openai_gpt_models_in_doom/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-18T15:58:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Scientist's view - the BS of F@ble \"too dangerous for science\" now that Sol and Kimi K3 available",
@@ -415,59 +460,14 @@
         "published_at": "2026-07-18T14:28:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "After OpenAI’s CDC proof announcement, GPT-5.6 used a similar prompt to close a 30-year gap in convex optimization, verified in Lean",
-        "link": "https://reddit.com/r/singularity/comments/1uzwy9q/after_openais_cdc_proof_announcement_gpt56_used_a/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-18T14:11:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "What are these “[1.1.1]” things??",
-        "link": "https://reddit.com/r/GeminiAI/comments/1uzvpx7/what_are_these_111_things/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-18T13:19:06+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "China's Xi Jinping Wants AI to Be Open to the World—and Out of America’s Control",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1uzuttb/chinas_xi_jinping_wants_ai_to_be_open_to_the/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-18T12:39:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Chat GpT Is becoming exceedingly cautious",
-        "link": "https://reddit.com/r/ChatGPT/comments/1uzslsj/chat_gpt_is_becoming_exceedingly_cautious/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-18T10:44:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "ChatGPT Voice mode is insane",
-        "link": "https://reddit.com/r/OpenAI/comments/1uzs4gu/chatgpt_voice_mode_is_insane/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-18T10:16:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T17:16:14.247Z",
+    "reddit_viral_generated_at": "2026-07-18T18:09:40.963Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
