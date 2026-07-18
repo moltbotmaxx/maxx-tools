@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T22:08:48.298Z",
+    "generated_at": "2026-07-18T23:12:33.269Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Problems with 2026.7.11",
+        "link": "https://reddit.com/r/openclaw/comments/1v08z64/problems_with_2026711/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T22:13:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Want to give OpenClaw another shot, but what happened the first time has scarred me",
+        "link": "https://reddit.com/r/openclaw/comments/1v08w4f/want_to_give_openclaw_another_shot_but_what/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T22:09:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Made this to see what Claude was doing. Now I basically work from it",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v08p2q/made_this_to_see_what_claude_was_doing_now_i/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-18T22:01:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "This is one of the funniest memes I’ve seen in a while.",
         "link": "https://reddit.com/r/aimemes/comments/1v08ntp/this_is_one_of_the_funniest_memes_ive_seen_in_a/",
@@ -379,22 +406,13 @@
         "published_at": "2026-07-18T22:00:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "I want it to work so bad",
-        "link": "https://reddit.com/r/openclaw/comments/1v08hbx/i_want_it_to_work_so_bad/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-18T21:52:34+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 99
       },
       {
-        "headline": "How Emergent hit a $1.5B valuation with a $130M Series C by focusing on local businesses instead of tech developers",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v07tmp/how_emergent_hit_a_15b_valuation_with_a_130m/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-18T21:24:44+00:00",
+        "headline": "What are people actually using Claude for?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v08afp/what_are_people_actually_using_claude_for/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-18T21:44:34+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 98
@@ -406,15 +424,6 @@
         "published_at": "2026-07-18T21:00:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "OpenClawMachines - CloudInfrastructure for OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1v06bv0/openclawmachines_cloudinfrastructure_for_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-18T20:22:19+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 96
       },
       {
@@ -424,16 +433,16 @@
         "published_at": "2026-07-18T20:02:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 94
       },
       {
-        "headline": "Just to be clear, owning the hardware isn’t easy either!",
-        "link": "https://reddit.com/r/singularity/comments/1v03lhb/just_to_be_clear_owning_the_hardware_isnt_easy/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-18T18:33:56+00:00",
+        "headline": "OpenAI's head of strategic futures thinks open-weight models are a \"dystopian hellscape\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1v05o91/openais_head_of_strategic_futures_thinks/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-18T19:56:17+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 93
       },
       {
         "headline": "Think this could happen to OpenAI ?",
@@ -442,22 +451,13 @@
         "published_at": "2026-07-18T17:38:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "3.5 Pro Doesn't have to be more intelligent/more capable than Fable or 5.6 Sol to take back the crown from Anthropic/OpenAI",
         "link": "https://reddit.com/r/GeminiAI/comments/1v01zgb/35_pro_doesnt_have_to_be_more_intelligentmore/",
         "subreddit": "GeminiAI",
         "published_at": "2026-07-18T17:31:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Kimi k3 is now nightmare of Fable 5",
-        "link": "https://reddit.com/r/openclaw/comments/1v01sx5/kimi_k3_is_now_nightmare_of_fable_5/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-18T17:24:34+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T22:08:48.298Z",
+    "reddit_viral_generated_at": "2026-07-18T23:12:33.269Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
