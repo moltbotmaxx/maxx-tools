@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T21:07:36.655Z",
+    "generated_at": "2026-07-18T22:08:48.298Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "This is one of the funniest memes I’ve seen in a while.",
+        "link": "https://reddit.com/r/aimemes/comments/1v08ntp/this_is_one_of_the_funniest_memes_ive_seen_in_a/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-18T22:00:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I want it to work so bad",
+        "link": "https://reddit.com/r/openclaw/comments/1v08hbx/i_want_it_to_work_so_bad/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T21:52:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "How Emergent hit a $1.5B valuation with a $130M Series C by focusing on local businesses instead of tech developers",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v07tmp/how_emergent_hit_a_15b_valuation_with_a_130m/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-18T21:24:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "OpenClaw Support & Diagnostic Agent",
         "link": "https://reddit.com/r/openclaw/comments/1v078zj/openclaw_support_diagnostic_agent/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-18T21:00:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "OpenClawMachines - CloudInfrastructure for OpenClaw",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-18T20:22:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
       },
       {
         "headline": "Another move to sweeten the masses",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-18T20:02:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Just to be clear, owning the hardware isn’t easy either!",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-18T18:33:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Think this could happen to OpenAI ?",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-18T17:38:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "3.5 Pro Doesn't have to be more intelligent/more capable than Fable or 5.6 Sol to take back the crown from Anthropic/OpenAI",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-18T17:31:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Kimi k3 is now nightmare of Fable 5",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-18T17:24:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Claude Code 50% extra weekly usage extended to Aug 19",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v01o7q/claude_code_50_extra_weekly_usage_extended_to_aug/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-18T17:19:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Think this could happen to OpenAI / Anthropic?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v01bed/think_this_could_happen_to_openai_anthropic/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-18T17:05:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "LFG!!!!",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v013zt/lfg/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-18T16:57:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T21:07:36.655Z",
+    "reddit_viral_generated_at": "2026-07-18T22:08:48.298Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
