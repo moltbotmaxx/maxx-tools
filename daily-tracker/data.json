@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T19:34:10.082Z",
+    "generated_at": "2026-07-19T21:08:44.496Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I built EmperorClaw — a self-hosted operations layer for distributed OpenClaw agent teams",
+        "link": "https://reddit.com/r/openclaw/comments/1v10fr0/i_built_emperorclaw_a_selfhosted_operations_layer/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-19T20:06:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Help - I'm spending $100/day on AI",
+        "link": "https://reddit.com/r/openclaw/comments/1v10b2k/help_im_spending_100day_on_ai/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-19T20:01:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "The blue guy POV is insane",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v0z9ve/the_blue_guy_pov_is_insane/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-19T19:15:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Qwen3.8",
         "link": "https://reddit.com/r/singularity/comments/1v0ygxj/qwen38/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-19T18:42:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "POV: My Claude credits are about to hit zero.",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-19T17:45:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Artificial Insanity",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-19T17:04:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "OpenAI head of strategic futures says open-weight model dominance is AI communism",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-19T16:40:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Kimi is temporarily pausing new subscriptions and prioritizing compute for current members due to surging demand.",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-19T16:16:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Sam Altman emails OpenAI board in 2022",
@@ -424,40 +451,13 @@
         "published_at": "2026-07-19T16:13:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "tokenmaxing and successmaxing not the same",
         "link": "https://reddit.com/r/OpenAI/comments/1v0tuzi/tokenmaxing_and_successmaxing_not_the_same/",
         "subreddit": "OpenAI",
         "published_at": "2026-07-19T15:43:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "David Sacks calls Anthropic and OpenAI a duopoly, and says they want to use the government to eliminate their open source competition",
-        "link": "https://reddit.com/r/singularity/comments/1v0sxo1/david_sacks_calls_anthropic_and_openai_a_duopoly/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-19T15:05:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Chat Down",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v0slnw/chat_down/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T14:52:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Generate an innocent photo that would be impossible to explain while being arrested.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v0ru8v/generate_an_innocent_photo_that_would_be/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T14:20:34+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 89
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T19:34:10.082Z",
+    "reddit_viral_generated_at": "2026-07-19T21:08:44.496Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
