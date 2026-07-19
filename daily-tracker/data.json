@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T17:17:57.139Z",
+    "generated_at": "2026-07-19T18:11:36.708Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "POV: My Claude credits are about to hit zero.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v0x0ks/pov_my_claude_credits_are_about_to_hit_zero/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-19T17:45:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Artificial Insanity",
         "link": "https://reddit.com/r/aimemes/comments/1v0vygb/artificial_insanity/",
@@ -379,7 +388,16 @@
         "published_at": "2026-07-19T17:04:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "OpenAI head of strategic futures says open-weight model dominance is AI communism",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v0vcg8/openai_head_of_strategic_futures_says_openweight/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-19T16:40:38+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "Kimi is temporarily pausing new subscriptions and prioritizing compute for current members due to surging demand.",
@@ -388,7 +406,16 @@
         "published_at": "2026-07-19T16:16:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 96
+      },
+      {
+        "headline": "Sam Altman emails OpenAI board in 2022",
+        "link": "https://reddit.com/r/OpenAI/comments/1v0uo80/sam_altman_emails_openai_board_in_2022/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-19T16:13:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "tokenmaxing and successmaxing not the same",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-19T15:43:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "David Sacks calls Anthropic and OpenAI a duopoly, and says they want to use the government to eliminate their open source competition",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-19T15:05:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Chat Down",
@@ -415,16 +442,7 @@
         "published_at": "2026-07-19T14:52:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "ChatGPT is everything all down?",
-        "link": "https://reddit.com/r/OpenAI/comments/1v0s5fq/chatgpt_is_everything_all_down/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-19T14:33:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Chatgpt currently Down?",
@@ -433,41 +451,23 @@
         "published_at": "2026-07-19T14:24:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Could OpenClaw become a voice-first assistant for a completely blind Spanish-speaking senior?",
-        "link": "https://reddit.com/r/openclaw/comments/1v0rfkp/could_openclaw_become_a_voicefirst_assistant_for/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-19T14:03:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Openclaw skill workshop is a complete headache designed to ruin my skills",
-        "link": "https://reddit.com/r/openclaw/comments/1v0r1a5/openclaw_skill_workshop_is_a_complete_headache/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-19T13:46:43+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "asked fable 5 to make its own website pretty. now my claude has falling sakura petals and i cant go back",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v0pl6d/asked_fable_5_to_make_its_own_website_pretty_now/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-19T12:41:28+00:00",
+        "headline": "Generate an innocent photo that would be impossible to explain while being arrested.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v0ru8v/generate_an_innocent_photo_that_would_be/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-19T14:20:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T17:17:57.139Z",
+    "reddit_viral_generated_at": "2026-07-19T18:11:36.708Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
