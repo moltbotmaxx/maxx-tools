@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T22:10:27.839Z",
+    "generated_at": "2026-07-19T23:13:15.724Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Many people are saying I won",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v147lz/many_people_are_saying_i_won/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-19T22:50:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "What happens next?",
         "link": "https://reddit.com/r/ChatGPT/comments/1v12bei/what_happens_next/",
@@ -379,7 +388,7 @@
         "published_at": "2026-07-19T21:29:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Who invited bro",
@@ -388,7 +397,25 @@
         "published_at": "2026-07-19T21:26:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "That time when a CEO ignored his lawyers and used ChatGPT to help him avoid paying bonuses to his employees",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v12157/that_time_when_a_ceo_ignored_his_lawyers_and_used/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-19T21:15:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "The race is on...",
+        "link": "https://reddit.com/r/singularity/comments/1v10h32/the_race_is_on/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-19T20:07:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "I built EmperorClaw — a self-hosted operations layer for distributed OpenClaw agent teams",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-19T20:06:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "Help - I'm spending $100/day on AI",
@@ -406,16 +433,7 @@
         "published_at": "2026-07-19T20:01:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "The blue guy POV is insane",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v0z9ve/the_blue_guy_pov_is_insane/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T19:15:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "Qwen3.8",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-19T18:42:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "POV: My Claude credits are about to hit zero.",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-19T17:45:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Artificial Insanity",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-19T17:04:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "OpenAI head of strategic futures says open-weight model dominance is AI communism",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v0vcg8/openai_head_of_strategic_futures_says_openweight/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T16:40:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Kimi is temporarily pausing new subscriptions and prioritizing compute for current members due to surging demand.",
-        "link": "https://reddit.com/r/singularity/comments/1v0uqm4/kimi_is_temporarily_pausing_new_subscriptions_and/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-19T16:16:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T22:10:27.839Z",
+    "reddit_viral_generated_at": "2026-07-19T23:13:15.724Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
