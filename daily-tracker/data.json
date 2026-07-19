@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T16:13:14.222Z",
+    "generated_at": "2026-07-19T17:17:57.139Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Artificial Insanity",
+        "link": "https://reddit.com/r/aimemes/comments/1v0vygb/artificial_insanity/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-19T17:04:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Kimi is temporarily pausing new subscriptions and prioritizing compute for current members due to surging demand.",
+        "link": "https://reddit.com/r/singularity/comments/1v0uqm4/kimi_is_temporarily_pausing_new_subscriptions_and/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-19T16:16:33+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "tokenmaxing and successmaxing not the same",
         "link": "https://reddit.com/r/OpenAI/comments/1v0tuzi/tokenmaxing_and_successmaxing_not_the_same/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-19T15:43:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "David Sacks calls Anthropic and OpenAI a duopoly, and says they want to use the government to eliminate their open source competition",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-19T15:05:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Chat Down",
@@ -397,25 +415,7 @@
         "published_at": "2026-07-19T14:52:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Taino and Japanese assassins talking gods 🇵🇷🤜🤛🇯🇵",
-        "link": "https://reddit.com/r/aimemes/comments/1v0sdvs/taino_and_japanese_assassins_talking_gods/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-19T14:43:17+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "What do guys use when you need a db and/or file storage?",
-        "link": "https://reddit.com/r/openclaw/comments/1v0saj8/what_do_guys_use_when_you_need_a_db_andor_file/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-19T14:39:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "ChatGPT is everything all down?",
@@ -424,7 +424,7 @@
         "published_at": "2026-07-19T14:33:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "Chatgpt currently Down?",
@@ -433,7 +433,16 @@
         "published_at": "2026-07-19T14:24:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
+      },
+      {
+        "headline": "Could OpenClaw become a voice-first assistant for a completely blind Spanish-speaking senior?",
+        "link": "https://reddit.com/r/openclaw/comments/1v0rfkp/could_openclaw_become_a_voicefirst_assistant_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-19T14:03:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Openclaw skill workshop is a complete headache designed to ruin my skills",
@@ -442,7 +451,7 @@
         "published_at": "2026-07-19T13:46:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "asked fable 5 to make its own website pretty. now my claude has falling sakura petals and i cant go back",
@@ -451,23 +460,14 @@
         "published_at": "2026-07-19T12:41:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Does Kimi K3 change the distillation debate?",
-        "link": "https://reddit.com/r/singularity/comments/1v0owoc/does_kimi_k3_change_the_distillation_debate/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-19T12:09:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T16:13:14.222Z",
+    "reddit_viral_generated_at": "2026-07-19T17:17:57.139Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
