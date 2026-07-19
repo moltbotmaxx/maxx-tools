@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T10:46:11.626Z",
+    "generated_at": "2026-07-19T12:07:05.421Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Talk to openclaw",
+        "link": "https://reddit.com/r/openclaw/comments/1v0oe4o/talk_to_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-19T11:43:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenAI head of strategic futures says open-weight model dominance is AI communism",
+        "link": "https://reddit.com/r/OpenAI/comments/1v0nx8b/openai_head_of_strategic_futures_says_openweight/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-19T11:19:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Follow-up: OpenAI fixed the GPT-5.6 Luna bug I reported in four days",
+        "link": "https://reddit.com/r/OpenAI/comments/1v0nr22/followup_openai_fixed_the_gpt56_luna_bug_i/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-19T11:09:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Engram - a psychology and neuroscience based learning plugin for YOU to effectively learn any topic, now on OpenClaw :)",
+        "link": "https://reddit.com/r/openclaw/comments/1v0nfop/engram_a_psychology_and_neuroscience_based/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-19T10:52:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Should I be using Claude Code desktop app instead of the VSCode extension?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v0mnwx/should_i_be_using_claude_code_desktop_app_instead/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-19T10:07:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "What is anthropic's logic even for not keeping fable on pro but allowing it on max?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v0mmwm/what_is_anthropics_logic_even_for_not_keeping/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-19T10:06:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "The return of the Dragon",
         "link": "https://reddit.com/r/GeminiAI/comments/1v0lx3f/the_return_of_the_dragon/",
@@ -379,7 +433,7 @@
         "published_at": "2026-07-19T09:23:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "JUST IN: Qwen 3.8 is coming. Open weight storm from China is continuing.",
@@ -388,7 +442,7 @@
         "published_at": "2026-07-19T08:35:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
       },
       {
         "headline": "Anybody hates the Pet button location?",
@@ -397,16 +451,7 @@
         "published_at": "2026-07-19T07:53:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Claude built me playlists from new songs based on me Spotify Export",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v0jjo3/claude_built_me_playlists_from_new_songs_based_on/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-19T07:02:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Elon Musk Begging Epstein",
@@ -415,59 +460,14 @@
         "published_at": "2026-07-19T06:28:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I haven’t generally seen Redditors’ predictions turn out to be accurate, so I don’t think AI is a bubble or that OpenAI is going to fail.",
-        "link": "https://reddit.com/r/OpenAI/comments/1v0icpd/i_havent_generally_seen_redditors_predictions/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-19T05:55:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "How do you use Claude to improve your life with AUTOMATION?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v0h49m/how_do_you_use_claude_to_improve_your_life_with/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-19T04:47:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Who even needs to buy software anymore?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v0gw6z/who_even_needs_to_buy_software_anymore/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-19T04:34:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "ChatGPT leading itself to break its own policy.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v0gbxn/chatgpt_leading_itself_to_break_its_own_policy/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T04:04:51+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 87
-      },
-      {
-        "headline": "A tweet from an Open AI company with no hidden agenda",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v0f2ts/a_tweet_from_an_open_ai_company_with_no_hidden/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-19T03:00:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T10:46:11.626Z",
+    "reddit_viral_generated_at": "2026-07-19T12:07:05.421Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
