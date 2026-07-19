@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-18T23:12:33.269Z",
+    "generated_at": "2026-07-19T00:11:44.083Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Recommendations for a tool(s) to have a Whatsapp family assistant?",
+        "link": "https://reddit.com/r/openclaw/comments/1v0bcwy/recommendations_for_a_tools_to_have_a_whatsapp/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T23:59:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Am I alone in not caring how well an AI can \"Vibe Code\"?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v0a0s8/am_i_alone_in_not_caring_how_well_an_ai_can_vibe/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-18T23:00:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Problems with 2026.7.11",
         "link": "https://reddit.com/r/openclaw/comments/1v08z64/problems_with_2026711/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-18T22:13:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Want to give OpenClaw another shot, but what happened the first time has scarred me",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-18T22:09:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Made this to see what Claude was doing. Now I basically work from it",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-18T22:01:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "This is one of the funniest memes I’ve seen in a while.",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-18T22:00:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "What are people actually using Claude for?",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-18T21:44:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "OpenClaw Support & Diagnostic Agent",
@@ -424,50 +442,32 @@
         "published_at": "2026-07-18T21:00:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
-        "headline": "Another move to sweeten the masses",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v05ucl/another_move_to_sweeten_the_masses/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-18T20:02:51+00:00",
+        "headline": "I’m shocked I got ChatGPT to do this",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v073ay/im_shocked_i_got_chatgpt_to_do_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-18T20:53:41+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
-        "headline": "OpenAI's head of strategic futures thinks open-weight models are a \"dystopian hellscape\"",
-        "link": "https://reddit.com/r/OpenAI/comments/1v05o91/openais_head_of_strategic_futures_thinks/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-18T19:56:17+00:00",
+        "headline": "OpenClawMachines - CloudInfrastructure for OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1v06bv0/openclawmachines_cloudinfrastructure_for_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-18T20:22:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Think this could happen to OpenAI ?",
-        "link": "https://reddit.com/r/OpenAI/comments/1v02622/think_this_could_happen_to_openai/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-18T17:38:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "3.5 Pro Doesn't have to be more intelligent/more capable than Fable or 5.6 Sol to take back the crown from Anthropic/OpenAI",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v01zgb/35_pro_doesnt_have_to_be_more_intelligentmore/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-18T17:31:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-18T23:12:33.269Z",
+    "reddit_viral_generated_at": "2026-07-19T00:11:44.083Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
