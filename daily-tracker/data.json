@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T21:08:44.496Z",
+    "generated_at": "2026-07-19T22:10:27.839Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What happens next?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v12bei/what_happens_next/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-19T21:29:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Who invited bro",
+        "link": "https://reddit.com/r/aimemes/comments/1v129hf/who_invited_bro/",
+        "subreddit": "aimemes",
+        "published_at": "2026-07-19T21:26:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "I built EmperorClaw — a self-hosted operations layer for distributed OpenClaw agent teams",
         "link": "https://reddit.com/r/openclaw/comments/1v10fr0/i_built_emperorclaw_a_selfhosted_operations_layer/",
@@ -379,7 +397,7 @@
         "published_at": "2026-07-19T20:06:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Help - I'm spending $100/day on AI",
@@ -388,7 +406,7 @@
         "published_at": "2026-07-19T20:01:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "The blue guy POV is insane",
@@ -397,7 +415,7 @@
         "published_at": "2026-07-19T19:15:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "Qwen3.8",
@@ -406,7 +424,7 @@
         "published_at": "2026-07-19T18:42:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "POV: My Claude credits are about to hit zero.",
@@ -415,7 +433,7 @@
         "published_at": "2026-07-19T17:45:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Artificial Insanity",
@@ -424,7 +442,7 @@
         "published_at": "2026-07-19T17:04:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "OpenAI head of strategic futures says open-weight model dominance is AI communism",
@@ -433,7 +451,7 @@
         "published_at": "2026-07-19T16:40:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Kimi is temporarily pausing new subscriptions and prioritizing compute for current members due to surging demand.",
@@ -442,32 +460,14 @@
         "published_at": "2026-07-19T16:16:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Sam Altman emails OpenAI board in 2022",
-        "link": "https://reddit.com/r/OpenAI/comments/1v0uo80/sam_altman_emails_openai_board_in_2022/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-19T16:13:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "tokenmaxing and successmaxing not the same",
-        "link": "https://reddit.com/r/OpenAI/comments/1v0tuzi/tokenmaxing_and_successmaxing_not_the_same/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-19T15:43:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T21:08:44.496Z",
+    "reddit_viral_generated_at": "2026-07-19T22:10:27.839Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
