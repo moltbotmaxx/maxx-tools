@@ -367,20 +367,11 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-19T23:13:15.724Z",
+    "generated_at": "2026-07-20T00:14:02.862Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
-      {
-        "headline": "Many people are saying I won",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v147lz/many_people_are_saying_i_won/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T22:50:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
       {
         "headline": "What happens next?",
         "link": "https://reddit.com/r/ChatGPT/comments/1v12bei/what_happens_next/",
@@ -388,7 +379,7 @@
         "published_at": "2026-07-19T21:29:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 100
       },
       {
         "headline": "Who invited bro",
@@ -397,7 +388,7 @@
         "published_at": "2026-07-19T21:26:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 100
       },
       {
         "headline": "That time when a CEO ignored his lawyers and used ChatGPT to help him avoid paying bonuses to his employees",
@@ -406,7 +397,16 @@
         "published_at": "2026-07-19T21:15:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 99
+      },
+      {
+        "headline": "AheadForm totally stole the show at the World Artificial Intelligence Conference '26 in Shanghai",
+        "link": "https://reddit.com/r/singularity/comments/1v11u3s/aheadform_totally_stole_the_show_at_the_world/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-19T21:06:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "The race is on...",
@@ -415,16 +415,7 @@
         "published_at": "2026-07-19T20:07:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I built EmperorClaw — a self-hosted operations layer for distributed OpenClaw agent teams",
-        "link": "https://reddit.com/r/openclaw/comments/1v10fr0/i_built_emperorclaw_a_selfhosted_operations_layer/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-19T20:06:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 96
       },
       {
         "headline": "Help - I'm spending $100/day on AI",
@@ -433,7 +424,16 @@
         "published_at": "2026-07-19T20:01:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 96
+      },
+      {
+        "headline": "How does Gemini still make mistakes like this?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v109tf/how_does_gemini_still_make_mistakes_like_this/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-19T20:00:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Qwen3.8",
@@ -442,7 +442,7 @@
         "published_at": "2026-07-19T18:42:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 92
       },
       {
         "headline": "POV: My Claude credits are about to hit zero.",
@@ -451,7 +451,7 @@
         "published_at": "2026-07-19T17:45:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 90
       },
       {
         "headline": "Artificial Insanity",
@@ -460,14 +460,14 @@
         "published_at": "2026-07-19T17:04:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-19T23:13:15.724Z",
+    "reddit_viral_generated_at": "2026-07-20T00:14:02.862Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
