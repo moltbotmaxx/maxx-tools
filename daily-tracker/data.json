@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-20T04:06:52.207Z",
+    "generated_at": "2026-07-20T07:31:47.547Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OpenAI and Anthropic’s behavior inspired me to make an ASI comic tonight … 🙂",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v1dx46/openai_and_anthropics_behavior_inspired_me_to/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-20T06:51:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Any success story of you guys using openclaw for startups, operations? How much did you make and at what burn rate?",
+        "link": "https://reddit.com/r/openclaw/comments/1v1dafb/any_success_story_of_you_guys_using_openclaw_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-20T06:14:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Generate a ridiculous caught in the act photo",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v1cqmi/generate_a_ridiculous_caught_in_the_act_photo/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-20T05:44:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Starbucks looking to build versus buy software from Microsoft and IBM",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v1cprm/starbucks_looking_to_build_versus_buy_software/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-20T05:43:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "I built loom — a free generative MIDI instrument for macOS that grows a whole evolving ambient electronic track from a single seed",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v1c1d4/i_built_loom_a_free_generative_midi_instrument/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-20T05:05:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Fable may have disproved a 100 year old conjecture.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v1b4i8/fable_may_have_disproved_a_100_year_old_conjecture/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-20T04:15:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Apparently the Jacobian conjecture was just proven false by Fable",
+        "link": "https://reddit.com/r/singularity/comments/1v1aie6/apparently_the_jacobian_conjecture_was_just/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-20T03:44:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "What would you do if you had a fully working offline Claude Code in the year 2000?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v19c2x/what_would_you_do_if_you_had_a_fully_working/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-20T02:44:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
+      },
       {
         "headline": "Congrats to Messi for being the first team captain to win two world cups!",
         "link": "https://reddit.com/r/GeminiAI/comments/1v19aq1/congrats_to_messi_for_being_the_first_team/",
@@ -379,7 +451,7 @@
         "published_at": "2026-07-20T02:43:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 89
       },
       {
         "headline": "David Sacks says U.S. AI guardrails are making American models less competitive after China’s Kimi K3 fixed 15 security bugs that Codex and Fable refused",
@@ -388,86 +460,14 @@
         "published_at": "2026-07-20T01:07:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "what going on with gemini. whatever i say it replies \"I'm just a language model and can't help with that.\"",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v15usj/what_going_on_with_gemini_whatever_i_say_it/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-20T00:00:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "AI advice made people three times less accurate but twice as confident, researchers found",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v14avy/ai_advice_made_people_three_times_less_accurate/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-19T22:54:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "What happens next?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v12bei/what_happens_next/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-19T21:29:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Who invited bro",
-        "link": "https://reddit.com/r/aimemes/comments/1v129hf/who_invited_bro/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-19T21:26:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "That time when a CEO ignored his lawyers and used ChatGPT to help him avoid paying bonuses to his employees",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v12157/that_time_when_a_ceo_ignored_his_lawyers_and_used/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-19T21:15:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "The race is on...",
-        "link": "https://reddit.com/r/singularity/comments/1v10h32/the_race_is_on/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-19T20:07:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "How does Gemini still make mistakes like this?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v109tf/how_does_gemini_still_make_mistakes_like_this/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-19T20:00:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Qwen3.8",
-        "link": "https://reddit.com/r/singularity/comments/1v0ygxj/qwen38/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-19T18:42:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-20T04:06:52.207Z",
+    "reddit_viral_generated_at": "2026-07-20T07:31:47.547Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
