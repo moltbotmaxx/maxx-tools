@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-22T20:32:27.427Z",
+    "generated_at": "2026-07-22T22:16:51.288Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini 3.6 Flash Observation",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v3tsnl/gemini_36_flash_observation/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-22T21:29:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Frontier lab PR strategy, 2026",
+        "link": "https://reddit.com/r/OpenAI/comments/1v3t50w/frontier_lab_pr_strategy_2026/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-22T21:05:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What doesn't scale well in OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1v3sxua/what_doesnt_scale_well_in_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-22T20:57:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I wanted a reverse merman, but I got this monstrosity",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v3pwdu/i_wanted_a_reverse_merman_but_i_got_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-22T19:11:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Gemini is the API market leader (OpenRouter)",
         "link": "https://reddit.com/r/GeminiAI/comments/1v3p100/gemini_is_the_api_market_leader_openrouter/",
@@ -379,7 +415,7 @@
         "published_at": "2026-07-22T18:41:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Task failed successfully",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-22T18:27:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "I created a plugin to create chatgpt-style labels for conversations in Openclaw Control",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-22T18:22:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "A small trick to guide an LLM Agent while it’s coding",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-22T18:12:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "I’ve lost control",
@@ -415,7 +451,7 @@
         "published_at": "2026-07-22T18:01:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "An AI escaped its sandbox yesterday, hacked a real company, and nobody asked it to. Here's what actually happened.",
@@ -424,50 +460,14 @@
         "published_at": "2026-07-22T17:40:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "The Dinitz-Garg-Goemans conjecture is false",
-        "link": "https://reddit.com/r/singularity/comments/1v3mxrc/the_dinitzgarggoemans_conjecture_is_false/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-22T17:29:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "How to make OpenClaw delegate complex tasks to Claude Code & Codex (and aggregate the results)",
-        "link": "https://reddit.com/r/openclaw/comments/1v3m6jc/how_to_make_openclaw_delegate_complex_tasks_to/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-22T17:04:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "❗NEWS❗The former Director of the White House Office of Science and Technology Policy and Presidential Science Advisor stated that Kimi K3 was distilled from Anthropic's Fable.",
-        "link": "https://reddit.com/r/singularity/comments/1v3lpwv/newsthe_former_director_of_the_white_house_office/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-22T16:48:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Started letting my AI handle work messages, my boss is catching on",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v3jq7l/started_letting_my_ai_handle_work_messages_my/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-22T15:38:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-22T20:32:27.427Z",
+    "reddit_viral_generated_at": "2026-07-22T22:16:51.288Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
