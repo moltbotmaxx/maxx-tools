@@ -367,11 +367,92 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-22T14:25:23.453Z",
+    "generated_at": "2026-07-22T18:35:13.072Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The Dinitz-Garg-Goemans conjecture is false",
+        "link": "https://reddit.com/r/singularity/comments/1v3mxrc/the_dinitzgarggoemans_conjecture_is_false/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-22T17:29:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "How to make OpenClaw delegate complex tasks to Claude Code & Codex (and aggregate the results)",
+        "link": "https://reddit.com/r/openclaw/comments/1v3m6jc/how_to_make_openclaw_delegate_complex_tasks_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-22T17:04:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "❗NEWS❗The former Director of the White House Office of Science and Technology Policy and Presidential Science Advisor stated that Kimi K3 was distilled from Anthropic's Fable.",
+        "link": "https://reddit.com/r/singularity/comments/1v3lpwv/newsthe_former_director_of_the_white_house_office/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-22T16:48:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Run OpenClaw on an Acurast Processor",
+        "link": "https://reddit.com/r/openclaw/comments/1v3l26j/run_openclaw_on_an_acurast_processor/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-22T16:25:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Started letting my AI handle work messages, my boss is catching on",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v3jq7l/started_letting_my_ai_handle_work_messages_my/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-22T15:38:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "This is what happens when you hire cleaners in the bay area!",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v3iqde/this_is_what_happens_when_you_hire_cleaners_in/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-22T15:03:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Unlimited AI tokens aren't unlimited after all as US Army burns through supply",
+        "link": "https://reddit.com/r/singularity/comments/1v3ia58/unlimited_ai_tokens_arent_unlimited_after_all_as/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-22T14:47:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Gemini 2.5 Pro Era was undoubtedly the best one",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v3hwii/gemini_25_pro_era_was_undoubtedly_the_best_one/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-22T14:33:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "Introducing OpenAI Presence",
+        "link": "https://reddit.com/r/OpenAI/comments/1v3gx7e/introducing_openai_presence/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-22T13:56:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
       {
         "headline": "Gemini 3.6 Flash: twice as fast, 18% cheaper, and precisely 0% smarter🥲",
         "link": "https://reddit.com/r/OpenAI/comments/1v3g73p/gemini_36_flash_twice_as_fast_18_cheaper_and/",
@@ -379,95 +460,14 @@
         "published_at": "2026-07-22T13:28:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Reddit might cut off Google's AI access and yes, it makes sense",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v3ewvq/reddit_might_cut_off_googles_ai_access_and_yes_it/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-22T12:36:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Is this true",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v3e8ji/is_this_true/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-22T12:07:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "I tested four models on the same one-shot 3D dashboard prompt.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v3dvof/i_tested_four_models_on_the_same_oneshot_3d/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-22T11:51:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic Claims 50% usage boost that doesn't exist :)",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v3d8iz/anthropic_claims_50_usage_boost_that_doesnt_exist/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-22T11:21:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Open AI hacks Hugging Face",
-        "link": "https://reddit.com/r/singularity/comments/1v3cwf4/open_ai_hacks_hugging_face/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-22T11:05:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "In light of the recent HuggingFace incident caused by OpenAI's internal model",
-        "link": "https://reddit.com/r/singularity/comments/1v3b12f/in_light_of_the_recent_huggingface_incident/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-22T09:25:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gemini is behind Meta's Models now, lol",
-        "link": "https://reddit.com/r/singularity/comments/1v397w9/gemini_is_behind_metas_models_now_lol/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-22T07:41:48+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "What AI videos looked like just 3 years ago",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v36xhd/what_ai_videos_looked_like_just_3_years_ago/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-22T05:36:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Gemini will comeback sooner",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v34ci8/gemini_will_comeback_sooner/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-22T03:27:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 77
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-22T14:25:23.453Z",
+    "reddit_viral_generated_at": "2026-07-22T18:35:13.072Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
