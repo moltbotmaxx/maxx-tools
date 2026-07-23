@@ -367,28 +367,19 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-23T14:34:35.497Z",
+    "generated_at": "2026-07-23T16:48:11.602Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Managed (GermanClaw) or Hostinger VPS - which one to choose",
-        "link": "https://reddit.com/r/openclaw/comments/1v4fokw/managed_germanclaw_or_hostinger_vps_which_one_to/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-23T14:33:51+00:00",
+        "headline": "I built a live-streaming demo where viewer gifts trigger real-time AI video effects",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4hani/i_built_a_livestreaming_demo_where_viewer_gifts/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-23T15:32:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
-      },
-      {
-        "headline": "Has anyone worked out how to kill “the assistant” voice in Sol?",
-        "link": "https://reddit.com/r/openclaw/comments/1v4evwq/has_anyone_worked_out_how_to_kill_the_assistant/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-23T14:04:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
       },
       {
         "headline": "You have been reported to the FBI.",
@@ -397,7 +388,25 @@
         "published_at": "2026-07-23T13:21:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
+      },
+      {
+        "headline": "yothere - voice assistant for your agentic setup - demo",
+        "link": "https://reddit.com/r/openclaw/comments/1v4dqly/yothere_voice_assistant_for_your_agentic_setup/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-23T13:19:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "I asked ChatGPT to create an uncanny image from the deepest corner of its mind",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v4dnuq/i_asked_chatgpt_to_create_an_uncanny_image_from/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-23T13:16:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "🚨 Google has revealed the first details about Gemini 4",
@@ -406,7 +415,16 @@
         "published_at": "2026-07-23T13:16:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
+      },
+      {
+        "headline": "AGI achieved",
+        "link": "https://reddit.com/r/singularity/comments/1v4dcbr/agi_achieved/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-23T13:03:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
       },
       {
         "headline": "(Local LLM) what model did you stop using?",
@@ -415,7 +433,16 @@
         "published_at": "2026-07-23T12:45:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
+      },
+      {
+        "headline": "China's Unitree Robotics Is Leading the Humanoid Revolution",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4c450/chinas_unitree_robotics_is_leading_the_humanoid/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-23T12:11:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "Anyone who uses Gemini knows this",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-23T11:54:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Does anyone else feel like AI isn't actually making everyday life easier?",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-23T11:38:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "The Evolution of Couple Portraits: 1830s – 2020s",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v4adwi/the_evolution_of_couple_portraits_1830s_2020s/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-23T10:49:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Elon's Tweet about OpenAI's Model",
-        "link": "https://reddit.com/r/OpenAI/comments/1v49v7c/elons_tweet_about_openais_model/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-23T10:22:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "This guy will never admit that he could be wrong too",
-        "link": "https://reddit.com/r/singularity/comments/1v496m8/this_guy_will_never_admit_that_he_could_be_wrong/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-23T09:46:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-23T14:34:35.497Z",
+    "reddit_viral_generated_at": "2026-07-23T16:48:11.602Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
