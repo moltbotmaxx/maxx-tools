@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-23T16:48:11.602Z",
+    "generated_at": "2026-07-23T18:38:29.571Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "What would you do with an old laptop to turn it into a genuinely useful AI system?",
+        "link": "https://reddit.com/r/openclaw/comments/1v4jywf/what_would_you_do_with_an_old_laptop_to_turn_it/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-23T17:06:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "AI is really starting to affect my business…",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4jc5j/ai_is_really_starting_to_affect_my_business/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-23T16:44:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "OpenAI scored an own goal with HuggingFace attack, showing how open Chinese models are winning",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4hir3/openai_scored_an_own_goal_with_huggingface_attack/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-23T15:41:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "I built a live-streaming demo where viewer gifts trigger real-time AI video effects",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4hani/i_built_a_livestreaming_demo_where_viewer_gifts/",
@@ -379,7 +406,16 @@
         "published_at": "2026-07-23T15:32:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
+      },
+      {
+        "headline": "When to Compact?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v4f6cw/when_to_compact/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-23T14:14:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "You have been reported to the FBI.",
@@ -388,16 +424,7 @@
         "published_at": "2026-07-23T13:21:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "yothere - voice assistant for your agentic setup - demo",
-        "link": "https://reddit.com/r/openclaw/comments/1v4dqly/yothere_voice_assistant_for_your_agentic_setup/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-23T13:19:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "I asked ChatGPT to create an uncanny image from the deepest corner of its mind",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-23T13:16:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "🚨 Google has revealed the first details about Gemini 4",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-23T13:16:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "AGI achieved",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-23T13:03:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 89
       },
       {
         "headline": "(Local LLM) what model did you stop using?",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-23T12:45:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "China's Unitree Robotics Is Leading the Humanoid Revolution",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4c450/chinas_unitree_robotics_is_leading_the_humanoid/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-23T12:11:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Anyone who uses Gemini knows this",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v4bqq4/anyone_who_uses_gemini_knows_this/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-23T11:54:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Does anyone else feel like AI isn't actually making everyday life easier?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4be6q/does_anyone_else_feel_like_ai_isnt_actually/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-23T11:38:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-23T16:48:11.602Z",
+    "reddit_viral_generated_at": "2026-07-23T18:38:29.571Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
