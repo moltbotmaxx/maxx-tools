@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-23T20:31:22.354Z",
+    "generated_at": "2026-07-23T23:13:38.441Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How do you actually setup your agents?",
+        "link": "https://reddit.com/r/openclaw/comments/1v4ro8y/how_do_you_actually_setup_your_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-23T21:40:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Does anyone else manage their kubernetes cluster with openclaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1v4rkpv/does_anyone_else_manage_their_kubernetes_cluster/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-23T21:37:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Hosting you models locally? There's a new subreddit for Spark owners",
         "link": "https://reddit.com/r/openclaw/comments/1v4plxv/hosting_you_models_locally_theres_a_new_subreddit/",
@@ -379,7 +397,25 @@
         "published_at": "2026-07-23T20:24:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
+      },
+      {
+        "headline": "Fields medalist Jacob Tsimerman joins OpenAI",
+        "link": "https://reddit.com/r/singularity/comments/1v4p6qj/fields_medalist_jacob_tsimerman_joins_openai/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-23T20:09:24+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "OpenAI is trying to conquer the office. Legal is next.",
+        "link": "https://reddit.com/r/OpenAI/comments/1v4p2ne/openai_is_trying_to_conquer_the_office_legal_is/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-23T20:05:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
       },
       {
         "headline": "Using Claude/Godot/Blender to make a Battle Racer game - OVERSTEER",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-23T19:48:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Anthropic Donates $20M for Stricter AI Regulations",
@@ -397,16 +433,7 @@
         "published_at": "2026-07-23T19:04:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Recommendations for running local model with a 24x7 openclaw at my home lab",
-        "link": "https://reddit.com/r/openclaw/comments/1v4n8f6/recommendations_for_running_local_model_with_a/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-23T19:00:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Fair point",
@@ -415,16 +442,7 @@
         "published_at": "2026-07-23T18:17:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "i cant see thinking when it thinks now does anyone else have this problem",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v4lbnk/i_cant_see_thinking_when_it_thinks_now_does/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-23T17:54:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Gemini Spark (beta) Just Released, AI Pro",
@@ -433,31 +451,13 @@
         "published_at": "2026-07-23T17:27:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "What would you do with an old laptop to turn it into a genuinely useful AI system?",
         "link": "https://reddit.com/r/openclaw/comments/1v4jywf/what_would_you_do_with_an_old_laptop_to_turn_it/",
         "subreddit": "openclaw",
         "published_at": "2026-07-23T17:06:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "AI is really starting to affect my business…",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4jc5j/ai_is_really_starting_to_affect_my_business/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-23T16:44:32+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "I built a live-streaming demo where viewer gifts trigger real-time AI video effects",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v4hani/i_built_a_livestreaming_demo_where_viewer_gifts/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-23T15:32:53+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 88
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-23T20:31:22.354Z",
+    "reddit_viral_generated_at": "2026-07-23T23:13:38.441Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
