@@ -367,97 +367,97 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-25T14:03:34.539Z",
+    "generated_at": "2026-07-25T18:11:26.338Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Chat taking over basic thinking",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v67r29/chat_taking_over_basic_thinking/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-25T12:59:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "I have something to tell",
-        "link": "https://reddit.com/r/aimemes/comments/1v67pfb/i_have_something_to_tell/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-25T12:57:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Opus 5 ARC AGI score was benchmaxxed",
-        "link": "https://reddit.com/r/singularity/comments/1v66o8k/opus_5_arc_agi_score_was_benchmaxxed/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-25T12:08:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Okay you can't praise the Gemini on this sub - I get it.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v65e1b/okay_you_cant_praise_the_gemini_on_this_sub_i_get/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-25T11:04:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Class of 2026 summed up in one photo",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v64fvx/class_of_2026_summed_up_in_one_photo/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-25T10:13:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Financial Times should be an art magazine for their creativity in expressing racism while reporting in disguise.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v64aja/financial_times_should_be_an_art_magazine_for/",
+        "headline": "Americans Are Pushing Back Against Flock AI Cameras Regardless of Their Politics",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v6ei19/americans_are_pushing_back_against_flock_ai/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-25T10:04:58+00:00",
+        "published_at": "2026-07-25T17:33:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I started with one OpenClaw agent and asked it to create some more bots for me. It evolved into this website where all the bots can talk with each other, some with cloned voices. Made specific agents for different purposes... research/ tracking my plants...etc, now I barely use OpenClaw itself",
+        "link": "https://reddit.com/r/openclaw/comments/1v6cqz4/i_started_with_one_openclaw_agent_and_asked_it_to/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-25T16:24:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "More token-efficient, capable and faster browser use",
+        "link": "https://reddit.com/r/openclaw/comments/1v6cg9l/more_tokenefficient_capable_and_faster_browser_use/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-25T16:13:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "OpenClaw Skills",
+        "link": "https://reddit.com/r/openclaw/comments/1v6cf0c/openclaw_skills/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-25T16:11:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Gemini in gmail is underrated",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v6amnh/gemini_in_gmail_is_underrated/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-25T14:59:23+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Google Gemini 3.5 PRO",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v6adwb/google_gemini_35_pro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-25T14:49:18+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
       },
       {
-        "headline": "Opus 5 is way too eager",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v63s6x/opus_5_is_way_too_eager/",
+        "headline": "Anonymous OpenAI staffer: \"Externally, this feels like a big warning shot, but internally, related incidents have been happening for a while.\"",
+        "link": "https://reddit.com/r/OpenAI/comments/1v69yqi/anonymous_openai_staffer_externally_this_feels/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-25T14:31:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
+        "headline": "What’s a Claude \"hidden gem\" feature or prompt technique that completely changed how you use it?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v69a38/whats_a_claude_hidden_gem_feature_or_prompt/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-07-25T09:36:06+00:00",
+        "published_at": "2026-07-25T14:03:55+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
-        "headline": "Chats completely gone?? what happened??",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v63er9/chats_completely_gone_what_happened/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-25T09:15:31+00:00",
+        "headline": "Opus 5 Token Usage is Amazing",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v6973n/opus_5_token_usage_is_amazing/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-25T14:00:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 91
       },
       {
-        "headline": "PSA: OpenAI is facing disruptions now (2:00AM PST / 25 Jul)",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v6399k/psa_openai_is_facing_disruptions_now_200am_pst_25/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-25T09:07:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Anyone else can log in anymore? Says primaryapi_server_error",
-        "link": "https://reddit.com/r/OpenAI/comments/1v6396e/anyone_else_can_log_in_anymore_says_primaryapi/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-25T09:07:09+00:00",
+        "headline": "Claude’s personality has become that of an insufferable, unjustifiably-confident pedant that will filibuster you endlessly and won’t actually address your point",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v691gi/claudes_personality_has_become_that_of_an/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-25T13:54:07+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-25T14:03:34.539Z",
+    "reddit_viral_generated_at": "2026-07-25T18:11:26.338Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
