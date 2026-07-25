@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-25T09:13:18.802Z",
+    "generated_at": "2026-07-25T12:10:27.157Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Okay you can't praise the Gemini on this sub - I get it.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1v65e1b/okay_you_cant_praise_the_gemini_on_this_sub_i_get/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-25T11:04:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Financial Times should be an art magazine for their creativity in expressing racism while reporting in disguise.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v64aja/financial_times_should_be_an_art_magazine_for/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-25T10:04:58+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Chats completely gone?? what happened??",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v63er9/chats_completely_gone_what_happened/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-25T09:15:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Is Open AI API down?",
+        "link": "https://reddit.com/r/OpenAI/comments/1v63d5m/is_open_ai_api_down/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-25T09:13:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "PSA: OpenAI is facing disruptions now (2:00AM PST / 25 Jul)",
+        "link": "https://reddit.com/r/ChatGPT/comments/1v6399k/psa_openai_is_facing_disruptions_now_200am_pst_25/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-07-25T09:07:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Anyone else can log in anymore? Says primaryapi_server_error",
+        "link": "https://reddit.com/r/OpenAI/comments/1v6396e/anyone_else_can_log_in_anymore_says_primaryapi/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-25T09:07:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Email Intelligence Platform for Openclaw",
         "link": "https://reddit.com/r/openclaw/comments/1v636xd/email_intelligence_platform_for_openclaw/",
@@ -379,7 +433,25 @@
         "published_at": "2026-07-25T09:03:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
+      },
+      {
+        "headline": "Bro...",
+        "link": "https://reddit.com/r/OpenAI/comments/1v635n9/bro/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-25T09:01:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "From Kimi K3 to Claude Opus 5",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1v6224v/from_kimi_k3_to_claude_opus_5/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-25T07:58:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       },
       {
         "headline": "OpenAI signed the letter supporting Open Source Models.",
@@ -388,86 +460,14 @@
         "published_at": "2026-07-25T07:06:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Robot powered by Qualcomm’s new AI chip dies mid-presentation",
-        "link": "https://reddit.com/r/singularity/comments/1v60izq/robot_powered_by_qualcomms_new_ai_chip_dies/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-25T06:34:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Gemini 3.6 Thinking appeared in my Gemini! Is it 3.6 Flash Thinking?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v5zn99/gemini_36_thinking_appeared_in_my_gemini_is_it_36/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-25T05:47:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Fed a serious article into ChatGPT",
-        "link": "https://reddit.com/r/aimemes/comments/1v5z5b5/fed_a_serious_article_into_chatgpt/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-25T05:21:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "NickleRack - Double D's Sucka",
-        "link": "https://reddit.com/r/aimemes/comments/1v5xc01/nicklerack_double_ds_sucka/",
-        "subreddit": "aimemes",
-        "published_at": "2026-07-25T03:49:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "I spent months testing whether ChatGPT can create a consistent 100-page comic. This is the result.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1v5tkcl/i_spent_months_testing_whether_chatgpt_can_create/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-25T00:52:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Reuters: OpenAI didn’t know about hack for a week. Agents had left instructions for future versions of itself on how to free itself",
-        "link": "https://reddit.com/r/singularity/comments/1v5s14x/reuters_openai_didnt_know_about_hack_for_a_week/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-24T23:46:06+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
-      },
-      {
-        "headline": "I don't know if anyone else has this impression of how Anthropic treats Haiku",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1v5rwld/i_dont_know_if_anyone_else_has_this_impression_of/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-24T23:40:33+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
-      },
-      {
-        "headline": "If countries around the world are racing to achieve AI sovereignty, why tf don't they just distill the frontier open source models like Kimi K3 or GLM 5.2?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v5rcpl/if_countries_around_the_world_are_racing_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-24T23:16:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-25T09:13:18.802Z",
+    "reddit_viral_generated_at": "2026-07-25T12:10:27.157Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
