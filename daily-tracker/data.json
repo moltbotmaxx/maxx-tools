@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-26T17:18:05.608Z",
+    "generated_at": "2026-07-26T18:14:49.332Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "AntLing-3.0-flash is now live on OpenClaw via OpenRouter",
-        "link": "https://reddit.com/r/openclaw/comments/1v79qj2/antling30flash_is_now_live_on_openclaw_via/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-26T17:09:08+00:00",
+        "headline": "Chamath Palihapitiya Warns AI Restrictions Could Leave America at an Economic and Security Disadvantage: 'The Future Is Open Source'",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v7b4mm/chamath_palihapitiya_warns_ai_restrictions_could/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-26T18:00:48+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "AntLing-3.0-flash from Ant Group is now available on OpenClaw via OpenRouter",
+        "link": "https://reddit.com/r/openclaw/comments/1v7afp6/antling30flash_from_ant_group_is_now_available_on/",
+        "subreddit": "openclaw",
+        "published_at": "2026-07-26T17:35:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Is the US about to bend the knee on Open Source?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v7ab7l/is_the_us_about_to_bend_the_knee_on_open_source/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-07-26T17:30:37+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "What’s your AI timeline for ASI or disruptive Ai where people can no longer deny it",
+        "link": "https://reddit.com/r/singularity/comments/1v77y20/whats_your_ai_timeline_for_asi_or_disruptive_ai/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-26T16:03:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Gemini 3.5 pro's new checkpoint is deadass insane.",
@@ -388,16 +415,16 @@
         "published_at": "2026-07-26T15:57:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
-        "headline": "Sam Altman's quote on the singularity",
-        "link": "https://reddit.com/r/singularity/comments/1v76wem/sam_altmans_quote_on_the_singularity/",
+        "headline": "AI out-persuades world-champion debaters, Oxford study finds",
+        "link": "https://reddit.com/r/singularity/comments/1v76l5v/ai_outpersuades_worldchampion_debaters_oxford/",
         "subreddit": "singularity",
-        "published_at": "2026-07-26T15:25:05+00:00",
+        "published_at": "2026-07-26T15:13:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Did I just try out Gemini 3.5 pro?",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-26T14:58:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "AI out-persuades world-champion debaters, Oxford study finds",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-26T14:41:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "post 'leak' timeline by terminator",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-26T14:37:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Mark Cuban is probably right about learning Claude workflows",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-26T12:44:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Gemini 3.5 Pro is not gonna be lazy like Gemini 3.1 Pro",
-        "link": "https://reddit.com/r/GeminiAI/comments/1v715vf/gemini_35_pro_is_not_gonna_be_lazy_like_gemini_31/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-07-26T11:22:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Need help for using Open Claw",
-        "link": "https://reddit.com/r/openclaw/comments/1v713vp/need_help_for_using_open_claw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-26T11:19:20+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "'Money won't matter in 2036': Elon Musk says AI will reshape the global economy",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1v713kz/money_wont_matter_in_2036_elon_musk_says_ai_will/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-07-26T11:18:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-26T17:18:05.608Z",
+    "reddit_viral_generated_at": "2026-07-26T18:14:49.332Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
