@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-31T09:59:50.610Z",
+    "generated_at": "2026-07-31T12:19:01.428Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Well... Lol",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vbmjex/well_lol/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-31T09:57:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "DeepSeek-V4-Flash Official API is now LIVE in public beta! Massive upgrades for flash model.",
+        "link": "https://reddit.com/r/singularity/comments/1vbm5m8/deepseekv4flash_official_api_is_now_live_in/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-31T09:35:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "this can not be Gemini 3.5 flash 💀",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vbm4x1/this_can_not_be_gemini_35_flash/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-07-31T09:34:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "OpenAI lowering prices 80%",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vblsg9/openai_lowering_prices_80/",
@@ -379,7 +406,16 @@
         "published_at": "2026-07-31T09:14:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
+      },
+      {
+        "headline": "I close every Claude session with the same two questions and it keeps catching things I would have shipped.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vbkq6o/i_close_every_claude_session_with_the_same_two/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-07-31T08:13:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "The most dangerous button in OpenClaw sitting right there in settings. Why can't it be located somewhere safer?",
@@ -388,7 +424,7 @@
         "published_at": "2026-07-31T07:48:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "I've just build a Worms Armageddon clone with one single prompt. Agentic loops are mind blowing 🤯",
@@ -397,7 +433,7 @@
         "published_at": "2026-07-31T07:19:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Gemini 3.5 Pro is live on arena.ai",
@@ -406,7 +442,7 @@
         "published_at": "2026-07-31T06:46:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "AI companies in 2028 after finding out that your grandma has a handwritten diary that they didn't scan and burn",
@@ -415,59 +451,23 @@
         "published_at": "2026-07-31T06:25:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "ChatGPT saved my house",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vbh78l/chatgpt_saved_my_house/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-31T05:04:59+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 90
       },
       {
-        "headline": "The cost of AI is decreasing",
-        "link": "https://reddit.com/r/singularity/comments/1vbh3o1/the_cost_of_ai_is_decreasing/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-31T05:00:13+00:00",
+        "headline": "GPT-5.6 Luna is now cheaper than GPT-4.1 mini",
+        "link": "https://reddit.com/r/OpenAI/comments/1vbiqef/gpt56_luna_is_now_cheaper_than_gpt41_mini/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-31T06:23:21+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
-      },
-      {
-        "headline": "Claude is really bad at analyzing writing, but it gives such confident analyses that it's easy to miss just how bad it is",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vbgdbj/claude_is_really_bad_at_analyzing_writing_but_it/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-31T04:23:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "OpenClaw found my lost cat!",
-        "link": "https://reddit.com/r/openclaw/comments/1vbeku3/openclaw_found_my_lost_cat/",
-        "subreddit": "openclaw",
-        "published_at": "2026-07-31T02:58:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Chatgpt may have saved my life",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vbecrr/chatgpt_may_have_saved_my_life/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-07-31T02:48:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-31T09:59:50.610Z",
+    "reddit_viral_generated_at": "2026-07-31T12:19:01.428Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
