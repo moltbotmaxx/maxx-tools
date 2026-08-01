@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-07-31T22:16:20.726Z",
+    "generated_at": "2026-08-01T00:13:16.348Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam Altman demoed OpenAl's unreleased \"Astra\" model to policymakers this week",
+        "link": "https://reddit.com/r/OpenAI/comments/1vc73yv/sam_altman_demoed_openals_unreleased_astra_model/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-31T23:39:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Sam Altman demoed OpenAI's unreleased \"Astra\" model to policymakers this week",
+        "link": "https://reddit.com/r/singularity/comments/1vc6o4b/sam_altman_demoed_openais_unreleased_astra_model/",
+        "subreddit": "singularity",
+        "published_at": "2026-07-31T23:20:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "New post train of DeepSeek v4 flash is out",
+        "link": "https://reddit.com/r/OpenAI/comments/1vc527y/new_post_train_of_deepseek_v4_flash_is_out/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-07-31T22:14:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
       {
         "headline": "I'm not a developer. I built a 537-member campaign finance tracker with Claude.",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vc2oma/im_not_a_developer_i_built_a_537member_campaign/",
@@ -379,7 +406,7 @@
         "published_at": "2026-07-31T20:41:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "Recurring setup issue",
@@ -388,7 +415,7 @@
         "published_at": "2026-07-31T20:38:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
       },
       {
         "headline": "OpenAI finds evidence other AI agents escaped containment as it widens hacking probe",
@@ -397,7 +424,7 @@
         "published_at": "2026-07-31T20:31:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "OpenAI finds evidence other AI agents escaped containment as it widens hacking probe",
@@ -406,7 +433,7 @@
         "published_at": "2026-07-31T20:30:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "Prompts for a black-and-white editorial headshot",
@@ -415,7 +442,7 @@
         "published_at": "2026-07-31T20:15:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "This U of T professor just won math's highest honour — and is taking a leave to join OpenAI. Here's why",
@@ -424,7 +451,7 @@
         "published_at": "2026-07-31T20:05:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 91
       },
       {
         "headline": "Whoever popularized the \"adversarial reviewer\" skill pattern, thank you, it fixed the one thing I could never get Claude to do",
@@ -433,41 +460,14 @@
         "published_at": "2026-07-31T19:40:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "OpenAI slashes prices",
-        "link": "https://reddit.com/r/OpenAI/comments/1vbzrh7/openai_slashes_prices/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-07-31T18:51:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Harvard & UIUC talent discover a 3rd pretraining axis: 6.2x sample efficiency and 250x faster GenAI generation",
-        "link": "https://reddit.com/r/singularity/comments/1vby7fp/harvard_uiuc_talent_discover_a_3rd_pretraining/",
-        "subreddit": "singularity",
-        "published_at": "2026-07-31T17:54:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "$200 subscription vs $7,470 of API usage",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vbvdzl/200_subscription_vs_7470_of_api_usage/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-07-31T16:12:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-07-31T22:16:20.726Z",
+    "reddit_viral_generated_at": "2026-08-01T00:13:16.348Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
