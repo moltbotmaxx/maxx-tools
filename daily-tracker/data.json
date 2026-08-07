@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-07T20:02:08.141Z",
+    "generated_at": "2026-08-07T23:49:20.347Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Sam on Astra’s delayed release",
+        "link": "https://reddit.com/r/singularity/comments/1vifymf/sam_on_astras_delayed_release/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-07T23:18:34+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Seinfeld AI",
+        "link": "https://reddit.com/r/ChatGPT/comments/1view4k/seinfeld_ai/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-07T22:31:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I built an OpenClaw skill that pseudonymises clinical text before it reaches an LLM",
+        "link": "https://reddit.com/r/openclaw/comments/1vidd43/i_built_an_openclaw_skill_that_pseudonymises/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-07T21:28:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Google quietly discontinues its Earth AI feature a day after its rollout after users made no-no images",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1viclhk/google_quietly_discontinues_its_earth_ai_feature/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-07T20:58:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Israel Is Paying Millions to Train AI Chatbots How to Talk About Gaza. It’s Working.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vicesi/israel_is_paying_millions_to_train_ai_chatbots/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-07T20:50:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Google is out of the loop.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vibkc6/google_is_out_of_the_loop/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-07T20:17:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "GPT-6 release delayed due to \"critical\" cybersecurity capabilities",
         "link": "https://reddit.com/r/singularity/comments/1vi9p6t/gpt6_release_delayed_due_to_critical/",
@@ -379,7 +433,7 @@
         "published_at": "2026-08-07T19:07:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 90
       },
       {
         "headline": "OpenAI on upcoming model \"Astra\" (GPT-6): \"We're treating it as our first \"critical\" model for cybersecurity\"",
@@ -388,16 +442,7 @@
         "published_at": "2026-08-07T18:59:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Semianalysis on Gemini 3.5 Pro",
-        "link": "https://reddit.com/r/singularity/comments/1vi857m/semianalysis_on_gemini_35_pro/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-07T18:09:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 89
       },
       {
         "headline": "Sir",
@@ -406,7 +451,7 @@
         "published_at": "2026-08-07T17:39:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 86
       },
       {
         "headline": "Tortoise reading newspaper in toilet meme, made from Copilot",
@@ -415,59 +460,14 @@
         "published_at": "2026-08-07T16:53:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Sam Altman (@sama) on X: \"congrats to oklo for achieving criticality!\"",
-        "link": "https://reddit.com/r/singularity/comments/1vi60u8/sam_altman_sama_on_x_congrats_to_oklo_for/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-07T16:51:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "I used Claude cli to vibe code a compass app to find the nearest toilet, called Compiss.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vi5guo/i_used_claude_cli_to_vibe_code_a_compass_app_to/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-07T16:31:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "\"Sandboxing\"",
-        "link": "https://reddit.com/r/aimemes/comments/1vi5aow/sandboxing/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-07T16:25:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Re: SSI new model",
-        "link": "https://reddit.com/r/singularity/comments/1vi46aq/re_ssi_new_model/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-07T15:43:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "We were this 🤏 close to getting a new FelonyBench contender (Kimi K3 escaped but sadly didn't commit any crimes)",
-        "link": "https://reddit.com/r/singularity/comments/1vi3jvx/we_were_this_close_to_getting_a_new_felonybench/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-07T15:20:35+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-07T20:02:08.141Z",
+    "reddit_viral_generated_at": "2026-08-07T23:49:20.347Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
