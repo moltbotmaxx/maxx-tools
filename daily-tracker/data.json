@@ -367,11 +367,83 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-08T15:48:10.234Z",
+    "generated_at": "2026-08-08T17:47:52.632Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Your scientists were so... uh...",
+        "link": "https://reddit.com/r/OpenAI/comments/1vj1ffo/your_scientists_were_so_uh/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-08T17:12:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Stack Overflow has gone from a peak of 207k questions in March 2014, down to 1.4k in July 2026",
+        "link": "https://reddit.com/r/OpenAI/comments/1vj0317/stack_overflow_has_gone_from_a_peak_of_207k/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-08T16:18:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I got the premium access",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vj02h6/i_got_the_premium_access/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-08T16:17:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "OpenClaw is not dead",
+        "link": "https://reddit.com/r/openclaw/comments/1vizunz/openclaw_is_not_dead/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-08T16:08:51+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Demis actually wanted to leave",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vizucv/demis_actually_wanted_to_leave/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-08T16:08:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Stack Overflow has gone from a peak of 207k questions in March 2014, down to 1.4k in July 2026",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1viznwk/stack_overflow_has_gone_from_a_peak_of_207k/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-08T16:01:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "The End of Dario",
+        "link": "https://reddit.com/r/singularity/comments/1vixu4c/the_end_of_dario/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-08T14:45:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "I've been trying to get chatgpt to visualize this for a while and 5.6 finally nailed it: How small of a window life on earth has",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vixt45/ive_been_trying_to_get_chatgpt_to_visualize_this/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-08T14:44:14+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Samsung support accidentally pasted the ChatGPT prompt in the customer support chat",
         "link": "https://reddit.com/r/ChatGPT/comments/1vix02q/samsung_support_accidentally_pasted_the_chatgpt/",
@@ -379,7 +451,7 @@
         "published_at": "2026-08-08T14:09:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 92
       },
       {
         "headline": "Bold move google",
@@ -388,86 +460,14 @@
         "published_at": "2026-08-08T13:48:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "Do the people creating AI really not understand how it works?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1viwalk/do_the_people_creating_ai_really_not_understand/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-08T13:39:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "When your 11-year-old daughter uses AI to build her own browser…",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vivt77/when_your_11yearold_daughter_uses_ai_to_build_her/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-08T13:17:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "This is why the vast majority aren't taking any \"this new model is dangerous\" messages seriously. They've cried wolf FAR too many times. They could literally announce that a nuclear war caused by AI is 24 hours away and many wouldn't bat an eye",
-        "link": "https://reddit.com/r/singularity/comments/1vivgeq/this_is_why_the_vast_majority_arent_taking_any/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-08T13:01:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "This is why the vast majority aren't taking any \"this new model is dangerous\" messages seriously. They've cried wolf FAR too many times. They could literally announce that a nuclear war caused by AI is 24 hours away and many wouldn't bat an eye",
-        "link": "https://reddit.com/r/OpenAI/comments/1vivd9d/this_is_why_the_vast_majority_arent_taking_any/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-08T12:57:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Okay guys time for something positive. What do you like about Gemini?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1viuyfs/okay_guys_time_for_something_positive_what_do_you/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-08T12:38:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "What YouTube videos Dario was watching to calm down after fighting with Sam? Right answers only",
-        "link": "https://reddit.com/r/singularity/comments/1viugai/what_youtube_videos_dario_was_watching_to_calm/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-08T12:13:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "OpenAI flags possible critical cybersecurity risk in upcoming model, tightens controls",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1viucts/openai_flags_possible_critical_cybersecurity_risk/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-08T12:08:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "These Rappers Do Not Exist",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vis00z/these_rappers_do_not_exist/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-08T09:58:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-08T15:48:10.234Z",
+    "reddit_viral_generated_at": "2026-08-08T17:47:52.632Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
