@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-11T19:27:14.357Z",
+    "generated_at": "2026-08-11T21:05:21.803Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "What’s still hard or unreliable when using OpenClaw in real workflows?",
-        "link": "https://reddit.com/r/openclaw/comments/1vlpdxn/whats_still_hard_or_unreliable_when_using/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-11T18:16:56+00:00",
+        "headline": "OpenAI's Chief Operating Officer resigns.",
+        "link": "https://reddit.com/r/singularity/comments/1vlsi81/openais_chief_operating_officer_resigns/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-11T20:09:19+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "My OpenClaw is Dead",
+        "link": "https://reddit.com/r/openclaw/comments/1vlsgvp/my_openclaw_is_dead/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-11T20:07:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Couldn't publish on the dedicated erb sr",
+        "link": "https://reddit.com/r/aimemes/comments/1vls73h/couldnt_publish_on_the_dedicated_erb_sr/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-11T19:58:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
       },
       {
         "headline": "Gemini app surpasses 1B MAU",
@@ -388,7 +406,7 @@
         "published_at": "2026-08-11T18:02:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "OpenClaw Exit Interview - Late January Adopter.",
@@ -397,7 +415,16 @@
         "published_at": "2026-08-11T17:19:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
+      },
+      {
+        "headline": "If your ChatGPT chats were leaked, what's the weirdest thing people would find? 😂",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vlmvti/if_your_chatgpt_chats_were_leaked_whats_the/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-11T16:48:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "What the hell happened?",
@@ -406,7 +433,7 @@
         "published_at": "2026-08-11T16:30:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "You don’t have to like Chinese AI models to benefit from them",
@@ -415,7 +442,7 @@
         "published_at": "2026-08-11T16:01:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "What's your thoughts on this?",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-11T14:50:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Did Pathway just reveal the architecture breakthrough Andrew Curran predicted? Its 150M model sets a new ARC-AGI-1 cost-efficiency frontier",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-11T14:39:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Everything’s bigger in Texas: Musk’s planned $16.8 billion chip factory is five times bigger than the world’s current largest building",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vlj8eo/everythings_bigger_in_texas_musks_planned_168/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-11T14:36:14+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "BREAKING: Anthropic to include invisible watermarks in Claude AI text. Will other Google Gemini and other AI companies like follow suit?",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vlj7qb/breaking_anthropic_to_include_invisible/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-11T14:35:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Claude will now include invisible marks to show a text was made with AI",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vlidn0/claude_will_now_include_invisible_marks_to_show_a/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-11T14:04:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-11T19:27:14.357Z",
+    "reddit_viral_generated_at": "2026-08-11T21:05:21.803Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
