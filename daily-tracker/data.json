@@ -367,19 +367,46 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-13T19:27:32.594Z",
+    "generated_at": "2026-08-14T00:00:44.772Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Evidence of Anti AI Russian bots.",
-        "link": "https://reddit.com/r/singularity/comments/1vnk24w/evidence_of_anti_ai_russian_bots/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-13T19:04:52+00:00",
+        "headline": "Example of a real working loop orchestrator",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vnnpur/example_of_a_real_working_loop_orchestrator/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-13T21:20:29+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "OpenAI launches ChatGPT Computer History to remember work across Mac apps",
+        "link": "https://reddit.com/r/OpenAI/comments/1vnm3qw/openai_launches_chatgpt_computer_history_to/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-13T20:19:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "3.7 IS INSANE!!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vnjrfn/37_is_insane/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-13T18:54:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "Why aren't businesses using Fable 5?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vnj1xq/why_arent_businesses_using_fable_5/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-13T18:29:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "Holy... Google actually did it, they actually shipped a frontier model",
@@ -388,7 +415,16 @@
         "published_at": "2026-08-13T18:15:06+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 92
+      },
+      {
+        "headline": "Big jump: Gemini 3.6 Flash #19 -> Gemini 3.7 Flash #8 in the Code Arena: WebDev",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vnicml/big_jump_gemini_36_flash_19_gemini_37_flash_8_in/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-13T18:04:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "3.7 flash looks fine I guess",
@@ -397,7 +433,7 @@
         "published_at": "2026-08-13T17:38:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "Gemini 3.7 flash benchmark",
@@ -406,16 +442,7 @@
         "published_at": "2026-08-13T17:12:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Actually not bad for such low price ig",
-        "link": "https://reddit.com/r/singularity/comments/1vngqdt/actually_not_bad_for_such_low_price_ig/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-13T17:08:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Gemini 3.7 Flash Benchmarks",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-13T17:07:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Gemini 3.7 Flash is here",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-13T17:05:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "GPT-5.6 Sol can run now at an incredible rate of ~750 tokens per second",
-        "link": "https://reddit.com/r/singularity/comments/1vngnhy/gpt56_sol_can_run_now_at_an_incredible_rate_of/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-13T17:05:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Me trying to be productive 😂",
-        "link": "https://reddit.com/r/aimemes/comments/1vng5ji/me_trying_to_be_productive/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-13T16:47:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Claude Code Agents Created Turf War with each other before resolving their differences",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vnfn2h/claude_code_agents_created_turf_war_with_each/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-13T16:28:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-13T19:27:32.594Z",
+    "reddit_viral_generated_at": "2026-08-14T00:00:44.772Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
