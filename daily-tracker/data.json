@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-14T13:45:47.967Z",
+    "generated_at": "2026-08-14T15:08:26.773Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI might be making you dumb but it made me smart",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vo8je1/ai_might_be_making_you_dumb_but_it_made_me_smart/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-14T14:17:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenClaw + n8n: Scraping and Anti-Bot Challenges",
+        "link": "https://reddit.com/r/openclaw/comments/1vo7u58/openclaw_n8n_scraping_and_antibot_challenges/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-14T13:50:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Claude changed the way I eat: 9+ kg down this summer, and it never felt like a diet",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vo7klb/claude_changed_the_way_i_eat_9_kg_down_this/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-14T13:39:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "DATA CENTER FORNICATOR",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vo5vtm/data_center_fornicator/",
@@ -379,7 +406,7 @@
         "published_at": "2026-08-14T12:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "GLM 5.3 finds 2436 unpatched open source vulnerabilities likely missed by Mythos (Project Glasswing)",
@@ -388,7 +415,7 @@
         "published_at": "2026-08-14T11:55:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "???",
@@ -397,7 +424,7 @@
         "published_at": "2026-08-14T10:59:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "???",
@@ -406,7 +433,7 @@
         "published_at": "2026-08-14T10:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Bet he'd be shocked XD",
@@ -415,7 +442,7 @@
         "published_at": "2026-08-14T10:50:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "You can now build yourself a clone to control your computer, if you have a claude subscription",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-14T10:43:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 91
       },
       {
         "headline": "Gemini 3.7 Flash is a lot better than I expected.",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-14T10:26:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "my own writing has started sounding like claude and someone at work noticed",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vo2vr6/my_own_writing_has_started_sounding_like_claude/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-14T09:52:16+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "3.7 flash passed the ultimate test",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vo0bzn/37_flash_passed_the_ultimate_test/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-14T07:19:34+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Cant run openclaw `Error: spawn ENOEXEC`",
-        "link": "https://reddit.com/r/openclaw/comments/1vo04sh/cant_run_openclaw_error_spawn_enoexec/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-14T07:07:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 90
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-14T13:45:47.967Z",
+    "reddit_viral_generated_at": "2026-08-14T15:08:26.773Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
