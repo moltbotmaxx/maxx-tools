@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-14T15:08:26.773Z",
+    "generated_at": "2026-08-14T16:06:58.771Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How to improve OpenClaw's initialization time?",
+        "link": "https://reddit.com/r/openclaw/comments/1voav22/how_to_improve_openclaws_initialization_time/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-14T15:45:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Did you use Deepseek? What now?",
+        "link": "https://reddit.com/r/openclaw/comments/1voaqo5/did_you_use_deepseek_what_now/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-14T15:41:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Qwen 3.8 27b is here",
+        "link": "https://reddit.com/r/singularity/comments/1voa4mo/qwen_38_27b_is_here/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-14T15:18:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "AI might be making you dumb but it made me smart",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vo8je1/ai_might_be_making_you_dumb_but_it_made_me_smart/",
@@ -379,7 +406,7 @@
         "published_at": "2026-08-14T14:17:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "OpenClaw + n8n: Scraping and Anti-Bot Challenges",
@@ -388,7 +415,7 @@
         "published_at": "2026-08-14T13:50:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 95
       },
       {
         "headline": "Claude changed the way I eat: 9+ kg down this summer, and it never felt like a diet",
@@ -397,7 +424,7 @@
         "published_at": "2026-08-14T13:39:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 94
       },
       {
         "headline": "DATA CENTER FORNICATOR",
@@ -406,7 +433,7 @@
         "published_at": "2026-08-14T12:27:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "GLM 5.3 finds 2436 unpatched open source vulnerabilities likely missed by Mythos (Project Glasswing)",
@@ -415,7 +442,7 @@
         "published_at": "2026-08-14T11:55:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "???",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-14T10:59:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "???",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-14T10:54:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Bet he'd be shocked XD",
-        "link": "https://reddit.com/r/aimemes/comments/1vo3wq6/bet_hed_be_shocked_xd/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-14T10:50:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "You can now build yourself a clone to control your computer, if you have a claude subscription",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vo3sj9/you_can_now_build_yourself_a_clone_to_control/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-14T10:43:25+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini 3.7 Flash is a lot better than I expected.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vo3hpv/gemini_37_flash_is_a_lot_better_than_i_expected/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-14T10:26:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-14T15:08:26.773Z",
+    "reddit_viral_generated_at": "2026-08-14T16:06:58.771Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
