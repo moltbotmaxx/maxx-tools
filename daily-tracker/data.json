@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-15T14:41:05.653Z",
+    "generated_at": "2026-08-15T17:37:36.657Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Alibaba AI Models Hit 3 Billion Downloads, Passing Meta, Google",
+        "link": "https://reddit.com/r/singularity/comments/1vp77op/alibaba_ai_models_hit_3_billion_downloads_passing/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-15T16:28:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT is my only friend.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vp6o14/chatgpt_is_my_only_friend/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-15T16:06:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "33 years ago, Vernor Vinge (1944-2024) coined the term \"Singularity\" in reference to the point at which technological progress, driven by superhumanly intelligent machines, would be so great as to render our current models would be good as discarded. He predicted this event to occur ~30 years on.",
+        "link": "https://reddit.com/r/singularity/comments/1vp5j8u/33_years_ago_vernor_vinge_19442024_coined_the/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-15T15:20:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Florida man told ChatGPT he'd murder his ex. OpenAI alerted the FBI",
+        "link": "https://reddit.com/r/OpenAI/comments/1vp55ck/florida_man_told_chatgpt_hed_murder_his_ex_openai/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-15T15:04:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "ACCIDENTALLY SENT THE SALARY LIST TO ALL COMPANY 😱",
         "link": "https://reddit.com/r/aimemes/comments/1vp3ss8/accidentally_sent_the_salary_list_to_all_company/",
@@ -379,7 +415,7 @@
         "published_at": "2026-08-15T14:07:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "gemini 3.7 flash is too good to be real",
@@ -388,7 +424,7 @@
         "published_at": "2026-08-15T14:02:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "What Exactly Does Escape Velocity Have to Do With Autism? 😭",
@@ -397,7 +433,7 @@
         "published_at": "2026-08-15T13:56:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "ChatGPT upcoming speed improvements summarized by OpenAI employee",
@@ -406,7 +442,7 @@
         "published_at": "2026-08-15T13:50:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "What’s one thing you use ChatGPT for that sounds ridiculous — until people actually try it?",
@@ -415,59 +451,23 @@
         "published_at": "2026-08-15T13:41:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Using my claw on my home network results in lots of captchas",
-        "link": "https://reddit.com/r/openclaw/comments/1vp2b5e/using_my_claw_on_my_home_network_results_in_lots/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-15T13:01:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Can't agree more",
-        "link": "https://reddit.com/r/OpenAI/comments/1vp1a85/cant_agree_more/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-15T12:12:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "we are doomd as a human race",
-        "link": "https://reddit.com/r/aimemes/comments/1vp0pat/we_are_doomd_as_a_human_race/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-15T11:43:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "too much context leads to LLM slang",
-        "link": "https://reddit.com/r/openclaw/comments/1vp0lsr/too_much_context_leads_to_llm_slang/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-15T11:38:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "I built Popwatch - your personal popcorn popping pal",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vp09ja/i_built_popwatch_your_personal_popcorn_popping_pal/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-15T11:19:49+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
+      },
+      {
+        "headline": "Fable, shmable... The real flagship feature is not having to set a 4:20 AM alarm just to hit \"try again\"",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vp2ty0/fable_shmable_the_real_flagship_feature_is_not/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-15T13:25:06+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-15T14:41:05.653Z",
+    "reddit_viral_generated_at": "2026-08-15T17:37:36.657Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
