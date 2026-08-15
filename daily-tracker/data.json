@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-15T13:44:55.608Z",
+    "generated_at": "2026-08-15T14:41:05.653Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "ACCIDENTALLY SENT THE SALARY LIST TO ALL COMPANY 😱",
+        "link": "https://reddit.com/r/aimemes/comments/1vp3ss8/accidentally_sent_the_salary_list_to_all_company/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-15T14:07:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "gemini 3.7 flash is too good to be real",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vp3obb/gemini_37_flash_is_too_good_to_be_real/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-15T14:02:05+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "What Exactly Does Escape Velocity Have to Do With Autism? 😭",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vp3jk7/what_exactly_does_escape_velocity_have_to_do_with/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-15T13:56:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "ChatGPT upcoming speed improvements summarized by OpenAI employee",
+        "link": "https://reddit.com/r/singularity/comments/1vp3eh6/chatgpt_upcoming_speed_improvements_summarized_by/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-15T13:50:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "What’s one thing you use ChatGPT for that sounds ridiculous — until people actually try it?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vp37ji/whats_one_thing_you_use_chatgpt_for_that_sounds/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-15T13:41:44+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Using my claw on my home network results in lots of captchas",
+        "link": "https://reddit.com/r/openclaw/comments/1vp2b5e/using_my_claw_on_my_home_network_results_in_lots/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-15T13:01:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Can't agree more",
         "link": "https://reddit.com/r/OpenAI/comments/1vp1a85/cant_agree_more/",
@@ -379,7 +433,7 @@
         "published_at": "2026-08-15T12:12:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "we are doomd as a human race",
@@ -388,7 +442,7 @@
         "published_at": "2026-08-15T11:43:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "too much context leads to LLM slang",
@@ -397,7 +451,7 @@
         "published_at": "2026-08-15T11:38:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "I built Popwatch - your personal popcorn popping pal",
@@ -406,68 +460,14 @@
         "published_at": "2026-08-15T11:19:49+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "i guess no...",
-        "link": "https://reddit.com/r/aimemes/comments/1vozd8i/i_guess_no/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-15T10:29:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Downgraded from Opus 5 to Opus 4.6 and it feels night and day",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1voz6sm/downgraded_from_opus_5_to_opus_46_and_it_feels/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-15T10:18:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Why Chinese Citizens Are Far More Optimistic About AI Than Americans",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1voz05e/why_chinese_citizens_are_far_more_optimistic/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-15T10:07:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "World of Claudecraft after 2 months of vibe coding",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1voxq2f/world_of_claudecraft_after_2_months_of_vibe_coding/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-15T08:49:44+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Gemini 3.7 Flash Ranked Above Opus 5 Max on arena.ai (text)",
-        "link": "https://reddit.com/r/GeminiAI/comments/1voxpld/gemini_37_flash_ranked_above_opus_5_max_on/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-15T08:48:54+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "git clone",
-        "link": "https://reddit.com/r/singularity/comments/1voue9r/git_clone/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-15T05:35:21+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
+        "viral_score": 92
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-15T13:44:55.608Z",
+    "reddit_viral_generated_at": "2026-08-15T14:41:05.653Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
