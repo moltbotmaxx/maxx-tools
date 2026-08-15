@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-15T09:42:46.629Z",
+    "generated_at": "2026-08-15T10:41:39.549Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "i guess no...",
+        "link": "https://reddit.com/r/aimemes/comments/1vozd8i/i_guess_no/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-15T10:29:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Gemini 3.7 Flash Ranked Above Opus 5 Max on arena.ai (text)",
         "link": "https://reddit.com/r/GeminiAI/comments/1voxpld/gemini_37_flash_ranked_above_opus_5_max_on/",
@@ -379,16 +388,16 @@
         "published_at": "2026-08-15T08:48:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
-        "headline": "I've built a fully autonomous meditation system - [TouchDesigner + GPT]",
-        "link": "https://reddit.com/r/ChatGPT/comments/1voxd5y/ive_built_a_fully_autonomous_meditation_system/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-15T08:27:25+00:00",
+        "headline": "git clone",
+        "link": "https://reddit.com/r/singularity/comments/1voue9r/git_clone/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-15T05:35:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 89
       },
       {
         "headline": "man im glad i dont SEE any ai slop on my feed!",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-15T04:58:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 88
       },
       {
         "headline": "Whhat?",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-15T04:53:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Panicking Software Engineer",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-15T04:40:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "The Gemini 3.5 Pro checkpoint that was available on arena ai for a hour few days ago was renamed to Gemini 3.7 Flash High",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-15T04:29:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 86
       },
       {
         "headline": "Chinese doctor stuns maths world by cracking decades-old problem using ChatGPT",
@@ -433,7 +442,7 @@
         "published_at": "2026-08-14T23:11:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 79
+        "viral_score": 75
       },
       {
         "headline": "Chinese doctor stuns maths world by cracking decades-old problem using ChatGPT",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-14T23:10:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 78
+        "viral_score": 75
       },
       {
         "headline": "Anthropic Internally Uses A Model That Is Significantly Better Than Mythos 5, But Has No Plans To Release It",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-14T22:36:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 77
-      },
-      {
-        "headline": "Anthropic writes an FAQ about watermarking",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vokr48/anthropic_writes_an_faq_about_watermarking/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-14T21:54:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 75
+        "viral_score": 73
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-15T09:42:46.629Z",
+    "reddit_viral_generated_at": "2026-08-15T10:41:39.549Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
