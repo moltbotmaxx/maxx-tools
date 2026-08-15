@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T03:38:57.291Z",
+  "updatedAt": "2026-08-15T04:31:05.379Z",
   "source": "BCCR WebService + BCCR APIM + BCCR comunicaciones",
   "usd": {
     "buy": null,
@@ -15,5 +15,16 @@
     "note": "derivado de USDCRC * USDAEUR (BCCR)"
   },
   "history": [],
-  "news": []
+  "news": [
+    {
+      "title": "Tipo de cambio",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/6?Cuadro=1",
+      "date": null
+    },
+    {
+      "title": "Tipo de cambio",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/6?Cuadro=1",
+      "date": null
+    }
+  ]
 }
