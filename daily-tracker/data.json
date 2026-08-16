@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-16T08:48:11.839Z",
+    "generated_at": "2026-08-16T11:36:22.271Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "The Absurd Math of $20 AI Coding Subs: Codex vs. Claude Code",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vptwlz/the_absurd_math_of_20_ai_coding_subs_codex_vs/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-16T10:49:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Genuinely impressed at 3.7 (with Extended thinking) being able to solve this visual puzzle. (Interesting Response is on 2nd slide)",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vprynl/genuinely_impressed_at_37_with_extended_thinking/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-16T08:51:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Nothing you generate with Claude today is watermarked, and nobody can check for marks anyway. What I found after actually reading it all",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vpro2f/nothing_you_generate_with_claude_today_is/",
@@ -379,7 +397,25 @@
         "published_at": "2026-08-16T08:32:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
+      },
+      {
+        "headline": "Gemini can now include videos in its responses!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vpqxg8/gemini_can_now_include_videos_in_its_responses/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-16T07:48:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
+      {
+        "headline": "Even Fable 5 is losing money in Andon Market (fully AI-operated retail store in San Francisco)",
+        "link": "https://reddit.com/r/singularity/comments/1vpqiui/even_fable_5_is_losing_money_in_andon_market/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-16T07:24:41+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "This might be ChatGPT’s greatest achievement.",
@@ -388,7 +424,16 @@
         "published_at": "2026-08-16T06:57:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
+      },
+      {
+        "headline": "Anthropic Researcher Sholto Douglas: Models Will Be Capable Of Automating 95% Of Computer Facing Jobs By 2028, But People Will Continue To Work Well Into The 2030's",
+        "link": "https://reddit.com/r/singularity/comments/1vppvwz/anthropic_researcher_sholto_douglas_models_will/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-16T06:48:20+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 90
       },
       {
         "headline": "Dario Amodei: It Is Actually Possible To Cure Most Diseases Within 5-10 Years",
@@ -397,7 +442,7 @@
         "published_at": "2026-08-16T06:14:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "AI Isn’t Outthinking Mathematicians. It’s Out-Remembering Them.",
@@ -406,7 +451,7 @@
         "published_at": "2026-08-16T02:32:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 81
       },
       {
         "headline": "Anthropic published on their blog how the watermark will work on Claude, and here's a summary ! ⛎",
@@ -415,59 +460,14 @@
         "published_at": "2026-08-16T02:26:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Guys I think I went to far",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vpkbe4/guys_i_think_i_went_to_far/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-16T01:52:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "What's going on here?",
-        "link": "https://reddit.com/r/OpenAI/comments/1vpjnsc/whats_going_on_here/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-16T01:19:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Openclaw Limiting Context",
-        "link": "https://reddit.com/r/openclaw/comments/1vphm41/openclaw_limiting_context/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-15T23:41:45+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 80
-      },
-      {
-        "headline": "I don’t think we’re psychologically prepared for how alien the world after ASI is going to be",
-        "link": "https://reddit.com/r/singularity/comments/1vphdpw/i_dont_think_were_psychologically_prepared_for/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-15T23:30:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
-      },
-      {
-        "headline": "i created a site that gives you prompts to replace your paid app subscriptions",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vpgsc4/i_created_a_site_that_gives_you_prompts_to/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-15T23:03:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 78
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-16T08:48:11.839Z",
+    "reddit_viral_generated_at": "2026-08-16T11:36:22.271Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
