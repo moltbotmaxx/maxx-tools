@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-16T07:46:36.681Z",
+    "generated_at": "2026-08-16T08:48:11.839Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Nothing you generate with Claude today is watermarked, and nobody can check for marks anyway. What I found after actually reading it all",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vpro2f/nothing_you_generate_with_claude_today_is/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-16T08:32:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "This might be ChatGPT’s greatest achievement.",
         "link": "https://reddit.com/r/ChatGPT/comments/1vpq1dx/this_might_be_chatgpts_greatest_achievement/",
@@ -379,22 +388,13 @@
         "published_at": "2026-08-16T06:57:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 96
       },
       {
         "headline": "Dario Amodei: It Is Actually Possible To Cure Most Diseases Within 5-10 Years",
         "link": "https://reddit.com/r/singularity/comments/1vppaig/dario_amodei_it_is_actually_possible_to_cure_most/",
         "subreddit": "singularity",
         "published_at": "2026-08-16T06:14:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "I'm sorry but my chatGPT has a really good sense of humor",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vpniab/im_sorry_but_my_chatgpt_has_a_really_good_sense/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-16T04:36:38+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 95
@@ -406,7 +406,7 @@
         "published_at": "2026-08-16T02:32:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Anthropic published on their blog how the watermark will work on Claude, and here's a summary ! ⛎",
@@ -415,7 +415,7 @@
         "published_at": "2026-08-16T02:26:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "Guys I think I went to far",
@@ -424,7 +424,7 @@
         "published_at": "2026-08-16T01:52:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "What's going on here?",
@@ -433,7 +433,7 @@
         "published_at": "2026-08-16T01:19:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "Openclaw Limiting Context",
@@ -442,7 +442,7 @@
         "published_at": "2026-08-15T23:41:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 80
       },
       {
         "headline": "I don’t think we’re psychologically prepared for how alien the world after ASI is going to be",
@@ -451,7 +451,7 @@
         "published_at": "2026-08-15T23:30:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 80
       },
       {
         "headline": "i created a site that gives you prompts to replace your paid app subscriptions",
@@ -460,14 +460,14 @@
         "published_at": "2026-08-15T23:03:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 81
+        "viral_score": 78
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-16T07:46:36.681Z",
+    "reddit_viral_generated_at": "2026-08-16T08:48:11.839Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
