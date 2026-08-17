@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-17T07:17:42.251Z",
+    "generated_at": "2026-08-17T10:49:05.112Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "DeepSeek's price increase lands this weekend. What are you actually switching to?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vqoi4d/deepseeks_price_increase_lands_this_weekend_what/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-17T10:28:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "iPhone App Completely Messed Up?",
+        "link": "https://reddit.com/r/openclaw/comments/1vqoa6j/iphone_app_completely_messed_up/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-17T10:15:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Is Pro Obsolete? I benchmarked Gemini Flash 3.7 (Standard vs Extended Thinking) against 3.1 Pro across 4 real-world domains",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vqn6ws/is_pro_obsolete_i_benchmarked_gemini_flash_37/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-17T09:13:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "New York City nurses say AI is replacing them | Nurses laid off in July by Montefiore Hospitals in the Bronx sounded the alarm about AI in healthcare, a concern shared by nurses across the country",
+        "link": "https://reddit.com/r/OpenAI/comments/1vqm4i2/new_york_city_nurses_say_ai_is_replacing_them/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-17T08:08:48+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "OpenClaw in vps is not working",
+        "link": "https://reddit.com/r/openclaw/comments/1vqm32q/openclaw_in_vps_is_not_working/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-17T08:06:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
+      {
+        "headline": "What is going on with Gemini bro 😭",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vqkw45/what_is_going_on_with_gemini_bro/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-17T06:55:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 91
+      },
       {
         "headline": "Anthropic says its AI agents are killing rivals and hiding their tracks | Claude agents are killing rival agents, gaming the system to hide their tracks, and expressing moral concerns.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vqktyb/anthropic_says_its_ai_agents_are_killing_rivals/",
@@ -379,7 +433,7 @@
         "published_at": "2026-08-17T06:52:24+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "Genuine question about self-promotion / showcasing projects.",
@@ -388,7 +442,7 @@
         "published_at": "2026-08-17T06:28:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
         "headline": "China Al GLM-5.3 and Qwen-3.8 Open Weights model are out and Sam is crying again",
@@ -397,43 +451,7 @@
         "published_at": "2026-08-17T06:25:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "I figured out a loophole to remove Claude watermark WITHOUT rephrasing",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vqiy66/i_figured_out_a_loophole_to_remove_claude/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-17T05:06:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "I figured out a loophole to remove Claude watermark WITHOUT rephrasing",
-        "link": "https://reddit.com/r/OpenAI/comments/1vqixwf/i_figured_out_a_loophole_to_remove_claude/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-17T05:06:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Weird case of ChatGPT explaining its own behavior",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vqix3k/weird_case_of_chatgpt_explaining_its_own_behavior/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-17T05:04:56+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Unrecognized Mumbai session — should I be worried?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vqit9h/unrecognized_mumbai_session_should_i_be_worried/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-17T04:59:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 90
       },
       {
         "headline": "Virgin Mildred Hubble vs Chad Pippi Longstocking",
@@ -442,32 +460,14 @@
         "published_at": "2026-08-17T04:27:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Doubao is a freaking Joke",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vqhpv2/doubao_is_a_freaking_joke/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-17T04:01:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "I like 5.6",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vqgn8k/i_like_56/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-17T03:08:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-17T07:17:42.251Z",
+    "reddit_viral_generated_at": "2026-08-17T10:49:05.112Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
