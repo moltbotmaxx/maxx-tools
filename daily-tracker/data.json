@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-17T04:04:42.868Z",
+    "generated_at": "2026-08-17T04:59:50.530Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Doubao is a freaking Joke",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vqhpv2/doubao_is_a_freaking_joke/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-17T04:01:27+00:00",
+        "headline": "Virgin Mildred Hubble vs Chad Pippi Longstocking",
+        "link": "https://reddit.com/r/aimemes/comments/1vqi880/virgin_mildred_hubble_vs_chad_pippi_longstocking/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-17T04:27:52+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "I like 5.6",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vqgn8k/i_like_56/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-17T03:08:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
       },
       {
         "headline": "抽象",
@@ -388,7 +397,7 @@
         "published_at": "2026-08-17T02:21:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 95
       },
       {
         "headline": "What is this behavior where it leaks info about the process of making the feature....INTO THE FEATURE?!!!!!!",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-17T01:24:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 93
       },
       {
         "headline": "I asked ChatGPT to visualise the stupidest single decision in human history and it came up with Hitler’s invasion of the Soviet Union in June 1941, when Germany chose to fight a vast eastern war before defeating Britain and helped seal its own destruction.",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-17T00:44:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "That's a genius meme.",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-16T22:18:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 86
       },
       {
         "headline": "I just got this in right bottom of web page. What happened?",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-16T21:51:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       },
       {
         "headline": "I'm getting this error constantly while trying to use Claude Cowork on Desktop - anyone else?",
@@ -433,7 +442,7 @@
         "published_at": "2026-08-16T21:48:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       },
       {
         "headline": "What’s the best way to set up openclaw?",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-16T21:43:35+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       },
       {
         "headline": "No more weekly limits? I don’t have one.",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-16T21:40:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Curious, what does vibe-coded code read like to original coders?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vq8ahg/curious_what_does_vibecoded_code_read_like_to/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-16T20:51:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-17T04:04:42.868Z",
+    "reddit_viral_generated_at": "2026-08-17T04:59:50.530Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
