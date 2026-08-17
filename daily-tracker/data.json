@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-17T18:59:29.742Z",
+    "generated_at": "2026-08-17T20:45:42.821Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I am disappointed.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vr1qdp/i_am_disappointed/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-17T19:11:08+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Dario Amodei admits AI suffers from a crisis of trust, saying people worry companies or governments are 'cooking up some new way to screw them over'",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vr0634/dario_amodei_admits_ai_suffers_from_a_crisis_of/",
@@ -379,7 +388,7 @@
         "published_at": "2026-08-17T18:16:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "Qwen3.8-27B lands next to DeepSeek V4 and GPT-5.6 Luna Max on the Artificial Analysis Benchmark. You can now run a near frontier model with just a RTX 3090.",
@@ -388,7 +397,7 @@
         "published_at": "2026-08-17T17:49:29+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "[OC] Chinese models",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-17T17:03:56+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Claude code doesn’t follow rules anymore",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-17T16:42:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 94
       },
       {
         "headline": "I coded terminal manager for ADHD brains. 100% Opensource.",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-17T16:30:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "OpenAI acquires a 17 year old's Ethereum project",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-17T15:50:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Hot take: Most \"prompt engineering\" advice for claude code is just common sense dressed up as a skill.",
@@ -433,16 +442,7 @@
         "published_at": "2026-08-17T15:39:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Google Launches Gemini 3.7 Flash but Its Low Price Has an Expiry Date - Memeburn",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vqvr3h/google_launches_gemini_37_flash_but_its_low_price/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-17T15:36:27+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "How are you guys discovering new Claude Skills and workflows? I feel like I'm missing a lot",
@@ -451,7 +451,7 @@
         "published_at": "2026-08-17T15:15:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
       },
       {
         "headline": "the current installer is useless and just over engineered that dosent even work as good",
@@ -460,14 +460,14 @@
         "published_at": "2026-08-17T15:02:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-17T18:59:29.742Z",
+    "reddit_viral_generated_at": "2026-08-17T20:45:42.821Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
