@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-18T07:55:39.023Z",
+    "generated_at": "2026-08-18T10:48:20.890Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I don't know what it is about 3.7's responses (to questions and such) but I like them a lot more than 3.5's. Anyone know what I mean?",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vrl5ap/i_dont_know_what_it_is_about_37s_responses_to/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-18T10:19:50+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "3M expert used ChatGPT to draft '0% at fault' defense report",
+        "link": "https://reddit.com/r/OpenAI/comments/1vrkcel/3m_expert_used_chatgpt_to_draft_0_at_fault/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-18T09:33:52+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Week 3 of making my fishing game entirely with AI",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vrjryf/week_3_of_making_my_fishing_game_entirely_with_ai/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-18T09:00:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "New here- What type of \"free\" model is best for OpenClaw?",
+        "link": "https://reddit.com/r/openclaw/comments/1vrjn3k/new_here_what_type_of_free_model_is_best_for/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-18T08:52:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Cherokee Nation bans hyperscale data centers on its lands, won't support projects without consultation — energy and water consumption, air quality, noise, and cultural resource protection among concerns",
         "link": "https://reddit.com/r/OpenAI/comments/1vrien2/cherokee_nation_bans_hyperscale_data_centers_on/",
@@ -379,16 +415,7 @@
         "published_at": "2026-08-18T07:37:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "I dont know what happen while intsaling openclaw",
-        "link": "https://reddit.com/r/openclaw/comments/1vrcbm7/i_dont_know_what_happen_while_intsaling_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-18T02:20:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 93
       },
       {
         "headline": "Nightmare on Pudding Pop St",
@@ -397,7 +424,7 @@
         "published_at": "2026-08-18T01:51:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 81
       },
       {
         "headline": "Big Tech Is Raising Billions To Stop UBI",
@@ -406,7 +433,7 @@
         "published_at": "2026-08-18T01:10:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 80
       },
       {
         "headline": "The extreme number of updates comes off as janky and unprofessional.",
@@ -415,7 +442,7 @@
         "published_at": "2026-08-18T00:30:21+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 78
       },
       {
         "headline": "Anthropic's revenue run rate reportedly surpasses $65 billion pre-IPO",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-18T00:28:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
+        "viral_score": 78
       },
       {
         "headline": "Am I the only one who still doesn't have Gemini Flash 3.7? 😮‍💨😩",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-18T00:26:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "Asking ChatGPT to render an image of the true unrenderable form of God",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vr8cc0/asking_chatgpt_to_render_an_image_of_the_true/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-17T23:24:03+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "Geminu 3.7 flash vs claude sonnet 5 on a language test.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vr86tb/geminu_37_flash_vs_claude_sonnet_5_on_a_language/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-17T23:17:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents. It will use the data to improve its products and AI models.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vr7ze1/google_wins_bankruptcy_auction_for_spirit/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-17T23:08:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 80
+        "viral_score": 77
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-18T07:55:39.023Z",
+    "reddit_viral_generated_at": "2026-08-18T10:48:20.890Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
