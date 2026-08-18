@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-18T03:10:02.050Z",
+    "generated_at": "2026-08-18T04:53:57.632Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -436,38 +436,38 @@
         "viral_score": 92
       },
       {
+        "headline": "Geminu 3.7 flash vs claude sonnet 5 on a language test.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vr86tb/geminu_37_flash_vs_claude_sonnet_5_on_a_language/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-17T23:17:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
+      },
+      {
         "headline": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents. It will use the data to improve its products and AI models.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vr7ze1/google_wins_bankruptcy_auction_for_spirit/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-08-17T23:08:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
-        "headline": "Tests for the Worldwide Humanoid Robot Games have already started",
-        "link": "https://reddit.com/r/singularity/comments/1vr69ot/tests_for_the_worldwide_humanoid_robot_games_have/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-17T22:00:05+00:00",
+        "headline": "The amount of things I learn thanks to AI is fucking insane",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vr6er8/the_amount_of_things_i_learn_thanks_to_ai_is/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-17T22:05:22+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Building websites with OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1vr54cn/building_websites_with_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-17T21:15:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
+        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-18T03:10:02.050Z",
+    "reddit_viral_generated_at": "2026-08-18T04:53:57.632Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
