@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-19T03:12:10.679Z",
+    "generated_at": "2026-08-19T04:01:24.594Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -382,13 +382,22 @@
         "viral_score": 100
       },
       {
+        "headline": "Please OpenAi, remove the grandma commercial 😩",
+        "link": "https://reddit.com/r/OpenAI/comments/1vs955k/please_openai_remove_the_grandma_commercial/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-19T02:05:16+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
         "headline": "OpenAI support has been terrible — referral credits were confirmed, then effectively disappeared",
         "link": "https://reddit.com/r/OpenAI/comments/1vs8jia/openai_support_has_been_terrible_referral_credits/",
         "subreddit": "OpenAI",
         "published_at": "2026-08-19T01:38:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 97
       },
       {
         "headline": "Anthropic working on Claude autonomously designing drugs.",
@@ -409,28 +418,19 @@
         "viral_score": 92
       },
       {
-        "headline": "ChatGPT is getting scarily good.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vs4z50/chatgpt_is_getting_scarily_good/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-18T23:03:10+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "What is happening...",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vs4ntq/what_is_happening/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-18T22:50:09+00:00",
+        "headline": "OpenAI’s Second-Quarter Sales Show Tepid Growth Compared With Anthropic",
+        "link": "https://reddit.com/r/OpenAI/comments/1vs4twr/openais_secondquarter_sales_show_tepid_growth/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-18T22:57:13+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 91
       },
       {
         "headline": "What is happening...",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vs4fw8/what_is_happening/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-18T22:41:07+00:00",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vs4ntq/what_is_happening/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-18T22:50:09+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 90
@@ -445,19 +445,19 @@
         "viral_score": 88
       },
       {
-        "headline": "OpenAI is slowing down its AI training efforts because its unreleased models are showing “various degrees of misalignment\"",
-        "link": "https://reddit.com/r/singularity/comments/1vs1fu9/openai_is_slowing_down_its_ai_training_efforts/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-18T20:44:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
         "headline": "Anthropic extends 50% limit increase to Aug 31",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vrzmx9/anthropic_extends_50_limit_increase_to_aug_31/",
         "subreddit": "ClaudeAI",
         "published_at": "2026-08-18T19:38:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 83
+      },
+      {
+        "headline": "A shockingly good time!",
+        "link": "https://reddit.com/r/aimemes/comments/1vrzk8n/a_shockingly_good_time/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-18T19:36:12+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 83
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-19T03:12:10.679Z",
+    "reddit_viral_generated_at": "2026-08-19T04:01:24.594Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
