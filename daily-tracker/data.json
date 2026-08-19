@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-19T07:07:31.962Z",
+    "generated_at": "2026-08-19T08:56:07.682Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "This feels like such a fun video idea to plan with a friend while you're out exploring",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vsgjgi/this_feels_like_such_a_fun_video_idea_to_plan/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-19T08:33:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "It’s me all the time",
+        "link": "https://reddit.com/r/aimemes/comments/1vsg9at/its_me_all_the_time/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-19T08:17:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "Anthropic has twice the revenue of OpenAI",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vsdx5z/anthropic_has_twice_the_revenue_of_openai/",
@@ -379,7 +397,7 @@
         "published_at": "2026-08-19T06:02:12+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "Thanks, Chat!",
@@ -388,16 +406,7 @@
         "published_at": "2026-08-19T02:37:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "Where is mine 5.6 luna free tier user?",
-        "link": "https://reddit.com/r/OpenAI/comments/1vs9o1a/where_is_mine_56_luna_free_tier_user/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-19T02:29:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-19T02:18:58+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Please OpenAi, remove the grandma commercial 😩",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-19T02:05:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 85
       },
       {
         "headline": "OpenAI support has been terrible — referral credits were confirmed, then effectively disappeared",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-19T01:38:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 84
       },
       {
         "headline": "Anthropic working on Claude autonomously designing drugs.",
@@ -433,7 +442,7 @@
         "published_at": "2026-08-19T00:04:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 81
       },
       {
         "headline": "GLM-5.3 achieves 60 on the Artificial Analysis Intelligence Index, on par with Kimi K3 and up 7 points from GLM-5.2. Once the weights are released it will be tied as the leading open weights model",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-18T23:34:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 85
+        "viral_score": 80
       },
       {
         "headline": "Putting money where their mouth is: Anthropic’s Claude autonomously designs disease-targeting proteins with real wet-lab proof, hitting a 35% success rate vs 10–15% human average",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-18T23:06:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "OpenAI’s Second-Quarter Sales Show Tepid Growth Compared With Anthropic",
-        "link": "https://reddit.com/r/OpenAI/comments/1vs4twr/openais_secondquarter_sales_show_tepid_growth/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-18T22:57:13+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
+        "viral_score": 78
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-19T07:07:31.962Z",
+    "reddit_viral_generated_at": "2026-08-19T08:56:07.682Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
