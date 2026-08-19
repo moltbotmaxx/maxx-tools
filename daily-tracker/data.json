@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-19T01:54:08.791Z",
+    "generated_at": "2026-08-19T03:12:10.679Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Thanks, Chat!",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vs9usp/thanks_chat/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-19T02:37:59+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenAI support has been terrible — referral credits were confirmed, then effectively disappeared",
+        "link": "https://reddit.com/r/OpenAI/comments/1vs8jia/openai_support_has_been_terrible_referral_credits/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-19T01:38:09+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Anthropic working on Claude autonomously designing drugs.",
         "link": "https://reddit.com/r/singularity/comments/1vs6f13/anthropic_working_on_claude_autonomously/",
@@ -379,16 +397,7 @@
         "published_at": "2026-08-19T00:04:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "GLM-5.3 achieves 60 on the Artificial Analysis Intelligence Index, on par with Kimi K3 and up 7 points from GLM-5.2. Once the weights are released it will be tied as the leading open weights model",
-        "link": "https://reddit.com/r/singularity/comments/1vs5q84/glm53_achieves_60_on_the_artificial_analysis/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-18T23:34:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
       },
       {
         "headline": "Putting money where their mouth is: Anthropic’s Claude autonomously designs disease-targeting proteins with real wet-lab proof, hitting a 35% success rate vs 10–15% human average",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-18T23:06:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "ChatGPT is getting scarily good.",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-18T23:03:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "What is happening...",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-18T22:50:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "What is happening...",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-18T22:41:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Another OpenClaw release update: Delayed",
@@ -433,7 +442,7 @@
         "published_at": "2026-08-18T21:45:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "OpenAI is slowing down its AI training efforts because its unreleased models are showing “various degrees of misalignment\"",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-18T20:44:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
       },
       {
         "headline": "Anthropic extends 50% limit increase to Aug 31",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-18T19:38:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "A shockingly good time!",
-        "link": "https://reddit.com/r/aimemes/comments/1vrzk8n/a_shockingly_good_time/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-18T19:36:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-19T01:54:08.791Z",
+    "reddit_viral_generated_at": "2026-08-19T03:12:10.679Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
