@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-20T09:51:09.655Z",
+    "generated_at": "2026-08-20T11:45:03.816Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "A managed OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1vtgpwa/a_managed_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-20T11:22:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Claude is now stopping even before the actual limit is reached and refusing to do any work until limit is reset",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vtg5qy/claude_is_now_stopping_even_before_the_actual/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-20T10:54:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "🚨 Google just signed 5 of the biggest football clubs in the world !! Not for ads. For AI.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vtfw0p/google_just_signed_5_of_the_biggest_football/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-20T10:40:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "The Claude language calibration issue on GitHub got an official response from Anthropic. Guess who wrote it.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vtfq1k/the_claude_language_calibration_issue_on_github/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-20T10:31:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Best flatrate subscription plan next to Opencode Go?",
         "link": "https://reddit.com/r/openclaw/comments/1vteke4/best_flatrate_subscription_plan_next_to_opencode/",
@@ -379,7 +415,7 @@
         "published_at": "2026-08-20T09:27:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Hot take: Claude code should ask more questions before touching your code.",
@@ -388,7 +424,7 @@
         "published_at": "2026-08-20T08:13:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Claude says I used 54.9 BILLION tokens.",
@@ -397,7 +433,7 @@
         "published_at": "2026-08-20T07:42:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "Live Demo: OpenClaw’s New Web UI, Multiplayer OpenClaw, and Mac Onboarding",
@@ -406,7 +442,7 @@
         "published_at": "2026-08-20T05:52:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "AI is Less Likely to Launch a Nuclear Strike When It Reasons in Japanese",
@@ -415,49 +451,13 @@
         "published_at": "2026-08-20T05:51:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 87
       },
       {
         "headline": "Longest Coming Soon ever",
         "link": "https://reddit.com/r/GeminiAI/comments/1vta8it/longest_coming_soon_ever/",
         "subreddit": "GeminiAI",
         "published_at": "2026-08-20T05:15:51+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "38% of American AI researchers are from China, 24% from the US, 10% India, 9% Europe, 5% South Korea, 4% Canada",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vta5hw/38_of_american_ai_researchers_are_from_china_24/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-20T05:11:22+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "hey chatgpt what’s 2+2",
-        "link": "https://reddit.com/r/aimemes/comments/1vt86pa/hey_chatgpt_whats_22/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-20T03:31:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "New age insults",
-        "link": "https://reddit.com/r/OpenAI/comments/1vt8210/new_age_insults/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-20T03:24:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "If you pay for Gemini, you're paying for freebies",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vt7zlq/if_you_pay_for_gemini_youre_paying_for_freebies/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-20T03:21:31+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 85
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-20T09:51:09.655Z",
+    "reddit_viral_generated_at": "2026-08-20T11:45:03.816Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
