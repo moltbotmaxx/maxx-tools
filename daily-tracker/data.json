@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-20T19:01:58.123Z",
+    "generated_at": "2026-08-20T23:42:26.895Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Anyone need Gemini credits?",
+        "link": "https://reddit.com/r/openclaw/comments/1vtws7a/anyone_need_gemini_credits/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-20T21:34:12+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenAI growing faster than Anthropic this quarter - Ramp data shows",
+        "link": "https://reddit.com/r/OpenAI/comments/1vtwi5u/openai_growing_faster_than_anthropic_this_quarter/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-20T21:22:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Robotic arms at WRC'26 reorient packages as fast as humans [live]",
+        "link": "https://reddit.com/r/singularity/comments/1vtvh53/robotic_arms_at_wrc26_reorient_packages_as_fast/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-20T20:43:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "Gemini with OpenClaw",
+        "link": "https://reddit.com/r/openclaw/comments/1vtu89b/gemini_with_openclaw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-20T19:58:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Slack wants to be the place where agents communicate and collaborate",
+        "link": "https://reddit.com/r/openclaw/comments/1vtu536/slack_wants_to_be_the_place_where_agents/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-20T19:55:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
+      {
+        "headline": "Oops..",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vttwc9/oops/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-20T19:45:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
+      },
       {
         "headline": "Another crash during practices ahead of the Worldwide Humanoid Robot Games",
         "link": "https://reddit.com/r/singularity/comments/1vtqssh/another_crash_during_practices_ahead_of_the/",
@@ -379,7 +433,7 @@
         "published_at": "2026-08-20T17:58:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 91
       },
       {
         "headline": "AI is finally curing cancer",
@@ -388,34 +442,16 @@
         "published_at": "2026-08-20T17:39:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 90
       },
       {
-        "headline": "Moderna’s new cancer vaccine (mRNA-4157) is basically an AWS cloud pipeline that \"compiles\" a custom drug for your specific tumor.",
-        "link": "https://reddit.com/r/singularity/comments/1vtozgt/modernas_new_cancer_vaccine_mrna4157_is_basically/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-20T16:52:28+00:00",
+        "headline": "Gemini 3.7 Flash aces our Baba Is You benchmark: 20x cheaper than 3.6 Flash, and only Claude Fable 5 solves puzzles faster",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vtpbo2/gemini_37_flash_aces_our_baba_is_you_benchmark/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-20T17:04:38+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Pres. Trump: I would 'absolutely' want a data center if I were the mayor of a town",
-        "link": "https://reddit.com/r/singularity/comments/1vtop3w/pres_trump_i_would_absolutely_want_a_data_center/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-20T16:42:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Moderna’s new cancer vaccine (mRNA-4157) is basically an AWS cloud pipeline that \"compiles\" a custom drug for your specific tumor.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vtnxei/modernas_new_cancer_vaccine_mrna4157_is_basically/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-20T16:14:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
+        "viral_score": 88
       },
       {
         "headline": "AI helped me overthink logging back into Reddit",
@@ -424,50 +460,14 @@
         "published_at": "2026-08-20T15:43:54+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "A Deluge of A.I. Computing Power Is About to Come Online, Fueling Major Leaps | The number of A.I. chips that provide the computing power to advance the fast-evolving technology is doubling every nine months.",
-        "link": "https://reddit.com/r/OpenAI/comments/1vtmjf7/a_deluge_of_ai_computing_power_is_about_to_come/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-20T15:24:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "This is letting Claude handle a good amount of money for a month...",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vtl9of/this_is_letting_claude_handle_a_good_amount_of/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-20T14:35:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "What service are you using for sharing context and apps/files between your team and OpenClaw agent?",
-        "link": "https://reddit.com/r/openclaw/comments/1vtkwj0/what_service_are_you_using_for_sharing_context/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-20T14:21:57+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Agent Playing Chess.com",
-        "link": "https://reddit.com/r/openclaw/comments/1vtkk0z/agent_playing_chesscom/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-20T14:08:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-20T19:01:58.123Z",
+    "reddit_viral_generated_at": "2026-08-20T23:42:26.895Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
