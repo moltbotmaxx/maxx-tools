@@ -367,11 +367,74 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-20T13:12:55.527Z",
+    "generated_at": "2026-08-20T15:50:09.563Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "AI helped me overthink logging back into Reddit",
+        "link": "https://reddit.com/r/aimemes/comments/1vtn36q/ai_helped_me_overthink_logging_back_into_reddit/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-20T15:43:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "A Deluge of A.I. Computing Power Is About to Come Online, Fueling Major Leaps | The number of A.I. chips that provide the computing power to advance the fast-evolving technology is doubling every nine months.",
+        "link": "https://reddit.com/r/OpenAI/comments/1vtmjf7/a_deluge_of_ai_computing_power_is_about_to_come/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-20T15:24:02+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "This is letting Claude handle a good amount of money for a month...",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vtl9of/this_is_letting_claude_handle_a_good_amount_of/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-20T14:35:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Rokos Basilisk doesn't make sense to me. Taking revenge is such a human concept and not based in logic at all.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vtkwqt/rokos_basilisk_doesnt_make_sense_to_me_taking/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-20T14:22:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "What service are you using for sharing context and apps/files between your team and OpenClaw agent?",
+        "link": "https://reddit.com/r/openclaw/comments/1vtkwj0/what_service_are_you_using_for_sharing_context/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-20T14:21:57+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Agent Playing Chess.com",
+        "link": "https://reddit.com/r/openclaw/comments/1vtkk0z/agent_playing_chesscom/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-20T14:08:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "How big of a difference do you think it’s going to make on token consumption?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vtjif5/how_big_of_a_difference_do_you_think_its_going_to/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-20T13:27:21+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Gemini on nationalities",
         "link": "https://reddit.com/r/GeminiAI/comments/1vtikcq/gemini_on_nationalities/",
@@ -379,16 +442,7 @@
         "published_at": "2026-08-20T12:48:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "2026.6.34, 2026.7.1-2, 2026.8.1-beta.2",
-        "link": "https://reddit.com/r/openclaw/comments/1vthyel/2026634_2026712_202681beta2/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-20T12:20:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
+        "viral_score": 92
       },
       {
         "headline": "We're proud of finishing degree without using AI.",
@@ -397,7 +451,7 @@
         "published_at": "2026-08-20T12:19:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "DaxAI's all terrain robot-horse debuts at WRC'26: 100Km/10h autonomy, 300Kg max load, 40Km/h max speed",
@@ -406,68 +460,14 @@
         "published_at": "2026-08-20T12:18:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Claude is now stopping even before the actual limit is reached and refusing to do any work until limit is reset",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vtg5qy/claude_is_now_stopping_even_before_the_actual/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-20T10:54:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "🚨 Google just signed 5 of the biggest football clubs in the world !! Not for ads. For AI.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vtfw0p/google_just_signed_5_of_the_biggest_football/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-20T10:40:49+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "The Claude language calibration issue on GitHub got an official response from Anthropic. Guess who wrote it.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vtfq1k/the_claude_language_calibration_issue_on_github/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-20T10:31:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Best flatrate subscription plan next to Opencode Go?",
-        "link": "https://reddit.com/r/openclaw/comments/1vteke4/best_flatrate_subscription_plan_next_to_opencode/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-20T09:27:51+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
-      },
-      {
-        "headline": "How is the dude who said he will use fable on the quest to get a wife doing?",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vtdv3y/how_is_the_dude_who_said_he_will_use_fable_on_the/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-20T08:46:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Hot take: Claude code should ask more questions before touching your code.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vtdbxa/hot_take_claude_code_should_ask_more_questions/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-20T08:13:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-20T13:12:55.527Z",
+    "reddit_viral_generated_at": "2026-08-20T15:50:09.563Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
