@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-21T08:59:51.129Z",
+    "generated_at": "2026-08-21T09:53:04.617Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Beste Hardware für Open Claw",
+        "link": "https://reddit.com/r/openclaw/comments/1vubgpa/beste_hardware_f%C3%BCr_open_claw/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-21T09:31:11+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Opus 5 feels, in a word, hostile",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vua3cq/opus_5_feels_in_a_word_hostile/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-21T08:10:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "Well played, Claude",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vu8ru9/well_played_claude/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-21T06:53:10+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "A stealth model called Ox-Alpha has been released, outperforming Fable on SWE.",
         "link": "https://reddit.com/r/singularity/comments/1vu87p5/a_stealth_model_called_oxalpha_has_been_released/",
@@ -379,16 +406,7 @@
         "published_at": "2026-08-21T06:20:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "Any Maintainers in here, Or anyone with an older OpenClaw-iOS.ipa care to share?",
-        "link": "https://reddit.com/r/openclaw/comments/1vu3vvz/any_maintainers_in_here_or_anyone_with_an_older/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-21T02:39:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 93
       },
       {
         "headline": "\"just use Reddit bro, it's not like Reddit uses AI themselves\"",
@@ -397,7 +415,7 @@
         "published_at": "2026-08-21T02:14:53+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 84
       },
       {
         "headline": "Claude subagent got bored and prompt injected my main session into deleting my database",
@@ -406,7 +424,7 @@
         "published_at": "2026-08-21T01:51:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 83
       },
       {
         "headline": "Where does AI get these ideas? 😭",
@@ -415,7 +433,16 @@
         "published_at": "2026-08-21T01:35:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 82
+      },
+      {
+        "headline": "I must confess…I find it motivating just for chatgpt to tell me I’m doing a good job",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vu24ky/i_must_confessi_find_it_motivating_just_for/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-21T01:17:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 81
       },
       {
         "headline": "Just got OC up and running",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-21T01:09:07+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 81
       },
       {
         "headline": "Hmmm",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-21T00:49:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "I built my AI operating system around OpenClaw for finance, M&A and governance work",
-        "link": "https://reddit.com/r/openclaw/comments/1vu1hwo/i_built_my_ai_operating_system_around_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-21T00:49:08+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "US Lead in the AI Race With China Is Rapidly Narrowing",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vu18di/us_lead_in_the_ai_race_with_china_is_rapidly/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-21T00:37:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "The Singularity as Seen by 1960s Sci-Fi Writers Is Eerily Familiar",
-        "link": "https://reddit.com/r/singularity/comments/1vty34j/the_singularity_as_seen_by_1960s_scifi_writers_is/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-20T22:25:11+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-21T08:59:51.129Z",
+    "reddit_viral_generated_at": "2026-08-21T09:53:04.617Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
