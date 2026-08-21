@@ -367,19 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-21T21:41:43.119Z",
+    "generated_at": "2026-08-21T22:43:43.437Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "I suspect that canvas mode is being used for testing, and some requests are being pushed to 3.5 Pro. Details below:",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vurxs2/i_suspect_that_canvas_mode_is_being_used_for/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-21T20:37:55+00:00",
+        "headline": "BestBuy uses AI assistant to answer phones, does not permit access to humans, even when requested.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vutvf1/bestbuy_uses_ai_assistant_to_answer_phones_does/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-21T21:54:15+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Google ai patched the racism from \"I'm alone with a ___\" but not the sexism",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vusaan/google_ai_patched_the_racism_from_im_alone_with_a/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-21T20:51:22+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
       },
       {
         "headline": "gemini ragebait",
@@ -388,7 +397,7 @@
         "published_at": "2026-08-21T20:19:44+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Ox-Alpha/chinese models with openclaw?",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-21T20:02:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Ai reaches out...",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-21T19:57:28+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "That'll show em'",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-21T19:51:40+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "GTA: Pyongyang",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-21T19:40:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 94
       },
       {
         "headline": "Oh Mythos 5 is no longer a dangerous model and can be used by enterprise now",
@@ -433,7 +442,7 @@
         "published_at": "2026-08-21T18:42:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "Prompt for a wallpaper generation for your phone (Gemini and chatgtp used)",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-21T18:41:47+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "Graphify crossed 100k+ stars and 5M+ downloads. Then 7k+ people signed up to the platform in two weeks",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-21T17:41:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Things are going great for michael i’d say",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vum98s/things_are_going_great_for_michael_id_say/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-21T17:08:01+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 89
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-21T21:41:43.119Z",
+    "reddit_viral_generated_at": "2026-08-21T22:43:43.437Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
