@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-22T03:58:06.451Z",
+    "generated_at": "2026-08-22T05:44:21.327Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Gemini 3.5 pro is coming!!!!",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vv37c7/gemini_35_pro_is_coming/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-22T05:07:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Deepmind Researcher Strongly Hints Ox Alpha Is The Next Gemini Pro Model",
+        "link": "https://reddit.com/r/singularity/comments/1vv32g8/deepmind_researcher_strongly_hints_ox_alpha_is/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-22T05:00:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Well done Ox Alpha 👏",
+        "link": "https://reddit.com/r/aimemes/comments/1vv29lv/well_done_ox_alpha/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-22T04:18:53+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "GPT 3 MOMENT of Robotics!!",
+        "link": "https://reddit.com/r/singularity/comments/1vv1v02/gpt_3_moment_of_robotics/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-22T03:58:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "GPT MOMENT of Robotics.",
+        "link": "https://reddit.com/r/singularity/comments/1vv1en8/gpt_moment_of_robotics/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-22T03:35:07+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Is anyone else finding Claude really hard to follow lately? (Massive context dumps, cryptic phrasing)",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vv14nh/is_anyone_else_finding_claude_really_hard_to/",
@@ -379,7 +424,7 @@
         "published_at": "2026-08-22T03:21:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "My Cron jobs for OpenClaw",
@@ -388,7 +433,16 @@
         "published_at": "2026-08-22T03:00:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 94
+      },
+      {
+        "headline": "Prompt: Construct the most woke sentence possible.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vv0evv/prompt_construct_the_most_woke_sentence_possible/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-22T02:46:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
       },
       {
         "headline": "We might be getting something soon guys",
@@ -397,7 +451,7 @@
         "published_at": "2026-08-22T02:35:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "gpt-reserve what is this?",
@@ -406,68 +460,14 @@
         "published_at": "2026-08-22T02:18:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "Open-source local models have zero chill compared to ChatGPT",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vuzllr/opensource_local_models_have_zero_chill_compared/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-22T02:06:30+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "told gemini to polish my spreadsheet. dzień dobry.",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vuy16m/told_gemini_to_polish_my_spreadsheet_dzie%C5%84_dobry/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-22T00:53:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Google Deepmind - SIMA 2 - From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-        "link": "https://reddit.com/r/singularity/comments/1vuxx91/google_deepmind_sima_2_from_atari_to_eve_online/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-22T00:48:05+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
-        "headline": "AI Soap Opera: The Chiseled and the Beautiful",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vux7tz/ai_soap_opera_the_chiseled_and_the_beautiful/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-22T00:15:32+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 92
-      },
-      {
-        "headline": "Just a lucky prediction?",
-        "link": "https://reddit.com/r/openclaw/comments/1vux4nw/just_a_lucky_prediction/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-22T00:11:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "Having unlimited tokens is wild",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vuuiot/having_unlimited_tokens_is_wild/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-21T22:20:19+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-22T03:58:06.451Z",
+    "reddit_viral_generated_at": "2026-08-22T05:44:21.327Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
