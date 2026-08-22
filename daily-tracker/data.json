@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-22T10:42:19.992Z",
+    "generated_at": "2026-08-22T11:37:49.605Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "OX Alpha is Gemini New Specialized Coding Model",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vv8pnp/ox_alpha_is_gemini_new_specialized_coding_model/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-22T10:22:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Ox Alpha can't be the Chinese.",
         "link": "https://reddit.com/r/singularity/comments/1vv8njv/ox_alpha_cant_be_the_chinese/",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-22T08:59:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 96
       },
       {
         "headline": "Food for thought 🧘",
@@ -418,22 +427,13 @@
         "viral_score": 90
       },
       {
-        "headline": "Would be a Big Power Move from Google if True that Ox Alpha is Gemini Model",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vv46c7/would_be_a_big_power_move_from_google_if_true/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-22T05:59:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
         "headline": "Gemini 3.5 pro is coming!!!!",
         "link": "https://reddit.com/r/GeminiAI/comments/1vv37c7/gemini_35_pro_is_coming/",
         "subreddit": "GeminiAI",
         "published_at": "2026-08-22T05:07:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 87
       },
       {
         "headline": "Deepmind Researcher Strongly Hints Ox Alpha Is The Next Gemini Pro Model",
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-22T10:42:19.992Z",
+    "reddit_viral_generated_at": "2026-08-22T11:37:49.605Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
