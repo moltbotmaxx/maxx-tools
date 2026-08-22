@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-22T22:40:47.388Z",
+    "generated_at": "2026-08-22T23:37:13.330Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Using ChatGPT to generate 100 Portraits of Muhammad in 100 Art Styles",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vvq4ny/using_chatgpt_to_generate_100_portraits_of/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-22T22:39:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Good times ahead people💀",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vvohpr/good_times_ahead_people/",
@@ -379,7 +388,7 @@
         "published_at": "2026-08-22T21:28:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "WHRG’26 featured the first-ever live-streamed human-robot doubles tennis match, featuring Galbot humanoid robots",
@@ -388,22 +397,13 @@
         "published_at": "2026-08-22T20:19:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 95
       },
       {
         "headline": "Lack of moats",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vvlsv1/lack_of_moats/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-08-22T19:39:46+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
-      },
-      {
-        "headline": "Anthropic Stealth Nerfing Effort Levels",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vvjr5n/anthropic_stealth_nerfing_effort_levels/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-22T18:20:27+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 93
@@ -415,7 +415,7 @@
         "published_at": "2026-08-22T17:36:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "GPT 5.6 Got Massively Upgraded Without an Announcement",
@@ -424,7 +424,7 @@
         "published_at": "2026-08-22T17:27:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 88
       },
       {
         "headline": "I built an English ↔ Claudish translator",
@@ -433,7 +433,7 @@
         "published_at": "2026-08-22T17:17:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "9.3 seconds…Humanoid robots now run faster than humans",
@@ -442,7 +442,7 @@
         "published_at": "2026-08-22T16:57:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "Thanks chat",
@@ -451,7 +451,7 @@
         "published_at": "2026-08-22T16:36:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "Building an OpenClaw-based multi-agent personal assistant on a Raspberry Pi 5",
@@ -460,14 +460,14 @@
         "published_at": "2026-08-22T16:31:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 85
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-22T22:40:47.388Z",
+    "reddit_viral_generated_at": "2026-08-22T23:37:13.330Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
