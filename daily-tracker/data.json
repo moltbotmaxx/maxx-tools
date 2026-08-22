@@ -367,28 +367,28 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-22T21:38:26.624Z",
+    "generated_at": "2026-08-22T22:40:47.388Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Forced neutrality is a corporate lie that hides real-world evidence from voters and general users.",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vvlze9/forced_neutrality_is_a_corporate_lie_that_hides/",
+        "headline": "Good times ahead people💀",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vvohpr/good_times_ahead_people/",
         "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-22T19:47:00+00:00",
+        "published_at": "2026-08-22T21:28:32+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
       },
       {
-        "headline": "Just in case you needed to know, Domino's India is a certified connector for Claude.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vvlv0p/just_in_case_you_needed_to_know_dominos_india_is/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-22T19:42:08+00:00",
+        "headline": "WHRG’26 featured the first-ever live-streamed human-robot doubles tennis match, featuring Galbot humanoid robots",
+        "link": "https://reddit.com/r/singularity/comments/1vvmt8a/whrg26_featured_the_firstever_livestreamed/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-22T20:19:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Lack of moats",
@@ -397,7 +397,7 @@
         "published_at": "2026-08-22T19:39:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "Anthropic Stealth Nerfing Effort Levels",
@@ -406,7 +406,7 @@
         "published_at": "2026-08-22T18:20:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Let's hide data centers in cities with Greco-Deco data center designs, They will never see it comming",
@@ -415,7 +415,7 @@
         "published_at": "2026-08-22T17:36:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 91
       },
       {
         "headline": "GPT 5.6 Got Massively Upgraded Without an Announcement",
@@ -424,7 +424,7 @@
         "published_at": "2026-08-22T17:27:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "I built an English ↔ Claudish translator",
@@ -433,7 +433,7 @@
         "published_at": "2026-08-22T17:17:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "9.3 seconds…Humanoid robots now run faster than humans",
@@ -442,7 +442,7 @@
         "published_at": "2026-08-22T16:57:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "Thanks chat",
@@ -451,7 +451,7 @@
         "published_at": "2026-08-22T16:36:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Building an OpenClaw-based multi-agent personal assistant on a Raspberry Pi 5",
@@ -460,14 +460,14 @@
         "published_at": "2026-08-22T16:31:13+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-22T21:38:26.624Z",
+    "reddit_viral_generated_at": "2026-08-22T22:40:47.388Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
