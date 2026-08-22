@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-22T09:44:33.215Z",
+    "generated_at": "2026-08-22T10:42:19.992Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Ox Alpha can't be the Chinese.",
+        "link": "https://reddit.com/r/singularity/comments/1vv8njv/ox_alpha_cant_be_the_chinese/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-22T10:19:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I used GPT Image 2 to turn cities around the world into photorealistic miniature models",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vv7qwe/i_used_gpt_image_2_to_turn_cities_around_the/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-22T09:27:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "The amount of activity on GitHub right now is crazy. Thoughts?",
         "link": "https://reddit.com/r/singularity/comments/1vv79k5/the_amount_of_activity_on_github_right_now_is/",
@@ -379,7 +397,7 @@
         "published_at": "2026-08-22T08:59:34+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Food for thought 🧘",
@@ -388,7 +406,7 @@
         "published_at": "2026-08-22T07:30:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 93
       },
       {
         "headline": "New anti-ai sloptube clickbait format just dropped",
@@ -397,7 +415,7 @@
         "published_at": "2026-08-22T06:10:25+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 90
       },
       {
         "headline": "Would be a Big Power Move from Google if True that Ox Alpha is Gemini Model",
@@ -406,7 +424,7 @@
         "published_at": "2026-08-22T05:59:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 90
       },
       {
         "headline": "Gemini 3.5 pro is coming!!!!",
@@ -415,7 +433,7 @@
         "published_at": "2026-08-22T05:07:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 88
       },
       {
         "headline": "Deepmind Researcher Strongly Hints Ox Alpha Is The Next Gemini Pro Model",
@@ -424,16 +442,7 @@
         "published_at": "2026-08-22T05:00:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Well done Ox Alpha 👏",
-        "link": "https://reddit.com/r/aimemes/comments/1vv29lv/well_done_ox_alpha/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-22T04:18:53+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
+        "viral_score": 87
       },
       {
         "headline": "Seems Google Finally releasing 3.5 Pro",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-22T03:28:48+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
+        "viral_score": 84
       },
       {
         "headline": "Is anyone else finding Claude really hard to follow lately? (Massive context dumps, cryptic phrasing)",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-22T03:21:16+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "My Cron jobs for OpenClaw",
-        "link": "https://reddit.com/r/openclaw/comments/1vv0p3i/my_cron_jobs_for_openclaw/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-22T03:00:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-22T09:44:33.215Z",
+    "reddit_viral_generated_at": "2026-08-22T10:42:19.992Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
