@@ -367,11 +367,47 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-23T09:45:11.709Z",
+    "generated_at": "2026-08-23T11:37:50.589Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "██████╗ ██╗ ██╗ ███╗ ██╗ ██╗ ██╔══██╗ -",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vw4bdg/_/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-23T11:05:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Gemini replying “shame” for a miscarriage question",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vw2xb6/gemini_replying_shame_for_a_miscarriage_question/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-23T09:47:15+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "AI signatures in their works are great - future models can avoid eating their own excretions.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vw2r9n/ai_signatures_in_their_works_are_great_future/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-23T09:37:26+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Why do most tech subs seem to hate Claude so much?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vw1gfy/why_do_most_tech_subs_seem_to_hate_claude_so_much/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-23T08:21:17+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 94
+      },
       {
         "headline": "Is it really wrong to use AI to post or comment on Reddit?",
         "link": "https://reddit.com/r/ChatGPT/comments/1vw1fay/is_it_really_wrong_to_use_ai_to_post_or_comment/",
@@ -379,7 +415,16 @@
         "published_at": "2026-08-23T08:19:27+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 93
+      },
+      {
+        "headline": "I asked ChatGPT to create an image of a Muppet that was deemed far too terrifying for children to air on tv",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vw0wum/i_asked_chatgpt_to_create_an_image_of_a_muppet/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-23T07:49:18+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "Anthropic uploaded 8+ hours of talks from \"Code w/ Claude\" SF — all 19 videos (free on YouTube)",
@@ -388,7 +433,7 @@
         "published_at": "2026-08-23T07:35:51+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 91
       },
       {
         "headline": "AI setting us up",
@@ -397,7 +442,7 @@
         "published_at": "2026-08-23T07:11:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 90
       },
       {
         "headline": "My 93 crons and automatizations in Open Claw",
@@ -406,7 +451,7 @@
         "published_at": "2026-08-23T06:40:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 89
       },
       {
         "headline": "for real",
@@ -415,59 +460,14 @@
         "published_at": "2026-08-23T01:55:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "This must be trolling. Current Gemini models ain’t that good",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vvu42c/this_must_be_trolling_current_gemini_models_aint/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-23T01:43:39+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
-      },
-      {
-        "headline": "Yeah, feels like something's wrong.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vvtz9b/yeah_feels_like_somethings_wrong/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-23T01:37:07+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "💁🏿‍♂️",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vvtyc1/_/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-23T01:35:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "You know what? I think I'll pass on this one...",
-        "link": "https://reddit.com/r/OpenAI/comments/1vvt410/you_know_what_i_think_ill_pass_on_this_one/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-23T00:55:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 82
-      },
-      {
-        "headline": "Coding Is solved, Bugs are Not Yet Solved",
-        "link": "https://reddit.com/r/singularity/comments/1vvsh6l/coding_is_solved_bugs_are_not_yet_solved/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-23T00:24:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
+        "viral_score": 79
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-23T09:45:11.709Z",
+    "reddit_viral_generated_at": "2026-08-23T11:37:50.589Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
