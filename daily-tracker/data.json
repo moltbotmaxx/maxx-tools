@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-23T03:16:37.205Z",
+    "generated_at": "2026-08-23T04:04:17.495Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -427,13 +427,22 @@
         "viral_score": 87
       },
       {
+        "headline": "WHRG’26 featured the first-ever live-streamed human-robot doubles tennis match, featuring Galbot humanoid robots",
+        "link": "https://reddit.com/r/singularity/comments/1vvmt8a/whrg26_featured_the_firstever_livestreamed/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-22T20:19:19+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 84
+      },
+      {
         "headline": "Lack of moats",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vvlsv1/lack_of_moats/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-08-22T19:39:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 83
+        "viral_score": 82
       },
       {
         "headline": "GPT 5.6 Got Massively Upgraded Without an Announcement",
@@ -451,15 +460,6 @@
         "published_at": "2026-08-22T17:17:08+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 78
-      },
-      {
-        "headline": "9.3 seconds…Humanoid robots now run faster than humans",
-        "link": "https://reddit.com/r/singularity/comments/1vvhlfi/93_secondshumanoid_robots_now_run_faster_than/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-22T16:57:11+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 77
       }
     ]
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-23T03:16:37.205Z",
+    "reddit_viral_generated_at": "2026-08-23T04:04:17.495Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
