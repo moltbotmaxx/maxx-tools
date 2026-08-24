@@ -367,11 +367,56 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-24T13:15:03.105Z",
+    "generated_at": "2026-08-24T15:02:27.463Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "How to avoid Hormuz Strait",
+        "link": "https://reddit.com/r/aimemes/comments/1vx4ho4/how_to_avoid_hormuz_strait/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-24T14:31:54+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "How OxAlpha has been for you all?",
+        "link": "https://reddit.com/r/openclaw/comments/1vx4chx/how_oxalpha_has_been_for_you_all/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-24T14:26:27+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "An unusual parade was held in Kyiv. It featured ground-based robotic systems, maritime drones, and aerial drones",
+        "link": "https://reddit.com/r/singularity/comments/1vx443u/an_unusual_parade_was_held_in_kyiv_it_featured/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-24T14:17:35+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "“It’s an issue but not a bug”-Cherny. Community notes cooked him on X",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vx3phv/its_an_issue_but_not_a_bugcherny_community_notes/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-24T14:01:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
+      {
+        "headline": "I’m living with deep depression and speaking with ChatGPT helped me feel slightly better. Then it recommended I contact 988",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vx2k52/im_living_with_deep_depression_and_speaking_with/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-24T13:16:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
       {
         "headline": "Why's the limit triggering without using image analysis?",
         "link": "https://reddit.com/r/OpenAI/comments/1vx1g6b/whys_the_limit_triggering_without_using_image/",
@@ -379,25 +424,7 @@
         "published_at": "2026-08-24T12:30:03+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
-      },
-      {
-        "headline": "This feels like straight-up consumer fraud at this point.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vx0s65/this_feels_like_straightup_consumer_fraud_at_this/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-24T12:00:04+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 99
-      },
-      {
-        "headline": "The Singularity",
-        "link": "https://reddit.com/r/OpenAI/comments/1vx0q4b/the_singularity/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-24T11:57:12+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 98
+        "viral_score": 95
       },
       {
         "headline": "Lifting the Curtain: The Max x5 and Max x20 Usage Limits that Anthropic Refuses to Share",
@@ -406,7 +433,7 @@
         "published_at": "2026-08-24T11:49:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "Can someone make a good meme out of it?",
@@ -415,16 +442,7 @@
         "published_at": "2026-08-24T11:33:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
-      },
-      {
-        "headline": "If AI can see harmful patterns in society better than we can, will companies warn us? Why not just educate people?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vx08jn/if_ai_can_see_harmful_patterns_in_society_better/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-24T11:33:24+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Lol",
@@ -433,7 +451,7 @@
         "published_at": "2026-08-24T11:33:01+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "Any way to talk to OpenClaw in the car?",
@@ -442,32 +460,14 @@
         "published_at": "2026-08-24T11:07:39+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
-      },
-      {
-        "headline": "Frontier AI is probably already more accurate than most individual humans across a broad range of cognitive work. How is this not AGI? Are we just constantly moving the goal post?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vwyvpg/frontier_ai_is_probably_already_more_accurate/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-24T10:24:40+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "Relace endpoint mangles DeepSeek Flash output",
-        "link": "https://reddit.com/r/openclaw/comments/1vwx97b/relace_endpoint_mangles_deepseek_flash_output/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-24T08:52:47+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
+        "viral_score": 91
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-24T13:15:03.105Z",
+    "reddit_viral_generated_at": "2026-08-24T15:02:27.463Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
