@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-24T22:46:18.724Z",
+    "generated_at": "2026-08-24T23:39:29.813Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "...",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vxi1tp/_/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-24T22:44:29+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Claude + Blender. Impressive.",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vxhre8/claude_blender_impressive/",
@@ -379,7 +388,25 @@
         "published_at": "2026-08-24T22:32:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 99
+      },
+      {
+        "headline": "WHRG'26 wrong turns",
+        "link": "https://reddit.com/r/singularity/comments/1vxfgi4/whrg26_wrong_turns/",
+        "subreddit": "singularity",
+        "published_at": "2026-08-24T21:03:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Claude Enterprise admins, have you ever found anything shocking in an employee's chat history?",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vxehxv/claude_enterprise_admins_have_you_ever_found/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-24T20:28:45+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Week 4 of making my fishing game entirely with AI",
@@ -388,7 +415,7 @@
         "published_at": "2026-08-24T19:58:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 93
       },
       {
         "headline": "Still using OpenClaw",
@@ -397,7 +424,7 @@
         "published_at": "2026-08-24T19:11:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "netflix vs chatgpt",
@@ -406,7 +433,7 @@
         "published_at": "2026-08-24T18:58:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 91
       },
       {
         "headline": "Active OC Users: How do you use cronjobs?",
@@ -415,7 +442,7 @@
         "published_at": "2026-08-24T17:41:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 88
       },
       {
         "headline": "100m Hurdles Final",
@@ -424,7 +451,7 @@
         "published_at": "2026-08-24T16:21:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
+        "viral_score": 85
       },
       {
         "headline": "I would immediately switch my money and time to any AI platform that made it so that hitting enter went to another paragraph instead of sending the message.",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-24T16:19:42+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "What I Built with Claude - sweet potatoes",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vx6fyn/what_i_built_with_claude_sweet_potatoes/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-24T15:44:19+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 84
-      },
-      {
-        "headline": "ChatGPT picks differently when asked in a different language. \"Choose a random fruit from this list\" asked a LOT of times",
-        "link": "https://reddit.com/r/OpenAI/comments/1vx67dq/chatgpt_picks_differently_when_asked_in_a/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-24T15:35:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 84
-      },
-      {
-        "headline": "CatGPT",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vx5qt3/catgpt/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-24T15:18:45+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-24T22:46:18.724Z",
+    "reddit_viral_generated_at": "2026-08-24T23:39:29.813Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
