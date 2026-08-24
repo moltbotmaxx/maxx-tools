@@ -367,11 +367,65 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-24T07:30:11.066Z",
+    "generated_at": "2026-08-24T11:45:14.649Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Can someone make a good meme out of it?",
+        "link": "https://reddit.com/r/aimemes/comments/1vx08pe/can_someone_make_a_good_meme_out_of_it/",
+        "subreddit": "aimemes",
+        "published_at": "2026-08-24T11:33:36+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Lol",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vx088t/lol/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-24T11:33:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Any way to talk to OpenClaw in the car?",
+        "link": "https://reddit.com/r/openclaw/comments/1vwzpst/any_way_to_talk_to_openclaw_in_the_car/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-24T11:07:39+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
+      {
+        "headline": "Frontier AI is probably already more accurate than most individual humans across a broad range of cognitive work. How is this not AGI? Are we just constantly moving the goal post?",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vwyvpg/frontier_ai_is_probably_already_more_accurate/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-24T10:24:40+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 97
+      },
+      {
+        "headline": "3.7 for Plus",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vwyhv5/37_for_plus/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-24T10:04:03+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "Relace endpoint mangles DeepSeek Flash output",
+        "link": "https://reddit.com/r/openclaw/comments/1vwx97b/relace_endpoint_mangles_deepseek_flash_output/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-24T08:52:47+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 93
+      },
       {
         "headline": "Block inappropriate content",
         "link": "https://reddit.com/r/OpenAI/comments/1vwvm6k/block_inappropriate_content/",
@@ -379,7 +433,16 @@
         "published_at": "2026-08-24T07:13:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 90
+      },
+      {
+        "headline": "23% of 5-hour limit for \"server is busy\"",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vwv0bq/23_of_5hour_limit_for_server_is_busy/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-24T06:38:13+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "When to use Cron vs new agent?",
@@ -388,86 +451,23 @@
         "published_at": "2026-08-24T04:19:30+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 83
       },
       {
-        "headline": "ChatGPT Pro advertises \"unlimited\" image generation. It is not unlimited.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vwrpe6/chatgpt_pro_advertises_unlimited_image_generation/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-24T03:37:31+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Stop OpenClaw from Creating Multiple Local Model LLM Instances",
-        "link": "https://reddit.com/r/openclaw/comments/1vwr31d/stop_openclaw_from_creating_multiple_local_model/",
-        "subreddit": "openclaw",
-        "published_at": "2026-08-24T03:06:36+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
-      },
-      {
-        "headline": "I asked ChatGPT to make images for me with a 100% Gongbi style, but with women with totally European features.",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vwqx8s/i_asked_chatgpt_to_make_images_for_me_with_a_100/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-24T02:58:59+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "A Gemini Story",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vwoyom/a_gemini_story/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-24T01:25:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Which custom instruction in ChatGPT could you not live without?",
-        "link": "https://reddit.com/r/OpenAI/comments/1vwocqy/which_custom_instruction_in_chatgpt_could_you_not/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-24T00:56:52+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 86
-      },
-      {
-        "headline": "Comparing Gemini vs Claude vs ChatGPT",
-        "link": "https://reddit.com/r/GeminiAI/comments/1vwlg0i/comparing_gemini_vs_claude_vs_chatgpt/",
-        "subreddit": "GeminiAI",
-        "published_at": "2026-08-23T22:47:23+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 81
-      },
-      {
-        "headline": "How to stop Claude code from adding every correction to the spec? 😭",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vwkw83/how_to_stop_claude_code_from_adding_every/",
+        "headline": "Opus 5 medium is such an unique experience, LOL.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vws2g7/opus_5_medium_is_such_an_unique_experience_lol/",
         "subreddit": "ClaudeAI",
-        "published_at": "2026-08-23T22:24:00+00:00",
+        "published_at": "2026-08-24T03:56:05+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 80
-      },
-      {
-        "headline": "He Can't Be Stopped.",
-        "link": "https://reddit.com/r/singularity/comments/1vwkffs/he_cant_be_stopped/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-23T22:04:15+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 79
+        "viral_score": 82
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-24T07:30:11.066Z",
+    "reddit_viral_generated_at": "2026-08-24T11:45:14.649Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
