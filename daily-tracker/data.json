@@ -367,11 +367,20 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-24T21:45:24.888Z",
+    "generated_at": "2026-08-24T22:46:18.724Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Claude + Blender. Impressive.",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vxhre8/claude_blender_impressive/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-24T22:32:46+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
       {
         "headline": "Week 4 of making my fishing game entirely with AI",
         "link": "https://reddit.com/r/ClaudeAI/comments/1vxdnw6/week_4_of_making_my_fishing_game_entirely_with_ai/",
@@ -379,7 +388,7 @@
         "published_at": "2026-08-24T19:58:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 95
       },
       {
         "headline": "Still using OpenClaw",
@@ -388,7 +397,7 @@
         "published_at": "2026-08-24T19:11:26+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
+        "viral_score": 93
       },
       {
         "headline": "netflix vs chatgpt",
@@ -397,7 +406,7 @@
         "published_at": "2026-08-24T18:58:33+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 97
+        "viral_score": 92
       },
       {
         "headline": "Active OC Users: How do you use cronjobs?",
@@ -406,16 +415,7 @@
         "published_at": "2026-08-24T17:41:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
-      },
-      {
-        "headline": "The 'Stone Age' of AI: How long are we going to struggle with guardrails?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vx7sxw/the_stone_age_of_ai_how_long_are_we_going_to/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-24T16:32:55+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
+        "viral_score": 89
       },
       {
         "headline": "100m Hurdles Final",
@@ -424,7 +424,16 @@
         "published_at": "2026-08-24T16:21:57+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 91
+        "viral_score": 86
+      },
+      {
+        "headline": "I would immediately switch my money and time to any AI platform that made it so that hitting enter went to another paragraph instead of sending the message.",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vx7fb6/i_would_immediately_switch_my_money_and_time_to/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-24T16:19:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 86
       },
       {
         "headline": "What I Built with Claude - sweet potatoes",
@@ -433,7 +442,7 @@
         "published_at": "2026-08-24T15:44:19+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 84
       },
       {
         "headline": "ChatGPT picks differently when asked in a different language. \"Choose a random fruit from this list\" asked a LOT of times",
@@ -442,7 +451,7 @@
         "published_at": "2026-08-24T15:35:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 84
       },
       {
         "headline": "CatGPT",
@@ -451,23 +460,14 @@
         "published_at": "2026-08-24T15:18:45+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
-      },
-      {
-        "headline": "Jevons Paradox",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vx5pqc/jevons_paradox/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-24T15:17:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 88
+        "viral_score": 83
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-24T21:45:24.888Z",
+    "reddit_viral_generated_at": "2026-08-24T22:46:18.724Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
