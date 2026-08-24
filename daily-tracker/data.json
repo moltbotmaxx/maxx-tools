@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-24T04:09:33.138Z",
+    "generated_at": "2026-08-24T05:03:41.157Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "When to use Cron vs new agent?",
+        "link": "https://reddit.com/r/openclaw/comments/1vwsj25/when_to_use_cron_vs_new_agent/",
+        "subreddit": "openclaw",
+        "published_at": "2026-08-24T04:19:30+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "ChatGPT Pro advertises \"unlimited\" image generation. It is not unlimited.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vwrpe6/chatgpt_pro_advertises_unlimited_image_generation/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-24T03:37:31+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 98
+      },
       {
         "headline": "Stop OpenClaw from Creating Multiple Local Model LLM Instances",
         "link": "https://reddit.com/r/openclaw/comments/1vwr31d/stop_openclaw_from_creating_multiple_local_model/",
@@ -379,7 +397,7 @@
         "published_at": "2026-08-24T03:06:36+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "I asked ChatGPT to make images for me with a 100% Gongbi style, but with women with totally European features.",
@@ -388,7 +406,7 @@
         "published_at": "2026-08-24T02:58:59+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 96
       },
       {
         "headline": "A Gemini Story",
@@ -397,7 +415,7 @@
         "published_at": "2026-08-24T01:25:09+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 93
       },
       {
         "headline": "Which custom instruction in ChatGPT could you not live without?",
@@ -406,7 +424,7 @@
         "published_at": "2026-08-24T00:56:52+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 92
       },
       {
         "headline": "Comparing Gemini vs Claude vs ChatGPT",
@@ -415,7 +433,7 @@
         "published_at": "2026-08-23T22:47:23+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
+        "viral_score": 87
       },
       {
         "headline": "How to stop Claude code from adding every correction to the spec? 😭",
@@ -424,7 +442,7 @@
         "published_at": "2026-08-23T22:24:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 89
+        "viral_score": 86
       },
       {
         "headline": "He Can't Be Stopped.",
@@ -433,7 +451,7 @@
         "published_at": "2026-08-23T22:04:15+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 88
+        "viral_score": 85
       },
       {
         "headline": "This is definitely a drug",
@@ -442,32 +460,14 @@
         "published_at": "2026-08-23T21:43:14+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Sam Altman with some sad statements about AI",
-        "link": "https://reddit.com/r/singularity/comments/1vwju3e/sam_altman_with_some_sad_statements_about_ai/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-23T21:39:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "Opus 5 real usecase decoded. Using it for coding sessions was anyway a lost cause.",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vwinim/opus_5_real_usecase_decoded_using_it_for_coding/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-23T20:52:09+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 84
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-24T04:09:33.138Z",
+    "reddit_viral_generated_at": "2026-08-24T05:03:41.157Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
