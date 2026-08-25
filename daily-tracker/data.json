@@ -367,7 +367,7 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-25T19:47:13.464Z",
+    "generated_at": "2026-08-25T21:45:38.461Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
@@ -400,6 +400,15 @@
         "viral_score": 98
       },
       {
+        "headline": "Which LLM do you actually use the most?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vy6xiz/which_llm_do_you_actually_use_the_most/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-25T17:47:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
         "headline": "I think Gemini's multimodal capabilities are insane.",
         "link": "https://reddit.com/r/GeminiAI/comments/1vy6rzj/i_think_geminis_multimodal_capabilities_are_insane/",
         "subreddit": "GeminiAI",
@@ -407,6 +416,15 @@
         "score": 0,
         "comments": 0,
         "viral_score": 96
+      },
+      {
+        "headline": "Harvard’s $699 startup bootcamp has professors who never sleep–but that’s because they’re AI clones",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vy5z15/harvards_699_startup_bootcamp_has_professors_who/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-25T17:13:43+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 95
       },
       {
         "headline": "Anjney Midha is a genuinely well-connected and unusually well-placed person in frontier AI.",
@@ -418,22 +436,13 @@
         "viral_score": 94
       },
       {
-        "headline": "Meanwhile in SF",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vy4jn1/meanwhile_in_sf/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-25T16:22:50+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 93
-      },
-      {
         "headline": "Is using multiple AI models worth the extra complexity?",
         "link": "https://reddit.com/r/ArtificialInteligence/comments/1vy4fhf/is_using_multiple_ai_models_worth_the_extra/",
         "subreddit": "ArtificialInteligence",
         "published_at": "2026-08-25T16:18:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 92
       },
       {
         "headline": "OpenAI Jalapeño: Better Than Nvidia Blackwell",
@@ -451,15 +460,6 @@
         "published_at": "2026-08-25T16:11:02+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Claude in a box",
-        "link": "https://reddit.com/r/ClaudeAI/comments/1vy40r2/claude_in_a_box/",
-        "subreddit": "ClaudeAI",
-        "published_at": "2026-08-25T16:04:04+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 91
       }
     ]
@@ -467,7 +467,7 @@
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-25T19:47:13.464Z",
+    "reddit_viral_generated_at": "2026-08-25T21:45:38.461Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
