@@ -367,11 +367,29 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-25T22:47:10.282Z",
+    "generated_at": "2026-08-25T23:40:28.095Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "Is AI memory starting to matter more than how smart the model is?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vyeolo/is_ai_memory_starting_to_matter_more_than_how/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-25T22:27:28+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "I think Gemini is getting tired of my shit.",
+        "link": "https://reddit.com/r/GeminiAI/comments/1vydutv/i_think_gemini_is_getting_tired_of_my_shit/",
+        "subreddit": "GeminiAI",
+        "published_at": "2026-08-25T21:55:00+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "I am unsure what I gave my copilot to make it hallucinate?",
         "link": "https://reddit.com/r/OpenAI/comments/1vydd6q/i_am_unsure_what_i_gave_my_copilot_to_make_it/",
@@ -379,7 +397,7 @@
         "published_at": "2026-08-25T21:35:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 98
       },
       {
         "headline": "OpenAI Just Dropped Benchmarks for Their Own Chip, Jalapeño, and It's Beating Nvidia's GB300",
@@ -388,7 +406,7 @@
         "published_at": "2026-08-25T21:30:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 97
       },
       {
         "headline": "Billionaire investor Stanley Druckenmiller admits his scathing Wall Street Journal op-ed was entirely written by AI",
@@ -397,7 +415,7 @@
         "published_at": "2026-08-25T21:21:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 97
       },
       {
         "headline": "According to Leo, OpenAI just finished its next >10T pretrain \"Bel\"",
@@ -406,7 +424,7 @@
         "published_at": "2026-08-25T19:09:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 92
       },
       {
         "headline": "The esssy must be of 200 words.",
@@ -415,7 +433,7 @@
         "published_at": "2026-08-25T18:41:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 91
       },
       {
         "headline": "I built \"Omegle for political debates\": you get matched with a person who disagrees, and Claude Haiku judges the debate live.",
@@ -424,7 +442,16 @@
         "published_at": "2026-08-25T18:19:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 90
+      },
+      {
+        "headline": "Which LLM do you actually use the most?",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vy6xiz/which_llm_do_you_actually_use_the_most/",
+        "subreddit": "ChatGPT",
+        "published_at": "2026-08-25T17:47:42+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 88
       },
       {
         "headline": "I think Gemini's multimodal capabilities are insane.",
@@ -433,41 +460,14 @@
         "published_at": "2026-08-25T17:42:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 90
-      },
-      {
-        "headline": "Harvard’s $699 startup bootcamp has professors who never sleep–but that’s because they’re AI clones",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vy5z15/harvards_699_startup_bootcamp_has_professors_who/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-25T17:13:43+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 89
-      },
-      {
-        "headline": "Anjney Midha is a genuinely well-connected and unusually well-placed person in frontier AI.",
-        "link": "https://reddit.com/r/singularity/comments/1vy5iqs/anjney_midha_is_a_genuinely_wellconnected_and/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-25T16:57:50+00:00",
-        "score": 0,
-        "comments": 0,
         "viral_score": 88
-      },
-      {
-        "headline": "Is using multiple AI models worth the extra complexity?",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vy4fhf/is_using_multiple_ai_models_worth_the_extra/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-25T16:18:37+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-25T22:47:10.282Z",
+    "reddit_viral_generated_at": "2026-08-25T23:40:28.095Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
