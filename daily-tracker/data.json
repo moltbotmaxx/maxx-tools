@@ -367,11 +367,38 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-25T21:45:38.461Z",
+    "generated_at": "2026-08-25T22:47:10.282Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
+      {
+        "headline": "I am unsure what I gave my copilot to make it hallucinate?",
+        "link": "https://reddit.com/r/OpenAI/comments/1vydd6q/i_am_unsure_what_i_gave_my_copilot_to_make_it/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-25T21:35:55+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "OpenAI Just Dropped Benchmarks for Their Own Chip, Jalapeño, and It's Beating Nvidia's GB300",
+        "link": "https://reddit.com/r/OpenAI/comments/1vyd7lv/openai_just_dropped_benchmarks_for_their_own_chip/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-25T21:30:04+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 100
+      },
+      {
+        "headline": "Billionaire investor Stanley Druckenmiller admits his scathing Wall Street Journal op-ed was entirely written by AI",
+        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vyczh9/billionaire_investor_stanley_druckenmiller_admits/",
+        "subreddit": "ArtificialInteligence",
+        "published_at": "2026-08-25T21:21:32+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 99
+      },
       {
         "headline": "According to Leo, OpenAI just finished its next >10T pretrain \"Bel\"",
         "link": "https://reddit.com/r/singularity/comments/1vy99vk/according_to_leo_openai_just_finished_its_next/",
@@ -379,7 +406,7 @@
         "published_at": "2026-08-25T19:09:18+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 100
+        "viral_score": 94
       },
       {
         "headline": "The esssy must be of 200 words.",
@@ -388,7 +415,7 @@
         "published_at": "2026-08-25T18:41:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 99
+        "viral_score": 93
       },
       {
         "headline": "I built \"Omegle for political debates\": you get matched with a person who disagrees, and Claude Haiku judges the debate live.",
@@ -397,16 +424,7 @@
         "published_at": "2026-08-25T18:19:10+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Which LLM do you actually use the most?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vy6xiz/which_llm_do_you_actually_use_the_most/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-25T17:47:42+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 92
       },
       {
         "headline": "I think Gemini's multimodal capabilities are insane.",
@@ -415,7 +433,7 @@
         "published_at": "2026-08-25T17:42:11+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 96
+        "viral_score": 90
       },
       {
         "headline": "Harvard’s $699 startup bootcamp has professors who never sleep–but that’s because they’re AI clones",
@@ -424,7 +442,7 @@
         "published_at": "2026-08-25T17:13:43+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 95
+        "viral_score": 89
       },
       {
         "headline": "Anjney Midha is a genuinely well-connected and unusually well-placed person in frontier AI.",
@@ -433,7 +451,7 @@
         "published_at": "2026-08-25T16:57:50+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 88
       },
       {
         "headline": "Is using multiple AI models worth the extra complexity?",
@@ -442,32 +460,14 @@
         "published_at": "2026-08-25T16:18:37+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "OpenAI Jalapeño: Better Than Nvidia Blackwell",
-        "link": "https://reddit.com/r/OpenAI/comments/1vy4be4/openai_jalape%C3%B1o_better_than_nvidia_blackwell/",
-        "subreddit": "OpenAI",
-        "published_at": "2026-08-25T16:14:38+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 92
-      },
-      {
-        "headline": "Dario Amodei admits AI suffers from a crisis of trust, saying people worry companies or governments are 'cooking up some new way to screw them over'",
-        "link": "https://reddit.com/r/ArtificialInteligence/comments/1vy47wg/dario_amodei_admits_ai_suffers_from_a_crisis_of/",
-        "subreddit": "ArtificialInteligence",
-        "published_at": "2026-08-25T16:11:02+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 91
+        "viral_score": 87
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-25T21:45:38.461Z",
+    "reddit_viral_generated_at": "2026-08-25T22:47:10.282Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
