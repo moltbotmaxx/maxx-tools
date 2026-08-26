@@ -367,19 +367,37 @@
     "items": []
   },
   "reddit_viral": {
-    "generated_at": "2026-08-26T03:26:44.569Z",
+    "generated_at": "2026-08-26T04:57:18.359Z",
     "source": "reddit-rss",
     "rss_url": "https://old.reddit.com/user/diligent_run882/m/ai/.rss",
     "window_hours": 48,
     "items": [
       {
-        "headline": "Just vibing somewhere between the moon and the stars",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vyh9eu/just_vibing_somewhere_between_the_moon_and_the/",
+        "headline": "In your life, you will meet many people like Raj. Just ignore them.",
+        "link": "https://reddit.com/r/ChatGPT/comments/1vym0ex/in_your_life_you_will_meet_many_people_like_raj/",
         "subreddit": "ChatGPT",
-        "published_at": "2026-08-26T00:14:57+00:00",
+        "published_at": "2026-08-26T03:49:37+00:00",
         "score": 0,
         "comments": 0,
         "viral_score": 100
+      },
+      {
+        "headline": "Went through a list of 27 advanced Claude tips. These were the first 5 I thought were actually useful",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vyjm2h/went_through_a_list_of_27_advanced_claude_tips/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-26T02:00:01+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 96
+      },
+      {
+        "headline": "OpenAI bans Russia-linked ChatGPT accounts promoting a think tank built on copied papers",
+        "link": "https://reddit.com/r/OpenAI/comments/1vyhfct/openai_bans_russialinked_chatgpt_accounts/",
+        "subreddit": "OpenAI",
+        "published_at": "2026-08-26T00:21:56+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 92
       },
       {
         "headline": "New $100 Business Plan (2 seat minimum). They finally did it. My team just switched over. This is why 5h limits are back.",
@@ -388,16 +406,7 @@
         "published_at": "2026-08-25T23:38:46+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 98
-      },
-      {
-        "headline": "Is AI memory starting to matter more than how smart the model is?",
-        "link": "https://reddit.com/r/ChatGPT/comments/1vyeolo/is_ai_memory_starting_to_matter_more_than_how/",
-        "subreddit": "ChatGPT",
-        "published_at": "2026-08-25T22:27:28+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 96
+        "viral_score": 91
       },
       {
         "headline": "I think Gemini is getting tired of my shit.",
@@ -406,7 +415,7 @@
         "published_at": "2026-08-25T21:55:00+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 94
+        "viral_score": 87
       },
       {
         "headline": "I am unsure what I gave my copilot to make it hallucinate?",
@@ -415,7 +424,7 @@
         "published_at": "2026-08-25T21:35:55+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 86
       },
       {
         "headline": "OpenAI Just Dropped Benchmarks for Their Own Chip, Jalapeño, and It's Beating Nvidia's GB300",
@@ -424,7 +433,7 @@
         "published_at": "2026-08-25T21:30:04+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 93
+        "viral_score": 85
       },
       {
         "headline": "Billionaire investor Stanley Druckenmiller admits his scathing Wall Street Journal op-ed was entirely written by AI",
@@ -433,7 +442,16 @@
         "published_at": "2026-08-25T21:21:32+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 92
+        "viral_score": 85
+      },
+      {
+        "headline": "What a… backwards way to confirm a typo",
+        "link": "https://reddit.com/r/ClaudeAI/comments/1vycha6/what_a_backwards_way_to_confirm_a_typo/",
+        "subreddit": "ClaudeAI",
+        "published_at": "2026-08-25T21:02:49+00:00",
+        "score": 0,
+        "comments": 0,
+        "viral_score": 84
       },
       {
         "headline": "Figure.AI just dropped Index, the biggest and most diverse robot dataset ever with 16 million videos; From now on, everyone can record their daily tasks and get paid for it",
@@ -442,32 +460,14 @@
         "published_at": "2026-08-25T19:20:31+00:00",
         "score": 0,
         "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "According to Leo, OpenAI just finished its next >10T pretrain \"Bel\"",
-        "link": "https://reddit.com/r/singularity/comments/1vy99vk/according_to_leo_openai_just_finished_its_next/",
-        "subreddit": "singularity",
-        "published_at": "2026-08-25T19:09:18+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 87
-      },
-      {
-        "headline": "The esssy must be of 200 words.",
-        "link": "https://reddit.com/r/aimemes/comments/1vy8gux/the_esssy_must_be_of_200_words/",
-        "subreddit": "aimemes",
-        "published_at": "2026-08-25T18:41:00+00:00",
-        "score": 0,
-        "comments": 0,
-        "viral_score": 85
+        "viral_score": 80
       }
     ]
   },
   "pipeline_meta": {
     "generated_at": "2026-02-25T22:05:45.930535+00:00",
     "scoring_version": "v2.0",
-    "reddit_viral_generated_at": "2026-08-26T03:26:44.569Z",
+    "reddit_viral_generated_at": "2026-08-26T04:57:18.359Z",
     "reddit_viral_source": "reddit-rss"
   }
 }
