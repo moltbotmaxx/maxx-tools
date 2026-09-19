@@ -303,6 +303,149 @@
       background: transparent;
     }
 
+    .btn-text {
+      background: none;
+      border: none;
+      color: var(--accent-primary);
+      cursor: pointer;
+      font: inherit;
+      padding: 0;
+      text-decoration: underline;
+      transition: opacity var(--transition-fast);
+    }
+
+    .btn-text:hover {
+      opacity: 0.8;
+    }
+
+    /* ── Author Avatar Row ── */
+    .avatar-edit-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar-preview-mini {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 1px solid var(--border-light);
+      background: var(--bg-tertiary);
+      flex-shrink: 0;
+    }
+
+    /* ── Badge Pill Selector ── */
+    .badge-pill-group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+    }
+
+    .btn-badge-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 7px 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .btn-badge-pill:hover {
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+    }
+
+    .btn-badge-pill.is-active {
+      background: var(--bg-card);
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+      box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.15);
+      font-weight: 700;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .badge-dot--blue {
+      background: #1d9bf0;
+    }
+
+    .badge-dot--gold {
+      background: #e2b714;
+      border-radius: 2px;
+    }
+
+    .badge-dot--grey {
+      background: #829aab;
+    }
+
+    .badge-dot--none {
+      border: 1px dashed var(--text-muted);
+      background: transparent;
+    }
+
+    /* ── Affiliation Preset Grid ── */
+    .affil-preset-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .btn-affil-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 8px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .btn-affil-chip svg,
+    .btn-affil-chip img {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .btn-affil-chip:hover {
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+    }
+
+    .btn-affil-chip.is-active {
+      background: var(--bg-card);
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+      box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.15);
+      font-weight: 700;
+    }
+
+    .affil-custom-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+
     /* ── Status Bar ── */
     .status-bar {
       padding: 8px 16px;
@@ -464,8 +607,9 @@
     .tweet-head {
       display: flex;
       align-items: flex-start;
-      gap: calc(var(--tweet-avatar-size) * 0.23);
+      gap: calc(var(--tweet-avatar-size) * 0.24);
       margin-bottom: var(--tweet-section-gap);
+      position: relative;
     }
 
     .tweet-avatar {
@@ -481,25 +625,28 @@
     .tweet-meta {
       min-width: 0;
       padding-top: 1px;
+      flex: 1;
     }
 
     .name-row {
       display: flex;
       align-items: center;
-      gap: 4px;
-      margin-bottom: 0px;
+      gap: 3px;
+      margin-bottom: 1px;
       min-width: 0;
+      flex-wrap: nowrap;
     }
 
     .tweet-name {
       font-size: var(--tweet-name-size);
-      font-weight: 800;
+      font-weight: 700;
       color: var(--card-text);
       letter-spacing: -0.01em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       flex-shrink: 1;
+      line-height: 1.25;
     }
 
     .tweet-handle {
@@ -509,33 +656,71 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: block;
+      line-height: 1.25;
     }
 
+    /* ── Verified & Affiliation Badges ── */
     .verify-badge {
-      width: calc(var(--tweet-name-size) + 2px);
-      height: calc(var(--tweet-name-size) + 2px);
-      border-radius: 999px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: calc(var(--tweet-name-size) * 0.65);
-      line-height: 1;
-      font-weight: 700;
-      color: #fff;
+      width: calc(var(--tweet-name-size) * 1.2);
+      height: calc(var(--tweet-name-size) * 1.2);
       flex: 0 0 auto;
+      vertical-align: middle;
+      margin-left: 2px;
     }
 
-    .verify-badge--blue {
-      background: #1d9bf0;
+    .verify-badge svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
-    .verify-badge--business {
-      background: #f6c343;
-      color: #111;
+    .affiliation-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(var(--tweet-name-size) * 1.12);
+      height: calc(var(--tweet-name-size) * 1.12);
+      border-radius: 4px;
+      overflow: hidden;
+      flex: 0 0 auto;
+      margin-left: 4px;
+      vertical-align: middle;
+      background: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     }
 
-    .verify-badge--government {
-      background: #8b98a5;
+    .tweet-card--light .affiliation-badge {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    }
+
+    .affiliation-badge img,
+    .affiliation-badge svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── Top-right 𝕏 logo / menu ── */
+    .tweet-top-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      color: var(--card-muted);
+      opacity: 0.82;
+      padding-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .tweet-top-right svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
     }
 
     .tweet-body {
@@ -551,23 +736,42 @@
       margin-top: var(--tweet-section-gap);
       font-size: var(--tweet-detail-size);
       color: var(--card-muted);
+      letter-spacing: -0.01em;
     }
 
+    /* ── Stats Action Icons ── */
     .tweet-stats {
       margin-top: var(--tweet-section-gap);
       padding-top: var(--tweet-section-gap);
       border-top: 1px solid var(--card-border);
       display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
       color: var(--card-muted);
+      font-size: var(--tweet-detail-size);
+      padding-left: 2px;
+      padding-right: 12px;
+    }
+
+    .tweet-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--card-muted);
+      font-weight: 500;
       font-size: var(--tweet-detail-size);
     }
 
-    .tweet-stats b {
-      color: var(--card-text);
-      font-weight: 800;
-      margin-right: 4px;
+    .tweet-stat-icon {
+      width: calc(var(--tweet-detail-size) * 1.25);
+      height: calc(var(--tweet-detail-size) * 1.25);
+      fill: currentColor;
+      opacity: 0.85;
+      flex-shrink: 0;
+    }
+
+    .tweet-stat-item span {
+      font-variant-numeric: tabular-nums;
     }
 
     .media-grid {
@@ -688,12 +892,96 @@
 
         <!-- URL Input -->
         <div class="controls__section">
-          <span class="controls__section-label">Tweet URL</span>
+          <div class="field__label-row">
+            <span class="controls__section-label">Tweet URL</span>
+            <button id="loadSampleBtn" class="btn-text" type="button" style="font-size:0.72rem;">Load sample tweet</button>
+          </div>
           <div class="url-row">
             <input id="tweetUrl" class="field__input" placeholder="https://x.com/user/status/..." autocomplete="off" />
             <button id="loadBtn" class="btn-secondary" type="button">Load tweet</button>
           </div>
-          <p class="field__hint">Paste a public X/Twitter URL. Enter and paste-to-load still work.</p>
+          <p class="field__hint">Paste a public X/Twitter URL or customize author & content below.</p>
+        </div>
+
+        <div class="controls__divider"></div>
+
+        <!-- Author Profile -->
+        <div class="controls__section">
+          <span class="controls__section-label">Author Profile</span>
+          <div class="grid-2">
+            <div class="field">
+              <label class="field__label" for="authorName">Display name</label>
+              <input id="authorName" class="field__input" placeholder="Sam Altman" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="authorHandle">Handle</label>
+              <input id="authorHandle" class="field__input" placeholder="@sama" autocomplete="off" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label">Avatar image</label>
+            <div class="avatar-edit-row">
+              <img id="avatarMiniPreview" class="avatar-preview-mini" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="Avatar preview" />
+              <input id="authorAvatarUrl" class="field__input" placeholder="Image URL or upload..." style="flex:1;" />
+              <label class="btn-secondary" style="cursor:pointer; padding: 9px 12px; margin:0;" title="Upload custom avatar image">
+                Upload
+                <input type="file" id="avatarFileInput" accept="image/*" style="display:none;" />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls__divider"></div>
+
+        <!-- Verified & Affiliation -->
+        <div class="controls__section">
+          <span class="controls__section-label">Verified & Affiliation</span>
+          <div class="field">
+            <label class="field__label">Verified badge</label>
+            <div class="badge-pill-group">
+              <button class="btn-badge-pill is-active" type="button" data-verify-pill="none">
+                <span class="badge-dot badge-dot--none"></span> None
+              </button>
+              <button class="btn-badge-pill" type="button" data-verify-pill="blue">
+                <span class="badge-dot badge-dot--blue"></span> Blue
+              </button>
+              <button class="btn-badge-pill" type="button" data-verify-pill="business">
+                <span class="badge-dot badge-dot--gold"></span> Gold
+              </button>
+              <button class="btn-badge-pill" type="button" data-verify-pill="government">
+                <span class="badge-dot badge-dot--grey"></span> Grey
+              </button>
+            </div>
+          </div>
+
+          <label class="switch-row" for="affiliationToggle">
+            <input id="affiliationToggle" type="checkbox" />
+            Show affiliation icon
+          </label>
+
+          <div id="affiliationControls" style="display:none; flex-direction:column; gap:8px;">
+            <span class="field__label">Affiliation Preset</span>
+            <div class="affil-preset-grid">
+              <button class="btn-affil-chip is-active" type="button" data-affil="x">𝕏 X</button>
+              <button class="btn-affil-chip" type="button" data-affil="openai">OpenAI</button>
+              <button class="btn-affil-chip" type="button" data-affil="tesla">Tesla</button>
+              <button class="btn-affil-chip" type="button" data-affil="microsoft">Microsoft</button>
+              <button class="btn-affil-chip" type="button" data-affil="google">Google</button>
+              <button class="btn-affil-chip" type="button" data-affil="apple">Apple</button>
+              <button class="btn-affil-chip" type="button" data-affil="anthropic">Anthropic</button>
+              <button class="btn-affil-chip" type="button" data-affil="github">GitHub</button>
+              <button class="btn-affil-chip" type="button" data-affil="yc">YC</button>
+              <button class="btn-affil-chip" type="button" data-affil="nvidia">Nvidia</button>
+              <button class="btn-affil-chip" type="button" data-affil="custom">Custom</button>
+            </div>
+            <div id="customAffilRow" class="affil-custom-row" style="display:none;">
+              <input id="affilCustomUrl" class="field__input" placeholder="Icon URL or upload..." style="flex:1;" />
+              <label class="btn-secondary" style="cursor:pointer; padding: 9px 12px; margin:0;" title="Upload custom icon">
+                Upload
+                <input type="file" id="affilFileInput" accept="image/*" style="display:none;" />
+              </label>
+            </div>
+          </div>
         </div>
 
         <div class="controls__divider"></div>
@@ -725,16 +1013,49 @@
           </div>
           <label class="switch-row" for="showStats">
             <input id="showStats" type="checkbox" />
-            Show metrics
+            Show metrics action bar
           </label>
           <label class="switch-row" for="showTimestamp">
             <input id="showTimestamp" type="checkbox" />
             Show timestamp
           </label>
+          <label class="switch-row" for="showXLogo">
+            <input id="showXLogo" type="checkbox" checked />
+            Show 𝕏 logo in corner
+          </label>
           <label class="switch-row" for="stripReplyMentions">
             <input id="stripReplyMentions" type="checkbox" checked />
             Strip leading @mentions
           </label>
+        </div>
+
+        <div class="controls__divider"></div>
+
+        <!-- Date & Metrics -->
+        <div class="controls__section">
+          <span class="controls__section-label">Date & Metrics</span>
+          <div class="field">
+            <label class="field__label" for="timestampInput">Timestamp text</label>
+            <input id="timestampInput" class="field__input" placeholder="e.g. 10:42 PM · Sep 18, 2024 · 2.4M Views" autocomplete="off" />
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label class="field__label" for="metricReplies">Replies</label>
+              <input id="metricReplies" class="field__input" placeholder="1.2K" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="metricReposts">Reposts</label>
+              <input id="metricReposts" class="field__input" placeholder="4.5K" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="metricLikes">Likes</label>
+              <input id="metricLikes" class="field__input" placeholder="24.8K" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="metricViews">Views</label>
+              <input id="metricViews" class="field__input" placeholder="520K" autocomplete="off" />
+            </div>
+          </div>
         </div>
 
         <div class="controls__divider"></div>
@@ -901,6 +1222,7 @@
       stripReplyMentions: true,
       showStats: false,
       showTimestamp: false,
+      showXLogo: true,
       cardPadding: 20,
       sectionGap: 12,
       avatarSize: 44,
@@ -911,6 +1233,72 @@
       metaFontSize: 15,
       detailFontSize: 14,
       exportScale: 2
+    };
+
+    const AFFILIATION_PRESETS = {
+      x: {
+        name: "X",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#000000"/><path fill="#ffffff" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`
+      },
+      openai: {
+        name: "OpenAI",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#000000"/><path fill="#ffffff" d="M20.5 10.7a4.94 4.94 0 0 0-.4-3.8 5.08 5.08 0 0 0-4.6-2.5c-.3 0-.7 0-1 .1a5.05 5.05 0 0 0-3.9-1.9 5.12 5.12 0 0 0-4.9 3.5 5.05 5.05 0 0 0-3.2 2.3 5.02 5.02 0 0 0 .5 5.7 4.94 4.94 0 0 0 .4 3.8 5.08 5.08 0 0 0 4.6 2.5c.3 0 .7 0 1-.1a5.05 5.05 0 0 0 3.9 1.9 5.12 5.12 0 0 0 4.9-3.5 5.05 5.05 0 0 0 3.2-2.3 5.02 5.02 0 0 0-.5-5.7zm-7.5 9.2c-.3 0-.6 0-.9-.1l2.5-1.4a.9.9 0 0 0 .5-.8v-3.2l1.9 1.1a3.5 3.5 0 0 1-4 4.4zm-6.6-2.4a3.5 3.5 0 0 1-.5-4.4l2.5 1.5a.9.9 0 0 0 .9 0l2.8-1.6v2.2l-1.9 1.1a3.5 3.5 0 0 1-3.8 1.2zm-1.5-6.8a3.5 3.5 0 0 1 3.5-3.2c.3 0 .6 0 .9.1l-2.5 1.4a.9.9 0 0 0-.5.8v3.2l-1.9-1.1a3.5 3.5 0 0 1 .5-1.2zm9.1-2.4l-2.8 1.6V7.7l1.9-1.1a3.5 3.5 0 0 1 3.8-1.2 3.5 3.5 0 0 1 .5 4.4l-2.5-1.5a.9.9 0 0 0-.9 0zm2.9 5.6l-2.5-1.5a.9.9 0 0 0-.9 0l-2.8 1.6V12l1.9-1.1a3.5 3.5 0 0 1 3.8-1.2 3.5 3.5 0 0 1 .5 4.4z"/></svg>`
+      },
+      tesla: {
+        name: "Tesla",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#e82127"/><path fill="#ffffff" d="M12 6.5c2.3 0 4.5.5 6.2 1.4l.6-1.5C16.8 5.3 14.5 4.8 12 4.8s-4.8.5-6.8 1.6l.6 1.5c1.7-.9 3.9-1.4 6.2-1.4zm0 2.8c1.8 0 3.5.4 4.9 1.1l.5-1.4C16 8.2 14.1 7.8 12 7.8s-4 .4-5.4 1.2l.5 1.4c1.4-.7 3.1-1.1 4.9-1.1zm-1.2 3.1v8.8h2.4v-8.8l2.9-2.2-1.1-1.2-1.8 1.4V8.9h-2.4v1.5l-1.8-1.4-1.1 1.2 2.9 2.2z"/></svg>`
+      },
+      microsoft: {
+        name: "Microsoft",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#000000"/><g transform="translate(4,4)"><rect width="7.2" height="7.2" fill="#f25022"/><rect x="8.8" width="7.2" height="7.2" fill="#7fba00"/><rect y="8.8" width="7.2" height="7.2" fill="#00a4ef"/><rect x="8.8" y="8.8" width="7.2" height="7.2" fill="#ffb900"/></g></svg>`
+      },
+      google: {
+        name: "Google",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#ffffff"/><path d="M18.6 12.2c0-.5-.04-1-.13-1.4H12v2.7h3.7c-.16.9-.66 1.6-1.4 2.1v1.8h2.3c1.3-1.2 2-3 2-5.2z" fill="#4285F4"/><path d="M12 19c1.9 0 3.5-.6 4.6-1.7l-2.3-1.8c-.6.4-1.4.7-2.3.7-1.8 0-3.3-1.2-3.8-2.8H5.8v1.8C7 17.5 9.3 19 12 19z" fill="#34A853"/><path d="M8.2 13.4c-.1-.4-.2-.9-.2-1.4s.1-1 .2-1.4V8.8H5.8A6.98 6.98 0 0 0 5 12c0 1.1.3 2.2.8 3.2l2.4-1.8z" fill="#FBBC05"/><path d="M12 7.7c1 0 1.9.3 2.6 1l2-2C15.4 5.6 13.8 5 12 5 9.3 5 7 6.5 5.8 8.8l2.4 1.8c.5-1.6 2-2.9 3.8-2.9z" fill="#EA4335"/></svg>`
+      },
+      apple: {
+        name: "Apple",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#000000"/><path fill="#ffffff" d="M16.5 13.2c0-2.4 2-3.6 2.1-3.7-1.1-1.6-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6.02-3.1 1-4 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.8 2.5 3 2.4 1.2-.05 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3-.02 2.1-1.2 2.9-2.4.9-1.3 1.3-2.6 1.3-2.7-.03-.02-2.4-.9-2.4-3.8zM14.8 6.2c.7-.8 1.1-1.9 1-3.2-1 .04-2.1.7-2.7 1.4-.6.7-1.1 1.8-1 3 1.1.1 2-.4 2.7-1.2z"/></svg>`
+      },
+      anthropic: {
+        name: "Anthropic",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#1f1e1d"/><path fill="#cc785c" d="M13.8 6.2h2.5L19 17.8h-2.6l-.7-2.4h-3.4l-.7 2.4H9zm1.8 7.3l-1.1-4-1.1 4z"/><path fill="#ffffff" d="M8.2 6.2h2.5L7.8 17.8H5.2z"/></svg>`
+      },
+      github: {
+        name: "GitHub",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#181717"/><path fill="#ffffff" d="M12 4.5C7.86 4.5 4.5 7.86 4.5 12c0 3.31 2.15 6.12 5.12 7.12.38.07.51-.16.51-.36v-1.41c-2.09.45-2.53-.89-2.53-.89-.34-.87-.83-1.1-.83-1.1-.68-.46.05-.45.05-.45.75.05 1.15.77 1.15.77.67 1.15 1.75.82 2.18.63.07-.49.26-.82.48-1.01-1.67-.19-3.42-.83-3.42-3.71 0-.82.29-1.49.77-2.02-.08-.19-.33-.95.07-1.99 0 0 .63-.2 2.06.77a7.2 7.2 0 0 1 3.75 0c1.43-.97 2.06-.77 2.06-.77.4 1.04.15 1.8.07 1.99.48.53.77 1.2.77 2.02 0 2.89-1.76 3.52-3.43 3.7.27.23.52.7.52 1.41v2.09c0 .2.14.44.52.36 2.97-1 5.12-3.81 5.12-7.12 0-4.14-3.36-7.5-7.5-7.5z"/></svg>`
+      },
+      yc: {
+        name: "Y Combinator",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#ff6600"/><path fill="#ffffff" d="M7 6.5h2.2l2.8 5.6 2.8-5.6H17l-4 7.6v4.4h-2V14.1z"/></svg>`
+      },
+      nvidia: {
+        name: "Nvidia",
+        svg: `<svg viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="4" fill="#000000"/><path fill="#76b900" d="M12.5 7.2c-3.1 0-4.9 2.2-4.9 4.8 0 3.7 3.3 5 5.9 5.8 1.4.4 2.2.8 2.2 1.5 0-.8-1.4-1.2-2.3-1.4-1.9-.4-3.5-1.3-3.5-3.3 0-1.7 1.3-3.1 3.4-3.1 1.7 0 3 .9 3.5 2.2h1.6c-.6-2.2-2.5-3.6-4.9-3.6zm-1.8 10.3c-2.3-.5-4.5-1.9-4.5-4.7 0-3.3 2.5-5.3 5.4-5.3 2.8 0 4.9 1.8 5.4 4.3h-1.6c-.4-1.6-1.8-2.8-3.8-2.8-2 0-3.7 1.4-3.7 3.8 0 2.2 1.6 3.2 3.4 3.7 1.7.5 2.9.9 2.9 2.1 0 .9-1 1.4-2.1 1.4-1.2 0-2.2-.4-2.8-1.2l-1.3 1.1c.9 1.1 2.3 1.6 4.1 1.6 2.1 0 3.8-1 3.8-2.9 0-2-1.9-2.7-3.7-3.2z"/></svg>`
+      }
+    };
+
+    const SAMPLE_TWEET = {
+      id: "sample-1",
+      canonicalUrl: "https://x.com/sama/status/1800000000000000000",
+      source: "sample",
+      displayName: "Sam Altman",
+      handleText: "@sama",
+      verification: { verified: true, type: "blue" },
+      affiliation: { enabled: true, type: "openai", customUrl: "" },
+      showXLogo: true,
+      bodyRaw: "Excited to share our newest developments. The rate of progress continues to accelerate and the future is looking remarkably bright.",
+      timestampRaw: new Date().toISOString(),
+      timestampLabel: "10:42 PM · Sep 18, 2024 · 2.4M Views",
+      metrics: {
+        replies: "1.4K",
+        reposts: "3.8K",
+        likes: "32.5K",
+        views: "2.4M"
+      },
+      avatarUrl: "https://unavatar.io/x/sama",
+      avatarCandidates: ["https://unavatar.io/x/sama"],
+      media: []
     };
 
     const STYLE_PRESETS = {
@@ -971,6 +1359,7 @@
       "stripReplyMentions",
       "showStats",
       "showTimestamp",
+      "showXLogo",
       "cardPadding",
       "sectionGap",
       "avatarSize",
@@ -980,16 +1369,38 @@
       "nameFontSize",
       "metaFontSize",
       "detailFontSize",
-      "exportScale"
+      "exportScale",
+      "verificationType",
+      "affiliationEnabled",
+      "affiliationType"
     ];
 
     const el = {
       tweetUrl: document.getElementById("tweetUrl"),
       loadBtn: document.getElementById("loadBtn"),
+      loadSampleBtn: document.getElementById("loadSampleBtn"),
+      authorName: document.getElementById("authorName"),
+      authorHandle: document.getElementById("authorHandle"),
+      authorAvatarUrl: document.getElementById("authorAvatarUrl"),
+      avatarFileInput: document.getElementById("avatarFileInput"),
+      avatarMiniPreview: document.getElementById("avatarMiniPreview"),
+      verifyPillButtons: Array.from(document.querySelectorAll("[data-verify-pill]")),
+      affiliationToggle: document.getElementById("affiliationToggle"),
+      affiliationControls: document.getElementById("affiliationControls"),
+      affilChips: Array.from(document.querySelectorAll("[data-affil]")),
+      customAffilRow: document.getElementById("customAffilRow"),
+      affilCustomUrl: document.getElementById("affilCustomUrl"),
+      affilFileInput: document.getElementById("affilFileInput"),
       themeMode: document.getElementById("themeMode"),
       showStats: document.getElementById("showStats"),
       showTimestamp: document.getElementById("showTimestamp"),
+      showXLogo: document.getElementById("showXLogo"),
       stripReplyMentions: document.getElementById("stripReplyMentions"),
+      timestampInput: document.getElementById("timestampInput"),
+      metricReplies: document.getElementById("metricReplies"),
+      metricReposts: document.getElementById("metricReposts"),
+      metricLikes: document.getElementById("metricLikes"),
+      metricViews: document.getElementById("metricViews"),
       width: document.getElementById("width"),
       widthNumber: document.getElementById("widthNumber"),
       cardPadding: document.getElementById("cardPadding"),
@@ -1027,6 +1438,19 @@
       cardData: null,
       loading: false,
       ...STYLE_DEFAULTS,
+      displayName: "",
+      handleText: "",
+      avatarUrl: "",
+      avatarDataUrl: null,
+      verificationType: "none",
+      affiliationEnabled: false,
+      affiliationType: "x",
+      affiliationCustomUrl: "",
+      timestampText: "",
+      repliesCount: "",
+      repostsCount: "",
+      likesCount: "",
+      viewsCount: "",
       activeToken: 0,
       abortController: null,
       fetchCache: new Map(),
@@ -1100,6 +1524,18 @@
         if (typeof parsed.showTimestamp === "boolean") {
           next.showTimestamp = parsed.showTimestamp;
         }
+        if (typeof parsed.showXLogo === "boolean") {
+          next.showXLogo = parsed.showXLogo;
+        }
+        if (["none", "blue", "business", "government"].includes(parsed.verificationType)) {
+          next.verificationType = parsed.verificationType;
+        }
+        if (typeof parsed.affiliationEnabled === "boolean") {
+          next.affiliationEnabled = parsed.affiliationEnabled;
+        }
+        if (typeof parsed.affiliationType === "string") {
+          next.affiliationType = parsed.affiliationType;
+        }
         const exportScale = Number(parsed.exportScale);
         if ([1, 2, 3, 4].includes(exportScale)) {
           next.exportScale = exportScale;
@@ -1135,8 +1571,41 @@
       el.themeMode.value = state.themeMode;
       el.showStats.checked = state.showStats;
       el.showTimestamp.checked = state.showTimestamp;
+      el.showXLogo.checked = state.showXLogo;
       el.stripReplyMentions.checked = state.stripReplyMentions;
       el.exportScale.value = String(state.exportScale);
+
+      // Author inputs
+      if (el.authorName) el.authorName.value = state.displayName || "";
+      if (el.authorHandle) el.authorHandle.value = state.handleText || "";
+      if (el.authorAvatarUrl) el.authorAvatarUrl.value = state.avatarUrl && !state.avatarUrl.startsWith("data:") ? state.avatarUrl : "";
+      if (el.avatarMiniPreview) el.avatarMiniPreview.src = state.avatarDataUrl || state.avatarUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
+
+      // Verification pill buttons
+      if (el.verifyPillButtons) {
+        el.verifyPillButtons.forEach((btn) => {
+          btn.classList.toggle("is-active", btn.dataset.verifyPill === state.verificationType);
+        });
+      }
+
+      // Affiliation controls
+      if (el.affiliationToggle) el.affiliationToggle.checked = state.affiliationEnabled;
+      if (el.affiliationControls) el.affiliationControls.style.display = state.affiliationEnabled ? "flex" : "none";
+      if (el.affilChips) {
+        el.affilChips.forEach((btn) => {
+          btn.classList.toggle("is-active", btn.dataset.affil === state.affiliationType);
+        });
+      }
+      if (el.customAffilRow) el.customAffilRow.style.display = state.affiliationType === "custom" ? "flex" : "none";
+      if (el.affilCustomUrl) el.affilCustomUrl.value = state.affiliationCustomUrl && !state.affiliationCustomUrl.startsWith("data:") ? state.affiliationCustomUrl : "";
+
+      // Date & Metrics
+      if (el.timestampInput) el.timestampInput.value = state.timestampText || "";
+      if (el.metricReplies) el.metricReplies.value = state.repliesCount || "";
+      if (el.metricReposts) el.metricReposts.value = state.repostsCount || "";
+      if (el.metricLikes) el.metricLikes.value = state.likesCount || "";
+      if (el.metricViews) el.metricViews.value = state.viewsCount || "";
+
       updatePresetButtons();
       updateDownloadLabel();
     }
@@ -1375,34 +1844,71 @@
     }
 
     function createVerifyBadge(verification) {
-      if (!verification?.verified) {
+      if (!verification || !verification.verified || verification.type === "none") {
         return null;
       }
+      const type = verification.type || "blue";
       const badge = document.createElement("span");
-      badge.className = `verify-badge verify-badge--${verification.type}`;
-      badge.textContent = "✓";
+      badge.className = `verify-badge verify-badge--${type}`;
+      badge.setAttribute("aria-label", `${type} verified account`);
+
+      if (type === "business") {
+        badge.innerHTML = `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <g>
+              <rect x="2" y="2" width="20" height="20" rx="4.5" ry="4.5" fill="#e2b714"/>
+              <path fill="#000000" d="M10.25 16.5L6 12.25l1.4-1.4 2.85 2.85 7.15-7.15 1.4 1.4-8.55 8.55z"/>
+            </g>
+          </svg>
+        `;
+      } else if (type === "government") {
+        badge.innerHTML = `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <g>
+              <path fill="#829aab" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.2 2.9.81 3.91s2.52 1.27 3.91.81c.66 1.31 1.91 2.19 3.34 2.19s2.67-.88 3.33-2.19c1.4.46 2.91.2 3.92-.81s1.26-2.52.8-3.91c1.31-.67 2.2-1.91 2.2-3.34z"/>
+              <path fill="#ffffff" d="M10.25 16.5L6 12.25l1.4-1.4 2.85 2.85 7.15-7.15 1.4 1.4-8.55 8.55z"/>
+            </g>
+          </svg>
+        `;
+      } else {
+        // default "blue"
+        badge.innerHTML = `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <g>
+              <path fill="#1d9bf0" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.2 2.9.81 3.91s2.52 1.27 3.91.81c.66 1.31 1.91 2.19 3.34 2.19s2.67-.88 3.33-2.19c1.4.46 2.91.2 3.92-.81s1.26-2.52.8-3.91c1.31-.67 2.2-1.91 2.2-3.34z"/>
+              <path fill="#ffffff" d="M10.25 16.5L6 12.25l1.4-1.4 2.85 2.85 7.15-7.15 1.4 1.4-8.55 8.55z"/>
+            </g>
+          </svg>
+        `;
+      }
       return badge;
     }
 
-    function drawVerifyBadge(ctx, x, y, verification) {
-      if (!verification?.verified) {
-        return x;
+    function createAffiliationBadge(affiliation) {
+      if (!affiliation || !affiliation.enabled) {
+        return null;
       }
-      const color = verification.type === "business"
-        ? "#f6c343"
-        : verification.type === "government"
-          ? "#8b98a5"
-          : "#1d9bf0";
+      const span = document.createElement("span");
+      span.className = "affiliation-badge";
+      const presetKey = affiliation.type || "x";
 
-      ctx.fillStyle = color;
-      ctx.beginPath();
-      ctx.arc(x + 10, y + 10, 10, 0, Math.PI * 2);
-      ctx.fill();
+      if (presetKey !== "custom" && AFFILIATION_PRESETS[presetKey]) {
+        span.innerHTML = AFFILIATION_PRESETS[presetKey].svg;
+        span.title = `Affiliated with ${AFFILIATION_PRESETS[presetKey].name}`;
+      } else if (affiliation.customUrl) {
+        const img = document.createElement("img");
+        img.src = affiliation.customUrl;
+        img.alt = "Affiliation badge";
+        span.appendChild(img);
+      } else {
+        span.innerHTML = AFFILIATION_PRESETS["x"].svg;
+        span.title = "Affiliated with X";
+      }
+      return span;
+    }
 
-      ctx.fillStyle = verification.type === "business" ? "#111" : "#fff";
-      ctx.font = "700 14px Manrope, Segoe UI, sans-serif";
-      ctx.fillText("✓", x + 5.5, y + 15);
-      return x + 24;
+    function drawVerifyBadge(ctx, x, y, verification) {
+      return x;
     }
 
     function setLoading(active) {
@@ -1434,7 +1940,7 @@
     }
 
     function syncBodyTextEditor(force = false) {
-      if (!state.rawTweet) {
+      if (!state.rawTweet && !state.displayName) {
         if (force) {
           state.bodyTextDraft = "";
           state.bodyTextCustom = false;
@@ -1446,7 +1952,7 @@
       }
 
       if (force || !state.bodyTextCustom) {
-        state.bodyTextDraft = buildBodyText(state.rawTweet);
+        state.bodyTextDraft = state.rawTweet ? buildBodyText(state.rawTweet) : (state.bodyTextDraft || "");
         state.bodyTextCustom = false;
         el.bodyText.value = state.bodyTextDraft;
       }
@@ -1467,20 +1973,36 @@
     }
 
     function deriveCardData(rawTweet) {
-      if (!rawTweet) {
-        return null;
-      }
-
-      const media = rawTweet.media.slice(0, 4);
+      const media = (rawTweet?.media || []).slice(0, 4);
       ensureMediaPositions(media.length);
       ensureMediaScales(media.length);
 
-      const avatarUrl = rawTweet.avatarUrl || (rawTweet.avatarCandidates ? rawTweet.avatarCandidates[0] : "");
-      const bodyText = state.bodyTextCustom ? state.bodyTextDraft : buildBodyText(rawTweet);
+      const avatarUrl = state.avatarUrl || (rawTweet?.avatarUrl) || (rawTweet?.avatarCandidates ? rawTweet.avatarCandidates[0] : "") || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
+      const bodyText = state.bodyTextCustom ? state.bodyTextDraft : (rawTweet ? buildBodyText(rawTweet) : (state.bodyTextDraft || ""));
 
       return {
-        ...rawTweet,
+        ...(rawTweet || {}),
+        displayName: state.displayName || rawTweet?.displayName || "Name",
+        handleText: state.handleText || rawTweet?.handleText || "@handle",
         avatarUrl,
+        avatarDataUrl: state.avatarDataUrl || rawTweet?.avatarDataUrl || null,
+        verification: {
+          verified: state.verificationType !== "none",
+          type: state.verificationType
+        },
+        affiliation: {
+          enabled: state.affiliationEnabled,
+          type: state.affiliationType,
+          customUrl: state.affiliationCustomUrl
+        },
+        showXLogo: state.showXLogo,
+        timestampLabel: state.timestampText !== "" ? state.timestampText : (rawTweet?.timestampLabel || ""),
+        metrics: {
+          replies: state.repliesCount !== "" ? state.repliesCount : (rawTweet?.metrics?.replies ?? ""),
+          reposts: state.repostsCount !== "" ? state.repostsCount : (rawTweet?.metrics?.reposts ?? ""),
+          likes: state.likesCount !== "" ? state.likesCount : (rawTweet?.metrics?.likes ?? ""),
+          views: state.viewsCount !== "" ? state.viewsCount : (rawTweet?.metrics?.views ?? "")
+        },
         media,
         mediaPositions: state.mediaPositions.map((p) => ({ x: p.x, y: p.y })),
         bodyText,
@@ -1507,7 +2029,7 @@
       }
 
       if (!state.cardData) {
-        showPlaceholder("<strong>Ready.</strong> Paste a tweet URL to begin.");
+        showPlaceholder("<strong>Ready.</strong> Paste a tweet URL to begin or click <strong>Load sample tweet</strong>.");
         syncMediaControlValues();
         return;
       }
@@ -1522,7 +2044,7 @@
 
       const avatar = document.createElement("img");
       avatar.className = "tweet-avatar";
-      avatar.src = data.avatarUrl;
+      avatar.src = data.avatarDataUrl || data.avatarUrl;
       avatar.alt = `${data.displayName} avatar`;
 
       const meta = document.createElement("div");
@@ -1541,6 +2063,11 @@
         nameRow.appendChild(badge);
       }
 
+      const affilBadge = createAffiliationBadge(data.affiliation);
+      if (affilBadge) {
+        nameRow.appendChild(affilBadge);
+      }
+
       const handleNode = document.createElement("div");
       handleNode.className = "tweet-handle";
       handleNode.textContent = data.handleText;
@@ -1549,6 +2076,17 @@
       meta.appendChild(handleNode);
       head.appendChild(avatar);
       head.appendChild(meta);
+
+      if (data.showXLogo) {
+        const xNode = document.createElement("div");
+        xNode.className = "tweet-top-right";
+        xNode.innerHTML = `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        `;
+        head.appendChild(xNode);
+      }
 
       card.appendChild(head);
 
@@ -1559,7 +2097,7 @@
         card.appendChild(body);
       }
 
-      if (data.media.length > 0) {
+      if (data.media && data.media.length > 0) {
         const mediaGrid = document.createElement("div");
         const clipped = data.media.slice(0, 4);
         mediaGrid.className = `media-grid media-grid--${clipped.length}`;
@@ -1598,28 +2136,41 @@
         card.appendChild(mediaGrid);
       }
 
+      if (data.showTimestamp && data.timestampLabel) {
+        const timeNode = document.createElement("div");
+        timeNode.className = "tweet-time";
+        timeNode.textContent = data.timestampLabel;
+        card.appendChild(timeNode);
+      }
+
       if (data.showStats) {
         const stats = document.createElement("div");
         stats.className = "tweet-stats";
         stats.innerHTML = `
-          <span><b>${formatMetric(data.metrics.replies)}</b>Replies</span>
-          <span><b>${formatMetric(data.metrics.reposts)}</b>Reposts</span>
-          <span><b>${formatMetric(data.metrics.likes)}</b>Likes</span>
-          <span><b>${formatMetric(data.metrics.views)}</b>Views</span>
+          <div class="tweet-stat-item" title="Replies">
+            <svg viewBox="0 0 24 24" class="tweet-stat-icon"><path fill="currentColor" d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-1.602.88 1.3 1.94c.32.48.33 1.1-.03 1.56-.37.47-1 .66-1.57.48l-5.69-1.8c-.85.12-1.72.18-2.6.18-4.42 0-8.005-3.58-8.005-8z"/></svg>
+            <span>${formatMetric(data.metrics.replies)}</span>
+          </div>
+          <div class="tweet-stat-item" title="Reposts">
+            <svg viewBox="0 0 24 24" class="tweet-stat-icon"><path fill="currentColor" d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"/></svg>
+            <span>${formatMetric(data.metrics.reposts)}</span>
+          </div>
+          <div class="tweet-stat-item" title="Likes">
+            <svg viewBox="0 0 24 24" class="tweet-stat-icon"><path fill="currentColor" d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-2.415.11-4.304 2.13-4.304 4.56 0 2.81 2.257 5.39 6.27 8.94l2.73 2.41 2.73-2.41c4.013-3.55 6.27-6.13 6.27-8.94 0-2.43-1.889-4.45-4.303-4.56z"/></svg>
+            <span>${formatMetric(data.metrics.likes)}</span>
+          </div>
+          <div class="tweet-stat-item" title="Views">
+            <svg viewBox="0 0 24 24" class="tweet-stat-icon"><path fill="currentColor" d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+            <span>${formatMetric(data.metrics.views)}</span>
+          </div>
         `;
         card.appendChild(stats);
-      }
-
-      if (data.showTimestamp) {
-        const timeNode = document.createElement("div");
-        timeNode.className = "tweet-time";
-        timeNode.textContent = data.timestampLabel || "Date unavailable";
-        card.appendChild(timeNode);
       }
 
       el.cardShell.innerHTML = "";
       el.cardShell.appendChild(card);
       syncMediaControlValues();
+      el.downloadBtn.disabled = false;
     }
 
     function toDataUrl(blob) {
@@ -1718,6 +2269,14 @@
         const avatarData = data.avatarDataUrl || await getDataUrlCached(data.avatarUrl);
         if (avatarData) {
           avatarNode.src = avatarData;
+        }
+      }
+
+      const affilImg = node.querySelector(".affiliation-badge img");
+      if (affilImg && affilImg.src && !affilImg.src.startsWith("data:")) {
+        const affilData = await getDataUrlCached(affilImg.src);
+        if (affilData) {
+          affilImg.src = affilData;
         }
       }
 
@@ -1992,6 +2551,18 @@
           state.bodyTextCustom = false;
         }
         state.rawTweet = rawTweet;
+        state.displayName = rawTweet.displayName || "";
+        state.handleText = rawTweet.handleText || "";
+        state.avatarUrl = rawTweet.avatarUrl || "";
+        state.avatarDataUrl = rawTweet.avatarDataUrl || null;
+        state.verificationType = rawTweet.verification?.verified ? (rawTweet.verification.type || "blue") : "none";
+        state.timestampText = rawTweet.timestampLabel || "";
+        state.repliesCount = formatMetric(rawTweet.metrics.replies);
+        state.repostsCount = formatMetric(rawTweet.metrics.reposts);
+        state.likesCount = formatMetric(rawTweet.metrics.likes);
+        state.viewsCount = formatMetric(rawTweet.metrics.views);
+
+        syncControlPanel();
         syncBodyTextEditor(isNewTweet);
         state.cardData = deriveCardData(rawTweet);
         updateSourceMeta(rawTweet);
@@ -2025,12 +2596,35 @@
     }
 
     function refreshCardFromState() {
-      if (!state.rawTweet) {
-        return;
-      }
-      state.cardData = deriveCardData(state.rawTweet);
+      state.cardData = deriveCardData(state.rawTweet || null);
       scheduleRender();
       el.downloadBtn.disabled = false;
+    }
+
+    function loadSampleTweet() {
+      state.rawTweet = { ...SAMPLE_TWEET };
+      state.displayName = SAMPLE_TWEET.displayName;
+      state.handleText = SAMPLE_TWEET.handleText;
+      state.avatarUrl = SAMPLE_TWEET.avatarUrl;
+      state.avatarDataUrl = null;
+      state.verificationType = SAMPLE_TWEET.verification.type;
+      state.affiliationEnabled = SAMPLE_TWEET.affiliation.enabled;
+      state.affiliationType = SAMPLE_TWEET.affiliation.type;
+      state.affiliationCustomUrl = SAMPLE_TWEET.affiliation.customUrl;
+      state.showXLogo = true;
+      state.showTimestamp = true;
+      state.showStats = true;
+      state.timestampText = SAMPLE_TWEET.timestampLabel;
+      state.repliesCount = SAMPLE_TWEET.metrics.replies;
+      state.repostsCount = SAMPLE_TWEET.metrics.reposts;
+      state.likesCount = SAMPLE_TWEET.metrics.likes;
+      state.viewsCount = SAMPLE_TWEET.metrics.views;
+      state.bodyTextDraft = SAMPLE_TWEET.bodyRaw;
+      state.bodyTextCustom = false;
+      syncControlPanel();
+      syncBodyTextEditor(true);
+      refreshCardFromState();
+      setStatus("Sample tweet loaded", "info");
     }
 
     function updateNumericSetting(control, rawValue) {
@@ -2041,9 +2635,7 @@
       }
       updatePresetButtons();
       persistSettings();
-      if (state.rawTweet) {
-        refreshCardFromState();
-      }
+      refreshCardFromState();
     }
 
     function applyStylePreset(name) {
@@ -2055,9 +2647,7 @@
       syncControlPanel();
       updateWidthUI();
       persistSettings();
-      if (state.rawTweet) {
-        refreshCardFromState();
-      }
+      refreshCardFromState();
     }
 
     function resetStyleSettings() {
@@ -2066,13 +2656,11 @@
       updateWidthUI();
       syncBodyTextEditor();
       persistSettings();
-      if (state.rawTweet) {
-        refreshCardFromState();
-      }
+      refreshCardFromState();
     }
 
     function resetTextToFetched() {
-      if (!state.rawTweet) {
+      if (!state.rawTweet && !state.displayName) {
         return;
       }
       syncBodyTextEditor(true);
@@ -2226,39 +2814,151 @@
       });
 
       el.loadBtn.addEventListener("click", loadTweetFromInput);
+      el.loadSampleBtn?.addEventListener("click", loadSampleTweet);
       el.tweetUrl.addEventListener("paste", onPasteAutoLoad);
 
+      // Author Profile inputs
+      el.authorName?.addEventListener("input", () => {
+        state.displayName = el.authorName.value;
+        refreshCardFromState();
+      });
+
+      el.authorHandle?.addEventListener("input", () => {
+        state.handleText = el.authorHandle.value;
+        refreshCardFromState();
+      });
+
+      el.authorAvatarUrl?.addEventListener("input", () => {
+        state.avatarUrl = el.authorAvatarUrl.value.trim();
+        state.avatarDataUrl = null;
+        if (el.avatarMiniPreview) {
+          el.avatarMiniPreview.src = state.avatarUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png";
+        }
+        refreshCardFromState();
+      });
+
+      el.avatarFileInput?.addEventListener("change", (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          state.avatarDataUrl = ev.target.result;
+          state.avatarUrl = ev.target.result;
+          if (el.avatarMiniPreview) el.avatarMiniPreview.src = ev.target.result;
+          if (el.authorAvatarUrl) el.authorAvatarUrl.value = "";
+          refreshCardFromState();
+        };
+        reader.readAsDataURL(file);
+      });
+
+      // Verification pill buttons
+      el.verifyPillButtons?.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.verificationType = btn.dataset.verifyPill;
+          el.verifyPillButtons.forEach((b) => b.classList.toggle("is-active", b === btn));
+          persistSettings();
+          refreshCardFromState();
+        });
+      });
+
+      // Affiliation toggle & presets
+      el.affiliationToggle?.addEventListener("change", () => {
+        state.affiliationEnabled = el.affiliationToggle.checked;
+        if (el.affiliationControls) {
+          el.affiliationControls.style.display = state.affiliationEnabled ? "flex" : "none";
+        }
+        persistSettings();
+        refreshCardFromState();
+      });
+
+      el.affilChips?.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.affiliationType = btn.dataset.affil;
+          el.affilChips.forEach((b) => b.classList.toggle("is-active", b === btn));
+          if (el.customAffilRow) {
+            el.customAffilRow.style.display = state.affiliationType === "custom" ? "flex" : "none";
+          }
+          persistSettings();
+          refreshCardFromState();
+        });
+      });
+
+      el.affilCustomUrl?.addEventListener("input", () => {
+        state.affiliationCustomUrl = el.affilCustomUrl.value.trim();
+        refreshCardFromState();
+      });
+
+      el.affilFileInput?.addEventListener("change", (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          state.affiliationCustomUrl = ev.target.result;
+          if (el.affilCustomUrl) el.affilCustomUrl.value = "";
+          state.affiliationType = "custom";
+          el.affilChips.forEach((b) => b.classList.toggle("is-active", b.dataset.affil === "custom"));
+          if (el.customAffilRow) el.customAffilRow.style.display = "flex";
+          refreshCardFromState();
+        };
+        reader.readAsDataURL(file);
+      });
+
+      // Content settings
       el.themeMode.addEventListener("change", () => {
         state.themeMode = el.themeMode.value;
         persistSettings();
-        if (state.rawTweet) {
-          refreshCardFromState();
-        }
+        refreshCardFromState();
       });
 
       el.showStats.addEventListener("change", () => {
         state.showStats = el.showStats.checked;
         persistSettings();
-        if (state.rawTweet) {
-          refreshCardFromState();
-        }
+        refreshCardFromState();
       });
 
       el.showTimestamp.addEventListener("change", () => {
         state.showTimestamp = el.showTimestamp.checked;
         persistSettings();
-        if (state.rawTweet) {
-          refreshCardFromState();
-        }
+        refreshCardFromState();
+      });
+
+      el.showXLogo?.addEventListener("change", () => {
+        state.showXLogo = el.showXLogo.checked;
+        persistSettings();
+        refreshCardFromState();
       });
 
       el.stripReplyMentions.addEventListener("change", () => {
         state.stripReplyMentions = el.stripReplyMentions.checked;
         syncBodyTextEditor();
         persistSettings();
-        if (state.rawTweet) {
-          refreshCardFromState();
-        }
+        refreshCardFromState();
+      });
+
+      // Date & Metrics inputs
+      el.timestampInput?.addEventListener("input", () => {
+        state.timestampText = el.timestampInput.value;
+        refreshCardFromState();
+      });
+
+      el.metricReplies?.addEventListener("input", () => {
+        state.repliesCount = el.metricReplies.value;
+        refreshCardFromState();
+      });
+
+      el.metricReposts?.addEventListener("input", () => {
+        state.repostsCount = el.metricReposts.value;
+        refreshCardFromState();
+      });
+
+      el.metricLikes?.addEventListener("input", () => {
+        state.likesCount = el.metricLikes.value;
+        refreshCardFromState();
+      });
+
+      el.metricViews?.addEventListener("input", () => {
+        state.viewsCount = el.metricViews.value;
+        refreshCardFromState();
       });
 
       NUMERIC_CONTROLS.forEach((control) => {
@@ -2276,9 +2976,6 @@
       });
 
       el.bodyText.addEventListener("input", () => {
-        if (!state.rawTweet) {
-          return;
-        }
         state.bodyTextDraft = el.bodyText.value;
         state.bodyTextCustom = true;
         refreshCardFromState();
@@ -2304,9 +3001,13 @@
     function init() {
       syncControlPanel();
       updateWidthUI();
-      syncBodyTextEditor(true);
       bindEvents();
-      renderPreview();
+      if (!state.cardData) {
+        loadSampleTweet();
+      } else {
+        syncBodyTextEditor(true);
+        renderPreview();
+      }
     }
 
     init();
