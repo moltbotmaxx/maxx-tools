@@ -50,13 +50,12 @@ const SHORTCUT_URL_PLACEHOLDER = '__ENCODED_SHARED_URL__';
 const SHORTCUT_INSTALL_SHARE_URL = '';
 const SCHEDULR_PUBLIC_DOMAIN_URL = 'https://schedulr.work/';
 const SCHEDULR_SHORTCUT_TARGET_URL = 'https://maxxbot.cloud/daily-tracker/';
-const CORTEX_API_BASE = 'https://cortex-api-db2e.onrender.com';
 const SENTIENT_HIDDEN_LIKES_SENTINEL = 3;
 const SENTIENT_ACCOUNTS_CACHE_MAX_AGE_MS = 10 * 60 * 1000;
 const RECENT_CHANGE_KEYWORD = 'sentient-sync';
 const ALL_TRACKER_TABS = new Set(['account', 'sourcing', 'selection', 'scheduler', 'metrics']);
 const MOBILE_PRIMARY_TABS = new Set(['account', 'sourcing', 'selection']);
-const MOBILE_SOURCING_SECTIONS = new Set(['news', 'reddit', 'x']);
+const MOBILE_SOURCING_SECTIONS = new Set(['news', 'instagram', 'reddit', 'x']);
 const EXPORT_BUTTON_DOWNLOAD_MARKUP = `
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -227,11 +226,6 @@ let lastSourcingFeedFailures = [];
 const NEWS_REFRESH_INTERVAL_MS = 120000;
 let newsAutoRefreshTimer = null;
 let isNewsRefreshing = false;
-let isDevViewer = false;
-let devAccessPromise = null;
-let isJevBatchRunning = false;
-const newsJevReviews = new Map();
-let sidebarJevCandidates = [];
 
 function ensureAppDataIntegrity() {
     if (!appData || typeof appData !== 'object') {
@@ -690,8 +684,6 @@ const elements = {
     refreshNewsBtn: document.getElementById('refreshNewsBtn'),
     newsRefreshStatus: document.getElementById('newsRefreshStatus'),
     resetNewsBtn: document.getElementById('resetNewsBtn'),
-    jevAnalyzeVisibleBtn: document.getElementById('jevAnalyzeVisibleBtn'),
-    jevAnalyzeStatus: document.getElementById('jevAnalyzeStatus'),
     sourcingFeedFilter: document.getElementById('sourcingFeedFilter'),
     newsMainScroll: document.getElementById('newsMainScroll'),
     newsMainActiveLabel: document.getElementById('newsMainActiveLabel'),
@@ -1526,119 +1518,6 @@ const auth = initializeAuth(app, {
     popupRedirectResolver: browserPopupRedirectResolver
 });
 const googleProvider = new GoogleAuthProvider();
-
-async function refreshDevAccess(user = currentUser) {
-    isDevViewer = false;
-    if (!user?.uid) return false;
-    if (devAccessPromise) return devAccessPromise;
-    devAccessPromise = (async () => {
-        try {
-            const token = await user.getIdToken();
-            const response = await fetch(`${CORTEX_API_BASE}/api/dashboard/me`, {
-                headers: { Authorization: `Bearer ${token}` },
-                cache: 'no-store'
-            });
-            if (!response.ok) return false;
-            const access = await response.json();
-            isDevViewer = access.is_dev === true;
-            return isDevViewer;
-        } catch (error) {
-            console.warn('Unable to resolve Schedulr DEV access:', error);
-            return false;
-        } finally {
-            devAccessPromise = null;
-            syncNewsJevControls();
-        }
-    })();
-    return devAccessPromise;
-}
-
-function getNewsJevKey(item = {}) {
-    return safeHttpUrl(item.link || '', '') || `${item.sourceType || 'news'}:${normalizeWhitespace(item.headline || '').toLowerCase()}`;
-}
-
-function syncNewsJevControls() {
-    const show = isDevViewer && !!currentUser?.uid;
-    if (elements.jevAnalyzeVisibleBtn) elements.jevAnalyzeVisibleBtn.hidden = !show;
-    if (elements.jevAnalyzeStatus && !show) elements.jevAnalyzeStatus.hidden = true;
-}
-
-function setJevBatchStatus(text = '', tone = 'neutral') {
-    if (!elements.jevAnalyzeStatus) return;
-    elements.jevAnalyzeStatus.hidden = !text || !isDevViewer;
-    elements.jevAnalyzeStatus.textContent = text;
-    elements.jevAnalyzeStatus.dataset.tone = tone;
-}
-
-async function requestNewsJevReview(item) {
-    if (!isDevViewer || !currentUser?.uid) return null;
-    const key = getNewsJevKey(item);
-    const cached = newsJevReviews.get(key);
-    if (cached?.status === 'done') return cached.data;
-    if (cached?.status === 'pending') return cached.promise;
-
-    const promise = (async () => {
-        const token = await currentUser.getIdToken();
-        const response = await fetch(`${CORTEX_API_BASE}/api/dashboard/jev/news-review`, {
-            method: 'POST',
-            headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                sourceType: item.sourceType || 'news',
-                headline: item.headline || item.title || '',
-                description: item.reason || item.description || '',
-                source: item.source || item.author || item.subreddit || ''
-            })
-        });
-        const payload = await response.json().catch(() => ({}));
-        if (!response.ok) throw new Error(payload.detail || `Jev review failed (${response.status}).`);
-        newsJevReviews.set(key, { status: 'done', data: payload });
-        return payload;
-    })();
-    newsJevReviews.set(key, { status: 'pending', promise });
-    try {
-        return await promise;
-    } catch (error) {
-        newsJevReviews.delete(key);
-        throw error;
-    }
-}
-
-async function analyzeNewsItem(item, { refresh = true } = {}) {
-    if (!isDevViewer) return null;
-    const card = document.querySelector(`.card-wrapper[data-article-key="${CSS.escape(getSourcingItemKey(item))}"]`);
-    card?.classList.add('jev-review-pending');
-    try {
-        const result = await requestNewsJevReview(item);
-        if (refresh) await renderNews(false);
-        return result;
-    } catch (error) {
-        console.error('News Jev review failed:', error);
-        setJevBatchStatus(error.message || 'Jev review failed.', 'error');
-        return null;
-    } finally {
-        card?.classList.remove('jev-review-pending');
-    }
-}
-
-async function analyzeVisibleNews() {
-    if (!isDevViewer || isJevBatchRunning) return;
-    isJevBatchRunning = true;
-    const candidates = [
-        ...sourcingArticlesCache.filter(item => !isSourcingItemDone(item)).slice(0, 8),
-        ...sidebarJevCandidates
-    ].filter((item, index, list) => list.findIndex(candidate => getNewsJevKey(candidate) === getNewsJevKey(item)) === index).slice(0, 16);
-    setJevBatchStatus(`Reviewing 0/${candidates.length}…`, 'neutral');
-    try {
-        for (let index = 0; index < candidates.length; index += 1) {
-            await analyzeNewsItem(candidates[index], { refresh: false });
-            setJevBatchStatus(`Reviewing ${index + 1}/${candidates.length}…`, 'neutral');
-        }
-        await renderNews(false);
-        setJevBatchStatus(`Reviewed ${candidates.length} candidates`, 'success');
-    } finally {
-        isJevBatchRunning = false;
-    }
-}
 
 // ===========================
 // Data Management
@@ -4757,7 +4636,6 @@ function normalizeFeedItemToArticle(item, index = 0, options = {}) {
         headline,
         link,
         source,
-        sourceType,
         date: publishedDate,
         published_at: publishedAt,
         ranking: scores.ranking,
@@ -4792,7 +4670,6 @@ function applySourcingScoresToArticle(article, options = {}) {
 
     return {
         ...article,
-        sourceType,
         ranking: scores.ranking,
         rating: scores.rating,
         virality: scores.virality,
@@ -5346,17 +5223,22 @@ function renderSourcingGridSection(container, items, createItem, emptyText) {
 async function renderSidebarFeeds(forceRefresh = false) {
     const xFeedConfig = buildXBridgeFeedConfig();
     const tasks = [
+        fetchInstagramSidebarItems(forceRefresh),
         fetchRedditSidebarItems(forceRefresh),
         fetchXSidebarItems(forceRefresh, xFeedConfig)
     ];
 
     const results = await Promise.allSettled(tasks);
-    const redditResult = results[0];
-    const xResult = results[1];
-    sidebarJevCandidates = [
-        ...(redditResult.status === 'fulfilled' ? redditResult.value : []),
-        ...(xResult?.status === 'fulfilled' ? xResult.value : [])
-    ].filter(item => ['reddit', 'x'].includes(item?.sourceType)).slice(0, 16);
+    const instagramResult = results[0];
+    const redditResult = results[1];
+    const xResult = results[2];
+
+    if (instagramResult.status === 'fulfilled') {
+        renderSourcingGridSection(elements.instagramViralList, instagramResult.value, createInstagramPostItem, 'No Instagram feed available');
+    } else {
+        console.error('Failed to load Instagram feed:', instagramResult.reason);
+        renderSidebarEmpty(elements.instagramViralList, 'Instagram feed unavailable');
+    }
 
     if (redditResult.status === 'fulfilled') {
         renderSidebarList(elements.redditViralList, redditResult.value, createRedditPostItem, 'No Reddit posts available');
@@ -5811,6 +5693,7 @@ function stopNewsAutoRefresh() {
 function getMobileSourcingSections() {
     return [
         { id: 'news', label: 'News', panel: elements.sourcingNewsMain, parent: elements.sourcingNewsMain },
+        { id: 'instagram', label: 'Instagram', panel: elements.instagramSidebarSection, parent: elements.instagramSidebarSection },
         { id: 'reddit', label: 'Reddit', panel: elements.redditSidebarSection, parent: elements.redditSidebarSection },
         { id: 'x', label: 'X', panel: elements.xSidebarSection, parent: elements.xSidebarSection }
     ];
@@ -5980,15 +5863,6 @@ function createMagazineCard(item, index, options = {}) {
     const originalSourceAttr = imageSources.originalUrl && imageSources.originalUrl !== safeImageUrl
         ? ` data-original-src="${escapeHtml(imageSources.originalUrl)}"`
         : '';
-    const jevReview = isDevViewer ? newsJevReviews.get(getNewsJevKey(item))?.data : null;
-    const jevBadgeHtml = jevReview?.label === 'golden_nugget'
-        ? '<span class="news-jev-badge news-jev-badge--gold">Golden nugget</span>'
-        : jevReview?.label === 'promising'
-            ? '<span class="news-jev-badge news-jev-badge--promising">Promising</span>'
-            : '';
-    const jevButtonHtml = isDevViewer && ['news', 'reddit', 'x'].includes(item?.sourceType || sourceKind)
-        ? `<button type="button" class="news-jev-card-btn" aria-label="Review with Jev">${jevReview ? 'Recheck Jev' : 'Jev review'}</button>`
-        : '';
 
     card.className = wrapperClassName;
     card.dataset.articleKey = getSourcingItemKey(item);
@@ -6007,7 +5881,6 @@ function createMagazineCard(item, index, options = {}) {
                 <span class="magazine-card__source-badge">${safeSource}</span>
             </div>
             <div class="magazine-card__body">
-                ${jevBadgeHtml}
                 <h3 class="magazine-card__title">${safeHeadline}</h3>
                 ${safeReason ? `<p class="magazine-card__reason">${safeReason}</p>` : ''}
                 <div class="magazine-card__footer">
@@ -6017,7 +5890,6 @@ function createMagazineCard(item, index, options = {}) {
                     <div class="magazine-card__actions">
                         ${footerMetricHtml}
                         <div class="card-pills-actions">
-                            ${jevButtonHtml}
                             ${!isDone ? getDoneButtonHtml('done-button--inline done-button--icon') : ''}
                             ${getSendToSelectionButtonHtml('send-selection-btn--inline send-selection-btn--icon')}
                         </div>
@@ -6034,14 +5906,6 @@ function createMagazineCard(item, index, options = {}) {
         e.preventDefault();
         e.stopPropagation();
         showSourceSelectionModal(buildSelectionDraftFromSource(item, sourceKind));
-    };
-    const jevBtn = card.querySelector('.news-jev-card-btn');
-    if (jevBtn) jevBtn.onclick = async (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        jevBtn.disabled = true;
-        jevBtn.textContent = 'Reviewing…';
-        await analyzeNewsItem(item);
     };
     return card;
 }
@@ -6771,9 +6635,6 @@ function setupEventListeners() {
             renderNews(true);
         });
     }
-    if (elements.jevAnalyzeVisibleBtn) {
-        elements.jevAnalyzeVisibleBtn.addEventListener('click', analyzeVisibleNews);
-    }
 
     if (elements.mobileSettingsPanel) {
         elements.mobileSettingsPanel.addEventListener('click', (event) => {
@@ -7164,10 +7025,6 @@ async function setupAuthSession() {
 
         if (!user) {
             currentUser = null;
-            isDevViewer = false;
-            devAccessPromise = null;
-            newsJevReviews.clear();
-            syncNewsJevControls();
             isLoadingUserData = false;
             closeManagedAccountsModal(true);
             stopNewsAutoRefresh();
@@ -7185,7 +7042,6 @@ async function setupAuthSession() {
         setAuthGate('resolving', `Loading ${getUserLabel(user)}...`);
 
         try {
-            await refreshDevAccess(user);
             await loadData();
             isLoadingUserData = false;
             await drainPendingExtensionIdeas();

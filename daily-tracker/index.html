@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=news-jev-dev-1">
+    <link rel="stylesheet" href="styles.css?v=metrics-day-history-1">
     <!-- Chart.js for Analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -55,7 +55,7 @@
                 <h1 style="display: flex; align-items: center; gap: 8px;">
                     Schedulr
                     <span id="liveBuildBadge"
-                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(news-jev-dev-1)</span>
+                        style="font-size: 0.7rem; color: var(--text-tertiary); font-weight: 400; vertical-align: middle; opacity: 0.8;">(ig-news-style)</span>
                     <div id="syncStatus" class="sync-status pending" title="Checking saved session">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Checking</span>
@@ -74,10 +74,12 @@
                 </button>
                 <button class="tab-btn" data-tab="sourcing">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 5h16v16H4z" />
-                        <path d="M8 9h8M8 13h8M8 17h5" />
+                        <path d="M4 11v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11" />
+                        <path d="M12 2L4 11h16L12 2z" />
+                        <line x1="9" y1="17" x2="15" y2="17" />
+                        <line x1="9" y1="21" x2="15" y2="21" />
                     </svg>
-                    News
+                    Sourcing
                 </button>
                 <button class="tab-btn" data-tab="selection">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -143,8 +145,7 @@
                 <div class="news-header">
                     <div class="news-toolbar">
                         <div class="news-toolbar__meta">
-                            <h2 class="news-toolbar__title">News</h2>
-                            <span class="news-toolbar__subtitle">RSS, Reddit and X · DEV Jev review</span>
+                            <h2 class="news-toolbar__title">Sourcing Desk</h2>
                         </div>
                         <div class="news-toolbar__ticker" aria-label="AI news ticker">
                             <rssapp-ticker id="_OW2KiETYc6j8aVKc"></rssapp-ticker>
@@ -174,8 +175,6 @@
                                 </svg>
                                 Reset All
                             </button>
-                            <button id="jevAnalyzeVisibleBtn" class="action-btn news-jev-toolbar-btn" type="button" hidden>Analyze with Jev</button>
-                            <span id="jevAnalyzeStatus" class="news-refresh-status" hidden></span>
                         </div>
                     </div>
                     <div class="mobile-sourcing-controls" id="mobileSourcingControls">
@@ -236,6 +235,23 @@
                         </div>
                     </div>
 
+                    <section class="news-main news-main--instagram" id="instagramSidebarSection">
+                        <div class="news-main__header box-header">
+                            <div class="news-main__header-main">
+                                <h2><span>📸 Instagram</span></h2>
+                            </div>
+                        </div>
+                        <div class="news-main__scroll">
+                            <section class="news-group news-group--featured">
+                                <div class="featured-grid" id="instagramViralList">
+                                    <div class="skeleton-card skeleton"></div>
+                                    <div class="skeleton-card skeleton"></div>
+                                    <div class="skeleton-card skeleton"></div>
+                                    <div class="skeleton-card skeleton"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
                     <section class="sidebar-section sidebar-section--reddit bento-box" id="redditSidebarSection">
                         <div class="box-header">
                             <h2>🔴 Viral on Reddit</h2>
@@ -899,7 +915,7 @@
         const isAiSafetyRoute = window.location.hash.replace(/\/+$/, '') === '#/ai-safety';
         const entryScript = document.createElement('script');
         entryScript.type = 'module';
-        entryScript.src = isAiSafetyRoute ? 'ai-safety.js' : 'app.js?v=news-jev-dev-1';
+        entryScript.src = isAiSafetyRoute ? 'ai-safety.js' : 'app.js?v=init-ready-state-1';
         document.body.appendChild(entryScript);
     </script>
 </body>
