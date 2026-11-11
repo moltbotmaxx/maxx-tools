@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T14:59:55.084Z",
+  "updatedAt": "2026-11-11T21:50:56.011Z",
   "source": "BCCR WebService + BCCR APIM + BCCR comunicaciones",
   "usd": {
     "buy": null,
@@ -22,8 +22,8 @@
       "date": null
     },
     {
-      "title": "Tipo de cambio",
-      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/6?Cuadro=1",
+      "title": "Código global para el mercado cambiario - FX Global Code",
+      "url": "https://www.bccr.fi.cr/cr/es/regimen-cambiario/convenios-con-organismos-internacionales/codigo-global-mercado-cambiario-fx-global-code.html",
       "date": null
     }
   ]
